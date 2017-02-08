@@ -1,0 +1,39 @@
+{
+  "resourceType": "ValueSet",
+  "meta": {
+    "lastUpdated": "2016-07-12T00:00:00+01:00"
+  },
+  "url": "http://fhir.nhs.net/ValueSet/language-ability-proficiency-1",
+  "name": "Language Ability Proficiency",
+  "status": "active",
+  "description": "A valueset to describe the level of proficiency in communicating a language.",
+  "codeSystem": {
+    "system": "http://fhir.nhs.net/ValueSet/language-ability-proficiency-1",
+    "concept": [
+      {
+        "code": "E",
+        "display": "Excellent"
+      },
+      {
+        "code": "F",
+        "display": "Fair"
+      },
+      {
+        "code": "G",
+        "display": "Good"
+      },
+      {
+        "code": "P",
+        "display": "Poor"
+      },
+      {
+        "code": "0",
+        "display": "Interpreter not required"
+      },
+      {
+        "code": "1",
+        "display": "Interpreter required"
+      }
+    ]
+  }
+}

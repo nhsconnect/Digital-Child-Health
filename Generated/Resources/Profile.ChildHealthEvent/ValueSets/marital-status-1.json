@@ -1,0 +1,39 @@
+{
+  "resourceType": "ValueSet",
+  "meta": {
+    "lastUpdated": "2016-07-12T00:00:00+01:00"
+  },
+  "url": "http://fhir.nhs.net/ValueSet/marital-status-1",
+  "name": "Marital Status",
+  "status": "active",
+  "description": "A valueset that identifies the legal marital status of a person.",
+  "codeSystem": {
+    "system": "http://fhir.nhs.net/ValueSet/marital-status-1",
+    "concept": [
+      {
+        "code": "S",
+        "display": "Single"
+      },
+      {
+        "code": "M",
+        "display": "Married/Civil Partner"
+      },
+      {
+        "code": "D",
+        "display": "Divorced/Person whose Civil Partnership has been dissolved"
+      },
+      {
+        "code": "W",
+        "display": "Widowed/Surviving Civil Partner"
+      },
+      {
+        "code": "S",
+        "display": "Separated"
+      },
+      {
+        "code": "N",
+        "display": "Not disclosed"
+      }
+    ]
+  }
+}

@@ -1,0 +1,50 @@
+{
+  "resourceType": "ValueSet",
+  "meta": {
+    "lastUpdated": "2016-08-03T00:00:00+01:00"
+  },
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm",
+      "valueInteger": 1
+    }
+  ],
+  "url": "http://fhir.nhs.net/ValueSet/registration-type-1",
+  "name": "Registration-Type-1",
+  "status": "draft",
+  "publisher": "HL7 UK",
+  "description": "A vocabulary that identifies the type of registration for a patient at a healthcare organisation.",
+  "codeSystem": {
+    "system": "http://fhir.nhs.net/ValueSet/registration-type-1",
+    "concept": [
+      {
+        "code": "R",
+        "display": "Regular"
+      },
+      {
+        "code": "E",
+        "display": "Emergency"
+      },
+      {
+        "code": "IN",
+        "display": "Immediately necessary"
+      },
+      {
+        "code": "T",
+        "display": "Temporary"
+      },
+      {
+        "code": "P",
+        "display": "Private"
+      },
+      {
+        "code": "O",
+        "display": "Other"
+      },
+      {
+        "code": "S",
+        "display": "Synthetic Record"
+      }
+    ]
+  }
+}

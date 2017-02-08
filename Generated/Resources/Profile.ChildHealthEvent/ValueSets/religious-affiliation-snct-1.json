@@ -1,0 +1,25 @@
+{
+  "resourceType": "ValueSet",
+  "meta": {
+    "lastUpdated": "2016-08-26T00:00:00+01:00"
+  },
+  "url": "http://fhir.nhs.net/ValueSet/religious-affiliation-snct-1",
+  "name": "Religious Affiliation SnCT",
+  "status": "active",
+  "description": "A subset of the Snomed-CT clinical terminology (i.e. coding system) intended for use in the UK, previously named SnomedCTUK, that describes a person's religious affiliation. Any code from the SNOMED CT UK CDA Care Setting Type subset with subset original id 999000531000000100.",
+  "copyright": "This value set includes content from SNOMED CT, which is copyright © 2002+ International Health Terminology Standards Development Organisation (IHTSDO), and distributed by agreement between IHTSDO and HL7. Implementer use of SNOMED CT is not covered by this agreement.",
+  "compose": {
+    "include": [
+      {
+        "system": "http://snomed.info/sct",
+        "filter": [
+          {
+            "property": "concept",
+            "op": "in",
+            "value": "999000531000000100"
+          }
+        ]
+      }
+    ]
+  }
+}
