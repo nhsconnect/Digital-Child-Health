@@ -1,0 +1,2 @@
+The CareConnect Observation profile with further constraints applied to support the Child Health Events Catalogue.
+The Observation resource is used for tracking the current and historical observations that have been made for a patient.

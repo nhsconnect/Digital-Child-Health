@@ -1,0 +1,175 @@
+
+***Furnace log date run: 09 January 2017 935 ***
+Furnace: Fhir publisher tool version: 2.7.6179.25752
+***Starting generation***
+Source directory: C:\GitRepo\DCH\Generation 
+ Target Directory: C:\GitRepo\DCH\Generated
+Clear down Generated folder
+Copying files into Schemas folder ...
+Copying files into dist folder ...
+Start: creating IGResource.xml
+End: IGResource.xml created
+Markdown rendering - index 	: index.md
+Markdown rendering - index 	: index.md
+Markdown rendering - index 	: index.md
+Markdown rendering - index 	: index.md
+Markdown rendering - index 	: index.md
+Razor rendering index
+Razor rendering index
+Razor rendering index
+Razor rendering index
+Razor rendering index
+Create folder Profile.BirthEvent
+IG Creation - Adding DCH-QuestionnaireResponse-1-0 to IGResource.xml
+            - Adding Profile.BirthEvent package to IGResource.xml
+            - Saving DCH-QuestionnaireResponse-1-0.xml in StructureDefinition folder
+IG Creation - DCH-QuestionnaireResponse-1-0 finished
+IG Creation - Adding actual-delivery-place-type1-0 to IGResource.xml
+            - Saving actual-delivery-place-type1-0.xml in ValueSet folder
+IG Creation - actual-delivery-place-type1-0 finished
+IG Creation - Adding birth-complication-1-0 to IGResource.xml
+            - Saving birth-complication-1-0.xml in ValueSet folder
+IG Creation - birth-complication-1-0 finished
+IG Creation - Adding delivery-method-1-0 to IGResource.xml
+            - Saving delivery-method-1-0.xml in ValueSet folder
+IG Creation - delivery-method-1-0 finished
+IG Creation - Adding midwifery-unit-type-1-0 to IGResource.xml
+            - Saving midwifery-unit-type-1-0.xml in ValueSet folder
+IG Creation - midwifery-unit-type-1-0 finished
+Create folder Profile.Two
+Profile Table: IGResource.
+Loading resources into resource store
+Create directory C:\GitRepo\DCH\Generated\Profile.BirthEvent
+Render profile table Profile.BirthEvent
+Profile Table: Finish - IGResource
+Loading resources into resource store
+Structure Page: Start - Profile.BirthEvent : DCH-QuestionnaireResponse-1-0
+Creating structure for DCH-QuestionnaireResponse-1-0
+CreateRow QuestionnaireResponse( QuestionnaireResponse )
+CreateRow QuestionnaireResponse.identifier( QuestionnaireResponse )
+CreateRow QuestionnaireResponse.identifier.value( QuestionnaireResponse )
+CreateRow QuestionnaireResponse.status( QuestionnaireResponse )
+CreateRow QuestionnaireResponse.author( QuestionnaireResponse )
+CreateRow QuestionnaireResponse.group( QuestionnaireResponse )
+CreateRow QuestionnaireResponse.group.modifierExtension( QuestionnaireResponse )
+CreateRow QuestionnaireResponse.group.question( QuestionnaireResponse )
+CreateRow QuestionnaireResponse.group.question( QuestionnaireResponse )
+CreateRow QuestionnaireResponse.group.question.modifierExtension( QuestionnaireResponse )
+CreateRow QuestionnaireResponse.group.question.text( QuestionnaireResponse )
+CreateRow QuestionnaireResponse.group.question.answer( QuestionnaireResponse )
+CreateRow QuestionnaireResponse.group.question.answer.modifierExtension( QuestionnaireResponse )
+CreateRow QuestionnaireResponse.group.question.answer.value[x]( QuestionnaireResponse )
+CreateRow QuestionnaireResponse.group.question( QuestionnaireResponse )
+CreateRow QuestionnaireResponse.group.question.modifierExtension( QuestionnaireResponse )
+CreateRow QuestionnaireResponse.group.question.text( QuestionnaireResponse )
+CreateRow QuestionnaireResponse.group.question.answer( QuestionnaireResponse )
+CreateRow QuestionnaireResponse.group.question.answer.modifierExtension( QuestionnaireResponse )
+CreateRow QuestionnaireResponse.group.question.answer.value[x]( QuestionnaireResponse )
+CreateRow QuestionnaireResponse.group.question( QuestionnaireResponse )
+CreateRow QuestionnaireResponse.group.question.modifierExtension( QuestionnaireResponse )
+CreateRow QuestionnaireResponse.group.question.text( QuestionnaireResponse )
+CreateRow QuestionnaireResponse.group.question.answer( QuestionnaireResponse )
+CreateRow QuestionnaireResponse.group.question.answer.modifierExtension( QuestionnaireResponse )
+CreateRow QuestionnaireResponse.group.question.answer.value[x]( QuestionnaireResponse )
+CreateRow QuestionnaireResponse.group.question( QuestionnaireResponse )
+CreateRow QuestionnaireResponse.group.question.modifierExtension( QuestionnaireResponse )
+CreateRow QuestionnaireResponse.group.question.text( QuestionnaireResponse )
+CreateRow QuestionnaireResponse.group.question.answer( QuestionnaireResponse )
+CreateRow QuestionnaireResponse.group.question.answer.modifierExtension( QuestionnaireResponse )
+CreateRow QuestionnaireResponse.group.question.answer.value[x]( QuestionnaireResponse )
+CreateRow QuestionnaireResponse.group.question( QuestionnaireResponse )
+CreateRow QuestionnaireResponse.group.question.modifierExtension( QuestionnaireResponse )
+CreateRow QuestionnaireResponse.group.question.text( QuestionnaireResponse )
+CreateRow QuestionnaireResponse.group.question.answer( QuestionnaireResponse )
+CreateRow QuestionnaireResponse.group.question.answer.modifierExtension( QuestionnaireResponse )
+CreateRow QuestionnaireResponse.group.question.answer.value[x]( QuestionnaireResponse )
+CreateRow QuestionnaireResponse.group.question( QuestionnaireResponse )
+CreateRow QuestionnaireResponse.group.question.modifierExtension( QuestionnaireResponse )
+CreateRow QuestionnaireResponse.group.question.text( QuestionnaireResponse )
+CreateRow QuestionnaireResponse.group.question.answer( QuestionnaireResponse )
+CreateRow QuestionnaireResponse.group.question.answer.modifierExtension( QuestionnaireResponse )
+CreateRow QuestionnaireResponse.group.question.answer.value[x]( QuestionnaireResponse )
+CreateRow QuestionnaireResponse.group.question( QuestionnaireResponse )
+CreateRow QuestionnaireResponse.group.question.modifierExtension( QuestionnaireResponse )
+CreateRow QuestionnaireResponse.group.question.text( QuestionnaireResponse )
+CreateRow QuestionnaireResponse.group.question.answer( QuestionnaireResponse )
+CreateRow QuestionnaireResponse.group.question.answer.modifierExtension( QuestionnaireResponse )
+CreateRow QuestionnaireResponse.group.question.answer.value[x]( QuestionnaireResponse )
+CreateRow QuestionnaireResponse.group.question( QuestionnaireResponse )
+CreateRow QuestionnaireResponse.group.question.modifierExtension( QuestionnaireResponse )
+CreateRow QuestionnaireResponse.group.question.text( QuestionnaireResponse )
+CreateRow QuestionnaireResponse.group.question.answer( QuestionnaireResponse )
+CreateRow QuestionnaireResponse.group.question.answer.modifierExtension( QuestionnaireResponse )
+CreateRow QuestionnaireResponse.group.question.answer.value[x]( QuestionnaireResponse )
+CreateRow QuestionnaireResponse.group.question( QuestionnaireResponse )
+CreateRow QuestionnaireResponse.group.question.modifierExtension( QuestionnaireResponse )
+CreateRow QuestionnaireResponse.group.question.text( QuestionnaireResponse )
+CreateRow QuestionnaireResponse.group.question.answer( QuestionnaireResponse )
+CreateRow QuestionnaireResponse.group.question.answer.modifierExtension( QuestionnaireResponse )
+CreateRow QuestionnaireResponse.group.question.answer.value[x]( QuestionnaireResponse )
+CreateRow QuestionnaireResponse.group.question( QuestionnaireResponse )
+CreateRow QuestionnaireResponse.group.question.modifierExtension( QuestionnaireResponse )
+CreateRow QuestionnaireResponse.group.question.text( QuestionnaireResponse )
+CreateRow QuestionnaireResponse.group.question.answer( QuestionnaireResponse )
+CreateRow QuestionnaireResponse.group.question.answer.modifierExtension( QuestionnaireResponse )
+CreateRow QuestionnaireResponse.group.question.answer.value[x]( QuestionnaireResponse )
+CreateRow QuestionnaireResponse.group.question( QuestionnaireResponse )
+CreateRow QuestionnaireResponse.group.question.modifierExtension( QuestionnaireResponse )
+CreateRow QuestionnaireResponse.group.question.text( QuestionnaireResponse )
+CreateRow QuestionnaireResponse.group.question.answer( QuestionnaireResponse )
+CreateRow QuestionnaireResponse.group.question.answer.modifierExtension( QuestionnaireResponse )
+CreateRow QuestionnaireResponse.group.question.answer.value[x]( QuestionnaireResponse )
+CreateRow QuestionnaireResponse.group.question( QuestionnaireResponse )
+CreateRow QuestionnaireResponse.group.question.modifierExtension( QuestionnaireResponse )
+CreateRow QuestionnaireResponse.group.question.text( QuestionnaireResponse )
+CreateRow QuestionnaireResponse.group.question.answer( QuestionnaireResponse )
+CreateRow QuestionnaireResponse.group.question.answer.modifierExtension( QuestionnaireResponse )
+CreateRow QuestionnaireResponse.group.question.answer.value[x]( QuestionnaireResponse )
+CreateRow QuestionnaireResponse.group.question( QuestionnaireResponse )
+CreateRow QuestionnaireResponse.group.question.modifierExtension( QuestionnaireResponse )
+CreateRow QuestionnaireResponse.group.question.text( QuestionnaireResponse )
+CreateRow QuestionnaireResponse.group.question.answer( QuestionnaireResponse )
+CreateRow QuestionnaireResponse.group.question.answer.modifierExtension( QuestionnaireResponse )
+CreateRow QuestionnaireResponse.group.question.answer.value[x]( QuestionnaireResponse )
+CreateRow QuestionnaireResponse.group.question( QuestionnaireResponse )
+CreateRow QuestionnaireResponse.group.question.modifierExtension( QuestionnaireResponse )
+CreateRow QuestionnaireResponse.group.question.text( QuestionnaireResponse )
+CreateRow QuestionnaireResponse.group.question.answer( QuestionnaireResponse )
+CreateRow QuestionnaireResponse.group.question.answer.modifierExtension( QuestionnaireResponse )
+CreateRow QuestionnaireResponse.group.question.answer.value[x]( QuestionnaireResponse )
+ create Bindings table
+*** element Name for QuestionnaireResponse.group.question.answer.value[x] has not been populated!
+*** element Name for QuestionnaireResponse.group.question.answer.value[x] has not been populated!
+*** element Name for QuestionnaireResponse.group.question.answer.value[x] has not been populated!
+*** element Name for QuestionnaireResponse.group.question.answer.value[x] has not been populated!
+*** element Name for QuestionnaireResponse.group.question.answer.value[x] has not been populated!
+*** element Name for QuestionnaireResponse.group.question.answer.value[x] has not been populated!
+*** element Name for QuestionnaireResponse.group.question.answer.value[x] has not been populated!
+*** element Name for QuestionnaireResponse.group.question.answer.value[x] has not been populated!
+*** element Name for QuestionnaireResponse.group.question.answer.value[x] has not been populated!
+*** element Name for QuestionnaireResponse.group.question.answer.value[x] has not been populated!
+*** element Name for QuestionnaireResponse.group.question.answer.value[x] has not been populated!
+*** element Name for QuestionnaireResponse.group.question.answer.value[x] has not been populated!
+*** element Name for QuestionnaireResponse.group.question.answer.value[x] has not been populated!
+*** element Name for QuestionnaireResponse.group.question.answer.value[x] has not been populated!
+**Error** 
+ Message:   ValueSet has not been bound! 
+Parameter name: valueSet 
+ Stacktrace:    at Hl7.Fhir.Publication.Specification.Profile.BindingFormatter..ctor(Object valueSet) in C:\Users\rmk\Source\Repos\FHIR.Publication.DSTU2\Fhir.Publication\Specification\Profile\BindingFormatter.cs:line 12
+   at Hl7.Fhir.Publication.Specification.Profile.BindingUrl..ctor(ElementDefinition elementDefinition) in C:\Users\rmk\Source\Repos\FHIR.Publication.DSTU2\Fhir.Publication\Specification\Profile\BindingUrl.cs:line 8
+   at Hl7.Fhir.Publication.Specification.Profile.Structure.Bindings.ElementDefinitionComparer.GetHashCode(ElementDefinition obj) in C:\Users\rmk\Source\Repos\FHIR.Publication.DSTU2\Fhir.Publication\Specification\Profile\Structure\Bindings\ElementDefinitionComparer.cs:line 27
+   at System.Linq.Set`1.InternalGetHashCode(TElement value)
+   at System.Linq.Set`1.Find(TElement value, Boolean add)
+   at System.Linq.Enumerable.<DistinctIterator>d__63`1.MoveNext()
+   at Hl7.Fhir.Publication.Specification.Profile.Structure.Bindings.Table.GetTable(IEnumerable`1 elementBindings, ResourceStore resourceStore) in C:\Users\rmk\Source\Repos\FHIR.Publication.DSTU2\Fhir.Publication\Specification\Profile\Structure\Bindings\Table.cs:line 63
+   at Hl7.Fhir.Publication.Specification.Profile.Structure.Bindings.Table.ToHtml(StructureDefinition structureDefinition, ResourceStore resourceStore, Log log, String package) in C:\Users\rmk\Source\Repos\FHIR.Publication.DSTU2\Fhir.Publication\Specification\Profile\Structure\Bindings\Table.cs:line 42
+   at Hl7.Fhir.Publication.Processors.Profile.StructureProcessor.CreateStructureDefinitionPage(ResourceComponent resource) in C:\Users\rmk\Source\Repos\FHIR.Publication.DSTU2\Fhir.Publication\Processors\Profile\StructureProcessor.cs:line 136
+   at Hl7.Fhir.Publication.Processors.Profile.StructureProcessor.CreatePagesInPackage() in C:\Users\rmk\Source\Repos\FHIR.Publication.DSTU2\Fhir.Publication\Processors\Profile\StructureProcessor.cs:line 91
+   at Hl7.Fhir.Publication.Processors.Profile.StructureProcessor.Process(Document input, Stage output, Log log, IDirectoryCreator directoryCreator) in C:\Users\rmk\Source\Repos\FHIR.Publication.DSTU2\Fhir.Publication\Processors\Profile\StructureProcessor.cs:line 63
+   at Hl7.Fhir.Publication.Framework.Processor.Process(IProcessor processor, Stage input, Log log, IDirectoryCreator directoryCreator) in C:\Users\rmk\Source\Repos\FHIR.Publication.DSTU2\Fhir.Publication\Framework\Processor.cs:line 16
+   at Hl7.Fhir.Publication.Framework.Processor.Process(PipeLine pipeline, Stage input, Log log, IDirectoryCreator fileCreator) in C:\Users\rmk\Source\Repos\FHIR.Publication.DSTU2\Fhir.Publication\Framework\Processor.cs:line 31
+   at Hl7.Fhir.Publication.Framework.Processor.Process(PipeLine pipeline, ISelector filter, Log log, IDirectoryCreator fileCreator) in C:\Users\rmk\Source\Repos\FHIR.Publication.DSTU2\Fhir.Publication\Framework\Processor.cs:line 38
+   at Hl7.Fhir.Publication.Framework.Statement.Execute(Log log, IDirectoryCreator directoryCreator) in C:\Users\rmk\Source\Repos\FHIR.Publication.DSTU2\Fhir.Publication\Framework\Statement.cs:line 31
+   at Hl7.Fhir.Publication.Framework.Make.Bulk.Execute(Log log, IDirectoryCreator directoryCreator) in C:\Users\rmk\Source\Repos\FHIR.Publication.DSTU2\Fhir.Publication\Framework\Make\Bulk.cs:line 25
+   at Hl7.Fhir.Publication.Framework.Publisher.Publish() in C:\Users\rmk\Source\Repos\FHIR.Publication.DSTU2\Fhir.Publication\Framework\Publisher.cs:line 80 
+ InnerException: 

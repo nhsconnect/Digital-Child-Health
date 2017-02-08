@@ -1,0 +1,96 @@
+
+***Furnace log date run: 09 January 2017 1157 ***
+Furnace: Fhir publisher tool version: 2.7.6179.25752
+***Starting generation***
+Source directory: C:\GitRepo\DCH\Generation 
+ Target Directory: C:\GitRepo\DCH\Generated
+Clear down Generated folder
+Copying files into Schemas folder ...
+Copying files into dist folder ...
+Start: creating IGResource.xml
+End: IGResource.xml created
+Markdown rendering - index 	: index.md
+Markdown rendering - index 	: index.md
+Markdown rendering - index 	: index.md
+Markdown rendering - index 	: index.md
+Markdown rendering - index 	: index.md
+Razor rendering index
+Razor rendering index
+Razor rendering index
+Razor rendering index
+Razor rendering index
+Create folder Profile.BirthEvent
+IG Creation - Adding DCH-Baby-Patient to IGResource.xml
+            - Adding Profile.BirthEvent package to IGResource.xml
+            - Saving DCH-Baby-Patient.xml in StructureDefinition folder
+IG Creation - DCH-Baby-Patient finished
+IG Creation - Adding DCH-Mother-Patient-1-0 to IGResource.xml
+            - Saving DCH-Mother-Patient-1-0.xml in StructureDefinition folder
+IG Creation - DCH-Mother-Patient-1-0 finished
+IG Creation - Adding DCH-QuestionnaireResponse-1-0 to IGResource.xml
+            - Saving DCH-QuestionnaireResponse-1-0.xml in StructureDefinition folder
+IG Creation - DCH-QuestionnaireResponse-1-0 finished
+IG Creation - Adding DCH-RelatedPerson-1-0 to IGResource.xml
+            - Saving DCH-RelatedPerson-1-0.xml in StructureDefinition folder
+IG Creation - DCH-RelatedPerson-1-0 finished
+IG Creation - Adding actual-delivery-place-type1-0 to IGResource.xml
+            - Saving actual-delivery-place-type1-0.xml in ValueSet folder
+IG Creation - actual-delivery-place-type1-0 finished
+IG Creation - Adding administrative-gender-1 to IGResource.xml
+            - Saving administrative-gender-1.xml in ValueSet folder
+IG Creation - administrative-gender-1 finished
+IG Creation - Adding administrative-gender-ddmap-1 to IGResource.xml
+            - Saving administrative-gender-ddmap-1.xml in ValueSet folder
+IG Creation - administrative-gender-ddmap-1 finished
+IG Creation - Adding birth-complication-1-0 to IGResource.xml
+            - Saving birth-complication-1-0.xml in ValueSet folder
+IG Creation - birth-complication-1-0 finished
+IG Creation - Adding delivery-method-1-0 to IGResource.xml
+            - Saving delivery-method-1-0.xml in ValueSet folder
+IG Creation - delivery-method-1-0 finished
+IG Creation - Adding midwifery-unit-type-1-0 to IGResource.xml
+            - Saving midwifery-unit-type-1-0.xml in ValueSet folder
+IG Creation - midwifery-unit-type-1-0 finished
+Profile Table: IGResource.
+Loading resources into resource store
+Create directory C:\GitRepo\DCH\Generated\Profile.BirthEvent
+Render profile table Profile.BirthEvent
+Profile Table: Finish - IGResource
+Loading resources into resource store
+Structure Page: Start - Profile.BirthEvent : DCH-Baby-Patient-1-0
+Creating structure for DCH-Baby-Patient-1-0
+CreateRow Patient( Patient )
+CreateRow Patient.identifier( Patient )
+CreateRow Patient.identifier( Patient )
+CreateRow Patient.identifier.system( Patient )
+CreateRow Patient.identifier.value( Patient )
+CreateRow Patient.identifier( Patient )
+CreateRow Patient.identifier.system( Patient )
+CreateRow Patient.identifier.value( Patient )
+CreateRow Patient.gender( Patient )
+**Error** 
+ Message:  ValueSet resource with url: http://fhir.nhs.net/ValueSet/administrative-gender-1-0 does not exist in Profile.BirthEvent! 
+ Stacktrace:    at Hl7.Fhir.Publication.ImplementationGuide.ResourceStore.GetValuesetByUrl(String url, String package) in C:\Users\rmk\Source\Repos\FHIR.Publication.DSTU2\Fhir.Publication\ImplementationGuide\ResourceStore.cs:line 103
+   at Hl7.Fhir.Publication.ImplementationGuide.ResourceStore.GetValuesetNameByUrl(String url, String package) in C:\Users\rmk\Source\Repos\FHIR.Publication.DSTU2\Fhir.Publication\ImplementationGuide\ResourceStore.cs:line 134
+   at Hl7.Fhir.Publication.Specification.Profile.Binding.GetLink(ResourceStore resourceStore, String packageName) in C:\Users\rmk\Source\Repos\FHIR.Publication.DSTU2\Fhir.Publication\Specification\Profile\Binding.cs:line 31
+   at Hl7.Fhir.Publication.Specification.Profile.Bindings.Formatter.get_Reference() in C:\Users\rmk\Source\Repos\FHIR.Publication.DSTU2\Fhir.Publication\Specification\Profile\Bindings\Formatter.cs:line 24
+   at Hl7.Fhir.Publication.Specification.Profile.Structure.Description.BindingFormatter.GetFormattedBinding() in C:\Users\rmk\Source\Repos\FHIR.Publication.DSTU2\Fhir.Publication\Specification\Profile\Structure\Description\BindingFormatter.cs:line 64
+   at Hl7.Fhir.Publication.Specification.Profile.Structure.Description.Formatter.AddDefinitionValues() in C:\Users\rmk\Source\Repos\FHIR.Publication.DSTU2\Fhir.Publication\Specification\Profile\Structure\Description\Formatter.cs:line 125
+   at Hl7.Fhir.Publication.Specification.Profile.Structure.Description.Formatter..ctor(ElementDefinition element, ElementDefinition fallback, ResourceStore resourceStore, String package) in C:\Users\rmk\Source\Repos\FHIR.Publication.DSTU2\Fhir.Publication\Specification\Profile\Structure\Description\Formatter.cs:line 47
+   at Hl7.Fhir.Publication.Specification.Profile.Structure.Rows.Row.get_Description() in C:\Users\rmk\Source\Repos\FHIR.Publication.DSTU2\Fhir.Publication\Specification\Profile\Structure\Rows\Row.cs:line 63
+   at Hl7.Fhir.Publication.Specification.Profile.Structure.Rows.ElementRow.get_Value() in C:\Users\rmk\Source\Repos\FHIR.Publication.DSTU2\Fhir.Publication\Specification\Profile\Structure\Rows\ElementRow.cs:line 54
+   at Hl7.Fhir.Publication.Specification.Profile.Structure.Factory.CreateRow(ElementDefinition elementDefinition, StructureDefinition profile, Boolean showMissing, ICollection`1 rows, ElementNavigator navigator) in C:\Users\rmk\Source\Repos\FHIR.Publication.DSTU2\Fhir.Publication\Specification\Profile\Structure\Factory.cs:line 222
+   at Hl7.Fhir.Publication.Specification.Profile.Structure.Factory.GetElementRow(ICollection`1 rows, ElementNavigator navigator, StructureDefinition profile, Boolean showMissing) in C:\Users\rmk\Source\Repos\FHIR.Publication.DSTU2\Fhir.Publication\Specification\Profile\Structure\Factory.cs:line 116
+   at Hl7.Fhir.Publication.Specification.Profile.Structure.Factory.CreateRow(ElementDefinition elementDefinition, StructureDefinition profile, Boolean showMissing, ICollection`1 rows, ElementNavigator navigator) in C:\Users\rmk\Source\Repos\FHIR.Publication.DSTU2\Fhir.Publication\Specification\Profile\Structure\Factory.cs:line 232
+   at Hl7.Fhir.Publication.Specification.Profile.Structure.Factory.GetElementRow(ICollection`1 rows, ElementNavigator navigator, StructureDefinition profile, Boolean showMissing) in C:\Users\rmk\Source\Repos\FHIR.Publication.DSTU2\Fhir.Publication\Specification\Profile\Structure\Factory.cs:line 116
+   at Hl7.Fhir.Publication.Specification.Profile.Structure.Factory.GenerateStructure(StructureDefinition structure, Boolean isDifferential) in C:\Users\rmk\Source\Repos\FHIR.Publication.DSTU2\Fhir.Publication\Specification\Profile\Structure\Factory.cs:line 92
+   at Hl7.Fhir.Publication.Processors.Profile.StructureProcessor.CreateStructureDefinitionPage(ResourceComponent resource) in C:\Users\rmk\Source\Repos\FHIR.Publication.DSTU2\Fhir.Publication\Processors\Profile\StructureProcessor.cs:line 113
+   at Hl7.Fhir.Publication.Processors.Profile.StructureProcessor.CreatePagesInPackage() in C:\Users\rmk\Source\Repos\FHIR.Publication.DSTU2\Fhir.Publication\Processors\Profile\StructureProcessor.cs:line 91
+   at Hl7.Fhir.Publication.Processors.Profile.StructureProcessor.Process(Document input, Stage output, Log log, IDirectoryCreator directoryCreator) in C:\Users\rmk\Source\Repos\FHIR.Publication.DSTU2\Fhir.Publication\Processors\Profile\StructureProcessor.cs:line 63
+   at Hl7.Fhir.Publication.Framework.Processor.Process(IProcessor processor, Stage input, Log log, IDirectoryCreator directoryCreator) in C:\Users\rmk\Source\Repos\FHIR.Publication.DSTU2\Fhir.Publication\Framework\Processor.cs:line 16
+   at Hl7.Fhir.Publication.Framework.Processor.Process(PipeLine pipeline, Stage input, Log log, IDirectoryCreator fileCreator) in C:\Users\rmk\Source\Repos\FHIR.Publication.DSTU2\Fhir.Publication\Framework\Processor.cs:line 31
+   at Hl7.Fhir.Publication.Framework.Processor.Process(PipeLine pipeline, ISelector filter, Log log, IDirectoryCreator fileCreator) in C:\Users\rmk\Source\Repos\FHIR.Publication.DSTU2\Fhir.Publication\Framework\Processor.cs:line 38
+   at Hl7.Fhir.Publication.Framework.Statement.Execute(Log log, IDirectoryCreator directoryCreator) in C:\Users\rmk\Source\Repos\FHIR.Publication.DSTU2\Fhir.Publication\Framework\Statement.cs:line 31
+   at Hl7.Fhir.Publication.Framework.Make.Bulk.Execute(Log log, IDirectoryCreator directoryCreator) in C:\Users\rmk\Source\Repos\FHIR.Publication.DSTU2\Fhir.Publication\Framework\Make\Bulk.cs:line 25
+   at Hl7.Fhir.Publication.Framework.Publisher.Publish() in C:\Users\rmk\Source\Repos\FHIR.Publication.DSTU2\Fhir.Publication\Framework\Publisher.cs:line 80 
+ InnerException: 

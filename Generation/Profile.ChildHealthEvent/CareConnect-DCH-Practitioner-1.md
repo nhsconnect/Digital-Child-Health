@@ -1,0 +1,1 @@
+The CareConnect Practitioner profile, with further constraints applied to represent a practitioner for a Child Health Event.

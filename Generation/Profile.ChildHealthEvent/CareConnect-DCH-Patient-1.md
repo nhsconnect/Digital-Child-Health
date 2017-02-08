@@ -1,0 +1,1 @@
+The Care Connect Patient profile, with further constraints applied to represent a Patient for a Child Health Event.

@@ -1,0 +1,1 @@
+The Care Connect Organization profile, with further constraints applied to represent an organisation for a Child Health Event.

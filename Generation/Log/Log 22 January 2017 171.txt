@@ -1,0 +1,1218 @@
+
+***Furnace log date run: 22 January 2017 171 ***
+Furnace: Fhir publisher tool version: 2.7.6179.25752
+***Starting generation***
+Source directory: C:\SVNExports\FHIR\DCH\Generation 
+ Target Directory: C:\SVNExports\FHIR\DCH\Generated
+Clear down Generated folder
+Copying files into Schemas folder ...
+Copying files into dist folder ...
+Start: creating IGResource.xml
+End: IGResource.xml created
+Markdown rendering - index 	: index.md
+Markdown rendering - index 	: index.md
+Markdown rendering - index 	: index.md
+Markdown rendering - index 	: index.md
+Markdown rendering - index 	: index.md
+Razor rendering index
+Razor rendering index
+Razor rendering index
+Razor rendering index
+Razor rendering index
+Create folder Profile.BirthEvent
+IG Creation - Adding CareConnect-DCH-Patient-Baby-1 to IGResource.xml
+            - Adding Profile.BirthEvent package to IGResource.xml
+            - Saving CareConnect-DCH-Patient-Baby-1.xml in StructureDefinition folder
+IG Creation - CareConnect-DCH-Patient-Baby-1 finished
+IG Creation - Adding CareConnect-DCH-Patient-Mother-1 to IGResource.xml
+            - Saving CareConnect-DCH-Patient-Mother-1.xml in StructureDefinition folder
+IG Creation - CareConnect-DCH-Patient-Mother-1 finished
+IG Creation - Adding DCH-Bundle-BirthEvent-1 to IGResource.xml
+            - Saving DCH-Bundle-BirthEvent-1.xml in StructureDefinition folder
+IG Creation - DCH-Bundle-BirthEvent-1 finished
+IG Creation - Adding DCH-Composition-Birth-Event-1 to IGResource.xml
+            - Saving DCH-Composition-Birth-Event-1.xml in StructureDefinition folder
+IG Creation - DCH-Composition-Birth-Event-1 finished
+IG Creation - Adding DCH-Condition-Baby-Complication-At-Birth-1 to IGResource.xml
+            - Saving DCH-Condition-Baby-Complication-At-Birth-1.xml in StructureDefinition folder
+IG Creation - DCH-Condition-Baby-Complication-At-Birth-1 finished
+IG Creation - Adding DCH-Encounter-Birth-Event-1 to IGResource.xml
+            - Saving DCH-Encounter-Birth-Event-1.xml in StructureDefinition folder
+IG Creation - DCH-Encounter-Birth-Event-1 finished
+IG Creation - Adding DCH-Encounter-Delivery-Event-1 to IGResource.xml
+            - Saving DCH-Encounter-Delivery-Event-1.xml in StructureDefinition folder
+IG Creation - DCH-Encounter-Delivery-Event-1 finished
+IG Creation - Adding DCH-Encounter-Neonatal-Critical-Care-1 to IGResource.xml
+            - Saving DCH-Encounter-Neonatal-Critical-Care-1.xml in StructureDefinition folder
+IG Creation - DCH-Encounter-Neonatal-Critical-Care-1 finished
+IG Creation - Adding DCH-HealthcareService-1 to IGResource.xml
+            - Saving DCH-HealthcareService-1.xml in StructureDefinition folder
+IG Creation - DCH-HealthcareService-1 finished
+IG Creation - Adding DCH-Location-1 to IGResource.xml
+            - Saving DCH-Location-1.xml in StructureDefinition folder
+IG Creation - DCH-Location-1 finished
+IG Creation - Adding DCH-Location-Actual-Delivery-Place-1 to IGResource.xml
+            - Saving DCH-Location-Actual-Delivery-Place-1.xml in StructureDefinition folder
+IG Creation - DCH-Location-Actual-Delivery-Place-1 finished
+IG Creation - Adding DCH-Location-Neonatal-Unit-1 to IGResource.xml
+            - Saving DCH-Location-Neonatal-Unit-1.xml in StructureDefinition folder
+IG Creation - DCH-Location-Neonatal-Unit-1 finished
+IG Creation - Adding DCH-MessageHeader-BirthEvent-1 to IGResource.xml
+            - Saving DCH-MessageHeader-BirthEvent-1.xml in StructureDefinition folder
+IG Creation - DCH-MessageHeader-BirthEvent-1 finished
+IG Creation - Adding DCH-Observation-Apgar-Score-5Minutes-1 to IGResource.xml
+            - Saving DCH-Observation-Apgar-Score-5Minutes-1.xml in StructureDefinition folder
+IG Creation - DCH-Observation-Apgar-Score-5Minutes-1 finished
+IG Creation - Adding DCH-Observation-Birth-Weight-1 to IGResource.xml
+            - Saving DCH-Observation-Birth-Weight-1.xml in StructureDefinition folder
+IG Creation - DCH-Observation-Birth-Weight-1 finished
+IG Creation - Adding DCH-Observation-Gestation-Length-At-Birth-1 to IGResource.xml
+            - Saving DCH-Observation-Gestation-Length-At-Birth-1.xml in StructureDefinition folder
+IG Creation - DCH-Observation-Gestation-Length-At-Birth-1 finished
+IG Creation - Adding DCH-Observation-Head-Circumference-1 to IGResource.xml
+            - Saving DCH-Observation-Head-Circumference-1.xml in StructureDefinition folder
+IG Creation - DCH-Observation-Head-Circumference-1 finished
+IG Creation - Adding DCH-Organization-1 to IGResource.xml
+            - Saving DCH-Organization-1.xml in StructureDefinition folder
+IG Creation - DCH-Organization-1 finished
+IG Creation - Adding DCH-Procedure-Delivery-Method-1 to IGResource.xml
+            - Saving DCH-Procedure-Delivery-Method-1.xml in StructureDefinition folder
+IG Creation - DCH-Procedure-Delivery-Method-1 finished
+IG Creation - Adding DCH-RelatedPerson-1 to IGResource.xml
+            - Saving DCH-RelatedPerson-1.xml in StructureDefinition folder
+IG Creation - DCH-RelatedPerson-1 finished
+IG Creation - Adding Extension-DCH-Event-DateTime-1 to IGResource.xml
+            - Saving Extension-DCH-Event-DateTime-1.xml in StructureDefinition folder
+IG Creation - Extension-DCH-Event-DateTime-1 finished
+IG Creation - Adding Extension-DCH-Event-Location-1 to IGResource.xml
+            - Saving Extension-DCH-Event-Location-1.xml in StructureDefinition folder
+IG Creation - Extension-DCH-Event-Location-1 finished
+IG Creation - Adding Extension-DCH-Originating-Service-1 to IGResource.xml
+            - Saving Extension-DCH-Originating-Service-1.xml in StructureDefinition folder
+IG Creation - Extension-DCH-Originating-Service-1 finished
+IG Creation - Adding Extension-DCH-Originating-Service-Provider-1 to IGResource.xml
+            - Saving Extension-DCH-Originating-Service-Provider-1.xml in StructureDefinition folder
+IG Creation - Extension-DCH-Originating-Service-Provider-1 finished
+IG Creation - Adding Extension-DCH-Publication-Reference-1 to IGResource.xml
+            - Saving Extension-DCH-Publication-Reference-1.xml in StructureDefinition folder
+IG Creation - Extension-DCH-Publication-Reference-1 finished
+IG Creation - Adding Extension-Ethnic-Category-1 to IGResource.xml
+            - Saving Extension-Ethnic-Category-1.xml in StructureDefinition folder
+IG Creation - Extension-Ethnic-Category-1 finished
+IG Creation - Adding Extension-NHS-Communication-1 to IGResource.xml
+            - Saving Extension-NHS-Communication-1.xml in StructureDefinition folder
+IG Creation - Extension-NHS-Communication-1 finished
+IG Creation - Adding Extension-NHSNumberVerificationStatus-1 to IGResource.xml
+            - Saving Extension-NHSNumberVerificationStatus-1.xml in StructureDefinition folder
+IG Creation - Extension-NHSNumberVerificationStatus-1 finished
+IG Creation - Adding Extension-Organ-Donor-1 to IGResource.xml
+            - Saving Extension-Organ-Donor-1.xml in StructureDefinition folder
+IG Creation - Extension-Organ-Donor-1 finished
+IG Creation - Adding Extension-Registration-Details-1 to IGResource.xml
+            - Saving Extension-Registration-Details-1.xml in StructureDefinition folder
+IG Creation - Extension-Registration-Details-1 finished
+IG Creation - Adding Extension-Religious-Affiliation-SnCT-1 to IGResource.xml
+            - Saving Extension-Religious-Affiliation-SnCT-1.xml in StructureDefinition folder
+IG Creation - Extension-Religious-Affiliation-SnCT-1 finished
+IG Creation - Adding Extension-Residential-Status-1 to IGResource.xml
+            - Saving Extension-Residential-Status-1.xml in StructureDefinition folder
+IG Creation - Extension-Residential-Status-1 finished
+IG Creation - Adding Extension-Treatment-Category-1 to IGResource.xml
+            - Saving Extension-Treatment-Category-1.xml in StructureDefinition folder
+IG Creation - Extension-Treatment-Category-1 finished
+IG Creation - Adding Patient-BirthTime to IGResource.xml
+            - Saving Patient-BirthTime.xml in StructureDefinition folder
+IG Creation - Patient-BirthTime finished
+IG Creation - Adding actual-delivery-place-type1 to IGResource.xml
+            - Saving actual-delivery-place-type1.xml in ValueSet folder
+IG Creation - actual-delivery-place-type1 finished
+IG Creation - Adding administrative-gender-1 to IGResource.xml
+            - Saving administrative-gender-1.xml in ValueSet folder
+IG Creation - administrative-gender-1 finished
+IG Creation - Adding administrative-gender-ddmap-1 to IGResource.xml
+            - Saving administrative-gender-ddmap-1.xml in ValueSet folder
+IG Creation - administrative-gender-ddmap-1 finished
+IG Creation - Adding birth-complication-1 to IGResource.xml
+            - Saving birth-complication-1.xml in ValueSet folder
+IG Creation - birth-complication-1 finished
+IG Creation - Adding cda-encounter-type-snct-1 to IGResource.xml
+            - Saving cda-encounter-type-snct-1.xml in ValueSet folder
+IG Creation - cda-encounter-type-snct-1 finished
+IG Creation - Adding cda-person-relationship-type-1 to IGResource.xml
+            - Saving cda-person-relationship-type-1.xml in ValueSet folder
+IG Creation - cda-person-relationship-type-1 finished
+IG Creation - Adding delivery-method-1 to IGResource.xml
+            - Saving delivery-method-1.xml in ValueSet folder
+IG Creation - delivery-method-1 finished
+IG Creation - Adding Ethnic-Category-1 to IGResource.xml
+            - Saving Ethnic-Category-1.xml in ValueSet folder
+IG Creation - Ethnic-Category-1 finished
+IG Creation - Adding event-type-1 to IGResource.xml
+            - Saving event-type-1.xml in ValueSet folder
+IG Creation - event-type-1 finished
+IG Creation - Adding Guardian-Role-Type-1 to IGResource.xml
+            - Saving Guardian-Role-Type-1.xml in ValueSet folder
+IG Creation - Guardian-Role-Type-1 finished
+IG Creation - Adding Human-Language-1 to IGResource.xml
+            - Saving Human-Language-1.xml in ValueSet folder
+IG Creation - Human-Language-1 finished
+IG Creation - Adding Language-Ability-Mode-1 to IGResource.xml
+            - Saving Language-Ability-Mode-1.xml in ValueSet folder
+IG Creation - Language-Ability-Mode-1 finished
+IG Creation - Adding Language-Ability-Proficiency-1 to IGResource.xml
+            - Saving Language-Ability-Proficiency-1.xml in ValueSet folder
+IG Creation - Language-Ability-Proficiency-1 finished
+IG Creation - Adding Marital-Status-1 to IGResource.xml
+            - Saving Marital-Status-1.xml in ValueSet folder
+IG Creation - Marital-Status-1 finished
+IG Creation - Adding midwifery-unit-type-1 to IGResource.xml
+            - Saving midwifery-unit-type-1.xml in ValueSet folder
+IG Creation - midwifery-unit-type-1 finished
+IG Creation - Adding NHS-Number-Status-Indicator-1 to IGResource.xml
+            - Saving NHS-Number-Status-Indicator-1.xml in ValueSet folder
+IG Creation - NHS-Number-Status-Indicator-1 finished
+IG Creation - Adding Registration-Status-1 to IGResource.xml
+            - Saving Registration-Status-1.xml in ValueSet folder
+IG Creation - Registration-Status-1 finished
+IG Creation - Adding Registration-Type-1 to IGResource.xml
+            - Saving Registration-Type-1.xml in ValueSet folder
+IG Creation - Registration-Type-1 finished
+IG Creation - Adding Religious-Affiliation-SnCT-1 to IGResource.xml
+            - Saving Religious-Affiliation-SnCT-1.xml in ValueSet folder
+IG Creation - Religious-Affiliation-SnCT-1 finished
+IG Creation - Adding Residential-Status-1 to IGResource.xml
+            - Saving Residential-Status-1.xml in ValueSet folder
+IG Creation - Residential-Status-1 finished
+IG Creation - Adding Treatment-Category-1 to IGResource.xml
+            - Saving Treatment-Category-1.xml in ValueSet folder
+IG Creation - Treatment-Category-1 finished
+Create folder Profile.ChildHealthEvent
+IG Creation - Adding CareConnect-DCH-Condition-1 to IGResource.xml
+            - Adding Profile.ChildHealthEvent package to IGResource.xml
+            - Saving CareConnect-DCH-Condition-1.xml in StructureDefinition folder
+IG Creation - CareConnect-DCH-Condition-1 finished
+IG Creation - Adding CareConnect-DCH-Encounter-Child-Health-Event-1 to IGResource.xml
+            - Saving CareConnect-DCH-Encounter-Child-Health-Event-1.xml in StructureDefinition folder
+IG Creation - CareConnect-DCH-Encounter-Child-Health-Event-1 finished
+IG Creation - Adding CareConnect-DCH-Location-1 to IGResource.xml
+            - Saving CareConnect-DCH-Location-1.xml in StructureDefinition folder
+IG Creation - CareConnect-DCH-Location-1 finished
+IG Creation - Adding CareConnect-DCH-Organization-1 to IGResource.xml
+            - Saving CareConnect-DCH-Organization-1.xml in StructureDefinition folder
+IG Creation - CareConnect-DCH-Organization-1 finished
+IG Creation - Adding CareConnect-DCH-Patient-1 to IGResource.xml
+            - Saving CareConnect-DCH-Patient-1.xml in StructureDefinition folder
+IG Creation - CareConnect-DCH-Patient-1 finished
+IG Creation - Adding CareConnect-DCH-Practitioner-1 to IGResource.xml
+            - Saving CareConnect-DCH-Practitioner-1.xml in StructureDefinition folder
+IG Creation - CareConnect-DCH-Practitioner-1 finished
+IG Creation - Adding CareConnect-DCH-Procedure-1 to IGResource.xml
+            - Saving CareConnect-DCH-Procedure-1.xml in StructureDefinition folder
+IG Creation - CareConnect-DCH-Procedure-1 finished
+IG Creation - Adding CareConnect-Medication-1 to IGResource.xml
+            - Saving CareConnect-Medication-1.xml in StructureDefinition folder
+IG Creation - CareConnect-Medication-1 finished
+IG Creation - Adding DCH-Bundle-Child-Health-Event-1 to IGResource.xml
+            - Saving DCH-Bundle-Child-Health-Event-1.xml in StructureDefinition folder
+IG Creation - DCH-Bundle-Child-Health-Event-1 finished
+IG Creation - Adding Extension-CareConnect-ConditionEpisode-1 to IGResource.xml
+            - Saving Extension-CareConnect-ConditionEpisode-1.xml in StructureDefinition folder
+IG Creation - Extension-CareConnect-ConditionEpisode-1 finished
+IG Creation - Adding Extension-CareConnect-ConditionRelationship-1 to IGResource.xml
+            - Saving Extension-CareConnect-ConditionRelationship-1.xml in StructureDefinition folder
+IG Creation - Extension-CareConnect-ConditionRelationship-1 finished
+IG Creation - Adding Extension-CareConnect-DateRecorded-1 to IGResource.xml
+            - Saving Extension-CareConnect-DateRecorded-1.xml in StructureDefinition folder
+IG Creation - Extension-CareConnect-DateRecorded-1 finished
+IG Creation - Adding Extension-CareConnect-Encounter-Transport-1 to IGResource.xml
+            - Saving Extension-CareConnect-Encounter-Transport-1.xml in StructureDefinition folder
+IG Creation - Extension-CareConnect-Encounter-Transport-1 finished
+IG Creation - Adding Extension-CareConnect-EthnicCategory-1 to IGResource.xml
+            - Saving Extension-CareConnect-EthnicCategory-1.xml in StructureDefinition folder
+IG Creation - Extension-CareConnect-EthnicCategory-1 finished
+IG Creation - Adding Extension-CareConnect-MainLocation-1 to IGResource.xml
+            - Saving Extension-CareConnect-MainLocation-1.xml in StructureDefinition folder
+IG Creation - Extension-CareConnect-MainLocation-1 finished
+IG Creation - Adding Extension-CareConnect-NhsCommunication-1 to IGResource.xml
+            - Saving Extension-CareConnect-NhsCommunication-1.xml in StructureDefinition folder
+IG Creation - Extension-CareConnect-NhsCommunication-1 finished
+IG Creation - Adding Extension-CareConnect-NHSNumberVerificationStatus-1 to IGResource.xml
+            - Saving Extension-CareConnect-NHSNumberVerificationStatus-1.xml in StructureDefinition folder
+IG Creation - Extension-CareConnect-NHSNumberVerificationStatus-1 finished
+IG Creation - Adding Extension-CareConnect-OrganDonor-1 to IGResource.xml
+            - Saving Extension-CareConnect-OrganDonor-1.xml in StructureDefinition folder
+IG Creation - Extension-CareConnect-OrganDonor-1 finished
+IG Creation - Adding Extension-CareConnect-ReasonCondition-1 to IGResource.xml
+            - Saving Extension-CareConnect-ReasonCondition-1.xml in StructureDefinition folder
+IG Creation - Extension-CareConnect-ReasonCondition-1 finished
+IG Creation - Adding Extension-CareConnect-RegistrationDetails-1 to IGResource.xml
+            - Saving Extension-CareConnect-RegistrationDetails-1.xml in StructureDefinition folder
+IG Creation - Extension-CareConnect-RegistrationDetails-1 finished
+IG Creation - Adding Extension-CareConnect-ReligiousAffiliation-1 to IGResource.xml
+            - Saving Extension-CareConnect-ReligiousAffiliation-1.xml in StructureDefinition folder
+IG Creation - Extension-CareConnect-ReligiousAffiliation-1 finished
+IG Creation - Adding Extension-CareConnect-ResidentialStatus-1 to IGResource.xml
+            - Saving Extension-CareConnect-ResidentialStatus-1.xml in StructureDefinition folder
+IG Creation - Extension-CareConnect-ResidentialStatus-1 finished
+IG Creation - Adding Extension-CareConnect-TreatmentCategory-1 to IGResource.xml
+            - Saving Extension-CareConnect-TreatmentCategory-1.xml in StructureDefinition folder
+IG Creation - Extension-CareConnect-TreatmentCategory-1 finished
+IG Creation - Adding Extension-NHSNumberVerificationStatus-1 to IGResource.xml
+            - Saving Extension-NHSNumberVerificationStatus-1.xml in StructureDefinition folder
+IG Creation - Extension-NHSNumberVerificationStatus-1 finished
+IG Creation - Adding Patient-BirthTime to IGResource.xml
+            - Saving Patient-BirthTime.xml in StructureDefinition folder
+IG Creation - Patient-BirthTime finished
+IG Creation - Adding administrative-gender-1 to IGResource.xml
+            - Saving administrative-gender-1.xml in ValueSet folder
+IG Creation - administrative-gender-1 finished
+IG Creation - Adding administrative-gender-ddmap-1 to IGResource.xml
+            - Saving administrative-gender-ddmap-1.xml in ValueSet folder
+IG Creation - administrative-gender-ddmap-1 finished
+IG Creation - Adding CareConnect-ConditionEpisodicity-1 to IGResource.xml
+            - Saving CareConnect-ConditionEpisodicity-1.xml in ValueSet folder
+IG Creation - CareConnect-ConditionEpisodicity-1 finished
+IG Creation - Adding CareConnect-ConditionRelationship-1 to IGResource.xml
+            - Saving CareConnect-ConditionRelationship-1.xml in ValueSet folder
+IG Creation - CareConnect-ConditionRelationship-1 finished
+IG Creation - Adding CareConnect-EncounterType-1 to IGResource.xml
+            - Saving CareConnect-EncounterType-1.xml in ValueSet folder
+IG Creation - CareConnect-EncounterType-1 finished
+IG Creation - Adding cda-person-relationship-type-1 to IGResource.xml
+            - Saving cda-person-relationship-type-1.xml in ValueSet folder
+IG Creation - cda-person-relationship-type-1 finished
+IG Creation - Adding Ethnic-Category-1 to IGResource.xml
+            - Saving Ethnic-Category-1.xml in ValueSet folder
+IG Creation - Ethnic-Category-1 finished
+IG Creation - Adding Guardian-Role-Type-1 to IGResource.xml
+            - Saving Guardian-Role-Type-1.xml in ValueSet folder
+IG Creation - Guardian-Role-Type-1 finished
+IG Creation - Adding Human-Language-1 to IGResource.xml
+            - Saving Human-Language-1.xml in ValueSet folder
+IG Creation - Human-Language-1 finished
+IG Creation - Adding Language-Ability-Mode-1 to IGResource.xml
+            - Saving Language-Ability-Mode-1.xml in ValueSet folder
+IG Creation - Language-Ability-Mode-1 finished
+IG Creation - Adding Language-Ability-Proficiency-1 to IGResource.xml
+            - Saving Language-Ability-Proficiency-1.xml in ValueSet folder
+IG Creation - Language-Ability-Proficiency-1 finished
+IG Creation - Adding Marital-Status-1 to IGResource.xml
+            - Saving Marital-Status-1.xml in ValueSet folder
+IG Creation - Marital-Status-1 finished
+IG Creation - Adding NHS-Number-Status-Indicator-1 to IGResource.xml
+            - Saving NHS-Number-Status-Indicator-1.xml in ValueSet folder
+IG Creation - NHS-Number-Status-Indicator-1 finished
+IG Creation - Adding Registration-Status-1 to IGResource.xml
+            - Saving Registration-Status-1.xml in ValueSet folder
+IG Creation - Registration-Status-1 finished
+IG Creation - Adding Registration-Type-1 to IGResource.xml
+            - Saving Registration-Type-1.xml in ValueSet folder
+IG Creation - Registration-Type-1 finished
+IG Creation - Adding Religious-Affiliation-SnCT-1 to IGResource.xml
+            - Saving Religious-Affiliation-SnCT-1.xml in ValueSet folder
+IG Creation - Religious-Affiliation-SnCT-1 finished
+IG Creation - Adding Residential-Status-1 to IGResource.xml
+            - Saving Residential-Status-1.xml in ValueSet folder
+IG Creation - Residential-Status-1 finished
+IG Creation - Adding Treatment-Category-1 to IGResource.xml
+            - Saving Treatment-Category-1.xml in ValueSet folder
+IG Creation - Treatment-Category-1 finished
+Profile Table: IGResource.
+Loading resources into resource store
+Create directory C:\SVNExports\FHIR\DCH\Generated\Profile.BirthEvent
+Render profile table Profile.BirthEvent
+Loading resources into resource store
+Create directory C:\SVNExports\FHIR\DCH\Generated\Profile.ChildHealthEvent
+Render profile table Profile.ChildHealthEvent
+Profile Table: Finish - IGResource
+Loading resources into resource store
+Structure Page: Start - Profile.BirthEvent : CareConnect-DCH-Patient-Baby-1
+Creating structure for CareConnect-DCH-Patient-Baby-1
+CreateRow Patient( Patient )
+CreateRow Patient.extension( Patient )
+CreateRow Patient.extension( Patient )
+CreateRow Patient.extension( Patient )
+CreateRow Patient.extension( Patient )
+CreateRow Patient.extension( Patient )
+CreateRow Patient.extension( Patient )
+CreateRow Patient.extension( Patient )
+CreateRow Patient.extension( Patient )
+CreateRow Patient.extension( Patient )
+CreateRow Patient.identifier( Patient )
+CreateRow Patient.identifier( Patient )
+CreateRow Patient.identifier.extension( Patient )
+CreateRow Patient.identifier.extension( Patient )
+CreateRow Patient.identifier.system( Patient )
+CreateRow Patient.identifier.value( Patient )
+CreateRow Patient.identifier( Patient )
+CreateRow Patient.identifier.use( Patient )
+CreateRow Patient.identifier.type( Patient )
+CreateRow Patient.identifier.type.coding( Patient )
+CreateRow Patient.identifier.type.coding.system( Patient )
+CreateRow Patient.identifier.type.coding.version( Patient )
+CreateRow Patient.identifier.type.coding.code( Patient )
+CreateRow Patient.identifier.type.coding.display( Patient )
+CreateRow Patient.identifier.type.coding.userSelected( Patient )
+CreateRow Patient.identifier.type.text( Patient )
+CreateRow Patient.identifier.system( Patient )
+CreateRow Patient.identifier.value( Patient )
+CreateRow Patient.identifier.period( Patient )
+CreateRow Patient.identifier.period.start( Patient )
+CreateRow Patient.identifier.period.end( Patient )
+CreateRow Patient.identifier.assigner( Patient )
+CreateRow Patient.identifier.assigner.reference( Patient )
+CreateRow Patient.identifier.assigner.display( Patient )
+CreateRow Patient.active( Patient )
+CreateRow Patient.name( Patient )
+CreateRow Patient.name( Patient )
+CreateRow Patient.name.use( Patient )
+CreateRow Patient.name.text( Patient )
+CreateRow Patient.name.family( Patient )
+CreateRow Patient.name.given( Patient )
+CreateRow Patient.name.prefix( Patient )
+CreateRow Patient.name.suffix( Patient )
+CreateRow Patient.name.period( Patient )
+CreateRow Patient.name.period.start( Patient )
+CreateRow Patient.name( Patient )
+CreateRow Patient.name.use( Patient )
+CreateRow Patient.name.text( Patient )
+CreateRow Patient.name.family( Patient )
+CreateRow Patient.name.given( Patient )
+CreateRow Patient.name.prefix( Patient )
+CreateRow Patient.name.suffix( Patient )
+CreateRow Patient.name.period( Patient )
+CreateRow Patient.name.period.start( Patient )
+CreateRow Patient.name.period.end( Patient )
+CreateRow Patient.telecom( Patient )
+CreateRow Patient.telecom.system( Patient )
+CreateRow Patient.telecom.value( Patient )
+CreateRow Patient.telecom.use( Patient )
+CreateRow Patient.telecom.period( Patient )
+CreateRow Patient.telecom.period.start( Patient )
+CreateRow Patient.telecom.period.end( Patient )
+CreateRow Patient.gender( Patient )
+CreateRow Patient.birthDate( Patient )
+CreateRow Patient.deceased[x]( Patient )
+CreateRow Patient.address( Patient )
+CreateRow Patient.address.use( Patient )
+CreateRow Patient.address.type( Patient )
+CreateRow Patient.address.text( Patient )
+CreateRow Patient.address.line( Patient )
+CreateRow Patient.address.city( Patient )
+CreateRow Patient.address.district( Patient )
+CreateRow Patient.address.postalCode( Patient )
+CreateRow Patient.address.country( Patient )
+CreateRow Patient.address.period( Patient )
+CreateRow Patient.address.period.start( Patient )
+CreateRow Patient.address.period.end( Patient )
+CreateRow Patient.maritalStatus( Patient )
+CreateRow Patient.maritalStatus.coding( Patient )
+CreateRow Patient.maritalStatus.coding.system( Patient )
+CreateRow Patient.maritalStatus.coding.version( Patient )
+CreateRow Patient.maritalStatus.coding.code( Patient )
+CreateRow Patient.maritalStatus.coding.display( Patient )
+CreateRow Patient.maritalStatus.coding.userSelected( Patient )
+CreateRow Patient.maritalStatus.text( Patient )
+CreateRow Patient.multipleBirth[x]( Patient )
+CreateRow Patient.contact( Patient )
+CreateRow Patient.contact.modifierExtension( Patient )
+CreateRow Patient.contact.relationship( Patient )
+CreateRow Patient.contact.relationship.coding( Patient )
+CreateRow Patient.contact.relationship.coding.system( Patient )
+CreateRow Patient.contact.relationship.coding.version( Patient )
+CreateRow Patient.contact.relationship.coding.code( Patient )
+CreateRow Patient.contact.relationship.coding.display( Patient )
+CreateRow Patient.contact.relationship.coding.userSelected( Patient )
+CreateRow Patient.contact.relationship.text( Patient )
+CreateRow Patient.contact.name( Patient )
+CreateRow Patient.contact.name.use( Patient )
+CreateRow Patient.contact.name.text( Patient )
+CreateRow Patient.contact.name.family( Patient )
+CreateRow Patient.contact.name.given( Patient )
+CreateRow Patient.contact.name.prefix( Patient )
+CreateRow Patient.contact.name.suffix( Patient )
+CreateRow Patient.contact.telecom( Patient )
+CreateRow Patient.contact.telecom.system( Patient )
+CreateRow Patient.contact.telecom.value( Patient )
+CreateRow Patient.contact.telecom.use( Patient )
+CreateRow Patient.contact.telecom.period( Patient )
+CreateRow Patient.contact.telecom.period.start( Patient )
+CreateRow Patient.contact.telecom.period.end( Patient )
+CreateRow Patient.contact.address( Patient )
+CreateRow Patient.contact.address.use( Patient )
+CreateRow Patient.contact.address.type( Patient )
+CreateRow Patient.contact.address.text( Patient )
+CreateRow Patient.contact.address.line( Patient )
+CreateRow Patient.contact.address.city( Patient )
+CreateRow Patient.contact.address.district( Patient )
+CreateRow Patient.contact.address.postalCode( Patient )
+CreateRow Patient.contact.address.country( Patient )
+CreateRow Patient.contact.address.period( Patient )
+CreateRow Patient.contact.address.period.start( Patient )
+CreateRow Patient.contact.address.period.end( Patient )
+CreateRow Patient.contact.gender( Patient )
+CreateRow Patient.contact.organization( Patient )
+CreateRow Patient.contact.organization.reference( Patient )
+CreateRow Patient.contact.organization.display( Patient )
+CreateRow Patient.contact.period( Patient )
+CreateRow Patient.contact.period.start( Patient )
+CreateRow Patient.contact.period.end( Patient )
+CreateRow Patient.careProvider( Patient )
+CreateRow Patient.managingOrganization( Patient )
+CreateRow Patient.managingOrganization.reference( Patient )
+CreateRow Patient.managingOrganization.display( Patient )
+CreateRow Patient.link( Patient )
+CreateRow Patient.link.modifierExtension( Patient )
+CreateRow Patient.link.other( Patient )
+CreateRow Patient.link.other.reference( Patient )
+CreateRow Patient.link.other.display( Patient )
+CreateRow Patient.link.type( Patient )
+ create Bindings table
+*** element Name for Patient.name.use has not been populated!
+*** element Name for Patient.name.use has not been populated!
+*** element Name for Patient.telecom.system has not been populated!
+*** element Name for Patient.telecom.use has not been populated!
+*** element Name for Patient.gender has not been populated!
+*** element Name for Patient.address.use has not been populated!
+*** element Name for Patient.address.type has not been populated!
+*** element Name for Patient.maritalStatus has not been populated!
+*** element Name for Patient.contact.relationship has not been populated!
+*** element Name for Patient.contact.relationship.coding has not been populated!
+*** element Name for Patient.contact.name.use has not been populated!
+*** element Name for Patient.contact.telecom.system has not been populated!
+*** element Name for Patient.contact.telecom.use has not been populated!
+*** element Name for Patient.contact.address.use has not been populated!
+*** element Name for Patient.contact.address.type has not been populated!
+*** element Name for Patient.contact.gender has not been populated!
+*** element Name for Patient.communication.language has not been populated!
+ format binding for Patient.name.use
+ format binding for Patient.telecom.system
+ format binding for Patient.telecom.use
+ format binding for Patient.gender
+ format binding for Patient.address.use
+ format binding for Patient.address.type
+ format binding for Patient.maritalStatus
+ format binding for Patient.contact.relationship
+ format binding for Patient.contact.relationship.coding
+ format binding for Patient.contact.telecom.system
+ format binding for Patient.contact.telecom.use
+ format binding for Patient.communication.language
+Render page CareConnect-DCH-Patient-Baby-1
+Structure Page: Finish - careconnect-dch-patient-baby-1
+Create example files
+Create resource files (Structure Definitions)
+Structure Page: Start - Profile.BirthEvent : CareConnect-DCH-Patient-Mother-1
+Creating structure for CareConnect-DCH-Patient-Mother-1
+CreateRow Patient( Patient )
+CreateRow Patient.extension( Patient )
+CreateRow Patient.extension( Patient )
+CreateRow Patient.extension( Patient )
+CreateRow Patient.extension( Patient )
+CreateRow Patient.extension( Patient )
+CreateRow Patient.extension( Patient )
+CreateRow Patient.extension( Patient )
+CreateRow Patient.extension( Patient )
+CreateRow Patient.extension( Patient )
+CreateRow Patient.identifier( Patient )
+CreateRow Patient.identifier( Patient )
+CreateRow Patient.identifier.extension( Patient )
+CreateRow Patient.identifier.extension( Patient )
+CreateRow Patient.identifier.system( Patient )
+CreateRow Patient.identifier.value( Patient )
+CreateRow Patient.identifier( Patient )
+CreateRow Patient.identifier.use( Patient )
+CreateRow Patient.identifier.type( Patient )
+CreateRow Patient.identifier.type.coding( Patient )
+CreateRow Patient.identifier.type.coding.system( Patient )
+CreateRow Patient.identifier.type.coding.version( Patient )
+CreateRow Patient.identifier.type.coding.code( Patient )
+CreateRow Patient.identifier.type.coding.display( Patient )
+CreateRow Patient.identifier.type.coding.userSelected( Patient )
+CreateRow Patient.identifier.type.text( Patient )
+CreateRow Patient.identifier.system( Patient )
+CreateRow Patient.identifier.value( Patient )
+CreateRow Patient.identifier.period( Patient )
+CreateRow Patient.identifier.period.start( Patient )
+CreateRow Patient.identifier.period.end( Patient )
+CreateRow Patient.identifier.assigner( Patient )
+CreateRow Patient.identifier.assigner.reference( Patient )
+CreateRow Patient.identifier.assigner.display( Patient )
+CreateRow Patient.active( Patient )
+CreateRow Patient.name( Patient )
+CreateRow Patient.name( Patient )
+CreateRow Patient.name.use( Patient )
+CreateRow Patient.name.text( Patient )
+CreateRow Patient.name.family( Patient )
+CreateRow Patient.name.given( Patient )
+CreateRow Patient.name.prefix( Patient )
+CreateRow Patient.name.suffix( Patient )
+CreateRow Patient.name.period( Patient )
+CreateRow Patient.name.period.start( Patient )
+CreateRow Patient.name( Patient )
+CreateRow Patient.name.use( Patient )
+CreateRow Patient.name.text( Patient )
+CreateRow Patient.name.family( Patient )
+CreateRow Patient.name.given( Patient )
+CreateRow Patient.name.prefix( Patient )
+CreateRow Patient.name.suffix( Patient )
+CreateRow Patient.name.period( Patient )
+CreateRow Patient.name.period.start( Patient )
+CreateRow Patient.name.period.end( Patient )
+CreateRow Patient.gender( Patient )
+CreateRow Patient.birthDate( Patient )
+CreateRow Patient.link( Patient )
+CreateRow Patient.link.modifierExtension( Patient )
+CreateRow Patient.link.other( Patient )
+CreateRow Patient.link.other.reference( Patient )
+CreateRow Patient.link.type( Patient )
+ create Bindings table
+*** element Name for Patient.name.use has not been populated!
+*** element Name for Patient.name.use has not been populated!
+*** element Name for Patient.telecom.system has not been populated!
+*** element Name for Patient.telecom.use has not been populated!
+*** element Name for Patient.gender has not been populated!
+*** element Name for Patient.address.use has not been populated!
+*** element Name for Patient.address.type has not been populated!
+*** element Name for Patient.contact.relationship has not been populated!
+*** element Name for Patient.contact.relationship.coding has not been populated!
+*** element Name for Patient.contact.name.use has not been populated!
+*** element Name for Patient.contact.telecom.system has not been populated!
+*** element Name for Patient.contact.telecom.use has not been populated!
+*** element Name for Patient.contact.address.use has not been populated!
+*** element Name for Patient.contact.address.type has not been populated!
+*** element Name for Patient.contact.gender has not been populated!
+*** element Name for Patient.communication.language has not been populated!
+*** element Name for Patient.link.type has not been populated!
+ format binding for Patient.name.use
+ format binding for Patient.telecom.system
+ format binding for Patient.telecom.use
+ format binding for Patient.gender
+ format binding for Patient.address.use
+ format binding for Patient.address.type
+ format binding for Patient.contact.relationship
+ format binding for Patient.contact.relationship.coding
+ format binding for Patient.contact.telecom.system
+ format binding for Patient.contact.telecom.use
+ format binding for Patient.communication.language
+ format binding for Patient.link.type
+Render page CareConnect-DCH-Patient-Mother-1
+Structure Page: Finish - careconnect-dch-patient-mother-1
+Create example files
+Create resource files (Structure Definitions)
+Structure Page: Start - Profile.BirthEvent : DCH-Bundle-BirthEvent-1
+Creating structure for DCH-Bundle-BirthEvent-1
+CreateRow Bundle( Bundle )
+CreateRow Bundle.type( Bundle )
+CreateRow Bundle.entry( Bundle )
+ create Bindings table
+Render page DCH-Bundle-BirthEvent-1
+Structure Page: Finish - dch-bundle-birthevent-1
+Create example files
+Create resource files (Structure Definitions)
+Structure Page: Start - Profile.BirthEvent : DCH-Composition-Birth-Event-1
+Creating structure for DCH-Composition-Birth-Event-1
+CreateRow Composition( Composition )
+CreateRow Composition.identifier( Composition )
+CreateRow Composition.identifier.system( Composition )
+CreateRow Composition.identifier.value( Composition )
+CreateRow Composition.date( Composition )
+CreateRow Composition.type( Composition )
+CreateRow Composition.type.coding( Composition )
+CreateRow Composition.type.coding.system( Composition )
+CreateRow Composition.type.coding.version( Composition )
+CreateRow Composition.type.coding.code( Composition )
+CreateRow Composition.type.coding.display( Composition )
+CreateRow Composition.type.coding.userSelected( Composition )
+CreateRow Composition.type.text( Composition )
+CreateRow Composition.title( Composition )
+CreateRow Composition.status( Composition )
+CreateRow Composition.confidentiality( Composition )
+CreateRow Composition.subject( Composition )
+CreateRow Composition.subject.reference( Composition )
+CreateRow Composition.subject.display( Composition )
+CreateRow Composition.author( Composition )
+CreateRow Composition.encounter( Composition )
+CreateRow Composition.encounter.reference( Composition )
+CreateRow Composition.encounter.display( Composition )
+CreateRow Composition.section( Composition )
+CreateRow Composition.section( Composition )
+CreateRow Composition.section.modifierExtension( Composition )
+CreateRow Composition.section.title( Composition )
+CreateRow Composition.section.text( Composition )
+CreateRow Composition.section.text.status( Composition )
+CreateRow Composition.section.text.div( Composition )
+CreateRow Composition.section.entry( Composition )
+CreateRow Composition.section.entry.reference( Composition )
+CreateRow Composition.section.entry.display( Composition )
+ create Bindings table
+Render page DCH-Composition-Birth-Event-1
+Structure Page: Finish - dch-composition-birth-event-1
+Create example files
+Create resource files (Structure Definitions)
+Structure Page: Start - Profile.BirthEvent : DCH-Condition-Baby-Complication-At-Birth-1
+Creating structure for DCH-Condition-Baby-Complication-At-Birth-1
+CreateRow Condition( Condition )
+CreateRow Condition.identifier( Condition )
+CreateRow Condition.identifier.value( Condition )
+CreateRow Condition.patient( Condition )
+CreateRow Condition.patient.reference( Condition )
+CreateRow Condition.encounter( Condition )
+CreateRow Condition.encounter.reference( Condition )
+CreateRow Condition.encounter.display( Condition )
+CreateRow Condition.code( Condition )
+CreateRow Condition.code.coding( Condition )
+CreateRow Condition.code.coding.system( Condition )
+CreateRow Condition.code.coding.code( Condition )
+CreateRow Condition.code.coding.display( Condition )
+CreateRow Condition.verificationStatus( Condition )
+ create Bindings table
+Render page DCH-Condition-Baby-Complication-At-Birth-1
+Structure Page: Finish - dch-condition-baby-complication-at-birth-1
+Create example files
+Create resource files (Structure Definitions)
+Structure Page: Start - Profile.BirthEvent : DCH-Encounter-Birth-Event-1
+Creating structure for DCH-Encounter-Birth-Event-1
+CreateRow Encounter( Encounter )
+CreateRow Encounter.identifier( Encounter )
+CreateRow Encounter.identifier.value( Encounter )
+CreateRow Encounter.status( Encounter )
+CreateRow Encounter.patient( Encounter )
+CreateRow Encounter.patient.reference( Encounter )
+CreateRow Encounter.patient.display( Encounter )
+CreateRow Encounter.location( Encounter )
+CreateRow Encounter.location.modifierExtension( Encounter )
+CreateRow Encounter.location.location( Encounter )
+CreateRow Encounter.location.location.reference( Encounter )
+CreateRow Encounter.location.location.display( Encounter )
+CreateRow Encounter.partOf( Encounter )
+CreateRow Encounter.partOf.reference( Encounter )
+CreateRow Encounter.partOf.display( Encounter )
+ create Bindings table
+Render page DCH-Encounter-Birth-Event-1
+Structure Page: Finish - dch-encounter-birth-event-1
+Create example files
+Create resource files (Structure Definitions)
+Structure Page: Start - Profile.BirthEvent : DCH-Encounter-Delivery-Event-1
+Creating structure for DCH-Encounter-Delivery-Event-1
+CreateRow Encounter( Encounter )
+CreateRow Encounter.identifier( Encounter )
+CreateRow Encounter.identifier.system( Encounter )
+CreateRow Encounter.identifier.value( Encounter )
+CreateRow Encounter.status( Encounter )
+CreateRow Encounter.patient( Encounter )
+CreateRow Encounter.patient.reference( Encounter )
+CreateRow Encounter.patient.display( Encounter )
+CreateRow Encounter.location( Encounter )
+CreateRow Encounter.location.modifierExtension( Encounter )
+CreateRow Encounter.location.location( Encounter )
+CreateRow Encounter.location.location.reference( Encounter )
+CreateRow Encounter.location.location.display( Encounter )
+ create Bindings table
+Render page DCH-Encounter-Delivery-Event-1
+Structure Page: Finish - dch-encounter-delivery-event-1
+Create example files
+Create resource files (Structure Definitions)
+Structure Page: Start - Profile.BirthEvent : DCH-Encounter-Neonatal-Critical-Care-1
+Creating structure for DCH-Encounter-Neonatal-Critical-Care-1
+CreateRow Encounter( Encounter )
+CreateRow Encounter.identifier( Encounter )
+CreateRow Encounter.identifier.value( Encounter )
+CreateRow Encounter.status( Encounter )
+CreateRow Encounter.patient( Encounter )
+CreateRow Encounter.patient.reference( Encounter )
+CreateRow Encounter.patient.display( Encounter )
+CreateRow Encounter.period( Encounter )
+CreateRow Encounter.period.start( Encounter )
+CreateRow Encounter.period.end( Encounter )
+CreateRow Encounter.location( Encounter )
+CreateRow Encounter.location.modifierExtension( Encounter )
+CreateRow Encounter.location.location( Encounter )
+CreateRow Encounter.location.location.reference( Encounter )
+CreateRow Encounter.location.location.display( Encounter )
+CreateRow Encounter.location.status( Encounter )
+ create Bindings table
+Render page DCH-Encounter-Neonatal-Critical-Care-1
+Structure Page: Finish - dch-encounter-neonatal-critical-care-1
+Create example files
+Create resource files (Structure Definitions)
+Structure Page: Start - Profile.BirthEvent : DCH-HealthcareService-1
+Creating structure for DCH-HealthcareService-1
+CreateRow HealthcareService( HealthcareService )
+CreateRow HealthcareService.identifier( HealthcareService )
+CreateRow HealthcareService.identifier.system( HealthcareService )
+CreateRow HealthcareService.identifier.value( HealthcareService )
+CreateRow HealthcareService.location( HealthcareService )
+CreateRow HealthcareService.location.reference( HealthcareService )
+CreateRow HealthcareService.location.display( HealthcareService )
+ create Bindings table
+Render page DCH-HealthcareService-1
+Structure Page: Finish - dch-healthcareservice-1
+Create example files
+Create resource files (Structure Definitions)
+Structure Page: Start - Profile.BirthEvent : DCH-Location-1
+Creating structure for DCH-Location-1
+CreateRow Location( Location )
+CreateRow Location.identifier( Location )
+CreateRow Location.identifier.system( Location )
+CreateRow Location.identifier.value( Location )
+ create Bindings table
+Render page DCH-Location-1
+Structure Page: Finish - dch-location-1
+Create example files
+Create resource files (Structure Definitions)
+Structure Page: Start - Profile.BirthEvent : DCH-Location-Actual-Delivery-Place-1
+Creating structure for DCH-Location-Actual-Delivery-Place-1
+CreateRow Location( Location )
+CreateRow Location.identifier( Location )
+CreateRow Location.identifier.use( Location )
+CreateRow Location.identifier.system( Location )
+CreateRow Location.identifier.value( Location )
+CreateRow Location.type( Location )
+CreateRow Location.type.coding( Location )
+CreateRow Location.type.coding( Location )
+CreateRow Location.type.coding.system( Location )
+CreateRow Location.type.coding.code( Location )
+CreateRow Location.type.coding.display( Location )
+CreateRow Location.type.coding( Location )
+CreateRow Location.type.coding.system( Location )
+CreateRow Location.type.coding.display( Location )
+ create Bindings table
+*** element Name for Location.type has not been populated!
+ format binding for Location.type
+ format binding for Location.type.coding
+ format binding for Location.type.coding
+Render page DCH-Location-Actual-Delivery-Place-1
+Structure Page: Finish - dch-location-actual-delivery-place-1
+Create example files
+Create resource files (Structure Definitions)
+Structure Page: Start - Profile.BirthEvent : DCH-Location-Neonatal-Unit-1
+Creating structure for DCH-Location-Neonatal-Unit-1
+CreateRow Location( Location )
+CreateRow Location.identifier( Location )
+CreateRow Location.identifier.system( Location )
+CreateRow Location.identifier.value( Location )
+CreateRow Location.type( Location )
+CreateRow Location.type.coding( Location )
+CreateRow Location.type.coding.system( Location )
+CreateRow Location.type.coding.code( Location )
+CreateRow Location.type.coding.display( Location )
+ create Bindings table
+*** element Name for Location.type has not been populated!
+ format binding for Location.type
+Render page DCH-Location-Neonatal-Unit-1
+Structure Page: Finish - dch-location-neonatal-unit-1
+Create example files
+Create resource files (Structure Definitions)
+Structure Page: Start - Profile.BirthEvent : DCH-MessageHeader-BirthEvent-1
+Creating structure for DCH-MessageHeader-BirthEvent-1
+CreateRow MessageHeader( MessageHeader )
+CreateRow MessageHeader.timestamp( MessageHeader )
+CreateRow MessageHeader.event( MessageHeader )
+CreateRow MessageHeader.event.system( MessageHeader )
+CreateRow MessageHeader.event.code( MessageHeader )
+CreateRow MessageHeader.event.display( MessageHeader )
+CreateRow MessageHeader.source( MessageHeader )
+CreateRow MessageHeader.source.modifierExtension( MessageHeader )
+CreateRow MessageHeader.source.name( MessageHeader )
+CreateRow MessageHeader.source.software( MessageHeader )
+CreateRow MessageHeader.source.version( MessageHeader )
+CreateRow MessageHeader.source.contact( MessageHeader )
+CreateRow MessageHeader.source.contact.system( MessageHeader )
+CreateRow MessageHeader.source.contact.value( MessageHeader )
+CreateRow MessageHeader.source.contact.use( MessageHeader )
+CreateRow MessageHeader.source.contact.rank( MessageHeader )
+CreateRow MessageHeader.source.contact.period( MessageHeader )
+CreateRow MessageHeader.source.contact.period.start( MessageHeader )
+CreateRow MessageHeader.source.contact.period.end( MessageHeader )
+CreateRow MessageHeader.source.endpoint( MessageHeader )
+CreateRow MessageHeader.data( MessageHeader )
+CreateRow MessageHeader.data.reference( MessageHeader )
+ create Bindings table
+Render page DCH-MessageHeader-BirthEvent-1
+Structure Page: Finish - dch-messageheader-birthevent-1
+Create example files
+Create resource files (Structure Definitions)
+Structure Page: Start - Profile.BirthEvent : DCH-Observation-Apgar-Score-5Minutes-1
+Creating structure for DCH-Observation-Apgar-Score-5Minutes-1
+CreateRow Observation( Observation )
+CreateRow Observation.identifier( Observation )
+CreateRow Observation.identifier.value( Observation )
+CreateRow Observation.status( Observation )
+CreateRow Observation.code( Observation )
+CreateRow Observation.code.coding( Observation )
+CreateRow Observation.code.coding.system( Observation )
+CreateRow Observation.code.coding.code( Observation )
+CreateRow Observation.code.coding.display( Observation )
+CreateRow Observation.subject( Observation )
+CreateRow Observation.encounter( Observation )
+CreateRow Observation.encounter.reference( Observation )
+CreateRow Observation.encounter.display( Observation )
+CreateRow Observation.value[x]( Observation )
+ create Bindings table
+Render page DCH-Observation-Apgar-Score-5Minutes-1
+Structure Page: Finish - dch-observation-apgar-score-5minutes-1
+Create example files
+Create resource files (Structure Definitions)
+Structure Page: Start - Profile.BirthEvent : DCH-Observation-Birth-Weight-1
+Creating structure for DCH-Observation-Birth-Weight-1
+CreateRow Observation( Observation )
+CreateRow Observation.identifier( Observation )
+CreateRow Observation.identifier.value( Observation )
+CreateRow Observation.status( Observation )
+CreateRow Observation.code( Observation )
+CreateRow Observation.code.coding( Observation )
+CreateRow Observation.code.coding.system( Observation )
+CreateRow Observation.code.coding.code( Observation )
+CreateRow Observation.code.coding.display( Observation )
+CreateRow Observation.subject( Observation )
+CreateRow Observation.encounter( Observation )
+CreateRow Observation.encounter.reference( Observation )
+CreateRow Observation.encounter.display( Observation )
+CreateRow Observation.value[x]( Observation )
+ create Bindings table
+Render page DCH-Observation-Birth-Weight-1
+Structure Page: Finish - dch-observation-birth-weight-1
+Create example files
+Create resource files (Structure Definitions)
+Structure Page: Start - Profile.BirthEvent : DCH-Observation-Gestation-Length-At-Birth-1
+Creating structure for DCH-Observation-Gestation-Length-At-Birth-1
+CreateRow Observation( Observation )
+CreateRow Observation.identifier( Observation )
+CreateRow Observation.identifier.value( Observation )
+CreateRow Observation.status( Observation )
+CreateRow Observation.code( Observation )
+CreateRow Observation.code.coding( Observation )
+CreateRow Observation.code.coding.system( Observation )
+CreateRow Observation.code.coding.code( Observation )
+CreateRow Observation.code.coding.display( Observation )
+CreateRow Observation.subject( Observation )
+CreateRow Observation.encounter( Observation )
+CreateRow Observation.encounter.reference( Observation )
+CreateRow Observation.encounter.display( Observation )
+CreateRow Observation.value[x]( Observation )
+ create Bindings table
+Render page DCH-Observation-Gestation-Length-At-Birth-1
+Structure Page: Finish - dch-observation-gestation-length-at-birth-1
+Create example files
+Create resource files (Structure Definitions)
+Structure Page: Start - Profile.BirthEvent : DCH-Observation-Head-Circumference-1
+Creating structure for DCH-Observation-Head-Circumference-1
+CreateRow Observation( Observation )
+CreateRow Observation.identifier( Observation )
+CreateRow Observation.identifier.value( Observation )
+CreateRow Observation.status( Observation )
+CreateRow Observation.code( Observation )
+CreateRow Observation.code.coding( Observation )
+CreateRow Observation.code.coding.system( Observation )
+CreateRow Observation.code.coding.code( Observation )
+CreateRow Observation.code.coding.display( Observation )
+CreateRow Observation.subject( Observation )
+CreateRow Observation.encounter( Observation )
+CreateRow Observation.encounter.reference( Observation )
+CreateRow Observation.encounter.display( Observation )
+CreateRow Observation.value[x]( Observation )
+ create Bindings table
+Render page DCH-Observation-Head-Circumference-1
+Structure Page: Finish - dch-observation-head-circumference-1
+Create example files
+Create resource files (Structure Definitions)
+Structure Page: Start - Profile.BirthEvent : DCH-Organization-1
+Creating structure for DCH-Organization-1
+CreateRow Organization( Organization )
+CreateRow Organization.identifier( Organization )
+CreateRow Organization.identifier.system( Organization )
+CreateRow Organization.identifier.value( Organization )
+ create Bindings table
+Render page DCH-Organization-1
+Structure Page: Finish - dch-organization-1
+Create example files
+Create resource files (Structure Definitions)
+Structure Page: Start - Profile.BirthEvent : DCH-Procedure-Delivery-Method-1
+Creating structure for DCH-Procedure-Delivery-Method-1
+CreateRow Procedure( Procedure )
+CreateRow Procedure.identifier( Procedure )
+CreateRow Procedure.identifier.value( Procedure )
+CreateRow Procedure.subject( Procedure )
+CreateRow Procedure.status( Procedure )
+CreateRow Procedure.code( Procedure )
+CreateRow Procedure.code.coding( Procedure )
+CreateRow Procedure.code.coding.system( Procedure )
+CreateRow Procedure.code.coding.code( Procedure )
+CreateRow Procedure.encounter( Procedure )
+CreateRow Procedure.encounter.reference( Procedure )
+CreateRow Procedure.encounter.display( Procedure )
+ create Bindings table
+*** element Name for Procedure.status has not been populated!
+*** element Name for Procedure.code has not been populated!
+ format binding for Procedure.status
+ format binding for Procedure.code
+Render page DCH-Procedure-Delivery-Method-1
+Structure Page: Finish - dch-procedure-delivery-method-1
+Create example files
+Create resource files (Structure Definitions)
+Structure Page: Start - Profile.BirthEvent : DCH-RelatedPerson-1
+Creating structure for DCH-RelatedPerson-1
+CreateRow RelatedPerson( RelatedPerson )
+CreateRow RelatedPerson.identifier( RelatedPerson )
+CreateRow RelatedPerson.identifier.value( RelatedPerson )
+CreateRow RelatedPerson.patient( RelatedPerson )
+CreateRow RelatedPerson.patient.reference( RelatedPerson )
+CreateRow RelatedPerson.patient.display( RelatedPerson )
+CreateRow RelatedPerson.relationship( RelatedPerson )
+CreateRow RelatedPerson.relationship.coding( RelatedPerson )
+CreateRow RelatedPerson.relationship.coding.system( RelatedPerson )
+CreateRow RelatedPerson.relationship.coding.code( RelatedPerson )
+CreateRow RelatedPerson.relationship.coding.display( RelatedPerson )
+ create Bindings table
+*** element Name for RelatedPerson.relationship has not been populated!
+ format binding for RelatedPerson.relationship
+Render page DCH-RelatedPerson-1
+Structure Page: Finish - dch-relatedperson-1
+Create example files
+Create resource files (Structure Definitions)
+Structure Page: Start - Profile.BirthEvent : Extension-DCH-Event-DateTime-1
+Creating structure for Extension-DCH-Event-DateTime-1
+CreateRow Extension( Extension )
+CreateRow Extension.url( Extension )
+CreateRow Extension.value[x]( Extension )
+ create Bindings table
+Render page Extension-DCH-Event-DateTime-1
+Structure Page: Finish - extension-dch-event-datetime-1
+Create example files
+Create resource files (Structure Definitions)
+Structure Page: Start - Profile.BirthEvent : Extension-DCH-Event-Location-1
+Creating structure for Extension-DCH-Event-Location-1
+CreateRow Extension( Extension )
+CreateRow Extension.url( Extension )
+CreateRow Extension.value[x]( Extension )
+ create Bindings table
+Render page Extension-DCH-Event-Location-1
+Structure Page: Finish - extension-dch-event-location-1
+Create example files
+Create resource files (Structure Definitions)
+Structure Page: Start - Profile.BirthEvent : Extension-DCH-Originating-Service-1
+Creating structure for Extension-DCH-Originating-Service-1
+CreateRow Extension( Extension )
+CreateRow Extension.url( Extension )
+CreateRow Extension.value[x]( Extension )
+ create Bindings table
+Render page Extension-DCH-Originating-Service-1
+Structure Page: Finish - extension-dch-originating-service-1
+Create example files
+Create resource files (Structure Definitions)
+Structure Page: Start - Profile.BirthEvent : Extension-DCH-Originating-Service-Provider-1
+Creating structure for Extension-DCH-Originating-Service-Provider-1
+CreateRow Extension( Extension )
+CreateRow Extension.url( Extension )
+CreateRow Extension.value[x]( Extension )
+ create Bindings table
+Render page Extension-DCH-Originating-Service-Provider-1
+Structure Page: Finish - extension-dch-originating-service-provider-1
+Create example files
+Create resource files (Structure Definitions)
+Structure Page: Start - Profile.BirthEvent : Extension-DCH-Publication-Reference-1
+Creating structure for Extension-DCH-Publication-Reference-1
+CreateRow Extension( Extension )
+CreateRow Extension.url( Extension )
+CreateRow Extension.value[x]( Extension )
+ create Bindings table
+Render page Extension-DCH-Publication-Reference-1
+Structure Page: Finish - extension-dch-publication-reference-1
+Create example files
+Create resource files (Structure Definitions)
+Structure Page: Start - Profile.BirthEvent : Extension-Ethnic-Category-1
+Creating structure for Extension-Ethnic-Category-1
+CreateRow Extension( Extension )
+CreateRow Extension.url( Extension )
+CreateRow Extension.value[x]( Extension )
+ create Bindings table
+*** element Name for Extension has not been populated!
+ format binding for Extension
+ format binding for Extension.value[x]
+Render page Extension-Ethnic-Category-1
+Structure Page: Finish - extension-ethnic-category-1
+Create example files
+Create resource files (Structure Definitions)
+Structure Page: Start - Profile.BirthEvent : Extension-NHS-Communication-1
+Creating structure for Extension-NHS-Communication-1
+CreateRow Extension( Extension )
+CreateRow Extension.extension( Extension )
+CreateRow Extension.extension( Extension )
+CreateRow Extension.extension.extension( Extension )
+CreateRow Extension.extension.url( Extension )
+CreateRow Extension.extension.valueCodeableConcept( Extension )
+CreateRow Extension.extension( Extension )
+CreateRow Extension.extension.extension( Extension )
+CreateRow Extension.extension.url( Extension )
+CreateRow Extension.extension.valueBoolean( Extension )
+CreateRow Extension.extension( Extension )
+CreateRow Extension.extension.extension( Extension )
+CreateRow Extension.extension.url( Extension )
+CreateRow Extension.extension.valueCodeableConcept( Extension )
+CreateRow Extension.extension( Extension )
+CreateRow Extension.extension.extension( Extension )
+CreateRow Extension.extension.url( Extension )
+CreateRow Extension.extension.valueCodeableConcept( Extension )
+CreateRow Extension.extension( Extension )
+CreateRow Extension.extension.extension( Extension )
+CreateRow Extension.extension.url( Extension )
+CreateRow Extension.extension.valueBoolean( Extension )
+CreateRow Extension.url( Extension )
+ create Bindings table
+*** element Name for Extension.extension.valueCodeableConcept has not been populated!
+*** element Name for Extension.extension.valueCodeableConcept has not been populated!
+*** element Name for Extension.extension.valueCodeableConcept has not been populated!
+ format binding for Extension.extension.valueCodeableConcept
+ format binding for Extension.extension.valueCodeableConcept
+ format binding for Extension.extension.valueCodeableConcept
+Render page Extension-NHS-Communication-1
+Structure Page: Finish - extension-nhs-communication-1
+Create example files
+Create resource files (Structure Definitions)
+Structure Page: Start - Profile.BirthEvent : Extension-NHSNumberVerificationStatus-1
+Creating structure for Extension-NHSNumberVerificationStatus-1
+CreateRow Extension( Extension )
+CreateRow Extension.url( Extension )
+CreateRow Extension.valueCodeableConcept( Extension )
+ create Bindings table
+*** element Name for Extension.valueCodeableConcept has not been populated!
+ format binding for Extension.valueCodeableConcept
+Render page Extension-NHSNumberVerificationStatus-1
+Structure Page: Finish - extension-nhsnumberverificationstatus-1
+Create example files
+Create resource files (Structure Definitions)
+Structure Page: Start - Profile.BirthEvent : Extension-Organ-Donor-1
+Creating structure for Extension-Organ-Donor-1
+CreateRow Extension( Extension )
+CreateRow Extension.url( Extension )
+CreateRow Extension.value[x]( Extension )
+ create Bindings table
+Render page Extension-Organ-Donor-1
+Structure Page: Finish - extension-organ-donor-1
+Create example files
+Create resource files (Structure Definitions)
+Structure Page: Start - Profile.BirthEvent : Extension-Registration-Details-1
+Creating structure for Extension-Registration-Details-1
+CreateRow Extension( Extension )
+CreateRow Extension.extension( Extension )
+CreateRow Extension.extension( Extension )
+CreateRow Extension.extension.extension( Extension )
+CreateRow Extension.extension.url( Extension )
+CreateRow Extension.extension.valuePeriod( Extension )
+CreateRow Extension.extension( Extension )
+CreateRow Extension.extension.extension( Extension )
+CreateRow Extension.extension.url( Extension )
+CreateRow Extension.extension.valueCodeableConcept( Extension )
+CreateRow Extension.extension( Extension )
+CreateRow Extension.extension.extension( Extension )
+CreateRow Extension.extension.url( Extension )
+CreateRow Extension.extension.valueCodeableConcept( Extension )
+CreateRow Extension.url( Extension )
+ create Bindings table
+*** element Name for Extension.extension.valueCodeableConcept has not been populated!
+*** element Name for Extension.extension.valueCodeableConcept has not been populated!
+ format binding for Extension.extension.valueCodeableConcept
+ format binding for Extension.extension.valueCodeableConcept
+Render page Extension-Registration-Details-1
+Structure Page: Finish - extension-registration-details-1
+Create example files
+Create resource files (Structure Definitions)
+Structure Page: Start - Profile.BirthEvent : Extension-Religious-Affiliation-SnCT-1
+Creating structure for Extension-Religious-Affiliation-SnCT-1
+CreateRow Extension( Extension )
+CreateRow Extension.url( Extension )
+CreateRow Extension.value[x]( Extension )
+ create Bindings table
+*** element Name for Extension has not been populated!
+ format binding for Extension
+ format binding for Extension.value[x]
+Render page Extension-Religious-Affiliation-SnCT-1
+Structure Page: Finish - extension-religious-affiliation-snct-1
+Create example files
+Create resource files (Structure Definitions)
+Structure Page: Start - Profile.BirthEvent : Extension-Residential-Status-1
+Creating structure for Extension-Residential-Status-1
+CreateRow Extension( Extension )
+CreateRow Extension.url( Extension )
+CreateRow Extension.value[x]( Extension )
+ create Bindings table
+*** element Name for Extension has not been populated!
+ format binding for Extension
+ format binding for Extension.value[x]
+Render page Extension-Residential-Status-1
+Structure Page: Finish - extension-residential-status-1
+Create example files
+Create resource files (Structure Definitions)
+Structure Page: Start - Profile.BirthEvent : Extension-Treatment-Category-1
+Creating structure for Extension-Treatment-Category-1
+CreateRow Extension( Extension )
+CreateRow Extension.url( Extension )
+CreateRow Extension.value[x]( Extension )
+ create Bindings table
+*** element Name for Extension has not been populated!
+ format binding for Extension
+ format binding for Extension.value[x]
+Render page Extension-Treatment-Category-1
+Structure Page: Finish - extension-treatment-category-1
+Create example files
+Create resource files (Structure Definitions)
+Structure Page: Start - Profile.BirthEvent : Patient-BirthTime
+Creating structure for Patient-BirthTime
+CreateRow Extension( Extension )
+CreateRow Extension.url( Extension )
+CreateRow Extension.value[x]( Extension )
+ create Bindings table
+Render page Patient-BirthTime
+Structure Page: Finish - patient-birthtime
+Create example files
+Create resource files (Structure Definitions)
+Loading resources into resource store
+Structure Page: Start - Profile.ChildHealthEvent : CareConnect-DCH-Condition-1
+Creating structure for CareConnect-DCH-Condition-1
+CreateRow Condition( Condition )
+CreateRow Condition.extension( Condition )
+CreateRow Condition.extension( Condition )
+CreateRow Condition.extension( Condition )
+CreateRow Condition.identifier( Condition )
+CreateRow Condition.identifier.use( Condition )
+CreateRow Condition.identifier.type( Condition )
+CreateRow Condition.identifier.type.coding( Condition )
+CreateRow Condition.identifier.type.coding.system( Condition )
+CreateRow Condition.identifier.type.coding.version( Condition )
+CreateRow Condition.identifier.type.coding.code( Condition )
+CreateRow Condition.identifier.type.coding.display( Condition )
+CreateRow Condition.identifier.type.coding.userSelected( Condition )
+CreateRow Condition.identifier.type.text( Condition )
+CreateRow Condition.identifier.system( Condition )
+CreateRow Condition.identifier.value( Condition )
+CreateRow Condition.identifier.period( Condition )
+CreateRow Condition.identifier.period.start( Condition )
+CreateRow Condition.identifier.period.end( Condition )
+CreateRow Condition.identifier.assigner( Condition )
+**Error** 
+ Message: Object reference not set to an instance of an object. 
+ Stacktrace:    at Hl7.Fhir.Publication.Specification.Profile.Structure.Type.ResourceReference..ctor(Package package, String url, KnowledgeProvider knowledgeProvider) in C:\Users\rmk\Source\Repos\FHIR.Publication.DSTU2\Fhir.Publication\Specification\Profile\Structure\Type\ResourceReference.cs:line 25
+   at Hl7.Fhir.Publication.Specification.Profile.Structure.Type.Factory.GetReferenceCell(TypeRefComponent typeRefComponent, String url, FHIRDefinedType code) in C:\Users\rmk\Source\Repos\FHIR.Publication.DSTU2\Fhir.Publication\Specification\Profile\Structure\Type\Factory.cs:line 170
+   at Hl7.Fhir.Publication.Specification.Profile.Structure.Type.Factory.GetCell(TypeRefComponent typeRefComponent, String resourceName, Int32 totalProfileElements) in C:\Users\rmk\Source\Repos\FHIR.Publication.DSTU2\Fhir.Publication\Specification\Profile\Structure\Type\Factory.cs:line 133
+   at Hl7.Fhir.Publication.Specification.Profile.Structure.Type.Factory.FormatResourceReferenceCell() in C:\Users\rmk\Source\Repos\FHIR.Publication.DSTU2\Fhir.Publication\Specification\Profile\Structure\Type\Factory.cs:line 107
+   at Hl7.Fhir.Publication.Specification.Profile.Structure.Type.Factory.GetTypeCell() in C:\Users\rmk\Source\Repos\FHIR.Publication.DSTU2\Fhir.Publication\Specification\Profile\Structure\Type\Factory.cs:line 70
+   at Hl7.Fhir.Publication.Specification.Profile.Structure.Type.Factory.GetCells() in C:\Users\rmk\Source\Repos\FHIR.Publication.DSTU2\Fhir.Publication\Specification\Profile\Structure\Type\Factory.cs:line 52
+   at Hl7.Fhir.Publication.Specification.Profile.Structure.Rows.ElementRow.get_Type() in C:\Users\rmk\Source\Repos\FHIR.Publication.DSTU2\Fhir.Publication\Specification\Profile\Structure\Rows\ElementRow.cs:line 70
+   at Hl7.Fhir.Publication.Specification.Profile.Structure.Rows.ElementRow.get_Value() in C:\Users\rmk\Source\Repos\FHIR.Publication.DSTU2\Fhir.Publication\Specification\Profile\Structure\Rows\ElementRow.cs:line 52
+   at Hl7.Fhir.Publication.Specification.Profile.Structure.Factory.CreateRow(ElementDefinition elementDefinition, StructureDefinition profile, Boolean showMissing, ICollection`1 rows, ElementNavigator navigator) in C:\Users\rmk\Source\Repos\FHIR.Publication.DSTU2\Fhir.Publication\Specification\Profile\Structure\Factory.cs:line 222
+   at Hl7.Fhir.Publication.Specification.Profile.Structure.Factory.GetElementRow(ICollection`1 rows, ElementNavigator navigator, StructureDefinition profile, Boolean showMissing) in C:\Users\rmk\Source\Repos\FHIR.Publication.DSTU2\Fhir.Publication\Specification\Profile\Structure\Factory.cs:line 116
+   at Hl7.Fhir.Publication.Specification.Profile.Structure.Factory.CreateRow(ElementDefinition elementDefinition, StructureDefinition profile, Boolean showMissing, ICollection`1 rows, ElementNavigator navigator) in C:\Users\rmk\Source\Repos\FHIR.Publication.DSTU2\Fhir.Publication\Specification\Profile\Structure\Factory.cs:line 232
+   at Hl7.Fhir.Publication.Specification.Profile.Structure.Factory.GetElementRow(ICollection`1 rows, ElementNavigator navigator, StructureDefinition profile, Boolean showMissing) in C:\Users\rmk\Source\Repos\FHIR.Publication.DSTU2\Fhir.Publication\Specification\Profile\Structure\Factory.cs:line 116
+   at Hl7.Fhir.Publication.Specification.Profile.Structure.Factory.CreateRow(ElementDefinition elementDefinition, StructureDefinition profile, Boolean showMissing, ICollection`1 rows, ElementNavigator navigator) in C:\Users\rmk\Source\Repos\FHIR.Publication.DSTU2\Fhir.Publication\Specification\Profile\Structure\Factory.cs:line 232
+   at Hl7.Fhir.Publication.Specification.Profile.Structure.Factory.GetElementRow(ICollection`1 rows, ElementNavigator navigator, StructureDefinition profile, Boolean showMissing) in C:\Users\rmk\Source\Repos\FHIR.Publication.DSTU2\Fhir.Publication\Specification\Profile\Structure\Factory.cs:line 116
+   at Hl7.Fhir.Publication.Specification.Profile.Structure.Factory.GenerateStructure(StructureDefinition structure, Boolean isDifferential) in C:\Users\rmk\Source\Repos\FHIR.Publication.DSTU2\Fhir.Publication\Specification\Profile\Structure\Factory.cs:line 92
+   at Hl7.Fhir.Publication.Processors.Profile.StructureProcessor.CreateStructureDefinitionPage(ResourceComponent resource) in C:\Users\rmk\Source\Repos\FHIR.Publication.DSTU2\Fhir.Publication\Processors\Profile\StructureProcessor.cs:line 113
+   at Hl7.Fhir.Publication.Processors.Profile.StructureProcessor.CreatePagesInPackage() in C:\Users\rmk\Source\Repos\FHIR.Publication.DSTU2\Fhir.Publication\Processors\Profile\StructureProcessor.cs:line 91
+   at Hl7.Fhir.Publication.Processors.Profile.StructureProcessor.Process(Document input, Stage output, Log log, IDirectoryCreator directoryCreator) in C:\Users\rmk\Source\Repos\FHIR.Publication.DSTU2\Fhir.Publication\Processors\Profile\StructureProcessor.cs:line 63
+   at Hl7.Fhir.Publication.Framework.Processor.Process(IProcessor processor, Stage input, Log log, IDirectoryCreator directoryCreator) in C:\Users\rmk\Source\Repos\FHIR.Publication.DSTU2\Fhir.Publication\Framework\Processor.cs:line 16
+   at Hl7.Fhir.Publication.Framework.Processor.Process(PipeLine pipeline, Stage input, Log log, IDirectoryCreator fileCreator) in C:\Users\rmk\Source\Repos\FHIR.Publication.DSTU2\Fhir.Publication\Framework\Processor.cs:line 31
+   at Hl7.Fhir.Publication.Framework.Processor.Process(PipeLine pipeline, ISelector filter, Log log, IDirectoryCreator fileCreator) in C:\Users\rmk\Source\Repos\FHIR.Publication.DSTU2\Fhir.Publication\Framework\Processor.cs:line 38
+   at Hl7.Fhir.Publication.Framework.Statement.Execute(Log log, IDirectoryCreator directoryCreator) in C:\Users\rmk\Source\Repos\FHIR.Publication.DSTU2\Fhir.Publication\Framework\Statement.cs:line 31
+   at Hl7.Fhir.Publication.Framework.Make.Bulk.Execute(Log log, IDirectoryCreator directoryCreator) in C:\Users\rmk\Source\Repos\FHIR.Publication.DSTU2\Fhir.Publication\Framework\Make\Bulk.cs:line 25
+   at Hl7.Fhir.Publication.Framework.Publisher.Publish() in C:\Users\rmk\Source\Repos\FHIR.Publication.DSTU2\Fhir.Publication\Framework\Publisher.cs:line 80 
+ InnerException: 

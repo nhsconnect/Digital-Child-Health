@@ -1,0 +1,15 @@
+{
+  "DMS_ONLINE"      :   "FALSE",
+  "DMS_ANALYTICS"   :   "UA-67795986-1",
+  "EXAMPLES_XML"	      : "TRUE",
+  "EXAMPLES_JSON"     : "TRUE",
+  "VALUESETS_XML"     : "TRUE",
+  "VALUESETS_JSON"   : "TRUE",
+  "STRUCTURES_XML"   : "TRUE",
+  "STRUCTURES_JSON" : "TRUE",
+  "OPERATIONS_XML"   : "TRUE",
+  "OPERATIONS_JSON" : "TRUE",
+  "DMS_TITLE"		:   "Digital Child Health Service - Events Catalogue",
+  "DMS_VERSION"		:	"1.0 : Draft A",
+  "SCHEMAS"			:	"TRUE"
+}

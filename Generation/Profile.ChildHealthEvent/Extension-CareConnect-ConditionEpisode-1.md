@@ -1,0 +1,1 @@
+This Extension resource is constrained to support the episodicity status of a condition.

@@ -1,0 +1,1 @@
+Care Connect Patient profile, with further constraints applied to represent a baby for a Birth Event.

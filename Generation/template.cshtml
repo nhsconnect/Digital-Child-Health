@@ -1,0 +1,410 @@
+@using System;
+@using System.Linq;
+@using System.Text.RegularExpressions;
+@using Hl7.Fhir.Publication.Specification.Page;
+
+@model Hl7.Fhir.Publication.Specification.Page.Config
+
+
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+	<head>
+			<title>@Model.Name - FHIR Implementation Guide</title>
+
+			<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+			<meta name="author" content="@Model.Publisher" />        
+			<meta name="publisher version" content=	"@Model.PublisherVersion" />
+		
+			<link href="../dist/css/fhir.css" rel="stylesheet" />
+	 
+			<!-- Bootstrap core CSS -->
+			<link href="../dist/css/bootstrap.css" rel="stylesheet" />
+			<link href="../dist/css/bootstrap-fhir.css" rel="stylesheet" />
+			<link href="../dist/css/bootstrap-glyphicons.css" rel="stylesheet" />
+
+			<!-- Project extras -->
+			
+			<link href="../dist/css/pygments-manni.css" rel="stylesheet" />
+
+			<script src="../dist/js/jquery.js"> </script>
+			<script src="../dist/js/bootstrap.min.js"> </script>
+
+			<script src="../dist/js/fhir.js"> </script>
+			
+			@if (@Model.IsOnline == true)
+			{
+				<script>
+				  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+				  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+				  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+				  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+				  ga('create', '@Model.OnlineAnalyticsKey', 'auto');
+				  ga('send', 'pageview');
+
+				</script>
+			}
+			
+			<!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+			<!--[if lt IE 9]>
+				<script src="../dist/js/html5shiv.js"></script>
+				<script src="../dist/js/respond.min.js"></script>
+			<![endif]-->
+
+			<!-- Favicons -->
+			<link rel="apple-touch-icon-precomposed" sizes="144x144" href="../dist/images/apple-touch-icon-144-precomposed.png" />
+			<link rel="apple-touch-icon-precomposed" sizes="114x114" href="../dist/images/apple-touch-icon-114-precomposed.png" />
+			<link rel="apple-touch-icon-precomposed" sizes="72x72" href="../dist/images/apple-touch-icon-72-precomposed.png" />
+			<link rel="apple-touch-icon-precomposed" href="../dist/images/apple-touch-icon-57-precomposed.png" />
+			<link rel="shortcut icon" href="../dist/images/favicon.ico" />
+	</head>
+	
+	<body>  
+		
+		<!-- segment-header -->
+		<div id="segment-header" class="segment">
+            
+            <div class="container">
+                <!-- container -->
+                <a id="logo" href="http://www.digital.nhs.uk" target="_blank">
+                    <img src="../dist/images/logo.png" alt="logo NHS Digital" />
+                </a>
+                <div id="specificationName">
+         
+                        <b>@Model.Name</b>
+                  
+                </div>
+
+            </div>
+            <div class="container">
+                <!-- container -->
+            </div>
+        </div>
+        
+		<!-- /segment-header -->
+		
+		
+		<div id="segment-navbar" class="segment">
+            <!-- segment-navbar -->
+            <div id="stripe"> </div>
+            <div class="container">
+                <!-- container -->
+                <!-- HEADER CONTENT -->
+
+                <nav class="navbar navbar-inverse">
+                    <div class="container">
+                        <button data-target=".navbar-inverse-collapse" data-toggle="collapse" class="navbar-toggle" type="button">
+                            <span class="icon-bar"> </span>
+                            <span class="icon-bar"> </span>
+                            <span class="icon-bar"> </span>
+                        </button>
+                        <div class="nav-collapse collapse navbar-inverse-collapse">
+                            <ul class="nav navbar-nav">   
+
+                                @{
+										string currentdir = Directory.GetCurrentDirectory().ToString();
+										string[] dirs = Directory.GetDirectories(currentdir, "Chapter*");
+
+										Regex regex = new Regex(@"\d{1,2}");
+
+										var orderedDirs = dirs.OrderBy(
+											dir =>
+												int.Parse(
+													regex.Match(dir.Split(Path.DirectorySeparatorChar).Last())
+													.Value));
+
+										foreach (var dir in orderedDirs)
+										{
+											string dirName = dir.Split(Path.DirectorySeparatorChar).Last();
+
+											string chapterName = dirName.Split('.').Last();
+											string link = string.Empty;
+
+											if (chapterName != "Examples")
+											{
+												link = string.Concat("../", dirName, "/index.html");
+											}
+
+											if (chapterName == "Examples")
+											{
+												link = string.Concat("../", dirName, "/examples.html");
+											}
+											
+											if (chapterName == "Valuesets")
+											{
+												link = string.Concat("../", dirName, "/valuesets.html");
+											}
+
+											string tag = string.Concat("<a href='", link, "'>", chapterName, "</a>");
+
+											<li>
+												@Html.Raw(tag)
+											</li>
+
+										}
+                                 }
+                            </ul>
+							
+                            <p class="navbar-text pull-right" style="padding-right: 10px;padding-top: 3px;">
+                                <span class="label label-default"  style="font-size: 95%;">@Model.Version</span>
+                            </p>
+
+                        </div>
+                    </div>
+                </nav>				
+            </div>
+        </div>
+		
+		<div id="segment-breadcrumb" class="segment">
+            <!-- segment-breadcrumb -->
+            <div class="container">
+                <!-- container -->
+                <ul class="breadcrumb"></ul>
+            </div>
+            <!-- /container -->
+        </div>
+        <div id="segment-content" class="segment">
+            <!-- segment-content -->
+            <div class="container">
+                <!-- container -->
+                <div class="row">
+                    <div class="inner-wrapper">
+						<!-- CONTENT CONTENT -->
+                        <div class="col-12">
+							
+							@if (@Model.ContentType == Content.Structure)
+							{
+								<div class="introContent">
+							
+									@Html.Raw(@Model.Intro)
+							
+									<ul class="nav nav-tabs">		
+										
+										<li  class="active"><a href="#profileTab" data-toggle="tab">Profile</a></li>
+										
+										@if(@Model.HasExtensions)
+										{
+											<li ><a href="#extensionsTab" data-toggle="tab">Extensions</a></li>
+										}
+										
+										@if(!@Model.HasExtensions)
+										{
+											<li class ="disabled"><a>Extensions</a></li>
+										}
+										
+										@if(@Model.HasBindings)
+										{
+											<li><a href="#bindingsTab" data-toggle="tab">Bindings</a></li>
+										}
+										
+										@if(!@Model.HasBindings)
+										{
+											<li class ="disabled"><a >Bindings</a></li>
+										}
+																				
+										@if (@Model.HasExamples)
+										{
+											<li><a href="#examplesTab" data-toggle="tab">Examples</a></li>
+										}
+										
+										@if (!@Model.HasExamples)
+										{
+											<li class ="disabled"><a>Examples</a></li>
+										}
+										
+									</ul>
+								
+								</div>
+							
+								<div class="tab-content">
+								 
+									 <div class="well tab-pane active" id="profileTab">
+										
+										<div class="panel panel - default">
+											@Html.Raw(@Model.Text)
+										</div>
+									 
+									 </div>
+									 
+									 								 
+									 @if(@Model.HasExtensions)
+									 {
+										<div class='well tab-pane' id="extensionsTab">
+											
+											<div class="panel panel - default">
+												@Html.Raw(@Model.Extensions)
+											</div>
+												
+										</div>
+									 }
+									   
+									
+									@if(@Model.HasBindings)
+									{
+										<div class='well tab-pane' id="bindingsTab">
+									   
+									   		<div class="panel panel - default">
+												@Html.Raw(@Model.Bindings)
+											</div>
+									   
+										</div>
+									}
+
+									
+									@if (@Model.HasExamples)
+										{
+											<div class='well tab-pane' id="examplesTab">
+									
+												<div class="panel panel - default">
+													@Html.Raw(@Model.Examples)
+												</div>
+												
+											</div>
+										}
+																										
+								</div>                       
+						
+							}
+							
+							
+							@if(Model.ContentType == Content.Dictionary)
+							{
+
+								@Html.Raw(@Model.Text)
+
+							}
+							
+							@if (@Model.ContentType == Content.Operation)
+							{
+								<div class="introContent">
+									
+									@Html.Raw(@Model.Intro)
+																		 
+									
+									<ul class="nav nav-tabs">		
+										
+										<li  class="active"><a href="#operationTab" data-toggle="tab">Operation</a></li>
+										
+										@if(@Model.HasBindings)
+										{
+											<li><a href="#bindingsTab" data-toggle="tab">Bindings</a></li>
+										}
+										
+										@if(!@Model.HasBindings)
+										{
+											<li class ="disabled"><a >Bindings</a></li>
+										}
+										
+										@if (@Model.HasExamples)
+										{
+											<li><a href="#examplesTab" data-toggle="tab">Examples</a></li>
+										}
+										@if (!@Model.HasExamples)
+										{
+											<li class="disabled"><a href="#examplesTab" data-toggle="tab">Examples</a></li>
+										}								
+										
+									</ul>
+																
+								</div>     
+
+								<div class="tab-content">
+								 
+									 <div class="well tab-pane active" id="operationTab">
+									
+										@Html.Raw(@Model.Text)
+
+									 </div>
+									
+									@if (@Model.HasExamples)
+										{
+											<div class='well tab-pane' id="examplesTab">
+									
+												<div class="panel panel - default">
+													@Html.Raw(@Model.Examples)
+												</div>
+												
+											</div>
+										}
+										
+									@if (@Model.HasBindings)
+										{
+											<div class='well tab-pane' id="bindingsTab">
+									
+												<div class="panel panel - default">
+													@Html.Raw(@Model.Bindings)
+												</div>
+												
+											</div>
+										}
+									
+									</div>
+									
+								</div>
+							}
+							
+							@if(Model.ContentType == Content.OtherText)
+							{
+									<div class="panel panel - default">
+											@Html.Raw(@Model.Text)
+									</div>
+							}
+							
+							@if(Model.ContentType == Content.Valueset)
+							{
+												
+								@Html.Raw(@Model.Text)
+																
+							}
+						
+					   </div>                      
+                    </div>
+                    <!-- /inner-wrapper -->                   
+                </div>
+                <!-- /row -->              
+            </div>
+            <!-- /container -->           
+        </div>
+    <!-- /segment-content -->
+
+        <div id="segment-footer" class="segment">
+            <!-- segment-footer -->
+            <div class="container">
+                <!-- container -->
+                <div class="inner-wrapper">
+					<div id="explanatoryline">
+                         <img src="../dist/images/explanatoryline.png" alt="Information and technology for better health and care" />
+						 <p>
+                        Copyright &copy; @DateTime.Now.Year.ToString() Health and Social Care Information Centre<br/>
+						NHS Digital is the trading name of the Health and Social Care Information Centre.
+                    </p>
+                    </div>
+				<div id="hl7-nav">
+                    <a id="hl7-logo" href="http://www.hl7.org" target="_blank">
+                        <img src="../dist/images/hl7-logo.png" alt="visit the hl7 website" />
+                    </a>
+					<p>
+					FHIR&reg; is the registered trademark of HL7<br/>
+					and is used with the permission of HL7.
+					</p>
+				</div>
+					<p>
+						<!--<span class="glyphicon glyphicon-download-alt" aria-hidden="true"></span> -->
+                    </p>
+                </div>
+                <!-- /inner-wrapper -->
+            </div>
+            <!-- /container -->
+        </div>
+
+        <div id="segment-post-footer" class="segment">
+            <!-- segment-post-footer -->
+            <div class="container">
+                <!-- container -->
+            </div>
+            <!-- /container -->
+        </div>
+	</body>
+</html>

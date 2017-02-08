@@ -1,0 +1,208 @@
+
+***Furnace log date run: 09 January 2017 953 ***
+Furnace: Fhir publisher tool version: 2.7.6179.25752
+***Starting generation***
+Source directory: C:\GitRepo\DCH\Generation 
+ Target Directory: C:\GitRepo\DCH\Generated
+Clear down Generated folder
+Copying files into Schemas folder ...
+Copying files into dist folder ...
+Start: creating IGResource.xml
+End: IGResource.xml created
+Markdown rendering - index 	: index.md
+Markdown rendering - index 	: index.md
+Markdown rendering - index 	: index.md
+Markdown rendering - index 	: index.md
+Markdown rendering - index 	: index.md
+Razor rendering index
+Razor rendering index
+Razor rendering index
+Razor rendering index
+Razor rendering index
+Create folder Profile.BirthEvent
+IG Creation - Adding DCH-QuestionnaireResponse-1-0 to IGResource.xml
+            - Adding Profile.BirthEvent package to IGResource.xml
+            - Saving DCH-QuestionnaireResponse-1-0.xml in StructureDefinition folder
+IG Creation - DCH-QuestionnaireResponse-1-0 finished
+IG Creation - Adding actual-delivery-place-type1-0 to IGResource.xml
+            - Saving actual-delivery-place-type1-0.xml in ValueSet folder
+IG Creation - actual-delivery-place-type1-0 finished
+IG Creation - Adding birth-complication-1-0 to IGResource.xml
+            - Saving birth-complication-1-0.xml in ValueSet folder
+IG Creation - birth-complication-1-0 finished
+IG Creation - Adding delivery-method-1-0 to IGResource.xml
+            - Saving delivery-method-1-0.xml in ValueSet folder
+IG Creation - delivery-method-1-0 finished
+IG Creation - Adding midwifery-unit-type-1-0 to IGResource.xml
+            - Saving midwifery-unit-type-1-0.xml in ValueSet folder
+IG Creation - midwifery-unit-type-1-0 finished
+Create folder Profile.Two
+Profile Table: IGResource.
+Loading resources into resource store
+Create directory C:\GitRepo\DCH\Generated\Profile.BirthEvent
+Render profile table Profile.BirthEvent
+Profile Table: Finish - IGResource
+Loading resources into resource store
+Structure Page: Start - Profile.BirthEvent : DCH-QuestionnaireResponse-1-0
+Creating structure for DCH-QuestionnaireResponse-1-0
+CreateRow QuestionnaireResponse( QuestionnaireResponse )
+CreateRow QuestionnaireResponse.identifier( QuestionnaireResponse )
+CreateRow QuestionnaireResponse.identifier.value( QuestionnaireResponse )
+CreateRow QuestionnaireResponse.status( QuestionnaireResponse )
+CreateRow QuestionnaireResponse.author( QuestionnaireResponse )
+CreateRow QuestionnaireResponse.group( QuestionnaireResponse )
+CreateRow QuestionnaireResponse.group.modifierExtension( QuestionnaireResponse )
+CreateRow QuestionnaireResponse.group.question( QuestionnaireResponse )
+CreateRow QuestionnaireResponse.group.question( QuestionnaireResponse )
+CreateRow QuestionnaireResponse.group.question.modifierExtension( QuestionnaireResponse )
+CreateRow QuestionnaireResponse.group.question.text( QuestionnaireResponse )
+CreateRow QuestionnaireResponse.group.question.answer( QuestionnaireResponse )
+CreateRow QuestionnaireResponse.group.question.answer.modifierExtension( QuestionnaireResponse )
+CreateRow QuestionnaireResponse.group.question.answer.value[x]( QuestionnaireResponse )
+CreateRow QuestionnaireResponse.group.question( QuestionnaireResponse )
+CreateRow QuestionnaireResponse.group.question.modifierExtension( QuestionnaireResponse )
+CreateRow QuestionnaireResponse.group.question.text( QuestionnaireResponse )
+CreateRow QuestionnaireResponse.group.question.answer( QuestionnaireResponse )
+CreateRow QuestionnaireResponse.group.question.answer.modifierExtension( QuestionnaireResponse )
+CreateRow QuestionnaireResponse.group.question.answer.value[x]( QuestionnaireResponse )
+CreateRow QuestionnaireResponse.group.question( QuestionnaireResponse )
+CreateRow QuestionnaireResponse.group.question.modifierExtension( QuestionnaireResponse )
+CreateRow QuestionnaireResponse.group.question.text( QuestionnaireResponse )
+CreateRow QuestionnaireResponse.group.question.answer( QuestionnaireResponse )
+CreateRow QuestionnaireResponse.group.question.answer.modifierExtension( QuestionnaireResponse )
+CreateRow QuestionnaireResponse.group.question.answer.value[x]( QuestionnaireResponse )
+CreateRow QuestionnaireResponse.group.question( QuestionnaireResponse )
+CreateRow QuestionnaireResponse.group.question.modifierExtension( QuestionnaireResponse )
+CreateRow QuestionnaireResponse.group.question.text( QuestionnaireResponse )
+CreateRow QuestionnaireResponse.group.question.answer( QuestionnaireResponse )
+CreateRow QuestionnaireResponse.group.question.answer.modifierExtension( QuestionnaireResponse )
+CreateRow QuestionnaireResponse.group.question.answer.value[x]( QuestionnaireResponse )
+CreateRow QuestionnaireResponse.group.question( QuestionnaireResponse )
+CreateRow QuestionnaireResponse.group.question.modifierExtension( QuestionnaireResponse )
+CreateRow QuestionnaireResponse.group.question.text( QuestionnaireResponse )
+CreateRow QuestionnaireResponse.group.question.answer( QuestionnaireResponse )
+CreateRow QuestionnaireResponse.group.question.answer.modifierExtension( QuestionnaireResponse )
+CreateRow QuestionnaireResponse.group.question.answer.value[x]( QuestionnaireResponse )
+CreateRow QuestionnaireResponse.group.question( QuestionnaireResponse )
+CreateRow QuestionnaireResponse.group.question.modifierExtension( QuestionnaireResponse )
+CreateRow QuestionnaireResponse.group.question.text( QuestionnaireResponse )
+CreateRow QuestionnaireResponse.group.question.answer( QuestionnaireResponse )
+CreateRow QuestionnaireResponse.group.question.answer.modifierExtension( QuestionnaireResponse )
+CreateRow QuestionnaireResponse.group.question.answer.value[x]( QuestionnaireResponse )
+CreateRow QuestionnaireResponse.group.question( QuestionnaireResponse )
+CreateRow QuestionnaireResponse.group.question.modifierExtension( QuestionnaireResponse )
+CreateRow QuestionnaireResponse.group.question.text( QuestionnaireResponse )
+CreateRow QuestionnaireResponse.group.question.answer( QuestionnaireResponse )
+CreateRow QuestionnaireResponse.group.question.answer.modifierExtension( QuestionnaireResponse )
+CreateRow QuestionnaireResponse.group.question.answer.value[x]( QuestionnaireResponse )
+CreateRow QuestionnaireResponse.group.question( QuestionnaireResponse )
+CreateRow QuestionnaireResponse.group.question.modifierExtension( QuestionnaireResponse )
+CreateRow QuestionnaireResponse.group.question.text( QuestionnaireResponse )
+CreateRow QuestionnaireResponse.group.question.answer( QuestionnaireResponse )
+CreateRow QuestionnaireResponse.group.question.answer.modifierExtension( QuestionnaireResponse )
+CreateRow QuestionnaireResponse.group.question.answer.value[x]( QuestionnaireResponse )
+CreateRow QuestionnaireResponse.group.question( QuestionnaireResponse )
+CreateRow QuestionnaireResponse.group.question.modifierExtension( QuestionnaireResponse )
+CreateRow QuestionnaireResponse.group.question.text( QuestionnaireResponse )
+CreateRow QuestionnaireResponse.group.question.answer( QuestionnaireResponse )
+CreateRow QuestionnaireResponse.group.question.answer.modifierExtension( QuestionnaireResponse )
+CreateRow QuestionnaireResponse.group.question.answer.value[x]( QuestionnaireResponse )
+CreateRow QuestionnaireResponse.group.question( QuestionnaireResponse )
+CreateRow QuestionnaireResponse.group.question.modifierExtension( QuestionnaireResponse )
+CreateRow QuestionnaireResponse.group.question.text( QuestionnaireResponse )
+CreateRow QuestionnaireResponse.group.question.answer( QuestionnaireResponse )
+CreateRow QuestionnaireResponse.group.question.answer.modifierExtension( QuestionnaireResponse )
+CreateRow QuestionnaireResponse.group.question.answer.value[x]( QuestionnaireResponse )
+CreateRow QuestionnaireResponse.group.question( QuestionnaireResponse )
+CreateRow QuestionnaireResponse.group.question.modifierExtension( QuestionnaireResponse )
+CreateRow QuestionnaireResponse.group.question.text( QuestionnaireResponse )
+CreateRow QuestionnaireResponse.group.question.answer( QuestionnaireResponse )
+CreateRow QuestionnaireResponse.group.question.answer.modifierExtension( QuestionnaireResponse )
+CreateRow QuestionnaireResponse.group.question.answer.value[x]( QuestionnaireResponse )
+CreateRow QuestionnaireResponse.group.question( QuestionnaireResponse )
+CreateRow QuestionnaireResponse.group.question.modifierExtension( QuestionnaireResponse )
+CreateRow QuestionnaireResponse.group.question.text( QuestionnaireResponse )
+CreateRow QuestionnaireResponse.group.question.answer( QuestionnaireResponse )
+CreateRow QuestionnaireResponse.group.question.answer.modifierExtension( QuestionnaireResponse )
+CreateRow QuestionnaireResponse.group.question.answer.value[x]( QuestionnaireResponse )
+CreateRow QuestionnaireResponse.group.question( QuestionnaireResponse )
+CreateRow QuestionnaireResponse.group.question.modifierExtension( QuestionnaireResponse )
+CreateRow QuestionnaireResponse.group.question.text( QuestionnaireResponse )
+CreateRow QuestionnaireResponse.group.question.answer( QuestionnaireResponse )
+CreateRow QuestionnaireResponse.group.question.answer.modifierExtension( QuestionnaireResponse )
+CreateRow QuestionnaireResponse.group.question.answer.value[x]( QuestionnaireResponse )
+CreateRow QuestionnaireResponse.group.question( QuestionnaireResponse )
+CreateRow QuestionnaireResponse.group.question.modifierExtension( QuestionnaireResponse )
+CreateRow QuestionnaireResponse.group.question.text( QuestionnaireResponse )
+CreateRow QuestionnaireResponse.group.question.answer( QuestionnaireResponse )
+CreateRow QuestionnaireResponse.group.question.answer.modifierExtension( QuestionnaireResponse )
+CreateRow QuestionnaireResponse.group.question.answer.value[x]( QuestionnaireResponse )
+ create Bindings table
+*** element Name for QuestionnaireResponse.group.question.answer.value[x] has not been populated!
+*** element Name for QuestionnaireResponse.group.question.answer.value[x] has not been populated!
+*** element Name for QuestionnaireResponse.group.question.answer.value[x] has not been populated!
+*** element Name for QuestionnaireResponse.group.question.answer.value[x] has not been populated!
+*** element Name for QuestionnaireResponse.group.question.answer.value[x] has not been populated!
+ format binding for QuestionnaireResponse.group.question.answer.value[x]
+ format binding for QuestionnaireResponse.group.question.answer.value[x]
+ format binding for QuestionnaireResponse.group.question.answer.value[x]
+ format binding for QuestionnaireResponse.group.question.answer.value[x]
+ format binding for QuestionnaireResponse.group.question.answer.value[x]
+Render page DCH-QuestionnaireResponse-1-0
+Structure Page: Finish - dch-questionnaireresponse-1-0
+Create example files
+Create resource files (Structure Definitions)
+Dictionary Page: IGResource.
+Loading resources into resource store
+ Create directory: C:\GitRepo\DCH\Generated\Profile.BirthEvent
+Render dictionary page for DCH-QuestionnaireResponse-1-0
+Loading resources into resource store
+Loading resources into resource store
+Loading resources into resource store
+Valueset Page: Start - Delivery Method
+Creating valueset for Delivery Method - http://fhir.nhs.net/ValueSet/actual-delivery-place-type-1-0
+*** Delivery Method has no Copyright description!
+*** Delivery Method has no OID!
+     Get Summary table
+     Get Content Logical Definition
+Render page actual-delivery-place-type-1-0
+Valueset Page: Finish - actual-delivery-place-type-1-0
+Create resource files (ValueSets)
+Valueset Page: Start - Birth Complication
+Creating valueset for Birth Complication - http://fhir.nhs.net/ValueSet/birth-complication-1-0
+*** Birth Complication has no Copyright description!
+*** Birth Complication has no OID!
+     Get Summary table
+     Get Content Logical Definition
+Render page birth-complication-1-0
+Valueset Page: Finish - birth-complication-1-0
+Create resource files (ValueSets)
+Valueset Page: Start - Delivery Method
+Creating valueset for Delivery Method - http://fhir.nhs.net/ValueSet/delivery-method-1-0
+*** Delivery Method has no Copyright description!
+*** Delivery Method has no OID!
+     Get Summary table
+     Get Content Logical Definition
+Render page delivery-method-1-0
+Valueset Page: Finish - delivery-method-1-0
+Create resource files (ValueSets)
+Valueset Page: Start - Delivery Method
+Creating valueset for Delivery Method - http://fhir.nhs.net/ValueSet/midwifery-unit-type-1-0
+*** Delivery Method has no Copyright description!
+*** Delivery Method has no OID!
+     Get Summary table
+     Get Content Logical Definition
+Render page midwifery-unit-type-1-0
+Valueset Page: Finish - midwifery-unit-type-1-0
+Create resource files (ValueSets)
+Examples Index: Start
+Target examples directory C:\GitRepo\DCH\Generated\Chapter.5.Examples created
+Loading resources into resource store
+examples.html created
+Examples Index: Finish
+ValueSets Index: Start
+Target ValueSets directory C:\GitRepo\DCH\Generated\Chapter.7.Valuesets created
+Loading resources into resource store
+valuesets.html created
+ValueSets Index: Finish
+***Rendering complete. Output to directory C:\GitRepo\DCH\Generated***

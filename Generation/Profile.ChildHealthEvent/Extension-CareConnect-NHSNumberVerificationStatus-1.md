@@ -1,0 +1,1 @@
+This Extension resource is constrained to support the NHS number verification status for the Patient resource.

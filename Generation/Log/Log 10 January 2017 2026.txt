@@ -1,0 +1,147 @@
+
+***Furnace log date run: 10 January 2017 2026 ***
+Furnace: Fhir publisher tool version: 2.7.6179.25752
+***Starting generation***
+Source directory: C:\GitRepo\DCH\Generation 
+ Target Directory: C:\GitRepo\DCH\Generated
+Clear down Generated folder
+Copying files into Schemas folder ...
+Copying files into dist folder ...
+Start: creating IGResource.xml
+End: IGResource.xml created
+Markdown rendering - index 	: index.md
+Markdown rendering - index 	: index.md
+Markdown rendering - index 	: index.md
+Markdown rendering - index 	: index.md
+Markdown rendering - index 	: index.md
+Razor rendering index
+Razor rendering index
+Razor rendering index
+Razor rendering index
+Razor rendering index
+Create folder Profile.BirthEvent
+IG Creation - Adding DCH-Baby-Patient to IGResource.xml
+            - Adding Profile.BirthEvent package to IGResource.xml
+            - Saving DCH-Baby-Patient.xml in StructureDefinition folder
+IG Creation - DCH-Baby-Patient finished
+IG Creation - Adding DCH-BirthEvent-MessageHeader-1-0 to IGResource.xml
+            - Saving DCH-BirthEvent-MessageHeader-1-0.xml in StructureDefinition folder
+IG Creation - DCH-BirthEvent-MessageHeader-1-0 finished
+IG Creation - Adding DCH-Encounter-Neonatal-Transfer-1-0 to IGResource.xml
+            - Saving DCH-Encounter-Neonatal-Transfer-1-0.xml in StructureDefinition folder
+IG Creation - DCH-Encounter-Neonatal-Transfer-1-0 finished
+IG Creation - Adding DCH-Location-Actual-Delivery-Place-1-0 to IGResource.xml
+            - Saving DCH-Location-Actual-Delivery-Place-1-0.xml in StructureDefinition folder
+IG Creation - DCH-Location-Actual-Delivery-Place-1-0 finished
+IG Creation - Adding DCH-Location-Neonatal-Unit-1-0 to IGResource.xml
+            - Saving DCH-Location-Neonatal-Unit-1-0.xml in StructureDefinition folder
+IG Creation - DCH-Location-Neonatal-Unit-1-0 finished
+IG Creation - Adding DCH-Mother-Patient-1-0 to IGResource.xml
+            - Saving DCH-Mother-Patient-1-0.xml in StructureDefinition folder
+IG Creation - DCH-Mother-Patient-1-0 finished
+IG Creation - Adding DCH-Observation-Apgar-Score-5Minutes-1-0 to IGResource.xml
+            - Saving DCH-Observation-Apgar-Score-5Minutes-1-0.xml in StructureDefinition folder
+IG Creation - DCH-Observation-Apgar-Score-5Minutes-1-0 finished
+IG Creation - Adding DCH-Observation-Baby-Complication-At-Birth-1-0 to IGResource.xml
+            - Saving DCH-Observation-Baby-Complication-At-Birth-1-0.xml in StructureDefinition folder
+IG Creation - DCH-Observation-Baby-Complication-At-Birth-1-0 finished
+IG Creation - Adding DCH-Observation-Birth-Weight-1-0 to IGResource.xml
+            - Saving DCH-Observation-Birth-Weight-1-0.xml in StructureDefinition folder
+IG Creation - DCH-Observation-Birth-Weight-1-0 finished
+IG Creation - Adding DCH-Observation-Gestation-Length-At-Birth-1-0 to IGResource.xml
+            - Saving DCH-Observation-Gestation-Length-At-Birth-1-0.xml in StructureDefinition folder
+IG Creation - DCH-Observation-Gestation-Length-At-Birth-1-0 finished
+IG Creation - Adding DCH-Procedure-Delivery-Method-1-0 to IGResource.xml
+            - Saving DCH-Procedure-Delivery-Method-1-0.xml in StructureDefinition folder
+IG Creation - DCH-Procedure-Delivery-Method-1-0 finished
+IG Creation - Adding DCH-QuestionnaireResponse-1-0 to IGResource.xml
+            - Saving DCH-QuestionnaireResponse-1-0.xml in StructureDefinition folder
+IG Creation - DCH-QuestionnaireResponse-1-0 finished
+IG Creation - Adding DCH-RelatedPerson-1-0 to IGResource.xml
+            - Saving DCH-RelatedPerson-1-0.xml in StructureDefinition folder
+IG Creation - DCH-RelatedPerson-1-0 finished
+IG Creation - Adding Extension-DCG-Event-Header-1-0 to IGResource.xml
+            - Saving Extension-DCG-Event-Header-1-0.xml in StructureDefinition folder
+IG Creation - Extension-DCG-Event-Header-1-0 finished
+IG Creation - Adding Patient-BirthTime to IGResource.xml
+            - Saving Patient-BirthTime.xml in StructureDefinition folder
+IG Creation - Patient-BirthTime finished
+IG Creation - Adding actual-delivery-place-type1-0 to IGResource.xml
+            - Saving actual-delivery-place-type1-0.xml in ValueSet folder
+IG Creation - actual-delivery-place-type1-0 finished
+IG Creation - Adding administrative-gender-1-0 to IGResource.xml
+            - Saving administrative-gender-1-0.xml in ValueSet folder
+IG Creation - administrative-gender-1-0 finished
+IG Creation - Adding administrative-gender-ddmap-1-0 to IGResource.xml
+            - Saving administrative-gender-ddmap-1-0.xml in ValueSet folder
+IG Creation - administrative-gender-ddmap-1-0 finished
+IG Creation - Adding birth-complication-1-0 to IGResource.xml
+            - Saving birth-complication-1-0.xml in ValueSet folder
+IG Creation - birth-complication-1-0 finished
+IG Creation - Adding birth-event-observation-type-1-0 to IGResource.xml
+            - Saving birth-event-observation-type-1-0.xml in ValueSet folder
+IG Creation - birth-event-observation-type-1-0 finished
+IG Creation - Adding delivery-method-1-0 to IGResource.xml
+            - Saving delivery-method-1-0.xml in ValueSet folder
+IG Creation - delivery-method-1-0 finished
+IG Creation - Adding event-type-1-0 to IGResource.xml
+            - Saving event-type-1-0.xml in ValueSet folder
+IG Creation - event-type-1-0 finished
+IG Creation - Adding midwifery-unit-type-1-0 to IGResource.xml
+            - Saving midwifery-unit-type-1-0.xml in ValueSet folder
+IG Creation - midwifery-unit-type-1-0 finished
+Profile Table: IGResource.
+Loading resources into resource store
+Create directory C:\GitRepo\DCH\Generated\Profile.BirthEvent
+Render profile table Profile.BirthEvent
+Profile Table: Finish - IGResource
+Loading resources into resource store
+Structure Page: Start - Profile.BirthEvent : DCH-Baby-Patient-1-0
+Creating structure for DCH-Baby-Patient-1-0
+CreateRow Patient( Patient )
+CreateRow Patient.extension( Patient )
+CreateRow Patient.extension( Patient )
+CreateRow Patient.identifier( Patient )
+CreateRow Patient.identifier( Patient )
+CreateRow Patient.identifier.system( Patient )
+CreateRow Patient.identifier.value( Patient )
+CreateRow Patient.identifier( Patient )
+CreateRow Patient.identifier.system( Patient )
+CreateRow Patient.identifier.value( Patient )
+CreateRow Patient.gender( Patient )
+CreateRow Patient.multipleBirth[x]( Patient )
+CreateRow Patient.careProvider( Patient )
+CreateRow Patient.managingOrganization( Patient )
+CreateRow Patient.managingOrganization.reference( Patient )
+CreateRow Patient.managingOrganization.display( Patient )
+ create Bindings table
+*** element Name for Patient.gender has not been populated!
+ format binding for Patient.gender
+Render page DCH-Baby-Patient-1-0
+Structure Page: Finish - dch-baby-patient-1-0
+Create example files
+Create resource files (Structure Definitions)
+Structure Page: Start - Profile.BirthEvent : DCH-BirthEvent-MessageHeader-1-0
+Creating structure for DCH-BirthEvent-MessageHeader-1-0
+CreateRow MessageHeader( MessageHeader )
+CreateRow MessageHeader.extension( MessageHeader )
+CreateRow MessageHeader.extension( MessageHeader )
+**Error** 
+ Message:  StructureDefinition resource with url: http://fhir.nhs.net/StructureDefinition/extension-dch-eventh-eader-1-0 does not exist in Profile.BirthEvent! 
+ Stacktrace:    at Hl7.Fhir.Publication.ImplementationGuide.ResourceStore.GetStructureDefinitionByUrl(String url, String package) in C:\Users\rmk\Source\Repos\FHIR.Publication.DSTU2\Fhir.Publication\ImplementationGuide\ResourceStore.cs:line 57
+   at Hl7.Fhir.Publication.Specification.Profile.Structure.Factory.SetElementNameIfModifer(ElementDefinition elementDefinition) in C:\Users\rmk\Source\Repos\FHIR.Publication.DSTU2\Fhir.Publication\Specification\Profile\Structure\Factory.cs:line 250
+   at Hl7.Fhir.Publication.Specification.Profile.Structure.Factory.CreateRow(ElementDefinition elementDefinition, StructureDefinition profile, Boolean showMissing, ICollection`1 rows, ElementNavigator navigator) in C:\Users\rmk\Source\Repos\FHIR.Publication.DSTU2\Fhir.Publication\Specification\Profile\Structure\Factory.cs:line 143
+   at Hl7.Fhir.Publication.Specification.Profile.Structure.Factory.GetElementRow(ICollection`1 rows, ElementNavigator navigator, StructureDefinition profile, Boolean showMissing) in C:\Users\rmk\Source\Repos\FHIR.Publication.DSTU2\Fhir.Publication\Specification\Profile\Structure\Factory.cs:line 116
+   at Hl7.Fhir.Publication.Specification.Profile.Structure.Factory.CreateRow(ElementDefinition elementDefinition, StructureDefinition profile, Boolean showMissing, ICollection`1 rows, ElementNavigator navigator) in C:\Users\rmk\Source\Repos\FHIR.Publication.DSTU2\Fhir.Publication\Specification\Profile\Structure\Factory.cs:line 232
+   at Hl7.Fhir.Publication.Specification.Profile.Structure.Factory.GetElementRow(ICollection`1 rows, ElementNavigator navigator, StructureDefinition profile, Boolean showMissing) in C:\Users\rmk\Source\Repos\FHIR.Publication.DSTU2\Fhir.Publication\Specification\Profile\Structure\Factory.cs:line 116
+   at Hl7.Fhir.Publication.Specification.Profile.Structure.Factory.GenerateStructure(StructureDefinition structure, Boolean isDifferential) in C:\Users\rmk\Source\Repos\FHIR.Publication.DSTU2\Fhir.Publication\Specification\Profile\Structure\Factory.cs:line 92
+   at Hl7.Fhir.Publication.Processors.Profile.StructureProcessor.CreateStructureDefinitionPage(ResourceComponent resource) in C:\Users\rmk\Source\Repos\FHIR.Publication.DSTU2\Fhir.Publication\Processors\Profile\StructureProcessor.cs:line 113
+   at Hl7.Fhir.Publication.Processors.Profile.StructureProcessor.CreatePagesInPackage() in C:\Users\rmk\Source\Repos\FHIR.Publication.DSTU2\Fhir.Publication\Processors\Profile\StructureProcessor.cs:line 91
+   at Hl7.Fhir.Publication.Processors.Profile.StructureProcessor.Process(Document input, Stage output, Log log, IDirectoryCreator directoryCreator) in C:\Users\rmk\Source\Repos\FHIR.Publication.DSTU2\Fhir.Publication\Processors\Profile\StructureProcessor.cs:line 63
+   at Hl7.Fhir.Publication.Framework.Processor.Process(IProcessor processor, Stage input, Log log, IDirectoryCreator directoryCreator) in C:\Users\rmk\Source\Repos\FHIR.Publication.DSTU2\Fhir.Publication\Framework\Processor.cs:line 16
+   at Hl7.Fhir.Publication.Framework.Processor.Process(PipeLine pipeline, Stage input, Log log, IDirectoryCreator fileCreator) in C:\Users\rmk\Source\Repos\FHIR.Publication.DSTU2\Fhir.Publication\Framework\Processor.cs:line 31
+   at Hl7.Fhir.Publication.Framework.Processor.Process(PipeLine pipeline, ISelector filter, Log log, IDirectoryCreator fileCreator) in C:\Users\rmk\Source\Repos\FHIR.Publication.DSTU2\Fhir.Publication\Framework\Processor.cs:line 38
+   at Hl7.Fhir.Publication.Framework.Statement.Execute(Log log, IDirectoryCreator directoryCreator) in C:\Users\rmk\Source\Repos\FHIR.Publication.DSTU2\Fhir.Publication\Framework\Statement.cs:line 31
+   at Hl7.Fhir.Publication.Framework.Make.Bulk.Execute(Log log, IDirectoryCreator directoryCreator) in C:\Users\rmk\Source\Repos\FHIR.Publication.DSTU2\Fhir.Publication\Framework\Make\Bulk.cs:line 25
+   at Hl7.Fhir.Publication.Framework.Publisher.Publish() in C:\Users\rmk\Source\Repos\FHIR.Publication.DSTU2\Fhir.Publication\Framework\Publisher.cs:line 80 
+ InnerException: 

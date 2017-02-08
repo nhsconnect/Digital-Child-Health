@@ -1,0 +1,1 @@
+This extension is constrained ro represent the transport used by the subject for an Encounter.
