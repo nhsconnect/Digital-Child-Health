@@ -6,13 +6,13 @@
 	<extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm">
 		<valueInteger value="1" />
 	</extension>
-	<url value="http://fhir.nhs.net/ValueSet/careconnect-conditionrelationship-1"/>
+	<url value="https://fhir.hl7.org.uk/ValueSet/CareConnect-ConditionRelationship-1"/>
 	<name value="CareConnect-ConditionRelationship-1"/>
 	<status value="draft"/>
 	<publisher value="HL7 UK"/>
 	<description value="A set of codes specifying the kind of relationship that exists with a target condition."/>
 	<codeSystem>
-		<system value="http://fhir.nhs.net/ValueSet/careconnect-conditionrelationship-1"/>
+		<system value="https://fhir.hl7.org.uk/CareConnect-ConditionRelationship"/>
 		<concept>
 			<code value="combined"/>
 			<display value="Combined"/>

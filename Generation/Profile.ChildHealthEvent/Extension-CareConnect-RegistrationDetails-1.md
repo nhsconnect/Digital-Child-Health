@@ -1,1 +1,1 @@
-This extension is constrained to record the additional registration information for the Patient resource.
+This extension is constrained to represent the additional registration information for a patient.

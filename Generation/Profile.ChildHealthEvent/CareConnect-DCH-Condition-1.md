@@ -1,1 +1,1 @@
-Care Connect Patient profile, with further constraints applied to represent a baby for a Birth Event.
+This Condition resource records detailed information about conditions or diagnoses recognised by a clinician,  with further constraints applied for a Child Health Event.

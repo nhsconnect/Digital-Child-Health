@@ -1,0 +1,1 @@
+The Patient resource carries the patient demographic details, with further constraints applied for a Child Health Event.

@@ -1,1 +1,0 @@
-The CareConnect Encounter profile, with further constraints applied to represent a Child Health event.

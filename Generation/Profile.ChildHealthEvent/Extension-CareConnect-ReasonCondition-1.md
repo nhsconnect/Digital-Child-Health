@@ -1,1 +1,1 @@
-This extension is constrained to represent the reason why a resource was added/performed/given. This may be due to a Condition, may be coded entity of some type, or may simply be present as text.
+The reason why a resource was added/performed/given. This may be due to a Condition, may be coded entity of some type, or may simply be present as text.

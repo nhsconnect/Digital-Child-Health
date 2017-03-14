@@ -1,1 +1,0 @@
-This extension is constrained to record the organ donor status for a patient.
