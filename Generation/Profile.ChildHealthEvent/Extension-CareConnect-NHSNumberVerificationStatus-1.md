@@ -1,1 +1,1 @@
-This Extension resource is constrained to support the NHS number verification status for the Patient resource.
+This extension is constrained to represent the NHS Number Verification Status.

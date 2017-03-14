@@ -1,1 +1,1 @@
-This extension is constrained to support a reference to another related condition (target) whose relationship is defined by the relationship type code.
+A reference to another related condition (target) whose relationship is defined by the relationship type code.

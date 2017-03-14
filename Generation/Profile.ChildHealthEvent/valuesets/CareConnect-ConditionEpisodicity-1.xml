@@ -6,13 +6,13 @@
     <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm">
         <valueInteger value="1" />
     </extension>
-	<url value="http://fhir.nhs.net/ValueSet/CareConnect-ConditionEpisodicity-1"/>
+	<url value="https://fhir.hl7.org.uk/ValueSet/CareConnect-ConditionEpisodicity-1"/>
 	<name value="CareConnect-ConditionEpisodicity-1"/>
 	<status value="draft"/>
 	<publisher value="HL7 UK"/>
 	<description value="Specifies the episodicity of a condition."/>
 	<codeSystem>
-		<system value="http://fhir.nhs.net/ValueSet/CareConnect-ConditionEpisodicity"/>
+		<system value="https://fhir.hl7.org.uk/CareConnect-ConditionEpisodicity"/>
 		<concept>
 			<code value="first"/>
 			<display value="First"/>

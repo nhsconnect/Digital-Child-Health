@@ -1,1 +1,1 @@
-This extension is constrained to record the ethnic category.
+This extension is constrained to represent the ethnic category for a patient.

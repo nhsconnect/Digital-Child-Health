@@ -1,1 +1,1 @@
-This extension is constrained to record the religious affiliation.
+This extension is constrained to represent the religious affiliation for a patient.

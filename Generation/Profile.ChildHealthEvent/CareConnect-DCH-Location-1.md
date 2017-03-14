@@ -1,1 +1,0 @@
-The CareConnect Location profile with further constraints applied to support the Child Health Events Catalogue.

@@ -1,1 +1,1 @@
-The Care Connect Procedure profile, with further constraints to support a procedure for Child Health event.
+This Procedure resource records an action that is or was performed on a patient, with further constraints applied for a Child Health Event.
