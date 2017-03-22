@@ -1,0 +1,1 @@
+This extension is constrained to represent the treatment category for a patient.

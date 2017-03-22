@@ -1,0 +1,1 @@
+This Observation resource has been constrained to represent the Apgar Score at five minutes for the Digital Child Health Events Catalogue

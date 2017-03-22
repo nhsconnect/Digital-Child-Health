@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <meta>
-    <lastUpdated value="2017-03-13T17:29:27.668+00:00" />
+    <lastUpdated value="2017-03-20T11:25:12.843+00:00" />
     <tag>
       <system value="urn:hscic:publishOrder" />
       <code value="1" />
@@ -10,8 +10,8 @@
   <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm">
     <valueInteger value="3" />
   </extension>
-  <url value="https://fhir.nhs.uk/StructureDefinition/dch-bundle-child-health-event-1" />
-  <name value="DCH-Bundle-Child-Health-Event-1" />
+  <url value="https://fhir.nhs.uk/StructureDefinition/dch-bundle-childhealthevent-1" />
+  <name value="DCH-Bundle-ChildHealthEvent-1" />
   <status value="draft" />
   <publisher value="NHS Digital" />
   <contact>
@@ -538,11 +538,6 @@
     </element>
     <element>
       <path value="Bundle.entry" />
-      <slicing>
-        <discriminator value="fullUrl" />
-        <ordered value="true" />
-        <rules value="closed" />
-      </slicing>
       <short value="Entry in the bundle - will have a resource, or information" />
       <definition value="An entry in a bundle resource - will either contain a resource, or information about a resource (transactions and history only)." />
       <min value="1" />
@@ -2308,11 +2303,6 @@
     </element>
     <element>
       <path value="Bundle.entry" />
-      <slicing>
-        <discriminator value="fullUrl" />
-        <ordered value="true" />
-        <rules value="closed" />
-      </slicing>
       <min value="1" />
     </element>
     <element>
