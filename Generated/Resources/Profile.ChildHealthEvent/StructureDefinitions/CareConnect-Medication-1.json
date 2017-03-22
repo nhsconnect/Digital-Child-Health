@@ -1,20 +1,21 @@
 {
   "resourceType": "StructureDefinition",
   "meta": {
-    "lastUpdated": "2016-12-01T11:11:01.653+00:00",
+    "lastUpdated": "2017-03-13T17:27:06.183+00:00",
     "tag": [
       {
         "system": "urn:hscic:publishOrder",
-        "code": "6"
+        "code": "10"
       }
     ]
   },
-  "url": "http://fhir.nhs.net/StructureDefinition/careconnect-medication-1",
-  "version": "1.0",
+  "url": "https://fhir.hl7.org.uk/StructureDefinition/CareConnect-Medication-1",
+  "version": "1.0.0",
   "name": "CareConnect-Medication-1",
-  "status": "draft",
+  "status": "active",
   "publisher": "HL7 UK",
-  "description": "The CareConnect Medication profile.",
+  "date": "2017-02-24T09:31:30.3296635Z",
+  "description": "This Medication Resource is primarily used for the identification and definition of a medication.",
   "copyright": "Copyright © 2016 HL7 UK\r\n\r\nLicensed under the Apache License, Version 2.0 (the \"License\"); you may not use this file except in compliance with the License. You may obtain a copy of the License at\r\n\r\nhttp://www.apache.org/licenses/LICENSE-2.0\r\n\r\nUnless required by applicable law or agreed to in writing, software distributed under the License is distributed on an \"AS IS\" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the License for the specific language governing permissions and limitations under the License.\r\n\r\nHL7® FHIR® standard Copyright © 2011+ HL7\r\n\r\nThe HL7® FHIR® standard is used under the FHIR license. You may obtain a copy of the FHIR license at\r\n\r\nhttps://www.hl7.org/fhir/license.html",
   "fhirVersion": "1.0.2",
   "kind": "resource",
@@ -30,16 +31,70 @@
         "min": 0,
         "max": "*",
         "base": {
-          "path": "Medication",
+          "path": "Resource",
           "min": 0,
           "max": "*"
         },
         "type": [
           {
-            "code": "Medication"
+            "code": "DomainResource"
+          }
+        ],
+        "constraint": [
+          {
+            "extension": [
+              {
+                "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-expression",
+                "valueString": "contained.meta.versionId.empty() and contained.meta.lastUpdated.empty()"
+              }
+            ],
+            "key": "dom-4",
+            "severity": "error",
+            "human": "If a resource is contained in another resource, it SHALL NOT have a meta.versionId or a meta.lastUpdated",
+            "xpath": "not(exists(f:contained/*/f:meta/f:versionId)) and not(exists(f:contained/*/f:meta/f:lastUpdated))"
+          },
+          {
+            "extension": [
+              {
+                "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-expression",
+                "valueString": "contained.where(('#'+id in %resource.descendants().reference).not()).empty()"
+              }
+            ],
+            "key": "dom-3",
+            "severity": "error",
+            "human": "If the resource is contained in another resource, it SHALL be referred to from elsewhere in the resource",
+            "xpath": "not(exists(for $id in f:contained/*/@id return $id[not(ancestor::f:contained/parent::*/descendant::f:reference/@value=concat('#', $id))]))"
+          },
+          {
+            "extension": [
+              {
+                "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-expression",
+                "valueString": "contained.contained.empty()"
+              }
+            ],
+            "key": "dom-2",
+            "severity": "error",
+            "human": "If the resource is contained in another resource, it SHALL NOT contain nested Resources",
+            "xpath": "not(parent::f:contained and f:contained)"
+          },
+          {
+            "extension": [
+              {
+                "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-expression",
+                "valueString": "contained.text.empty()"
+              }
+            ],
+            "key": "dom-1",
+            "severity": "error",
+            "human": "If the resource is contained in another resource, it SHALL NOT contain any narrative",
+            "xpath": "not(parent::f:contained and f:text)"
           }
         ],
         "mapping": [
+          {
+            "identity": "rim",
+            "map": "Entity. Role, or Act"
+          },
           {
             "identity": "rim",
             "map": "ManufacturedProduct[classCode=ADMM]"
@@ -47,6 +102,366 @@
           {
             "identity": "w5",
             "map": "clinical.medication"
+          }
+        ]
+      },
+      {
+        "path": "Medication.id",
+        "short": "Logical id of this artifact",
+        "definition": "The logical id of the resource, as used in the URL for the resource. Once assigned, this value never changes.",
+        "comments": "The only time that a resource does not have an id is when it is being submitted to the server using a create operation. Bundles always have an id, though it is usually a generated UUID.",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Resource.id",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "id"
+          }
+        ],
+        "condition": [
+          "ele-1"
+        ],
+        "constraint": [
+          {
+            "extension": [
+              {
+                "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-expression",
+                "valueString": "children()"
+              }
+            ],
+            "key": "ele-1",
+            "severity": "error",
+            "human": "All FHIR elements must have a @value or children",
+            "xpath": "@value|f:*|h:div"
+          }
+        ],
+        "isSummary": true,
+        "mapping": [
+          {
+            "identity": "rim",
+            "map": "n/a"
+          }
+        ]
+      },
+      {
+        "path": "Medication.meta",
+        "short": "Metadata about the resource",
+        "definition": "The metadata about the resource. This is content that is maintained by the infrastructure. Changes to the content may not always be associated with version changes to the resource.",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Resource.meta",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "Meta"
+          }
+        ],
+        "condition": [
+          "ele-1"
+        ],
+        "constraint": [
+          {
+            "extension": [
+              {
+                "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-expression",
+                "valueString": "children()"
+              }
+            ],
+            "key": "ele-1",
+            "severity": "error",
+            "human": "All FHIR elements must have a @value or children",
+            "xpath": "@value|f:*|h:div"
+          }
+        ],
+        "isSummary": true,
+        "mapping": [
+          {
+            "identity": "rim",
+            "map": "n/a"
+          }
+        ]
+      },
+      {
+        "path": "Medication.implicitRules",
+        "short": "A set of rules under which this content was created",
+        "definition": "A reference to a set of rules that were followed when the resource was constructed, and which must be understood when processing the content.",
+        "comments": "Asserting this rule set restricts the content to be only understood by a limited set of trading partners. This inherently limits the usefulness of the data in the long term. However, the existing health eco-system is highly fractured, and not yet ready to define, collect, and exchange data in a generally computable sense. Wherever possible, implementers and/or specification writers should avoid using this element as much as possible.",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Resource.implicitRules",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "uri"
+          }
+        ],
+        "condition": [
+          "ele-1"
+        ],
+        "constraint": [
+          {
+            "extension": [
+              {
+                "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-expression",
+                "valueString": "children()"
+              }
+            ],
+            "key": "ele-1",
+            "severity": "error",
+            "human": "All FHIR elements must have a @value or children",
+            "xpath": "@value|f:*|h:div"
+          }
+        ],
+        "isModifier": true,
+        "isSummary": true,
+        "mapping": [
+          {
+            "identity": "rim",
+            "map": "n/a"
+          }
+        ]
+      },
+      {
+        "path": "Medication.language",
+        "short": "Language of the resource content",
+        "definition": "The base language in which the resource is written.",
+        "comments": "Language is provided to support indexing and accessibility (typically, services such as text to speech use the language tag). The html language tag in the narrative applies  to the narrative. The language tag on the resource may be used to specify the language of other presentations generated from the data in the resource  Not all the content has to be in the base language. The Resource.language should not be assumed to apply to the narrative automatically. If a language is specified, it should it also be specified on the div element in the html (see rules in HTML5 for information about the relationship between xml:lang and the html lang attribute).",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Resource.language",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "code"
+          }
+        ],
+        "condition": [
+          "ele-1"
+        ],
+        "constraint": [
+          {
+            "extension": [
+              {
+                "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-expression",
+                "valueString": "children()"
+              }
+            ],
+            "key": "ele-1",
+            "severity": "error",
+            "human": "All FHIR elements must have a @value or children",
+            "xpath": "@value|f:*|h:div"
+          }
+        ],
+        "binding": {
+          "strength": "required",
+          "description": "A human language.",
+          "valueSetUri": "http://tools.ietf.org/html/bcp47"
+        },
+        "mapping": [
+          {
+            "identity": "rim",
+            "map": "n/a"
+          }
+        ]
+      },
+      {
+        "path": "Medication.text",
+        "short": "Text summary of the resource, for human interpretation",
+        "definition": "A human-readable narrative that contains a summary of the resource, and may be used to represent the content of the resource to a human. The narrative need not encode all the structured data, but is required to contain sufficient detail to make it \"clinically safe\" for a human to just read the narrative. Resource definitions may define what content should be represented in the narrative to ensure clinical safety.",
+        "comments": "Contained resources do not have narrative. Resources that are not contained SHOULD have a narrative.",
+        "alias": [
+          "narrative",
+          "html",
+          "xhtml",
+          "display"
+        ],
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "DomainResource.text",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "Narrative"
+          }
+        ],
+        "condition": [
+          "ele-1",
+          "dom-1"
+        ],
+        "constraint": [
+          {
+            "extension": [
+              {
+                "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-expression",
+                "valueString": "children()"
+              }
+            ],
+            "key": "ele-1",
+            "severity": "error",
+            "human": "All FHIR elements must have a @value or children",
+            "xpath": "@value|f:*|h:div"
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "rim",
+            "map": "n/a"
+          },
+          {
+            "identity": "rim",
+            "map": "N/A"
+          },
+          {
+            "identity": "rim",
+            "map": "Act.text?"
+          }
+        ]
+      },
+      {
+        "path": "Medication.contained",
+        "short": "Contained, inline Resources",
+        "definition": "These resources do not have an independent existence apart from the resource that contains them - they cannot be identified independently, and nor can they have their own independent transaction scope.",
+        "comments": "This should never be done when the content can be identified properly, as once identification is lost, it is extremely difficult (and context dependent) to restore it again.",
+        "alias": [
+          "inline resources",
+          "anonymous resources",
+          "contained resources"
+        ],
+        "min": 0,
+        "max": "*",
+        "base": {
+          "path": "DomainResource.contained",
+          "min": 0,
+          "max": "*"
+        },
+        "type": [
+          {
+            "code": "Resource"
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "rim",
+            "map": "Entity. Role, or Act"
+          },
+          {
+            "identity": "rim",
+            "map": "N/A"
+          }
+        ]
+      },
+      {
+        "path": "Medication.extension",
+        "short": "Additional Content defined by implementations",
+        "definition": "May be used to represent additional information that is not part of the basic definition of the resource. In order to make the use of extensions safe and manageable, there is a strict set of governance  applied to the definition and use of extensions. Though any implementer is allowed to define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension.",
+        "comments": "There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone.",
+        "alias": [
+          "extensions",
+          "user content"
+        ],
+        "min": 0,
+        "max": "*",
+        "base": {
+          "path": "DomainResource.extension",
+          "min": 0,
+          "max": "*"
+        },
+        "type": [
+          {
+            "code": "Extension"
+          }
+        ],
+        "condition": [
+          "ele-1"
+        ],
+        "constraint": [
+          {
+            "extension": [
+              {
+                "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-expression",
+                "valueString": "children()"
+              }
+            ],
+            "key": "ele-1",
+            "severity": "error",
+            "human": "All FHIR elements must have a @value or children",
+            "xpath": "@value|f:*|h:div"
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "rim",
+            "map": "n/a"
+          },
+          {
+            "identity": "rim",
+            "map": "N/A"
+          }
+        ]
+      },
+      {
+        "path": "Medication.modifierExtension",
+        "short": "Extensions that cannot be ignored",
+        "definition": "May be used to represent additional information that is not part of the basic definition of the resource, and that modifies the understanding of the element that contains it. Usually modifier elements provide negation or qualification. In order to make the use of extensions safe and manageable, there is a strict set of governance applied to the definition and use of extensions. Though any implementer is allowed to define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension. Applications processing a resource are required to check for modifier extensions.",
+        "comments": "There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone.",
+        "alias": [
+          "extensions",
+          "user content"
+        ],
+        "min": 0,
+        "max": "*",
+        "base": {
+          "path": "DomainResource.modifierExtension",
+          "min": 0,
+          "max": "*"
+        },
+        "type": [
+          {
+            "code": "Extension"
+          }
+        ],
+        "condition": [
+          "ele-1"
+        ],
+        "constraint": [
+          {
+            "extension": [
+              {
+                "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-expression",
+                "valueString": "children()"
+              }
+            ],
+            "key": "ele-1",
+            "severity": "error",
+            "human": "All FHIR elements must have a @value or children",
+            "xpath": "@value|f:*|h:div"
+          }
+        ],
+        "isModifier": true,
+        "mapping": [
+          {
+            "identity": "rim",
+            "map": "n/a"
+          },
+          {
+            "identity": "rim",
+            "map": "N/A"
           }
         ]
       },
@@ -67,6 +482,23 @@
             "code": "CodeableConcept"
           }
         ],
+        "condition": [
+          "ele-1"
+        ],
+        "constraint": [
+          {
+            "extension": [
+              {
+                "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-expression",
+                "valueString": "children()"
+              }
+            ],
+            "key": "ele-1",
+            "severity": "error",
+            "human": "All FHIR elements must have a @value or children",
+            "xpath": "@value|f:*|h:div"
+          }
+        ],
         "isSummary": true,
         "binding": {
           "strength": "example",
@@ -76,6 +508,22 @@
           }
         },
         "mapping": [
+          {
+            "identity": "rim",
+            "map": "n/a"
+          },
+          {
+            "identity": "v2",
+            "map": "CE/CNE/CWE"
+          },
+          {
+            "identity": "rim",
+            "map": "CD"
+          },
+          {
+            "identity": "orim",
+            "map": "fhir:CodeableConcept rdfs:subClassOf dt:CD"
+          },
           {
             "identity": "v2",
             "map": "RXO-1.1-Requested Give Code.code / RXE-2.1-Give Code.code / RXD-2.1-Dispense/Give Code.code / RXG-4.1-Give Code.code /RXA-5.1-Administered Code.code / RXC-2.1 Component Code"
@@ -87,6 +535,96 @@
           {
             "identity": "w5",
             "map": "class"
+          }
+        ]
+      },
+      {
+        "path": "Medication.code.id",
+        "short": "xml:id (or equivalent in JSON)",
+        "definition": "unique id for the element within a resource (for internal references).",
+        "comments": "RFC 4122",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Element.id",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "id"
+          }
+        ],
+        "condition": [
+          "ele-1"
+        ],
+        "constraint": [
+          {
+            "extension": [
+              {
+                "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-expression",
+                "valueString": "children()"
+              }
+            ],
+            "key": "ele-1",
+            "severity": "error",
+            "human": "All FHIR elements must have a @value or children",
+            "xpath": "@value|f:*|h:div"
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "rim",
+            "map": "n/a"
+          }
+        ]
+      },
+      {
+        "path": "Medication.code.extension",
+        "short": "Additional Content defined by implementations",
+        "definition": "May be used to represent additional information that is not part of the basic definition of the element. In order to make the use of extensions safe and manageable, there is a strict set of governance  applied to the definition and use of extensions. Though any implementer is allowed to define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension.",
+        "comments": "There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone.",
+        "alias": [
+          "extensions",
+          "user content"
+        ],
+        "min": 0,
+        "max": "*",
+        "base": {
+          "path": "Element.extension",
+          "min": 0,
+          "max": "*"
+        },
+        "type": [
+          {
+            "code": "Extension"
+          }
+        ],
+        "condition": [
+          "ele-1"
+        ],
+        "constraint": [
+          {
+            "extension": [
+              {
+                "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-expression",
+                "valueString": "children()"
+              }
+            ],
+            "key": "ele-1",
+            "severity": "error",
+            "human": "All FHIR elements must have a @value or children",
+            "xpath": "@value|f:*|h:div"
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "rim",
+            "map": "n/a"
+          },
+          {
+            "identity": "rim",
+            "map": "N/A"
           }
         ]
       },
@@ -108,8 +646,41 @@
             "code": "Coding"
           }
         ],
+        "condition": [
+          "ele-1"
+        ],
+        "constraint": [
+          {
+            "extension": [
+              {
+                "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-expression",
+                "valueString": "children()"
+              }
+            ],
+            "key": "ele-1",
+            "severity": "error",
+            "human": "All FHIR elements must have a @value or children",
+            "xpath": "@value|f:*|h:div"
+          }
+        ],
         "isSummary": true,
         "mapping": [
+          {
+            "identity": "rim",
+            "map": "n/a"
+          },
+          {
+            "identity": "v2",
+            "map": "CE/CNE/CWE subset one of the sets of component 1-3 or 4-6"
+          },
+          {
+            "identity": "rim",
+            "map": "CV"
+          },
+          {
+            "identity": "orim",
+            "map": "fhir:Coding rdfs:subClassOf dt:CDCoding"
+          },
           {
             "identity": "v2",
             "map": "C*E.1-8, C*E.10-22"
@@ -121,6 +692,96 @@
           {
             "identity": "orim",
             "map": "fhir:CodeableConcept.coding rdfs:subPropertyOf dt:CD.coding"
+          }
+        ]
+      },
+      {
+        "path": "Medication.code.coding.id",
+        "short": "xml:id (or equivalent in JSON)",
+        "definition": "unique id for the element within a resource (for internal references).",
+        "comments": "RFC 4122",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Element.id",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "id"
+          }
+        ],
+        "condition": [
+          "ele-1"
+        ],
+        "constraint": [
+          {
+            "extension": [
+              {
+                "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-expression",
+                "valueString": "children()"
+              }
+            ],
+            "key": "ele-1",
+            "severity": "error",
+            "human": "All FHIR elements must have a @value or children",
+            "xpath": "@value|f:*|h:div"
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "rim",
+            "map": "n/a"
+          }
+        ]
+      },
+      {
+        "path": "Medication.code.coding.extension",
+        "short": "Additional Content defined by implementations",
+        "definition": "May be used to represent additional information that is not part of the basic definition of the element. In order to make the use of extensions safe and manageable, there is a strict set of governance  applied to the definition and use of extensions. Though any implementer is allowed to define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension.",
+        "comments": "There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone.",
+        "alias": [
+          "extensions",
+          "user content"
+        ],
+        "min": 0,
+        "max": "*",
+        "base": {
+          "path": "Element.extension",
+          "min": 0,
+          "max": "*"
+        },
+        "type": [
+          {
+            "code": "Extension"
+          }
+        ],
+        "condition": [
+          "ele-1"
+        ],
+        "constraint": [
+          {
+            "extension": [
+              {
+                "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-expression",
+                "valueString": "children()"
+              }
+            ],
+            "key": "ele-1",
+            "severity": "error",
+            "human": "All FHIR elements must have a @value or children",
+            "xpath": "@value|f:*|h:div"
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "rim",
+            "map": "n/a"
+          },
+          {
+            "identity": "rim",
+            "map": "N/A"
           }
         ]
       },
@@ -142,8 +803,29 @@
             "code": "uri"
           }
         ],
+        "condition": [
+          "ele-1"
+        ],
+        "constraint": [
+          {
+            "extension": [
+              {
+                "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-expression",
+                "valueString": "children()"
+              }
+            ],
+            "key": "ele-1",
+            "severity": "error",
+            "human": "All FHIR elements must have a @value or children",
+            "xpath": "@value|f:*|h:div"
+          }
+        ],
         "isSummary": true,
         "mapping": [
+          {
+            "identity": "rim",
+            "map": "n/a"
+          },
           {
             "identity": "v2",
             "map": "C*E.3"
@@ -175,8 +857,29 @@
             "code": "string"
           }
         ],
+        "condition": [
+          "ele-1"
+        ],
+        "constraint": [
+          {
+            "extension": [
+              {
+                "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-expression",
+                "valueString": "children()"
+              }
+            ],
+            "key": "ele-1",
+            "severity": "error",
+            "human": "All FHIR elements must have a @value or children",
+            "xpath": "@value|f:*|h:div"
+          }
+        ],
         "isSummary": true,
         "mapping": [
+          {
+            "identity": "rim",
+            "map": "n/a"
+          },
           {
             "identity": "v2",
             "map": "C*E.7"
@@ -195,6 +898,7 @@
         "path": "Medication.code.coding.code",
         "short": "Symbol in syntax defined by the system",
         "definition": "A symbol in syntax defined by the system. The symbol may be a predefined code or an expression in a syntax defined by the coding system (e.g. post-coordination).",
+        "comments": "Note that FHIR strings may not exceed 1MB in size",
         "requirements": "Need to refer to a particular code in the system.",
         "min": 0,
         "max": "1",
@@ -208,8 +912,29 @@
             "code": "code"
           }
         ],
+        "condition": [
+          "ele-1"
+        ],
+        "constraint": [
+          {
+            "extension": [
+              {
+                "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-expression",
+                "valueString": "children()"
+              }
+            ],
+            "key": "ele-1",
+            "severity": "error",
+            "human": "All FHIR elements must have a @value or children",
+            "xpath": "@value|f:*|h:div"
+          }
+        ],
         "isSummary": true,
         "mapping": [
+          {
+            "identity": "rim",
+            "map": "n/a"
+          },
           {
             "identity": "v2",
             "map": "C*E.1"
@@ -228,6 +953,7 @@
         "path": "Medication.code.coding.display",
         "short": "Representation defined by the system",
         "definition": "A representation of the meaning of the code in the system, following the rules of the system.",
+        "comments": "Note that FHIR strings may not exceed 1MB in size",
         "requirements": "Need to be able to carry a human-readable meaning of the code for readers that do not know  the system.",
         "min": 0,
         "max": "1",
@@ -241,8 +967,29 @@
             "code": "string"
           }
         ],
+        "condition": [
+          "ele-1"
+        ],
+        "constraint": [
+          {
+            "extension": [
+              {
+                "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-expression",
+                "valueString": "children()"
+              }
+            ],
+            "key": "ele-1",
+            "severity": "error",
+            "human": "All FHIR elements must have a @value or children",
+            "xpath": "@value|f:*|h:div"
+          }
+        ],
         "isSummary": true,
         "mapping": [
+          {
+            "identity": "rim",
+            "map": "n/a"
+          },
           {
             "identity": "v2",
             "map": "C*E.2 - but note this is not well followed"
@@ -275,8 +1022,29 @@
             "code": "boolean"
           }
         ],
+        "condition": [
+          "ele-1"
+        ],
+        "constraint": [
+          {
+            "extension": [
+              {
+                "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-expression",
+                "valueString": "children()"
+              }
+            ],
+            "key": "ele-1",
+            "severity": "error",
+            "human": "All FHIR elements must have a @value or children",
+            "xpath": "@value|f:*|h:div"
+          }
+        ],
         "isSummary": true,
         "mapping": [
+          {
+            "identity": "rim",
+            "map": "n/a"
+          },
           {
             "identity": "v2",
             "map": "Sometimes implied by being first"
@@ -309,8 +1077,29 @@
             "code": "string"
           }
         ],
+        "condition": [
+          "ele-1"
+        ],
+        "constraint": [
+          {
+            "extension": [
+              {
+                "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-expression",
+                "valueString": "children()"
+              }
+            ],
+            "key": "ele-1",
+            "severity": "error",
+            "human": "All FHIR elements must have a @value or children",
+            "xpath": "@value|f:*|h:div"
+          }
+        ],
         "isSummary": true,
         "mapping": [
+          {
+            "identity": "rim",
+            "map": "n/a"
+          },
           {
             "identity": "v2",
             "map": "C*E.9. But note many systems use C*E.2 for this"
@@ -341,8 +1130,29 @@
             "code": "boolean"
           }
         ],
+        "condition": [
+          "ele-1"
+        ],
+        "constraint": [
+          {
+            "extension": [
+              {
+                "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-expression",
+                "valueString": "children()"
+              }
+            ],
+            "key": "ele-1",
+            "severity": "error",
+            "human": "All FHIR elements must have a @value or children",
+            "xpath": "@value|f:*|h:div"
+          }
+        ],
         "isSummary": true,
         "mapping": [
+          {
+            "identity": "rim",
+            "map": "n/a"
+          },
           {
             "identity": "rim",
             "map": "true if .player.scopingRole[typeCode=MANU] exists"
@@ -368,12 +1178,49 @@
           {
             "code": "Reference",
             "profile": [
-              "http://hl7.org/fhir/StructureDefinition/Organization"
+              "https://fhir.hl7.org.uk/StructureDefinition/CareConnect-Organization-1"
             ]
+          }
+        ],
+        "condition": [
+          "ele-1"
+        ],
+        "constraint": [
+          {
+            "extension": [
+              {
+                "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-expression",
+                "valueString": "children()"
+              }
+            ],
+            "key": "ele-1",
+            "severity": "error",
+            "human": "All FHIR elements must have a @value or children",
+            "xpath": "@value|f:*|h:div"
+          },
+          {
+            "extension": [
+              {
+                "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-expression",
+                "valueString": "reference.startsWith('#').not() or (reference.substring(1).trace('url') in %resource.contained.id.trace('ids'))"
+              }
+            ],
+            "key": "ref-1",
+            "severity": "error",
+            "human": "SHALL have a local reference if the resource is provided inline",
+            "xpath": "not(starts-with(f:reference/@value, '#')) or exists(ancestor::*[self::f:entry or self::f:parameter]/f:resource/f:*/f:contained/f:*[f:id/@value=substring-after(current()/f:reference/@value, '#')]|/*/f:contained/f:*[f:id/@value=substring-after(current()/f:reference/@value, '#')])"
           }
         ],
         "isSummary": true,
         "mapping": [
+          {
+            "identity": "rim",
+            "map": "n/a"
+          },
+          {
+            "identity": "rim",
+            "map": "The target of a resource reference is a RIM entry point (Act, Role, or Entity)"
+          },
           {
             "identity": "v2",
             "map": "RXD-20-Substance Manufacturer Name / RXG-21-Substance Manufacturer Name / RXA-17-Substance Manufacturer Name"
@@ -385,6 +1232,96 @@
           {
             "identity": "w5",
             "map": "who.actor"
+          }
+        ]
+      },
+      {
+        "path": "Medication.manufacturer.id",
+        "short": "xml:id (or equivalent in JSON)",
+        "definition": "unique id for the element within a resource (for internal references).",
+        "comments": "RFC 4122",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Element.id",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "id"
+          }
+        ],
+        "condition": [
+          "ele-1"
+        ],
+        "constraint": [
+          {
+            "extension": [
+              {
+                "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-expression",
+                "valueString": "children()"
+              }
+            ],
+            "key": "ele-1",
+            "severity": "error",
+            "human": "All FHIR elements must have a @value or children",
+            "xpath": "@value|f:*|h:div"
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "rim",
+            "map": "n/a"
+          }
+        ]
+      },
+      {
+        "path": "Medication.manufacturer.extension",
+        "short": "Additional Content defined by implementations",
+        "definition": "May be used to represent additional information that is not part of the basic definition of the element. In order to make the use of extensions safe and manageable, there is a strict set of governance  applied to the definition and use of extensions. Though any implementer is allowed to define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension.",
+        "comments": "There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone.",
+        "alias": [
+          "extensions",
+          "user content"
+        ],
+        "min": 0,
+        "max": "*",
+        "base": {
+          "path": "Element.extension",
+          "min": 0,
+          "max": "*"
+        },
+        "type": [
+          {
+            "code": "Extension"
+          }
+        ],
+        "condition": [
+          "ele-1"
+        ],
+        "constraint": [
+          {
+            "extension": [
+              {
+                "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-expression",
+                "valueString": "children()"
+              }
+            ],
+            "key": "ele-1",
+            "severity": "error",
+            "human": "All FHIR elements must have a @value or children",
+            "xpath": "@value|f:*|h:div"
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "rim",
+            "map": "n/a"
+          },
+          {
+            "identity": "rim",
+            "map": "N/A"
           }
         ]
       },
@@ -406,10 +1343,29 @@
           }
         ],
         "condition": [
+          "ele-1",
           "ref-1"
+        ],
+        "constraint": [
+          {
+            "extension": [
+              {
+                "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-expression",
+                "valueString": "children()"
+              }
+            ],
+            "key": "ele-1",
+            "severity": "error",
+            "human": "All FHIR elements must have a @value or children",
+            "xpath": "@value|f:*|h:div"
+          }
         ],
         "isSummary": true,
         "mapping": [
+          {
+            "identity": "rim",
+            "map": "n/a"
+          },
           {
             "identity": "rim",
             "map": "N/A"
@@ -433,8 +1389,29 @@
             "code": "string"
           }
         ],
+        "condition": [
+          "ele-1"
+        ],
+        "constraint": [
+          {
+            "extension": [
+              {
+                "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-expression",
+                "valueString": "children()"
+              }
+            ],
+            "key": "ele-1",
+            "severity": "error",
+            "human": "All FHIR elements must have a @value or children",
+            "xpath": "@value|f:*|h:div"
+          }
+        ],
         "isSummary": true,
         "mapping": [
+          {
+            "identity": "rim",
+            "map": "n/a"
+          },
           {
             "identity": "rim",
             "map": "N/A"
@@ -457,10 +1434,121 @@
             "code": "BackboneElement"
           }
         ],
+        "condition": [
+          "ele-1"
+        ],
+        "constraint": [
+          {
+            "extension": [
+              {
+                "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-expression",
+                "valueString": "children()"
+              }
+            ],
+            "key": "ele-1",
+            "severity": "error",
+            "human": "All FHIR elements must have a @value or children",
+            "xpath": "@value|f:*|h:div"
+          }
+        ],
         "mapping": [
           {
             "identity": "rim",
+            "map": "n/a"
+          },
+          {
+            "identity": "rim",
             "map": ".player [classCode != CONT]"
+          }
+        ]
+      },
+      {
+        "path": "Medication.product.id",
+        "short": "xml:id (or equivalent in JSON)",
+        "definition": "unique id for the element within a resource (for internal references).",
+        "comments": "RFC 4122",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Element.id",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "id"
+          }
+        ],
+        "condition": [
+          "ele-1"
+        ],
+        "constraint": [
+          {
+            "extension": [
+              {
+                "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-expression",
+                "valueString": "children()"
+              }
+            ],
+            "key": "ele-1",
+            "severity": "error",
+            "human": "All FHIR elements must have a @value or children",
+            "xpath": "@value|f:*|h:div"
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "rim",
+            "map": "n/a"
+          }
+        ]
+      },
+      {
+        "path": "Medication.product.extension",
+        "short": "Additional Content defined by implementations",
+        "definition": "May be used to represent additional information that is not part of the basic definition of the element. In order to make the use of extensions safe and manageable, there is a strict set of governance  applied to the definition and use of extensions. Though any implementer is allowed to define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension.",
+        "comments": "There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone.",
+        "alias": [
+          "extensions",
+          "user content"
+        ],
+        "min": 0,
+        "max": "*",
+        "base": {
+          "path": "Element.extension",
+          "min": 0,
+          "max": "*"
+        },
+        "type": [
+          {
+            "code": "Extension"
+          }
+        ],
+        "condition": [
+          "ele-1"
+        ],
+        "constraint": [
+          {
+            "extension": [
+              {
+                "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-expression",
+                "valueString": "children()"
+              }
+            ],
+            "key": "ele-1",
+            "severity": "error",
+            "human": "All FHIR elements must have a @value or children",
+            "xpath": "@value|f:*|h:div"
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "rim",
+            "map": "n/a"
+          },
+          {
+            "identity": "rim",
+            "map": "N/A"
           }
         ]
       },
@@ -486,8 +1574,29 @@
             "code": "Extension"
           }
         ],
+        "condition": [
+          "ele-1"
+        ],
+        "constraint": [
+          {
+            "extension": [
+              {
+                "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-expression",
+                "valueString": "children()"
+              }
+            ],
+            "key": "ele-1",
+            "severity": "error",
+            "human": "All FHIR elements must have a @value or children",
+            "xpath": "@value|f:*|h:div"
+          }
+        ],
         "isModifier": true,
         "mapping": [
+          {
+            "identity": "rim",
+            "map": "n/a"
+          },
           {
             "identity": "rim",
             "map": "N/A"
@@ -498,6 +1607,7 @@
         "path": "Medication.product.form",
         "short": "powder | tablets | carton +",
         "definition": "Describes the form of the item.  Powder; tablets; carton.",
+        "comments": "Not all terminology uses fit this general pattern. In some cases, models should not use CodeableConcept and use Coding directly and provide their own structure for managing text, codings, translations and the relationship between elements and pre- and post-coordination.",
         "min": 0,
         "max": "1",
         "base": {
@@ -510,6 +1620,24 @@
             "code": "CodeableConcept"
           }
         ],
+        "condition": [
+          "ele-1"
+        ],
+        "constraint": [
+          {
+            "extension": [
+              {
+                "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-expression",
+                "valueString": "children()"
+              }
+            ],
+            "key": "ele-1",
+            "severity": "error",
+            "human": "All FHIR elements must have a @value or children",
+            "xpath": "@value|f:*|h:div"
+          }
+        ],
+        "isSummary": true,
         "binding": {
           "strength": "example",
           "description": "The form of a medication",
@@ -519,12 +1647,118 @@
         },
         "mapping": [
           {
+            "identity": "rim",
+            "map": "n/a"
+          },
+          {
+            "identity": "v2",
+            "map": "CE/CNE/CWE"
+          },
+          {
+            "identity": "rim",
+            "map": "CD"
+          },
+          {
+            "identity": "orim",
+            "map": "fhir:CodeableConcept rdfs:subClassOf dt:CD"
+          },
+          {
             "identity": "v2",
             "map": "RXO-5-Requested Dosage Form / RXE-6-Give Dosage Form / RXD-6-Actual Dosage Form / RXG-8-Give Dosage Form / RXA-8-Administered Dosage Form"
           },
           {
             "identity": "rim",
             "map": ".formCode"
+          }
+        ]
+      },
+      {
+        "path": "Medication.product.form.id",
+        "short": "xml:id (or equivalent in JSON)",
+        "definition": "unique id for the element within a resource (for internal references).",
+        "comments": "RFC 4122",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Element.id",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "id"
+          }
+        ],
+        "condition": [
+          "ele-1"
+        ],
+        "constraint": [
+          {
+            "extension": [
+              {
+                "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-expression",
+                "valueString": "children()"
+              }
+            ],
+            "key": "ele-1",
+            "severity": "error",
+            "human": "All FHIR elements must have a @value or children",
+            "xpath": "@value|f:*|h:div"
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "rim",
+            "map": "n/a"
+          }
+        ]
+      },
+      {
+        "path": "Medication.product.form.extension",
+        "short": "Additional Content defined by implementations",
+        "definition": "May be used to represent additional information that is not part of the basic definition of the element. In order to make the use of extensions safe and manageable, there is a strict set of governance  applied to the definition and use of extensions. Though any implementer is allowed to define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension.",
+        "comments": "There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone.",
+        "alias": [
+          "extensions",
+          "user content"
+        ],
+        "min": 0,
+        "max": "*",
+        "base": {
+          "path": "Element.extension",
+          "min": 0,
+          "max": "*"
+        },
+        "type": [
+          {
+            "code": "Extension"
+          }
+        ],
+        "condition": [
+          "ele-1"
+        ],
+        "constraint": [
+          {
+            "extension": [
+              {
+                "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-expression",
+                "valueString": "children()"
+              }
+            ],
+            "key": "ele-1",
+            "severity": "error",
+            "human": "All FHIR elements must have a @value or children",
+            "xpath": "@value|f:*|h:div"
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "rim",
+            "map": "n/a"
+          },
+          {
+            "identity": "rim",
+            "map": "N/A"
           }
         ]
       },
@@ -546,8 +1780,41 @@
             "code": "Coding"
           }
         ],
+        "condition": [
+          "ele-1"
+        ],
+        "constraint": [
+          {
+            "extension": [
+              {
+                "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-expression",
+                "valueString": "children()"
+              }
+            ],
+            "key": "ele-1",
+            "severity": "error",
+            "human": "All FHIR elements must have a @value or children",
+            "xpath": "@value|f:*|h:div"
+          }
+        ],
         "isSummary": true,
         "mapping": [
+          {
+            "identity": "rim",
+            "map": "n/a"
+          },
+          {
+            "identity": "v2",
+            "map": "CE/CNE/CWE subset one of the sets of component 1-3 or 4-6"
+          },
+          {
+            "identity": "rim",
+            "map": "CV"
+          },
+          {
+            "identity": "orim",
+            "map": "fhir:Coding rdfs:subClassOf dt:CDCoding"
+          },
           {
             "identity": "v2",
             "map": "C*E.1-8, C*E.10-22"
@@ -559,6 +1826,96 @@
           {
             "identity": "orim",
             "map": "fhir:CodeableConcept.coding rdfs:subPropertyOf dt:CD.coding"
+          }
+        ]
+      },
+      {
+        "path": "Medication.product.form.coding.id",
+        "short": "xml:id (or equivalent in JSON)",
+        "definition": "unique id for the element within a resource (for internal references).",
+        "comments": "RFC 4122",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Element.id",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "id"
+          }
+        ],
+        "condition": [
+          "ele-1"
+        ],
+        "constraint": [
+          {
+            "extension": [
+              {
+                "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-expression",
+                "valueString": "children()"
+              }
+            ],
+            "key": "ele-1",
+            "severity": "error",
+            "human": "All FHIR elements must have a @value or children",
+            "xpath": "@value|f:*|h:div"
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "rim",
+            "map": "n/a"
+          }
+        ]
+      },
+      {
+        "path": "Medication.product.form.coding.extension",
+        "short": "Additional Content defined by implementations",
+        "definition": "May be used to represent additional information that is not part of the basic definition of the element. In order to make the use of extensions safe and manageable, there is a strict set of governance  applied to the definition and use of extensions. Though any implementer is allowed to define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension.",
+        "comments": "There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone.",
+        "alias": [
+          "extensions",
+          "user content"
+        ],
+        "min": 0,
+        "max": "*",
+        "base": {
+          "path": "Element.extension",
+          "min": 0,
+          "max": "*"
+        },
+        "type": [
+          {
+            "code": "Extension"
+          }
+        ],
+        "condition": [
+          "ele-1"
+        ],
+        "constraint": [
+          {
+            "extension": [
+              {
+                "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-expression",
+                "valueString": "children()"
+              }
+            ],
+            "key": "ele-1",
+            "severity": "error",
+            "human": "All FHIR elements must have a @value or children",
+            "xpath": "@value|f:*|h:div"
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "rim",
+            "map": "n/a"
+          },
+          {
+            "identity": "rim",
+            "map": "N/A"
           }
         ]
       },
@@ -580,8 +1937,29 @@
             "code": "uri"
           }
         ],
+        "condition": [
+          "ele-1"
+        ],
+        "constraint": [
+          {
+            "extension": [
+              {
+                "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-expression",
+                "valueString": "children()"
+              }
+            ],
+            "key": "ele-1",
+            "severity": "error",
+            "human": "All FHIR elements must have a @value or children",
+            "xpath": "@value|f:*|h:div"
+          }
+        ],
         "isSummary": true,
         "mapping": [
+          {
+            "identity": "rim",
+            "map": "n/a"
+          },
           {
             "identity": "v2",
             "map": "C*E.3"
@@ -613,8 +1991,29 @@
             "code": "string"
           }
         ],
+        "condition": [
+          "ele-1"
+        ],
+        "constraint": [
+          {
+            "extension": [
+              {
+                "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-expression",
+                "valueString": "children()"
+              }
+            ],
+            "key": "ele-1",
+            "severity": "error",
+            "human": "All FHIR elements must have a @value or children",
+            "xpath": "@value|f:*|h:div"
+          }
+        ],
         "isSummary": true,
         "mapping": [
+          {
+            "identity": "rim",
+            "map": "n/a"
+          },
           {
             "identity": "v2",
             "map": "C*E.7"
@@ -633,6 +2032,7 @@
         "path": "Medication.product.form.coding.code",
         "short": "Symbol in syntax defined by the system",
         "definition": "A symbol in syntax defined by the system. The symbol may be a predefined code or an expression in a syntax defined by the coding system (e.g. post-coordination).",
+        "comments": "Note that FHIR strings may not exceed 1MB in size",
         "requirements": "Need to refer to a particular code in the system.",
         "min": 0,
         "max": "1",
@@ -646,8 +2046,29 @@
             "code": "code"
           }
         ],
+        "condition": [
+          "ele-1"
+        ],
+        "constraint": [
+          {
+            "extension": [
+              {
+                "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-expression",
+                "valueString": "children()"
+              }
+            ],
+            "key": "ele-1",
+            "severity": "error",
+            "human": "All FHIR elements must have a @value or children",
+            "xpath": "@value|f:*|h:div"
+          }
+        ],
         "isSummary": true,
         "mapping": [
+          {
+            "identity": "rim",
+            "map": "n/a"
+          },
           {
             "identity": "v2",
             "map": "C*E.1"
@@ -666,6 +2087,7 @@
         "path": "Medication.product.form.coding.display",
         "short": "Representation defined by the system",
         "definition": "A representation of the meaning of the code in the system, following the rules of the system.",
+        "comments": "Note that FHIR strings may not exceed 1MB in size",
         "requirements": "Need to be able to carry a human-readable meaning of the code for readers that do not know  the system.",
         "min": 0,
         "max": "1",
@@ -679,8 +2101,29 @@
             "code": "string"
           }
         ],
+        "condition": [
+          "ele-1"
+        ],
+        "constraint": [
+          {
+            "extension": [
+              {
+                "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-expression",
+                "valueString": "children()"
+              }
+            ],
+            "key": "ele-1",
+            "severity": "error",
+            "human": "All FHIR elements must have a @value or children",
+            "xpath": "@value|f:*|h:div"
+          }
+        ],
         "isSummary": true,
         "mapping": [
+          {
+            "identity": "rim",
+            "map": "n/a"
+          },
           {
             "identity": "v2",
             "map": "C*E.2 - but note this is not well followed"
@@ -713,8 +2156,29 @@
             "code": "boolean"
           }
         ],
+        "condition": [
+          "ele-1"
+        ],
+        "constraint": [
+          {
+            "extension": [
+              {
+                "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-expression",
+                "valueString": "children()"
+              }
+            ],
+            "key": "ele-1",
+            "severity": "error",
+            "human": "All FHIR elements must have a @value or children",
+            "xpath": "@value|f:*|h:div"
+          }
+        ],
         "isSummary": true,
         "mapping": [
+          {
+            "identity": "rim",
+            "map": "n/a"
+          },
           {
             "identity": "v2",
             "map": "Sometimes implied by being first"
@@ -747,8 +2211,29 @@
             "code": "string"
           }
         ],
+        "condition": [
+          "ele-1"
+        ],
+        "constraint": [
+          {
+            "extension": [
+              {
+                "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-expression",
+                "valueString": "children()"
+              }
+            ],
+            "key": "ele-1",
+            "severity": "error",
+            "human": "All FHIR elements must have a @value or children",
+            "xpath": "@value|f:*|h:div"
+          }
+        ],
         "isSummary": true,
         "mapping": [
+          {
+            "identity": "rim",
+            "map": "n/a"
+          },
           {
             "identity": "v2",
             "map": "C*E.9. But note many systems use C*E.2 for this"
@@ -780,10 +2265,121 @@
             "code": "BackboneElement"
           }
         ],
+        "condition": [
+          "ele-1"
+        ],
+        "constraint": [
+          {
+            "extension": [
+              {
+                "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-expression",
+                "valueString": "children()"
+              }
+            ],
+            "key": "ele-1",
+            "severity": "error",
+            "human": "All FHIR elements must have a @value or children",
+            "xpath": "@value|f:*|h:div"
+          }
+        ],
         "mapping": [
           {
             "identity": "rim",
+            "map": "n/a"
+          },
+          {
+            "identity": "rim",
             "map": ".scopesRole[typeCode=INGR]"
+          }
+        ]
+      },
+      {
+        "path": "Medication.product.ingredient.id",
+        "short": "xml:id (or equivalent in JSON)",
+        "definition": "unique id for the element within a resource (for internal references).",
+        "comments": "RFC 4122",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Element.id",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "id"
+          }
+        ],
+        "condition": [
+          "ele-1"
+        ],
+        "constraint": [
+          {
+            "extension": [
+              {
+                "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-expression",
+                "valueString": "children()"
+              }
+            ],
+            "key": "ele-1",
+            "severity": "error",
+            "human": "All FHIR elements must have a @value or children",
+            "xpath": "@value|f:*|h:div"
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "rim",
+            "map": "n/a"
+          }
+        ]
+      },
+      {
+        "path": "Medication.product.ingredient.extension",
+        "short": "Additional Content defined by implementations",
+        "definition": "May be used to represent additional information that is not part of the basic definition of the element. In order to make the use of extensions safe and manageable, there is a strict set of governance  applied to the definition and use of extensions. Though any implementer is allowed to define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension.",
+        "comments": "There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone.",
+        "alias": [
+          "extensions",
+          "user content"
+        ],
+        "min": 0,
+        "max": "*",
+        "base": {
+          "path": "Element.extension",
+          "min": 0,
+          "max": "*"
+        },
+        "type": [
+          {
+            "code": "Extension"
+          }
+        ],
+        "condition": [
+          "ele-1"
+        ],
+        "constraint": [
+          {
+            "extension": [
+              {
+                "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-expression",
+                "valueString": "children()"
+              }
+            ],
+            "key": "ele-1",
+            "severity": "error",
+            "human": "All FHIR elements must have a @value or children",
+            "xpath": "@value|f:*|h:div"
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "rim",
+            "map": "n/a"
+          },
+          {
+            "identity": "rim",
+            "map": "N/A"
           }
         ]
       },
@@ -809,8 +2405,29 @@
             "code": "Extension"
           }
         ],
+        "condition": [
+          "ele-1"
+        ],
+        "constraint": [
+          {
+            "extension": [
+              {
+                "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-expression",
+                "valueString": "children()"
+              }
+            ],
+            "key": "ele-1",
+            "severity": "error",
+            "human": "All FHIR elements must have a @value or children",
+            "xpath": "@value|f:*|h:div"
+          }
+        ],
         "isModifier": true,
         "mapping": [
+          {
+            "identity": "rim",
+            "map": "n/a"
+          },
           {
             "identity": "rim",
             "map": "N/A"
@@ -838,11 +2455,49 @@
           {
             "code": "Reference",
             "profile": [
-              "http://fhir.nhs.net/StructureDefinition/careconnect-medication-1"
+              "https://fhir.hl7.org.uk/StructureDefinition/CareConnect-Medication-1"
             ]
           }
         ],
+        "condition": [
+          "ele-1"
+        ],
+        "constraint": [
+          {
+            "extension": [
+              {
+                "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-expression",
+                "valueString": "children()"
+              }
+            ],
+            "key": "ele-1",
+            "severity": "error",
+            "human": "All FHIR elements must have a @value or children",
+            "xpath": "@value|f:*|h:div"
+          },
+          {
+            "extension": [
+              {
+                "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-expression",
+                "valueString": "reference.startsWith('#').not() or (reference.substring(1).trace('url') in %resource.contained.id.trace('ids'))"
+              }
+            ],
+            "key": "ref-1",
+            "severity": "error",
+            "human": "SHALL have a local reference if the resource is provided inline",
+            "xpath": "not(starts-with(f:reference/@value, '#')) or exists(ancestor::*[self::f:entry or self::f:parameter]/f:resource/f:*/f:contained/f:*[f:id/@value=substring-after(current()/f:reference/@value, '#')]|/*/f:contained/f:*[f:id/@value=substring-after(current()/f:reference/@value, '#')])"
+          }
+        ],
+        "isSummary": true,
         "mapping": [
+          {
+            "identity": "rim",
+            "map": "n/a"
+          },
+          {
+            "identity": "rim",
+            "map": "The target of a resource reference is a RIM entry point (Act, Role, or Entity)"
+          },
           {
             "identity": "v2",
             "map": "RXC-2-Component Code  if medication: RXO-1-Requested Give Code / RXE-2-Give Code / RXD-2-Dispense/Give Code / RXG-4-Give Code / RXA-5-Administered Code"
@@ -869,7 +2524,49 @@
             "code": "Ratio"
           }
         ],
+        "condition": [
+          "ele-1"
+        ],
+        "constraint": [
+          {
+            "extension": [
+              {
+                "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-expression",
+                "valueString": "children()"
+              }
+            ],
+            "key": "ele-1",
+            "severity": "error",
+            "human": "All FHIR elements must have a @value or children",
+            "xpath": "@value|f:*|h:div"
+          },
+          {
+            "extension": [
+              {
+                "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-expression",
+                "valueString": "numerator.empty() xor denominator"
+              }
+            ],
+            "key": "rat-1",
+            "severity": "error",
+            "human": "Numerator and denominator SHALL both be present, or both are absent. If both are absent, there SHALL be some extension present",
+            "xpath": "(count(f:numerator) = count(f:denominator)) and ((count(f:numerator) > 0) or (count(f:extension) > 0))"
+          }
+        ],
+        "isSummary": true,
         "mapping": [
+          {
+            "identity": "rim",
+            "map": "n/a"
+          },
+          {
+            "identity": "v2",
+            "map": "N/A"
+          },
+          {
+            "identity": "rim",
+            "map": "RTO"
+          },
           {
             "identity": "v2",
             "map": "RXC-3-Component Amount & RXC-4-Component Units  if medication: RXO-2-Requested Give Amount - Minimum & RXO-4-Requested Give Units / RXO-3-Requested Give Amount - Maximum & RXO-4-Requested Give Units / RXO-11-Requested Dispense Amount & RXO-12-Requested Dispense Units / RXE-3-Give Amount - Minimum & RXE-5-Give Units / RXE-4-Give Amount - Maximum & RXE-5-Give Units / RXE-10-Dispense Amount & RXE-10-Dispense Units"
@@ -881,9 +2578,100 @@
         ]
       },
       {
+        "path": "Medication.product.ingredient.amount.id",
+        "short": "xml:id (or equivalent in JSON)",
+        "definition": "unique id for the element within a resource (for internal references).",
+        "comments": "RFC 4122",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Element.id",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "id"
+          }
+        ],
+        "condition": [
+          "ele-1"
+        ],
+        "constraint": [
+          {
+            "extension": [
+              {
+                "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-expression",
+                "valueString": "children()"
+              }
+            ],
+            "key": "ele-1",
+            "severity": "error",
+            "human": "All FHIR elements must have a @value or children",
+            "xpath": "@value|f:*|h:div"
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "rim",
+            "map": "n/a"
+          }
+        ]
+      },
+      {
+        "path": "Medication.product.ingredient.amount.extension",
+        "short": "Additional Content defined by implementations",
+        "definition": "May be used to represent additional information that is not part of the basic definition of the element. In order to make the use of extensions safe and manageable, there is a strict set of governance  applied to the definition and use of extensions. Though any implementer is allowed to define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension.",
+        "comments": "There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone.",
+        "alias": [
+          "extensions",
+          "user content"
+        ],
+        "min": 0,
+        "max": "*",
+        "base": {
+          "path": "Element.extension",
+          "min": 0,
+          "max": "*"
+        },
+        "type": [
+          {
+            "code": "Extension"
+          }
+        ],
+        "condition": [
+          "ele-1"
+        ],
+        "constraint": [
+          {
+            "extension": [
+              {
+                "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-expression",
+                "valueString": "children()"
+              }
+            ],
+            "key": "ele-1",
+            "severity": "error",
+            "human": "All FHIR elements must have a @value or children",
+            "xpath": "@value|f:*|h:div"
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "rim",
+            "map": "n/a"
+          },
+          {
+            "identity": "rim",
+            "map": "N/A"
+          }
+        ]
+      },
+      {
         "path": "Medication.product.ingredient.amount.numerator",
         "short": "Numerator value",
         "definition": "The value of the numerator.",
+        "comments": "The context of use may frequently define what kind of quantity this is and therefore what kind of units can be used. The context of use may also restrict the values for the comparator.",
         "min": 0,
         "max": "1",
         "base": {
@@ -896,11 +2684,142 @@
             "code": "Quantity"
           }
         ],
+        "condition": [
+          "ele-1"
+        ],
+        "constraint": [
+          {
+            "extension": [
+              {
+                "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-expression",
+                "valueString": "children()"
+              }
+            ],
+            "key": "ele-1",
+            "severity": "error",
+            "human": "All FHIR elements must have a @value or children",
+            "xpath": "@value|f:*|h:div"
+          },
+          {
+            "extension": [
+              {
+                "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-expression",
+                "valueString": "code.empty() or system"
+              }
+            ],
+            "key": "qty-3",
+            "severity": "error",
+            "human": "If a code for the unit is present, the system SHALL also be present",
+            "xpath": "not(exists(f:code)) or exists(f:system)"
+          }
+        ],
         "isSummary": true,
         "mapping": [
           {
             "identity": "rim",
+            "map": "n/a"
+          },
+          {
+            "identity": "v2",
+            "map": "SN (see also Range) or CQ"
+          },
+          {
+            "identity": "rim",
+            "map": "PQ, IVL<PQ>, MO, CO, depending on the values"
+          },
+          {
+            "identity": "rim",
             "map": ".numerator"
+          }
+        ]
+      },
+      {
+        "path": "Medication.product.ingredient.amount.numerator.id",
+        "short": "xml:id (or equivalent in JSON)",
+        "definition": "unique id for the element within a resource (for internal references).",
+        "comments": "RFC 4122",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Element.id",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "id"
+          }
+        ],
+        "condition": [
+          "ele-1"
+        ],
+        "constraint": [
+          {
+            "extension": [
+              {
+                "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-expression",
+                "valueString": "children()"
+              }
+            ],
+            "key": "ele-1",
+            "severity": "error",
+            "human": "All FHIR elements must have a @value or children",
+            "xpath": "@value|f:*|h:div"
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "rim",
+            "map": "n/a"
+          }
+        ]
+      },
+      {
+        "path": "Medication.product.ingredient.amount.numerator.extension",
+        "short": "Additional Content defined by implementations",
+        "definition": "May be used to represent additional information that is not part of the basic definition of the element. In order to make the use of extensions safe and manageable, there is a strict set of governance  applied to the definition and use of extensions. Though any implementer is allowed to define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension.",
+        "comments": "There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone.",
+        "alias": [
+          "extensions",
+          "user content"
+        ],
+        "min": 0,
+        "max": "*",
+        "base": {
+          "path": "Element.extension",
+          "min": 0,
+          "max": "*"
+        },
+        "type": [
+          {
+            "code": "Extension"
+          }
+        ],
+        "condition": [
+          "ele-1"
+        ],
+        "constraint": [
+          {
+            "extension": [
+              {
+                "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-expression",
+                "valueString": "children()"
+              }
+            ],
+            "key": "ele-1",
+            "severity": "error",
+            "human": "All FHIR elements must have a @value or children",
+            "xpath": "@value|f:*|h:div"
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "rim",
+            "map": "n/a"
+          },
+          {
+            "identity": "rim",
+            "map": "N/A"
           }
         ]
       },
@@ -922,8 +2841,29 @@
             "code": "decimal"
           }
         ],
+        "condition": [
+          "ele-1"
+        ],
+        "constraint": [
+          {
+            "extension": [
+              {
+                "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-expression",
+                "valueString": "children()"
+              }
+            ],
+            "key": "ele-1",
+            "severity": "error",
+            "human": "All FHIR elements must have a @value or children",
+            "xpath": "@value|f:*|h:div"
+          }
+        ],
         "isSummary": true,
         "mapping": [
+          {
+            "identity": "rim",
+            "map": "n/a"
+          },
           {
             "identity": "v2",
             "map": "SN.2  / CQ - N/A"
@@ -953,6 +2893,23 @@
           }
         ],
         "meaningWhenMissing": "If there is no comparator, then there is no modification of the value",
+        "condition": [
+          "ele-1"
+        ],
+        "constraint": [
+          {
+            "extension": [
+              {
+                "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-expression",
+                "valueString": "children()"
+              }
+            ],
+            "key": "ele-1",
+            "severity": "error",
+            "human": "All FHIR elements must have a @value or children",
+            "xpath": "@value|f:*|h:div"
+          }
+        ],
         "isModifier": true,
         "isSummary": true,
         "binding": {
@@ -963,6 +2920,10 @@
           }
         },
         "mapping": [
+          {
+            "identity": "rim",
+            "map": "n/a"
+          },
           {
             "identity": "v2",
             "map": "SN.1  / CQ.1"
@@ -977,6 +2938,7 @@
         "path": "Medication.product.ingredient.amount.numerator.unit",
         "short": "Unit representation",
         "definition": "A human-readable form of the unit.",
+        "comments": "Note that FHIR strings may not exceed 1MB in size",
         "requirements": "There are many representations for units of measure and in many contexts, particular representations are fixed and required. I.e. mcg for micrograms.",
         "min": 0,
         "max": "1",
@@ -990,8 +2952,29 @@
             "code": "string"
           }
         ],
+        "condition": [
+          "ele-1"
+        ],
+        "constraint": [
+          {
+            "extension": [
+              {
+                "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-expression",
+                "valueString": "children()"
+              }
+            ],
+            "key": "ele-1",
+            "severity": "error",
+            "human": "All FHIR elements must have a @value or children",
+            "xpath": "@value|f:*|h:div"
+          }
+        ],
         "isSummary": true,
         "mapping": [
+          {
+            "identity": "rim",
+            "map": "n/a"
+          },
           {
             "identity": "v2",
             "map": "(see OBX.6 etc.) / CQ.2"
@@ -1006,6 +2989,7 @@
         "path": "Medication.product.ingredient.amount.numerator.system",
         "short": "System that defines coded unit form",
         "definition": "The identification of the system that provides the coded form of the unit.",
+        "comments": "see http://en.wikipedia.org/wiki/Uniform_resource_identifier",
         "requirements": "Need to know the system that defines the coded form of the unit.",
         "min": 0,
         "max": "1",
@@ -1020,10 +3004,29 @@
           }
         ],
         "condition": [
+          "ele-1",
           "qty-3"
+        ],
+        "constraint": [
+          {
+            "extension": [
+              {
+                "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-expression",
+                "valueString": "children()"
+              }
+            ],
+            "key": "ele-1",
+            "severity": "error",
+            "human": "All FHIR elements must have a @value or children",
+            "xpath": "@value|f:*|h:div"
+          }
         ],
         "isSummary": true,
         "mapping": [
+          {
+            "identity": "rim",
+            "map": "n/a"
+          },
           {
             "identity": "v2",
             "map": "(see OBX.6 etc.) / CQ.2"
@@ -1052,8 +3055,29 @@
             "code": "code"
           }
         ],
+        "condition": [
+          "ele-1"
+        ],
+        "constraint": [
+          {
+            "extension": [
+              {
+                "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-expression",
+                "valueString": "children()"
+              }
+            ],
+            "key": "ele-1",
+            "severity": "error",
+            "human": "All FHIR elements must have a @value or children",
+            "xpath": "@value|f:*|h:div"
+          }
+        ],
         "isSummary": true,
         "mapping": [
+          {
+            "identity": "rim",
+            "map": "n/a"
+          },
           {
             "identity": "v2",
             "map": "(see OBX.6 etc.) / CQ.2"
@@ -1068,6 +3092,7 @@
         "path": "Medication.product.ingredient.amount.denominator",
         "short": "Denominator value",
         "definition": "The value of the denominator.",
+        "comments": "The context of use may frequently define what kind of quantity this is and therefore what kind of units can be used. The context of use may also restrict the values for the comparator.",
         "min": 0,
         "max": "1",
         "base": {
@@ -1080,11 +3105,142 @@
             "code": "Quantity"
           }
         ],
+        "condition": [
+          "ele-1"
+        ],
+        "constraint": [
+          {
+            "extension": [
+              {
+                "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-expression",
+                "valueString": "children()"
+              }
+            ],
+            "key": "ele-1",
+            "severity": "error",
+            "human": "All FHIR elements must have a @value or children",
+            "xpath": "@value|f:*|h:div"
+          },
+          {
+            "extension": [
+              {
+                "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-expression",
+                "valueString": "code.empty() or system"
+              }
+            ],
+            "key": "qty-3",
+            "severity": "error",
+            "human": "If a code for the unit is present, the system SHALL also be present",
+            "xpath": "not(exists(f:code)) or exists(f:system)"
+          }
+        ],
         "isSummary": true,
         "mapping": [
           {
             "identity": "rim",
+            "map": "n/a"
+          },
+          {
+            "identity": "v2",
+            "map": "SN (see also Range) or CQ"
+          },
+          {
+            "identity": "rim",
+            "map": "PQ, IVL<PQ>, MO, CO, depending on the values"
+          },
+          {
+            "identity": "rim",
             "map": ".denominator"
+          }
+        ]
+      },
+      {
+        "path": "Medication.product.ingredient.amount.denominator.id",
+        "short": "xml:id (or equivalent in JSON)",
+        "definition": "unique id for the element within a resource (for internal references).",
+        "comments": "RFC 4122",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Element.id",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "id"
+          }
+        ],
+        "condition": [
+          "ele-1"
+        ],
+        "constraint": [
+          {
+            "extension": [
+              {
+                "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-expression",
+                "valueString": "children()"
+              }
+            ],
+            "key": "ele-1",
+            "severity": "error",
+            "human": "All FHIR elements must have a @value or children",
+            "xpath": "@value|f:*|h:div"
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "rim",
+            "map": "n/a"
+          }
+        ]
+      },
+      {
+        "path": "Medication.product.ingredient.amount.denominator.extension",
+        "short": "Additional Content defined by implementations",
+        "definition": "May be used to represent additional information that is not part of the basic definition of the element. In order to make the use of extensions safe and manageable, there is a strict set of governance  applied to the definition and use of extensions. Though any implementer is allowed to define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension.",
+        "comments": "There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone.",
+        "alias": [
+          "extensions",
+          "user content"
+        ],
+        "min": 0,
+        "max": "*",
+        "base": {
+          "path": "Element.extension",
+          "min": 0,
+          "max": "*"
+        },
+        "type": [
+          {
+            "code": "Extension"
+          }
+        ],
+        "condition": [
+          "ele-1"
+        ],
+        "constraint": [
+          {
+            "extension": [
+              {
+                "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-expression",
+                "valueString": "children()"
+              }
+            ],
+            "key": "ele-1",
+            "severity": "error",
+            "human": "All FHIR elements must have a @value or children",
+            "xpath": "@value|f:*|h:div"
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "rim",
+            "map": "n/a"
+          },
+          {
+            "identity": "rim",
+            "map": "N/A"
           }
         ]
       },
@@ -1106,8 +3262,29 @@
             "code": "decimal"
           }
         ],
+        "condition": [
+          "ele-1"
+        ],
+        "constraint": [
+          {
+            "extension": [
+              {
+                "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-expression",
+                "valueString": "children()"
+              }
+            ],
+            "key": "ele-1",
+            "severity": "error",
+            "human": "All FHIR elements must have a @value or children",
+            "xpath": "@value|f:*|h:div"
+          }
+        ],
         "isSummary": true,
         "mapping": [
+          {
+            "identity": "rim",
+            "map": "n/a"
+          },
           {
             "identity": "v2",
             "map": "SN.2  / CQ - N/A"
@@ -1137,6 +3314,23 @@
           }
         ],
         "meaningWhenMissing": "If there is no comparator, then there is no modification of the value",
+        "condition": [
+          "ele-1"
+        ],
+        "constraint": [
+          {
+            "extension": [
+              {
+                "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-expression",
+                "valueString": "children()"
+              }
+            ],
+            "key": "ele-1",
+            "severity": "error",
+            "human": "All FHIR elements must have a @value or children",
+            "xpath": "@value|f:*|h:div"
+          }
+        ],
         "isModifier": true,
         "isSummary": true,
         "binding": {
@@ -1147,6 +3341,10 @@
           }
         },
         "mapping": [
+          {
+            "identity": "rim",
+            "map": "n/a"
+          },
           {
             "identity": "v2",
             "map": "SN.1  / CQ.1"
@@ -1161,6 +3359,7 @@
         "path": "Medication.product.ingredient.amount.denominator.unit",
         "short": "Unit representation",
         "definition": "A human-readable form of the unit.",
+        "comments": "Note that FHIR strings may not exceed 1MB in size",
         "requirements": "There are many representations for units of measure and in many contexts, particular representations are fixed and required. I.e. mcg for micrograms.",
         "min": 0,
         "max": "1",
@@ -1174,8 +3373,29 @@
             "code": "string"
           }
         ],
+        "condition": [
+          "ele-1"
+        ],
+        "constraint": [
+          {
+            "extension": [
+              {
+                "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-expression",
+                "valueString": "children()"
+              }
+            ],
+            "key": "ele-1",
+            "severity": "error",
+            "human": "All FHIR elements must have a @value or children",
+            "xpath": "@value|f:*|h:div"
+          }
+        ],
         "isSummary": true,
         "mapping": [
+          {
+            "identity": "rim",
+            "map": "n/a"
+          },
           {
             "identity": "v2",
             "map": "(see OBX.6 etc.) / CQ.2"
@@ -1190,6 +3410,7 @@
         "path": "Medication.product.ingredient.amount.denominator.system",
         "short": "System that defines coded unit form",
         "definition": "The identification of the system that provides the coded form of the unit.",
+        "comments": "see http://en.wikipedia.org/wiki/Uniform_resource_identifier",
         "requirements": "Need to know the system that defines the coded form of the unit.",
         "min": 0,
         "max": "1",
@@ -1204,10 +3425,29 @@
           }
         ],
         "condition": [
+          "ele-1",
           "qty-3"
+        ],
+        "constraint": [
+          {
+            "extension": [
+              {
+                "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-expression",
+                "valueString": "children()"
+              }
+            ],
+            "key": "ele-1",
+            "severity": "error",
+            "human": "All FHIR elements must have a @value or children",
+            "xpath": "@value|f:*|h:div"
+          }
         ],
         "isSummary": true,
         "mapping": [
+          {
+            "identity": "rim",
+            "map": "n/a"
+          },
           {
             "identity": "v2",
             "map": "(see OBX.6 etc.) / CQ.2"
@@ -1236,8 +3476,29 @@
             "code": "code"
           }
         ],
+        "condition": [
+          "ele-1"
+        ],
+        "constraint": [
+          {
+            "extension": [
+              {
+                "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-expression",
+                "valueString": "children()"
+              }
+            ],
+            "key": "ele-1",
+            "severity": "error",
+            "human": "All FHIR elements must have a @value or children",
+            "xpath": "@value|f:*|h:div"
+          }
+        ],
         "isSummary": true,
         "mapping": [
+          {
+            "identity": "rim",
+            "map": "n/a"
+          },
           {
             "identity": "v2",
             "map": "(see OBX.6 etc.) / CQ.2"
@@ -1250,6 +3511,7 @@
       },
       {
         "path": "Medication.product.batch",
+        "short": "Base for elements defined inside a resource",
         "definition": "Information about a group of medication produced or packaged from one production run.",
         "min": 0,
         "max": "*",
@@ -1261,6 +3523,119 @@
         "type": [
           {
             "code": "BackboneElement"
+          }
+        ],
+        "condition": [
+          "ele-1"
+        ],
+        "constraint": [
+          {
+            "extension": [
+              {
+                "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-expression",
+                "valueString": "children()"
+              }
+            ],
+            "key": "ele-1",
+            "severity": "error",
+            "human": "All FHIR elements must have a @value or children",
+            "xpath": "@value|f:*|h:div"
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "rim",
+            "map": "n/a"
+          }
+        ]
+      },
+      {
+        "path": "Medication.product.batch.id",
+        "short": "xml:id (or equivalent in JSON)",
+        "definition": "unique id for the element within a resource (for internal references).",
+        "comments": "RFC 4122",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Element.id",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "id"
+          }
+        ],
+        "condition": [
+          "ele-1"
+        ],
+        "constraint": [
+          {
+            "extension": [
+              {
+                "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-expression",
+                "valueString": "children()"
+              }
+            ],
+            "key": "ele-1",
+            "severity": "error",
+            "human": "All FHIR elements must have a @value or children",
+            "xpath": "@value|f:*|h:div"
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "rim",
+            "map": "n/a"
+          }
+        ]
+      },
+      {
+        "path": "Medication.product.batch.extension",
+        "short": "Additional Content defined by implementations",
+        "definition": "May be used to represent additional information that is not part of the basic definition of the element. In order to make the use of extensions safe and manageable, there is a strict set of governance  applied to the definition and use of extensions. Though any implementer is allowed to define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension.",
+        "comments": "There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone.",
+        "alias": [
+          "extensions",
+          "user content"
+        ],
+        "min": 0,
+        "max": "*",
+        "base": {
+          "path": "Element.extension",
+          "min": 0,
+          "max": "*"
+        },
+        "type": [
+          {
+            "code": "Extension"
+          }
+        ],
+        "condition": [
+          "ele-1"
+        ],
+        "constraint": [
+          {
+            "extension": [
+              {
+                "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-expression",
+                "valueString": "children()"
+              }
+            ],
+            "key": "ele-1",
+            "severity": "error",
+            "human": "All FHIR elements must have a @value or children",
+            "xpath": "@value|f:*|h:div"
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "rim",
+            "map": "n/a"
+          },
+          {
+            "identity": "rim",
+            "map": "N/A"
           }
         ]
       },
@@ -1286,8 +3661,29 @@
             "code": "Extension"
           }
         ],
+        "condition": [
+          "ele-1"
+        ],
+        "constraint": [
+          {
+            "extension": [
+              {
+                "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-expression",
+                "valueString": "children()"
+              }
+            ],
+            "key": "ele-1",
+            "severity": "error",
+            "human": "All FHIR elements must have a @value or children",
+            "xpath": "@value|f:*|h:div"
+          }
+        ],
         "isModifier": true,
         "mapping": [
+          {
+            "identity": "rim",
+            "map": "n/a"
+          },
           {
             "identity": "rim",
             "map": "N/A"
@@ -1296,7 +3692,9 @@
       },
       {
         "path": "Medication.product.batch.lotNumber",
+        "short": "Primitive Type string",
         "definition": "The assigned lot number of a batch of the specified product.",
+        "comments": "Note that FHIR strings may not exceed 1MB in size",
         "min": 0,
         "max": "1",
         "base": {
@@ -1309,7 +3707,28 @@
             "code": "string"
           }
         ],
+        "condition": [
+          "ele-1"
+        ],
+        "constraint": [
+          {
+            "extension": [
+              {
+                "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-expression",
+                "valueString": "children()"
+              }
+            ],
+            "key": "ele-1",
+            "severity": "error",
+            "human": "All FHIR elements must have a @value or children",
+            "xpath": "@value|f:*|h:div"
+          }
+        ],
         "mapping": [
+          {
+            "identity": "rim",
+            "map": "n/a"
+          },
           {
             "identity": "v2",
             "map": "RXA-15 Substance Lot Number / RXG-19 Substance Lot Number"
@@ -1318,6 +3737,7 @@
       },
       {
         "path": "Medication.product.batch.expirationDate",
+        "short": "Primitive Type dateTime",
         "definition": "When this specific batch of product will expire.",
         "min": 0,
         "max": "1",
@@ -1331,7 +3751,28 @@
             "code": "dateTime"
           }
         ],
+        "condition": [
+          "ele-1"
+        ],
+        "constraint": [
+          {
+            "extension": [
+              {
+                "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-expression",
+                "valueString": "children()"
+              }
+            ],
+            "key": "ele-1",
+            "severity": "error",
+            "human": "All FHIR elements must have a @value or children",
+            "xpath": "@value|f:*|h:div"
+          }
+        ],
         "mapping": [
+          {
+            "identity": "rim",
+            "map": "n/a"
+          },
           {
             "identity": "v2",
             "map": "RXA-16 Substance Expiration Date / RXG-20 Substance Expiration Date"
@@ -1354,10 +3795,121 @@
             "code": "BackboneElement"
           }
         ],
+        "condition": [
+          "ele-1"
+        ],
+        "constraint": [
+          {
+            "extension": [
+              {
+                "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-expression",
+                "valueString": "children()"
+              }
+            ],
+            "key": "ele-1",
+            "severity": "error",
+            "human": "All FHIR elements must have a @value or children",
+            "xpath": "@value|f:*|h:div"
+          }
+        ],
         "mapping": [
           {
             "identity": "rim",
+            "map": "n/a"
+          },
+          {
+            "identity": "rim",
             "map": ".player[classCode=CONT]"
+          }
+        ]
+      },
+      {
+        "path": "Medication.package.id",
+        "short": "xml:id (or equivalent in JSON)",
+        "definition": "unique id for the element within a resource (for internal references).",
+        "comments": "RFC 4122",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Element.id",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "id"
+          }
+        ],
+        "condition": [
+          "ele-1"
+        ],
+        "constraint": [
+          {
+            "extension": [
+              {
+                "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-expression",
+                "valueString": "children()"
+              }
+            ],
+            "key": "ele-1",
+            "severity": "error",
+            "human": "All FHIR elements must have a @value or children",
+            "xpath": "@value|f:*|h:div"
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "rim",
+            "map": "n/a"
+          }
+        ]
+      },
+      {
+        "path": "Medication.package.extension",
+        "short": "Additional Content defined by implementations",
+        "definition": "May be used to represent additional information that is not part of the basic definition of the element. In order to make the use of extensions safe and manageable, there is a strict set of governance  applied to the definition and use of extensions. Though any implementer is allowed to define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension.",
+        "comments": "There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone.",
+        "alias": [
+          "extensions",
+          "user content"
+        ],
+        "min": 0,
+        "max": "*",
+        "base": {
+          "path": "Element.extension",
+          "min": 0,
+          "max": "*"
+        },
+        "type": [
+          {
+            "code": "Extension"
+          }
+        ],
+        "condition": [
+          "ele-1"
+        ],
+        "constraint": [
+          {
+            "extension": [
+              {
+                "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-expression",
+                "valueString": "children()"
+              }
+            ],
+            "key": "ele-1",
+            "severity": "error",
+            "human": "All FHIR elements must have a @value or children",
+            "xpath": "@value|f:*|h:div"
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "rim",
+            "map": "n/a"
+          },
+          {
+            "identity": "rim",
+            "map": "N/A"
           }
         ]
       },
@@ -1383,8 +3935,29 @@
             "code": "Extension"
           }
         ],
+        "condition": [
+          "ele-1"
+        ],
+        "constraint": [
+          {
+            "extension": [
+              {
+                "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-expression",
+                "valueString": "children()"
+              }
+            ],
+            "key": "ele-1",
+            "severity": "error",
+            "human": "All FHIR elements must have a @value or children",
+            "xpath": "@value|f:*|h:div"
+          }
+        ],
         "isModifier": true,
         "mapping": [
+          {
+            "identity": "rim",
+            "map": "n/a"
+          },
           {
             "identity": "rim",
             "map": "N/A"
@@ -1395,6 +3968,7 @@
         "path": "Medication.package.container",
         "short": "E.g. box, vial, blister-pack",
         "definition": "The kind of container that this package comes as.",
+        "comments": "Not all terminology uses fit this general pattern. In some cases, models should not use CodeableConcept and use Coding directly and provide their own structure for managing text, codings, translations and the relationship between elements and pre- and post-coordination.",
         "min": 0,
         "max": "1",
         "base": {
@@ -1407,6 +3981,24 @@
             "code": "CodeableConcept"
           }
         ],
+        "condition": [
+          "ele-1"
+        ],
+        "constraint": [
+          {
+            "extension": [
+              {
+                "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-expression",
+                "valueString": "children()"
+              }
+            ],
+            "key": "ele-1",
+            "severity": "error",
+            "human": "All FHIR elements must have a @value or children",
+            "xpath": "@value|f:*|h:div"
+          }
+        ],
+        "isSummary": true,
         "binding": {
           "strength": "example",
           "description": "Kind of container a medication package is packaged in",
@@ -1417,7 +4009,113 @@
         "mapping": [
           {
             "identity": "rim",
+            "map": "n/a"
+          },
+          {
+            "identity": "v2",
+            "map": "CE/CNE/CWE"
+          },
+          {
+            "identity": "rim",
+            "map": "CD"
+          },
+          {
+            "identity": "orim",
+            "map": "fhir:CodeableConcept rdfs:subClassOf dt:CD"
+          },
+          {
+            "identity": "rim",
             "map": ".code"
+          }
+        ]
+      },
+      {
+        "path": "Medication.package.container.id",
+        "short": "xml:id (or equivalent in JSON)",
+        "definition": "unique id for the element within a resource (for internal references).",
+        "comments": "RFC 4122",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Element.id",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "id"
+          }
+        ],
+        "condition": [
+          "ele-1"
+        ],
+        "constraint": [
+          {
+            "extension": [
+              {
+                "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-expression",
+                "valueString": "children()"
+              }
+            ],
+            "key": "ele-1",
+            "severity": "error",
+            "human": "All FHIR elements must have a @value or children",
+            "xpath": "@value|f:*|h:div"
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "rim",
+            "map": "n/a"
+          }
+        ]
+      },
+      {
+        "path": "Medication.package.container.extension",
+        "short": "Additional Content defined by implementations",
+        "definition": "May be used to represent additional information that is not part of the basic definition of the element. In order to make the use of extensions safe and manageable, there is a strict set of governance  applied to the definition and use of extensions. Though any implementer is allowed to define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension.",
+        "comments": "There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone.",
+        "alias": [
+          "extensions",
+          "user content"
+        ],
+        "min": 0,
+        "max": "*",
+        "base": {
+          "path": "Element.extension",
+          "min": 0,
+          "max": "*"
+        },
+        "type": [
+          {
+            "code": "Extension"
+          }
+        ],
+        "condition": [
+          "ele-1"
+        ],
+        "constraint": [
+          {
+            "extension": [
+              {
+                "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-expression",
+                "valueString": "children()"
+              }
+            ],
+            "key": "ele-1",
+            "severity": "error",
+            "human": "All FHIR elements must have a @value or children",
+            "xpath": "@value|f:*|h:div"
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "rim",
+            "map": "n/a"
+          },
+          {
+            "identity": "rim",
+            "map": "N/A"
           }
         ]
       },
@@ -1439,8 +4137,41 @@
             "code": "Coding"
           }
         ],
+        "condition": [
+          "ele-1"
+        ],
+        "constraint": [
+          {
+            "extension": [
+              {
+                "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-expression",
+                "valueString": "children()"
+              }
+            ],
+            "key": "ele-1",
+            "severity": "error",
+            "human": "All FHIR elements must have a @value or children",
+            "xpath": "@value|f:*|h:div"
+          }
+        ],
         "isSummary": true,
         "mapping": [
+          {
+            "identity": "rim",
+            "map": "n/a"
+          },
+          {
+            "identity": "v2",
+            "map": "CE/CNE/CWE subset one of the sets of component 1-3 or 4-6"
+          },
+          {
+            "identity": "rim",
+            "map": "CV"
+          },
+          {
+            "identity": "orim",
+            "map": "fhir:Coding rdfs:subClassOf dt:CDCoding"
+          },
           {
             "identity": "v2",
             "map": "C*E.1-8, C*E.10-22"
@@ -1452,6 +4183,96 @@
           {
             "identity": "orim",
             "map": "fhir:CodeableConcept.coding rdfs:subPropertyOf dt:CD.coding"
+          }
+        ]
+      },
+      {
+        "path": "Medication.package.container.coding.id",
+        "short": "xml:id (or equivalent in JSON)",
+        "definition": "unique id for the element within a resource (for internal references).",
+        "comments": "RFC 4122",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Element.id",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "id"
+          }
+        ],
+        "condition": [
+          "ele-1"
+        ],
+        "constraint": [
+          {
+            "extension": [
+              {
+                "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-expression",
+                "valueString": "children()"
+              }
+            ],
+            "key": "ele-1",
+            "severity": "error",
+            "human": "All FHIR elements must have a @value or children",
+            "xpath": "@value|f:*|h:div"
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "rim",
+            "map": "n/a"
+          }
+        ]
+      },
+      {
+        "path": "Medication.package.container.coding.extension",
+        "short": "Additional Content defined by implementations",
+        "definition": "May be used to represent additional information that is not part of the basic definition of the element. In order to make the use of extensions safe and manageable, there is a strict set of governance  applied to the definition and use of extensions. Though any implementer is allowed to define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension.",
+        "comments": "There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone.",
+        "alias": [
+          "extensions",
+          "user content"
+        ],
+        "min": 0,
+        "max": "*",
+        "base": {
+          "path": "Element.extension",
+          "min": 0,
+          "max": "*"
+        },
+        "type": [
+          {
+            "code": "Extension"
+          }
+        ],
+        "condition": [
+          "ele-1"
+        ],
+        "constraint": [
+          {
+            "extension": [
+              {
+                "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-expression",
+                "valueString": "children()"
+              }
+            ],
+            "key": "ele-1",
+            "severity": "error",
+            "human": "All FHIR elements must have a @value or children",
+            "xpath": "@value|f:*|h:div"
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "rim",
+            "map": "n/a"
+          },
+          {
+            "identity": "rim",
+            "map": "N/A"
           }
         ]
       },
@@ -1473,8 +4294,29 @@
             "code": "uri"
           }
         ],
+        "condition": [
+          "ele-1"
+        ],
+        "constraint": [
+          {
+            "extension": [
+              {
+                "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-expression",
+                "valueString": "children()"
+              }
+            ],
+            "key": "ele-1",
+            "severity": "error",
+            "human": "All FHIR elements must have a @value or children",
+            "xpath": "@value|f:*|h:div"
+          }
+        ],
         "isSummary": true,
         "mapping": [
+          {
+            "identity": "rim",
+            "map": "n/a"
+          },
           {
             "identity": "v2",
             "map": "C*E.3"
@@ -1506,8 +4348,29 @@
             "code": "string"
           }
         ],
+        "condition": [
+          "ele-1"
+        ],
+        "constraint": [
+          {
+            "extension": [
+              {
+                "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-expression",
+                "valueString": "children()"
+              }
+            ],
+            "key": "ele-1",
+            "severity": "error",
+            "human": "All FHIR elements must have a @value or children",
+            "xpath": "@value|f:*|h:div"
+          }
+        ],
         "isSummary": true,
         "mapping": [
+          {
+            "identity": "rim",
+            "map": "n/a"
+          },
           {
             "identity": "v2",
             "map": "C*E.7"
@@ -1526,6 +4389,7 @@
         "path": "Medication.package.container.coding.code",
         "short": "Symbol in syntax defined by the system",
         "definition": "A symbol in syntax defined by the system. The symbol may be a predefined code or an expression in a syntax defined by the coding system (e.g. post-coordination).",
+        "comments": "Note that FHIR strings may not exceed 1MB in size",
         "requirements": "Need to refer to a particular code in the system.",
         "min": 0,
         "max": "1",
@@ -1539,8 +4403,29 @@
             "code": "code"
           }
         ],
+        "condition": [
+          "ele-1"
+        ],
+        "constraint": [
+          {
+            "extension": [
+              {
+                "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-expression",
+                "valueString": "children()"
+              }
+            ],
+            "key": "ele-1",
+            "severity": "error",
+            "human": "All FHIR elements must have a @value or children",
+            "xpath": "@value|f:*|h:div"
+          }
+        ],
         "isSummary": true,
         "mapping": [
+          {
+            "identity": "rim",
+            "map": "n/a"
+          },
           {
             "identity": "v2",
             "map": "C*E.1"
@@ -1559,6 +4444,7 @@
         "path": "Medication.package.container.coding.display",
         "short": "Representation defined by the system",
         "definition": "A representation of the meaning of the code in the system, following the rules of the system.",
+        "comments": "Note that FHIR strings may not exceed 1MB in size",
         "requirements": "Need to be able to carry a human-readable meaning of the code for readers that do not know  the system.",
         "min": 0,
         "max": "1",
@@ -1572,8 +4458,29 @@
             "code": "string"
           }
         ],
+        "condition": [
+          "ele-1"
+        ],
+        "constraint": [
+          {
+            "extension": [
+              {
+                "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-expression",
+                "valueString": "children()"
+              }
+            ],
+            "key": "ele-1",
+            "severity": "error",
+            "human": "All FHIR elements must have a @value or children",
+            "xpath": "@value|f:*|h:div"
+          }
+        ],
         "isSummary": true,
         "mapping": [
+          {
+            "identity": "rim",
+            "map": "n/a"
+          },
           {
             "identity": "v2",
             "map": "C*E.2 - but note this is not well followed"
@@ -1606,8 +4513,29 @@
             "code": "boolean"
           }
         ],
+        "condition": [
+          "ele-1"
+        ],
+        "constraint": [
+          {
+            "extension": [
+              {
+                "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-expression",
+                "valueString": "children()"
+              }
+            ],
+            "key": "ele-1",
+            "severity": "error",
+            "human": "All FHIR elements must have a @value or children",
+            "xpath": "@value|f:*|h:div"
+          }
+        ],
         "isSummary": true,
         "mapping": [
+          {
+            "identity": "rim",
+            "map": "n/a"
+          },
           {
             "identity": "v2",
             "map": "Sometimes implied by being first"
@@ -1640,8 +4568,29 @@
             "code": "string"
           }
         ],
+        "condition": [
+          "ele-1"
+        ],
+        "constraint": [
+          {
+            "extension": [
+              {
+                "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-expression",
+                "valueString": "children()"
+              }
+            ],
+            "key": "ele-1",
+            "severity": "error",
+            "human": "All FHIR elements must have a @value or children",
+            "xpath": "@value|f:*|h:div"
+          }
+        ],
         "isSummary": true,
         "mapping": [
+          {
+            "identity": "rim",
+            "map": "n/a"
+          },
           {
             "identity": "v2",
             "map": "C*E.9. But note many systems use C*E.2 for this"
@@ -1672,10 +4621,121 @@
             "code": "BackboneElement"
           }
         ],
+        "condition": [
+          "ele-1"
+        ],
+        "constraint": [
+          {
+            "extension": [
+              {
+                "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-expression",
+                "valueString": "children()"
+              }
+            ],
+            "key": "ele-1",
+            "severity": "error",
+            "human": "All FHIR elements must have a @value or children",
+            "xpath": "@value|f:*|h:div"
+          }
+        ],
         "mapping": [
           {
             "identity": "rim",
+            "map": "n/a"
+          },
+          {
+            "identity": "rim",
             "map": ".scopesRole[typeCode=CONT]"
+          }
+        ]
+      },
+      {
+        "path": "Medication.package.content.id",
+        "short": "xml:id (or equivalent in JSON)",
+        "definition": "unique id for the element within a resource (for internal references).",
+        "comments": "RFC 4122",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Element.id",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "id"
+          }
+        ],
+        "condition": [
+          "ele-1"
+        ],
+        "constraint": [
+          {
+            "extension": [
+              {
+                "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-expression",
+                "valueString": "children()"
+              }
+            ],
+            "key": "ele-1",
+            "severity": "error",
+            "human": "All FHIR elements must have a @value or children",
+            "xpath": "@value|f:*|h:div"
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "rim",
+            "map": "n/a"
+          }
+        ]
+      },
+      {
+        "path": "Medication.package.content.extension",
+        "short": "Additional Content defined by implementations",
+        "definition": "May be used to represent additional information that is not part of the basic definition of the element. In order to make the use of extensions safe and manageable, there is a strict set of governance  applied to the definition and use of extensions. Though any implementer is allowed to define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension.",
+        "comments": "There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone.",
+        "alias": [
+          "extensions",
+          "user content"
+        ],
+        "min": 0,
+        "max": "*",
+        "base": {
+          "path": "Element.extension",
+          "min": 0,
+          "max": "*"
+        },
+        "type": [
+          {
+            "code": "Extension"
+          }
+        ],
+        "condition": [
+          "ele-1"
+        ],
+        "constraint": [
+          {
+            "extension": [
+              {
+                "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-expression",
+                "valueString": "children()"
+              }
+            ],
+            "key": "ele-1",
+            "severity": "error",
+            "human": "All FHIR elements must have a @value or children",
+            "xpath": "@value|f:*|h:div"
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "rim",
+            "map": "n/a"
+          },
+          {
+            "identity": "rim",
+            "map": "N/A"
           }
         ]
       },
@@ -1701,8 +4761,29 @@
             "code": "Extension"
           }
         ],
+        "condition": [
+          "ele-1"
+        ],
+        "constraint": [
+          {
+            "extension": [
+              {
+                "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-expression",
+                "valueString": "children()"
+              }
+            ],
+            "key": "ele-1",
+            "severity": "error",
+            "human": "All FHIR elements must have a @value or children",
+            "xpath": "@value|f:*|h:div"
+          }
+        ],
         "isModifier": true,
         "mapping": [
+          {
+            "identity": "rim",
+            "map": "n/a"
+          },
           {
             "identity": "rim",
             "map": "N/A"
@@ -1724,14 +4805,142 @@
           {
             "code": "Reference",
             "profile": [
-              "http://fhir.nhs.net/StructureDefinition/careconnect-medication-1"
+              "https://fhir.hl7.org.uk/StructureDefinition/CareConnect-Medication-1"
             ]
+          }
+        ],
+        "condition": [
+          "ele-1"
+        ],
+        "constraint": [
+          {
+            "extension": [
+              {
+                "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-expression",
+                "valueString": "children()"
+              }
+            ],
+            "key": "ele-1",
+            "severity": "error",
+            "human": "All FHIR elements must have a @value or children",
+            "xpath": "@value|f:*|h:div"
+          },
+          {
+            "extension": [
+              {
+                "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-expression",
+                "valueString": "reference.startsWith('#').not() or (reference.substring(1).trace('url') in %resource.contained.id.trace('ids'))"
+              }
+            ],
+            "key": "ref-1",
+            "severity": "error",
+            "human": "SHALL have a local reference if the resource is provided inline",
+            "xpath": "not(starts-with(f:reference/@value, '#')) or exists(ancestor::*[self::f:entry or self::f:parameter]/f:resource/f:*/f:contained/f:*[f:id/@value=substring-after(current()/f:reference/@value, '#')]|/*/f:contained/f:*[f:id/@value=substring-after(current()/f:reference/@value, '#')])"
+          }
+        ],
+        "isSummary": true,
+        "mapping": [
+          {
+            "identity": "rim",
+            "map": "n/a"
+          },
+          {
+            "identity": "rim",
+            "map": "The target of a resource reference is a RIM entry point (Act, Role, or Entity)"
+          },
+          {
+            "identity": "rim",
+            "map": ".player"
+          }
+        ]
+      },
+      {
+        "path": "Medication.package.content.item.id",
+        "short": "xml:id (or equivalent in JSON)",
+        "definition": "unique id for the element within a resource (for internal references).",
+        "comments": "RFC 4122",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Element.id",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "id"
+          }
+        ],
+        "condition": [
+          "ele-1"
+        ],
+        "constraint": [
+          {
+            "extension": [
+              {
+                "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-expression",
+                "valueString": "children()"
+              }
+            ],
+            "key": "ele-1",
+            "severity": "error",
+            "human": "All FHIR elements must have a @value or children",
+            "xpath": "@value|f:*|h:div"
           }
         ],
         "mapping": [
           {
             "identity": "rim",
-            "map": ".player"
+            "map": "n/a"
+          }
+        ]
+      },
+      {
+        "path": "Medication.package.content.item.extension",
+        "short": "Additional Content defined by implementations",
+        "definition": "May be used to represent additional information that is not part of the basic definition of the element. In order to make the use of extensions safe and manageable, there is a strict set of governance  applied to the definition and use of extensions. Though any implementer is allowed to define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension.",
+        "comments": "There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone.",
+        "alias": [
+          "extensions",
+          "user content"
+        ],
+        "min": 0,
+        "max": "*",
+        "base": {
+          "path": "Element.extension",
+          "min": 0,
+          "max": "*"
+        },
+        "type": [
+          {
+            "code": "Extension"
+          }
+        ],
+        "condition": [
+          "ele-1"
+        ],
+        "constraint": [
+          {
+            "extension": [
+              {
+                "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-expression",
+                "valueString": "children()"
+              }
+            ],
+            "key": "ele-1",
+            "severity": "error",
+            "human": "All FHIR elements must have a @value or children",
+            "xpath": "@value|f:*|h:div"
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "rim",
+            "map": "n/a"
+          },
+          {
+            "identity": "rim",
+            "map": "N/A"
           }
         ]
       },
@@ -1753,10 +4962,29 @@
           }
         ],
         "condition": [
+          "ele-1",
           "ref-1"
+        ],
+        "constraint": [
+          {
+            "extension": [
+              {
+                "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-expression",
+                "valueString": "children()"
+              }
+            ],
+            "key": "ele-1",
+            "severity": "error",
+            "human": "All FHIR elements must have a @value or children",
+            "xpath": "@value|f:*|h:div"
+          }
         ],
         "isSummary": true,
         "mapping": [
+          {
+            "identity": "rim",
+            "map": "n/a"
+          },
           {
             "identity": "rim",
             "map": "N/A"
@@ -1780,8 +5008,29 @@
             "code": "string"
           }
         ],
+        "condition": [
+          "ele-1"
+        ],
+        "constraint": [
+          {
+            "extension": [
+              {
+                "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-expression",
+                "valueString": "children()"
+              }
+            ],
+            "key": "ele-1",
+            "severity": "error",
+            "human": "All FHIR elements must have a @value or children",
+            "xpath": "@value|f:*|h:div"
+          }
+        ],
         "isSummary": true,
         "mapping": [
+          {
+            "identity": "rim",
+            "map": "n/a"
+          },
           {
             "identity": "rim",
             "map": "N/A"
@@ -1790,8 +5039,10 @@
       },
       {
         "path": "Medication.package.content.amount",
+        "name": "SimpleQuantity",
         "short": "Quantity present in the package",
         "definition": "The amount of the product that is in the package.",
+        "comments": "The context of use may frequently define what kind of quantity this is and therefore what kind of units can be used. The context of use may also restrict the values for the comparator.",
         "min": 0,
         "max": "1",
         "base": {
@@ -1807,10 +5058,155 @@
             ]
           }
         ],
+        "condition": [
+          "ele-1"
+        ],
+        "constraint": [
+          {
+            "extension": [
+              {
+                "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-expression",
+                "valueString": "children()"
+              }
+            ],
+            "key": "ele-1",
+            "severity": "error",
+            "human": "All FHIR elements must have a @value or children",
+            "xpath": "@value|f:*|h:div"
+          },
+          {
+            "extension": [
+              {
+                "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-expression",
+                "valueString": "code.empty() or system"
+              }
+            ],
+            "key": "qty-3",
+            "severity": "error",
+            "human": "If a code for the unit is present, the system SHALL also be present",
+            "xpath": "not(exists(f:code)) or exists(f:system)"
+          },
+          {
+            "extension": [
+              {
+                "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-expression",
+                "valueString": "comparator.empty()"
+              }
+            ],
+            "key": "sqty-1",
+            "severity": "error",
+            "human": "The comparator is not used on a SimpleQuantity",
+            "xpath": "not(exists(f:comparator))"
+          }
+        ],
+        "isModifier": false,
+        "isSummary": true,
         "mapping": [
           {
             "identity": "rim",
+            "map": "n/a"
+          },
+          {
+            "identity": "v2",
+            "map": "SN (see also Range) or CQ"
+          },
+          {
+            "identity": "rim",
+            "map": "PQ, IVL<PQ>, MO, CO, depending on the values"
+          },
+          {
+            "identity": "rim",
             "map": ".quantity"
+          }
+        ]
+      },
+      {
+        "path": "Medication.package.content.amount.id",
+        "short": "xml:id (or equivalent in JSON)",
+        "definition": "unique id for the element within a resource (for internal references).",
+        "comments": "RFC 4122",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Element.id",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "id"
+          }
+        ],
+        "condition": [
+          "ele-1"
+        ],
+        "constraint": [
+          {
+            "extension": [
+              {
+                "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-expression",
+                "valueString": "children()"
+              }
+            ],
+            "key": "ele-1",
+            "severity": "error",
+            "human": "All FHIR elements must have a @value or children",
+            "xpath": "@value|f:*|h:div"
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "rim",
+            "map": "n/a"
+          }
+        ]
+      },
+      {
+        "path": "Medication.package.content.amount.extension",
+        "short": "Additional Content defined by implementations",
+        "definition": "May be used to represent additional information that is not part of the basic definition of the element. In order to make the use of extensions safe and manageable, there is a strict set of governance  applied to the definition and use of extensions. Though any implementer is allowed to define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension.",
+        "comments": "There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone.",
+        "alias": [
+          "extensions",
+          "user content"
+        ],
+        "min": 0,
+        "max": "*",
+        "base": {
+          "path": "Element.extension",
+          "min": 0,
+          "max": "*"
+        },
+        "type": [
+          {
+            "code": "Extension"
+          }
+        ],
+        "condition": [
+          "ele-1"
+        ],
+        "constraint": [
+          {
+            "extension": [
+              {
+                "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-expression",
+                "valueString": "children()"
+              }
+            ],
+            "key": "ele-1",
+            "severity": "error",
+            "human": "All FHIR elements must have a @value or children",
+            "xpath": "@value|f:*|h:div"
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "rim",
+            "map": "n/a"
+          },
+          {
+            "identity": "rim",
+            "map": "N/A"
           }
         ]
       },
@@ -1832,8 +5228,29 @@
             "code": "decimal"
           }
         ],
+        "condition": [
+          "ele-1"
+        ],
+        "constraint": [
+          {
+            "extension": [
+              {
+                "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-expression",
+                "valueString": "children()"
+              }
+            ],
+            "key": "ele-1",
+            "severity": "error",
+            "human": "All FHIR elements must have a @value or children",
+            "xpath": "@value|f:*|h:div"
+          }
+        ],
         "isSummary": true,
         "mapping": [
+          {
+            "identity": "rim",
+            "map": "n/a"
+          },
           {
             "identity": "v2",
             "map": "SN.2  / CQ - N/A"
@@ -1847,11 +5264,11 @@
       {
         "path": "Medication.package.content.amount.comparator",
         "short": "< | <= | >= | > - how to understand the value",
-        "definition": "How the value should be understood and represented - whether the actual value is greater or less than the stated value due to measurement issues; e.g. if the comparator is \"<\" , then the real value is < stated value.",
+        "definition": "Not allowed to be used in this context",
         "comments": "This is labeled as \"Is Modifier\" because the comparator modifies the interpretation of the value significantly. If there is no comparator, then there is no modification of the value.",
         "requirements": "Need a framework for handling measures where the value is <5ug/L or >400mg/L due to the limitations of measuring methodology.",
         "min": 0,
-        "max": "1",
+        "max": "0",
         "base": {
           "path": "Quantity.comparator",
           "min": 0,
@@ -1863,6 +5280,23 @@
           }
         ],
         "meaningWhenMissing": "If there is no comparator, then there is no modification of the value",
+        "condition": [
+          "ele-1"
+        ],
+        "constraint": [
+          {
+            "extension": [
+              {
+                "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-expression",
+                "valueString": "children()"
+              }
+            ],
+            "key": "ele-1",
+            "severity": "error",
+            "human": "All FHIR elements must have a @value or children",
+            "xpath": "@value|f:*|h:div"
+          }
+        ],
         "isModifier": true,
         "isSummary": true,
         "binding": {
@@ -1873,6 +5307,10 @@
           }
         },
         "mapping": [
+          {
+            "identity": "rim",
+            "map": "n/a"
+          },
           {
             "identity": "v2",
             "map": "SN.1  / CQ.1"
@@ -1887,6 +5325,7 @@
         "path": "Medication.package.content.amount.unit",
         "short": "Unit representation",
         "definition": "A human-readable form of the unit.",
+        "comments": "Note that FHIR strings may not exceed 1MB in size",
         "requirements": "There are many representations for units of measure and in many contexts, particular representations are fixed and required. I.e. mcg for micrograms.",
         "min": 0,
         "max": "1",
@@ -1900,8 +5339,29 @@
             "code": "string"
           }
         ],
+        "condition": [
+          "ele-1"
+        ],
+        "constraint": [
+          {
+            "extension": [
+              {
+                "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-expression",
+                "valueString": "children()"
+              }
+            ],
+            "key": "ele-1",
+            "severity": "error",
+            "human": "All FHIR elements must have a @value or children",
+            "xpath": "@value|f:*|h:div"
+          }
+        ],
         "isSummary": true,
         "mapping": [
+          {
+            "identity": "rim",
+            "map": "n/a"
+          },
           {
             "identity": "v2",
             "map": "(see OBX.6 etc.) / CQ.2"
@@ -1916,6 +5376,7 @@
         "path": "Medication.package.content.amount.system",
         "short": "System that defines coded unit form",
         "definition": "The identification of the system that provides the coded form of the unit.",
+        "comments": "see http://en.wikipedia.org/wiki/Uniform_resource_identifier",
         "requirements": "Need to know the system that defines the coded form of the unit.",
         "min": 0,
         "max": "1",
@@ -1930,10 +5391,29 @@
           }
         ],
         "condition": [
+          "ele-1",
           "qty-3"
+        ],
+        "constraint": [
+          {
+            "extension": [
+              {
+                "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-expression",
+                "valueString": "children()"
+              }
+            ],
+            "key": "ele-1",
+            "severity": "error",
+            "human": "All FHIR elements must have a @value or children",
+            "xpath": "@value|f:*|h:div"
+          }
         ],
         "isSummary": true,
         "mapping": [
+          {
+            "identity": "rim",
+            "map": "n/a"
+          },
           {
             "identity": "v2",
             "map": "(see OBX.6 etc.) / CQ.2"
@@ -1962,8 +5442,29 @@
             "code": "code"
           }
         ],
+        "condition": [
+          "ele-1"
+        ],
+        "constraint": [
+          {
+            "extension": [
+              {
+                "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-expression",
+                "valueString": "children()"
+              }
+            ],
+            "key": "ele-1",
+            "severity": "error",
+            "human": "All FHIR elements must have a @value or children",
+            "xpath": "@value|f:*|h:div"
+          }
+        ],
         "isSummary": true,
         "mapping": [
+          {
+            "identity": "rim",
+            "map": "n/a"
+          },
           {
             "identity": "v2",
             "map": "(see OBX.6 etc.) / CQ.2"
@@ -1979,43 +5480,21 @@
   "differential": {
     "element": [
       {
-        "path": "Medication",
-        "short": "Definition of a Medication",
-        "definition": "This resource is primarily used for the identification and definition of a medication. It covers the ingredients and the packaging for a medication.",
-        "min": 0,
-        "max": "*",
-        "base": {
-          "path": "Medication",
-          "min": 0,
-          "max": "*"
-        },
+        "path": "Medication"
+      },
+      {
+        "path": "Medication.manufacturer",
         "type": [
           {
-            "code": "Medication"
-          }
-        ],
-        "mapping": [
-          {
-            "identity": "rim",
-            "map": "ManufacturedProduct[classCode=ADMM]"
-          },
-          {
-            "identity": "w5",
-            "map": "clinical.medication"
+            "code": "Reference",
+            "profile": [
+              "https://fhir.hl7.org.uk/StructureDefinition/CareConnect-Organization-1"
+            ]
           }
         ]
       },
       {
         "path": "Medication.product.ingredient.item",
-        "short": "The product contained",
-        "definition": "The actual ingredient - either a substance (simple ingredient) or another medication.",
-        "min": 1,
-        "max": "1",
-        "base": {
-          "path": "Medication.product.ingredient.item",
-          "min": 1,
-          "max": "1"
-        },
         "type": [
           {
             "code": "Reference",
@@ -2026,44 +5505,19 @@
           {
             "code": "Reference",
             "profile": [
-              "http://fhir.nhs.net/StructureDefinition/careconnect-medication-1"
+              "https://fhir.hl7.org.uk/StructureDefinition/CareConnect-Medication-1"
             ]
-          }
-        ],
-        "mapping": [
-          {
-            "identity": "v2",
-            "map": "RXC-2-Component Code  if medication: RXO-1-Requested Give Code / RXE-2-Give Code / RXD-2-Dispense/Give Code / RXG-4-Give Code / RXA-5-Administered Code"
-          },
-          {
-            "identity": "rim",
-            "map": ".player"
           }
         ]
       },
       {
         "path": "Medication.package.content.item",
-        "short": "A product in the package",
-        "definition": "Identifies one of the items in the package.",
-        "min": 1,
-        "max": "1",
-        "base": {
-          "path": "Medication.package.content.item",
-          "min": 1,
-          "max": "1"
-        },
         "type": [
           {
             "code": "Reference",
             "profile": [
-              "http://fhir.nhs.net/StructureDefinition/careconnect-medication-1"
+              "https://fhir.hl7.org.uk/StructureDefinition/CareConnect-Medication-1"
             ]
-          }
-        ],
-        "mapping": [
-          {
-            "identity": "rim",
-            "map": ".player"
           }
         ]
       }

@@ -9,7 +9,7 @@
 
 			<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 			<meta name="author" content="HSCIC" />        
-			<meta name="publisher version" content=	"FHIR-Furnace : 2.7.6179.25752" />
+			<meta name="publisher version" content=	"FHIR-Furnace : 2.7.6276.17249" />
 		
 			<link href="../dist/css/fhir.css" rel="stylesheet" />
 	 
@@ -156,7 +156,7 @@
         <tr>
           <td width="150px">Definition</td>
           <td>
-            <p>The main location of the subject.</p>
+            <p>The main location of the organization.</p>
           </td>
         </tr>
         <tr>
@@ -166,16 +166,76 @@
           <td>0..*</td>
         </tr>
         <tr>
+          <td width="150px">Comments</td>
+          <td></td>
+        </tr>
+        <tr>
+          <td colspan="2" class="structure">
+            <a name="Extension.id"></a>
+            <b>Extension.id</b>
+          </td>
+        </tr>
+        <tr>
+          <td width="150px">Definition</td>
+          <td>
+            <p>unique id for the element within a resource (for internal references).</p>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <a href="http://www.hl7.org/fhir/DSTU2/conformance-rules.html#conformance">Control</a>
+          </td>
+          <td>0..1 ?</td>
+        </tr>
+        <tr>
           <td>
             <a href="http://www.hl7.org/fhir/DSTU2/datatypes.html">Type</a>
           </td>
           <td>
-            <a href="http://www.hl7.org/fhir/DSTU2/datatypes.html#element" xmlns="http://www.w3.org/1999/xhtml">Element</a>
+            <a href="http://www.hl7.org/fhir/DSTU2/datatypes.html#id" xmlns="http://www.w3.org/1999/xhtml">Id</a>
           </td>
         </tr>
         <tr>
           <td width="150px">Comments</td>
-          <td></td>
+          <td>
+            <p>RFC 4122</p>
+          </td>
+        </tr>
+        <tr>
+          <td colspan="2" class="structure">
+            <a name="Extension.extension"></a>
+            <b>Extension.extension</b>
+          </td>
+        </tr>
+        <tr>
+          <td width="150px">Definition</td>
+          <td>
+            <p>May be used to represent additional information that is not part of the basic definition of the element. In order to make the use of extensions safe and manageable, there is a strict set of governance  applied to the definition and use of extensions. Though any implementer is allowed to define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension.</p>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <a href="http://www.hl7.org/fhir/DSTU2/conformance-rules.html#conformance">Control</a>
+          </td>
+          <td>0..* ?</td>
+        </tr>
+        <tr>
+          <td>
+            <a href="http://www.hl7.org/fhir/DSTU2/datatypes.html">Type</a>
+          </td>
+          <td>
+            <a href="http://www.hl7.org/fhir/DSTU2/datatypes.html#extension" xmlns="http://www.w3.org/1999/xhtml">Extension</a>
+          </td>
+        </tr>
+        <tr>
+          <td>Aliases</td>
+          <td>extensions, user content</td>
+        </tr>
+        <tr>
+          <td width="150px">Comments</td>
+          <td>
+            <p>There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone.</p>
+          </td>
         </tr>
         <tr>
           <td colspan="2" class="structure">
@@ -185,33 +245,21 @@
         </tr>
         <tr>
           <td width="150px">Definition</td>
-          <td>
-            <p>Source of the definition for the extension code - a logical name or a URL.</p>
-          </td>
+          <td></td>
         </tr>
         <tr>
           <td>
             <a href="http://www.hl7.org/fhir/DSTU2/conformance-rules.html#conformance">Control</a>
           </td>
-          <td>1..1</td>
-        </tr>
-        <tr>
-          <td>
-            <a href="http://www.hl7.org/fhir/DSTU2/datatypes.html">Type</a>
-          </td>
-          <td>
-            <a href="http://www.hl7.org/fhir/DSTU2/datatypes.html#uri" xmlns="http://www.w3.org/1999/xhtml">Uri</a>
-          </td>
+          <td>0..*</td>
         </tr>
         <tr>
           <td width="150px">Comments</td>
-          <td>
-            <p>The definition may point directly to a computable or human-readable definition of the extensibility codes, or it may be a logical URI as declared in some other specification. The definition should be version specific.  This will ideally be the URI for the Resource Profile defining the extension, with the code for the extension after a #.</p>
-          </td>
+          <td></td>
         </tr>
         <tr>
           <td>Fixed Value</td>
-          <td>http://fhir.nhs.net/StructureDefinition/extension-careconnect-mainlocation-1</td>
+          <td>https://fhir.hl7.org.uk/StructureDefinition/Extension-CareConnect-MainLocation-1</td>
         </tr>
         <tr>
           <td colspan="2" class="structure">
@@ -222,14 +270,22 @@
         <tr>
           <td width="150px">Definition</td>
           <td>
-            <p>Value of extension - may be a resource or one of a constrained set of the data types (see Extensibility in the spec for list).</p>
+            <p>Reference to the main location for an organization.</p>
           </td>
         </tr>
         <tr>
           <td>
             <a href="http://www.hl7.org/fhir/DSTU2/conformance-rules.html#conformance">Control</a>
           </td>
-          <td>1..1</td>
+          <td>1..*</td>
+        </tr>
+        <tr>
+          <td>
+            <a href="http://www.hl7.org/fhir/DSTU2/datatypes.html">Type</a>
+          </td>
+          <td>
+            <a href="careconnect-location-1.html" xmlns="http://www.w3.org/1999/xhtml">https://fhir.hl7.org.uk/StructureDefinition/CareConnect-Location-1</a>
+          </td>
         </tr>
         <tr>
           <td width="150px">Comments</td>

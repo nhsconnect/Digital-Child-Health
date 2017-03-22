@@ -1,0 +1,95 @@
+{
+  "resourceType": "ValueSet",
+  "meta": {
+    "lastUpdated": "2016-08-03T00:00:00+01:00"
+  },
+  "url": "https://fhir.nhs.uk/ValueSet/dch-valuesetname-1",
+  "name": "Value Set Name",
+  "status": "active",
+  "description": "The Value Set Description",
+  "compose": {
+    "include": [
+      {
+        "system": "https://fhir.nhs.uk/dch-valuesetname-1",
+        "concept": [
+          {
+            "code": "E1",
+            "display": "Birth: Birth Details"
+          },
+          {
+            "code": "E2",
+            "display": "Assessment APGAR"
+          },
+          {
+            "code": "E3",
+            "display": "Demographics: Core"
+          },
+          {
+            "code": "E4",
+            "display": "Demographics: Related Persons"
+          },
+          {
+            "code": "E5",
+            "display": "Breastfeeding Status: Breastfeeding Status"
+          },
+          {
+            "code": "E6",
+            "display": "Birth: Neonatal Care"
+          },
+          {
+            "code": "E7",
+            "display": "Birth: Discharge"
+          },
+          {
+            "code": "E8",
+            "display": "6-8 Week Review"
+          },
+          {
+            "code": "E9",
+            "display": "Intervention: Vitamin K"
+          },
+          {
+            "code": "E10",
+            "display": "Indicators: BCG and Hep B"
+          },
+          {
+            "code": "E11",
+            "display": "HCP Clinical Intervention: Newborn Physical Examination"
+          },
+          {
+            "code": "E12",
+            "display": "Physical Examination: NIPE"
+          },
+          {
+            "code": "E13",
+            "display": "Referral: Referral"
+          },
+          {
+            "code": "E14",
+            "display": "HCP Clinical Intervention: Newborn Blood Spot Screening"
+          },
+          {
+            "code": "E15",
+            "display": "Screening: Blood Spot"
+          },
+          {
+            "code": "E16",
+            "display": "HCP Clinical Intervention: Newborn Hearing Screening"
+          },
+          {
+            "code": "E17",
+            "display": "Screening: Hearing"
+          },
+          {
+            "code": "E18",
+            "display": "HCP Clinical Intervention: 6-8 week review"
+          },
+          {
+            "code": "E19",
+            "display": "Measurements"
+          }
+        ]
+      }
+    ]
+  }
+}

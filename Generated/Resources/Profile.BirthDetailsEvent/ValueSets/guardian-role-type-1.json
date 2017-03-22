@@ -1,0 +1,107 @@
+{
+  "resourceType": "ValueSet",
+  "meta": {
+    "lastUpdated": "2016-07-11T00:00:00+01:00"
+  },
+  "url": "https://fhir.nhs.uk/ValueSet/guardian-role-type-1",
+  "name": "Guardian Role Type",
+  "status": "draft",
+  "description": "A vocabulary that may be used to give further information about the type of contact details contained in the value element.",
+  "codeSystem": {
+    "system": "https://fhir.nhs.uk/ValueSet/guardian-role-type-1",
+    "concept": [
+      {
+        "code": "06",
+        "display": "Foster parent"
+      },
+      {
+        "code": "07",
+        "display": "Step parent"
+      },
+      {
+        "code": "12",
+        "display": "Mother"
+      },
+      {
+        "code": "13",
+        "display": "Father"
+      },
+      {
+        "code": "14",
+        "display": "Sister"
+      },
+      {
+        "code": "15",
+        "display": "Brother"
+      },
+      {
+        "code": "16",
+        "display": "Relative"
+      },
+      {
+        "code": "20",
+        "display": "Carer"
+      },
+      {
+        "code": "98",
+        "display": "Not Known"
+      },
+      {
+        "code": "99",
+        "display": "Not specified"
+      },
+      {
+        "code": "24",
+        "display": "Maternal Grand-Father"
+      },
+      {
+        "code": "25",
+        "display": "Maternal Grand-Mother"
+      },
+      {
+        "code": "26",
+        "display": "Paternal Grand-Father"
+      },
+      {
+        "code": "27",
+        "display": "Paternal Grand-Mother"
+      },
+      {
+        "code": "30",
+        "display": "Aunt"
+      },
+      {
+        "code": "31",
+        "display": "Uncle"
+      },
+      {
+        "code": "32",
+        "display": "Niece"
+      },
+      {
+        "code": "33",
+        "display": "Nephew"
+      },
+      {
+        "code": "34",
+        "display": "Step-Mother"
+      },
+      {
+        "code": "35",
+        "display": "Step-Father"
+      },
+      {
+        "code": "44",
+        "display": "Grandparent"
+      },
+      {
+        "code": "49",
+        "display": "Person with Parental Responsibility"
+      },
+      {
+        "code": "61",
+        "display": "Step parent"
+      }
+    ]
+  }
+}
