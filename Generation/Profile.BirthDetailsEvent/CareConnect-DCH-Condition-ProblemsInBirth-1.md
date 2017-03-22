@@ -1,0 +1,1 @@
+This Condition resource records detailed information about conditions or diagnoses recognised by a clinician, with further constraints to represent problems encountered by the baby for a Birth Event.

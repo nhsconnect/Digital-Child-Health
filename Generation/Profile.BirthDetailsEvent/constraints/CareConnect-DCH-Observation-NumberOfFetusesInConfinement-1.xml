@@ -1,18 +1,18 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <meta>
-    <lastUpdated value="2017-03-21T20:04:25.043+00:00" />
+    <lastUpdated value="2017-03-22T10:33:58.409+00:00" />
     <tag>
       <system value="urn:hscic:publishOrder" />
-      <code value="5" />
+      <code value="6" />
     </tag>
   </meta>
-  <url value="https://fhir.hl7.org.uk/StructureDefinition/CareConnect-DCH-Observation-1" />
-  <name value="CareConnect-DCH-Observation-1" />
+  <url value="https://fhir.hl7.org.uk/StructureDefinition/CareConnect-DCH-Observation-NumberOfFetusesInConfinement-1" />
+  <name value="CareConnect-DCH-Observation-NumberOfFetusesInConfinement-1" />
   <status value="draft" />
   <publisher value="HL7 UK" />
   <date value="2017-03-02T08:26:12.0559808Z" />
-  <description value="The Observation resource is used for tracking the current and historical observations that have been made for a patient." />
+  <description value="The Observation resource is used for tracking the current and historical observations that have been made for a patient, with further constraints applied to represent the number of fetuses during confinement." />
   <copyright value="Copyright © 2016 HL7 UK&#xD;&#xA;&#xD;&#xA;Licensed under the Apache License, Version 2.0 (the &quot;License&quot;); you may not use this file except in compliance with the License. You may obtain a copy of the License at&#xD;&#xA;&#xD;&#xA;http://www.apache.org/licenses/LICENSE-2.0&#xD;&#xA;&#xD;&#xA;Unless required by applicable law or agreed to in writing, software distributed under the License is distributed on an &quot;AS IS&quot; BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the License for the specific language governing permissions and limitations under the License.&#xD;&#xA;&#xD;&#xA;HL7® FHIR® standard Copyright © 2011+ HL7&#xD;&#xA;&#xD;&#xA;The HL7® FHIR® standard is used under the FHIR license. You may obtain a copy of the FHIR license at&#xD;&#xA;&#xD;&#xA;https://www.hl7.org/fhir/license.html" />
   <fhirVersion value="1.0.2" />
   <kind value="resource" />
@@ -322,10 +322,6 @@
     </element>
     <element>
       <path value="Observation.extension" />
-      <slicing>
-        <discriminator value="url" />
-        <rules value="open" />
-      </slicing>
       <short value="Additional Content defined by implementations" />
       <definition value="May be used to represent additional information that is not part of the basic definition of the resource. In order to make the use of extensions safe and manageable, there is a strict set of governance  applied to the definition and use of extensions. Though any implementer is allowed to define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension." />
       <comments value="There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone." />
@@ -340,44 +336,6 @@
       </base>
       <type>
         <code value="Extension" />
-      </type>
-      <condition value="ele-1" />
-      <constraint>
-        <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-expression">
-          <valueString value="children()" />
-        </extension>
-        <key value="ele-1" />
-        <severity value="error" />
-        <human value="All FHIR elements must have a @value or children" />
-        <xpath value="@value|f:*|h:div" />
-      </constraint>
-      <mapping>
-        <identity value="rim" />
-        <map value="n/a" />
-      </mapping>
-      <mapping>
-        <identity value="rim" />
-        <map value="N/A" />
-      </mapping>
-    </element>
-    <element>
-      <path value="Observation.extension" />
-      <name value="reason" />
-      <short value="Reason observation added" />
-      <definition value="Optional Extensions Element - found in all resources." />
-      <comments value="There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone." />
-      <alias value="extensions" />
-      <alias value="user content" />
-      <min value="0" />
-      <max value="*" />
-      <base>
-        <path value="DomainResource.extension" />
-        <min value="0" />
-        <max value="*" />
-      </base>
-      <type>
-        <code value="Extension" />
-        <profile value="https://fhir.hl7.org.uk/StructureDefinition/Extension-CareConnect-ReasonCondition-1" />
       </type>
       <condition value="ele-1" />
       <constraint>
@@ -440,8 +398,8 @@
       <short value="Unique Id for this particular observation" />
       <definition value="A unique identifier for the simple observation instance." />
       <requirements value="Allows observations to be distinguished and referenced." />
-      <min value="0" />
-      <max value="*" />
+      <min value="1" />
+      <max value="1" />
       <base>
         <path value="Observation.identifier" />
         <min value="0" />
@@ -563,7 +521,7 @@
       <comments value="This is labeled as &quot;Is Modifier&quot; because applications should not mistake a temporary id for a permanent one. Applications can assume that an identifier is permanent unless it explicitly says that it is temporary." />
       <requirements value="Allows the appropriate identifier for a particular context of use to be selected from among a set of identifiers." />
       <min value="0" />
-      <max value="1" />
+      <max value="0" />
       <base>
         <path value="Identifier.use" />
         <min value="0" />
@@ -611,7 +569,7 @@
       <comments value="This element deals only with general categories of identifiers.  It SHOULD not be used for codes that correspond 1..1 with the Identifier.system. Some identifiers may fall into multiple categories due to common usage.   Where the system is known, a type is unnecessary because the type is always part of the system definition. However systems often need to handle identifiers where the system is not known. There is not a 1:1 relationship between type and system, since many different systems have the same type." />
       <requirements value="Allows users to make use of identifiers when the identifier system is not known." />
       <min value="0" />
-      <max value="1" />
+      <max value="0" />
       <base>
         <path value="Identifier.type" />
         <min value="0" />
@@ -1209,7 +1167,7 @@
       <definition value="Time period during which identifier is/was valid for use." />
       <comments value="This is not a duration - that's a measure of time (a separate type), but a duration that occurs at a fixed value of time. A Period specifies a range of time; the context of use will specify whether the entire range applies (e.g. &quot;the patient was an inpatient of the hospital for this time range&quot;) or one value from the range applies (e.g. &quot;give to the patient between these two times&quot;). If duration is required, specify the type as Interval|Duration." />
       <min value="0" />
-      <max value="1" />
+      <max value="0" />
       <base>
         <path value="Identifier.period" />
         <min value="0" />
@@ -1416,7 +1374,7 @@
       <definition value="Organization that issued/manages the identifier." />
       <comments value="The reference may be just a text description of the assigner." />
       <min value="0" />
-      <max value="1" />
+      <max value="0" />
       <base>
         <path value="Identifier.assigner" />
         <min value="0" />
@@ -1424,7 +1382,7 @@
       </base>
       <type>
         <code value="Reference" />
-        <profile value="https://fhir.hl7.org.uk/StructureDefinition/CareConnect-Organization-1" />
+        <profile value="http://hl7.org/fhir/StructureDefinition/Organization" />
       </type>
       <condition value="ele-1" />
       <constraint>
@@ -1665,7 +1623,7 @@
       <definition value="A code that classifies the general type of observation being made.  This is used  for searching, sorting and display purposes." />
       <comments value="The level of granularity is defined by the category concepts in the value set.   More fine-grained filtering can be performed using the metadata and/or terminology hierarchy in Observation.code." />
       <min value="0" />
-      <max value="1" />
+      <max value="0" />
       <base>
         <path value="Observation.category" />
         <min value="0" />
@@ -2698,8 +2656,8 @@
       <definition value="A reference to a code defined by a terminology system." />
       <comments value="Codes may be defined very casually in enumerations, or code lists, up to very formal definitions such as SNOMED CT - see the HL7 v3 Core Principles for more information.  Ordering of codings is undefined and SHALL NOT be used to infer meaning. Generally, at most only one of the coding values will be labelled as UserSelected = true." />
       <requirements value="Allows for translations and alternate encodings within a code system.  Also supports communication of the same instance to systems requiring different encodings." />
-      <min value="0" />
-      <max value="*" />
+      <min value="1" />
+      <max value="1" />
       <base>
         <path value="CodeableConcept.coding" />
         <min value="0" />
@@ -3040,7 +2998,7 @@
       <definition value="A reference to a code defined by a terminology system." />
       <comments value="Codes may be defined very casually in enumerations, or code lists, up to very formal definitions such as SNOMED CT - see the HL7 v3 Core Principles for more information.  Ordering of codings is undefined and SHALL NOT be used to infer meaning. Generally, at most only one of the coding values will be labelled as UserSelected = true." />
       <requirements value="Allows for translations and alternate encodings within a code system.  Also supports communication of the same instance to systems requiring different encodings." />
-      <min value="0" />
+      <min value="1" />
       <max value="1" />
       <base>
         <path value="CodeableConcept.coding" />
@@ -3302,6 +3260,7 @@
       <type>
         <code value="code" />
       </type>
+      <fixedCode value="412726003" />
       <condition value="ele-1" />
       <constraint>
         <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-expression">
@@ -3346,6 +3305,7 @@
       <type>
         <code value="string" />
       </type>
+      <fixedString value="Number of fetuses (observable entity)" />
       <condition value="ele-1" />
       <constraint>
         <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-expression">
@@ -3424,7 +3384,7 @@
       <definition value="A human language representation of the concept as seen/selected/uttered by the user who entered the data and/or which represents the intended meaning of the user." />
       <comments value="Very often the text is the same as a displayName of one of the codings." />
       <requirements value="The codes from the terminologies do not always capture the correct meaning with all the nuances of the human using them, or sometimes there is no appropriate code at all. In these cases, the text is used to capture the full meaning of the source." />
-      <min value="1" />
+      <min value="0" />
       <max value="1" />
       <base>
         <path value="CodeableConcept.text" />
@@ -3434,7 +3394,6 @@
       <type>
         <code value="string" />
       </type>
-      <fixedString value="Abnormalities detected at birth" />
       <condition value="ele-1" />
       <constraint>
         <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-expression">
@@ -3478,19 +3437,7 @@
       </base>
       <type>
         <code value="Reference" />
-        <profile value="http://hl7.org/fhir/StructureDefinition/Group" />
-      </type>
-      <type>
-        <code value="Reference" />
-        <profile value="http://hl7.org/fhir/StructureDefinition/Device" />
-      </type>
-      <type>
-        <code value="Reference" />
-        <profile value="https://fhir.hl7.org.uk/StructureDefinition/CareConnect-Patient-1" />
-      </type>
-      <type>
-        <code value="Reference" />
-        <profile value="https://fhir.hl7.org.uk/StructureDefinition/CareConnect-Location-1" />
+        <profile value="https://fhir.hl7.org.uk/StructureDefinition/CareConnect-DCH-Patient-Mother-1" />
       </type>
       <condition value="ele-1" />
       <constraint>
@@ -3547,7 +3494,7 @@
       </base>
       <type>
         <code value="Reference" />
-        <profile value="https://fhir.hl7.org.uk/StructureDefinition/CareConnect-DCH-Encounter-1" />
+        <profile value="https://fhir.hl7.org.uk/StructureDefinition/CareConnect-DCH-Encounter-DeliveryEvent-1" />
       </type>
       <condition value="ele-1" />
       <constraint>
@@ -3734,7 +3681,7 @@
       <comments value="At least a date should be present unless this observation is a historical report." />
       <requirements value="Knowing when an observation was deemed true is important to its relevance as well as determining trends." />
       <min value="0" />
-      <max value="1" />
+      <max value="0" />
       <base>
         <path value="Observation.effective[x]" />
         <min value="0" />
@@ -3780,7 +3727,7 @@
       <definition value="The date and time this observation was made available to providers, typically after the results have been reviewed and verified." />
       <comments value="Updated when the result is updated." />
       <min value="0" />
-      <max value="1" />
+      <max value="0" />
       <base>
         <path value="Observation.issued" />
         <min value="0" />
@@ -3823,7 +3770,7 @@
       <definition value="Who was responsible for asserting the observed value as &quot;true&quot;." />
       <requirements value="May give a degree of confidence in the observation and also indicates where follow-up questions should be directed." />
       <min value="0" />
-      <max value="*" />
+      <max value="0" />
       <base>
         <path value="Observation.performer" />
         <min value="0" />
@@ -3831,19 +3778,19 @@
       </base>
       <type>
         <code value="Reference" />
+        <profile value="http://hl7.org/fhir/StructureDefinition/Practitioner" />
+      </type>
+      <type>
+        <code value="Reference" />
+        <profile value="http://hl7.org/fhir/StructureDefinition/Organization" />
+      </type>
+      <type>
+        <code value="Reference" />
+        <profile value="http://hl7.org/fhir/StructureDefinition/Patient" />
+      </type>
+      <type>
+        <code value="Reference" />
         <profile value="http://hl7.org/fhir/StructureDefinition/RelatedPerson" />
-      </type>
-      <type>
-        <code value="Reference" />
-        <profile value="https://fhir.hl7.org.uk/StructureDefinition/CareConnect-Organization-1" />
-      </type>
-      <type>
-        <code value="Reference" />
-        <profile value="https://fhir.hl7.org.uk/StructureDefinition/CareConnect-Patient-1" />
-      </type>
-      <type>
-        <code value="Reference" />
-        <profile value="https://fhir.hl7.org.uk/StructureDefinition/CareConnect-Practitioner-1" />
       </type>
       <condition value="ele-1" />
       <constraint>
@@ -3887,12 +3834,12 @@
       </mapping>
     </element>
     <element>
-      <path value="Observation.value[x]" />
-      <short value="Actual result" />
+      <path value="Observation.valueString" />
+      <short value="The number of fetuses during confinement" />
       <definition value="The information determined as a result of making the observation, if the information has a simple value." />
       <comments value="Normally, an observation will have either a value or a set of related observations. A few observations (e.g. Apgar score) may have both a value and related observations (for an Apgar score, the observations from which the measure is derived). If a value is present, the datatype for this element should be determined by Observation.code. This element has a variable name depending on the type as follows: valueQuantity, valueCodeableConcept, valueString, valueRange, valueRatio, valueSampledData, valueAttachment, valueTime, valueDateTime, or valuePeriod. (The name format is &quot;'value' + the type name&quot; with a capital on the first letter of the type).   If the data element is usually coded or if the type associated with the Observation.value defines a coded value, use CodeableConcept instead of string datatype even if the value is uncoded text.  A value set is bound to the ValueCodeableConcept element.  For boolean values use valueCodeableConcept and select codes from [HL7 Version 2 Table 0136](v2/0136/index.html). These &quot;yes/no&quot; concepts can be mapped to the display name &quot;true/false&quot; or other mutually exclusive terms that may be needed.   For further discussion and examples see the  [notes section](observation.html#4.20.4) below." />
       <requirements value="An observation exists to have a value, though it may not if it is in error, or it represents a group of observations." />
-      <min value="0" />
+      <min value="1" />
       <max value="1" />
       <base>
         <path value="Observation.value[x]" />
@@ -3900,34 +3847,7 @@
         <max value="1" />
       </base>
       <type>
-        <code value="Quantity" />
-      </type>
-      <type>
-        <code value="CodeableConcept" />
-      </type>
-      <type>
         <code value="string" />
-      </type>
-      <type>
-        <code value="Range" />
-      </type>
-      <type>
-        <code value="Ratio" />
-      </type>
-      <type>
-        <code value="SampledData" />
-      </type>
-      <type>
-        <code value="Attachment" />
-      </type>
-      <type>
-        <code value="time" />
-      </type>
-      <type>
-        <code value="dateTime" />
-      </type>
-      <type>
-        <code value="Period" />
       </type>
       <condition value="ele-1" />
       <constraint>
@@ -3977,7 +3897,7 @@
       <comments value="Null or exceptional values can be represented two ways in FHIR Observations.  One way is to simply include them in the value set and represent the exceptions in the value.  For example, measurement values for a serology test could be  &quot;detected&quot;, &quot;not detected&quot;, &quot;inconclusive&quot;, or  &quot;specimen unsatisfactory&quot;.   The alternate way is to use the value element for actual observations and use the explicit dataAbsentReason element to record exceptional values.  For example, the dataAbsentReason code &quot;error&quot; could be used when the measurement was not completed.  Because of these options, use-case agreements are required to interpret general observations for exceptional values." />
       <requirements value="For many results it is necessary to handle exceptional values in measurements." />
       <min value="0" />
-      <max value="1" />
+      <max value="0" />
       <base>
         <path value="Observation.dataAbsentReason" />
         <min value="0" />
@@ -4879,7 +4799,7 @@
       <requirements value="For some results, particularly numeric results, an interpretation is necessary to fully understand the significance of a result." />
       <alias value="Abnormal Flag" />
       <min value="0" />
-      <max value="1" />
+      <max value="0" />
       <base>
         <path value="Observation.interpretation" />
         <min value="0" />
@@ -5389,7 +5309,7 @@
       <comments value="Note that FHIR strings may not exceed 1MB in size" />
       <requirements value="Need to be able to provide free text additional information." />
       <min value="0" />
-      <max value="1" />
+      <max value="0" />
       <base>
         <path value="Observation.comments" />
         <min value="0" />
@@ -5428,7 +5348,7 @@
       <comments value="Only used if not implicit in code found in Observation.code.  If the use case requires BodySite to be handled as a separate resource instead of an inline coded element (e.g. to identify and track separately) then use the standard extension[ body-site-instance](extension-body-site-instance.html)." />
       <requirements value="Knowing where the observation is made is important for tracking if multiple sites are possible." />
       <min value="0" />
-      <max value="1" />
+      <max value="0" />
       <base>
         <path value="Observation.bodySite" />
         <min value="0" />
@@ -6328,7 +6248,7 @@
       <comments value="Only used if not implicit in code for Observation.code." />
       <requirements value="In some cases, method can impact results and is thus used for determining whether results can be compared or determining significance of results." />
       <min value="0" />
-      <max value="1" />
+      <max value="0" />
       <base>
         <path value="Observation.method" />
         <min value="0" />
@@ -7227,7 +7147,7 @@
       <definition value="The specimen that was used when this observation was made." />
       <comments value="Observations are not made on specimens themselves; they are made on a subject, but usually by the means of a specimen. Note that although specimens are often involved, they are not always tracked and reported explicitly. Also note that observation resources may be used in contexts that track the specimen explicitly (e.g. Diagnostic Report)." />
       <min value="0" />
-      <max value="1" />
+      <max value="0" />
       <base>
         <path value="Observation.specimen" />
         <min value="0" />
@@ -7417,7 +7337,7 @@
       <definition value="The device used to generate the observation data." />
       <comments value="An extension should be used if further typing of the device is needed.  Devices used to support obtaining an observation can be represented using either extension or through the Observation.related element." />
       <min value="0" />
-      <max value="1" />
+      <max value="0" />
       <base>
         <path value="Observation.device" />
         <min value="0" />
@@ -7476,7 +7396,7 @@
       <comments value="Most observations only have one generic reference range. Systems MAY choose to restrict to only supplying the relevant reference range based on knowledge about the patient (e.g. specific to the patient's age, gender, weight and other factors), but this may not be possible or appropriate. Whenever more than one reference range is supplied, the differences between them SHOULD be provided in the reference range and/or age properties." />
       <requirements value="Knowing what values are considered &quot;normal&quot; can help evaluate the significance of a particular result. Need to be able to provide multiple reference ranges for different contexts." />
       <min value="0" />
-      <max value="*" />
+      <max value="0" />
       <base>
         <path value="Observation.referenceRange" />
         <min value="0" />
@@ -10065,7 +9985,7 @@
       <comments value="For a discussion on the ways Observations can assembled in groups together see [Notes below](observation.html#4.20.4)." />
       <requirements value="Normally, an observation will have either a value or a set of related observations. A few observations (e.g. Apgar score) may have both a value and a set of related observations or sometimes QuestionnaireResponse  from which the measure is derived." />
       <min value="0" />
-      <max value="*" />
+      <max value="0" />
       <base>
         <path value="Observation.related" />
         <min value="0" />
@@ -10265,7 +10185,7 @@
       </type>
       <type>
         <code value="Reference" />
-        <profile value="https://fhir.hl7.org.uk/StructureDefinition/CareConnect-DCH-Observation-1" />
+        <profile value="https://fhir.hl7.org.uk/StructureDefinition/CareConnect-DCH-Observation-NumberOfFetusesInConfinement-1" />
       </type>
       <condition value="ele-1" />
       <constraint>
@@ -10307,7 +10227,7 @@
       <comments value="For a discussion on the ways Observations can assembled in groups together see [Notes below](observation.html#4.20.4)." />
       <requirements value="Component observations share the same attributes in the Observation resource as the primary observation and are always treated a part of a single observation (they are not separable).   However, the reference range for the primary observation value is not inherited by the component values and is required when appropriate for each component observation." />
       <min value="0" />
-      <max value="*" />
+      <max value="0" />
       <base>
         <path value="Observation.component" />
         <min value="0" />
@@ -12375,20 +12295,17 @@
       </constraint>
     </element>
     <element>
-      <path value="Observation.extension" />
-      <slicing>
-        <discriminator value="url" />
-        <rules value="open" />
-      </slicing>
+      <path value="Observation.identifier" />
+      <min value="1" />
+      <max value="1" />
     </element>
     <element>
-      <path value="Observation.extension" />
-      <name value="reason" />
-      <short value="Reason observation added" />
-      <type>
-        <code value="Extension" />
-        <profile value="https://fhir.hl7.org.uk/StructureDefinition/Extension-CareConnect-ReasonCondition-1" />
-      </type>
+      <path value="Observation.identifier.use" />
+      <max value="0" />
+    </element>
+    <element>
+      <path value="Observation.identifier.type" />
+      <max value="0" />
     </element>
     <element>
       <path value="Observation.identifier.system" />
@@ -12399,11 +12316,16 @@
       <min value="1" />
     </element>
     <element>
+      <path value="Observation.identifier.period" />
+      <max value="0" />
+    </element>
+    <element>
       <path value="Observation.identifier.assigner" />
-      <type>
-        <code value="Reference" />
-        <profile value="https://fhir.hl7.org.uk/StructureDefinition/CareConnect-Organization-1" />
-      </type>
+      <max value="0" />
+    </element>
+    <element>
+      <path value="Observation.category" />
+      <max value="0" />
     </element>
     <element>
       <path value="Observation.category.coding" />
@@ -12459,10 +12381,13 @@
         <ordered value="false" />
         <rules value="open" />
       </slicing>
+      <min value="1" />
+      <max value="1" />
     </element>
     <element>
       <path value="Observation.code.coding" />
       <name value="SNOMED CT" />
+      <min value="1" />
       <max value="1" />
     </element>
     <element>
@@ -12494,60 +12419,50 @@
     <element>
       <path value="Observation.code.coding.code" />
       <min value="1" />
+      <fixedCode value="412726003" />
     </element>
     <element>
       <path value="Observation.code.coding.display" />
       <min value="1" />
-    </element>
-    <element>
-      <path value="Observation.code.text" />
-      <min value="1" />
-      <fixedString value="Abnormalities detected at birth" />
+      <fixedString value="Number of fetuses (observable entity)" />
     </element>
     <element>
       <path value="Observation.subject" />
       <type>
         <code value="Reference" />
-        <profile value="http://hl7.org/fhir/StructureDefinition/Group" />
-      </type>
-      <type>
-        <code value="Reference" />
-        <profile value="http://hl7.org/fhir/StructureDefinition/Device" />
-      </type>
-      <type>
-        <code value="Reference" />
-        <profile value="https://fhir.hl7.org.uk/StructureDefinition/CareConnect-Patient-1" />
-      </type>
-      <type>
-        <code value="Reference" />
-        <profile value="https://fhir.hl7.org.uk/StructureDefinition/CareConnect-Location-1" />
+        <profile value="https://fhir.hl7.org.uk/StructureDefinition/CareConnect-DCH-Patient-Mother-1" />
       </type>
     </element>
     <element>
       <path value="Observation.encounter" />
       <type>
         <code value="Reference" />
-        <profile value="https://fhir.hl7.org.uk/StructureDefinition/CareConnect-DCH-Encounter-1" />
+        <profile value="https://fhir.hl7.org.uk/StructureDefinition/CareConnect-DCH-Encounter-DeliveryEvent-1" />
       </type>
     </element>
     <element>
+      <path value="Observation.effective[x]" />
+      <max value="0" />
+    </element>
+    <element>
+      <path value="Observation.issued" />
+      <max value="0" />
+    </element>
+    <element>
       <path value="Observation.performer" />
+      <max value="0" />
+    </element>
+    <element>
+      <path value="Observation.valueString" />
+      <short value="The number of fetuses during confinement" />
+      <min value="1" />
       <type>
-        <code value="Reference" />
-        <profile value="http://hl7.org/fhir/StructureDefinition/RelatedPerson" />
+        <code value="string" />
       </type>
-      <type>
-        <code value="Reference" />
-        <profile value="https://fhir.hl7.org.uk/StructureDefinition/CareConnect-Organization-1" />
-      </type>
-      <type>
-        <code value="Reference" />
-        <profile value="https://fhir.hl7.org.uk/StructureDefinition/CareConnect-Patient-1" />
-      </type>
-      <type>
-        <code value="Reference" />
-        <profile value="https://fhir.hl7.org.uk/StructureDefinition/CareConnect-Practitioner-1" />
-      </type>
+    </element>
+    <element>
+      <path value="Observation.dataAbsentReason" />
+      <max value="0" />
     </element>
     <element>
       <path value="Observation.dataAbsentReason.coding" />
@@ -12597,6 +12512,18 @@
       <min value="1" />
     </element>
     <element>
+      <path value="Observation.interpretation" />
+      <max value="0" />
+    </element>
+    <element>
+      <path value="Observation.comments" />
+      <max value="0" />
+    </element>
+    <element>
+      <path value="Observation.bodySite" />
+      <max value="0" />
+    </element>
+    <element>
       <path value="Observation.bodySite.coding" />
       <slicing>
         <discriminator value="system" />
@@ -12642,6 +12569,10 @@
     <element>
       <path value="Observation.bodySite.coding.display" />
       <min value="1" />
+    </element>
+    <element>
+      <path value="Observation.method" />
+      <max value="0" />
     </element>
     <element>
       <path value="Observation.method.coding" />
@@ -12691,6 +12622,19 @@
       <min value="1" />
     </element>
     <element>
+      <path value="Observation.specimen" />
+      <max value="0" />
+    </element>
+    <element>
+      <path value="Observation.device" />
+      <max value="0" />
+    </element>
+    <element>
+      <path value="Observation.referenceRange" />
+      <name value="referenceRange" />
+      <max value="0" />
+    </element>
+    <element>
       <path value="Observation.referenceRange.meaning.coding" />
       <slicing>
         <discriminator value="system" />
@@ -12738,6 +12682,10 @@
       <min value="1" />
     </element>
     <element>
+      <path value="Observation.related" />
+      <max value="0" />
+    </element>
+    <element>
       <path value="Observation.related.target" />
       <type>
         <code value="Reference" />
@@ -12745,8 +12693,12 @@
       </type>
       <type>
         <code value="Reference" />
-        <profile value="https://fhir.hl7.org.uk/StructureDefinition/CareConnect-DCH-Observation-1" />
+        <profile value="https://fhir.hl7.org.uk/StructureDefinition/CareConnect-DCH-Observation-NumberOfFetusesInConfinement-1" />
       </type>
+    </element>
+    <element>
+      <path value="Observation.component" />
+      <max value="0" />
     </element>
     <element>
       <path value="Observation.component.code.coding" />

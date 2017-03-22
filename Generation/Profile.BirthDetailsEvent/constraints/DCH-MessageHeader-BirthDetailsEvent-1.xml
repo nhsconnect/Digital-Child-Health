@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <meta>
-    <lastUpdated value="2017-03-13T17:29:29.084+00:00" />
+    <lastUpdated value="2017-03-21T20:27:20.558+00:00" />
     <tag>
       <system value="urn:hscic:publishOrder" />
       <code value="2" />
@@ -10,8 +10,8 @@
   <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm">
     <valueInteger value="2" />
   </extension>
-  <url value="https://fhir.nhs.uk/StructureDefinition/dch-messageheader-child-health-event-1" />
-  <name value="DCH-MessageHeader-Child-Health-Event-1" />
+  <url value="https://fhir.nhs.uk/StructureDefinition/dch-messageheader-birthdetailsevent-1" />
+  <name value="DCH-MessageHeader-BirthDetailsEvent-1" />
   <status value="draft" />
   <publisher value="NHS Digital" />
   <contact>
@@ -23,7 +23,7 @@
     </telecom>
   </contact>
   <date value="2015-09-22T11:02:49+01:00" />
-  <description value="This Bundle resource is constrained to represent a message header for a event for the Child Health Events Catalogue." />
+  <description value="This Bundle resource is constrained to represent a message header for a Birth Details Event for the Child Health Events Catalogue." />
   <copyright value="Copyright © 2016 Health and Social Care Information Centre. NHS Digital is the trading name of the Health and Social Care Information Centre." />
   <fhirVersion value="1.0.1" />
   <kind value="resource" />
@@ -446,7 +446,7 @@
         <strength value="required" />
         <description value="The type of Child Health event." />
         <valueSetReference>
-          <reference value="http://fhir.nhs.net/ValueSet/child-health-event-type-1" />
+          <reference value="https://fhir.nhs.uk/ValueSet/dch-childhealtheventtype-1" />
         </valueSetReference>
       </binding>
       <mapping>
@@ -560,7 +560,7 @@
       <type>
         <code value="uri" />
       </type>
-      <fixedUri value="http://fhir.nhs.net/child-health-event-type-1" />
+      <fixedUri value="https://fhir.nhs.uk/dch-childhealtheventtype-1" />
       <condition value="ele-1" />
       <constraint>
         <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-expression">
@@ -648,6 +648,7 @@
       <type>
         <code value="code" />
       </type>
+      <fixedCode value="E1" />
       <condition value="ele-1" />
       <constraint>
         <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-expression">
@@ -692,6 +693,7 @@
       <type>
         <code value="string" />
       </type>
+      <fixedString value="Birth: Birth Details" />
       <condition value="ele-1" />
       <constraint>
         <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-expression">
@@ -3458,8 +3460,7 @@
       </base>
       <type>
         <code value="Reference" />
-        <profile value="https://fhir.hl7.org.uk/StructureDefinition/CareConnect-DCH-Encounter-1" />
-        <aggregation value="referenced" />
+        <profile value="https://fhir.hl7.org.uk/StructureDefinition/CareConnect-DCH-Encounter-BirthEvent-1" />
       </type>
       <condition value="ele-1" />
       <constraint>
@@ -3646,7 +3647,7 @@
         <strength value="required" />
         <description value="The type of Child Health event." />
         <valueSetReference>
-          <reference value="http://fhir.nhs.net/ValueSet/child-health-event-type-1" />
+          <reference value="https://fhir.nhs.uk/ValueSet/dch-childhealtheventtype-1" />
         </valueSetReference>
       </binding>
     </element>
@@ -3655,7 +3656,7 @@
       <short value="The type of Child Health event." />
       <definition value="The type of Child Health event." />
       <min value="1" />
-      <fixedUri value="http://fhir.nhs.net/child-health-event-type-1" />
+      <fixedUri value="https://fhir.nhs.uk/dch-childhealtheventtype-1" />
     </element>
     <element>
       <path value="MessageHeader.event.version" />
@@ -3664,10 +3665,12 @@
     <element>
       <path value="MessageHeader.event.code" />
       <min value="1" />
+      <fixedCode value="E1" />
     </element>
     <element>
       <path value="MessageHeader.event.display" />
       <min value="1" />
+      <fixedString value="Birth: Birth Details" />
     </element>
     <element>
       <path value="MessageHeader.event.userSelected" />
@@ -3714,8 +3717,7 @@
       <max value="1" />
       <type>
         <code value="Reference" />
-        <profile value="https://fhir.hl7.org.uk/StructureDefinition/CareConnect-DCH-Encounter-1" />
-        <aggregation value="referenced" />
+        <profile value="https://fhir.hl7.org.uk/StructureDefinition/CareConnect-DCH-Encounter-BirthEvent-1" />
       </type>
     </element>
   </differential>

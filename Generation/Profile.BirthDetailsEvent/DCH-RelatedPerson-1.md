@@ -1,0 +1,1 @@
+This RelatedPerson resource has been constrained to represent a relationship between a mother and a baby for the Digital Child Health Events Catalogue

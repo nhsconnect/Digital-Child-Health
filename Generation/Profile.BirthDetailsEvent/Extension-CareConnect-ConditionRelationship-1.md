@@ -1,0 +1,1 @@
+A reference to another related condition (target) whose relationship is defined by the relationship type code.
