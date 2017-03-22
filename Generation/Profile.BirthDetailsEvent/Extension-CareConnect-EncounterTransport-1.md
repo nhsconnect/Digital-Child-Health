@@ -1,1 +1,0 @@
-An extension to the Encounter resource to include the Transport used by the subject for an encounter.
