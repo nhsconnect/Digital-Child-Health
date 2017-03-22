@@ -1,1 +1,1 @@
-This Observation resource has been constrained to represent the Apgar Score at five minutes for the Digital Child Health Events Catalogue
+The Observation resource is used for tracking the current and historical observations that have been made for a patient, with further constraints applied to represent the number of fetuses during confinement.
