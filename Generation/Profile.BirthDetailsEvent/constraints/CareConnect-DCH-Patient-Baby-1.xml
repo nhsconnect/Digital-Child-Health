@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <meta>
-    <lastUpdated value="2017-03-22T18:18:17.797+00:00" />
+    <lastUpdated value="2017-03-24T12:16:37.619+00:00" />
     <tag>
       <system value="urn:hscic:publishOrder" />
       <code value="4" />
@@ -2587,7 +2587,7 @@
       </base>
       <type>
         <code value="Reference" />
-        <profile value="http://hl7.org/fhir/StructureDefinition/Organization" />
+        <profile value="https://fhir.hl7.org.uk/StructureDefinition/CareConnect-Organization-1" />
       </type>
       <condition value="ele-1" />
       <constraint>
@@ -8350,7 +8350,7 @@
       <comments value="Contact covers all kinds of contact parties: family members, business contacts, guardians, caregivers. Not applicable to register pedigree and family ties beyond use of having contact." />
       <requirements value="Need to track people you can contact about the patient." />
       <min value="0" />
-      <max value="*" />
+      <max value="0" />
       <base>
         <path value="Patient.contact" />
         <min value="0" />
@@ -14431,6 +14431,10 @@
     <element>
       <path value="Patient.identifier.assigner" />
       <max value="0" />
+      <type>
+        <code value="Reference" />
+        <profile value="https://fhir.hl7.org.uk/StructureDefinition/CareConnect-Organization-1" />
+      </type>
     </element>
     <element>
       <path value="Patient.identifier" />
@@ -14659,6 +14663,13 @@
     </element>
     <element>
       <path value="Patient.photo" />
+      <max value="0" />
+    </element>
+    <element>
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-explicit-type-name">
+        <valueString value="Contact" />
+      </extension>
+      <path value="Patient.contact" />
       <max value="0" />
     </element>
     <element>

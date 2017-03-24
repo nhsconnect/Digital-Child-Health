@@ -10,7 +10,7 @@ This 'DCH-Bundle-BreastfeedingStatusEvent-1' Bundle resource profile is used as 
 - [CareConnect-DCH-Practitioner-BreastfeedingStatusEvent-1]
 
 
-###  Birth Details data item mapping to FHIR profiles ###
+###  Breastfeeding Status Event data item mapping to FHIR profiles ###
 ----------
 The Child Health Event data items are fulfilled by elements within the FHIR resources listed below:
 

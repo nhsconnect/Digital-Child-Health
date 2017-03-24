@@ -1,0 +1,1 @@
+This encounter occurs within the scope of the referenced encounter.

@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <meta>
-    <lastUpdated value="2017-03-22T16:49:44.01+00:00" />
+    <lastUpdated value="2017-03-24T10:15:28.836+00:00" />
     <tag>
       <system value="urn:hscic:publishOrder" />
       <code value="13" />
@@ -2587,7 +2587,7 @@
       </base>
       <type>
         <code value="Reference" />
-        <profile value="http://hl7.org/fhir/StructureDefinition/Organization" />
+        <profile value="https://fhir.hl7.org.uk/StructureDefinition/CareConnect-Organization-1" />
       </type>
       <condition value="ele-1" />
       <constraint>
@@ -3762,7 +3762,7 @@
       </base>
       <type>
         <code value="Reference" />
-        <profile value="http://hl7.org/fhir/StructureDefinition/Organization" />
+        <profile value="https://fhir.hl7.org.uk/StructureDefinition/CareConnect-Organization-1" />
       </type>
       <condition value="ele-1" />
       <constraint>
@@ -14376,12 +14376,6 @@
       </type>
     </element>
     <element>
-      <path value="Patient.contained" />
-      <type>
-        <code value="Resource" />
-      </type>
-    </element>
-    <element>
       <path value="Patient.identifier" />
       <slicing>
         <discriminator value="system" />
@@ -14440,6 +14434,10 @@
     <element>
       <path value="Patient.identifier.assigner" />
       <max value="0" />
+      <type>
+        <code value="Reference" />
+        <profile value="https://fhir.hl7.org.uk/StructureDefinition/CareConnect-Organization-1" />
+      </type>
     </element>
     <element>
       <path value="Patient.identifier" />
@@ -14454,6 +14452,13 @@
     <element>
       <path value="Patient.identifier.value" />
       <min value="1" />
+    </element>
+    <element>
+      <path value="Patient.identifier.assigner" />
+      <type>
+        <code value="Reference" />
+        <profile value="https://fhir.hl7.org.uk/StructureDefinition/CareConnect-Organization-1" />
+      </type>
     </element>
     <element>
       <path value="Patient.active" />
@@ -14811,13 +14816,6 @@
     <element>
       <path value="Patient.link" />
       <max value="0" />
-    </element>
-    <element>
-      <path value="Patient.link.other" />
-      <type>
-        <code value="Reference" />
-        <profile value="http://hl7.org/fhir/StructureDefinition/Patient" />
-      </type>
     </element>
   </differential>
 </StructureDefinition>

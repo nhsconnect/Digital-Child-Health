@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <meta>
-    <lastUpdated value="2017-03-22T18:18:17.797+00:00" />
+    <lastUpdated value="2017-03-24T12:16:13.802+00:00" />
     <tag>
       <system value="urn:hscic:publishOrder" />
       <code value="4" />
@@ -15,7 +15,7 @@
   <name value="CareConnect-DCH-Patient-Baby-1" />
   <status value="draft" />
   <publisher value="HL7 UK" />
-  <description value="The Patient resource represents the patient involved in the provision of healthcare related services, with further constraints applied to represent a baby as the subject of a Birth Event." />
+  <description value="The Patient resource represents the patient involved in the provision of healthcare related services, with further constraints applied to represent a baby as the subject of an Assessment APGAR Event." />
   <copyright value="Copyright © 2016 HL7 UK&#xD;&#xA;&#xD;&#xA;Licensed under the Apache License, Version 2.0 (the &quot;License&quot;); you may not use this file except in compliance with the License. You may obtain a copy of the License at&#xD;&#xA;&#xD;&#xA;http://www.apache.org/licenses/LICENSE-2.0&#xD;&#xA;&#xD;&#xA;Unless required by applicable law or agreed to in writing, software distributed under the License is distributed on an &quot;AS IS&quot; BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the License for the specific language governing permissions and limitations under the License.&#xD;&#xA;&#xD;&#xA;HL7® FHIR® standard Copyright © 2011+ HL7&#xD;&#xA;&#xD;&#xA;The HL7® FHIR® standard is used under the FHIR license. You may obtain a copy of the FHIR license at&#xD;&#xA;&#xD;&#xA;https://www.hl7.org/fhir/license.html" />
   <fhirVersion value="1.0.1" />
   <mapping>
@@ -2587,7 +2587,7 @@
       </base>
       <type>
         <code value="Reference" />
-        <profile value="http://hl7.org/fhir/StructureDefinition/Organization" />
+        <profile value="https://fhir.hl7.org.uk/StructureDefinition/CareConnect-Organization-1" />
       </type>
       <condition value="ele-1" />
       <constraint>
@@ -8350,7 +8350,7 @@
       <comments value="Contact covers all kinds of contact parties: family members, business contacts, guardians, caregivers. Not applicable to register pedigree and family ties beyond use of having contact." />
       <requirements value="Need to track people you can contact about the patient." />
       <min value="0" />
-      <max value="*" />
+      <max value="0" />
       <base>
         <path value="Patient.contact" />
         <min value="0" />
@@ -14431,6 +14431,10 @@
     <element>
       <path value="Patient.identifier.assigner" />
       <max value="0" />
+      <type>
+        <code value="Reference" />
+        <profile value="https://fhir.hl7.org.uk/StructureDefinition/CareConnect-Organization-1" />
+      </type>
     </element>
     <element>
       <path value="Patient.identifier" />
@@ -14659,6 +14663,13 @@
     </element>
     <element>
       <path value="Patient.photo" />
+      <max value="0" />
+    </element>
+    <element>
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-explicit-type-name">
+        <valueString value="Contact" />
+      </extension>
+      <path value="Patient.contact" />
       <max value="0" />
     </element>
     <element>

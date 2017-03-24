@@ -1,0 +1,1 @@
+This Bundle resource is constrained to represent a message header for a Birth Discharge Event.

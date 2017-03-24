@@ -6,3 +6,5 @@ select constraints\*.xml >> IGPackage Profile.BreastfeedingStatusEvent
 select valuesets\*.xml >> IGPackage Profile.BreastfeedingStatusEvent
 select constraints\*.xml >> IGPackage Profile.NeonatalCareEvent
 select valuesets\*.xml >> IGPackage Profile.NeonatalCareEvent
+select constraints\*.xml >> IGPackage Profile.BirthDischargeEvent
+select valuesets\*.xml >> IGPackage Profile.BirthDischargeEvent
