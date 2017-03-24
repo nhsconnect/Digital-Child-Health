@@ -1,7 +1,7 @@
 {
   "resourceType": "StructureDefinition",
   "meta": {
-    "lastUpdated": "2017-03-22T18:18:17.797+00:00",
+    "lastUpdated": "2017-03-24T12:16:37.619+00:00",
     "tag": [
       {
         "system": "urn:hscic:publishOrder",
@@ -3315,7 +3315,7 @@
           {
             "code": "Reference",
             "profile": [
-              "http://hl7.org/fhir/StructureDefinition/Organization"
+              "https://fhir.hl7.org.uk/StructureDefinition/CareConnect-Organization-1"
             ]
           }
         ],
@@ -10677,7 +10677,7 @@
         "comments": "Contact covers all kinds of contact parties: family members, business contacts, guardians, caregivers. Not applicable to register pedigree and family ties beyond use of having contact.",
         "requirements": "Need to track people you can contact about the patient.",
         "min": 0,
-        "max": "*",
+        "max": "0",
         "base": {
           "path": "Patient.contact",
           "min": 0,
@@ -18453,7 +18453,15 @@
       },
       {
         "path": "Patient.identifier.assigner",
-        "max": "0"
+        "max": "0",
+        "type": [
+          {
+            "code": "Reference",
+            "profile": [
+              "https://fhir.hl7.org.uk/StructureDefinition/CareConnect-Organization-1"
+            ]
+          }
+        ]
       },
       {
         "path": "Patient.identifier",
@@ -18696,6 +18704,16 @@
       },
       {
         "path": "Patient.photo",
+        "max": "0"
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-explicit-type-name",
+            "valueString": "Contact"
+          }
+        ],
+        "path": "Patient.contact",
         "max": "0"
       },
       {
