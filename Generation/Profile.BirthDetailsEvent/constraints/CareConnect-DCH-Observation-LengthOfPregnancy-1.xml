@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <meta>
-    <lastUpdated value="2017-03-22T10:33:54.743+00:00" />
+    <lastUpdated value="2017-03-22T17:16:30.502+00:00" />
     <tag>
       <system value="urn:hscic:publishOrder" />
       <code value="5" />
@@ -398,8 +398,8 @@
       <short value="Unique Id for this particular observation" />
       <definition value="A unique identifier for the simple observation instance." />
       <requirements value="Allows observations to be distinguished and referenced." />
-      <min value="0" />
-      <max value="0" />
+      <min value="1" />
+      <max value="1" />
       <base>
         <path value="Observation.identifier" />
         <min value="0" />
@@ -521,7 +521,7 @@
       <comments value="This is labeled as &quot;Is Modifier&quot; because applications should not mistake a temporary id for a permanent one. Applications can assume that an identifier is permanent unless it explicitly says that it is temporary." />
       <requirements value="Allows the appropriate identifier for a particular context of use to be selected from among a set of identifiers." />
       <min value="0" />
-      <max value="1" />
+      <max value="0" />
       <base>
         <path value="Identifier.use" />
         <min value="0" />
@@ -1581,6 +1581,7 @@
       <type>
         <code value="code" />
       </type>
+      <fixedCode value="final" />
       <condition value="ele-1" />
       <constraint>
         <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-expression">
@@ -3839,7 +3840,7 @@
       <definition value="Gestation in weeks and days (at birth)" />
       <comments value="Normally, an observation will have either a value or a set of related observations. A few observations (e.g. Apgar score) may have both a value and related observations (for an Apgar score, the observations from which the measure is derived). If a value is present, the datatype for this element should be determined by Observation.code. This element has a variable name depending on the type as follows: valueQuantity, valueCodeableConcept, valueString, valueRange, valueRatio, valueSampledData, valueAttachment, valueTime, valueDateTime, or valuePeriod. (The name format is &quot;'value' + the type name&quot; with a capital on the first letter of the type).   If the data element is usually coded or if the type associated with the Observation.value defines a coded value, use CodeableConcept instead of string datatype even if the value is uncoded text.  A value set is bound to the ValueCodeableConcept element.  For boolean values use valueCodeableConcept and select codes from [HL7 Version 2 Table 0136](v2/0136/index.html). These &quot;yes/no&quot; concepts can be mapped to the display name &quot;true/false&quot; or other mutually exclusive terms that may be needed.   For further discussion and examples see the  [notes section](observation.html#4.20.4) below." />
       <requirements value="An observation exists to have a value, though it may not if it is in error, or it represents a group of observations." />
-      <min value="0" />
+      <min value="1" />
       <max value="1" />
       <base>
         <path value="Observation.value[x]" />
@@ -12296,6 +12297,11 @@
     </element>
     <element>
       <path value="Observation.identifier" />
+      <min value="1" />
+      <max value="1" />
+    </element>
+    <element>
+      <path value="Observation.identifier.use" />
       <max value="0" />
     </element>
     <element>
@@ -12317,6 +12323,13 @@
     <element>
       <path value="Observation.identifier.assigner" />
       <max value="0" />
+    </element>
+    <element>
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-display-hint">
+        <valueString value="default: final" />
+      </extension>
+      <path value="Observation.status" />
+      <fixedCode value="final" />
     </element>
     <element>
       <path value="Observation.category" />
@@ -12451,6 +12464,7 @@
       <path value="Observation.valueString" />
       <short value="Gestation in weeks and days (at birth)" />
       <definition value="Gestation in weeks and days (at birth)" />
+      <min value="1" />
       <type>
         <code value="string" />
       </type>

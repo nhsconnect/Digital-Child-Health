@@ -1,1 +1,0 @@
-The Patient resource carries the patient demographic details.

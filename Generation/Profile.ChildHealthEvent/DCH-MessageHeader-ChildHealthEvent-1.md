@@ -1,1 +1,0 @@
-This Bundle resource is constrained to represent a message header for a event for the Child Health Events Catalogue.

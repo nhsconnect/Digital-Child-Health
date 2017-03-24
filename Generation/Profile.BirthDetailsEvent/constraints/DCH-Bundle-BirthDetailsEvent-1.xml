@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <meta>
-    <lastUpdated value="2017-03-20T11:23:46.754+00:00" />
+    <lastUpdated value="2017-03-22T17:23:09.844+00:00" />
     <tag>
       <system value="urn:hscic:publishOrder" />
       <code value="1" />
@@ -11,6 +11,7 @@
     <valueInteger value="3" />
   </extension>
   <url value="https://fhir.nhs.uk/StructureDefinition/dch-bundle-birthdetailsevent-1" />
+  <version value="1.0.0" />
   <name value="DCH-Bundle-BirthDetailsEvent-1" />
   <status value="draft" />
   <publisher value="NHS Digital" />
@@ -19,10 +20,11 @@
     <telecom>
       <system value="email" />
       <value value="interoperabilityteam@nhs.net" />
+      <use value="work" />
     </telecom>
   </contact>
   <date value="2015-09-22T11:02:49+01:00" />
-  <description value="This Bundle resource is constrained to represent a set of resources for a Birth Details Event for the Child Health Events Catalogue." />
+  <description value="This Bundle resource is constrained to represent a set of resources for a Birth Details Event." />
   <copyright value="Copyright © 2016 Health and Social Care Information Centre. NHS Digital is the trading name of the Health and Social Care Information Centre." />
   <fhirVersion value="1.0.1" />
   <kind value="resource" />
@@ -280,6 +282,7 @@
       <type>
         <code value="code" />
       </type>
+      <fixedCode value="message" />
       <condition value="ele-1" />
       <constraint>
         <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-expression">
@@ -2291,6 +2294,10 @@
         <human value="entry.search only when a search" />
         <xpath value="not(f:entry/f:search) or (f:type/@value = 'searchset')" />
       </constraint>
+    </element>
+    <element>
+      <path value="Bundle.type" />
+      <fixedCode value="message" />
     </element>
     <element>
       <path value="Bundle.total" />

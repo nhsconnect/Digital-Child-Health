@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <meta>
-    <lastUpdated value="2017-03-22T10:34:02.169+00:00" />
+    <lastUpdated value="2017-03-22T18:29:29.975+00:00" />
     <tag>
       <system value="urn:hscic:publishOrder" />
       <code value="7" />
@@ -309,10 +309,6 @@
     </element>
     <element>
       <path value="Organization.extension" />
-      <slicing>
-        <discriminator value="url" />
-        <rules value="open" />
-      </slicing>
       <short value="Additional Content defined by implementations" />
       <definition value="May be used to represent additional information that is not part of the basic definition of the resource. In order to make the use of extensions safe and manageable, there is a strict set of governance  applied to the definition and use of extensions. Though any implementer is allowed to define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension." />
       <comments value="There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone." />
@@ -327,82 +323,6 @@
       </base>
       <type>
         <code value="Extension" />
-      </type>
-      <condition value="ele-1" />
-      <constraint>
-        <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-expression">
-          <valueString value="children()" />
-        </extension>
-        <key value="ele-1" />
-        <severity value="error" />
-        <human value="All FHIR elements must have a @value or children" />
-        <xpath value="@value|f:*|h:div" />
-      </constraint>
-      <mapping>
-        <identity value="rim" />
-        <map value="n/a" />
-      </mapping>
-      <mapping>
-        <identity value="rim" />
-        <map value="N/A" />
-      </mapping>
-    </element>
-    <element>
-      <path value="Organization.extension" />
-      <name value="mainLocation" />
-      <short value="Main location" />
-      <definition value="The main location of the organization." />
-      <comments value="There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone." />
-      <alias value="extensions" />
-      <alias value="user content" />
-      <min value="0" />
-      <max value="0" />
-      <base>
-        <path value="DomainResource.extension" />
-        <min value="0" />
-        <max value="*" />
-      </base>
-      <type>
-        <code value="Extension" />
-        <profile value="https://fhir.hl7.org.uk/StructureDefinition/Extension-CareConnect-MainLocation-1" />
-      </type>
-      <condition value="ele-1" />
-      <constraint>
-        <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-expression">
-          <valueString value="children()" />
-        </extension>
-        <key value="ele-1" />
-        <severity value="error" />
-        <human value="All FHIR elements must have a @value or children" />
-        <xpath value="@value|f:*|h:div" />
-      </constraint>
-      <mapping>
-        <identity value="rim" />
-        <map value="n/a" />
-      </mapping>
-      <mapping>
-        <identity value="rim" />
-        <map value="N/A" />
-      </mapping>
-    </element>
-    <element>
-      <path value="Organization.extension" />
-      <name value="organization-period" />
-      <short value="The date range that this organization should be considered available." />
-      <definition value="The date range that this organization should be considered available." />
-      <comments value="There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone." />
-      <alias value="extensions" />
-      <alias value="user content" />
-      <min value="0" />
-      <max value="0" />
-      <base>
-        <path value="DomainResource.extension" />
-        <min value="0" />
-        <max value="*" />
-      </base>
-      <type>
-        <code value="Extension" />
-        <profile value="http://hl7.org/fhir/StructureDefinition/organization-period" />
       </type>
       <condition value="ele-1" />
       <constraint>
@@ -470,8 +390,8 @@
       <short value="Identifies this organization  across multiple systems" />
       <definition value="Identifier for the organization that is used to identify the organization across multiple disparate systems." />
       <requirements value="Organizations are known by a variety of ids. Some institutions maintain several, and most collect identifiers for exchange with other organizations concerning the organization." />
-      <min value="0" />
-      <max value="*" />
+      <min value="1" />
+      <max value="1" />
       <base>
         <path value="Organization.identifier" />
         <min value="0" />
@@ -2819,7 +2739,8 @@
       <path value="Organization.identifier" />
       <name value="ODS Site Code" />
       <short value="ODS Site code to identify the organisation at site level" />
-      <definition value="ODS Site code to identify the organisation at site level" />
+      <definition value="Identifier for the organization that is used to identify the organization across multiple disparate systems." />
+      <comments value="ODS Site code to identify the organisation at site level. Where an ODS Site Code is not applicable, one of the following values will apply:&#xD;&#xA;&#xD;&#xA;ZZ201 - Not applicable (delivered at home)&#xD;&#xA;ZZ888 - Not applicable (delivered at non-NHS organisation)&#xD;&#xA;ZZ203 - Not known (place of delivery not known)" />
       <requirements value="Organizations are known by a variety of ids. Some institutions maintain several, and most collect identifiers for exchange with other organizations concerning the organization." />
       <min value="1" />
       <max value="1" />
@@ -9812,37 +9733,14 @@
       </constraint>
     </element>
     <element>
-      <path value="Organization.extension" />
-      <slicing>
-        <discriminator value="url" />
-        <rules value="open" />
-      </slicing>
-    </element>
-    <element>
-      <path value="Organization.extension" />
-      <name value="mainLocation" />
-      <max value="0" />
-      <type>
-        <code value="Extension" />
-        <profile value="https://fhir.hl7.org.uk/StructureDefinition/Extension-CareConnect-MainLocation-1" />
-      </type>
-    </element>
-    <element>
-      <path value="Organization.extension" />
-      <name value="organization-period" />
-      <max value="0" />
-      <type>
-        <code value="Extension" />
-        <profile value="http://hl7.org/fhir/StructureDefinition/organization-period" />
-      </type>
-    </element>
-    <element>
       <path value="Organization.identifier" />
       <slicing>
         <discriminator value="system" />
         <ordered value="false" />
         <rules value="openAtEnd" />
       </slicing>
+      <min value="1" />
+      <max value="1" />
     </element>
     <element>
       <path value="Organization.identifier" />
@@ -9880,7 +9778,7 @@
       <path value="Organization.identifier" />
       <name value="ODS Site Code" />
       <short value="ODS Site code to identify the organisation at site level" />
-      <definition value="ODS Site code to identify the organisation at site level" />
+      <comments value="ODS Site code to identify the organisation at site level. Where an ODS Site Code is not applicable, one of the following values will apply:&#xD;&#xA;&#xD;&#xA;ZZ201 - Not applicable (delivered at home)&#xD;&#xA;ZZ888 - Not applicable (delivered at non-NHS organisation)&#xD;&#xA;ZZ203 - Not known (place of delivery not known)" />
       <min value="1" />
       <max value="1" />
     </element>

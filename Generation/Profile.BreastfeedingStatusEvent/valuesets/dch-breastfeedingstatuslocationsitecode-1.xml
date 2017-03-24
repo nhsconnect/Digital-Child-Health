@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValueSet xmlns="http://hl7.org/fhir">
+	<meta>
+		<lastUpdated value="2016-08-03T00:00:00+01:00"/>
+	</meta>
+	<url value="https://fhir.nhs.uk/ValueSet/dch-breastfeedingstatuslocationsitecode-1"/>
+	<name value="Breastfeeding Status Event Location Site Code"/>
+	<status value="active"/>
+	<description value="The site code of where the Breastfeeding Status Event took place."/>
+	<compose>
+		<include>
+			<system value="https://fhir.nhs.uk/dch-breastfeedingstatuslocationsitecode-1"/>
+			<concept>
+				<code value="A01"/>
+				<display value="Patient's Home"/>
+			</concept>
+			<concept>
+				<code value="A02"/>
+				<display value="Carer's Home"/>
+			</concept>
+			<concept>
+				<code value="A03"/>
+				<display value="Patient's Workplace"/>
+			</concept>
+			<concept>
+				<code value="A04"/>
+				<display value="Other Patient Related Location"/>
+			</concept>
+			<concept>
+				<code value="B01"/>
+				<display value="Primary Care Health Centre"/>
+			</concept>
+			<concept>
+				<code value="B02"/>
+				<display value="Polyclinic"/>
+			</concept>
+			<concept>
+				<code value="C01"/>
+				<display value="General Medical Practitioner Practice"/>
+			</concept>
+			<concept>
+				<code value="C02"/>
+				<display value="Dental Practice"/>
+			</concept>
+			<concept>
+				<code value="C03"/>
+				<display value="Ophthalmic Medical Practitioner Premises"/>
+			</concept>
+			<concept>
+				<code value="D01"/>
+				<display value="Walk In Centre"/>
+			</concept>
+			<concept>
+				<code value="D02"/>
+				<display value="Out of Hours Centre"/>
+			</concept>
+			<concept>
+				<code value="D03"/>
+				<display value="Emergency Community Dental Service"/>
+			</concept>
+			<concept>
+				<code value="E01"/>
+				<display value="Out-Patient Clinic"/>
+			</concept>
+			<concept>
+				<code value="E02"/>
+				<display value="Ward"/>
+			</concept>
+			<concept>
+				<code value="E03"/>
+				<display value="Day Hospital"/>
+			</concept>
+			<concept>
+				<code value="E04"/>
+				<display value="Accident and Emergency or Minor Injuries Department"/>
+			</concept>
+		</include>
+	</compose>
+</ValueSet>
