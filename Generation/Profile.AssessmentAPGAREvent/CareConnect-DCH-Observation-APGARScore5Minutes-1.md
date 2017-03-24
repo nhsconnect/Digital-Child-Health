@@ -1,0 +1,1 @@
+The Observation resource is used for tracking the current and historical observations that have been made for a patient, with further constraints applied to represent the APGAR Score of the neonate 5 minutes after delivery. 

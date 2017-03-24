@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <meta>
-    <lastUpdated value="2017-03-22T10:07:32.133+00:00" />
+    <lastUpdated value="2017-03-22T18:40:48.206+00:00" />
     <tag>
       <system value="urn:hscic:publishOrder" />
       <code value="3" />
@@ -5079,8 +5079,8 @@
       <short value="The start and end time of the encounter" />
       <definition value="The start and end time of the encounter." />
       <comments value="If not (yet) known, the end of the Period may be omitted." />
-      <min value="0" />
-      <max value="0" />
+      <min value="1" />
+      <max value="1" />
       <base>
         <path value="Encounter.period" />
         <min value="0" />
@@ -5205,7 +5205,7 @@
       <short value="Starting time with inclusive boundary" />
       <definition value="The start of the period. The boundary is inclusive." />
       <comments value="If the low element is missing, the meaning is that the low boundary is not known." />
-      <min value="0" />
+      <min value="1" />
       <max value="1" />
       <base>
         <path value="Period.start" />
@@ -5245,7 +5245,7 @@
       <short value="End time with inclusive boundary, if not ongoing" />
       <definition value="The end of the period. If the end of the period is missing, it means that the period is ongoing. The start may be in the past, and the end date in the future, which means that period is expected/planned to end at that time." />
       <comments value="The high value includes any matching date/time. i.e. 2012-02-03T10:00:00 is in a period that has a end value of 2012-02-03." />
-      <min value="0" />
+      <min value="1" />
       <max value="1" />
       <base>
         <path value="Period.end" />
@@ -12645,8 +12645,8 @@
       <path value="Encounter.serviceProvider" />
       <short value="The custodian organization of this Encounter record" />
       <definition value="An organization that is in charge of maintaining the information of this Encounter (e.g. who maintains the report or the master service catalog item, etc.). This MAY be the same as the organization on the Patient record, however it could be different. This MAY not be not the Service Delivery Location's Organization." />
-      <min value="0" />
-      <max value="0" />
+      <min value="1" />
+      <max value="1" />
       <base>
         <path value="Encounter.serviceProvider" />
         <min value="0" />
@@ -12655,6 +12655,10 @@
       <type>
         <code value="Reference" />
         <profile value="https://fhir.hl7.org.uk/StructureDefinition/CareConnect-Organization-1" />
+      </type>
+      <type>
+        <code value="Reference" />
+        <profile value="https://fhir.hl7.org.uk/StructureDefinition/CareConnect-DCH-Organization-ActualDeliveryPlace-1" />
       </type>
       <condition value="ele-1" />
       <constraint>
@@ -12843,7 +12847,7 @@
       </base>
       <type>
         <code value="Reference" />
-        <profile value="https://fhir.hl7.org.uk/StructureDefinition/CareConnect-DCH-Encounter-BirthEvent-1" />
+        <profile value="https://fhir.hl7.org.uk/StructureDefinition/CareConnect-DCH-Encounter-DeliveryEvent-1" />
       </type>
       <condition value="ele-1" />
       <constraint>
@@ -13162,7 +13166,15 @@
     </element>
     <element>
       <path value="Encounter.period" />
-      <max value="0" />
+      <min value="1" />
+    </element>
+    <element>
+      <path value="Encounter.period.start" />
+      <min value="1" />
+    </element>
+    <element>
+      <path value="Encounter.period.end" />
+      <min value="1" />
     </element>
     <element>
       <path value="Encounter.length" />
@@ -13367,10 +13379,14 @@
     </element>
     <element>
       <path value="Encounter.serviceProvider" />
-      <max value="0" />
+      <min value="1" />
       <type>
         <code value="Reference" />
         <profile value="https://fhir.hl7.org.uk/StructureDefinition/CareConnect-Organization-1" />
+      </type>
+      <type>
+        <code value="Reference" />
+        <profile value="https://fhir.hl7.org.uk/StructureDefinition/CareConnect-DCH-Organization-ActualDeliveryPlace-1" />
       </type>
     </element>
     <element>
@@ -13378,7 +13394,7 @@
       <min value="1" />
       <type>
         <code value="Reference" />
-        <profile value="https://fhir.hl7.org.uk/StructureDefinition/CareConnect-DCH-Encounter-BirthEvent-1" />
+        <profile value="https://fhir.hl7.org.uk/StructureDefinition/CareConnect-DCH-Encounter-DeliveryEvent-1" />
       </type>
     </element>
     <element>

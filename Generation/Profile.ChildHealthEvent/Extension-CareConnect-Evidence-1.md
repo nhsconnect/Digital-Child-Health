@@ -1,1 +1,0 @@
-This Extension resource is constrained to support a reference to results of investigations that confirmed the certainty of the diagnosis. Examples might include results of skin prick allergy tests.

@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <meta>
-    <lastUpdated value="2017-03-22T10:34:13.855+00:00" />
+    <lastUpdated value="2017-03-22T18:25:14.013+00:00" />
     <tag>
       <system value="urn:hscic:publishOrder" />
       <code value="10" />
@@ -2877,8 +2877,8 @@
     <element>
       <path value="Condition.code.coding" />
       <name value="problemsInPregnancy" />
-      <short value="Code defined by a terminology system" />
-      <definition value="A reference to a code defined by a terminology system." />
+      <short value="An infectious disease or medical condition diagnosed in this pregnancy." />
+      <definition value="An infectious disease or medical condition diagnosed in this pregnancy." />
       <comments value="Codes may be defined very casually in enumerations, or code lists, up to very formal definitions such as SNOMED CT - see the HL7 v3 Core Principles for more information.  Ordering of codings is undefined and SHALL NOT be used to infer meaning. Generally, at most only one of the coding values will be labelled as UserSelected = true." />
       <requirements value="Allows for translations and alternate encodings within a code system.  Also supports communication of the same instance to systems requiring different encodings." />
       <min value="0" />
@@ -2902,6 +2902,13 @@
         <xpath value="@value|f:*|h:div" />
       </constraint>
       <isSummary value="true" />
+      <binding>
+        <strength value="required" />
+        <description value="An infectious disease or medical condition diagnosed in this pregnancy" />
+        <valueSetReference>
+          <reference value="https://fhir.nhs.uk/ValueSet/dch-problemsinpregnancy-1" />
+        </valueSetReference>
+      </binding>
       <mapping>
         <identity value="rim" />
         <map value="n/a" />
@@ -3003,7 +3010,7 @@
       <definition value="The identification of the code system that defines the meaning of the symbol in the code." />
       <comments value="The URI may be an OID (urn:oid:...) or a UUID (urn:uuid:...).  OIDs and UUIDs SHALL be references to the HL7 OID registry. Otherwise, the URI should come from HL7's list of FHIR defined special URIs or it should de-reference to some definition that establish the system clearly and unambiguously." />
       <requirements value="Need to be unambiguous about the source of the definition of the symbol." />
-      <min value="0" />
+      <min value="1" />
       <max value="1" />
       <base>
         <path value="Coding.system" />
@@ -3013,6 +3020,7 @@
       <type>
         <code value="uri" />
       </type>
+      <fixedUri value="https://fhir.nhs.uk/dch-problemsinpregnancy-1" />
       <condition value="ele-1" />
       <constraint>
         <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-expression">
@@ -3090,7 +3098,7 @@
       <definition value="A symbol in syntax defined by the system. The symbol may be a predefined code or an expression in a syntax defined by the coding system (e.g. post-coordination)." />
       <comments value="Note that FHIR strings may not exceed 1MB in size" />
       <requirements value="Need to refer to a particular code in the system." />
-      <min value="0" />
+      <min value="1" />
       <max value="1" />
       <base>
         <path value="Coding.code" />
@@ -3134,7 +3142,7 @@
       <definition value="A representation of the meaning of the code in the system, following the rules of the system." />
       <comments value="Note that FHIR strings may not exceed 1MB in size" />
       <requirements value="Need to be able to carry a human-readable meaning of the code for readers that do not know  the system." />
-      <min value="0" />
+      <min value="1" />
       <max value="1" />
       <base>
         <path value="Coding.display" />
@@ -3835,6 +3843,7 @@
       <type>
         <code value="code" />
       </type>
+      <fixedCode value="confirmed" />
       <condition value="ele-1" />
       <constraint>
         <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-expression">
@@ -7488,6 +7497,28 @@
     <element>
       <path value="Condition.code.coding" />
       <name value="problemsInPregnancy" />
+      <short value="An infectious disease or medical condition diagnosed in this pregnancy." />
+      <definition value="An infectious disease or medical condition diagnosed in this pregnancy." />
+      <binding>
+        <strength value="required" />
+        <description value="An infectious disease or medical condition diagnosed in this pregnancy" />
+        <valueSetReference>
+          <reference value="https://fhir.nhs.uk/ValueSet/dch-problemsinpregnancy-1" />
+        </valueSetReference>
+      </binding>
+    </element>
+    <element>
+      <path value="Condition.code.coding.system" />
+      <min value="1" />
+      <fixedUri value="https://fhir.nhs.uk/dch-problemsinpregnancy-1" />
+    </element>
+    <element>
+      <path value="Condition.code.coding.code" />
+      <min value="1" />
+    </element>
+    <element>
+      <path value="Condition.code.coding.display" />
+      <min value="1" />
     </element>
     <element>
       <path value="Condition.category" />
@@ -7530,6 +7561,10 @@
         <strength value="preferred" />
         <valueSetUri value="http://hl7.org/fhir/ValueSet/condition-clinical" />
       </binding>
+    </element>
+    <element>
+      <path value="Condition.verificationStatus" />
+      <fixedCode value="confirmed" />
     </element>
     <element>
       <path value="Condition.severity" />

@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <meta>
-    <lastUpdated value="2017-03-22T10:34:16.835+00:00" />
+    <lastUpdated value="2017-03-22T18:22:56.133+00:00" />
     <tag>
       <system value="urn:hscic:publishOrder" />
       <code value="11" />
@@ -1610,6 +1610,7 @@
       <type>
         <code value="code" />
       </type>
+      <fixedCode value="completed" />
       <condition value="ele-1" />
       <constraint>
         <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-expression">
@@ -2557,9 +2558,9 @@
       <isSummary value="true" />
       <binding>
         <strength value="preferred" />
-        <description value="A code to identify a specific procedure ." />
+        <description value="A code to identify a specific procedure." />
         <valueSetReference>
-          <reference value="https://fhir.nhs.uk/ValueSet/dch-typeofdelivery-1" />
+          <reference value="http://hl7.org/fhir/ValueSet/procedure-code" />
         </valueSetReference>
       </binding>
       <mapping>
@@ -3391,8 +3392,8 @@
     <element>
       <path value="Procedure.code.coding" />
       <name value="typeOfDelivery" />
-      <short value="&quot;The method for delivering baby." />
-      <definition value="&quot;The method for delivering baby." />
+      <short value="The method for delivering baby." />
+      <definition value="The method for delivering baby." />
       <comments value="Codes may be defined very casually in enumerations, or code lists, up to very formal definitions such as SNOMED CT - see the HL7 v3 Core Principles for more information.  Ordering of codings is undefined and SHALL NOT be used to infer meaning. Generally, at most only one of the coding values will be labelled as UserSelected = true." />
       <requirements value="Allows for translations and alternate encodings within a code system.  Also supports communication of the same instance to systems requiring different encodings." />
       <min value="1" />
@@ -3419,7 +3420,9 @@
       <binding>
         <strength value="required" />
         <description value="The method for delivering baby" />
-        <valueSetUri value="https://fhir.nhs.uk/ValueSet/dch-typeofdelivery-1" />
+        <valueSetReference>
+          <reference value="https://fhir.nhs.uk/ValueSet/dch-typeofdelivery-1" />
+        </valueSetReference>
       </binding>
       <mapping>
         <identity value="rim" />
@@ -11294,6 +11297,10 @@
       </type>
     </element>
     <element>
+      <path value="Procedure.status" />
+      <fixedCode value="completed" />
+    </element>
+    <element>
       <path value="Procedure.category" />
       <max value="0" />
     </element>
@@ -11348,9 +11355,7 @@
       <path value="Procedure.code" />
       <binding>
         <strength value="preferred" />
-        <valueSetReference>
-          <reference value="https://fhir.nhs.uk/ValueSet/dch-typeofdelivery-1" />
-        </valueSetReference>
+        <description value="A code to identify a specific procedure." />
       </binding>
     </element>
     <element>
@@ -11403,14 +11408,16 @@
     <element>
       <path value="Procedure.code.coding" />
       <name value="typeOfDelivery" />
-      <short value="&quot;The method for delivering baby." />
-      <definition value="&quot;The method for delivering baby." />
+      <short value="The method for delivering baby." />
+      <definition value="The method for delivering baby." />
       <min value="1" />
       <max value="1" />
       <binding>
         <strength value="required" />
         <description value="The method for delivering baby" />
-        <valueSetUri value="https://fhir.nhs.uk/ValueSet/dch-typeofdelivery-1" />
+        <valueSetReference>
+          <reference value="https://fhir.nhs.uk/ValueSet/dch-typeofdelivery-1" />
+        </valueSetReference>
       </binding>
     </element>
     <element>
