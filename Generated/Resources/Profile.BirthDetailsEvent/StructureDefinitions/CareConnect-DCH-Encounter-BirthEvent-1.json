@@ -1,7 +1,7 @@
 {
   "resourceType": "StructureDefinition",
   "meta": {
-    "lastUpdated": "2017-03-22T10:07:32.133+00:00",
+    "lastUpdated": "2017-03-22T18:40:48.206+00:00",
     "tag": [
       {
         "system": "urn:hscic:publishOrder",
@@ -6551,8 +6551,8 @@
         "short": "The start and end time of the encounter",
         "definition": "The start and end time of the encounter.",
         "comments": "If not (yet) known, the end of the Period may be omitted.",
-        "min": 0,
-        "max": "0",
+        "min": 1,
+        "max": "1",
         "base": {
           "path": "Encounter.period",
           "min": 0,
@@ -6715,7 +6715,7 @@
         "short": "Starting time with inclusive boundary",
         "definition": "The start of the period. The boundary is inclusive.",
         "comments": "If the low element is missing, the meaning is that the low boundary is not known.",
-        "min": 0,
+        "min": 1,
         "max": "1",
         "base": {
           "path": "Period.start",
@@ -6766,7 +6766,7 @@
         "short": "End time with inclusive boundary, if not ongoing",
         "definition": "The end of the period. If the end of the period is missing, it means that the period is ongoing. The start may be in the past, and the end date in the future, which means that period is expected/planned to end at that time.",
         "comments": "The high value includes any matching date/time. i.e. 2012-02-03T10:00:00 is in a period that has a end value of 2012-02-03.",
-        "min": 0,
+        "min": 1,
         "max": "1",
         "base": {
           "path": "Period.end",
@@ -16270,8 +16270,8 @@
         "path": "Encounter.serviceProvider",
         "short": "The custodian organization of this Encounter record",
         "definition": "An organization that is in charge of maintaining the information of this Encounter (e.g. who maintains the report or the master service catalog item, etc.). This MAY be the same as the organization on the Patient record, however it could be different. This MAY not be not the Service Delivery Location's Organization.",
-        "min": 0,
-        "max": "0",
+        "min": 1,
+        "max": "1",
         "base": {
           "path": "Encounter.serviceProvider",
           "min": 0,
@@ -16282,6 +16282,12 @@
             "code": "Reference",
             "profile": [
               "https://fhir.hl7.org.uk/StructureDefinition/CareConnect-Organization-1"
+            ]
+          },
+          {
+            "code": "Reference",
+            "profile": [
+              "https://fhir.hl7.org.uk/StructureDefinition/CareConnect-DCH-Organization-ActualDeliveryPlace-1"
             ]
           }
         ],
@@ -16532,7 +16538,7 @@
           {
             "code": "Reference",
             "profile": [
-              "https://fhir.hl7.org.uk/StructureDefinition/CareConnect-DCH-Encounter-BirthEvent-1"
+              "https://fhir.hl7.org.uk/StructureDefinition/CareConnect-DCH-Encounter-DeliveryEvent-1"
             ]
           }
         ],
@@ -16931,7 +16937,15 @@
       },
       {
         "path": "Encounter.period",
-        "max": "0"
+        "min": 1
+      },
+      {
+        "path": "Encounter.period.start",
+        "min": 1
+      },
+      {
+        "path": "Encounter.period.end",
+        "min": 1
       },
       {
         "path": "Encounter.length",
@@ -17160,12 +17174,18 @@
       },
       {
         "path": "Encounter.serviceProvider",
-        "max": "0",
+        "min": 1,
         "type": [
           {
             "code": "Reference",
             "profile": [
               "https://fhir.hl7.org.uk/StructureDefinition/CareConnect-Organization-1"
+            ]
+          },
+          {
+            "code": "Reference",
+            "profile": [
+              "https://fhir.hl7.org.uk/StructureDefinition/CareConnect-DCH-Organization-ActualDeliveryPlace-1"
             ]
           }
         ]
@@ -17177,7 +17197,7 @@
           {
             "code": "Reference",
             "profile": [
-              "https://fhir.hl7.org.uk/StructureDefinition/CareConnect-DCH-Encounter-BirthEvent-1"
+              "https://fhir.hl7.org.uk/StructureDefinition/CareConnect-DCH-Encounter-DeliveryEvent-1"
             ]
           }
         ]

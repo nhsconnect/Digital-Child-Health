@@ -1,7 +1,7 @@
 {
   "resourceType": "StructureDefinition",
   "meta": {
-    "lastUpdated": "2017-03-22T10:34:02.169+00:00",
+    "lastUpdated": "2017-03-22T18:29:29.975+00:00",
     "tag": [
       {
         "system": "urn:hscic:publishOrder",
@@ -399,12 +399,6 @@
       },
       {
         "path": "Organization.extension",
-        "slicing": {
-          "discriminator": [
-            "url"
-          ],
-          "rules": "open"
-        },
         "short": "Additional Content defined by implementations",
         "definition": "May be used to represent additional information that is not part of the basic definition of the resource. In order to make the use of extensions safe and manageable, there is a strict set of governance  applied to the definition and use of extensions. Though any implementer is allowed to define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension.",
         "comments": "There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone.",
@@ -422,112 +416,6 @@
         "type": [
           {
             "code": "Extension"
-          }
-        ],
-        "condition": [
-          "ele-1"
-        ],
-        "constraint": [
-          {
-            "extension": [
-              {
-                "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-expression",
-                "valueString": "children()"
-              }
-            ],
-            "key": "ele-1",
-            "severity": "error",
-            "human": "All FHIR elements must have a @value or children",
-            "xpath": "@value|f:*|h:div"
-          }
-        ],
-        "mapping": [
-          {
-            "identity": "rim",
-            "map": "n/a"
-          },
-          {
-            "identity": "rim",
-            "map": "N/A"
-          }
-        ]
-      },
-      {
-        "path": "Organization.extension",
-        "name": "mainLocation",
-        "short": "Main location",
-        "definition": "The main location of the organization.",
-        "comments": "There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone.",
-        "alias": [
-          "extensions",
-          "user content"
-        ],
-        "min": 0,
-        "max": "0",
-        "base": {
-          "path": "DomainResource.extension",
-          "min": 0,
-          "max": "*"
-        },
-        "type": [
-          {
-            "code": "Extension",
-            "profile": [
-              "https://fhir.hl7.org.uk/StructureDefinition/Extension-CareConnect-MainLocation-1"
-            ]
-          }
-        ],
-        "condition": [
-          "ele-1"
-        ],
-        "constraint": [
-          {
-            "extension": [
-              {
-                "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-expression",
-                "valueString": "children()"
-              }
-            ],
-            "key": "ele-1",
-            "severity": "error",
-            "human": "All FHIR elements must have a @value or children",
-            "xpath": "@value|f:*|h:div"
-          }
-        ],
-        "mapping": [
-          {
-            "identity": "rim",
-            "map": "n/a"
-          },
-          {
-            "identity": "rim",
-            "map": "N/A"
-          }
-        ]
-      },
-      {
-        "path": "Organization.extension",
-        "name": "organization-period",
-        "short": "The date range that this organization should be considered available.",
-        "definition": "The date range that this organization should be considered available.",
-        "comments": "There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone.",
-        "alias": [
-          "extensions",
-          "user content"
-        ],
-        "min": 0,
-        "max": "0",
-        "base": {
-          "path": "DomainResource.extension",
-          "min": 0,
-          "max": "*"
-        },
-        "type": [
-          {
-            "code": "Extension",
-            "profile": [
-              "http://hl7.org/fhir/StructureDefinition/organization-period"
-            ]
           }
         ],
         "condition": [
@@ -620,8 +508,8 @@
         "short": "Identifies this organization  across multiple systems",
         "definition": "Identifier for the organization that is used to identify the organization across multiple disparate systems.",
         "requirements": "Organizations are known by a variety of ids. Some institutions maintain several, and most collect identifiers for exchange with other organizations concerning the organization.",
-        "min": 0,
-        "max": "*",
+        "min": 1,
+        "max": "1",
         "base": {
           "path": "Organization.identifier",
           "min": 0,
@@ -3621,7 +3509,8 @@
         "path": "Organization.identifier",
         "name": "ODS Site Code",
         "short": "ODS Site code to identify the organisation at site level",
-        "definition": "ODS Site code to identify the organisation at site level",
+        "definition": "Identifier for the organization that is used to identify the organization across multiple disparate systems.",
+        "comments": "ODS Site code to identify the organisation at site level. Where an ODS Site Code is not applicable, one of the following values will apply:\r\n\r\nZZ201 - Not applicable (delivered at home)\r\nZZ888 - Not applicable (delivered at non-NHS organisation)\r\nZZ203 - Not known (place of delivery not known)",
         "requirements": "Organizations are known by a variety of ids. Some institutions maintain several, and most collect identifiers for exchange with other organizations concerning the organization.",
         "min": 1,
         "max": "1",
@@ -12535,41 +12424,6 @@
         ]
       },
       {
-        "path": "Organization.extension",
-        "slicing": {
-          "discriminator": [
-            "url"
-          ],
-          "rules": "open"
-        }
-      },
-      {
-        "path": "Organization.extension",
-        "name": "mainLocation",
-        "max": "0",
-        "type": [
-          {
-            "code": "Extension",
-            "profile": [
-              "https://fhir.hl7.org.uk/StructureDefinition/Extension-CareConnect-MainLocation-1"
-            ]
-          }
-        ]
-      },
-      {
-        "path": "Organization.extension",
-        "name": "organization-period",
-        "max": "0",
-        "type": [
-          {
-            "code": "Extension",
-            "profile": [
-              "http://hl7.org/fhir/StructureDefinition/organization-period"
-            ]
-          }
-        ]
-      },
-      {
         "path": "Organization.identifier",
         "slicing": {
           "discriminator": [
@@ -12577,7 +12431,9 @@
           ],
           "ordered": false,
           "rules": "openAtEnd"
-        }
+        },
+        "min": 1,
+        "max": "1"
       },
       {
         "path": "Organization.identifier",
@@ -12615,7 +12471,7 @@
         "path": "Organization.identifier",
         "name": "ODS Site Code",
         "short": "ODS Site code to identify the organisation at site level",
-        "definition": "ODS Site code to identify the organisation at site level",
+        "comments": "ODS Site code to identify the organisation at site level. Where an ODS Site Code is not applicable, one of the following values will apply:\r\n\r\nZZ201 - Not applicable (delivered at home)\r\nZZ888 - Not applicable (delivered at non-NHS organisation)\r\nZZ203 - Not known (place of delivery not known)",
         "min": 1,
         "max": "1"
       },

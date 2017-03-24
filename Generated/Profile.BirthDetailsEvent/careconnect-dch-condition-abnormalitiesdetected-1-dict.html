@@ -1250,182 +1250,6 @@
         </tr>
         <tr>
           <td colspan="2" class="structure">
-            <a name="Condition.code.abnormalitiesDetected"></a>
-            <b>Condition.code.coding(abnormalitiesDetected)</b>
-          </td>
-        </tr>
-        <tr>
-          <td width="150px">Definition</td>
-          <td>
-            <p>Abnormalities detected at birth</p>
-          </td>
-        </tr>
-        <tr>
-          <td>
-            <a href="http://www.hl7.org/fhir/DSTU2/conformance-rules.html#conformance">Control</a>
-          </td>
-          <td>0..*</td>
-        </tr>
-        <tr>
-          <td width="150px">Comments</td>
-          <td></td>
-        </tr>
-        <tr>
-          <td colspan="2" class="structure">
-            <a name="Condition.code.coding.id"></a>
-            <b>Condition.code.coding.id</b>
-          </td>
-        </tr>
-        <tr>
-          <td width="150px">Definition</td>
-          <td>
-            <p>unique id for the element within a resource (for internal references).</p>
-          </td>
-        </tr>
-        <tr>
-          <td>
-            <a href="http://www.hl7.org/fhir/DSTU2/conformance-rules.html#conformance">Control</a>
-          </td>
-          <td>0..1 ?</td>
-        </tr>
-        <tr>
-          <td>
-            <a href="http://www.hl7.org/fhir/DSTU2/datatypes.html">Type</a>
-          </td>
-          <td>
-            <a href="http://www.hl7.org/fhir/DSTU2/datatypes.html#id" xmlns="http://www.w3.org/1999/xhtml">Id</a>
-          </td>
-        </tr>
-        <tr>
-          <td width="150px">Comments</td>
-          <td>
-            <p>RFC 4122</p>
-          </td>
-        </tr>
-        <tr>
-          <td colspan="2" class="structure">
-            <a name="Condition.code.coding.extension"></a>
-            <b>Condition.code.coding.extension</b>
-          </td>
-        </tr>
-        <tr>
-          <td width="150px">Definition</td>
-          <td></td>
-        </tr>
-        <tr>
-          <td>
-            <a href="http://www.hl7.org/fhir/DSTU2/conformance-rules.html#conformance">Control</a>
-          </td>
-          <td>0..*</td>
-        </tr>
-        <tr>
-          <td width="150px">Comments</td>
-          <td></td>
-        </tr>
-        <tr>
-          <td colspan="2" class="structure">
-            <a name="Condition.code.coding.system"></a>
-            <b>Condition.code.coding.system</b>
-          </td>
-        </tr>
-        <tr>
-          <td width="150px">Definition</td>
-          <td></td>
-        </tr>
-        <tr>
-          <td>
-            <a href="http://www.hl7.org/fhir/DSTU2/conformance-rules.html#conformance">Control</a>
-          </td>
-          <td>1..*</td>
-        </tr>
-        <tr>
-          <td width="150px">Comments</td>
-          <td></td>
-        </tr>
-        <tr>
-          <td>Fixed Value</td>
-          <td>http://snomed.info/sct</td>
-        </tr>
-        <tr>
-          <td colspan="2" class="structure">
-            <a name="Condition.code.coding.code"></a>
-            <b>Condition.code.coding.code</b>
-          </td>
-        </tr>
-        <tr>
-          <td width="150px">Definition</td>
-          <td></td>
-        </tr>
-        <tr>
-          <td>
-            <a href="http://www.hl7.org/fhir/DSTU2/conformance-rules.html#conformance">Control</a>
-          </td>
-          <td>1..*</td>
-        </tr>
-        <tr>
-          <td width="150px">Comments</td>
-          <td></td>
-        </tr>
-        <tr>
-          <td colspan="2" class="structure">
-            <a name="Condition.code.coding.display"></a>
-            <b>Condition.code.coding.display</b>
-          </td>
-        </tr>
-        <tr>
-          <td width="150px">Definition</td>
-          <td></td>
-        </tr>
-        <tr>
-          <td>
-            <a href="http://www.hl7.org/fhir/DSTU2/conformance-rules.html#conformance">Control</a>
-          </td>
-          <td>1..*</td>
-        </tr>
-        <tr>
-          <td width="150px">Comments</td>
-          <td></td>
-        </tr>
-        <tr>
-          <td colspan="2" class="structure">
-            <a name="Condition.code.coding.userSelected"></a>
-            <b>Condition.code.coding.userSelected</b>
-          </td>
-        </tr>
-        <tr>
-          <td width="150px">Definition</td>
-          <td>
-            <p>Indicates that this coding was chosen by a user directly - i.e. off a pick list of available items (codes or displays).</p>
-          </td>
-        </tr>
-        <tr>
-          <td>
-            <a href="http://www.hl7.org/fhir/DSTU2/conformance-rules.html#conformance">Control</a>
-          </td>
-          <td>0..1 ?</td>
-        </tr>
-        <tr>
-          <td>
-            <a href="http://www.hl7.org/fhir/DSTU2/datatypes.html">Type</a>
-          </td>
-          <td>
-            <a href="http://www.hl7.org/fhir/DSTU2/datatypes.html#boolean" xmlns="http://www.w3.org/1999/xhtml">Boolean</a>
-          </td>
-        </tr>
-        <tr>
-          <td width="150px">Requirements</td>
-          <td>
-            <p>This has been identified as a clinical safety criterium - that this exact system/code pair was chosen explicitly, rather than inferred by the system based on some rules or language processing.</p>
-          </td>
-        </tr>
-        <tr>
-          <td width="150px">Comments</td>
-          <td>
-            <p>Amongst a set of alternatives, a directly chosen code is the most appropriate starting point for new translations. There is some ambiguity about what exactly 'directly chosen' implies, and trading partner agreement may be needed to clarify the use of this element and its consequences more completely.</p>
-          </td>
-        </tr>
-        <tr>
-          <td colspan="2" class="structure">
             <a name="Condition.code.text"></a>
             <b>Condition.code.text</b>
           </td>
@@ -1780,46 +1604,21 @@
         </tr>
         <tr>
           <td width="150px">Definition</td>
-          <td>
-            <p>The verification status to support the clinical status of the condition.</p>
-          </td>
+          <td></td>
         </tr>
         <tr>
           <td>
             <a href="http://www.hl7.org/fhir/DSTU2/conformance-rules.html#conformance">Control</a>
           </td>
-          <td>1..1 ?</td>
-        </tr>
-        <tr>
-          <td>
-            <a href="http://www.hl7.org/fhir/DSTU2/terminologies.html">Binding</a>
-          </td>
-          <td>
-            <div class="binding-description" xmlns="http://www.w3.org/1999/xhtml">
-              <p>The verification status to support or decline the clinical status of the condition or diagnosis.</p>
-              <p>The codes SHALL be taken from <a href="http://hl7.org/fhir/ValueSet/condition-ver-status">http://hl7.org/fhir/ValueSet/condition-ver-status</a></p>
-            </div>
-          </td>
-        </tr>
-        <tr>
-          <td>
-            <a href="http://www.hl7.org/fhir/DSTU2/datatypes.html">Type</a>
-          </td>
-          <td>
-            <a href="http://www.hl7.org/fhir/DSTU2/datatypes.html#code" xmlns="http://www.w3.org/1999/xhtml">Code</a>
-          </td>
-        </tr>
-        <tr>
-          <td>
-            <a href="http://www.hl7.org/fhir/DSTU2/conformance-rules.html#ismodifier">Is Modifier</a>
-          </td>
-          <td>True</td>
+          <td>0..*</td>
         </tr>
         <tr>
           <td width="150px">Comments</td>
-          <td>
-            <p>Note that FHIR strings may not exceed 1MB in size</p>
-          </td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>Fixed Value</td>
+          <td>confirmed</td>
         </tr>
       </table>
     </div>

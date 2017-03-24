@@ -1,7 +1,7 @@
 {
   "resourceType": "StructureDefinition",
   "meta": {
-    "lastUpdated": "2017-03-22T10:34:23.106+00:00",
+    "lastUpdated": "2017-03-22T16:49:44.01+00:00",
     "tag": [
       {
         "system": "urn:hscic:publishOrder",
@@ -392,12 +392,6 @@
       },
       {
         "path": "Patient.extension",
-        "slicing": {
-          "discriminator": [
-            "url"
-          ],
-          "rules": "open"
-        },
         "short": "Additional Content defined by implementations",
         "definition": "May be used to represent additional information that is not part of the basic definition of the resource. In order to make the use of extensions safe and manageable, there is a strict set of governance  applied to the definition and use of extensions. Though any implementer is allowed to define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension.",
         "comments": "There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone.",
@@ -434,390 +428,6 @@
             "xpath": "@value|f:*|h:div"
           }
         ],
-        "mapping": [
-          {
-            "identity": "rim",
-            "map": "n/a"
-          },
-          {
-            "identity": "rim",
-            "map": "N/A"
-          }
-        ]
-      },
-      {
-        "path": "Patient.extension",
-        "name": "registrationDetails",
-        "short": "Additional registration information for the Patient resource",
-        "definition": "Optional Extensions Element - found in all resources.",
-        "comments": "There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone.",
-        "alias": [
-          "extensions",
-          "user content"
-        ],
-        "min": 0,
-        "max": "1",
-        "base": {
-          "path": "DomainResource.extension",
-          "min": 0,
-          "max": "*"
-        },
-        "type": [
-          {
-            "code": "Extension",
-            "profile": [
-              "https://fhir.hl7.org.uk/StructureDefinition/Extension-CareConnect-RegistrationDetails-1"
-            ]
-          }
-        ],
-        "condition": [
-          "ele-1"
-        ],
-        "constraint": [
-          {
-            "extension": [
-              {
-                "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-expression",
-                "valueString": "children()"
-              }
-            ],
-            "key": "ele-1",
-            "severity": "error",
-            "human": "All FHIR elements must have a @value or children",
-            "xpath": "@value|f:*|h:div"
-          }
-        ],
-        "mapping": [
-          {
-            "identity": "rim",
-            "map": "n/a"
-          },
-          {
-            "identity": "rim",
-            "map": "N/A"
-          }
-        ]
-      },
-      {
-        "path": "Patient.extension",
-        "name": "ethnicCategory",
-        "short": "Ethnic category",
-        "definition": "The ethnicity of the subject.",
-        "comments": "There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone.",
-        "alias": [
-          "extensions",
-          "user content"
-        ],
-        "min": 0,
-        "max": "1",
-        "base": {
-          "path": "DomainResource.extension",
-          "min": 0,
-          "max": "*"
-        },
-        "type": [
-          {
-            "code": "Extension",
-            "profile": [
-              "https://fhir.hl7.org.uk/StructureDefinition/Extension-CareConnect-EthnicCategory-1"
-            ]
-          }
-        ],
-        "condition": [
-          "ele-1"
-        ],
-        "constraint": [
-          {
-            "extension": [
-              {
-                "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-expression",
-                "valueString": "children()"
-              }
-            ],
-            "key": "ele-1",
-            "severity": "error",
-            "human": "All FHIR elements must have a @value or children",
-            "xpath": "@value|f:*|h:div"
-          }
-        ],
-        "mapping": [
-          {
-            "identity": "rim",
-            "map": "n/a"
-          },
-          {
-            "identity": "rim",
-            "map": "N/A"
-          }
-        ]
-      },
-      {
-        "path": "Patient.extension",
-        "name": "religiousAffiliation",
-        "short": "Religious affiliation",
-        "definition": "The religious affiliation of the subject.",
-        "comments": "There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone.",
-        "alias": [
-          "extensions",
-          "user content"
-        ],
-        "min": 0,
-        "max": "1",
-        "base": {
-          "path": "DomainResource.extension",
-          "min": 0,
-          "max": "*"
-        },
-        "type": [
-          {
-            "code": "Extension",
-            "profile": [
-              "https://fhir.hl7.org.uk/StructureDefinition/Extension-CareConnect-ReligiousAffiliation-1"
-            ]
-          }
-        ],
-        "condition": [
-          "ele-1"
-        ],
-        "constraint": [
-          {
-            "extension": [
-              {
-                "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-expression",
-                "valueString": "children()"
-              }
-            ],
-            "key": "ele-1",
-            "severity": "error",
-            "human": "All FHIR elements must have a @value or children",
-            "xpath": "@value|f:*|h:div"
-          }
-        ],
-        "mapping": [
-          {
-            "identity": "rim",
-            "map": "n/a"
-          },
-          {
-            "identity": "rim",
-            "map": "N/A"
-          }
-        ]
-      },
-      {
-        "path": "Patient.extension",
-        "name": "patient-cadavericDonor",
-        "short": "Flag indicating whether the patient authorized the donation of body parts after death.",
-        "definition": "Flag indicating whether the patient authorized the donation of body parts after death.",
-        "comments": "There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone.",
-        "alias": [
-          "extensions",
-          "user content"
-        ],
-        "min": 0,
-        "max": "1",
-        "base": {
-          "path": "DomainResource.extension",
-          "min": 0,
-          "max": "*"
-        },
-        "type": [
-          {
-            "code": "Extension",
-            "profile": [
-              "http://hl7.org/fhir/StructureDefinition/patient-cadavericDonor"
-            ]
-          }
-        ],
-        "condition": [
-          "ele-1"
-        ],
-        "constraint": [
-          {
-            "extension": [
-              {
-                "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-expression",
-                "valueString": "children()"
-              }
-            ],
-            "key": "ele-1",
-            "severity": "error",
-            "human": "All FHIR elements must have a @value or children",
-            "xpath": "@value|f:*|h:div"
-          }
-        ],
-        "mapping": [
-          {
-            "identity": "rim",
-            "map": "n/a"
-          },
-          {
-            "identity": "rim",
-            "map": "N/A"
-          }
-        ]
-      },
-      {
-        "path": "Patient.extension",
-        "name": "residentialStatus",
-        "short": "The residential status of the patient ",
-        "definition": "The residential status of the patient. For example if this patient is a UK resident.",
-        "comments": "There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone.",
-        "alias": [
-          "extensions",
-          "user content"
-        ],
-        "min": 0,
-        "max": "1",
-        "base": {
-          "path": "DomainResource.extension",
-          "min": 0,
-          "max": "*"
-        },
-        "type": [
-          {
-            "code": "Extension",
-            "profile": [
-              "https://fhir.hl7.org.uk/StructureDefinition/Extension-CareConnect-ResidentialStatus-1"
-            ]
-          }
-        ],
-        "condition": [
-          "ele-1"
-        ],
-        "constraint": [
-          {
-            "extension": [
-              {
-                "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-expression",
-                "valueString": "children()"
-              }
-            ],
-            "key": "ele-1",
-            "severity": "error",
-            "human": "All FHIR elements must have a @value or children",
-            "xpath": "@value|f:*|h:div"
-          }
-        ],
-        "isModifier": false,
-        "binding": {
-          "strength": "required",
-          "description": "The residential status of the patient",
-          "valueSetUri": "https://fhir.hl7.org.uk/ValueSet/CareConnect-ResidentialStatus-1"
-        },
-        "mapping": [
-          {
-            "identity": "rim",
-            "map": "n/a"
-          },
-          {
-            "identity": "rim",
-            "map": "N/A"
-          }
-        ]
-      },
-      {
-        "path": "Patient.extension",
-        "name": "treatmentCategory",
-        "short": "The treatment category for this patient",
-        "definition": "The treatment category for this patient. For example if this patient is entitled to free healthcare treatment.",
-        "comments": "There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone.",
-        "alias": [
-          "extensions",
-          "user content"
-        ],
-        "min": 0,
-        "max": "1",
-        "base": {
-          "path": "DomainResource.extension",
-          "min": 0,
-          "max": "*"
-        },
-        "type": [
-          {
-            "code": "Extension",
-            "profile": [
-              "https://fhir.hl7.org.uk/StructureDefinition/Extension-CareConnect-TreatmentCategory-1"
-            ]
-          }
-        ],
-        "condition": [
-          "ele-1"
-        ],
-        "constraint": [
-          {
-            "extension": [
-              {
-                "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-expression",
-                "valueString": "children()"
-              }
-            ],
-            "key": "ele-1",
-            "severity": "error",
-            "human": "All FHIR elements must have a @value or children",
-            "xpath": "@value|f:*|h:div"
-          }
-        ],
-        "isModifier": false,
-        "binding": {
-          "strength": "required",
-          "description": "The treatment category of the patient",
-          "valueSetUri": "https://fhir.hl7.org.uk/ValueSet/CareConnect-TreatmentCategory-1"
-        },
-        "mapping": [
-          {
-            "identity": "rim",
-            "map": "n/a"
-          },
-          {
-            "identity": "rim",
-            "map": "N/A"
-          }
-        ]
-      },
-      {
-        "path": "Patient.extension",
-        "name": "nhsCommunication",
-        "short": "NHS communication preferences for a resource",
-        "definition": "Communication preferences including a list of Languages which may be used for communication",
-        "comments": "There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone.",
-        "alias": [
-          "extensions",
-          "user content"
-        ],
-        "min": 0,
-        "max": "*",
-        "base": {
-          "path": "DomainResource.extension",
-          "min": 0,
-          "max": "*"
-        },
-        "type": [
-          {
-            "code": "Extension",
-            "profile": [
-              "https://fhir.hl7.org.uk/StructureDefinition/Extension-CareConnect-NHSCommunication-1"
-            ]
-          }
-        ],
-        "condition": [
-          "ele-1"
-        ],
-        "constraint": [
-          {
-            "extension": [
-              {
-                "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-expression",
-                "valueString": "children()"
-              }
-            ],
-            "key": "ele-1",
-            "severity": "error",
-            "human": "All FHIR elements must have a @value or children",
-            "xpath": "@value|f:*|h:div"
-          }
-        ],
-        "isModifier": false,
         "mapping": [
           {
             "identity": "rim",
@@ -891,7 +501,7 @@
         "short": "An identifier for this patient",
         "definition": "An identifier for this patient.",
         "requirements": "Patients are almost always assigned specific numerical identifiers.",
-        "min": 0,
+        "min": 1,
         "max": "*",
         "base": {
           "path": "Patient.identifier",
@@ -2391,7 +2001,7 @@
         "short": "The patient's NHS number",
         "definition": "The patient's NHS number",
         "requirements": "Patients are almost always assigned specific numerical identifiers.",
-        "min": 0,
+        "min": 1,
         "max": "1",
         "base": {
           "path": "Patient.identifier",
@@ -5453,7 +5063,7 @@
         "comments": "Default is true. If a record is inactive, and linked to an active record, then future patient/record updates should occur on the other patient.",
         "requirements": "Need to be able to mark a patient record as not to be used because it was created in error.",
         "min": 0,
-        "max": "1",
+        "max": "0",
         "base": {
           "path": "Patient.active",
           "min": 0,
@@ -7036,8 +6646,8 @@
         "definition": "The patient's other names",
         "comments": "A patient may have multiple names with different uses or applicable periods. For animals, the name is a \"HumanName\" in the sense that is assigned and used by humans and has the same patterns.",
         "requirements": "Need to be able to track the patient by multiple names. Examples are your official name and a partner name.",
-        "min": 1,
-        "max": "*",
+        "min": 0,
+        "max": "0",
         "base": {
           "path": "Patient.name",
           "min": 0,
@@ -7795,7 +7405,7 @@
         "comments": "A Patient may have multiple ways to be contacted with different uses or applicable periods.  May need to have options for contacting the person urgently and also to help with identification. The address may not go directly to the individual, but may reach another party that is able to proxy for the patient (i.e. home phone, or pet owner's phone).",
         "requirements": "People have (primary) ways to contact them in some way such as phone, email.",
         "min": 0,
-        "max": "*",
+        "max": "0",
         "base": {
           "path": "Patient.telecom",
           "min": 0,
@@ -8764,7 +8374,7 @@
         "comments": "If there's no value in the instance it means there is no statement on whether or not the individual is deceased. Most systems will interpret the absence of a value as a sign of the person being alive.",
         "requirements": "The fact that a patient is deceased influences the clinical process. Also, in human communication and relation management it is necessary to know whether the person is alive.",
         "min": 0,
-        "max": "1",
+        "max": "0",
         "base": {
           "path": "Patient.deceased[x]",
           "min": 0,
@@ -8823,7 +8433,7 @@
         "comments": "Patient may have multiple addresses with different uses or applicable periods.",
         "requirements": "May need to keep track of patient addresses for contacting, billing or reporting requirements and also to help with identification.",
         "min": 0,
-        "max": "*",
+        "max": "0",
         "base": {
           "path": "Patient.address",
           "min": 0,
@@ -9793,7 +9403,7 @@
         "comments": "Not all terminology uses fit this general pattern. In some cases, models should not use CodeableConcept and use Coding directly and provide their own structure for managing text, codings, translations and the relationship between elements and pre- and post-coordination.",
         "requirements": "Most, if not all systems capture it.",
         "min": 0,
-        "max": "1",
+        "max": "0",
         "base": {
           "path": "Patient.maritalStatus",
           "min": 0,
@@ -9825,9 +9435,7 @@
         "binding": {
           "strength": "required",
           "description": "The domestic partnership status of a person.",
-          "valueSetReference": {
-            "reference": "https://fhir.hl7.org.uk/ValueSet/CareConnect-MaritalStatus-1"
-          }
+          "valueSetUri": "http://hl7.org/fhir/ValueSet/marital-status"
         },
         "mapping": [
           {
@@ -10443,7 +10051,7 @@
         "definition": "Indicates whether the patient is part of a multiple or indicates the actual birth order.",
         "requirements": "For disambiguation of multiple-birth children, especially relevant where the care provider doesn't meet the patient, such as labs.",
         "min": 0,
-        "max": "1",
+        "max": "0",
         "base": {
           "path": "Patient.multipleBirth[x]",
           "min": 0,
@@ -11072,7 +10680,7 @@
         "comments": "Contact covers all kinds of contact parties: family members, business contacts, guardians, caregivers. Not applicable to register pedigree and family ties beyond use of having contact.",
         "requirements": "Need to track people you can contact about the patient.",
         "min": 0,
-        "max": "*",
+        "max": "0",
         "base": {
           "path": "Patient.contact",
           "min": 0,
@@ -17938,7 +17546,7 @@
         "definition": "Patient's nominated care provider.",
         "comments": "This may be the primary care provider (in a GP context), or it may be a patient nominated care manager in a community/disablity setting, or even organization that will provide people to perform the care provider roles.  This is not to be used to record Care Teams, these should be recorded on either the CarePlan or EpisodeOfCare resources.",
         "min": 0,
-        "max": "1",
+        "max": "0",
         "base": {
           "path": "Patient.careProvider",
           "min": 0,
@@ -18018,7 +17626,7 @@
         "comments": "There is only one managing organization for a specific patient record. Other organizations will have their own Patient record, and may use the Link property to join the records together (or a Person resource which can include confidence ratings for the association).",
         "requirements": "Need to know who recognizes this patient record, manages and updates it.",
         "min": 0,
-        "max": "1",
+        "max": "0",
         "base": {
           "path": "Patient.managingOrganization",
           "min": 0,
@@ -18270,8 +17878,8 @@
         "definition": "Link to another patient resource that concerns the same actual patient.",
         "comments": "There is no assumption that linked patient records have mutual links.",
         "requirements": "There are multiple usecases:   * Duplicate patient records due to the clerical errors associated with the difficulties of identifying humans consistently, and * Distribution of patient information across multiple servers.",
-        "min": 1,
-        "max": "1",
+        "min": 0,
+        "max": "0",
         "base": {
           "path": "Patient.link",
           "min": 0,
@@ -18471,7 +18079,7 @@
           {
             "code": "Reference",
             "profile": [
-              "https://fhir.nhs.uk/StructureDefinition/dch-relatedperson-1"
+              "http://hl7.org/fhir/StructureDefinition/Patient"
             ]
           }
         ],
@@ -18729,7 +18337,6 @@
             "code": "code"
           }
         ],
-        "fixedCode": "seealso",
         "condition": [
           "ele-1"
         ],
@@ -18784,98 +18391,10 @@
         ]
       },
       {
-        "path": "Patient.extension",
-        "slicing": {
-          "discriminator": [
-            "url"
-          ],
-          "rules": "open"
-        }
-      },
-      {
-        "path": "Patient.extension",
-        "name": "registrationDetails",
+        "path": "Patient.contained",
         "type": [
           {
-            "code": "Extension",
-            "profile": [
-              "https://fhir.hl7.org.uk/StructureDefinition/Extension-CareConnect-RegistrationDetails-1"
-            ]
-          }
-        ]
-      },
-      {
-        "path": "Patient.extension",
-        "name": "ethnicCategory",
-        "max": "1",
-        "type": [
-          {
-            "code": "Extension",
-            "profile": [
-              "https://fhir.hl7.org.uk/StructureDefinition/Extension-CareConnect-EthnicCategory-1"
-            ]
-          }
-        ]
-      },
-      {
-        "path": "Patient.extension",
-        "name": "religiousAffiliation",
-        "max": "1",
-        "type": [
-          {
-            "code": "Extension",
-            "profile": [
-              "https://fhir.hl7.org.uk/StructureDefinition/Extension-CareConnect-ReligiousAffiliation-1"
-            ]
-          }
-        ]
-      },
-      {
-        "path": "Patient.extension",
-        "name": "patient-cadavericDonor",
-        "max": "1",
-        "type": [
-          {
-            "code": "Extension",
-            "profile": [
-              "http://hl7.org/fhir/StructureDefinition/patient-cadavericDonor"
-            ]
-          }
-        ]
-      },
-      {
-        "path": "Patient.extension",
-        "name": "residentialStatus",
-        "type": [
-          {
-            "code": "Extension",
-            "profile": [
-              "https://fhir.hl7.org.uk/StructureDefinition/Extension-CareConnect-ResidentialStatus-1"
-            ]
-          }
-        ]
-      },
-      {
-        "path": "Patient.extension",
-        "name": "treatmentCategory",
-        "type": [
-          {
-            "code": "Extension",
-            "profile": [
-              "https://fhir.hl7.org.uk/StructureDefinition/Extension-CareConnect-TreatmentCategory-1"
-            ]
-          }
-        ]
-      },
-      {
-        "path": "Patient.extension",
-        "name": "nhsCommunication",
-        "type": [
-          {
-            "code": "Extension",
-            "profile": [
-              "https://fhir.hl7.org.uk/StructureDefinition/Extension-CareConnect-NHSCommunication-1"
-            ]
+            "code": "Resource"
           }
         ]
       },
@@ -18887,13 +18406,15 @@
           ],
           "ordered": true,
           "rules": "openAtEnd"
-        }
+        },
+        "min": 1
       },
       {
         "path": "Patient.identifier",
         "name": "nhsNumber",
         "short": "The patient's NHS number",
         "definition": "The patient's NHS number",
+        "min": 1,
         "max": "1"
       },
       {
@@ -18960,6 +18481,10 @@
         "min": 1
       },
       {
+        "path": "Patient.active",
+        "max": "0"
+      },
+      {
         "path": "Patient.name",
         "slicing": {
           "discriminator": [
@@ -19006,7 +18531,7 @@
         "name": "other",
         "short": "The patient's other names",
         "definition": "The patient's other names",
-        "min": 1
+        "max": "0"
       },
       {
         "path": "Patient.name.use",
@@ -19024,6 +18549,10 @@
       {
         "path": "Patient.name.suffix",
         "max": "1"
+      },
+      {
+        "path": "Patient.telecom",
+        "max": "0"
       },
       {
         "path": "Patient.telecom.system",
@@ -19074,6 +18603,14 @@
         ]
       },
       {
+        "path": "Patient.deceased[x]",
+        "max": "0"
+      },
+      {
+        "path": "Patient.address",
+        "max": "0"
+      },
+      {
         "path": "Patient.address.text",
         "exampleString": "42 Grove Street, Overtown, West Yorkshire, LS21 1PF"
       },
@@ -19110,11 +18647,10 @@
       },
       {
         "path": "Patient.maritalStatus",
+        "max": "0",
         "binding": {
           "strength": "required",
-          "valueSetReference": {
-            "reference": "https://fhir.hl7.org.uk/ValueSet/CareConnect-MaritalStatus-1"
-          }
+          "valueSetUri": "http://hl7.org/fhir/ValueSet/marital-status"
         }
       },
       {
@@ -19148,7 +18684,21 @@
         "max": "0"
       },
       {
+        "path": "Patient.multipleBirth[x]",
+        "max": "0"
+      },
+      {
         "path": "Patient.photo",
+        "max": "0"
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-explicit-type-name",
+            "valueString": "Contact"
+          }
+        ],
+        "path": "Patient.contact",
         "max": "0"
       },
       {
@@ -19279,7 +18829,7 @@
       {
         "path": "Patient.careProvider",
         "short": "Patient's nominated practitioner",
-        "max": "1",
+        "max": "0",
         "type": [
           {
             "code": "Reference",
@@ -19297,6 +18847,7 @@
       },
       {
         "path": "Patient.managingOrganization",
+        "max": "0",
         "type": [
           {
             "code": "Reference",
@@ -19308,8 +18859,7 @@
       },
       {
         "path": "Patient.link",
-        "min": 1,
-        "max": "1"
+        "max": "0"
       },
       {
         "path": "Patient.link.other",
@@ -19317,14 +18867,10 @@
           {
             "code": "Reference",
             "profile": [
-              "https://fhir.nhs.uk/StructureDefinition/dch-relatedperson-1"
+              "http://hl7.org/fhir/StructureDefinition/Patient"
             ]
           }
         ]
-      },
-      {
-        "path": "Patient.link.type",
-        "fixedCode": "seealso"
       }
     ]
   }

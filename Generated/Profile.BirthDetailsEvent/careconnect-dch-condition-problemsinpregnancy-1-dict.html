@@ -1254,13 +1254,26 @@
         </tr>
         <tr>
           <td width="150px">Definition</td>
-          <td></td>
+          <td>
+            <p>An infectious disease or medical condition diagnosed in this pregnancy.</p>
+          </td>
         </tr>
         <tr>
           <td>
             <a href="http://www.hl7.org/fhir/DSTU2/conformance-rules.html#conformance">Control</a>
           </td>
           <td>0..*</td>
+        </tr>
+        <tr>
+          <td>
+            <a href="http://www.hl7.org/fhir/DSTU2/terminologies.html">Binding</a>
+          </td>
+          <td>
+            <div class="binding-description" xmlns="http://www.w3.org/1999/xhtml">
+              <p>An infectious disease or medical condition diagnosed in this pregnancy</p>
+              <p>The codes SHALL be taken from <a href="dch-problemsinpregnancy-1.html">https://fhir.nhs.uk/ValueSet/dch-problemsinpregnancy-1</a></p>
+            </div>
+          </td>
         </tr>
         <tr>
           <td width="150px">Comments</td>
@@ -1776,46 +1789,21 @@
         </tr>
         <tr>
           <td width="150px">Definition</td>
-          <td>
-            <p>The verification status to support the clinical status of the condition.</p>
-          </td>
+          <td></td>
         </tr>
         <tr>
           <td>
             <a href="http://www.hl7.org/fhir/DSTU2/conformance-rules.html#conformance">Control</a>
           </td>
-          <td>1..1 ?</td>
-        </tr>
-        <tr>
-          <td>
-            <a href="http://www.hl7.org/fhir/DSTU2/terminologies.html">Binding</a>
-          </td>
-          <td>
-            <div class="binding-description" xmlns="http://www.w3.org/1999/xhtml">
-              <p>The verification status to support or decline the clinical status of the condition or diagnosis.</p>
-              <p>The codes SHALL be taken from <a href="http://hl7.org/fhir/ValueSet/condition-ver-status">http://hl7.org/fhir/ValueSet/condition-ver-status</a></p>
-            </div>
-          </td>
-        </tr>
-        <tr>
-          <td>
-            <a href="http://www.hl7.org/fhir/DSTU2/datatypes.html">Type</a>
-          </td>
-          <td>
-            <a href="http://www.hl7.org/fhir/DSTU2/datatypes.html#code" xmlns="http://www.w3.org/1999/xhtml">Code</a>
-          </td>
-        </tr>
-        <tr>
-          <td>
-            <a href="http://www.hl7.org/fhir/DSTU2/conformance-rules.html#ismodifier">Is Modifier</a>
-          </td>
-          <td>True</td>
+          <td>0..*</td>
         </tr>
         <tr>
           <td width="150px">Comments</td>
-          <td>
-            <p>Note that FHIR strings may not exceed 1MB in size</p>
-          </td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>Fixed Value</td>
+          <td>confirmed</td>
         </tr>
       </table>
     </div>

@@ -1,7 +1,7 @@
 {
   "resourceType": "StructureDefinition",
   "meta": {
-    "lastUpdated": "2017-03-22T10:34:16.835+00:00",
+    "lastUpdated": "2017-03-22T18:22:56.133+00:00",
     "tag": [
       {
         "system": "urn:hscic:publishOrder",
@@ -2067,6 +2067,7 @@
             "code": "code"
           }
         ],
+        "fixedCode": "completed",
         "condition": [
           "ele-1"
         ],
@@ -3277,9 +3278,9 @@
         "isSummary": true,
         "binding": {
           "strength": "preferred",
-          "description": "A code to identify a specific procedure .",
+          "description": "A code to identify a specific procedure.",
           "valueSetReference": {
-            "reference": "https://fhir.nhs.uk/ValueSet/dch-typeofdelivery-1"
+            "reference": "http://hl7.org/fhir/ValueSet/procedure-code"
           }
         },
         "mapping": [
@@ -4336,8 +4337,8 @@
       {
         "path": "Procedure.code.coding",
         "name": "typeOfDelivery",
-        "short": "\"The method for delivering baby.",
-        "definition": "\"The method for delivering baby.",
+        "short": "The method for delivering baby.",
+        "definition": "The method for delivering baby.",
         "comments": "Codes may be defined very casually in enumerations, or code lists, up to very formal definitions such as SNOMED CT - see the HL7 v3 Core Principles for more information.  Ordering of codings is undefined and SHALL NOT be used to infer meaning. Generally, at most only one of the coding values will be labelled as UserSelected = true.",
         "requirements": "Allows for translations and alternate encodings within a code system.  Also supports communication of the same instance to systems requiring different encodings.",
         "min": 1,
@@ -4373,7 +4374,9 @@
         "binding": {
           "strength": "required",
           "description": "The method for delivering baby",
-          "valueSetUri": "https://fhir.nhs.uk/ValueSet/dch-typeofdelivery-1"
+          "valueSetReference": {
+            "reference": "https://fhir.nhs.uk/ValueSet/dch-typeofdelivery-1"
+          }
         },
         "mapping": [
           {
@@ -14474,6 +14477,10 @@
         ]
       },
       {
+        "path": "Procedure.status",
+        "fixedCode": "completed"
+      },
+      {
         "path": "Procedure.category",
         "max": "0"
       },
@@ -14536,9 +14543,7 @@
         "path": "Procedure.code",
         "binding": {
           "strength": "preferred",
-          "valueSetReference": {
-            "reference": "https://fhir.nhs.uk/ValueSet/dch-typeofdelivery-1"
-          }
+          "description": "A code to identify a specific procedure."
         }
       },
       {
@@ -14599,14 +14604,16 @@
       {
         "path": "Procedure.code.coding",
         "name": "typeOfDelivery",
-        "short": "\"The method for delivering baby.",
-        "definition": "\"The method for delivering baby.",
+        "short": "The method for delivering baby.",
+        "definition": "The method for delivering baby.",
         "min": 1,
         "max": "1",
         "binding": {
           "strength": "required",
           "description": "The method for delivering baby",
-          "valueSetUri": "https://fhir.nhs.uk/ValueSet/dch-typeofdelivery-1"
+          "valueSetReference": {
+            "reference": "https://fhir.nhs.uk/ValueSet/dch-typeofdelivery-1"
+          }
         }
       },
       {

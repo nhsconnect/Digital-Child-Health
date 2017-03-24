@@ -1,7 +1,7 @@
 {
   "resourceType": "StructureDefinition",
   "meta": {
-    "lastUpdated": "2017-03-22T10:34:05.866+00:00",
+    "lastUpdated": "2017-03-22T18:25:59.501+00:00",
     "tag": [
       {
         "system": "urn:hscic:publishOrder",
@@ -4910,6 +4910,7 @@
             "code": "code"
           }
         ],
+        "fixedCode": "confirmed",
         "condition": [
           "ele-1"
         ],
@@ -9637,6 +9638,10 @@
           "strength": "preferred",
           "valueSetUri": "http://hl7.org/fhir/ValueSet/condition-clinical"
         }
+      },
+      {
+        "path": "Condition.verificationStatus",
+        "fixedCode": "confirmed"
       },
       {
         "path": "Condition.severity",

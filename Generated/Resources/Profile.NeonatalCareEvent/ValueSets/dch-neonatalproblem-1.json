@@ -1,0 +1,31 @@
+{
+  "resourceType": "ValueSet",
+  "meta": {
+    "lastUpdated": "2016-08-03T00:00:00+01:00"
+  },
+  "url": "https://fhir.nhs.uk/ValueSet/dch-neonatalproblem-1",
+  "name": "Problems in Neonatal Period",
+  "status": "active",
+  "description": "A Neonatal Diagnosis, as captured at the point of the baby's discharge from maternity or neonatal services.",
+  "compose": {
+    "include": [
+      {
+        "system": "https://fhir.nhs.uk/dch-neonatalproblem-1",
+        "concept": [
+          {
+            "code": "1",
+            "display": "Jaundice requiring phototherapy"
+          },
+          {
+            "code": "2",
+            "display": "Erb's Palsy"
+          },
+          {
+            "code": "3",
+            "display": "Neonatal abstinence syndrome"
+          }
+        ]
+      }
+    ]
+  }
+}

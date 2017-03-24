@@ -13,80 +13,108 @@
         "system": "https://fhir.nhs.uk/dch-problemsinpregnancy-1",
         "concept": [
           {
-            "code": "E1",
-            "display": "Birth: Birth Details"
+            "code": "1",
+            "display": "Rubella"
           },
           {
-            "code": "E2",
-            "display": "Assessment APGAR"
+            "code": "2",
+            "display": "Varicella"
           },
           {
-            "code": "E3",
-            "display": "Demographics: Core"
+            "code": "3",
+            "display": "Group B streptococcus"
           },
           {
-            "code": "E4",
-            "display": "Demographics: Related Persons"
+            "code": "4",
+            "display": "Asymptomatic bacteriuria"
           },
           {
-            "code": "E5",
-            "display": "Breastfeeding Status: Breastfeeding Status"
+            "code": "5",
+            "display": "Toxoplasmosis"
           },
           {
-            "code": "E6",
-            "display": "Birth: Neonatal Care"
+            "code": "8",
+            "display": "Tuberculosis"
           },
           {
-            "code": "E7",
-            "display": "Birth: Discharge"
+            "code": "9",
+            "display": "Cytomegalovirus"
           },
           {
-            "code": "E8",
-            "display": "6-8 Week Review"
+            "code": "10",
+            "display": "Parvovirus"
           },
           {
-            "code": "E9",
-            "display": "Intervention: Vitamin K"
+            "code": "11",
+            "display": "Malaria"
           },
           {
-            "code": "E10",
-            "display": "Indicators: BCG and Hep B"
+            "code": "13",
+            "display": "Cardiac Disease"
           },
           {
-            "code": "E11",
-            "display": "HCP Clinical Intervention: Newborn Physical Examination"
+            "code": "14",
+            "display": "Renal Disease"
           },
           {
-            "code": "E12",
-            "display": "Physical Examination: NIPE"
+            "code": "15",
+            "display": "Mental Health Disorder"
           },
           {
-            "code": "E13",
-            "display": "Referral: Referral"
+            "code": "16",
+            "display": "Thromboembolic disorder"
           },
           {
-            "code": "E14",
-            "display": "HCP Clinical Intervention: Newborn Blood Spot Screening"
+            "code": "17",
+            "display": "Haematological disorder"
           },
           {
-            "code": "E15",
-            "display": "Screening: Blood Spot"
+            "code": "18",
+            "display": "Central Nervous System (CNS) disorder"
           },
           {
-            "code": "E16",
-            "display": "HCP Clinical Intervention: Newborn Hearing Screening"
+            "code": "19",
+            "display": "Diabetes"
           },
           {
-            "code": "E17",
-            "display": "Screening: Hearing"
+            "code": "20",
+            "display": "Autoimmune disease"
           },
           {
-            "code": "E18",
-            "display": "HCP Clinical Intervention: 6-8 week review"
+            "code": "21",
+            "display": "Cancer"
           },
           {
-            "code": "E19",
-            "display": "Measurements"
+            "code": "22",
+            "display": "Infectious hepatitis A"
+          },
+          {
+            "code": "23",
+            "display": "Hepatitis B"
+          },
+          {
+            "code": "24",
+            "display": "Hepatitis C"
+          },
+          {
+            "code": "25",
+            "display": "Endocrine Disorder"
+          },
+          {
+            "code": "26",
+            "display": "Respiratory disease"
+          },
+          {
+            "code": "27",
+            "display": "Gastrointestinal disorder"
+          },
+          {
+            "code": "28",
+            "display": "Musculoskeletal disorder"
+          },
+          {
+            "code": "29",
+            "display": "Gynaecological problems"
           }
         ]
       }

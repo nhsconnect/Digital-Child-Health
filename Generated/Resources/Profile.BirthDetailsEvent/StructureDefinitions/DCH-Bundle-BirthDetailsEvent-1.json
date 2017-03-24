@@ -1,7 +1,7 @@
 {
   "resourceType": "StructureDefinition",
   "meta": {
-    "lastUpdated": "2017-03-20T11:23:46.754+00:00",
+    "lastUpdated": "2017-03-22T17:23:09.844+00:00",
     "tag": [
       {
         "system": "urn:hscic:publishOrder",
@@ -16,6 +16,7 @@
     }
   ],
   "url": "https://fhir.nhs.uk/StructureDefinition/dch-bundle-birthdetailsevent-1",
+  "version": "1.0.0",
   "name": "DCH-Bundle-BirthDetailsEvent-1",
   "status": "draft",
   "publisher": "NHS Digital",
@@ -25,13 +26,14 @@
       "telecom": [
         {
           "system": "email",
-          "value": "interoperabilityteam@nhs.net"
+          "value": "interoperabilityteam@nhs.net",
+          "use": "work"
         }
       ]
     }
   ],
   "date": "2015-09-22T11:02:49+01:00",
-  "description": "This Bundle resource is constrained to represent a set of resources for a Birth Details Event for the Child Health Events Catalogue.",
+  "description": "This Bundle resource is constrained to represent a set of resources for a Birth Details Event.",
   "copyright": "Copyright © 2016 Health and Social Care Information Centre. NHS Digital is the trading name of the Health and Social Care Information Centre.",
   "fhirVersion": "1.0.1",
   "kind": "resource",
@@ -357,6 +359,7 @@
             "code": "code"
           }
         ],
+        "fixedCode": "message",
         "condition": [
           "ele-1"
         ],
@@ -3032,6 +3035,10 @@
             "xpath": "not(f:entry/f:search) or (f:type/@value = 'searchset')"
           }
         ]
+      },
+      {
+        "path": "Bundle.type",
+        "fixedCode": "message"
       },
       {
         "path": "Bundle.total",
