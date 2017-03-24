@@ -6,6 +6,7 @@ The FHIR resource profiles within this DMS have been created to support the Chil
  - **[Profile.AssessmentAPGAREvent]** - FHIR resource profiles combined to support an Assessment APGAR Event message.
  - **[Profile.BreastfeedingStatusEvent]** - FHIR resource profiles combined to support a Breastfeeding Status Event message.
  - **[Profile.NeonatalCareEvent]** - FHIR resource profiles combined to support a Neonatal Care Event message.
+ - **[Profile.BirthDischargeEvent]** - FHIR resource profiles combined to support a Birth Discharge Event message.
  
 **Further Information**
 
@@ -18,6 +19,7 @@ The various downloads (including Schema files) and reference implementations are
 [Profile.AssessmentAPGAREvent]: ../Profile.AssessmentAPGAREvent/Profile.AssessmentAPGAREvent.html
 [Profile.BreastfeedingStatusEvent]: ../Profile.BreastfeedingStatusEvent/Profile.BreastfeedingStatusEvent.html
 [Profile.NeonatalCareEvent]: ../Profile.NeonatalCareEvent/Profile.NeonatalCareEvent.html
+[Profile.BirthDischargeEvent]: ../Profile.BirthDischargeEvent/Profile.BirthDischargeEvent.html
 
 [Profiling FHIR]: http://hl7.org/fhir/profiling.html
 [FHIR website]: http://hl7.org/fhir/index.html

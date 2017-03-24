@@ -9,7 +9,7 @@ This 'DCH-Bundle-AssessmentAPGAREvent-1' Bundle resource profile is used as a co
 - [CareConnect-DCH-Observation-APGARScore10Minutes-1]  
 
 
-###  Birth Details data item mapping to FHIR profiles ###
+###  Assessment APGAR Event data item mapping to FHIR profiles ###
 ----------
 The Child Health Event data items are fulfilled by elements within the FHIR resources listed below:
 

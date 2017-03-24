@@ -8,7 +8,7 @@ This 'DCH-Bundle-NeonatalCareEvent-1' Bundle resource profile is used as a conta
 - [CareConnect-DCH-Organization-NeonatalCareEvent-1]
 
 
-###  Birth Details data item mapping to FHIR profiles ###
+###  Neonatal Care Event data item mapping to FHIR profiles ###
 ----------
 The Child Health Event data items are fulfilled by elements within the FHIR resources listed below:
 

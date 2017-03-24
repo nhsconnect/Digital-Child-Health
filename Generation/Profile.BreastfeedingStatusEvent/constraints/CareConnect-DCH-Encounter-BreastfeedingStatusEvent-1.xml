@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <meta>
-    <lastUpdated value="2017-03-23T11:35:35.792+00:00" />
+    <lastUpdated value="2017-03-24T09:38:25.613+00:00" />
     <tag>
       <system value="urn:hscic:publishOrder" />
       <code value="3" />
@@ -3979,8 +3979,8 @@
       <path value="Encounter.participant" />
       <short value="List of participants involved in the encounter" />
       <definition value="The??list of??people??responsible for providing the service." />
-      <min value="0" />
-      <max value="0" />
+      <min value="1" />
+      <max value="1" />
       <base>
         <path value="Encounter.participant" />
         <min value="0" />
@@ -4123,7 +4123,7 @@
       <definition value="Role of participant in encounter." />
       <comments value="The participant type indicates how an individual partitipates in an encounter. It includes non-practitioner participants, and for practitioners this is to describe the action type in the context of this encounter (e.g. Admitting Dr, Attending Dr, Translator, Consulting Dr). This is different to the practitioner roles which are functional roles, derived from terms of employment, education, licensing, etc." />
       <min value="0" />
-      <max value="*" />
+      <max value="0" />
       <base>
         <path value="Encounter.participant.type" />
         <min value="0" />
@@ -4632,7 +4632,7 @@
       <definition value="The period of time that the specified participant was present during the encounter. These can overlap or be sub-sets of the overall encounters period." />
       <comments value="This is not a duration - that's a measure of time (a separate type), but a duration that occurs at a fixed value of time. A Period specifies a range of time; the context of use will specify whether the entire range applies (e.g. &quot;the patient was an inpatient of the hospital for this time range&quot;) or one value from the range applies (e.g. &quot;give to the patient between these two times&quot;). If duration is required, specify the type as Interval|Duration." />
       <min value="0" />
-      <max value="1" />
+      <max value="0" />
       <base>
         <path value="Encounter.participant.period" />
         <min value="0" />
@@ -4829,7 +4829,7 @@
       <path value="Encounter.participant.individual" />
       <short value="Persons involved in the encounter other than the patient" />
       <definition value="Persons involved in the encounter other than the patient." />
-      <min value="0" />
+      <min value="1" />
       <max value="1" />
       <base>
         <path value="Encounter.participant.individual" />
@@ -4838,11 +4838,7 @@
       </base>
       <type>
         <code value="Reference" />
-        <profile value="http://hl7.org/fhir/StructureDefinition/RelatedPerson" />
-      </type>
-      <type>
-        <code value="Reference" />
-        <profile value="https://fhir.hl7.org.uk/StructureDefinition/CareConnect-Practitioner-1" />
+        <profile value="https://fhir.hl7.org.uk/StructureDefinition/CareConnect-DCH-Practitioner-BreastfeedingStatusEvent-1" />
       </type>
       <condition value="ele-1" />
       <constraint>
@@ -13025,12 +13021,6 @@
       <path value="Encounter" />
     </element>
     <element>
-      <path value="Encounter.contained" />
-      <type>
-        <code value="Resource" />
-      </type>
-    </element>
-    <element>
       <path value="Encounter.identifier" />
       <min value="1" />
       <max value="1" />
@@ -13058,10 +13048,6 @@
     <element>
       <path value="Encounter.identifier.assigner" />
       <max value="0" />
-      <type>
-        <code value="Reference" />
-        <profile value="http://hl7.org/fhir/StructureDefinition/Organization" />
-      </type>
     </element>
     <element>
       <path value="Encounter.statusHistory" />
@@ -13157,17 +13143,23 @@
     </element>
     <element>
       <path value="Encounter.participant" />
+      <min value="1" />
+      <max value="1" />
+    </element>
+    <element>
+      <path value="Encounter.participant.type" />
+      <max value="0" />
+    </element>
+    <element>
+      <path value="Encounter.participant.period" />
       <max value="0" />
     </element>
     <element>
       <path value="Encounter.participant.individual" />
+      <min value="1" />
       <type>
         <code value="Reference" />
-        <profile value="http://hl7.org/fhir/StructureDefinition/RelatedPerson" />
-      </type>
-      <type>
-        <code value="Reference" />
-        <profile value="https://fhir.hl7.org.uk/StructureDefinition/CareConnect-Practitioner-1" />
+        <profile value="https://fhir.hl7.org.uk/StructureDefinition/CareConnect-DCH-Practitioner-BreastfeedingStatusEvent-1" />
       </type>
     </element>
     <element>
