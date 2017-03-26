@@ -1,1 +1,1 @@
-The encounter resource represents an encounter between a care professional and the patient (or patient's record), with further constraints applied to represent a Neonatal Care Event.
+The encounter resource represents an encounter between a care professional and the patient (or patient's record), with further constraints applied to represent a Neonatal Care Event during which a patient receives neonatal care.

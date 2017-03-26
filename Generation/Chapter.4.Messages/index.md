@@ -7,6 +7,9 @@ The FHIR resource profiles within this DMS have been created to support the Chil
  - **[Profile.BreastfeedingStatusEvent]** - FHIR resource profiles combined to support a Breastfeeding Status Event message.
  - **[Profile.NeonatalCareEvent]** - FHIR resource profiles combined to support a Neonatal Care Event message.
  - **[Profile.BirthDischargeEvent]** - FHIR resource profiles combined to support a Birth Discharge Event message.
+ - **[Profile.MeasurementsEvent]** - FHIR resource profiles combined to support a Measurements Event message.
+- **[Profile.ReferralEvent]** - FHIR resource profiles combined to support a Referral Event message.
+- **[Profile.FollowUpEvent]** - FHIR resource profiles combined to support a Follow Up Event message.
  
 **Further Information**
 
@@ -20,6 +23,9 @@ The various downloads (including Schema files) and reference implementations are
 [Profile.BreastfeedingStatusEvent]: ../Profile.BreastfeedingStatusEvent/Profile.BreastfeedingStatusEvent.html
 [Profile.NeonatalCareEvent]: ../Profile.NeonatalCareEvent/Profile.NeonatalCareEvent.html
 [Profile.BirthDischargeEvent]: ../Profile.BirthDischargeEvent/Profile.BirthDischargeEvent.html
+[Profile.ReferralEvent]: ../Profile.ReferralEvent/Profile.ReferralEvent.html
+[Profile.FollowUpEvent]: ../Profile.FollowUpEvent/Profile.FollowUpEvent.html
+[Profile.MeasurementsEvent]: ../Profile.MeasurementsEvent/Profile.MeasurementsEvent.html
 
 [Profiling FHIR]: http://hl7.org/fhir/profiling.html
 [FHIR website]: http://hl7.org/fhir/index.html

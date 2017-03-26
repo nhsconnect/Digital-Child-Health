@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <meta>
-    <lastUpdated value="2017-03-23T13:52:39.178+00:00" />
+    <lastUpdated value="2017-03-24T21:46:13.131+00:00" />
     <tag>
       <system value="urn:hscic:publishOrder" />
       <code value="7" />
@@ -5144,7 +5144,7 @@
       <comments value="Organizations can be corporations, wards, sections, clinical teams, government departments, etc. Note that code is generally a classifier of the type of organization; in many applications, codes are used to identity a particular organization (say, ward) as opposed to another of the same type - these are identifiers, not codes." />
       <requirements value="Need to be able to track the kind of organization that this is - different organization types have different uses." />
       <min value="0" />
-      <max value="1" />
+      <max value="0" />
       <base>
         <path value="Organization.type" />
         <min value="0" />
@@ -9827,6 +9827,10 @@
       <path value="Organization.active" />
       <short value="Date the organization became active, and if inactive, the date the organization became inactive." />
       <definition value="Date the organization became active, and if inactive, the date the organization became inactive." />
+      <max value="0" />
+    </element>
+    <element>
+      <path value="Organization.type" />
       <max value="0" />
     </element>
     <element>

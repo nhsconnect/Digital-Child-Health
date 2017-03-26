@@ -1,1 +1,0 @@
-The encounter resource represents an encounter between a care professional and the patient (or patient's record), with further constraints applied to represent patient discharge from a Birth Event.

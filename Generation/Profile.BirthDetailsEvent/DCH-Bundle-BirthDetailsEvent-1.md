@@ -1,7 +1,7 @@
 This 'DCH-Bundle-BirthDetailsEvent-1' Bundle resource profile is used as a container to collect a combination of the following resources, as ordered below, to fulfill the information requirements of a Birth Details Event:
 
 - [DCH-MessageHeader-BirthDetailsEvent-1]
-- [CareConnect-DCH-Encounter-BirthEvent-1]
+- [CareConnect-DCH-Encounter-BirthOccurrence-1]
 - [CareConnect-Organization-1]
 - [CareConnect-DCH-Patient-Baby-1]
 - [CareConnect-DCH-Observation-LengthOfPregnancy-1]
@@ -31,7 +31,7 @@ The Child Health Event data items are fulfilled by elements within the FHIR reso
 | Type of Delivery                 | [CareConnect-DCH-Procedure-TypeOfDelivery-1]                 |                                                                                                     
 
 [DCH-MessageHeader-BirthDetailsEvent-1]:dch-messageheader-birthdetailsevent-1.html
-[CareConnect-DCH-Encounter-BirthEvent-1]:careconnect-dch-encounter-birthevent-1.html
+[CareConnect-DCH-Encounter-BirthOccurrence-1]:careconnect-dch-encounter-birthoccurrence-1.html
 [CareConnect-DCH-Patient-Baby-1]:careconnect-dch-patient-baby-1.html
 [CareConnect-Organization-1]:careconnect-organization-1.html
 [CareConnect-DCH-Observation-LengthOfPregnancy-1]:careconnect-dch-observation-lengthofpregnancy-1.html

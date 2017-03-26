@@ -8,3 +8,9 @@ select constraints\*.xml >> IGPackage Profile.NeonatalCareEvent
 select valuesets\*.xml >> IGPackage Profile.NeonatalCareEvent
 select constraints\*.xml >> IGPackage Profile.BirthDischargeEvent
 select valuesets\*.xml >> IGPackage Profile.BirthDischargeEvent
+select constraints\*.xml >> IGPackage Profile.ReferralEvent
+select valuesets\*.xml >> IGPackage Profile.ReferralEvent
+select constraints\*.xml >> IGPackage Profile.FollowUpEvent
+select valuesets\*.xml >> IGPackage Profile.FollowUpEvent
+select constraints\*.xml >> IGPackage Profile.MeasurementsEvent
+select valuesets\*.xml >> IGPackage Profile.MeasurementsEvent

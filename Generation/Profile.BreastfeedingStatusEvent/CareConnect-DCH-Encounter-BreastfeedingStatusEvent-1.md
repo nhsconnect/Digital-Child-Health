@@ -1,1 +1,1 @@
-The encounter resource represents an encounter between a care professional and the patient (or patient's record), with further constraints applied to represent a Breastfeeding Status Event.
+The encounter resource represents an encounter between a care professional and the patient (or patient's record), with further constraints applied to represent a Breastfeeding Status Event during which the care professional captures the breastfeeding status for the patient.

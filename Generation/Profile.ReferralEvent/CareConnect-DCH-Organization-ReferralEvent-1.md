@@ -1,0 +1,1 @@
+The Organization resource represents the organisation that employs the healthcare professional, with further constraints applied to represent the organization where the Referral Event takes place.

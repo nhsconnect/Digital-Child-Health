@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <meta>
-    <lastUpdated value="2017-03-24T11:19:09.762+00:00" />
+    <lastUpdated value="2017-03-26T22:41:26.402+01:00" />
     <tag>
       <system value="urn:hscic:publishOrder" />
       <code value="6" />
@@ -390,7 +390,7 @@
       <short value="Identifies this organization  across multiple systems" />
       <definition value="Identifier for the organization that is used to identify the organization across multiple disparate systems." />
       <requirements value="Organizations are known by a variety of ids. Some institutions maintain several, and most collect identifiers for exchange with other organizations concerning the organization." />
-      <min value="0" />
+      <min value="1" />
       <max value="*" />
       <base>
         <path value="Organization.identifier" />
@@ -1565,7 +1565,7 @@
       <short value="Organisation Data Service code" />
       <definition value="Identifier code supplier by the Organisation Data Service" />
       <requirements value="Organizations are known by a variety of ids. Some institutions maintain several, and most collect identifiers for exchange with other organizations concerning the organization." />
-      <min value="0" />
+      <min value="1" />
       <max value="1" />
       <base>
         <path value="Organization.identifier" />
@@ -2741,7 +2741,7 @@
       <short value="ODS Site code to identify the organisation at site level" />
       <definition value="Identifier for the organization that is used to identify the organization across multiple disparate systems." />
       <requirements value="Organizations are known by a variety of ids. Some institutions maintain several, and most collect identifiers for exchange with other organizations concerning the organization." />
-      <min value="0" />
+      <min value="1" />
       <max value="1" />
       <base>
         <path value="Organization.identifier" />
@@ -4907,7 +4907,7 @@
       </base>
       <type>
         <code value="Reference" />
-        <profile value="https://fhir.hl7.org.uk/StructureDefinition/CareConnect-DCH-Organization-BreastfeedingStatusEvent-1" />
+        <profile value="http://hl7.org/fhir/StructureDefinition/Organization" />
       </type>
       <condition value="ele-1" />
       <constraint>
@@ -9732,24 +9732,20 @@
       </constraint>
     </element>
     <element>
-      <path value="Organization.contained" />
-      <type>
-        <code value="Resource" />
-      </type>
-    </element>
-    <element>
       <path value="Organization.identifier" />
       <slicing>
         <discriminator value="system" />
         <ordered value="false" />
         <rules value="openAtEnd" />
       </slicing>
+      <min value="1" />
     </element>
     <element>
       <path value="Organization.identifier" />
       <name value="ODS Organisation Code" />
       <short value="Organisation Data Service code" />
       <definition value="Identifier code supplier by the Organisation Data Service" />
+      <min value="1" />
       <max value="1" />
     </element>
     <element>
@@ -9781,6 +9777,7 @@
       <path value="Organization.identifier" />
       <name value="ODS Site Code" />
       <short value="ODS Site code to identify the organisation at site level" />
+      <min value="1" />
       <max value="1" />
     </element>
     <element>
@@ -9821,13 +9818,6 @@
     <element>
       <path value="Organization.identifier.value" />
       <min value="1" />
-    </element>
-    <element>
-      <path value="Organization.identifier.assigner" />
-      <type>
-        <code value="Reference" />
-        <profile value="https://fhir.hl7.org.uk/StructureDefinition/CareConnect-DCH-Organization-BreastfeedingStatusEvent-1" />
-      </type>
     </element>
     <element>
       <path value="Organization.active" />

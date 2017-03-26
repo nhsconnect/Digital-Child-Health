@@ -1,1 +1,1 @@
-This Bundle resource is constrained to represent a message header for an Assessment APGAR Event.
+This MessageHeader resource is constrained to represent a message header for an Assessment APGAR Event.

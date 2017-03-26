@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <meta>
-    <lastUpdated value="2017-03-23T13:31:18.763+00:00" />
+    <lastUpdated value="2017-03-26T22:27:09.185+01:00" />
     <tag>
       <system value="urn:hscic:publishOrder" />
       <code value="5" />
@@ -3430,7 +3430,7 @@
       <definition value="The patient, or group of patients, location, or device whose characteristics (direct or indirect) are described by the observation and into whose record the observation is placed.  Comments: Indirect characteristics may be those of a specimen, fetus, donor,  other observer (for example a relative or EMT), or any observation made about the subject." />
       <comments value="One would expect this element to be a cardinality  of 1..1.  The only circumstance in which the subject can be missing is when the observation is made by a device that does not know the patient. In this case, the observation SHALL be matched to a patient through some context/channel matching technique, and at this point, the observation should be updated.  If the target of the observation is different than the subject, the general extension [observation-focal-subject](extension-observation-focal-subject.html).  may be used.  However, the distinction between the patient's own value for an observation versus that of the fetus, or the donor or blood product unit, etc., are often specified in the observation code." />
       <requirements value="Observations have no value if you don't know who or what they're about." />
-      <min value="0" />
+      <min value="1" />
       <max value="1" />
       <base>
         <path value="Observation.subject" />
@@ -3487,7 +3487,7 @@
       <short value="Healthcare event during which this observation is made" />
       <definition value="The healthcare event  (e.g. a patient and healthcare provider interaction) during which this observation is made." />
       <requirements value="For some observations it may be important to know the link between an observation and a particular encounter." />
-      <min value="0" />
+      <min value="1" />
       <max value="1" />
       <base>
         <path value="Observation.encounter" />
@@ -3610,7 +3610,7 @@
       <short value="Relative, internal or absolute URL reference" />
       <definition value="A reference to a location at which the other resource is found. The reference may be a relative reference, in which case it is relative to the service base URL, or an absolute URL that resolves to the location where the resource is found. The reference may be version specific or not. If the reference is not to a FHIR RESTful server, then it should be assumed to be version specific. Internal fragment references (start with '#') refer to contained resources." />
       <comments value="Using absolute URLs provides a stable scalable approach suitable for a cloud/web context, while using relative/logical references provides a flexible approach suitable for use when trading across closed eco-system boundaries.   Absolute URLs do not need to point to a FHIR RESTful server, though this is the preferred approach. If the URL conforms to the structure &quot;/[type]/[id]&quot; then it should be assumed that the reference is to a FHIR RESTful server." />
-      <min value="0" />
+      <min value="1" />
       <max value="1" />
       <base>
         <path value="Reference.reference" />
@@ -3771,8 +3771,8 @@
       <short value="Who is responsible for the observation" />
       <definition value="Who was responsible for asserting the observed value as &quot;true&quot;." />
       <requirements value="May give a degree of confidence in the observation and also indicates where follow-up questions should be directed." />
-      <min value="0" />
-      <max value="*" />
+      <min value="1" />
+      <max value="1" />
       <base>
         <path value="Observation.performer" />
         <min value="0" />
@@ -12890,6 +12890,7 @@
     </element>
     <element>
       <path value="Observation.subject" />
+      <min value="1" />
       <type>
         <code value="Reference" />
         <profile value="https://fhir.hl7.org.uk/StructureDefinition/CareConnect-DCH-Patient-Baby-1" />
@@ -12897,10 +12898,15 @@
     </element>
     <element>
       <path value="Observation.encounter" />
+      <min value="1" />
       <type>
         <code value="Reference" />
         <profile value="https://fhir.hl7.org.uk/StructureDefinition/CareConnect-DCH-Encounter-BreastfeedingStatusEvent-1" />
       </type>
+    </element>
+    <element>
+      <path value="Observation.encounter.reference" />
+      <min value="1" />
     </element>
     <element>
       <path value="Observation.effective[x]" />
@@ -12912,6 +12918,8 @@
     </element>
     <element>
       <path value="Observation.performer" />
+      <min value="1" />
+      <max value="1" />
       <type>
         <code value="Reference" />
         <profile value="https://fhir.hl7.org.uk/StructureDefinition/CareConnect-DCH-Practitioner-BreastfeedingStatusEvent-1" />

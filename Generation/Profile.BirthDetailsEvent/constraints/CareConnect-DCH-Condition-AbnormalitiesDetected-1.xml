@@ -1732,7 +1732,7 @@
       </base>
       <type>
         <code value="Reference" />
-        <profile value="https://fhir.hl7.org.uk/StructureDefinition/CareConnect-DCH-Encounter-BirthEvent-1" />
+        <profile value="https://fhir.hl7.org.uk/StructureDefinition/CareConnect-DCH-Encounter-BirthOccurrence-1" />
       </type>
       <condition value="ele-1" />
       <constraint>
@@ -7072,7 +7072,7 @@
       <path value="Condition.encounter" />
       <type>
         <code value="Reference" />
-        <profile value="https://fhir.hl7.org.uk/StructureDefinition/CareConnect-DCH-Encounter-BirthEvent-1" />
+        <profile value="https://fhir.hl7.org.uk/StructureDefinition/CareConnect-DCH-Encounter-BirthOccurrence-1" />
       </type>
     </element>
     <element>
