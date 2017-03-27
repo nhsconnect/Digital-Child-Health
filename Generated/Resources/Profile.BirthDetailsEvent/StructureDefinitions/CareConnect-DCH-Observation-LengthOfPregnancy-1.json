@@ -4461,7 +4461,7 @@
           {
             "code": "Reference",
             "profile": [
-              "https://fhir.hl7.org.uk/StructureDefinition/CareConnect-DCH-Encounter-DeliveryEvent-1"
+              "https://fhir.hl7.org.uk/StructureDefinition/CareConnect-DCH-Encounter-Delivery-1"
             ]
           }
         ],
@@ -15890,7 +15890,7 @@
           {
             "code": "Reference",
             "profile": [
-              "https://fhir.hl7.org.uk/StructureDefinition/CareConnect-DCH-Encounter-DeliveryEvent-1"
+              "https://fhir.hl7.org.uk/StructureDefinition/CareConnect-DCH-Encounter-Delivery-1"
             ]
           }
         ]

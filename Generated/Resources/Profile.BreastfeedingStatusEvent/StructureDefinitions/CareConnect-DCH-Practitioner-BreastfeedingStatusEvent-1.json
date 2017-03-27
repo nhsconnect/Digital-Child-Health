@@ -1,7 +1,7 @@
 {
   "resourceType": "StructureDefinition",
   "meta": {
-    "lastUpdated": "2017-03-24T09:39:07.13+00:00",
+    "lastUpdated": "2017-03-26T22:29:35.776+01:00",
     "tag": [
       {
         "system": "urn:hscic:publishOrder",
@@ -12123,7 +12123,7 @@
         "name": "sdsJobRoleName",
         "short": "Roles/organizations the practitioner is associated with",
         "definition": "The list of roles/organizations that the practitioner is associated with.",
-        "min": 0,
+        "min": 1,
         "max": "1",
         "base": {
           "path": "Practitioner.practitionerRole",
@@ -12557,7 +12557,7 @@
         "definition": "Roles which this practitioner is authorized to perform for the organization.",
         "comments": "A person may have more than one role. At least one role is required.",
         "requirements": "Need to know what authority the practitioner has - what can they do?",
-        "min": 0,
+        "min": 1,
         "max": "1",
         "base": {
           "path": "Practitioner.practitionerRole.role",
@@ -18128,6 +18128,14 @@
         ]
       },
       {
+        "path": "Practitioner.contained",
+        "type": [
+          {
+            "code": "Resource"
+          }
+        ]
+      },
+      {
         "path": "Practitioner.identifier",
         "slicing": {
           "discriminator": [
@@ -18166,7 +18174,15 @@
       },
       {
         "path": "Practitioner.identifier.assigner",
-        "max": "0"
+        "max": "0",
+        "type": [
+          {
+            "code": "Reference",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/Organization"
+            ]
+          }
+        ]
       },
       {
         "path": "Practitioner.identifier",
@@ -18196,7 +18212,15 @@
       },
       {
         "path": "Practitioner.identifier.assigner",
-        "max": "0"
+        "max": "0",
+        "type": [
+          {
+            "code": "Reference",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/Organization"
+            ]
+          }
+        ]
       },
       {
         "path": "Practitioner.identifier",
@@ -18355,6 +18379,7 @@
       {
         "path": "Practitioner.practitionerRole",
         "name": "sdsJobRoleName",
+        "min": 1,
         "max": "1"
       },
       {
@@ -18371,6 +18396,7 @@
       },
       {
         "path": "Practitioner.practitionerRole.role",
+        "min": 1,
         "binding": {
           "strength": "required",
           "valueSetReference": {

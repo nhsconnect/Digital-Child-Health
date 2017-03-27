@@ -1,7 +1,7 @@
 {
   "resourceType": "StructureDefinition",
   "meta": {
-    "lastUpdated": "2017-03-24T11:19:09.762+00:00",
+    "lastUpdated": "2017-03-26T22:41:26.402+01:00",
     "tag": [
       {
         "system": "urn:hscic:publishOrder",
@@ -508,7 +508,7 @@
         "short": "Identifies this organization  across multiple systems",
         "definition": "Identifier for the organization that is used to identify the organization across multiple disparate systems.",
         "requirements": "Organizations are known by a variety of ids. Some institutions maintain several, and most collect identifiers for exchange with other organizations concerning the organization.",
-        "min": 0,
+        "min": 1,
         "max": "*",
         "base": {
           "path": "Organization.identifier",
@@ -2009,7 +2009,7 @@
         "short": "Organisation Data Service code",
         "definition": "Identifier code supplier by the Organisation Data Service",
         "requirements": "Organizations are known by a variety of ids. Some institutions maintain several, and most collect identifiers for exchange with other organizations concerning the organization.",
-        "min": 0,
+        "min": 1,
         "max": "1",
         "base": {
           "path": "Organization.identifier",
@@ -3511,7 +3511,7 @@
         "short": "ODS Site code to identify the organisation at site level",
         "definition": "Identifier for the organization that is used to identify the organization across multiple disparate systems.",
         "requirements": "Organizations are known by a variety of ids. Some institutions maintain several, and most collect identifiers for exchange with other organizations concerning the organization.",
-        "min": 0,
+        "min": 1,
         "max": "1",
         "base": {
           "path": "Organization.identifier",
@@ -6269,7 +6269,7 @@
           {
             "code": "Reference",
             "profile": [
-              "https://fhir.hl7.org.uk/StructureDefinition/CareConnect-DCH-Organization-BreastfeedingStatusEvent-1"
+              "http://hl7.org/fhir/StructureDefinition/Organization"
             ]
           }
         ],
@@ -12423,14 +12423,6 @@
         ]
       },
       {
-        "path": "Organization.contained",
-        "type": [
-          {
-            "code": "Resource"
-          }
-        ]
-      },
-      {
         "path": "Organization.identifier",
         "slicing": {
           "discriminator": [
@@ -12438,13 +12430,15 @@
           ],
           "ordered": false,
           "rules": "openAtEnd"
-        }
+        },
+        "min": 1
       },
       {
         "path": "Organization.identifier",
         "name": "ODS Organisation Code",
         "short": "Organisation Data Service code",
         "definition": "Identifier code supplier by the Organisation Data Service",
+        "min": 1,
         "max": "1"
       },
       {
@@ -12476,6 +12470,7 @@
         "path": "Organization.identifier",
         "name": "ODS Site Code",
         "short": "ODS Site code to identify the organisation at site level",
+        "min": 1,
         "max": "1"
       },
       {
@@ -12516,17 +12511,6 @@
       {
         "path": "Organization.identifier.value",
         "min": 1
-      },
-      {
-        "path": "Organization.identifier.assigner",
-        "type": [
-          {
-            "code": "Reference",
-            "profile": [
-              "https://fhir.hl7.org.uk/StructureDefinition/CareConnect-DCH-Organization-BreastfeedingStatusEvent-1"
-            ]
-          }
-        ]
       },
       {
         "path": "Organization.active",

@@ -1,7 +1,7 @@
 {
   "resourceType": "StructureDefinition",
   "meta": {
-    "lastUpdated": "2017-03-24T11:51:55.963+00:00",
+    "lastUpdated": "2017-03-24T22:52:54.675+00:00",
     "tag": [
       {
         "system": "urn:hscic:publishOrder",
@@ -836,7 +836,7 @@
             "code": "code"
           }
         ],
-        "fixedCode": "E1",
+        "fixedCode": "E7",
         "condition": [
           "ele-1"
         ],
@@ -892,7 +892,7 @@
             "code": "string"
           }
         ],
-        "fixedString": "Birth: Birth Details",
+        "fixedString": "Birth: Discharge",
         "condition": [
           "ele-1"
         ],
@@ -4662,7 +4662,7 @@
           {
             "code": "Reference",
             "profile": [
-              "https://fhir.hl7.org.uk/StructureDefinition/CareConnect-DCH-Encounter-BirthEventDischarge-1"
+              "https://fhir.hl7.org.uk/StructureDefinition/CareConnect-DCH-Encounter-BirthOccurrence-1"
             ]
           }
         ],
@@ -4931,12 +4931,12 @@
       {
         "path": "MessageHeader.event.code",
         "min": 1,
-        "fixedCode": "E1"
+        "fixedCode": "E7"
       },
       {
         "path": "MessageHeader.event.display",
         "min": 1,
-        "fixedString": "Birth: Birth Details"
+        "fixedString": "Birth: Discharge"
       },
       {
         "path": "MessageHeader.event.userSelected",
@@ -4996,7 +4996,7 @@
           {
             "code": "Reference",
             "profile": [
-              "https://fhir.hl7.org.uk/StructureDefinition/CareConnect-DCH-Encounter-BirthEventDischarge-1"
+              "https://fhir.hl7.org.uk/StructureDefinition/CareConnect-DCH-Encounter-BirthOccurrence-1"
             ]
           }
         ]

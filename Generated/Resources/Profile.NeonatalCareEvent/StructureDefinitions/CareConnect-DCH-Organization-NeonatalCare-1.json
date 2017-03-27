@@ -1,7 +1,7 @@
 {
   "resourceType": "StructureDefinition",
   "meta": {
-    "lastUpdated": "2017-03-23T13:52:39.178+00:00",
+    "lastUpdated": "2017-03-24T21:46:13.131+00:00",
     "tag": [
       {
         "system": "urn:hscic:publishOrder",
@@ -6577,7 +6577,7 @@
         "comments": "Organizations can be corporations, wards, sections, clinical teams, government departments, etc. Note that code is generally a classifier of the type of organization; in many applications, codes are used to identity a particular organization (say, ward) as opposed to another of the same type - these are identifiers, not codes.",
         "requirements": "Need to be able to track the kind of organization that this is - different organization types have different uses.",
         "min": 0,
-        "max": "1",
+        "max": "0",
         "base": {
           "path": "Organization.type",
           "min": 0,
@@ -12524,6 +12524,10 @@
         "path": "Organization.active",
         "short": "Date the organization became active, and if inactive, the date the organization became inactive.",
         "definition": "Date the organization became active, and if inactive, the date the organization became inactive.",
+        "max": "0"
+      },
+      {
+        "path": "Organization.type",
         "max": "0"
       },
       {

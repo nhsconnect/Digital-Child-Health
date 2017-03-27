@@ -1,0 +1,99 @@
+{
+  "resourceType": "ValueSet",
+  "meta": {
+    "lastUpdated": "2016-08-03T00:00:00+01:00"
+  },
+  "contained": [
+    {
+      "resourceType": "ConceptMap",
+      "id": "map",
+      "name": "NHS Data Model and Dictionary Mapping",
+      "status": "draft",
+      "sourceReference": {
+        "reference": "http://hl7.org/fhir/ValueSet/administrative-gender"
+      },
+      "targetReference": {
+        "reference": "https://fhir.nhs.uk/ValueSet/administrative-gender-ddmap-1"
+      },
+      "element": [
+        {
+          "code": "male",
+          "target": [
+            {
+              "code": "1",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "female",
+          "target": [
+            {
+              "code": "2",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "other",
+          "target": [
+            {
+              "code": "9",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "unknown",
+          "target": [
+            {
+              "code": "0",
+              "equivalence": "equivalent"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/valueset-map",
+      "valueReference": {
+        "reference": "#map"
+      }
+    },
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/valueset-oid",
+      "valueUri": "urn:oid:2.16.840.1.113883.4.642.2.1"
+    }
+  ],
+  "url": "https://fhir.nhs.uk/ValueSet/administrative-gender-1",
+  "name": "Administrative Gender",
+  "status": "active",
+  "description": "The gender of a person used for administrative purposes.",
+  "codeSystem": {
+    "system": "https://fhir.nhs.uk/ValueSet/administrative-gender-1",
+    "concept": [
+      {
+        "code": "male",
+        "display": "Male",
+        "definition": "Male"
+      },
+      {
+        "code": "female",
+        "display": "Female",
+        "definition": "Female"
+      },
+      {
+        "code": "other",
+        "display": "Other",
+        "definition": "Other"
+      },
+      {
+        "code": "unknown",
+        "display": "Unknown",
+        "definition": "Unknown"
+      }
+    ]
+  }
+}

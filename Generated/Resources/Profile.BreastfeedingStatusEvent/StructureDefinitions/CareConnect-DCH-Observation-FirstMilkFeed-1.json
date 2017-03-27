@@ -1,7 +1,7 @@
 {
   "resourceType": "StructureDefinition",
   "meta": {
-    "lastUpdated": "2017-03-23T13:31:18.763+00:00",
+    "lastUpdated": "2017-03-26T22:27:09.185+01:00",
     "tag": [
       {
         "system": "urn:hscic:publishOrder",
@@ -4378,7 +4378,7 @@
         "definition": "The patient, or group of patients, location, or device whose characteristics (direct or indirect) are described by the observation and into whose record the observation is placed.  Comments: Indirect characteristics may be those of a specimen, fetus, donor,  other observer (for example a relative or EMT), or any observation made about the subject.",
         "comments": "One would expect this element to be a cardinality  of 1..1.  The only circumstance in which the subject can be missing is when the observation is made by a device that does not know the patient. In this case, the observation SHALL be matched to a patient through some context/channel matching technique, and at this point, the observation should be updated.  If the target of the observation is different than the subject, the general extension [observation-focal-subject](extension-observation-focal-subject.html).  may be used.  However, the distinction between the patient's own value for an observation versus that of the fetus, or the donor or blood product unit, etc., are often specified in the observation code.",
         "requirements": "Observations have no value if you don't know who or what they're about.",
-        "min": 0,
+        "min": 1,
         "max": "1",
         "base": {
           "path": "Observation.subject",
@@ -4451,7 +4451,7 @@
         "short": "Healthcare event during which this observation is made",
         "definition": "The healthcare event  (e.g. a patient and healthcare provider interaction) during which this observation is made.",
         "requirements": "For some observations it may be important to know the link between an observation and a particular encounter.",
-        "min": 0,
+        "min": 1,
         "max": "1",
         "base": {
           "path": "Observation.encounter",
@@ -4614,7 +4614,7 @@
         "short": "Relative, internal or absolute URL reference",
         "definition": "A reference to a location at which the other resource is found. The reference may be a relative reference, in which case it is relative to the service base URL, or an absolute URL that resolves to the location where the resource is found. The reference may be version specific or not. If the reference is not to a FHIR RESTful server, then it should be assumed to be version specific. Internal fragment references (start with '#') refer to contained resources.",
         "comments": "Using absolute URLs provides a stable scalable approach suitable for a cloud/web context, while using relative/logical references provides a flexible approach suitable for use when trading across closed eco-system boundaries.   Absolute URLs do not need to point to a FHIR RESTful server, though this is the preferred approach. If the URL conforms to the structure \"/[type]/[id]\" then it should be assumed that the reference is to a FHIR RESTful server.",
-        "min": 0,
+        "min": 1,
         "max": "1",
         "base": {
           "path": "Reference.reference",
@@ -4819,8 +4819,8 @@
         "short": "Who is responsible for the observation",
         "definition": "Who was responsible for asserting the observed value as \"true\".",
         "requirements": "May give a degree of confidence in the observation and also indicates where follow-up questions should be directed.",
-        "min": 0,
-        "max": "*",
+        "min": 1,
+        "max": "1",
         "base": {
           "path": "Observation.performer",
           "min": 0,
@@ -16452,6 +16452,7 @@
       },
       {
         "path": "Observation.subject",
+        "min": 1,
         "type": [
           {
             "code": "Reference",
@@ -16463,6 +16464,7 @@
       },
       {
         "path": "Observation.encounter",
+        "min": 1,
         "type": [
           {
             "code": "Reference",
@@ -16471,6 +16473,10 @@
             ]
           }
         ]
+      },
+      {
+        "path": "Observation.encounter.reference",
+        "min": 1
       },
       {
         "path": "Observation.effective[x]",
@@ -16482,6 +16488,8 @@
       },
       {
         "path": "Observation.performer",
+        "min": 1,
+        "max": "1",
         "type": [
           {
             "code": "Reference",

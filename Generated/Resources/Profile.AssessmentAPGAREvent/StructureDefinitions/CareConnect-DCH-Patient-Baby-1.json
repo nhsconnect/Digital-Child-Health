@@ -1,7 +1,7 @@
 {
   "resourceType": "StructureDefinition",
   "meta": {
-    "lastUpdated": "2017-03-24T12:16:13.802+00:00",
+    "lastUpdated": "2017-03-26T22:32:39.892+01:00",
     "tag": [
       {
         "system": "urn:hscic:publishOrder",
@@ -18384,6 +18384,14 @@
         "type": [
           {
             "code": "Patient"
+          }
+        ]
+      },
+      {
+        "path": "Patient.contained",
+        "type": [
+          {
+            "code": "Resource"
           }
         ]
       },

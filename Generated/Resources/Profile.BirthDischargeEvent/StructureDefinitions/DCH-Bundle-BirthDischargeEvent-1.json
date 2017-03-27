@@ -1,7 +1,7 @@
 {
   "resourceType": "StructureDefinition",
   "meta": {
-    "lastUpdated": "2017-03-24T09:40:13.606+00:00",
+    "lastUpdated": "2017-03-24T20:54:26.478+00:00",
     "tag": [
       {
         "system": "urn:hscic:publishOrder",
@@ -3052,14 +3052,6 @@
       {
         "path": "Bundle.entry",
         "min": 1
-      },
-      {
-        "path": "Bundle.entry.resource",
-        "type": [
-          {
-            "code": "Resource"
-          }
-        ]
       },
       {
         "path": "Bundle.entry.search",

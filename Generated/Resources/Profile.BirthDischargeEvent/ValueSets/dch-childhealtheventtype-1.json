@@ -66,26 +66,30 @@
           },
           {
             "code": "E14",
-            "display": "HCP Clinical Intervention: Newborn Blood Spot Screening"
+            "display": "Referral: Follow Up"
           },
           {
             "code": "E15",
-            "display": "Screening: Blood Spot"
+            "display": "HCP Clinical Intervention: Newborn Blood Spot Screening"
           },
           {
             "code": "E16",
-            "display": "HCP Clinical Intervention: Newborn Hearing Screening"
+            "display": "Screening: Blood Spot"
           },
           {
             "code": "E17",
-            "display": "Screening: Hearing"
+            "display": "HCP Clinical Intervention: Newborn Hearing Screening"
           },
           {
             "code": "E18",
-            "display": "HCP Clinical Intervention: 6-8 week review"
+            "display": "Screening: Hearing"
           },
           {
             "code": "E19",
+            "display": "HCP Clinical Intervention: 6-8 week review"
+          },
+          {
+            "code": "E20",
             "display": "Measurements"
           }
         ]
