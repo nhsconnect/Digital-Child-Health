@@ -1,7 +1,7 @@
 {
   "resourceType": "StructureDefinition",
   "meta": {
-    "lastUpdated": "2017-03-24T20:41:08.69+00:00",
+    "lastUpdated": "2017-03-27T10:11:28.011+01:00",
     "tag": [
       {
         "system": "urn:hscic:publishOrder",
@@ -1979,6 +1979,7 @@
             "code": "code"
           }
         ],
+        "fixedCode": "finished",
         "condition": [
           "ele-1"
         ],
@@ -16805,6 +16806,10 @@
       {
         "path": "Encounter.identifier.assigner",
         "max": "0"
+      },
+      {
+        "path": "Encounter.status",
+        "fixedCode": "finished"
       },
       {
         "path": "Encounter.statusHistory",

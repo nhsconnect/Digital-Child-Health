@@ -358,7 +358,9 @@ Component code SHALL not be same as observation code</p>
         </tr>
         <tr>
           <td width="150px">Definition</td>
-          <td></td>
+          <td>
+            <p>These resources do not have an independent existence apart from the resource that contains them - they cannot be identified independently, and nor can they have their own independent transaction scope.</p>
+          </td>
         </tr>
         <tr>
           <td>
@@ -375,8 +377,14 @@ Component code SHALL not be same as observation code</p>
           </td>
         </tr>
         <tr>
+          <td>Aliases</td>
+          <td>inline resources, anonymous resources, contained resources</td>
+        </tr>
+        <tr>
           <td width="150px">Comments</td>
-          <td></td>
+          <td>
+            <p>This should never be done when the content can be identified properly, as once identification is lost, it is extremely difficult (and context dependent) to restore it again.</p>
+          </td>
         </tr>
         <tr>
           <td colspan="2" class="structure">
@@ -922,21 +930,35 @@ Component code SHALL not be same as observation code</p>
         </tr>
         <tr>
           <td width="150px">Definition</td>
-          <td></td>
+          <td>
+            <p>A human language representation of the concept as seen/selected/uttered by the user who entered the data and/or which represents the intended meaning of the user.</p>
+          </td>
         </tr>
         <tr>
           <td>
             <a href="http://www.hl7.org/fhir/DSTU2/conformance-rules.html#conformance">Control</a>
           </td>
-          <td>1..*</td>
+          <td>0..1 ?</td>
+        </tr>
+        <tr>
+          <td>
+            <a href="http://www.hl7.org/fhir/DSTU2/datatypes.html">Type</a>
+          </td>
+          <td>
+            <a href="http://www.hl7.org/fhir/DSTU2/datatypes.html#string" xmlns="http://www.w3.org/1999/xhtml">String</a>
+          </td>
+        </tr>
+        <tr>
+          <td width="150px">Requirements</td>
+          <td>
+            <p>The codes from the terminologies do not always capture the correct meaning with all the nuances of the human using them, or sometimes there is no appropriate code at all. In these cases, the text is used to capture the full meaning of the source.</p>
+          </td>
         </tr>
         <tr>
           <td width="150px">Comments</td>
-          <td></td>
-        </tr>
-        <tr>
-          <td>Fixed Value</td>
-          <td>Abnormalities detected at birth</td>
+          <td>
+            <p>Very often the text is the same as a displayName of one of the codings.</p>
+          </td>
         </tr>
         <tr>
           <td colspan="2" class="structure">

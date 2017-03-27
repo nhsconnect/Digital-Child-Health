@@ -1,7 +1,7 @@
 {
   "resourceType": "StructureDefinition",
   "meta": {
-    "lastUpdated": "2017-03-26T22:32:34.885+01:00",
+    "lastUpdated": "2017-03-27T10:12:05.795+01:00",
     "tag": [
       {
         "system": "urn:hscic:publishOrder",
@@ -1979,6 +1979,7 @@
             "code": "code"
           }
         ],
+        "fixedCode": "finished",
         "condition": [
           "ele-1"
         ],
@@ -16778,14 +16779,6 @@
         "path": "Encounter"
       },
       {
-        "path": "Encounter.contained",
-        "type": [
-          {
-            "code": "Resource"
-          }
-        ]
-      },
-      {
         "path": "Encounter.identifier",
         "min": 1,
         "max": "1"
@@ -16813,6 +16806,10 @@
       {
         "path": "Encounter.identifier.assigner",
         "max": "0"
+      },
+      {
+        "path": "Encounter.status",
+        "fixedCode": "finished"
       },
       {
         "path": "Encounter.statusHistory",

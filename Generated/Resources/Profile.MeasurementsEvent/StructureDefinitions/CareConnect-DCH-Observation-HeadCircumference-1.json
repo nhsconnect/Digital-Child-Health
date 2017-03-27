@@ -1,7 +1,7 @@
 {
   "resourceType": "StructureDefinition",
   "meta": {
-    "lastUpdated": "2017-03-26T21:57:15.126+01:00",
+    "lastUpdated": "2017-03-27T11:35:56.712+01:00",
     "tag": [
       {
         "system": "urn:hscic:publishOrder",
@@ -4322,7 +4322,7 @@
         "definition": "A human language representation of the concept as seen/selected/uttered by the user who entered the data and/or which represents the intended meaning of the user.",
         "comments": "Very often the text is the same as a displayName of one of the codings.",
         "requirements": "The codes from the terminologies do not always capture the correct meaning with all the nuances of the human using them, or sometimes there is no appropriate code at all. In these cases, the text is used to capture the full meaning of the source.",
-        "min": 1,
+        "min": 0,
         "max": "1",
         "base": {
           "path": "CodeableConcept.text",
@@ -4334,7 +4334,6 @@
             "code": "string"
           }
         ],
-        "fixedString": "Abnormalities detected at birth",
         "condition": [
           "ele-1"
         ],
@@ -16586,11 +16585,6 @@
         "path": "Observation.code.coding.display",
         "min": 1,
         "fixedString": "Head circumference (observable entity)"
-      },
-      {
-        "path": "Observation.code.text",
-        "min": 1,
-        "fixedString": "Abnormalities detected at birth"
       },
       {
         "path": "Observation.subject",

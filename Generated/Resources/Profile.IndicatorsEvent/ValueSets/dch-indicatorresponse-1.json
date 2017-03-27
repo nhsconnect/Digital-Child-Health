@@ -1,0 +1,27 @@
+{
+  "resourceType": "ValueSet",
+  "meta": {
+    "lastUpdated": "2016-08-03T00:00:00+01:00"
+  },
+  "url": "https://fhir.nhs.uk/ValueSet/dch-indicatorresponse-1",
+  "name": "Indicator Response",
+  "status": "active",
+  "description": "A code to indicate whether a vaccine is required.",
+  "compose": {
+    "include": [
+      {
+        "system": "https://fhir.nhs.uk/dch-indicatorresponse-1",
+        "concept": [
+          {
+            "code": "Yes",
+            "display": "Yes"
+          },
+          {
+            "code": "No",
+            "display": "No"
+          }
+        ]
+      }
+    ]
+  }
+}
