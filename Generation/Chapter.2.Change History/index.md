@@ -13,6 +13,7 @@ This initial draft version adda the FHIR profiles to support the following Digit
 - Neonatal Care Event
 - Birth Discharge Event
 - Measurements Event
+- Indicators Event
 - Referral Event
 - Follow Up Event
 

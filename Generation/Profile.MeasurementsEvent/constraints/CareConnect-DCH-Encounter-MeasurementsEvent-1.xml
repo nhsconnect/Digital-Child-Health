@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <meta>
-    <lastUpdated value="2017-03-26T22:20:05.23+01:00" />
+    <lastUpdated value="2017-03-27T10:38:38.548+01:00" />
     <tag>
       <system value="urn:hscic:publishOrder" />
       <code value="3" />
@@ -1539,6 +1539,7 @@
       <type>
         <code value="code" />
       </type>
+      <fixedCode value="finished" />
       <condition value="ele-1" />
       <constraint>
         <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-expression">
@@ -13021,12 +13022,6 @@
       <path value="Encounter" />
     </element>
     <element>
-      <path value="Encounter.contained" />
-      <type>
-        <code value="Resource" />
-      </type>
-    </element>
-    <element>
       <path value="Encounter.identifier" />
       <min value="1" />
       <max value="1" />
@@ -13054,6 +13049,10 @@
     <element>
       <path value="Encounter.identifier.assigner" />
       <max value="0" />
+    </element>
+    <element>
+      <path value="Encounter.status" />
+      <fixedCode value="finished" />
     </element>
     <element>
       <path value="Encounter.statusHistory" />
@@ -13389,10 +13388,6 @@
     <element>
       <path value="Encounter.partOf" />
       <max value="0" />
-      <type>
-        <code value="Reference" />
-        <profile value="http://hl7.org/fhir/StructureDefinition/Encounter" />
-      </type>
     </element>
   </differential>
 </StructureDefinition>
