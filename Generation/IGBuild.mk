@@ -14,3 +14,5 @@ select constraints\*.xml >> IGPackage Profile.FollowUpEvent
 select valuesets\*.xml >> IGPackage Profile.FollowUpEvent
 select constraints\*.xml >> IGPackage Profile.MeasurementsEvent
 select valuesets\*.xml >> IGPackage Profile.MeasurementsEvent
+select constraints\*.xml >> IGPackage Profile.IndicatorsEvent
+select valuesets\*.xml >> IGPackage Profile.IndicatorsEvent

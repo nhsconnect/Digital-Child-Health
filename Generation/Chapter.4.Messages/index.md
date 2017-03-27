@@ -2,12 +2,13 @@
 
 The FHIR resource profiles within this DMS have been created to support the Child Health Events Catalogue Service interface:
 
- - **[Profile.BirthDetailsEvent]** - FHIR resource profiles combined to support a Birth Details Event message.
- - **[Profile.AssessmentAPGAREvent]** - FHIR resource profiles combined to support an Assessment APGAR Event message.
- - **[Profile.BreastfeedingStatusEvent]** - FHIR resource profiles combined to support a Breastfeeding Status Event message.
- - **[Profile.NeonatalCareEvent]** - FHIR resource profiles combined to support a Neonatal Care Event message.
- - **[Profile.BirthDischargeEvent]** - FHIR resource profiles combined to support a Birth Discharge Event message.
- - **[Profile.MeasurementsEvent]** - FHIR resource profiles combined to support a Measurements Event message.
+- **[Profile.BirthDetailsEvent]** - FHIR resource profiles combined to support a Birth Details Event message.
+- **[Profile.AssessmentAPGAREvent]** - FHIR resource profiles combined to support an Assessment APGAR Event message.
+- **[Profile.BreastfeedingStatusEvent]** - FHIR resource profiles combined to support a Breastfeeding Status Event message.
+- **[Profile.NeonatalCareEvent]** - FHIR resource profiles combined to support a Neonatal Care Event message.
+- **[Profile.BirthDischargeEvent]** - FHIR resource profiles combined to support a Birth Discharge Event message.
+- **[Profile.MeasurementsEvent]** - FHIR resource profiles combined to support a Measurements Event message.
+- **[Profile.IndicatorsEvent]** - FHIR resource profiles combined to support an Indicators Event message.
 - **[Profile.ReferralEvent]** - FHIR resource profiles combined to support a Referral Event message.
 - **[Profile.FollowUpEvent]** - FHIR resource profiles combined to support a Follow Up Event message.
  
@@ -26,6 +27,7 @@ The various downloads (including Schema files) and reference implementations are
 [Profile.ReferralEvent]: ../Profile.ReferralEvent/Profile.ReferralEvent.html
 [Profile.FollowUpEvent]: ../Profile.FollowUpEvent/Profile.FollowUpEvent.html
 [Profile.MeasurementsEvent]: ../Profile.MeasurementsEvent/Profile.MeasurementsEvent.html
+[Profile.IndicatorsEvent]: ../Profile.IndicatorsEvent/Profile.IndicatorsEvent.html
 
 [Profiling FHIR]: http://hl7.org/fhir/profiling.html
 [FHIR website]: http://hl7.org/fhir/index.html

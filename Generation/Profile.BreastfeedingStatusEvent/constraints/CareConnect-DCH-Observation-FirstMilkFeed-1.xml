@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <meta>
-    <lastUpdated value="2017-03-26T22:27:09.185+01:00" />
+    <lastUpdated value="2017-03-27T11:34:56.432+01:00" />
     <tag>
       <system value="urn:hscic:publishOrder" />
       <code value="5" />
@@ -3395,7 +3395,6 @@
       <type>
         <code value="string" />
       </type>
-      <fixedString value="Abnormalities detected at birth" />
       <condition value="ele-1" />
       <constraint>
         <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-expression">
@@ -12886,7 +12885,6 @@
     <element>
       <path value="Observation.code.text" />
       <min value="1" />
-      <fixedString value="Abnormalities detected at birth" />
     </element>
     <element>
       <path value="Observation.subject" />

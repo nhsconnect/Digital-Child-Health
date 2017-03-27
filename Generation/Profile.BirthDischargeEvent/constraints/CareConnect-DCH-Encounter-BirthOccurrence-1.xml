@@ -1,7 +1,7 @@
-<?xml version="1.0" encoding="utf-8"?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <meta>
-    <lastUpdated value="2017-03-24T13:08:26.462+00:00" />
+    <lastUpdated value="2017-03-27T10:23:55.607+01:00" />
     <tag>
       <system value="urn:hscic:publishOrder" />
       <code value="3" />
@@ -1539,6 +1539,7 @@
       <type>
         <code value="code" />
       </type>
+      <fixedCode value="finished" />
       <condition value="ele-1" />
       <constraint>
         <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-expression">
@@ -13052,6 +13053,10 @@
     <element>
       <path value="Encounter.identifier.assigner" />
       <max value="0" />
+    </element>
+    <element>
+      <path value="Encounter.status" />
+      <fixedCode value="finished" />
     </element>
     <element>
       <path value="Encounter.statusHistory" />

@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <meta>
-    <lastUpdated value="2017-03-26T21:53:02.671+01:00" />
+    <lastUpdated value="2017-03-27T11:35:39.5+01:00" />
     <tag>
       <system value="urn:hscic:publishOrder" />
       <code value="5" />
@@ -3385,7 +3385,7 @@
       <definition value="A human language representation of the concept as seen/selected/uttered by the user who entered the data and/or which represents the intended meaning of the user." />
       <comments value="Very often the text is the same as a displayName of one of the codings." />
       <requirements value="The codes from the terminologies do not always capture the correct meaning with all the nuances of the human using them, or sometimes there is no appropriate code at all. In these cases, the text is used to capture the full meaning of the source." />
-      <min value="1" />
+      <min value="0" />
       <max value="1" />
       <base>
         <path value="CodeableConcept.text" />
@@ -3395,7 +3395,6 @@
       <type>
         <code value="string" />
       </type>
-      <fixedString value="Abnormalities detected at birth" />
       <condition value="ele-1" />
       <constraint>
         <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-expression">
@@ -12977,11 +12976,6 @@
       <path value="Observation.code.coding.display" />
       <min value="1" />
       <fixedString value="Length of body (observable entity)" />
-    </element>
-    <element>
-      <path value="Observation.code.text" />
-      <min value="1" />
-      <fixedString value="Abnormalities detected at birth" />
     </element>
     <element>
       <path value="Observation.subject" />
