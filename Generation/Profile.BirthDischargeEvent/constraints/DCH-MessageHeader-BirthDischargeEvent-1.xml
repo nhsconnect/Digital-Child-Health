@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <meta>
-    <lastUpdated value="2017-03-24T11:51:55.963+00:00" />
+    <lastUpdated value="2017-03-24T22:52:54.675+00:00" />
     <tag>
       <system value="urn:hscic:publishOrder" />
       <code value="2" />
@@ -649,7 +649,7 @@
       <type>
         <code value="code" />
       </type>
-      <fixedCode value="E1" />
+      <fixedCode value="E7" />
       <condition value="ele-1" />
       <constraint>
         <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-expression">
@@ -694,7 +694,7 @@
       <type>
         <code value="string" />
       </type>
-      <fixedString value="Birth: Birth Details" />
+      <fixedString value="Birth: Discharge" />
       <condition value="ele-1" />
       <constraint>
         <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-expression">
@@ -3598,7 +3598,7 @@
       </base>
       <type>
         <code value="Reference" />
-        <profile value="https://fhir.hl7.org.uk/StructureDefinition/CareConnect-DCH-Encounter-BirthEventDischarge-1" />
+        <profile value="https://fhir.hl7.org.uk/StructureDefinition/CareConnect-DCH-Encounter-BirthOccurrence-1" />
       </type>
       <condition value="ele-1" />
       <constraint>
@@ -3803,12 +3803,12 @@
     <element>
       <path value="MessageHeader.event.code" />
       <min value="1" />
-      <fixedCode value="E1" />
+      <fixedCode value="E7" />
     </element>
     <element>
       <path value="MessageHeader.event.display" />
       <min value="1" />
-      <fixedString value="Birth: Birth Details" />
+      <fixedString value="Birth: Discharge" />
     </element>
     <element>
       <path value="MessageHeader.event.userSelected" />
@@ -3859,7 +3859,7 @@
       <max value="1" />
       <type>
         <code value="Reference" />
-        <profile value="https://fhir.hl7.org.uk/StructureDefinition/CareConnect-DCH-Encounter-BirthEventDischarge-1" />
+        <profile value="https://fhir.hl7.org.uk/StructureDefinition/CareConnect-DCH-Encounter-BirthOccurrence-1" />
       </type>
     </element>
   </differential>

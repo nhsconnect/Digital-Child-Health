@@ -1,7 +1,7 @@
 This 'DCH-Bundle-AssessmentAPGAREvent-1' Bundle resource profile is used as a container to collect a combination of the following resources, as ordered below, to fulfill the information requirements of an Assessment APGAR Event:
 
 - [DCH-MessageHeader-AssessmentAPGAREvent-1]
-- [DCH-Encounter-BirthEvent-1]
+- [CareConnect-DCH-Encounter-BirthOccurrence-1]
 - [CareConnect-Organization-1]
 - [CareConnect-DCH-Patient-Baby-1]
 - [CareConnect-DCH-Observation-APGARScore1Minute-1]
@@ -24,7 +24,7 @@ The Child Health Event data items are fulfilled by elements within the FHIR reso
                                                                                                    
 
 [DCH-MessageHeader-AssessmentAPGAREvent-1]:dch-messageheader-assessmentapgarevent-1.html
-[DCH-Encounter-BirthEvent-1]:careconnect-dch-encounter-birthevent-1.html
+[CareConnect-DCH-Encounter-BirthOccurrence-1]:careconnect-dch-encounter-birthoccurence-1.html
 [CareConnect-Organization-1]:careconnect-organization-1.html
 [CareConnect-DCH-Patient-Baby-1]:careconnect-dch-patient-baby-1.html
 [CareConnect-DCH-Observation-APGARScore1Minute-1]:careconnect-dch-observation-apgarscore1minute-1.html

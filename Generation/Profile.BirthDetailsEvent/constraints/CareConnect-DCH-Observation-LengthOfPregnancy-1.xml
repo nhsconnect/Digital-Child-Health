@@ -3495,7 +3495,7 @@
       </base>
       <type>
         <code value="Reference" />
-        <profile value="https://fhir.hl7.org.uk/StructureDefinition/CareConnect-DCH-Encounter-DeliveryEvent-1" />
+        <profile value="https://fhir.hl7.org.uk/StructureDefinition/CareConnect-DCH-Encounter-Delivery-1" />
       </type>
       <condition value="ele-1" />
       <constraint>
@@ -12445,7 +12445,7 @@
       <path value="Observation.encounter" />
       <type>
         <code value="Reference" />
-        <profile value="https://fhir.hl7.org.uk/StructureDefinition/CareConnect-DCH-Encounter-DeliveryEvent-1" />
+        <profile value="https://fhir.hl7.org.uk/StructureDefinition/CareConnect-DCH-Encounter-Delivery-1" />
       </type>
     </element>
     <element>
