@@ -1,1 +1,1 @@
-This MessageHeader resource is constrained to represent a message header for an Breastfeeding Status Event.
+This MessageHeader resource is constrained to represent a message header for a Breastfeeding Status Event.
