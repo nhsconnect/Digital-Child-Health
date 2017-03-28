@@ -16,6 +16,10 @@ This initial draft version adda the FHIR profiles to support the following Digit
 - Indicators Event
 - Referral Event
 - Follow Up Event
+- Newborn Bloodspot Event
+- Newborn Hearing Event
+- Newborn Physical Exam Event
+- 6-8 Week Health Review Event
 
 
 

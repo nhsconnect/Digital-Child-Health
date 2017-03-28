@@ -1,0 +1,1 @@
+The Organization resource represents the organisation that employs the healthcare professional, with further constraints applied to represent a unit where the Newborn Hearing Event takes place.
