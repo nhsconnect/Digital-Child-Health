@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <meta>
-    <lastUpdated value="2017-03-28T14:30:11.446+01:00" />
+    <lastUpdated value="2017-03-31T12:27:18.972+01:00" />
     <tag>
       <system value="urn:hscic:publishOrder" />
       <code value="6" />
@@ -1081,8 +1081,8 @@
       <definition value="Establishes the namespace in which set of possible id values is unique." />
       <comments value="see http://en.wikipedia.org/wiki/Uniform_resource_identifier" />
       <requirements value="There are many sequences of identifiers.  To perform matching, we need to know what sequence we're dealing with. The system identifies a particular sequence or set of unique identifiers." />
-      <min value="0" />
-      <max value="0" />
+      <min value="1" />
+      <max value="1" />
       <base>
         <path value="Identifier.system" />
         <min value="0" />
@@ -3616,12 +3616,6 @@
       <path value="ProcedureRequest" />
     </element>
     <element>
-      <path value="ProcedureRequest.contained" />
-      <type>
-        <code value="Resource" />
-      </type>
-    </element>
-    <element>
       <path value="ProcedureRequest.extension" />
       <slicing>
         <discriminator value="url" />
@@ -3655,7 +3649,7 @@
     </element>
     <element>
       <path value="ProcedureRequest.identifier.system" />
-      <max value="0" />
+      <min value="1" />
     </element>
     <element>
       <path value="ProcedureRequest.identifier.value" />
@@ -3717,6 +3711,22 @@
     <element>
       <path value="ProcedureRequest.performer" />
       <max value="0" />
+      <type>
+        <code value="Reference" />
+        <profile value="http://hl7.org/fhir/StructureDefinition/Practitioner" />
+      </type>
+      <type>
+        <code value="Reference" />
+        <profile value="http://hl7.org/fhir/StructureDefinition/Organization" />
+      </type>
+      <type>
+        <code value="Reference" />
+        <profile value="http://hl7.org/fhir/StructureDefinition/Patient" />
+      </type>
+      <type>
+        <code value="Reference" />
+        <profile value="http://hl7.org/fhir/StructureDefinition/RelatedPerson" />
+      </type>
     </element>
     <element>
       <path value="ProcedureRequest.status" />
@@ -3737,6 +3747,22 @@
     <element>
       <path value="ProcedureRequest.orderer" />
       <max value="0" />
+      <type>
+        <code value="Reference" />
+        <profile value="http://hl7.org/fhir/StructureDefinition/Practitioner" />
+      </type>
+      <type>
+        <code value="Reference" />
+        <profile value="http://hl7.org/fhir/StructureDefinition/Patient" />
+      </type>
+      <type>
+        <code value="Reference" />
+        <profile value="http://hl7.org/fhir/StructureDefinition/RelatedPerson" />
+      </type>
+      <type>
+        <code value="Reference" />
+        <profile value="http://hl7.org/fhir/StructureDefinition/Device" />
+      </type>
     </element>
     <element>
       <path value="ProcedureRequest.priority" />

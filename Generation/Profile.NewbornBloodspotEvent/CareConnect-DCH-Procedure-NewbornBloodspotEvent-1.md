@@ -1,1 +1,1 @@
-This Procedure resource records an action that is or was performed on a patient, with further constraints applied for a Newborn Bloodspot Event.
+This Procedure resource records an action that is or was performed on a patient, with further constraints applied for a Newborn Blood Spot Event.

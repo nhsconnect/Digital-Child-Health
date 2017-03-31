@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <meta>
-    <lastUpdated value="2017-03-28T13:58:19.949+01:00" />
+    <lastUpdated value="2017-03-31T12:31:45.368+01:00" />
     <tag>
       <system value="urn:hscic:publishOrder" />
       <code value="3" />
@@ -3981,7 +3981,7 @@
       <short value="List of participants involved in the encounter" />
       <definition value="The list of responsible for providing the service." />
       <min value="1" />
-      <max value="1" />
+      <max value="*" />
       <base>
         <path value="Encounter.participant" />
         <min value="0" />
@@ -4839,7 +4839,7 @@
       </base>
       <type>
         <code value="Reference" />
-        <profile value="https://fhir.hl7.org.uk/StructureDefinition/CareConnect-DCH-Practitioner-NewbornPhysicalExamEvent-1" />
+        <profile value="https://fhir.hl7.org.uk/StructureDefinition/CareConnect-DCH-Practitioner-ChildHealthEvent-1" />
       </type>
       <condition value="ele-1" />
       <constraint>
@@ -5032,7 +5032,7 @@
       </base>
       <type>
         <code value="Reference" />
-        <profile value="http://hl7.org/fhir/StructureDefinition/Appointment" />
+        <profile value="https://fhir.nhs.uk/StructureDefinition/dch-appointment-newbornphysicalexamevent-1" />
       </type>
       <condition value="ele-1" />
       <constraint>
@@ -12359,7 +12359,7 @@
       </base>
       <type>
         <code value="Reference" />
-        <profile value="https://fhir.hl7.org.uk/StructureDefinition/CareConnect-DCH-Organization-NewbornPhysicalExamEvent-1" />
+        <profile value="https://fhir.hl7.org.uk/StructureDefinition/CareConnect-DCH-Organization-ChildHealthEvent-1" />
       </type>
       <condition value="ele-1" />
       <constraint>
@@ -12792,7 +12792,7 @@
       </type>
       <type>
         <code value="Reference" />
-        <profile value="https://fhir.hl7.org.uk/StructureDefinition/CareConnect-DCH-Organization-NewbornPhysicalExamEvent-1" />
+        <profile value="https://fhir.hl7.org.uk/StructureDefinition/CareConnect-DCH-Organization-ChildHealthEvent-1" />
       </type>
       <condition value="ele-1" />
       <constraint>
@@ -13287,7 +13287,6 @@
       <path value="Encounter.participant" />
       <definition value="The list of responsible for providing the service." />
       <min value="1" />
-      <max value="1" />
     </element>
     <element>
       <path value="Encounter.participant.type" />
@@ -13302,7 +13301,7 @@
       <min value="1" />
       <type>
         <code value="Reference" />
-        <profile value="https://fhir.hl7.org.uk/StructureDefinition/CareConnect-DCH-Practitioner-NewbornPhysicalExamEvent-1" />
+        <profile value="https://fhir.hl7.org.uk/StructureDefinition/CareConnect-DCH-Practitioner-ChildHealthEvent-1" />
       </type>
     </element>
     <element>
@@ -13312,6 +13311,10 @@
     <element>
       <path value="Encounter.appointment" />
       <min value="1" />
+      <type>
+        <code value="Reference" />
+        <profile value="https://fhir.nhs.uk/StructureDefinition/dch-appointment-newbornphysicalexamevent-1" />
+      </type>
     </element>
     <element>
       <path value="Encounter.appointment.reference" />
@@ -13507,7 +13510,7 @@
       <path value="Encounter.location.location" />
       <type>
         <code value="Reference" />
-        <profile value="https://fhir.hl7.org.uk/StructureDefinition/CareConnect-DCH-Organization-NewbornPhysicalExamEvent-1" />
+        <profile value="https://fhir.hl7.org.uk/StructureDefinition/CareConnect-DCH-Organization-ChildHealthEvent-1" />
       </type>
     </element>
     <element>
@@ -13531,7 +13534,7 @@
       </type>
       <type>
         <code value="Reference" />
-        <profile value="https://fhir.hl7.org.uk/StructureDefinition/CareConnect-DCH-Organization-NewbornPhysicalExamEvent-1" />
+        <profile value="https://fhir.hl7.org.uk/StructureDefinition/CareConnect-DCH-Organization-ChildHealthEvent-1" />
       </type>
     </element>
     <element>

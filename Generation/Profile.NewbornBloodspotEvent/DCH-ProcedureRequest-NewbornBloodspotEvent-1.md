@@ -1,1 +1,1 @@
-This ProcedureRequest resource is constrained to represent a request for a procedure for the Event.
+This ProcedureRequest resource is constrained to represent a request for a procedure for the Newborn Blood Spot Event.

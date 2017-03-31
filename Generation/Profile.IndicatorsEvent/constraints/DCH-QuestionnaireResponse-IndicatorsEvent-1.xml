@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <meta>
     <lastUpdated value="2017-03-31T11:32:09.918+01:00" />
@@ -3324,10 +3324,6 @@
         <human value="All FHIR elements must have a @value or children" />
         <xpath value="@value|f:*|h:div" />
       </constraint>
-      <binding>
-        <strength value="example" />
-        <description value="Code indicating the response provided for a question." />
-      </binding>
       <mapping>
         <identity value="rim" />
         <map value="n/a" />

@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <meta>
-    <lastUpdated value="2017-03-28T13:32:38.995+01:00" />
+    <lastUpdated value="2017-03-31T12:51:07.637+01:00" />
     <tag>
       <system value="urn:hscic:publishOrder" />
       <code value="7" />
@@ -1072,8 +1072,8 @@
       <definition value="Establishes the namespace in which set of possible id values is unique." />
       <comments value="see http://en.wikipedia.org/wiki/Uniform_resource_identifier" />
       <requirements value="There are many sequences of identifiers.  To perform matching, we need to know what sequence we're dealing with. The system identifies a particular sequence or set of unique identifiers." />
-      <min value="0" />
-      <max value="0" />
+      <min value="1" />
+      <max value="1" />
       <base>
         <path value="Identifier.system" />
         <min value="0" />
@@ -3715,7 +3715,7 @@
       <path value="Appointment.participant.actor" />
       <short value="Person, Location/HealthcareService or Device" />
       <definition value="A Person, Location/HealthcareService or Device that is participating in the appointment." />
-      <min value="0" />
+      <min value="1" />
       <max value="1" />
       <base>
         <path value="Appointment.participant.actor" />
@@ -3728,7 +3728,7 @@
       </type>
       <type>
         <code value="Reference" />
-        <profile value="https://fhir.hl7.org.uk/StructureDefinition/CareConnect-DCH-Practitioner-NewbornHearingEvent-1" />
+        <profile value="https://fhir.hl7.org.uk/StructureDefinition/CareConnect-DCH-Practitioner-ChildHealthEvent-1" />
       </type>
       <condition value="ele-1" />
       <constraint>
@@ -4023,7 +4023,7 @@
     </element>
     <element>
       <path value="Appointment.identifier.system" />
-      <max value="0" />
+      <min value="1" />
     </element>
     <element>
       <path value="Appointment.identifier.value" />
@@ -4080,13 +4080,14 @@
     </element>
     <element>
       <path value="Appointment.participant.actor" />
+      <min value="1" />
       <type>
         <code value="Reference" />
         <profile value="https://fhir.hl7.org.uk/StructureDefinition/CareConnect-DCH-Patient-1" />
       </type>
       <type>
         <code value="Reference" />
-        <profile value="https://fhir.hl7.org.uk/StructureDefinition/CareConnect-DCH-Practitioner-NewbornHearingEvent-1" />
+        <profile value="https://fhir.hl7.org.uk/StructureDefinition/CareConnect-DCH-Practitioner-ChildHealthEvent-1" />
       </type>
     </element>
     <element>
