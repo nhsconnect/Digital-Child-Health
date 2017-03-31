@@ -2,8 +2,8 @@ select constraints\*.xml >> IGPackage Profile.BirthDetailsEvent
 select valuesets\*.xml >> IGPackage Profile.BirthDetailsEvent
 select constraints\*.xml >> IGPackage Profile.6-8WeekHealthReviewEvent
 select valuesets\*.xml >> IGPackage Profile.6-8WeekHealthReviewEvent
-select constraints\*.xml >> IGPackage Profile.NewbornBloodspotEvent
-select valuesets\*.xml >> IGPackage Profile.NewbornBloodspotEvent
+select constraints\*.xml >> IGPackage Profile.NewbornBloodSpotEvent
+select valuesets\*.xml >> IGPackage Profile.NewbornBloodSpotEvent
 select constraints\*.xml >> IGPackage Profile.NewbornHearingEvent
 select valuesets\*.xml >> IGPackage Profile.NewbornHearingEvent
 select constraints\*.xml >> IGPackage Profile.NewbornPhysicalExamEvent

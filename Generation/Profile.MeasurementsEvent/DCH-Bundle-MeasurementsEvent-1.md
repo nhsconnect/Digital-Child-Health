@@ -11,7 +11,7 @@ This 'DCH-Bundle-MeasurementsEvent-1' Bundle resource profile is used as a conta
 - [CareConnect-DCH-Observation-Height-1]
 - [CareConnect-DCH-Organization-MeasurementsEvent-1]
 - [CareConnect-DCH-Practitioner-MeasurementsEvent-1]
-
+- [CareConnect-Location-1]
 
 ###  Measurements Event data item mapping to FHIR profiles ###
 ----------
@@ -45,3 +45,4 @@ The Child Health Event data items are fulfilled by elements within the FHIR reso
 [CareConnect-DCH-Observation-Height-1]:careconnect-dch-observation-height-1.html
 [CareConnect-DCH-Organization-MeasurementsEvent-1]:careconnect-dch-organization-measurementsevent-1.html
 [CareConnect-DCH-Practitioner-MeasurementsEvent-1]:careconnect-dch-practitioner-measurementsevent-1.html 
+[CareConnect-Location-1]:careconnect-location-1.html

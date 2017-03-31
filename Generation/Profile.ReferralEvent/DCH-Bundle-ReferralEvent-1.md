@@ -4,9 +4,10 @@ This 'DCH-Bundle-ReferralEvent-1' Bundle resource profile is used as a container
 - [CareConnect-DCH-Encounter-ReferralEvent-1]
 - [CareConnect-Organization-1]
 - [CareConnect-DCH-Patient-1]
-- [CareConnect-DCH-Organization-ReferralEvent-1]
-- [CareConnect-DCH-Practitioner-ReferralEvent-1]
+- [CareConnect-DCH-Organization-ChildHealthEvent-1]
+- [CareConnect-DCH-Practitioner-ChildHealthEvent-1]
 - [DCH-ReferralRequest-1]    
+- [CareConnect-Location-1]
 
 ###  Referral Event data item mapping to FHIR profiles ###
 ----------
@@ -27,6 +28,7 @@ The Child Health Event data items are fulfilled by elements within the FHIR reso
 [CareConnect-DCH-Encounter-ReferralEvent-1]:careconnect-dch-encounter-referralevent-1.html
 [CareConnect-DCH-Patient-1]:careconnect-dch-patient-1.html
 [CareConnect-Organization-1]:careconnect-organization-1.html 
-[CareConnect-DCH-Organization-ReferralEvent-1]:careconnect-dch-organization-referralevent-1.html
-[CareConnect-DCH-Practitioner-ReferralEvent-1]:careconnect-dch-practitioner-referralevent-1.html
+[CareConnect-DCH-Organization-ChildHealthEvent-1]:careconnect-dch-organization-childhealthevent-1.html
+[CareConnect-DCH-Practitioner-ChildHealthEvent-1]:careconnect-dch-practitioner-childhealthevent-1.html
 [DCH-ReferralRequest-1]:dch-referralrequest-1.html    
+[CareConnect-Location-1]:careconnect-location-1.html

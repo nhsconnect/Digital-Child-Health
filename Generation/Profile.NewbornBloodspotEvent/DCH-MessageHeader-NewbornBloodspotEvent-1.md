@@ -1,1 +1,1 @@
-This MessageHeader resource is constrained to represent a message header for a Event.
+This MessageHeader resource is constrained to represent a message header for a Newborn Blood Spot Event.

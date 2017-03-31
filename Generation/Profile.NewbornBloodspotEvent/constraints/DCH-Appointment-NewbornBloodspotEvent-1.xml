@@ -1,14 +1,14 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <meta>
-    <lastUpdated value="2017-03-28T12:52:50.513+01:00" />
+    <lastUpdated value="2017-03-31T12:28:21.892+01:00" />
     <tag>
       <system value="urn:hscic:publishOrder" />
       <code value="7" />
     </tag>
   </meta>
   <url value="https://fhir.nhs.uk/StructureDefinition/dch-appointment-newbornbloodspotevent-1" />
-  <name value="DCH-Appointment-NewbornBloodspotEvent-1" />
+  <name value="DCH-Appointment-NewbornBloodSpotEvent-1" />
   <status value="draft" />
   <publisher value="NHS Digital" />
   <contact>
@@ -20,7 +20,7 @@
     </telecom>
   </contact>
   <date value="2017-03-27T13:27:52.3714022+01:00" />
-  <description value="This Appointment resource is constrained to represent the appointment made to fulfill a ProcedureRequest for the Newborn Bloodspot Event." />
+  <description value="This Appointment resource is constrained to represent the appointment made to fulfill a ProcedureRequest for the Newborn Blood Spot Event." />
   <copyright value="Copyright © 2016 Health and Social Care Information Centre. NHS Digital is the trading name of the Health and Social Care Information Centre." />
   <fhirVersion value="1.0.2" />
   <kind value="resource" />
@@ -2718,7 +2718,7 @@
       <short value="When appointment is to take place" />
       <definition value="Date/Time that the appointment is to take place." />
       <comments value="Note: This is intended for precisely observed times, typically system logs etc., and not human-reported times - for them, see date and dateTime below. Time zone is always required" />
-      <min value="0" />
+      <min value="1" />
       <max value="1" />
       <base>
         <path value="Appointment.start" />
@@ -3715,7 +3715,7 @@
       <path value="Appointment.participant.actor" />
       <short value="Person, Location/HealthcareService or Device" />
       <definition value="A Person, Location/HealthcareService or Device that is participating in the appointment." />
-      <min value="0" />
+      <min value="1" />
       <max value="1" />
       <base>
         <path value="Appointment.participant.actor" />
@@ -3728,7 +3728,7 @@
       </type>
       <type>
         <code value="Reference" />
-        <profile value="https://fhir.hl7.org.uk/StructureDefinition/CareConnect-DCH-Practitioner-NewbornBloodspotEvent-1" />
+        <profile value="https://fhir.hl7.org.uk/StructureDefinition/CareConnect-DCH-Practitioner-ChildHealthEvent-1" />
       </type>
       <condition value="ele-1" />
       <constraint>
@@ -4063,6 +4063,10 @@
       <max value="0" />
     </element>
     <element>
+      <path value="Appointment.start" />
+      <min value="1" />
+    </element>
+    <element>
       <path value="Appointment.minutesDuration" />
       <max value="0" />
     </element>
@@ -4080,13 +4084,14 @@
     </element>
     <element>
       <path value="Appointment.participant.actor" />
+      <min value="1" />
       <type>
         <code value="Reference" />
         <profile value="https://fhir.hl7.org.uk/StructureDefinition/CareConnect-DCH-Patient-1" />
       </type>
       <type>
         <code value="Reference" />
-        <profile value="https://fhir.hl7.org.uk/StructureDefinition/CareConnect-DCH-Practitioner-NewbornBloodspotEvent-1" />
+        <profile value="https://fhir.hl7.org.uk/StructureDefinition/CareConnect-DCH-Practitioner-ChildHealthEvent-1" />
       </type>
     </element>
     <element>

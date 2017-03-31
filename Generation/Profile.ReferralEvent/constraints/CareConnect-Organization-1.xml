@@ -1,7 +1,7 @@
-<?xml version="1.0" encoding="utf-8"?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <meta>
-    <lastUpdated value="2017-03-22T10:34:29.285+00:00" />
+    <lastUpdated value="2017-03-31T11:54:35.924+01:00" />
     <tag>
       <system value="urn:hscic:publishOrder" />
       <code value="4" />
@@ -9809,6 +9809,12 @@
         <human value="The organization SHALL at least have a name or an id, and possibly more than one" />
         <xpath value="count(f:identifier | f:name) &gt; 0" />
       </constraint>
+    </element>
+    <element>
+      <path value="Organization.contained" />
+      <type>
+        <code value="Resource" />
+      </type>
     </element>
     <element>
       <path value="Organization.extension" />

@@ -11,7 +11,7 @@ The FHIR resource profiles within this DMS have been created to support the Chil
 - **[Profile.IndicatorsEvent]** - FHIR resource profiles combined to support an Indicators Event message.
 - **[Profile.ReferralEvent]** - FHIR resource profiles combined to support a Referral Event message.
 - **[Profile.FollowUpEvent]** - FHIR resource profiles combined to support a Follow Up Event message.
-- **[Profile.NewbornBloodspotEvent]** - FHIR resource profiles combined to support a Newborn Bloodspot Event message.
+- **[Profile.NewbornBloodSpotEvent]** - FHIR resource profiles combined to support a Newborn Blood Spot Event message.
 - **[Profile.6-8WeekHealthReviewEvent]** - FHIR resource profiles combined to support a 6-8 Week Health Review Event message.
 - **[Profile.NewbornHearingEvent]** - FHIR resource profiles combined to support a Newborn Hearing Event message.
 - **[Profile.NewbornPhysicalExamEvent]** - FHIR resource profiles combined to support a Newborn Physical Exam Event message.
@@ -32,7 +32,7 @@ The various downloads (including Schema files) and reference implementations are
 [Profile.FollowUpEvent]: ../Profile.FollowUpEvent/Profile.FollowUpEvent.html
 [Profile.MeasurementsEvent]: ../Profile.MeasurementsEvent/Profile.MeasurementsEvent.html
 [Profile.IndicatorsEvent]: ../Profile.IndicatorsEvent/Profile.IndicatorsEvent.html
-[Profile.NewbornBloodspotEvent]: ../Profile.NewbornBloodspotEvent/Profile.NewbornBloodspotEvent.html
+[Profile.NewbornBloodSpotEvent]: ../Profile.NewbornBloodSpotEvent/Profile.NewbornBloodspotEvent.html
 [Profile.NewbornHearingEvent]: ../Profile.NewbornHearingEvent/Profile.NewbornHearingEvent.html
 [Profile.NewbornPhysicalExamEvent]: ../Profile.NewbornPhysicalExamEvent/Profile.NewbornPhysicalExamEvent.html
 [Profile.6-8WeekHealthReviewEvent]: ../Profile.6-8WeekHealthReviewEvent/Profile.6-8WeekHealthReviewEvent.html

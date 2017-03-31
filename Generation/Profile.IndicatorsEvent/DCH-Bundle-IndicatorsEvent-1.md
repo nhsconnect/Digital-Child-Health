@@ -5,8 +5,8 @@ This 'DCH-Bundle-IndicatorsEvent-1' Bundle resource profile is used as a contain
 - [CareConnect-Organization-1]
 - [CareConnect-DCH-Patient-1]
 - [DCH-QuestionnaireResponse-IndicatorsEvent-1]
-
-
+- [CareConnect-DCH-Organization-ChildHealthEvent-1]
+- [CareConnect-Location-1]
 
 ###  Indicators Event data item mapping to FHIR profiles ###
 ----------
@@ -23,3 +23,5 @@ The Child Health Event data items are fulfilled by elements within the FHIR reso
 [CareConnect-Organization-1]:careconnect-organization-1.html
 [CareConnect-DCH-Patient-1]:careconnect-dch-patient-1.html
 [DCH-QuestionnaireResponse-IndicatorsEvent-1]:dch-questionnaireresponse-indicatorsevent-1.html
+[CareConnect-Location-1]:careconnect-location-1.html
+[CareConnect-DCH-Organization-ChildHealthEvent-1]:careconnect-dch-organization-childhealthevent-1.html
