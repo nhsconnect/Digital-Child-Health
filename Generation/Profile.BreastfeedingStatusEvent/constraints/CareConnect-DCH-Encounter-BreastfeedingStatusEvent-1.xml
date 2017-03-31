@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <meta>
-    <lastUpdated value="2017-03-27T10:37:44.152+01:00" />
+    <lastUpdated value="2017-03-30T13:53:33.449+01:00" />
     <tag>
       <system value="urn:hscic:publishOrder" />
       <code value="3" />
@@ -5242,7 +5242,7 @@
       <short value="End time with inclusive boundary, if not ongoing" />
       <definition value="The end of the period. If the end of the period is missing, it means that the period is ongoing. The start may be in the past, and the end date in the future, which means that period is expected/planned to end at that time." />
       <comments value="The high value includes any matching date/time. i.e. 2012-02-03T10:00:00 is in a period that has a end value of 2012-02-03." />
-      <min value="1" />
+      <min value="0" />
       <max value="1" />
       <base>
         <path value="Period.end" />
@@ -13177,10 +13177,6 @@
     </element>
     <element>
       <path value="Encounter.period.start" />
-      <min value="1" />
-    </element>
-    <element>
-      <path value="Encounter.period.end" />
       <min value="1" />
     </element>
     <element>

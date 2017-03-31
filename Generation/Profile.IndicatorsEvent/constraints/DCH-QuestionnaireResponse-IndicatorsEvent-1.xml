@@ -4,7 +4,7 @@
     <lastUpdated value="2017-03-27T11:15:21.379+01:00" />
     <tag>
       <system value="urn:hscic:publishOrder" />
-      <code value="4" />
+      <code value="6" />
     </tag>
   </meta>
   <url value="https://fhir.nhs.uk/StructureDefinition/DCH-QuestionnaireResponse-IndicatorsEvent-1" />

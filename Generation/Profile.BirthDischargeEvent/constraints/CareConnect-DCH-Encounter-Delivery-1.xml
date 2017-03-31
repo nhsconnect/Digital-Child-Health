@@ -4,7 +4,7 @@
     <lastUpdated value="2017-03-24T11:51:23.142+00:00" />
     <tag>
       <system value="urn:hscic:publishOrder" />
-      <code value="12" />
+      <code value="9" />
     </tag>
   </meta>
   <url value="https://fhir.hl7.org.uk/StructureDefinition/CareConnect-DCH-Encounter-Delivery-1" />
