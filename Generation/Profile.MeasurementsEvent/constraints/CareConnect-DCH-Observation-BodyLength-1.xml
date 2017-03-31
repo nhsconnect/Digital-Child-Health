@@ -1,10 +1,10 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <meta>
-    <lastUpdated value="2017-03-27T11:35:39.5+01:00" />
+    <lastUpdated value="2017-03-30T13:45:42.716+01:00" />
     <tag>
       <system value="urn:hscic:publishOrder" />
-      <code value="5" />
+      <code value="7" />
     </tag>
   </meta>
   <url value="https://fhir.hl7.org.uk/StructureDefinition/CareConnect-DCH-Observation-BodyLength-1" />
@@ -4438,7 +4438,7 @@
       <comments value="Null or exceptional values can be represented two ways in FHIR Observations.  One way is to simply include them in the value set and represent the exceptions in the value.  For example, measurement values for a serology test could be  &quot;detected&quot;, &quot;not detected&quot;, &quot;inconclusive&quot;, or  &quot;specimen unsatisfactory&quot;.   The alternate way is to use the value element for actual observations and use the explicit dataAbsentReason element to record exceptional values.  For example, the dataAbsentReason code &quot;error&quot; could be used when the measurement was not completed.  Because of these options, use-case agreements are required to interpret general observations for exceptional values." />
       <requirements value="For many results it is necessary to handle exceptional values in measurements." />
       <min value="0" />
-      <max value="0" />
+      <max value="1" />
       <base>
         <path value="Observation.dataAbsentReason" />
         <min value="0" />
@@ -13043,10 +13043,6 @@
       <path value="Observation.valueQuantity.system" />
       <min value="1" />
       <fixedUri value="http://unitsofmeasure.org" />
-    </element>
-    <element>
-      <path value="Observation.dataAbsentReason" />
-      <max value="0" />
     </element>
     <element>
       <path value="Observation.dataAbsentReason.coding" />

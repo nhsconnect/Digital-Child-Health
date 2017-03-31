@@ -1,7 +1,7 @@
-<?xml version="1.0" encoding="utf-8"?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <meta>
-    <lastUpdated value="2017-03-26T22:32:21.736+01:00" />
+    <lastUpdated value="2017-03-30T13:45:36.907+01:00" />
     <tag>
       <system value="urn:hscic:publishOrder" />
       <code value="8" />
@@ -5179,10 +5179,10 @@
       </constraint>
       <isSummary value="true" />
       <binding>
-        <strength value="required" />
+        <strength value="extensible" />
         <description value="A code to represent that the APGAR Score of the neonate at the specified time after delivery is unknown" />
         <valueSetReference>
-          <reference value="https://fhir.nhs.uk/ValueSet/dch-apgarscoreunknown-1" />
+          <reference value="http://hl7.org/fhir/ValueSet/observation-valueabsentreason" />
         </valueSetReference>
       </binding>
       <mapping>
@@ -5296,7 +5296,7 @@
       <type>
         <code value="uri" />
       </type>
-      <fixedUri value="https://fhir.nhs.uk/dch-apgarscoreunknown-1" />
+      <fixedUri value="http://hl7.org/fhir/data-absent-reason" />
       <condition value="ele-1" />
       <constraint>
         <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-expression">
@@ -5384,7 +5384,7 @@
       <type>
         <code value="code" />
       </type>
-      <fixedCode value="99" />
+      <fixedCode value="unknown" />
       <condition value="ele-1" />
       <constraint>
         <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-expression">
@@ -5419,7 +5419,7 @@
       <definition value="A representation of the meaning of the code in the system, following the rules of the system." />
       <comments value="Note that FHIR strings may not exceed 1MB in size" />
       <requirements value="Need to be able to carry a human-readable meaning of the code for readers that do not know  the system." />
-      <min value="1" />
+      <min value="0" />
       <max value="1" />
       <base>
         <path value="Coding.display" />
@@ -5429,7 +5429,7 @@
       <type>
         <code value="string" />
       </type>
-      <fixedString value="APGAR Score Unknown" />
+      <fixedString value="Unknown" />
       <condition value="ele-1" />
       <constraint>
         <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-expression">
@@ -13050,12 +13050,6 @@
       </constraint>
     </element>
     <element>
-      <path value="Observation.contained" />
-      <type>
-        <code value="Resource" />
-      </type>
-    </element>
-    <element>
       <path value="Observation.identifier" />
       <min value="1" />
       <max value="1" />
@@ -13308,27 +13302,26 @@
       <min value="1" />
       <max value="1" />
       <binding>
-        <strength value="required" />
+        <strength value="extensible" />
         <description value="A code to represent that the APGAR Score of the neonate at the specified time after delivery is unknown" />
         <valueSetReference>
-          <reference value="https://fhir.nhs.uk/ValueSet/dch-apgarscoreunknown-1" />
+          <reference value="http://hl7.org/fhir/ValueSet/observation-valueabsentreason" />
         </valueSetReference>
       </binding>
     </element>
     <element>
       <path value="Observation.dataAbsentReason.coding.system" />
       <min value="1" />
-      <fixedUri value="https://fhir.nhs.uk/dch-apgarscoreunknown-1" />
+      <fixedUri value="http://hl7.org/fhir/data-absent-reason" />
     </element>
     <element>
       <path value="Observation.dataAbsentReason.coding.code" />
       <min value="1" />
-      <fixedCode value="99" />
+      <fixedCode value="unknown" />
     </element>
     <element>
       <path value="Observation.dataAbsentReason.coding.display" />
-      <min value="1" />
-      <fixedString value="APGAR Score Unknown" />
+      <fixedString value="Unknown" />
     </element>
     <element>
       <path value="Observation.interpretation" />
@@ -13503,17 +13496,6 @@
     <element>
       <path value="Observation.related" />
       <max value="0" />
-    </element>
-    <element>
-      <path value="Observation.related.target" />
-      <type>
-        <code value="Reference" />
-        <profile value="http://hl7.org/fhir/StructureDefinition/Observation" />
-      </type>
-      <type>
-        <code value="Reference" />
-        <profile value="http://hl7.org/fhir/StructureDefinition/QuestionnaireResponse" />
-      </type>
     </element>
     <element>
       <path value="Observation.component" />
