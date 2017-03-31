@@ -103,7 +103,7 @@
 												<a href='../Chapter.6.Glossary/index.html'>Glossary</a>
 											</li>
 											<li>
-												<a href='../Chapter.7.Valuesets/valuesets.html'>Valuesets</a>
+												<a href='../Chapter.7.ValueSets/index.html'>ValueSets</a>
 											</li>
 
                             </ul>
@@ -506,29 +506,17 @@
         </tr>
         <tr>
           <td width="150px">Definition</td>
-          <td>
-            <p>The Absolute URL for the resource. This must be provided for all resources. The fullUrl SHALL not disagree with the id in the resource. The fullUrl is a version independent reference to the resource.</p>
-          </td>
+          <td></td>
         </tr>
         <tr>
           <td>
             <a href="http://www.hl7.org/fhir/DSTU2/conformance-rules.html#conformance">Control</a>
           </td>
-          <td>0..1 ?</td>
-        </tr>
-        <tr>
-          <td>
-            <a href="http://www.hl7.org/fhir/DSTU2/datatypes.html">Type</a>
-          </td>
-          <td>
-            <a href="http://www.hl7.org/fhir/DSTU2/datatypes.html#uri" xmlns="http://www.w3.org/1999/xhtml">Uri</a>
-          </td>
+          <td>1..*</td>
         </tr>
         <tr>
           <td width="150px">Comments</td>
-          <td>
-            <p>fullUrl may not be <a href="bundle.html#bundle-unique">unique in the context of a resource</a>. Note that since <a href="references.html">FHIR resources do not need to be served through the FHIR API</a>, the absolute URL may not end with the logical id of the resource (Resource.id), but if the fullUrl does look like a RESTful server URL (e.g. meets the <a href="references.html#regex">regex</a>, then it SHALL end with the Resource.id.</p>
-          </td>
+          <td></td>
         </tr>
         <tr>
           <td colspan="2" class="structure">

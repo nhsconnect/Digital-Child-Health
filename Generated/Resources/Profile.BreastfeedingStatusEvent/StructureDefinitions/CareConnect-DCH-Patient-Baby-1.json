@@ -1,11 +1,11 @@
 {
   "resourceType": "StructureDefinition",
   "meta": {
-    "lastUpdated": "2017-03-26T22:29:42.743+01:00",
+    "lastUpdated": "2017-03-31T10:17:37.539+01:00",
     "tag": [
       {
         "system": "urn:hscic:publishOrder",
-        "code": "4"
+        "code": "5"
       }
     ]
   },
@@ -17553,13 +17553,13 @@
           {
             "code": "Reference",
             "profile": [
-              "https://fhir.hl7.org.uk/StructureDefinition/CareConnect-Organization-1"
+              "https://fhir.hl7.org.uk/StructureDefinition/CareConnect-DCH-Organization-ChildHealthEvent-1"
             ]
           },
           {
             "code": "Reference",
             "profile": [
-              "https://fhir.hl7.org.uk/StructureDefinition/CareConnect-Practitioner-1"
+              "https://fhir.hl7.org.uk/StructureDefinition/CareConnect-DCH-Practitioner-ChildHealthEvent-1"
             ]
           }
         ],
@@ -18388,14 +18388,6 @@
         ]
       },
       {
-        "path": "Patient.contained",
-        "type": [
-          {
-            "code": "Resource"
-          }
-        ]
-      },
-      {
         "path": "Patient.identifier",
         "slicing": {
           "discriminator": [
@@ -18857,13 +18849,13 @@
           {
             "code": "Reference",
             "profile": [
-              "https://fhir.hl7.org.uk/StructureDefinition/CareConnect-Organization-1"
+              "https://fhir.hl7.org.uk/StructureDefinition/CareConnect-DCH-Organization-ChildHealthEvent-1"
             ]
           },
           {
             "code": "Reference",
             "profile": [
-              "https://fhir.hl7.org.uk/StructureDefinition/CareConnect-Practitioner-1"
+              "https://fhir.hl7.org.uk/StructureDefinition/CareConnect-DCH-Practitioner-ChildHealthEvent-1"
             ]
           }
         ]

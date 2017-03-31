@@ -1,11 +1,11 @@
 {
   "resourceType": "StructureDefinition",
   "meta": {
-    "lastUpdated": "2017-03-27T11:15:21.379+01:00",
+    "lastUpdated": "2017-03-31T11:32:09.918+01:00",
     "tag": [
       {
         "system": "urn:hscic:publishOrder",
-        "code": "4"
+        "code": "6"
       }
     ]
   },
@@ -2538,8 +2538,8 @@
           "Department",
           "Company"
         ],
-        "min": 0,
-        "max": "0",
+        "min": 1,
+        "max": "1",
         "base": {
           "path": "QuestionnaireResponse.author",
           "min": 0,
@@ -2549,7 +2549,7 @@
           {
             "code": "Reference",
             "profile": [
-              "http://hl7.org/fhir/StructureDefinition/Practitioner"
+              "https://fhir.hl7.org.uk/StructureDefinition/CareConnect-DCH-Practitioner-ChildHealthEvent-1"
             ]
           }
         ],
@@ -2599,6 +2599,189 @@
           {
             "identity": "w5",
             "map": "who.author"
+          }
+        ]
+      },
+      {
+        "path": "QuestionnaireResponse.author.id",
+        "short": "xml:id (or equivalent in JSON)",
+        "definition": "unique id for the element within a resource (for internal references).",
+        "comments": "RFC 4122",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Element.id",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "id"
+          }
+        ],
+        "condition": [
+          "ele-1"
+        ],
+        "constraint": [
+          {
+            "extension": [
+              {
+                "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-expression",
+                "valueString": "children()"
+              }
+            ],
+            "key": "ele-1",
+            "severity": "error",
+            "human": "All FHIR elements must have a @value or children",
+            "xpath": "@value|f:*|h:div"
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "rim",
+            "map": "n/a"
+          }
+        ]
+      },
+      {
+        "path": "QuestionnaireResponse.author.extension",
+        "short": "Additional Content defined by implementations",
+        "definition": "May be used to represent additional information that is not part of the basic definition of the element. In order to make the use of extensions safe and manageable, there is a strict set of governance  applied to the definition and use of extensions. Though any implementer is allowed to define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension.",
+        "comments": "There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone.",
+        "alias": [
+          "extensions",
+          "user content"
+        ],
+        "min": 0,
+        "max": "*",
+        "base": {
+          "path": "Element.extension",
+          "min": 0,
+          "max": "*"
+        },
+        "type": [
+          {
+            "code": "Extension"
+          }
+        ],
+        "condition": [
+          "ele-1"
+        ],
+        "constraint": [
+          {
+            "extension": [
+              {
+                "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-expression",
+                "valueString": "children()"
+              }
+            ],
+            "key": "ele-1",
+            "severity": "error",
+            "human": "All FHIR elements must have a @value or children",
+            "xpath": "@value|f:*|h:div"
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "rim",
+            "map": "n/a"
+          },
+          {
+            "identity": "rim",
+            "map": "N/A"
+          }
+        ]
+      },
+      {
+        "path": "QuestionnaireResponse.author.reference",
+        "short": "Relative, internal or absolute URL reference",
+        "definition": "A reference to a location at which the other resource is found. The reference may be a relative reference, in which case it is relative to the service base URL, or an absolute URL that resolves to the location where the resource is found. The reference may be version specific or not. If the reference is not to a FHIR RESTful server, then it should be assumed to be version specific. Internal fragment references (start with '#') refer to contained resources.",
+        "comments": "Using absolute URLs provides a stable scalable approach suitable for a cloud/web context, while using relative/logical references provides a flexible approach suitable for use when trading across closed eco-system boundaries.   Absolute URLs do not need to point to a FHIR RESTful server, though this is the preferred approach. If the URL conforms to the structure \"/[type]/[id]\" then it should be assumed that the reference is to a FHIR RESTful server.",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Reference.reference",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "string"
+          }
+        ],
+        "condition": [
+          "ele-1",
+          "ref-1"
+        ],
+        "constraint": [
+          {
+            "extension": [
+              {
+                "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-expression",
+                "valueString": "children()"
+              }
+            ],
+            "key": "ele-1",
+            "severity": "error",
+            "human": "All FHIR elements must have a @value or children",
+            "xpath": "@value|f:*|h:div"
+          }
+        ],
+        "isSummary": true,
+        "mapping": [
+          {
+            "identity": "rim",
+            "map": "n/a"
+          },
+          {
+            "identity": "rim",
+            "map": "N/A"
+          }
+        ]
+      },
+      {
+        "path": "QuestionnaireResponse.author.display",
+        "short": "Text alternative for the resource",
+        "definition": "Plain text narrative that identifies the resource in addition to the resource reference.",
+        "comments": "This is generally not the same as the Resource.text of the referenced resource.  The purpose is to identify what's being referenced, not to fully describe it.",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Reference.display",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "string"
+          }
+        ],
+        "condition": [
+          "ele-1"
+        ],
+        "constraint": [
+          {
+            "extension": [
+              {
+                "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-expression",
+                "valueString": "children()"
+              }
+            ],
+            "key": "ele-1",
+            "severity": "error",
+            "human": "All FHIR elements must have a @value or children",
+            "xpath": "@value|f:*|h:div"
+          }
+        ],
+        "isSummary": true,
+        "mapping": [
+          {
+            "identity": "rim",
+            "map": "n/a"
+          },
+          {
+            "identity": "rim",
+            "map": "N/A"
           }
         ]
       },
@@ -4675,7 +4858,7 @@
         ]
       },
       {
-        "path": "QuestionnaireResponse.group.question.answer.valueCoding",
+        "path": "QuestionnaireResponse.group.question.answer.valueBoolean",
         "short": "Single-valued answer to the question",
         "definition": "The answer (or one of the answers) provided by the respondent to the question.",
         "comments": "More complex structures (Attachment, Resource and Quantity) will typically be limited to electronic forms that can expose an appropriate user interface to capture the components and enforce the constraints of a complex data type.  Additional complex types can be introduced through extensions.",
@@ -4689,10 +4872,7 @@
         },
         "type": [
           {
-            "code": "Coding",
-            "profile": [
-              "https://fhir.nhs.uk/ValueSet/dch-indicatorresponse-1"
-            ]
+            "code": "boolean"
           }
         ],
         "condition": [
@@ -4713,11 +4893,8 @@
           }
         ],
         "binding": {
-          "strength": "required",
-          "description": "A code to indicate whether a vaccine is required",
-          "valueSetReference": {
-            "reference": "https://fhir.nhs.uk/ValueSet/dch-indicatorresponse-1"
-          }
+          "strength": "example",
+          "description": "Code indicating the response provided for a question."
         },
         "mapping": [
           {
@@ -5228,7 +5405,7 @@
         ]
       },
       {
-        "path": "QuestionnaireResponse.group.question.answer.valueCoding",
+        "path": "QuestionnaireResponse.group.question.answer.valueBoolean",
         "short": "Single-valued answer to the question",
         "definition": "The answer (or one of the answers) provided by the respondent to the question.",
         "comments": "More complex structures (Attachment, Resource and Quantity) will typically be limited to electronic forms that can expose an appropriate user interface to capture the components and enforce the constraints of a complex data type.  Additional complex types can be introduced through extensions.",
@@ -5242,10 +5419,7 @@
         },
         "type": [
           {
-            "code": "Coding",
-            "profile": [
-              "https://fhir.nhs.uk/ValueSet/dch-indicatorresponse-1"
-            ]
+            "code": "boolean"
           }
         ],
         "condition": [
@@ -5266,11 +5440,8 @@
           }
         ],
         "binding": {
-          "strength": "required",
-          "description": "A code to indicate whether a vaccine is required",
-          "valueSetReference": {
-            "reference": "https://fhir.nhs.uk/ValueSet/dch-indicatorresponse-1"
-          }
+          "strength": "example",
+          "description": "Code indicating the response provided for a question."
         },
         "mapping": [
           {
@@ -5360,15 +5531,19 @@
       },
       {
         "path": "QuestionnaireResponse.author",
-        "max": "0",
+        "min": 1,
         "type": [
           {
             "code": "Reference",
             "profile": [
-              "http://hl7.org/fhir/StructureDefinition/Practitioner"
+              "https://fhir.hl7.org.uk/StructureDefinition/CareConnect-DCH-Practitioner-ChildHealthEvent-1"
             ]
           }
         ]
+      },
+      {
+        "path": "QuestionnaireResponse.author.reference",
+        "min": 1
       },
       {
         "path": "QuestionnaireResponse.authored",
@@ -5472,35 +5647,13 @@
         "max": "1"
       },
       {
-        "path": "QuestionnaireResponse.group.question.answer.valueCoding",
+        "path": "QuestionnaireResponse.group.question.answer.valueBoolean",
         "min": 1,
         "type": [
           {
-            "code": "Coding",
-            "profile": [
-              "https://fhir.nhs.uk/ValueSet/dch-indicatorresponse-1"
-            ]
+            "code": "boolean"
           }
-        ],
-        "binding": {
-          "strength": "required",
-          "description": "A code to indicate whether a vaccine is required",
-          "valueSetReference": {
-            "reference": "https://fhir.nhs.uk/ValueSet/dch-indicatorresponse-1"
-          }
-        }
-      },
-      {
-        "path": "QuestionnaireResponse.group.question.answer.valueCoding.system",
-        "min": 1
-      },
-      {
-        "path": "QuestionnaireResponse.group.question.answer.valueCoding.code",
-        "min": 1
-      },
-      {
-        "path": "QuestionnaireResponse.group.question.answer.valueCoding.display",
-        "min": 1
+        ]
       },
       {
         "path": "QuestionnaireResponse.group.question.answer.group",
@@ -5533,35 +5686,13 @@
         "max": "1"
       },
       {
-        "path": "QuestionnaireResponse.group.question.answer.valueCoding",
+        "path": "QuestionnaireResponse.group.question.answer.valueBoolean",
         "min": 1,
         "type": [
           {
-            "code": "Coding",
-            "profile": [
-              "https://fhir.nhs.uk/ValueSet/dch-indicatorresponse-1"
-            ]
+            "code": "boolean"
           }
-        ],
-        "binding": {
-          "strength": "required",
-          "description": "A code to indicate whether a vaccine is required",
-          "valueSetReference": {
-            "reference": "https://fhir.nhs.uk/ValueSet/dch-indicatorresponse-1"
-          }
-        }
-      },
-      {
-        "path": "QuestionnaireResponse.group.question.answer.valueCoding.system",
-        "min": 1
-      },
-      {
-        "path": "QuestionnaireResponse.group.question.answer.valueCoding.code",
-        "min": 1
-      },
-      {
-        "path": "QuestionnaireResponse.group.question.answer.valueCoding.display",
-        "min": 1
+        ]
       },
       {
         "path": "QuestionnaireResponse.group.question.answer.group",

@@ -1,11 +1,11 @@
 {
   "resourceType": "StructureDefinition",
   "meta": {
-    "lastUpdated": "2017-03-24T22:39:44.026+00:00",
+    "lastUpdated": "2017-03-30T14:21:48.66+01:00",
     "tag": [
       {
         "system": "urn:hscic:publishOrder",
-        "code": "9"
+        "code": "8"
       }
     ]
   },
@@ -4275,7 +4275,7 @@
           {
             "code": "Reference",
             "profile": [
-              "https://fhir.hl7.org.uk/StructureDefinition/CareConnect-DCH-Organization-FollowUpEvent-1"
+              "https://fhir.hl7.org.uk/StructureDefinition/CareConnect-DCH-Organization-ChildHealthEvent-1"
             ]
           }
         ],
@@ -6652,7 +6652,7 @@
           {
             "code": "Reference",
             "profile": [
-              "https://fhir.hl7.org.uk/StructureDefinition/CareConnect-DCH-Organization-FollowUpEvent-1"
+              "https://fhir.hl7.org.uk/StructureDefinition/CareConnect-DCH-Organization-ChildHealthEvent-1"
             ]
           }
         ]

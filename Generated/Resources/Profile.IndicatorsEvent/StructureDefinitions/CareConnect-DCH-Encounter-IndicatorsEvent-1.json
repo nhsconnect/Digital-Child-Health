@@ -1,7 +1,7 @@
 {
   "resourceType": "StructureDefinition",
   "meta": {
-    "lastUpdated": "2017-03-27T11:03:19.171+01:00",
+    "lastUpdated": "2017-03-31T11:30:18.497+01:00",
     "tag": [
       {
         "system": "urn:hscic:publishOrder",
@@ -5128,8 +5128,8 @@
         "path": "Encounter.participant",
         "short": "List of participants involved in the encounter",
         "definition": "The??list of??people??responsible for providing the service.",
-        "min": 0,
-        "max": "0",
+        "min": 1,
+        "max": "*",
         "base": {
           "path": "Encounter.participant",
           "min": 0,
@@ -5320,7 +5320,7 @@
         "definition": "Role of participant in encounter.",
         "comments": "The participant type indicates how an individual partitipates in an encounter. It includes non-practitioner participants, and for practitioners this is to describe the action type in the context of this encounter (e.g. Admitting Dr, Attending Dr, Translator, Consulting Dr). This is different to the practitioner roles which are functional roles, derived from terms of employment, education, licensing, etc.",
         "min": 0,
-        "max": "*",
+        "max": "0",
         "base": {
           "path": "Encounter.participant.type",
           "min": 0,
@@ -5965,7 +5965,7 @@
         "definition": "The period of time that the specified participant was present during the encounter. These can overlap or be sub-sets of the overall encounters period.",
         "comments": "This is not a duration - that's a measure of time (a separate type), but a duration that occurs at a fixed value of time. A Period specifies a range of time; the context of use will specify whether the entire range applies (e.g. \"the patient was an inpatient of the hospital for this time range\") or one value from the range applies (e.g. \"give to the patient between these two times\"). If duration is required, specify the type as Interval|Duration.",
         "min": 0,
-        "max": "1",
+        "max": "0",
         "base": {
           "path": "Encounter.participant.period",
           "min": 0,
@@ -6222,7 +6222,7 @@
         "path": "Encounter.participant.individual",
         "short": "Persons involved in the encounter other than the patient",
         "definition": "Persons involved in the encounter other than the patient.",
-        "min": 0,
+        "min": 1,
         "max": "1",
         "base": {
           "path": "Encounter.participant.individual",
@@ -6233,13 +6233,7 @@
           {
             "code": "Reference",
             "profile": [
-              "http://hl7.org/fhir/StructureDefinition/RelatedPerson"
-            ]
-          },
-          {
-            "code": "Reference",
-            "profile": [
-              "https://fhir.hl7.org.uk/StructureDefinition/CareConnect-Practitioner-1"
+              "https://fhir.hl7.org.uk/StructureDefinition/CareConnect-DCH-Practitioner-ChildHealthEvent-1"
             ]
           }
         ],
@@ -6767,7 +6761,7 @@
         "short": "End time with inclusive boundary, if not ongoing",
         "definition": "The end of the period. If the end of the period is missing, it means that the period is ongoing. The start may be in the past, and the end date in the future, which means that period is expected/planned to end at that time.",
         "comments": "The high value includes any matching date/time. i.e. 2012-02-03T10:00:00 is in a period that has a end value of 2012-02-03.",
-        "min": 1,
+        "min": 0,
         "max": "1",
         "base": {
           "path": "Period.end",
@@ -15720,7 +15714,7 @@
           {
             "code": "Reference",
             "profile": [
-              "https://fhir.hl7.org.uk/StructureDefinition/CareConnect-DCH-Organization-IndicatorsEvent-1"
+              "https://fhir.hl7.org.uk/StructureDefinition/CareConnect-DCH-Organization-ChildHealthEvent-1"
             ]
           }
         ],
@@ -15872,7 +15866,7 @@
         "short": "Relative, internal or absolute URL reference",
         "definition": "A reference to a location at which the other resource is found. The reference may be a relative reference, in which case it is relative to the service base URL, or an absolute URL that resolves to the location where the resource is found. The reference may be version specific or not. If the reference is not to a FHIR RESTful server, then it should be assumed to be version specific. Internal fragment references (start with '#') refer to contained resources.",
         "comments": "Using absolute URLs provides a stable scalable approach suitable for a cloud/web context, while using relative/logical references provides a flexible approach suitable for use when trading across closed eco-system boundaries.   Absolute URLs do not need to point to a FHIR RESTful server, though this is the preferred approach. If the URL conforms to the structure \"/[type]/[id]\" then it should be assumed that the reference is to a FHIR RESTful server.",
-        "min": 0,
+        "min": 1,
         "max": "1",
         "base": {
           "path": "Reference.reference",
@@ -16288,7 +16282,7 @@
           {
             "code": "Reference",
             "profile": [
-              "https://fhir.hl7.org.uk/StructureDefinition/CareConnect-DCH-Organization-IndicatorsEvent-1"
+              "https://fhir.hl7.org.uk/StructureDefinition/CareConnect-DCH-Organization-ChildHealthEvent-1"
             ]
           }
         ],
@@ -16436,7 +16430,7 @@
         "short": "Relative, internal or absolute URL reference",
         "definition": "A reference to a location at which the other resource is found. The reference may be a relative reference, in which case it is relative to the service base URL, or an absolute URL that resolves to the location where the resource is found. The reference may be version specific or not. If the reference is not to a FHIR RESTful server, then it should be assumed to be version specific. Internal fragment references (start with '#') refer to contained resources.",
         "comments": "Using absolute URLs provides a stable scalable approach suitable for a cloud/web context, while using relative/logical references provides a flexible approach suitable for use when trading across closed eco-system boundaries.   Absolute URLs do not need to point to a FHIR RESTful server, though this is the preferred approach. If the URL conforms to the structure \"/[type]/[id]\" then it should be assumed that the reference is to a FHIR RESTful server.",
-        "min": 0,
+        "min": 1,
         "max": "1",
         "base": {
           "path": "Reference.reference",
@@ -16917,21 +16911,24 @@
       },
       {
         "path": "Encounter.participant",
+        "min": 1
+      },
+      {
+        "path": "Encounter.participant.type",
+        "max": "0"
+      },
+      {
+        "path": "Encounter.participant.period",
         "max": "0"
       },
       {
         "path": "Encounter.participant.individual",
+        "min": 1,
         "type": [
           {
             "code": "Reference",
             "profile": [
-              "http://hl7.org/fhir/StructureDefinition/RelatedPerson"
-            ]
-          },
-          {
-            "code": "Reference",
-            "profile": [
-              "https://fhir.hl7.org.uk/StructureDefinition/CareConnect-Practitioner-1"
+              "https://fhir.hl7.org.uk/StructureDefinition/CareConnect-DCH-Practitioner-ChildHealthEvent-1"
             ]
           }
         ]
@@ -16946,10 +16943,6 @@
       },
       {
         "path": "Encounter.period.start",
-        "min": 1
-      },
-      {
-        "path": "Encounter.period.end",
         "min": 1
       },
       {
@@ -17156,10 +17149,14 @@
           {
             "code": "Reference",
             "profile": [
-              "https://fhir.hl7.org.uk/StructureDefinition/CareConnect-DCH-Organization-IndicatorsEvent-1"
+              "https://fhir.hl7.org.uk/StructureDefinition/CareConnect-DCH-Organization-ChildHealthEvent-1"
             ]
           }
         ]
+      },
+      {
+        "path": "Encounter.location.location.reference",
+        "min": 1
       },
       {
         "path": "Encounter.location.status",
@@ -17182,10 +17179,14 @@
           {
             "code": "Reference",
             "profile": [
-              "https://fhir.hl7.org.uk/StructureDefinition/CareConnect-DCH-Organization-IndicatorsEvent-1"
+              "https://fhir.hl7.org.uk/StructureDefinition/CareConnect-DCH-Organization-ChildHealthEvent-1"
             ]
           }
         ]
+      },
+      {
+        "path": "Encounter.serviceProvider.reference",
+        "min": 1
       },
       {
         "path": "Encounter.partOf",

@@ -1,11 +1,11 @@
 {
   "resourceType": "StructureDefinition",
   "meta": {
-    "lastUpdated": "2017-03-27T10:36:51.544+01:00",
+    "lastUpdated": "2017-03-31T11:30:47.754+01:00",
     "tag": [
       {
         "system": "urn:hscic:publishOrder",
-        "code": "4"
+        "code": "5"
       }
     ]
   },
@@ -17556,13 +17556,19 @@
           {
             "code": "Reference",
             "profile": [
-              "http://hl7.org/fhir/StructureDefinition/Organization"
+              "https://fhir.hl7.org.uk/StructureDefinition/CareConnect-DCH-Organization-ChildHealthEvent-1"
             ]
           },
           {
             "code": "Reference",
             "profile": [
-              "http://hl7.org/fhir/StructureDefinition/Practitioner"
+              "https://fhir.hl7.org.uk/StructureDefinition/CareConnect-DCH-Practitioner-ChildHealthEvent-1"
+            ]
+          },
+          {
+            "code": "Reference",
+            "profile": [
+              "https://fhir.hl7.org.uk/StructureDefinition/CareConnect-Organization-1"
             ]
           }
         ],
@@ -18391,14 +18397,6 @@
         ]
       },
       {
-        "path": "Patient.contained",
-        "type": [
-          {
-            "code": "Resource"
-          }
-        ]
-      },
-      {
         "path": "Patient.identifier",
         "slicing": {
           "discriminator": [
@@ -18830,13 +18828,19 @@
           {
             "code": "Reference",
             "profile": [
-              "http://hl7.org/fhir/StructureDefinition/Organization"
+              "https://fhir.hl7.org.uk/StructureDefinition/CareConnect-DCH-Organization-ChildHealthEvent-1"
             ]
           },
           {
             "code": "Reference",
             "profile": [
-              "http://hl7.org/fhir/StructureDefinition/Practitioner"
+              "https://fhir.hl7.org.uk/StructureDefinition/CareConnect-DCH-Practitioner-ChildHealthEvent-1"
+            ]
+          },
+          {
+            "code": "Reference",
+            "profile": [
+              "https://fhir.hl7.org.uk/StructureDefinition/CareConnect-Organization-1"
             ]
           }
         ]

@@ -5,7 +5,7 @@
 
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
 	<head>
-			<title>NewbornBloodspotEvent - FHIR Implementation Guide</title>
+			<title>NewbornBloodSpotEvent - FHIR Implementation Guide</title>
 
 			<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 			<meta name="author" content="HSCIC" />        
@@ -54,7 +54,7 @@
                 </a>
                 <div id="specificationName">
          
-                        <b>NewbornBloodspotEvent</b>
+                        <b>NewbornBloodSpotEvent</b>
                   
                 </div>
 
@@ -103,7 +103,7 @@
 												<a href='../Chapter.6.Glossary/index.html'>Glossary</a>
 											</li>
 											<li>
-												<a href='../Chapter.7.Valuesets/valuesets.html'>Valuesets</a>
+												<a href='../Chapter.7.ValueSets/index.html'>ValueSets</a>
 											</li>
 
                             </ul>
@@ -139,12 +139,12 @@
 							
 <div class="panel panel - default" xmlns="http://www.w3.org/1999/xhtml">
   <div class="panel-heading">
-    <h3 class="panel-title">DCH-Appointment-NewbornBloodspotEvent-1</h3>
+    <h3 class="panel-title">DCH-Appointment-NewbornBloodSpotEvent-1</h3>
   </div>
   <div class="panel-body">
     <div xmlns="http://www.w3.org/1999/xhtml">
       <p>
-        <b>DCH-Appointment-NewbornBloodspotEvent-1</b>
+        <b>DCH-Appointment-NewbornBloodSpotEvent-1</b>
       </p>
       <table class="dict">
         <tr>
@@ -606,29 +606,17 @@
         </tr>
         <tr>
           <td width="150px">Definition</td>
-          <td>
-            <p>Date/Time that the appointment is to take place.</p>
-          </td>
+          <td></td>
         </tr>
         <tr>
           <td>
             <a href="http://www.hl7.org/fhir/DSTU2/conformance-rules.html#conformance">Control</a>
           </td>
-          <td>0..1 ?</td>
-        </tr>
-        <tr>
-          <td>
-            <a href="http://www.hl7.org/fhir/DSTU2/datatypes.html">Type</a>
-          </td>
-          <td>
-            <a href="http://www.hl7.org/fhir/DSTU2/datatypes.html#instant" xmlns="http://www.w3.org/1999/xhtml">Instant</a>
-          </td>
+          <td>1..*</td>
         </tr>
         <tr>
           <td width="150px">Comments</td>
-          <td>
-            <p>Note: This is intended for precisely observed times, typically system logs etc., and not human-reported times - for them, see date and dateTime below. Time zone is always required</p>
-          </td>
+          <td></td>
         </tr>
         <tr>
           <td colspan="2" class="structure">
@@ -816,13 +804,13 @@
           <td>
             <a href="http://www.hl7.org/fhir/DSTU2/conformance-rules.html#conformance">Control</a>
           </td>
-          <td>0..*</td>
+          <td>1..*</td>
         </tr>
         <tr>
           <td>
             <a href="http://www.hl7.org/fhir/DSTU2/datatypes.html">Type</a>
           </td>
-          <td>Choice of: <ul><li><a href="careconnect-dch-patient-1.html" xmlns="http://www.w3.org/1999/xhtml">https://fhir.hl7.org.uk/StructureDefinition/CareConnect-DCH-Patient-1</a></li><li><a href="careconnect-dch-practitioner-newbornbloodspotevent-1.html" xmlns="http://www.w3.org/1999/xhtml">https://fhir.hl7.org.uk/StructureDefinition/CareConnect-DCH-Practitioner-NewbornBloodspotEvent-1</a></li></ul></td>
+          <td>Choice of: <ul><li><a href="careconnect-dch-patient-1.html" xmlns="http://www.w3.org/1999/xhtml">https://fhir.hl7.org.uk/StructureDefinition/CareConnect-DCH-Patient-1</a></li><li><a href="careconnect-dch-practitioner-childhealthevent-1.html" xmlns="http://www.w3.org/1999/xhtml">https://fhir.hl7.org.uk/StructureDefinition/CareConnect-DCH-Practitioner-ChildHealthEvent-1</a></li></ul></td>
         </tr>
         <tr>
           <td width="150px">Comments</td>
