@@ -1,7 +1,7 @@
-<?xml version="1.0" encoding="utf-8"?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <meta>
-    <lastUpdated value="2017-03-24T22:05:00.664+00:00" />
+    <lastUpdated value="2017-03-31T10:13:12.916+01:00" />
     <tag>
       <system value="urn:hscic:publishOrder" />
       <code value="7" />
@@ -10,12 +10,12 @@
   <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm">
     <valueInteger value="3" />
   </extension>
-  <url value="https://fhir.hl7.org.uk/StructureDefinition/CareConnect-DCH-Practitioner-ReferralEvent-1" />
+  <url value="https://fhir.hl7.org.uk/StructureDefinition/CareConnect-DCH-Practitioner-ChildHealthEvent-1" />
   <version value="1.0.0" />
-  <name value="CareConnect-DCH-Practitioner-ReferralEvent-1" />
+  <name value="CareConnect-DCH-Practitioner-ChildHealthEvent-1" />
   <status value="active" />
   <publisher value="HL7 UK" />
-  <description value="The Practitioner resource represents the healthcare professional directly or indirectly involved in the provision of healthcare related services, with further constraints applied to represent the professional responsible for a ReferralRequest as part of the Referral Event." />
+  <description value="The Practitioner resource represents the healthcare professional directly or indirectly involved in the provision of healthcare related services, with further constraints applied to represent the professional responsible for the Child Health Event." />
   <copyright value="Copyright © 2016 HL7 UK&#xD;&#xA;&#xD;&#xA;Licensed under the Apache License, Version 2.0 (the &quot;License&quot;); you may not use this file except in compliance with the License. You may obtain a copy of the License at&#xD;&#xA;&#xD;&#xA;http://www.apache.org/licenses/LICENSE-2.0&#xD;&#xA;&#xD;&#xA;Unless required by applicable law or agreed to in writing, software distributed under the License is distributed on an &quot;AS IS&quot; BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the License for the specific language governing permissions and limitations under the License.&#xD;&#xA;&#xD;&#xA;HL7® FHIR® standard Copyright © 2011+ HL7&#xD;&#xA;&#xD;&#xA;The HL7® FHIR® standard is used under the FHIR license. You may obtain a copy of the FHIR license at&#xD;&#xA;&#xD;&#xA;https://www.hl7.org/fhir/license.html" />
   <fhirVersion value="1.0.1" />
   <kind value="resource" />
@@ -1550,7 +1550,7 @@
       <short value="A identifier for the person as this agent" />
       <definition value="An identifier that applies to this person in this role." />
       <requirements value="Often, specific identities are assigned for the agent." />
-      <min value="0" />
+      <min value="1" />
       <max value="1" />
       <base>
         <path value="Practitioner.identifier" />
@@ -9468,7 +9468,7 @@
       <name value="sdsJobRoleName" />
       <short value="Roles/organizations the practitioner is associated with" />
       <definition value="The list of roles/organizations that the practitioner is associated with." />
-      <min value="0" />
+      <min value="1" />
       <max value="1" />
       <base>
         <path value="Practitioner.practitionerRole" />
@@ -9792,7 +9792,7 @@
       <definition value="Roles which this practitioner is authorized to perform for the organization." />
       <comments value="A person may have more than one role. At least one role is required." />
       <requirements value="Need to know what authority the practitioner has - what can they do?" />
-      <min value="0" />
+      <min value="1" />
       <max value="1" />
       <base>
         <path value="Practitioner.practitionerRole.role" />
@@ -14144,6 +14144,7 @@
     <element>
       <path value="Practitioner.identifier" />
       <name value="sdsUserID" />
+      <min value="1" />
       <max value="1" />
     </element>
     <element>
@@ -14344,6 +14345,7 @@
     <element>
       <path value="Practitioner.practitionerRole" />
       <name value="sdsJobRoleName" />
+      <min value="1" />
       <max value="1" />
     </element>
     <element>
@@ -14356,6 +14358,7 @@
     </element>
     <element>
       <path value="Practitioner.practitionerRole.role" />
+      <min value="1" />
       <binding>
         <strength value="required" />
         <valueSetReference>

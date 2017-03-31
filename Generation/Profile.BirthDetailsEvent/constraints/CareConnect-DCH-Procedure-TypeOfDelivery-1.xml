@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <meta>
-    <lastUpdated value="2017-03-30T09:39:44.497+01:00" />
+    <lastUpdated value="2017-03-31T11:08:10.404+01:00" />
     <tag>
       <system value="urn:hscic:publishOrder" />
       <code value="12" />
@@ -5822,19 +5822,11 @@
       </base>
       <type>
         <code value="Reference" />
-        <profile value="http://hl7.org/fhir/StructureDefinition/RelatedPerson" />
-      </type>
-      <type>
-        <code value="Reference" />
         <profile value="https://fhir.hl7.org.uk/StructureDefinition/CareConnect-Organization-1" />
       </type>
       <type>
         <code value="Reference" />
-        <profile value="https://fhir.hl7.org.uk/StructureDefinition/CareConnect-Patient-1" />
-      </type>
-      <type>
-        <code value="Reference" />
-        <profile value="https://fhir.hl7.org.uk/StructureDefinition/CareConnect-Practitioner-1" />
+        <profile value="https://fhir.hl7.org.uk/StructureDefinition/CareConnect-DCH-Practitioner-ChildHealthEvent-1" />
       </type>
       <condition value="ele-1" />
       <constraint>
@@ -6825,7 +6817,7 @@
       <path value="Procedure.encounter" />
       <short value="The encounter associated with the procedure" />
       <definition value="The encounter during which the procedure was performed." />
-      <min value="0" />
+      <min value="1" />
       <max value="1" />
       <base>
         <path value="Procedure.encounter" />
@@ -10241,7 +10233,7 @@
       </mapping>
     </element>
     <element>
-      <path value="Procedure.notes.author[x]" />
+      <path value="Procedure.notes.authorReference" />
       <short value="Individual responsible for the annotation" />
       <definition value="The individual responsible for making the annotation." />
       <min value="0" />
@@ -10253,18 +10245,7 @@
       </base>
       <type>
         <code value="Reference" />
-        <profile value="http://hl7.org/fhir/StructureDefinition/RelatedPerson" />
-      </type>
-      <type>
-        <code value="string" />
-      </type>
-      <type>
-        <code value="Reference" />
-        <profile value="https://fhir.hl7.org.uk/StructureDefinition/CareConnect-Patient-1" />
-      </type>
-      <type>
-        <code value="Reference" />
-        <profile value="https://fhir.hl7.org.uk/StructureDefinition/CareConnect-Practitioner-1" />
+        <profile value="https://fhir.hl7.org.uk/StructureDefinition/CareConnect-DCH-Practitioner-ChildHealthEvent-1" />
       </type>
       <condition value="ele-1" />
       <constraint>
@@ -11547,19 +11528,11 @@
       <path value="Procedure.performer.actor" />
       <type>
         <code value="Reference" />
-        <profile value="http://hl7.org/fhir/StructureDefinition/RelatedPerson" />
-      </type>
-      <type>
-        <code value="Reference" />
         <profile value="https://fhir.hl7.org.uk/StructureDefinition/CareConnect-Organization-1" />
       </type>
       <type>
         <code value="Reference" />
-        <profile value="https://fhir.hl7.org.uk/StructureDefinition/CareConnect-Patient-1" />
-      </type>
-      <type>
-        <code value="Reference" />
-        <profile value="https://fhir.hl7.org.uk/StructureDefinition/CareConnect-Practitioner-1" />
+        <profile value="https://fhir.hl7.org.uk/StructureDefinition/CareConnect-DCH-Practitioner-ChildHealthEvent-1" />
       </type>
     </element>
     <element>
@@ -11615,6 +11588,7 @@
     </element>
     <element>
       <path value="Procedure.encounter" />
+      <min value="1" />
       <type>
         <code value="Reference" />
         <profile value="https://fhir.hl7.org.uk/StructureDefinition/CareConnect-DCH-Encounter-Delivery-1" />
@@ -11794,21 +11768,10 @@
       <max value="0" />
     </element>
     <element>
-      <path value="Procedure.notes.author[x]" />
+      <path value="Procedure.notes.authorReference" />
       <type>
         <code value="Reference" />
-        <profile value="http://hl7.org/fhir/StructureDefinition/RelatedPerson" />
-      </type>
-      <type>
-        <code value="string" />
-      </type>
-      <type>
-        <code value="Reference" />
-        <profile value="https://fhir.hl7.org.uk/StructureDefinition/CareConnect-Patient-1" />
-      </type>
-      <type>
-        <code value="Reference" />
-        <profile value="https://fhir.hl7.org.uk/StructureDefinition/CareConnect-Practitioner-1" />
+        <profile value="https://fhir.hl7.org.uk/StructureDefinition/CareConnect-DCH-Practitioner-ChildHealthEvent-1" />
       </type>
     </element>
     <element>

@@ -11,6 +11,11 @@ This 'DCH-Bundle-BirthDetailsEvent-1' Bundle resource profile is used as a conta
 - [CareConnect-DCH-Condition-AbnormalitiesDetected-1]
 - [CareConnect-DCH-Condition-ProblemsInPregnancy-1]
 - [CareConnect-DCH-Procedure-TypeOfDelivery-1]  
+- [CareConnect-DCH-Encounter-Delivery-1]
+- [CareConnect-DCH-Patient-Mother-1]
+- [DCH-RelatedPerson-MotherAndBaby-1]
+- [CareConnect-Location-1]
+
 
 
 ###  Birth Details Event data item mapping to FHIR profiles ###
@@ -40,4 +45,8 @@ The Child Health Event data items are fulfilled by elements within the FHIR reso
 [CareConnect-DCH-Condition-ProblemsInBirth-1]:careconnect-dch-condition-problemsinbirth-1.html
 [CareConnect-DCH-Condition-AbnormalitiesDetected-1]:careconnect-dch-condition-abnormalitiesdetected-1.html
 [CareConnect-DCH-Condition-ProblemsInPregnancy-1]:careconnect-dch-condition-problemsinpregnancy-1.html
-[CareConnect-DCH-Procedure-TypeOfDelivery-1]:careconnect-dch-procedure-typeofdelivery-1.html  
+[CareConnect-DCH-Procedure-TypeOfDelivery-1]:careconnect-dch-procedure-typeofdelivery-1.html
+[CareConnect-DCH-Encounter-Delivery-1]:careconnect-dch-encounter-delivery-1.html
+[CareConnect-DCH-Patient-Mother-1]:careconnect-dch-patient-mother-1.html
+[DCH-RelatedPerson-MotherAndBaby-1]:dch-relatedperson-motherandbaby-1.html
+[CareConnect-Location-1]:careconnect-location-1.html  

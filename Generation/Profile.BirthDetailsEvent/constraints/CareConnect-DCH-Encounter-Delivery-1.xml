@@ -1,7 +1,7 @@
-<?xml version="1.0" encoding="utf-8"?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <meta>
-    <lastUpdated value="2017-03-22T10:53:12.437+00:00" />
+    <lastUpdated value="2017-03-31T11:02:36.22+01:00" />
     <tag>
       <system value="urn:hscic:publishOrder" />
       <code value="13" />
@@ -3979,8 +3979,8 @@
       <path value="Encounter.participant" />
       <short value="List of participants involved in the encounter" />
       <definition value="The??list of??people??responsible for providing the service." />
-      <min value="0" />
-      <max value="0" />
+      <min value="1" />
+      <max value="*" />
       <base>
         <path value="Encounter.participant" />
         <min value="0" />
@@ -4123,7 +4123,7 @@
       <definition value="Role of participant in encounter." />
       <comments value="The participant type indicates how an individual partitipates in an encounter. It includes non-practitioner participants, and for practitioners this is to describe the action type in the context of this encounter (e.g. Admitting Dr, Attending Dr, Translator, Consulting Dr). This is different to the practitioner roles which are functional roles, derived from terms of employment, education, licensing, etc." />
       <min value="0" />
-      <max value="*" />
+      <max value="0" />
       <base>
         <path value="Encounter.participant.type" />
         <min value="0" />
@@ -4632,7 +4632,7 @@
       <definition value="The period of time that the specified participant was present during the encounter. These can overlap or be sub-sets of the overall encounters period." />
       <comments value="This is not a duration - that's a measure of time (a separate type), but a duration that occurs at a fixed value of time. A Period specifies a range of time; the context of use will specify whether the entire range applies (e.g. &quot;the patient was an inpatient of the hospital for this time range&quot;) or one value from the range applies (e.g. &quot;give to the patient between these two times&quot;). If duration is required, specify the type as Interval|Duration." />
       <min value="0" />
-      <max value="1" />
+      <max value="0" />
       <base>
         <path value="Encounter.participant.period" />
         <min value="0" />
@@ -4829,7 +4829,7 @@
       <path value="Encounter.participant.individual" />
       <short value="Persons involved in the encounter other than the patient" />
       <definition value="Persons involved in the encounter other than the patient." />
-      <min value="0" />
+      <min value="1" />
       <max value="1" />
       <base>
         <path value="Encounter.participant.individual" />
@@ -4838,11 +4838,7 @@
       </base>
       <type>
         <code value="Reference" />
-        <profile value="http://hl7.org/fhir/StructureDefinition/RelatedPerson" />
-      </type>
-      <type>
-        <code value="Reference" />
-        <profile value="https://fhir.hl7.org.uk/StructureDefinition/CareConnect-Practitioner-1" />
+        <profile value="https://fhir.hl7.org.uk/StructureDefinition/CareConnect-DCH-Practitioner-ChildHealthEvent-1" />
       </type>
       <condition value="ele-1" />
       <constraint>
@@ -12645,8 +12641,8 @@
       <path value="Encounter.serviceProvider" />
       <short value="The custodian organization of this Encounter record" />
       <definition value="An organization that is in charge of maintaining the information of this Encounter (e.g. who maintains the report or the master service catalog item, etc.). This MAY be the same as the organization on the Patient record, however it could be different. This MAY not be not the Service Delivery Location's Organization." />
-      <min value="0" />
-      <max value="0" />
+      <min value="1" />
+      <max value="1" />
       <base>
         <path value="Encounter.serviceProvider" />
         <min value="0" />
@@ -12654,7 +12650,11 @@
       </base>
       <type>
         <code value="Reference" />
-        <profile value="http://hl7.org/fhir/StructureDefinition/Organization" />
+        <profile value="https://fhir.hl7.org.uk/StructureDefinition/CareConnect-DCH-Organization-ActualDeliveryPlace-1" />
+      </type>
+      <type>
+        <code value="Reference" />
+        <profile value="https://fhir.hl7.org.uk/StructureDefinition/CareConnect-Organization-1" />
       </type>
       <condition value="ele-1" />
       <constraint>
@@ -12764,7 +12764,7 @@
       <short value="Relative, internal or absolute URL reference" />
       <definition value="A reference to a location at which the other resource is found. The reference may be a relative reference, in which case it is relative to the service base URL, or an absolute URL that resolves to the location where the resource is found. The reference may be version specific or not. If the reference is not to a FHIR RESTful server, then it should be assumed to be version specific. Internal fragment references (start with '#') refer to contained resources." />
       <comments value="Using absolute URLs provides a stable scalable approach suitable for a cloud/web context, while using relative/logical references provides a flexible approach suitable for use when trading across closed eco-system boundaries.   Absolute URLs do not need to point to a FHIR RESTful server, though this is the preferred approach. If the URL conforms to the structure &quot;/[type]/[id]&quot; then it should be assumed that the reference is to a FHIR RESTful server." />
-      <min value="0" />
+      <min value="1" />
       <max value="1" />
       <base>
         <path value="Reference.reference" />
@@ -13021,6 +13021,12 @@
       <path value="Encounter" />
     </element>
     <element>
+      <path value="Encounter.contained" />
+      <type>
+        <code value="Resource" />
+      </type>
+    </element>
+    <element>
       <path value="Encounter.identifier" />
       <min value="1" />
       <max value="1" />
@@ -13048,6 +13054,10 @@
     <element>
       <path value="Encounter.identifier.assigner" />
       <max value="0" />
+      <type>
+        <code value="Reference" />
+        <profile value="http://hl7.org/fhir/StructureDefinition/Organization" />
+      </type>
     </element>
     <element>
       <path value="Encounter.statusHistory" />
@@ -13143,17 +13153,22 @@
     </element>
     <element>
       <path value="Encounter.participant" />
+      <min value="1" />
+    </element>
+    <element>
+      <path value="Encounter.participant.type" />
+      <max value="0" />
+    </element>
+    <element>
+      <path value="Encounter.participant.period" />
       <max value="0" />
     </element>
     <element>
       <path value="Encounter.participant.individual" />
+      <min value="1" />
       <type>
         <code value="Reference" />
-        <profile value="http://hl7.org/fhir/StructureDefinition/RelatedPerson" />
-      </type>
-      <type>
-        <code value="Reference" />
-        <profile value="https://fhir.hl7.org.uk/StructureDefinition/CareConnect-Practitioner-1" />
+        <profile value="https://fhir.hl7.org.uk/StructureDefinition/CareConnect-DCH-Practitioner-ChildHealthEvent-1" />
       </type>
     </element>
     <element>
@@ -13363,7 +13378,19 @@
     </element>
     <element>
       <path value="Encounter.serviceProvider" />
-      <max value="0" />
+      <min value="1" />
+      <type>
+        <code value="Reference" />
+        <profile value="https://fhir.hl7.org.uk/StructureDefinition/CareConnect-DCH-Organization-ActualDeliveryPlace-1" />
+      </type>
+      <type>
+        <code value="Reference" />
+        <profile value="https://fhir.hl7.org.uk/StructureDefinition/CareConnect-Organization-1" />
+      </type>
+    </element>
+    <element>
+      <path value="Encounter.serviceProvider.reference" />
+      <min value="1" />
     </element>
     <element>
       <path value="Encounter.partOf" />

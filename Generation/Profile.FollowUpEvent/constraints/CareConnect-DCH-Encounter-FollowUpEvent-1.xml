@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <meta>
-    <lastUpdated value="2017-03-30T14:22:26.312+01:00" />
+    <lastUpdated value="2017-03-31T10:55:59.19+01:00" />
     <tag>
       <system value="urn:hscic:publishOrder" />
       <code value="3" />
@@ -3981,7 +3981,7 @@
       <short value="List of participants involved in the encounter" />
       <definition value="The list of responsible for providing the service." />
       <min value="1" />
-      <max value="1" />
+      <max value="*" />
       <base>
         <path value="Encounter.participant" />
         <min value="0" />
@@ -13287,7 +13287,6 @@
       <path value="Encounter.participant" />
       <definition value="The list of responsible for providing the service." />
       <min value="1" />
-      <max value="1" />
     </element>
     <element>
       <path value="Encounter.participant.type" />

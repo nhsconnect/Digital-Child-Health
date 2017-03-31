@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <meta>
-    <lastUpdated value="2017-03-30T14:20:52.684+01:00" />
+    <lastUpdated value="2017-03-31T11:26:18.153+01:00" />
     <tag>
       <system value="urn:hscic:publishOrder" />
       <code value="6" />
@@ -3919,7 +3919,7 @@
       <definition value="Identifier for the organization that is used to identify the organization across multiple disparate systems." />
       <requirements value="Organizations are known by a variety of ids. Some institutions maintain several, and most collect identifiers for exchange with other organizations concerning the organization." />
       <min value="0" />
-      <max value="0" />
+      <max value="1" />
       <base>
         <path value="Organization.identifier" />
         <min value="0" />
@@ -4908,7 +4908,7 @@
       </base>
       <type>
         <code value="Reference" />
-        <profile value="https://fhir.hl7.org.uk/StructureDefinition/CareConnect-DCH-Organization-ChildHealthEvent-1" />
+        <profile value="https://fhir.hl7.org.uk/StructureDefinition/CareConnect-Organization-1" />
       </type>
       <condition value="ele-1" />
       <constraint>
@@ -5144,8 +5144,8 @@
       <definition value="The type of unit for a Birth Event." />
       <comments value="Organizations can be corporations, wards, sections, clinical teams, government departments, etc. Note that code is generally a classifier of the type of organization; in many applications, codes are used to identity a particular organization (say, ward) as opposed to another of the same type - these are identifiers, not codes." />
       <requirements value="Need to be able to track the kind of organization that this is - different organization types have different uses." />
-      <min value="0" />
-      <max value="0" />
+      <min value="1" />
+      <max value="1" />
       <base>
         <path value="Organization.type" />
         <min value="0" />
@@ -9807,7 +9807,7 @@
     <element>
       <path value="Organization.identifier" />
       <name value="localIdentifier" />
-      <max value="0" />
+      <max value="1" />
     </element>
     <element>
       <path value="Organization.identifier.system" />
@@ -9823,7 +9823,7 @@
       <path value="Organization.identifier.assigner" />
       <type>
         <code value="Reference" />
-        <profile value="https://fhir.hl7.org.uk/StructureDefinition/CareConnect-DCH-Organization-ChildHealthEvent-1" />
+        <profile value="https://fhir.hl7.org.uk/StructureDefinition/CareConnect-Organization-1" />
       </type>
     </element>
     <element>
@@ -9836,7 +9836,7 @@
       <path value="Organization.type" />
       <short value="The type of unit" />
       <definition value="The type of unit for a Birth Event." />
-      <max value="0" />
+      <min value="1" />
       <binding>
         <strength value="example" />
         <valueSetUri value="http://hl7.org/fhir/ValueSet/organization-type" />

@@ -5,8 +5,9 @@ This 'DCH-Bundle-NeonatalCareEvent-1' Bundle resource profile is used as a conta
 - [CareConnect-Organization-1]
 - [CareConnect-DCH-Patient-Baby-1]
 - [CareConnect-DCH-Condition-NeonatalCareEvent-1] 
-- [CareConnect-DCH-Organization-NeonatalCareEvent-1]
-
+- [CareConnect-DCH-Organization-ChildHealthEvent-1]
+- [CareConnect-DCH-Practitioner-ChildHealthEvent-1]
+- [CareConnect-Location-1]
 
 ###  Neonatal Care Event data item mapping to FHIR profiles ###
 ----------
@@ -19,8 +20,8 @@ The Child Health Event data items are fulfilled by elements within the FHIR reso
 | Date (admitted)             | [CareConnect-DCH-Encounter-NeonatalCareEvent-1]    |
 | Admitted                    | [CareConnect-DCH-Encounter-NeonatalCareEvent-1]    |
 | Date (discharged)           | [CareConnect-DCH-Encounter-NeonatalCareEvent-1]    |
-| Site Code                   | [CareConnect-DCH-Organization-NeonatalCareEvent-1] |
-| Unit Type                   | [CareConnect-DCH-Organization-NeonatalCareEvent-1] |
+| Site Code                   | [CareConnect-DCH-Organization-ChildHealthEvent-1] |
+| Unit Type                   | [CareConnect-DCH-Organization-ChildHealthEvent-1] |
                                                                                                    
 
 [DCH-MessageHeader-NeonatalCareEvent-1]:dch-messageheader-neonatalcareevent-1.html
@@ -28,4 +29,6 @@ The Child Health Event data items are fulfilled by elements within the FHIR reso
 [CareConnect-Organization-1]:careconnect-organization-1.html
 [CareConnect-DCH-Patient-Baby-1]:careconnect-dch-patient-baby-1.html
 [CareConnect-DCH-Condition-NeonatalCareEvent-1]:careconnect-dch-condition-neonatalcareevent-1.html 
-[CareConnect-DCH-Organization-NeonatalCareEvent-1]:careconnect-dch-organization-neonatalcareevent-1.html
+[CareConnect-DCH-Organization-ChildHealthEvent-1]:careconnect-dch-organization-NeonatalCareEvent-1.html
+[CareConnect-DCH-Practitioner-ChildHealthEvent-1]:careconnect-dch-practitioner-childhealthevent-1.html
+[CareConnect-Location-1]:careconnect-location-1.html

@@ -1,7 +1,7 @@
-<?xml version="1.0" encoding="utf-8"?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <meta>
-    <lastUpdated value="2017-03-24T21:57:13.726+00:00" />
+    <lastUpdated value="2017-03-31T11:20:06.296+01:00" />
     <tag>
       <system value="urn:hscic:publishOrder" />
       <code value="6" />
@@ -10,12 +10,12 @@
   <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm">
     <valueInteger value="4" />
   </extension>
-  <url value="https://fhir.hl7.org.uk/StructureDefinition/CareConnect-DCH-Organization-ReferralEvent-1" />
+  <url value="https://fhir.hl7.org.uk/StructureDefinition/CareConnect-DCH-Organization-ChildHealthEvent-1" />
   <version value="1.0.0" />
-  <name value="CareConnect-DCH-Organization-ReferralEvent-1" />
+  <name value="CareConnect-DCH-Organization-ChildHealthEvent-1" />
   <status value="active" />
   <publisher value="HL7 UK" />
-  <description value="The Organization resource represents the organisation that employs the healthcare professional, with further constraints applied to represent the organization where the Referral Event takes place." />
+  <description value="The Organization resource represents the organisation that employs the healthcare professional, with further constraints applied to represent the organization where the Child Health Event takes place." />
   <copyright value="Copyright © 2016 HL7 UK&#xD;&#xA;&#xD;&#xA;Licensed under the Apache License, Version 2.0 (the &quot;License&quot;); you may not use this file except in compliance with the License. You may obtain a copy of the License at&#xD;&#xA;&#xD;&#xA;http://www.apache.org/licenses/LICENSE-2.0&#xD;&#xA;&#xD;&#xA;Unless required by applicable law or agreed to in writing, software distributed under the License is distributed on an &quot;AS IS&quot; BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the License for the specific language governing permissions and limitations under the License.&#xD;&#xA;&#xD;&#xA;HL7® FHIR® standard Copyright © 2011+ HL7&#xD;&#xA;&#xD;&#xA;The HL7® FHIR® standard is used under the FHIR license. You may obtain a copy of the FHIR license at&#xD;&#xA;&#xD;&#xA;https://www.hl7.org/fhir/license.html" />
   <fhirVersion value="1.0.1" />
   <kind value="resource" />
@@ -1565,8 +1565,8 @@
       <short value="Organisation Data Service code" />
       <definition value="Identifier code supplier by the Organisation Data Service" />
       <requirements value="Organizations are known by a variety of ids. Some institutions maintain several, and most collect identifiers for exchange with other organizations concerning the organization." />
-      <min value="0" />
-      <max value="0" />
+      <min value="1" />
+      <max value="1" />
       <base>
         <path value="Organization.identifier" />
         <min value="0" />
@@ -2742,7 +2742,7 @@
       <definition value="Identifier for the organization that is used to identify the organization across multiple disparate systems." />
       <comments value="ODS Site code to identify the organisation at site level. Where an ODS Site Code is not applicable, one of the following values will apply:&#xD;&#xA;&#xD;&#xA;ZZ201 - Not applicable (delivered at home)&#xD;&#xA;ZZ888 - Not applicable (delivered at non-NHS organisation)&#xD;&#xA;ZZ203 - Not known (place of delivery not known)" />
       <requirements value="Organizations are known by a variety of ids. Some institutions maintain several, and most collect identifiers for exchange with other organizations concerning the organization." />
-      <min value="1" />
+      <min value="0" />
       <max value="1" />
       <base>
         <path value="Organization.identifier" />
@@ -3919,7 +3919,7 @@
       <definition value="Identifier for the organization that is used to identify the organization across multiple disparate systems." />
       <requirements value="Organizations are known by a variety of ids. Some institutions maintain several, and most collect identifiers for exchange with other organizations concerning the organization." />
       <min value="0" />
-      <max value="0" />
+      <max value="1" />
       <base>
         <path value="Organization.identifier" />
         <min value="0" />
@@ -4908,7 +4908,7 @@
       </base>
       <type>
         <code value="Reference" />
-        <profile value="https://fhir.hl7.org.uk/StructureDefinition/CareConnect-DCH-Organization-ReferralEvent-1" />
+        <profile value="https://fhir.hl7.org.uk/StructureDefinition/CareConnect-Organization-1" />
       </type>
       <condition value="ele-1" />
       <constraint>
@@ -5144,8 +5144,8 @@
       <definition value="The type of unit for a Birth Event." />
       <comments value="Organizations can be corporations, wards, sections, clinical teams, government departments, etc. Note that code is generally a classifier of the type of organization; in many applications, codes are used to identity a particular organization (say, ward) as opposed to another of the same type - these are identifiers, not codes." />
       <requirements value="Need to be able to track the kind of organization that this is - different organization types have different uses." />
-      <min value="0" />
-      <max value="0" />
+      <min value="1" />
+      <max value="1" />
       <base>
         <path value="Organization.type" />
         <min value="0" />
@@ -7022,7 +7022,7 @@
       </base>
       <type>
         <code value="Reference" />
-        <profile value="https://fhir.hl7.org.uk/StructureDefinition/CareConnect-DCH-Organization-ReferralEvent-1" />
+        <profile value="https://fhir.hl7.org.uk/StructureDefinition/CareConnect-DCH-Organization-ChildHealthEvent-1" />
       </type>
       <condition value="ele-1" />
       <constraint>
@@ -9730,12 +9730,6 @@
       </constraint>
     </element>
     <element>
-      <path value="Organization.contained" />
-      <type>
-        <code value="Resource" />
-      </type>
-    </element>
-    <element>
       <path value="Organization.identifier" />
       <slicing>
         <discriminator value="system" />
@@ -9746,18 +9740,12 @@
       <max value="1" />
     </element>
     <element>
-      <path value="Organization.identifier.assigner" />
-      <type>
-        <code value="Reference" />
-        <profile value="http://hl7.org/fhir/StructureDefinition/Organization" />
-      </type>
-    </element>
-    <element>
       <path value="Organization.identifier" />
       <name value="ODS Organisation Code" />
       <short value="Organisation Data Service code" />
       <definition value="Identifier code supplier by the Organisation Data Service" />
-      <max value="0" />
+      <min value="1" />
+      <max value="1" />
     </element>
     <element>
       <path value="Organization.identifier.use" />
@@ -9783,17 +9771,12 @@
     <element>
       <path value="Organization.identifier.assigner" />
       <max value="0" />
-      <type>
-        <code value="Reference" />
-        <profile value="http://hl7.org/fhir/StructureDefinition/Organization" />
-      </type>
     </element>
     <element>
       <path value="Organization.identifier" />
       <name value="ODS Site Code" />
       <short value="ODS Site code to identify the organisation at site level" />
       <comments value="ODS Site code to identify the organisation at site level. Where an ODS Site Code is not applicable, one of the following values will apply:&#xD;&#xA;&#xD;&#xA;ZZ201 - Not applicable (delivered at home)&#xD;&#xA;ZZ888 - Not applicable (delivered at non-NHS organisation)&#xD;&#xA;ZZ203 - Not known (place of delivery not known)" />
-      <min value="1" />
       <max value="1" />
     </element>
     <element>
@@ -9820,15 +9803,11 @@
     <element>
       <path value="Organization.identifier.assigner" />
       <max value="0" />
-      <type>
-        <code value="Reference" />
-        <profile value="http://hl7.org/fhir/StructureDefinition/Organization" />
-      </type>
     </element>
     <element>
       <path value="Organization.identifier" />
       <name value="localIdentifier" />
-      <max value="0" />
+      <max value="1" />
     </element>
     <element>
       <path value="Organization.identifier.system" />
@@ -9844,7 +9823,7 @@
       <path value="Organization.identifier.assigner" />
       <type>
         <code value="Reference" />
-        <profile value="https://fhir.hl7.org.uk/StructureDefinition/CareConnect-DCH-Organization-ReferralEvent-1" />
+        <profile value="https://fhir.hl7.org.uk/StructureDefinition/CareConnect-Organization-1" />
       </type>
     </element>
     <element>
@@ -9857,7 +9836,7 @@
       <path value="Organization.type" />
       <short value="The type of unit" />
       <definition value="The type of unit for a Birth Event." />
-      <max value="0" />
+      <min value="1" />
       <binding>
         <strength value="example" />
         <valueSetUri value="http://hl7.org/fhir/ValueSet/organization-type" />
@@ -9945,7 +9924,7 @@
       <max value="0" />
       <type>
         <code value="Reference" />
-        <profile value="https://fhir.hl7.org.uk/StructureDefinition/CareConnect-DCH-Organization-ReferralEvent-1" />
+        <profile value="https://fhir.hl7.org.uk/StructureDefinition/CareConnect-DCH-Organization-ChildHealthEvent-1" />
       </type>
     </element>
     <element>
