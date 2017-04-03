@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <meta>
-    <lastUpdated value="2017-04-03T09:08:52.728+01:00" />
+    <lastUpdated value="2017-04-03T10:43:59.35+01:00" />
     <tag>
       <system value="urn:hscic:publishOrder" />
       <code value="3" />
@@ -13288,10 +13288,6 @@
     <element>
       <path value="Encounter.incomingReferral" />
       <max value="0" />
-      <type>
-        <code value="Reference" />
-        <profile value="http://hl7.org/fhir/StructureDefinition/ReferralRequest" />
-      </type>
     </element>
     <element>
       <path value="Encounter.participant" />
@@ -13392,6 +13388,14 @@
     <element>
       <path value="Encounter.indication" />
       <max value="0" />
+      <type>
+        <code value="Reference" />
+        <profile value="http://hl7.org/fhir/StructureDefinition/Condition" />
+      </type>
+      <type>
+        <code value="Reference" />
+        <profile value="http://hl7.org/fhir/StructureDefinition/Procedure" />
+      </type>
     </element>
     <element>
       <path value="Encounter.hospitalization" />

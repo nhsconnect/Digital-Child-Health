@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <meta>
-    <lastUpdated value="2017-04-03T09:17:57.462+01:00" />
+    <lastUpdated value="2017-04-03T10:26:08.555+01:00" />
   </meta>
   <url value="https://fhir.nhs.uk/StructureDefinition/DCH-MedicationAdministration-1" />
   <version value="1.0.0" />
@@ -3468,7 +3468,7 @@
       </mapping>
     </element>
     <element>
-      <path value="MedicationAdministration.medication[x]" />
+      <path value="MedicationAdministration.medicationCodeableConcept" />
       <short value="What was administered" />
       <definition value="Identifies the medication that was administered. This is either a link to a resource representing the details of the medication or a simple attribute carrying a code that identifies the medication from a known list of medications." />
       <comments value="If only a code is specified, then it needs to be a code for a specific product.  If more information is required, then the use of the medication resource is recommended.  Note: do not use Medication.name to describe the administered medication. When the only available information is a text description of the medication, Medication.code.text should be used." />
@@ -3481,10 +3481,6 @@
       </base>
       <type>
         <code value="CodeableConcept" />
-      </type>
-      <type>
-        <code value="Reference" />
-        <profile value="http://hl7.org/fhir/StructureDefinition/Medication" />
       </type>
       <condition value="ele-1" />
       <constraint>
@@ -5490,14 +5486,16 @@
     <element>
       <path value="MedicationAdministration.prescription" />
       <max value="0" />
-      <type>
-        <code value="Reference" />
-        <profile value="http://hl7.org/fhir/StructureDefinition/MedicationOrder" />
-      </type>
     </element>
     <element>
       <path value="MedicationAdministration.reasonGiven" />
       <max value="0" />
+    </element>
+    <element>
+      <path value="MedicationAdministration.medicationCodeableConcept" />
+      <type>
+        <code value="CodeableConcept" />
+      </type>
     </element>
     <element>
       <path value="MedicationAdministration.device" />

@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <meta>
-    <lastUpdated value="2017-03-31T13:11:56.15+01:00" />
+    <lastUpdated value="2017-04-03T10:26:06.402+01:00" />
     <tag>
       <system value="urn:hscic:publishOrder" />
       <code value="1" />
@@ -10,9 +10,9 @@
   <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm">
     <valueInteger value="3" />
   </extension>
-  <url value="https://fhir.nhs.uk/StructureDefinition/dch-bundle-referralevent-1" />
+  <url value="https://fhir.nhs.uk/StructureDefinition/dch-bundle-vitaminkevent-1" />
   <version value="1.0.0" />
-  <name value="DCH-Bundle-ReferralEvent-1" />
+  <name value="DCH-Bundle-VitaminKEvent-1" />
   <status value="draft" />
   <publisher value="NHS Digital" />
   <contact>
@@ -24,7 +24,7 @@
     </telecom>
   </contact>
   <date value="2015-09-22T11:02:49+01:00" />
-  <description value="This Bundle resource is constrained to represent a set of resources for a Referral Event." />
+  <description value="This Bundle resource is constrained to represent a set of resources for a Vitamin K Event." />
   <copyright value="Copyright © 2016 Health and Social Care Information Centre. NHS Digital is the trading name of the Health and Social Care Information Centre." />
   <fhirVersion value="1.0.1" />
   <kind value="resource" />
@@ -2315,6 +2315,12 @@
     <element>
       <path value="Bundle.entry.fullUrl" />
       <min value="1" />
+    </element>
+    <element>
+      <path value="Bundle.entry.resource" />
+      <type>
+        <code value="Resource" />
+      </type>
     </element>
     <element>
       <path value="Bundle.entry.search" />
