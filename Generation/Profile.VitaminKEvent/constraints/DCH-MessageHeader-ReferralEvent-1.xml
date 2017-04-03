@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <meta>
-    <lastUpdated value="2017-03-28T14:11:22.533+01:00" />
+    <lastUpdated value="2017-04-03T09:47:20.473+01:00" />
     <tag>
       <system value="urn:hscic:publishOrder" />
       <code value="2" />
@@ -10,9 +10,9 @@
   <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm">
     <valueInteger value="2" />
   </extension>
-  <url value="https://fhir.nhs.uk/StructureDefinition/dch-messageheader-referralevent-1" />
+  <url value="https://fhir.nhs.uk/StructureDefinition/dch-messageheader-vitaminkevent-1" />
   <version value="1.0.0" />
-  <name value="DCH-MessageHeader-ReferralEvent-1" />
+  <name value="DCH-MessageHeader-VitaminKEvent-1" />
   <status value="draft" />
   <publisher value="NHS Digital" />
   <contact>
@@ -24,7 +24,7 @@
     </telecom>
   </contact>
   <date value="2015-09-22T11:02:49+01:00" />
-  <description value="This MessageHeader resource is constrained to represent a message header for a Referral Event." />
+  <description value="This MessageHeader resource is constrained to represent a message header for a Vitamin K Event." />
   <copyright value="Copyright © 2016 Health and Social Care Information Centre. NHS Digital is the trading name of the Health and Social Care Information Centre." />
   <fhirVersion value="1.0.1" />
   <kind value="resource" />
@@ -649,7 +649,7 @@
       <type>
         <code value="code" />
       </type>
-      <fixedCode value="E13" />
+      <fixedCode value="E9" />
       <condition value="ele-1" />
       <constraint>
         <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-expression">
@@ -694,7 +694,7 @@
       <type>
         <code value="string" />
       </type>
-      <fixedString value="Referral: Referral" />
+      <fixedString value="Intervention: Vitamin K" />
       <condition value="ele-1" />
       <constraint>
         <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-expression">
@@ -3803,12 +3803,12 @@
     <element>
       <path value="MessageHeader.event.code" />
       <min value="1" />
-      <fixedCode value="E13" />
+      <fixedCode value="E9" />
     </element>
     <element>
       <path value="MessageHeader.event.display" />
       <min value="1" />
-      <fixedString value="Referral: Referral" />
+      <fixedString value="Intervention: Vitamin K" />
     </element>
     <element>
       <path value="MessageHeader.event.userSelected" />
