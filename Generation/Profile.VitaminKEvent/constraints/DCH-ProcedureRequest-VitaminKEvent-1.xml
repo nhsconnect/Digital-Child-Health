@@ -1,15 +1,15 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <meta>
-    <lastUpdated value="2017-03-31T12:17:07.486+01:00" />
+    <lastUpdated value="2017-04-03T10:26:13.357+01:00" />
     <tag>
       <system value="urn:hscic:publishOrder" />
       <code value="6" />
     </tag>
   </meta>
-  <url value="https://fhir.nhs.uk/StructureDefinition/dch-procedurerequest-newbornhearingevent-1" />
+  <url value="https://fhir.nhs.uk/StructureDefinition/dch-procedurerequest-vitaminkevent-1" />
   <version value="1.0.0" />
-  <name value="DCH-ProcedureRequest-NewbornHearingEvent-1" />
+  <name value="DCH-ProcedureRequest-VitaminKEvent-1" />
   <status value="draft" />
   <publisher value="NHS Digital" />
   <contact>
@@ -20,7 +20,7 @@
     </telecom>
   </contact>
   <date value="2017-03-28T09:33:24.1993818+01:00" />
-  <description value="This ProcedureRequest resource is constrained to represent a request for a procedure for the Newborn Hearing Event." />
+  <description value="This ProcedureRequest resource is constrained to represent a request for a procedure for the Vitamin K Event." />
   <copyright value="Copyright © 2016 Health and Social Care Information Centre. NHS Digital is the trading name of the Health and Social Care Information Centre." />
   <fhirVersion value="1.0.2" />
   <kind value="resource" />
@@ -328,9 +328,9 @@
     </element>
     <element>
       <path value="ProcedureRequest.extension" />
-      <name value="consentStatusNewbornHearing" />
-      <short value="The Consent Status for the Newborn Hearing Event" />
-      <definition value="The Consent Status for the Newborn Hearing Event" />
+      <name value="consentStatus" />
+      <short value="The Consent Status for the Child Health Event" />
+      <definition value="The Consent Status for the Child Health Event" />
       <comments value="There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone." />
       <alias value="extensions" />
       <alias value="user content" />
@@ -343,7 +343,7 @@
       </base>
       <type>
         <code value="Extension" />
-        <profile value="https://fhir.nhs.uk/StructureDefinition/Extension-DCH-ConsentStatusNewbornHearing-1" />
+        <profile value="https://fhir.nhs.uk/StructureDefinition/Extension-DCH-ConsentStatus-1" />
       </type>
       <condition value="ele-1" />
       <constraint>
@@ -1081,8 +1081,8 @@
       <definition value="Establishes the namespace in which set of possible id values is unique." />
       <comments value="see http://en.wikipedia.org/wiki/Uniform_resource_identifier" />
       <requirements value="There are many sequences of identifiers.  To perform matching, we need to know what sequence we're dealing with. The system identifies a particular sequence or set of unique identifiers." />
-      <min value="1" />
-      <max value="1" />
+      <min value="0" />
+      <max value="0" />
       <base>
         <path value="Identifier.system" />
         <min value="0" />
@@ -2104,7 +2104,6 @@
       <type>
         <code value="code" />
       </type>
-      <fixedCode value="276761000000100" />
       <condition value="ele-1" />
       <constraint>
         <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-expression">
@@ -2149,7 +2148,6 @@
       <type>
         <code value="string" />
       </type>
-      <fixedString value="Newborn hearing screening (procedure)" />
       <condition value="ele-1" />
       <constraint>
         <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-expression">
@@ -3618,6 +3616,12 @@
       <path value="ProcedureRequest" />
     </element>
     <element>
+      <path value="ProcedureRequest.contained" />
+      <type>
+        <code value="Resource" />
+      </type>
+    </element>
+    <element>
       <path value="ProcedureRequest.extension" />
       <slicing>
         <discriminator value="url" />
@@ -3626,14 +3630,14 @@
     </element>
     <element>
       <path value="ProcedureRequest.extension" />
-      <name value="consentStatusNewbornHearing" />
-      <short value="The Consent Status for the Newborn Hearing Event" />
-      <definition value="The Consent Status for the Newborn Hearing Event" />
+      <name value="consentStatus" />
+      <short value="The Consent Status for the Child Health Event" />
+      <definition value="The Consent Status for the Child Health Event" />
       <min value="1" />
       <max value="1" />
       <type>
         <code value="Extension" />
-        <profile value="https://fhir.nhs.uk/StructureDefinition/Extension-DCH-ConsentStatusNewbornHearing-1" />
+        <profile value="https://fhir.nhs.uk/StructureDefinition/Extension-DCH-ConsentStatus-1" />
       </type>
     </element>
     <element>
@@ -3651,7 +3655,7 @@
     </element>
     <element>
       <path value="ProcedureRequest.identifier.system" />
-      <min value="1" />
+      <max value="0" />
     </element>
     <element>
       <path value="ProcedureRequest.identifier.value" />
@@ -3689,12 +3693,10 @@
     <element>
       <path value="ProcedureRequest.code.coding.code" />
       <min value="1" />
-      <fixedCode value="276761000000100" />
     </element>
     <element>
       <path value="ProcedureRequest.code.coding.display" />
       <min value="1" />
-      <fixedString value="Newborn hearing screening (procedure)" />
     </element>
     <element>
       <path value="ProcedureRequest.bodySite" />

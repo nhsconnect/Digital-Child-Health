@@ -40,7 +40,6 @@ The Child Health Event data items are fulfilled by elements within the FHIR reso
 [DCH-ProcedureRequest-NewbornPhysicalExamEvent-1]:dch-procedurerequest-event-1.html 
 [DCH-Appointment-NewbornPhysicalExamEvent-1]:dch-appointment-newbornphysicalexamevent-1.html 
 [CareConnect-DCH-Procedure-NewbornPhysicalExamEvent-1]:careconnect-dch-procedure-newbornphysicalexamevent-1.html
-[CareConnect-DCH-Practitioner-NewbornPhysicalExamEvent-1]:careconnect-dch-practitioner-newbornphysicalexamevent-1.html
 [CareConnect-DCH-Practitioner-ChildHealthEvent-1]:careconnect-dch-practitioner-childhealthevent-1.html
 [CareConnect-Location-1]:careconnect-location-1.html
 

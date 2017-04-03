@@ -1,21 +1,21 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <meta>
-    <lastUpdated value="2017-03-28T11:50:08.186+01:00" />
+    <lastUpdated value="2017-03-31T11:54:35.924+01:00" />
     <tag>
       <system value="urn:hscic:publishOrder" />
-      <code value="9" />
+      <code value="4" />
     </tag>
   </meta>
   <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm">
     <valueInteger value="4" />
   </extension>
-  <url value="https://fhir.hl7.org.uk/StructureDefinition/CareConnect-DCH-Organization-6-8WeekHealthReviewEvent-1" />
+  <url value="https://fhir.hl7.org.uk/StructureDefinition/CareConnect-Organization-1" />
   <version value="1.0.0" />
-  <name value="CareConnect-DCH-Organization-6-8WeekHealthReviewEvent-1" />
+  <name value="CareConnect-Organization-1" />
   <status value="active" />
   <publisher value="HL7 UK" />
-  <description value="The Organization resource represents the organisation that employs the healthcare professional, with further constraints applied to represent a unit where the 6-8 Week Health Review Event takes place." />
+  <description value="The Organization resource represents the organisation that employs the healthcare professional." />
   <copyright value="Copyright © 2016 HL7 UK&#xD;&#xA;&#xD;&#xA;Licensed under the Apache License, Version 2.0 (the &quot;License&quot;); you may not use this file except in compliance with the License. You may obtain a copy of the License at&#xD;&#xA;&#xD;&#xA;http://www.apache.org/licenses/LICENSE-2.0&#xD;&#xA;&#xD;&#xA;Unless required by applicable law or agreed to in writing, software distributed under the License is distributed on an &quot;AS IS&quot; BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the License for the specific language governing permissions and limitations under the License.&#xD;&#xA;&#xD;&#xA;HL7® FHIR® standard Copyright © 2011+ HL7&#xD;&#xA;&#xD;&#xA;The HL7® FHIR® standard is used under the FHIR license. You may obtain a copy of the FHIR license at&#xD;&#xA;&#xD;&#xA;https://www.hl7.org/fhir/license.html" />
   <fhirVersion value="1.0.1" />
   <kind value="resource" />
@@ -309,6 +309,10 @@
     </element>
     <element>
       <path value="Organization.extension" />
+      <slicing>
+        <discriminator value="url" />
+        <rules value="open" />
+      </slicing>
       <short value="Additional Content defined by implementations" />
       <definition value="May be used to represent additional information that is not part of the basic definition of the resource. In order to make the use of extensions safe and manageable, there is a strict set of governance  applied to the definition and use of extensions. Though any implementer is allowed to define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension." />
       <comments value="There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone." />
@@ -323,6 +327,82 @@
       </base>
       <type>
         <code value="Extension" />
+      </type>
+      <condition value="ele-1" />
+      <constraint>
+        <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-expression">
+          <valueString value="children()" />
+        </extension>
+        <key value="ele-1" />
+        <severity value="error" />
+        <human value="All FHIR elements must have a @value or children" />
+        <xpath value="@value|f:*|h:div" />
+      </constraint>
+      <mapping>
+        <identity value="rim" />
+        <map value="n/a" />
+      </mapping>
+      <mapping>
+        <identity value="rim" />
+        <map value="N/A" />
+      </mapping>
+    </element>
+    <element>
+      <path value="Organization.extension" />
+      <name value="mainLocation" />
+      <short value="Main location" />
+      <definition value="The main location of the organization." />
+      <comments value="There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone." />
+      <alias value="extensions" />
+      <alias value="user content" />
+      <min value="0" />
+      <max value="1" />
+      <base>
+        <path value="DomainResource.extension" />
+        <min value="0" />
+        <max value="*" />
+      </base>
+      <type>
+        <code value="Extension" />
+        <profile value="https://fhir.hl7.org.uk/StructureDefinition/Extension-CareConnect-MainLocation-1" />
+      </type>
+      <condition value="ele-1" />
+      <constraint>
+        <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-expression">
+          <valueString value="children()" />
+        </extension>
+        <key value="ele-1" />
+        <severity value="error" />
+        <human value="All FHIR elements must have a @value or children" />
+        <xpath value="@value|f:*|h:div" />
+      </constraint>
+      <mapping>
+        <identity value="rim" />
+        <map value="n/a" />
+      </mapping>
+      <mapping>
+        <identity value="rim" />
+        <map value="N/A" />
+      </mapping>
+    </element>
+    <element>
+      <path value="Organization.extension" />
+      <name value="organization-period" />
+      <short value="The date range that this organization should be considered available." />
+      <definition value="The date range that this organization should be considered available." />
+      <comments value="There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone." />
+      <alias value="extensions" />
+      <alias value="user content" />
+      <min value="0" />
+      <max value="1" />
+      <base>
+        <path value="DomainResource.extension" />
+        <min value="0" />
+        <max value="*" />
+      </base>
+      <type>
+        <code value="Extension" />
+        <profile value="http://hl7.org/fhir/StructureDefinition/organization-period" />
       </type>
       <condition value="ele-1" />
       <constraint>
@@ -390,8 +470,8 @@
       <short value="Identifies this organization  across multiple systems" />
       <definition value="Identifier for the organization that is used to identify the organization across multiple disparate systems." />
       <requirements value="Organizations are known by a variety of ids. Some institutions maintain several, and most collect identifiers for exchange with other organizations concerning the organization." />
-      <min value="1" />
-      <max value="1" />
+      <min value="0" />
+      <max value="*" />
       <base>
         <path value="Organization.identifier" />
         <min value="0" />
@@ -1565,7 +1645,7 @@
       <short value="Organisation Data Service code" />
       <definition value="Identifier code supplier by the Organisation Data Service" />
       <requirements value="Organizations are known by a variety of ids. Some institutions maintain several, and most collect identifiers for exchange with other organizations concerning the organization." />
-      <min value="1" />
+      <min value="0" />
       <max value="1" />
       <base>
         <path value="Organization.identifier" />
@@ -2739,10 +2819,9 @@
       <path value="Organization.identifier" />
       <name value="ODS Site Code" />
       <short value="ODS Site code to identify the organisation at site level" />
-      <definition value="Identifier for the organization that is used to identify the organization across multiple disparate systems." />
-      <comments value="ODS Site code to identify the organisation at site level. Where an ODS Site Code is not applicable, one of the following values will apply:&#xD;&#xA;&#xD;&#xA;ZZ201 - Not applicable (delivered at home)&#xD;&#xA;ZZ888 - Not applicable (delivered at non-NHS organisation)&#xD;&#xA;ZZ203 - Not known (place of delivery not known)" />
+      <definition value="ODS Site code to identify the organisation at site level" />
       <requirements value="Organizations are known by a variety of ids. Some institutions maintain several, and most collect identifiers for exchange with other organizations concerning the organization." />
-      <min value="1" />
+      <min value="0" />
       <max value="1" />
       <base>
         <path value="Organization.identifier" />
@@ -3919,7 +3998,7 @@
       <definition value="Identifier for the organization that is used to identify the organization across multiple disparate systems." />
       <requirements value="Organizations are known by a variety of ids. Some institutions maintain several, and most collect identifiers for exchange with other organizations concerning the organization." />
       <min value="0" />
-      <max value="0" />
+      <max value="*" />
       <base>
         <path value="Organization.identifier" />
         <min value="0" />
@@ -4908,7 +4987,7 @@
       </base>
       <type>
         <code value="Reference" />
-        <profile value="https://fhir.hl7.org.uk/StructureDefinition/CareConnect-DCH-Organization-6-8WeekHealthReviewEvent-1" />
+        <profile value="https://fhir.hl7.org.uk/StructureDefinition/CareConnect-Organization-1" />
       </type>
       <condition value="ele-1" />
       <constraint>
@@ -5095,7 +5174,7 @@
       <comments value="Default is true." />
       <requirements value="Need a flag to indicate a record is no longer to be used and should generally be hidden for the user in the UI." />
       <min value="0" />
-      <max value="0" />
+      <max value="1" />
       <base>
         <path value="Organization.active" />
         <min value="0" />
@@ -5140,12 +5219,12 @@
     </element>
     <element>
       <path value="Organization.type" />
-      <short value="The type of unit" />
-      <definition value="The type of unit for a Birth Event." />
+      <short value="Kind of organization" />
+      <definition value="The kind of organization that this is." />
       <comments value="Organizations can be corporations, wards, sections, clinical teams, government departments, etc. Note that code is generally a classifier of the type of organization; in many applications, codes are used to identity a particular organization (say, ward) as opposed to another of the same type - these are identifiers, not codes." />
       <requirements value="Need to be able to track the kind of organization that this is - different organization types have different uses." />
       <min value="0" />
-      <max value="0" />
+      <max value="1" />
       <base>
         <path value="Organization.type" />
         <min value="0" />
@@ -5168,7 +5247,9 @@
       <binding>
         <strength value="example" />
         <description value="Used to categorize the organization" />
-        <valueSetUri value="http://hl7.org/fhir/ValueSet/organization-type" />
+        <valueSetReference>
+          <reference value="http://hl7.org/fhir/ValueSet/organization-type" />
+        </valueSetReference>
       </binding>
       <mapping>
         <identity value="rim" />
@@ -5275,8 +5356,8 @@
       <definition value="A reference to a code defined by a terminology system." />
       <comments value="Codes may be defined very casually in enumerations, or code lists, up to very formal definitions such as SNOMED CT - see the HL7 v3 Core Principles for more information.  Ordering of codings is undefined and SHALL NOT be used to infer meaning. Generally, at most only one of the coding values will be labelled as UserSelected = true." />
       <requirements value="Allows for translations and alternate encodings within a code system.  Also supports communication of the same instance to systems requiring different encodings." />
-      <min value="1" />
-      <max value="1" />
+      <min value="0" />
+      <max value="*" />
       <base>
         <path value="CodeableConcept.coding" />
         <min value="0" />
@@ -5485,7 +5566,7 @@
       <definition value="A symbol in syntax defined by the system. The symbol may be a predefined code or an expression in a syntax defined by the coding system (e.g. post-coordination)." />
       <comments value="Note that FHIR strings may not exceed 1MB in size" />
       <requirements value="Need to refer to a particular code in the system." />
-      <min value="1" />
+      <min value="0" />
       <max value="1" />
       <base>
         <path value="Coding.code" />
@@ -5529,7 +5610,7 @@
       <definition value="A representation of the meaning of the code in the system, following the rules of the system." />
       <comments value="Note that FHIR strings may not exceed 1MB in size" />
       <requirements value="Need to be able to carry a human-readable meaning of the code for readers that do not know  the system." />
-      <min value="1" />
+      <min value="0" />
       <max value="1" />
       <base>
         <path value="Coding.display" />
@@ -5707,7 +5788,7 @@
       <comments value="The use code home is not to be used. Note that these contacts are not the contact details of people who are employed by or represent the organization, but official contacts for the organization itself." />
       <requirements value="Human contact for the organization." />
       <min value="0" />
-      <max value="0" />
+      <max value="*" />
       <base>
         <path value="Organization.telecom" />
         <min value="0" />
@@ -6237,7 +6318,7 @@
       <comments value="Organization may have multiple addresses with different uses or applicable periods. The use code home is not to be used." />
       <requirements value="May need to keep track of the organization's addresses for contacting, billing or reporting requirements." />
       <min value="0" />
-      <max value="0" />
+      <max value="*" />
       <base>
         <path value="Organization.address" />
         <min value="0" />
@@ -6813,8 +6894,8 @@
         <code value="Period" />
       </type>
       <examplePeriod>
-        <start value="2010-03-23T00:00:00" />
-        <end value="2010-07-01T00:00:00" />
+        <start value="2010-03-23" />
+        <end value="2010-07-01" />
       </examplePeriod>
       <condition value="ele-1" />
       <constraint>
@@ -7014,7 +7095,7 @@
       <definition value="The organization of which this organization forms a part." />
       <requirements value="Need to be able to track the hierarchy of organizations within an organization." />
       <min value="0" />
-      <max value="0" />
+      <max value="1" />
       <base>
         <path value="Organization.partOf" />
         <min value="0" />
@@ -7022,7 +7103,7 @@
       </base>
       <type>
         <code value="Reference" />
-        <profile value="https://fhir.hl7.org.uk/StructureDefinition/CareConnect-DCH-Organization-6-8WeekHealthReviewEvent-1" />
+        <profile value="https://fhir.hl7.org.uk/StructureDefinition/CareConnect-Organization-1" />
       </type>
       <condition value="ele-1" />
       <constraint>
@@ -7209,7 +7290,7 @@
       <comments value="Where multiple contacts for the same purpose are provided there is a standard extension that can be used to determine which one is the preferred contact to use." />
       <requirements value="Need to keep track of assigned contact points within bigger organization." />
       <min value="0" />
-      <max value="0" />
+      <max value="*" />
       <base>
         <path value="Organization.contact" />
         <min value="0" />
@@ -9520,8 +9601,8 @@
         <code value="Period" />
       </type>
       <examplePeriod>
-        <start value="2010-03-23T00:00:00" />
-        <end value="2010-07-01T00:00:00" />
+        <start value="2010-03-23" />
+        <end value="2010-07-01" />
       </examplePeriod>
       <condition value="ele-1" />
       <constraint>
@@ -9730,21 +9811,49 @@
       </constraint>
     </element>
     <element>
+      <path value="Organization.contained" />
+      <type>
+        <code value="Resource" />
+      </type>
+    </element>
+    <element>
+      <path value="Organization.extension" />
+      <slicing>
+        <discriminator value="url" />
+        <rules value="open" />
+      </slicing>
+    </element>
+    <element>
+      <path value="Organization.extension" />
+      <name value="mainLocation" />
+      <max value="1" />
+      <type>
+        <code value="Extension" />
+        <profile value="https://fhir.hl7.org.uk/StructureDefinition/Extension-CareConnect-MainLocation-1" />
+      </type>
+    </element>
+    <element>
+      <path value="Organization.extension" />
+      <name value="organization-period" />
+      <max value="1" />
+      <type>
+        <code value="Extension" />
+        <profile value="http://hl7.org/fhir/StructureDefinition/organization-period" />
+      </type>
+    </element>
+    <element>
       <path value="Organization.identifier" />
       <slicing>
         <discriminator value="system" />
         <ordered value="false" />
         <rules value="openAtEnd" />
       </slicing>
-      <min value="1" />
-      <max value="1" />
     </element>
     <element>
       <path value="Organization.identifier" />
       <name value="ODS Organisation Code" />
       <short value="Organisation Data Service code" />
       <definition value="Identifier code supplier by the Organisation Data Service" />
-      <min value="1" />
       <max value="1" />
     </element>
     <element>
@@ -9776,8 +9885,7 @@
       <path value="Organization.identifier" />
       <name value="ODS Site Code" />
       <short value="ODS Site code to identify the organisation at site level" />
-      <comments value="ODS Site code to identify the organisation at site level. Where an ODS Site Code is not applicable, one of the following values will apply:&#xD;&#xA;&#xD;&#xA;ZZ201 - Not applicable (delivered at home)&#xD;&#xA;ZZ888 - Not applicable (delivered at non-NHS organisation)&#xD;&#xA;ZZ203 - Not known (place of delivery not known)" />
-      <min value="1" />
+      <definition value="ODS Site code to identify the organisation at site level" />
       <max value="1" />
     </element>
     <element>
@@ -9808,7 +9916,6 @@
     <element>
       <path value="Organization.identifier" />
       <name value="localIdentifier" />
-      <max value="0" />
     </element>
     <element>
       <path value="Organization.identifier.system" />
@@ -9824,29 +9931,13 @@
       <path value="Organization.identifier.assigner" />
       <type>
         <code value="Reference" />
-        <profile value="https://fhir.hl7.org.uk/StructureDefinition/CareConnect-DCH-Organization-6-8WeekHealthReviewEvent-1" />
+        <profile value="https://fhir.hl7.org.uk/StructureDefinition/CareConnect-Organization-1" />
       </type>
     </element>
     <element>
       <path value="Organization.active" />
       <short value="Date the organization became active, and if inactive, the date the organization became inactive." />
       <definition value="Date the organization became active, and if inactive, the date the organization became inactive." />
-      <max value="0" />
-    </element>
-    <element>
-      <path value="Organization.type" />
-      <short value="The type of unit" />
-      <definition value="The type of unit for a Birth Event." />
-      <max value="0" />
-      <binding>
-        <strength value="example" />
-        <valueSetUri value="http://hl7.org/fhir/ValueSet/organization-type" />
-      </binding>
-    </element>
-    <element>
-      <path value="Organization.type.coding" />
-      <min value="1" />
-      <max value="1" />
     </element>
     <element>
       <path value="Organization.type.coding.system" />
@@ -9858,28 +9949,12 @@
       <max value="0" />
     </element>
     <element>
-      <path value="Organization.type.coding.code" />
-      <min value="1" />
-    </element>
-    <element>
-      <path value="Organization.type.coding.display" />
-      <min value="1" />
-    </element>
-    <element>
       <path value="Organization.type.coding.userSelected" />
       <max value="0" />
     </element>
     <element>
       <path value="Organization.name" />
       <min value="1" />
-    </element>
-    <element>
-      <path value="Organization.telecom" />
-      <max value="0" />
-    </element>
-    <element>
-      <path value="Organization.address" />
-      <max value="0" />
     </element>
     <element>
       <path value="Organization.address.use" />
@@ -9914,23 +9989,11 @@
       <exampleString value="GBR" />
     </element>
     <element>
-      <path value="Organization.address.period" />
-      <examplePeriod>
-        <start value="2010-03-23T00:00:00" />
-        <end value="2010-07-01T00:00:00" />
-      </examplePeriod>
-    </element>
-    <element>
       <path value="Organization.partOf" />
-      <max value="0" />
       <type>
         <code value="Reference" />
-        <profile value="https://fhir.hl7.org.uk/StructureDefinition/CareConnect-DCH-Organization-6-8WeekHealthReviewEvent-1" />
+        <profile value="https://fhir.hl7.org.uk/StructureDefinition/CareConnect-Organization-1" />
       </type>
-    </element>
-    <element>
-      <path value="Organization.contact" />
-      <max value="0" />
     </element>
     <element>
       <path value="Organization.contact.name.use" />
@@ -9988,13 +10051,6 @@
     <element>
       <path value="Organization.contact.address.country" />
       <exampleString value="GBR" />
-    </element>
-    <element>
-      <path value="Organization.contact.address.period" />
-      <examplePeriod>
-        <start value="2010-03-23T00:00:00" />
-        <end value="2010-07-01T00:00:00" />
-      </examplePeriod>
     </element>
   </differential>
 </StructureDefinition>

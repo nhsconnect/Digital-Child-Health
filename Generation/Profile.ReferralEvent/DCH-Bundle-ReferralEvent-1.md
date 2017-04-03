@@ -16,10 +16,10 @@ The Child Health Event data items are fulfilled by elements within the FHIR reso
 | DCH Data Item Name    | FHIR Profile                                        |
 |-----------------------|-----------------------------------------------------|
 | Date of Referral      | [CareConnect-DCH-Encounter-ReferralEvent-1]         |
-| Organisation Code     | [CareConnect-DCH-Organization-ReferralEvent-1]      |
-| Professional Type     | [CareConnect-DCH-Practitioner-ReferralEvent-1] |
-| Professional Code     | [CareConnect-DCH-Practitioner-ReferralEvent-1] |
-| Professional Name     | [CareConnect-DCH-Practitioner-ReferralEvent-1] |
+| Organisation Code     | [CareConnect-DCH-Organization-ChildHealthEvent-1]      |
+| Professional Type     | [CareConnect-DCH-Practitioner-ChildHealthEvent-1] |
+| Professional Code     | [CareConnect-DCH-Practitioner-ChildHealthEvent-1] |
+| Professional Name     | [CareConnect-DCH-Practitioner-ChildHealthEvent-1] |
 | Specialty Referred to | [DCH-ReferralRequest-1]                             |
 | Reason                | [DCH-ReferralRequest-1]                             |
                                                                                                    

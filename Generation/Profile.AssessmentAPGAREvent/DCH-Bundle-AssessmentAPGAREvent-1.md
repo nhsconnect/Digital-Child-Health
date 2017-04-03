@@ -7,6 +7,9 @@ This 'DCH-Bundle-AssessmentAPGAREvent-1' Bundle resource profile is used as a co
 - [CareConnect-DCH-Observation-APGARScore1Minute-1]
 - [CareConnect-DCH-Observation-APGARScore5Minutes-1]
 - [CareConnect-DCH-Observation-APGARScore10Minutes-1]  
+- [CareConnect-DCH-Organization-ActualDeliveryPlace-1]
+- [CareConnect-Location-1]
+- [CareConnect-Practitioner-1]
 
 
 ###  Assessment APGAR Event data item mapping to FHIR profiles ###
@@ -30,3 +33,6 @@ The Child Health Event data items are fulfilled by elements within the FHIR reso
 [CareConnect-DCH-Observation-APGARScore1Minute-1]:careconnect-dch-observation-apgarscore1minute-1.html
 [CareConnect-DCH-Observation-APGARScore5Minutes-1]:careconnect-dch-observation-apgarscore5minutes-1.html
 [CareConnect-DCH-Observation-APGARScore10Minutes-1]:careconnect-dch-observation-apgarscore10minutes-1.html
+[CareConnect-DCH-Organization-ActualDeliveryPlace-1]:careconnect-dch-organization-actualdeliveryplace-1.html
+[CareConnect-Location-1]:careconnect-location-1.html 
+[CareConnect-Practitioner-1]:careconnect-practitioner-1.html 

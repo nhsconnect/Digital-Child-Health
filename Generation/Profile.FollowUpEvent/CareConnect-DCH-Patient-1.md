@@ -1,1 +1,1 @@
-The Patient resource carries the patient demographic details.
+The Patient resource represents the patient involved in the provision of healthcare related services, with further constraints applied to represent a patient as the subject of a Child Health Event.
