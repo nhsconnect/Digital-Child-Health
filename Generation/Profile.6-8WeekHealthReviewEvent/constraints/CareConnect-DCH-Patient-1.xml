@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <meta>
-    <lastUpdated value="2017-03-28T11:09:43.272+01:00" />
+    <lastUpdated value="2017-03-31T14:16:13.335+01:00" />
     <tag>
       <system value="urn:hscic:publishOrder" />
       <code value="5" />
@@ -13744,11 +13744,11 @@
       </base>
       <type>
         <code value="Reference" />
-        <profile value="http://hl7.org/fhir/StructureDefinition/Organization" />
+        <profile value="https://fhir.hl7.org.uk/StructureDefinition/CareConnect-DCH-Organization-ChildHealthEvent-1" />
       </type>
       <type>
         <code value="Reference" />
-        <profile value="http://hl7.org/fhir/StructureDefinition/Practitioner" />
+        <profile value="https://fhir.hl7.org.uk/StructureDefinition/CareConnect-DCH-Practitioner-ChildHealthEvent-1" />
       </type>
       <condition value="ele-1" />
       <constraint>
@@ -14777,6 +14777,14 @@
       <path value="Patient.careProvider" />
       <short value="Patient's nominated practitioner" />
       <max value="0" />
+      <type>
+        <code value="Reference" />
+        <profile value="https://fhir.hl7.org.uk/StructureDefinition/CareConnect-DCH-Organization-ChildHealthEvent-1" />
+      </type>
+      <type>
+        <code value="Reference" />
+        <profile value="https://fhir.hl7.org.uk/StructureDefinition/CareConnect-DCH-Practitioner-ChildHealthEvent-1" />
+      </type>
     </element>
     <element>
       <path value="Patient.managingOrganization" />
