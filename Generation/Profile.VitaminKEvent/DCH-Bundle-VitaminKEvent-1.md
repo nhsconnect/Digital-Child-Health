@@ -6,7 +6,7 @@ This 'DCH-Bundle-VitaminKEvent-1' Bundle resource profile is used as a container
 - [CareConnect-DCH-Patient-1]
 - [CareConnect-DCH-Procedure-VitaminKEvent-1]
 - [DCH-ProcedureRequest-VitaminKEvent-1] 
-- [DCH-MedicationAdministration-VitaminKEvent-1] 
+- [DCH-MedicationAdministration-1] 
 - [CareConnect-DCH-Organization-ChildHealthEvent-1]
 - [DCH-Appointment-VitaminKEvent-1] 
 - [CareConnect-DCH-Practitioner-ChildHealthEvent-1]
@@ -21,7 +21,7 @@ The Child Health Event data items are fulfilled by elements within the FHIR reso
 | Administered Indicator               | [CareConnect-DCH-Procedure-VitaminKEvent-1]    |
 | Consent Status     | [DCH-ProcedureRequest-VitaminKEvent-1]         |
 | Date               | [CareConnect-DCH-Encounter-VitaminKEvent-1]    |
-| Route               | [DCH-MedicationAdministration-VitaminKEvent-1]    |
+| Route               | [DCH-MedicationAdministration-1]    |
 | Dose               | tbc    |
 | Site Code          | [CareConnect-DCH-Organization-ChildHealthEvent-1] |
 | Type of Unit       | [CareConnect-DCH-Organization-ChildHealthEvent-1] |
@@ -45,4 +45,4 @@ The Child Health Event data items are fulfilled by elements within the FHIR reso
 [DCH-ProcedureRequest-VitaminKEvent-1]:dch-procedurerequest-vitaminkevent-1.html 
 [DCH-Appointment-VitaminKEvent-1]:dch-appointment-vitaminkevent-1.html 
 [CareConnect-DCH-Procedure-VitaminKEvent-1]:careconnect-dch-procedure-vitaminkevent-1.html
-[DCH-MedicationAdministration-VitaminKEvent-1]:dch-medicationadministration-vitaminkevent-1.html
+[DCH-MedicationAdministration-1]:dch-medicationadministration-1.html
