@@ -27,7 +27,7 @@
   POSSIBILITY OF SUCH DAMAGE.
   
 
-  Generated on Sun, Sep 18, 2016 13:22+0000 for FHIR v1.7.0 
+  Generated on Tue, Sep 22, 2015 13:47+1000 for FHIR v1.0.1 
 
   Note: the schemas &amp; schematrons do not contain all of the rules about what makes resources
   valid. Implementers will still need to be familiar with the content of the specification and with
@@ -66,7 +66,7 @@
           </xs:element>
           <xs:element name="recipient" minOccurs="0" maxOccurs="unbounded" type="Reference">
             <xs:annotation>
-              <xs:documentation xml:lang="en">The entity (e.g. person, organization, clinical information system, device, group, or care team) which is the intended target of the communication.</xs:documentation>
+              <xs:documentation xml:lang="en">The entity (e.g. person, organization, clinical information system, or device) which is the intended target of the communication.</xs:documentation>
            </xs:annotation>
           </xs:element>
           <xs:element name="payload" type="CommunicationRequest.Payload" minOccurs="0" maxOccurs="unbounded">
@@ -145,55 +145,55 @@
     </xs:complexContent>
   </xs:complexType>
   <xs:simpleType name="CommunicationRequestStatus-list">
-    <xs:restriction base="code-primitive">
+    <xs:restriction base="xs:string">
       <xs:enumeration value="proposed">
         <xs:annotation>
-          <xs:documentation xml:lang="en">Proposed</xs:documentation>
+          <xs:documentation xml:lang="en">The request has been proposed.</xs:documentation>
         </xs:annotation>
       </xs:enumeration>
       <xs:enumeration value="planned">
         <xs:annotation>
-          <xs:documentation xml:lang="en">Planned</xs:documentation>
+          <xs:documentation xml:lang="en">The request has been planned.</xs:documentation>
         </xs:annotation>
       </xs:enumeration>
       <xs:enumeration value="requested">
         <xs:annotation>
-          <xs:documentation xml:lang="en">Requested</xs:documentation>
+          <xs:documentation xml:lang="en">The request has been placed.</xs:documentation>
         </xs:annotation>
       </xs:enumeration>
       <xs:enumeration value="received">
         <xs:annotation>
-          <xs:documentation xml:lang="en">Received</xs:documentation>
+          <xs:documentation xml:lang="en">The receiving system has received the request but not yet decided whether it will be performed.</xs:documentation>
         </xs:annotation>
       </xs:enumeration>
       <xs:enumeration value="accepted">
         <xs:annotation>
-          <xs:documentation xml:lang="en">Accepted</xs:documentation>
+          <xs:documentation xml:lang="en">The receiving system has accepted the order, but work has not yet commenced.</xs:documentation>
         </xs:annotation>
       </xs:enumeration>
       <xs:enumeration value="in-progress">
         <xs:annotation>
-          <xs:documentation xml:lang="en">In Progress</xs:documentation>
+          <xs:documentation xml:lang="en">The work to fulfill the order is happening.</xs:documentation>
         </xs:annotation>
       </xs:enumeration>
       <xs:enumeration value="completed">
         <xs:annotation>
-          <xs:documentation xml:lang="en">Completed</xs:documentation>
+          <xs:documentation xml:lang="en">The work has been complete, the report(s) released, and no further work is planned.</xs:documentation>
         </xs:annotation>
       </xs:enumeration>
       <xs:enumeration value="suspended">
         <xs:annotation>
-          <xs:documentation xml:lang="en">Suspended</xs:documentation>
+          <xs:documentation xml:lang="en">The request has been held by originating system/user request.</xs:documentation>
         </xs:annotation>
       </xs:enumeration>
       <xs:enumeration value="rejected">
         <xs:annotation>
-          <xs:documentation xml:lang="en">Rejected</xs:documentation>
+          <xs:documentation xml:lang="en">The receiving system has declined to fulfill the request</xs:documentation>
         </xs:annotation>
       </xs:enumeration>
       <xs:enumeration value="failed">
         <xs:annotation>
-          <xs:documentation xml:lang="en">Failed</xs:documentation>
+          <xs:documentation xml:lang="en">The communication was attempted, but due to some procedural error, it could not be completed.</xs:documentation>
         </xs:annotation>
       </xs:enumeration>
     </xs:restriction>

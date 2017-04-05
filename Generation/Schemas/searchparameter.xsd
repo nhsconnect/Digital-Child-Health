@@ -27,7 +27,7 @@
   POSSIBILITY OF SUCH DAMAGE.
   
 
-  Generated on Sun, Sep 18, 2016 13:22+0000 for FHIR v1.7.0 
+  Generated on Tue, Sep 22, 2015 13:47+1000 for FHIR v1.0.1 
 
   Note: the schemas &amp; schematrons do not contain all of the rules about what makes resources
   valid. Implementers will still need to be familiar with the content of the specification and with
@@ -59,7 +59,7 @@
               <xs:documentation xml:lang="en">A free text natural language name identifying the search parameter.</xs:documentation>
            </xs:annotation>
           </xs:element>
-          <xs:element name="status" minOccurs="0" maxOccurs="1" type="ConformanceResourceStatus">
+          <xs:element name="status" minOccurs="0" maxOccurs="1" type="code">
             <xs:annotation>
               <xs:documentation xml:lang="en">The status of this search parameter definition.</xs:documentation>
            </xs:annotation>
@@ -67,11 +67,6 @@
           <xs:element name="experimental" minOccurs="0" maxOccurs="1" type="boolean">
             <xs:annotation>
               <xs:documentation xml:lang="en">A flag to indicate that this search parameter definition is authored for testing purposes (or education/evaluation/marketing), and is not intended to be used for genuine usage.</xs:documentation>
-           </xs:annotation>
-          </xs:element>
-          <xs:element name="date" minOccurs="0" maxOccurs="1" type="dateTime">
-            <xs:annotation>
-              <xs:documentation xml:lang="en">The date  (and optionally time) when the search parameter definition was published. The date must change when the business version changes, if it does, and it must change if the status code changes. In addition, it should change when the substantive content of the search parameter changes.</xs:documentation>
            </xs:annotation>
           </xs:element>
           <xs:element name="publisher" minOccurs="0" maxOccurs="1" type="string">
@@ -84,12 +79,12 @@
               <xs:documentation xml:lang="en">Contacts to assist a user in finding and communicating with the publisher.</xs:documentation>
            </xs:annotation>
           </xs:element>
-          <xs:element name="useContext" minOccurs="0" maxOccurs="unbounded" type="CodeableConcept">
+          <xs:element name="date" minOccurs="0" maxOccurs="1" type="dateTime">
             <xs:annotation>
-              <xs:documentation xml:lang="en">The content was developed with a focus and intent of supporting the contexts that are listed. These terms may be used to assist with indexing and searching of search parameters.</xs:documentation>
+              <xs:documentation xml:lang="en">The date  (and optionally time) when the search parameter definition was published. The date must change when the business version changes, if it does, and it must change if the status code changes. In addition, it should change when the substantive content of the search parameter changes.</xs:documentation>
            </xs:annotation>
           </xs:element>
-          <xs:element name="requirements" minOccurs="0" maxOccurs="1" type="markdown">
+          <xs:element name="requirements" minOccurs="0" maxOccurs="1" type="string">
             <xs:annotation>
               <xs:documentation xml:lang="en">The Scope and Usage that this search parameter was created to meet.</xs:documentation>
            </xs:annotation>
@@ -104,19 +99,14 @@
               <xs:documentation xml:lang="en">The base resource type that this search parameter refers to.</xs:documentation>
            </xs:annotation>
           </xs:element>
-          <xs:element name="type" minOccurs="1" maxOccurs="1" type="SearchParamType">
+          <xs:element name="type" minOccurs="1" maxOccurs="1" type="code">
             <xs:annotation>
               <xs:documentation xml:lang="en">The type of value a search parameter refers to, and how the content is interpreted.</xs:documentation>
            </xs:annotation>
           </xs:element>
-          <xs:element name="description" minOccurs="1" maxOccurs="1" type="markdown">
+          <xs:element name="description" minOccurs="1" maxOccurs="1" type="string">
             <xs:annotation>
               <xs:documentation xml:lang="en">A description of the search parameters and how it used.</xs:documentation>
-           </xs:annotation>
-          </xs:element>
-          <xs:element name="expression" minOccurs="0" maxOccurs="1" type="string">
-            <xs:annotation>
-              <xs:documentation xml:lang="en">A FluentPath expression that returns a set of elements for the search parameter.</xs:documentation>
            </xs:annotation>
           </xs:element>
           <xs:element name="xpath" minOccurs="0" maxOccurs="1" type="string">
@@ -132,11 +122,6 @@
           <xs:element name="target" minOccurs="0" maxOccurs="unbounded" type="code">
             <xs:annotation>
               <xs:documentation xml:lang="en">Types of resource (if a resource is referenced).</xs:documentation>
-           </xs:annotation>
-          </xs:element>
-          <xs:element name="component" minOccurs="0" maxOccurs="unbounded" type="Reference">
-            <xs:annotation>
-              <xs:documentation xml:lang="en">Used to define the parts of a composite search parameter.</xs:documentation>
            </xs:annotation>
           </xs:element>
         </xs:sequence>
@@ -165,30 +150,30 @@
     </xs:complexContent>
   </xs:complexType>
   <xs:simpleType name="XPathUsageType-list">
-    <xs:restriction base="code-primitive">
+    <xs:restriction base="xs:string">
       <xs:enumeration value="normal">
         <xs:annotation>
-          <xs:documentation xml:lang="en">Normal</xs:documentation>
+          <xs:documentation xml:lang="en">The search parameter is derived directly from the selected nodes based on the type definitions.</xs:documentation>
         </xs:annotation>
       </xs:enumeration>
       <xs:enumeration value="phonetic">
         <xs:annotation>
-          <xs:documentation xml:lang="en">Phonetic</xs:documentation>
+          <xs:documentation xml:lang="en">The search parameter is derived by a phonetic transform from the selected nodes.</xs:documentation>
         </xs:annotation>
       </xs:enumeration>
       <xs:enumeration value="nearby">
         <xs:annotation>
-          <xs:documentation xml:lang="en">Nearby</xs:documentation>
+          <xs:documentation xml:lang="en">The search parameter is based on a spatial transform of the selected nodes.</xs:documentation>
         </xs:annotation>
       </xs:enumeration>
       <xs:enumeration value="distance">
         <xs:annotation>
-          <xs:documentation xml:lang="en">Distance</xs:documentation>
+          <xs:documentation xml:lang="en">The search parameter is based on a spatial transform of the selected nodes, using physical distance from the middle.</xs:documentation>
         </xs:annotation>
       </xs:enumeration>
       <xs:enumeration value="other">
         <xs:annotation>
-          <xs:documentation xml:lang="en">Other</xs:documentation>
+          <xs:documentation xml:lang="en">The interpretation of the xpath statement is unknown (and can't be automated).</xs:documentation>
         </xs:annotation>
       </xs:enumeration>
     </xs:restriction>
