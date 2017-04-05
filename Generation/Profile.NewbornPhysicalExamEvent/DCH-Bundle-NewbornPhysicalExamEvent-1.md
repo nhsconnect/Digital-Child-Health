@@ -23,7 +23,7 @@ The Child Health Event data items are fulfilled by elements within the FHIR reso
 | Date               | [CareConnect-DCH-Encounter-NewbornPhysicalExamEvent-1]    |
 | Site Code          | [CareConnect-DCH-Organization-ChildHealthEvent-1] |
 | Type of Unit       | [CareConnect-DCH-Organization-ChildHealthEvent-1] |
-| Consent Status     | [DCH-ProcedureRequest-Event-1]         |
+| Consent Status     | [DCH-ProcedureRequest-NewbornPhysicalExamEvent-1]         |
 | Attendance Status  | [DCH-Appointment-Event-1]              |
 | Outcome            | [CareConnect-DCH-Procedure-NewbornPhysicalExamEvent-1]          |
 | Organisation Code  | [CareConnect-DCH-Organization-ChildHealthEvent-1] |
@@ -37,7 +37,7 @@ The Child Health Event data items are fulfilled by elements within the FHIR reso
 [CareConnect-Organization-1]:careconnect-organization-1.html
 [CareConnect-DCH-Patient-1]:careconnect-dch-patient-1.html
 [CareConnect-DCH-Organization-ChildHealthEvent-1]:careconnect-dch-organization-childhealthevent-1.html
-[DCH-ProcedureRequest-NewbornPhysicalExamEvent-1]:dch-procedurerequest-event-1.html 
+[DCH-ProcedureRequest-NewbornPhysicalExamEvent-1]:dch-procedurerequest-newbornphysicalexamevent-1.html 
 [DCH-Appointment-NewbornPhysicalExamEvent-1]:dch-appointment-newbornphysicalexamevent-1.html 
 [CareConnect-DCH-Procedure-NewbornPhysicalExamEvent-1]:careconnect-dch-procedure-newbornphysicalexamevent-1.html
 [CareConnect-DCH-Practitioner-ChildHealthEvent-1]:careconnect-dch-practitioner-childhealthevent-1.html

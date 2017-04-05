@@ -25,7 +25,7 @@ The Child Health Event data items are fulfilled by elements within the FHIR reso
 | Type of Unit       | [CareConnect-DCH-Organization-ChildHealthEvent-1] |
 | Consent Status     | [DCH-ProcedureRequest-NewbornHearingEvent-1]         |
 | Attendance Status  | [DCH-Appointment-NewbornHearingEvent-1]              |
-| Outcome            | [CareConnect-DCH-Procedure-NewbornHearingEvent1]          |
+| Outcome            | [CareConnect-DCH-Procedure-NewbornHearingEvent-1]          |
 | Organisation Code  | [CareConnect-DCH-Organization-ChildHealthEvent-1] |
 | Professional Type  | [CareConnect-DCH-Practitioner-ChildHealthEvent-1] |
 | Professional Code  | [CareConnect-DCH-Practitioner-ChildHealthEvent-1] |
@@ -39,7 +39,7 @@ The Child Health Event data items are fulfilled by elements within the FHIR reso
 [CareConnect-DCH-Organization-ChildHealthEvent-1]:careconnect-dch-organization-childhealthevent-1.html
 [DCH-ProcedureRequest-NewbornHearingEvent-1]:dch-procedurerequest-newbornhearingevent-1.html 
 [DCH-Appointment-NewbornHearingEvent-1]:dch-appointment-newbornhearingevent-1.html 
-[CareConnect-DCH-Procedure-NewbornHearingEvent-1]:careconnect-dch-procedure-newbornhearingevent1.html
+[CareConnect-DCH-Procedure-NewbornHearingEvent-1]:careconnect-dch-procedure-newbornhearingevent-1.html
 [CareConnect-DCH-Practitioner-NewbornHearingEvent-1]:careconnect-dch-practitioner-newbornhearingevent-1.html
 [CareConnect-DCH-Practitioner-ChildHealthEvent-1]:careconnect-dch-practitioner-childhealthevent-1.html
 [CareConnect-Location-1]:careconnect-location-1.html

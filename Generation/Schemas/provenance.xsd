@@ -27,7 +27,7 @@
   POSSIBILITY OF SUCH DAMAGE.
   
 
-  Generated on Sun, Sep 18, 2016 13:22+0000 for FHIR v1.7.0 
+  Generated on Tue, Sep 22, 2015 13:47+1000 for FHIR v1.0.1 
 
   Note: the schemas &amp; schematrons do not contain all of the rules about what makes resources
   valid. Implementers will still need to be familiar with the content of the specification and with
@@ -64,12 +64,12 @@
               <xs:documentation xml:lang="en">The instant of time at which the activity was recorded.</xs:documentation>
            </xs:annotation>
           </xs:element>
-          <xs:element name="reason" minOccurs="0" maxOccurs="unbounded" type="Coding">
+          <xs:element name="reason" minOccurs="0" maxOccurs="unbounded" type="CodeableConcept">
             <xs:annotation>
               <xs:documentation xml:lang="en">The reason that the activity was taking place.</xs:documentation>
            </xs:annotation>
           </xs:element>
-          <xs:element name="activity" minOccurs="0" maxOccurs="1" type="Coding">
+          <xs:element name="activity" minOccurs="0" maxOccurs="1" type="CodeableConcept">
             <xs:annotation>
               <xs:documentation xml:lang="en">An activity is something that occurs over a period of time and acts upon or with entities; it may include consuming, processing, transforming, modifying, relocating, using, or generating entities.</xs:documentation>
            </xs:annotation>
@@ -84,9 +84,9 @@
               <xs:documentation xml:lang="en">Policy or plan the activity was defined by. Typically, a single activity may have multiple applicable policy documents, such as patient consent, guarantor funding, etc.</xs:documentation>
            </xs:annotation>
           </xs:element>
-          <xs:element name="agent" type="Provenance.Agent" minOccurs="1" maxOccurs="unbounded">
+          <xs:element name="agent" type="Provenance.Agent" minOccurs="0" maxOccurs="unbounded">
             <xs:annotation>
-              <xs:documentation xml:lang="en">An actor taking a role in an activity  for which it can be assigned some degree of responsibility for the activity taking place.</xs:documentation>
+              <xs:documentation xml:lang="en">An agent takes a role in an activity such that the agent can be assigned some degree of responsibility for the activity taking place. An agent can be a person, an organization, software, or other entities that may be ascribed responsibility.</xs:documentation>
            </xs:annotation>
           </xs:element>
           <xs:element name="entity" type="Provenance.Entity" minOccurs="0" maxOccurs="unbounded">
@@ -182,7 +182,7 @@
               <xs:documentation xml:lang="en">Human-readable description of the entity.</xs:documentation>
            </xs:annotation>
           </xs:element>
-          <xs:element name="agent" type="Provenance.Agent" minOccurs="0" maxOccurs="unbounded">
+          <xs:element name="agent" type="Provenance.Agent" minOccurs="0" maxOccurs="1">
             <xs:annotation>
               <xs:documentation xml:lang="en">The entity is attributed to an agent to express the agent's responsibility for that entity, possibly along with other agents. This description can be understood as shorthand for saying that the agent was responsible for the activity which generated the entity.</xs:documentation>
            </xs:annotation>
@@ -192,30 +192,25 @@
     </xs:complexContent>
   </xs:complexType>
   <xs:simpleType name="ProvenanceEntityRole-list">
-    <xs:restriction base="code-primitive">
+    <xs:restriction base="xs:string">
       <xs:enumeration value="derivation">
         <xs:annotation>
-          <xs:documentation xml:lang="en">Derivation</xs:documentation>
+          <xs:documentation xml:lang="en">A transformation of an entity into another, an update of an entity resulting in a new one, or the construction of a new entity based on a preexisting entity.</xs:documentation>
         </xs:annotation>
       </xs:enumeration>
       <xs:enumeration value="revision">
         <xs:annotation>
-          <xs:documentation xml:lang="en">Revision</xs:documentation>
+          <xs:documentation xml:lang="en">A derivation for which the resulting entity is a revised version of some original.</xs:documentation>
         </xs:annotation>
       </xs:enumeration>
       <xs:enumeration value="quotation">
         <xs:annotation>
-          <xs:documentation xml:lang="en">Quotation</xs:documentation>
+          <xs:documentation xml:lang="en">The repeat of (some or all of) an entity, such as text or image, by someone who may or may not be its original author.</xs:documentation>
         </xs:annotation>
       </xs:enumeration>
       <xs:enumeration value="source">
         <xs:annotation>
-          <xs:documentation xml:lang="en">Source</xs:documentation>
-        </xs:annotation>
-      </xs:enumeration>
-      <xs:enumeration value="removal">
-        <xs:annotation>
-          <xs:documentation xml:lang="en">Removal</xs:documentation>
+          <xs:documentation xml:lang="en">A primary source for a topic refers to something produced by some agent with direct experience and knowledge about the topic, at the time of the topic's study, without benefit from hindsight.</xs:documentation>
         </xs:annotation>
       </xs:enumeration>
     </xs:restriction>

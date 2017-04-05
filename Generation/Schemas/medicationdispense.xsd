@@ -27,7 +27,7 @@
   POSSIBILITY OF SUCH DAMAGE.
   
 
-  Generated on Sun, Sep 18, 2016 13:22+0000 for FHIR v1.7.0 
+  Generated on Tue, Sep 22, 2015 13:47+1000 for FHIR v1.0.1 
 
   Note: the schemas &amp; schematrons do not contain all of the rules about what makes resources
   valid. Implementers will still need to be familiar with the content of the specification and with
@@ -59,13 +59,6 @@
               <xs:documentation xml:lang="en">A code specifying the state of the set of dispense events.</xs:documentation>
            </xs:annotation>
           </xs:element>
-          <xs:choice minOccurs="1" maxOccurs="1" >
-            <xs:annotation>
-              <xs:documentation xml:lang="en">Identifies the medication being administered. This is either a link to a resource representing the details of the medication or a simple attribute carrying a code that identifies the medication from a known list of medications.</xs:documentation>
-            </xs:annotation>
-            <xs:element name="medicationCodeableConcept" type="CodeableConcept"/>
-            <xs:element name="medicationReference" type="Reference"/>
-          </xs:choice>
           <xs:element name="patient" minOccurs="0" maxOccurs="1" type="Reference">
             <xs:annotation>
               <xs:documentation xml:lang="en">A link to a resource representing the person to whom the medication will be given.</xs:documentation>
@@ -74,11 +67,6 @@
           <xs:element name="dispenser" minOccurs="0" maxOccurs="1" type="Reference">
             <xs:annotation>
               <xs:documentation xml:lang="en">The individual responsible for dispensing the medication.</xs:documentation>
-           </xs:annotation>
-          </xs:element>
-          <xs:element name="dispensingOrganization" minOccurs="0" maxOccurs="1" type="Reference">
-            <xs:annotation>
-              <xs:documentation xml:lang="en">The organizaation responsible for the dispense of the medication.</xs:documentation>
            </xs:annotation>
           </xs:element>
           <xs:element name="authorizingPrescription" minOccurs="0" maxOccurs="unbounded" type="Reference">
@@ -91,16 +79,23 @@
               <xs:documentation xml:lang="en">Indicates the type of dispensing event that is performed. For example, Trial Fill, Completion of Trial, Partial Fill, Emergency Fill, Samples, etc.</xs:documentation>
            </xs:annotation>
           </xs:element>
-          <xs:element name="quantity" minOccurs="0" maxOccurs="1" type="Quantity">
+          <xs:element name="quantity" minOccurs="0" maxOccurs="1" type="SimpleQuantity">
             <xs:annotation>
               <xs:documentation xml:lang="en">The amount of medication that has been dispensed. Includes unit of measure.</xs:documentation>
            </xs:annotation>
           </xs:element>
-          <xs:element name="daysSupply" minOccurs="0" maxOccurs="1" type="Quantity">
+          <xs:element name="daysSupply" minOccurs="0" maxOccurs="1" type="SimpleQuantity">
             <xs:annotation>
               <xs:documentation xml:lang="en">The amount of medication expressed as a timing amount.</xs:documentation>
            </xs:annotation>
           </xs:element>
+          <xs:choice minOccurs="1" maxOccurs="1" >
+            <xs:annotation>
+              <xs:documentation xml:lang="en">Identifies the medication being administered. This is either a link to a resource representing the details of the medication or a simple attribute carrying a code that identifies the medication from a known list of medications.</xs:documentation>
+            </xs:annotation>
+            <xs:element name="medicationCodeableConcept" type="CodeableConcept"/>
+            <xs:element name="medicationReference" type="Reference"/>
+          </xs:choice>
           <xs:element name="whenPrepared" minOccurs="0" maxOccurs="1" type="dateTime">
             <xs:annotation>
               <xs:documentation xml:lang="en">The time when the dispensed product was packaged and reviewed.</xs:documentation>
@@ -121,24 +116,19 @@
               <xs:documentation xml:lang="en">Identifies the person who picked up the medication.  This will usually be a patient or their caregiver, but some cases exist where it can be a healthcare professional.</xs:documentation>
            </xs:annotation>
           </xs:element>
-          <xs:element name="note" minOccurs="0" maxOccurs="unbounded" type="Annotation">
+          <xs:element name="note" minOccurs="0" maxOccurs="1" type="string">
             <xs:annotation>
               <xs:documentation xml:lang="en">Extra information about the dispense that could not be conveyed in the other attributes.</xs:documentation>
            </xs:annotation>
           </xs:element>
           <xs:element name="dosageInstruction" type="MedicationDispense.DosageInstruction" minOccurs="0" maxOccurs="unbounded">
             <xs:annotation>
-              <xs:documentation xml:lang="en">Indicates how the medication is to be used by the patient.  The pharmacist reviews the medication order prior to dispense and updates the dosageInstruction based on the actual product being dispensed.</xs:documentation>
+              <xs:documentation xml:lang="en">Indicates how the medication is to be used by the patient.</xs:documentation>
            </xs:annotation>
           </xs:element>
           <xs:element name="substitution" type="MedicationDispense.Substitution" minOccurs="0" maxOccurs="1">
             <xs:annotation>
               <xs:documentation xml:lang="en">Indicates whether or not substitution was made as part of the dispense.  In some cases substitution will be expected but does not happen, in other cases substitution is not expected but does happen.  This block explains what substitution did or did not happen and why.</xs:documentation>
-           </xs:annotation>
-          </xs:element>
-          <xs:element name="eventHistory" type="MedicationDispense.EventHistory" minOccurs="0" maxOccurs="unbounded">
-            <xs:annotation>
-              <xs:documentation xml:lang="en">A summary of the events of interest that have occurred, such as when the dispense was verified.</xs:documentation>
            </xs:annotation>
           </xs:element>
         </xs:sequence>
@@ -157,14 +147,14 @@
               <xs:documentation xml:lang="en">Free text dosage instructions can be used for cases where the instructions are too complex to code. When coded instructions are present, the free text instructions may still be present for display to humans taking or administering the medication.</xs:documentation>
            </xs:annotation>
           </xs:element>
-          <xs:element name="additionalInstructions" minOccurs="0" maxOccurs="unbounded" type="CodeableConcept">
+          <xs:element name="additionalInstructions" minOccurs="0" maxOccurs="1" type="CodeableConcept">
             <xs:annotation>
               <xs:documentation xml:lang="en">Additional instructions such as &quot;Swallow with plenty of water&quot; which may or may not be coded.</xs:documentation>
            </xs:annotation>
           </xs:element>
           <xs:element name="timing" minOccurs="0" maxOccurs="1" type="Timing">
             <xs:annotation>
-              <xs:documentation xml:lang="en">The timing schedule for giving the medication to the patient.  The Schedule data type allows many different expressions.  For example, &quot;Every  8 hours&quot;; &quot;Three times a day&quot;; &quot;1/2 an hour before breakfast for 10 days from 23-Dec 2011:&quot;;  &quot;15 Oct 2013, 17 Oct 2013 and 1 Nov 2013&quot;.  Sometimes, a rate can imply duration when expressed as total volume / duration (e.g.  500mL/2 hours implies a duration of 2 hours).  However, when rate doesn't imply duration (e.g. 250mL/hour), then the timing.repeat.duration is needed to convey the infuse over time period.</xs:documentation>
+              <xs:documentation xml:lang="en">The timing schedule for giving the medication to the patient.  The Schedule data type allows many different expressions.  For example, &quot;Every  8 hours&quot;; &quot;Three times a day&quot;; &quot;1/2 an hour before breakfast for 10 days from 23-Dec 2011:&quot;;  &quot;15 Oct 2013, 17 Oct 2013 and 1 Nov 2013&quot;.</xs:documentation>
            </xs:annotation>
           </xs:element>
           <xs:choice minOccurs="0" maxOccurs="1" >
@@ -198,15 +188,14 @@ Specifically if 'boolean' datatype is selected, then the following logic applies
               <xs:documentation xml:lang="en">The amount of therapeutic or other substance given at one administration event.</xs:documentation>
             </xs:annotation>
             <xs:element name="doseRange" type="Range"/>
-            <xs:element name="doseQuantity" type="Quantity"/>
+            <xs:element name="doseQuantity" type="SimpleQuantity"/>
           </xs:choice>
           <xs:choice minOccurs="0" maxOccurs="1" >
             <xs:annotation>
-              <xs:documentation xml:lang="en">Identifies the speed with which the medication was or will be introduced into the patient. Typically the rate for an infusion e.g. 100 ml per 1 hour or 100 ml/hr.  May also be expressed as a rate per unit of time e.g. 500 ml per 2 hours.  Other examples: 200 mcg/min or 200 mcg/1 minute; 1 liter/8 hours.  Sometimes, a rate can imply duration when expressed as total volume / duration (e.g.  500mL/2 hours implies a duration of 2 hours).  However, when rate doesn't imply duration (e.g. 250mL/hour), then the timing.repeat.duration is needed to convey the infuse over time period.</xs:documentation>
+              <xs:documentation xml:lang="en">Identifies the speed with which the medication was or will be introduced into the patient. Typically the rate for an infusion e.g. 100 ml per 1 hour or 100 ml/hr.  May also be expressed as a rate per unit of time e.g. 500 ml per 2 hours.   Currently we do not specify a default of '1' in the denominator, but this is being discussed. Other examples: 200 mcg/min or 200 mcg/1 minute; 1 liter/8 hours.</xs:documentation>
             </xs:annotation>
             <xs:element name="rateRatio" type="Ratio"/>
             <xs:element name="rateRange" type="Range"/>
-            <xs:element name="rateQuantity" type="Quantity"/>
           </xs:choice>
           <xs:element name="maxDosePerPeriod" minOccurs="0" maxOccurs="1" type="Ratio">
             <xs:annotation>
@@ -243,74 +232,38 @@ Specifically if 'boolean' datatype is selected, then the following logic applies
       </xs:extension>
     </xs:complexContent>
   </xs:complexType>
-  <xs:complexType name="MedicationDispense.EventHistory">
-    <xs:annotation>
-      <xs:documentation xml:lang="en">Indicates that a medication product is to be or has been dispensed for a named person/patient.  This includes a description of the medication product (supply) provided and the instructions for administering the medication.  The medication dispense is the result of a pharmacy system responding to a medication order.</xs:documentation>
-    </xs:annotation>
-    <xs:complexContent>
-      <xs:extension base="BackboneElement">
-        <xs:sequence>
-          <xs:element name="status" minOccurs="1" maxOccurs="1" type="MedicationDispenseStatus">
-            <xs:annotation>
-              <xs:documentation xml:lang="en">The status for the event.</xs:documentation>
-           </xs:annotation>
-          </xs:element>
-          <xs:element name="action" minOccurs="0" maxOccurs="1" type="CodeableConcept">
-            <xs:annotation>
-              <xs:documentation xml:lang="en">The action that was taken (e.g. verify).</xs:documentation>
-           </xs:annotation>
-          </xs:element>
-          <xs:element name="dateTime" minOccurs="1" maxOccurs="1" type="dateTime">
-            <xs:annotation>
-              <xs:documentation xml:lang="en">The date/time at which the event occurred.</xs:documentation>
-           </xs:annotation>
-          </xs:element>
-          <xs:element name="actor" minOccurs="0" maxOccurs="1" type="Reference">
-            <xs:annotation>
-              <xs:documentation xml:lang="en">The person responsible for taking the action.</xs:documentation>
-           </xs:annotation>
-          </xs:element>
-          <xs:element name="reason" minOccurs="0" maxOccurs="1" type="CodeableConcept">
-            <xs:annotation>
-              <xs:documentation xml:lang="en">The reason why the action was taken.</xs:documentation>
-           </xs:annotation>
-          </xs:element>
-        </xs:sequence>
-      </xs:extension>
-    </xs:complexContent>
-  </xs:complexType>
   <xs:simpleType name="MedicationDispenseStatus-list">
-    <xs:restriction base="code-primitive">
+    <xs:restriction base="xs:string">
       <xs:enumeration value="in-progress">
         <xs:annotation>
-          <xs:documentation xml:lang="en">In Progress</xs:documentation>
+          <xs:documentation xml:lang="en">The dispense has started but has not yet completed.</xs:documentation>
         </xs:annotation>
       </xs:enumeration>
       <xs:enumeration value="on-hold">
         <xs:annotation>
-          <xs:documentation xml:lang="en">On Hold</xs:documentation>
+          <xs:documentation xml:lang="en">Actions implied by the administration have been temporarily halted, but are expected to continue later. May also be called &quot;suspended&quot;</xs:documentation>
         </xs:annotation>
       </xs:enumeration>
       <xs:enumeration value="completed">
         <xs:annotation>
-          <xs:documentation xml:lang="en">Completed</xs:documentation>
+          <xs:documentation xml:lang="en">All actions that are implied by the dispense have occurred.</xs:documentation>
         </xs:annotation>
       </xs:enumeration>
       <xs:enumeration value="entered-in-error">
         <xs:annotation>
-          <xs:documentation xml:lang="en">Entered in-Error</xs:documentation>
+          <xs:documentation xml:lang="en">The dispense was entered in error and therefore nullified.</xs:documentation>
         </xs:annotation>
       </xs:enumeration>
       <xs:enumeration value="stopped">
         <xs:annotation>
-          <xs:documentation xml:lang="en">Stopped</xs:documentation>
+          <xs:documentation xml:lang="en">Actions implied by the dispense have been permanently halted, before all of them occurred.</xs:documentation>
         </xs:annotation>
       </xs:enumeration>
     </xs:restriction>
   </xs:simpleType>
   <xs:complexType name="MedicationDispenseStatus">
     <xs:annotation>
-      <xs:documentation xml:lang="en">A coded concept specifying the state of the dispense event.</xs:documentation>
+      <xs:documentation xml:lang="en">A code specifying the state of the dispense event.</xs:documentation>
       <xs:documentation xml:lang="en">If the element is present, it must have either a @value, an @id, or extensions</xs:documentation>
     </xs:annotation>
     <xs:complexContent>

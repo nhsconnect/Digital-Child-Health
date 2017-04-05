@@ -27,7 +27,7 @@
   POSSIBILITY OF SUCH DAMAGE.
   
 
-  Generated on Sun, Sep 18, 2016 13:22+0000 for FHIR v1.7.0 
+  Generated on Tue, Sep 22, 2015 13:47+1000 for FHIR v1.0.1 
 
   Note: the schemas &amp; schematrons do not contain all of the rules about what makes resources
   valid. Implementers will still need to be familiar with the content of the specification and with
@@ -227,25 +227,25 @@
     </xs:complexContent>
   </xs:complexType>
   <xs:simpleType name="CompositionStatus-list">
-    <xs:restriction base="code-primitive">
+    <xs:restriction base="xs:string">
       <xs:enumeration value="preliminary">
         <xs:annotation>
-          <xs:documentation xml:lang="en">Preliminary</xs:documentation>
+          <xs:documentation xml:lang="en">This is a preliminary composition or document (also known as initial or interim). The content may be incomplete or unverified.</xs:documentation>
         </xs:annotation>
       </xs:enumeration>
       <xs:enumeration value="final">
         <xs:annotation>
-          <xs:documentation xml:lang="en">Final</xs:documentation>
+          <xs:documentation xml:lang="en">This version of the composition is complete and verified by an appropriate person and no further work is planned. Any subsequent updates would be on a new version of the composition.</xs:documentation>
         </xs:annotation>
       </xs:enumeration>
       <xs:enumeration value="amended">
         <xs:annotation>
-          <xs:documentation xml:lang="en">Amended</xs:documentation>
+          <xs:documentation xml:lang="en">The composition content or the referenced resources have been modified (edited or added to) subsequent to being released as &quot;final&quot; and the composition is complete and verified by an authorized person.</xs:documentation>
         </xs:annotation>
       </xs:enumeration>
       <xs:enumeration value="entered-in-error">
         <xs:annotation>
-          <xs:documentation xml:lang="en">Entered in Error</xs:documentation>
+          <xs:documentation xml:lang="en">The composition or document was originally created/issued in error, and this is an amendment that marks that the entire series should not be considered as valid.</xs:documentation>
         </xs:annotation>
       </xs:enumeration>
     </xs:restriction>
@@ -262,25 +262,25 @@
     </xs:complexContent>
   </xs:complexType>
   <xs:simpleType name="CompositionAttestationMode-list">
-    <xs:restriction base="code-primitive">
+    <xs:restriction base="xs:string">
       <xs:enumeration value="personal">
         <xs:annotation>
-          <xs:documentation xml:lang="en">Personal</xs:documentation>
+          <xs:documentation xml:lang="en">The person authenticated the content in their personal capacity.</xs:documentation>
         </xs:annotation>
       </xs:enumeration>
       <xs:enumeration value="professional">
         <xs:annotation>
-          <xs:documentation xml:lang="en">Professional</xs:documentation>
+          <xs:documentation xml:lang="en">The person authenticated the content in their professional capacity.</xs:documentation>
         </xs:annotation>
       </xs:enumeration>
       <xs:enumeration value="legal">
         <xs:annotation>
-          <xs:documentation xml:lang="en">Legal</xs:documentation>
+          <xs:documentation xml:lang="en">The person authenticated the content and accepted legal responsibility for its content.</xs:documentation>
         </xs:annotation>
       </xs:enumeration>
       <xs:enumeration value="official">
         <xs:annotation>
-          <xs:documentation xml:lang="en">Official</xs:documentation>
+          <xs:documentation xml:lang="en">The organization authenticated the content as consistent with their policies and procedures.</xs:documentation>
         </xs:annotation>
       </xs:enumeration>
     </xs:restriction>
