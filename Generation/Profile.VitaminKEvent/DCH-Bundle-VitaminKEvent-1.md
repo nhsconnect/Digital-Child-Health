@@ -26,7 +26,6 @@ The Child Health Event data items are fulfilled by elements within the FHIR reso
 | Site Code          | [CareConnect-DCH-Organization-ChildHealthEvent-1] |
 | Type of Unit       | [CareConnect-DCH-Organization-ChildHealthEvent-1] |
 | Attendance Status  | [DCH-Appointment-VitaminKEvent-1]              |
-| Outcome            | [CareConnect-DCH-Procedure-VitaminKEvent-1]          |
 | Organisation Code  | [CareConnect-DCH-Organization-ChildHealthEvent-1] |
 | Professional Type  | [CareConnect-DCH-Practitioner-ChildHealthEvent-1] |
 | Professional Code  | [CareConnect-DCH-Practitioner-ChildHealthEvent-1] |
