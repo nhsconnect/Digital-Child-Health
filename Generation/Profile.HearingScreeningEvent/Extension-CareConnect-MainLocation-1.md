@@ -1,0 +1,1 @@
+This extension is constrained to represent a reference to the main location for an organization.

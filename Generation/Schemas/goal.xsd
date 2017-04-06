@@ -27,7 +27,7 @@
   POSSIBILITY OF SUCH DAMAGE.
   
 
-  Generated on Sun, Sep 18, 2016 13:22+0000 for FHIR v1.7.0 
+  Generated on Tue, Sep 22, 2015 13:47+1000 for FHIR v1.0.1 
 
   Note: the schemas &amp; schematrons do not contain all of the rules about what makes resources
   valid. Implementers will still need to be familiar with the content of the specification and with
@@ -71,16 +71,16 @@
               <xs:documentation xml:lang="en">Indicates either the date or the duration after start by which the goal should be met.</xs:documentation>
             </xs:annotation>
             <xs:element name="targetDate" type="date"/>
-            <xs:element name="targetDuration" type="Duration"/>
+            <xs:element name="targetQuantity" type="Duration"/>
           </xs:choice>
           <xs:element name="category" minOccurs="0" maxOccurs="unbounded" type="CodeableConcept">
             <xs:annotation>
               <xs:documentation xml:lang="en">Indicates a category the goal falls within.</xs:documentation>
            </xs:annotation>
           </xs:element>
-          <xs:element name="description" minOccurs="1" maxOccurs="1" type="CodeableConcept">
+          <xs:element name="description" minOccurs="1" maxOccurs="1" type="string">
             <xs:annotation>
-              <xs:documentation xml:lang="en">Code and/or human-readable description of a specific desired objective of care.</xs:documentation>
+              <xs:documentation xml:lang="en">Human-readable description of a specific desired objective of care.</xs:documentation>
            </xs:annotation>
           </xs:element>
           <xs:element name="status" minOccurs="1" maxOccurs="1" type="GoalStatus">
@@ -93,12 +93,12 @@
               <xs:documentation xml:lang="en">Identifies when the current status.  I.e. When initially created, when achieved, when cancelled, etc.</xs:documentation>
            </xs:annotation>
           </xs:element>
-          <xs:element name="statusReason" minOccurs="0" maxOccurs="unbounded" type="CodeableConcept">
+          <xs:element name="statusReason" minOccurs="0" maxOccurs="1" type="CodeableConcept">
             <xs:annotation>
               <xs:documentation xml:lang="en">Captures the reason for the current status.</xs:documentation>
            </xs:annotation>
           </xs:element>
-          <xs:element name="expressedBy" minOccurs="0" maxOccurs="1" type="Reference">
+          <xs:element name="author" minOccurs="0" maxOccurs="1" type="Reference">
             <xs:annotation>
               <xs:documentation xml:lang="en">Indicates whose goal this is - patient goal, practitioner goal, etc.</xs:documentation>
            </xs:annotation>
@@ -120,7 +120,7 @@
           </xs:element>
           <xs:element name="outcome" type="Goal.Outcome" minOccurs="0" maxOccurs="unbounded">
             <xs:annotation>
-              <xs:documentation xml:lang="en">Identifies the change (or lack of change) at the point where the goal was deemed to be cancelled or achieved.</xs:documentation>
+              <xs:documentation xml:lang="en">Identifies the change (or lack of change) at the point where the goal was deepmed to be cancelled or achieved.</xs:documentation>
            </xs:annotation>
           </xs:element>
         </xs:sequence>
@@ -146,65 +146,50 @@
     </xs:complexContent>
   </xs:complexType>
   <xs:simpleType name="GoalStatus-list">
-    <xs:restriction base="code-primitive">
+    <xs:restriction base="xs:string">
       <xs:enumeration value="proposed">
         <xs:annotation>
-          <xs:documentation xml:lang="en">Proposed</xs:documentation>
+          <xs:documentation xml:lang="en">A goal is proposed for this patient</xs:documentation>
         </xs:annotation>
       </xs:enumeration>
       <xs:enumeration value="planned">
         <xs:annotation>
-          <xs:documentation xml:lang="en">Planned</xs:documentation>
+          <xs:documentation xml:lang="en">A goal is planned for this patient</xs:documentation>
         </xs:annotation>
       </xs:enumeration>
       <xs:enumeration value="accepted">
         <xs:annotation>
-          <xs:documentation xml:lang="en">Accepted</xs:documentation>
+          <xs:documentation xml:lang="en">A proposed goal was accepted</xs:documentation>
         </xs:annotation>
       </xs:enumeration>
       <xs:enumeration value="rejected">
         <xs:annotation>
-          <xs:documentation xml:lang="en">Rejected</xs:documentation>
+          <xs:documentation xml:lang="en">A proposed goal was rejected</xs:documentation>
         </xs:annotation>
       </xs:enumeration>
       <xs:enumeration value="in-progress">
         <xs:annotation>
-          <xs:documentation xml:lang="en">In Progress</xs:documentation>
+          <xs:documentation xml:lang="en">The goal is being sought but has not yet been reached.  (Also applies if goal was reached in the past but there has been regression and goal is being sought again)</xs:documentation>
         </xs:annotation>
       </xs:enumeration>
       <xs:enumeration value="achieved">
         <xs:annotation>
-          <xs:documentation xml:lang="en">Achieved</xs:documentation>
+          <xs:documentation xml:lang="en">The goal has been met and no further action is needed</xs:documentation>
         </xs:annotation>
       </xs:enumeration>
       <xs:enumeration value="sustaining">
         <xs:annotation>
-          <xs:documentation xml:lang="en">Sustaining</xs:documentation>
+          <xs:documentation xml:lang="en">The goal has been met, but ongoing activity is needed to sustain the goal objective</xs:documentation>
         </xs:annotation>
       </xs:enumeration>
       <xs:enumeration value="on-hold">
         <xs:annotation>
-          <xs:documentation xml:lang="en">On Hold</xs:documentation>
+          <xs:documentation xml:lang="en">The goal remains a long term objective but is no longer being actively pursued for a temporary period of time.</xs:documentation>
         </xs:annotation>
       </xs:enumeration>
       <xs:enumeration value="cancelled">
         <xs:annotation>
-          <xs:documentation xml:lang="en">Cancelled</xs:documentation>
-        </xs:annotation>
-      </xs:enumeration>
-      <xs:enumeration value="on-target">
-        <xs:annotation>
-          <xs:documentation xml:lang="en">On Target</xs:documentation>
-        </xs:annotation>
-      </xs:enumeration>
-      <xs:enumeration value="ahead-of-target">
-        <xs:annotation>
-          <xs:documentation xml:lang="en">Ahead of Target</xs:documentation>
-        </xs:annotation>
-      </xs:enumeration>
-      <xs:enumeration value="behind-target">
-        <xs:annotation>
-          <xs:documentation xml:lang="en">Behind Target</xs:documentation>
+          <xs:documentation xml:lang="en">The goal is no longer being sought</xs:documentation>
         </xs:annotation>
       </xs:enumeration>
     </xs:restriction>

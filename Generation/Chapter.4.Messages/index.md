@@ -15,6 +15,7 @@ The FHIR resource profiles within this DMS have been created to support the Chil
 - **[Profile.6-8WeekHealthReviewEvent]** - FHIR resource profiles combined to support a 6-8 Week Health Review Event message.
 - **[Profile.NewbornHearingEvent]** - FHIR resource profiles combined to support a Newborn Hearing Event message.
 - **[Profile.NewbornPhysicalExamEvent]** - FHIR resource profiles combined to support a Newborn Physical Exam Event message.
+- **[Profile.VitaminKEvent]** - FHIR resource profiles combined to support a Vitamin K Event message.
   
 **Further Information**
 
@@ -32,10 +33,11 @@ The various downloads (including Schema files) and reference implementations are
 [Profile.FollowUpEvent]: ../Profile.FollowUpEvent/Profile.FollowUpEvent.html
 [Profile.MeasurementsEvent]: ../Profile.MeasurementsEvent/Profile.MeasurementsEvent.html
 [Profile.IndicatorsEvent]: ../Profile.IndicatorsEvent/Profile.IndicatorsEvent.html
-[Profile.NewbornBloodSpotEvent]: ../Profile.NewbornBloodSpotEvent/Profile.NewbornBloodspotEvent.html
+[Profile.NewbornBloodSpotEvent]: ../Profile.NewbornBloodSpotEvent/Profile.NewbornBloodSpotEvent.html
 [Profile.NewbornHearingEvent]: ../Profile.NewbornHearingEvent/Profile.NewbornHearingEvent.html
 [Profile.NewbornPhysicalExamEvent]: ../Profile.NewbornPhysicalExamEvent/Profile.NewbornPhysicalExamEvent.html
 [Profile.6-8WeekHealthReviewEvent]: ../Profile.6-8WeekHealthReviewEvent/Profile.6-8WeekHealthReviewEvent.html
+[Profile.VitaminKEvent]: ../Profile.VitaminKEvent/Profile.VitaminKEvent.html
 
 [Profiling FHIR]: http://hl7.org/fhir/profiling.html
 [FHIR website]: http://hl7.org/fhir/index.html

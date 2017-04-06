@@ -24,3 +24,5 @@ select constraints\*.xml >> IGPackage Profile.MeasurementsEvent
 select valuesets\*.xml >> IGPackage Profile.MeasurementsEvent
 select constraints\*.xml >> IGPackage Profile.IndicatorsEvent
 select valuesets\*.xml >> IGPackage Profile.IndicatorsEvent
+select constraints\*.xml >> IGPackage Profile.VitaminKEvent
+select valuesets\*.xml >> IGPackage Profile.VitaminKEvent

@@ -27,7 +27,7 @@
   POSSIBILITY OF SUCH DAMAGE.
   
 
-  Generated on Sun, Sep 18, 2016 13:22+0000 for FHIR v1.7.0 
+  Generated on Tue, Sep 22, 2015 13:47+1000 for FHIR v1.0.1 
 
   Note: the schemas &amp; schematrons do not contain all of the rules about what makes resources
   valid. Implementers will still need to be familiar with the content of the specification and with
@@ -69,10 +69,9 @@
               <xs:documentation xml:lang="en">Indicates whether the account is presently used/useable or not.</xs:documentation>
            </xs:annotation>
           </xs:element>
-          <xs:element name="active" minOccurs="0" maxOccurs="1" type="Period">
+          <xs:element name="activePeriod" minOccurs="0" maxOccurs="1" type="Period">
             <xs:annotation>
-              <xs:documentation xml:lang="en">Indicates the period of time over which the account is allowed to have transactions posted to it.
-This period may be different to the coveragePeriod which is the duration of time that services may occur.</xs:documentation>
+              <xs:documentation xml:lang="en">Indicates the period of time over which the account is allowed.</xs:documentation>
            </xs:annotation>
           </xs:element>
           <xs:element name="currency" minOccurs="0" maxOccurs="1" type="Coding">
@@ -83,13 +82,6 @@ This period may be different to the coveragePeriod which is the duration of time
           <xs:element name="balance" minOccurs="0" maxOccurs="1" type="Money">
             <xs:annotation>
               <xs:documentation xml:lang="en">Represents the sum of all credits less all debits associated with the account.  Might be positive, zero or negative.</xs:documentation>
-           </xs:annotation>
-          </xs:element>
-          <xs:element name="coverage" minOccurs="0" maxOccurs="unbounded" type="Reference">
-            <xs:annotation>
-              <xs:documentation xml:lang="en">The party(s) that are responsible for payment (or part of) of charges applied to this account (including self-pay).
-
-A coverage may only be resposible for specific types of charges, and the sequence of the coverages in the account could be important when processing billing.</xs:documentation>
            </xs:annotation>
           </xs:element>
           <xs:element name="coveragePeriod" minOccurs="0" maxOccurs="1" type="Period">
@@ -117,20 +109,15 @@ A coverage may only be resposible for specific types of charges, and the sequenc
     </xs:complexContent>
   </xs:complexType>
   <xs:simpleType name="AccountStatus-list">
-    <xs:restriction base="code-primitive">
+    <xs:restriction base="xs:string">
       <xs:enumeration value="active">
         <xs:annotation>
-          <xs:documentation xml:lang="en">Active</xs:documentation>
+          <xs:documentation xml:lang="en">This account is active and may be used.</xs:documentation>
         </xs:annotation>
       </xs:enumeration>
       <xs:enumeration value="inactive">
         <xs:annotation>
-          <xs:documentation xml:lang="en">Inactive</xs:documentation>
-        </xs:annotation>
-      </xs:enumeration>
-      <xs:enumeration value="entered-in-error">
-        <xs:annotation>
-          <xs:documentation xml:lang="en">Entered in error</xs:documentation>
+          <xs:documentation xml:lang="en">This account is inactive and should not be used to track financial information.</xs:documentation>
         </xs:annotation>
       </xs:enumeration>
     </xs:restriction>

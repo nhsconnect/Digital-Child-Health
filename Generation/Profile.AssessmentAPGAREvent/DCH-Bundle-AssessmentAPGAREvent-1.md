@@ -27,7 +27,7 @@ The Child Health Event data items are fulfilled by elements within the FHIR reso
                                                                                                    
 
 [DCH-MessageHeader-AssessmentAPGAREvent-1]:dch-messageheader-assessmentapgarevent-1.html
-[CareConnect-DCH-Encounter-BirthOccurrence-1]:careconnect-dch-encounter-birthoccurence-1.html
+[CareConnect-DCH-Encounter-BirthOccurrence-1]:careconnect-dch-encounter-birthoccurrence-1.html
 [CareConnect-Organization-1]:careconnect-organization-1.html
 [CareConnect-DCH-Patient-Baby-1]:careconnect-dch-patient-baby-1.html
 [CareConnect-DCH-Observation-APGARScore1Minute-1]:careconnect-dch-observation-apgarscore1minute-1.html

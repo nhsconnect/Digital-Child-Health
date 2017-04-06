@@ -27,7 +27,7 @@
   POSSIBILITY OF SUCH DAMAGE.
   
 
-  Generated on Sun, Sep 18, 2016 13:22+0000 for FHIR v1.7.0 
+  Generated on Tue, Sep 22, 2015 13:47+1000 for FHIR v1.0.1 
 
   Note: the schemas &amp; schematrons do not contain all of the rules about what makes resources
   valid. Implementers will still need to be familiar with the content of the specification and with
@@ -54,38 +54,14 @@
               <xs:documentation xml:lang="en">External identifier - FHIR will generate its own internal identifiers (probably URLs) which do not need to be explicitly managed by the resource.  The identifier here is one that would be used by another non-FHIR system - for example an automated medication pump would provide a record each time it operated; an administration while the patient was off the ward might be made with a different system and entered after the event.  Particularly important if these records have to be updated.</xs:documentation>
            </xs:annotation>
           </xs:element>
-          <xs:element name="status" minOccurs="1" maxOccurs="1" type="MedicationStatementStatus">
-            <xs:annotation>
-              <xs:documentation xml:lang="en">A code representing the patient or other source's judgment about the state of the medication used that this statement is about.  Generally this will be active or completed.</xs:documentation>
-           </xs:annotation>
-          </xs:element>
-          <xs:choice minOccurs="1" maxOccurs="1" >
-            <xs:annotation>
-              <xs:documentation xml:lang="en">Identifies the medication being administered. This is either a link to a resource representing the details of the medication or a simple attribute carrying a code that identifies the medication from a known list of medications.</xs:documentation>
-            </xs:annotation>
-            <xs:element name="medicationCodeableConcept" type="CodeableConcept"/>
-            <xs:element name="medicationReference" type="Reference"/>
-          </xs:choice>
           <xs:element name="patient" minOccurs="1" maxOccurs="1" type="Reference">
             <xs:annotation>
               <xs:documentation xml:lang="en">The person or animal who is/was taking the medication.</xs:documentation>
            </xs:annotation>
           </xs:element>
-          <xs:choice minOccurs="0" maxOccurs="1" >
-            <xs:annotation>
-              <xs:documentation xml:lang="en">The interval of time during which it is being asserted that the patient was taking the medication (or was not taking, when the wasNotGiven element is true).</xs:documentation>
-            </xs:annotation>
-            <xs:element name="effectiveDateTime" type="dateTime"/>
-            <xs:element name="effectivePeriod" type="Period"/>
-          </xs:choice>
           <xs:element name="informationSource" minOccurs="0" maxOccurs="1" type="Reference">
             <xs:annotation>
-              <xs:documentation xml:lang="en">The person who provided the information about the taking of this medication.  Note:  A MedicationStatement may be derived from supportingInformation e.g claims or medicationOrder.</xs:documentation>
-           </xs:annotation>
-          </xs:element>
-          <xs:element name="supportingInformation" minOccurs="0" maxOccurs="unbounded" type="Reference">
-            <xs:annotation>
-              <xs:documentation xml:lang="en">Allows linking the MedicationStatement to the underlying MedicationOrder, or to other information that supports or is used to derive the MedicationStatement.</xs:documentation>
+              <xs:documentation xml:lang="en">The person who provided the information about the taking of this medication.</xs:documentation>
            </xs:annotation>
           </xs:element>
           <xs:element name="dateAsserted" minOccurs="0" maxOccurs="1" type="dateTime">
@@ -93,7 +69,12 @@
               <xs:documentation xml:lang="en">The date when the medication statement was asserted by the information source.</xs:documentation>
            </xs:annotation>
           </xs:element>
-          <xs:element name="notTaken" minOccurs="0" maxOccurs="1" type="boolean">
+          <xs:element name="status" minOccurs="1" maxOccurs="1" type="MedicationStatementStatus">
+            <xs:annotation>
+              <xs:documentation xml:lang="en">A code representing the patient or other source's judgment about the state of the medication used that this statement is about.  Generally this will be active or completed.</xs:documentation>
+           </xs:annotation>
+          </xs:element>
+          <xs:element name="wasNotTaken" minOccurs="0" maxOccurs="1" type="boolean">
             <xs:annotation>
               <xs:documentation xml:lang="en">Set this to true if the record is saying that the medication was NOT taken.</xs:documentation>
            </xs:annotation>
@@ -103,26 +84,37 @@
               <xs:documentation xml:lang="en">A code indicating why the medication was not taken.</xs:documentation>
            </xs:annotation>
           </xs:element>
-          <xs:element name="reasonForUseCode" minOccurs="0" maxOccurs="unbounded" type="CodeableConcept">
+          <xs:choice minOccurs="0" maxOccurs="1" >
             <xs:annotation>
               <xs:documentation xml:lang="en">A reason for why the medication is being/was taken.</xs:documentation>
-           </xs:annotation>
-          </xs:element>
-          <xs:element name="reasonForUseReference" minOccurs="0" maxOccurs="unbounded" type="Reference">
+            </xs:annotation>
+            <xs:element name="reasonForUseCodeableConcept" type="CodeableConcept"/>
+            <xs:element name="reasonForUseReference" type="Reference"/>
+          </xs:choice>
+          <xs:choice minOccurs="0" maxOccurs="1" >
             <xs:annotation>
-              <xs:documentation xml:lang="en">Condition that supports why the medication is being/was taken.</xs:documentation>
-           </xs:annotation>
-          </xs:element>
-          <xs:element name="note" minOccurs="0" maxOccurs="unbounded" type="Annotation">
+              <xs:documentation xml:lang="en">The interval of time during which it is being asserted that the patient was taking the medication (or was not taking, when the wasNotGiven element is true).</xs:documentation>
+            </xs:annotation>
+            <xs:element name="effectiveDateTime" type="dateTime"/>
+            <xs:element name="effectivePeriod" type="Period"/>
+          </xs:choice>
+          <xs:element name="note" minOccurs="0" maxOccurs="1" type="string">
             <xs:annotation>
               <xs:documentation xml:lang="en">Provides extra information about the medication statement that is not conveyed by the other attributes.</xs:documentation>
            </xs:annotation>
           </xs:element>
-          <xs:element name="category" minOccurs="0" maxOccurs="1" type="MedicationStatementCategory">
+          <xs:element name="supportingInformation" minOccurs="0" maxOccurs="unbounded" type="Reference">
             <xs:annotation>
-              <xs:documentation xml:lang="en">Indicates where type of medication statement and where the medication is expected to be consumed or administered.</xs:documentation>
+              <xs:documentation xml:lang="en">Allows linking the MedicationStatement to the underlying MedicationOrder, or to other information that supports the MedicationStatement.</xs:documentation>
            </xs:annotation>
           </xs:element>
+          <xs:choice minOccurs="1" maxOccurs="1" >
+            <xs:annotation>
+              <xs:documentation xml:lang="en">Identifies the medication being administered. This is either a link to a resource representing the details of the medication or a simple attribute carrying a code that identifies the medication from a known list of medications.</xs:documentation>
+            </xs:annotation>
+            <xs:element name="medicationCodeableConcept" type="CodeableConcept"/>
+            <xs:element name="medicationReference" type="Reference"/>
+          </xs:choice>
           <xs:element name="dosage" type="MedicationStatement.Dosage" minOccurs="0" maxOccurs="unbounded">
             <xs:annotation>
               <xs:documentation xml:lang="en">Indicates how the medication is/was used by the patient.</xs:documentation>
@@ -144,19 +136,16 @@
               <xs:documentation xml:lang="en">Free text dosage information as reported about a patient's medication use. When coded dosage information is present, the free text may still be present for display to humans.</xs:documentation>
            </xs:annotation>
           </xs:element>
-          <xs:element name="additionalInstructions" minOccurs="0" maxOccurs="unbounded" type="CodeableConcept">
-            <xs:annotation>
-              <xs:documentation xml:lang="en">Additional instructions such as &quot;Swallow with plenty of water&quot; which may or may not be coded.</xs:documentation>
-           </xs:annotation>
-          </xs:element>
           <xs:element name="timing" minOccurs="0" maxOccurs="1" type="Timing">
             <xs:annotation>
-              <xs:documentation xml:lang="en">The timing schedule for giving the medication to the patient.  The Schedule data type allows many different expressions, for example.  &quot;Every  8 hours&quot;; &quot;Three times a day&quot;; &quot;1/2 an hour before breakfast for 10 days from 23-Dec 2011:&quot;;  &quot;15 Oct 2013, 17 Oct 2013 and 1 Nov 2013&quot;.  Sometimes, a rate can imply duration when expressed as total volume / duration (e.g.  500mL/2 hours implies a duration of 2 hours).  However, when rate doesn't imply duration (e.g. 250mL/hour), then the timing.repeat.duration is needed to convey the infuse over time period.</xs:documentation>
+              <xs:documentation xml:lang="en">The timing schedule for giving the medication to the patient.  The Schedule data type allows many different expressions, for example.  &quot;Every  8 hours&quot;; &quot;Three times a day&quot;; &quot;1/2 an hour before breakfast for 10 days from 23-Dec 2011:&quot;;  &quot;15 Oct 2013, 17 Oct 2013 and 1 Nov 2013&quot;.</xs:documentation>
            </xs:annotation>
           </xs:element>
           <xs:choice minOccurs="0" maxOccurs="1" >
             <xs:annotation>
-              <xs:documentation xml:lang="en">Indicates whether the Medication is only taken when needed within a specific dosing schedule (Boolean option), or it indicates the precondition for taking the Medication (CodeableConcept).  Specifically if 'boolean' datatype is selected, then the following logic applies:  If set to True, this indicates that the medication is only taken when needed, within the specified schedule.</xs:documentation>
+              <xs:documentation xml:lang="en">Indicates whether the Medication is only taken when needed within a specific dosing schedule (Boolean option), or it indicates the precondition for taking the Medication (CodeableConcept).  
+
+Specifically if 'boolean' datatype is selected, then the following logic applies:  If set to True, this indicates that the medication is only taken when needed, within the specified schedule.</xs:documentation>
             </xs:annotation>
             <xs:element name="asNeededBoolean" type="boolean"/>
             <xs:element name="asNeededCodeableConcept" type="CodeableConcept"/>
@@ -182,16 +171,15 @@
             <xs:annotation>
               <xs:documentation xml:lang="en">The amount of therapeutic or other substance given at one administration event.</xs:documentation>
             </xs:annotation>
-            <xs:element name="doseQuantity" type="Quantity"/>
-            <xs:element name="doseRange" type="Range"/>
+            <xs:element name="quantityQuantity" type="SimpleQuantity"/>
+            <xs:element name="quantityRange" type="Range"/>
           </xs:choice>
           <xs:choice minOccurs="0" maxOccurs="1" >
             <xs:annotation>
-              <xs:documentation xml:lang="en">Identifies the speed with which the medication was or will be introduced into the patient. Typically the rate for an infusion e.g. 100 ml per 1 hour or 100 ml/hr.  May also be expressed as a rate per unit of time e.g. 500 ml per 2 hours.   Other examples: 200 mcg/min or 200 mcg/1 minute; 1 liter/8 hours.  Sometimes, a rate can imply duration when expressed as total volume / duration (e.g.  500mL/2 hours implies a duration of 2 hours).  However, when rate doesn't imply duration (e.g. 250mL/hour), then the timing.repeat.duration is needed to convey the infuse over time period.</xs:documentation>
+              <xs:documentation xml:lang="en">Identifies the speed with which the medication was or will be introduced into the patient. Typically the rate for an infusion e.g. 100 ml per 1 hour or 100 ml/hr.  May also be expressed as a rate per unit of time e.g. 500 ml per 2 hours.   Currently we do not specify a default of '1' in the denominator, but this is being discussed. Other examples: 200 mcg/min or 200 mcg/1 minute; 1 liter/8 hours.</xs:documentation>
             </xs:annotation>
             <xs:element name="rateRatio" type="Ratio"/>
             <xs:element name="rateRange" type="Range"/>
-            <xs:element name="rateQuantity" type="Quantity"/>
           </xs:choice>
           <xs:element name="maxDosePerPeriod" minOccurs="0" maxOccurs="1" type="Ratio">
             <xs:annotation>
@@ -203,82 +191,37 @@
     </xs:complexContent>
   </xs:complexType>
   <xs:simpleType name="MedicationStatementStatus-list">
-    <xs:restriction base="code-primitive">
+    <xs:restriction base="xs:string">
       <xs:enumeration value="active">
         <xs:annotation>
-          <xs:documentation xml:lang="en">Active</xs:documentation>
+          <xs:documentation xml:lang="en">The medication is still being taken.</xs:documentation>
         </xs:annotation>
       </xs:enumeration>
       <xs:enumeration value="completed">
         <xs:annotation>
-          <xs:documentation xml:lang="en">Completed</xs:documentation>
+          <xs:documentation xml:lang="en">The medication is no longer being taken.</xs:documentation>
         </xs:annotation>
       </xs:enumeration>
       <xs:enumeration value="entered-in-error">
         <xs:annotation>
-          <xs:documentation xml:lang="en">Entered in Error</xs:documentation>
+          <xs:documentation xml:lang="en">The statement was entered in error.</xs:documentation>
         </xs:annotation>
       </xs:enumeration>
       <xs:enumeration value="intended">
         <xs:annotation>
-          <xs:documentation xml:lang="en">Intended</xs:documentation>
-        </xs:annotation>
-      </xs:enumeration>
-      <xs:enumeration value="stopped">
-        <xs:annotation>
-          <xs:documentation xml:lang="en">Stopped</xs:documentation>
-        </xs:annotation>
-      </xs:enumeration>
-      <xs:enumeration value="on-hold">
-        <xs:annotation>
-          <xs:documentation xml:lang="en">On Hold</xs:documentation>
+          <xs:documentation xml:lang="en">The medication may be taken at some time in the future.</xs:documentation>
         </xs:annotation>
       </xs:enumeration>
     </xs:restriction>
   </xs:simpleType>
   <xs:complexType name="MedicationStatementStatus">
     <xs:annotation>
-      <xs:documentation xml:lang="en">A coded concept indicating the current status of a MedicationStatement.</xs:documentation>
+      <xs:documentation xml:lang="en">A set of codes indicating the current status of a MedicationStatement.</xs:documentation>
       <xs:documentation xml:lang="en">If the element is present, it must have either a @value, an @id, or extensions</xs:documentation>
     </xs:annotation>
     <xs:complexContent>
       <xs:extension base="Element">
         <xs:attribute name="value" type="MedicationStatementStatus-list" use="optional"/>
-      </xs:extension>
-    </xs:complexContent>
-  </xs:complexType>
-  <xs:simpleType name="MedicationStatementCategory-list">
-    <xs:restriction base="code-primitive">
-      <xs:enumeration value="inpatient">
-        <xs:annotation>
-          <xs:documentation xml:lang="en">Inpatient</xs:documentation>
-        </xs:annotation>
-      </xs:enumeration>
-      <xs:enumeration value="outpatient">
-        <xs:annotation>
-          <xs:documentation xml:lang="en">Outpatient</xs:documentation>
-        </xs:annotation>
-      </xs:enumeration>
-      <xs:enumeration value="community">
-        <xs:annotation>
-          <xs:documentation xml:lang="en">Community</xs:documentation>
-        </xs:annotation>
-      </xs:enumeration>
-      <xs:enumeration value="patientspecified">
-        <xs:annotation>
-          <xs:documentation xml:lang="en">Patient Specified</xs:documentation>
-        </xs:annotation>
-      </xs:enumeration>
-    </xs:restriction>
-  </xs:simpleType>
-  <xs:complexType name="MedicationStatementCategory">
-    <xs:annotation>
-      <xs:documentation xml:lang="en">A coded concept identifying where the medication included in the is expected to be consumed or administered</xs:documentation>
-      <xs:documentation xml:lang="en">If the element is present, it must have either a @value, an @id, or extensions</xs:documentation>
-    </xs:annotation>
-    <xs:complexContent>
-      <xs:extension base="Element">
-        <xs:attribute name="value" type="MedicationStatementCategory-list" use="optional"/>
       </xs:extension>
     </xs:complexContent>
   </xs:complexType>
