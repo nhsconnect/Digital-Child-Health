@@ -1,7 +1,7 @@
-<?xml version="1.0" encoding="utf-8"?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <meta>
-    <lastUpdated value="2017-03-24T12:15:40.93+00:00" />
+    <lastUpdated value="2017-04-06T11:42:49.991+01:00" />
     <tag>
       <system value="urn:hscic:publishOrder" />
       <code value="10" />
@@ -13984,12 +13984,12 @@
     </element>
     <element>
       <path value="Patient.link" />
-      <short value="Link to another patient resource that concerns the same actual person" />
-      <definition value="Link to another patient resource that concerns the same actual patient." />
+      <short value="Link to another resource that concerns the same actual person" />
+      <definition value="Link to another resource that concerns the same actual person." />
       <comments value="There is no assumption that linked patient records have mutual links." />
       <requirements value="There are multiple usecases:   * Duplicate patient records due to the clerical errors associated with the difficulties of identifying humans consistently, and * Distribution of patient information across multiple servers." />
-      <min value="0" />
-      <max value="0" />
+      <min value="1" />
+      <max value="1" />
       <base>
         <path value="Patient.link" />
         <min value="0" />
@@ -14128,8 +14128,8 @@
     </element>
     <element>
       <path value="Patient.link.other" />
-      <short value="The other patient resource that the link refers to" />
-      <definition value="The other patient resource that the link refers to." />
+      <short value="The other resource that the link refers to" />
+      <definition value="The other resource that the link refers to." />
       <min value="1" />
       <max value="1" />
       <base>
@@ -14139,7 +14139,7 @@
       </base>
       <type>
         <code value="Reference" />
-        <profile value="http://hl7.org/fhir/StructureDefinition/Patient" />
+        <profile value="https://fhir.nhs.uk/StructureDefinition/dch-relatedperson-motherandbaby-1" />
       </type>
       <condition value="ele-1" />
       <constraint>
@@ -14254,7 +14254,7 @@
       <short value="Relative, internal or absolute URL reference" />
       <definition value="A reference to a location at which the other resource is found. The reference may be a relative reference, in which case it is relative to the service base URL, or an absolute URL that resolves to the location where the resource is found. The reference may be version specific or not. If the reference is not to a FHIR RESTful server, then it should be assumed to be version specific. Internal fragment references (start with '#') refer to contained resources." />
       <comments value="Using absolute URLs provides a stable scalable approach suitable for a cloud/web context, while using relative/logical references provides a flexible approach suitable for use when trading across closed eco-system boundaries.   Absolute URLs do not need to point to a FHIR RESTful server, though this is the preferred approach. If the URL conforms to the structure &quot;/[type]/[id]&quot; then it should be assumed that the reference is to a FHIR RESTful server." />
-      <min value="0" />
+      <min value="1" />
       <max value="1" />
       <base>
         <path value="Reference.reference" />
@@ -14323,7 +14323,7 @@
     <element>
       <path value="Patient.link.type" />
       <short value="replace | refer | seealso - type of link" />
-      <definition value="The type of link between this patient resource and another patient resource." />
+      <definition value="The type of link between this patient resource and another resource." />
       <comments value="Note that FHIR strings may not exceed 1MB in size" />
       <min value="1" />
       <max value="1" />
@@ -14335,6 +14335,7 @@
       <type>
         <code value="code" />
       </type>
+      <fixedCode value="seealso" />
       <condition value="ele-1" />
       <constraint>
         <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-expression">
@@ -14815,7 +14816,28 @@
     </element>
     <element>
       <path value="Patient.link" />
-      <max value="0" />
+      <short value="Link to another resource that concerns the same actual person" />
+      <definition value="Link to another resource that concerns the same actual person." />
+      <min value="1" />
+      <max value="1" />
+    </element>
+    <element>
+      <path value="Patient.link.other" />
+      <short value="The other resource that the link refers to" />
+      <definition value="The other resource that the link refers to." />
+      <type>
+        <code value="Reference" />
+        <profile value="https://fhir.nhs.uk/StructureDefinition/dch-relatedperson-motherandbaby-1" />
+      </type>
+    </element>
+    <element>
+      <path value="Patient.link.other.reference" />
+      <min value="1" />
+    </element>
+    <element>
+      <path value="Patient.link.type" />
+      <definition value="The type of link between this patient resource and another resource." />
+      <fixedCode value="seealso" />
     </element>
   </differential>
 </StructureDefinition>
