@@ -149,12 +149,16 @@
 					</coding>
 				</code>
 				<subject>
-					<reference value="urn:uuid:98ff5f0a-bcfa-4b78-ad55-ed8249b7509e"/>
-					<display value="SAXTON, Sophie"/>
+					<reference value="urn:uuid:e864d93b-07a1-4c1c-8b2f-276bba9675d5"/>
+					<display value="SAXTON, Sarah Marie"/>
 				</subject>
 				<encounter>
 					<reference value="urn:uuid:f00b4cb9-1b94-49ab-8561-12b9edb27627"/>
 				</encounter>
+				<performer>
+						<reference value="urn:uuid:0e01304b-b708-4e19-a0e3-bba1598241aa"/>
+						<display value="JONES, Shirley"/>
+				</performer>
 				<valueQuantity>
 					<value value="6"/>
 				</valueQuantity>
@@ -182,12 +186,16 @@
 					</coding>
 				</code>
 				<subject>
-					<reference value="urn:uuid:98ff5f0a-bcfa-4b78-ad55-ed8249b7509e"/>
-					<display value="SAXTON, Sophie"/>
+					<reference value="urn:uuid:e864d93b-07a1-4c1c-8b2f-276bba9675d5"/>
+					<display value="SAXTON, Sarah Marie"/>
 				</subject>
 				<encounter>
 					<reference value="urn:uuid:f00b4cb9-1b94-49ab-8561-12b9edb27627"/>
 				</encounter>
+				<performer>
+						<reference value="urn:uuid:0e01304b-b708-4e19-a0e3-bba1598241aa"/>
+						<display value="JONES, Shirley"/>
+				</performer>
 				<valueQuantity>
 					<value value="8"/>
 				</valueQuantity>
@@ -215,8 +223,8 @@
 					</coding>
 				</code>
 				<subject>
-					<reference value="urn:uuid:98ff5f0a-bcfa-4b78-ad55-ed8249b7509e"/>
-					<display value="SAXTON, Sophie"/>
+					<reference value="urn:uuid:e864d93b-07a1-4c1c-8b2f-276bba9675d5"/>
+					<display value="SAXTON, Sarah Marie"/>
 				</subject>
 				<encounter>
 					<reference value="urn:uuid:f00b4cb9-1b94-49ab-8561-12b9edb27627"/>
@@ -254,75 +262,6 @@
 			</Organization>
 		</resource>
 	</entry>
-	
-	
-<!--	<entry>
-		<fullUrl value="urn:uuid:98ff5f0a-bcfa-4b78-ad55-ed8249b7509e"/>
-		<resource>
-			<Patient>
-				<id value="98ff5f0a-bcfa-4b78-ad55-ed8249b7509e"/>
-				<meta>
-					<profile value="https://fhir.hl7.org.uk/StructureDefinition/CareConnect-DCH-Patient-Mother-1"/>
-				</meta>
-				<identifier>
-					<extension url="https://fhir.hl7.org.uk/StructureDefinition/Extension-CareConnect-NHSNumberVerificationStatus-1">
-						<valueCodeableConcept>
-							<coding>
-								<system value="https://fhir.hl7.org.uk/CareConnect-NHSNumberVerificationStatus-1"/>
-								<code value="01"/>
-								<display value="Number present and verified"/>
-							</coding>
-						</valueCodeableConcept>
-					</extension>
-					<system value="https://fhir.nhs.uk/Id/nhs-number"/>
-					<value value="3256987451"/>
-				</identifier>
-				<name>
-					<use value="usual"/>
-					<family value="Saxton"/>
-					<given value="Sophie"/>
-				</name>
-				<gender value="female"/>
-				<birthDate>
-					<extension url="http://hl7.org/fhir/StructureDefinition/patient-birthTime">
-						<valueDateTime value="1987-06-25T00:00:00+00:00"/>
-					</extension>
-				</birthDate>
-			</Patient>
-		</resource>
-	</entry>
-	<entry>
-		<fullUrl value="urn:uuid:ca0593eb-5089-485c-8b65-6b41b9f3b708"/>
-		<resource>
-			<RelatedPerson>
-				<id value="ca0593eb-5089-485c-8b65-6b41b9f3b708"/>
-				<meta>
-					<profile value="https://fhir.nhs.uk/StructureDefinition/dch-relatedperson-motherandbaby-1"/>
-				</meta>
-				<extension url="https://fhir.nhs.uk/StructureDefinition/extension-dch-referencepatientmother-1">
-					<valueReference>
-						<reference value="urn:uuid:98ff5f0a-bcfa-4b78-ad55-ed8249b7509e"/>
-						<display value="SAXTON, Sophie"/>
-					</valueReference>
-				</extension>
-				<identifier>
-					<system value="https://tools.ietf.org/html/rfc4122"/>
-					<value value="8265ec80-1d7e-435e-9e57-e95f63639a5e"/>
-				</identifier>
-				<patient>
-					<reference value="urn:uuid:e864d93b-07a1-4c1c-8b2f-276bba9675d5"/>
-					<display value="SAXTON, Sarah Marie"/>
-				</patient>
-				<relationship>
-					<coding>
-						<system value="http://hl7.org/fhir/v3/RoleCode"/>
-						<code value="NMTH"/>
-						<display value="natural mother"/>
-					</coding>
-				</relationship>
-			</RelatedPerson>
-		</resource>
-	</entry>
 	<entry>
 		<fullUrl value="urn:uuid:3f13dfd4-d62f-4b17-87e1-52f470960b81"/>
 		<resource>
@@ -331,7 +270,9 @@
 				<meta>
 					<profile value="https://fhir.hl7.org.uk/StructureDefinition/CareConnect-DCH-Practitioner-ChildHealthEvent-1"/>
 				</meta>
-				<identifier>
+					<identifier>
+					<system value="https://fhir.nhs.uk/Id/sds-role-profile-id"/>
+					<value value="M9999998"/>
 				</identifier>
 				<name>
 					<family value="Riley"/>
@@ -348,5 +289,33 @@
 				</practitionerRole>
 			</Practitioner>
 		</resource>
-	</entry>-->
+	</entry>
+	<entry>
+		<fullUrl value="urn:uuid:0e01304b-b708-4e19-a0e3-bba1598241aa"/>
+		<resource>
+			<Practitioner>
+				<id value="0e01304b-b708-4e19-a0e3-bba1598241aa"/>
+				<meta>
+					<profile value="https://fhir.hl7.org.uk/StructureDefinition/CareConnect-DCH-Practitioner-ChildHealthEvent-1"/>
+				</meta>
+				<identifier>
+					<system value="https://fhir.nhs.uk/Id/sds-role-profile-id"/>
+					<value value="M9999998"/>
+				</identifier>
+				<name>
+					<family value="Jones"/>
+					<given value="Shirley"/>
+				</name>
+				<practitionerRole>
+					<role>
+						<coding>
+							<system value="https://fhir.hl7.org.uk/CareConnect-SDSJobRoleName-1"/>
+							<code value="R8016"/>
+							<display value="Midwife Access Role"/>
+						</coding>
+					</role>
+				</practitionerRole>
+			</Practitioner>
+		</resource>
+	</entry>
 </Bundle>

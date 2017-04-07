@@ -482,7 +482,9 @@
 				<meta>
 					<profile value="https://fhir.hl7.org.uk/StructureDefinition/CareConnect-DCH-Practitioner-ChildHealthEvent-1"/>
 				</meta>
-				<identifier>
+					<identifier>
+					<system value="https://fhir.nhs.uk/Id/sds-role-profile-id"/>
+					<value value="M9999998"/>
 				</identifier>
 				<name>
 					<family value="Riley"/>
