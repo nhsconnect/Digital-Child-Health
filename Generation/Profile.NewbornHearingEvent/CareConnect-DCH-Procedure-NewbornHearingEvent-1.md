@@ -1,1 +1,1 @@
-This Procedure resource records an action that is or was performed on a patient, with further constraints applied for a Newborn Hearing Event.
+This Procedure resource records an action that is or was performed on a patient, with further constraints applied for a Newborn Hearing Event procedure.

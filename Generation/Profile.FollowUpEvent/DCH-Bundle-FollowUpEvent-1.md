@@ -33,3 +33,4 @@ The Child Health Event data items are fulfilled by elements within the FHIR reso
 [CareConnect-DCH-Practitioner-ChildHealthEvent-1]:careconnect-dch-practitioner-childhealthevent-1.html
 [DCH-ReferralRequest-FollowUp-1]:dch-referralrequest-followup-1.html    
 [CareConnect-Organization-1]:careconnect-location-1.html
+[CareConnect-Location-1]:careconnect-location-1.html

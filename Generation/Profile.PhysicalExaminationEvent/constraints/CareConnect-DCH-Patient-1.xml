@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <meta>
-    <lastUpdated value="2017-03-28T13:58:22.508+01:00" />
+    <lastUpdated value="2017-04-06T23:06:48.363+01:00" />
     <tag>
       <system value="urn:hscic:publishOrder" />
       <code value="5" />
@@ -14373,6 +14373,12 @@
       <short value="The Patient resource carries the patient demographic details." />
       <type>
         <code value="Patient" />
+      </type>
+    </element>
+    <element>
+      <path value="Patient.contained" />
+      <type>
+        <code value="Resource" />
       </type>
     </element>
     <element>

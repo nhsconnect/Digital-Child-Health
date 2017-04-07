@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <meta>
-    <lastUpdated value="2017-04-06T11:20:46.731+01:00" />
+    <lastUpdated value="2017-04-06T22:40:23.58+01:00" />
     <tag>
       <system value="urn:hscic:publishOrder" />
       <code value="6" />
@@ -3908,7 +3908,7 @@
       <short value="Who is responsible for the observation" />
       <definition value="Who was responsible for asserting the observed value as &quot;true&quot;." />
       <requirements value="May give a degree of confidence in the observation and also indicates where follow-up questions should be directed." />
-      <min value="1" />
+      <min value="0" />
       <max value="1" />
       <base>
         <path value="Observation.performer" />
@@ -13187,6 +13187,12 @@
       </constraint>
     </element>
     <element>
+      <path value="Observation.contained" />
+      <type>
+        <code value="Resource" />
+      </type>
+    </element>
+    <element>
       <path value="Observation.identifier" />
       <min value="1" />
       <max value="1" />
@@ -13362,7 +13368,6 @@
     </element>
     <element>
       <path value="Observation.performer" />
-      <min value="1" />
       <max value="1" />
       <type>
         <code value="Reference" />
@@ -13634,6 +13639,17 @@
     <element>
       <path value="Observation.related" />
       <max value="0" />
+    </element>
+    <element>
+      <path value="Observation.related.target" />
+      <type>
+        <code value="Reference" />
+        <profile value="http://hl7.org/fhir/StructureDefinition/Observation" />
+      </type>
+      <type>
+        <code value="Reference" />
+        <profile value="http://hl7.org/fhir/StructureDefinition/QuestionnaireResponse" />
+      </type>
     </element>
     <element>
       <path value="Observation.component" />
