@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <meta>
-    <lastUpdated value="2017-03-30T13:45:28.319+01:00" />
+    <lastUpdated value="2017-04-06T18:20:48.239+01:00" />
     <tag>
       <system value="urn:hscic:publishOrder" />
       <code value="7" />
@@ -3386,7 +3386,7 @@
       <definition value="A human language representation of the concept as seen/selected/uttered by the user who entered the data and/or which represents the intended meaning of the user." />
       <comments value="Very often the text is the same as a displayName of one of the codings." />
       <requirements value="The codes from the terminologies do not always capture the correct meaning with all the nuances of the human using them, or sometimes there is no appropriate code at all. In these cases, the text is used to capture the full meaning of the source." />
-      <min value="1" />
+      <min value="0" />
       <max value="1" />
       <base>
         <path value="CodeableConcept.text" />
@@ -3909,7 +3909,7 @@
       <definition value="Who was responsible for asserting the observed value as &quot;true&quot;." />
       <requirements value="May give a degree of confidence in the observation and also indicates where follow-up questions should be directed." />
       <min value="0" />
-      <max value="0" />
+      <max value="1" />
       <base>
         <path value="Observation.performer" />
         <min value="0" />
@@ -3958,6 +3958,143 @@
       <mapping>
         <identity value="w5" />
         <map value="who.actor" />
+      </mapping>
+    </element>
+    <element>
+      <path value="Observation.performer.id" />
+      <short value="xml:id (or equivalent in JSON)" />
+      <definition value="unique id for the element within a resource (for internal references)." />
+      <comments value="RFC 4122" />
+      <min value="0" />
+      <max value="1" />
+      <base>
+        <path value="Element.id" />
+        <min value="0" />
+        <max value="1" />
+      </base>
+      <type>
+        <code value="id" />
+      </type>
+      <condition value="ele-1" />
+      <constraint>
+        <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-expression">
+          <valueString value="children()" />
+        </extension>
+        <key value="ele-1" />
+        <severity value="error" />
+        <human value="All FHIR elements must have a @value or children" />
+        <xpath value="@value|f:*|h:div" />
+      </constraint>
+      <mapping>
+        <identity value="rim" />
+        <map value="n/a" />
+      </mapping>
+    </element>
+    <element>
+      <path value="Observation.performer.extension" />
+      <short value="Additional Content defined by implementations" />
+      <definition value="May be used to represent additional information that is not part of the basic definition of the element. In order to make the use of extensions safe and manageable, there is a strict set of governance  applied to the definition and use of extensions. Though any implementer is allowed to define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension." />
+      <comments value="There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone." />
+      <alias value="extensions" />
+      <alias value="user content" />
+      <min value="0" />
+      <max value="*" />
+      <base>
+        <path value="Element.extension" />
+        <min value="0" />
+        <max value="*" />
+      </base>
+      <type>
+        <code value="Extension" />
+      </type>
+      <condition value="ele-1" />
+      <constraint>
+        <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-expression">
+          <valueString value="children()" />
+        </extension>
+        <key value="ele-1" />
+        <severity value="error" />
+        <human value="All FHIR elements must have a @value or children" />
+        <xpath value="@value|f:*|h:div" />
+      </constraint>
+      <mapping>
+        <identity value="rim" />
+        <map value="n/a" />
+      </mapping>
+      <mapping>
+        <identity value="rim" />
+        <map value="N/A" />
+      </mapping>
+    </element>
+    <element>
+      <path value="Observation.performer.reference" />
+      <short value="Relative, internal or absolute URL reference" />
+      <definition value="A reference to a location at which the other resource is found. The reference may be a relative reference, in which case it is relative to the service base URL, or an absolute URL that resolves to the location where the resource is found. The reference may be version specific or not. If the reference is not to a FHIR RESTful server, then it should be assumed to be version specific. Internal fragment references (start with '#') refer to contained resources." />
+      <comments value="Using absolute URLs provides a stable scalable approach suitable for a cloud/web context, while using relative/logical references provides a flexible approach suitable for use when trading across closed eco-system boundaries.   Absolute URLs do not need to point to a FHIR RESTful server, though this is the preferred approach. If the URL conforms to the structure &quot;/[type]/[id]&quot; then it should be assumed that the reference is to a FHIR RESTful server." />
+      <min value="1" />
+      <max value="1" />
+      <base>
+        <path value="Reference.reference" />
+        <min value="0" />
+        <max value="1" />
+      </base>
+      <type>
+        <code value="string" />
+      </type>
+      <condition value="ele-1" />
+      <condition value="ref-1" />
+      <constraint>
+        <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-expression">
+          <valueString value="children()" />
+        </extension>
+        <key value="ele-1" />
+        <severity value="error" />
+        <human value="All FHIR elements must have a @value or children" />
+        <xpath value="@value|f:*|h:div" />
+      </constraint>
+      <isSummary value="true" />
+      <mapping>
+        <identity value="rim" />
+        <map value="n/a" />
+      </mapping>
+      <mapping>
+        <identity value="rim" />
+        <map value="N/A" />
+      </mapping>
+    </element>
+    <element>
+      <path value="Observation.performer.display" />
+      <short value="Text alternative for the resource" />
+      <definition value="Plain text narrative that identifies the resource in addition to the resource reference." />
+      <comments value="This is generally not the same as the Resource.text of the referenced resource.  The purpose is to identify what's being referenced, not to fully describe it." />
+      <min value="0" />
+      <max value="1" />
+      <base>
+        <path value="Reference.display" />
+        <min value="0" />
+        <max value="1" />
+      </base>
+      <type>
+        <code value="string" />
+      </type>
+      <condition value="ele-1" />
+      <constraint>
+        <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-expression">
+          <valueString value="children()" />
+        </extension>
+        <key value="ele-1" />
+        <severity value="error" />
+        <human value="All FHIR elements must have a @value or children" />
+        <xpath value="@value|f:*|h:div" />
+      </constraint>
+      <isSummary value="true" />
+      <mapping>
+        <identity value="rim" />
+        <map value="n/a" />
+      </mapping>
+      <mapping>
+        <identity value="rim" />
+        <map value="N/A" />
       </mapping>
     </element>
     <element>
@@ -13192,10 +13329,6 @@
       <fixedString value="Apgar score at 5 minutes (observable entity)" />
     </element>
     <element>
-      <path value="Observation.code.text" />
-      <min value="1" />
-    </element>
-    <element>
       <path value="Observation.subject" />
       <min value="1" />
       <type>
@@ -13229,11 +13362,15 @@
     </element>
     <element>
       <path value="Observation.performer" />
-      <max value="0" />
+      <max value="1" />
       <type>
         <code value="Reference" />
         <profile value="https://fhir.hl7.org.uk/StructureDefinition/CareConnect-Practitioner-1" />
       </type>
+    </element>
+    <element>
+      <path value="Observation.performer.reference" />
+      <min value="1" />
     </element>
     <element>
       <path value="Observation.valueQuantity" />

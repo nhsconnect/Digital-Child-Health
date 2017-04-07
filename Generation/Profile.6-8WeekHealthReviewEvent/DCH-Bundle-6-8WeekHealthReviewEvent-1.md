@@ -9,6 +9,7 @@ This 'DCH-Bundle-6-8WeekHealthReviewEvent-1' Bundle resource profile is used as 
 - [DCH-Appointment-6-8WeekHealthReviewEvent-1] 
 - [CareConnect-DCH-Procedure-6-8WeekHealthReviewEvent-1]
 - [CareConnect-DCH-Practitioner-ChildHealthEvent-1]
+- [CareConnect-Location-1]
 
 
 
@@ -40,4 +41,5 @@ The Child Health Event data items are fulfilled by elements within the FHIR reso
 [DCH-Appointment-6-8WeekHealthReviewEvent-1]:dch-appointment-6-8weekhealthreviewevent-1.html 
 [CareConnect-DCH-Procedure-6-8WeekHealthReviewEvent-1]:careconnect-dch-procedure-6-8weekhealthreviewevent-1.html
 [CareConnect-DCH-Practitioner-ChildHealthEvent-1]:careconnect-dch-practitioner-childhealthevent-1.html
+[CareConnect-Location-1]:careconnect-location-1.html
 

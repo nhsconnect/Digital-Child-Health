@@ -1,1 +1,0 @@
-This extension has been constrained to represent a reference to the Patient resource for the mother as a Related Person.
