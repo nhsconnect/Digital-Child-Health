@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <meta>
-    <lastUpdated value="2017-04-03T10:55:17.634+01:00" />
+    <lastUpdated value="2017-04-07T12:19:59.278+01:00" />
     <tag>
       <system value="urn:hscic:publishOrder" />
       <code value="8" />
@@ -3610,7 +3610,7 @@
       <definition value="A code indicating why the procedure was not performed." />
       <comments value="Not all terminology uses fit this general pattern. In some cases, models should not use CodeableConcept and use Coding directly and provide their own structure for managing text, codings, translations and the relationship between elements and pre- and post-coordination." />
       <min value="0" />
-      <max value="0" />
+      <max value="1" />
       <base>
         <path value="Procedure.reasonNotPerformed" />
         <min value="0" />
@@ -5461,7 +5461,7 @@
       <path value="Procedure.performer" />
       <short value="The people who performed the procedure" />
       <definition value="Limited to 'real' people rather than equipment." />
-      <min value="1" />
+      <min value="0" />
       <max value="1" />
       <base>
         <path value="Procedure.performer" />
@@ -11449,7 +11449,7 @@
     </element>
     <element>
       <path value="Procedure.reasonNotPerformed" />
-      <max value="0" />
+      <max value="1" />
     </element>
     <element>
       <path value="Procedure.reasonNotPerformed.coding" />
@@ -11555,7 +11555,6 @@
     </element>
     <element>
       <path value="Procedure.performer" />
-      <min value="1" />
       <max value="1" />
     </element>
     <element>

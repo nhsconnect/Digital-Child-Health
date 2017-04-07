@@ -1,10 +1,10 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <meta>
-    <lastUpdated value="2017-04-03T10:20:05.713+01:00" />
+    <lastUpdated value="2017-04-07T09:26:15.571+01:00" />
     <tag>
       <system value="urn:hscic:publishOrder" />
-      <code value="8" />
+      <code value="7" />
     </tag>
   </meta>
   <url value="https://fhir.hl7.org.uk/StructureDefinition/CareConnect-DCH-Procedure-NewbornBloodSpotEvent-1" />
@@ -13,7 +13,7 @@
   <status value="draft" />
   <publisher value="HL7 UK" />
   <date value="2017-03-02T10:44:39.7203604Z" />
-  <description value="This Procedure resource records an action that is or was performed on a patient, with further constraints applied for a Newborn Blood Spot Event." />
+  <description value="This Procedure resource records an action that is or was performed on a patient, with further constraints applied for a Newborn Blood Spot Event procedure." />
   <copyright value="Copyright © 2016 HL7 UK&#xD;&#xA;&#xD;&#xA;Licensed under the Apache License, Version 2.0 (the &quot;License&quot;); you may not use this file except in compliance with the License. You may obtain a copy of the License at&#xD;&#xA;&#xD;&#xA;http://www.apache.org/licenses/LICENSE-2.0&#xD;&#xA;&#xD;&#xA;Unless required by applicable law or agreed to in writing, software distributed under the License is distributed on an &quot;AS IS&quot; BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the License for the specific language governing permissions and limitations under the License.&#xD;&#xA;&#xD;&#xA;HL7® FHIR® standard Copyright © 2011+ HL7&#xD;&#xA;&#xD;&#xA;The HL7® FHIR® standard is used under the FHIR license. You may obtain a copy of the FHIR license at&#xD;&#xA;&#xD;&#xA;https://www.hl7.org/fhir/license.html" />
   <fhirVersion value="1.0.2" />
   <kind value="resource" />
@@ -3612,7 +3612,7 @@
       <definition value="A code indicating why the procedure was not performed." />
       <comments value="Not all terminology uses fit this general pattern. In some cases, models should not use CodeableConcept and use Coding directly and provide their own structure for managing text, codings, translations and the relationship between elements and pre- and post-coordination." />
       <min value="0" />
-      <max value="0" />
+      <max value="1" />
       <base>
         <path value="Procedure.reasonNotPerformed" />
         <min value="0" />
@@ -11803,7 +11803,7 @@
     </element>
     <element>
       <path value="Procedure.reasonNotPerformed" />
-      <max value="0" />
+      <max value="1" />
     </element>
     <element>
       <path value="Procedure.reasonNotPerformed.coding" />

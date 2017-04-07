@@ -16,6 +16,7 @@ The FHIR resource profiles within this DMS have been created to support the Chil
 - **[Profile.NewbornHearingEvent]** - FHIR resource profiles combined to support a Newborn Hearing Event message.
 - **[Profile.NewbornPhysicalExamEvent]** - FHIR resource profiles combined to support a Newborn Physical Exam Event message.
 - **[Profile.VitaminKEvent]** - FHIR resource profiles combined to support a Vitamin K Event message.
+- **[Profile.PhysicalExaminationEvent]** - FHIR resource profiles combined to support a Physical Examination Event message.
   
 **Further Information**
 
@@ -38,6 +39,7 @@ The various downloads (including Schema files) and reference implementations are
 [Profile.NewbornPhysicalExamEvent]: ../Profile.NewbornPhysicalExamEvent/Profile.NewbornPhysicalExamEvent.html
 [Profile.6-8WeekHealthReviewEvent]: ../Profile.6-8WeekHealthReviewEvent/Profile.6-8WeekHealthReviewEvent.html
 [Profile.VitaminKEvent]: ../Profile.VitaminKEvent/Profile.VitaminKEvent.html
+[Profile.PhysicalExaminationEvent]: ../Profile.PhysicalExaminationEvent/Profile.PhysicalExaminationEvent.html
 
 [Profiling FHIR]: http://hl7.org/fhir/profiling.html
 [FHIR website]: http://hl7.org/fhir/index.html

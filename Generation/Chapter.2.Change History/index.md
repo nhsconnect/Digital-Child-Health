@@ -21,7 +21,6 @@ This initial draft version adda the FHIR profiles to support the following Digit
 - Newborn Physical Exam Event
 - 6-8 Week Health Review Event
 - Vitamin K Event
-- Screening Hearing Event
 - Physical Examination Event
 
 
