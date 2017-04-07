@@ -1,0 +1,43 @@
+{
+  "resourceType": "ValueSet",
+  "meta": {
+    "lastUpdated": "2016-08-03T00:00:00+01:00"
+  },
+  "url": "https://fhir.nhs.uk/ValueSet/dch-reasonforreferral-1",
+  "name": "Referral Reason",
+  "status": "active",
+  "description": "Reason for Referral to include clinical intervention/event which triggers Referral.",
+  "compose": {
+    "include": [
+      {
+        "system": "https://fhir.nhs.uk/dch-reasonforreferral-1",
+        "concept": [
+          {
+            "code": "01",
+            "display": "Transfer of Clinical Responsibility"
+          },
+          {
+            "code": "02",
+            "display": "For Opinion Only"
+          },
+          {
+            "code": "03",
+            "display": "For Diagnostic Test Only"
+          },
+          {
+            "code": "04",
+            "display": "New Referral (Non Transfer)"
+          },
+          {
+            "code": "96",
+            "display": "Other"
+          },
+          {
+            "code": "98",
+            "display": "Onward Referral Reason Not Applicable"
+          }
+        ]
+      }
+    ]
+  }
+}

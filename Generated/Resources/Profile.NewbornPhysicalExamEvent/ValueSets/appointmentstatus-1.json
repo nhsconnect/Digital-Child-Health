@@ -1,0 +1,81 @@
+{
+  "resourceType": "ValueSet",
+  "meta": {
+    "lastUpdated": "2016-08-03T00:00:00+01:00"
+  },
+  "contained": [
+    {
+      "resourceType": "ConceptMap",
+      "id": "map",
+      "name": "Child Health Event Attendance Status Mapping",
+      "status": "draft",
+      "sourceReference": {
+        "reference": "https://fhir.nhs.uk/ValueSet/appointmentstatus-1"
+      },
+      "targetReference": {
+        "reference": "https://fhir.nhs.uk/ValueSet/childhealthevent-appointmentstatus-map-1"
+      },
+      "element": [
+        {
+          "code": "booked",
+          "target": [
+            {
+              "code": "Booked Appointment",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "fulfilled",
+          "target": [
+            {
+              "code": "Attended Appointment",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "noshow",
+          "target": [
+            {
+              "code": "DNA",
+              "equivalence": "equivalent"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/valueset-map",
+      "valueReference": {
+        "reference": "#map"
+      }
+    }
+  ],
+  "url": "https://fhir.nhs.uk/ValueSet/appointmentstatus-1",
+  "name": "Appointment Status",
+  "status": "active",
+  "description": "The free/busy status of an appointment.",
+  "codeSystem": {
+    "system": "http://hl7.org/fhir/appointmentstatus",
+    "concept": [
+      {
+        "code": "booked",
+        "display": "Booked Appointment",
+        "definition": "Booked Appointment"
+      },
+      {
+        "code": "fulfilled",
+        "display": "Attended Appointment",
+        "definition": "Attended Appointment"
+      },
+      {
+        "code": "noshow",
+        "display": "DNA",
+        "definition": "DNA"
+      }
+    ]
+  }
+}
