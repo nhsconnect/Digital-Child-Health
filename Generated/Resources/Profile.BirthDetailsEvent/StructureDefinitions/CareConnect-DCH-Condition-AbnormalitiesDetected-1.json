@@ -1,7 +1,7 @@
 {
   "resourceType": "StructureDefinition",
   "meta": {
-    "lastUpdated": "2017-03-31T11:10:21.288+01:00",
+    "lastUpdated": "2017-04-06T18:21:12.624+01:00",
     "tag": [
       {
         "system": "urn:hscic:publishOrder",
@@ -2476,7 +2476,7 @@
         "path": "Condition.asserter",
         "short": "Person who asserts this condition",
         "definition": "Individual who is making the condition statement.",
-        "min": 1,
+        "min": 0,
         "max": "1",
         "base": {
           "path": "Condition.asserter",
@@ -9248,7 +9248,6 @@
       },
       {
         "path": "Condition.asserter",
-        "min": 1,
         "type": [
           {
             "code": "Reference",

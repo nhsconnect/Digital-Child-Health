@@ -1,0 +1,23 @@
+{
+  "resourceType": "ValueSet",
+  "meta": {
+    "lastUpdated": "2016-08-03T00:00:00+01:00"
+  },
+  "url": "https://fhir.nhs.uk/ValueSet/dch-physicalexaminationnotexamined-1",
+  "name": "Physical Examination Outcome - Not examined",
+  "status": "active",
+  "description": "The Physical Examination observation outcome value to represent that the Patient was not examined.",
+  "compose": {
+    "include": [
+      {
+        "system": "https://fhir.nhs.uk/dch-physicalexaminationnotexamined-1",
+        "concept": [
+          {
+            "code": "NN",
+            "display": "Not examined"
+          }
+        ]
+      }
+    ]
+  }
+}

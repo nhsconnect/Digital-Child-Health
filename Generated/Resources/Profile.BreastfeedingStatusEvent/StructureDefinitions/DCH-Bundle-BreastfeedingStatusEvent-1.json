@@ -1,11 +1,16 @@
 {
   "resourceType": "StructureDefinition",
   "meta": {
-    "lastUpdated": "2017-03-31T13:11:48.757+01:00",
+    "lastUpdated": "2017-04-07T11:55:36.143+01:00",
     "tag": [
       {
         "system": "urn:hscic:publishOrder",
-        "code": "1"
+        "code": "7"
+      },
+      {
+        "system": "urn:hscic:examples",
+        "code": "BreastfeedingStatusEvent-FirstMilkFeed-Scenario2",
+        "display": "BreastfeedingStatusEvent-FirstMilkFeed-Scenario2"
       }
     ]
   },
@@ -3056,6 +3061,14 @@
       {
         "path": "Bundle.entry.fullUrl",
         "min": 1
+      },
+      {
+        "path": "Bundle.entry.resource",
+        "type": [
+          {
+            "code": "Resource"
+          }
+        ]
       },
       {
         "path": "Bundle.entry.search",

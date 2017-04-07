@@ -1,0 +1,312 @@
+{
+  "resourceType": "Bundle",
+  "id": "d2282c1e-a069-472b-8984-d746b8056f8b",
+  "meta": {
+    "profile": [
+      "https://fhir.nhs.uk/StructureDefinition/dch-bundle-assessmentapgarevent-1"
+    ]
+  },
+  "type": "message",
+  "entry": [
+    {
+      "fullUrl": "urn:uuid:4059ea20-f2c6-4a64-a82e-cb1cd33717ce",
+      "resource": {
+        "resourceType": "MessageHeader",
+        "id": "4059ea20-f2c6-4a64-a82e-cb1cd33717ce",
+        "meta": {
+          "profile": [
+            "https://fhir.nhs.uk/StructureDefinition/dch-messageheader-assessmentapgarevent-1"
+          ]
+        },
+        "timestamp": "2012-01-07T22:00:00+00:00",
+        "event": {
+          "system": "https://fhir.nhs.uk/dch-childhealtheventtype-1",
+          "code": "E2",
+          "display": "Assessment APGAR"
+        },
+        "source": {
+          "endpoint": "urn:uuid:4059ea20-f2c6-4a64-a82e-cb1cd33717ce"
+        },
+        "responsible": {
+          "reference": "urn:uuid:b5d4c501-1ef6-464d-8b60-e632b49e8543",
+          "display": "Leeds Teaching Hospitals"
+        },
+        "data": [
+          {
+            "reference": "urn:uuid:83293cf2-57b3-49fd-a10b-5ece13d5b8e1"
+          }
+        ]
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:83293cf2-57b3-49fd-a10b-5ece13d5b8e1",
+      "resource": {
+        "resourceType": "Encounter",
+        "id": "83293cf2-57b3-49fd-a10b-5ece13d5b8e1",
+        "meta": {
+          "profile": [
+            "https://fhir.hl7.org.uk/StructureDefinition/CareConnect-DCH-Encounter-BirthOccurrence-1"
+          ]
+        },
+        "identifier": [
+          {
+            "system": "https://tools.ietf.org/html/rfc4122",
+            "value": "87a9142f-d4a7-49ba-9ce1-1e0b511a55b4"
+          }
+        ],
+        "status": "finished",
+        "patient": {
+          "reference": "urn:uuid:e864d93b-07a1-4c1c-8b2f-276bba9675d5",
+          "display": "SAXTON, Sarah Marie"
+        },
+        "participant": [
+          {
+            "individual": {
+              "reference": "urn:uuid:3f13dfd4-d62f-4b17-87e1-52f470960b81",
+              "display": "RILEY, David"
+            }
+          }
+        ],
+        "period": {
+          "start": "2012-01-06T20:25:00+00:00",
+          "end": "2012-01-07T22:00:00+00:00"
+        },
+        "location": [
+          {
+            "location": {
+              "reference": "urn:uuid:be555baa-d62c-4668-b022-88466a82c4c3",
+              "display": "Clarendon Wing, Leeds General Infirmary"
+            }
+          }
+        ],
+        "serviceProvider": {
+          "reference": "urn:uuid:b5d4c501-1ef6-464d-8b60-e632b49e8543",
+          "display": "Leeds Teaching Hospitals NHS Trust"
+        },
+        "partOf": {
+          "reference": "urn:uuid:f00b4cb9-1b94-49ab-8561-12b9edb27627"
+        }
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:b5d4c501-1ef6-464d-8b60-e632b49e8543",
+      "resource": {
+        "resourceType": "Organization",
+        "id": "b5d4c501-1ef6-464d-8b60-e632b49e8543",
+        "meta": {
+          "profile": [
+            "https://fhir.hl7.org.uk/StructureDefinition/CareConnect-Organization-1"
+          ]
+        },
+        "identifier": [
+          {
+            "system": "https://fhir.nhs.uk/Id/ods-organization-code",
+            "value": "RR8"
+          }
+        ],
+        "name": "Leeds Teaching Hospitals NHS Trust"
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:e864d93b-07a1-4c1c-8b2f-276bba9675d5",
+      "resource": {
+        "resourceType": "Patient",
+        "id": "e864d93b-07a1-4c1c-8b2f-276bba9675d5",
+        "meta": {
+          "profile": [
+            "https://fhir.hl7.org.uk/StructureDefinition/CareConnect-DCH-Patient-Baby-1"
+          ]
+        },
+        "identifier": [
+          {
+            "extension": [
+              {
+                "url": "https://fhir.hl7.org.uk/StructureDefinition/Extension-CareConnect-NHSNumberVerificationStatus-1",
+                "valueCodeableConcept": {
+                  "coding": [
+                    {
+                      "system": "https://fhir.hl7.org.uk/CareConnect-NHSNumberVerificationStatus-1",
+                      "code": "01",
+                      "display": "Number present and verified"
+                    }
+                  ]
+                }
+              }
+            ],
+            "system": "https://fhir.nhs.uk/Id/nhs-number",
+            "value": "5629874536"
+          }
+        ],
+        "name": [
+          {
+            "use": "official",
+            "family": [
+              "Saxton"
+            ],
+            "given": [
+              "Sarah",
+              "Marie"
+            ]
+          }
+        ],
+        "gender": "female",
+        "_birthDate": {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/patient-birthTime",
+              "valueDateTime": "2012-01-07T20:12:00+00:00"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:44a10a10-0bb0-4040-a0f8-0b4840331615",
+      "resource": {
+        "resourceType": "Observation",
+        "id": "44a10a10-0bb0-4040-a0f8-0b4840331615",
+        "meta": {
+          "profile": [
+            "https://fhir.hl7.org.uk/StructureDefinition/CareConnect-DCH-Observation-APGARScore1Minute-1"
+          ]
+        },
+        "identifier": [
+          {
+            "system": "https://tools.ietf.org/html/rfc4122",
+            "value": "c835fb9f-dd18-43dd-b756-0db9c76e0255"
+          }
+        ],
+        "status": "final",
+        "code": {
+          "coding": [
+            {
+              "system": "http://snomed.info/sct",
+              "code": "169895004",
+              "display": "Apgar score at 1 minute (observable entity)"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "urn:uuid:98ff5f0a-bcfa-4b78-ad55-ed8249b7509e",
+          "display": "SAXTON, Sophie"
+        },
+        "encounter": {
+          "reference": "urn:uuid:f00b4cb9-1b94-49ab-8561-12b9edb27627"
+        },
+        "valueQuantity": {
+          "value": 6
+        }
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:4c52f7d6-9ab3-425d-a06d-1de498eba3a4",
+      "resource": {
+        "resourceType": "Observation",
+        "id": "4c52f7d6-9ab3-425d-a06d-1de498eba3a4",
+        "meta": {
+          "profile": [
+            "https://fhir.hl7.org.uk/StructureDefinition/CareConnect-DCH-Observation-APGARScore5Minutes-1"
+          ]
+        },
+        "identifier": [
+          {
+            "system": "https://tools.ietf.org/html/rfc4122",
+            "value": "36bfc2e5-2ee5-4484-9339-a160e638890d"
+          }
+        ],
+        "status": "final",
+        "code": {
+          "coding": [
+            {
+              "system": "http://snomed.info/sct",
+              "code": "169909004",
+              "display": "Apgar score at 5 minutes (observable entity)"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "urn:uuid:98ff5f0a-bcfa-4b78-ad55-ed8249b7509e",
+          "display": "SAXTON, Sophie"
+        },
+        "encounter": {
+          "reference": "urn:uuid:f00b4cb9-1b94-49ab-8561-12b9edb27627"
+        },
+        "valueQuantity": {
+          "value": 8
+        }
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:bfd6d895-4e35-4228-8101-3221b35e0c88",
+      "resource": {
+        "resourceType": "Observation",
+        "id": "bfd6d895-4e35-4228-8101-3221b35e0c88",
+        "meta": {
+          "profile": [
+            "https://fhir.hl7.org.uk/StructureDefinition/CareConnect-DCH-Observation-APGARScore10Minutes-1"
+          ]
+        },
+        "identifier": [
+          {
+            "system": "https://tools.ietf.org/html/rfc4122",
+            "value": "743e474b-cb4e-436b-a34d-77ca56bc256b"
+          }
+        ],
+        "status": "final",
+        "code": {
+          "coding": [
+            {
+              "system": "http://snomed.info/sct",
+              "code": "169922007",
+              "display": "Apgar score at 10 minutes (observable entity)"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "urn:uuid:98ff5f0a-bcfa-4b78-ad55-ed8249b7509e",
+          "display": "SAXTON, Sophie"
+        },
+        "encounter": {
+          "reference": "urn:uuid:f00b4cb9-1b94-49ab-8561-12b9edb27627"
+        },
+        "dataAbsentReason": {
+          "coding": [
+            {
+              "system": "http://hl7.org/fhir/data-absent-reason",
+              "code": "unknown",
+              "display": "Unknown"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:be555baa-d62c-4668-b022-88466a82c4c3",
+      "resource": {
+        "resourceType": "Organization",
+        "id": "be555baa-d62c-4668-b022-88466a82c4c3",
+        "meta": {
+          "profile": [
+            "https://fhir.hl7.org.uk/StructureDefinition/CareConnect-DCH-Organization-ActualDeliveryPlace-1"
+          ]
+        },
+        "identifier": [
+          {
+            "system": "https://fhir.nhs.uk/Id/ods-site-code",
+            "value": "RR830"
+          }
+        ],
+        "type": {
+          "coding": [
+            {
+              "system": "https://fhir.nhs.uk/dch-typeofunit-1",
+              "code": "4",
+              "display": "In NHS hospital - delivery facilities associated with consultant/GMP/midwife ward inclusive of any combination of two of the professionals mentioned"
+            }
+          ]
+        },
+        "name": "Clarendon Wing, Leeds General Infirmary"
+      }
+    }
+  ]
+}
