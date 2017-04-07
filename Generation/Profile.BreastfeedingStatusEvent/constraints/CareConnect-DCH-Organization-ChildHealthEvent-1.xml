@@ -1,10 +1,10 @@
-<?xml version="1.0" encoding="utf-8"?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <meta>
-    <lastUpdated value="2017-04-06T11:34:33.761+01:00" />
+    <lastUpdated value="2017-03-31T11:26:18.153+01:00" />
     <tag>
       <system value="urn:hscic:publishOrder" />
-      <code value="8" />
+      <code value="6" />
     </tag>
   </meta>
   <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm">
@@ -1565,7 +1565,7 @@
       <short value="Organisation Data Service code" />
       <definition value="Identifier code supplier by the Organisation Data Service" />
       <requirements value="Organizations are known by a variety of ids. Some institutions maintain several, and most collect identifiers for exchange with other organizations concerning the organization." />
-      <min value="0" />
+      <min value="1" />
       <max value="1" />
       <base>
         <path value="Organization.identifier" />
@@ -2742,7 +2742,7 @@
       <definition value="Identifier for the organization that is used to identify the organization across multiple disparate systems." />
       <comments value="ODS Site code to identify the organisation at site level. Where an ODS Site Code is not applicable, one of the following values will apply:&#xD;&#xA;&#xD;&#xA;ZZ201 - Not applicable (delivered at home)&#xD;&#xA;ZZ888 - Not applicable (delivered at non-NHS organisation)&#xD;&#xA;ZZ203 - Not known (place of delivery not known)" />
       <requirements value="Organizations are known by a variety of ids. Some institutions maintain several, and most collect identifiers for exchange with other organizations concerning the organization." />
-      <min value="1" />
+      <min value="0" />
       <max value="1" />
       <base>
         <path value="Organization.identifier" />
@@ -9744,6 +9744,7 @@
       <name value="ODS Organisation Code" />
       <short value="Organisation Data Service code" />
       <definition value="Identifier code supplier by the Organisation Data Service" />
+      <min value="1" />
       <max value="1" />
     </element>
     <element>
@@ -9776,7 +9777,6 @@
       <name value="ODS Site Code" />
       <short value="ODS Site code to identify the organisation at site level" />
       <comments value="ODS Site code to identify the organisation at site level. Where an ODS Site Code is not applicable, one of the following values will apply:&#xD;&#xA;&#xD;&#xA;ZZ201 - Not applicable (delivered at home)&#xD;&#xA;ZZ888 - Not applicable (delivered at non-NHS organisation)&#xD;&#xA;ZZ203 - Not known (place of delivery not known)" />
-      <min value="1" />
       <max value="1" />
     </element>
     <element>

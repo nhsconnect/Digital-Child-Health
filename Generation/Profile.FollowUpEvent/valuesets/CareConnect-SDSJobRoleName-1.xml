@@ -11,7 +11,6 @@
 	<name value="Care Connect SDS Job Role Name"/>
 	<status value="active"/>
 	<description value="A set of RBAC codes to indicate the job role associated with the person on the smart card. This code list is externally maintained."/>
-	<requirements value="Coding system for this Value Set: https://fhir.hl7.org.uk/CareConnect-SDSJobRoleName-1"/>
 	<compose>
 		<import value="http://systems.hscic.gov.uk/rasmartcards/planning/rbacoutline"/>
 	</compose>

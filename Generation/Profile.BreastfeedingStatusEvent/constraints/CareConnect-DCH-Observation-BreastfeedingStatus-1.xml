@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <meta>
-    <lastUpdated value="2017-04-06T18:22:40.316+01:00" />
+    <lastUpdated value="2017-03-31T10:25:18.588+01:00" />
     <tag>
       <system value="urn:hscic:publishOrder" />
       <code value="6" />
@@ -3907,7 +3907,7 @@
       <short value="Who is responsible for the observation" />
       <definition value="Who was responsible for asserting the observed value as &quot;true&quot;." />
       <requirements value="May give a degree of confidence in the observation and also indicates where follow-up questions should be directed." />
-      <min value="0" />
+      <min value="1" />
       <max value="1" />
       <base>
         <path value="Observation.performer" />
@@ -13195,6 +13195,7 @@
     </element>
     <element>
       <path value="Observation.performer" />
+      <min value="1" />
       <max value="1" />
       <type>
         <code value="Reference" />

@@ -1,1 +1,0 @@
-This Organization resource represents the organisation that employs the healthcare practitioner.

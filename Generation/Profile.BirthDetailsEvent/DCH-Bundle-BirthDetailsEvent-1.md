@@ -14,8 +14,6 @@ This 'DCH-Bundle-BirthDetailsEvent-1' Bundle resource profile is used as a conta
 - [CareConnect-DCH-Encounter-Delivery-1]
 - [CareConnect-DCH-Patient-Mother-1]
 - [DCH-RelatedPerson-MotherAndBaby-1]
-- [CareConnect-DCH-Practitioner-ChildHealthEvent-1]
-- [CareConnect-Practitioner-1]
 - [CareConnect-Location-1]
 
 
@@ -52,5 +50,3 @@ The Child Health Event data items are fulfilled by elements within the FHIR reso
 [CareConnect-DCH-Patient-Mother-1]:careconnect-dch-patient-mother-1.html
 [DCH-RelatedPerson-MotherAndBaby-1]:dch-relatedperson-motherandbaby-1.html
 [CareConnect-Location-1]:careconnect-location-1.html  
-[CareConnect-DCH-Practitioner-ChildHealthEvent-1]:careconnect-dch-practitioner-childhealthevent-1.html
-[CareConnect-Practitioner-1]:careconnect-practitioner-1.html 

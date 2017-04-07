@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <meta>
-    <lastUpdated value="2017-04-06T18:21:12.624+01:00" />
+    <lastUpdated value="2017-03-31T11:10:21.288+01:00" />
     <tag>
       <system value="urn:hscic:publishOrder" />
       <code value="10" />
@@ -1916,7 +1916,7 @@
       <path value="Condition.asserter" />
       <short value="Person who asserts this condition" />
       <definition value="Individual who is making the condition statement." />
-      <min value="0" />
+      <min value="1" />
       <max value="1" />
       <base>
         <path value="Condition.asserter" />
@@ -7219,6 +7219,7 @@
     </element>
     <element>
       <path value="Condition.asserter" />
+      <min value="1" />
       <type>
         <code value="Reference" />
         <profile value="https://fhir.hl7.org.uk/StructureDefinition/CareConnect-DCH-Practitioner-ChildHealthEvent-1" />
