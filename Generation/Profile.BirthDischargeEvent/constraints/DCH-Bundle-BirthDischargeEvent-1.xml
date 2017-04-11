@@ -6,6 +6,16 @@
       <system value="urn:hscic:publishOrder" />
       <code value="1" />
     </tag>
+	<tag>
+      <system value="urn:hscic:examples" />
+      <code value="BirthDischargeEvent-Scenario1" />
+      <display value="BirthDischargeEvent-Scenario1" />
+    </tag>
+	<tag>
+      <system value="urn:hscic:examples" />
+      <code value="BirthDischargeEvent-Scenario2" />
+      <display value="BirthDischargeEvent-Scenario2" />
+    </tag>
   </meta>
   <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm">
     <valueInteger value="3" />

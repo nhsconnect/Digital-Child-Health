@@ -6,6 +6,26 @@
       <system value="urn:hscic:publishOrder" />
       <code value="1" />
     </tag>
+	<tag>
+      <system value="urn:hscic:examples" />
+      <code value="MeasurementsEvent-AtBirth-Scenario1" />
+      <display value="MeasurementsEvent-AtBirth-Scenario1" />
+    </tag>
+	<tag>
+      <system value="urn:hscic:examples" />
+      <code value="MeasurementsEvent-6-8Weeks-Scenario1" />
+      <display value="MeasurementsEvent-6-8Weeks-Scenario1" />
+    </tag>
+	<tag>
+      <system value="urn:hscic:examples" />
+      <code value="MeasurementsEvent-1YearReview-Scenario1" />
+      <display value="MeasurementsEvent-1YearReview-Scenario1" />
+    </tag>
+	<tag>
+      <system value="urn:hscic:examples" />
+      <code value="MeasurementsEvent-AtBirth-Scenario2" />
+      <display value="MeasurementsEvent-AtBirth-Scenario2" />
+    </tag>
   </meta>
   <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm">
     <valueInteger value="3" />
