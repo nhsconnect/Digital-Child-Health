@@ -22,8 +22,8 @@ The Child Health Event data items are fulfilled by elements within the FHIR reso
 | Date (discharge baby)   | [CareConnect-DCH-Encounter-BirthOccurrence-1]             |
 | Date (discharge mother) | [CareConnect-DCH-Encounter-Delivery-1]          |
 | Site Code               | [CareConnect-DCH-Organization-BirthDischargeEvent-1] |
-| Type of Unit            | [CareConnect-DCH-Organization-BirthDischargeEvent-1 |
-| Organisation Code       | [CareConnect-DCH-Organization-BirthDischargeEvent-1 |
+| Type of Unit            | [CareConnect-DCH-Organization-BirthDischargeEvent-1] |
+| Organisation Code       | [CareConnect-DCH-Organization-BirthDischargeEvent-1] |
 | Professional Type       | [CareConnect-DCH-Practitioner-BirthDischargeEvent-1] |
 | Professional Code       | [CareConnect-DCH-Practitioner-BirthDischargeEvent-1] |
 | Professional Name       | [CareConnect-DCH-Practitioner-BirthDischargeEvent-1] |

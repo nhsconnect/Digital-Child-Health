@@ -7,7 +7,7 @@ This section provides {add domain} implementers with the information required to
 
 **Message Patterns and Message Structure**
 
-The {add domain} FHIR interface is based on the [HL7 FHIR DSTU2 1.0.1 Messaging Implementation] (Sept 2015) Messaging Implementation and supports {number} interactions. 
+The {add domain} FHIR interface is based on the [HL7 FHIR DSTU2 1.0.1 Messaging Implementation] (Oct 2015) Messaging Implementation and supports {number} interactions. 
 
 
 **{interaction id}**
@@ -52,7 +52,7 @@ TBA
 For more information about FHIR messaging please visit: [HL7 FHIR DSTU2 1.0.1 Messaging Implementation]
 
 
-[HL7 FHIR DSTU2 1.0.1 Messaging Implementation]:http://hl7.org/fhir/messaging.html
+[HL7 FHIR DSTU2 1.0.1 Messaging Implementation]:https://www.hl7.org/fhir/DSTU2/messaging.html
 
 
 
