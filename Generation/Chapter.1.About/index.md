@@ -17,6 +17,6 @@ To ensure the aims of this strategy are met and small manageable segments of dat
 **Further Information**
 This FHIR Messaging specification is based on and intended to be used alongside the published [FHIR DSTU2 1.0.1] (Oct 2015) specification. 
 
-[FHIR DSTU2 1.0.1]: http://hl7.org/fhir/index.html
+[FHIR DSTU2 1.0.1]: https://www.hl7.org/fhir/DSTU2/index.html
 
 [Profile.BirthEvent]: ../Profile.BirthEvent/Profile.BirthEvent.html
