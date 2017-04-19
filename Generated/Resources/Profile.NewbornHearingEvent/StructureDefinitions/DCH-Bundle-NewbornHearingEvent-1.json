@@ -6,6 +6,11 @@
       {
         "system": "urn:hscic:publishOrder",
         "code": "1"
+      },
+      {
+        "system": "urn:hscic:examples",
+        "code": "NewbornHearingEvent-Scenario2",
+        "display": "NewbornHearingEvent-Scenario2"
       }
     ]
   },

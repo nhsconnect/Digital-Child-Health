@@ -9,7 +9,7 @@
 
 			<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 			<meta name="author" content="HSCIC" />        
-			<meta name="publisher version" content=	"FHIR-Furnace : 2.7.6276.17249" />
+			<meta name="publisher version" content=	"FHIR-Furnace : 2.7.6256.31052" />
 		
 			<link href="../dist/css/fhir.css" rel="stylesheet" />
 	 
@@ -103,7 +103,7 @@
 												<a href='../Chapter.6.Glossary/index.html'>Glossary</a>
 											</li>
 											<li>
-												<a href='../Chapter.7.ValueSets/index.html'>ValueSets</a>
+												<a href='../Chapter.7.Valuesets/valuesets.html'>Valuesets</a>
 											</li>
 
                             </ul>
@@ -140,33 +140,40 @@
 							
 							
 									<div class="panel panel - default">
-											<h2>FHIR Messaging Architecture</h2>
-<p><strong>{add domain}</strong></p>
-<p>This section provides {add domain} implementers with the information required to utilise the {add domain} Domain Message Specification.</p>
+											<h2>FHIR Event Messaging Architecture</h2>
+<p><strong>Digital Child Health</strong></p>
+<p>This section provides Digital Child Health implementers with the information required to build and send the Digital Child Health events.</p>
 <p><strong>Message Patterns and Message Structure</strong></p>
-<p>The {add domain} FHIR interface is based on the <a href="http://hl7.org/fhir/messaging.html">HL7 FHIR DSTU2 1.0.1 Messaging Implementation</a> (Sept 2015) Messaging Implementation and supports {number} interactions. </p>
-<p><strong>{interaction id}</strong></p>
-<p>The sender {insert details] will construct a {insert message name} message and send it to the receiver {insert details}.</p>
+<p>Digital Child Health is based on a Publish and Subscribe messaging pattern. Events are created by care providers who have provided the front line care. The events are published to a national child health hub. The national hub manages subscriptions to the published events.</p>
+<p>Digital Child Health event message definitions are based on the <a href="https://www.hl7.org/fhir/DSTU2/messaging.html">HL7 FHIR DSTU2 1.0.1 Messaging Implementation</a> (Oct 2015) standard.</p>
+<p><strong>Events</strong></p>
+<p>The event originator will construct an event message, as outlined in this Domain Message Specification. Events will be sent over the NHS Message Exchange for Social Care and Health (MESH) to the child health hub. MESH will be used to ensure that the event message reaches the child health hub. Error processing, for example an undeliverable message, is the responsibility of the sending system. The processing of events within and beyond the child health hub is the subject of related Digital Child Health documentation.</p>
+<p>For further information relating to MESH see the <a href="https://digital.nhs.uk/message-exchange-social-care-health">MESH pages on the NHS Digital web site</a></p>
+<p><strong>Events Diagram</strong></p>
+<p>The diagram shows the Digital Child Health events (documented in the Events Catalogue) being published to the child health hub. The hub manages subscriptions to these publications (in accordance with the Hub Registration Authority):</p>
+<p></br></p>
+<div style="display: block;"><img  src="Events.png" alt="DCHEvents"></div>  
+<p></br></p>
+<p><strong>FHIR Event Messaging</strong></p>
+<p>The FHIR event message is made up of the resources. These resources are bundled within an FHIR Bundle wrapper to create the FHIR structure.</p>
+<p>In FHIR messaging, a &quot;message&quot; is sent from a source application to a destination application when an event happens. </p>
+<p>The event message consists of a Bundle identified by the type &quot;message&quot;, with the first resource in the bundle being a MessageHeader. The MessageHeader resource has an event code that identifies the type of event being published. It also carries additional metadata.</p>
+<p>Each event will carry a standard set of data to act as an event &quot;header&quot; (to help identify the patient, publisher, and actual event). This standard header consists of:</p>
 <ul>
-<li><strong>Sender {insert name}:</strong> {insert system name} System</li>
-<li><strong>Receiver {insert name}:</strong> {insert system name} System</li>
-<li><strong>Message:</strong> Wire Format:  {insert message id} </li>
+<li>patient identification data (NHS Number, Date of Birth, name, etc.)</li>
+<li>event type</li>
+<li>service originating the event</li>
+<li>service provider originating the event</li>
+<li>IT system holding the event data</li>
+<li>location at which the event occurred</li>
+<li>event date time</li>
+<li>event publisher</li>
+<li>event published date</li>
+<li>a publication reference number</li>
 </ul>
-<p><strong>Message acknowledgements and responses:</strong></p>
-<p>{insert details}</p>
-<p><strong>{insert domain} Interaction Diagram</strong></p>
-<p>The diagram shows the {Insert Interactions}:</p>
-<p></br></p>
-<div style="display: block;"><img  src="Interactions.png" alt="DDAInteractions"></div>  
-<p></br></p>
-<p><strong>FHIR Messaging</strong></p>
-<p>The FHIR message made up of the resources is bundled within an FHIR Bundle wrapper to create the FHIR structure.</p>
-<p>For the purpose of this implementation guide, the FHIR resources are bundled together to construct a FHIR Message payload.</p>
-<p>In FHIR messaging, a &quot;message&quot; is sent from a source application to a destination application when an event happens. Events mostly correspond to things that happen in the real world. The message consists of a bundle identified by the tag &quot;http://hl7.org/fhir/tag/message&quot;, with the first resource in the bundle being a MessageHeader resource. The MessageHeader resource has a code - the message event - that identifies the nature of the request message, and it also carries additional request metadata. The other resources in the bundle depend on the type of the request.</p>
-<p><strong>XML Example of the wrapped FHIR message</strong></p>
-<p>TBA</p>
+<p>The other resources in the bundle depend on the event type.</p>
 <p><strong>Further Information</strong></p>
-<p>For more information about FHIR messaging please visit: <a href="http://hl7.org/fhir/messaging.html">HL7 FHIR DSTU2 1.0.1 Messaging Implementation</a></p>
+<p>For more information about FHIR messaging please visit: <a href="https://www.hl7.org/fhir/DSTU2/messaging.html">HL7 FHIR DSTU2 1.0.1 Messaging Implementation</a></p>
 
 									</div>
 							

@@ -1,0 +1,280 @@
+{
+  "resourceType": "Bundle",
+  "id": "ee5f817a-69cb-4dff-bd93-bdd81a892c3a",
+  "meta": {
+    "profile": [
+      "https://fhir.nhs.uk/StructureDefinition/dch-bundle-breastfeedingstatusevent-1"
+    ]
+  },
+  "type": "message",
+  "entry": [
+    {
+      "fullUrl": "urn:uuid:1fbcea54-c830-431a-9485-2d06ebe23177",
+      "resource": {
+        "resourceType": "MessageHeader",
+        "id": "1fbcea54-c830-431a-9485-2d06ebe23177",
+        "meta": {
+          "profile": [
+            "https://fhir.nhs.uk/StructureDefinition/dch-messageheader-breastfeedingstatusevent-1"
+          ]
+        },
+        "timestamp": "2012-01-10T11:00:00+00:00",
+        "event": {
+          "system": "https://fhir.nhs.uk/dch-childhealtheventtype-1",
+          "code": "E5",
+          "display": "Breastfeeding Status: Breastfeeding Status"
+        },
+        "source": {
+          "endpoint": "urn:uuid:1fbcea54-c830-431a-9485-2d06ebe23177"
+        },
+        "responsible": {
+          "reference": "urn:uuid:570d1fd6-2c73-4d00-8df3-2f05045776dc",
+          "display": "Leeds Teaching Hospitals"
+        },
+        "data": [
+          {
+            "reference": "urn:uuid:2355d1dd-000e-4b11-92f0-a6de6b935856"
+          }
+        ]
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:2355d1dd-000e-4b11-92f0-a6de6b935856",
+      "resource": {
+        "resourceType": "Encounter",
+        "id": "2355d1dd-000e-4b11-92f0-a6de6b935856",
+        "meta": {
+          "profile": [
+            "https://fhir.nhs.uk/StructureDefinition/dch-bundle-breastfeedingstatusevent-1"
+          ]
+        },
+        "identifier": [
+          {
+            "system": "https://tools.ietf.org/html/rfc4122",
+            "value": "444702c9-d746-4792-a585-56f3256c98dc"
+          }
+        ],
+        "status": "finished",
+        "patient": {
+          "reference": "urn:uuid:11fccdf8-51d1-4605-9dd4-bda39d5b6835",
+          "display": "SAXTON, Sarah Marie"
+        },
+        "participant": [
+          {
+            "individual": {
+              "reference": "urn:uuid:47dfab05-ba7d-4bc2-ba49-89b89a6f2f21",
+              "display": "WHISTLER, Penny (Dr)"
+            }
+          }
+        ],
+        "period": {
+          "start": "2012-01-10T10:30:00+00:00"
+        },
+        "location": [
+          {
+            "location": {
+              "reference": "urn:uuid:df22dd05-7fc7-44a7-9adb-ccb414ddc10a",
+              "display": "Clarendon Wing, Leeds General Infirmary"
+            }
+          }
+        ],
+        "serviceProvider": {
+          "reference": "urn:uuid:570d1fd6-2c73-4d00-8df3-2f05045776dc",
+          "display": "Leeds Teaching Hospitals NHS Trust"
+        }
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:570d1fd6-2c73-4d00-8df3-2f05045776dc",
+      "resource": {
+        "resourceType": "Organization",
+        "id": "570d1fd6-2c73-4d00-8df3-2f05045776dc",
+        "meta": {
+          "profile": [
+            "https://fhir.hl7.org.uk/StructureDefinition/CareConnect-Organization-1"
+          ]
+        },
+        "identifier": [
+          {
+            "system": "https://fhir.nhs.uk/Id/ods-organization-code",
+            "value": "RR8"
+          }
+        ],
+        "name": "Leeds Teaching Hospitals NHS Trust"
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:11fccdf8-51d1-4605-9dd4-bda39d5b6835",
+      "resource": {
+        "resourceType": "Patient",
+        "id": "11fccdf8-51d1-4605-9dd4-bda39d5b6835",
+        "meta": {
+          "profile": [
+            "https://fhir.hl7.org.uk/StructureDefinition/CareConnect-DCH-Patient-Baby-1"
+          ]
+        },
+        "identifier": [
+          {
+            "extension": [
+              {
+                "url": "https://fhir.hl7.org.uk/StructureDefinition/Extension-CareConnect-NHSNumberVerificationStatus-1",
+                "valueCodeableConcept": {
+                  "coding": [
+                    {
+                      "system": "https://fhir.hl7.org.uk/CareConnect-NHSNumberVerificationStatus-1",
+                      "code": "01",
+                      "display": "Number present and verified"
+                    }
+                  ]
+                }
+              }
+            ],
+            "system": "https://fhir.nhs.uk/Id/nhs-number",
+            "value": "5629874536"
+          }
+        ],
+        "name": [
+          {
+            "use": "official",
+            "family": [
+              "Saxton"
+            ],
+            "given": [
+              "Sarah",
+              "Marie"
+            ]
+          }
+        ],
+        "gender": "female",
+        "_birthDate": {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/patient-birthTime",
+              "valueDateTime": "2012-01-07T20:12:00+00:00"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:96667cad-c858-480d-8a09-cfa36d1c68f7",
+      "resource": {
+        "resourceType": "Observation",
+        "id": "96667cad-c858-480d-8a09-cfa36d1c68f7",
+        "meta": {
+          "profile": [
+            "https://fhir.hl7.org.uk/StructureDefinition/CareConnect-DCH-Observation-BreastfeedingStatus-1"
+          ]
+        },
+        "identifier": [
+          {
+            "system": "https://tools.ietf.org/html/rfc4122",
+            "value": "61862c20-4f27-4d2e-b42c-0bb4d1373305"
+          }
+        ],
+        "status": "final",
+        "code": {
+          "coding": [
+            {
+              "system": "http://snomed.info/sct",
+              "code": "413711008",
+              "display": "Breastfeeding (infant) (observable entity)"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "urn:uuid:98ff5f0a-bcfa-4b78-ad55-ed8249b7509e",
+          "display": "SAXTON, Sophie"
+        },
+        "encounter": {
+          "reference": "urn:uuid:2355d1dd-000e-4b11-92f0-a6de6b935856"
+        },
+        "performer": [
+          {
+            "reference": "urn:uuid:47dfab05-ba7d-4bc2-ba49-89b89a6f2f21",
+            "display": "WHISTLER, Penny (Dr)"
+          }
+        ],
+        "valueCodeableConcept": {
+          "coding": [
+            {
+              "system": "https://fhir.nhs.uk/dch-breastfeedingstatus-1",
+              "code": "1",
+              "display": "Exclusively breast milk feeding"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:df22dd05-7fc7-44a7-9adb-ccb414ddc10a",
+      "resource": {
+        "resourceType": "Organization",
+        "id": "df22dd05-7fc7-44a7-9adb-ccb414ddc10a",
+        "meta": {
+          "profile": [
+            "https://fhir.hl7.org.uk/StructureDefinition/CareConnect-DCH-Organization-ChildHealthEvent-1"
+          ]
+        },
+        "identifier": [
+          {
+            "system": "https://fhir.nhs.uk/Id/ods-site-code",
+            "value": "RR830"
+          }
+        ],
+        "type": {
+          "coding": [
+            {
+              "system": "http://hl7.org/fhir/organization-type",
+              "code": "prov",
+              "display": "Healthcare Provider"
+            }
+          ]
+        },
+        "name": "Clarendon Wing, Leeds General Infirmary"
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:47dfab05-ba7d-4bc2-ba49-89b89a6f2f21",
+      "resource": {
+        "resourceType": "Practitioner",
+        "id": "47dfab05-ba7d-4bc2-ba49-89b89a6f2f21",
+        "meta": {
+          "profile": [
+            "https://fhir.hl7.org.uk/StructureDefinition/CareConnect-DCH-Practitioner-ChildHealthEvent-1"
+          ]
+        },
+        "identifier": [
+          {
+            "system": "https://fhir.nhs.uk/Id/sds-user-id",
+            "value": "G1234567"
+          }
+        ],
+        "name": {
+          "family": [
+            "Whistler"
+          ],
+          "given": [
+            "Penny"
+          ],
+          "prefix": [
+            "Dr"
+          ]
+        },
+        "practitionerRole": [
+          {
+            "role": {
+              "coding": [
+                {
+                  "system": "https://fhir.hl7.org.uk/CareConnect-SDSJobRoleName-1",
+                  "code": "R8000",
+                  "display": "Clinical Practitioner Access Role"
+                }
+              ]
+            }
+          }
+        ]
+      }
+    }
+  ]
+}

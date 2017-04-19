@@ -157,34 +157,6 @@
       }
     },
     {
-      "fullUrl": "urn:uuid:60b8c7ab-4b2f-4c57-9100-b8328ff1aada",
-      "resource": {
-        "resourceType": "Organization",
-        "id": "60b8c7ab-4b2f-4c57-9100-b8328ff1aada",
-        "meta": {
-          "profile": [
-            "https://fhir.hl7.org.uk/StructureDefinition/CareConnect-DCH-Organization-ChildHealthEvent-1"
-          ]
-        },
-        "identifier": [
-          {
-            "system": "https://fhir.nhs.uk/Id/ods-site-code",
-            "value": "RR830"
-          }
-        ],
-        "type": {
-          "coding": [
-            {
-              "system": "http://hl7.org/fhir/organization-type",
-              "code": "prov",
-              "display": "Healthcare Provider"
-            }
-          ]
-        },
-        "name": "Clarendon Wing, Leeds General Infirmary"
-      }
-    },
-    {
       "fullUrl": "urn:uuid:704f86c1-4132-4098-96cd-747a6d52a9a5",
       "resource": {
         "resourceType": "Observation",
@@ -219,7 +191,7 @@
         },
         "performer": [
           {
-            "reference": "urn:uuid01a88884-9299-42cf-a1cc-0d5ef9e0e441",
+            "reference": "urn:uuid:01a88884-9299-42cf-a1cc-0d5ef9e0e441",
             "display": "PRICE, Shelly"
           }
         ],
@@ -235,6 +207,34 @@
       }
     },
     {
+      "fullUrl": "urn:uuid:60b8c7ab-4b2f-4c57-9100-b8328ff1aada",
+      "resource": {
+        "resourceType": "Organization",
+        "id": "60b8c7ab-4b2f-4c57-9100-b8328ff1aada",
+        "meta": {
+          "profile": [
+            "https://fhir.hl7.org.uk/StructureDefinition/CareConnect-DCH-Organization-ChildHealthEvent-1"
+          ]
+        },
+        "identifier": [
+          {
+            "system": "https://fhir.nhs.uk/Id/ods-site-code",
+            "value": "RR830"
+          }
+        ],
+        "type": {
+          "coding": [
+            {
+              "system": "http://hl7.org/fhir/organization-type",
+              "code": "prov",
+              "display": "Healthcare Provider"
+            }
+          ]
+        },
+        "name": "Clarendon Wing, Leeds General Infirmary"
+      }
+    },
+    {
       "fullUrl": "urn:uuid:01a88884-9299-42cf-a1cc-0d5ef9e0e441",
       "resource": {
         "resourceType": "Practitioner",
@@ -244,6 +244,12 @@
             "https://fhir.hl7.org.uk/StructureDefinition/CareConnect-DCH-Practitioner-ChildHealthEvent-1"
           ]
         },
+        "identifier": [
+          {
+            "system": "https://fhir.nhs.uk/Id/sds-role-profile-id",
+            "value": "M9999998"
+          }
+        ],
         "name": {
           "family": [
             "Price"

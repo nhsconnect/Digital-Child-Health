@@ -1,0 +1,385 @@
+{
+  "resourceType": "Bundle",
+  "id": "9850d168-2721-4c34-8bc5-58411d7cbdbf",
+  "meta": {
+    "profile": [
+      "https://fhir.nhs.uk/StructureDefinition/dch-bundle-6-8weekhealthreviewevent-1"
+    ]
+  },
+  "type": "message",
+  "entry": [
+    {
+      "fullUrl": "urn:uuid:309fa9b2-a511-42e7-8531-ec30a9b10ccc",
+      "resource": {
+        "resourceType": "MessageHeader",
+        "id": "309fa9b2-a511-42e7-8531-ec30a9b10ccc",
+        "meta": {
+          "profile": [
+            "https://fhir.nhs.uk/StructureDefinition/dch-messageheader-6-8WeekHealthReviewevent-1"
+          ]
+        },
+        "timestamp": "2012-02-24T14:00:00+00:00",
+        "event": {
+          "system": "https://fhir.nhs.uk/dch-childhealtheventtype-1",
+          "code": "E8",
+          "display": "6-8 Week Health Review"
+        },
+        "source": {
+          "endpoint": "urn:uuid:309fa9b2-a511-42e7-8531-ec30a9b10ccc"
+        },
+        "responsible": {
+          "reference": "urn:uuid:4cf391b8-2526-4ac0-aea7-a83c423e71f9",
+          "display": "Allerton Medical Centre"
+        },
+        "data": [
+          {
+            "reference": "urn:uuid:99750590-4fb8-43db-88cb-65052bdc8fec"
+          }
+        ]
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:99750590-4fb8-43db-88cb-65052bdc8fec",
+      "resource": {
+        "resourceType": "Encounter",
+        "id": "99750590-4fb8-43db-88cb-65052bdc8fec",
+        "meta": {
+          "profile": [
+            "https://fhir.hl7.org.uk/StructureDefinition/CareConnect-DCH-Encounter-6-8WeekHealthReviewEvent-1"
+          ]
+        },
+        "identifier": [
+          {
+            "system": "https://tools.ietf.org/html/rfc4122",
+            "value": "34016249-3f82-4a22-a08d-a75eb9deb51d"
+          }
+        ],
+        "status": "finished",
+        "patient": {
+          "reference": "urn:uuid:94f9e3ad-a56b-4f89-b0b4-f2972ea04e67",
+          "display": "SAXTON, Sarah Marie"
+        },
+        "participant": [
+          {
+            "individual": {
+              "reference": "urn:uuid:6cf7a10a-91df-493c-b60d-6ea1b400cabe",
+              "display": "ARMSTRONG, Samantha (Dr)"
+            }
+          }
+        ],
+        "appointment": {
+          "reference": "urn:uuid:547891f6-e871-4cbf-a8aa-6c03d8da11c3"
+        },
+        "period": {
+          "start": "2012-02-24T11:30:00+00:00"
+        },
+        "location": [
+          {
+            "location": {
+              "reference": "urn:uuid:baf84e6c-fa1a-41c4-be8d-f7d85958ee8a",
+              "display": "Allerton Medical Centre"
+            }
+          }
+        ],
+        "serviceProvider": {
+          "reference": "urn:uuid:9a59056d-6e8d-439a-9bcd-f69492ff440b",
+          "display": "NHS Leeds North CCG"
+        }
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:9a59056d-6e8d-439a-9bcd-f69492ff440b",
+      "resource": {
+        "resourceType": "Organization",
+        "id": "9a59056d-6e8d-439a-9bcd-f69492ff440b",
+        "meta": {
+          "profile": [
+            "https://fhir.hl7.org.uk/StructureDefinition/CareConnect-Organization-1"
+          ]
+        },
+        "identifier": [
+          {
+            "system": "https://fhir.nhs.uk/Id/ods-organization-code",
+            "value": "02V"
+          }
+        ],
+        "name": "NHS Leeds North CCG"
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:4cf391b8-2526-4ac0-aea7-a83c423e71f9",
+      "resource": {
+        "resourceType": "Organization",
+        "id": "4cf391b8-2526-4ac0-aea7-a83c423e71f9",
+        "meta": {
+          "profile": [
+            "https://fhir.hl7.org.uk/StructureDefinition/CareConnect-Organization-1"
+          ]
+        },
+        "identifier": [
+          {
+            "system": "https://fhir.nhs.uk/Id/ods-organization-code",
+            "value": "B86039"
+          }
+        ],
+        "name": "Allerton Medical Centre"
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:94f9e3ad-a56b-4f89-b0b4-f2972ea04e67",
+      "resource": {
+        "resourceType": "Patient",
+        "id": "94f9e3ad-a56b-4f89-b0b4-f2972ea04e67",
+        "meta": {
+          "profile": [
+            "https://fhir.hl7.org.uk/StructureDefinition/CareConnect-DCH-Patient-1"
+          ]
+        },
+        "identifier": [
+          {
+            "extension": [
+              {
+                "url": "https://fhir.hl7.org.uk/StructureDefinition/Extension-CareConnect-NHSNumberVerificationStatus-1",
+                "valueCodeableConcept": {
+                  "coding": [
+                    {
+                      "system": "https://fhir.hl7.org.uk/CareConnect-NHSNumberVerificationStatus-1",
+                      "code": "01",
+                      "display": "Number present and verified"
+                    }
+                  ]
+                }
+              }
+            ],
+            "system": "https://fhir.nhs.uk/Id/nhs-number",
+            "value": "5629874536"
+          }
+        ],
+        "name": [
+          {
+            "use": "official",
+            "family": [
+              "Saxton"
+            ],
+            "given": [
+              "Sarah",
+              "Marie"
+            ]
+          }
+        ],
+        "gender": "female",
+        "_birthDate": {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/patient-birthTime",
+              "valueDateTime": "2012-01-07T20:12:00+00:00"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:baf84e6c-fa1a-41c4-be8d-f7d85958ee8a",
+      "resource": {
+        "resourceType": "Organization",
+        "meta": {
+          "profile": [
+            "https://fhir.hl7.org.uk/StructureDefinition/CareConnect-DCH-Organization-ChildHealthEvent-1"
+          ]
+        },
+        "identifier": [
+          {
+            "system": "https://fhir.nhs.uk/Id/ods-organization-code",
+            "value": "B86039"
+          }
+        ],
+        "type": {
+          "coding": [
+            {
+              "system": "http://hl7.org/fhir/organization-type",
+              "code": "prov",
+              "display": "Healthcare Provider"
+            }
+          ]
+        },
+        "name": "Allerton Medical Centre"
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:53ae7902-f902-4b9d-a2f8-845610edfd1c",
+      "resource": {
+        "resourceType": "ProcedureRequest",
+        "id": "53ae7902-f902-4b9d-a2f8-845610edfd1c",
+        "meta": {
+          "profile": [
+            "https://fhir.nhs.uk/StructureDefinition/dch-procedurerequest-6-8weekhealthreviewevent-1"
+          ]
+        },
+        "extension": [
+          {
+            "url": "https://fhir.nhs.uk/StructureDefinition/Extension-DCH-ConsentStatus-1",
+            "valueCodeableConcept": {
+              "coding": [
+                {
+                  "system": "https://fhir.nhs.uk/dch-consentstatus-1",
+                  "code": "Consented",
+                  "display": "Consented"
+                }
+              ]
+            }
+          }
+        ],
+        "identifier": [
+          {
+            "system": "https://tools.ietf.org/html/rfc4122",
+            "value": "4f178132-6065-4c46-b66c-5b59d2c365c8"
+          }
+        ],
+        "subject": {
+          "reference": "urn:uuid:94f9e3ad-a56b-4f89-b0b4-f2972ea04e67",
+          "display": "SAXTON, Sarah Marie"
+        },
+        "code": {
+          "coding": [
+            {
+              "system": "http://snomed.info/sct",
+              "code": "442162000",
+              "display": "Child 6 to 8 week examination (procedure)"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:547891f6-e871-4cbf-a8aa-6c03d8da11c3",
+      "resource": {
+        "resourceType": "Appointment",
+        "id": "547891f6-e871-4cbf-a8aa-6c03d8da11c3",
+        "meta": {
+          "profile": [
+            "https://fhir.nhs.uk/StructureDefinition/dch-appointment-6-8weekhealthreviewevent-1"
+          ]
+        },
+        "identifier": [
+          {
+            "system": "https://tools.ietf.org/html/rfc4122",
+            "value": "d96780a9-ed2a-40e3-b153-06607c2cc8cb"
+          }
+        ],
+        "status": "booked",
+        "start": "2012-02-24T11:30:00+00:00",
+        "participant": [
+          {
+            "actor": {
+              "reference": "urn:uuid:94f9e3ad-a56b-4f89-b0b4-f2972ea04e67",
+              "display": "SAXTON, Sarah Marie"
+            },
+            "status": "accepted"
+          },
+          {
+            "actor": {
+              "reference": "urn:uuid:6cf7a10a-91df-493c-b60d-6ea1b400cabe",
+              "display": "ARMSTRONG, Samantha (Dr)"
+            },
+            "status": "accepted"
+          }
+        ]
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:ce6b4ef0-7d14-480d-b488-c0afce92a3a1",
+      "resource": {
+        "resourceType": "Procedure",
+        "id": "ce6b4ef0-7d14-480d-b488-c0afce92a3a1",
+        "meta": {
+          "profile": [
+            "https://fhir.hl7.org.uk/StructureDefinition/CareConnect-DCH-Procedure-6-8WeekHealthReviewEvent-1"
+          ]
+        },
+        "subject": {
+          "reference": "urn:uuid:94f9e3ad-a56b-4f89-b0b4-f2972ea04e67",
+          "display": "SAXTON, Sarah Marie"
+        },
+        "status": "completed",
+        "code": {
+          "coding": [
+            {
+              "system": "http://snomed.info/sct",
+              "code": "442162000",
+              "display": "Child 6 to 8 week examination (procedure)"
+            }
+          ]
+        },
+        "performer": [
+          {
+            "actor": {
+              "reference": "urn:uuid:6cf7a10a-91df-493c-b60d-6ea1b400cabe",
+              "display": "ARMSTRONG, Samantha (Dr)"
+            }
+          }
+        ],
+        "encounter": {
+          "reference": "urn:uuid:99750590-4fb8-43db-88cb-65052bdc8fec"
+        },
+        "location": {
+          "reference": "urn:uuid:baf84e6c-fa1a-41c4-be8d-f7d85958ee8a",
+          "display": "Allerton Medical Centre"
+        },
+        "outcome": {
+          "coding": [
+            {
+              "system": "https://fhir.nhs.uk/dch-childhealtheventoutcome-1",
+              "code": "Completed",
+              "display": "Completed"
+            }
+          ]
+        },
+        "request": {
+          "reference": "urn:uuid:53ae7902-f902-4b9d-a2f8-845610edfd1c"
+        }
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:6cf7a10a-91df-493c-b60d-6ea1b400cabe",
+      "resource": {
+        "resourceType": "Practitioner",
+        "id": "6cf7a10a-91df-493c-b60d-6ea1b400cabe",
+        "meta": {
+          "profile": [
+            "https://fhir.hl7.org.uk/StructureDefinition/CareConnect-DCH-Practitioner-ChildHealthEvent-1"
+          ]
+        },
+        "identifier": [
+          {
+            "system": "https://fhir.nhs.uk/Id/sds-user-id",
+            "value": "G2658974"
+          }
+        ],
+        "name": {
+          "family": [
+            "Armstrong"
+          ],
+          "given": [
+            "Samantha"
+          ],
+          "prefix": [
+            "Dr"
+          ]
+        },
+        "practitionerRole": [
+          {
+            "role": {
+              "coding": [
+                {
+                  "system": "https://fhir.hl7.org.uk/CareConnect-SDSJobRoleName-1",
+                  "code": "R8000",
+                  "display": "Clinical Practitioner Access Role"
+                }
+              ]
+            }
+          }
+        ]
+      }
+    }
+  ]
+}

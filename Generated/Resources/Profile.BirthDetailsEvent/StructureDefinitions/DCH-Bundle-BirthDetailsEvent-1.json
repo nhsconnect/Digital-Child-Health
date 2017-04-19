@@ -1,11 +1,16 @@
 {
   "resourceType": "StructureDefinition",
   "meta": {
-    "lastUpdated": "2017-04-07T11:55:32.588+01:00",
+    "lastUpdated": "2017-03-31T13:11:46.75+01:00",
     "tag": [
       {
         "system": "urn:hscic:publishOrder",
         "code": "1"
+      },
+      {
+        "system": "urn:hscic:examples",
+        "code": "BirthDetailsEvent-Scenario1",
+        "display": "BirthDetailsEvent-Scenario1"
       },
       {
         "system": "urn:hscic:examples",

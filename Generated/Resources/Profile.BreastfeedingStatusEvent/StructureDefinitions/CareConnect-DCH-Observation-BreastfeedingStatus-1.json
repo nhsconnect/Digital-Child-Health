@@ -1,7 +1,7 @@
 {
   "resourceType": "StructureDefinition",
   "meta": {
-    "lastUpdated": "2017-04-06T18:22:40.316+01:00",
+    "lastUpdated": "2017-03-31T10:25:18.588+01:00",
     "tag": [
       {
         "system": "urn:hscic:publishOrder",
@@ -5001,7 +5001,7 @@
         "short": "Who is responsible for the observation",
         "definition": "Who was responsible for asserting the observed value as \"true\".",
         "requirements": "May give a degree of confidence in the observation and also indicates where follow-up questions should be directed.",
-        "min": 0,
+        "min": 1,
         "max": "1",
         "base": {
           "path": "Observation.performer",
@@ -16857,6 +16857,7 @@
       },
       {
         "path": "Observation.performer",
+        "min": 1,
         "max": "1",
         "type": [
           {

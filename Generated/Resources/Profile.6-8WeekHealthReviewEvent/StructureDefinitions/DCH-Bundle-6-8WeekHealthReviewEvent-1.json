@@ -6,6 +6,11 @@
       {
         "system": "urn:hscic:publishOrder",
         "code": "1"
+      },
+      {
+        "system": "urn:hscic:examples",
+        "code": "6-8WeekHealthReviewEvent-Scenario2",
+        "display": "6-8WeekHealthReviewEvent-Scenario2"
       }
     ]
   },

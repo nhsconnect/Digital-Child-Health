@@ -1,7 +1,7 @@
 {
   "resourceType": "StructureDefinition",
   "meta": {
-    "lastUpdated": "2017-04-06T11:33:14.518+01:00",
+    "lastUpdated": "2017-03-31T11:02:27.897+01:00",
     "tag": [
       {
         "system": "urn:hscic:publishOrder",
@@ -2010,7 +2010,7 @@
         "definition": "Identifier code supplier by the Organisation Data Service",
         "requirements": "Organizations are known by a variety of ids. Some institutions maintain several, and most collect identifiers for exchange with other organizations concerning the organization.",
         "min": 0,
-        "max": "1",
+        "max": "0",
         "base": {
           "path": "Organization.identifier",
           "min": 0,
@@ -5015,7 +5015,7 @@
         "definition": "Identifier for the organization that is used to identify the organization across multiple disparate systems.",
         "requirements": "Organizations are known by a variety of ids. Some institutions maintain several, and most collect identifiers for exchange with other organizations concerning the organization.",
         "min": 0,
-        "max": "1",
+        "max": "0",
         "base": {
           "path": "Organization.identifier",
           "min": 0,
@@ -12424,6 +12424,14 @@
         ]
       },
       {
+        "path": "Organization.contained",
+        "type": [
+          {
+            "code": "Resource"
+          }
+        ]
+      },
+      {
         "path": "Organization.identifier",
         "slicing": {
           "discriminator": [
@@ -12440,7 +12448,7 @@
         "name": "ODS Organisation Code",
         "short": "Organisation Data Service code",
         "definition": "Identifier code supplier by the Organisation Data Service",
-        "max": "1"
+        "max": "0"
       },
       {
         "path": "Organization.identifier.use",
@@ -12465,7 +12473,15 @@
       },
       {
         "path": "Organization.identifier.assigner",
-        "max": "0"
+        "max": "0",
+        "type": [
+          {
+            "code": "Reference",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/Organization"
+            ]
+          }
+        ]
       },
       {
         "path": "Organization.identifier",
@@ -12498,12 +12514,20 @@
       },
       {
         "path": "Organization.identifier.assigner",
-        "max": "0"
+        "max": "0",
+        "type": [
+          {
+            "code": "Reference",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/Organization"
+            ]
+          }
+        ]
       },
       {
         "path": "Organization.identifier",
         "name": "localIdentifier",
-        "max": "1"
+        "max": "0"
       },
       {
         "path": "Organization.identifier.system",

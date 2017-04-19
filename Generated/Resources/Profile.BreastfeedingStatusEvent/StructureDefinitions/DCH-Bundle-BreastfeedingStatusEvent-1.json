@@ -1,11 +1,16 @@
 {
   "resourceType": "StructureDefinition",
   "meta": {
-    "lastUpdated": "2017-04-07T11:55:36.143+01:00",
+    "lastUpdated": "2017-03-31T13:11:48.757+01:00",
     "tag": [
       {
         "system": "urn:hscic:publishOrder",
-        "code": "7"
+        "code": "1"
+      },
+      {
+        "system": "urn:hscic:examples",
+        "code": "BreastfeedingStatusEvent-AtDischarge-Scenario2",
+        "display": "BreastfeedingStatusEvent-AtDischarge-Scenario2"
       },
       {
         "system": "urn:hscic:examples",
@@ -3061,14 +3066,6 @@
       {
         "path": "Bundle.entry.fullUrl",
         "min": 1
-      },
-      {
-        "path": "Bundle.entry.resource",
-        "type": [
-          {
-            "code": "Resource"
-          }
-        ]
       },
       {
         "path": "Bundle.entry.search",

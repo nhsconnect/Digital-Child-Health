@@ -6,6 +6,11 @@
       {
         "system": "urn:hscic:publishOrder",
         "code": "1"
+      },
+      {
+        "system": "urn:hscic:examples",
+        "code": "NewbornPhysicalExamEvent-Scenario2",
+        "display": "NewbornPhysicalExamEvent-Scenario2"
       }
     ]
   },

@@ -1,7 +1,7 @@
 {
   "resourceType": "StructureDefinition",
   "meta": {
-    "lastUpdated": "2017-04-06T11:42:17.074+01:00",
+    "lastUpdated": "2017-03-31T11:08:23.848+01:00",
     "tag": [
       {
         "system": "urn:hscic:publishOrder",
@@ -17874,12 +17874,12 @@
       },
       {
         "path": "Patient.link",
-        "short": "Link to another resource that concerns the same actual person",
-        "definition": "Link to another resource that concerns the same actual person.",
+        "short": "Link to another patient resource that concerns the same actual person",
+        "definition": "Link to another patient resource that concerns the same actual patient.",
         "comments": "There is no assumption that linked patient records have mutual links.",
         "requirements": "There are multiple usecases:   * Duplicate patient records due to the clerical errors associated with the difficulties of identifying humans consistently, and * Distribution of patient information across multiple servers.",
-        "min": 1,
-        "max": "1",
+        "min": 0,
+        "max": "0",
         "base": {
           "path": "Patient.link",
           "min": 0,
@@ -18066,8 +18066,8 @@
       },
       {
         "path": "Patient.link.other",
-        "short": "The other resource that the link refers to",
-        "definition": "The other resource that the link refers to.",
+        "short": "The other patient resource that the link refers to",
+        "definition": "The other patient resource that the link refers to.",
         "min": 1,
         "max": "1",
         "base": {
@@ -18079,7 +18079,7 @@
           {
             "code": "Reference",
             "profile": [
-              "https://fhir.nhs.uk/StructureDefinition/dch-relatedperson-motherandbaby-1"
+              "http://hl7.org/fhir/StructureDefinition/Patient"
             ]
           }
         ],
@@ -18232,7 +18232,7 @@
         "short": "Relative, internal or absolute URL reference",
         "definition": "A reference to a location at which the other resource is found. The reference may be a relative reference, in which case it is relative to the service base URL, or an absolute URL that resolves to the location where the resource is found. The reference may be version specific or not. If the reference is not to a FHIR RESTful server, then it should be assumed to be version specific. Internal fragment references (start with '#') refer to contained resources.",
         "comments": "Using absolute URLs provides a stable scalable approach suitable for a cloud/web context, while using relative/logical references provides a flexible approach suitable for use when trading across closed eco-system boundaries.   Absolute URLs do not need to point to a FHIR RESTful server, though this is the preferred approach. If the URL conforms to the structure \"/[type]/[id]\" then it should be assumed that the reference is to a FHIR RESTful server.",
-        "min": 1,
+        "min": 0,
         "max": "1",
         "base": {
           "path": "Reference.reference",
@@ -18323,7 +18323,7 @@
       {
         "path": "Patient.link.type",
         "short": "replace | refer | seealso - type of link",
-        "definition": "The type of link between this patient resource and another resource.",
+        "definition": "The type of link between this patient resource and another patient resource.",
         "comments": "Note that FHIR strings may not exceed 1MB in size",
         "min": 1,
         "max": "1",
@@ -18337,7 +18337,6 @@
             "code": "code"
           }
         ],
-        "fixedCode": "seealso",
         "condition": [
           "ele-1"
         ],
@@ -18871,32 +18870,7 @@
       },
       {
         "path": "Patient.link",
-        "short": "Link to another resource that concerns the same actual person",
-        "definition": "Link to another resource that concerns the same actual person.",
-        "min": 1,
-        "max": "1"
-      },
-      {
-        "path": "Patient.link.other",
-        "short": "The other resource that the link refers to",
-        "definition": "The other resource that the link refers to.",
-        "type": [
-          {
-            "code": "Reference",
-            "profile": [
-              "https://fhir.nhs.uk/StructureDefinition/dch-relatedperson-motherandbaby-1"
-            ]
-          }
-        ]
-      },
-      {
-        "path": "Patient.link.other.reference",
-        "min": 1
-      },
-      {
-        "path": "Patient.link.type",
-        "definition": "The type of link between this patient resource and another resource.",
-        "fixedCode": "seealso"
+        "max": "0"
       }
     ]
   }

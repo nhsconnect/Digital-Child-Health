@@ -6,6 +6,16 @@
       {
         "system": "urn:hscic:publishOrder",
         "code": "1"
+      },
+      {
+        "system": "urn:hscic:examples",
+        "code": "BirthDischargeEvent-Scenario1",
+        "display": "BirthDischargeEvent-Scenario1"
+      },
+      {
+        "system": "urn:hscic:examples",
+        "code": "BirthDischargeEvent-Scenario2",
+        "display": "BirthDischargeEvent-Scenario2"
       }
     ]
   },

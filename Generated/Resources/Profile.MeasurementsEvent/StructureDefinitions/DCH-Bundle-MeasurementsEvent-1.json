@@ -6,6 +6,26 @@
       {
         "system": "urn:hscic:publishOrder",
         "code": "1"
+      },
+      {
+        "system": "urn:hscic:examples",
+        "code": "MeasurementsEvent-AtBirth-Scenario1",
+        "display": "MeasurementsEvent-AtBirth-Scenario1"
+      },
+      {
+        "system": "urn:hscic:examples",
+        "code": "MeasurementsEvent-6-8Weeks-Scenario1",
+        "display": "MeasurementsEvent-6-8Weeks-Scenario1"
+      },
+      {
+        "system": "urn:hscic:examples",
+        "code": "MeasurementsEvent-1YearReview-Scenario1",
+        "display": "MeasurementsEvent-1YearReview-Scenario1"
+      },
+      {
+        "system": "urn:hscic:examples",
+        "code": "MeasurementsEvent-AtBirth-Scenario2",
+        "display": "MeasurementsEvent-AtBirth-Scenario2"
       }
     ]
   },

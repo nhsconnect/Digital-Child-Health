@@ -187,12 +187,18 @@
           ]
         },
         "subject": {
-          "reference": "urn:uuid:98ff5f0a-bcfa-4b78-ad55-ed8249b7509e",
-          "display": "SAXTON, Sophie"
+          "reference": "urn:uuid:e864d93b-07a1-4c1c-8b2f-276bba9675d5",
+          "display": "SAXTON, Sarah Marie"
         },
         "encounter": {
           "reference": "urn:uuid:f00b4cb9-1b94-49ab-8561-12b9edb27627"
         },
+        "performer": [
+          {
+            "reference": "urn:uuid:0e01304b-b708-4e19-a0e3-bba1598241aa",
+            "display": "JONES, Shirley"
+          }
+        ],
         "valueQuantity": {
           "value": 6
         }
@@ -225,12 +231,18 @@
           ]
         },
         "subject": {
-          "reference": "urn:uuid:98ff5f0a-bcfa-4b78-ad55-ed8249b7509e",
-          "display": "SAXTON, Sophie"
+          "reference": "urn:uuid:e864d93b-07a1-4c1c-8b2f-276bba9675d5",
+          "display": "SAXTON, Sarah Marie"
         },
         "encounter": {
           "reference": "urn:uuid:f00b4cb9-1b94-49ab-8561-12b9edb27627"
         },
+        "performer": [
+          {
+            "reference": "urn:uuid:0e01304b-b708-4e19-a0e3-bba1598241aa",
+            "display": "JONES, Shirley"
+          }
+        ],
         "valueQuantity": {
           "value": 8
         }
@@ -263,8 +275,8 @@
           ]
         },
         "subject": {
-          "reference": "urn:uuid:98ff5f0a-bcfa-4b78-ad55-ed8249b7509e",
-          "display": "SAXTON, Sophie"
+          "reference": "urn:uuid:e864d93b-07a1-4c1c-8b2f-276bba9675d5",
+          "display": "SAXTON, Sarah Marie"
         },
         "encounter": {
           "reference": "urn:uuid:f00b4cb9-1b94-49ab-8561-12b9edb27627"
@@ -306,6 +318,84 @@
           ]
         },
         "name": "Clarendon Wing, Leeds General Infirmary"
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:3f13dfd4-d62f-4b17-87e1-52f470960b81",
+      "resource": {
+        "resourceType": "Practitioner",
+        "id": "3f13dfd4-d62f-4b17-87e1-52f470960b81",
+        "meta": {
+          "profile": [
+            "https://fhir.hl7.org.uk/StructureDefinition/CareConnect-DCH-Practitioner-ChildHealthEvent-1"
+          ]
+        },
+        "identifier": [
+          {
+            "system": "https://fhir.nhs.uk/Id/sds-role-profile-id",
+            "value": "M9999998"
+          }
+        ],
+        "name": {
+          "family": [
+            "Riley"
+          ],
+          "given": [
+            "David"
+          ]
+        },
+        "practitionerRole": [
+          {
+            "role": {
+              "coding": [
+                {
+                  "system": "https://fhir.hl7.org.uk/CareConnect-SDSJobRoleName-1",
+                  "code": "R8016",
+                  "display": "Midwife Access Role"
+                }
+              ]
+            }
+          }
+        ]
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:0e01304b-b708-4e19-a0e3-bba1598241aa",
+      "resource": {
+        "resourceType": "Practitioner",
+        "id": "0e01304b-b708-4e19-a0e3-bba1598241aa",
+        "meta": {
+          "profile": [
+            "https://fhir.hl7.org.uk/StructureDefinition/CareConnect-DCH-Practitioner-ChildHealthEvent-1"
+          ]
+        },
+        "identifier": [
+          {
+            "system": "https://fhir.nhs.uk/Id/sds-role-profile-id",
+            "value": "M9999998"
+          }
+        ],
+        "name": {
+          "family": [
+            "Jones"
+          ],
+          "given": [
+            "Shirley"
+          ]
+        },
+        "practitionerRole": [
+          {
+            "role": {
+              "coding": [
+                {
+                  "system": "https://fhir.hl7.org.uk/CareConnect-SDSJobRoleName-1",
+                  "code": "R8016",
+                  "display": "Midwife Access Role"
+                }
+              ]
+            }
+          }
+        ]
       }
     }
   ]

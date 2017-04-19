@@ -1,11 +1,16 @@
 {
   "resourceType": "StructureDefinition",
   "meta": {
-    "lastUpdated": "2017-04-07T11:54:13.401+01:00",
+    "lastUpdated": "2017-03-31T13:11:45.249+01:00",
     "tag": [
       {
         "system": "urn:hscic:publishOrder",
         "code": "1"
+      },
+      {
+        "system": "urn:hscic:examples",
+        "code": "AssessmentAPGAREvent-Scenario1",
+        "display": "AssessmentAPGAREvent-Scenario1"
       },
       {
         "system": "urn:hscic:examples",
