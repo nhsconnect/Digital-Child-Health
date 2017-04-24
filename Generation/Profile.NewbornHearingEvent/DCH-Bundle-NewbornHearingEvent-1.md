@@ -1,14 +1,14 @@
-This 'DCH-Bundle-NewbornHearingEvent-1' Bundle resource profile is used as a container to collect a combination of the following resources, as ordered below, to fulfill the information requirements of a Newborn Hearing Event:
+This 'DCH-NewbornHearingEvent-Bundle-1' Bundle resource profile is used as a container to collect a combination of the following resources, as ordered below, to fulfill the information requirements of a Newborn Hearing Event:
 
-- [DCH-MessageHeader-NewbornHearingEvent-1]
-- [CareConnect-DCH-Encounter-NewbornHearingEvent-1]
+- [DCH-NewbornHearingEvent-MessageHeader-1]
+- [CareConnect-DCH-NewbornHearingEvent-Encounter-1]
 - [CareConnect-Organization-1]
 - [CareConnect-DCH-Patient-1]
-- [CareConnect-DCH-Organization-ChildHealthEvent-1]
-- [DCH-ProcedureRequest-NewbornHearingEvent-1] 
-- [DCH-Appointment-NewbornHearingEvent-1] 
-- [CareConnect-DCH-Procedure-NewbornHearingEvent-1]
-- [CareConnect-DCH-Practitioner-ChildHealthEvent-1]
+- [CareConnect-DCH-ChildHealthEvent-Organization-1]
+- [DCH-NewbornHearingEvent-ProcedureRequest-1] 
+- [DCH-NewbornHearingEvent-Appointment-1] 
+- [CareConnect-DCH-NewbornHearingEvent-Procedure-1]
+- [CareConnect-DCH-ChildHealthEvent-Practitioner-1]
 - [CareConnect-Location-1]
 
 
@@ -20,27 +20,27 @@ The Child Health Event data items are fulfilled by elements within the FHIR reso
 
 | DCH Data Item Name | FHIR Profile                           |
 |--------------------|----------------------------------------|
-| Date               | [CareConnect-DCH-Encounter-NewbornHearingEvent-1]    |
-| Site Code          | [CareConnect-DCH-Organization-ChildHealthEvent-1] |
-| Type of Unit       | [CareConnect-DCH-Organization-ChildHealthEvent-1] |
-| Consent Status     | [DCH-ProcedureRequest-NewbornHearingEvent-1]         |
-| Attendance Status  | [DCH-Appointment-NewbornHearingEvent-1]              |
-| Outcome            | [CareConnect-DCH-Procedure-NewbornHearingEvent-1]          |
-| Organisation Code  | [CareConnect-DCH-Organization-ChildHealthEvent-1] |
-| Professional Type  | [CareConnect-DCH-Practitioner-ChildHealthEvent-1] |
-| Professional Code  | [CareConnect-DCH-Practitioner-ChildHealthEvent-1] |
-| Professional Name  | [CareConnect-DCH-Practitioner-ChildHealthEvent-1] |
+| Date               | [CareConnect-DCH-NewbornHearingEvent-Encounter-1]    |
+| Site Code          | [CareConnect-DCH-ChildHealthEvent-Organization-1] |
+| Type of Unit       | [CareConnect-DCH-ChildHealthEvent-Organization-1] |
+| Consent Status     | [DCH-NewbornHearingEvent-ProcedureRequest-1]         |
+| Attendance Status  | [DCH-NewbornHearingEvent-Appointment-1]              |
+| Outcome            | [CareConnect-DCH-NewbornHearingEvent-Procedure-1]          |
+| Organisation Code  | [CareConnect-DCH-ChildHealthEvent-Organization-1] |
+| Professional Type  | [CareConnect-DCH-ChildHealthEvent-Practitioner-1] |
+| Professional Code  | [CareConnect-DCH-ChildHealthEvent-Practitioner-1] |
+| Professional Name  | [CareConnect-DCH-ChildHealthEvent-Practitioner-1] |
                                                                                                    
 
-[DCH-MessageHeader-NewbornHearingEvent-1]:dch-messageheader-newbornhearingevent-1.html
-[CareConnect-DCH-Encounter-NewbornHearingEvent-1]:careconnect-dch-encounter-newbornhearingevent-1.html
+[DCH-NewbornHearingEvent-MessageHeader-1]:dch-newbornhearingevent-messageheader-1.html
+[CareConnect-DCH-NewbornHearingEvent-Encounter-1]:careconnect-dch-newbornhearingevent-encounter-1.html
 [CareConnect-Organization-1]:careconnect-organization-1.html
 [CareConnect-DCH-Patient-1]:careconnect-dch-patient-1.html
-[CareConnect-DCH-Organization-ChildHealthEvent-1]:careconnect-dch-organization-childhealthevent-1.html
-[DCH-ProcedureRequest-NewbornHearingEvent-1]:dch-procedurerequest-newbornhearingevent-1.html 
-[DCH-Appointment-NewbornHearingEvent-1]:dch-appointment-newbornhearingevent-1.html 
-[CareConnect-DCH-Procedure-NewbornHearingEvent-1]:careconnect-dch-procedure-newbornhearingevent-1.html
-[CareConnect-DCH-Practitioner-NewbornHearingEvent-1]:careconnect-dch-practitioner-newbornhearingevent-1.html
-[CareConnect-DCH-Practitioner-ChildHealthEvent-1]:careconnect-dch-practitioner-childhealthevent-1.html
+[CareConnect-DCH-ChildHealthEvent-Organization-1]:careconnect-dch-childhealthevent-organization-1.html
+[DCH-NewbornHearingEvent-ProcedureRequest-1]:dch-newbornhearingevent-procedurerequest-1.html 
+[DCH-NewbornHearingEvent-Appointment-1]:dch-newbornhearingevent-appointment-1.html 
+[CareConnect-DCH-NewbornHearingEvent-Procedure-1]:careconnect-dch-newbornhearingevent-procedure-1.html
+[CareConnect-DCH-Practitioner-NewbornHearingEvent-1]:careconnect-dch-newbornhearingevent-practitioner-1.html
+[CareConnect-DCH-ChildHealthEvent-Practitioner-1]:careconnect-dch-childhealthevent-practitioner-1.html
 [CareConnect-Location-1]:careconnect-location-1.html
 

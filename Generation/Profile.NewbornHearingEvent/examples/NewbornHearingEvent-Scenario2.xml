@@ -3,7 +3,7 @@
 <Bundle xmlns="http://hl7.org/fhir" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://hl7.org/fhir ../../Schemas/bundle.xsd">
 	<id value="136c17a0-1657-4b1f-aaf1-9c322c83c30d"/>
 	<meta>
-		<profile value="https://fhir.nhs.uk/StructureDefinition/dch-bundle-newbornhearingevent-1"/>
+		<profile value="https://fhir.nhs.uk/StructureDefinition/dch-newbornhearingevent-bundle-1"/>
 	</meta>
 	<type value="message"/>
 	<entry>
@@ -12,7 +12,7 @@
 			<MessageHeader>
 				<id value="9bd0ca2b-9293-4c2f-a31e-398e36dbc4b3"/>
 				<meta>
-					<profile value="https://fhir.nhs.uk/StructureDefinition/dch-messageheader-newbornhearingevent-1"/>
+					<profile value="https://fhir.nhs.uk/StructureDefinition/dch-newbornhearingevent-messageheader-1"/>
 				</meta>
 				<timestamp value="2012-01-08T16:00:00+00:00"/>
 				<event>
@@ -39,7 +39,7 @@
 			<Encounter>
 				<id value="81707616-163a-4b79-a787-16af516fc8ca"/>
 				<meta>
-					<profile value="https://fhir.hl7.org.uk/StructureDefinition/CareConnect-DCH-Encounter-NewbornHearingEvent-1"/>
+					<profile value="https://fhir.hl7.org.uk/StructureDefinition/CareConnect-DCH-NewbornHearingEvent-Encounter-1"/>
 				</meta>
 				<identifier>
 					<system value="https://tools.ietf.org/html/rfc4122"/>
@@ -132,7 +132,7 @@
 		<resource>
 			<Organization>
 				<meta>
-					<profile value="https://fhir.hl7.org.uk/StructureDefinition/CareConnect-DCH-Organization-ChildHealthEvent-1"/>
+					<profile value="https://fhir.hl7.org.uk/StructureDefinition/CareConnect-DCH-ChildHealthEvent-Organization-1"/>
 				</meta>
 				<identifier>
 					<system value="https://fhir.nhs.uk/Id/ods-site-code"/>
@@ -155,7 +155,7 @@
 			<ProcedureRequest>
 				<id value="e637e82c-bb97-499a-8c1c-4688f85e246e"/>
 				<meta>
-					<profile value="https://fhir.nhs.uk/StructureDefinition/dch-procedurerequest-newbornhearingevent-1"/>
+					<profile value="https://fhir.nhs.uk/StructureDefinition/dch-newbornhearingevent-procedurerequest-1"/>
 				</meta>
 				<extension url="https://fhir.nhs.uk/StructureDefinition/Extension-DCH-ConsentStatusNewbornHearing-1">
 					<valueCodeableConcept>
@@ -190,7 +190,7 @@
 			<Appointment>
 				<id value="4745d9d3-a782-4485-87f5-089873611dde"/>
 				<meta>
-					<profile value="https://fhir.nhs.uk/StructureDefinition/dch-appointment-newbornhearingevent-1"/>
+					<profile value="https://fhir.nhs.uk/StructureDefinition/dch-newbornhearingevent-appointment-1"/>
 				</meta>
 				<identifier>
 					<system value="https://tools.ietf.org/html/rfc4122"/>
@@ -220,7 +220,7 @@
 			<Procedure>
 				<id value="31204ef5-ea0f-4646-bcf1-757ec9d7a7ef"/>
 				<meta>
-					<profile value="https://fhir.hl7.org.uk/StructureDefinition/CareConnect-DCH-Procedure-NewbornHearingEvent-1"/>
+					<profile value="https://fhir.hl7.org.uk/StructureDefinition/CareConnect-DCH-NewbornHearingEvent-Procedure-1"/>
 				</meta>
 				<subject>
 					<reference value="urn:uuid:374f4413-da08-42ef-998c-7c712328950d"/>
@@ -260,7 +260,7 @@
 			<Practitioner>
 				<id value="7d4d9ec0-c49a-49a7-a1a2-0e97e916d4cf"/>
 				<meta>
-					<profile value="https://fhir.hl7.org.uk/StructureDefinition/CareConnect-DCH-Practitioner-ChildHealthEvent-1"/>
+					<profile value="https://fhir.hl7.org.uk/StructureDefinition/CareConnect-DCH-ChildHealthEvent-Practitioner-1"/>
 				</meta>
 				<identifier>
 					<system value="https://fhir.nhs.uk/Id/sds-role-profile-id"/>

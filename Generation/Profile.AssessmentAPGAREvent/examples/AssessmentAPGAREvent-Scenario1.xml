@@ -2,7 +2,7 @@
 <Bundle xmlns="http://hl7.org/fhir" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://hl7.org/fhir ../../Schemas/bundle.xsd">
 	<id value="2b34bfd7-422e-4ce8-bc38-c45089743e45"/>
 	<meta>
-		<profile value="https://fhir.nhs.uk/StructureDefinition/dch-bundle-assessmentapgarevent-1"/>
+		<profile value="https://fhir.nhs.uk/StructureDefinition/dch-assessmentapgarevent-bundle-1"/>
 	</meta>
 	<type value="message"/>
 	<entry>
@@ -11,7 +11,7 @@
 			<MessageHeader>
 				<id value="941c9484-30c7-4ab9-8ec4-28422dbd745a"/>
 				<meta>
-					<profile value="https://fhir.nhs.uk/StructureDefinition/dch-messageheader-assessmentapgarevent-1"/>
+					<profile value="https://fhir.nhs.uk/StructureDefinition/dch-assessmentapgarevent-messageheader-1"/>
 				</meta>
 				<timestamp value="2012-01-03T10:00:00+00:00"/>
 				<event>
@@ -37,7 +37,7 @@
 			<Encounter>
 				<id value="85f62c5d-352e-40a6-aa3b-157ef8961ca2"/>
 				<meta>
-					<profile value="https://fhir.hl7.org.uk/StructureDefinition/CareConnect-DCH-Encounter-BirthOccurrence-1"/>
+					<profile value="https://fhir.hl7.org.uk/StructureDefinition/CareConnect-DCH-BirthOccurrence-Encounter-1"/>
 				</meta>
 				<identifier>
 					<system value="https://tools.ietf.org/html/rfc4122"/>
@@ -95,7 +95,7 @@
 			<Patient>
 				<id value="534ba626-2bd2-4a16-8a5b-6f498888cc10"/>
 				<meta>
-					<profile value="https://fhir.hl7.org.uk/StructureDefinition/CareConnect-DCH-Patient-Baby-1"/>
+					<profile value="https://fhir.hl7.org.uk/StructureDefinition/CareConnect-DCH-Baby-Patient-1"/>
 				</meta>
 				<identifier>
 					<extension url="https://fhir.hl7.org.uk/StructureDefinition/Extension-CareConnect-NHSNumberVerificationStatus-1">
@@ -130,7 +130,7 @@
 			<Observation>
 				<id value="16c8cd7d-abd5-4709-96d0-26ba9dcec6ed"/>
 				<meta>
-					<profile value="https://fhir.hl7.org.uk/StructureDefinition/CareConnect-DCH-Observation-APGARScore1Minute-1"/>
+					<profile value="https://fhir.hl7.org.uk/StructureDefinition/CareConnect-DCH-APGARScore1Minute-Observation-1"/>
 				</meta>
 				<identifier>
 					<system value="https://tools.ietf.org/html/rfc4122"/>
@@ -163,7 +163,7 @@
 			<Observation>
 				<id value="740415c3-9917-4b64-8880-eb65dad07691"/>
 				<meta>
-					<profile value="https://fhir.hl7.org.uk/StructureDefinition/CareConnect-DCH-Observation-APGARScore5Minutes-1"/>
+					<profile value="https://fhir.hl7.org.uk/StructureDefinition/CareConnect-DCH-APGARScore5Minutes-Observation-1"/>
 				</meta>
 				<identifier>
 					<system value="https://tools.ietf.org/html/rfc4122"/>
@@ -196,7 +196,7 @@
 			<Observation>
 				<id value="c54f8b89-3fa4-4b45-b72e-e0ec4f3e6f60"/>
 				<meta>
-					<profile value="https://fhir.hl7.org.uk/StructureDefinition/CareConnect-DCH-Observation-APGARScore10Minutes-1"/>
+					<profile value="https://fhir.hl7.org.uk/StructureDefinition/CareConnect-DCH-APGARScore10Minutes-Observation-1"/>
 				</meta>
 				<identifier>
 					<system value="https://tools.ietf.org/html/rfc4122"/>
@@ -229,7 +229,7 @@
 			<Organization>
 				<id value="d509e92e-24dc-40a8-a8a3-3693edf239b9"/>
 				<meta>
-					<profile value="https://fhir.hl7.org.uk/StructureDefinition/CareConnect-DCH-Organization-ActualDeliveryPlace-1"/>
+					<profile value="https://fhir.hl7.org.uk/StructureDefinition/CareConnect-DCH-ActualDeliveryPlace-Organization-1"/>
 				</meta>
 				<identifier>
 					<system value="https://fhir.nhs.uk/Id/ods-site-code"/>

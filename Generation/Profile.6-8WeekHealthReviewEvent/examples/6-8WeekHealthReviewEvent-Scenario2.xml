@@ -3,7 +3,7 @@
 <Bundle xmlns="http://hl7.org/fhir" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://hl7.org/fhir ../../Schemas/bundle.xsd">
 	<id value="9850d168-2721-4c34-8bc5-58411d7cbdbf"/>
 	<meta>
-		<profile value="https://fhir.nhs.uk/StructureDefinition/dch-bundle-6-8weekhealthreviewevent-1"/>
+		<profile value="https://fhir.nhs.uk/StructureDefinition/dch-6-8weekhealthreviewevent-bundle-1"/>
 	</meta>
 	<type value="message"/>
 	<entry>
@@ -12,7 +12,7 @@
 			<MessageHeader>
 				<id value="309fa9b2-a511-42e7-8531-ec30a9b10ccc"/>
 				<meta>
-					<profile value="https://fhir.nhs.uk/StructureDefinition/dch-messageheader-6-8WeekHealthReviewevent-1"/>
+					<profile value="https://fhir.nhs.uk/StructureDefinition/dch-6-8weekhealthreviewevent-messageheader-1"/>
 				</meta>
 				<timestamp value="2012-02-24T14:00:00+00:00"/>
 				<event>
@@ -39,7 +39,7 @@
 			<Encounter>
 				<id value="99750590-4fb8-43db-88cb-65052bdc8fec"/>
 				<meta>
-					<profile value="https://fhir.hl7.org.uk/StructureDefinition/CareConnect-DCH-Encounter-6-8WeekHealthReviewEvent-1"/>
+					<profile value="https://fhir.hl7.org.uk/StructureDefinition/CareConnect-DCH-6-8WeekHealthReviewEvent-Encounter-1"/>
 				</meta>
 				<identifier>
 					<system value="https://tools.ietf.org/html/rfc4122"/>
@@ -148,7 +148,7 @@
 		<resource>
 			<Organization>
 				<meta>
-					<profile value="https://fhir.hl7.org.uk/StructureDefinition/CareConnect-DCH-Organization-ChildHealthEvent-1"/>
+					<profile value="https://fhir.hl7.org.uk/StructureDefinition/CareConnect-DCH-ChildHealthEvent-Organization-1"/>
 				</meta>
 				<identifier>
 					<system value="https://fhir.nhs.uk/Id/ods-organization-code"/>
@@ -171,7 +171,7 @@
 			<ProcedureRequest>
 				<id value="53ae7902-f902-4b9d-a2f8-845610edfd1c"/>
 				<meta>
-					<profile value="https://fhir.nhs.uk/StructureDefinition/dch-procedurerequest-6-8weekhealthreviewevent-1"/>
+					<profile value="https://fhir.nhs.uk/StructureDefinition/dch-6-8weekhealthreviewevent-procedurerequest-1"/>
 				</meta>
 				<extension url="https://fhir.nhs.uk/StructureDefinition/Extension-DCH-ConsentStatus-1">
 					<valueCodeableConcept>
@@ -206,7 +206,7 @@
 			<Appointment>
 				<id value="547891f6-e871-4cbf-a8aa-6c03d8da11c3"/>
 				<meta>
-					<profile value="https://fhir.nhs.uk/StructureDefinition/dch-appointment-6-8weekhealthreviewevent-1"/>
+					<profile value="https://fhir.nhs.uk/StructureDefinition/dch-6-8weekhealthreviewevent-appointment-1"/>
 				</meta>
 				<identifier>
 					<system value="https://tools.ietf.org/html/rfc4122"/>
@@ -237,7 +237,7 @@
 			<Procedure>
 				<id value="ce6b4ef0-7d14-480d-b488-c0afce92a3a1"/>
 				<meta>
-					<profile value="https://fhir.hl7.org.uk/StructureDefinition/CareConnect-DCH-Procedure-6-8WeekHealthReviewEvent-1"/>
+					<profile value="https://fhir.hl7.org.uk/StructureDefinition/CareConnect-DCH-6-8WeekHealthReviewEvent-Procedure-1"/>
 				</meta>
 				<subject>
 					<reference value="urn:uuid:94f9e3ad-a56b-4f89-b0b4-f2972ea04e67"/>
@@ -283,7 +283,7 @@
 			<Practitioner>
 				<id value="6cf7a10a-91df-493c-b60d-6ea1b400cabe"/>
 				<meta>
-					<profile value="https://fhir.hl7.org.uk/StructureDefinition/CareConnect-DCH-Practitioner-ChildHealthEvent-1"/>
+					<profile value="https://fhir.hl7.org.uk/StructureDefinition/CareConnect-DCH-ChildHealthEvent-Practitioner-1"/>
 				</meta>
 				<identifier>
 					<system value="https://fhir.nhs.uk/Id/sds-user-id"/>

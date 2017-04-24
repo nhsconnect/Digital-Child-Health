@@ -3,7 +3,7 @@
 <Bundle xmlns="http://hl7.org/fhir" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://hl7.org/fhir ../../Schemas/bundle.xsd">
 	<id value="56ac4701-e2b0-42bb-8880-8c692bb5d2a6"/>
 	<meta>
-		<profile value="https://fhir.nhs.uk/StructureDefinition/dch-bundle-newbornphysicalexamevent-1"/>
+		<profile value="https://fhir.nhs.uk/StructureDefinition/dch-newbornphysicalexamevent-bundle-1"/>
 	</meta>
 	<type value="message"/>
 	<entry>
@@ -12,7 +12,7 @@
 			<MessageHeader>
 				<id value="936cd5df-4006-4ab5-b73c-e607e7a41127"/>
 				<meta>
-					<profile value="https://fhir.nhs.uk/StructureDefinition/dch-messageheader-newbornphysicalexamevent-1"/>
+					<profile value="https://fhir.nhs.uk/StructureDefinition/dch-newbornphysicalexamevent-messageheader-1"/>
 				</meta>
 				<timestamp value="2012-01-09T14:00:00+00:00"/>
 				<event>
@@ -39,7 +39,7 @@
 			<Encounter>
 				<id value="53ebb971-fff6-425f-946c-4f33a754921f"/>
 				<meta>
-					<profile value="https://fhir.hl7.org.uk/StructureDefinition/CareConnect-DCH-Encounter-NewbornPhysicalExamEvent-1"/>
+					<profile value="https://fhir.hl7.org.uk/StructureDefinition/CareConnect-DCH-NewbornPhysicalExamEvent-Encounter-1"/>
 				</meta>
 				<identifier>
 					<system value="https://tools.ietf.org/html/rfc4122"/>
@@ -132,7 +132,7 @@
 		<resource>
 			<Organization>
 				<meta>
-					<profile value="https://fhir.hl7.org.uk/StructureDefinition/CareConnect-DCH-Organization-ChildHealthEvent-1"/>
+					<profile value="https://fhir.hl7.org.uk/StructureDefinition/CareConnect-DCH-ChildHealthEvent-Organization-1"/>
 				</meta>
 				<identifier>
 					<system value="https://fhir.nhs.uk/Id/ods-site-code"/>
@@ -155,7 +155,7 @@
 			<ProcedureRequest>
 				<id value="e3b8395c-6d5f-4a91-b796-3c2d084d6be0"/>
 				<meta>
-					<profile value="https://fhir.nhs.uk/StructureDefinition/dch-procedurerequest-newbornphysicalexamevent-1"/>
+					<profile value="https://fhir.nhs.uk/StructureDefinition/dch-newbornphysicalexamevent-procedurerequest-1"/>
 				</meta>
 				<extension url="https://fhir.nhs.uk/StructureDefinition/Extension-DCH-ConsentStatus-1">
 					<valueCodeableConcept>
@@ -190,7 +190,7 @@
 			<Appointment>
 				<id value="884a8aa0-762a-412e-8be6-d2df52ec62ed"/>
 				<meta>
-					<profile value="https://fhir.nhs.uk/StructureDefinition/dch-appointment-newbornphysicalexamevent-1"/>
+					<profile value="https://fhir.nhs.uk/StructureDefinition/dch-newbornphysicalexamevent-appointment-1"/>
 				</meta>
 				<identifier>
 					<system value="https://tools.ietf.org/html/rfc4122"/>
@@ -221,7 +221,7 @@
 			<Procedure>
 				<id value="7d25a88e-acba-4f23-ab2b-03de9cefd422"/>
 				<meta>
-					<profile value="https://fhir.hl7.org.uk/StructureDefinition/CareConnect-DCH-Procedure-NewbornPhysicalExamEvent-1"/>
+					<profile value="https://fhir.hl7.org.uk/StructureDefinition/CareConnect-DCH-NewbornPhysicalExamEvent-Procedure-1"/>
 				</meta>
 				<subject>
 					<reference value="urn:uuid:9945863a-dddb-41f2-9dd9-60cb88b68b29"/>
@@ -267,7 +267,7 @@
 			<Practitioner>
 				<id value="ed812322-6105-4055-ba76-a2bfd67d4526"/>
 				<meta>
-					<profile value="https://fhir.hl7.org.uk/StructureDefinition/CareConnect-DCH-Practitioner-ChildHealthEvent-1"/>
+					<profile value="https://fhir.hl7.org.uk/StructureDefinition/CareConnect-DCH-ChildHealthEvent-Practitioner-1"/>
 				</meta>
 				<identifier>
 					<system value="https://fhir.nhs.uk/Id/sds-role-profile-id"/>

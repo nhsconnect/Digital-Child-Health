@@ -3,7 +3,7 @@
 <Bundle xmlns="http://hl7.org/fhir" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://hl7.org/fhir ../../Schemas/bundle.xsd">
 	<id value="5676b08b-20da-43e9-a478-98ce365f69d9"/>
 	<meta>
-		<profile value="https://fhir.nhs.uk/StructureDefinition/dch-bundle-birthdetailsevent-1"/>
+		<profile value="https://fhir.nhs.uk/StructureDefinition/dch-birthdetailsevent-bundle-1"/>
 	</meta>
 	<type value="message"/>
 	<entry>
@@ -12,7 +12,7 @@
 			<MessageHeader>
 				<id value="4caee5d0-bbe5-4c99-9a12-7b628c69bc62"/>
 				<meta>
-					<profile value="https://fhir.nhs.uk/StructureDefinition/dch-messageheader-birthdetailsevent-1"/>
+					<profile value="https://fhir.nhs.uk/StructureDefinition/dch-birthdetailsevent-messageheader-1"/>
 				</meta>
 				<timestamp value="2012-01-08T10:00:00+00:00"/>
 				<event>
@@ -39,7 +39,7 @@
 			<Encounter>
 				<id value="71dbf9ae-b40e-461c-be54-952db20725e5"/>
 				<meta>
-					<profile value="https://fhir.hl7.org.uk/StructureDefinition/CareConnect-DCH-Encounter-BirthOccurrence-1"/>
+					<profile value="https://fhir.hl7.org.uk/StructureDefinition/CareConnect-DCH-BirthOccurrence-Encounter-1"/>
 				</meta>
 				<identifier>
 					<system value="https://tools.ietf.org/html/rfc4122"/>
@@ -98,7 +98,7 @@
 			<Patient>
 				<id value="7368c5fe-bbb4-4e9c-a585-234e06b84e82"/>
 				<meta>
-					<profile value="https://fhir.hl7.org.uk/StructureDefinition/CareConnect-DCH-Patient-Baby-1"/>
+					<profile value="https://fhir.hl7.org.uk/StructureDefinition/CareConnect-DCH-Baby-Patient-1"/>
 				</meta>
 				<identifier>
 					<extension url="https://fhir.hl7.org.uk/StructureDefinition/Extension-CareConnect-NHSNumberVerificationStatus-1">
@@ -134,7 +134,7 @@
 			<Observation>
 				<id value="3f75d4b6-9d6e-48ae-b0d0-1a231da0e980"/>
 				<meta>
-					<profile value="https://fhir.hl7.org.uk/StructureDefinition/CareConnect-DCH-Observation-LengthOfPregnancy-1"/>
+					<profile value="https://fhir.hl7.org.uk/StructureDefinition/CareConnect-DCH-LengthOfPregnancy-Observation-1"/>
 				</meta>
 				<identifier>
 					<system value="https://tools.ietf.org/html/rfc4122"/>
@@ -165,7 +165,7 @@
 			<Observation>
 				<id value="fc000ba9-4631-471d-869e-06c563d86b9c"/>
 				<meta>
-					<profile value="https://fhir.hl7.org.uk/StructureDefinition/CareConnect-DCH-Observation-NumberOfFetusesInConfinement-1"/>
+					<profile value="https://fhir.hl7.org.uk/StructureDefinition/CareConnect-DCH-NumberOfFetusesInConfinement-Observation-1"/>
 				</meta>
 				<identifier>
 					<system value="https://tools.ietf.org/html/rfc4122"/>
@@ -198,7 +198,7 @@
 			<Organization>
 				<id value="00e72e70-0e37-48b5-b950-ca5ce8c35de7"/>
 				<meta>
-					<profile value="https://fhir.hl7.org.uk/StructureDefinition/CareConnect-DCH-Organization-ActualDeliveryPlace-1"/>
+					<profile value="https://fhir.hl7.org.uk/StructureDefinition/CareConnect-DCH-ActualDeliveryPlace-Organization-1"/>
 				</meta>
 				<identifier>
 					<system value="https://fhir.nhs.uk/Id/ods-site-code"/>
@@ -221,7 +221,7 @@
 			<Condition>
 				<id value="c850e5f6-e588-4b56-a7ff-ff5006778fb1"/>
 				<meta>
-					<profile value="https://fhir.hl7.org.uk/StructureDefinition/CareConnect-DCH-Condition-ProblemsInBirth-1"/>
+					<profile value="https://fhir.hl7.org.uk/StructureDefinition/CareConnect-DCH-ProblemsInBirth-Condition-1"/>
 				</meta>
 				<identifier>
 					<system value="https://tools.ietf.org/html/rfc4122"/>
@@ -263,7 +263,7 @@
 			<Condition>
 				<id value="0274d441-7a58-4f12-aa17-a3be79b5f0d3"/>
 				<meta>
-					<profile value="https://fhir.hl7.org.uk/StructureDefinition/CareConnect-DCH-Condition-AbnormalitiesDetected-1"/>
+					<profile value="https://fhir.hl7.org.uk/StructureDefinition/CareConnect-DCH-AbnormalitiesDetected-Condition-1"/>
 				</meta>
 				<identifier>
 					<system value="https://tools.ietf.org/html/rfc4122"/>
@@ -305,7 +305,7 @@
 			<Condition>
 				<id value="d27d7275-0d26-4ea4-8c8a-f72f09bdb905"/>
 				<meta>
-					<profile value="https://fhir.hl7.org.uk/StructureDefinition/CareConnect-DCH-Condition-ProblemsInPregnancy-1"/>
+					<profile value="https://fhir.hl7.org.uk/StructureDefinition/CareConnect-DCH-ProblemsInPregnancy-Condition-1"/>
 				</meta>
 				<identifier>
 					<system value="https://tools.ietf.org/html/rfc4122"/>
@@ -347,7 +347,7 @@
 			<Procedure>
 				<id value="e8bd2802-7c66-4696-85a1-73334b6c0341"/>
 				<meta>
-					<profile value="https://fhir.hl7.org.uk/StructureDefinition/CareConnect-DCH-Procedure-TypeOfDelivery-1"/>
+					<profile value="https://fhir.hl7.org.uk/StructureDefinition/CareConnect-DCH-TypeOfDelivery-Procedure-1"/>
 				</meta>
 				<identifier>
 					<system value="https://tools.ietf.org/html/rfc4122"/>
@@ -377,7 +377,7 @@
 			<Encounter>
 				<id value="1c85de2c-c568-4030-beec-1419e1fb2a91"/>
 				<meta>
-					<profile value="https://fhir.hl7.org.uk/StructureDefinition/CareConnect-DCH-Encounter-Delivery-1"/>
+					<profile value="https://fhir.hl7.org.uk/StructureDefinition/CareConnect-DCH-Delivery-Encounter-1"/>
 				</meta>
 				<identifier>
 					<system value="https://tools.ietf.org/html/rfc4122"/>
@@ -413,7 +413,7 @@
 			<Patient>
 				<id value="98ff5f0a-bcfa-4b78-ad55-ed8249b7509e"/>
 				<meta>
-					<profile value="https://fhir.hl7.org.uk/StructureDefinition/CareConnect-DCH-Patient-Mother-1"/>
+					<profile value="https://fhir.hl7.org.uk/StructureDefinition/CareConnect-DCH-Mother-Patient-1"/>
 				</meta>
 				<identifier>
 					<extension url="https://fhir.hl7.org.uk/StructureDefinition/Extension-CareConnect-NHSNumberVerificationStatus-1">
@@ -448,7 +448,7 @@
 			<RelatedPerson>
 				<id value="ca0593eb-5089-485c-8b65-6b41b9f3b708"/>
 				<meta>
-					<profile value="https://fhir.nhs.uk/StructureDefinition/dch-relatedperson-motherandbaby-1"/>
+					<profile value="https://fhir.nhs.uk/StructureDefinition/dch-motherandbaby-relatedperson-1"/>
 				</meta>
 				<extension url="https://fhir.nhs.uk/StructureDefinition/extension-dch-referencepatientmother-1">
 					<valueReference>
@@ -480,7 +480,7 @@
 			<Practitioner>
 				<id value="471d6f51-8b18-4ccb-b8da-f5fbd442eb1e"/>
 				<meta>
-					<profile value="https://fhir.hl7.org.uk/StructureDefinition/CareConnect-DCH-Practitioner-ChildHealthEvent-1"/>
+					<profile value="https://fhir.hl7.org.uk/StructureDefinition/CareConnect-DCH-ChildHealthEvent-Practitioner-1"/>
 				</meta>
 					<identifier>
 					<system value="https://fhir.nhs.uk/Id/sds-role-profile-id"/>
