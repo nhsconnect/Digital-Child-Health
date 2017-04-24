@@ -12,7 +12,7 @@
 			<MessageHeader>
 				<id value="64a04ff7-c168-4589-9839-f35c1b07b161"/>
 				<meta>
-					<profile value="https://fhir.nhs.uk/StructureDefinition/dch-messageheader-indicatorsevent-1"/>
+					<profile value="https://fhir.nhs.uk/StructureDefinition/dch-indicatorsevent-messageheader-1"/>
 				</meta>
 				<timestamp value="2012-01-07T22:00:00+00:00"/>
 				<event>
@@ -39,7 +39,7 @@
 			<Encounter>
 				<id value="1319bc90-cc19-4f22-91c3-d0fc7eda77a7"/>
 				<meta>
-					<profile value="https://fhir.hl7.org.uk/StructureDefinition/CareConnect-DCH-Encounter-IndicatorsEvent-1"/>
+					<profile value="https://fhir.hl7.org.uk/StructureDefinition/CareConnect-DCH-IndicatorsEvent-Encounter-1"/>
 				</meta>
 				<identifier>
 					<system value="https://tools.ietf.org/html/rfc4122"/>
@@ -130,7 +130,7 @@
 			<Organization>
 				<id value="f4b37965-4066-415f-8736-4b730a4a957e"/>
 				<meta>
-					<profile value="https://fhir.hl7.org.uk/StructureDefinition/CareConnect-DCH-Organization-ChildHealthEvent-1"/>
+					<profile value="https://fhir.hl7.org.uk/StructureDefinition/CareConnect-DCH-ChildHealthEvent-Organization-1"/>
 				</meta>
 				<identifier>
 					<system value="https://fhir.nhs.uk/Id/ods-site-code"/>
@@ -153,7 +153,7 @@
 			<QuestionnaireResponse>
 				<id value="b187e23b-5e01-40a7-a68c-61b388067196"/>
 				<meta>
-					<profile value="https://fhir.nhs.uk/StructureDefinition/DCH-QuestionnaireResponse-IndicatorsEvent-1"/>
+					<profile value="https://fhir.nhs.uk/StructureDefinition/DCH-IndicatorsEvent-QuestionnaireResponse-1"/>
 				</meta>
 				<identifier>
 					<system value="https://tools.ietf.org/html/rfc4122"/>
@@ -196,7 +196,7 @@
 			<Practitioner>
 				<id value="3a60d326-f390-4cb7-adfb-f32d6842acae"/>
 				<meta>
-					<profile value="https://fhir.hl7.org.uk/StructureDefinition/CareConnect-DCH-Practitioner-ChildHealthEvent-1"/>
+					<profile value="https://fhir.hl7.org.uk/StructureDefinition/CareConnect-DCH-ChildHealthEvent-Practitioner-1"/>
 				</meta>
 				<identifier>
 					<system value="https://fhir.nhs.uk/Id/sds-role-profile-id"/>

@@ -2,7 +2,7 @@
 <Bundle xmlns="http://hl7.org/fhir" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://hl7.org/fhir ../../Schemas/bundle.xsd">
 	<id value="bfb75b10-34fb-48a5-94f2-46ed3732729b"/>
 	<meta>
-		<profile value="https://fhir.nhs.uk/StructureDefinition/dch-bundle-birthdischargeevent-1"/>
+		<profile value="https://fhir.nhs.uk/StructureDefinition/dch-birthdischargeevent-bundle-1"/>
 	</meta>
 	<type value="message"/>
 	<entry>
@@ -11,7 +11,7 @@
 			<MessageHeader>
 				<id value="4695922c-e5ec-433c-a989-00d5e8202d78"/>
 				<meta>
-					<profile value="https://fhir.nhs.uk/StructureDefinition/dch-messageheader-birthdischargeevent-1"/>
+					<profile value="https://fhir.nhs.uk/StructureDefinition/dch-birthdischargeevent-messageheader-1"/>
 				</meta>
 				<timestamp value="2012-01-04T16:15:00+00:00"/>
 				<event>
@@ -38,7 +38,7 @@
 			<Encounter>
 				<id value="2b35141c-0652-4180-bdec-5cd484bcb8b3"/>
 				<meta>
-					<profile value="https://fhir.hl7.org.uk/StructureDefinition/CareConnect-DCH-Encounter-BirthOccurrence-1"/>
+					<profile value="https://fhir.hl7.org.uk/StructureDefinition/CareConnect-DCH-BirthOccurrence-Encounter-1"/>
 				</meta>
 				<identifier>
 					<system value="https://tools.ietf.org/html/rfc4122"/>
@@ -105,7 +105,7 @@
 			<Patient>
 				<id value="444bf875-902f-48f1-8c8c-e136caea7dc0"/>
 				<meta>
-					<profile value="https://fhir.hl7.org.uk/StructureDefinition/CareConnect-DCH-Patient-Baby-1"/>
+					<profile value="https://fhir.hl7.org.uk/StructureDefinition/CareConnect-DCH-Baby-Patient-1"/>
 				</meta>
 				<identifier>
 					<extension url="https://fhir.hl7.org.uk/StructureDefinition/Extension-CareConnect-NHSNumberVerificationStatus-1">
@@ -140,7 +140,7 @@
 			<Organization>
 				<id value="008be844-4fe9-4c47-bb8a-5fad11d83c1f"/>
 				<meta>
-					<profile value="https://fhir.hl7.org.uk/StructureDefinition/CareConnect-DCH-Organization-ActualDeliveryPlace-1"/>
+					<profile value="https://fhir.hl7.org.uk/StructureDefinition/CareConnect-DCH-ActualDeliveryPlace-Organization-1"/>
 				</meta>
 				<identifier>
 					<system value="https://fhir.nhs.uk/Id/ods-site-code"/>
@@ -162,7 +162,7 @@
 			<Organization>
 				<id value="85e718e9-c871-4b11-9003-bce10b2f547d"/>
 				<meta>
-					<profile value="https://fhir.hl7.org.uk/StructureDefinition/CareConnect-DCH-Organization-BirthDischargeEvent-1"/>
+					<profile value="https://fhir.hl7.org.uk/StructureDefinition/CareConnect-DCH-BirthDischargeEvent-Organization-1"/>
 				</meta>
 				<identifier>
 					<system value="https://fhir.nhs.uk/Id/ods-site-code"/>
@@ -183,7 +183,7 @@
 			<Practitioner>
 				<id value="dca91f6d-74b8-4bac-a2b1-0f3569ed0601"/>
 				<meta>
-					<profile value="https://fhir.hl7.org.uk/StructureDefinition/CareConnect-DCH-Practitioner-BirthDischargeEvent-1"/>
+					<profile value="https://fhir.hl7.org.uk/StructureDefinition/CareConnect-DCH-BirthDischargeEvent-Practitioner-1"/>
 				</meta>
 				<identifier>
 					<system value="https://fhir.nhs.uk/Id/sds-user-id"/>
@@ -214,7 +214,7 @@
 			<Encounter>
 				<id value="59ed651f-e9b3-4ab2-91ee-576745fe75c2"/>
 				<meta>
-					<profile value="https://fhir.hl7.org.uk/StructureDefinition/CareConnect-DCH-Encounter-Delivery-1"/>
+					<profile value="https://fhir.hl7.org.uk/StructureDefinition/CareConnect-DCH-Delivery-Encounter-1"/>
 				</meta>
 				<identifier>
 					<system value="urn:ietf:rfc:3986"/>
@@ -247,7 +247,7 @@
 			<Patient>
 				<id value="2560c363-7b83-4c60-837f-4322e9129fd1"/>
 				<meta>
-					<profile value="https://fhir.hl7.org.uk/StructureDefinition/CareConnect-DCH-Patient-Mother-1"/>
+					<profile value="https://fhir.hl7.org.uk/StructureDefinition/CareConnect-DCH-Mother-Patient-1"/>
 				</meta>
 				<identifier>
 					<extension url="https://fhir.hl7.org.uk/StructureDefinition/Extension-CareConnect-NHSNumberVerificationStatus-1">
@@ -282,7 +282,7 @@
 			<RelatedPerson>
 				<id value="50413d52-e461-4887-8051-3466ee373d01"/>
 				<meta>
-					<profile value="https://fhir.nhs.uk/StructureDefinition/dch-relatedperson-motherandbaby-1"/>
+					<profile value="https://fhir.nhs.uk/StructureDefinition/dch-motherandbaby-relatedperson-1"/>
 				</meta>
 				<extension url=" https://fhir.nhs.uk/StructureDefinition/extension-dch-referencepatientmother-1">
 					<valueReference id="2560c363-7b83-4c60-837f-4322e9129fd1"/>

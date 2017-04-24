@@ -2,7 +2,7 @@
 <Bundle xmlns="http://hl7.org/fhir" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://hl7.org/fhir ../../Schemas/bundle.xsd">
 	<id value="98eca5aa-21a7-466d-86a3-bdd395c13ec5"/>
 	<meta>
-		<profile value="https://fhir.nhs.uk/StructureDefinition/dch-bundle-measurementsevent-1"/>
+		<profile value="https://fhir.nhs.uk/StructureDefinition/dch-measurementsevent-bundle-1"/>
 	</meta>
 	<type value="message"/>
 	<entry> <!--MESSAGE HEADER-->
@@ -11,7 +11,7 @@
 			<MessageHeader>
 				<id value="54e9d39b-9c81-45da-931b-e9f19521d6b6"/>
 				<meta>
-					<profile value="https://fhir.nhs.uk/StructureDefinition/dch-messageheader-measurementsevent-1"/>
+					<profile value="https://fhir.nhs.uk/StructureDefinition/dch-measurementsevent-messageheader-1"/>
 				</meta>
 				<timestamp value="2012-01-03T10:00:00+00:00"/>
 				<event>
@@ -38,7 +38,7 @@
 			<Encounter>
 				<id value="35e37fee-c68e-4dfc-ad1a-1435ec1f18ea"/>
 				<meta>
-					<profile value="https://fhir.hl7.org.uk/StructureDefinition/CareConnect-DCH-Encounter-MeasurementsEvent-1"/>
+					<profile value="https://fhir.hl7.org.uk/StructureDefinition/CareConnect-DCH-MeasurementsEvent-Encounter-1"/>
 				</meta>
 				<identifier>
 					<system value="https://tools.ietf.org/html/rfc4122"/>
@@ -123,7 +123,7 @@
 			<Observation>
 				<id value="dd786f04-4c1f-4bcb-9a03-4a634c8a5150"/>
 				<meta>
-					<profile value="https://fhir.hl7.org.uk/StructureDefinition/CareConnect-DCH-Observation-BirthWeight-1"/>
+					<profile value="https://fhir.hl7.org.uk/StructureDefinition/CareConnect-DCH-BirthWeight-Observation-1"/>
 				</meta>				
 				<status value="final"/>
 				<code>
@@ -154,7 +154,7 @@
 			<Observation>
 				<id value="b3826bbf-8f36-41bb-8875-bde510b7c100"/>
 				<meta>
-					<profile value="https://fhir.hl7.org.uk/StructureDefinition/CareConnect-DCH-Observation-BodyLength-1"/>
+					<profile value="https://fhir.hl7.org.uk/StructureDefinition/CareConnect-DCH-BodyLength-Observation-1"/>
 				</meta>				
 				<status value="final"/>
 				<code>
@@ -185,7 +185,7 @@
 			<Observation>
 				<id value="436143a7-38b7-4031-a9b5-76c9aaef9c13"/>
 				<meta>
-					<profile value="https://fhir.hl7.org.uk/StructureDefinition/CareConnect-DCH-Observation-HeadCircumference-1"/>
+					<profile value="https://fhir.hl7.org.uk/StructureDefinition/CareConnect-DCH-HeadCircumference-Observation-1"/>
 				</meta>				
 				<status value="final"/>
 				<code>
@@ -216,7 +216,7 @@
 			<Practitioner>
 				<id value="aa7cab65-b7d6-4843-9109-e5b20446b3e8"/>
 				<meta>
-					<profile value="https://fhir.hl7.org.uk/StructureDefinition/CareConnect-DCH-Practitioner-ChildHealthEvent-1"/>
+					<profile value="https://fhir.hl7.org.uk/StructureDefinition/CareConnect-DCH-ChildHealthEvent-Practitioner-1"/>
 				</meta>
 				<identifier>
 					<system value="https://fhir.nhs.uk/Id/sds-user-id"/>
