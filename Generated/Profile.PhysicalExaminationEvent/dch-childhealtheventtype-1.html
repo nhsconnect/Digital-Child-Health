@@ -139,33 +139,207 @@
 							
 							
 							
-									<div class="panel panel - default">
-											<h1>FHIR Messaging</h1>
-<p>The FHIR resource profiles within this DMS have been created to support the Child Health Events Catalogue Service interface:</p>
-<ul>
-<li><strong><a href="../Profile.BirthDetailsEvent/Profile.BirthDetailsEvent.html">Profile.BirthDetailsEvent</a></strong> - FHIR resource profiles combined to support a Birth Details Event message.</li>
-<li><strong><a href="../Profile.AssessmentAPGAREvent/Profile.AssessmentAPGAREvent.html">Profile.AssessmentAPGAREvent</a></strong> - FHIR resource profiles combined to support an Assessment APGAR Event message.</li>
-<li><strong><a href="../Profile.BreastfeedingStatusEvent/Profile.BreastfeedingStatusEvent.html">Profile.BreastfeedingStatusEvent</a></strong> - FHIR resource profiles combined to support a Breastfeeding Status Event message.</li>
-<li><strong><a href="../Profile.NeonatalCareEvent/Profile.NeonatalCareEvent.html">Profile.NeonatalCareEvent</a></strong> - FHIR resource profiles combined to support a Neonatal Care Event message.</li>
-<li><strong><a href="../Profile.BirthDischargeEvent/Profile.BirthDischargeEvent.html">Profile.BirthDischargeEvent</a></strong> - FHIR resource profiles combined to support a Birth Discharge Event message.</li>
-<li><strong><a href="../Profile.MeasurementsEvent/Profile.MeasurementsEvent.html">Profile.MeasurementsEvent</a></strong> - FHIR resource profiles combined to support a Measurements Event message.</li>
-<li><strong><a href="../Profile.IndicatorsEvent/Profile.IndicatorsEvent.html">Profile.IndicatorsEvent</a></strong> - FHIR resource profiles combined to support an Indicators Event message.</li>
-<li><strong><a href="../Profile.ReferralEvent/Profile.ReferralEvent.html">Profile.ReferralEvent</a></strong> - FHIR resource profiles combined to support a Referral Event message.</li>
-<li><strong><a href="../Profile.FollowUpEvent/Profile.FollowUpEvent.html">Profile.FollowUpEvent</a></strong> - FHIR resource profiles combined to support a Follow Up Event message.</li>
-<li><strong><a href="../Profile.NewbornBloodSpotEvent/Profile.NewbornBloodSpotEvent.html">Profile.NewbornBloodSpotEvent</a></strong> - FHIR resource profiles combined to support a Newborn Blood Spot Event message.</li>
-<li><strong><a href="../Profile.6-8WeekHealthReviewEvent/Profile.6-8WeekHealthReviewEvent.html">Profile.6-8WeekHealthReviewEvent</a></strong> - FHIR resource profiles combined to support a 6-8 Week Health Review Event message.</li>
-<li><strong><a href="../Profile.NewbornHearingEvent/Profile.NewbornHearingEvent.html">Profile.NewbornHearingEvent</a></strong> - FHIR resource profiles combined to support a Newborn Hearing Event message.</li>
-<li><strong><a href="../Profile.NewbornPhysicalExamEvent/Profile.NewbornPhysicalExamEvent.html">Profile.NewbornPhysicalExamEvent</a></strong> - FHIR resource profiles combined to support a Newborn Physical Exam Event message.</li>
-<li><strong><a href="../Profile.VitaminKEvent/Profile.VitaminKEvent.html">Profile.VitaminKEvent</a></strong> - FHIR resource profiles combined to support a Vitamin K Event message.</li>
-<li><strong><a href="../Profile.PhysicalExaminationEvent/Profile.PhysicalExaminationEvent.html">Profile.PhysicalExaminationEvent</a></strong> - FHIR resource profiles combined to support a Physical Examination Event message. </li>
-</ul>
-<p><strong>Further Information</strong></p>
-<p>For more information about message profiles visit the <a href="http://hl7.org/fhir/profiling.html">Profiling FHIR</a> and for resource Metadata visit [Base Resource Definitions].</p>
-<p>The various downloads (including Schema files) and reference implementations are available on <a href="http://hl7.org/fhir/index.html">FHIR website</a>. </p>
-
-									</div>
 							
-						
+<div class="panel panel - default" xmlns="http://www.w3.org/1999/xhtml">
+  <div class="panel-heading">
+    <h3 class="panel-title">Event Type</h3>
+  </div>
+  <div class="panel-body">
+    <div class="valueset-content">
+      <div class="valueset-summary">
+        <h3 xmlns="" />Summary</div>
+      <div class="valueset-summary-table">
+        <table>
+          <tr class="valueset-summary-table-header">
+            <th title="The name of the element." class="col-name">Name</th>
+            <th title="The value of the element." class="col-description">Description</th>
+          </tr>
+          <tr>
+            <td>Defining URL:</td>
+            <td>https://fhir.nhs.uk/ValueSet/dch-childhealtheventtype-1</td>
+            <tr>
+              <td>Name:</td>
+              <td>Event Type</td>
+            </tr>
+            <tr>
+              <td>Definition:</td>
+              <td>The type of Child Health event.</td>
+            </tr>
+            <tr>
+              <td>Status:</td>
+              <td>Active</td>
+            </tr>
+            <tr>
+              <td>Last Updated:</td>
+              <td>03/08/2016 00:00:00 +01:00</td>
+            </tr>
+            <tr>
+              <td>Source Resource:</td>
+              <td>
+                <p>
+                  <a target="_blank" href="..\Resources\Profile.PhysicalExaminationEvent\ValueSets\dch-childhealtheventtype-1.xml">XML</a> / <a target="_blank" href="..\Resources\Profile.PhysicalExaminationEvent\ValueSets\dch-childhealtheventtype-1.json">JSON</a></p>
+              </td>
+            </tr>
+          </tr>
+        </table>
+        <p />
+      </div>
+      <div class="logical-definition">
+        <p>Include these codes as defined in https://fhir.nhs.uk/dch-childhealtheventtype-1 :<br /></p>
+        <div class="codeSystem-table">
+          <table>
+            <tr class="table-header">
+              <th title="Code that identifies concept" class="col-code">Code</th>
+              <th title="Text to display to the user" class="col-display">Display</th>
+            </tr>
+            <div class="table-rows">
+              <tr>
+                <td>E1</td>
+                <td>
+                  <p>Birth: Birth Details</p>
+                  <a name="Birth: Birth Details" />
+                </td>
+              </tr>
+              <tr>
+                <td>E2</td>
+                <td>
+                  <p>Assessment APGAR</p>
+                  <a name="Assessment APGAR" />
+                </td>
+              </tr>
+              <tr>
+                <td>E3</td>
+                <td>
+                  <p>Demographics: Core</p>
+                  <a name="Demographics: Core" />
+                </td>
+              </tr>
+              <tr>
+                <td>E4</td>
+                <td>
+                  <p>Demographics: Related Persons</p>
+                  <a name="Demographics: Related Persons" />
+                </td>
+              </tr>
+              <tr>
+                <td>E5</td>
+                <td>
+                  <p>Breastfeeding Status: Breastfeeding Status</p>
+                  <a name="Breastfeeding Status: Breastfeeding Status" />
+                </td>
+              </tr>
+              <tr>
+                <td>E6</td>
+                <td>
+                  <p>Birth: Neonatal Care</p>
+                  <a name="Birth: Neonatal Care" />
+                </td>
+              </tr>
+              <tr>
+                <td>E7</td>
+                <td>
+                  <p>Birth: Discharge</p>
+                  <a name="Birth: Discharge" />
+                </td>
+              </tr>
+              <tr>
+                <td>E8</td>
+                <td>
+                  <p>6-8 Week Health Review</p>
+                  <a name="6-8 Week Health Review" />
+                </td>
+              </tr>
+              <tr>
+                <td>E9</td>
+                <td>
+                  <p>Intervention: Vitamin K</p>
+                  <a name="Intervention: Vitamin K" />
+                </td>
+              </tr>
+              <tr>
+                <td>E10</td>
+                <td>
+                  <p>Indicators: BCG and Hep B</p>
+                  <a name="Indicators: BCG and Hep B" />
+                </td>
+              </tr>
+              <tr>
+                <td>E11</td>
+                <td>
+                  <p>HCP Clinical Intervention: Newborn Physical Examination</p>
+                  <a name="HCP Clinical Intervention: Newborn Physical Examination" />
+                </td>
+              </tr>
+              <tr>
+                <td>E12</td>
+                <td>
+                  <p>Physical Examination: NIPE</p>
+                  <a name="Physical Examination: NIPE" />
+                </td>
+              </tr>
+              <tr>
+                <td>E13</td>
+                <td>
+                  <p>Referral: Referral</p>
+                  <a name="Referral: Referral" />
+                </td>
+              </tr>
+              <tr>
+                <td>E14</td>
+                <td>
+                  <p>Referral: Follow Up</p>
+                  <a name="Referral: Follow Up" />
+                </td>
+              </tr>
+              <tr>
+                <td>E15</td>
+                <td>
+                  <p>HCP Clinical Intervention: Newborn Blood Spot Screening</p>
+                  <a name="HCP Clinical Intervention: Newborn Blood Spot Screening" />
+                </td>
+              </tr>
+              <tr>
+                <td>E16</td>
+                <td>
+                  <p>Screening: Blood Spot</p>
+                  <a name="Screening: Blood Spot" />
+                </td>
+              </tr>
+              <tr>
+                <td>E17</td>
+                <td>
+                  <p>HCP Clinical Intervention: Newborn Hearing Screening</p>
+                  <a name="HCP Clinical Intervention: Newborn Hearing Screening" />
+                </td>
+              </tr>
+              <tr>
+                <td>E18</td>
+                <td>
+                  <p>Screening: Hearing</p>
+                  <a name="Screening: Hearing" />
+                </td>
+              </tr>
+              <tr>
+                <td>E19</td>
+                <td>
+                  <p>HCP Clinical Intervention: 6-8 week review</p>
+                  <a name="HCP Clinical Intervention: 6-8 week review" />
+                </td>
+              </tr>
+              <tr>
+                <td>E20</td>
+                <td>
+                  <p>Measurements</p>
+                  <a name="Measurements" />
+                </td>
+              </tr>
+            </div>
+          </table>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>						
 					   </div>                      
                     </div>
                     <!-- /inner-wrapper -->                   

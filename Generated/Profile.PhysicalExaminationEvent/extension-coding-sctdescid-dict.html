@@ -5,7 +5,7 @@
 
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
 	<head>
-			<title>Digital Child Health Service - Events Catalogue - FHIR Implementation Guide</title>
+			<title>PhysicalExaminationEvent - FHIR Implementation Guide</title>
 
 			<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 			<meta name="author" content="HSCIC" />        
@@ -54,7 +54,7 @@
                 </a>
                 <div id="specificationName">
          
-                        <b>Digital Child Health Service - Events Catalogue</b>
+                        <b>PhysicalExaminationEvent</b>
                   
                 </div>
 
@@ -137,33 +137,161 @@
 							
 							
 							
+<div class="panel panel - default" xmlns="http://www.w3.org/1999/xhtml">
+  <div class="panel-heading">
+    <h3 class="panel-title">Extension-Coding-SCTDescID</h3>
+  </div>
+  <div class="panel-body">
+    <div xmlns="http://www.w3.org/1999/xhtml">
+      <p>
+        <b>Extension-Coding-SCTDescID</b>
+      </p>
+      <table class="dict">
+        <tr>
+          <td colspan="2" class="structure">
+            <a name="Extension"></a>
+            <b>Extension</b>
+          </td>
+        </tr>
+        <tr>
+          <td width="150px">Definition</td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>
+            <a href="http://www.hl7.org/fhir/DSTU2/conformance-rules.html#conformance">Control</a>
+          </td>
+          <td>0..*</td>
+        </tr>
+        <tr>
+          <td width="150px">Comments</td>
+          <td></td>
+        </tr>
+        <tr>
+          <td colspan="2" class="structure">
+            <a name="Extension.id"></a>
+            <b>Extension.id</b>
+          </td>
+        </tr>
+        <tr>
+          <td width="150px">Definition</td>
+          <td>
+            <p>unique id for the element within a resource (for internal references).</p>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <a href="http://www.hl7.org/fhir/DSTU2/conformance-rules.html#conformance">Control</a>
+          </td>
+          <td>0..1 ?</td>
+        </tr>
+        <tr>
+          <td>
+            <a href="http://www.hl7.org/fhir/DSTU2/datatypes.html">Type</a>
+          </td>
+          <td>
+            <a href="http://www.hl7.org/fhir/DSTU2/datatypes.html#id" xmlns="http://www.w3.org/1999/xhtml">Id</a>
+          </td>
+        </tr>
+        <tr>
+          <td width="150px">Comments</td>
+          <td>
+            <p>RFC 4122</p>
+          </td>
+        </tr>
+        <tr>
+          <td colspan="2" class="structure">
+            <a name="Extension.extension"></a>
+            <b>Extension.extension</b>
+          </td>
+        </tr>
+        <tr>
+          <td width="150px">Definition</td>
+          <td>
+            <p>May be used to represent additional information that is not part of the basic definition of the element. In order to make the use of extensions safe and manageable, there is a strict set of governance  applied to the definition and use of extensions. Though any implementer is allowed to define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension.</p>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <a href="http://www.hl7.org/fhir/DSTU2/conformance-rules.html#conformance">Control</a>
+          </td>
+          <td>0..* ?</td>
+        </tr>
+        <tr>
+          <td>
+            <a href="http://www.hl7.org/fhir/DSTU2/datatypes.html">Type</a>
+          </td>
+          <td>
+            <a href="http://www.hl7.org/fhir/DSTU2/datatypes.html#extension" xmlns="http://www.w3.org/1999/xhtml">Extension</a>
+          </td>
+        </tr>
+        <tr>
+          <td>Aliases</td>
+          <td>extensions, user content</td>
+        </tr>
+        <tr>
+          <td width="150px">Comments</td>
+          <td>
+            <p>There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone.</p>
+          </td>
+        </tr>
+        <tr>
+          <td colspan="2" class="structure">
+            <a name="Extension.url"></a>
+            <b>Extension.url</b>
+          </td>
+        </tr>
+        <tr>
+          <td width="150px">Definition</td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>
+            <a href="http://www.hl7.org/fhir/DSTU2/conformance-rules.html#conformance">Control</a>
+          </td>
+          <td>0..*</td>
+        </tr>
+        <tr>
+          <td width="150px">Comments</td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>Fixed Value</td>
+          <td>https://fhir.hl7.org.uk/StructureDefinition/Extension-coding-sctdescid</td>
+        </tr>
+        <tr>
+          <td colspan="2" class="structure">
+            <a name="Extension.valueId"></a>
+            <b>Extension.valueId</b>
+          </td>
+        </tr>
+        <tr>
+          <td width="150px">Definition</td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>
+            <a href="http://www.hl7.org/fhir/DSTU2/conformance-rules.html#conformance">Control</a>
+          </td>
+          <td>0..*</td>
+        </tr>
+        <tr>
+          <td>
+            <a href="http://www.hl7.org/fhir/DSTU2/datatypes.html">Type</a>
+          </td>
+          <td>
+            <a href="http://www.hl7.org/fhir/DSTU2/datatypes.html#id" xmlns="http://www.w3.org/1999/xhtml">Id</a>
+          </td>
+        </tr>
+        <tr>
+          <td width="150px">Comments</td>
+          <td></td>
+        </tr>
+      </table>
+    </div>
+  </div>
+</div>							
 							
-							
-									<div class="panel panel - default">
-											<h1>FHIR Messaging</h1>
-<p>The FHIR resource profiles within this DMS have been created to support the Child Health Events Catalogue Service interface:</p>
-<ul>
-<li><strong><a href="../Profile.BirthDetailsEvent/Profile.BirthDetailsEvent.html">Profile.BirthDetailsEvent</a></strong> - FHIR resource profiles combined to support a Birth Details Event message.</li>
-<li><strong><a href="../Profile.AssessmentAPGAREvent/Profile.AssessmentAPGAREvent.html">Profile.AssessmentAPGAREvent</a></strong> - FHIR resource profiles combined to support an Assessment APGAR Event message.</li>
-<li><strong><a href="../Profile.BreastfeedingStatusEvent/Profile.BreastfeedingStatusEvent.html">Profile.BreastfeedingStatusEvent</a></strong> - FHIR resource profiles combined to support a Breastfeeding Status Event message.</li>
-<li><strong><a href="../Profile.NeonatalCareEvent/Profile.NeonatalCareEvent.html">Profile.NeonatalCareEvent</a></strong> - FHIR resource profiles combined to support a Neonatal Care Event message.</li>
-<li><strong><a href="../Profile.BirthDischargeEvent/Profile.BirthDischargeEvent.html">Profile.BirthDischargeEvent</a></strong> - FHIR resource profiles combined to support a Birth Discharge Event message.</li>
-<li><strong><a href="../Profile.MeasurementsEvent/Profile.MeasurementsEvent.html">Profile.MeasurementsEvent</a></strong> - FHIR resource profiles combined to support a Measurements Event message.</li>
-<li><strong><a href="../Profile.IndicatorsEvent/Profile.IndicatorsEvent.html">Profile.IndicatorsEvent</a></strong> - FHIR resource profiles combined to support an Indicators Event message.</li>
-<li><strong><a href="../Profile.ReferralEvent/Profile.ReferralEvent.html">Profile.ReferralEvent</a></strong> - FHIR resource profiles combined to support a Referral Event message.</li>
-<li><strong><a href="../Profile.FollowUpEvent/Profile.FollowUpEvent.html">Profile.FollowUpEvent</a></strong> - FHIR resource profiles combined to support a Follow Up Event message.</li>
-<li><strong><a href="../Profile.NewbornBloodSpotEvent/Profile.NewbornBloodSpotEvent.html">Profile.NewbornBloodSpotEvent</a></strong> - FHIR resource profiles combined to support a Newborn Blood Spot Event message.</li>
-<li><strong><a href="../Profile.6-8WeekHealthReviewEvent/Profile.6-8WeekHealthReviewEvent.html">Profile.6-8WeekHealthReviewEvent</a></strong> - FHIR resource profiles combined to support a 6-8 Week Health Review Event message.</li>
-<li><strong><a href="../Profile.NewbornHearingEvent/Profile.NewbornHearingEvent.html">Profile.NewbornHearingEvent</a></strong> - FHIR resource profiles combined to support a Newborn Hearing Event message.</li>
-<li><strong><a href="../Profile.NewbornPhysicalExamEvent/Profile.NewbornPhysicalExamEvent.html">Profile.NewbornPhysicalExamEvent</a></strong> - FHIR resource profiles combined to support a Newborn Physical Exam Event message.</li>
-<li><strong><a href="../Profile.VitaminKEvent/Profile.VitaminKEvent.html">Profile.VitaminKEvent</a></strong> - FHIR resource profiles combined to support a Vitamin K Event message.</li>
-<li><strong><a href="../Profile.PhysicalExaminationEvent/Profile.PhysicalExaminationEvent.html">Profile.PhysicalExaminationEvent</a></strong> - FHIR resource profiles combined to support a Physical Examination Event message. </li>
-</ul>
-<p><strong>Further Information</strong></p>
-<p>For more information about message profiles visit the <a href="http://hl7.org/fhir/profiling.html">Profiling FHIR</a> and for resource Metadata visit [Base Resource Definitions].</p>
-<p>The various downloads (including Schema files) and reference implementations are available on <a href="http://hl7.org/fhir/index.html">FHIR website</a>. </p>
-
-									</div>
 							
 						
 					   </div>                      
