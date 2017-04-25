@@ -228,7 +228,7 @@
           {
             "code": "Reference",
             "profile": [
-              "https://fhir.hl7.org.uk/StructureDefinition/CareConnect-DCH-Patient-Mother-1"
+              "https://fhir.hl7.org.uk/StructureDefinition/CareConnect-DCH-Mother-Patient-1"
             ]
           }
         ],
@@ -282,7 +282,7 @@
           {
             "code": "Reference",
             "profile": [
-              "https://fhir.hl7.org.uk/StructureDefinition/CareConnect-DCH-Patient-Mother-1"
+              "https://fhir.hl7.org.uk/StructureDefinition/CareConnect-DCH-Mother-Patient-1"
             ]
           }
         ]

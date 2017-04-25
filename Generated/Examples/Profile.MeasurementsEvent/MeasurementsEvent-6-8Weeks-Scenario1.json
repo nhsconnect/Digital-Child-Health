@@ -3,7 +3,7 @@
   "id": "98eca5aa-21a7-466d-86a3-bdd395c13ec5",
   "meta": {
     "profile": [
-      "https://fhir.nhs.uk/StructureDefinition/dch-bundle-measurementsevent-1"
+      "https://fhir.nhs.uk/StructureDefinition/dch-measurementsevent-bundle-1"
     ]
   },
   "type": "message",
@@ -15,7 +15,7 @@
         "id": "3bdda8b3-8781-4b3b-afed-5aff65e81f2d",
         "meta": {
           "profile": [
-            "https://fhir.nhs.uk/StructureDefinition/dch-messageheader-measurementsevent-1"
+            "https://fhir.nhs.uk/StructureDefinition/dch-measurementsevent-messageheader-1"
           ]
         },
         "timestamp": "2012-02-15T10:30:00+00:00",
@@ -45,7 +45,7 @@
         "id": "52bd4326-a3f7-4fde-9a4c-08e8542ff392",
         "meta": {
           "profile": [
-            "https://fhir.hl7.org.uk/StructureDefinition/CareConnect-DCH-Encounter-MeasurementsEvent-1"
+            "https://fhir.hl7.org.uk/StructureDefinition/CareConnect-DCH-MeasurementsEvent-Encounter-1"
           ]
         },
         "identifier": [
@@ -154,7 +154,7 @@
         "id": "a74c5075-2f46-42bd-8f11-0b1bd8a1134d",
         "meta": {
           "profile": [
-            "https://fhir.hl7.org.uk/StructureDefinition/CareConnect-DCH-Observation-HeadCircumference-1"
+            "https://fhir.hl7.org.uk/StructureDefinition/CareConnect-DCH-HeadCircumference-Observation-1"
           ]
         },
         "status": "final",
@@ -190,7 +190,7 @@
         "id": "8b9bbfab-31e0-4817-bc4e-fa5c7d4c1b4f",
         "meta": {
           "profile": [
-            "https://fhir.hl7.org.uk/StructureDefinition/CareConnect-DCH-Observation-Weight-1"
+            "https://fhir.hl7.org.uk/StructureDefinition/CareConnect-DCH-Weight-Observation-1"
           ]
         },
         "status": "final",
@@ -226,7 +226,7 @@
         "id": "3755a78e-befc-44be-b517-23331e6288bc",
         "meta": {
           "profile": [
-            "https://fhir.hl7.org.uk/StructureDefinition/CareConnect-DCH-Observation-Height-1"
+            "https://fhir.hl7.org.uk/StructureDefinition/CareConnect-DCH-Height-Observation-1"
           ]
         },
         "status": "final",
@@ -262,7 +262,7 @@
         "id": "aa7cab65-b7d6-4843-9109-e5b20446b3e8",
         "meta": {
           "profile": [
-            "https://fhir.hl7.org.uk/StructureDefinition/CareConnect-DCH-Practitioner-ChildHealthEvent-1"
+            "https://fhir.hl7.org.uk/StructureDefinition/CareConnect-DCH-ChildHealthEvent-Practitioner-1"
           ]
         },
         "identifier": [

@@ -3,7 +3,7 @@
   "id": "d2282c1e-a069-472b-8984-d746b8056f8b",
   "meta": {
     "profile": [
-      "https://fhir.nhs.uk/StructureDefinition/dch-bundle-assessmentapgarevent-1"
+      "https://fhir.nhs.uk/StructureDefinition/dch-assessmentapgarevent-bundle-1"
     ]
   },
   "type": "message",
@@ -15,7 +15,7 @@
         "id": "4059ea20-f2c6-4a64-a82e-cb1cd33717ce",
         "meta": {
           "profile": [
-            "https://fhir.nhs.uk/StructureDefinition/dch-messageheader-assessmentapgarevent-1"
+            "https://fhir.nhs.uk/StructureDefinition/dch-assessmentapgarevent-messageheader-1"
           ]
         },
         "timestamp": "2012-01-07T22:00:00+00:00",
@@ -45,7 +45,7 @@
         "id": "83293cf2-57b3-49fd-a10b-5ece13d5b8e1",
         "meta": {
           "profile": [
-            "https://fhir.hl7.org.uk/StructureDefinition/CareConnect-DCH-Encounter-BirthOccurrence-1"
+            "https://fhir.hl7.org.uk/StructureDefinition/CareConnect-DCH-BirthOccurrence-Encounter-1"
           ]
         },
         "identifier": [
@@ -114,7 +114,7 @@
         "id": "e864d93b-07a1-4c1c-8b2f-276bba9675d5",
         "meta": {
           "profile": [
-            "https://fhir.hl7.org.uk/StructureDefinition/CareConnect-DCH-Patient-Baby-1"
+            "https://fhir.hl7.org.uk/StructureDefinition/CareConnect-DCH-Baby-Patient-1"
           ]
         },
         "identifier": [
@@ -167,7 +167,7 @@
         "id": "44a10a10-0bb0-4040-a0f8-0b4840331615",
         "meta": {
           "profile": [
-            "https://fhir.hl7.org.uk/StructureDefinition/CareConnect-DCH-Observation-APGARScore1Minute-1"
+            "https://fhir.hl7.org.uk/StructureDefinition/CareConnect-DCH-APGARScore1Minute-Observation-1"
           ]
         },
         "identifier": [
@@ -211,7 +211,7 @@
         "id": "4c52f7d6-9ab3-425d-a06d-1de498eba3a4",
         "meta": {
           "profile": [
-            "https://fhir.hl7.org.uk/StructureDefinition/CareConnect-DCH-Observation-APGARScore5Minutes-1"
+            "https://fhir.hl7.org.uk/StructureDefinition/CareConnect-DCH-APGARScore5Minutes-Observation-1"
           ]
         },
         "identifier": [
@@ -255,7 +255,7 @@
         "id": "bfd6d895-4e35-4228-8101-3221b35e0c88",
         "meta": {
           "profile": [
-            "https://fhir.hl7.org.uk/StructureDefinition/CareConnect-DCH-Observation-APGARScore10Minutes-1"
+            "https://fhir.hl7.org.uk/StructureDefinition/CareConnect-DCH-APGARScore10Minutes-Observation-1"
           ]
         },
         "identifier": [
@@ -299,7 +299,7 @@
         "id": "be555baa-d62c-4668-b022-88466a82c4c3",
         "meta": {
           "profile": [
-            "https://fhir.hl7.org.uk/StructureDefinition/CareConnect-DCH-Organization-ActualDeliveryPlace-1"
+            "https://fhir.hl7.org.uk/StructureDefinition/CareConnect-DCH-ActualDeliveryPlace-Organization-1"
           ]
         },
         "identifier": [

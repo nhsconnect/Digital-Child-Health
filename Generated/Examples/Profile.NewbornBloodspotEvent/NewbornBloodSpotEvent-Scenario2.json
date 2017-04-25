@@ -3,7 +3,7 @@
   "id": "02aeb659-f308-4ee3-9594-164abb249f41",
   "meta": {
     "profile": [
-      "https://fhir.nhs.uk/StructureDefinition/dch-bundle-newbornbloodspotevent-1"
+      "https://fhir.nhs.uk/StructureDefinition/dch-newbornbloodspotevent-bundle-1"
     ]
   },
   "type": "message",
@@ -15,7 +15,7 @@
         "id": "9b98c819-f7c9-42b2-a8f4-d5c1e4eb758a",
         "meta": {
           "profile": [
-            "https://fhir.nhs.uk/StructureDefinition/dch-messageheader-newbornbloodspotevent-1"
+            "https://fhir.nhs.uk/StructureDefinition/dch-newbornbloodspotevent-messageheader-1"
           ]
         },
         "timestamp": "2012-01-08T16:00:00+00:00",
@@ -45,7 +45,7 @@
         "id": "27ea7731-db80-45c6-8b07-1818149c1830",
         "meta": {
           "profile": [
-            "https://fhir.hl7.org.uk/StructureDefinition/CareConnect-DCH-Encounter-NewbornBloodSpotEvent-1"
+            "https://fhir.hl7.org.uk/StructureDefinition/CareConnect-DCH-NewbornBloodSpotEvent-Encounter-1"
           ]
         },
         "identifier": [
@@ -166,7 +166,7 @@
         "id": "26ded1a9-5888-45f2-adc1-e89efd1cf008",
         "meta": {
           "profile": [
-            "https://fhir.nhs.uk/StructureDefinition/dch-procedurerequest-newbornbloodspotevent-1"
+            "https://fhir.nhs.uk/StructureDefinition/dch-newbornbloodspotevent-procedurerequest-1"
           ]
         },
         "extension": [
@@ -211,7 +211,7 @@
         "id": "671fc732-dca1-4b8d-9c29-b4f58492263b",
         "meta": {
           "profile": [
-            "https://fhir.hl7.org.uk/StructureDefinition/CareConnect-DCH-Procedure-NewbornBloodSpotEvent-1"
+            "https://fhir.hl7.org.uk/StructureDefinition/CareConnect-DCH-NewbornBloodSpotEvent-Procedure-1"
           ]
         },
         "identifier": [
@@ -270,7 +270,7 @@
         "id": "f97ed793-e983-495e-97ce-4b33b9380948",
         "meta": {
           "profile": [
-            "https://fhir.nhs.uk/StructureDefinition/dch-appointment-newbornbloodspotevent-1"
+            "https://fhir.nhs.uk/StructureDefinition/dch-newbornbloodspotevent-appointment-1"
           ]
         },
         "identifier": [
@@ -305,7 +305,7 @@
         "id": "c862663d-176d-4bae-88c7-b92ec6694d3b",
         "meta": {
           "profile": [
-            "https://fhir.hl7.org.uk/StructureDefinition/CareConnect-DCH-Practitioner-ChildHealthEvent-1"
+            "https://fhir.hl7.org.uk/StructureDefinition/CareConnect-DCH-ChildHealthEvent-Practitioner-1"
           ]
         },
         "identifier": [
@@ -343,7 +343,7 @@
         "resourceType": "Organization",
         "meta": {
           "profile": [
-            "https://fhir.hl7.org.uk/StructureDefinition/CareConnect-DCH-Organization-ChildHealthEvent-1"
+            "https://fhir.hl7.org.uk/StructureDefinition/CareConnect-DCH-ChildHealthEvent-Organization-1"
           ]
         },
         "identifier": [

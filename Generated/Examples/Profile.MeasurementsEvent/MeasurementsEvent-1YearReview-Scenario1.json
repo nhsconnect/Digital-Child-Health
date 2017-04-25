@@ -3,7 +3,7 @@
   "id": "8530bc13-4ca8-4dd0-9a6c-0e5410009b2f",
   "meta": {
     "profile": [
-      "https://fhir.nhs.uk/StructureDefinition/dch-bundle-measurementsevent-1"
+      "https://fhir.nhs.uk/StructureDefinition/dch-measurementsevent-bundle-1"
     ]
   },
   "type": "message",
@@ -15,7 +15,7 @@
         "id": "cb5fbda6-56aa-42a0-b794-8036ded7b1cc",
         "meta": {
           "profile": [
-            "https://fhir.nhs.uk/StructureDefinition/dch-messageheader-measurementsevent-1"
+            "https://fhir.nhs.uk/StructureDefinition/dch-measurementsevent-messageheader-1"
           ]
         },
         "timestamp": "2013-01-07T13:59:00+00:00",
@@ -45,7 +45,7 @@
         "id": "dd81cb75-2261-43f4-a6a4-16ea15cdeb1e",
         "meta": {
           "profile": [
-            "https://fhir.hl7.org.uk/StructureDefinition/CareConnect-DCH-Encounter-MeasurementsEvent-1"
+            "https://fhir.hl7.org.uk/StructureDefinition/CareConnect-DCH-MeasurementsEvent-Encounter-1"
           ]
         },
         "identifier": [
@@ -154,7 +154,7 @@
         "id": "8b9bbfab-31e0-4817-bc4e-fa5c7d4c1b4f",
         "meta": {
           "profile": [
-            "https://fhir.hl7.org.uk/StructureDefinition/CareConnect-DCH-Observation-Weight-1"
+            "https://fhir.hl7.org.uk/StructureDefinition/CareConnect-DCH-Weight-Observation-1"
           ]
         },
         "status": "final",
@@ -190,7 +190,7 @@
         "id": "9aa5d3d6-f428-4621-9989-11bd35d85fea",
         "meta": {
           "profile": [
-            "https://fhir.hl7.org.uk/StructureDefinition/CareConnect-DCH-Practitioner-ChildHealthEvent-1"
+            "https://fhir.hl7.org.uk/StructureDefinition/CareConnect-DCH-ChildHealthEvent-Practitioner-1"
           ]
         },
         "identifier": [

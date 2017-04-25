@@ -3,7 +3,7 @@
   "id": "98eca5aa-21a7-466d-86a3-bdd395c13ec5",
   "meta": {
     "profile": [
-      "https://fhir.nhs.uk/StructureDefinition/dch-bundle-birthdetailsevent-1"
+      "https://fhir.nhs.uk/StructureDefinition/dch-birthdetailsevent-bundle-1"
     ]
   },
   "type": "message",
@@ -15,7 +15,7 @@
         "id": "4ff4bc97-bea5-4b4c-b0e4-92a24000d640",
         "meta": {
           "profile": [
-            "https://fhir.nhs.uk/StructureDefinition/dch-messageheader-birthdetailsevent-1"
+            "https://fhir.nhs.uk/StructureDefinition/dch-birthdetailsevent-messageheader-1"
           ]
         },
         "timestamp": "2012-01-03T10:00:00+00:00",
@@ -45,7 +45,7 @@
         "id": "35e37fee-c68e-4dfc-ad1a-1435ec1f18ea",
         "meta": {
           "profile": [
-            "https://fhir.hl7.org.uk/StructureDefinition/CareConnect-DCH-Encounter-BirthOccurrence-1"
+            "https://fhir.hl7.org.uk/StructureDefinition/CareConnect-DCH-BirthOccurrence-Encounter-1"
           ]
         },
         "identifier": [
@@ -125,7 +125,7 @@
         "id": "18167cd3-7f20-4b9a-9025-527bf64dbdc0",
         "meta": {
           "profile": [
-            "https://fhir.hl7.org.uk/StructureDefinition/CareConnect-DCH-Patient-Baby-1"
+            "https://fhir.hl7.org.uk/StructureDefinition/CareConnect-DCH-Baby-Patient-1"
           ]
         },
         "identifier": [
@@ -178,7 +178,7 @@
         "id": "c20cde24-10af-45f4-a3ff-7c43113a9492",
         "meta": {
           "profile": [
-            "https://fhir.hl7.org.uk/StructureDefinition/CareConnect-DCH-Observation-LengthOfPregnancy-1"
+            "https://fhir.hl7.org.uk/StructureDefinition/CareConnect-DCH-LengthOfPregnancy-Observation-1"
           ]
         },
         "identifier": [
@@ -214,7 +214,7 @@
         "id": "0de690ff-1ebe-4ac2-9d67-9e78851bd8bf",
         "meta": {
           "profile": [
-            "https://fhir.hl7.org.uk/StructureDefinition/CareConnect-DCH-Observation-NumberOfFetusesInConfinement-1"
+            "https://fhir.hl7.org.uk/StructureDefinition/CareConnect-DCH-NumberOfFetusesInConfinement-Observation-1"
           ]
         },
         "identifier": [
@@ -252,7 +252,7 @@
         "id": "a2574a2e-139a-4044-8484-76e018ed2fe2",
         "meta": {
           "profile": [
-            "https://fhir.hl7.org.uk/StructureDefinition/CareConnect-DCH-Organization-ActualDeliveryPlace-1"
+            "https://fhir.hl7.org.uk/StructureDefinition/CareConnect-DCH-ActualDeliveryPlace-Organization-1"
           ]
         },
         "identifier": [
@@ -279,7 +279,7 @@
         "id": "ee7e611c-fe03-4530-a870-589df8cb74dc",
         "meta": {
           "profile": [
-            "https://fhir.hl7.org.uk/StructureDefinition/CareConnect-DCH-Procedure-TypeOfDelivery-1"
+            "https://fhir.hl7.org.uk/StructureDefinition/CareConnect-DCH-TypeOfDelivery-Procedure-1"
           ]
         },
         "subject": {
@@ -306,7 +306,7 @@
         "id": "2370be64-3899-45c4-9a9d-c46871bd3e45",
         "meta": {
           "profile": [
-            "https://fhir.hl7.org.uk/StructureDefinition/CareConnect-DCH-Encounter-Delivery-1"
+            "https://fhir.hl7.org.uk/StructureDefinition/CareConnect-DCH-Delivery-Encounter-1"
           ]
         },
         "identifier": [
@@ -349,7 +349,7 @@
         "id": "de77f723-668a-4f63-8aa6-04e7f9996a1a",
         "meta": {
           "profile": [
-            "https://fhir.hl7.org.uk/StructureDefinition/CareConnect-DCH-Patient-Mother-1"
+            "https://fhir.hl7.org.uk/StructureDefinition/CareConnect-DCH-Mother-Patient-1"
           ]
         },
         "identifier": [
@@ -401,7 +401,7 @@
         "id": "217d461f-9804-49e4-ba36-b17299714bd4",
         "meta": {
           "profile": [
-            "https://fhir.nhs.uk/StructureDefinition/dch-relatedperson-motherandbaby-1"
+            "https://fhir.nhs.uk/StructureDefinition/dch-motherandbaby-relatedperson-1"
           ]
         },
         "extension": [
@@ -460,7 +460,7 @@
         "id": "aa7cab65-b7d6-4843-9109-e5b20446b3e8",
         "meta": {
           "profile": [
-            "https://fhir.hl7.org.uk/StructureDefinition/CareConnect-DCH-Practitioner-ChildHealthEvent-1"
+            "https://fhir.hl7.org.uk/StructureDefinition/CareConnect-DCH-ChildHealthEvent-Practitioner-1"
           ]
         },
         "identifier": [

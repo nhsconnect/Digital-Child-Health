@@ -15,7 +15,7 @@
         "id": "64a04ff7-c168-4589-9839-f35c1b07b161",
         "meta": {
           "profile": [
-            "https://fhir.nhs.uk/StructureDefinition/dch-messageheader-indicatorsevent-1"
+            "https://fhir.nhs.uk/StructureDefinition/dch-indicatorsevent-messageheader-1"
           ]
         },
         "timestamp": "2012-01-07T22:00:00+00:00",
@@ -45,7 +45,7 @@
         "id": "1319bc90-cc19-4f22-91c3-d0fc7eda77a7",
         "meta": {
           "profile": [
-            "https://fhir.hl7.org.uk/StructureDefinition/CareConnect-DCH-Encounter-IndicatorsEvent-1"
+            "https://fhir.hl7.org.uk/StructureDefinition/CareConnect-DCH-IndicatorsEvent-Encounter-1"
           ]
         },
         "identifier": [
@@ -163,7 +163,7 @@
         "id": "f4b37965-4066-415f-8736-4b730a4a957e",
         "meta": {
           "profile": [
-            "https://fhir.hl7.org.uk/StructureDefinition/CareConnect-DCH-Organization-ChildHealthEvent-1"
+            "https://fhir.hl7.org.uk/StructureDefinition/CareConnect-DCH-ChildHealthEvent-Organization-1"
           ]
         },
         "identifier": [
@@ -191,7 +191,7 @@
         "id": "b187e23b-5e01-40a7-a68c-61b388067196",
         "meta": {
           "profile": [
-            "https://fhir.nhs.uk/StructureDefinition/DCH-QuestionnaireResponse-IndicatorsEvent-1"
+            "https://fhir.nhs.uk/StructureDefinition/DCH-IndicatorsEvent-QuestionnaireResponse-1"
           ]
         },
         "identifier": {
@@ -241,7 +241,7 @@
         "id": "3a60d326-f390-4cb7-adfb-f32d6842acae",
         "meta": {
           "profile": [
-            "https://fhir.hl7.org.uk/StructureDefinition/CareConnect-DCH-Practitioner-ChildHealthEvent-1"
+            "https://fhir.hl7.org.uk/StructureDefinition/CareConnect-DCH-ChildHealthEvent-Practitioner-1"
           ]
         },
         "identifier": [

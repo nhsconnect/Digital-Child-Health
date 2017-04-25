@@ -4275,7 +4275,7 @@
           {
             "code": "Reference",
             "profile": [
-              "https://fhir.hl7.org.uk/StructureDefinition/CareConnect-DCH-Practitioner-ChildHealthEvent-1"
+              "https://fhir.hl7.org.uk/StructureDefinition/CareConnect-DCH-ChildHealthEvent-Practitioner-1"
             ]
           }
         ],
@@ -4603,7 +4603,7 @@
           {
             "code": "Reference",
             "profile": [
-              "https://fhir.hl7.org.uk/StructureDefinition/CareConnect-DCH-Encounter-ReferralEvent-1"
+              "https://fhir.hl7.org.uk/StructureDefinition/CareConnect-DCH-ReferralEvent-Encounter-1"
             ]
           }
         ],
@@ -6847,7 +6847,7 @@
           {
             "code": "Reference",
             "profile": [
-              "https://fhir.hl7.org.uk/StructureDefinition/CareConnect-DCH-Practitioner-ChildHealthEvent-1"
+              "https://fhir.hl7.org.uk/StructureDefinition/CareConnect-DCH-ChildHealthEvent-Practitioner-1"
             ]
           }
         ]
@@ -6867,7 +6867,7 @@
           {
             "code": "Reference",
             "profile": [
-              "https://fhir.hl7.org.uk/StructureDefinition/CareConnect-DCH-Encounter-ReferralEvent-1"
+              "https://fhir.hl7.org.uk/StructureDefinition/CareConnect-DCH-ReferralEvent-Encounter-1"
             ]
           }
         ]

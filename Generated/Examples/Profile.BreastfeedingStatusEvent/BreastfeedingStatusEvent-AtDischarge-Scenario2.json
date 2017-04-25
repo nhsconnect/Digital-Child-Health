@@ -3,7 +3,7 @@
   "id": "ee5f817a-69cb-4dff-bd93-bdd81a892c3a",
   "meta": {
     "profile": [
-      "https://fhir.nhs.uk/StructureDefinition/dch-bundle-breastfeedingstatusevent-1"
+      "https://fhir.nhs.uk/StructureDefinition/dch-breastfeedingstatusevent-bundle-1"
     ]
   },
   "type": "message",
@@ -15,7 +15,7 @@
         "id": "1fbcea54-c830-431a-9485-2d06ebe23177",
         "meta": {
           "profile": [
-            "https://fhir.nhs.uk/StructureDefinition/dch-messageheader-breastfeedingstatusevent-1"
+            "https://fhir.nhs.uk/StructureDefinition/dch-breastfeedingstatusevent-messageheader-1"
           ]
         },
         "timestamp": "2012-01-10T11:00:00+00:00",
@@ -45,7 +45,7 @@
         "id": "2355d1dd-000e-4b11-92f0-a6de6b935856",
         "meta": {
           "profile": [
-            "https://fhir.nhs.uk/StructureDefinition/dch-bundle-breastfeedingstatusevent-1"
+            "https://fhir.nhs.uk/StructureDefinition/dch-breastfeedingstatusevent-bundle-1"
           ]
         },
         "identifier": [
@@ -110,7 +110,7 @@
         "id": "11fccdf8-51d1-4605-9dd4-bda39d5b6835",
         "meta": {
           "profile": [
-            "https://fhir.hl7.org.uk/StructureDefinition/CareConnect-DCH-Patient-Baby-1"
+            "https://fhir.hl7.org.uk/StructureDefinition/CareConnect-DCH-Baby-Patient-1"
           ]
         },
         "identifier": [
@@ -163,7 +163,7 @@
         "id": "96667cad-c858-480d-8a09-cfa36d1c68f7",
         "meta": {
           "profile": [
-            "https://fhir.hl7.org.uk/StructureDefinition/CareConnect-DCH-Observation-BreastfeedingStatus-1"
+            "https://fhir.hl7.org.uk/StructureDefinition/CareConnect-DCH-BreastfeedingStatus-Observation-1"
           ]
         },
         "identifier": [
@@ -213,7 +213,7 @@
         "id": "df22dd05-7fc7-44a7-9adb-ccb414ddc10a",
         "meta": {
           "profile": [
-            "https://fhir.hl7.org.uk/StructureDefinition/CareConnect-DCH-Organization-ChildHealthEvent-1"
+            "https://fhir.hl7.org.uk/StructureDefinition/CareConnect-DCH-ChildHealthEvent-Organization-1"
           ]
         },
         "identifier": [
@@ -241,7 +241,7 @@
         "id": "47dfab05-ba7d-4bc2-ba49-89b89a6f2f21",
         "meta": {
           "profile": [
-            "https://fhir.hl7.org.uk/StructureDefinition/CareConnect-DCH-Practitioner-ChildHealthEvent-1"
+            "https://fhir.hl7.org.uk/StructureDefinition/CareConnect-DCH-ChildHealthEvent-Practitioner-1"
           ]
         },
         "identifier": [

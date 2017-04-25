@@ -3,7 +3,7 @@
   "id": "e46ff4df-52d0-4a27-8a9c-bf3009c66d21",
   "meta": {
     "profile": [
-      "https://fhir.nhs.uk/StructureDefinition/dch-bundle-birthdischargeevent-1"
+      "https://fhir.nhs.uk/StructureDefinition/dch-birthdischargeevent-bundle-1"
     ]
   },
   "type": "message",
@@ -15,7 +15,7 @@
         "id": "efabfa0e-b1c3-41ef-80ca-38be3b4606e1",
         "meta": {
           "profile": [
-            "https://fhir.nhs.uk/StructureDefinition/dch-messageheader-birthdischargeevent-1"
+            "https://fhir.nhs.uk/StructureDefinition/dch-birthdischargeevent-messageheader-1"
           ]
         },
         "timestamp": "2012-01-10T12:00:00+00:00",
@@ -45,7 +45,7 @@
         "id": "b5f04f25-a752-42f4-81fe-3ff98fd1d0c2",
         "meta": {
           "profile": [
-            "https://fhir.hl7.org.uk/StructureDefinition/CareConnect-DCH-Encounter-BirthOccurrence-1"
+            "https://fhir.hl7.org.uk/StructureDefinition/CareConnect-DCH-BirthOccurrence-Encounter-1"
           ]
         },
         "identifier": [
@@ -114,7 +114,7 @@
         "id": "c2cae1f0-7e4c-4cb6-aa73-de6f8c4935fa",
         "meta": {
           "profile": [
-            "https://fhir.hl7.org.uk/StructureDefinition/CareConnect-DCH-Patient-Baby-1"
+            "https://fhir.hl7.org.uk/StructureDefinition/CareConnect-DCH-Baby-Patient-1"
           ]
         },
         "identifier": [
@@ -167,7 +167,7 @@
         "id": "f467c8c9-d51f-4dd2-a80d-f08596c3f598",
         "meta": {
           "profile": [
-            "https://fhir.hl7.org.uk/StructureDefinition/CareConnect-DCH-Encounter-Delivery-1"
+            "https://fhir.hl7.org.uk/StructureDefinition/CareConnect-DCH-Delivery-Encounter-1"
           ]
         },
         "identifier": [
@@ -209,7 +209,7 @@
         "resourceType": "Organization",
         "meta": {
           "profile": [
-            "https://fhir.hl7.org.uk/StructureDefinition/CareConnect-DCH-Organization-BirthDischargeEvent-1"
+            "https://fhir.hl7.org.uk/StructureDefinition/CareConnect-DCH-BirthDischargeEvent-Organization-1"
           ]
         },
         "identifier": [
@@ -237,7 +237,7 @@
         "id": "f39556dc-59bf-49f7-8164-b675244af57e",
         "meta": {
           "profile": [
-            "https://fhir.hl7.org.uk/StructureDefinition/CareConnect-DCH-Practitioner-BirthDischargeEvent-1"
+            "https://fhir.hl7.org.uk/StructureDefinition/CareConnect-DCH-BirthDischargeEvent-Practitioner-1"
           ]
         },
         "identifier": [
@@ -279,7 +279,7 @@
         "id": "db72c64a-efe0-4ef1-8649-93c642f75cf3",
         "meta": {
           "profile": [
-            "https://fhir.hl7.org.uk/StructureDefinition/CareConnect-DCH-Practitioner-BirthDischargeEvent-1"
+            "https://fhir.hl7.org.uk/StructureDefinition/CareConnect-DCH-BirthDischargeEvent-Practitioner-1"
           ]
         },
         "identifier": [
@@ -318,7 +318,7 @@
         "id": "0ebb0f55-69e0-417b-b9b2-ec662d997f4d",
         "meta": {
           "profile": [
-            "https://fhir.hl7.org.uk/StructureDefinition/CareConnect-DCH-Patient-Mother-1"
+            "https://fhir.hl7.org.uk/StructureDefinition/CareConnect-DCH-Mother-Patient-1"
           ]
         },
         "identifier": [
@@ -370,7 +370,7 @@
         "id": "62e57ed7-abfc-4012-8710-afd368719998",
         "meta": {
           "profile": [
-            "https://fhir.nhs.uk/StructureDefinition/dch-relatedperson-motherandbaby-1"
+            "https://fhir.nhs.uk/StructureDefinition/dch-motherandbaby-relatedperson-1"
           ]
         },
         "extension": [
@@ -410,7 +410,7 @@
         "id": "3b913dec-17b0-4131-87b2-741be2d75bf9",
         "meta": {
           "profile": [
-            "https://fhir.hl7.org.uk/StructureDefinition/CareConnect-DCH-Organization-ActualDeliveryPlace-1"
+            "https://fhir.hl7.org.uk/StructureDefinition/CareConnect-DCH-ActualDeliveryPlace-Organization-1"
           ]
         },
         "identifier": [

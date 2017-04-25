@@ -2329,7 +2329,7 @@
           {
             "code": "Reference",
             "profile": [
-              "https://fhir.hl7.org.uk/StructureDefinition/CareConnect-DCH-Practitioner-ChildHealthEvent-1"
+              "https://fhir.hl7.org.uk/StructureDefinition/CareConnect-DCH-ChildHealthEvent-Practitioner-1"
             ]
           }
         ],
@@ -2584,7 +2584,7 @@
           {
             "code": "Reference",
             "profile": [
-              "https://fhir.hl7.org.uk/StructureDefinition/CareConnect-DCH-Encounter-VitaminKEvent-1"
+              "https://fhir.hl7.org.uk/StructureDefinition/CareConnect-DCH-VitaminKEvent-Encounter-1"
             ]
           }
         ],
@@ -7012,7 +7012,7 @@
           {
             "code": "Reference",
             "profile": [
-              "https://fhir.hl7.org.uk/StructureDefinition/CareConnect-DCH-Practitioner-ChildHealthEvent-1"
+              "https://fhir.hl7.org.uk/StructureDefinition/CareConnect-DCH-ChildHealthEvent-Practitioner-1"
             ]
           }
         ]
@@ -7028,7 +7028,7 @@
           {
             "code": "Reference",
             "profile": [
-              "https://fhir.hl7.org.uk/StructureDefinition/CareConnect-DCH-Encounter-VitaminKEvent-1"
+              "https://fhir.hl7.org.uk/StructureDefinition/CareConnect-DCH-VitaminKEvent-Encounter-1"
             ]
           }
         ]
