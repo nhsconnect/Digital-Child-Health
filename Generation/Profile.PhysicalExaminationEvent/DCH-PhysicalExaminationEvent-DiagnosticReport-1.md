@@ -1,0 +1,1 @@
+This DiagnosticReport resource is constrained to represent a diagnostic report of observations for a Physical Examination Event.
