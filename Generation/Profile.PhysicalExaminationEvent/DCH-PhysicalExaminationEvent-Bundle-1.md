@@ -34,7 +34,7 @@ The Child Health Event data items are fulfilled by elements within the FHIR reso
 
 | DCH Data Item Name              | FHIR Profile                                                 |
 |---------------------------------|--------------------------------------------------------------|
-| Date                            | DCH-PhysicalExaminationEvent-ProcedureRequest-1              |
+| Date                            | [DCH-PhysicalExaminationEvent-ProcedureRequest-1]              |
 | Outcome Right Hip               | [CareConnect-DCH-OutcomeRightHip-Observation-1]              |
 | Outcome Left Hip                | [CareConnect-DCH-OutcomeLeftHip-Observation-1]               |
 | Outcome Hips                    | [CareConnect-DCH-OutcomeHips-Observation-1]                  |
