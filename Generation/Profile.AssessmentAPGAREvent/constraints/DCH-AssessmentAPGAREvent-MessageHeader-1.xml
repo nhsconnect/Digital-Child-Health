@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <meta>
-    <lastUpdated value="2017-03-23T13:19:13.182+00:00" />
+    <lastUpdated value="2017-05-08T14:38:57.441+01:00" />
     <tag>
       <system value="urn:hscic:publishOrder" />
       <code value="2" />
@@ -649,7 +649,7 @@
       <type>
         <code value="code" />
       </type>
-      <fixedCode value="E2" />
+      <fixedCode value="Assessment APGAR" />
       <condition value="ele-1" />
       <constraint>
         <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-expression">
@@ -3803,7 +3803,7 @@
     <element>
       <path value="MessageHeader.event.code" />
       <min value="1" />
-      <fixedCode value="E2" />
+      <fixedCode value="Assessment APGAR" />
     </element>
     <element>
       <path value="MessageHeader.event.display" />

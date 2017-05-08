@@ -4,7 +4,7 @@
     <lastUpdated value="2017-03-28T14:21:11.816+01:00" />
     <tag>
       <system value="urn:hscic:publishOrder" />
-      <code value="6" />
+      <code value="5" />
     </tag>
   </meta>
   <url value="https://fhir.nhs.uk/StructureDefinition/dch-newbornhearingevent-procedurerequest-1" />

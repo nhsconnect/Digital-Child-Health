@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <meta>
-    <lastUpdated value="2017-04-03T10:26:11.378+01:00" />
+    <lastUpdated value="2017-05-08T14:48:42.342+01:00" />
     <tag>
       <system value="urn:hscic:publishOrder" />
       <code value="2" />
@@ -649,7 +649,7 @@
       <type>
         <code value="code" />
       </type>
-      <fixedCode value="E9" />
+      <fixedCode value="Intervention: Vitamin K" />
       <condition value="ele-1" />
       <constraint>
         <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-expression">
@@ -3779,12 +3779,6 @@
       </type>
     </element>
     <element>
-      <path value="MessageHeader.contained" />
-      <type>
-        <code value="Resource" />
-      </type>
-    </element>
-    <element>
       <path value="MessageHeader.event" />
       <short value="Code for the Child Health event this message represents" />
       <binding>
@@ -3809,7 +3803,7 @@
     <element>
       <path value="MessageHeader.event.code" />
       <min value="1" />
-      <fixedCode value="E9" />
+      <fixedCode value="Intervention: Vitamin K" />
     </element>
     <element>
       <path value="MessageHeader.event.display" />

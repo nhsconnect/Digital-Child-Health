@@ -1,7 +1,7 @@
-<?xml version="1.0" encoding="utf-8"?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <meta>
-    <lastUpdated value="2017-03-28T14:08:55.975+01:00" />
+    <lastUpdated value="2017-05-08T14:37:55.794+01:00" />
     <tag>
       <system value="urn:hscic:publishOrder" />
       <code value="2" />
@@ -649,7 +649,7 @@
       <type>
         <code value="code" />
       </type>
-      <fixedCode value="E8" />
+      <fixedCode value="6-8 Week Health Review" />
       <condition value="ele-1" />
       <constraint>
         <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-expression">
@@ -3803,7 +3803,7 @@
     <element>
       <path value="MessageHeader.event.code" />
       <min value="1" />
-      <fixedCode value="E8" />
+      <fixedCode value="6-8 Week Health Review" />
     </element>
     <element>
       <path value="MessageHeader.event.display" />

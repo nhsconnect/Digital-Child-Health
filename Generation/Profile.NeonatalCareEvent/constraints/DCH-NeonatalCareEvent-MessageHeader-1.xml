@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <meta>
-    <lastUpdated value="2017-03-28T14:10:31.967+01:00" />
+    <lastUpdated value="2017-05-08T14:48:35.384+01:00" />
     <tag>
       <system value="urn:hscic:publishOrder" />
       <code value="2" />
@@ -649,7 +649,7 @@
       <type>
         <code value="code" />
       </type>
-      <fixedCode value="E6" />
+      <fixedCode value="Birth: Neonatal Care" />
       <condition value="ele-1" />
       <constraint>
         <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-expression">
@@ -3666,7 +3666,7 @@
     <element>
       <path value="MessageHeader.event.code" />
       <min value="1" />
-      <fixedCode value="E6" />
+      <fixedCode value="Birth: Neonatal Care" />
     </element>
     <element>
       <path value="MessageHeader.event.display" />

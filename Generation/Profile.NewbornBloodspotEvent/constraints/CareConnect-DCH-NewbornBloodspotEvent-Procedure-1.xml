@@ -4,7 +4,7 @@
     <lastUpdated value="2017-04-03T10:20:05.713+01:00" />
     <tag>
       <system value="urn:hscic:publishOrder" />
-      <code value="8" />
+      <code value="7" />
     </tag>
   </meta>
   <url value="https://fhir.hl7.org.uk/StructureDefinition/CareConnect-DCH-NewbornBloodSpotEvent-Procedure-1" />
@@ -3612,7 +3612,7 @@
       <definition value="A code indicating why the procedure was not performed." />
       <comments value="Not all terminology uses fit this general pattern. In some cases, models should not use CodeableConcept and use Coding directly and provide their own structure for managing text, codings, translations and the relationship between elements and pre- and post-coordination." />
       <min value="0" />
-      <max value="0" />
+      <max value="1" />
       <base>
         <path value="Procedure.reasonNotPerformed" />
         <min value="0" />
@@ -11803,7 +11803,7 @@
     </element>
     <element>
       <path value="Procedure.reasonNotPerformed" />
-      <max value="0" />
+      <max value="1" />
     </element>
     <element>
       <path value="Procedure.reasonNotPerformed.coding" />
