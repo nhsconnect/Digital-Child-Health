@@ -3461,7 +3461,7 @@
       </base>
       <type>
         <code value="Reference" />
-        <profile value="https://fhir.hl7.org.uk/StructureDefinition/CareConnect-DCH-BreastfeedingStatusEvent-Encounter-1" />
+        <profile value="https://fhir.hl7.org.uk/StructureDefinition/CareConnect-DCH-ChildHealthEvent-Encounter-1" />
       </type>
       <condition value="ele-1" />
       <constraint>
@@ -3718,7 +3718,7 @@
       <max value="1" />
       <type>
         <code value="Reference" />
-        <profile value="https://fhir.hl7.org.uk/StructureDefinition/CareConnect-DCH-BreastfeedingStatusEvent-Encounter-1" />
+        <profile value="https://fhir.hl7.org.uk/StructureDefinition/CareConnect-DCH-ChildHealthEvent-Encounter-1" />
       </type>
     </element>
     <element>
