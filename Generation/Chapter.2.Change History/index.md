@@ -16,7 +16,7 @@ This initial experimental version adds FHIR profiles to support the following Di
 - Indicators Event
 - Referral Event
 - Follow Up Event
-- Newborn Bloodspot Event
+- Newborn Blood Spot Event
 - Newborn Hearing Event
 - Newborn Physical Exam Event
 - 6-8 Week Health Review Event
