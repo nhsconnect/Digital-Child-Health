@@ -2840,7 +2840,7 @@
       },
       {
         "path": "Observation.category.coding.extension",
-        "name": "Extension-Coding-SCTDescID",
+        "name": "Extension-coding-sctdescid",
         "short": "The SNOMED CT Description ID for the display",
         "definition": "Optional Extensions Element - found in all resources.",
         "comments": "There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone.",
@@ -3989,7 +3989,7 @@
       },
       {
         "path": "Observation.code.coding.extension",
-        "name": "Extension-Coding-SCTDescID",
+        "name": "Extension-coding-sctdescid",
         "short": "The SNOMED CT Description ID for the display",
         "definition": "Optional Extensions Element - found in all resources.",
         "comments": "There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone.",
@@ -6446,7 +6446,7 @@
       },
       {
         "path": "Observation.dataAbsentReason.coding.extension",
-        "name": "Extension-Coding-SCTDescID",
+        "name": "Extension-coding-sctdescid",
         "short": "The SNOMED CT Description ID for the display",
         "definition": "Optional Extensions Element - found in all resources.",
         "comments": "There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone.",
@@ -8290,7 +8290,7 @@
       },
       {
         "path": "Observation.bodySite.coding.extension",
-        "name": "Extension-Coding-SCTDescID",
+        "name": "Extension-coding-sctdescid",
         "short": "The SNOMED CT Description ID for the display",
         "definition": "Optional Extensions Element - found in all resources.",
         "comments": "There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone.",
@@ -9435,7 +9435,7 @@
       },
       {
         "path": "Observation.method.coding.extension",
-        "name": "Extension-Coding-SCTDescID",
+        "name": "Extension-coding-sctdescid",
         "short": "The SNOMED CT Description ID for the display",
         "definition": "Optional Extensions Element - found in all resources.",
         "comments": "There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone.",
@@ -11997,7 +11997,7 @@
       },
       {
         "path": "Observation.referenceRange.meaning.coding.extension",
-        "name": "Extension-Coding-SCTDescID",
+        "name": "Extension-coding-sctdescid",
         "short": "The SNOMED CT Description ID for the display",
         "definition": "Optional Extensions Element - found in all resources.",
         "comments": "There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone.",
@@ -14750,7 +14750,7 @@
       },
       {
         "path": "Observation.component.code.coding.extension",
-        "name": "Extension-Coding-SCTDescID",
+        "name": "Extension-coding-sctdescid",
         "short": "The SNOMED CT Description ID for the display",
         "definition": "Optional Extensions Element - found in all resources.",
         "comments": "There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone.",
@@ -15993,7 +15993,7 @@
       },
       {
         "path": "Observation.component.dataAbsentReason.coding.extension",
-        "name": "Extension-Coding-SCTDescID",
+        "name": "Extension-coding-sctdescid",
         "short": "The SNOMED CT Description ID for the display",
         "definition": "Optional Extensions Element - found in all resources.",
         "comments": "There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone.",
@@ -16506,7 +16506,7 @@
       },
       {
         "path": "Observation.category.coding.extension",
-        "name": "Extension-Coding-SCTDescID",
+        "name": "Extension-coding-sctdescid",
         "short": "The SNOMED CT Description ID for the display",
         "max": "1",
         "type": [
@@ -16564,7 +16564,7 @@
       },
       {
         "path": "Observation.code.coding.extension",
-        "name": "Extension-Coding-SCTDescID",
+        "name": "Extension-coding-sctdescid",
         "short": "The SNOMED CT Description ID for the display",
         "max": "1",
         "type": [
@@ -16698,7 +16698,7 @@
       },
       {
         "path": "Observation.dataAbsentReason.coding.extension",
-        "name": "Extension-Coding-SCTDescID",
+        "name": "Extension-coding-sctdescid",
         "short": "The SNOMED CT Description ID for the display",
         "max": "1",
         "type": [
@@ -16765,7 +16765,7 @@
       },
       {
         "path": "Observation.bodySite.coding.extension",
-        "name": "Extension-Coding-SCTDescID",
+        "name": "Extension-coding-sctdescid",
         "short": "The SNOMED CT Description ID for the display",
         "max": "1",
         "type": [
@@ -16824,7 +16824,7 @@
       },
       {
         "path": "Observation.method.coding.extension",
-        "name": "Extension-Coding-SCTDescID",
+        "name": "Extension-coding-sctdescid",
         "short": "The SNOMED CT Description ID for the display",
         "max": "1",
         "type": [
@@ -16892,7 +16892,7 @@
       },
       {
         "path": "Observation.referenceRange.meaning.coding.extension",
-        "name": "Extension-Coding-SCTDescID",
+        "name": "Extension-coding-sctdescid",
         "short": "The SNOMED CT Description ID for the display",
         "max": "1",
         "type": [
@@ -16972,7 +16972,7 @@
       },
       {
         "path": "Observation.component.code.coding.extension",
-        "name": "Extension-Coding-SCTDescID",
+        "name": "Extension-coding-sctdescid",
         "short": "The SNOMED CT Description ID for the display",
         "max": "1",
         "type": [
@@ -17026,7 +17026,7 @@
       },
       {
         "path": "Observation.component.dataAbsentReason.coding.extension",
-        "name": "Extension-Coding-SCTDescID",
+        "name": "Extension-coding-sctdescid",
         "short": "The SNOMED CT Description ID for the display",
         "max": "1",
         "type": [

@@ -3042,7 +3042,7 @@
       },
       {
         "path": "Procedure.category.coding.extension",
-        "name": "Extension-Coding-SCTDescID",
+        "name": "Extension-coding-sctdescid",
         "short": "The SNOMED CT Description ID for the display",
         "definition": "Optional Extensions Element - found in all resources.",
         "comments": "There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone.",
@@ -4190,7 +4190,7 @@
       },
       {
         "path": "Procedure.code.coding.extension",
-        "name": "Extension-Coding-SCTDescID",
+        "name": "Extension-coding-sctdescid",
         "short": "The SNOMED CT Description ID for the display",
         "definition": "Optional Extensions Element - found in all resources.",
         "comments": "There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone.",
@@ -5379,7 +5379,7 @@
       },
       {
         "path": "Procedure.reasonNotPerformed.coding.extension",
-        "name": "Extension-Coding-SCTDescID",
+        "name": "Extension-coding-sctdescid",
         "short": "The SNOMED CT Description ID for the display",
         "definition": "Optional Extensions Element - found in all resources.",
         "comments": "There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone.",
@@ -6523,7 +6523,7 @@
       },
       {
         "path": "Procedure.bodySite.coding.extension",
-        "name": "Extension-Coding-SCTDescID",
+        "name": "Extension-coding-sctdescid",
         "short": "The SNOMED CT Description ID for the display",
         "definition": "Optional Extensions Element - found in all resources.",
         "comments": "There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone.",
@@ -8179,7 +8179,7 @@
       },
       {
         "path": "Procedure.performer.role.coding.extension",
-        "name": "Extension-Coding-SCTDescID",
+        "name": "Extension-coding-sctdescid",
         "short": "The SNOMED CT Description ID for the display",
         "definition": "Optional Extensions Element - found in all resources.",
         "comments": "There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone.",
@@ -9878,7 +9878,7 @@
       },
       {
         "path": "Procedure.outcome.coding.extension",
-        "name": "Extension-Coding-SCTDescID",
+        "name": "Extension-coding-sctdescid",
         "short": "The SNOMED CT Description ID for the display",
         "definition": "Optional Extensions Element - found in all resources.",
         "comments": "There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone.",
@@ -11706,7 +11706,7 @@
       },
       {
         "path": "Procedure.complication.coding.extension",
-        "name": "Extension-Coding-SCTDescID",
+        "name": "Extension-coding-sctdescid",
         "short": "The SNOMED CT Description ID for the display",
         "definition": "Optional Extensions Element - found in all resources.",
         "comments": "There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone.",
@@ -12846,7 +12846,7 @@
       },
       {
         "path": "Procedure.followUp.coding.extension",
-        "name": "Extension-Coding-SCTDescID",
+        "name": "Extension-coding-sctdescid",
         "short": "The SNOMED CT Description ID for the display",
         "definition": "Optional Extensions Element - found in all resources.",
         "comments": "There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone.",
@@ -15017,7 +15017,7 @@
       },
       {
         "path": "Procedure.category.coding.extension",
-        "name": "Extension-Coding-SCTDescID",
+        "name": "Extension-coding-sctdescid",
         "short": "The SNOMED CT Description ID for the display",
         "max": "1",
         "type": [
@@ -15081,7 +15081,7 @@
       },
       {
         "path": "Procedure.code.coding.extension",
-        "name": "Extension-Coding-SCTDescID",
+        "name": "Extension-coding-sctdescid",
         "short": "The SNOMED CT Description ID for the display",
         "max": "1",
         "type": [
@@ -15142,7 +15142,7 @@
       },
       {
         "path": "Procedure.reasonNotPerformed.coding.extension",
-        "name": "Extension-Coding-SCTDescID",
+        "name": "Extension-coding-sctdescid",
         "short": "The SNOMED CT Description ID for the display",
         "max": "1",
         "type": [
@@ -15201,7 +15201,7 @@
       },
       {
         "path": "Procedure.bodySite.coding.extension",
-        "name": "Extension-Coding-SCTDescID",
+        "name": "Extension-coding-sctdescid",
         "short": "The SNOMED CT Description ID for the display",
         "max": "1",
         "type": [
@@ -15285,7 +15285,7 @@
       },
       {
         "path": "Procedure.performer.role.coding.extension",
-        "name": "Extension-Coding-SCTDescID",
+        "name": "Extension-coding-sctdescid",
         "short": "The SNOMED CT Description ID for the display",
         "max": "1",
         "type": [
@@ -15380,7 +15380,7 @@
       },
       {
         "path": "Procedure.outcome.coding.extension",
-        "name": "Extension-Coding-SCTDescID",
+        "name": "Extension-coding-sctdescid",
         "short": "The SNOMED CT Description ID for the display",
         "max": "1",
         "type": [
@@ -15471,7 +15471,7 @@
       },
       {
         "path": "Procedure.complication.coding.extension",
-        "name": "Extension-Coding-SCTDescID",
+        "name": "Extension-coding-sctdescid",
         "short": "The SNOMED CT Description ID for the display",
         "max": "1",
         "type": [
@@ -15530,7 +15530,7 @@
       },
       {
         "path": "Procedure.followUp.coding.extension",
-        "name": "Extension-Coding-SCTDescID",
+        "name": "Extension-coding-sctdescid",
         "short": "The SNOMED CT Description ID for the display",
         "max": "1",
         "type": [
