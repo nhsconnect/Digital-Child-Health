@@ -2218,7 +2218,7 @@
     </element>
     <element>
       <path value="Observation.category.coding.extension" />
-      <name value="Extension-Coding-SCTDescID" />
+      <name value="Extension-coding-sctdescid" />
       <short value="The SNOMED CT Description ID for the display" />
       <definition value="Optional Extensions Element - found in all resources." />
       <comments value="There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone." />
@@ -3122,7 +3122,7 @@
     </element>
     <element>
       <path value="Observation.code.coding.extension" />
-      <name value="Extension-Coding-SCTDescID" />
+      <name value="Extension-coding-sctdescid" />
       <short value="The SNOMED CT Description ID for the display" />
       <definition value="Optional Extensions Element - found in all resources." />
       <comments value="There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone." />
@@ -5033,7 +5033,7 @@
     </element>
     <element>
       <path value="Observation.dataAbsentReason.coding.extension" />
-      <name value="Extension-Coding-SCTDescID" />
+      <name value="Extension-coding-sctdescid" />
       <short value="The SNOMED CT Description ID for the display" />
       <definition value="Optional Extensions Element - found in all resources." />
       <comments value="There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone." />
@@ -6835,7 +6835,7 @@
     </element>
     <element>
       <path value="Observation.bodySite.coding.extension" />
-      <name value="Extension-Coding-SCTDescID" />
+      <name value="Extension-coding-sctdescid" />
       <short value="The SNOMED CT Description ID for the display" />
       <definition value="Optional Extensions Element - found in all resources." />
       <comments value="There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone." />
@@ -7735,7 +7735,7 @@
     </element>
     <element>
       <path value="Observation.method.coding.extension" />
-      <name value="Extension-Coding-SCTDescID" />
+      <name value="Extension-coding-sctdescid" />
       <short value="The SNOMED CT Description ID for the display" />
       <definition value="Optional Extensions Element - found in all resources." />
       <comments value="There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone." />
@@ -9725,7 +9725,7 @@
     </element>
     <element>
       <path value="Observation.referenceRange.meaning.coding.extension" />
-      <name value="Extension-Coding-SCTDescID" />
+      <name value="Extension-coding-sctdescid" />
       <short value="The SNOMED CT Description ID for the display" />
       <definition value="Optional Extensions Element - found in all resources." />
       <comments value="There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone." />
@@ -11863,7 +11863,7 @@
     </element>
     <element>
       <path value="Observation.component.code.coding.extension" />
-      <name value="Extension-Coding-SCTDescID" />
+      <name value="Extension-coding-sctdescid" />
       <short value="The SNOMED CT Description ID for the display" />
       <definition value="Optional Extensions Element - found in all resources." />
       <comments value="There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone." />
@@ -12847,7 +12847,7 @@
     </element>
     <element>
       <path value="Observation.component.dataAbsentReason.coding.extension" />
-      <name value="Extension-Coding-SCTDescID" />
+      <name value="Extension-coding-sctdescid" />
       <short value="The SNOMED CT Description ID for the display" />
       <definition value="Optional Extensions Element - found in all resources." />
       <comments value="There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone." />
@@ -13260,7 +13260,7 @@
     </element>
     <element>
       <path value="Observation.category.coding.extension" />
-      <name value="Extension-Coding-SCTDescID" />
+      <name value="Extension-coding-sctdescid" />
       <short value="The SNOMED CT Description ID for the display" />
       <max value="1" />
       <type>
@@ -13310,7 +13310,7 @@
     </element>
     <element>
       <path value="Observation.code.coding.extension" />
-      <name value="Extension-Coding-SCTDescID" />
+      <name value="Extension-coding-sctdescid" />
       <short value="The SNOMED CT Description ID for the display" />
       <max value="1" />
       <type>
@@ -13425,7 +13425,7 @@
     </element>
     <element>
       <path value="Observation.dataAbsentReason.coding.extension" />
-      <name value="Extension-Coding-SCTDescID" />
+      <name value="Extension-coding-sctdescid" />
       <short value="The SNOMED CT Description ID for the display" />
       <max value="1" />
       <type>
@@ -13511,7 +13511,7 @@
     </element>
     <element>
       <path value="Observation.bodySite.coding.extension" />
-      <name value="Extension-Coding-SCTDescID" />
+      <name value="Extension-coding-sctdescid" />
       <short value="The SNOMED CT Description ID for the display" />
       <max value="1" />
       <type>
@@ -13562,7 +13562,7 @@
     </element>
     <element>
       <path value="Observation.method.coding.extension" />
-      <name value="Extension-Coding-SCTDescID" />
+      <name value="Extension-coding-sctdescid" />
       <short value="The SNOMED CT Description ID for the display" />
       <max value="1" />
       <type>
@@ -13622,7 +13622,7 @@
     </element>
     <element>
       <path value="Observation.referenceRange.meaning.coding.extension" />
-      <name value="Extension-Coding-SCTDescID" />
+      <name value="Extension-coding-sctdescid" />
       <short value="The SNOMED CT Description ID for the display" />
       <max value="1" />
       <type>
@@ -13688,7 +13688,7 @@
     </element>
     <element>
       <path value="Observation.component.code.coding.extension" />
-      <name value="Extension-Coding-SCTDescID" />
+      <name value="Extension-coding-sctdescid" />
       <short value="The SNOMED CT Description ID for the display" />
       <max value="1" />
       <type>
@@ -13734,7 +13734,7 @@
     </element>
     <element>
       <path value="Observation.component.dataAbsentReason.coding.extension" />
-      <name value="Extension-Coding-SCTDescID" />
+      <name value="Extension-coding-sctdescid" />
       <short value="The SNOMED CT Description ID for the display" />
       <max value="1" />
       <type>
