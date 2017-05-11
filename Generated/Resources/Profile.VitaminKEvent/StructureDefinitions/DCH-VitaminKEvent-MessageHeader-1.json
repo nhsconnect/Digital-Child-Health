@@ -1,7 +1,7 @@
 {
   "resourceType": "StructureDefinition",
   "meta": {
-    "lastUpdated": "2017-04-03T10:26:11.378+01:00",
+    "lastUpdated": "2017-05-11T08:36:00.255+01:00",
     "tag": [
       {
         "system": "urn:hscic:publishOrder",
@@ -836,7 +836,7 @@
             "code": "code"
           }
         ],
-        "fixedCode": "E9",
+        "fixedCode": "Intervention: Vitamin K",
         "condition": [
           "ele-1"
         ],
@@ -4662,7 +4662,7 @@
           {
             "code": "Reference",
             "profile": [
-              "https://fhir.hl7.org.uk/StructureDefinition/CareConnect-DCH-VitaminKEvent-Encounter-1"
+              "https://fhir.hl7.org.uk/StructureDefinition/CareConnect-DCH-ChildHealthEvent-Encounter-1"
             ]
           }
         ],
@@ -4907,14 +4907,6 @@
         ]
       },
       {
-        "path": "MessageHeader.contained",
-        "type": [
-          {
-            "code": "Resource"
-          }
-        ]
-      },
-      {
         "path": "MessageHeader.event",
         "short": "Code for the Child Health event this message represents",
         "binding": {
@@ -4939,7 +4931,7 @@
       {
         "path": "MessageHeader.event.code",
         "min": 1,
-        "fixedCode": "E9"
+        "fixedCode": "Intervention: Vitamin K"
       },
       {
         "path": "MessageHeader.event.display",
@@ -5004,7 +4996,7 @@
           {
             "code": "Reference",
             "profile": [
-              "https://fhir.hl7.org.uk/StructureDefinition/CareConnect-DCH-VitaminKEvent-Encounter-1"
+              "https://fhir.hl7.org.uk/StructureDefinition/CareConnect-DCH-ChildHealthEvent-Encounter-1"
             ]
           }
         ]

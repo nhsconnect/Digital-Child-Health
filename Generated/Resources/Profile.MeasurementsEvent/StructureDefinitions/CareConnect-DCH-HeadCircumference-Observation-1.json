@@ -4645,7 +4645,7 @@
           {
             "code": "Reference",
             "profile": [
-              "https://fhir.hl7.org.uk/StructureDefinition/CareConnect-DCH-MeasurementsEvent-Encounter-1"
+              "https://fhir.hl7.org.uk/StructureDefinition/CareConnect-DCH-ChildHealthEvent-Encounter-1"
             ]
           }
         ],
@@ -16422,6 +16422,14 @@
         ]
       },
       {
+        "path": "Observation.contained",
+        "type": [
+          {
+            "code": "Resource"
+          }
+        ]
+      },
+      {
         "path": "Observation.identifier",
         "min": 1,
         "max": "1"
@@ -16610,7 +16618,7 @@
           {
             "code": "Reference",
             "profile": [
-              "https://fhir.hl7.org.uk/StructureDefinition/CareConnect-DCH-MeasurementsEvent-Encounter-1"
+              "https://fhir.hl7.org.uk/StructureDefinition/CareConnect-DCH-ChildHealthEvent-Encounter-1"
             ]
           }
         ]

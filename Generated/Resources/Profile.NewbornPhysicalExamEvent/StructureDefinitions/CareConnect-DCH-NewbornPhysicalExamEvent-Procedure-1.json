@@ -4623,7 +4623,7 @@
         "definition": "A code indicating why the procedure was not performed.",
         "comments": "Not all terminology uses fit this general pattern. In some cases, models should not use CodeableConcept and use Coding directly and provide their own structure for managing text, codings, translations and the relationship between elements and pre- and post-coordination.",
         "min": 0,
-        "max": "0",
+        "max": "1",
         "base": {
           "path": "Procedure.reasonNotPerformed",
           "min": 0,
@@ -8629,7 +8629,7 @@
           {
             "code": "Reference",
             "profile": [
-              "https://fhir.hl7.org.uk/StructureDefinition/CareConnect-DCH-NewbornPhysicalExamEvent-Encounter-1"
+              "https://fhir.hl7.org.uk/StructureDefinition/CareConnect-DCH-ChildHealthEvent-Encounter-1"
             ]
           }
         ],
@@ -15125,7 +15125,7 @@
       },
       {
         "path": "Procedure.reasonNotPerformed",
-        "max": "0"
+        "max": "1"
       },
       {
         "path": "Procedure.reasonNotPerformed.coding",
@@ -15336,7 +15336,7 @@
           {
             "code": "Reference",
             "profile": [
-              "https://fhir.hl7.org.uk/StructureDefinition/CareConnect-DCH-NewbornPhysicalExamEvent-Encounter-1"
+              "https://fhir.hl7.org.uk/StructureDefinition/CareConnect-DCH-ChildHealthEvent-Encounter-1"
             ]
           }
         ]

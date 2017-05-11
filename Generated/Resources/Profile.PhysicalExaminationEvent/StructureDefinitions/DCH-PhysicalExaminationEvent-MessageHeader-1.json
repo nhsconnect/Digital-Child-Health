@@ -1,7 +1,7 @@
 {
   "resourceType": "StructureDefinition",
   "meta": {
-    "lastUpdated": "2017-04-07T08:58:30.211+01:00",
+    "lastUpdated": "2017-05-08T14:48:39.899+01:00",
     "tag": [
       {
         "system": "urn:hscic:publishOrder",
@@ -836,7 +836,7 @@
             "code": "code"
           }
         ],
-        "fixedCode": "E12",
+        "fixedCode": "Physical Examination: NIPE",
         "condition": [
           "ele-1"
         ],
@@ -4662,7 +4662,7 @@
           {
             "code": "Reference",
             "profile": [
-              "https://fhir.hl7.org.uk/StructureDefinition/CareConnect-DCH-PhysicalExaminationEvent-Encounter-1"
+              "https://fhir.hl7.org.uk/StructureDefinition/CareConnect-DCH-ChildHealthEvent-Encounter-1"
             ]
           }
         ],
@@ -4931,7 +4931,7 @@
       {
         "path": "MessageHeader.event.code",
         "min": 1,
-        "fixedCode": "E12"
+        "fixedCode": "Physical Examination: NIPE"
       },
       {
         "path": "MessageHeader.event.display",
@@ -4996,7 +4996,7 @@
           {
             "code": "Reference",
             "profile": [
-              "https://fhir.hl7.org.uk/StructureDefinition/CareConnect-DCH-PhysicalExaminationEvent-Encounter-1"
+              "https://fhir.hl7.org.uk/StructureDefinition/CareConnect-DCH-ChildHealthEvent-Encounter-1"
             ]
           }
         ]

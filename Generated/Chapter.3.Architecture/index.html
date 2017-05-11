@@ -145,6 +145,7 @@
 <p>This section provides Digital Child Health implementers with the information required to build and send the Digital Child Health events.</p>
 <p><strong>Message Patterns and Message Structure</strong></p>
 <p>Digital Child Health is based on a Publish and Subscribe messaging pattern. Events are created by care providers who have provided the front line care. The events are published to a national child health hub. The national hub manages subscriptions to the published events.</p>
+<p>Events are created by care providers who have provided the front line care. The events are published to a national child health hub. The national hub manages subscriptions to the published events.</p>
 <p>Digital Child Health event message definitions are based on the <a href="https://www.hl7.org/fhir/DSTU2/messaging.html">HL7 FHIR DSTU2 1.0.1 Messaging Implementation</a> (Oct 2015) standard.</p>
 <p><strong>Events</strong></p>
 <p>The event originator will construct an event message, as outlined in this Domain Message Specification. Events will be sent over the NHS Message Exchange for Social Care and Health (MESH) to the child health hub. MESH will be used to ensure that the event message reaches the child health hub. Error processing, for example an undeliverable message, is the responsibility of the sending system. The processing of events within and beyond the child health hub is the subject of related Digital Child Health documentation.</p>

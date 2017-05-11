@@ -1,7 +1,7 @@
 {
   "resourceType": "StructureDefinition",
   "meta": {
-    "lastUpdated": "2017-03-28T14:08:55.975+01:00",
+    "lastUpdated": "2017-05-08T14:37:55.794+01:00",
     "tag": [
       {
         "system": "urn:hscic:publishOrder",
@@ -836,7 +836,7 @@
             "code": "code"
           }
         ],
-        "fixedCode": "E8",
+        "fixedCode": "6-8 Week Health Review",
         "condition": [
           "ele-1"
         ],
@@ -4662,7 +4662,7 @@
           {
             "code": "Reference",
             "profile": [
-              "https://fhir.hl7.org.uk/StructureDefinition/CareConnect-DCH-6-8WeekHealthReviewEvent-Encounter-1"
+              "https://fhir.hl7.org.uk/StructureDefinition/CareConnect-DCH-ChildHealthEvent-Encounter-1"
             ]
           }
         ],
@@ -4931,7 +4931,7 @@
       {
         "path": "MessageHeader.event.code",
         "min": 1,
-        "fixedCode": "E8"
+        "fixedCode": "6-8 Week Health Review"
       },
       {
         "path": "MessageHeader.event.display",
@@ -4996,7 +4996,7 @@
           {
             "code": "Reference",
             "profile": [
-              "https://fhir.hl7.org.uk/StructureDefinition/CareConnect-DCH-6-8WeekHealthReviewEvent-Encounter-1"
+              "https://fhir.hl7.org.uk/StructureDefinition/CareConnect-DCH-ChildHealthEvent-Encounter-1"
             ]
           }
         ]

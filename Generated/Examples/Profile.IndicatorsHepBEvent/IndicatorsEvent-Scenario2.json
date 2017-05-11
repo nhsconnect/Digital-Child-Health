@@ -1,0 +1,277 @@
+{
+  "resourceType": "Bundle",
+  "id": "506947e5-05a4-4a43-b781-8590d5874443",
+  "meta": {
+    "profile": [
+      "https://fhir.nhs.uk/StructureDefinition/dch-bundle-measurementsevent-1"
+    ]
+  },
+  "type": "message",
+  "entry": [
+    {
+      "fullUrl": "urn:uuid:64a04ff7-c168-4589-9839-f35c1b07b161",
+      "resource": {
+        "resourceType": "MessageHeader",
+        "id": "64a04ff7-c168-4589-9839-f35c1b07b161",
+        "meta": {
+          "profile": [
+            "https://fhir.nhs.uk/StructureDefinition/dch-indicatorsevent-messageheader-1"
+          ]
+        },
+        "timestamp": "2012-01-07T22:00:00+00:00",
+        "event": {
+          "system": "https://fhir.nhs.uk/dch-childhealtheventtype-1",
+          "code": "E10",
+          "display": "Indicators: BCG and Hep B"
+        },
+        "source": {
+          "endpoint": "urn:uuid:64a04ff7-c168-4589-9839-f35c1b07b161"
+        },
+        "responsible": {
+          "reference": "urn:uuid:0586eb56-2457-46de-bcd2-4f11561791b5",
+          "display": "Leeds Teaching Hospitals"
+        },
+        "data": [
+          {
+            "reference": "urn:uuid:1069501f-ee0c-4de2-92ac-8fce594fe48b"
+          }
+        ]
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:1319bc90-cc19-4f22-91c3-d0fc7eda77a7",
+      "resource": {
+        "resourceType": "Encounter",
+        "id": "1319bc90-cc19-4f22-91c3-d0fc7eda77a7",
+        "meta": {
+          "profile": [
+            "https://fhir.hl7.org.uk/StructureDefinition/CareConnect-DCH-IndicatorsEvent-Encounter-1"
+          ]
+        },
+        "identifier": [
+          {
+            "system": "https://tools.ietf.org/html/rfc4122",
+            "value": "37d4acbf-7102-49de-989c-6c20da8f421b"
+          }
+        ],
+        "status": "finished",
+        "patient": {
+          "reference": "urn:uuid:ce530a63-7183-492d-acd6-b324d0a53fad",
+          "display": "SAXTON, Sarah Marie"
+        },
+        "participant": [
+          {
+            "individual": {
+              "reference": "urn:uuid:3a60d326-f390-4cb7-adfb-f32d6842acae",
+              "display": "GOLDING, Tracy"
+            }
+          }
+        ],
+        "period": {
+          "start": "2012-01-07T20:12:00+00:00"
+        },
+        "location": [
+          {
+            "location": {
+              "reference": "urn:uuid:f4b37965-4066-415f-8736-4b730a4a957e",
+              "display": "Clarendon Wing, Leeds General Infirmary"
+            }
+          }
+        ],
+        "serviceProvider": {
+          "reference": "urn:uuid:0586eb56-2457-46de-bcd2-4f11561791b5",
+          "display": "Leeds Teaching Hospitals NHS Trust"
+        }
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:0586eb56-2457-46de-bcd2-4f11561791b5",
+      "resource": {
+        "resourceType": "Organization",
+        "id": "0586eb56-2457-46de-bcd2-4f11561791b5",
+        "meta": {
+          "profile": [
+            "https://fhir.hl7.org.uk/StructureDefinition/CareConnect-Organization-1"
+          ]
+        },
+        "identifier": [
+          {
+            "system": "https://fhir.nhs.uk/Id/ods-organization-code",
+            "value": "RR8"
+          }
+        ],
+        "name": "Leeds Teaching Hospitals NHS Trust"
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:ce530a63-7183-492d-acd6-b324d0a53fad",
+      "resource": {
+        "resourceType": "Patient",
+        "id": "ce530a63-7183-492d-acd6-b324d0a53fad",
+        "meta": {
+          "profile": [
+            "https://fhir.hl7.org.uk/StructureDefinition/CareConnect-DCH-Patient-1"
+          ]
+        },
+        "identifier": [
+          {
+            "extension": [
+              {
+                "url": "https://fhir.hl7.org.uk/StructureDefinition/Extension-CareConnect-NHSNumberVerificationStatus-1",
+                "valueCodeableConcept": {
+                  "coding": [
+                    {
+                      "system": "https://fhir.hl7.org.uk/CareConnect-NHSNumberVerificationStatus-1",
+                      "code": "01",
+                      "display": "Number present and verified"
+                    }
+                  ]
+                }
+              }
+            ],
+            "system": "https://fhir.nhs.uk/Id/nhs-number",
+            "value": "5629874536"
+          }
+        ],
+        "name": [
+          {
+            "use": "official",
+            "family": [
+              "Saxton"
+            ],
+            "given": [
+              "Sarah",
+              "Marie"
+            ]
+          }
+        ],
+        "gender": "female",
+        "_birthDate": {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/patient-birthTime",
+              "valueDateTime": "2012-01-07T20:12:00+00:00"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:f4b37965-4066-415f-8736-4b730a4a957e",
+      "resource": {
+        "resourceType": "Organization",
+        "id": "f4b37965-4066-415f-8736-4b730a4a957e",
+        "meta": {
+          "profile": [
+            "https://fhir.hl7.org.uk/StructureDefinition/CareConnect-DCH-ChildHealthEvent-Organization-1"
+          ]
+        },
+        "identifier": [
+          {
+            "system": "https://fhir.nhs.uk/Id/ods-site-code",
+            "value": "RR830"
+          }
+        ],
+        "type": {
+          "coding": [
+            {
+              "system": "https://fhir.nhs.uk/dch-typeofunit-1",
+              "code": "4",
+              "display": "In NHS hospital - delivery facilities associated with consultant/GMP/midwife ward inclusive of any combination of two of the professionals mentioned"
+            }
+          ]
+        },
+        "name": "Clarendon Wing, Leeds General Infirmary"
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:b187e23b-5e01-40a7-a68c-61b388067196",
+      "resource": {
+        "resourceType": "QuestionnaireResponse",
+        "id": "b187e23b-5e01-40a7-a68c-61b388067196",
+        "meta": {
+          "profile": [
+            "https://fhir.nhs.uk/StructureDefinition/DCH-IndicatorsEvent-QuestionnaireResponse-1"
+          ]
+        },
+        "identifier": {
+          "system": "https://tools.ietf.org/html/rfc4122",
+          "value": "c5e1c687-aca5-47e3-b42d-efc4112cd69e"
+        },
+        "status": "completed",
+        "subject": {
+          "reference": "urn:uuid:ce530a63-7183-492d-acd6-b324d0a53fad",
+          "display": "SAXTON, Sarah Marie"
+        },
+        "author": {
+          "reference": "urn:uuid:3a60d326-f390-4cb7-adfb-f32d6842acae",
+          "display": "GOLDING, Tracy"
+        },
+        "encounter": {
+          "reference": "urn:uuid:1319bc90-cc19-4f22-91c3-d0fc7eda77a7"
+        },
+        "group": {
+          "title": "Indicators",
+          "text": "Indicators for BCG and Hep B",
+          "question": [
+            {
+              "text": "An indication as to whether BCG vaccine is required",
+              "answer": [
+                {
+                  "valueBoolean": false
+                }
+              ]
+            },
+            {
+              "text": "An indication as to whether Hep B vaccine is required",
+              "answer": [
+                {
+                  "valueBoolean": true
+                }
+              ]
+            }
+          ]
+        }
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:3a60d326-f390-4cb7-adfb-f32d6842acae",
+      "resource": {
+        "resourceType": "Practitioner",
+        "id": "3a60d326-f390-4cb7-adfb-f32d6842acae",
+        "meta": {
+          "profile": [
+            "https://fhir.hl7.org.uk/StructureDefinition/CareConnect-DCH-ChildHealthEvent-Practitioner-1"
+          ]
+        },
+        "identifier": [
+          {
+            "system": "https://fhir.nhs.uk/Id/sds-role-profile-id",
+            "value": "M9999998"
+          }
+        ],
+        "name": {
+          "family": [
+            "GOLDING"
+          ],
+          "given": [
+            "Tracy"
+          ]
+        },
+        "practitionerRole": [
+          {
+            "role": {
+              "coding": [
+                {
+                  "system": "https://fhir.hl7.org.uk/CareConnect-SDSJobRoleName-1",
+                  "code": "R8016",
+                  "display": "Midwife Access Role"
+                }
+              ]
+            }
+          }
+        ]
+      }
+    }
+  ]
+}

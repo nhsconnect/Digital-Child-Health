@@ -1,7 +1,7 @@
 {
   "resourceType": "StructureDefinition",
   "meta": {
-    "lastUpdated": "2017-03-28T14:09:38.23+01:00",
+    "lastUpdated": "2017-05-08T14:48:30.803+01:00",
     "tag": [
       {
         "system": "urn:hscic:publishOrder",
@@ -836,7 +836,7 @@
             "code": "code"
           }
         ],
-        "fixedCode": "E5",
+        "fixedCode": "Breastfeeding Status: Breastfeeding Status",
         "condition": [
           "ele-1"
         ],
@@ -4479,7 +4479,7 @@
           {
             "code": "Reference",
             "profile": [
-              "https://fhir.hl7.org.uk/StructureDefinition/CareConnect-DCH-BreastfeedingStatusEvent-Encounter-1"
+              "https://fhir.hl7.org.uk/StructureDefinition/CareConnect-DCH-ChildHealthEvent-Encounter-1"
             ]
           }
         ],
@@ -4748,7 +4748,7 @@
       {
         "path": "MessageHeader.event.code",
         "min": 1,
-        "fixedCode": "E5"
+        "fixedCode": "Breastfeeding Status: Breastfeeding Status"
       },
       {
         "path": "MessageHeader.event.display",
@@ -4809,7 +4809,7 @@
           {
             "code": "Reference",
             "profile": [
-              "https://fhir.hl7.org.uk/StructureDefinition/CareConnect-DCH-BreastfeedingStatusEvent-Encounter-1"
+              "https://fhir.hl7.org.uk/StructureDefinition/CareConnect-DCH-ChildHealthEvent-Encounter-1"
             ]
           }
         ]

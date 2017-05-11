@@ -3068,6 +3068,14 @@
         "min": 1
       },
       {
+        "path": "Bundle.entry.resource",
+        "type": [
+          {
+            "code": "Resource"
+          }
+        ]
+      },
+      {
         "path": "Bundle.entry.search",
         "max": "0"
       },

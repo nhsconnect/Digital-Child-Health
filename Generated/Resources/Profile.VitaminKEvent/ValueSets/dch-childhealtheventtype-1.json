@@ -4,7 +4,7 @@
     "lastUpdated": "2016-08-03T00:00:00+01:00"
   },
   "url": "https://fhir.nhs.uk/ValueSet/dch-childhealtheventtype-1",
-  "name": "Event Type",
+  "name": "Child Health Event Type",
   "status": "active",
   "description": "The type of Child Health event.",
   "compose": {
@@ -13,83 +13,83 @@
         "system": "https://fhir.nhs.uk/dch-childhealtheventtype-1",
         "concept": [
           {
-            "code": "E1",
+            "code": "Birth: Birth Details",
             "display": "Birth: Birth Details"
           },
           {
-            "code": "E2",
+            "code": "Assessment APGAR",
             "display": "Assessment APGAR"
           },
           {
-            "code": "E3",
+            "code": "Demographics: Core",
             "display": "Demographics: Core"
           },
           {
-            "code": "E4",
+            "code": "Demographics: Related Persons",
             "display": "Demographics: Related Persons"
           },
           {
-            "code": "E5",
+            "code": "Breastfeeding Status: Breastfeeding Status",
             "display": "Breastfeeding Status: Breastfeeding Status"
           },
           {
-            "code": "E6",
+            "code": "Birth: Neonatal Care",
             "display": "Birth: Neonatal Care"
           },
           {
-            "code": "E7",
+            "code": "Birth: Discharge",
             "display": "Birth: Discharge"
           },
           {
-            "code": "E8",
+            "code": "6-8 Week Health Review",
             "display": "6-8 Week Health Review"
           },
           {
-            "code": "E9",
+            "code": "Intervention: Vitamin K",
             "display": "Intervention: Vitamin K"
           },
           {
-            "code": "E10",
+            "code": "Indicators: BCG and Hep B",
             "display": "Indicators: BCG and Hep B"
           },
           {
-            "code": "E11",
+            "code": "HCP Clinical Intervention: Newborn Physical Examination",
             "display": "HCP Clinical Intervention: Newborn Physical Examination"
           },
           {
-            "code": "E12",
+            "code": "Physical Examination: NIPE",
             "display": "Physical Examination: NIPE"
           },
           {
-            "code": "E13",
+            "code": "Referral: Referral",
             "display": "Referral: Referral"
           },
           {
-            "code": "E14",
+            "code": "Referral: Follow Up",
             "display": "Referral: Follow Up"
           },
           {
-            "code": "E15",
+            "code": "HCP Clinical Intervention: Newborn Blood Spot Screening",
             "display": "HCP Clinical Intervention: Newborn Blood Spot Screening"
           },
           {
-            "code": "E16",
+            "code": "Screening: Blood Spot",
             "display": "Screening: Blood Spot"
           },
           {
-            "code": "E17",
+            "code": "HCP Clinical Intervention: Newborn Hearing Screening",
             "display": "HCP Clinical Intervention: Newborn Hearing Screening"
           },
           {
-            "code": "E18",
+            "code": "Screening: Hearing",
             "display": "Screening: Hearing"
           },
           {
-            "code": "E19",
+            "code": "HCP Clinical Intervention: 6-8 week review",
             "display": "HCP Clinical Intervention: 6-8 week review"
           },
           {
-            "code": "E20",
+            "code": "Measurements",
             "display": "Measurements"
           }
         ]
