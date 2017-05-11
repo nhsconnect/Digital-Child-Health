@@ -14827,7 +14827,7 @@
       <definition value="The other resource that the link refers to." />
       <type>
         <code value="Reference" />
-        <profile value="https://fhir.nhs.uk/StructureDefinition/dch-relatedperson-motherandbaby-1" />
+        <profile value="https://fhir.nhs.uk/StructureDefinition/dch-motherandbaby-relatedperson-1" />
       </type>
     </element>
     <element>

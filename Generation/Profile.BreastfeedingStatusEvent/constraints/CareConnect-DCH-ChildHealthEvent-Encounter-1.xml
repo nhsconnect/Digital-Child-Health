@@ -1,13 +1,13 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <meta>
-    <lastUpdated value="2017-05-09T13:06:43.106+01:00" />
+    <lastUpdated value="2017-05-11T09:59:45.744+01:00" />
     <tag>
       <system value="urn:hscic:publishOrder" />
       <code value="3" />
     </tag>
   </meta>
-  <url value="https://fhir.hl7.org.uk/StructureDefinition/CareConnect-DCH-BreastfeedingStatusEvent-Encounter-1" />
+  <url value="https://fhir.hl7.org.uk/StructureDefinition/CareConnect-DCH-ChildHealthEvent-Encounter-1" />
   <version value="1.0.0" />
   <name value="CareConnect-DCH-ChildHealthEvent-Encounter-1" />
   <status value="draft" />
@@ -2858,9 +2858,9 @@
     </element>
     <element>
       <path value="Encounter.type.coding" />
-      <name value="childHealthEventType" />
-      <short value="The type of Child Health event" />
-      <definition value="The type of Child Health event." />
+      <name value="childHealthEncounterType" />
+      <short value="The type of Clinical Intervention/Occurrence which generated the Child Health event" />
+      <definition value="The type of Clinical Intervention/Occurrence which generated the Child Health event." />
       <comments value="Codes may be defined very casually in enumerations, or code lists, up to very formal definitions such as SNOMED CT - see the HL7 v3 Core Principles for more information.  Ordering of codings is undefined and SHALL NOT be used to infer meaning. Generally, at most only one of the coding values will be labelled as UserSelected = true." />
       <requirements value="Allows for translations and alternate encodings within a code system.  Also supports communication of the same instance to systems requiring different encodings." />
       <min value="1" />
@@ -2886,9 +2886,9 @@
       <isSummary value="true" />
       <binding>
         <strength value="required" />
-        <description value="The type of Child Health event." />
+        <description value="The type of Clinical Intervention/Occurrence which generated the Child Health event." />
         <valueSetReference>
-          <reference value="https://fhir.nhs.uk/ValueSet/dch-childhealtheventtype-1" />
+          <reference value="https://fhir.nhs.uk/ValueSet/dch-childhealthencountertype-1" />
         </valueSetReference>
       </binding>
       <mapping>
@@ -3002,7 +3002,7 @@
       <type>
         <code value="uri" />
       </type>
-      <fixedUri value="https://fhir.nhs.uk/dch-childhealtheventtype-1" />
+      <fixedUri value="https://fhir.nhs.uk/dch-childhealthencountertype-1" />
       <condition value="ele-1" />
       <constraint>
         <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-expression">
@@ -13608,23 +13608,23 @@
     </element>
     <element>
       <path value="Encounter.type.coding" />
-      <name value="childHealthEventType" />
-      <short value="The type of Child Health event" />
-      <definition value="The type of Child Health event." />
+      <name value="childHealthEncounterType" />
+      <short value="The type of Clinical Intervention/Occurrence which generated the Child Health event" />
+      <definition value="The type of Clinical Intervention/Occurrence which generated the Child Health event." />
       <min value="1" />
       <max value="1" />
       <binding>
         <strength value="required" />
-        <description value="The type of Child Health event." />
+        <description value="The type of Clinical Intervention/Occurrence which generated the Child Health event." />
         <valueSetReference>
-          <reference value="https://fhir.nhs.uk/ValueSet/dch-childhealtheventtype-1" />
+          <reference value="https://fhir.nhs.uk/ValueSet/dch-childhealthencountertype-1" />
         </valueSetReference>
       </binding>
     </element>
     <element>
       <path value="Encounter.type.coding.system" />
       <min value="1" />
-      <fixedUri value="https://fhir.nhs.uk/dch-childhealtheventtype-1" />
+      <fixedUri value="https://fhir.nhs.uk/dch-childhealthencountertype-1" />
     </element>
     <element>
       <path value="Encounter.type.coding.version" />

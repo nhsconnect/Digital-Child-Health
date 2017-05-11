@@ -7,7 +7,7 @@ This section provides Digital Child Health implementers with the information req
 
 **Message Patterns and Message Structure**
 
-The current Child Health Events Catalogue is designed to be transport agnostic; in this experimental phase the events within this Digital Child Health specification have been designed based on a Publish and Subscribe messaging pattern. 
+Digital Child Health is based on a Publish and Subscribe messaging pattern. Events are created by care providers who have provided the front line care. The events are published to a national child health hub. The national hub manages subscriptions to the published events.
 
 
 Events are created by care providers who have provided the front line care. The events are published to a national child health hub. The national hub manages subscriptions to the published events.
