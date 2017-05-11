@@ -1,11 +1,11 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <meta>
-    <lastUpdated value="2017-03-01T09:18:24.723+00:00" />
+    <lastUpdated value="2017-05-10T17:26:57.842+01:00" />
   </meta>
   <url value="https://fhir.hl7.org.uk/StructureDefinition/Extension-coding-sctdescid" />
   <version value="1.0.0" />
-  <name value="Extension-Coding-SCTDescID" />
+  <name value="Extension-coding-sctdescid" />
   <status value="active" />
   <publisher value="HL7 UK" />
   <date value="2017-02-28T14:07:09.1455913Z" />
@@ -17,12 +17,21 @@
   <abstract value="false" />
   <contextType value="resource" />
   <context value="Immunization" />
+  <context value="AllergyIntolerance" />
+  <context value="Condition" />
+  <context value="Encounter" />
+  <context value="FamilyMemberHistory" />
+  <context value="Flag" />
+  <context value="MedicationOrder" />
+  <context value="MedicationStatement" />
+  <context value="Observation" />
+  <context value="Procedure" />
   <base value="http://hl7.org/fhir/StructureDefinition/Extension" />
   <snapshot>
     <element>
       <path value="Extension" />
-      <short value="Base for all elements" />
-      <definition value="Optional Extensions Element - found in all resources." />
+      <short value="The SNOMED CT Description ID for the display" />
+      <definition value="The SNOMED CT Description ID for the display." />
       <min value="0" />
       <max value="*" />
       <base>
@@ -190,6 +199,8 @@
   <differential>
     <element>
       <path value="Extension" />
+      <short value="The SNOMED CT Description ID for the display" />
+      <definition value="The SNOMED CT Description ID for the display." />
     </element>
     <element>
       <path value="Extension.url" />
