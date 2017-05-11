@@ -1093,8 +1093,8 @@
       <definition value="Establishes the namespace in which set of possible id values is unique." />
       <comments value="see http://en.wikipedia.org/wiki/Uniform_resource_identifier" />
       <requirements value="There are many sequences of identifiers.  To perform matching, we need to know what sequence we're dealing with. The system identifies a particular sequence or set of unique identifiers." />
-      <min value="1" />
-      <max value="1" />
+      <min value="0" />
+      <max value="0" />
       <base>
         <path value="Identifier.system" />
         <min value="0" />
@@ -2034,7 +2034,7 @@
       <type>
         <code value="uri" />
       </type>
-      <fixedUri value="http://hl7.org/fhir/v3/RoleCode" />
+      <fixedUri value="http://hl7.org/fhir/ValueSet/relatedperson-relationshiptype" />
       <condition value="ele-1" />
       <constraint>
         <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-expression">
@@ -4904,7 +4904,7 @@
     </element>
     <element>
       <path value="RelatedPerson.identifier.system" />
-      <min value="1" />
+      <max value="0" />
     </element>
     <element>
       <path value="RelatedPerson.identifier.value" />
@@ -4941,7 +4941,7 @@
     <element>
       <path value="RelatedPerson.relationship.coding.system" />
       <min value="1" />
-      <fixedUri value="http://hl7.org/fhir/v3/RoleCode" />
+      <fixedUri value="http://hl7.org/fhir/ValueSet/relatedperson-relationshiptype" />
     </element>
     <element>
       <path value="RelatedPerson.relationship.coding.version" />

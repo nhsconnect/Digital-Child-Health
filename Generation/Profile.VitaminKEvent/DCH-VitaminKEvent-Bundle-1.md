@@ -1,7 +1,7 @@
 This 'DCH-VitaminKEvent-Bundle-1' Bundle resource profile is used as a container to collect a combination of the following resources, as ordered below, to fulfill the information requirements of a Vitamin K Event:
 
 - [DCH-VitaminKEvent-MessageHeader-1]
-- [CareConnect-DCH-VitaminKEvent-Encounter-1]
+- [CareConnect-DCH-ChildHealthEvent-Encounter-1]
 - [CareConnect-Organization-1]
 - [CareConnect-DCH-Patient-1]
 - [CareConnect-DCH-VitaminKEvent-Procedure-1]
@@ -20,7 +20,7 @@ The Child Health Event data items are fulfilled by elements within the FHIR reso
 |--------------------|----------------------------------------|
 | Administered Indicator               | [CareConnect-DCH-VitaminKEvent-Procedure-1]    |
 | Consent Status     | [DCH-VitaminKEvent-ProcedureRequest-1]         |
-| Date               | [CareConnect-DCH-VitaminKEvent-Encounter-1]    |
+| Date               | [CareConnect-DCH-ChildHealthEvent-Encounter-1]    |
 | Route               | [DCH-MedicationAdministration-1]    |
 | Dose               | tbc    |
 | Site Code          | [CareConnect-DCH-ChildHealthEvent-Organization-1] |
@@ -36,7 +36,7 @@ The Child Health Event data items are fulfilled by elements within the FHIR reso
                                                                                                    
 
 [DCH-VitaminKEvent-MessageHeader-1]:dch-vitaminkevent-messageheader-1.html
-[CareConnect-DCH-VitaminKEvent-Encounter-1]:careconnect-dch-vitaminkevent-encounter-1.html
+[CareConnect-DCH-ChildHealthEvent-Encounter-1]:careconnect-dch-childhealthevent-encounter-1.html
 [CareConnect-DCH-Patient-1]:careconnect-dch-patient-1.html
 [CareConnect-Organization-1]:careconnect-organization-1.html 
 [CareConnect-DCH-ChildHealthEvent-Organization-1]:careconnect-dch-childhealthevent-organization-1.html

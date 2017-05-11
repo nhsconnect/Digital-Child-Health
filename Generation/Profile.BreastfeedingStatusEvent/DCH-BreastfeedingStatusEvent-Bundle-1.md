@@ -1,7 +1,7 @@
 This 'DCH-BreastfeedingStatusEvent-Bundle-1' Bundle resource profile is used as a container to collect a combination of the following resources, as ordered below, to fulfill the information requirements of a Breastfeeding Status Event:
 
 - [DCH-BreastfeedingStatusEvent-MessageHeader-1]
-- [CareConnect-DCH-BreastfeedingStatusEvent-Encounter-1]
+- [CareConnect-DCH-ChildHealthEvent-Encounter-1]
 - [CareConnect-Organization-1]
 - [CareConnect-DCH-Baby-Patient-1]
 - [CareConnect-DCH-FirstMilkFeed-Observation-1] 
@@ -28,7 +28,7 @@ The Child Health Event data items are fulfilled by elements within the FHIR reso
                                                                                                    
 
 [DCH-BreastfeedingStatusEvent-MessageHeader-1]:dch-breastfeedingstatusevent-messageheader-1.html
-[DCH-Encounter-BreastfeedingStatusEvent-1]:careconnect-dch-breastfeedingstatusevent-encounter-1.html
+[CareConnect-DCH-ChildHealthEvent-Encounter-1]:careconnect-dch-childhealthevent-encounter-1.html
 [CareConnect-Organization-1]:careconnect-organization-1.html
 [CareConnect-DCH-Baby-Patient-1]:careconnect-dch-baby-patient-1.html
 [CareConnect-DCH-FirstMilkFeed-Observation-1]:careconnect-dch-firstmilkfeed-observation-1.html 

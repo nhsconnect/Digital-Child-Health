@@ -1,0 +1,1 @@
+The encounter resource represents an encounter between a care professional and the patient (or patient's record), with further constraints applied to represent a Child Health Event during which a care professional makes a Referral Request for a follow up. 

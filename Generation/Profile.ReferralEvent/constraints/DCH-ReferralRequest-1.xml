@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <meta>
-    <lastUpdated value="2017-03-31T11:54:33.055+01:00" />
+    <lastUpdated value="2017-05-11T08:51:55.958+01:00" />
     <tag>
       <system value="urn:hscic:publishOrder" />
       <code value="8" />
@@ -3587,7 +3587,7 @@
       </base>
       <type>
         <code value="Reference" />
-        <profile value="https://fhir.hl7.org.uk/StructureDefinition/CareConnect-DCH-ReferralEvent-Encounter-1" />
+        <profile value="https://fhir.hl7.org.uk/StructureDefinition/CareConnect-DCH-ChildHealthEvent-Encounter-1" />
       </type>
       <condition value="ele-1" />
       <constraint>
@@ -5249,12 +5249,6 @@
       <path value="ReferralRequest" />
     </element>
     <element>
-      <path value="ReferralRequest.contained" />
-      <type>
-        <code value="Resource" />
-      </type>
-    </element>
-    <element>
       <path value="ReferralRequest.identifier" />
       <min value="1" />
       <max value="1" />
@@ -5359,7 +5353,7 @@
       <min value="1" />
       <type>
         <code value="Reference" />
-        <profile value="https://fhir.hl7.org.uk/StructureDefinition/CareConnect-DCH-ReferralEvent-Encounter-1" />
+        <profile value="https://fhir.hl7.org.uk/StructureDefinition/CareConnect-DCH-ChildHealthEvent-Encounter-1" />
       </type>
     </element>
     <element>
@@ -5412,10 +5406,6 @@
     <element>
       <path value="ReferralRequest.supportingInformation" />
       <max value="0" />
-      <type>
-        <code value="Reference" />
-        <profile value="http://hl7.org/fhir/StructureDefinition/Resource" />
-      </type>
     </element>
     <element>
       <path value="ReferralRequest.fulfillmentTime" />

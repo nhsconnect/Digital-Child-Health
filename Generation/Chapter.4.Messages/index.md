@@ -8,7 +8,8 @@ The FHIR resource profiles within this DMS have been created to support the Chil
 - **[Profile.NeonatalCareEvent]** - FHIR resource profiles combined to support a Neonatal Care Event message.
 - **[Profile.BirthDischargeEvent]** - FHIR resource profiles combined to support a Birth Discharge Event message.
 - **[Profile.MeasurementsEvent]** - FHIR resource profiles combined to support a Measurements Event message.
-- **[Profile.IndicatorsEvent]** - FHIR resource profiles combined to support an Indicators Event message.
+- **[Profile.IndicatorsBCGEvent]** - FHIR resource profiles combined to support an Indicators BCG Event message.
+- **[Profile.IndicatorsHepBEvent]** - FHIR resource profiles combined to support an Indicators Hep B Event message.
 - **[Profile.ReferralEvent]** - FHIR resource profiles combined to support a Referral Event message.
 - **[Profile.FollowUpEvent]** - FHIR resource profiles combined to support a Follow Up Event message.
 - **[Profile.NewbornBloodSpotEvent]** - FHIR resource profiles combined to support a Newborn Blood Spot Event message.
@@ -33,7 +34,8 @@ The various downloads (including Schema files) and reference implementations are
 [Profile.ReferralEvent]: ../Profile.ReferralEvent/Profile.ReferralEvent.html
 [Profile.FollowUpEvent]: ../Profile.FollowUpEvent/Profile.FollowUpEvent.html
 [Profile.MeasurementsEvent]: ../Profile.MeasurementsEvent/Profile.MeasurementsEvent.html
-[Profile.IndicatorsEvent]: ../Profile.IndicatorsEvent/Profile.IndicatorsEvent.html
+[Profile.IndicatorsBCGEvent]: ../Profile.IndicatorsBCGEvent/Profile.IndicatorsBCGEvent.html
+[Profile.IndicatorsHepBEvent]: ../Profile.IndicatorsHepBEvent/Profile.IndicatorsHepBEvent.html
 [Profile.NewbornBloodSpotEvent]: ../Profile.NewbornBloodSpotEvent/Profile.NewbornBloodSpotEvent.html
 [Profile.NewbornHearingEvent]: ../Profile.NewbornHearingEvent/Profile.NewbornHearingEvent.html
 [Profile.NewbornPhysicalExamEvent]: ../Profile.NewbornPhysicalExamEvent/Profile.NewbornPhysicalExamEvent.html

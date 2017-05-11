@@ -4,90 +4,90 @@
 		<lastUpdated value="2016-08-03T00:00:00+01:00"/>
 	</meta>
 	<url value="https://fhir.nhs.uk/ValueSet/dch-childhealtheventtype-1"/>
-	<name value="Event Type"/>
+	<name value="Child Health Event Type"/>
 	<status value="active"/>
 	<description value="The type of Child Health event."/>
 	<compose>
 		<include>
 			<system value="https://fhir.nhs.uk/dch-childhealtheventtype-1"/>
 			<concept>
-				<code value="E1"/>
+				<code value="Birth: Birth Details"/>
 				<display value="Birth: Birth Details"/>
 			</concept>
 			<concept>
-				<code value="E2"/>
+				<code value="Assessment APGAR"/>
 				<display value="Assessment APGAR"/>
 			</concept>
 			<concept>
-				<code value="E3"/>
+				<code value="Demographics: Core"/>
 				<display value="Demographics: Core"/>
 			</concept>
 			<concept>
-				<code value="E4"/>
+				<code value="Demographics: Related Persons"/>
 				<display value="Demographics: Related Persons"/>
 			</concept>
 			<concept>
-				<code value="E5"/>
+				<code value="Breastfeeding Status: Breastfeeding Status"/>
 				<display value="Breastfeeding Status: Breastfeeding Status"/>
 			</concept>
 			<concept>
-				<code value="E6"/>
+				<code value="Birth: Neonatal Care"/>
 				<display value="Birth: Neonatal Care"/>
 			</concept>
 			<concept>
-				<code value="E7"/>
+				<code value="Birth: Discharge"/>
 				<display value="Birth: Discharge"/>
 			</concept>
 			<concept>
-				<code value="E8"/>
+				<code value="6-8 Week Health Review"/>
 				<display value="6-8 Week Health Review"/>
 			</concept>
 			<concept>
-				<code value="E9"/>
+				<code value="Intervention: Vitamin K"/>
 				<display value="Intervention: Vitamin K"/>
 			</concept>
 			<concept>
-				<code value="E10"/>
+				<code value="Indicators: BCG and Hep B"/>
 				<display value="Indicators: BCG and Hep B"/>
 			</concept>
 			<concept>
-				<code value="E11"/>
+				<code value="HCP Clinical Intervention: Newborn Physical Examination"/>
 				<display value="HCP Clinical Intervention: Newborn Physical Examination"/>
 			</concept>
 			<concept>
-				<code value="E12"/>
+				<code value="Physical Examination: NIPE"/>
 				<display value="Physical Examination: NIPE"/>
 			</concept>
 			<concept>
-				<code value="E13"/>
+				<code value="Referral: Referral"/>
 				<display value="Referral: Referral"/>
 			</concept>
 			<concept>
-				<code value="E14"/>
+				<code value="Referral: Follow Up"/>
 				<display value="Referral: Follow Up"/>
 			</concept>
 			<concept>
-				<code value="E15"/>
+				<code value="HCP Clinical Intervention: Newborn Blood Spot Screening"/>
 				<display value="HCP Clinical Intervention: Newborn Blood Spot Screening"/>
 			</concept>
 			<concept>
-				<code value="E16"/>
+				<code value="Screening: Blood Spot"/>
 				<display value="Screening: Blood Spot"/>
 			</concept>
 			<concept>
-				<code value="E17"/>
+				<code value="HCP Clinical Intervention: Newborn Hearing Screening"/>
 				<display value="HCP Clinical Intervention: Newborn Hearing Screening"/>
 			</concept>
 			<concept>
-				<code value="E18"/>
+				<code value="Screening: Hearing"/>
 				<display value="Screening: Hearing"/>
 			</concept>
 			<concept>
-				<code value="E19"/>
+				<code value="HCP Clinical Intervention: 6-8 week review"/>
 				<display value="HCP Clinical Intervention: 6-8 week review"/>
 			</concept>
 			<concept>
-				<code value="E20"/>
+				<code value="Measurements"/>
 				<display value="Measurements"/>
 			</concept>
 		</include>

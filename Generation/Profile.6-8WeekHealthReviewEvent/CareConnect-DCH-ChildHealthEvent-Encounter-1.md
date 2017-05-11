@@ -1,0 +1,1 @@
+The encounter resource represents an encounter between a care professional and the patient (or patient's record), with further constraints applied to represent a Child Health Event where a 6-8 week health review takes place.

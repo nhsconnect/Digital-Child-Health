@@ -2327,6 +2327,12 @@
       <min value="1" />
     </element>
     <element>
+      <path value="Bundle.entry.resource" />
+      <type>
+        <code value="Resource" />
+      </type>
+    </element>
+    <element>
       <path value="Bundle.entry.search" />
       <max value="0" />
     </element>

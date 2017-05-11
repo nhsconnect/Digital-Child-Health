@@ -1,1 +1,0 @@
-This QuestionnaireResponse resource has been constrained to represent the indicators for BCG and Hep B vaccine requirements.

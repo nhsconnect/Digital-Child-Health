@@ -3633,7 +3633,7 @@
       </base>
       <type>
         <code value="Reference" />
-        <profile value="https://fhir.hl7.org.uk/StructureDefinition/CareConnect-DCH-MeasurementsEvent-Encounter-1" />
+        <profile value="https://fhir.hl7.org.uk/StructureDefinition/CareConnect-DCH-ChildHealthEvent-Encounter-1" />
       </type>
       <condition value="ele-1" />
       <constraint>
@@ -12837,6 +12837,12 @@
       </constraint>
     </element>
     <element>
+      <path value="Observation.contained" />
+      <type>
+        <code value="Resource" />
+      </type>
+    </element>
+    <element>
       <path value="Observation.identifier" />
       <min value="1" />
       <max value="1" />
@@ -12995,7 +13001,7 @@
       <min value="1" />
       <type>
         <code value="Reference" />
-        <profile value="https://fhir.hl7.org.uk/StructureDefinition/CareConnect-DCH-MeasurementsEvent-Encounter-1" />
+        <profile value="https://fhir.hl7.org.uk/StructureDefinition/CareConnect-DCH-ChildHealthEvent-Encounter-1" />
       </type>
     </element>
     <element>
