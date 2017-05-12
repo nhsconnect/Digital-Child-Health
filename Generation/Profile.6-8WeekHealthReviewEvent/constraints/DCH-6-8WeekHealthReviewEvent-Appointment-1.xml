@@ -7,7 +7,7 @@
       <code value="7" />
     </tag>
   </meta>
-  <url value="https://fhir.nhs.uk/StructureDefinition/dch-6-8weekhealthreviewevent-appointment-1" />
+  <url value="https://fhir.nhs.uk/StructureDefinition/DCH-6-8WeekHealthReviewEvent-Appointment-1" />
   <name value="DCH-6-8WeekHealthReviewEvent-Appointment-1" />
   <status value="draft" />
   <publisher value="NHS Digital" />

@@ -20,7 +20,7 @@
   <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm">
     <valueInteger value="3" />
   </extension>
-  <url value="https://fhir.nhs.uk/StructureDefinition/dch-birthdischargeevent-bundle-1" />
+  <url value="https://fhir.nhs.uk/StructureDefinition/DCH-BirthDischargeEvent-Bundle-1" />
   <version value="1.0.0" />
   <name value="DCH-BirthDischargeEvent-Bundle-1" />
   <status value="draft" />

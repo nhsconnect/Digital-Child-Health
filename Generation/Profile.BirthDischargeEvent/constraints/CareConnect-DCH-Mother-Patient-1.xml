@@ -14139,7 +14139,7 @@
       </base>
       <type>
         <code value="Reference" />
-        <profile value="https://fhir.nhs.uk/StructureDefinition/dch-motherandbaby-relatedperson-1" />
+        <profile value="https://fhir.nhs.uk/StructureDefinition/DCH-MotherAndBaby-RelatedPerson-1" />
       </type>
       <condition value="ele-1" />
       <constraint>
@@ -14827,7 +14827,7 @@
       <definition value="The other resource that the link refers to." />
       <type>
         <code value="Reference" />
-        <profile value="https://fhir.nhs.uk/StructureDefinition/dch-motherandbaby-relatedperson-1" />
+        <profile value="https://fhir.nhs.uk/StructureDefinition/DCH-MotherAndBaby-RelatedPerson-1" />
       </type>
     </element>
     <element>

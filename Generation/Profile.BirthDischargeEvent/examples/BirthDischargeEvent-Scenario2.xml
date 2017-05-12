@@ -3,7 +3,7 @@
 <Bundle xmlns="http://hl7.org/fhir" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://hl7.org/fhir ../../Schemas/bundle.xsd">
 	<id value="e46ff4df-52d0-4a27-8a9c-bf3009c66d21"/>
 	<meta>
-		<profile value="https://fhir.nhs.uk/StructureDefinition/dch-birthdischargeevent-bundle-1"/>
+		<profile value="https://fhir.nhs.uk/StructureDefinition/DCH-BirthDischargeEvent-Bundle-1"/>
 	</meta>
 	<type value="message"/>
 	<entry>
@@ -12,7 +12,7 @@
 			<MessageHeader>
 				<id value="efabfa0e-b1c3-41ef-80ca-38be3b4606e1"/>
 				<meta>
-					<profile value="https://fhir.nhs.uk/StructureDefinition/dch-birthdischargeevent-messageheader-1"/>
+					<profile value="https://fhir.nhs.uk/StructureDefinition/DCH-BirthDischargeEvent-MessageHeader-1"/>
 				</meta>
 				<timestamp value="2012-01-10T12:00:00+00:00"/>
 				<event>
@@ -291,9 +291,9 @@
 			<RelatedPerson>
 				<id value="62e57ed7-abfc-4012-8710-afd368719998"/>
 				<meta>
-					<profile value="https://fhir.nhs.uk/StructureDefinition/dch-motherandbaby-relatedperson-1"/>
+					<profile value="https://fhir.nhs.uk/StructureDefinition/DCH-MotherAndBaby-RelatedPerson-1"/>
 				</meta>
-				<extension url="https://fhir.nhs.uk/StructureDefinition/extension-dch-referencepatientmother-1">
+				<extension url="https://fhir.nhs.uk/StructureDefinition/Extension-DCH-ReferencePatientMother-1">
 					<valueReference>
 						<reference value="urn:uuid:0ebb0f55-69e0-417b-b9b2-ec662d997f4d"/>
 						<display value="SAXTON, Sophie"/>

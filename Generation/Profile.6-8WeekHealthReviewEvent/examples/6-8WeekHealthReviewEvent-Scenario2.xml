@@ -3,7 +3,7 @@
 <Bundle xmlns="http://hl7.org/fhir" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://hl7.org/fhir ../../Schemas/bundle.xsd">
 	<id value="9850d168-2721-4c34-8bc5-58411d7cbdbf"/>
 	<meta>
-		<profile value="https://fhir.nhs.uk/StructureDefinition/dch-6-8weekhealthreviewevent-bundle-1"/>
+		<profile value="https://fhir.nhs.uk/StructureDefinition/DCH-6-8WeekHealthReviewEvent-Bundle-1"/>
 	</meta>
 	<type value="message"/>
 	<entry>
@@ -12,7 +12,7 @@
 			<MessageHeader>
 				<id value="309fa9b2-a511-42e7-8531-ec30a9b10ccc"/>
 				<meta>
-					<profile value="https://fhir.nhs.uk/StructureDefinition/dch-6-8weekhealthreviewevent-messageheader-1"/>
+					<profile value="https://fhir.nhs.uk/StructureDefinition/DCH-6-8WeekHealthReviewEvent-MessageHeader-1"/>
 				</meta>
 				<timestamp value="2012-02-24T14:00:00+00:00"/>
 				<event>
@@ -178,7 +178,7 @@
 			<ProcedureRequest>
 				<id value="53ae7902-f902-4b9d-a2f8-845610edfd1c"/>
 				<meta>
-					<profile value="https://fhir.nhs.uk/StructureDefinition/dch-6-8weekhealthreviewevent-procedurerequest-1"/>
+					<profile value="https://fhir.nhs.uk/StructureDefinition/DCH-6-8WeekHealthReviewEvent-ProcedureRequest-1"/>
 				</meta>
 				<extension url="https://fhir.nhs.uk/StructureDefinition/Extension-DCH-ConsentStatus-1">
 					<valueCodeableConcept>
@@ -213,7 +213,7 @@
 			<Appointment>
 				<id value="547891f6-e871-4cbf-a8aa-6c03d8da11c3"/>
 				<meta>
-					<profile value="https://fhir.nhs.uk/StructureDefinition/dch-6-8weekhealthreviewevent-appointment-1"/>
+					<profile value="https://fhir.nhs.uk/StructureDefinition/DCH-6-8WeekHealthReviewEvent-Appointment-1"/>
 				</meta>
 				<identifier>
 					<system value="https://tools.ietf.org/html/rfc4122"/>

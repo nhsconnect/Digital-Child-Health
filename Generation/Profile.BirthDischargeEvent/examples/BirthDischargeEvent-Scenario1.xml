@@ -2,7 +2,7 @@
 <Bundle xmlns="http://hl7.org/fhir" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://hl7.org/fhir ../../Schemas/bundle.xsd">
 	<id value="bfb75b10-34fb-48a5-94f2-46ed3732729b"/>
 	<meta>
-		<profile value="https://fhir.nhs.uk/StructureDefinition/dch-birthdischargeevent-bundle-1"/>
+		<profile value="https://fhir.nhs.uk/StructureDefinition/DCH-BirthDischargeEvent-Bundle-1"/>
 	</meta>
 	<type value="message"/>
 	<entry>
@@ -11,7 +11,7 @@
 			<MessageHeader>
 				<id value="4695922c-e5ec-433c-a989-00d5e8202d78"/>
 				<meta>
-					<profile value="https://fhir.nhs.uk/StructureDefinition/dch-birthdischargeevent-messageheader-1"/>
+					<profile value="https://fhir.nhs.uk/StructureDefinition/DCH-BirthDischargeEvent-MessageHeader-1"/>
 				</meta>
 				<timestamp value="2012-01-04T16:15:00+00:00"/>
 				<event>
@@ -290,10 +290,12 @@
 			<RelatedPerson>
 				<id value="50413d52-e461-4887-8051-3466ee373d01"/>
 				<meta>
-					<profile value="https://fhir.nhs.uk/StructureDefinition/dch-motherandbaby-relatedperson-1"/>
+					<profile value="https://fhir.nhs.uk/StructureDefinition/DCH-MotherAndBaby-RelatedPerson-1"/>
 				</meta>
-				<extension url=" https://fhir.nhs.uk/StructureDefinition/extension-dch-referencepatientmother-1">
-					<valueReference id="2560c363-7b83-4c60-837f-4322e9129fd1"/>
+				<extension url=" https://fhir.nhs.uk/StructureDefinition/Extension-DCH-ReferencePatientMother-1">
+					<valueReference>
+						<reference value="2560c363-7b83-4c60-837f-4322e9129fd1"/>
+					</valueReference>
 				</extension>
 				<identifier>
 					<system value="urn:ietf:rfc:3986"/>

@@ -2,7 +2,7 @@
 <Bundle xmlns="http://hl7.org/fhir" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://hl7.org/fhir ../../Schemas/bundle.xsd">
 	<id value="98eca5aa-21a7-466d-86a3-bdd395c13ec5"/>
 	<meta>
-		<profile value="https://fhir.nhs.uk/StructureDefinition/dch-birthdetailsevent-bundle-1"/>
+		<profile value="https://fhir.nhs.uk/StructureDefinition/DCH-BirthDetailsEvent-Bundle-1"/>
 	</meta>
 	<type value="message"/>
 	<entry>
@@ -11,13 +11,13 @@
 			<MessageHeader>
 				<id value="4ff4bc97-bea5-4b4c-b0e4-92a24000d640"/>
 				<meta>
-					<profile value="https://fhir.nhs.uk/StructureDefinition/dch-birthdetailsevent-messageheader-1"/>
+					<profile value="https://fhir.nhs.uk/StructureDefinition/DCH-BirthDetailsEvent-MessageHeader-1"/>
 				</meta>
 				<timestamp value="2012-01-03T10:00:00+00:00"/>
 				<event>
 					<system value="https://fhir.nhs.uk/dch-childhealtheventtype-1"/>
-					<code value="Birth Details"/>
-					<display value="Birth Details"/>
+					<code value="Birth: Birth Details"/>
+					<display value="Birth: Birth Details"/>
 				</event>
 				<source>
 					<endpoint value="urn:nhs-uk:addressing:ods:EM396"/>
@@ -328,10 +328,12 @@
 			<RelatedPerson>
 				<id value="217d461f-9804-49e4-ba36-b17299714bd4"/>
 				<meta>
-					<profile value="https://fhir.nhs.uk/StructureDefinition/dch-motherandbaby-relatedperson-1"/>
+					<profile value="https://fhir.nhs.uk/StructureDefinition/DCH-MotherAndBaby-RelatedPerson-1"/>
 				</meta>
-				<extension url=" https://fhir.nhs.uk/StructureDefinition/extension-dch-referencepatientmother-1">
-					<valueReference id="de77f723-668a-4f63-8aa6-04e7f9996a1a"/>
+				<extension url=" https://fhir.nhs.uk/StructureDefinition/Extension-DCH-ReferencePatientMother-1">
+					<valueReference>
+						<reference value="de77f723-668a-4f63-8aa6-04e7f9996a1a"/>
+					</valueReference>
 				</extension>
 				<identifier>
 					<system value="urn:ietf:rfc:3986"/>

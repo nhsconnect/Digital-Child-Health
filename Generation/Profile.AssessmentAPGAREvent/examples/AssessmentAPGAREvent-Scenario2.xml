@@ -3,7 +3,7 @@
 <Bundle xmlns="http://hl7.org/fhir" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://hl7.org/fhir ../../Schemas/bundle.xsd">
 	<id value="d2282c1e-a069-472b-8984-d746b8056f8b"/>
 	<meta>
-		<profile value="https://fhir.nhs.uk/StructureDefinition/dch-assessmentapgarevent-bundle-1"/>
+		<profile value="https://fhir.nhs.uk/StructureDefinition/DCH-AssessmentAPGAREvent-Bundle-1"/>
 	</meta>
 	<type value="message"/>
 	<entry>
@@ -12,7 +12,7 @@
 			<MessageHeader>
 				<id value="4059ea20-f2c6-4a64-a82e-cb1cd33717ce"/>
 				<meta>
-					<profile value="https://fhir.nhs.uk/StructureDefinition/dch-assessmentapgarevent-messageheader-1"/>
+					<profile value="https://fhir.nhs.uk/StructureDefinition/DCH-AssessmentAPGAREvent-MessageHeader-1"/>
 				</meta>
 				<timestamp value="2012-01-07T22:00:00+00:00"/>
 				<event>

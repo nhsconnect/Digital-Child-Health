@@ -2,7 +2,7 @@
 <Bundle xmlns="http://hl7.org/fhir" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://hl7.org/fhir ../../Schemas/bundle.xsd">
 	<id value="2b34bfd7-422e-4ce8-bc38-c45089743e45"/>
 	<meta>
-		<profile value="https://fhir.nhs.uk/StructureDefinition/dch-assessmentapgarevent-bundle-1"/>
+		<profile value="https://fhir.nhs.uk/StructureDefinition/DCH-AssessmentAPGAREvent-Bundle-1"/>
 	</meta>
 	<type value="message"/>
 	<entry>
@@ -11,7 +11,7 @@
 			<MessageHeader>
 				<id value="941c9484-30c7-4ab9-8ec4-28422dbd745a"/>
 				<meta>
-					<profile value="https://fhir.nhs.uk/StructureDefinition/dch-assessmentapgarevent-messageheader-1"/>
+					<profile value="https://fhir.nhs.uk/StructureDefinition/DCH-AssessmentAPGAREvent-MessageHeader-1"/>
 				</meta>
 				<timestamp value="2012-01-03T10:00:00+00:00"/>
 				<event>
@@ -246,6 +246,7 @@
 					<coding>
 						<system value="https://fhir.nhs.uk/dch-typeofunit-1"/>
 						<code value="2"/>
+						<display value="In NHS hospital - delivery facilities associated with consultant ward "/>
 					</coding>
 				</type>
 				<name value="LEEDS GENERAL INFIRMARY"/>

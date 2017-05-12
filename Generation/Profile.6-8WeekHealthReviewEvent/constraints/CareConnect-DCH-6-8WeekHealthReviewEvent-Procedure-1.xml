@@ -10345,7 +10345,7 @@
       </base>
       <type>
         <code value="Reference" />
-        <profile value="https://fhir.nhs.uk/StructureDefinition/dch-6-8weekhealthreviewevent-procedurerequest-1" />
+        <profile value="https://fhir.nhs.uk/StructureDefinition/DCH-6-8WeekHealthReviewEvent-ProcedureRequest-1" />
       </type>
       <condition value="ele-1" />
       <constraint>
@@ -12186,7 +12186,7 @@
       <min value="1" />
       <type>
         <code value="Reference" />
-        <profile value="https://fhir.nhs.uk/StructureDefinition/dch-6-8weekhealthreviewevent-procedurerequest-1" />
+        <profile value="https://fhir.nhs.uk/StructureDefinition/DCH-6-8WeekHealthReviewEvent-ProcedureRequest-1" />
       </type>
     </element>
     <element>

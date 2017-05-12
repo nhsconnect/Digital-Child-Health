@@ -10,7 +10,7 @@
   <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm">
     <valueInteger value="0" />
   </extension>
-  <url value="https://fhir.nhs.uk/StructureDefinition/dch-motherandbaby-relatedperson-1" />
+  <url value="https://fhir.nhs.uk/StructureDefinition/DCH-MotherAndBaby-RelatedPerson-1" />
   <version value="1.0.0" />
   <name value="DCH-MotherAndBaby-RelatedPerson-1" />
   <status value="draft" />
@@ -350,7 +350,7 @@
       </base>
       <type>
         <code value="Extension" />
-        <profile value="https://fhir.nhs.uk/StructureDefinition/extension-dch-referencepatientmother-1" />
+        <profile value="https://fhir.nhs.uk/StructureDefinition/Extension-DCH-ReferencePatientMother-1" />
       </type>
       <condition value="ele-1" />
       <constraint>
@@ -4886,7 +4886,7 @@
       <max value="1" />
       <type>
         <code value="Extension" />
-        <profile value="https://fhir.nhs.uk/StructureDefinition/extension-dch-referencepatientmother-1" />
+        <profile value="https://fhir.nhs.uk/StructureDefinition/Extension-DCH-ReferencePatientMother-1" />
       </type>
     </element>
     <element>
