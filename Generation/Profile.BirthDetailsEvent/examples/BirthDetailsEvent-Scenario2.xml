@@ -46,6 +46,13 @@
 					<value value="94ff5d3f-446f-4ff1-a8fb-a9f93a28404c"/>
 				</identifier>
 				<status value="finished"/>
+				<type>
+					<coding>
+						<system value="https://fhir.nhs.uk/dch-childhealthencountertype-1"/>
+						<code value="Birth"/>
+						<display value="Birth"/>
+					</coding>
+				</type>
 				<patient>
 					<reference value="urn:uuid:7368c5fe-bbb4-4e9c-a585-234e06b84e82"/>
 					<display value="SAXTON, Sarah Marie"/>
@@ -482,7 +489,7 @@
 				<meta>
 					<profile value="https://fhir.hl7.org.uk/StructureDefinition/CareConnect-DCH-ChildHealthEvent-Practitioner-1"/>
 				</meta>
-					<identifier>
+				<identifier>
 					<system value="https://fhir.nhs.uk/Id/sds-role-profile-id"/>
 					<value value="M9999998"/>
 				</identifier>

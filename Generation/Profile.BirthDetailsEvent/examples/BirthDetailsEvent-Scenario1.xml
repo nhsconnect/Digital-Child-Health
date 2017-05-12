@@ -16,7 +16,7 @@
 				<timestamp value="2012-01-03T10:00:00+00:00"/>
 				<event>
 					<system value="https://fhir.nhs.uk/dch-childhealtheventtype-1"/>
-					<code value="E1"/>
+					<code value="Birth Details"/>
 					<display value="Birth Details"/>
 				</event>
 				<source>
@@ -45,6 +45,13 @@
 					<value value="c638c868-e866-4af1-9197-f602f286ce82"/>
 				</identifier>
 				<status value="finished"/>
+				<type>
+					<coding>
+						<system value="https://fhir.nhs.uk/dch-childhealthencountertype-1"/>
+						<code value="Birth"/>
+						<display value="Birth"/>
+					</coding>
+				</type>
 				<patient>
 					<reference value="18167cd3-7f20-4b9a-9025-527bf64dbdc0"/>
 					<display value="LITTLE, Jonny"/>
@@ -213,6 +220,7 @@
 					<coding>
 						<system value="https://fhir.nhs.uk/dch-typeofunit-1"/>
 						<code value="2"/>
+						<display value="In NHS hospital - delivery facilities associated with consultant ward "/>
 					</coding>
 				</type>
 				<name value="LEEDS GENERAL INFIRMARY"/>

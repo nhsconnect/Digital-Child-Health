@@ -17,7 +17,7 @@
 				<timestamp value="2012-02-24T14:00:00+00:00"/>
 				<event>
 					<system value="https://fhir.nhs.uk/dch-childhealtheventtype-1"/>
-					<code value="E8"/>
+					<code value="6-8 Week Health Review"/>
 					<display value="6-8 Week Health Review"/>
 				</event>
 				<source>
@@ -39,13 +39,20 @@
 			<Encounter>
 				<id value="99750590-4fb8-43db-88cb-65052bdc8fec"/>
 				<meta>
-					<profile value="https://fhir.hl7.org.uk/StructureDefinition/CareConnect-DCH-6-8WeekHealthReviewEvent-Encounter-1"/>
+					<profile value="https://fhir.hl7.org.uk/StructureDefinition/CareConnect-DCH-ChildHealthEvent-Encounter-1"/>
 				</meta>
 				<identifier>
 					<system value="https://tools.ietf.org/html/rfc4122"/>
 					<value value="34016249-3f82-4a22-a08d-a75eb9deb51d"/>
 				</identifier>
 				<status value="finished"/>
+				<type>
+					<coding>
+						<system value="https://fhir.nhs.uk/dch-childhealthencountertype-1"/>
+						<code value="6-8 Week Review"/>
+						<display value="6-8 Week Review"/>
+					</coding>
+				</type>
 				<patient>
 					<reference value="urn:uuid:94f9e3ad-a56b-4f89-b0b4-f2972ea04e67"/>
 					<display value="SAXTON, Sarah Marie"/>

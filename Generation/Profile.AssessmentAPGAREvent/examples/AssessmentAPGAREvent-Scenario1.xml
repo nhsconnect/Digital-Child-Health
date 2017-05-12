@@ -16,7 +16,7 @@
 				<timestamp value="2012-01-03T10:00:00+00:00"/>
 				<event>
 					<system value="https://fhir.nhs.uk/dch-childhealtheventtype-1"/>
-					<code value="E2"/>
+					<code value="Assessment APGAR"/>
 					<display value="Assessment APGAR"/>
 				</event>
 				<source>
@@ -44,6 +44,13 @@
 					<value value="bb9c3c17-0187-4f40-bcd5-76a1148e163c"/>
 				</identifier>
 				<status value="finished"/>
+				<type>
+					<coding>
+						<system value="https://fhir.nhs.uk/dch-childhealthencountertype-1"/>
+						<code value="Birth"/>
+						<display value="Birth"/>
+					</coding>
+				</type>
 				<patient>
 					<reference value="534ba626-2bd2-4a16-8a5b-6f498888cc10"/>
 					<display value="LITTLE, Jonny"/>

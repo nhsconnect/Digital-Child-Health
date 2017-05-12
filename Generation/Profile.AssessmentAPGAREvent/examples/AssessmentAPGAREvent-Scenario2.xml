@@ -17,7 +17,7 @@
 				<timestamp value="2012-01-07T22:00:00+00:00"/>
 				<event>
 					<system value="https://fhir.nhs.uk/dch-childhealtheventtype-1"/>
-					<code value="E2"/>
+					<code value="Assessment APGAR"/>
 					<display value="Assessment APGAR"/>
 				</event>
 				<source>
@@ -46,6 +46,13 @@
 					<value value="87a9142f-d4a7-49ba-9ce1-1e0b511a55b4"/>
 				</identifier>
 				<status value="finished"/>
+				<type>
+					<coding>
+						<system value="https://fhir.nhs.uk/dch-childhealthencountertype-1"/>
+						<code value="Birth"/>
+						<display value="Birth"/>
+					</coding>
+				</type>
 				<patient>
 					<reference value="urn:uuid:e864d93b-07a1-4c1c-8b2f-276bba9675d5"/>
 					<display value="SAXTON, Sarah Marie"/>
@@ -156,8 +163,8 @@
 					<reference value="urn:uuid:f00b4cb9-1b94-49ab-8561-12b9edb27627"/>
 				</encounter>
 				<performer>
-						<reference value="urn:uuid:0e01304b-b708-4e19-a0e3-bba1598241aa"/>
-						<display value="JONES, Shirley"/>
+					<reference value="urn:uuid:0e01304b-b708-4e19-a0e3-bba1598241aa"/>
+					<display value="JONES, Shirley"/>
 				</performer>
 				<valueQuantity>
 					<value value="6"/>
@@ -193,8 +200,8 @@
 					<reference value="urn:uuid:f00b4cb9-1b94-49ab-8561-12b9edb27627"/>
 				</encounter>
 				<performer>
-						<reference value="urn:uuid:0e01304b-b708-4e19-a0e3-bba1598241aa"/>
-						<display value="JONES, Shirley"/>
+					<reference value="urn:uuid:0e01304b-b708-4e19-a0e3-bba1598241aa"/>
+					<display value="JONES, Shirley"/>
 				</performer>
 				<valueQuantity>
 					<value value="8"/>
@@ -270,7 +277,7 @@
 				<meta>
 					<profile value="https://fhir.hl7.org.uk/StructureDefinition/CareConnect-DCH-Practitioner-ChildHealthEvent-1"/>
 				</meta>
-					<identifier>
+				<identifier>
 					<system value="https://fhir.nhs.uk/Id/sds-role-profile-id"/>
 					<value value="M9999998"/>
 				</identifier>

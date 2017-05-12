@@ -17,7 +17,7 @@
 				<timestamp value="2012-01-10T12:00:00+00:00"/>
 				<event>
 					<system value="https://fhir.nhs.uk/dch-childhealtheventtype-1"/>
-					<code value="E7"/>
+					<code value="Birth: Discharge"/>
 					<display value="Birth: Discharge"/>
 				</event>
 				<source>
@@ -46,6 +46,13 @@
 					<value value="3368148b-76fb-40bf-bfcc-af6ae7a1913c"/>
 				</identifier>
 				<status value="finished"/>
+				<type>
+					<coding>
+						<system value="https://fhir.nhs.uk/dch-childhealthencountertype-1"/>
+						<code value="Maternity Discharge"/>
+						<display value="Maternity Discharge"/>
+					</coding>
+				</type>
 				<patient>
 					<reference value="urn:uuid:c2cae1f0-7e4c-4cb6-aa73-de6f8c4935fa"/>
 					<display value="SAXTON, Sarah Marie"/>
@@ -169,7 +176,7 @@
 		<resource>
 			<Organization>
 				<meta>
-					<profile value="https://fhir.hl7.org.uk/StructureDefinition/CareConnect-DCH-BirthDischargeEvent-Organization-1"/>
+					<profile value="https://fhir.hl7.org.uk/StructureDefinition/CareConnect-DCH-ChildHealthEvent-Organization-1"/>
 				</meta>
 				<identifier>
 					<system value="https://fhir.nhs.uk/Id/ods-site-code"/>
@@ -192,7 +199,7 @@
 			<Practitioner>
 				<id value="f39556dc-59bf-49f7-8164-b675244af57e"/>
 				<meta>
-					<profile value="https://fhir.hl7.org.uk/StructureDefinition/CareConnect-DCH-BirthDischargeEvent-Practitioner-1"/>
+					<profile value="https://fhir.hl7.org.uk/StructureDefinition/CareConnect-DCH-ChildHealthEvent-Practitioner-1"/>
 				</meta>
 				<identifier>
 					<system value="https://fhir.nhs.uk/Id/sds-user-id"/>
@@ -221,7 +228,7 @@
 			<Practitioner>
 				<id value="db72c64a-efe0-4ef1-8649-93c642f75cf3"/>
 				<meta>
-					<profile value="https://fhir.hl7.org.uk/StructureDefinition/CareConnect-DCH-BirthDischargeEvent-Practitioner-1"/>
+					<profile value="https://fhir.hl7.org.uk/StructureDefinition/CareConnect-DCH-ChildHealthEvent-Practitioner-1"/>
 				</meta>
 				<identifier>
 					<system value="https://fhir.nhs.uk/Id/sds-role-profile-id"/>

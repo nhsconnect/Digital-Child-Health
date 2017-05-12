@@ -17,7 +17,7 @@
 				<timestamp value="2012-01-07T23:00:00+00:00"/>
 				<event>
 					<system value="https://fhir.nhs.uk/dch-childhealtheventtype-1"/>
-					<code value="E5"/>
+					<code value="Breastfeeding Status: Breastfeeding Status"/>
 					<display value="Breastfeeding Status: Breastfeeding Status"/>
 				</event>
 				<source>

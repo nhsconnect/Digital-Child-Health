@@ -16,7 +16,7 @@
 				<timestamp value="2012-01-04T16:15:00+00:00"/>
 				<event>
 					<system value="https://fhir.nhs.uk/dch-childhealtheventtype-1"/>
-					<code value="E7"/>
+					<code value="Birth: Discharge"/>
 					<display value="Birth: Discharge"/>
 				</event>
 				<source>
@@ -45,6 +45,13 @@
 					<value value="ed4e7054-ec71-4cc2-8cad-aca2ee2637a2"/>
 				</identifier>
 				<status value="finished"/>
+				<type>
+					<coding>
+						<system value="https://fhir.nhs.uk/dch-childhealthencountertype-1"/>
+						<code value="Maternity Discharge"/>
+						<display value="Maternity Discharge"/>
+					</coding>
+				</type>
 				<patient>
 					<reference value="444bf875-902f-48f1-8c8c-e136caea7dc0"/>
 					<display value="LITTLE, Jonny"/>
@@ -150,6 +157,7 @@
 					<coding>
 						<system value="https://fhir.nhs.uk/dch-typeofunit-1"/>
 						<code value="2"/>
+						<display value="In NHS hospital - delivery facilities associated with consultant ward "/>
 					</coding>
 				</type>
 				<name value="LEEDS GENERAL INFIRMARY"/>
@@ -162,7 +170,7 @@
 			<Organization>
 				<id value="85e718e9-c871-4b11-9003-bce10b2f547d"/>
 				<meta>
-					<profile value="https://fhir.hl7.org.uk/StructureDefinition/CareConnect-DCH-BirthDischargeEvent-Organization-1"/>
+					<profile value="https://fhir.hl7.org.uk/StructureDefinition/CareConnect-DCH-ChildHealthEvent-Organization-1"/>
 				</meta>
 				<identifier>
 					<system value="https://fhir.nhs.uk/Id/ods-site-code"/>
@@ -172,6 +180,7 @@
 					<coding>
 						<system value="https://fhir.nhs.uk/dch-typeofunit-1"/>
 						<code value="2"/>
+						<display value="In NHS hospital - delivery facilities associated with consultant ward "/>
 					</coding>
 				</type>
 			</Organization>
@@ -183,7 +192,7 @@
 			<Practitioner>
 				<id value="dca91f6d-74b8-4bac-a2b1-0f3569ed0601"/>
 				<meta>
-					<profile value="https://fhir.hl7.org.uk/StructureDefinition/CareConnect-DCH-BirthDischargeEvent-Practitioner-1"/>
+					<profile value="https://fhir.hl7.org.uk/StructureDefinition/CareConnect-DCH-ChildHealthEvent-Practitioner-1"/>
 				</meta>
 				<identifier>
 					<system value="https://fhir.nhs.uk/Id/sds-user-id"/>
@@ -240,7 +249,6 @@
 			</Encounter>
 		</resource>
 	</entry>
-	
 	<entry>
 		<fullUrl value="urn:uuid:2560c363-7b83-4c60-837f-4322e9129fd1"/>
 		<resource>
