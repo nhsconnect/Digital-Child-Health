@@ -2366,7 +2366,7 @@
     </element>
     <element>
       <path value="Procedure.category.coding.extension" />
-      <name value="Extension-Coding-SCTDescID" />
+      <name value="Extension-coding-sctdescid" />
       <short value="The SNOMED CT Description ID for the display" />
       <definition value="Optional Extensions Element - found in all resources." />
       <comments value="There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone." />
@@ -3269,7 +3269,7 @@
     </element>
     <element>
       <path value="Procedure.code.coding.extension" />
-      <name value="Extension-Coding-SCTDescID" />
+      <name value="Extension-coding-sctdescid" />
       <short value="The SNOMED CT Description ID for the display" />
       <definition value="Optional Extensions Element - found in all resources." />
       <comments value="There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone." />
@@ -4200,7 +4200,7 @@
     </element>
     <element>
       <path value="Procedure.reasonNotPerformed.coding.extension" />
-      <name value="Extension-Coding-SCTDescID" />
+      <name value="Extension-coding-sctdescid" />
       <short value="The SNOMED CT Description ID for the display" />
       <definition value="Optional Extensions Element - found in all resources." />
       <comments value="There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone." />
@@ -5099,7 +5099,7 @@
     </element>
     <element>
       <path value="Procedure.bodySite.coding.extension" />
-      <name value="Extension-Coding-SCTDescID" />
+      <name value="Extension-coding-sctdescid" />
       <short value="The SNOMED CT Description ID for the display" />
       <definition value="Optional Extensions Element - found in all resources." />
       <comments value="There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone." />
@@ -6387,7 +6387,7 @@
     </element>
     <element>
       <path value="Procedure.performer.role.coding.extension" />
-      <name value="Extension-Coding-SCTDescID" />
+      <name value="Extension-coding-sctdescid" />
       <short value="The SNOMED CT Description ID for the display" />
       <definition value="Optional Extensions Element - found in all resources." />
       <comments value="There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone." />
@@ -7706,7 +7706,7 @@
     </element>
     <element>
       <path value="Procedure.outcome.coding.extension" />
-      <name value="Extension-Coding-SCTDescID" />
+      <name value="Extension-coding-sctdescid" />
       <short value="The SNOMED CT Description ID for the display" />
       <definition value="Optional Extensions Element - found in all resources." />
       <comments value="There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone." />
@@ -9137,7 +9137,7 @@
     </element>
     <element>
       <path value="Procedure.complication.coding.extension" />
-      <name value="Extension-Coding-SCTDescID" />
+      <name value="Extension-coding-sctdescid" />
       <short value="The SNOMED CT Description ID for the display" />
       <definition value="Optional Extensions Element - found in all resources." />
       <comments value="There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone." />
@@ -10032,7 +10032,7 @@
     </element>
     <element>
       <path value="Procedure.followUp.coding.extension" />
-      <name value="Extension-Coding-SCTDescID" />
+      <name value="Extension-coding-sctdescid" />
       <short value="The SNOMED CT Description ID for the display" />
       <definition value="Optional Extensions Element - found in all resources." />
       <comments value="There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone." />
@@ -11716,7 +11716,7 @@
     </element>
     <element>
       <path value="Procedure.category.coding.extension" />
-      <name value="Extension-Coding-SCTDescID" />
+      <name value="Extension-coding-sctdescid" />
       <short value="The SNOMED CT Description ID for the display" />
       <max value="1" />
       <type>
@@ -11769,7 +11769,7 @@
     </element>
     <element>
       <path value="Procedure.code.coding.extension" />
-      <name value="Extension-Coding-SCTDescID" />
+      <name value="Extension-coding-sctdescid" />
       <short value="The SNOMED CT Description ID for the display" />
       <max value="1" />
       <type>
@@ -11820,7 +11820,7 @@
     </element>
     <element>
       <path value="Procedure.reasonNotPerformed.coding.extension" />
-      <name value="Extension-Coding-SCTDescID" />
+      <name value="Extension-coding-sctdescid" />
       <short value="The SNOMED CT Description ID for the display" />
       <max value="1" />
       <type>
@@ -11871,7 +11871,7 @@
     </element>
     <element>
       <path value="Procedure.bodySite.coding.extension" />
-      <name value="Extension-Coding-SCTDescID" />
+      <name value="Extension-coding-sctdescid" />
       <short value="The SNOMED CT Description ID for the display" />
       <max value="1" />
       <type>
@@ -11943,7 +11943,7 @@
     </element>
     <element>
       <path value="Procedure.performer.role.coding.extension" />
-      <name value="Extension-Coding-SCTDescID" />
+      <name value="Extension-coding-sctdescid" />
       <short value="The SNOMED CT Description ID for the display" />
       <max value="1" />
       <type>
@@ -12022,7 +12022,7 @@
     </element>
     <element>
       <path value="Procedure.outcome.coding.extension" />
-      <name value="Extension-Coding-SCTDescID" />
+      <name value="Extension-coding-sctdescid" />
       <short value="The SNOMED CT Description ID for the display" />
       <max value="1" />
       <type>
@@ -12105,7 +12105,7 @@
     </element>
     <element>
       <path value="Procedure.complication.coding.extension" />
-      <name value="Extension-Coding-SCTDescID" />
+      <name value="Extension-coding-sctdescid" />
       <short value="The SNOMED CT Description ID for the display" />
       <max value="1" />
       <type>
@@ -12156,7 +12156,7 @@
     </element>
     <element>
       <path value="Procedure.followUp.coding.extension" />
-      <name value="Extension-Coding-SCTDescID" />
+      <name value="Extension-coding-sctdescid" />
       <short value="The SNOMED CT Description ID for the display" />
       <max value="1" />
       <type>
