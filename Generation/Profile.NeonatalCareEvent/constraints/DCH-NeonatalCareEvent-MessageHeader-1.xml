@@ -447,7 +447,7 @@
         <strength value="required" />
         <description value="The type of Child Health event." />
         <valueSetReference>
-          <reference value="https://fhir.nhs.uk/ValueSet/dch-childhealtheventtype-1" />
+          <reference value="https://fhir.nhs.uk/ValueSet/DCH-ChildHealthEventType-1" />
         </valueSetReference>
       </binding>
       <mapping>
@@ -3648,7 +3648,7 @@
         <strength value="required" />
         <description value="The type of Child Health event." />
         <valueSetReference>
-          <reference value="https://fhir.nhs.uk/ValueSet/dch-childhealtheventtype-1" />
+          <reference value="https://fhir.nhs.uk/ValueSet/DCH-ChildHealthEventType-1" />
         </valueSetReference>
       </binding>
     </element>

@@ -5168,7 +5168,7 @@
         <strength value="required" />
         <description value="The type of unit" />
         <valueSetReference>
-          <reference value="https://fhir.nhs.uk/ValueSet/dch-typeofunit-1" />
+          <reference value="https://fhir.nhs.uk/ValueSet/DCH-TypeOfUnit-1" />
         </valueSetReference>
       </binding>
       <mapping>
@@ -9839,7 +9839,7 @@
         <strength value="required" />
         <description value="The type of unit" />
         <valueSetReference>
-          <reference value="https://fhir.nhs.uk/ValueSet/dch-typeofunit-1" />
+          <reference value="https://fhir.nhs.uk/ValueSet/DCH-TypeOfUnit-1" />
         </valueSetReference>
       </binding>
     </element>

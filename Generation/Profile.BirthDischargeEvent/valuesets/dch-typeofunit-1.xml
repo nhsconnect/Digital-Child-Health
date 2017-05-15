@@ -3,7 +3,7 @@
 	<meta>
 		<lastUpdated value="2016-08-03T00:00:00+01:00"/>
 	</meta>
-	<url value="https://fhir.nhs.uk/ValueSet/dch-typeofunit-1"/>
+	<url value="https://fhir.nhs.uk/ValueSet/DCH-TypeOfUnit-1"/>
 	<name value="Type of Unit"/>
 	<status value="active"/>
 	<description value="The type of unit in which the baby was delivered."/>

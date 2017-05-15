@@ -1588,7 +1588,7 @@
         <strength value="required" />
         <description value="The free/busy status of an appointment." />
         <valueSetReference>
-          <reference value="https://fhir.nhs.uk/ValueSet/appointmentstatus-1" />
+          <reference value="https://fhir.nhs.uk/ValueSet/AppointmentStatus-1" />
         </valueSetReference>
       </binding>
       <mapping>
@@ -3906,7 +3906,7 @@
       <binding>
         <strength value="required" />
         <valueSetReference>
-          <reference value="https://fhir.nhs.uk/ValueSet/appointmentstatus-1" />
+          <reference value="https://fhir.nhs.uk/ValueSet/AppointmentStatus-1" />
         </valueSetReference>
       </binding>
     </element>

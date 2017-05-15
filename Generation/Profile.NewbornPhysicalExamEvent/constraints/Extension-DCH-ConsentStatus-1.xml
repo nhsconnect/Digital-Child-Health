@@ -189,7 +189,7 @@
         <strength value="required" />
         <description value="The Consent Status for the Child Health Even" />
         <valueSetReference>
-          <reference value="https://fhir.nhs.uk/ValueSet/dch-consentstatus-1" />
+          <reference value="https://fhir.nhs.uk/ValueSet/DCH-ConsentStatus-1" />
         </valueSetReference>
       </binding>
       <mapping>
@@ -298,7 +298,7 @@
         <strength value="required" />
         <description value="The Consent Status for the Child Health Event" />
         <valueSetReference>
-          <reference value="https://fhir.nhs.uk/ValueSet/dch-consentstatus-1" />
+          <reference value="https://fhir.nhs.uk/ValueSet/DCH-ConsentStatus-1" />
         </valueSetReference>
       </binding>
       <mapping>
@@ -680,7 +680,7 @@
         <strength value="required" />
         <description value="The Consent Status for the Child Health Even" />
         <valueSetReference>
-          <reference value="https://fhir.nhs.uk/ValueSet/dch-consentstatus-1" />
+          <reference value="https://fhir.nhs.uk/ValueSet/DCH-ConsentStatus-1" />
         </valueSetReference>
       </binding>
     </element>
@@ -694,7 +694,7 @@
         <strength value="required" />
         <description value="The Consent Status for the Child Health Event" />
         <valueSetReference>
-          <reference value="https://fhir.nhs.uk/ValueSet/dch-consentstatus-1" />
+          <reference value="https://fhir.nhs.uk/ValueSet/DCH-ConsentStatus-1" />
         </valueSetReference>
       </binding>
     </element>

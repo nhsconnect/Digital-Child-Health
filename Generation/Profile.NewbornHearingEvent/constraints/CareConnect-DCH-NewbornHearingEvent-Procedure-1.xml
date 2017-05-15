@@ -7996,7 +7996,7 @@
         <strength value="required" />
         <description value="The Outcome of the Child Health Event" />
         <valueSetReference>
-          <reference value="https://fhir.nhs.uk/ValueSet/dch-childhealtheventoutcome-1" />
+          <reference value="https://fhir.nhs.uk/ValueSet/DCH-ChildHealthEventOutcome-1" />
         </valueSetReference>
       </binding>
       <mapping>
@@ -12054,7 +12054,7 @@
         <strength value="required" />
         <description value="The Outcome of the Child Health Event" />
         <valueSetReference>
-          <reference value="https://fhir.nhs.uk/ValueSet/dch-childhealtheventoutcome-1" />
+          <reference value="https://fhir.nhs.uk/ValueSet/DCH-ChildHealthEventOutcome-1" />
         </valueSetReference>
       </binding>
     </element>

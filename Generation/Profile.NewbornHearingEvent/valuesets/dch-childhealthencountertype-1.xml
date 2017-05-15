@@ -3,7 +3,7 @@
 	<meta>
 		<lastUpdated value="2016-08-03T00:00:00+01:00"/>
 	</meta>
-	<url value="https://fhir.nhs.uk/ValueSet/dch-childhealthencountertype-1"/>
+	<url value="https://fhir.nhs.uk/ValueSet/DCH-ChildHealthEncounterType-1"/>
 	<name value="Child Health Encounter Type"/>
 	<status value="active"/>
 	<description value="The type of Clinical Intervention/Occurrence which generated the Child Health event."/>

@@ -2888,7 +2888,7 @@
         <strength value="required" />
         <description value="The type of Clinical Intervention/Occurrence which generated the Child Health event." />
         <valueSetReference>
-          <reference value="https://fhir.nhs.uk/ValueSet/dch-childhealthencountertype-1" />
+          <reference value="https://fhir.nhs.uk/ValueSet/DCH-ChildHealthEncounterType-1" />
         </valueSetReference>
       </binding>
       <mapping>
@@ -13619,7 +13619,7 @@
         <strength value="required" />
         <description value="The type of Clinical Intervention/Occurrence which generated the Child Health event." />
         <valueSetReference>
-          <reference value="https://fhir.nhs.uk/ValueSet/dch-childhealthencountertype-1" />
+          <reference value="https://fhir.nhs.uk/ValueSet/DCH-ChildHealthEncounterType-1" />
         </valueSetReference>
       </binding>
     </element>

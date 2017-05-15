@@ -9,10 +9,10 @@
       <name value="Child Health Event Attendance Status Mapping"/>
       <status value="draft"/>
       <sourceReference>
-        <reference value="https://fhir.nhs.uk/ValueSet/appointmentstatus-1"/>
+        <reference value="https://fhir.nhs.uk/ValueSet/AppointmentStatus-1"/>
       </sourceReference>
       <targetReference>
-        <reference value="https://fhir.nhs.uk/ValueSet/childhealthevent-appointmentstatus-map-1"/>
+        <reference value="https://fhir.nhs.uk/ValueSet/AppointmentStatus-MAP-1"/>
       </targetReference>
       <element>
         <code value="booked"/>
@@ -43,7 +43,7 @@
     </valueReference>
   </extension>
 <!--      DD MAPPING CODES     -->
-  <url value="https://fhir.nhs.uk/ValueSet/appointmentstatus-1"/>
+  <url value="https://fhir.nhs.uk/ValueSet/AppointmentStatus-1"/>
   <name value="Appointment Status"/>
 <status value="active"/>
 <description value="The free/busy status of an appointment."/>
