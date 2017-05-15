@@ -1,0 +1,1 @@
+The Practitioner resource represents the healthcare professional directly or indirectly involved in the provision of healthcare related services.

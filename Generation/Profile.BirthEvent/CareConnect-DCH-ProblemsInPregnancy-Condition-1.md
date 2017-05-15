@@ -1,0 +1,1 @@
+This Condition resource records detailed information about conditions or diagnoses recognised by a clinician, with further constraints applied to represent an infectious disease or medical condition diagnosed in a pregnancy.

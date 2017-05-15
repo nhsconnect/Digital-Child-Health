@@ -1,0 +1,403 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bundle xmlns="http://hl7.org/fhir" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://hl7.org/fhir ../../Schemas/bundle.xsd">
+	<id value="98eca5aa-21a7-466d-86a3-bdd395c13ec5"/>
+	<meta>
+		<profile value="https://fhir.nhs.uk/StructureDefinition/DCH-BirthDetailsEvent-Bundle-1"/>
+	</meta>
+	<type value="message"/>
+	<entry>
+		<fullUrl value="urn:uuid:4ff4bc97-bea5-4b4c-b0e4-92a24000d640"/>
+		<resource>
+			<MessageHeader>
+				<id value="4ff4bc97-bea5-4b4c-b0e4-92a24000d640"/>
+				<meta>
+					<profile value="https://fhir.nhs.uk/StructureDefinition/DCH-BirthDetailsEvent-MessageHeader-1"/>
+				</meta>
+				<timestamp value="2012-01-03T10:00:00+00:00"/>
+				<event>
+					<system value="https://fhir.nhs.uk/dch-childhealtheventtype-1"/>
+					<code value="Birth: Birth Details"/>
+					<display value="Birth: Birth Details"/>
+				</event>
+				<source>
+					<endpoint value="urn:nhs-uk:addressing:ods:EM396"/>
+				</source>
+				<responsible>
+					<reference value="d4e23fa4-38a3-489f-8a84-13f42f93dfcb"/>
+					<display value="CLARENDON WING, LEEDS GENERAL INFIRMARY"/>
+				</responsible>
+				<data>
+					<reference value="35e37fee-c68e-4dfc-ad1a-1435ec1f18ea"/>
+				</data>
+			</MessageHeader>
+		</resource>
+	</entry>
+	<entry>
+		<fullUrl value="urn:uuid:35e37fee-c68e-4dfc-ad1a-1435ec1f18ea"/>
+		<resource>
+			<Encounter>
+				<id value="35e37fee-c68e-4dfc-ad1a-1435ec1f18ea"/>
+				<meta>
+					<profile value="https://fhir.hl7.org.uk/StructureDefinition/CareConnect-DCH-BirthOccurrence-Encounter-1"/>
+				</meta>
+				<identifier>
+					<system value="https://tools.ietf.org/html/rfc4122"/>
+					<value value="c638c868-e866-4af1-9197-f602f286ce82"/>
+				</identifier>
+				<status value="finished"/>
+				<type>
+					<coding>
+						<system value="https://fhir.nhs.uk/dch-childhealthencountertype-1"/>
+						<code value="Birth"/>
+						<display value="Birth"/>
+					</coding>
+				</type>
+				<patient>
+					<reference value="18167cd3-7f20-4b9a-9025-527bf64dbdc0"/>
+					<display value="LITTLE, Jonny"/>
+				</patient>
+				<participant>
+					<individual>
+						<reference value="aa7cab65-b7d6-4843-9109-e5b20446b3e8"/>
+					</individual>
+				</participant>
+				<period>
+					<start value="2012-01-03T09:36:00+00:00"/>
+				</period>
+				<location>
+					<location>
+						<reference value="a2574a2e-139a-4044-8484-76e018ed2fe2"/>
+						<display value="CLARENDON WING, LEEDS GENERAL INFIRMARY (RR830)"/>
+					</location>
+				</location>
+				<serviceProvider>
+					<reference value="a2574a2e-139a-4044-8484-76e018ed2fe2"/>
+					<display value="LEEDS TEACHING HOSPITALS NHS TRUST (RR8)"/>
+				</serviceProvider>
+				<partOf>
+					<reference value="2370be64-3899-45c4-9a9d-c46871bd3e45"/>
+				</partOf>
+			</Encounter>
+		</resource>
+	</entry>
+	<entry>
+		<fullUrl value="urn:uuid:d4e23fa4-38a3-489f-8a84-13f42f93dfcb"/>
+		<resource>
+			<Organization>
+				<id value="d4e23fa4-38a3-489f-8a84-13f42f93dfcb"/>
+				<meta>
+					<profile value="https://fhir.hl7.org.uk/StructureDefinition/CareConnect-Organization-1"/>
+				</meta>
+				<identifier>
+					<system value="https://fhir.nhs.uk/Id/ods-site-code"/>
+					<value value="RR830"/>
+				</identifier>
+				<name value="CLARENDON WING, LEEDS GENERAL INFIRMARY"/>
+				<address>
+					<use value="work"/>
+					<type value="both"/>
+					<text value="BELMONT GROVE, LEEDS, WEST YORKSHIRE LS2 9NS"/>
+					<line value="BELMONT GROVE"/>
+					<city value="LEEDS"/>
+					<district value="WEST YORKSHIRE"/>
+					<postalCode value="LS2 9NS"/>
+				</address>
+			</Organization>
+		</resource>
+	</entry>
+	<entry>
+		<fullUrl value="urn:uuid:18167cd3-7f20-4b9a-9025-527bf64dbdc0"/>
+		<resource>
+			<Patient>
+				<id value="18167cd3-7f20-4b9a-9025-527bf64dbdc0"/>
+				<meta>
+					<profile value="https://fhir.hl7.org.uk/StructureDefinition/CareConnect-DCH-Baby-Patient-1"/>
+				</meta>
+				<identifier>
+					<extension url="https://fhir.hl7.org.uk/StructureDefinition/Extension-CareConnect-NHSNumberVerificationStatus-1">
+						<valueCodeableConcept>
+							<coding>
+								<code value="01"/>
+								<display value="Number present and verified"/>
+							</coding>
+						</valueCodeableConcept>
+					</extension>
+					<system value="https://fhir.nhs.uk/Id/nhs-number"/>
+					<value value="123456"/>
+				</identifier>
+				<name>
+					<use value="usual"/>
+					<text value="Jonny Little"/>
+					<family value="Little"/>
+					<given value="Jonny"/>
+				</name>
+				<gender value="male"/>
+				<birthDate value="2012-01-03">
+					<extension url="http://hl7.org/fhir/StructureDefinition/patient-birthTime">
+						<valueTime value="09:36:00"/>
+					</extension>
+				</birthDate>
+			</Patient>
+		</resource>
+	</entry>
+	<entry>
+		<fullUrl value="urn:uuid:c20cde24-10af-45f4-a3ff-7c43113a9492"/>
+		<resource>
+			<Observation>
+				<id value="c20cde24-10af-45f4-a3ff-7c43113a9492"/>
+				<meta>
+					<profile value="https://fhir.hl7.org.uk/StructureDefinition/CareConnect-DCH-LengthOfPregnancy-Observation-1"/>
+				</meta>
+				<identifier>
+					<system value="https://tools.ietf.org/html/rfc4122"/>
+					<value value="a628dac7-0772-41cd-aa14-af76f927d396"/>
+				</identifier>
+				<status value="final"/>
+				<code>
+					<coding>
+						<system value="http://snomed.info/sct"/>
+						<code value="412726003"/>
+						<display value="Length of gestation at birth (observable entity)"/>
+					</coding>
+				</code>
+				<subject>
+					<reference value="de77f723-668a-4f63-8aa6-04e7f9996a1a"/>
+					<display value="LITTLE, Joanne"/>
+				</subject>
+				<encounter>
+					<reference value="2370be64-3899-45c4-9a9d-c46871bd3e45"/>
+				</encounter>
+				<valueString value="29w 2d"/>
+			</Observation>
+		</resource>
+	</entry>
+	<entry>
+		<fullUrl value="urn:uuid:0de690ff-1ebe-4ac2-9d67-9e78851bd8bf"/>
+		<resource>
+			<Observation>
+				<id value="0de690ff-1ebe-4ac2-9d67-9e78851bd8bf"/>
+				<meta>
+					<profile value="https://fhir.hl7.org.uk/StructureDefinition/CareConnect-DCH-NumberOfFetusesInConfinement-Observation-1"/>
+				</meta>
+				<identifier>
+					<system value="https://tools.ietf.org/html/rfc4122"/>
+					<value value="03be406f-6269-4629-bb5d-f1a7839e9a0d"/>
+				</identifier>
+				<status value="final"/>
+				<code>
+					<coding>
+						<system value="http://snomed.info/sct"/>
+						<code value="246435002"/>
+						<display value="Number of fetuses (observable entity)"/>
+					</coding>
+				</code>
+				<subject>
+					<reference value="de77f723-668a-4f63-8aa6-04e7f9996a1a"/>
+					<display value="LITTLE, Joanne"/>
+				</subject>
+				<encounter>
+					<reference value="2370be64-3899-45c4-9a9d-c46871bd3e45"/>
+				</encounter>
+				<valueQuantity>
+					<value value="1"/>
+				</valueQuantity>
+			</Observation>
+		</resource>
+	</entry>
+	<entry>
+		<fullUrl value="urn:uuid:a2574a2e-139a-4044-8484-76e018ed2fe2"/>
+		<resource>
+			<Organization>
+				<id value="a2574a2e-139a-4044-8484-76e018ed2fe2"/>
+				<meta>
+					<profile value="https://fhir.hl7.org.uk/StructureDefinition/CareConnect-DCH-ActualDeliveryPlace-Organization-1"/>
+				</meta>
+				<identifier>
+					<system value="https://fhir.nhs.uk/Id/ods-site-code"/>
+					<value value="RGD03"/>
+				</identifier>
+				<type>
+					<coding>
+						<system value="https://fhir.nhs.uk/dch-typeofunit-1"/>
+						<code value="2"/>
+						<display value="In NHS hospital - delivery facilities associated with consultant ward "/>
+					</coding>
+				</type>
+				<name value="LEEDS GENERAL INFIRMARY"/>
+			</Organization>
+		</resource>
+	</entry>
+	<entry>
+		<fullUrl value="urn:uuid:ee7e611c-fe03-4530-a870-589df8cb74dc"/>
+		<resource>
+			<Procedure>
+				<id value="ee7e611c-fe03-4530-a870-589df8cb74dc"/>
+				<meta>
+					<profile value="https://fhir.hl7.org.uk/StructureDefinition/CareConnect-DCH-TypeOfDelivery-Procedure-1"/>
+				</meta>
+				<subject>
+					<reference value="de77f723-668a-4f63-8aa6-04e7f9996a1a"/>
+					<display value="LITTLE, Joanne"/>
+				</subject>
+				<status value="completed"/>
+				<code>
+					<coding>
+						<system value="https://fhir.nhs.uk/dch-typeofdelivery-1"/>
+						<code value="0"/>
+						<display value="Spontaneous Vertex"/>
+					</coding>
+				</code>
+				<notPerformed value="false"/>
+			</Procedure>
+		</resource>
+	</entry>
+	<entry>
+		<fullUrl value="urn:uuid:2370be64-3899-45c4-9a9d-c46871bd3e45"/>
+		<resource>
+			<Encounter>
+				<id value="2370be64-3899-45c4-9a9d-c46871bd3e45"/>
+				<meta>
+					<profile value="https://fhir.hl7.org.uk/StructureDefinition/CareConnect-DCH-Delivery-Encounter-1"/>
+				</meta>
+				<identifier>
+					<system value="urn:ietf:rfc:3986"/>
+					<value value="77f378ec-ecff-4550-ab51-2ce1b933e41e"/>
+				</identifier>
+				<status value="planned"/>
+				<patient>
+					<reference value="de77f723-668a-4f63-8aa6-04e7f9996a1a"/>
+					<display value="LITTLE, Joanne"/>
+				</patient>
+				<participant>
+					<individual>
+						<reference value="aa7cab65-b7d6-4843-9109-e5b20446b3e8"/>
+						<display value="BAINES, Sally"/>
+					</individual>
+				</participant>
+				<location>
+					<location>
+						<reference value="a2574a2e-139a-4044-8484-76e018ed2fe2"/>
+						<display value="LEEDS GENERAL INFIRMARY"/>
+					</location>
+				</location>
+				<serviceProvider>
+					<reference value="d4e23fa4-38a3-489f-8a84-13f42f93dfcb"/>
+					<display value="CLARENDON WING, LEEDS GENERAL INFIRMARY"/>
+				</serviceProvider>
+			</Encounter>
+		</resource>
+	</entry>
+	<entry>
+		<fullUrl value="urn:uuid:de77f723-668a-4f63-8aa6-04e7f9996a1a"/>
+		<resource>
+			<Patient>
+				<id value="de77f723-668a-4f63-8aa6-04e7f9996a1a"/>
+				<meta>
+					<profile value="https://fhir.hl7.org.uk/StructureDefinition/CareConnect-DCH-Mother-Patient-1"/>
+				</meta>
+				<identifier>
+					<extension url="https://fhir.hl7.org.uk/StructureDefinition/Extension-CareConnect-NHSNumberVerificationStatus-1">
+						<valueCodeableConcept>
+							<coding>
+								<code value="01"/>
+								<display value="Number present and verified"/>
+							</coding>
+						</valueCodeableConcept>
+					</extension>
+					<system value="https://fhir.nhs.uk/Id/nhs-number"/>
+					<value value="321526987452"/>
+				</identifier>
+				<name>
+					<use value="usual"/>
+					<text value="LITTLE, Joanne"/>
+					<family value="LITTLE"/>
+					<given value="JOANNE"/>
+				</name>
+				<gender value="female"/>
+				<birthDate>
+					<extension url="http://hl7.org/fhir/StructureDefinition/patient-birthTime">
+						<valueDateTime value="2012-01-03T10:00:00+00:00"/>
+					</extension>
+				</birthDate>
+			</Patient>
+		</resource>
+	</entry>
+	<entry>
+		<fullUrl value="urn:uuid:217d461f-9804-49e4-ba36-b17299714bd4"/>
+		<resource>
+			<RelatedPerson>
+				<id value="217d461f-9804-49e4-ba36-b17299714bd4"/>
+				<meta>
+					<profile value="https://fhir.nhs.uk/StructureDefinition/DCH-MotherAndBaby-RelatedPerson-1"/>
+				</meta>
+				<extension url=" https://fhir.nhs.uk/StructureDefinition/Extension-DCH-ReferencePatientMother-1">
+					<valueReference>
+						<reference value="de77f723-668a-4f63-8aa6-04e7f9996a1a"/>
+					</valueReference>
+				</extension>
+				<identifier>
+					<system value="urn:ietf:rfc:3986"/>
+					<value value="878bb7d0-fb5c-4ef2-89ee-6b1862f03652"/>
+				</identifier>
+				<patient>
+					<reference value="18167cd3-7f20-4b9a-9025-527bf64dbdc0"/>
+					<display value="LITTLE, Jonny"/>
+				</patient>
+				<relationship>
+					<coding>
+						<system value="http://hl7.org/fhir/v3/RoleCode"/>
+						<code value="NMTH"/>
+						<display value="natural mother"/>
+					</coding>
+				</relationship>
+			</RelatedPerson>
+		</resource>
+	</entry>
+	<entry>
+		<fullUrl value="urn:uuid:60ff3054-ea56-4b32-9aae-94b7c7549cef"/>
+		<resource>
+			<Location>
+				<id value="60ff3054-ea56-4b32-9aae-94b7c7549cef"/>
+				<meta>
+					<profile value="https://fhir.hl7.org.uk/StructureDefinition/CareConnect-Location-1"/>
+				</meta>
+				<identifier>
+					<system value="https://fhir.nhs.uk/Id/ods-site-code"/>
+					<value value="RR830"/>
+				</identifier>
+				<status value="active"/>
+				<name value="CLARENDON WING, LEEDS GENERAL INFIRMARY"/>
+			</Location>
+		</resource>
+	</entry>
+	<entry>
+		<fullUrl value="urn:uuid:aa7cab65-b7d6-4843-9109-e5b20446b3e8"/>
+		<resource>
+			<Practitioner>
+				<id value="aa7cab65-b7d6-4843-9109-e5b20446b3e8"/>
+				<meta>
+					<profile value="https://fhir.hl7.org.uk/StructureDefinition/CareConnect-DCH-ChildHealthEvent-Practitioner-1"/>
+				</meta>
+				<identifier>
+					<system value="https://fhir.nhs.uk/Id/sds-user-id"/>
+					<value value="123456"/>
+				</identifier>
+				<name>
+					<family value="BAINES"/>
+					<given value="SALLY"/>
+				</name>
+				<gender value="female"/>
+				<birthDate value="1971-03-03"/>
+				<practitionerRole>
+					<role>
+						<coding>
+							<system value="https://fhir.hl7.org.uk/CareConnect-SDSJobRoleName-1"/>
+							<code value="R8016"/>
+							<display value="Midwife Access Role"/>
+						</coding>
+					</role>
+				</practitionerRole>
+			</Practitioner>
+		</resource>
+	</entry>
+</Bundle>

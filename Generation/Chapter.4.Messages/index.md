@@ -2,6 +2,7 @@
 
 The FHIR resource profiles within this DMS have been created to support the Child Health Events Catalogue Service interface:
 
+- **[Profile.BirthEvent]** - FHIR resource profiles combined to support the Child Health Event message for a Birth Event.
 - **[Profile.BirthDetailsEvent]** - FHIR resource profiles combined to support a Birth Details Event message.
 - **[Profile.AssessmentAPGAREvent]** - FHIR resource profiles combined to support an Assessment APGAR Event message.
 - **[Profile.BreastfeedingStatusEvent]** - FHIR resource profiles combined to support a Breastfeeding Status Event message.
@@ -25,7 +26,7 @@ For more information about message profiles visit the [Profiling FHIR] and for r
 
 The various downloads (including Schema files) and reference implementations are available on [FHIR website]. 
  
-
+[Profile.BirthEvent]: ../Profile.BirthEvent/Profile.BirthEvent.html
 [Profile.BirthDetailsEvent]: ../Profile.BirthDetailsEvent/Profile.BirthDetailsEvent.html
 [Profile.AssessmentAPGAREvent]: ../Profile.AssessmentAPGAREvent/Profile.AssessmentAPGAREvent.html
 [Profile.BreastfeedingStatusEvent]: ../Profile.BreastfeedingStatusEvent/Profile.BreastfeedingStatusEvent.html

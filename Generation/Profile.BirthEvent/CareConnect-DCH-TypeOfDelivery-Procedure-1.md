@@ -1,0 +1,1 @@
+This Procedure resource is constrained to represent an action that is or was performed on a patient, with further constraints applied to represent the method used for delivering a baby.
