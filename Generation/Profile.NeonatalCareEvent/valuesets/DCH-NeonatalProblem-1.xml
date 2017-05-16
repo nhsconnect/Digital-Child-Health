@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValueSet xmlns="http://hl7.org/fhir">
+	<meta>
+		<lastUpdated value="2016-08-03T00:00:00+01:00"/>
+	</meta>
+	<url value="https://fhir.nhs.uk/ValueSet/DCH-NeonatalProblem-1"/>
+	<name value="Problems in Neonatal Period"/>
+	<status value="active"/>
+	<description value="A Neonatal Diagnosis, as captured at the point of the baby's discharge from maternity or neonatal services."/>
+	<compose>
+		<include>
+			<system value="https://fhir.nhs.uk/dch-neonatalproblem-1"/>
+			<concept>
+				<code value="1"/>
+				<display value="Jaundice requiring phototherapy"/>
+			</concept>
+			<concept>
+				<code value="2"/>
+				<display value="Erb's Palsy"/>
+			</concept>
+			<concept>
+				<code value="3"/>
+				<display value="Neonatal abstinence syndrome"/>
+			</concept>
+		</include>
+	</compose>
+</ValueSet>

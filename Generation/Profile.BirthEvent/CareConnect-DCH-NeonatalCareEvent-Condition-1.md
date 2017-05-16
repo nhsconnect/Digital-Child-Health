@@ -1,1 +1,0 @@
-This Condition resource records detailed information about conditions or diagnoses recognised by a clinician, with further constrains applied to represent a neonatal diagnosis for a Neonatal Care Event.

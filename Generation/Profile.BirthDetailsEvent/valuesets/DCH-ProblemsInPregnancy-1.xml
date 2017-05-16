@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValueSet xmlns="http://hl7.org/fhir">
+	<meta>
+		<lastUpdated value="2016-08-03T00:00:00+01:00"/>
+	</meta>
+	<url value="https://fhir.nhs.uk/ValueSet/DCH-ProblemsInPregnancy-1"/>
+	<name value="Problems In Pregnancy"/>
+	<status value="active"/>
+	<description value="An infectious disease or medical condition diagnosed in this pregnancy."/>
+	<compose>
+		<include>
+			<system value="https://fhir.nhs.uk/dch-problemsinpregnancy-1"/>
+			<concept>
+				<code value="1"/>
+				<display value="Rubella"/>
+			</concept>
+			<concept>
+				<code value="2"/>
+				<display value="Varicella"/>
+			</concept>
+			<concept>
+				<code value="3"/>
+				<display value="Group B streptococcus"/>
+			</concept>
+			<concept>
+				<code value="4"/>
+				<display value="Asymptomatic bacteriuria"/>
+			</concept>
+			<concept>
+				<code value="5"/>
+				<display value="Toxoplasmosis"/>
+			</concept>
+			<concept>
+				<code value="8"/>
+				<display value="Tuberculosis"/>
+			</concept>
+			<concept>
+				<code value="9"/>
+				<display value="Cytomegalovirus"/>
+			</concept>
+			<concept>
+				<code value="10"/>
+				<display value="Parvovirus"/>
+			</concept>
+			<concept>
+				<code value="11"/>
+				<display value="Malaria"/>
+			</concept>
+			<concept>
+				<code value="13"/>
+				<display value="Cardiac Disease"/>
+			</concept>
+			<concept>
+				<code value="14"/>
+				<display value="Renal Disease"/>
+			</concept>
+			<concept>
+				<code value="15"/>
+				<display value="Mental Health Disorder"/>
+			</concept>
+			<concept>
+				<code value="16"/>
+				<display value="Thromboembolic disorder"/>
+			</concept>
+			<concept>
+				<code value="17"/>
+				<display value="Haematological disorder"/>
+			</concept>
+			<concept>
+				<code value="18"/>
+				<display value="Central Nervous System (CNS) disorder"/>
+			</concept>
+			<concept>
+				<code value="19"/>
+				<display value="Diabetes"/>
+			</concept>
+			<concept>
+				<code value="20"/>
+				<display value="Autoimmune disease"/>
+			</concept>
+			<concept>
+				<code value="21"/>
+				<display value="Cancer"/>
+			</concept>
+			<concept>
+				<code value="22"/>
+				<display value="Infectious hepatitis A"/>
+			</concept>
+			<concept>
+				<code value="23"/>
+				<display value="Hepatitis B"/>
+			</concept>
+			<concept>
+				<code value="24"/>
+				<display value="Hepatitis C"/>
+			</concept>
+			<concept>
+				<code value="25"/>
+				<display value="Endocrine Disorder"/>
+			</concept>
+			<concept>
+				<code value="26"/>
+				<display value="Respiratory disease"/>
+			</concept>
+			<concept>
+				<code value="27"/>
+				<display value="Gastrointestinal disorder"/>
+			</concept>
+			<concept>
+				<code value="28"/>
+				<display value="Musculoskeletal disorder"/>
+			</concept>
+			<concept>
+				<code value="29"/>
+				<display value="Gynaecological problems"/>
+			</concept>
+		</include>
+	</compose>
+</ValueSet>
