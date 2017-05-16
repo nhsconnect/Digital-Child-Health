@@ -4138,7 +4138,7 @@
         <strength value="required" />
         <description value="The Physical Examination observation outcome" />
         <valueSetReference>
-          <reference value="https://fhir.nhs.uk/ValueSet/dch-physicalexaminationoutcome-1" />
+          <reference value="https://fhir.nhs.uk/ValueSet/DCH-PhysicalExaminationOutcome-1" />
         </valueSetReference>
       </binding>
       <mapping>
@@ -5503,7 +5503,7 @@
         <strength value="required" />
         <description value="The Physical Examination observation outcome value to represent that the Patient was not examined" />
         <valueSetReference>
-          <reference value="https://fhir.nhs.uk/ValueSet/dch-physicalexaminationnotexamined-1" />
+          <reference value="https://fhir.nhs.uk/ValueSet/DCH-PhysicalExaminationNotExamined-1" />
         </valueSetReference>
       </binding>
       <mapping>
@@ -13568,7 +13568,7 @@
         <strength value="required" />
         <description value="The Physical Examination observation outcome" />
         <valueSetReference>
-          <reference value="https://fhir.nhs.uk/ValueSet/dch-physicalexaminationoutcome-1" />
+          <reference value="https://fhir.nhs.uk/ValueSet/DCH-PhysicalExaminationOutcome-1" />
         </valueSetReference>
       </binding>
     </element>
@@ -13645,7 +13645,7 @@
         <strength value="required" />
         <description value="The Physical Examination observation outcome value to represent that the Patient was not examined" />
         <valueSetReference>
-          <reference value="https://fhir.nhs.uk/ValueSet/dch-physicalexaminationnotexamined-1" />
+          <reference value="https://fhir.nhs.uk/ValueSet/DCH-PhysicalExaminationNotExamined-1" />
         </valueSetReference>
       </binding>
     </element>

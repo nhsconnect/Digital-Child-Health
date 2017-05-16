@@ -3039,7 +3039,7 @@
         <strength value="required" />
         <description value="Problems encountered by the baby, at birth" />
         <valueSetReference>
-          <reference value="https://fhir.nhs.uk/ValueSet/dch-problemsinbirth-1" />
+          <reference value="https://fhir.nhs.uk/ValueSet/DCH-ProblemsInBirth-1" />
         </valueSetReference>
       </binding>
       <mapping>
@@ -7641,7 +7641,7 @@
         <strength value="required" />
         <description value="Problems encountered by the baby, at birth" />
         <valueSetReference>
-          <reference value="https://fhir.nhs.uk/ValueSet/dch-problemsinbirth-1" />
+          <reference value="https://fhir.nhs.uk/ValueSet/DCH-ProblemsInBirth-1" />
         </valueSetReference>
       </binding>
     </element>

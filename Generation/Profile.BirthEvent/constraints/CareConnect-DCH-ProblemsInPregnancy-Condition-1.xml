@@ -3043,7 +3043,7 @@
         <strength value="required" />
         <description value="An infectious disease or medical condition diagnosed in this pregnancy" />
         <valueSetReference>
-          <reference value="https://fhir.nhs.uk/ValueSet/dch-problemsinpregnancy-1" />
+          <reference value="https://fhir.nhs.uk/ValueSet/DCH-ProblemsInPregnancy-1" />
         </valueSetReference>
       </binding>
       <mapping>
@@ -7649,7 +7649,7 @@
         <strength value="required" />
         <description value="An infectious disease or medical condition diagnosed in this pregnancy" />
         <valueSetReference>
-          <reference value="https://fhir.nhs.uk/ValueSet/dch-problemsinpregnancy-1" />
+          <reference value="https://fhir.nhs.uk/ValueSet/DCH-ProblemsInPregnancy-1" />
         </valueSetReference>
       </binding>
     </element>

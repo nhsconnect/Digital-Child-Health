@@ -4114,7 +4114,7 @@
         <strength value="required" />
         <description value="Whether the baby's first feed was breast milk" />
         <valueSetReference>
-          <reference value="https://fhir.nhs.uk/ValueSet/dch-firstmilkfeed-1" />
+          <reference value="https://fhir.nhs.uk/ValueSet/DCH-FirstMilkFeed-1" />
         </valueSetReference>
       </binding>
       <mapping>
@@ -13084,7 +13084,7 @@
         <strength value="required" />
         <description value="Whether the baby's first feed was breast milk" />
         <valueSetReference>
-          <reference value="https://fhir.nhs.uk/ValueSet/dch-firstmilkfeed-1" />
+          <reference value="https://fhir.nhs.uk/ValueSet/DCH-FirstMilkFeed-1" />
         </valueSetReference>
       </binding>
     </element>

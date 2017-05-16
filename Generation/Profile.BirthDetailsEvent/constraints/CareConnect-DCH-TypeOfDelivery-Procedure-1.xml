@@ -3421,7 +3421,7 @@
         <strength value="required" />
         <description value="The method for delivering baby" />
         <valueSetReference>
-          <reference value="https://fhir.nhs.uk/ValueSet/dch-typeofdelivery-1" />
+          <reference value="https://fhir.nhs.uk/ValueSet/DCH-TypeOfDelivery-1" />
         </valueSetReference>
       </binding>
       <mapping>
@@ -11397,7 +11397,7 @@
         <strength value="required" />
         <description value="The method for delivering baby" />
         <valueSetReference>
-          <reference value="https://fhir.nhs.uk/ValueSet/dch-typeofdelivery-1" />
+          <reference value="https://fhir.nhs.uk/ValueSet/DCH-TypeOfDelivery-1" />
         </valueSetReference>
       </binding>
     </element>

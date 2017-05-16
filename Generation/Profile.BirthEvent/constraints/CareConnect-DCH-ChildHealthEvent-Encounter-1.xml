@@ -3241,7 +3241,7 @@
         <strength value="required" />
         <description value="Level of care received in Neonatal Unit." />
         <valueSetReference>
-          <reference value="https://fhir.nhs.uk/ValueSet/dch-neonatallevelofcare-1" />
+          <reference value="https://fhir.nhs.uk/ValueSet/DCH-NeonatalLevelOfCare-1" />
         </valueSetReference>
       </binding>
       <mapping>
@@ -13869,7 +13869,7 @@
         <strength value="required" />
         <description value="Level of care received in Neonatal Unit." />
         <valueSetReference>
-          <reference value="https://fhir.nhs.uk/ValueSet/dch-neonatallevelofcare-1" />
+          <reference value="https://fhir.nhs.uk/ValueSet/DCH-NeonatalLevelOfCare-1" />
         </valueSetReference>
       </binding>
     </element>

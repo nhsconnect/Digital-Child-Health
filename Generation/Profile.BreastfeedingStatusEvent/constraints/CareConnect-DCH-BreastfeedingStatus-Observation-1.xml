@@ -4250,7 +4250,7 @@
       <binding>
         <strength value="required" />
         <description value="The breastfeeding status of a baby" />
-        <valueSetUri value="https://fhir.nhs.uk/ValueSet/dch-breastfeedingstatus-1" />
+        <valueSetUri value="https://fhir.nhs.uk/ValueSet/DCH-BreastfeedingStatus-1" />
       </binding>
       <mapping>
         <identity value="rim" />
@@ -13224,7 +13224,7 @@
       <binding>
         <strength value="required" />
         <description value="The breastfeeding status of a baby" />
-        <valueSetUri value="https://fhir.nhs.uk/ValueSet/dch-breastfeedingstatus-1" />
+        <valueSetUri value="https://fhir.nhs.uk/ValueSet/DCH-BreastfeedingStatus-1" />
       </binding>
     </element>
     <element>

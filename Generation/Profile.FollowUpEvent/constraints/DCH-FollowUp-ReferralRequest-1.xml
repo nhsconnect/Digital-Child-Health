@@ -2149,7 +2149,7 @@
         <strength value="required" />
         <description value="The type of community service or team that the patient has been referred into" />
         <valueSetReference>
-          <reference value="https://fhir.nhs.uk/ValueSet/dch-specialtyreferredto-1" />
+          <reference value="https://fhir.nhs.uk/ValueSet/DCH-SpecialtyReferredTo-1" />
         </valueSetReference>
       </binding>
       <mapping>
@@ -5157,7 +5157,7 @@
         <strength value="required" />
         <description value="The type of community service or team that the patient has been referred into" />
         <valueSetReference>
-          <reference value="https://fhir.nhs.uk/ValueSet/dch-specialtyreferredto-1" />
+          <reference value="https://fhir.nhs.uk/ValueSet/DCH-SpecialtyReferredTo-1" />
         </valueSetReference>
       </binding>
     </element>
