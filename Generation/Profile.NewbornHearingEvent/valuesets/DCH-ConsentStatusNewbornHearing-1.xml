@@ -4,9 +4,9 @@
 		<lastUpdated value="2016-08-03T00:00:00+01:00"/>
 	</meta>
 	<url value="https://fhir.nhs.uk/ValueSet/DCH-ConsentStatusNewbornHearing-1"/>
-	<name value="Consent Status"/>
+	<name value="Child Health Event Consent Status Newborn Hearing Screening"/>
 	<status value="active"/>
-	<description value="Whether or not the newborn hearing screening was offered and accepted."/>
+	<description value="Whether or not the Newborn Hearing Screening was offered and accepted."/>
 	<compose>
 		<include>
 			<system value="https://fhir.nhs.uk/dch-consentstatusnewbornhearing-1"/>

@@ -9995,7 +9995,7 @@
       </base>
       <type>
         <code value="Reference" />
-        <profile value="https://fhir.nhs.uk/StructureDefinition/dch-vitaminkevent-procedurerequest-1" />
+        <profile value="https://fhir.nhs.uk/StructureDefinition/DCH-VitaminKEvent-ProcedureRequest-1" />
       </type>
       <condition value="ele-1" />
       <constraint>
@@ -11811,7 +11811,7 @@
       <min value="1" />
       <type>
         <code value="Reference" />
-        <profile value="https://fhir.nhs.uk/StructureDefinition/dch-vitaminkevent-procedurerequest-1" />
+        <profile value="https://fhir.nhs.uk/StructureDefinition/DCH-VitaminKEvent-ProcedureRequest-1" />
       </type>
     </element>
     <element>

@@ -8022,7 +8022,7 @@
       </base>
       <type>
         <code value="Reference" />
-        <profile value="https://fhir.nhs.uk/StructureDefinition/dch-physicalexaminationevent-diagnosticreport-1" />
+        <profile value="https://fhir.nhs.uk/StructureDefinition/DCH-PhysicalExaminationEvent-DiagnosticReport-1" />
       </type>
       <condition value="ele-1" />
       <constraint>
@@ -9997,7 +9997,7 @@
       </base>
       <type>
         <code value="Reference" />
-        <profile value="https://fhir.nhs.uk/StructureDefinition/dch-physicalexaminationevent-procedurerequest-1" />
+        <profile value="https://fhir.nhs.uk/StructureDefinition/DCH-PhysicalExaminationEvent-ProcedureRequest-1" />
       </type>
       <condition value="ele-1" />
       <constraint>
@@ -11715,7 +11715,7 @@
       <max value="1" />
       <type>
         <code value="Reference" />
-        <profile value="https://fhir.nhs.uk/StructureDefinition/dch-physicalexaminationevent-diagnosticreport-1" />
+        <profile value="https://fhir.nhs.uk/StructureDefinition/DCH-PhysicalExaminationEvent-DiagnosticReport-1" />
       </type>
     </element>
     <element>
@@ -11829,7 +11829,7 @@
       <min value="1" />
       <type>
         <code value="Reference" />
-        <profile value="https://fhir.nhs.uk/StructureDefinition/dch-physicalexaminationevent-procedurerequest-1" />
+        <profile value="https://fhir.nhs.uk/StructureDefinition/DCH-PhysicalExaminationEvent-ProcedureRequest-1" />
       </type>
     </element>
     <element>

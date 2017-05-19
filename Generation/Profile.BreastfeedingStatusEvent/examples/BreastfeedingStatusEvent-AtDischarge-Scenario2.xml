@@ -3,7 +3,7 @@
 <Bundle xmlns="http://hl7.org/fhir" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://hl7.org/fhir ../../Schemas/bundle.xsd">
 	<id value="ee5f817a-69cb-4dff-bd93-bdd81a892c3a"/>
 	<meta>
-		<profile value="https://fhir.nhs.uk/StructureDefinition/dch-breastfeedingstatusevent-bundle-1"/>
+		<profile value="https://fhir.nhs.uk/StructureDefinition/DCH-BreastfeedingStatusEvent-Bundle-1"/>
 	</meta>
 	<type value="message"/>
 	<entry>
@@ -12,7 +12,7 @@
 			<MessageHeader>
 				<id value="1fbcea54-c830-431a-9485-2d06ebe23177"/>
 				<meta>
-					<profile value="https://fhir.nhs.uk/StructureDefinition/dch-breastfeedingstatusevent-messageheader-1"/>
+					<profile value="https://fhir.nhs.uk/StructureDefinition/DCH-BreastfeedingStatusEvent-MessageHeader-1"/>
 				</meta>
 				<timestamp value="2012-01-10T11:00:00+00:00"/>
 				<event>
@@ -39,7 +39,7 @@
 			<Encounter>
 				<id value="2355d1dd-000e-4b11-92f0-a6de6b935856"/>
 				<meta>
-					<profile value="https://fhir.nhs.uk/StructureDefinition/dch-breastfeedingstatusevent-bundle-1"/>
+					<profile value="https://fhir.nhs.uk/StructureDefinition/DCH-ChildHealthEvent-Encounter-1"/>
 				</meta>
 				<identifier>
 					<system value="https://tools.ietf.org/html/rfc4122"/>

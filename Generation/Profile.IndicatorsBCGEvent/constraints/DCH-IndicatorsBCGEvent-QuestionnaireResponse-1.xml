@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <meta>
-    <lastUpdated value="2017-05-11T10:36:45.569+01:00" />
+    <lastUpdated value="2017-05-19T10:27:40.376+01:00" />
     <tag>
       <system value="urn:hscic:publishOrder" />
       <code value="6" />
     </tag>
   </meta>
-  <url value="https://fhir.nhs.uk/StructureDefinition/dch-indicatorsbcgevent-questionnaireresponse-1" />
+  <url value="https://fhir.nhs.uk/StructureDefinition/DCH-IndicatorsBCGEvent-QuestionnaireResponse-1" />
   <version value="1.0.0" />
   <name value="DCH-IndicatorsBCGEvent-QuestionnaireResponse-1" />
   <status value="draft" />
@@ -2643,7 +2643,7 @@
       <type>
         <code value="string" />
       </type>
-      <fixedString value="Indicators" />
+      <fixedString value="Indicator BCG" />
       <condition value="ele-1" />
       <constraint>
         <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-expression">
@@ -2669,8 +2669,8 @@
       <definition value="Additional text for the group, used for display purposes." />
       <comments value="Note that FHIR strings may not exceed 1MB in size" />
       <requirements value="When including text for the questionnaire, each section may contain additional explanations are background text." />
-      <min value="1" />
-      <max value="1" />
+      <min value="0" />
+      <max value="0" />
       <base>
         <path value="QuestionnaireResponse.group.text" />
         <min value="0" />
@@ -2679,7 +2679,7 @@
       <type>
         <code value="string" />
       </type>
-      <fixedString value="Indicators for BCG and Hep B" />
+      <fixedString value="Indicator Hep B" />
       <condition value="ele-1" />
       <constraint>
         <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-expression">
@@ -3085,7 +3085,7 @@
     </element>
     <element>
       <path value="QuestionnaireResponse.group.question.text" />
-      <short value="Is BCG vaccine required?" />
+      <short value="An indication as to whether BCG vaccine is required" />
       <definition value="The actual question as shown to the user to prompt them for an answer." />
       <comments value="Note that FHIR strings may not exceed 1MB in size" />
       <requirements value="When including text for the questionnaire, each question may contain its actual question display text." />
@@ -3099,7 +3099,7 @@
       <type>
         <code value="string" />
       </type>
-      <fixedString value="Is BCG vaccine required?" />
+      <fixedString value="An indication as to whether BCG vaccine is required" />
       <condition value="ele-1" />
       <constraint>
         <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-expression">
@@ -3406,12 +3406,12 @@
     <element>
       <path value="QuestionnaireResponse.group.title" />
       <min value="1" />
-      <fixedString value="Indicators" />
+      <fixedString value="Indicator BCG" />
     </element>
     <element>
       <path value="QuestionnaireResponse.group.text" />
-      <min value="1" />
-      <fixedString value="Indicators for BCG and Hep B" />
+      <max value="0" />
+      <fixedString value="Indicator Hep B" />
     </element>
     <element>
       <path value="QuestionnaireResponse.group.subject" />
@@ -3435,9 +3435,9 @@
     </element>
     <element>
       <path value="QuestionnaireResponse.group.question.text" />
-      <short value="Is BCG vaccine required?" />
+      <short value="An indication as to whether BCG vaccine is required" />
       <min value="1" />
-      <fixedString value="Is BCG vaccine required?" />
+      <fixedString value="An indication as to whether BCG vaccine is required" />
     </element>
     <element>
       <path value="QuestionnaireResponse.group.question.answer" />

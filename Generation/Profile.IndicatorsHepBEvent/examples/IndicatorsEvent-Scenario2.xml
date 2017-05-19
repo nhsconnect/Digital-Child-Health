@@ -3,7 +3,7 @@
 <Bundle xmlns="http://hl7.org/fhir" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://hl7.org/fhir ../../Schemas/bundle.xsd">
 	<id value="506947e5-05a4-4a43-b781-8590d5874443"/>
 	<meta>
-		<profile value="https://fhir.nhs.uk/StructureDefinition/dch-bundle-measurementsevent-1"/>
+		<profile value="https://fhir.nhs.uk/StructureDefinition/DCH-Bundle-IndicatorsHepB-Event-1"/>
 	</meta>
 	<type value="message"/>
 	<entry>
@@ -12,7 +12,7 @@
 			<MessageHeader>
 				<id value="64a04ff7-c168-4589-9839-f35c1b07b161"/>
 				<meta>
-					<profile value="https://fhir.nhs.uk/StructureDefinition/dch-indicatorsevent-messageheader-1"/>
+					<profile value="https://fhir.nhs.uk/StructureDefinition/DCH-IndicatorsHepB-MessageHeader-1"/>
 				</meta>
 				<timestamp value="2012-01-07T22:00:00+00:00"/>
 				<event>
@@ -39,7 +39,7 @@
 			<Encounter>
 				<id value="1319bc90-cc19-4f22-91c3-d0fc7eda77a7"/>
 				<meta>
-					<profile value="https://fhir.hl7.org.uk/StructureDefinition/CareConnect-DCH-IndicatorsEvent-Encounter-1"/>
+					<profile value="https://fhir.hl7.org.uk/StructureDefinition/CareConnect-DCH-ChildHealthEvent-Encounter-1"/>
 				</meta>
 				<identifier>
 					<system value="https://tools.ietf.org/html/rfc4122"/>
@@ -153,7 +153,7 @@
 			<QuestionnaireResponse>
 				<id value="b187e23b-5e01-40a7-a68c-61b388067196"/>
 				<meta>
-					<profile value="https://fhir.nhs.uk/StructureDefinition/DCH-IndicatorsEvent-QuestionnaireResponse-1"/>
+					<profile value="https://fhir.nhs.uk/StructureDefinition/DCH-IndicatorsHepBEvent-QuestionnaireResponse-1"/>
 				</meta>
 				<identifier>
 					<system value="https://tools.ietf.org/html/rfc4122"/>
@@ -172,14 +172,7 @@
 					<reference value="urn:uuid:1319bc90-cc19-4f22-91c3-d0fc7eda77a7"/>
 				</encounter>
 				<group>
-					<title value="Indicators"/>
-					<text value="Indicators for BCG and Hep B"/>
-					<question>
-						<text value="An indication as to whether BCG vaccine is required"/>
-						<answer>
-							<valueBoolean value="false"/>
-						</answer>
-					</question>
+					<title value="Indicator Hep B"/>
 					<question>
 						<text value="An indication as to whether Hep B vaccine is required"/>
 						<answer>

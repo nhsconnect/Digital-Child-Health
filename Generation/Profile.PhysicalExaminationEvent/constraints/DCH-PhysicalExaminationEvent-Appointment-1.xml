@@ -7,7 +7,7 @@
       <code value="22" />
     </tag>
   </meta>
-  <url value="https://fhir.nhs.uk/StructureDefinition/dch-physicalexaminationevent-appointment-1" />
+  <url value="https://fhir.nhs.uk/StructureDefinition/DCH-PhysicalExaminationEvent-Appointment-1" />
   <name value="DCH-PhysicalExaminationEvent-Appointment-1" />
   <status value="draft" />
   <publisher value="NHS Digital" />

@@ -5388,7 +5388,7 @@
       </type>
       <type>
         <code value="Reference" />
-        <profile value="https://fhir.nhs.uk/StructureDefinition/dch-vitaminkevent-appointment-1" />
+        <profile value="https://fhir.nhs.uk/StructureDefinition/DCH-VitaminKEvent-Appointment-1" />
       </type>
       <condition value="ele-1" />
       <constraint>
@@ -13712,7 +13712,7 @@
       </type>
       <type>
         <code value="Reference" />
-        <profile value="https://fhir.nhs.uk/StructureDefinition/dch-vitaminkevent-appointment-1" />
+        <profile value="https://fhir.nhs.uk/StructureDefinition/DCH-VitaminKEvent-Appointment-1" />
       </type>
     </element>
     <element>

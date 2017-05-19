@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <meta>
     <lastUpdated value="2017-05-08T14:48:34.278+01:00" />
@@ -10,7 +10,7 @@
   <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm">
     <valueInteger value="2" />
   </extension>
-  <url value="https://fhir.nhs.uk/StructureDefinition/dch-measurementsevent-messageheader-1" />
+  <url value="https://fhir.nhs.uk/StructureDefinition/DCH-MeasurementsEvent-MessageHeader-1" />
   <version value="1.0.0" />
   <name value="DCH-MeasurementsEvent-MessageHeader-1" />
   <status value="draft" />

@@ -3697,7 +3697,7 @@
         <strength value="required" />
         <description value="Reason for Referral to include clinical intervention/event which triggers Referral" />
         <valueSetReference>
-          <reference value="https://fhir.nhs.uk/ValueSet/dch-reasonforreferral-1" />
+          <reference value="https://fhir.nhs.uk/ValueSet/DCH-ReasonForReferral-1" />
         </valueSetReference>
       </binding>
       <mapping>
@@ -5224,7 +5224,7 @@
         <strength value="required" />
         <description value="Reason for Referral to include clinical intervention/event which triggers Referral" />
         <valueSetReference>
-          <reference value="https://fhir.nhs.uk/ValueSet/dch-reasonforreferral-1" />
+          <reference value="https://fhir.nhs.uk/ValueSet/DCH-ReasonForReferral-1" />
         </valueSetReference>
       </binding>
     </element>

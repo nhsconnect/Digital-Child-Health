@@ -7,7 +7,7 @@
       <code value="7" />
     </tag>
   </meta>
-  <url value="https://fhir.nhs.uk/StructureDefinition/dch-newbornphysicalexamevent-appointment-1" />
+  <url value="https://fhir.nhs.uk/StructureDefinition/DCH-NewbornPhysicalExamEvent-Appointment-1" />
     <version value="1.0.0" />
   <name value="DCH-NewbornPhysicalExamEvent-Appointment-1" />
   <status value="draft" />

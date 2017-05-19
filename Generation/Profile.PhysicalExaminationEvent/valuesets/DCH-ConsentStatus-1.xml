@@ -4,7 +4,7 @@
 		<lastUpdated value="2016-08-03T00:00:00+01:00"/>
 	</meta>
 	<url value="https://fhir.nhs.uk/ValueSet/DCH-ConsentStatus-1"/>
-	<name value="Consent Status"/>
+	<name value="Child Health Event Consent Status"/>
 	<status value="active"/>
 	<description value="The Consent Status for the Child Health Event"/>
 	<compose>

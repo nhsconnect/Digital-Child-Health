@@ -6,7 +6,7 @@
 	<url value="https://fhir.nhs.uk/ValueSet/DCH-ChildHealthEventOutcome-1"/>
 	<name value="Child Health Event Outcome"/>
 	<status value="active"/>
-	<description value="The Outcome of the Child Health Event."/>
+	<description value="The outcome of the Child Health Event."/>
 	<compose>
 		<include>
 			<system value="https://fhir.nhs.uk/dch-childhealtheventoutcome-1"/>
