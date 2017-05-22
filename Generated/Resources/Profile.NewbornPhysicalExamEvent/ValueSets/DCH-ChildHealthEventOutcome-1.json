@@ -1,0 +1,31 @@
+{
+  "resourceType": "ValueSet",
+  "meta": {
+    "lastUpdated": "2016-08-03T00:00:00+01:00"
+  },
+  "url": "https://fhir.nhs.uk/ValueSet/DCH-ChildHealthEventOutcome-1",
+  "name": "Child Health Event Outcome",
+  "status": "active",
+  "description": "The outcome of the Child Health Event.",
+  "compose": {
+    "include": [
+      {
+        "system": "https://fhir.nhs.uk/dch-childhealtheventoutcome-1",
+        "concept": [
+          {
+            "code": "On-going",
+            "display": "On-going"
+          },
+          {
+            "code": "Follow Up",
+            "display": "Follow Up"
+          },
+          {
+            "code": "Completed",
+            "display": "Completed"
+          }
+        ]
+      }
+    ]
+  }
+}

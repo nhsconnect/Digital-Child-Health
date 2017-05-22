@@ -1,0 +1,23 @@
+{
+  "resourceType": "ValueSet",
+  "meta": {
+    "lastUpdated": "2016-08-03T00:00:00+01:00"
+  },
+  "url": "https://fhir.nhs.uk/ValueSet/DCH-BirthWeightNotRecorded-1",
+  "name": "Birth Weight Not Recorded",
+  "status": "active",
+  "description": "A code to indicate that the birth weight has not been recorded.",
+  "compose": {
+    "include": [
+      {
+        "system": "https://fhir.nhs.uk/dch-birthweightnotrecorded-1",
+        "concept": [
+          {
+            "code": "9999",
+            "display": "Not known"
+          }
+        ]
+      }
+    ]
+  }
+}

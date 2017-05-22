@@ -1,0 +1,43 @@
+{
+  "resourceType": "ValueSet",
+  "meta": {
+    "lastUpdated": "2016-08-03T00:00:00+01:00"
+  },
+  "url": "https://fhir.nhs.uk/ValueSet/DCH-ProblemsInBirth-1",
+  "name": "Problems in Birth",
+  "status": "active",
+  "description": "Problems encountered by the baby, at birth.",
+  "compose": {
+    "include": [
+      {
+        "system": "https://fhir.nhs.uk/dch-problemsinbirth-1",
+        "concept": [
+          {
+            "code": "1",
+            "display": "Shoulder dystocia"
+          },
+          {
+            "code": "2",
+            "display": "Cord prolapse"
+          },
+          {
+            "code": "3",
+            "display": "Acute fetal compromise"
+          },
+          {
+            "code": "4",
+            "display": "Fetal acidaemia"
+          },
+          {
+            "code": "5",
+            "display": "Meconium Aspiration Syndrome"
+          },
+          {
+            "code": "6",
+            "display": "Acute blood loss"
+          }
+        ]
+      }
+    ]
+  }
+}

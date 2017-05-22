@@ -1,0 +1,625 @@
+{
+  "resourceType": "Bundle",
+  "id": "5676b08b-20da-43e9-a478-98ce365f69d9",
+  "meta": {
+    "profile": [
+      "https://fhir.nhs.uk/StructureDefinition/DCH-BirthDetailsEvent-Bundle-1"
+    ]
+  },
+  "type": "message",
+  "entry": [
+    {
+      "fullUrl": "urn:uuid:4caee5d0-bbe5-4c99-9a12-7b628c69bc62",
+      "resource": {
+        "resourceType": "MessageHeader",
+        "id": "4caee5d0-bbe5-4c99-9a12-7b628c69bc62",
+        "meta": {
+          "profile": [
+            "https://fhir.nhs.uk/StructureDefinition/DCH-BirthDetailsEvent-MessageHeader-1"
+          ]
+        },
+        "timestamp": "2012-01-08T10:00:00+00:00",
+        "event": {
+          "system": "https://fhir.nhs.uk/dch-childhealtheventtype-1",
+          "code": "Birth: Birth Details",
+          "display": "Birth: Birth Details"
+        },
+        "source": {
+          "endpoint": "urn:uuid:4caee5d0-bbe5-4c99-9a12-7b628c69bc62"
+        },
+        "responsible": {
+          "reference": "urn:uuid:5ccb6bb7-a7f1-46cc-a5d3-135320765553",
+          "display": "Leeds Teaching Hospitals"
+        },
+        "data": [
+          {
+            "reference": "urn:uuid:71dbf9ae-b40e-461c-be54-952db20725e5"
+          }
+        ]
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:71dbf9ae-b40e-461c-be54-952db20725e5",
+      "resource": {
+        "resourceType": "Encounter",
+        "id": "71dbf9ae-b40e-461c-be54-952db20725e5",
+        "meta": {
+          "profile": [
+            "https://fhir.hl7.org.uk/StructureDefinition/CareConnect-DCH-BirthOccurrence-Encounter-1"
+          ]
+        },
+        "identifier": [
+          {
+            "system": "https://tools.ietf.org/html/rfc4122",
+            "value": "94ff5d3f-446f-4ff1-a8fb-a9f93a28404c"
+          }
+        ],
+        "status": "finished",
+        "type": [
+          {
+            "coding": [
+              {
+                "system": "https://fhir.nhs.uk/dch-childhealthencountertype-1",
+                "code": "Birth",
+                "display": "Birth"
+              }
+            ]
+          }
+        ],
+        "patient": {
+          "reference": "urn:uuid:7368c5fe-bbb4-4e9c-a585-234e06b84e82",
+          "display": "SAXTON, Sarah Marie"
+        },
+        "participant": [
+          {
+            "individual": {
+              "reference": "urn:uuid:471d6f51-8b18-4ccb-b8da-f5fbd442eb1e",
+              "display": "RILEY, David"
+            }
+          }
+        ],
+        "period": {
+          "start": "2012-01-06T20:25:00+00:00",
+          "end": "2012-01-07T22:00:00+00:00"
+        },
+        "location": [
+          {
+            "location": {
+              "reference": "urn:uuid:00e72e70-0e37-48b5-b950-ca5ce8c35de7",
+              "display": "Clarendon Wing, Leeds General Infirmary"
+            }
+          }
+        ],
+        "serviceProvider": {
+          "reference": "urn:uuid:5ccb6bb7-a7f1-46cc-a5d3-135320765553",
+          "display": "Leeds Teaching Hospitals NHS Trust"
+        },
+        "partOf": {
+          "reference": "urn:uuid:1c85de2c-c568-4030-beec-1419e1fb2a91"
+        }
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:5ccb6bb7-a7f1-46cc-a5d3-135320765553",
+      "resource": {
+        "resourceType": "Organization",
+        "id": "5ccb6bb7-a7f1-46cc-a5d3-135320765553",
+        "meta": {
+          "profile": [
+            "https://fhir.hl7.org.uk/StructureDefinition/CareConnect-Organization-1"
+          ]
+        },
+        "identifier": [
+          {
+            "system": "https://fhir.nhs.uk/Id/ods-organization-code",
+            "value": "RR8"
+          }
+        ],
+        "name": "Leeds Teaching Hospitals NHS Trust"
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:7368c5fe-bbb4-4e9c-a585-234e06b84e82",
+      "resource": {
+        "resourceType": "Patient",
+        "id": "7368c5fe-bbb4-4e9c-a585-234e06b84e82",
+        "meta": {
+          "profile": [
+            "https://fhir.hl7.org.uk/StructureDefinition/CareConnect-DCH-Baby-Patient-1"
+          ]
+        },
+        "identifier": [
+          {
+            "extension": [
+              {
+                "url": "https://fhir.hl7.org.uk/StructureDefinition/Extension-CareConnect-NHSNumberVerificationStatus-1",
+                "valueCodeableConcept": {
+                  "coding": [
+                    {
+                      "system": "https://fhir.hl7.org.uk/CareConnect-NHSNumberVerificationStatus-1",
+                      "code": "01",
+                      "display": "Number present and verified"
+                    }
+                  ]
+                }
+              }
+            ],
+            "system": "https://fhir.nhs.uk/Id/nhs-number",
+            "value": "5629874536"
+          }
+        ],
+        "name": [
+          {
+            "use": "official",
+            "family": [
+              "Saxton"
+            ],
+            "given": [
+              "Sarah",
+              "Marie"
+            ]
+          }
+        ],
+        "gender": "female",
+        "_birthDate": {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/patient-birthTime",
+              "valueDateTime": "2012-01-07T20:12:00+00:00"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:3f75d4b6-9d6e-48ae-b0d0-1a231da0e980",
+      "resource": {
+        "resourceType": "Observation",
+        "id": "3f75d4b6-9d6e-48ae-b0d0-1a231da0e980",
+        "meta": {
+          "profile": [
+            "https://fhir.hl7.org.uk/StructureDefinition/CareConnect-DCH-LengthOfPregnancy-Observation-1"
+          ]
+        },
+        "identifier": [
+          {
+            "system": "https://tools.ietf.org/html/rfc4122",
+            "value": "30234e42-2fd7-464c-8fef-c738b6a813dd"
+          }
+        ],
+        "status": "final",
+        "code": {
+          "coding": [
+            {
+              "system": "http://snomed.info/sct",
+              "code": "412726003",
+              "display": "Length of gestation at birth (observable entity)"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "urn:uuid:98ff5f0a-bcfa-4b78-ad55-ed8249b7509e",
+          "display": "SAXTON, Sophie"
+        },
+        "encounter": {
+          "reference": "urn:uuid:1c85de2c-c568-4030-beec-1419e1fb2a91"
+        },
+        "valueString": "38 weeks"
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:fc000ba9-4631-471d-869e-06c563d86b9c",
+      "resource": {
+        "resourceType": "Observation",
+        "id": "fc000ba9-4631-471d-869e-06c563d86b9c",
+        "meta": {
+          "profile": [
+            "https://fhir.hl7.org.uk/StructureDefinition/CareConnect-DCH-NumberOfFetusesInConfinement-Observation-1"
+          ]
+        },
+        "identifier": [
+          {
+            "system": "https://tools.ietf.org/html/rfc4122",
+            "value": "2cdb7a78-aa13-4c0a-970c-c9e5e95cc27d"
+          }
+        ],
+        "status": "final",
+        "code": {
+          "coding": [
+            {
+              "system": "http://snomed.info/sct",
+              "code": "246435002",
+              "display": "Number of fetuses (observable entity)"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "urn:uuid:98ff5f0a-bcfa-4b78-ad55-ed8249b7509e",
+          "display": "SAXTON, Sophie"
+        },
+        "encounter": {
+          "reference": "urn:uuid:1c85de2c-c568-4030-beec-1419e1fb2a91"
+        },
+        "valueQuantity": {
+          "value": 1
+        }
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:00e72e70-0e37-48b5-b950-ca5ce8c35de7",
+      "resource": {
+        "resourceType": "Organization",
+        "id": "00e72e70-0e37-48b5-b950-ca5ce8c35de7",
+        "meta": {
+          "profile": [
+            "https://fhir.hl7.org.uk/StructureDefinition/CareConnect-DCH-ActualDeliveryPlace-Organization-1"
+          ]
+        },
+        "identifier": [
+          {
+            "system": "https://fhir.nhs.uk/Id/ods-site-code",
+            "value": "RR830"
+          }
+        ],
+        "type": {
+          "coding": [
+            {
+              "system": "https://fhir.nhs.uk/dch-typeofunit-1",
+              "code": "4",
+              "display": "In NHS hospital - delivery facilities associated with consultant/GMP/midwife ward inclusive of any combination of two of the professionals mentioned"
+            }
+          ]
+        },
+        "name": "Clarendon Wing, Leeds General Infirmary"
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:c850e5f6-e588-4b56-a7ff-ff5006778fb1",
+      "resource": {
+        "resourceType": "Condition",
+        "id": "c850e5f6-e588-4b56-a7ff-ff5006778fb1",
+        "meta": {
+          "profile": [
+            "https://fhir.hl7.org.uk/StructureDefinition/CareConnect-DCH-ProblemsInBirth-Condition-1"
+          ]
+        },
+        "identifier": [
+          {
+            "system": "https://tools.ietf.org/html/rfc4122",
+            "value": "c0c61209-22fd-445c-9d0b-0c0a9a57a59a"
+          }
+        ],
+        "patient": {
+          "reference": "urn:uuid:7368c5fe-bbb4-4e9c-a585-234e06b84e82",
+          "display": "SAXTON, Sarah Marie"
+        },
+        "encounter": {
+          "reference": "urn:uuid:71dbf9ae-b40e-461c-be54-952db20725e5"
+        },
+        "dateRecorded": "2012-01-07",
+        "code": {
+          "coding": [
+            {
+              "system": "https://fhir.nhs.uk/dch-problemsinbirth-1",
+              "code": "3",
+              "display": "Acute fetal compromise"
+            }
+          ]
+        },
+        "category": {
+          "coding": [
+            {
+              "system": "https://hl7.org.uk/fhir/CareConnect-ConditionCategory-1",
+              "code": "problem",
+              "display": "Problem"
+            }
+          ]
+        },
+        "verificationStatus": "confirmed"
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:0274d441-7a58-4f12-aa17-a3be79b5f0d3",
+      "resource": {
+        "resourceType": "Condition",
+        "id": "0274d441-7a58-4f12-aa17-a3be79b5f0d3",
+        "meta": {
+          "profile": [
+            "https://fhir.hl7.org.uk/StructureDefinition/CareConnect-DCH-AbnormalitiesDetected-Condition-1"
+          ]
+        },
+        "identifier": [
+          {
+            "system": "https://tools.ietf.org/html/rfc4122",
+            "value": "1031b033-4c26-4847-b6dc-bf7754f5214a"
+          }
+        ],
+        "patient": {
+          "reference": "urn:uuid:7368c5fe-bbb4-4e9c-a585-234e06b84e82",
+          "display": "SAXTON, Sarah Marie"
+        },
+        "encounter": {
+          "reference": "urn:uuid:71dbf9ae-b40e-461c-be54-952db20725e5"
+        },
+        "dateRecorded": "2012-01-07",
+        "code": {
+          "coding": [
+            {
+              "system": "http://snomed.info/sct",
+              "code": "87979003",
+              "display": "Cleft palate (disorder)"
+            }
+          ]
+        },
+        "category": {
+          "coding": [
+            {
+              "system": "https://hl7.org.uk/fhir/CareConnect-ConditionCategory-1",
+              "code": "problem",
+              "display": "Problem"
+            }
+          ]
+        },
+        "verificationStatus": "confirmed"
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:d27d7275-0d26-4ea4-8c8a-f72f09bdb905",
+      "resource": {
+        "resourceType": "Condition",
+        "id": "d27d7275-0d26-4ea4-8c8a-f72f09bdb905",
+        "meta": {
+          "profile": [
+            "https://fhir.hl7.org.uk/StructureDefinition/CareConnect-DCH-ProblemsInPregnancy-Condition-1"
+          ]
+        },
+        "identifier": [
+          {
+            "system": "https://tools.ietf.org/html/rfc4122",
+            "value": "5de9a54e-4b27-4aa4-bb83-b4174274ac04"
+          }
+        ],
+        "patient": {
+          "reference": "urn:uuid:98ff5f0a-bcfa-4b78-ad55-ed8249b7509e",
+          "display": "SAXTON, Sophie"
+        },
+        "encounter": {
+          "reference": "urn:uuid:1c85de2c-c568-4030-beec-1419e1fb2a91"
+        },
+        "asserter": {
+          "reference": "urn:uuid:98ff5f0a-bcfa-4b78-ad55-ed8249b7509e",
+          "display": "SAXTON, Sophie"
+        },
+        "dateRecorded": "2012-01-06",
+        "code": {
+          "coding": [
+            {
+              "system": "https://fhir.nhs.uk/ValueSet/DCH-ProblemsInPregnancy-1",
+              "code": "19",
+              "display": "Diabetes"
+            }
+          ]
+        },
+        "category": {
+          "coding": [
+            {
+              "system": "https://hl7.org.uk/fhir/CareConnect-ConditionCategory-1",
+              "code": "problem",
+              "display": "Problem"
+            }
+          ]
+        },
+        "verificationStatus": "confirmed"
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:e8bd2802-7c66-4696-85a1-73334b6c0341",
+      "resource": {
+        "resourceType": "Procedure",
+        "id": "e8bd2802-7c66-4696-85a1-73334b6c0341",
+        "meta": {
+          "profile": [
+            "https://fhir.hl7.org.uk/StructureDefinition/CareConnect-DCH-TypeOfDelivery-Procedure-1"
+          ]
+        },
+        "identifier": [
+          {
+            "system": "https://tools.ietf.org/html/rfc4122",
+            "value": "241a136a-c8c3-4775-aba3-0b3004228d3a"
+          }
+        ],
+        "subject": {
+          "reference": "urn:uuid:98ff5f0a-bcfa-4b78-ad55-ed8249b7509e",
+          "display": "SAXTON, Sophie"
+        },
+        "status": "completed",
+        "code": {
+          "coding": [
+            {
+              "system": "https://fhir.nhs.uk/dch-typeofdelivery-1",
+              "code": "2",
+              "display": "Low forceps, not breech"
+            }
+          ]
+        },
+        "encounter": {
+          "reference": "urn:uuid:1c85de2c-c568-4030-beec-1419e1fb2a91"
+        }
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:1c85de2c-c568-4030-beec-1419e1fb2a91",
+      "resource": {
+        "resourceType": "Encounter",
+        "id": "1c85de2c-c568-4030-beec-1419e1fb2a91",
+        "meta": {
+          "profile": [
+            "https://fhir.hl7.org.uk/StructureDefinition/CareConnect-DCH-Delivery-Encounter-1"
+          ]
+        },
+        "identifier": [
+          {
+            "system": "https://tools.ietf.org/html/rfc4122",
+            "value": "c57d87a3-5f49-40b0-a437-fcf18c11ac89"
+          }
+        ],
+        "status": "finished",
+        "patient": {
+          "reference": "urn:uuid:98ff5f0a-bcfa-4b78-ad55-ed8249b7509e",
+          "display": "SAXTON, Sophie"
+        },
+        "participant": [
+          {
+            "individual": {
+              "reference": "urn:uuid:471d6f51-8b18-4ccb-b8da-f5fbd442eb1e",
+              "display": "RILEY, David"
+            }
+          }
+        ],
+        "location": [
+          {
+            "location": {
+              "reference": "urn:uuid:00e72e70-0e37-48b5-b950-ca5ce8c35de7",
+              "display": "Clarendon Wing, Leeds General Infirmary"
+            }
+          }
+        ],
+        "serviceProvider": {
+          "reference": "urn:uuid:5ccb6bb7-a7f1-46cc-a5d3-135320765553",
+          "display": "Leeds Teaching Hospitals NHS Trust"
+        }
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:98ff5f0a-bcfa-4b78-ad55-ed8249b7509e",
+      "resource": {
+        "resourceType": "Patient",
+        "id": "98ff5f0a-bcfa-4b78-ad55-ed8249b7509e",
+        "meta": {
+          "profile": [
+            "https://fhir.hl7.org.uk/StructureDefinition/CareConnect-DCH-Mother-Patient-1"
+          ]
+        },
+        "identifier": [
+          {
+            "extension": [
+              {
+                "url": "https://fhir.hl7.org.uk/StructureDefinition/Extension-CareConnect-NHSNumberVerificationStatus-1",
+                "valueCodeableConcept": {
+                  "coding": [
+                    {
+                      "system": "https://fhir.hl7.org.uk/CareConnect-NHSNumberVerificationStatus-1",
+                      "code": "01",
+                      "display": "Number present and verified"
+                    }
+                  ]
+                }
+              }
+            ],
+            "system": "https://fhir.nhs.uk/Id/nhs-number",
+            "value": "3256987451"
+          }
+        ],
+        "name": [
+          {
+            "use": "usual",
+            "family": [
+              "Saxton"
+            ],
+            "given": [
+              "Sophie"
+            ]
+          }
+        ],
+        "gender": "female",
+        "_birthDate": {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/patient-birthTime",
+              "valueDateTime": "1987-06-25T01:00:00+01:00"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:ca0593eb-5089-485c-8b65-6b41b9f3b708",
+      "resource": {
+        "resourceType": "RelatedPerson",
+        "id": "ca0593eb-5089-485c-8b65-6b41b9f3b708",
+        "meta": {
+          "profile": [
+            "https://fhir.nhs.uk/StructureDefinition/DCH-MotherAndBaby-RelatedPerson-1"
+          ]
+        },
+        "extension": [
+          {
+            "url": "https://fhir.nhs.uk/StructureDefinition/Extension-DCH-ReferencePatientMother-1",
+            "valueReference": {
+              "reference": "urn:uuid:98ff5f0a-bcfa-4b78-ad55-ed8249b7509e",
+              "display": "SAXTON, Sophie"
+            }
+          }
+        ],
+        "identifier": [
+          {
+            "system": "https://tools.ietf.org/html/rfc4122",
+            "value": "8265ec80-1d7e-435e-9e57-e95f63639a5e"
+          }
+        ],
+        "patient": {
+          "reference": "urn:uuid:7368c5fe-bbb4-4e9c-a585-234e06b84e82",
+          "display": "SAXTON, Sarah Marie"
+        },
+        "relationship": {
+          "coding": [
+            {
+              "system": "http://hl7.org/fhir/v3/RoleCode",
+              "code": "NMTH",
+              "display": "natural mother"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:471d6f51-8b18-4ccb-b8da-f5fbd442eb1e",
+      "resource": {
+        "resourceType": "Practitioner",
+        "id": "471d6f51-8b18-4ccb-b8da-f5fbd442eb1e",
+        "meta": {
+          "profile": [
+            "https://fhir.hl7.org.uk/StructureDefinition/CareConnect-DCH-ChildHealthEvent-Practitioner-1"
+          ]
+        },
+        "identifier": [
+          {
+            "system": "https://fhir.nhs.uk/Id/sds-role-profile-id",
+            "value": "M9999998"
+          }
+        ],
+        "name": {
+          "family": [
+            "Riley"
+          ],
+          "given": [
+            "David"
+          ]
+        },
+        "practitionerRole": [
+          {
+            "role": {
+              "coding": [
+                {
+                  "system": "https://fhir.hl7.org.uk/CareConnect-SDSJobRoleName-1",
+                  "code": "R8016",
+                  "display": "Midwife Access Role"
+                }
+              ]
+            }
+          }
+        ]
+      }
+    }
+  ]
+}

@@ -1,0 +1,123 @@
+{
+  "resourceType": "ValueSet",
+  "meta": {
+    "lastUpdated": "2016-08-03T00:00:00+01:00"
+  },
+  "url": "https://fhir.nhs.uk/ValueSet/DCH-ProblemsInPregnancy-1",
+  "name": "Problems In Pregnancy",
+  "status": "active",
+  "description": "An infectious disease or medical condition diagnosed in this pregnancy.",
+  "compose": {
+    "include": [
+      {
+        "system": "https://fhir.nhs.uk/dch-problemsinpregnancy-1",
+        "concept": [
+          {
+            "code": "1",
+            "display": "Rubella"
+          },
+          {
+            "code": "2",
+            "display": "Varicella"
+          },
+          {
+            "code": "3",
+            "display": "Group B streptococcus"
+          },
+          {
+            "code": "4",
+            "display": "Asymptomatic bacteriuria"
+          },
+          {
+            "code": "5",
+            "display": "Toxoplasmosis"
+          },
+          {
+            "code": "8",
+            "display": "Tuberculosis"
+          },
+          {
+            "code": "9",
+            "display": "Cytomegalovirus"
+          },
+          {
+            "code": "10",
+            "display": "Parvovirus"
+          },
+          {
+            "code": "11",
+            "display": "Malaria"
+          },
+          {
+            "code": "13",
+            "display": "Cardiac Disease"
+          },
+          {
+            "code": "14",
+            "display": "Renal Disease"
+          },
+          {
+            "code": "15",
+            "display": "Mental Health Disorder"
+          },
+          {
+            "code": "16",
+            "display": "Thromboembolic disorder"
+          },
+          {
+            "code": "17",
+            "display": "Haematological disorder"
+          },
+          {
+            "code": "18",
+            "display": "Central Nervous System (CNS) disorder"
+          },
+          {
+            "code": "19",
+            "display": "Diabetes"
+          },
+          {
+            "code": "20",
+            "display": "Autoimmune disease"
+          },
+          {
+            "code": "21",
+            "display": "Cancer"
+          },
+          {
+            "code": "22",
+            "display": "Infectious hepatitis A"
+          },
+          {
+            "code": "23",
+            "display": "Hepatitis B"
+          },
+          {
+            "code": "24",
+            "display": "Hepatitis C"
+          },
+          {
+            "code": "25",
+            "display": "Endocrine Disorder"
+          },
+          {
+            "code": "26",
+            "display": "Respiratory disease"
+          },
+          {
+            "code": "27",
+            "display": "Gastrointestinal disorder"
+          },
+          {
+            "code": "28",
+            "display": "Musculoskeletal disorder"
+          },
+          {
+            "code": "29",
+            "display": "Gynaecological problems"
+          }
+        ]
+      }
+    ]
+  }
+}

@@ -1,0 +1,27 @@
+{
+  "resourceType": "ValueSet",
+  "meta": {
+    "lastUpdated": "2016-08-03T00:00:00+01:00"
+  },
+  "url": "https://fhir.nhs.uk/ValueSet/DCH-FirstMilkFeed-1",
+  "name": "First Milk Feed",
+  "status": "active",
+  "description": "Whether the baby's first feed was breast milk.",
+  "compose": {
+    "include": [
+      {
+        "system": "https://fhir.nhs.uk/dch-firstmilkfeed-1",
+        "concept": [
+          {
+            "code": "1",
+            "display": "Maternal Breast Milk"
+          },
+          {
+            "code": "3",
+            "display": "Not Breast Milk"
+          }
+        ]
+      }
+    ]
+  }
+}

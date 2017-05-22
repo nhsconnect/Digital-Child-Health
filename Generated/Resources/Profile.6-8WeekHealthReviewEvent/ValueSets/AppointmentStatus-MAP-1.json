@@ -1,0 +1,27 @@
+{
+  "resourceType": "ValueSet",
+  "meta": {
+    "lastUpdated": "2016-08-03T00:00:00+01:00"
+  },
+  "url": "https://fhir.nhs.uk/ValueSet/AppointmentStatus-MAP-1",
+  "name": "Child Health Event Attendance Status",
+  "status": "active",
+  "description": "The attendance status of the appointment for the Child Health event.",
+  "codeSystem": {
+    "system": "https://fhir.nhs.uk/childhealthevent-appointmentstatus-map-1",
+    "concept": [
+      {
+        "code": "Booked Appointment",
+        "display": "Booked Appointment"
+      },
+      {
+        "code": "Attended Appointment",
+        "display": "Attended Appointment"
+      },
+      {
+        "code": "DNA",
+        "display": "DNA"
+      }
+    ]
+  }
+}
