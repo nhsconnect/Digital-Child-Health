@@ -15,7 +15,10 @@ To ensure the aims of this strategy are met and small manageable segments of dat
 **Note:** This DMS is published as a **'work in progress'** version and as such is subject to change.  It has been published to show the direction of travel and serve as a discussion document for parties involved with the implementation of FHIR based messages. 
 
 **Further Information**
+
 This FHIR Messaging specification is based on and intended to be used alongside the published [FHIR DSTU2 1.0.1] (Oct 2015) specification. 
+
+For questions and comments about this specification please email the <a href="mailto:interoperabilityteam@nhs.net?subject=Digital%20Child%20Health%20FHIR%20Specification">Interoperability Team</a>.
 
 [FHIR DSTU2 1.0.1]: https://www.hl7.org/fhir/DSTU2/index.html
 
