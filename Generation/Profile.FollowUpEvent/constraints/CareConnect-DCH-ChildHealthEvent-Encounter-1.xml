@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <meta>
-    <lastUpdated value="2017-05-22T11:26:04.038+01:00" />
+    <lastUpdated value="2017-05-22T12:49:37.728+01:00" />
     <tag>
       <system value="urn:hscic:publishOrder" />
       <code value="3" />
@@ -1997,7 +1997,7 @@
       <short value="Specific type of encounter" />
       <definition value="Specific type of encounter (e.g. e-mail consultation, surgical day-care, skilled nursing, rehabilitation)." />
       <comments value="Since there are many ways to further classify encounters, this element is 0..*." />
-      <min value="1" />
+      <min value="0" />
       <max value="*" />
       <base>
         <path value="Encounter.type" />
@@ -13548,10 +13548,6 @@
     <element>
       <path value="Encounter.class" />
       <max value="0" />
-    </element>
-    <element>
-      <path value="Encounter.type" />
-      <min value="1" />
     </element>
     <element>
       <path value="Encounter.type.coding" />

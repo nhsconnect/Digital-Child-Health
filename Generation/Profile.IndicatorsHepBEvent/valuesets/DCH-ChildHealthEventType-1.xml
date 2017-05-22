@@ -47,8 +47,12 @@
 				<display value="Intervention: Vitamin K"/>
 			</concept>
 			<concept>
-				<code value="Indicators: BCG and Hep B"/>
-				<display value="Indicators: BCG and Hep B"/>
+				<code value="Indicators: BCG"/>
+				<display value="Indicators: BCG"/>
+			</concept>
+						<concept>
+				<code value="Indicators: Hep B"/>
+				<display value="Indicators: Hep B"/>
 			</concept>
 			<concept>
 				<code value="HCP Clinical Intervention: Newborn Physical Examination"/>

@@ -1,15 +1,10 @@
-<?xml version="1.0" encoding="utf-8"?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <meta>
-    <lastUpdated value="2017-05-11T10:11:01.288+01:00" />
+    <lastUpdated value="2017-05-22T12:39:41.309+01:00" />
     <tag>
       <system value="urn:hscic:publishOrder" />
       <code value="1" />
-    </tag>
-    <tag>
-      <system value="urn:hscic:examples" />
-      <code value="IndicatorsEvent-Scenario2" />
-      <display value="IndicatorsEvent-Scenario2" />
     </tag>
   </meta>
   <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm">

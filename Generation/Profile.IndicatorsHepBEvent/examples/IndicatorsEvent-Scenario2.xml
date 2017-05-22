@@ -17,8 +17,8 @@
 				<timestamp value="2012-01-07T22:00:00+00:00"/>
 				<event>
 					<system value="https://fhir.nhs.uk/dch-childhealtheventtype-1"/>
-					<code value="E10"/>
-					<display value="Indicators: BCG and Hep B"/>
+					<code value="Indicators: Hep B"/>
+					<display value="Indicators: Hep B"/>
 				</event>
 				<source>
 					<endpoint value="urn:uuid:64a04ff7-c168-4589-9839-f35c1b07b161"/>
