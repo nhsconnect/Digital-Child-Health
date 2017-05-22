@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <meta>
-    <lastUpdated value="2017-05-11T10:06:00.685+01:00" />
+    <lastUpdated value="2017-05-22T11:32:12.008+01:00" />
     <tag>
       <system value="urn:hscic:publishOrder" />
       <code value="3" />
@@ -13,7 +13,7 @@
   <status value="draft" />
   <publisher value="HL7 UK" />
   <date value="2017-02-22T13:44:33.2447401Z" />
-  <description value="The encounter resource represents an encounter between a care professional and the patient (or patient's record), with further constraints applied to represent a Child Health Event where a 6-8 week health review takes place." />
+  <description value="The encounter resource represents an encounter between a care professional and the patient (or patient's record), with further constraints applied to represent a Child Health Event." />
   <copyright value="Copyright © 2016 HL7 UK&#xD;&#xA;&#xD;&#xA;Licensed under the Apache License, Version 2.0 (the &quot;License&quot;); you may not use this file except in compliance with the License. You may obtain a copy of the License at&#xD;&#xA;&#xD;&#xA;http://www.apache.org/licenses/LICENSE-2.0&#xD;&#xA;&#xD;&#xA;Unless required by applicable law or agreed to in writing, software distributed under the License is distributed on an &quot;AS IS&quot; BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the License for the specific language governing permissions and limitations under the License.&#xD;&#xA;&#xD;&#xA;HL7® FHIR® standard Copyright © 2011+ HL7&#xD;&#xA;&#xD;&#xA;The HL7® FHIR® standard is used under the FHIR license. You may obtain a copy of the FHIR license at&#xD;&#xA;&#xD;&#xA;https://www.hl7.org/fhir/license.html" />
   <fhirVersion value="1.0.2" />
   <kind value="resource" />
@@ -2602,7 +2602,7 @@
       <path value="Encounter.type.coding.extension" />
       <name value="Extension-coding-sctdescid" />
       <short value="The SNOMED CT Description ID for the display" />
-      <definition value="Optional Extensions Element - found in all resources." />
+      <definition value="The SNOMED CT Description ID for the display." />
       <comments value="There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone." />
       <alias value="extensions" />
       <alias value="user content" />
@@ -4331,9 +4331,9 @@
     <element>
       <path value="Encounter.participant" />
       <short value="List of participants involved in the encounter" />
-      <definition value="The list of responsible for providing the service." />
-      <min value="1" />
-      <max value="*" />
+      <definition value="The list of people responsible for providing the service." />
+      <min value="0" />
+      <max value="1" />
       <base>
         <path value="Encounter.participant" />
         <min value="0" />
@@ -5375,7 +5375,7 @@
       <path value="Encounter.appointment" />
       <short value="The appointment that scheduled this encounter" />
       <definition value="The appointment that scheduled this encounter." />
-      <min value="1" />
+      <min value="0" />
       <max value="1" />
       <base>
         <path value="Encounter.appointment" />
@@ -6718,7 +6718,7 @@
       <path value="Encounter.reason.coding.extension" />
       <name value="Extension-coding-sctdescid" />
       <short value="The SNOMED CT Description ID for the display" />
-      <definition value="Optional Extensions Element - found in all resources." />
+      <definition value="The SNOMED CT Description ID for the display." />
       <comments value="There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone." />
       <alias value="extensions" />
       <alias value="user content" />
@@ -9853,7 +9853,7 @@
       <path value="Encounter.hospitalization.reAdmission.coding.extension" />
       <name value="Extension-coding-sctdescid" />
       <short value="The SNOMED CT Description ID for the display" />
-      <definition value="Optional Extensions Element - found in all resources." />
+      <definition value="The SNOMED CT Description ID for the display." />
       <comments value="There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone." />
       <alias value="extensions" />
       <alias value="user content" />
@@ -13584,7 +13584,6 @@
     <element>
       <path value="Encounter.type.coding.extension" />
       <name value="Extension-coding-sctdescid" />
-      <short value="The SNOMED CT Description ID for the display" />
       <max value="1" />
       <type>
         <code value="Extension" />
@@ -13676,8 +13675,8 @@
     </element>
     <element>
       <path value="Encounter.participant" />
-      <definition value="The list of responsible for providing the service." />
-      <min value="1" />
+      <definition value="The list of people responsible for providing the service." />
+      <max value="1" />
     </element>
     <element>
       <path value="Encounter.participant.type" />
@@ -13701,7 +13700,6 @@
     </element>
     <element>
       <path value="Encounter.appointment" />
-      <min value="1" />
       <type>
         <code value="Reference" />
         <profile value="https://fhir.nhs.uk/StructureDefinition/DCH-6-8WeekHealthReviewEvent-Appointment-1" />
@@ -13750,7 +13748,6 @@
     <element>
       <path value="Encounter.reason.coding.extension" />
       <name value="Extension-coding-sctdescid" />
-      <short value="The SNOMED CT Description ID for the display" />
       <max value="1" />
       <type>
         <code value="Extension" />
@@ -13840,7 +13837,6 @@
     <element>
       <path value="Encounter.hospitalization.reAdmission.coding.extension" />
       <name value="Extension-coding-sctdescid" />
-      <short value="The SNOMED CT Description ID for the display" />
       <max value="1" />
       <type>
         <code value="Extension" />

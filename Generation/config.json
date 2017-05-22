@@ -1,5 +1,5 @@
 {
-  "DMS_ONLINE"      :   "FALSE",
+  "DMS_ONLINE"      :   "TRUE",
   "DMS_ANALYTICS"   :   "UA-67795986-1",
   "EXAMPLES_XML"	      : "TRUE",
   "EXAMPLES_JSON"     : "TRUE",

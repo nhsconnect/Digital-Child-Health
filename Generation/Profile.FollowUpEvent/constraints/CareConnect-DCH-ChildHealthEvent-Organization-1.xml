@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <meta>
-    <lastUpdated value="2017-03-31T11:54:44.959+01:00" />
+    <lastUpdated value="2017-05-22T10:32:44.144+01:00" />
     <tag>
       <system value="urn:hscic:publishOrder" />
       <code value="6" />
@@ -390,7 +390,7 @@
       <short value="Identifies this organization  across multiple systems" />
       <definition value="Identifier for the organization that is used to identify the organization across multiple disparate systems." />
       <requirements value="Organizations are known by a variety of ids. Some institutions maintain several, and most collect identifiers for exchange with other organizations concerning the organization." />
-      <min value="1" />
+      <min value="0" />
       <max value="1" />
       <base>
         <path value="Organization.identifier" />
@@ -2742,7 +2742,7 @@
       <definition value="Identifier for the organization that is used to identify the organization across multiple disparate systems." />
       <comments value="ODS Site code to identify the organisation at site level. Where an ODS Site Code is not applicable, one of the following values will apply:&#xD;&#xA;&#xD;&#xA;ZZ201 - Not applicable (delivered at home)&#xD;&#xA;ZZ888 - Not applicable (delivered at non-NHS organisation)&#xD;&#xA;ZZ203 - Not known (place of delivery not known)" />
       <requirements value="Organizations are known by a variety of ids. Some institutions maintain several, and most collect identifiers for exchange with other organizations concerning the organization." />
-      <min value="1" />
+      <min value="0" />
       <max value="1" />
       <base>
         <path value="Organization.identifier" />
@@ -5144,7 +5144,7 @@
       <definition value="The type of unit for a Birth Event." />
       <comments value="Organizations can be corporations, wards, sections, clinical teams, government departments, etc. Note that code is generally a classifier of the type of organization; in many applications, codes are used to identity a particular organization (say, ward) as opposed to another of the same type - these are identifiers, not codes." />
       <requirements value="Need to be able to track the kind of organization that this is - different organization types have different uses." />
-      <min value="1" />
+      <min value="0" />
       <max value="1" />
       <base>
         <path value="Organization.type" />
@@ -5296,6 +5296,13 @@
         <xpath value="@value|f:*|h:div" />
       </constraint>
       <isSummary value="true" />
+      <binding>
+        <strength value="required" />
+        <description value="The type of Location where the Child Health Event takes place." />
+        <valueSetReference>
+          <reference value="https://fhir.nhs.uk/ValueSet/DCH-Location-Type-1" />
+        </valueSetReference>
+      </binding>
       <mapping>
         <identity value="rim" />
         <map value="n/a" />
@@ -5407,6 +5414,7 @@
       <type>
         <code value="uri" />
       </type>
+      <fixedUri value="https://fhir.nhs.uk/dch-locationtype-1" />
       <exampleUri value="http://hl7.org/fhir/organization-type" />
       <condition value="ele-1" />
       <constraint>
@@ -9730,19 +9738,12 @@
       </constraint>
     </element>
     <element>
-      <path value="Organization.contained" />
-      <type>
-        <code value="Resource" />
-      </type>
-    </element>
-    <element>
       <path value="Organization.identifier" />
       <slicing>
         <discriminator value="system" />
         <ordered value="false" />
         <rules value="openAtEnd" />
       </slicing>
-      <min value="1" />
       <max value="1" />
     </element>
     <element>
@@ -9783,7 +9784,6 @@
       <name value="ODS Site Code" />
       <short value="ODS Site code to identify the organisation at site level" />
       <comments value="ODS Site code to identify the organisation at site level. Where an ODS Site Code is not applicable, one of the following values will apply:&#xD;&#xA;&#xD;&#xA;ZZ201 - Not applicable (delivered at home)&#xD;&#xA;ZZ888 - Not applicable (delivered at non-NHS organisation)&#xD;&#xA;ZZ203 - Not known (place of delivery not known)" />
-      <min value="1" />
       <max value="1" />
     </element>
     <element>
@@ -9843,7 +9843,6 @@
       <path value="Organization.type" />
       <short value="The type of unit" />
       <definition value="The type of unit for a Birth Event." />
-      <min value="1" />
       <binding>
         <strength value="example" />
         <valueSetUri value="http://hl7.org/fhir/ValueSet/organization-type" />
@@ -9853,10 +9852,18 @@
       <path value="Organization.type.coding" />
       <min value="1" />
       <max value="1" />
+      <binding>
+        <strength value="required" />
+        <description value="The type of Location where the Child Health Event takes place." />
+        <valueSetReference>
+          <reference value="https://fhir.nhs.uk/ValueSet/DCH-Location-Type-1" />
+        </valueSetReference>
+      </binding>
     </element>
     <element>
       <path value="Organization.type.coding.system" />
       <min value="1" />
+      <fixedUri value="https://fhir.nhs.uk/dch-locationtype-1" />
       <exampleUri value="http://hl7.org/fhir/organization-type" />
     </element>
     <element>
