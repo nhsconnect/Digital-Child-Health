@@ -3,7 +3,7 @@
 <Bundle xmlns="http://hl7.org/fhir" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://hl7.org/fhir ../../Schemas/bundle.xsd">
 	<id value="ab9bf18b-5d8a-4314-b125-671821fb8191"/>
 	<meta>
-		<profile value="https://fhir.nhs.uk/StructureDefinition/dch-measurementsevent-bundle-1"/>
+		<profile value="https://fhir.nhs.uk/StructureDefinition/DCH-MeasurementsEvent-Bundle-1"/>
 	</meta>
 	<type value="message"/>
 	<entry>
@@ -12,12 +12,12 @@
 			<MessageHeader>
 				<id value="22bfef8b-8f44-4b72-9a42-f4fca7fb4b17"/>
 				<meta>
-					<profile value="https://fhir.nhs.uk/StructureDefinition/dch-measurementsevent-messageheader-1"/>
+					<profile value="https://fhir.nhs.uk/StructureDefinition/DCH-MeasurementsEvent-MessageHeader-1"/>
 				</meta>
 				<timestamp value="2012-01-07T22:00:00+00:00"/>
 				<event>
 					<system value="https://fhir.nhs.uk/dch-childhealtheventtype-1"/>
-					<code value="E20"/>
+					<code value="Measurements"/>
 					<display value="Measurements"/>
 				</event>
 				<source>
@@ -46,6 +46,13 @@
 					<value value="deba7fa5-6560-4308-adf3-e59aee45a845"/>
 				</identifier>
 				<status value="finished"/>
+				<type>
+					<coding>
+						<system value="https://fhir.nhs.uk/dch-childhealthencountertype-1"/>
+						<code value="Birth"/>
+						<display value="Birth"/>
+					</coding>
+				</type>
 				<patient>
 					<reference value="urn:uuid:22856439-9ba2-4eaf-abcf-e1fe71c46b7e"/>
 					<display value="SAXTON, Sarah Marie"/>
@@ -253,7 +260,7 @@
 			</Practitioner>
 		</resource>
 	</entry>
-		<entry>
+	<entry>
 		<fullUrl value="urn:uuid:a2217348-7d6b-4882-83fb-bcc7a72bde25"/>
 		<resource>
 			<Observation>

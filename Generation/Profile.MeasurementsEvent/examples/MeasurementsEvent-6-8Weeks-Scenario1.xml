@@ -2,21 +2,22 @@
 <Bundle xmlns="http://hl7.org/fhir" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://hl7.org/fhir ../../Schemas/bundle.xsd">
 	<id value="98eca5aa-21a7-466d-86a3-bdd395c13ec5"/>
 	<meta>
-		<profile value="https://fhir.nhs.uk/StructureDefinition/dch-measurementsevent-bundle-1"/>
+		<profile value="https://fhir.nhs.uk/StructureDefinition/DCH-MeasurementsEvent-Bundle-1"/>
 	</meta>
 	<type value="message"/>
-	<entry> <!--MESSAGE HEADER-->
+	<entry>
+		<!--MESSAGE HEADER-->
 		<fullUrl value="urn:uuid:3bdda8b3-8781-4b3b-afed-5aff65e81f2d"/>
 		<resource>
 			<MessageHeader>
 				<id value="3bdda8b3-8781-4b3b-afed-5aff65e81f2d"/>
 				<meta>
-					<profile value="https://fhir.nhs.uk/StructureDefinition/dch-measurementsevent-messageheader-1"/>
+					<profile value="https://fhir.nhs.uk/StructureDefinition/DCH-MeasurementsEvent-MessageHeader-1"/>
 				</meta>
 				<timestamp value="2012-02-15T10:30:00+00:00"/>
 				<event>
 					<system value="https://fhir.nhs.uk/dch-childhealtheventtype-1"/>
-					<code value="E20"/>
+					<code value="Measurements"/>
 					<display value="Measurements"/>
 				</event>
 				<source>
@@ -32,7 +33,8 @@
 			</MessageHeader>
 		</resource>
 	</entry>
-	<entry> <!--ENCOUNTER 52bd4326-a3f7-4fde-9a4c-08e8542ff392-->
+	<entry>
+		<!--ENCOUNTER 52bd4326-a3f7-4fde-9a4c-08e8542ff392-->
 		<fullUrl value="urn:uuid:52bd4326-a3f7-4fde-9a4c-08e8542ff392"/>
 		<resource>
 			<Encounter>
@@ -45,6 +47,13 @@
 					<value value="c638c868-e866-4af1-9197-f602f286ce82"/>
 				</identifier>
 				<status value="finished"/>
+				<type>
+					<coding>
+						<system value="https://fhir.nhs.uk/dch-childhealthencountertype-1"/>
+						<code value="6-8 Week Review"/>
+						<display value="6-8 Week Review"/>
+					</coding>
+				</type>
 				<patient>
 					<reference value="urn:uuid:18167cd3-7f20-4b9a-9025-527bf64dbdc0"/>
 					<display value="LITTLE, Jonny"/>
@@ -70,7 +79,8 @@
 			</Encounter>
 		</resource>
 	</entry>
-	<entry> <!--ORGANISATION a2574a2e-139a-4044-8484-76e018ed2fe2-->
+	<entry>
+		<!--ORGANISATION a2574a2e-139a-4044-8484-76e018ed2fe2-->
 		<fullUrl value="urn:uuid:a2574a2e-139a-4044-8484-76e018ed2fe2"/>
 		<resource>
 			<Organization>
@@ -85,8 +95,9 @@
 				<name value="LEEDS TEACHING HOSPITALS NHS TRUST"/>
 			</Organization>
 		</resource>
-	</entry>	
-	<entry> <!--PATIENT 18167cd3-7f20-4b9a-9025-527bf64dbdc0-->
+	</entry>
+	<entry>
+		<!--PATIENT 18167cd3-7f20-4b9a-9025-527bf64dbdc0-->
 		<fullUrl value="urn:uuid:18167cd3-7f20-4b9a-9025-527bf64dbdc0"/>
 		<resource>
 			<Patient>
@@ -117,19 +128,20 @@
 			</Patient>
 		</resource>
 	</entry>
-	<entry> <!--HEAD CIRCUMFERENCE a74c5075-2f46-42bd-8f11-0b1bd8a1134d-->
+	<entry>
+		<!--HEAD CIRCUMFERENCE a74c5075-2f46-42bd-8f11-0b1bd8a1134d-->
 		<fullUrl value="urn:uuid:a74c5075-2f46-42bd-8f11-0b1bd8a1134d"/>
 		<resource>
 			<Observation>
 				<id value="a74c5075-2f46-42bd-8f11-0b1bd8a1134d"/>
 				<meta>
 					<profile value="https://fhir.hl7.org.uk/StructureDefinition/CareConnect-DCH-HeadCircumference-Observation-1"/>
-				</meta>				
+				</meta>
 				<status value="final"/>
 				<code>
 					<coding>
 						<system value="http://snomed.info/sct"/>
-						<code value="363812007"/>	
+						<code value="363812007"/>
 					</coding>
 				</code>
 				<subject>
@@ -139,7 +151,7 @@
 					<reference value="urn:uuid:52bd4326-a3f7-4fde-9a4c-08e8542ff392"/>
 				</encounter>
 				<performer>
-					<reference value="urn:uuid:aa7cab65-b7d6-4843-9109-e5b20446b3e8"/>	
+					<reference value="urn:uuid:aa7cab65-b7d6-4843-9109-e5b20446b3e8"/>
 				</performer>
 				<valueQuantity>
 					<value value="39.2"/>
@@ -147,20 +159,21 @@
 				</valueQuantity>
 			</Observation>
 		</resource>
-	</entry>	
-	<entry> <!--WEIGHT 8b9bbfab-31e0-4817-bc4e-fa5c7d4c1b4f-->
+	</entry>
+	<entry>
+		<!--WEIGHT 8b9bbfab-31e0-4817-bc4e-fa5c7d4c1b4f-->
 		<fullUrl value="urn:uuid:8b9bbfab-31e0-4817-bc4e-fa5c7d4c1b4f"/>
 		<resource>
 			<Observation>
 				<id value="8b9bbfab-31e0-4817-bc4e-fa5c7d4c1b4f"/>
 				<meta>
 					<profile value="https://fhir.hl7.org.uk/StructureDefinition/CareConnect-DCH-Weight-Observation-1"/>
-				</meta>				
+				</meta>
 				<status value="final"/>
 				<code>
 					<coding>
 						<system value="http://snomed.info/sct"/>
-						<code value="27113001"/>	
+						<code value="27113001"/>
 					</coding>
 				</code>
 				<subject>
@@ -170,7 +183,7 @@
 					<reference value="urn:uuid:52bd4326-a3f7-4fde-9a4c-08e8542ff392"/>
 				</encounter>
 				<performer>
-					<reference value="urn:uuid:aa7cab65-b7d6-4843-9109-e5b20446b3e8"/>	
+					<reference value="urn:uuid:aa7cab65-b7d6-4843-9109-e5b20446b3e8"/>
 				</performer>
 				<valueQuantity>
 					<value value="5.613"/>
@@ -179,19 +192,20 @@
 			</Observation>
 		</resource>
 	</entry>
-	<entry> <!--BODY LENGTH 3755a78e-befc-44be-b517-23331e6288bc-->
+	<entry>
+		<!--BODY LENGTH 3755a78e-befc-44be-b517-23331e6288bc-->
 		<fullUrl value="urn:uuid:3755a78e-befc-44be-b517-23331e6288bc"/>
 		<resource>
 			<Observation>
 				<id value="3755a78e-befc-44be-b517-23331e6288bc"/>
 				<meta>
 					<profile value="https://fhir.hl7.org.uk/StructureDefinition/CareConnect-DCH-Height-Observation-1"/>
-				</meta>				
+				</meta>
 				<status value="final"/>
 				<code>
 					<coding>
 						<system value="http://snomed.info/sct"/>
-						<code value="50373000"/>	
+						<code value="50373000"/>
 					</coding>
 				</code>
 				<subject>
@@ -201,7 +215,7 @@
 					<reference value="urn:uuid:52bd4326-a3f7-4fde-9a4c-08e8542ff392"/>
 				</encounter>
 				<performer>
-					<reference value="urn:uuid:aa7cab65-b7d6-4843-9109-e5b20446b3e8"/>	
+					<reference value="urn:uuid:aa7cab65-b7d6-4843-9109-e5b20446b3e8"/>
 				</performer>
 				<valueQuantity>
 					<value value="39.2"/>
@@ -209,8 +223,9 @@
 				</valueQuantity>
 			</Observation>
 		</resource>
-	</entry>	
-	<entry> <!--PRACTITIONER aa7cab65-b7d6-4843-9109-e5b20446b3e8-->
+	</entry>
+	<entry>
+		<!--PRACTITIONER aa7cab65-b7d6-4843-9109-e5b20446b3e8-->
 		<fullUrl value="urn:uuid:aa7cab65-b7d6-4843-9109-e5b20446b3e8"/>
 		<resource>
 			<Practitioner>
@@ -240,7 +255,8 @@
 			</Practitioner>
 		</resource>
 	</entry>
-	<entry> <!--LOCATION 60ff3054-ea56-4b32-9aae-94b7c7549cef-->
+	<entry>
+		<!--LOCATION 60ff3054-ea56-4b32-9aae-94b7c7549cef-->
 		<fullUrl value="urn:uuid:60ff3054-ea56-4b32-9aae-94b7c7549cef"/>
 		<resource>
 			<Location>
@@ -256,5 +272,5 @@
 				<name value="CLARENDON WING, LEEDS GENERAL INFIRMARY"/>
 			</Location>
 		</resource>
-	</entry>	
+	</entry>
 </Bundle>

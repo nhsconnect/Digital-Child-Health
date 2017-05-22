@@ -3,7 +3,7 @@
 <Bundle xmlns="http://hl7.org/fhir" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://hl7.org/fhir ../../Schemas/bundle.xsd">
 	<id value="02aeb659-f308-4ee3-9594-164abb249f41"/>
 	<meta>
-		<profile value="https://fhir.nhs.uk/StructureDefinition/dch-newbornbloodspotevent-bundle-1"/>
+		<profile value="https://fhir.nhs.uk/StructureDefinition/DCH-NewbornBloodSpotEvent-Bundle-1"/>
 	</meta>
 	<type value="message"/>
 	<entry>
@@ -12,12 +12,12 @@
 			<MessageHeader>
 				<id value="9b98c819-f7c9-42b2-a8f4-d5c1e4eb758a"/>
 				<meta>
-					<profile value="https://fhir.nhs.uk/StructureDefinition/dch-newbornbloodspotevent-messageheader-1"/>
+					<profile value="https://fhir.nhs.uk/StructureDefinition/DCH-NewbornBloodSpotEvent-MessageHeader-1"/>
 				</meta>
 				<timestamp value="2012-01-08T16:00:00+00:00"/>
 				<event>
 					<system value="https://fhir.nhs.uk/dch-childhealtheventtype-1"/>
-					<code value="E15"/>
+					<code value="HCP Clinical Intervention: Newborn Blood Spot Screening"/>
 					<display value="HCP Clinical Intervention: Newborn Blood Spot Screening"/>
 				</event>
 				<source>
@@ -133,7 +133,7 @@
 			<ProcedureRequest>
 				<id value="26ded1a9-5888-45f2-adc1-e89efd1cf008"/>
 				<meta>
-					<profile value="https://fhir.nhs.uk/StructureDefinition/dch-newbornbloodspotevent-procedurerequest-1"/>
+					<profile value="https://fhir.nhs.uk/StructureDefinition/DCH-NewbornBloodSpotEvent-ProcedureRequest-1"/>
 				</meta>
 				<extension url="https://fhir.nhs.uk/StructureDefinition/Extension-DCH-ConsentStatus-1">
 					<valueCodeableConcept>
@@ -218,7 +218,7 @@
 			<Appointment>
 				<id value="f97ed793-e983-495e-97ce-4b33b9380948"/>
 				<meta>
-					<profile value="https://fhir.nhs.uk/StructureDefinition/dch-newbornbloodspotevent-appointment-1"/>
+					<profile value="https://fhir.nhs.uk/StructureDefinition/DCH-NewbornBloodSpotEvent-Appointment-1"/>
 				</meta>
 				<identifier>
 					<system value="https://tools.ietf.org/html/rfc4122"/>

@@ -3,7 +3,7 @@
 <Bundle xmlns="http://hl7.org/fhir" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://hl7.org/fhir ../../Schemas/bundle.xsd">
 	<id value="136c17a0-1657-4b1f-aaf1-9c322c83c30d"/>
 	<meta>
-		<profile value="https://fhir.nhs.uk/StructureDefinition/dch-newbornhearingevent-bundle-1"/>
+		<profile value="https://fhir.nhs.uk/StructureDefinition/DCH-NewbornHearingEvent-Bundle-1"/>
 	</meta>
 	<type value="message"/>
 	<entry>
@@ -12,12 +12,12 @@
 			<MessageHeader>
 				<id value="9bd0ca2b-9293-4c2f-a31e-398e36dbc4b3"/>
 				<meta>
-					<profile value="https://fhir.nhs.uk/StructureDefinition/dch-newbornhearingevent-messageheader-1"/>
+					<profile value="https://fhir.nhs.uk/StructureDefinition/DCH-NewbornHearingEvent-MessageHeader-1"/>
 				</meta>
 				<timestamp value="2012-01-08T16:00:00+00:00"/>
 				<event>
 					<system value="https://fhir.nhs.uk/dch-childhealtheventtype-1"/>
-					<code value="E17"/>
+					<code value="HCP Clinical Intervention: Newborn Hearing Screening"/>
 					<display value="HCP Clinical Intervention: Newborn Hearing Screening"/>
 				</event>
 				<source>
@@ -155,7 +155,7 @@
 			<ProcedureRequest>
 				<id value="e637e82c-bb97-499a-8c1c-4688f85e246e"/>
 				<meta>
-					<profile value="https://fhir.nhs.uk/StructureDefinition/dch-newbornhearingevent-procedurerequest-1"/>
+					<profile value="https://fhir.nhs.uk/StructureDefinition/DCH-NewbornHearingEvent-ProcedureRequest-1"/>
 				</meta>
 				<extension url="https://fhir.nhs.uk/StructureDefinition/Extension-DCH-ConsentStatusNewbornHearing-1">
 					<valueCodeableConcept>
@@ -190,7 +190,7 @@
 			<Appointment>
 				<id value="4745d9d3-a782-4485-87f5-089873611dde"/>
 				<meta>
-					<profile value="https://fhir.nhs.uk/StructureDefinition/dch-newbornhearingevent-appointment-1"/>
+					<profile value="https://fhir.nhs.uk/StructureDefinition/DCH-NewbornHearingEvent-Appointment-1"/>
 				</meta>
 				<identifier>
 					<system value="https://tools.ietf.org/html/rfc4122"/>

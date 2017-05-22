@@ -2,7 +2,7 @@
 <Bundle xmlns="http://hl7.org/fhir" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://hl7.org/fhir ../../Schemas/bundle.xsd">
 	<id value="8530bc13-4ca8-4dd0-9a6c-0e5410009b2f"/>
 	<meta>
-		<profile value="https://fhir.nhs.uk/StructureDefinition/dch-measurementsevent-bundle-1"/>
+		<profile value="https://fhir.nhs.uk/StructureDefinition/DCH-MeasurementsEvent-Bundle-1"/>
 	</meta>
 	<type value="message"/>
 	<entry> <!--MESSAGE HEADER-->
@@ -11,12 +11,12 @@
 			<MessageHeader>
 				<id value="cb5fbda6-56aa-42a0-b794-8036ded7b1cc"/>
 				<meta>
-					<profile value="https://fhir.nhs.uk/StructureDefinition/dch-measurementsevent-messageheader-1"/>
+					<profile value="https://fhir.nhs.uk/StructureDefinition/DCH-MeasurementsEvent-MessageHeader-1"/>
 				</meta>
 				<timestamp value="2013-01-07T13:59:00+00:00"/>
 				<event>
 					<system value="https://fhir.nhs.uk/dch-childhealtheventtype-1"/>
-					<code value="E20"/>
+					<code value="Measurements"/>
 					<display value="Measurements"/>
 				</event>
 				<source>
