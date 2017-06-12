@@ -1,1 +1,0 @@
-This Appointment resource is constrained to represent the appointment made to fulfill a ProcedureRequest for the Event.

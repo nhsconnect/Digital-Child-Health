@@ -1,0 +1,1 @@
+This Questionnaire Response resource is constrained to represent a Questionnaire Response for an Immunisation Event.

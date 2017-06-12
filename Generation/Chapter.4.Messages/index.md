@@ -2,45 +2,51 @@
 
 The FHIR resource profiles within this DMS have been created to support the Child Health Events Catalogue Service interface:
 
-- **[Profile.BirthDetailsEvent]** - FHIR resource profiles combined to support a Birth Details Event message.
-- **[Profile.AssessmentAPGAREvent]** - FHIR resource profiles combined to support an Assessment APGAR Event message.
-- **[Profile.BreastfeedingStatusEvent]** - FHIR resource profiles combined to support a Breastfeeding Status Event message.
-- **[Profile.NeonatalCareEvent]** - FHIR resource profiles combined to support a Neonatal Care Event message.
-- **[Profile.BirthDischargeEvent]** - FHIR resource profiles combined to support a Birth Discharge Event message.
-- **[Profile.MeasurementsEvent]** - FHIR resource profiles combined to support a Measurements Event message.
-- **[Profile.IndicatorsBCGEvent]** - FHIR resource profiles combined to support an Indicators BCG Event message.
-- **[Profile.IndicatorsHepBEvent]** - FHIR resource profiles combined to support an Indicators Hep B Event message.
-- **[Profile.ReferralEvent]** - FHIR resource profiles combined to support a Referral Event message.
-- **[Profile.FollowUpEvent]** - FHIR resource profiles combined to support a Follow Up Event message.
-- **[Profile.NewbornBloodSpotEvent]** - FHIR resource profiles combined to support a Newborn Blood Spot Event message.
-- **[Profile.6-8WeekHealthReviewEvent]** - FHIR resource profiles combined to support a 6-8 Week Health Review Event message.
-- **[Profile.NewbornHearingEvent]** - FHIR resource profiles combined to support a Newborn Hearing Event message.
-- **[Profile.NewbornPhysicalExamEvent]** - FHIR resource profiles combined to support a Newborn Physical Exam Event message.
-- **[Profile.VitaminKEvent]** - FHIR resource profiles combined to support a Vitamin K Event message.
-- **[Profile.PhysicalExaminationEvent]** - FHIR resource profiles combined to support a Physical Examination Event message. 
-  
+- **[Profile.BirthDetails]** - FHIR resource profiles combined to support a Birth Details event message.
+- **[Profile.AssessmentAPGAR]** - FHIR resource profiles combined to support an Assessment APGAR event message.+
+- **[Profile.BreastfeedingStatus]** - FHIR resource profiles combined to support a Breastfeeding Status event message.
+- **[Profile.NeonatalCare]** - FHIR resource profiles combined to support a Neonatal Care event message.
+- **[Profile.BirthDischarge]** - FHIR resource profiles combined to support a Birth Discharge event message.
+- **[Profile.Measurements]** - FHIR resource profiles combined to support a Measurements event message.
+- **[Profile.Referral]** - FHIR resource profiles combined to support a Referral event message.
+- **[Profile.FollowUp]** - FHIR resource profiles combined to support a Follow Up event message.
+- **[Profile.6-8WeekHealthReview]** - FHIR resource profiles combined to support a 6-8 Week Health Review event message.
+- **[Profile.NewbornHearing]** - FHIR resource profiles combined to support a Newborn Hearing event message.
+- **[Profile.NewbornPhysicalExam]** - FHIR resource profiles combined to support a Newborn Physical Exam event message.
+- **[Profile.VitaminK]** - FHIR resource profiles combined to support a Vitamin K event message.
+- **[Profile.PhysicalExamination]** - FHIR resource profiles combined to support a Physical Examination event message. 
+- **[Profile.NewbornBloodSpotScreening]** - FHIR resource profiles combined to support a Newborn Blood Spot Screening event message.
+- **[Profile.Immunisations]** - FHIR resource profiles combined to support an Immunisation event message.  
+- **[Profile.AccidentsAndInjuries]** - FHIR resource profiles combined to support an Accidents and Injuries event message.
+- **[Profile.RelatedPersons]** - FHIR resource profiles combined to support a Related Persons event message.
+- **[Profile.ProfessionalAdvice]** - FHIR resource profiles combined to support a Professional Advice event message.
+- **[Profile.ProfessionalComment]** - FHIR resource profiles combined to support a Professional Comment event message.
+ 
 **Further Information**
 
 For more information about message profiles visit the [Profiling FHIR] and for resource Metadata visit [Base Resource Definitions].
 
 The various downloads (including Schema files) and reference implementations are available on [FHIR website]. 
  
-[Profile.BirthDetailsEvent]: ../Profile.BirthDetailsEvent/Profile.BirthDetailsEvent.html
-[Profile.AssessmentAPGAREvent]: ../Profile.AssessmentAPGAREvent/Profile.AssessmentAPGAREvent.html
-[Profile.BreastfeedingStatusEvent]: ../Profile.BreastfeedingStatusEvent/Profile.BreastfeedingStatusEvent.html
-[Profile.NeonatalCareEvent]: ../Profile.NeonatalCareEvent/Profile.NeonatalCareEvent.html
-[Profile.BirthDischargeEvent]: ../Profile.BirthDischargeEvent/Profile.BirthDischargeEvent.html
-[Profile.ReferralEvent]: ../Profile.ReferralEvent/Profile.ReferralEvent.html
-[Profile.FollowUpEvent]: ../Profile.FollowUpEvent/Profile.FollowUpEvent.html
-[Profile.MeasurementsEvent]: ../Profile.MeasurementsEvent/Profile.MeasurementsEvent.html
-[Profile.IndicatorsBCGEvent]: ../Profile.IndicatorsBCGEvent/Profile.IndicatorsBCGEvent.html
-[Profile.IndicatorsHepBEvent]: ../Profile.IndicatorsHepBEvent/Profile.IndicatorsHepBEvent.html
-[Profile.NewbornBloodSpotEvent]: ../Profile.NewbornBloodSpotEvent/Profile.NewbornBloodSpotEvent.html
-[Profile.NewbornHearingEvent]: ../Profile.NewbornHearingEvent/Profile.NewbornHearingEvent.html
-[Profile.NewbornPhysicalExamEvent]: ../Profile.NewbornPhysicalExamEvent/Profile.NewbornPhysicalExamEvent.html
-[Profile.6-8WeekHealthReviewEvent]: ../Profile.6-8WeekHealthReviewEvent/Profile.6-8WeekHealthReviewEvent.html
-[Profile.VitaminKEvent]: ../Profile.VitaminKEvent/Profile.VitaminKEvent.html
-[Profile.PhysicalExaminationEvent]: ../Profile.PhysicalExaminationEvent/Profile.PhysicalExaminationEvent.html
+[Profile.BirthDetails]: ../Profile.BirthDetails/Profile.BirthDetails.html
+[Profile.AssessmentAPGAR]: ../Profile.AssessmentAPGAR/Profile.AssessmentAPGAR.html
+[Profile.NeonatalCare]: ../Profile.NeonatalCare/Profile.NeonatalCare.html
+[Profile.BirthDischarge]: ../Profile.BirthDischarge/Profile.BirthDischarge.html
+[Profile.Referral]: ../Profile.Referral/Profile.Referral.html
+[Profile.FollowUp]: ../Profile.FollowUp/Profile.FollowUp.html
+[Profile.Measurements]: ../Profile.Measurements/Profile.Measurements.html
+[Profile.NewbornHearing]: ../Profile.NewbornHearing/Profile.NewbornHearing.html
+[Profile.NewbornPhysicalExam]: ../Profile.NewbornPhysicalExam/Profile.NewbornPhysicalExam.html
+[Profile.6-8WeekHealthReview]: ../Profile.6-8WeekHealthReview/Profile.6-8WeekHealthReview.html
+[Profile.VitaminK]: ../Profile.VitaminK/Profile.VitaminK.html
+[Profile.PhysicalExamination]: ../Profile.PhysicalExamination/Profile.PhysicalExamination.html
+[Profile.BreastfeedingStatus]: ../Profile.BreastfeedingStatus/Profile.BreastfeedingStatus.html
+[Profile.NewbornBloodSpotScreening]: ../Profile.NewbornBloodSpotScreening/Profile.NewbornBloodSpotScreening.html
+[Profile.Immunisations]: ../Profile.Immunisations/Profile.Immunisations.html
+[Profile.AccidentsAndInjuries]:../Profile.AccidentsAndInjuries/Profile.AccidentsAndInjuries.html
+[Profile.RelatedPersons]:../Profile.RelatedPersons/Profile.RelatedPersons.html
+[Profile.ProfessionalAdvice]:../Profile.ProfessionalAdvice/Profile.ProfessionalAdvice.html
+[Profile.ProfessionalComment]:../Profile.ProfessionalComment/Profile.ProfessionalComment.html
 
 [Profiling FHIR]: http://hl7.org/fhir/profiling.html
 [FHIR website]: http://hl7.org/fhir/index.html

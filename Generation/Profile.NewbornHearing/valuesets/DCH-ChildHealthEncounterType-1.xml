@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValueSet xmlns="http://hl7.org/fhir">
+	<meta>
+		<lastUpdated value="2016-08-03T00:00:00+01:00"/>
+	</meta>
+	<url value="https://fhir.nhs.uk/ValueSet/DCH-ChildHealthEncounterType-1"/>
+	<name value="Child Health Encounter Type"/>
+	<status value="active"/>
+	<description value="The type of Clinical Intervention/Occurrence which generated the Child Health Event. The values below have been listed for example only."/>
+	<compose>
+		<include>
+			<system value="https://fhir.nhs.uk/dch-childhealthencountertype-1"/>
+			<concept>
+				<code value="Birth"/>
+				<display value="Birth"/>
+			</concept>
+			<concept>
+				<code value="Maternity Discharge"/>
+				<display value="Maternity Discharge"/>
+			</concept>
+			<concept>
+				<code value="Newborn Physical Examination"/>
+				<display value="Newborn Physical Examination"/>
+			</concept>
+			<concept>
+				<code value="Newborn Blood Spot Screening"/>
+				<display value="Newborn Blood Spot Screening"/>
+			</concept>
+			<concept>
+				<code value="Newborn Hearing Screening"/>
+				<display value="Newborn Hearing Screening"/>
+			</concept>
+			<concept>
+				<code value="6-8 Week Review"/>
+				<display value="6-8 Week Review"/>
+			</concept>
+			<concept>
+				<code value="BCG imms"/>
+				<display value="BCG imms"/>
+			</concept>
+			<concept>
+				<code value="Hep B birth"/>
+				<display value="Hep B birth"/>
+			</concept>
+			<concept>
+				<code value="Hep B 4 weeks"/>
+				<display value="Hep B 4 weeks"/>
+			</concept>
+			<concept>
+				<code value="Hep B 8 weeks"/>
+				<display value="Hep B 8 weeks"/>
+			</concept>
+			<concept>
+				<code value="Hep B 12 months"/>
+				<display value="Hep B 12 months"/>
+			</concept>
+			<concept>
+				<code value="8 weeks imms"/>
+				<display value="8 weeks imms"/>
+			</concept>
+			<concept>
+				<code value="12 weeks imms"/>
+				<display value="12 weeks imms"/>
+			</concept>
+			<concept>
+				<code value="16 weeks imms"/>
+				<display value="16 weeks imms"/>
+			</concept>
+			<concept>
+				<code value="MMR"/>
+				<display value="MMR"/>
+			</concept>
+			<concept>
+				<code value="Pre-School Booster"/>
+				<display value="Pre-School Booster"/>
+			</concept>
+			<concept>
+				<code value="HPV first imms"/>
+				<display value="HPV first imms"/>
+			</concept>
+			<concept>
+				<code value="HPV second imms"/>
+				<display value="HPV second imms"/>
+			</concept>
+			<concept>
+				<code value="Teenage Booster"/>
+				<display value="Teenage Booster"/>
+			</concept>
+			<concept>
+				<code value="Influenza 2 years"/>
+				<display value="Influenza 2 years"/>
+			</concept>
+			<concept>
+				<code value="Influenza 3 years"/>
+				<display value="Influenza 3 years"/>
+			</concept>
+			<concept>
+				<code value="Influenza 4 years"/>
+				<display value="Influenza 4 years"/>
+			</concept>
+			<concept>
+				<code value="Influenza year 1"/>
+				<display value="Influenza year 1"/>
+			</concept>
+			<concept>
+				<code value="Influenza year 2"/>
+				<display value="Influenza year 2"/>
+			</concept>
+			<concept>
+				<code value="Accidents and Injuries"/>
+				<display value="Accidents and Injuries"/>
+			</concept>
+		</include>
+	</compose>
+</ValueSet>

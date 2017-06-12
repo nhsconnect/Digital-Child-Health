@@ -1,0 +1,1 @@
+The Observation resource is used for tracking the current and historical observations that have been made for a patient, with further contraints applied to identify as to whether or not a baby is preterm.

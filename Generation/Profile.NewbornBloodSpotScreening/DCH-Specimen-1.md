@@ -1,0 +1,1 @@
+This Specimen resource is constrained to represent a specimen sample collected for Newborn Blood Spot Screening.

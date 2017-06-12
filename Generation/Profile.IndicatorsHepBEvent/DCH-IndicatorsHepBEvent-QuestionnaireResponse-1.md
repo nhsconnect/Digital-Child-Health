@@ -1,1 +1,0 @@
-This QuestionnaireResponse resource has been constrained to represent the indicators for Hep B vaccine requirements.

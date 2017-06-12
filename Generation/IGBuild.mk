@@ -1,3 +1,42 @@
-//select operations\*.xml >> IGPackage
-select constraints\*.xml >> IGPackage
-select valuesets\*.xml >> IGPackage
+select constraints\*.xml >> IGPackage Profile.BirthDetails
+select valuesets\*.xml >> IGPackage Profile.BirthDetails
+select constraints\*.xml >> IGPackage Profile.BirthDischarge
+select valuesets\*.xml >> IGPackage Profile.BirthDischarge
+select constraints\*.xml >> IGPackage Profile.Referral
+select valuesets\*.xml >> IGPackage Profile.Referral
+select constraints\*.xml >> IGPackage Profile.FollowUp
+select valuesets\*.xml >> IGPackage Profile.FollowUp
+select constraints\*.xml >> IGPackage Profile.Immunisations
+select valuesets\*.xml >> IGPackage Profile.Immunisations
+select constraints\*.xml >> IGPackage Profile.Measurements
+select valuesets\*.xml >> IGPackage Profile.Measurements
+select constraints\*.xml >> IGPackage Profile.NeonatalCare
+select valuesets\*.xml >> IGPackage Profile.NeonatalCare
+select constraints\*.xml >> IGPackage Profile.NewbornHearing
+select valuesets\*.xml >> IGPackage Profile.NewbornHearing
+select constraints\*.xml >> IGPackage Profile.NewbornPhysicalExam
+select valuesets\*.xml >> IGPackage Profile.NewbornPhysicalExam
+select constraints\*.xml >> IGPackage Profile.PhysicalExamination
+select valuesets\*.xml >> IGPackage Profile.PhysicalExamination
+select constraints\*.xml >> IGPackage Profile.ProfessionalAdvice
+select valuesets\*.xml >> IGPackage Profile.ProfessionalAdvice
+select constraints\*.xml >> IGPackage Profile.ProfessionalComment
+select valuesets\*.xml >> IGPackage Profile.ProfessionalComment
+select constraints\*.xml >> IGPackage Profile.Referral
+select valuesets\*.xml >> IGPackage Profile.Referral
+select constraints\*.xml >> IGPackage Profile.RelatedPersons
+select valuesets\*.xml >> IGPackage Profile.RelatedPersons
+select constraints\*.xml >> IGPackage Profile.VitaminK
+select valuesets\*.xml >> IGPackage Profile.VitaminK
+select constraints\*.xml >> IGPackage Profile.NewbornBloodSpotScreening
+select valuesets\*.xml >> IGPackage Profile.NewbornBloodSpotScreening
+select constraints\*.xml >> IGPackage Profile.6-8WeekHealthReview
+select valuesets\*.xml >> IGPackage Profile.6-8WeekHealthReview
+select constraints\*.xml >> IGPackage Profile.AccidentsAndInjuries
+select valuesets\*.xml >> IGPackage Profile.AccidentsAndInjuries
+select constraints\*.xml >> IGPackage Profile.AssessmentAPGAR
+select valuesets\*.xml >> IGPackage Profile.AssessmentAPGAR
+select constraints\*.xml >> IGPackage Profile.BreastfeedingStatus
+select valuesets\*.xml >> IGPackage Profile.BreastfeedingStatus
+
+

@@ -1,1 +1,0 @@
-The Patient resource represents the patient involved in the provision of healthcare related services, with further constraints applied to represent a baby as the subject of a  Breastfeeding Status Event.

@@ -1,0 +1,1 @@
+This extension has been constrained to represent the Offer Status for a Procedure Request that has been offered for a Child Health Event.

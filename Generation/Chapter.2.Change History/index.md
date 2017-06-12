@@ -7,23 +7,35 @@
 
 This initial experimental version adds FHIR profiles to support the following Digital Child Health Event messages:
 
-- Birth Details Event
-- Assessment APGAR Event
-- Breastfeeding Status Event
-- Neonatal Care Event
-- Birth Discharge Event
-- Measurements Event
-- Indicators Event
-- Referral Event
-- Follow Up Event
-- Newborn Blood Spot Event
-- Newborn Hearing Event
-- Newborn Physical Exam Event
-- 6-8 Week Health Review Event
+- Birth Details 
+- Assessment APGAR 
+- Breastfeeding Status 
+- Neonatal Care
+- Birth Discharge 
+- Measurements 
+- Indicators 
+- Referral 
+- Follow Up 
+- Newborn Blood Spot 
+- Newborn Hearing 
+- Newborn Physical Exam 
+- 6-8 Week Health Review 
 - Physical Examination 
 
+**Events Catalogue Wave 2 of the Personal Child Health Record and Healthy Child Programme**
 
+This initial experimental version adds FHIR profiles to support the following Digital Child Health Event messages:
 
+- Newborn Blood Spot Screening
+- Immunisations
+- Accidents and Injuries
+- Related Persons
+- Professional Advice
+- Professional Comment
+
+**XML Examples**
+
+Where XML Examples have been provided, please note that the example message is provided for illustrative purposes only. It has had no clinical validation. Where there are conflicts with the written message specification or schema, the specification or schema shall be considered to take precedence.
 
 
 
