@@ -1,0 +1,363 @@
+{
+  "resourceType": "Bundle",
+  "id": "56ac4701-e2b0-42bb-8880-8c692bb5d2a6",
+  "meta": {
+    "profile": [
+      "https://fhir.nhs.uk/StructureDefinition/DCH-NewbornPhysicalExamEvent-Bundle-1"
+    ]
+  },
+  "type": "message",
+  "entry": [
+    {
+      "fullUrl": "urn:uuid:936cd5df-4006-4ab5-b73c-e607e7a41127",
+      "resource": {
+        "resourceType": "MessageHeader",
+        "id": "936cd5df-4006-4ab5-b73c-e607e7a41127",
+        "meta": {
+          "profile": [
+            "https://fhir.nhs.uk/StructureDefinition/DCH-NewbornPhysicalExamEvent-MessageHeader-1"
+          ]
+        },
+        "timestamp": "2012-01-09T14:00:00+00:00",
+        "event": {
+          "system": "https://fhir.nhs.uk/dch-childhealtheventtype-1",
+          "code": "HCP Clinical Intervention: Newborn Physical Examination",
+          "display": "HCP Clinical Intervention: Newborn Physical Examination"
+        },
+        "source": {
+          "endpoint": "urn:uuid:936cd5df-4006-4ab5-b73c-e607e7a41127"
+        },
+        "responsible": {
+          "reference": "urn:uuid:cbdf1cd7-271a-4b61-81a1-df98cb750451",
+          "display": "Leeds Teaching Hospitals"
+        },
+        "data": [
+          {
+            "reference": "urn:uuid:53ebb971-fff6-425f-946c-4f33a754921f"
+          }
+        ]
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:53ebb971-fff6-425f-946c-4f33a754921f",
+      "resource": {
+        "resourceType": "Encounter",
+        "id": "53ebb971-fff6-425f-946c-4f33a754921f",
+        "meta": {
+          "profile": [
+            "https://fhir.hl7.org.uk/StructureDefinition/CareConnect-DCH-NewbornPhysicalExamEvent-Encounter-1"
+          ]
+        },
+        "identifier": [
+          {
+            "system": "https://tools.ietf.org/html/rfc4122",
+            "value": "1769bce6-da09-4b4b-af47-6e65d793eb44"
+          }
+        ],
+        "status": "finished",
+        "patient": {
+          "reference": "urn:uuid:9945863a-dddb-41f2-9dd9-60cb88b68b29",
+          "display": "SAXTON, Sarah Marie"
+        },
+        "participant": [
+          {
+            "individual": {
+              "reference": "urn:uuid:ed812322-6105-4055-ba76-a2bfd67d4526",
+              "display": "BAINES, Sally"
+            }
+          }
+        ],
+        "appointment": {
+          "reference": "urn:uuid:884a8aa0-762a-412e-8be6-d2df52ec62ed"
+        },
+        "period": {
+          "start": "2012-01-09T13:30:00+00:00"
+        },
+        "location": [
+          {
+            "location": {
+              "reference": "urn:uuid:f5df9168-fe8a-4deb-ab50-e4d05f965cd0",
+              "display": "Clarendon Wing, Leeds General Infirmary"
+            }
+          }
+        ],
+        "serviceProvider": {
+          "reference": "urn:uuid:cbdf1cd7-271a-4b61-81a1-df98cb750451",
+          "display": "Leeds Teaching Hospitals NHS Trust"
+        }
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:cbdf1cd7-271a-4b61-81a1-df98cb750451",
+      "resource": {
+        "resourceType": "Organization",
+        "id": "cbdf1cd7-271a-4b61-81a1-df98cb750451",
+        "meta": {
+          "profile": [
+            "https://fhir.hl7.org.uk/StructureDefinition/CareConnect-Organization-1"
+          ]
+        },
+        "identifier": [
+          {
+            "system": "https://fhir.nhs.uk/Id/ods-organization-code",
+            "value": "RR8"
+          }
+        ],
+        "name": "Leeds Teaching Hospitals NHS Trust"
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:9945863a-dddb-41f2-9dd9-60cb88b68b29",
+      "resource": {
+        "resourceType": "Patient",
+        "id": "9945863a-dddb-41f2-9dd9-60cb88b68b29",
+        "meta": {
+          "profile": [
+            "https://fhir.hl7.org.uk/StructureDefinition/CareConnect-DCH-Patient-1"
+          ]
+        },
+        "identifier": [
+          {
+            "extension": [
+              {
+                "url": "https://fhir.hl7.org.uk/StructureDefinition/Extension-CareConnect-NHSNumberVerificationStatus-1",
+                "valueCodeableConcept": {
+                  "coding": [
+                    {
+                      "system": "https://fhir.hl7.org.uk/CareConnect-NHSNumberVerificationStatus-1",
+                      "code": "01",
+                      "display": "Number present and verified"
+                    }
+                  ]
+                }
+              }
+            ],
+            "system": "https://fhir.nhs.uk/Id/nhs-number",
+            "value": "5629874536"
+          }
+        ],
+        "name": [
+          {
+            "use": "official",
+            "family": [
+              "Saxton"
+            ],
+            "given": [
+              "Sarah",
+              "Marie"
+            ]
+          }
+        ],
+        "gender": "female",
+        "_birthDate": {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/patient-birthTime",
+              "valueDateTime": "2012-01-07T20:12:00+00:00"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:f5df9168-fe8a-4deb-ab50-e4d05f965cd0",
+      "resource": {
+        "resourceType": "Organization",
+        "meta": {
+          "profile": [
+            "https://fhir.hl7.org.uk/StructureDefinition/CareConnect-DCH-ChildHealthEvent-Organization-1"
+          ]
+        },
+        "identifier": [
+          {
+            "system": "https://fhir.nhs.uk/Id/ods-site-code",
+            "value": "RR830"
+          }
+        ],
+        "type": {
+          "coding": [
+            {
+              "system": "http://hl7.org/fhir/organization-type",
+              "code": "dept",
+              "display": "Hospital Department"
+            }
+          ]
+        },
+        "name": "Clarendon Wing, Leeds General Infirmary"
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:e3b8395c-6d5f-4a91-b796-3c2d084d6be0",
+      "resource": {
+        "resourceType": "ProcedureRequest",
+        "id": "e3b8395c-6d5f-4a91-b796-3c2d084d6be0",
+        "meta": {
+          "profile": [
+            "https://fhir.nhs.uk/StructureDefinition/DCH-NewbornPhysicalExamEvent-ProcedureRequest-1"
+          ]
+        },
+        "extension": [
+          {
+            "url": "https://fhir.nhs.uk/StructureDefinition/Extension-DCH-ConsentStatus-1",
+            "valueCodeableConcept": {
+              "coding": [
+                {
+                  "system": "https://fhir.nhs.uk/dch-consentstatus-1",
+                  "code": "Consented",
+                  "display": "Consented"
+                }
+              ]
+            }
+          }
+        ],
+        "identifier": [
+          {
+            "system": "https://tools.ietf.org/html/rfc4122",
+            "value": "9e301719-de9b-4be3-8761-a3d9d43ee02d"
+          }
+        ],
+        "subject": {
+          "reference": "urn:uuid:9945863a-dddb-41f2-9dd9-60cb88b68b29",
+          "display": "SAXTON, Sarah Marie"
+        },
+        "code": {
+          "coding": [
+            {
+              "system": "http://snomed.info/sct",
+              "code": "312851005",
+              "display": "Screening for disorder (procedure)"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:884a8aa0-762a-412e-8be6-d2df52ec62ed",
+      "resource": {
+        "resourceType": "Appointment",
+        "id": "884a8aa0-762a-412e-8be6-d2df52ec62ed",
+        "meta": {
+          "profile": [
+            "https://fhir.nhs.uk/StructureDefinition/DCH-NewbornPhysicalExamEvent-Appointment-1"
+          ]
+        },
+        "identifier": [
+          {
+            "system": "https://tools.ietf.org/html/rfc4122",
+            "value": "e7f40c26-0c36-4849-ba03-304a07a4ff0d"
+          }
+        ],
+        "status": "booked",
+        "start": "2012-01-09T13:30:00+00:00",
+        "participant": [
+          {
+            "actor": {
+              "reference": "urn:uuid:9945863a-dddb-41f2-9dd9-60cb88b68b29",
+              "display": "SAXTON, Sarah Marie"
+            },
+            "status": "accepted"
+          },
+          {
+            "actor": {
+              "reference": "urn:uuid:ed812322-6105-4055-ba76-a2bfd67d4526",
+              "display": "BAINES, Sally"
+            },
+            "status": "accepted"
+          }
+        ]
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:7d25a88e-acba-4f23-ab2b-03de9cefd422",
+      "resource": {
+        "resourceType": "Procedure",
+        "id": "7d25a88e-acba-4f23-ab2b-03de9cefd422",
+        "meta": {
+          "profile": [
+            "https://fhir.hl7.org.uk/StructureDefinition/CareConnect-DCH-NewbornPhysicalExamEvent-Procedure-1"
+          ]
+        },
+        "subject": {
+          "reference": "urn:uuid:9945863a-dddb-41f2-9dd9-60cb88b68b29",
+          "display": "SAXTON, Sarah Marie"
+        },
+        "status": "completed",
+        "code": {
+          "coding": [
+            {
+              "system": "http://snomed.info/sct",
+              "code": "312851005",
+              "display": "Screening for disorder (procedure)"
+            }
+          ]
+        },
+        "performer": [
+          {
+            "actor": {
+              "reference": "urn:uuid:ed812322-6105-4055-ba76-a2bfd67d4526",
+              "display": "BAINES, Sally"
+            }
+          }
+        ],
+        "encounter": {
+          "reference": "urn:uuid:53ebb971-fff6-425f-946c-4f33a754921f"
+        },
+        "location": {
+          "reference": "urn:uuid:f5df9168-fe8a-4deb-ab50-e4d05f965cd0",
+          "display": "Clarendon Wing, Leeds General Infirmary"
+        },
+        "outcome": {
+          "coding": [
+            {
+              "system": "https://fhir.nhs.uk/dch-procedureoutcome-1",
+              "code": "Completed",
+              "display": "Completed"
+            }
+          ]
+        },
+        "request": {
+          "reference": "urn:uuid:e3b8395c-6d5f-4a91-b796-3c2d084d6be0"
+        }
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:ed812322-6105-4055-ba76-a2bfd67d4526",
+      "resource": {
+        "resourceType": "Practitioner",
+        "id": "ed812322-6105-4055-ba76-a2bfd67d4526",
+        "meta": {
+          "profile": [
+            "https://fhir.hl7.org.uk/StructureDefinition/CareConnect-DCH-ChildHealthEvent-Practitioner-1"
+          ]
+        },
+        "identifier": [
+          {
+            "system": "https://fhir.nhs.uk/Id/sds-role-profile-id",
+            "value": "M9999998"
+          }
+        ],
+        "name": {
+          "family": [
+            "Baines"
+          ],
+          "given": [
+            "Sally"
+          ]
+        },
+        "practitionerRole": [
+          {
+            "role": {
+              "coding": [
+                {
+                  "system": "https://fhir.hl7.org.uk/CareConnect-SDSJobRoleName-1",
+                  "code": "R8016",
+                  "display": "Midwife Access Role"
+                }
+              ]
+            }
+          }
+        ]
+      }
+    }
+  ]
+}

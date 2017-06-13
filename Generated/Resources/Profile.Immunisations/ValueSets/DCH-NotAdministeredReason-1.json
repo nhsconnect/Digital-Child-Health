@@ -1,0 +1,35 @@
+{
+  "resourceType": "ValueSet",
+  "meta": {
+    "lastUpdated": "2016-08-03T00:00:00+01:00"
+  },
+  "url": "https://fhir.nhs.uk/ValueSet/DCH-NotAdministeredReason-1",
+  "name": "Not Administered Reason",
+  "status": "active",
+  "description": "The reason why an immunisation was not administered.",
+  "compose": {
+    "include": [
+      {
+        "system": "https://fhir.nhs.uk/dch-notadministeredreason-1",
+        "concept": [
+          {
+            "code": "Did not attend",
+            "display": "Did not attend"
+          },
+          {
+            "code": "Refusal",
+            "display": "Refusal"
+          },
+          {
+            "code": "Contra-indication",
+            "display": "Contra-indication"
+          },
+          {
+            "code": "Other",
+            "display": "Other"
+          }
+        ]
+      }
+    ]
+  }
+}

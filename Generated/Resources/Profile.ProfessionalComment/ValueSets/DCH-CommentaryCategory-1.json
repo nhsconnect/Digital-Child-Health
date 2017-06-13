@@ -1,0 +1,29 @@
+{
+  "resourceType": "ValueSet",
+  "meta": {
+    "lastUpdated": "2016-08-03T00:00:00+01:00"
+  },
+  "url": "https://fhir.nhs.uk/ValueSet/DCH-CommentaryCategory-1",
+  "version": "1.0.0",
+  "name": "Commentary Category",
+  "status": "active",
+  "publisher": "NHS Digital",
+  "description": "The category applicable to the commentary provided in the Basic resource.",
+  "compose": {
+    "include": [
+      {
+        "system": "https://fhir.nhs.uk/dch-commentarycategory-1",
+        "concept": [
+          {
+            "code": "Advice",
+            "display": "Advice"
+          },
+          {
+            "code": "Comment",
+            "display": "Comment"
+          }
+        ]
+      }
+    ]
+  }
+}

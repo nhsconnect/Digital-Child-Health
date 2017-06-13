@@ -1,0 +1,75 @@
+{
+  "resourceType": "ValueSet",
+  "meta": {
+    "lastUpdated": "2016-08-03T00:00:00+01:00"
+  },
+  "url": "https://fhir.nhs.uk/ValueSet/DCH-ChildHealthEventType-1",
+  "name": "Child Health Event Type",
+  "status": "active",
+  "description": "The type of Child Health Event. The values below have been listed for example only.",
+  "compose": {
+    "include": [
+      {
+        "system": "https://fhir.nhs.uk/dch-childhealtheventtype-1",
+        "concept": [
+          {
+            "code": "Birth",
+            "display": "Birth"
+          },
+          {
+            "code": "Assessment: APGAR",
+            "display": "Assessment: APGAR"
+          },
+          {
+            "code": "Demographics: Core",
+            "display": "Demographics: Core"
+          },
+          {
+            "code": "Demographics: Related Persons",
+            "display": "Demographics: Related Persons"
+          },
+          {
+            "code": "Intervention: Vitamin K",
+            "display": "Intervention: Vitamin K"
+          },
+          {
+            "code": "Physical Examination",
+            "display": "Physical Examination"
+          },
+          {
+            "code": "Newborn Blood Spot Screening",
+            "display": "Newborn Blood Spot Screening"
+          },
+          {
+            "code": "Newborn Hearing Screening",
+            "display": "Newborn Hearing Screening"
+          },
+          {
+            "code": "Measurements",
+            "display": "Measurements"
+          },
+          {
+            "code": "Breastfeeding Status",
+            "display": "Breastfeeding Status"
+          },
+          {
+            "code": "Immunisation",
+            "display": "Immunisation"
+          },
+          {
+            "code": "Referral: Referral",
+            "display": "Referral: Referral"
+          },
+          {
+            "code": "Referral: Follow Up",
+            "display": "Referral: Follow Up"
+          },
+          {
+            "code": "Medical History",
+            "display": "Medical History"
+          }
+        ]
+      }
+    ]
+  }
+}

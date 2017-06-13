@@ -1,0 +1,67 @@
+{
+  "resourceType": "ValueSet",
+  "meta": {
+    "lastUpdated": "2016-08-03T00:00:00+01:00"
+  },
+  "url": "https://fhir.nhs.uk/ValueSet/DCH-DisposalCode-1",
+  "name": "Disposal Code",
+  "status": "active",
+  "description": "A code to identify how an Accident and Emergency Attendance might end.",
+  "compose": {
+    "include": [
+      {
+        "system": "https://fhir.nhs.uk/dch-disposalcode-1",
+        "concept": [
+          {
+            "code": "01",
+            "display": "Admitted to a Hospital Bed / became a LODGED PATIENT of the same Health Care Provider"
+          },
+          {
+            "code": "02",
+            "display": "Discharged - follow up treatment to be provided by GENERAL PRACTITIONER"
+          },
+          {
+            "code": "03",
+            "display": "Discharged - did not require any follow up treatment"
+          },
+          {
+            "code": "04",
+            "display": "Referred to A + E Clinic"
+          },
+          {
+            "code": "05",
+            "display": "Referred to Fracture Clinic"
+          },
+          {
+            "code": "06",
+            "display": "Referred to other Out-Patient Clinic"
+          },
+          {
+            "code": "07",
+            "display": "Transferred to other Health Care Provider"
+          },
+          {
+            "code": "10",
+            "display": "Died in Department"
+          },
+          {
+            "code": "11",
+            "display": "Referred to other health CARE PROFESSIONAL"
+          },
+          {
+            "code": "12",
+            "display": "Left Department before being seen for treatment"
+          },
+          {
+            "code": "13",
+            "display": "Left Department having refused treatment"
+          },
+          {
+            "code": "14",
+            "display": "Other"
+          }
+        ]
+      }
+    ]
+  }
+}

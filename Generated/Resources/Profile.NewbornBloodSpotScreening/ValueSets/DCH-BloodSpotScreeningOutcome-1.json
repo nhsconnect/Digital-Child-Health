@@ -1,0 +1,60 @@
+{
+  "resourceType": "ValueSet",
+  "meta": {
+    "lastUpdated": "2016-08-03T00:00:00+01:00"
+  },
+  "url": "https://fhir.nhs.uk/ValueSet/DCH-BloodSpotScreeningOutcome-1",
+  "version": "1.0.0",
+  "name": "Blood Spot Screening Outcome",
+  "status": "active",
+  "description": "The Blood Spot Screening outcome.",
+  "compose": {
+    "include": [
+      {
+        "system": "https://fhir.nhs.uk/dch-bloodspotscreeningoutcome-1",
+        "concept": [
+          {
+            "code": "1",
+            "display": "Specimen received in Laboratory"
+          },
+          {
+            "code": "2",
+            "display": "Screening declined"
+          },
+          {
+            "code": "3",
+            "display": "Repeat/Further Sample Required"
+          },
+          {
+            "code": "4",
+            "display": "Condition not suspected"
+          },
+          {
+            "code": "5",
+            "display": "Carrier"
+          },
+          {
+            "code": "6",
+            "display": "Sickle Cell Disease not suspected, carrier of other haemoglobin"
+          },
+          {
+            "code": "7",
+            "display": "Condition not suspected, other disorders follow up"
+          },
+          {
+            "code": "8",
+            "display": "Condition suspected"
+          },
+          {
+            "code": "9",
+            "display": "Not screened/screening incomplete"
+          },
+          {
+            "code": "10",
+            "display": "Haemoglobin S not suspected (by DNA) No other haemoglobin /thalassemia excluded"
+          }
+        ]
+      }
+    ]
+  }
+}

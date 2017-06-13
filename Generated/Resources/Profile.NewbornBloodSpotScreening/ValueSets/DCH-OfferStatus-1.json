@@ -1,0 +1,39 @@
+{
+  "resourceType": "ValueSet",
+  "meta": {
+    "lastUpdated": "2016-08-03T00:00:00+01:00"
+  },
+  "url": "https://fhir.nhs.uk/ValueSet/DCH-OfferStatus-1",
+  "name": "Child Health Event Offer Status",
+  "status": "active",
+  "description": "The Offer Status for the Child Health Event.",
+  "compose": {
+    "include": [
+      {
+        "system": "https://fhir.nhs.uk/dch-offerstatus-1",
+        "concept": [
+          {
+            "code": "Offered and declined",
+            "display": "Offered and declined"
+          },
+          {
+            "code": "Offered and accepted",
+            "display": "Offered and accepted"
+          },
+          {
+            "code": "Not Offered",
+            "display": "Not Offered"
+          },
+          {
+            "code": "Ineligible",
+            "display": "Ineligible"
+          },
+          {
+            "code": "No response to offer",
+            "display": "No response to offer"
+          }
+        ]
+      }
+    ]
+  }
+}
