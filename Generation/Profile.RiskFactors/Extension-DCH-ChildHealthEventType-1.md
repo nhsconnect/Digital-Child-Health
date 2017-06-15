@@ -1,1 +1,0 @@
-This extension has been constrained to convey the Child Health Event represented in the message.

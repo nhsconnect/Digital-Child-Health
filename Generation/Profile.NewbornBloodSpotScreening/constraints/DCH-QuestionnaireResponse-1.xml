@@ -4,7 +4,7 @@
     <lastUpdated value="2017-06-09T10:05:22.743+01:00" />
     <tag>
       <system value="urn:hscic:publishOrder" />
-      <code value="6" />
+      <code value="5" />
     </tag>
   </meta>
   <url value="https://fhir.hl7.org.uk/StructureDefinition/DCH-QuestionnaireResponse-1" />

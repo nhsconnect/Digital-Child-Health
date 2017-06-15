@@ -1,11 +1,11 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <meta>
-    <lastUpdated value="2017-06-03T10:16:51.334+01:00" />
+    <lastUpdated value="2017-06-15T09:40:46.853+01:00" />
   </meta>
-  <url value="https://fhir.nhs.uk/StructureDefinition/Extension-DCH-ChildHealthEventType-1" />
+  <url value="https://fhir.nhs.uk/StructureDefinition/Extension-DCH-EventMessageType-1" />
   <version value="1.0.0" />
-  <name value="Extension-DCH-ChildHealthEventType-1" />
+  <name value="Extension-DCH-EventMessageType-1" />
   <status value="draft" />
   <publisher value="NHS Digital" />
   <contact>
@@ -17,7 +17,7 @@
     </telecom>
   </contact>
   <date value="2017-05-31T14:44:23.208809+01:00" />
-  <description value="This extension has been constrained to convey the Child Health Event represented in the message." />
+  <description value="The type of event applicable to the Child Health event message." />
   <copyright value="Copyright © 2016 Health and Social Care Information Centre. NHS Digital is the trading name of the Health and Social Care Information Centre." />
   <fhirVersion value="1.0.2" />
   <kind value="datatype" />
@@ -29,8 +29,8 @@
   <snapshot>
     <element>
       <path value="Extension" />
-      <short value="The Child Health Event represented in the message." />
-      <definition value="The Child Health Event represented in the message." />
+      <short value="The type of event applicable to the Child Health event message" />
+      <definition value="The type of event applicable to the Child Health event message." />
       <min value="0" />
       <max value="*" />
       <base>
@@ -141,7 +141,7 @@
       <type>
         <code value="uri" />
       </type>
-      <fixedUri value="https://fhir.nhs.uk/StructureDefinition/Extension-DCH-ChildHealthEventType-1" />
+      <fixedUri value="https://fhir.nhs.uk/StructureDefinition/Extension-DCH-EventMessageType-1" />
       <condition value="ele-1" />
       <constraint>
         <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-expression">
@@ -262,8 +262,8 @@
     </element>
     <element>
       <path value="Extension.valueCodeableConcept.coding" />
-      <short value="Code for the Child Health event this message represents" />
-      <definition value="A reference to a code defined by a terminology system." />
+      <short value="The type of event applicable to the Child Health Event message" />
+      <definition value="The type of event applicable to the Child Health Event message." />
       <comments value="Codes may be defined very casually in enumerations, or code lists, up to very formal definitions such as SNOMED CT - see the HL7 v3 Core Principles for more information.  Ordering of codings is undefined and SHALL NOT be used to infer meaning. Generally, at most only one of the coding values will be labelled as UserSelected = true." />
       <requirements value="Allows for translations and alternate encodings within a code system.  Also supports communication of the same instance to systems requiring different encodings." />
       <min value="1" />
@@ -289,9 +289,9 @@
       <isSummary value="true" />
       <binding>
         <strength value="required" />
-        <description value="The type of Child Health event." />
+        <description value="The type of event applicable to the Child Health Event message" />
         <valueSetReference>
-          <reference value="https://fhir.nhs.uk/ValueSet/DCH-ChildHealthEventType-1" />
+          <reference value="https://fhir.nhs.uk/ValueSet/DCH-MessageEventType-1" />
         </valueSetReference>
       </binding>
       <mapping>
@@ -405,7 +405,7 @@
       <type>
         <code value="uri" />
       </type>
-      <fixedUri value="https://fhir.nhs.uk/dch-childhealtheventtype-1" />
+      <fixedUri value="https://fhir.nhs.uk/dch-messageeventtype-1" />
       <condition value="ele-1" />
       <constraint>
         <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-expression">
@@ -657,12 +657,12 @@
   <differential>
     <element>
       <path value="Extension" />
-      <short value="The Child Health Event represented in the message." />
-      <definition value="The Child Health Event represented in the message." />
+      <short value="The type of event applicable to the Child Health event message" />
+      <definition value="The type of event applicable to the Child Health event message." />
     </element>
     <element>
       <path value="Extension.url" />
-      <fixedUri value="https://fhir.nhs.uk/StructureDefinition/Extension-DCH-ChildHealthEventType-1" />
+      <fixedUri value="https://fhir.nhs.uk/StructureDefinition/Extension-DCH-EventMessageType-1" />
     </element>
     <element>
       <path value="Extension.valueCodeableConcept" />
@@ -673,21 +673,22 @@
     </element>
     <element>
       <path value="Extension.valueCodeableConcept.coding" />
-      <short value="Code for the Child Health event this message represents" />
+      <short value="The type of event applicable to the Child Health Event message" />
+      <definition value="The type of event applicable to the Child Health Event message." />
       <min value="1" />
       <max value="1" />
       <binding>
         <strength value="required" />
-        <description value="The type of Child Health event." />
+        <description value="The type of event applicable to the Child Health Event message" />
         <valueSetReference>
-          <reference value="https://fhir.nhs.uk/ValueSet/DCH-ChildHealthEventType-1" />
+          <reference value="https://fhir.nhs.uk/ValueSet/DCH-MessageEventType-1" />
         </valueSetReference>
       </binding>
     </element>
     <element>
       <path value="Extension.valueCodeableConcept.coding.system" />
       <min value="1" />
-      <fixedUri value="https://fhir.nhs.uk/dch-childhealtheventtype-1" />
+      <fixedUri value="https://fhir.nhs.uk/dch-messageeventtype-1" />
     </element>
     <element>
       <path value="Extension.valueCodeableConcept.coding.version" />
