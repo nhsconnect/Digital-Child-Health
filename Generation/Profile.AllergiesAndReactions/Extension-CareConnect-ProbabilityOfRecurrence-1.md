@@ -1,0 +1,1 @@
+This Extension resource is constrained to support representation of the probability of the reaction (allergic, adverse, intolerant) occurring.

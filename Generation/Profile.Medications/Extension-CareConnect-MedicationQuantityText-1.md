@@ -1,0 +1,1 @@
+This Extension resource is constrained to support the textual representation of a medication structured quantity.

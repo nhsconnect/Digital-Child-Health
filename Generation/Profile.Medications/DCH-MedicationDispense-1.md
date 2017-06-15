@@ -1,0 +1,1 @@
+This MedicationDispense resource has been constrained to represent the dispensing information for a prescribed medication.

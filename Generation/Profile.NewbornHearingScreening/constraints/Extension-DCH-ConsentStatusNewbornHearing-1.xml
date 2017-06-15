@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <meta>
-    <lastUpdated value="2017-03-28T13:38:02.531+01:00" />
+    <lastUpdated value="2017-06-13T13:03:41.561+01:00" />
   </meta>
   <url value="https://fhir.nhs.uk/StructureDefinition/Extension-DCH-ConsentStatusNewbornHearing-1" />
   <version value="1.0.0" />
@@ -17,7 +17,7 @@
     </telecom>
   </contact>
   <date value="2017-03-28T10:02:24.7119398+01:00" />
-  <description value="This extension has been constrained to represent the Consent Status for a Procedure Request that has been offered for a Newborn Hearing Event." />
+  <description value="This extension has been constrained to represent the Consent Status for a Procedure Request that has been offered for Newborn Hearing Screening." />
   <copyright value="Copyright © 2016 Health and Social Care Information Centre. NHS Digital is the trading name of the Health and Social Care Information Centre." />
   <fhirVersion value="1.0.2" />
   <kind value="datatype" />
@@ -29,8 +29,8 @@
   <snapshot>
     <element>
       <path value="Extension" />
-      <short value="Base for all elements" />
-      <definition value="Optional Extensions Element - found in all resources." />
+      <short value="The consent given for Newborn Hearing Screening" />
+      <definition value="The consent given for Newborn Hearing Screening." />
       <min value="0" />
       <max value="*" />
       <base>
@@ -163,8 +163,8 @@
     </element>
     <element>
       <path value="Extension.valueCodeableConcept" />
-      <short value="The Consent Status for the Child Health Event" />
-      <definition value="The Consent Status for the Child Health Event" />
+      <short value="The consent given for Newborn Hearing Screening" />
+      <definition value="The consent given for Newborn Hearing Screening" />
       <min value="0" />
       <max value="1" />
       <base>
@@ -187,7 +187,7 @@
       </constraint>
       <binding>
         <strength value="required" />
-        <description value="The Consent Status for the Child Health Even" />
+        <description value="The consent given for Newborn Hearing Screening" />
         <valueSetReference>
           <reference value="https://fhir.nhs.uk/ValueSet/DCH-ConsentStatusNewbornHearing-1" />
         </valueSetReference>
@@ -664,6 +664,8 @@
   <differential>
     <element>
       <path value="Extension" />
+      <short value="The consent given for Newborn Hearing Screening" />
+      <definition value="The consent given for Newborn Hearing Screening." />
     </element>
     <element>
       <path value="Extension.url" />
@@ -671,14 +673,14 @@
     </element>
     <element>
       <path value="Extension.valueCodeableConcept" />
-      <short value="The Consent Status for the Child Health Event" />
-      <definition value="The Consent Status for the Child Health Event" />
+      <short value="The consent given for Newborn Hearing Screening" />
+      <definition value="The consent given for Newborn Hearing Screening" />
       <type>
         <code value="CodeableConcept" />
       </type>
       <binding>
         <strength value="required" />
-        <description value="The Consent Status for the Child Health Even" />
+        <description value="The consent given for Newborn Hearing Screening" />
         <valueSetReference>
           <reference value="https://fhir.nhs.uk/ValueSet/DCH-ConsentStatusNewbornHearing-1" />
         </valueSetReference>

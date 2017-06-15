@@ -1,0 +1,1 @@
+This Questionnaire Response resource is constrained to represent a questionnaire response for the Newborn Hearing Screening programme information for a Patient.

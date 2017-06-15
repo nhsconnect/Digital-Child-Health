@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <meta>
-    <lastUpdated value="2017-06-05T12:51:05.191+01:00" />
+    <lastUpdated value="2017-06-13T12:48:09.917+01:00" />
     <tag>
       <system value="urn:hscic:publishOrder" />
       <code value="5" />
@@ -1947,7 +1947,7 @@
       <short value="inpatient | outpatient | ambulatory | emergency +" />
       <definition value="inpatient | outpatient | ambulatory | emergency +." />
       <comments value="Note that FHIR strings may not exceed 1MB in size" />
-      <min value="1" />
+      <min value="0" />
       <max value="1" />
       <base>
         <path value="Encounter.class" />
@@ -5190,7 +5190,7 @@
       </base>
       <type>
         <code value="Reference" />
-        <profile value="https://fhir.hl7.org.uk/StructureDefinition/CareConnect-DCH-Practitioner-1" />
+        <profile value="https://fhir.hl7.org.uk/StructureDefinition/CareConnect-Practitioner-1" />
       </type>
       <condition value="ele-1" />
       <constraint>
@@ -6118,7 +6118,7 @@
       <alias value="Indication" />
       <alias value="Admission diagnosis" />
       <min value="0" />
-      <max value="1" />
+      <max value="0" />
       <base>
         <path value="Encounter.reason" />
         <min value="0" />
@@ -7022,7 +7022,7 @@
       <comments value="For systems that need to know which was the primary diagnosis, these will be marked with the standard extension primaryDiagnosis (which is a sequence value rather than a flag, 1 = primary diagnosis)." />
       <alias value="Admission diagnosis" />
       <min value="0" />
-      <max value="1" />
+      <max value="0" />
       <base>
         <path value="Encounter.indication" />
         <min value="0" />
@@ -7030,7 +7030,11 @@
       </base>
       <type>
         <code value="Reference" />
-        <profile value="https://fhir.hl7.org.uk/StructureDefinition/CareConnect-DCH-Condition-1" />
+        <profile value="http://hl7.org/fhir/StructureDefinition/Condition" />
+      </type>
+      <type>
+        <code value="Reference" />
+        <profile value="http://hl7.org/fhir/StructureDefinition/Procedure" />
       </type>
       <condition value="ele-1" />
       <constraint>
@@ -7079,7 +7083,7 @@
       <definition value="Details about the admission to a healthcare service." />
       <comments value="An Encounter may cover more than just the inpatient stay. Contexts such as outpatients, community clinics, and aged care facilities are also included.  The duration recorded in the period of this encounter covers the entire scope of this hospitalization record." />
       <min value="0" />
-      <max value="1" />
+      <max value="0" />
       <base>
         <path value="Encounter.hospitalization" />
         <min value="0" />
@@ -9074,7 +9078,7 @@
       <short value="The admitting diagnosis as reported by admitting practitioner" />
       <definition value="The admitting diagnosis field is used to record the diagnosis codes as reported by admitting practitioner. This could be different or in addition to the conditions reported as reason-condition(s) for the encounter." />
       <min value="0" />
-      <max value="1" />
+      <max value="0" />
       <base>
         <path value="Encounter.hospitalization.admittingDiagnosis" />
         <min value="0" />
@@ -11867,7 +11871,7 @@
       <definition value="Category or kind of location after discharge." />
       <comments value="Not all terminology uses fit this general pattern. In some cases, models should not use CodeableConcept and use Coding directly and provide their own structure for managing text, codings, translations and the relationship between elements and pre- and post-coordination." />
       <min value="0" />
-      <max value="1" />
+      <max value="0" />
       <base>
         <path value="Encounter.hospitalization.dischargeDisposition" />
         <min value="0" />
@@ -11888,10 +11892,10 @@
       </constraint>
       <isSummary value="true" />
       <binding>
-        <strength value="required" />
-        <description value="A code to identify how the Accident and Emergency Attendance ended" />
+        <strength value="preferred" />
+        <description value="Discharge Disposition" />
         <valueSetReference>
-          <reference value="https://fhir.nhs.uk/ValueSet/DCH-DisposalCode-1" />
+          <reference value="http://hl7.org/fhir/ValueSet/encounter-discharge-disposition" />
         </valueSetReference>
       </binding>
       <mapping>
@@ -11991,8 +11995,8 @@
       <definition value="A reference to a code defined by a terminology system." />
       <comments value="Codes may be defined very casually in enumerations, or code lists, up to very formal definitions such as SNOMED CT - see the HL7 v3 Core Principles for more information.  Ordering of codings is undefined and SHALL NOT be used to infer meaning. Generally, at most only one of the coding values will be labelled as UserSelected = true." />
       <requirements value="Allows for translations and alternate encodings within a code system.  Also supports communication of the same instance to systems requiring different encodings." />
-      <min value="1" />
-      <max value="1" />
+      <min value="0" />
+      <max value="*" />
       <base>
         <path value="CodeableConcept.coding" />
         <min value="0" />
@@ -12113,7 +12117,7 @@
       <definition value="The identification of the code system that defines the meaning of the symbol in the code." />
       <comments value="The URI may be an OID (urn:oid:...) or a UUID (urn:uuid:...).  OIDs and UUIDs SHALL be references to the HL7 OID registry. Otherwise, the URI should come from HL7's list of FHIR defined special URIs or it should de-reference to some definition that establish the system clearly and unambiguously." />
       <requirements value="Need to be unambiguous about the source of the definition of the symbol." />
-      <min value="1" />
+      <min value="0" />
       <max value="1" />
       <base>
         <path value="Coding.system" />
@@ -12123,7 +12127,6 @@
       <type>
         <code value="uri" />
       </type>
-      <fixedUri value="https://fhir.nhs.uk/dch-disposalcode-1" />
       <condition value="ele-1" />
       <constraint>
         <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-expression">
@@ -12201,7 +12204,7 @@
       <definition value="A symbol in syntax defined by the system. The symbol may be a predefined code or an expression in a syntax defined by the coding system (e.g. post-coordination)." />
       <comments value="Note that FHIR strings may not exceed 1MB in size" />
       <requirements value="Need to refer to a particular code in the system." />
-      <min value="1" />
+      <min value="0" />
       <max value="1" />
       <base>
         <path value="Coding.code" />
@@ -12245,7 +12248,7 @@
       <definition value="A representation of the meaning of the code in the system, following the rules of the system." />
       <comments value="Note that FHIR strings may not exceed 1MB in size" />
       <requirements value="Need to be able to carry a human-readable meaning of the code for readers that do not know  the system." />
-      <min value="1" />
+      <min value="0" />
       <max value="1" />
       <base>
         <path value="Coding.display" />
@@ -12707,7 +12710,7 @@
       </base>
       <type>
         <code value="Reference" />
-        <profile value="https://fhir.hl7.org.uk/StructureDefinition/CareConnect-DCH-Organization-1" />
+        <profile value="https://fhir.hl7.org.uk/StructureDefinition/CareConnect-Organization-1" />
       </type>
       <condition value="ele-1" />
       <constraint>
@@ -13138,10 +13141,6 @@
         <code value="Reference" />
         <profile value="https://fhir.hl7.org.uk/StructureDefinition/CareConnect-Organization-1" />
       </type>
-      <type>
-        <code value="Reference" />
-        <profile value="https://fhir.hl7.org.uk/StructureDefinition/CareConnect-DCH-Organization-1" />
-      </type>
       <condition value="ele-1" />
       <constraint>
         <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-expression">
@@ -13250,7 +13249,7 @@
       <short value="Relative, internal or absolute URL reference" />
       <definition value="A reference to a location at which the other resource is found. The reference may be a relative reference, in which case it is relative to the service base URL, or an absolute URL that resolves to the location where the resource is found. The reference may be version specific or not. If the reference is not to a FHIR RESTful server, then it should be assumed to be version specific. Internal fragment references (start with '#') refer to contained resources." />
       <comments value="Using absolute URLs provides a stable scalable approach suitable for a cloud/web context, while using relative/logical references provides a flexible approach suitable for use when trading across closed eco-system boundaries.   Absolute URLs do not need to point to a FHIR RESTful server, though this is the preferred approach. If the URL conforms to the structure &quot;/[type]/[id]&quot; then it should be assumed that the reference is to a FHIR RESTful server." />
-      <min value="1" />
+      <min value="0" />
       <max value="1" />
       <base>
         <path value="Reference.reference" />
@@ -13545,7 +13544,6 @@
     </element>
     <element>
       <path value="Encounter.class" />
-      <min value="1" />
       <fixedCode value="emergency" />
     </element>
     <element>
@@ -13678,7 +13676,7 @@
       <min value="1" />
       <type>
         <code value="Reference" />
-        <profile value="https://fhir.hl7.org.uk/StructureDefinition/CareConnect-DCH-Practitioner-1" />
+        <profile value="https://fhir.hl7.org.uk/StructureDefinition/CareConnect-Practitioner-1" />
       </type>
     </element>
     <element>
@@ -13704,7 +13702,7 @@
     </element>
     <element>
       <path value="Encounter.reason" />
-      <max value="1" />
+      <max value="0" />
     </element>
     <element>
       <path value="Encounter.reason.coding" />
@@ -13753,11 +13751,11 @@
     </element>
     <element>
       <path value="Encounter.indication" />
-      <max value="1" />
-      <type>
-        <code value="Reference" />
-        <profile value="https://fhir.hl7.org.uk/StructureDefinition/CareConnect-DCH-Condition-1" />
-      </type>
+      <max value="0" />
+    </element>
+    <element>
+      <path value="Encounter.hospitalization" />
+      <max value="0" />
     </element>
     <element>
       <path value="Encounter.hospitalization.preAdmissionIdentifier" />
@@ -13788,7 +13786,7 @@
     </element>
     <element>
       <path value="Encounter.hospitalization.admittingDiagnosis" />
-      <max value="1" />
+      <max value="0" />
     </element>
     <element>
       <path value="Encounter.hospitalization.reAdmission" />
@@ -13862,31 +13860,7 @@
     </element>
     <element>
       <path value="Encounter.hospitalization.dischargeDisposition" />
-      <binding>
-        <strength value="required" />
-        <description value="A code to identify how the Accident and Emergency Attendance ended" />
-        <valueSetReference>
-          <reference value="https://fhir.nhs.uk/ValueSet/DCH-DisposalCode-1" />
-        </valueSetReference>
-      </binding>
-    </element>
-    <element>
-      <path value="Encounter.hospitalization.dischargeDisposition.coding" />
-      <min value="1" />
-      <max value="1" />
-    </element>
-    <element>
-      <path value="Encounter.hospitalization.dischargeDisposition.coding.system" />
-      <min value="1" />
-      <fixedUri value="https://fhir.nhs.uk/dch-disposalcode-1" />
-    </element>
-    <element>
-      <path value="Encounter.hospitalization.dischargeDisposition.coding.code" />
-      <min value="1" />
-    </element>
-    <element>
-      <path value="Encounter.hospitalization.dischargeDisposition.coding.display" />
-      <min value="1" />
+      <max value="0" />
     </element>
     <element>
       <path value="Encounter.hospitalization.dischargeDiagnosis" />
@@ -13901,7 +13875,7 @@
       <path value="Encounter.location.location" />
       <type>
         <code value="Reference" />
-        <profile value="https://fhir.hl7.org.uk/StructureDefinition/CareConnect-DCH-Organization-1" />
+        <profile value="https://fhir.hl7.org.uk/StructureDefinition/CareConnect-Organization-1" />
       </type>
     </element>
     <element>
@@ -13923,14 +13897,6 @@
         <code value="Reference" />
         <profile value="https://fhir.hl7.org.uk/StructureDefinition/CareConnect-Organization-1" />
       </type>
-      <type>
-        <code value="Reference" />
-        <profile value="https://fhir.hl7.org.uk/StructureDefinition/CareConnect-DCH-Organization-1" />
-      </type>
-    </element>
-    <element>
-      <path value="Encounter.serviceProvider.reference" />
-      <min value="1" />
     </element>
     <element>
       <path value="Encounter.partOf" />

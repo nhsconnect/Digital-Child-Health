@@ -1,4 +1,4 @@
-This 'DCH-Bundle-1' Bundle resource profile is used as a container to collect a combination of the following resources, as ordered below, to fulfill the information requirements of a Child Health Event for immunisations:
+This 'DCH-Bundle-1' Bundle resource profile is used as a container to collect a combination of the following resources, as ordered below, to capture immunisations:
 
 - [DCH-MessageHeader-1]
 - [CareConnect-Organization-1]
@@ -12,8 +12,7 @@ This 'DCH-Bundle-1' Bundle resource profile is used as a container to collect a 
 - [CareConnect-DCH-VaccinationRequirement-Condition-1]
 - [CareConnect-DCH-BCGVaccinationRequirement-Condition]
 - [CareConnect-DCH-BCGCountry-Observation-1]
-- [CareConnect-DCH-Organization-1]
-- [CareConnect-DCH-Practitioner-1]
+- [CareConnect-Practitioner-1]
 - [CareConnect-Location-1]
 
 
@@ -26,8 +25,7 @@ This 'DCH-Bundle-1' Bundle resource profile is used as a container to collect a 
 [DCH-Appointment-1]:dch-appointment-1.html
 [CareConnect-DCH-Procedure-1]:careconnect-dch-procedure-1.html
 [DCH-ProcedureRequest-1]:dch-procedurerequest-1.html
-[CareConnect-DCH-Organization-1]:careconnect-dch-organization-1.html
-[CareConnect-DCH-Practitioner-1]:careconnect-dch-practitioner-1.html
+[CareConnect-Practitioner-1]:careconnect-practitioner-1.html
 [CareConnect-Location-1]:careconnect-location-1.html
 [CareConnect-DCH-VaccinationRequirement-Condition-1]:careconnect-dch-vaccinationrequirement-condition-1.html
 [CareConnect-DCH-BCGVaccinationRequirement-Condition]:careconnect-dch-bcgvaccinationrequirement-condition-1.html

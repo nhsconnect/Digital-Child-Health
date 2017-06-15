@@ -1,0 +1,1 @@
+This Extension resource is constrained to support a coded certainty of the allergy/intolerance.

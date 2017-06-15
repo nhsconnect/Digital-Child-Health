@@ -1,7 +1,7 @@
-<?xml version="1.0" encoding="utf-8"?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <meta>
-    <lastUpdated value="2017-06-02T11:11:58.788+01:00" />
+    <lastUpdated value="2017-06-13T13:03:44.311+01:00" />
     <tag>
       <system value="urn:hscic:publishOrder" />
       <code value="8" />
@@ -343,7 +343,7 @@
       </base>
       <type>
         <code value="Extension" />
-        <profile value="https://fhir.nhs.uk/StructureDefinition/Extension-DCH-ConsentStatus-1" />
+        <profile value="https://fhir.nhs.uk/StructureDefinition/Extension-DCH-ConsentStatusNewbornHearing-1" />
       </type>
       <condition value="ele-1" />
       <constraint>
@@ -3513,7 +3513,7 @@
       </base>
       <type>
         <code value="Reference" />
-        <profile value="https://fhir.hl7.org.uk/StructureDefinition/CareConnect-DCH-Practitioner-1" />
+        <profile value="https://fhir.hl7.org.uk/StructureDefinition/CareConnect-Practitioner-1" />
       </type>
       <condition value="ele-1" />
       <constraint>
@@ -3619,7 +3619,7 @@
       <max value="1" />
       <type>
         <code value="Extension" />
-        <profile value="https://fhir.nhs.uk/StructureDefinition/Extension-DCH-ConsentStatus-1" />
+        <profile value="https://fhir.nhs.uk/StructureDefinition/Extension-DCH-ConsentStatusNewbornHearing-1" />
       </type>
     </element>
     <element>
@@ -3716,7 +3716,7 @@
       <path value="ProcedureRequest.orderer" />
       <type>
         <code value="Reference" />
-        <profile value="https://fhir.hl7.org.uk/StructureDefinition/CareConnect-DCH-Practitioner-1" />
+        <profile value="https://fhir.hl7.org.uk/StructureDefinition/CareConnect-Practitioner-1" />
       </type>
     </element>
     <element>

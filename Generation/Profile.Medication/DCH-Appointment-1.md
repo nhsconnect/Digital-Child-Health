@@ -1,1 +1,0 @@
-This Appointment resource is constrained to represent the appointment for a Child Health Event, for example to fulfill a ProcedureRequest.

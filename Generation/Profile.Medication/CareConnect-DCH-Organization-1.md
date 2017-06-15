@@ -1,1 +1,0 @@
-The Organization resource represents the organisation that employs the healthcare professional, with further constraints applied to represent the organisation where the Child Health Event takes place.

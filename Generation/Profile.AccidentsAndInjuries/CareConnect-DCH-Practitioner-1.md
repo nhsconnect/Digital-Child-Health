@@ -1,1 +1,0 @@
-The Practitioner resource represents the healthcare professional directly or indirectly involved in the provision of healthcare related services, with further constraints applied to represent a professional participating in the Child Health Event.

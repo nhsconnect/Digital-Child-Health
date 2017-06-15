@@ -1,7 +1,7 @@
-<?xml version="1.0" encoding="utf-8"?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <meta>
-    <lastUpdated value="2017-06-02T22:09:07.91+01:00" />
+    <lastUpdated value="2017-06-13T13:06:01.618+01:00" />
     <tag>
       <system value="urn:hscic:publishOrder" />
       <code value="9" />
@@ -5608,7 +5608,7 @@
       </base>
       <type>
         <code value="Reference" />
-        <profile value="https://fhir.hl7.org.uk/StructureDefinition/CareConnect-DCH-Practitioner-1" />
+        <profile value="https://fhir.hl7.org.uk/StructureDefinition/CareConnect-Practitioner-1" />
       </type>
       <condition value="ele-1" />
       <constraint>
@@ -6939,7 +6939,7 @@
       </base>
       <type>
         <code value="Reference" />
-        <profile value="https://fhir.hl7.org.uk/StructureDefinition/CareConnect-DCH-Organization-1" />
+        <profile value="https://fhir.hl7.org.uk/StructureDefinition/CareConnect-Organization-1" />
       </type>
       <condition value="ele-1" />
       <constraint>
@@ -7965,8 +7965,8 @@
     <element>
       <path value="Procedure.outcome.coding" />
       <name value="outcome" />
-      <short value="The Outcome of the Child Health Event." />
-      <definition value="The Outcome of the Child Health Event." />
+      <short value="The outcome of the hearing screening test" />
+      <definition value="The outcome of the hearing screening test." />
       <comments value="Codes may be defined very casually in enumerations, or code lists, up to very formal definitions such as SNOMED CT - see the HL7 v3 Core Principles for more information.  Ordering of codings is undefined and SHALL NOT be used to infer meaning. Generally, at most only one of the coding values will be labelled as UserSelected = true." />
       <requirements value="Allows for translations and alternate encodings within a code system.  Also supports communication of the same instance to systems requiring different encodings." />
       <min value="1" />
@@ -7992,9 +7992,9 @@
       <isSummary value="true" />
       <binding>
         <strength value="required" />
-        <description value="The Outcome of the Child Health Event" />
+        <description value="The outcome of the hearing screening test" />
         <valueSetReference>
-          <reference value="https://fhir.nhs.uk/ValueSet/DCH-ProcedureOutcome-1" />
+          <reference value="https://fhir.nhs.uk/ValueSet/DCH-TestOutcome-1" />
         </valueSetReference>
       </binding>
       <mapping>
@@ -8108,7 +8108,7 @@
       <type>
         <code value="uri" />
       </type>
-      <fixedUri value="https://fhir.nhs.uk/dch-procedureoutcome-1" />
+      <fixedUri value="https://fhir.nhs.uk/dch-testoutcome-1" />
       <condition value="ele-1" />
       <constraint>
         <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-expression">
@@ -9443,7 +9443,7 @@
       <definition value="If the procedure required specific follow up - e.g. removal of sutures. The followup may be represented as a simple note, or could potentially be more complex in which case the CarePlan resource can be used." />
       <comments value="Not all terminology uses fit this general pattern. In some cases, models should not use CodeableConcept and use Coding directly and provide their own structure for managing text, codings, translations and the relationship between elements and pre- and post-coordination." />
       <min value="0" />
-      <max value="1" />
+      <max value="0" />
       <base>
         <path value="Procedure.followUp" />
         <min value="0" />
@@ -10639,7 +10639,7 @@
       </base>
       <type>
         <code value="Reference" />
-        <profile value="https://fhir.hl7.org.uk/StructureDefinition/CareConnect-DCH-Practitioner-1" />
+        <profile value="https://fhir.hl7.org.uk/StructureDefinition/CareConnect-DCH-ChildHealthEvent-Practitioner-1" />
       </type>
       <condition value="ele-1" />
       <constraint>
@@ -11898,7 +11898,7 @@
       <min value="1" />
       <type>
         <code value="Reference" />
-        <profile value="https://fhir.hl7.org.uk/StructureDefinition/CareConnect-DCH-Practitioner-1" />
+        <profile value="https://fhir.hl7.org.uk/StructureDefinition/CareConnect-Practitioner-1" />
       </type>
     </element>
     <element>
@@ -11956,10 +11956,6 @@
       <min value="1" />
     </element>
     <element>
-      <path value="Procedure.performed[x]" />
-      <max value="1" />
-    </element>
-    <element>
       <path value="Procedure.encounter" />
       <min value="1" />
       <type>
@@ -11976,7 +11972,7 @@
       <min value="1" />
       <type>
         <code value="Reference" />
-        <profile value="https://fhir.hl7.org.uk/StructureDefinition/CareConnect-DCH-Organization-1" />
+        <profile value="https://fhir.hl7.org.uk/StructureDefinition/CareConnect-Organization-1" />
       </type>
     </element>
     <element>
@@ -12036,22 +12032,22 @@
     <element>
       <path value="Procedure.outcome.coding" />
       <name value="outcome" />
-      <short value="The Outcome of the Child Health Event." />
-      <definition value="The Outcome of the Child Health Event." />
+      <short value="The outcome of the hearing screening test" />
+      <definition value="The outcome of the hearing screening test." />
       <min value="1" />
       <max value="1" />
       <binding>
         <strength value="required" />
-        <description value="The Outcome of the Child Health Event" />
+        <description value="The outcome of the hearing screening test" />
         <valueSetReference>
-          <reference value="https://fhir.nhs.uk/ValueSet/DCH-ProcedureOutcome-1" />
+          <reference value="https://fhir.nhs.uk/ValueSet/DCH-TestOutcome-1" />
         </valueSetReference>
       </binding>
     </element>
     <element>
       <path value="Procedure.outcome.coding.system" />
       <min value="1" />
-      <fixedUri value="https://fhir.nhs.uk/dch-procedureoutcome-1" />
+      <fixedUri value="https://fhir.nhs.uk/dch-testoutcome-1" />
     </element>
     <element>
       <path value="Procedure.outcome.coding.code" />

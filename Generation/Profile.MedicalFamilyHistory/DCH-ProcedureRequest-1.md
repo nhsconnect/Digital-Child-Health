@@ -1,1 +1,0 @@
-This ProcedureRequest resource is constrained to represent a request for a procedure to be performed during a Child Health Event.

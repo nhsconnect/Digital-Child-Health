@@ -1,4 +1,4 @@
-This 'DCH-Bundle-1' Bundle resource profile is used as a container to collect a combination of the following resources, as ordered below, to fulfill the information requirements of a Child Health Event for accidents and injuries:
+This 'DCH-Bundle-1' Bundle resource profile is used as a container to collect a combination of the following resources, as ordered below, to capture accidents and injuries:
 
 - [DCH-MessageHeader-1]
 - [CareConnect-Organization-1]
@@ -7,8 +7,7 @@ This 'DCH-Bundle-1' Bundle resource profile is used as a container to collect a 
 - [DCH-QuestionnaireResponse-1]
 - [CareConnect-DCH-Condition-1]
 - [DCH-RelatedPerson-1]
-- [CareConnect-DCH-Organization-1]
-- [CareConnect-DCH-Practitioner-1]
+- [CareConnect-Practitioner-1]
 - [CareConnect-Location-1]
                                                                                                    
 
@@ -22,7 +21,6 @@ This 'DCH-Bundle-1' Bundle resource profile is used as a container to collect a 
 [DCH-Procedure-1]:dch-procedure-1.html
 [DCH-ProcedureRequest-1]:dch-procedurerequest-1.html
 [DCH-RelatedPerson-1]:dch-relatedperson-1.html
-[CareConnect-DCH-Organization-1]:careconnect-dch-organization-1.html
-[CareConnect-DCH-Practitioner-1]:careconnect-dch-practitioner-1.html
+[CareConnect-Practitioner-1]:careconnect-practitioner-1.html
 [CareConnect-Location-1]:careconnect-location-1.html
 [CareConnect-DCH-Condition-1]:careconnect-dch-condition-1.html
