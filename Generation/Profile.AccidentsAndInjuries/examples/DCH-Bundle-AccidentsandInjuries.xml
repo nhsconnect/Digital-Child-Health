@@ -14,20 +14,20 @@
 				<meta>
 					<profile value="https://fhir.nhs.uk/StructureDefinition/DCH-MessageHeader-1"/>
 				</meta>
-				<extension url="https://fhir.nhs.uk/StructureDefinition/Extension-DCH-ChildHealthEventType-1">
+				<extension url="https://fhir.nhs.uk/StructureDefinition/Extension-DCH-EventMessageType-1">
 					<valueCodeableConcept>
 						<coding>
-							<system value="https://fhir.nhs.uk/dch-childhealtheventtype-1"/>
-							<code value="Medical History"/>
-							<display value="Medical History"/>
+							<system value="https://fhir.nhs.uk/dch-messageeventtype-1"/>
+							<code value="new"/>
+							<display value="New event message"/>
 						</coding>
 					</valueCodeableConcept>
 				</extension>
 				<timestamp value="2012-03-08T09:00:00+00:00"/>
 				<event>
-					<system value="https://fhir.nhs.uk/dch-messageeventtype-1"/>
-					<code value="new"/>
-					<display value="New event message"/>
+					<system value="https://fhir.nhs.uk/dch-childhealtheventtype-1"/>
+					<code value="Medical History"/>
+					<display value="Medical History"/>
 				</event>
 				<source>
 					<endpoint value="urn:uuid:1d67bb60-4f45-11e7-b114-b2f933d5fe66"/>
@@ -37,7 +37,7 @@
 					<display value="Leeds Teaching Hospitals"/>
 				</responsible>
 				<data>
-					<reference value="urn:uuid:1d67bd36-4f45-11e7-b114-b2f933d5fe66"/>
+					<reference value="urn:uuid:1d67c2d6-4f45-11e7-b114-b2f933d5fe66"/>
 				</data>
 			</MessageHeader>
 		</resource>
@@ -92,64 +92,6 @@
 					</extension>
 				</birthDate>
 			</Patient>
-		</resource>
-	</entry>
-	<entry>
-		<fullUrl value="urn:uuid:1d67bd36-4f45-11e7-b114-b2f933d5fe66"/>
-		<resource>
-			<Encounter>
-				<id value="1d67bd36-4f45-11e7-b114-b2f933d5fe66"/>
-				<meta>
-					<profile value="https://fhir.hl7.org.uk/StructureDefinition/CareConnect-DCH-Encounter-1"/>
-				</meta>
-				<identifier>
-					<system value="https://tools.ietf.org/html/rfc4122"/>
-					<value value="1d67be12-4f45-11e7-b114-b2f933d5fe66"/>
-				</identifier>
-				<status value="finished"/>
-				<class value="emergency"/>
-				<type>
-					<coding>
-						<system value="http://snomed.info/sct"/>
-						<code value="4525004"/>
-						<display value="Emergency department patient visit (procedure)"/>
-					</coding>
-				</type>
-				<type>
-					<coding>
-						<system value="https://fhir.nhs.uk/dch-childhealthencountertype-1"/>
-						<code value="Accidents and Injuries"/>
-						<display value="Accidents and Injuries"/>
-					</coding>
-				</type>
-				<patient>
-					<reference value="urn:uuid:7368c5fe-bbb4-4e9c-a585-234e06b84e82"/>
-					<display value="SAXTON, Sarah Marie"/>
-				</patient>
-				<participant>
-					<individual>
-						<reference value="urn:uuid:1d67c1f0-4f45-11e7-b114-b2f933d5fe66"/>
-						<display value="RILEY, Amber"/>
-					</individual>
-				</participant>
-				<period>
-					<start value="2012-03-06T20:25:00+00:00"/>
-					<end value="2012-03-06T22:00:00+00:00"/>
-				</period>
-				<reason>
-					<text value="Parent reported sudden rash to baby's skin developing from face and spreading to chest."/>
-				</reason>
-				<location>
-					<location>
-						<reference value="urn:uuid:00e72e70-0e37-48b5-b950-ca5ce8c35de7"/>
-						<display value="Accident and Emergency Department, Leeds General Infirmary"/>
-					</location>
-				</location>
-				<serviceProvider>
-					<reference value="urn:uuid:5ccb6bb7-a7f1-46cc-a5d3-135320765553"/>
-					<display value="Leeds Teaching Hospitals NHS Trust"/>
-				</serviceProvider>
-			</Encounter>
 		</resource>
 	</entry>
 	<entry>
@@ -319,6 +261,64 @@
 					</question>
 				</group>
 			</QuestionnaireResponse>
+		</resource>
+	</entry>
+	<entry>
+		<fullUrl value="urn:uuid:1d67bd36-4f45-11e7-b114-b2f933d5fe66"/>
+		<resource>
+			<Encounter>
+				<id value="1d67bd36-4f45-11e7-b114-b2f933d5fe66"/>
+				<meta>
+					<profile value="https://fhir.hl7.org.uk/StructureDefinition/CareConnect-DCH-Encounter-1"/>
+				</meta>
+				<identifier>
+					<system value="https://tools.ietf.org/html/rfc4122"/>
+					<value value="1d67be12-4f45-11e7-b114-b2f933d5fe66"/>
+				</identifier>
+				<status value="finished"/>
+				<class value="emergency"/>
+				<type>
+					<coding>
+						<system value="http://snomed.info/sct"/>
+						<code value="4525004"/>
+						<display value="Emergency department patient visit (procedure)"/>
+					</coding>
+				</type>
+				<type>
+					<coding>
+						<system value="https://fhir.nhs.uk/dch-childhealthencountertype-1"/>
+						<code value="Accidents and Injuries"/>
+						<display value="Accidents and Injuries"/>
+					</coding>
+				</type>
+				<patient>
+					<reference value="urn:uuid:7368c5fe-bbb4-4e9c-a585-234e06b84e82"/>
+					<display value="SAXTON, Sarah Marie"/>
+				</patient>
+				<participant>
+					<individual>
+						<reference value="urn:uuid:1d67c1f0-4f45-11e7-b114-b2f933d5fe66"/>
+						<display value="RILEY, Amber"/>
+					</individual>
+				</participant>
+				<period>
+					<start value="2012-03-06T20:25:00+00:00"/>
+					<end value="2012-03-06T22:00:00+00:00"/>
+				</period>
+				<reason>
+					<text value="Parent reported sudden rash to baby's skin developing from face and spreading to chest."/>
+				</reason>
+				<location>
+					<location>
+						<reference value="urn:uuid:00e72e70-0e37-48b5-b950-ca5ce8c35de7"/>
+						<display value="Accident and Emergency Department, Leeds General Infirmary"/>
+					</location>
+				</location>
+				<serviceProvider>
+					<reference value="urn:uuid:5ccb6bb7-a7f1-46cc-a5d3-135320765553"/>
+					<display value="Leeds Teaching Hospitals NHS Trust"/>
+				</serviceProvider>
+			</Encounter>
 		</resource>
 	</entry>
 	<entry>
