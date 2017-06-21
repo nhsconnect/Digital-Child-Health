@@ -1,1 +1,1 @@
-This extension has been constrained to represent the Consent Status for a Procedure Request that has been offered for a Child Health Event.
+This extension has been constrained to represent the Consent Status for a Procedure Request that has been offered for a Child Health event.

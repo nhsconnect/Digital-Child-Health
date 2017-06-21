@@ -1,8 +1,8 @@
-<?xml version="1.0" encoding="utf-8"?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <meta>
-    <lastUpdated value="2017-06-14T21:15:41.145+01:00" />
-        <tag>
+    <lastUpdated value="2017-06-20T20:19:33.618+01:00" />
+    <tag>
       <system value="urn:hscic:publishOrder" />
       <code value="7" />
     </tag>
@@ -377,7 +377,7 @@
       <path value="MedicationDispense.identifier" />
       <short value="External identifier" />
       <definition value="Identifier assigned by the dispensing facility - this is an identifier assigned outside FHIR." />
-      <min value="0" />
+      <min value="1" />
       <max value="1" />
       <base>
         <path value="MedicationDispense.identifier" />
@@ -496,7 +496,7 @@
       <comments value="This is labeled as &quot;Is Modifier&quot; because applications should not mistake a temporary id for a permanent one. Applications can assume that an identifier is permanent unless it explicitly says that it is temporary." />
       <requirements value="Allows the appropriate identifier for a particular context of use to be selected from among a set of identifiers." />
       <min value="0" />
-      <max value="1" />
+      <max value="0" />
       <base>
         <path value="Identifier.use" />
         <min value="0" />
@@ -544,7 +544,7 @@
       <comments value="This element deals only with general categories of identifiers.  It SHOULD not be used for codes that correspond 1..1 with the Identifier.system. Some identifiers may fall into multiple categories due to common usage.   Where the system is known, a type is unnecessary because the type is always part of the system definition. However systems often need to handle identifiers where the system is not known. There is not a 1:1 relationship between type and system, since many different systems have the same type." />
       <requirements value="Allows users to make use of identifiers when the identifier system is not known." />
       <min value="0" />
-      <max value="1" />
+      <max value="0" />
       <base>
         <path value="Identifier.type" />
         <min value="0" />
@@ -1053,7 +1053,7 @@
       <definition value="Establishes the namespace in which set of possible id values is unique." />
       <comments value="see http://en.wikipedia.org/wiki/Uniform_resource_identifier" />
       <requirements value="There are many sequences of identifiers.  To perform matching, we need to know what sequence we're dealing with. The system identifies a particular sequence or set of unique identifiers." />
-      <min value="0" />
+      <min value="1" />
       <max value="1" />
       <base>
         <path value="Identifier.system" />
@@ -1097,7 +1097,7 @@
       <short value="The value that is unique" />
       <definition value="The portion of the identifier typically displayed to the user and which is unique within the context of the system." />
       <comments value="If the value is a full URI, then the system SHALL be urn:ietf:rfc:3986." />
-      <min value="0" />
+      <min value="1" />
       <max value="1" />
       <base>
         <path value="Identifier.value" />
@@ -1142,7 +1142,7 @@
       <definition value="Time period during which identifier is/was valid for use." />
       <comments value="This is not a duration - that's a measure of time (a separate type), but a duration that occurs at a fixed value of time. A Period specifies a range of time; the context of use will specify whether the entire range applies (e.g. &quot;the patient was an inpatient of the hospital for this time range&quot;) or one value from the range applies (e.g. &quot;give to the patient between these two times&quot;). If duration is required, specify the type as Interval|Duration." />
       <min value="0" />
-      <max value="1" />
+      <max value="0" />
       <base>
         <path value="Identifier.period" />
         <min value="0" />
@@ -1349,7 +1349,7 @@
       <definition value="Organization that issued/manages the identifier." />
       <comments value="The reference may be just a text description of the assigner." />
       <min value="0" />
-      <max value="1" />
+      <max value="0" />
       <base>
         <path value="Identifier.assigner" />
         <min value="0" />
@@ -1984,7 +1984,7 @@
       </base>
       <type>
         <code value="Reference" />
-        <profile value="https://fhir.hl7.org.uk/StructureDefinition/CareConnect-MedicationOrder-1" />
+        <profile value="https://fhir.hl7.org.uk/StructureDefinition/CareConnect-DCH-MedicationOrder-1" />
       </type>
       <condition value="ele-1" />
       <constraint>
@@ -9043,7 +9043,32 @@
       <path value="MedicationDispense" />
     </element>
     <element>
+      <path value="MedicationDispense.identifier" />
+      <min value="1" />
+    </element>
+    <element>
+      <path value="MedicationDispense.identifier.use" />
+      <max value="0" />
+    </element>
+    <element>
+      <path value="MedicationDispense.identifier.type" />
+      <max value="0" />
+    </element>
+    <element>
+      <path value="MedicationDispense.identifier.system" />
+      <min value="1" />
+    </element>
+    <element>
+      <path value="MedicationDispense.identifier.value" />
+      <min value="1" />
+    </element>
+    <element>
+      <path value="MedicationDispense.identifier.period" />
+      <max value="0" />
+    </element>
+    <element>
       <path value="MedicationDispense.identifier.assigner" />
+      <max value="0" />
       <type>
         <code value="Reference" />
         <profile value="https://fhir.hl7.org.uk/StructureDefinition/CareConnect-Organization-1" />
@@ -9067,7 +9092,7 @@
       <path value="MedicationDispense.authorizingPrescription" />
       <type>
         <code value="Reference" />
-        <profile value="https://fhir.hl7.org.uk/StructureDefinition/CareConnect-MedicationOrder-1" />
+        <profile value="https://fhir.hl7.org.uk/StructureDefinition/CareConnect-DCH-MedicationOrder-1" />
       </type>
     </element>
     <element>

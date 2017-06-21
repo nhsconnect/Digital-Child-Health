@@ -1,4 +1,4 @@
--his 'DCH-6-8WeekHealthReviewEvent-Bundle-1' Bundle resource profile is used as a container to collect a combination of the following resources, as ordered below, to fulfill the information requirements of a 6-8 Week Health Review Event:
+-his 'DCH-6-8WeekHealthReviewEvent-Bundle-1' Bundle resource profile is used as a container to collect a combination of the following resources to fulfill the information requirements of a 6-8 Week Health Review Event:
 
 - [DCH-6-8WeekHealthReviewEvent-MessageHeader-1]
 - [CareConnect-DCH-ChildHealthEvent-Encounter-1]

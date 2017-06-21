@@ -1,4 +1,4 @@
-This 'DCH-VitaminKEvent-Bundle-1' Bundle resource profile is used as a container to collect a combination of the following resources, as ordered below, to fulfill the information requirements of a Vitamin K Event:
+This 'DCH-VitaminKEvent-Bundle-1' Bundle resource profile is used as a container to collect a combination of the following resources to fulfill the information requirements of a Vitamin K Event:
 
 - [DCH-VitaminKEvent-MessageHeader-1]
 - [CareConnect-DCH-ChildHealthEvent-Encounter-1]

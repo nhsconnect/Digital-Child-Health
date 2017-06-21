@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <meta>
-    <lastUpdated value="2017-05-10T17:26:57.842+01:00" />
+    <lastUpdated value="2017-06-20T20:02:43.655+01:00" />
   </meta>
   <url value="https://fhir.hl7.org.uk/StructureDefinition/Extension-coding-sctdescid" />
   <version value="1.0.0" />

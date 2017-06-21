@@ -21,7 +21,7 @@
     </telecom>
   </contact>
   <date value="2017-06-03T10:52:59.2926255+01:00" />
-  <description value="This Questionnaire Response resource is constrained to represent a questionnaire response for a Child Health Event." />
+  <description value="This Questionnaire Response resource is constrained to represent a questionnaire response for a Child Health event." />
   <fhirVersion value="1.0.2" />
   <kind value="resource" />
   <constrainedType value="QuestionnaireResponse" />

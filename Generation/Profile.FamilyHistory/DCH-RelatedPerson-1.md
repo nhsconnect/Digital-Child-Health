@@ -1,1 +1,0 @@
-This RelatedPerson resource has been constrained to represent a person related to the patient subject to the Child Health Event.

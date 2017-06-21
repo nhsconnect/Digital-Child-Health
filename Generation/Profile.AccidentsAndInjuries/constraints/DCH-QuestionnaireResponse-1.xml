@@ -1,7 +1,7 @@
-<?xml version="1.0" encoding="utf-8"?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <meta>
-    <lastUpdated value="2017-06-12T13:08:58.453+01:00" />
+    <lastUpdated value="2017-06-20T20:32:02.67+01:00" />
     <tag>
       <system value="urn:hscic:publishOrder" />
       <code value="5" />
@@ -5410,8 +5410,8 @@
       <short value="Nested questionnaire group" />
       <definition value="Nested group, containing nested question for this question. The order of groups within the question is relevant." />
       <requirements value="It is useful to have &quot;sub-questions&quot;, questions which normally appear when certain answers are given and which collect additional details." />
-      <min value="1" />
-      <max value="1" />
+      <min value="0" />
+      <max value="0" />
       <base>
         <path value="QuestionnaireResponse.group.question.answer.group" />
         <min value="0" />
@@ -8214,8 +8214,7 @@
     </element>
     <element>
       <path value="QuestionnaireResponse.group.question.answer.group" />
-      <min value="1" />
-      <max value="1" />
+      <max value="0" />
     </element>
     <element>
       <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-explicit-type-name">

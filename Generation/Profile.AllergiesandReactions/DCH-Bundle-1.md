@@ -1,4 +1,4 @@
-This 'DCH-Bundle-1' Bundle resource profile is used as a container to collect a combination of the following resources, as ordered below, to capture allergies and reactions:
+This 'DCH-Bundle-1' Bundle resource profile is used as a container to collect a combination of the following resources to capture allergies and reactions:
 
 - [DCH-MessageHeader-1]
 - [CareConnect-Organization-1]

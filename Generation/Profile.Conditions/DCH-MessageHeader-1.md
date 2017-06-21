@@ -1,1 +1,1 @@
-This MessageHeader resource is constrained to represent a message header for a Child Health Event.
+This MessageHeader resource is constrained to represent a message header for a Child Health event.

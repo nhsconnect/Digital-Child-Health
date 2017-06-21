@@ -1,0 +1,1 @@
+This Flag resource has been constrained to represent a Risk Factor applicable to a Patient subject to a Child Health event.

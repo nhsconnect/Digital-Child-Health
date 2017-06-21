@@ -21,7 +21,7 @@
     </telecom>
   </contact>
   <date value="2017-04-03T08:47:54.8155141+01:00" />
-  <description value="This Medication Administration resource has been constrained to represent the administration of a Vitamin K injection for a Child Health Event." />
+  <description value="This Medication Administration resource has been constrained to represent the administration of a Vitamin K injection for a Child Health event." />
   <copyright value="Copyright © 2016 Health and Social Care Information Centre. NHS Digital is the trading name of the Health and Social Care Information Centre." />
   <fhirVersion value="1.0.2" />
   <kind value="resource" />

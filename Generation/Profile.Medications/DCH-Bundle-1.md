@@ -1,11 +1,11 @@
-This 'DCH-Bundle-1' Bundle resource profile is used as a container to collect a combination of the following resources, as ordered below, to capture prescribed medications:
+This 'DCH-Bundle-1' Bundle resource profile is used as a container to collect a combination of the following resources to capture prescribed medications:
 
 - [DCH-MessageHeader-1]
 - [CareConnect-Organization-1]
 - [CareConnect-DCH-Patient-1]
 - [DCH-QuestionnaireResponse-1]
 - [CareConnect-DCH-Encounter-1]
-- [CareConnect-MedicationOrder-1]
+- [CareConnect-DCH-MedicationOrder-1]
 - [DCH-MedicationDispense-1]
 - [CareConnect-Practitioner-1]
 - [CareConnect-Location-1]
@@ -19,5 +19,5 @@ This 'DCH-Bundle-1' Bundle resource profile is used as a container to collect a 
 [CareConnect-DCH-Immunization-1]:careconnect-dch-immunization-1.html
 [CareConnect-Practitioner-1]:careconnect-practitioner-1.html
 [CareConnect-Location-1]:careconnect-location-1.html
-[CareConnect-MedicationOrder-1]:careconnect-medicationorder-1.html
+[CareConnect-DCH-MedicationOrder-1]:careconnect-dch-medicationorder-1.html
 [DCH-MedicationDispense-1]:dch-medicationdispense-1.html
