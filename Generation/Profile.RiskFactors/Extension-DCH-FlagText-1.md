@@ -1,1 +1,0 @@
-This extension resource has been constrained to represent the text detailed for a Risk Factor.

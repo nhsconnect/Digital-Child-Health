@@ -1,0 +1,1 @@
+Significant health events and conditions for a person related to the patient relevant in the context of care for the patient, with further constraints applied to support a Child Health event.

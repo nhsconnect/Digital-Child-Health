@@ -1,0 +1,1 @@
+This Flag Resource records prospective warnings of potential issues when providing care to the patient, with further constraints applied to support a Child Health event.

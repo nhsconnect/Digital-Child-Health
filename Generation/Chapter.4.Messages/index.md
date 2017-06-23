@@ -2,31 +2,38 @@
 
 The FHIR resource profiles within this DMS have been created to support the Child Health Events Catalogue Service interface:
 
+**Wave 1**
+
 - **[Profile.6-8WeekHealthReview]** - FHIR resource profiles combined to support a 6-8 Week Health Review event message.
-- **[Profile.AccidentsAndInjuries]** - FHIR resource profiles combined to support an Accidents and Injuries event message.
-- **[Profile.AllergiesAndReactions]** - FHIR resource profiles combined to support an Allergies and Reactions event message.
 - **[Profile.AssessmentAPGAR]** - FHIR resource profiles combined to support an Assessment APGAR event message.
 - **[Profile.BirthDetails]** - FHIR resource profiles combined to support a Birth Details event message.
 - **[Profile.BirthDischarge]** - FHIR resource profiles combined to support a Birth Discharge event message.
-- **[Profile.BreastfeedingStatus]** - FHIR resource profiles combined to support a Breastfeeding Status event message.
-- **[Profile.Conditions]** - FHIR resource profiles combined to support a Conditions event message.
-- **[Profile.FamilyHistory]** - FHIR resource profiles combined to support a Family History event message.
 - **[Profile.FollowUp]** - FHIR resource profiles combined to support a Follow Up event message.
-- **[Profile.Immunisations]** - FHIR resource profiles combined to support an Immunisation event message.  
 - **[Profile.Measurements]** - FHIR resource profiles combined to support a Measurements event message.
 - **[Profile.Medications]** - FHIR resource profiles combined to support a Medications event message.
 - **[Profile.NeonatalCare]** - FHIR resource profiles combined to support a Neonatal Care event message.
-- **[Profile.NewbornBloodSpotScreening]** - FHIR resource profiles combined to support a Newborn Blood Spot Screening event message.
-- **[Profile.NewbornHearingScreening]** - FHIR resource profiles combined to support a Newborn Hearing event message.
 - **[Profile.NewbornPhysicalExam]** - FHIR resource profiles combined to support a Newborn Physical Exam event message.
 - **[Profile.PhysicalExamination]** - FHIR resource profiles combined to support a Physical Examination event message. 
+- **[Profile.Referral]** - FHIR resource profiles combined to support a Referral event message.
+- **[Profile.VitaminK]** - FHIR resource profiles combined to support a Vitamin K event message.
+
+**Wave 2**
+
+- **[Profile.AccidentsAndInjuries]** - FHIR resource profiles combined to support an Accidents and Injuries event message.
+- **[Profile.AllergiesAndReactions]** - FHIR resource profiles combined to support an Allergies and Reactions event message.
+- **[Profile.BreastfeedingStatus]** - FHIR resource profiles combined to support a Breastfeeding Status event message.
+- **[Profile.Conditions]** - FHIR resource profiles combined to support a Conditions event message.
+- **[Profile.FamilyHistory]** - FHIR resource profiles combined to support a Family History event message.
+- **[Profile.Immunisations]** - FHIR resource profiles combined to support an Immunisation event message.  
+- **[Profile.NewbornBloodSpotScreening]** - FHIR resource profiles combined to support a Newborn Blood Spot Screening event message.
+- **[Profile.NewbornHearingScreening]** - FHIR resource profiles combined to support a Newborn Hearing event message.
 - **[Profile.ProfessionalAdvice]** - FHIR resource profiles combined to support a Professional Advice event message.
 - **[Profile.ProfessionalComment]** - FHIR resource profiles combined to support a Professional Comment event message.
 - **[Profile.RelatedPersons]** - FHIR resource profiles combined to support a Related Persons event message.
-- **[Profile.Referral]** - FHIR resource profiles combined to support a Referral event message.
 - **[Profile.RiskFactors]** - FHIR resource profiles combined to support a Risk Factors event message.
 - **[Profile.SocialHistory]** - FHIR resource profiles combined to support a Social History event message.
-- **[Profile.VitaminK]** - FHIR resource profiles combined to support a Vitamin K event message.
+
+
  
 **Further Information**
 

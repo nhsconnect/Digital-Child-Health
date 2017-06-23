@@ -113,7 +113,11 @@
 					<given value="Jonny"/>
 				</name>
 				<gender value="male"/>
-				<birthDate value="2012-01-03"/>
+				<birthDate value="2012-01-03">
+					<extension url="http://hl7.org/fhir/StructureDefinition/patient-birthTime">
+						<valueDateTime value="2012-01-03T09:36:00+00:00"/>
+					</extension>
+				</birthDate>
 			</Patient>
 		</resource>
 	</entry>	

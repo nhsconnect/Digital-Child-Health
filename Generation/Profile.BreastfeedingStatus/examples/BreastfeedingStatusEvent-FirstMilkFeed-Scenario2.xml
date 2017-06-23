@@ -116,7 +116,7 @@
 					<given value="Marie"/>
 				</name>
 				<gender value="female"/>
-				<birthDate>
+				<birthDate value="2012-01-07">
 					<extension url="http://hl7.org/fhir/StructureDefinition/patient-birthTime">
 						<valueDateTime value="2012-01-07T20:12:00+00:00"/>
 					</extension>

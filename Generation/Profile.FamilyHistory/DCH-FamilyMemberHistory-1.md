@@ -1,1 +1,0 @@
-This FamilyMemberHistory resource has been constrained to represent a history of a condition or issue with family members for a Patient subject to a Child Health event.
