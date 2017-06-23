@@ -2,7 +2,7 @@
 
 ###Overview: Implementation Guide for Digital Child Health  FHIR Messaging#
 
-This is FHIR Domain Message Specifications (DMS) to support the following care communications for the Child Health Events Catalogue. 
+This is the FHIR Domain Message Specification (DMS) to support the event messages for the Child Health Events Catalogue. 
 
 **What is an Event?**
 
