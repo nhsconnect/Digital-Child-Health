@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <meta>
-    <lastUpdated value="2017-06-23T20:53:20.894+01:00" />
+    <lastUpdated value="2017-06-23T20:46:47.427+01:00" />
     <tag>
       <system value="urn:hscic:publishOrder" />
       <code value="5" />
@@ -3558,7 +3558,7 @@
       <type>
         <code value="string" />
       </type>
-      <fixedString value="The date the Condition, Problem or Diagnosis as recognised by a Clinician was recorded" />
+      <fixedString value="The date the Follow-Up request was made" />
       <condition value="ele-1" />
       <constraint>
         <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-expression">
@@ -3735,417 +3735,6 @@
       <type>
         <code value="Reference" />
         <profile value="https://fhir.hl7.org.uk/StructureDefinition/CareConnect-DCH-Encounter-1" />
-      </type>
-      <condition value="ele-1" />
-      <constraint>
-        <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-expression">
-          <valueString value="children()" />
-        </extension>
-        <key value="ele-1" />
-        <severity value="error" />
-        <human value="All FHIR elements must have a @value or children" />
-        <xpath value="@value|f:*|h:div" />
-      </constraint>
-      <mapping>
-        <identity value="rim" />
-        <map value="n/a" />
-      </mapping>
-      <mapping>
-        <identity value="rim" />
-        <map value=".item" />
-      </mapping>
-    </element>
-    <element>
-      <path value="QuestionnaireResponse.group.question.answer.group" />
-      <short value="Nested questionnaire group" />
-      <definition value="Nested group, containing nested question for this question. The order of groups within the question is relevant." />
-      <requirements value="It is useful to have &quot;sub-questions&quot;, questions which normally appear when certain answers are given and which collect additional details." />
-      <min value="0" />
-      <max value="0" />
-      <base>
-        <path value="QuestionnaireResponse.group.question.answer.group" />
-        <min value="0" />
-        <max value="*" />
-      </base>
-      <nameReference value="group" />
-      <mapping>
-        <identity value="rim" />
-        <map value=".outboundRelationship[typeCode=COMP].target[classCode=DOCSECT, moodCode=EVN]" />
-      </mapping>
-    </element>
-    <element>
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-explicit-type-name">
-        <valueString value="Question" />
-      </extension>
-      <path value="QuestionnaireResponse.group.question" />
-      <name value="siteCode" />
-      <short value="Questions in this group" />
-      <definition value="Set of questions within this group. The order of questions within the group is relevant." />
-      <requirements value="Must register answers to questions." />
-      <alias value="Responses" />
-      <alias value="Contents" />
-      <min value="0" />
-      <max value="1" />
-      <base>
-        <path value="QuestionnaireResponse.group.question" />
-        <min value="0" />
-        <max value="*" />
-      </base>
-      <type>
-        <code value="BackboneElement" />
-      </type>
-      <condition value="ele-1" />
-      <condition value="qrs-1" />
-      <constraint>
-        <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-expression">
-          <valueString value="children()" />
-        </extension>
-        <key value="ele-1" />
-        <severity value="error" />
-        <human value="All FHIR elements must have a @value or children" />
-        <xpath value="@value|f:*|h:div" />
-      </constraint>
-      <mapping>
-        <identity value="rim" />
-        <map value="n/a" />
-      </mapping>
-      <mapping>
-        <identity value="rim" />
-        <map value=".outboundRelationship[typeCode=COMP].target[classCode=OBS, moodCode=EVN or DEF]" />
-      </mapping>
-    </element>
-    <element>
-      <path value="QuestionnaireResponse.group.question.id" />
-      <short value="xml:id (or equivalent in JSON)" />
-      <definition value="unique id for the element within a resource (for internal references)." />
-      <comments value="RFC 4122" />
-      <min value="0" />
-      <max value="1" />
-      <base>
-        <path value="Element.id" />
-        <min value="0" />
-        <max value="1" />
-      </base>
-      <type>
-        <code value="id" />
-      </type>
-      <condition value="ele-1" />
-      <constraint>
-        <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-expression">
-          <valueString value="children()" />
-        </extension>
-        <key value="ele-1" />
-        <severity value="error" />
-        <human value="All FHIR elements must have a @value or children" />
-        <xpath value="@value|f:*|h:div" />
-      </constraint>
-      <mapping>
-        <identity value="rim" />
-        <map value="n/a" />
-      </mapping>
-    </element>
-    <element>
-      <path value="QuestionnaireResponse.group.question.extension" />
-      <short value="Additional Content defined by implementations" />
-      <definition value="May be used to represent additional information that is not part of the basic definition of the element. In order to make the use of extensions safe and manageable, there is a strict set of governance  applied to the definition and use of extensions. Though any implementer is allowed to define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension." />
-      <comments value="There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone." />
-      <alias value="extensions" />
-      <alias value="user content" />
-      <min value="0" />
-      <max value="*" />
-      <base>
-        <path value="Element.extension" />
-        <min value="0" />
-        <max value="*" />
-      </base>
-      <type>
-        <code value="Extension" />
-      </type>
-      <condition value="ele-1" />
-      <constraint>
-        <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-expression">
-          <valueString value="children()" />
-        </extension>
-        <key value="ele-1" />
-        <severity value="error" />
-        <human value="All FHIR elements must have a @value or children" />
-        <xpath value="@value|f:*|h:div" />
-      </constraint>
-      <mapping>
-        <identity value="rim" />
-        <map value="n/a" />
-      </mapping>
-      <mapping>
-        <identity value="rim" />
-        <map value="N/A" />
-      </mapping>
-    </element>
-    <element>
-      <path value="QuestionnaireResponse.group.question.modifierExtension" />
-      <short value="Extensions that cannot be ignored" />
-      <definition value="May be used to represent additional information that is not part of the basic definition of the element, and that modifies the understanding of the element that contains it. Usually modifier elements provide negation or qualification. In order to make the use of extensions safe and manageable, there is a strict set of governance applied to the definition and use of extensions. Though any implementer is allowed to define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension. Applications processing a resource are required to check for modifier extensions." />
-      <comments value="There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone." />
-      <alias value="extensions" />
-      <alias value="user content" />
-      <alias value="modifiers" />
-      <min value="0" />
-      <max value="*" />
-      <base>
-        <path value="BackboneElement.modifierExtension" />
-        <min value="0" />
-        <max value="*" />
-      </base>
-      <type>
-        <code value="Extension" />
-      </type>
-      <condition value="ele-1" />
-      <constraint>
-        <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-expression">
-          <valueString value="children()" />
-        </extension>
-        <key value="ele-1" />
-        <severity value="error" />
-        <human value="All FHIR elements must have a @value or children" />
-        <xpath value="@value|f:*|h:div" />
-      </constraint>
-      <isModifier value="true" />
-      <mapping>
-        <identity value="rim" />
-        <map value="n/a" />
-      </mapping>
-      <mapping>
-        <identity value="rim" />
-        <map value="N/A" />
-      </mapping>
-    </element>
-    <element>
-      <path value="QuestionnaireResponse.group.question.linkId" />
-      <short value="Corresponding question within Questionnaire" />
-      <definition value="Identifies the question from the Questionnaire that corresponds to this question in the QuestionnaireResponse resource." />
-      <comments value="Note that FHIR strings may not exceed 1MB in size" />
-      <requirements value="Groups can repeat in the answers, so a direct 1..1 correspondence may not exist - requiring correspondence by id." />
-      <min value="0" />
-      <max value="0" />
-      <base>
-        <path value="QuestionnaireResponse.group.question.linkId" />
-        <min value="0" />
-        <max value="1" />
-      </base>
-      <type>
-        <code value="string" />
-      </type>
-      <condition value="ele-1" />
-      <constraint>
-        <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-expression">
-          <valueString value="children()" />
-        </extension>
-        <key value="ele-1" />
-        <severity value="error" />
-        <human value="All FHIR elements must have a @value or children" />
-        <xpath value="@value|f:*|h:div" />
-      </constraint>
-      <mapping>
-        <identity value="rim" />
-        <map value="n/a" />
-      </mapping>
-      <mapping>
-        <identity value="rim" />
-        <map value=".outboundRelationship[typeCode=DEFN].target[classCode=OBS, moodCode=DEFN]" />
-      </mapping>
-    </element>
-    <element>
-      <path value="QuestionnaireResponse.group.question.text" />
-      <short value="Text of the question as it is shown to the user" />
-      <definition value="The actual question as shown to the user to prompt them for an answer." />
-      <comments value="Note that FHIR strings may not exceed 1MB in size" />
-      <requirements value="When including text for the questionnaire, each question may contain its actual question display text." />
-      <min value="1" />
-      <max value="1" />
-      <base>
-        <path value="QuestionnaireResponse.group.question.text" />
-        <min value="0" />
-        <max value="1" />
-      </base>
-      <type>
-        <code value="string" />
-      </type>
-      <fixedString value="The Site Code of where the Condition, Problem or Diagnosis as recognised by a Clinician was recorded" />
-      <condition value="ele-1" />
-      <constraint>
-        <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-expression">
-          <valueString value="children()" />
-        </extension>
-        <key value="ele-1" />
-        <severity value="error" />
-        <human value="All FHIR elements must have a @value or children" />
-        <xpath value="@value|f:*|h:div" />
-      </constraint>
-      <mapping>
-        <identity value="rim" />
-        <map value="n/a" />
-      </mapping>
-      <mapping>
-        <identity value="rim" />
-        <map value=".code.display" />
-      </mapping>
-    </element>
-    <element>
-      <path value="QuestionnaireResponse.group.question.answer" />
-      <short value="The responses will consist of the value and the supporting resource for that value" />
-      <definition value="The responses will consist of the value and the supporting resource for that value." />
-      <comments value="The value is nested because we cannot have a repeating structure that has variable type." />
-      <min value="1" />
-      <max value="2" />
-      <base>
-        <path value="QuestionnaireResponse.group.question.answer" />
-        <min value="0" />
-        <max value="*" />
-      </base>
-      <type>
-        <code value="BackboneElement" />
-      </type>
-      <condition value="ele-1" />
-      <constraint>
-        <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-expression">
-          <valueString value="children()" />
-        </extension>
-        <key value="ele-1" />
-        <severity value="error" />
-        <human value="All FHIR elements must have a @value or children" />
-        <xpath value="@value|f:*|h:div" />
-      </constraint>
-      <mapping>
-        <identity value="rim" />
-        <map value="n/a" />
-      </mapping>
-      <mapping>
-        <identity value="rim" />
-        <map value=".value[type=LIST_ANY]" />
-      </mapping>
-    </element>
-    <element>
-      <path value="QuestionnaireResponse.group.question.answer.id" />
-      <short value="xml:id (or equivalent in JSON)" />
-      <definition value="unique id for the element within a resource (for internal references)." />
-      <comments value="RFC 4122" />
-      <min value="0" />
-      <max value="1" />
-      <base>
-        <path value="Element.id" />
-        <min value="0" />
-        <max value="1" />
-      </base>
-      <type>
-        <code value="id" />
-      </type>
-      <condition value="ele-1" />
-      <constraint>
-        <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-expression">
-          <valueString value="children()" />
-        </extension>
-        <key value="ele-1" />
-        <severity value="error" />
-        <human value="All FHIR elements must have a @value or children" />
-        <xpath value="@value|f:*|h:div" />
-      </constraint>
-      <mapping>
-        <identity value="rim" />
-        <map value="n/a" />
-      </mapping>
-    </element>
-    <element>
-      <path value="QuestionnaireResponse.group.question.answer.extension" />
-      <short value="Additional Content defined by implementations" />
-      <definition value="May be used to represent additional information that is not part of the basic definition of the element. In order to make the use of extensions safe and manageable, there is a strict set of governance  applied to the definition and use of extensions. Though any implementer is allowed to define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension." />
-      <comments value="There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone." />
-      <alias value="extensions" />
-      <alias value="user content" />
-      <min value="0" />
-      <max value="*" />
-      <base>
-        <path value="Element.extension" />
-        <min value="0" />
-        <max value="*" />
-      </base>
-      <type>
-        <code value="Extension" />
-      </type>
-      <condition value="ele-1" />
-      <constraint>
-        <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-expression">
-          <valueString value="children()" />
-        </extension>
-        <key value="ele-1" />
-        <severity value="error" />
-        <human value="All FHIR elements must have a @value or children" />
-        <xpath value="@value|f:*|h:div" />
-      </constraint>
-      <mapping>
-        <identity value="rim" />
-        <map value="n/a" />
-      </mapping>
-      <mapping>
-        <identity value="rim" />
-        <map value="N/A" />
-      </mapping>
-    </element>
-    <element>
-      <path value="QuestionnaireResponse.group.question.answer.modifierExtension" />
-      <short value="Extensions that cannot be ignored" />
-      <definition value="May be used to represent additional information that is not part of the basic definition of the element, and that modifies the understanding of the element that contains it. Usually modifier elements provide negation or qualification. In order to make the use of extensions safe and manageable, there is a strict set of governance applied to the definition and use of extensions. Though any implementer is allowed to define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension. Applications processing a resource are required to check for modifier extensions." />
-      <comments value="There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone." />
-      <alias value="extensions" />
-      <alias value="user content" />
-      <alias value="modifiers" />
-      <min value="0" />
-      <max value="*" />
-      <base>
-        <path value="BackboneElement.modifierExtension" />
-        <min value="0" />
-        <max value="*" />
-      </base>
-      <type>
-        <code value="Extension" />
-      </type>
-      <condition value="ele-1" />
-      <constraint>
-        <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-expression">
-          <valueString value="children()" />
-        </extension>
-        <key value="ele-1" />
-        <severity value="error" />
-        <human value="All FHIR elements must have a @value or children" />
-        <xpath value="@value|f:*|h:div" />
-      </constraint>
-      <isModifier value="true" />
-      <mapping>
-        <identity value="rim" />
-        <map value="n/a" />
-      </mapping>
-      <mapping>
-        <identity value="rim" />
-        <map value="N/A" />
-      </mapping>
-    </element>
-    <element>
-      <path value="QuestionnaireResponse.group.question.answer.value[x]" />
-      <short value="Single-valued answer to the question" />
-      <definition value="The answer (or one of the answers) provided by the respondent to the question." />
-      <comments value="More complex structures (Attachment, Resource and Quantity) will typically be limited to electronic forms that can expose an appropriate user interface to capture the components and enforce the constraints of a complex data type.  Additional complex types can be introduced through extensions." />
-      <requirements value="Ability to retain a single-valued answer to a question." />
-      <min value="1" />
-      <max value="1" />
-      <base>
-        <path value="QuestionnaireResponse.group.question.answer.value[x]" />
-        <min value="0" />
-        <max value="1" />
-      </base>
-      <type>
-        <code value="string" />
-      </type>
-      <type>
-        <code value="Reference" />
-        <profile value="https://fhir.hl7.org.uk/StructureDefinition/CareConnect-Organization-1" />
       </type>
       <condition value="ele-1" />
       <constraint>
@@ -4380,7 +3969,7 @@
       <type>
         <code value="string" />
       </type>
-      <fixedString value="Organisation recording the Condition, Problem or Diagnosis as recognised by a Clinician" />
+      <fixedString value="Organisation making the Follow-Up request" />
       <condition value="ele-1" />
       <constraint>
         <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-expression">
@@ -4791,7 +4380,7 @@
       <type>
         <code value="string" />
       </type>
-      <fixedString value="Professional Group of the Professional recording the Condition, Problem or Diagnosis " />
+      <fixedString value="Professional Group of the referrer" />
       <condition value="ele-1" />
       <constraint>
         <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-expression">
@@ -4981,7 +4570,7 @@
       </constraint>
       <binding>
         <strength value="required" />
-        <description value="The role a person plays representing an organization" />
+        <description value="Care Connect SDS Job Role Name" />
         <valueSetReference>
           <reference value="https://fhir.hl7.org.uk/ValueSet/CareConnect-SDSJobRoleName-1" />
         </valueSetReference>
@@ -5209,7 +4798,7 @@
       <type>
         <code value="string" />
       </type>
-      <fixedString value="Code of the Professional recording the Condition, Problem or Diagnosis " />
+      <fixedString value="Code of the Professional making the Follow-Up request" />
       <condition value="ele-1" />
       <constraint>
         <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-expression">
@@ -5397,6 +4986,10 @@
         <human value="All FHIR elements must have a @value or children" />
         <xpath value="@value|f:*|h:div" />
       </constraint>
+      <binding>
+        <strength value="example" />
+        <description value="Code indicating the response provided for a question." />
+      </binding>
       <mapping>
         <identity value="rim" />
         <map value="n/a" />
@@ -5429,7 +5022,7 @@
         <valueString value="Question" />
       </extension>
       <path value="QuestionnaireResponse.group.question" />
-      <name value="condition" />
+      <name value="specialty" />
       <short value="Questions in this group" />
       <definition value="Set of questions within this group. The order of questions within the group is relevant." />
       <requirements value="Must register answers to questions." />
@@ -5620,7 +5213,7 @@
       <type>
         <code value="string" />
       </type>
-      <fixedString value="The provisional Diagnosis of the child or young person" />
+      <fixedString value="Specialty the patient has been referred into" />
       <condition value="ele-1" />
       <constraint>
         <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-expression">
@@ -5796,418 +5389,7 @@
       </type>
       <type>
         <code value="Reference" />
-        <profile value="https://fhir.hl7.org.uk/StructureDefinition/CareConnect-DCH-Condition-1" />
-      </type>
-      <condition value="ele-1" />
-      <constraint>
-        <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-expression">
-          <valueString value="children()" />
-        </extension>
-        <key value="ele-1" />
-        <severity value="error" />
-        <human value="All FHIR elements must have a @value or children" />
-        <xpath value="@value|f:*|h:div" />
-      </constraint>
-      <mapping>
-        <identity value="rim" />
-        <map value="n/a" />
-      </mapping>
-      <mapping>
-        <identity value="rim" />
-        <map value=".item" />
-      </mapping>
-    </element>
-    <element>
-      <path value="QuestionnaireResponse.group.question.answer.group" />
-      <short value="Nested questionnaire group" />
-      <definition value="Nested group, containing nested question for this question. The order of groups within the question is relevant." />
-      <requirements value="It is useful to have &quot;sub-questions&quot;, questions which normally appear when certain answers are given and which collect additional details." />
-      <min value="0" />
-      <max value="0" />
-      <base>
-        <path value="QuestionnaireResponse.group.question.answer.group" />
-        <min value="0" />
-        <max value="*" />
-      </base>
-      <nameReference value="group" />
-      <mapping>
-        <identity value="rim" />
-        <map value=".outboundRelationship[typeCode=COMP].target[classCode=DOCSECT, moodCode=EVN]" />
-      </mapping>
-    </element>
-    <element>
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-explicit-type-name">
-        <valueString value="Question" />
-      </extension>
-      <path value="QuestionnaireResponse.group.question" />
-      <name value="conditionStatus" />
-      <short value="Questions in this group" />
-      <definition value="Set of questions within this group. The order of questions within the group is relevant." />
-      <requirements value="Must register answers to questions." />
-      <alias value="Responses" />
-      <alias value="Contents" />
-      <min value="0" />
-      <max value="1" />
-      <base>
-        <path value="QuestionnaireResponse.group.question" />
-        <min value="0" />
-        <max value="*" />
-      </base>
-      <type>
-        <code value="BackboneElement" />
-      </type>
-      <condition value="ele-1" />
-      <condition value="qrs-1" />
-      <constraint>
-        <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-expression">
-          <valueString value="children()" />
-        </extension>
-        <key value="ele-1" />
-        <severity value="error" />
-        <human value="All FHIR elements must have a @value or children" />
-        <xpath value="@value|f:*|h:div" />
-      </constraint>
-      <mapping>
-        <identity value="rim" />
-        <map value="n/a" />
-      </mapping>
-      <mapping>
-        <identity value="rim" />
-        <map value=".outboundRelationship[typeCode=COMP].target[classCode=OBS, moodCode=EVN or DEF]" />
-      </mapping>
-    </element>
-    <element>
-      <path value="QuestionnaireResponse.group.question.id" />
-      <short value="xml:id (or equivalent in JSON)" />
-      <definition value="unique id for the element within a resource (for internal references)." />
-      <comments value="RFC 4122" />
-      <min value="0" />
-      <max value="1" />
-      <base>
-        <path value="Element.id" />
-        <min value="0" />
-        <max value="1" />
-      </base>
-      <type>
-        <code value="id" />
-      </type>
-      <condition value="ele-1" />
-      <constraint>
-        <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-expression">
-          <valueString value="children()" />
-        </extension>
-        <key value="ele-1" />
-        <severity value="error" />
-        <human value="All FHIR elements must have a @value or children" />
-        <xpath value="@value|f:*|h:div" />
-      </constraint>
-      <mapping>
-        <identity value="rim" />
-        <map value="n/a" />
-      </mapping>
-    </element>
-    <element>
-      <path value="QuestionnaireResponse.group.question.extension" />
-      <short value="Additional Content defined by implementations" />
-      <definition value="May be used to represent additional information that is not part of the basic definition of the element. In order to make the use of extensions safe and manageable, there is a strict set of governance  applied to the definition and use of extensions. Though any implementer is allowed to define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension." />
-      <comments value="There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone." />
-      <alias value="extensions" />
-      <alias value="user content" />
-      <min value="0" />
-      <max value="*" />
-      <base>
-        <path value="Element.extension" />
-        <min value="0" />
-        <max value="*" />
-      </base>
-      <type>
-        <code value="Extension" />
-      </type>
-      <condition value="ele-1" />
-      <constraint>
-        <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-expression">
-          <valueString value="children()" />
-        </extension>
-        <key value="ele-1" />
-        <severity value="error" />
-        <human value="All FHIR elements must have a @value or children" />
-        <xpath value="@value|f:*|h:div" />
-      </constraint>
-      <mapping>
-        <identity value="rim" />
-        <map value="n/a" />
-      </mapping>
-      <mapping>
-        <identity value="rim" />
-        <map value="N/A" />
-      </mapping>
-    </element>
-    <element>
-      <path value="QuestionnaireResponse.group.question.modifierExtension" />
-      <short value="Extensions that cannot be ignored" />
-      <definition value="May be used to represent additional information that is not part of the basic definition of the element, and that modifies the understanding of the element that contains it. Usually modifier elements provide negation or qualification. In order to make the use of extensions safe and manageable, there is a strict set of governance applied to the definition and use of extensions. Though any implementer is allowed to define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension. Applications processing a resource are required to check for modifier extensions." />
-      <comments value="There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone." />
-      <alias value="extensions" />
-      <alias value="user content" />
-      <alias value="modifiers" />
-      <min value="0" />
-      <max value="*" />
-      <base>
-        <path value="BackboneElement.modifierExtension" />
-        <min value="0" />
-        <max value="*" />
-      </base>
-      <type>
-        <code value="Extension" />
-      </type>
-      <condition value="ele-1" />
-      <constraint>
-        <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-expression">
-          <valueString value="children()" />
-        </extension>
-        <key value="ele-1" />
-        <severity value="error" />
-        <human value="All FHIR elements must have a @value or children" />
-        <xpath value="@value|f:*|h:div" />
-      </constraint>
-      <isModifier value="true" />
-      <mapping>
-        <identity value="rim" />
-        <map value="n/a" />
-      </mapping>
-      <mapping>
-        <identity value="rim" />
-        <map value="N/A" />
-      </mapping>
-    </element>
-    <element>
-      <path value="QuestionnaireResponse.group.question.linkId" />
-      <short value="Corresponding question within Questionnaire" />
-      <definition value="Identifies the question from the Questionnaire that corresponds to this question in the QuestionnaireResponse resource." />
-      <comments value="Note that FHIR strings may not exceed 1MB in size" />
-      <requirements value="Groups can repeat in the answers, so a direct 1..1 correspondence may not exist - requiring correspondence by id." />
-      <min value="0" />
-      <max value="0" />
-      <base>
-        <path value="QuestionnaireResponse.group.question.linkId" />
-        <min value="0" />
-        <max value="1" />
-      </base>
-      <type>
-        <code value="string" />
-      </type>
-      <condition value="ele-1" />
-      <constraint>
-        <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-expression">
-          <valueString value="children()" />
-        </extension>
-        <key value="ele-1" />
-        <severity value="error" />
-        <human value="All FHIR elements must have a @value or children" />
-        <xpath value="@value|f:*|h:div" />
-      </constraint>
-      <mapping>
-        <identity value="rim" />
-        <map value="n/a" />
-      </mapping>
-      <mapping>
-        <identity value="rim" />
-        <map value=".outboundRelationship[typeCode=DEFN].target[classCode=OBS, moodCode=DEFN]" />
-      </mapping>
-    </element>
-    <element>
-      <path value="QuestionnaireResponse.group.question.text" />
-      <short value="Text of the question as it is shown to the user" />
-      <definition value="The actual question as shown to the user to prompt them for an answer." />
-      <comments value="Note that FHIR strings may not exceed 1MB in size" />
-      <requirements value="When including text for the questionnaire, each question may contain its actual question display text." />
-      <min value="1" />
-      <max value="1" />
-      <base>
-        <path value="QuestionnaireResponse.group.question.text" />
-        <min value="0" />
-        <max value="1" />
-      </base>
-      <type>
-        <code value="string" />
-      </type>
-      <fixedString value="Clinical status of the Condition, Problem or Diagnosis" />
-      <condition value="ele-1" />
-      <constraint>
-        <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-expression">
-          <valueString value="children()" />
-        </extension>
-        <key value="ele-1" />
-        <severity value="error" />
-        <human value="All FHIR elements must have a @value or children" />
-        <xpath value="@value|f:*|h:div" />
-      </constraint>
-      <mapping>
-        <identity value="rim" />
-        <map value="n/a" />
-      </mapping>
-      <mapping>
-        <identity value="rim" />
-        <map value=".code.display" />
-      </mapping>
-    </element>
-    <element>
-      <path value="QuestionnaireResponse.group.question.answer" />
-      <short value="The responses will consist of the value and the supporting resource for that value" />
-      <definition value="The responses will consist of the value and the supporting resource for that value." />
-      <comments value="The value is nested because we cannot have a repeating structure that has variable type." />
-      <min value="1" />
-      <max value="2" />
-      <base>
-        <path value="QuestionnaireResponse.group.question.answer" />
-        <min value="0" />
-        <max value="*" />
-      </base>
-      <type>
-        <code value="BackboneElement" />
-      </type>
-      <condition value="ele-1" />
-      <constraint>
-        <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-expression">
-          <valueString value="children()" />
-        </extension>
-        <key value="ele-1" />
-        <severity value="error" />
-        <human value="All FHIR elements must have a @value or children" />
-        <xpath value="@value|f:*|h:div" />
-      </constraint>
-      <mapping>
-        <identity value="rim" />
-        <map value="n/a" />
-      </mapping>
-      <mapping>
-        <identity value="rim" />
-        <map value=".value[type=LIST_ANY]" />
-      </mapping>
-    </element>
-    <element>
-      <path value="QuestionnaireResponse.group.question.answer.id" />
-      <short value="xml:id (or equivalent in JSON)" />
-      <definition value="unique id for the element within a resource (for internal references)." />
-      <comments value="RFC 4122" />
-      <min value="0" />
-      <max value="1" />
-      <base>
-        <path value="Element.id" />
-        <min value="0" />
-        <max value="1" />
-      </base>
-      <type>
-        <code value="id" />
-      </type>
-      <condition value="ele-1" />
-      <constraint>
-        <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-expression">
-          <valueString value="children()" />
-        </extension>
-        <key value="ele-1" />
-        <severity value="error" />
-        <human value="All FHIR elements must have a @value or children" />
-        <xpath value="@value|f:*|h:div" />
-      </constraint>
-      <mapping>
-        <identity value="rim" />
-        <map value="n/a" />
-      </mapping>
-    </element>
-    <element>
-      <path value="QuestionnaireResponse.group.question.answer.extension" />
-      <short value="Additional Content defined by implementations" />
-      <definition value="May be used to represent additional information that is not part of the basic definition of the element. In order to make the use of extensions safe and manageable, there is a strict set of governance  applied to the definition and use of extensions. Though any implementer is allowed to define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension." />
-      <comments value="There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone." />
-      <alias value="extensions" />
-      <alias value="user content" />
-      <min value="0" />
-      <max value="*" />
-      <base>
-        <path value="Element.extension" />
-        <min value="0" />
-        <max value="*" />
-      </base>
-      <type>
-        <code value="Extension" />
-      </type>
-      <condition value="ele-1" />
-      <constraint>
-        <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-expression">
-          <valueString value="children()" />
-        </extension>
-        <key value="ele-1" />
-        <severity value="error" />
-        <human value="All FHIR elements must have a @value or children" />
-        <xpath value="@value|f:*|h:div" />
-      </constraint>
-      <mapping>
-        <identity value="rim" />
-        <map value="n/a" />
-      </mapping>
-      <mapping>
-        <identity value="rim" />
-        <map value="N/A" />
-      </mapping>
-    </element>
-    <element>
-      <path value="QuestionnaireResponse.group.question.answer.modifierExtension" />
-      <short value="Extensions that cannot be ignored" />
-      <definition value="May be used to represent additional information that is not part of the basic definition of the element, and that modifies the understanding of the element that contains it. Usually modifier elements provide negation or qualification. In order to make the use of extensions safe and manageable, there is a strict set of governance applied to the definition and use of extensions. Though any implementer is allowed to define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension. Applications processing a resource are required to check for modifier extensions." />
-      <comments value="There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone." />
-      <alias value="extensions" />
-      <alias value="user content" />
-      <alias value="modifiers" />
-      <min value="0" />
-      <max value="*" />
-      <base>
-        <path value="BackboneElement.modifierExtension" />
-        <min value="0" />
-        <max value="*" />
-      </base>
-      <type>
-        <code value="Extension" />
-      </type>
-      <condition value="ele-1" />
-      <constraint>
-        <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-expression">
-          <valueString value="children()" />
-        </extension>
-        <key value="ele-1" />
-        <severity value="error" />
-        <human value="All FHIR elements must have a @value or children" />
-        <xpath value="@value|f:*|h:div" />
-      </constraint>
-      <isModifier value="true" />
-      <mapping>
-        <identity value="rim" />
-        <map value="n/a" />
-      </mapping>
-      <mapping>
-        <identity value="rim" />
-        <map value="N/A" />
-      </mapping>
-    </element>
-    <element>
-      <path value="QuestionnaireResponse.group.question.answer.value[x]" />
-      <short value="Single-valued answer to the question" />
-      <definition value="The answer (or one of the answers) provided by the respondent to the question." />
-      <comments value="More complex structures (Attachment, Resource and Quantity) will typically be limited to electronic forms that can expose an appropriate user interface to capture the components and enforce the constraints of a complex data type.  Additional complex types can be introduced through extensions." />
-      <requirements value="Ability to retain a single-valued answer to a question." />
-      <min value="1" />
-      <max value="1" />
-      <base>
-        <path value="QuestionnaireResponse.group.question.answer.value[x]" />
-        <min value="0" />
-        <max value="1" />
-      </base>
-      <type>
-        <code value="Coding" />
-      </type>
-      <type>
-        <code value="Reference" />
-        <profile value="https://fhir.hl7.org.uk/StructureDefinition/CareConnect-DCH-Condition-1" />
+        <profile value="https://fhir.nhs.uk/StructureDefinition/DCH-FollowUp-ReferralRequest-1" />
       </type>
       <condition value="ele-1" />
       <constraint>
@@ -6221,9 +5403,9 @@
       </constraint>
       <binding>
         <strength value="required" />
-        <description value="Condition Clinical Status code" />
+        <description value="Specialty the patient has been referred into" />
         <valueSetReference>
-          <reference value="https://fhir.hl7.org.uk/ValueSet/CareConnect-ConditionClinicalStatus-1" />
+          <reference value="https://fhir.nhs.uk/ValueSet/DCH-SpecialtyReferredTo-1" />
         </valueSetReference>
       </binding>
       <mapping>
@@ -6258,7 +5440,7 @@
         <valueString value="Question" />
       </extension>
       <path value="QuestionnaireResponse.group.question" />
-      <name value="conditionCategory" />
+      <name value="reason" />
       <short value="Questions in this group" />
       <definition value="Set of questions within this group. The order of questions within the group is relevant." />
       <requirements value="Must register answers to questions." />
@@ -6449,7 +5631,7 @@
       <type>
         <code value="string" />
       </type>
-      <fixedString value="A category assigned to the condition" />
+      <fixedString value="Reason for follow-up request" />
       <condition value="ele-1" />
       <constraint>
         <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-expression">
@@ -6625,7 +5807,7 @@
       </type>
       <type>
         <code value="Reference" />
-        <profile value="https://fhir.hl7.org.uk/StructureDefinition/CareConnect-DCH-Condition-1" />
+        <profile value="https://fhir.nhs.uk/StructureDefinition/DCH-FollowUp-ReferralRequest-1" />
       </type>
       <condition value="ele-1" />
       <constraint>
@@ -6638,423 +5820,12 @@
         <xpath value="@value|f:*|h:div" />
       </constraint>
       <binding>
-        <strength value="extensible" />
-        <description value="Condition category code" />
+        <strength value="required" />
+        <description value="Reason for follow-up request" />
         <valueSetReference>
-          <reference value="https://fhir.hl7.org.uk/ValueSet/CareConnect-ConditionCategory-1" />
+          <reference value="https://fhir.nhs.uk/ValueSet/DCH-ReasonForReferral-1" />
         </valueSetReference>
       </binding>
-      <mapping>
-        <identity value="rim" />
-        <map value="n/a" />
-      </mapping>
-      <mapping>
-        <identity value="rim" />
-        <map value=".item" />
-      </mapping>
-    </element>
-    <element>
-      <path value="QuestionnaireResponse.group.question.answer.group" />
-      <short value="Nested questionnaire group" />
-      <definition value="Nested group, containing nested question for this question. The order of groups within the question is relevant." />
-      <requirements value="It is useful to have &quot;sub-questions&quot;, questions which normally appear when certain answers are given and which collect additional details." />
-      <min value="0" />
-      <max value="0" />
-      <base>
-        <path value="QuestionnaireResponse.group.question.answer.group" />
-        <min value="0" />
-        <max value="*" />
-      </base>
-      <nameReference value="group" />
-      <mapping>
-        <identity value="rim" />
-        <map value=".outboundRelationship[typeCode=COMP].target[classCode=DOCSECT, moodCode=EVN]" />
-      </mapping>
-    </element>
-    <element>
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-explicit-type-name">
-        <valueString value="Question" />
-      </extension>
-      <path value="QuestionnaireResponse.group.question" />
-      <name value="conditionOnset" />
-      <short value="Questions in this group" />
-      <definition value="Set of questions within this group. The order of questions within the group is relevant." />
-      <requirements value="Must register answers to questions." />
-      <alias value="Responses" />
-      <alias value="Contents" />
-      <min value="0" />
-      <max value="1" />
-      <base>
-        <path value="QuestionnaireResponse.group.question" />
-        <min value="0" />
-        <max value="*" />
-      </base>
-      <type>
-        <code value="BackboneElement" />
-      </type>
-      <condition value="ele-1" />
-      <condition value="qrs-1" />
-      <constraint>
-        <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-expression">
-          <valueString value="children()" />
-        </extension>
-        <key value="ele-1" />
-        <severity value="error" />
-        <human value="All FHIR elements must have a @value or children" />
-        <xpath value="@value|f:*|h:div" />
-      </constraint>
-      <mapping>
-        <identity value="rim" />
-        <map value="n/a" />
-      </mapping>
-      <mapping>
-        <identity value="rim" />
-        <map value=".outboundRelationship[typeCode=COMP].target[classCode=OBS, moodCode=EVN or DEF]" />
-      </mapping>
-    </element>
-    <element>
-      <path value="QuestionnaireResponse.group.question.id" />
-      <short value="xml:id (or equivalent in JSON)" />
-      <definition value="unique id for the element within a resource (for internal references)." />
-      <comments value="RFC 4122" />
-      <min value="0" />
-      <max value="1" />
-      <base>
-        <path value="Element.id" />
-        <min value="0" />
-        <max value="1" />
-      </base>
-      <type>
-        <code value="id" />
-      </type>
-      <condition value="ele-1" />
-      <constraint>
-        <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-expression">
-          <valueString value="children()" />
-        </extension>
-        <key value="ele-1" />
-        <severity value="error" />
-        <human value="All FHIR elements must have a @value or children" />
-        <xpath value="@value|f:*|h:div" />
-      </constraint>
-      <mapping>
-        <identity value="rim" />
-        <map value="n/a" />
-      </mapping>
-    </element>
-    <element>
-      <path value="QuestionnaireResponse.group.question.extension" />
-      <short value="Additional Content defined by implementations" />
-      <definition value="May be used to represent additional information that is not part of the basic definition of the element. In order to make the use of extensions safe and manageable, there is a strict set of governance  applied to the definition and use of extensions. Though any implementer is allowed to define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension." />
-      <comments value="There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone." />
-      <alias value="extensions" />
-      <alias value="user content" />
-      <min value="0" />
-      <max value="*" />
-      <base>
-        <path value="Element.extension" />
-        <min value="0" />
-        <max value="*" />
-      </base>
-      <type>
-        <code value="Extension" />
-      </type>
-      <condition value="ele-1" />
-      <constraint>
-        <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-expression">
-          <valueString value="children()" />
-        </extension>
-        <key value="ele-1" />
-        <severity value="error" />
-        <human value="All FHIR elements must have a @value or children" />
-        <xpath value="@value|f:*|h:div" />
-      </constraint>
-      <mapping>
-        <identity value="rim" />
-        <map value="n/a" />
-      </mapping>
-      <mapping>
-        <identity value="rim" />
-        <map value="N/A" />
-      </mapping>
-    </element>
-    <element>
-      <path value="QuestionnaireResponse.group.question.modifierExtension" />
-      <short value="Extensions that cannot be ignored" />
-      <definition value="May be used to represent additional information that is not part of the basic definition of the element, and that modifies the understanding of the element that contains it. Usually modifier elements provide negation or qualification. In order to make the use of extensions safe and manageable, there is a strict set of governance applied to the definition and use of extensions. Though any implementer is allowed to define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension. Applications processing a resource are required to check for modifier extensions." />
-      <comments value="There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone." />
-      <alias value="extensions" />
-      <alias value="user content" />
-      <alias value="modifiers" />
-      <min value="0" />
-      <max value="*" />
-      <base>
-        <path value="BackboneElement.modifierExtension" />
-        <min value="0" />
-        <max value="*" />
-      </base>
-      <type>
-        <code value="Extension" />
-      </type>
-      <condition value="ele-1" />
-      <constraint>
-        <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-expression">
-          <valueString value="children()" />
-        </extension>
-        <key value="ele-1" />
-        <severity value="error" />
-        <human value="All FHIR elements must have a @value or children" />
-        <xpath value="@value|f:*|h:div" />
-      </constraint>
-      <isModifier value="true" />
-      <mapping>
-        <identity value="rim" />
-        <map value="n/a" />
-      </mapping>
-      <mapping>
-        <identity value="rim" />
-        <map value="N/A" />
-      </mapping>
-    </element>
-    <element>
-      <path value="QuestionnaireResponse.group.question.linkId" />
-      <short value="Corresponding question within Questionnaire" />
-      <definition value="Identifies the question from the Questionnaire that corresponds to this question in the QuestionnaireResponse resource." />
-      <comments value="Note that FHIR strings may not exceed 1MB in size" />
-      <requirements value="Groups can repeat in the answers, so a direct 1..1 correspondence may not exist - requiring correspondence by id." />
-      <min value="0" />
-      <max value="0" />
-      <base>
-        <path value="QuestionnaireResponse.group.question.linkId" />
-        <min value="0" />
-        <max value="1" />
-      </base>
-      <type>
-        <code value="string" />
-      </type>
-      <condition value="ele-1" />
-      <constraint>
-        <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-expression">
-          <valueString value="children()" />
-        </extension>
-        <key value="ele-1" />
-        <severity value="error" />
-        <human value="All FHIR elements must have a @value or children" />
-        <xpath value="@value|f:*|h:div" />
-      </constraint>
-      <mapping>
-        <identity value="rim" />
-        <map value="n/a" />
-      </mapping>
-      <mapping>
-        <identity value="rim" />
-        <map value=".outboundRelationship[typeCode=DEFN].target[classCode=OBS, moodCode=DEFN]" />
-      </mapping>
-    </element>
-    <element>
-      <path value="QuestionnaireResponse.group.question.text" />
-      <short value="Text of the question as it is shown to the user" />
-      <definition value="The actual question as shown to the user to prompt them for an answer." />
-      <comments value="Note that FHIR strings may not exceed 1MB in size" />
-      <requirements value="When including text for the questionnaire, each question may contain its actual question display text." />
-      <min value="1" />
-      <max value="1" />
-      <base>
-        <path value="QuestionnaireResponse.group.question.text" />
-        <min value="0" />
-        <max value="1" />
-      </base>
-      <type>
-        <code value="string" />
-      </type>
-      <fixedString value="Estimated or actual date or date-time the condition began, in the opinion of the clinician" />
-      <condition value="ele-1" />
-      <constraint>
-        <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-expression">
-          <valueString value="children()" />
-        </extension>
-        <key value="ele-1" />
-        <severity value="error" />
-        <human value="All FHIR elements must have a @value or children" />
-        <xpath value="@value|f:*|h:div" />
-      </constraint>
-      <mapping>
-        <identity value="rim" />
-        <map value="n/a" />
-      </mapping>
-      <mapping>
-        <identity value="rim" />
-        <map value=".code.display" />
-      </mapping>
-    </element>
-    <element>
-      <path value="QuestionnaireResponse.group.question.answer" />
-      <short value="The responses will consist of the value and the supporting resource for that value" />
-      <definition value="The responses will consist of the value and the supporting resource for that value." />
-      <comments value="The value is nested because we cannot have a repeating structure that has variable type." />
-      <min value="1" />
-      <max value="2" />
-      <base>
-        <path value="QuestionnaireResponse.group.question.answer" />
-        <min value="0" />
-        <max value="*" />
-      </base>
-      <type>
-        <code value="BackboneElement" />
-      </type>
-      <condition value="ele-1" />
-      <constraint>
-        <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-expression">
-          <valueString value="children()" />
-        </extension>
-        <key value="ele-1" />
-        <severity value="error" />
-        <human value="All FHIR elements must have a @value or children" />
-        <xpath value="@value|f:*|h:div" />
-      </constraint>
-      <mapping>
-        <identity value="rim" />
-        <map value="n/a" />
-      </mapping>
-      <mapping>
-        <identity value="rim" />
-        <map value=".value[type=LIST_ANY]" />
-      </mapping>
-    </element>
-    <element>
-      <path value="QuestionnaireResponse.group.question.answer.id" />
-      <short value="xml:id (or equivalent in JSON)" />
-      <definition value="unique id for the element within a resource (for internal references)." />
-      <comments value="RFC 4122" />
-      <min value="0" />
-      <max value="1" />
-      <base>
-        <path value="Element.id" />
-        <min value="0" />
-        <max value="1" />
-      </base>
-      <type>
-        <code value="id" />
-      </type>
-      <condition value="ele-1" />
-      <constraint>
-        <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-expression">
-          <valueString value="children()" />
-        </extension>
-        <key value="ele-1" />
-        <severity value="error" />
-        <human value="All FHIR elements must have a @value or children" />
-        <xpath value="@value|f:*|h:div" />
-      </constraint>
-      <mapping>
-        <identity value="rim" />
-        <map value="n/a" />
-      </mapping>
-    </element>
-    <element>
-      <path value="QuestionnaireResponse.group.question.answer.extension" />
-      <short value="Additional Content defined by implementations" />
-      <definition value="May be used to represent additional information that is not part of the basic definition of the element. In order to make the use of extensions safe and manageable, there is a strict set of governance  applied to the definition and use of extensions. Though any implementer is allowed to define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension." />
-      <comments value="There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone." />
-      <alias value="extensions" />
-      <alias value="user content" />
-      <min value="0" />
-      <max value="*" />
-      <base>
-        <path value="Element.extension" />
-        <min value="0" />
-        <max value="*" />
-      </base>
-      <type>
-        <code value="Extension" />
-      </type>
-      <condition value="ele-1" />
-      <constraint>
-        <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-expression">
-          <valueString value="children()" />
-        </extension>
-        <key value="ele-1" />
-        <severity value="error" />
-        <human value="All FHIR elements must have a @value or children" />
-        <xpath value="@value|f:*|h:div" />
-      </constraint>
-      <mapping>
-        <identity value="rim" />
-        <map value="n/a" />
-      </mapping>
-      <mapping>
-        <identity value="rim" />
-        <map value="N/A" />
-      </mapping>
-    </element>
-    <element>
-      <path value="QuestionnaireResponse.group.question.answer.modifierExtension" />
-      <short value="Extensions that cannot be ignored" />
-      <definition value="May be used to represent additional information that is not part of the basic definition of the element, and that modifies the understanding of the element that contains it. Usually modifier elements provide negation or qualification. In order to make the use of extensions safe and manageable, there is a strict set of governance applied to the definition and use of extensions. Though any implementer is allowed to define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension. Applications processing a resource are required to check for modifier extensions." />
-      <comments value="There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone." />
-      <alias value="extensions" />
-      <alias value="user content" />
-      <alias value="modifiers" />
-      <min value="0" />
-      <max value="*" />
-      <base>
-        <path value="BackboneElement.modifierExtension" />
-        <min value="0" />
-        <max value="*" />
-      </base>
-      <type>
-        <code value="Extension" />
-      </type>
-      <condition value="ele-1" />
-      <constraint>
-        <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-expression">
-          <valueString value="children()" />
-        </extension>
-        <key value="ele-1" />
-        <severity value="error" />
-        <human value="All FHIR elements must have a @value or children" />
-        <xpath value="@value|f:*|h:div" />
-      </constraint>
-      <isModifier value="true" />
-      <mapping>
-        <identity value="rim" />
-        <map value="n/a" />
-      </mapping>
-      <mapping>
-        <identity value="rim" />
-        <map value="N/A" />
-      </mapping>
-    </element>
-    <element>
-      <path value="QuestionnaireResponse.group.question.answer.value[x]" />
-      <short value="Single-valued answer to the question" />
-      <definition value="The answer (or one of the answers) provided by the respondent to the question." />
-      <comments value="More complex structures (Attachment, Resource and Quantity) will typically be limited to electronic forms that can expose an appropriate user interface to capture the components and enforce the constraints of a complex data type.  Additional complex types can be introduced through extensions." />
-      <requirements value="Ability to retain a single-valued answer to a question." />
-      <min value="1" />
-      <max value="1" />
-      <base>
-        <path value="QuestionnaireResponse.group.question.answer.value[x]" />
-        <min value="0" />
-        <max value="1" />
-      </base>
-      <type>
-        <code value="dateTime" />
-      </type>
-      <type>
-        <code value="Reference" />
-        <profile value="https://fhir.hl7.org.uk/StructureDefinition/CareConnect-DCH-Condition-1" />
-      </type>
-      <condition value="ele-1" />
-      <constraint>
-        <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-expression">
-          <valueString value="children()" />
-        </extension>
-        <key value="ele-1" />
-        <severity value="error" />
-        <human value="All FHIR elements must have a @value or children" />
-        <xpath value="@value|f:*|h:div" />
-      </constraint>
       <mapping>
         <identity value="rim" />
         <map value="n/a" />
@@ -7210,7 +5981,7 @@
     <element>
       <path value="QuestionnaireResponse.group.question.text" />
       <min value="1" />
-      <fixedString value="The date the Condition, Problem or Diagnosis as recognised by a Clinician was recorded" />
+      <fixedString value="The date the Follow-Up request was made" />
     </element>
     <element>
       <path value="QuestionnaireResponse.group.question.answer" />
@@ -7239,45 +6010,6 @@
         <valueString value="Question" />
       </extension>
       <path value="QuestionnaireResponse.group.question" />
-      <name value="siteCode" />
-      <max value="1" />
-    </element>
-    <element>
-      <path value="QuestionnaireResponse.group.question.linkId" />
-      <max value="0" />
-    </element>
-    <element>
-      <path value="QuestionnaireResponse.group.question.text" />
-      <min value="1" />
-      <fixedString value="The Site Code of where the Condition, Problem or Diagnosis as recognised by a Clinician was recorded" />
-    </element>
-    <element>
-      <path value="QuestionnaireResponse.group.question.answer" />
-      <short value="The responses will consist of the value and the supporting resource for that value" />
-      <definition value="The responses will consist of the value and the supporting resource for that value." />
-      <min value="1" />
-      <max value="2" />
-    </element>
-    <element>
-      <path value="QuestionnaireResponse.group.question.answer.value[x]" />
-      <min value="1" />
-      <type>
-        <code value="string" />
-      </type>
-      <type>
-        <code value="Reference" />
-        <profile value="https://fhir.hl7.org.uk/StructureDefinition/CareConnect-Organization-1" />
-      </type>
-    </element>
-    <element>
-      <path value="QuestionnaireResponse.group.question.answer.group" />
-      <max value="0" />
-    </element>
-    <element>
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-explicit-type-name">
-        <valueString value="Question" />
-      </extension>
-      <path value="QuestionnaireResponse.group.question" />
       <name value="organisationCode" />
       <max value="1" />
     </element>
@@ -7288,7 +6020,7 @@
     <element>
       <path value="QuestionnaireResponse.group.question.text" />
       <min value="1" />
-      <fixedString value="Organisation recording the Condition, Problem or Diagnosis as recognised by a Clinician" />
+      <fixedString value="Organisation making the Follow-Up request" />
     </element>
     <element>
       <path value="QuestionnaireResponse.group.question.answer" />
@@ -7327,7 +6059,7 @@
     <element>
       <path value="QuestionnaireResponse.group.question.text" />
       <min value="1" />
-      <fixedString value="Professional Group of the Professional recording the Condition, Problem or Diagnosis " />
+      <fixedString value="Professional Group of the referrer" />
     </element>
     <element>
       <path value="QuestionnaireResponse.group.question.answer" />
@@ -7348,7 +6080,7 @@
       </type>
       <binding>
         <strength value="required" />
-        <description value="The role a person plays representing an organization" />
+        <description value="Care Connect SDS Job Role Name" />
         <valueSetReference>
           <reference value="https://fhir.hl7.org.uk/ValueSet/CareConnect-SDSJobRoleName-1" />
         </valueSetReference>
@@ -7373,7 +6105,7 @@
     <element>
       <path value="QuestionnaireResponse.group.question.text" />
       <min value="1" />
-      <fixedString value="Code of the Professional recording the Condition, Problem or Diagnosis " />
+      <fixedString value="Code of the Professional making the Follow-Up request" />
     </element>
     <element>
       <path value="QuestionnaireResponse.group.question.answer" />
@@ -7402,7 +6134,7 @@
         <valueString value="Question" />
       </extension>
       <path value="QuestionnaireResponse.group.question" />
-      <name value="condition" />
+      <name value="specialty" />
       <max value="1" />
     </element>
     <element>
@@ -7412,7 +6144,7 @@
     <element>
       <path value="QuestionnaireResponse.group.question.text" />
       <min value="1" />
-      <fixedString value="The provisional Diagnosis of the child or young person" />
+      <fixedString value="Specialty the patient has been referred into" />
     </element>
     <element>
       <path value="QuestionnaireResponse.group.question.answer" />
@@ -7429,52 +6161,13 @@
       </type>
       <type>
         <code value="Reference" />
-        <profile value="https://fhir.hl7.org.uk/StructureDefinition/CareConnect-DCH-Condition-1" />
-      </type>
-    </element>
-    <element>
-      <path value="QuestionnaireResponse.group.question.answer.group" />
-      <max value="0" />
-    </element>
-    <element>
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-explicit-type-name">
-        <valueString value="Question" />
-      </extension>
-      <path value="QuestionnaireResponse.group.question" />
-      <name value="conditionStatus" />
-      <max value="1" />
-    </element>
-    <element>
-      <path value="QuestionnaireResponse.group.question.linkId" />
-      <max value="0" />
-    </element>
-    <element>
-      <path value="QuestionnaireResponse.group.question.text" />
-      <min value="1" />
-      <fixedString value="Clinical status of the Condition, Problem or Diagnosis" />
-    </element>
-    <element>
-      <path value="QuestionnaireResponse.group.question.answer" />
-      <short value="The responses will consist of the value and the supporting resource for that value" />
-      <definition value="The responses will consist of the value and the supporting resource for that value." />
-      <min value="1" />
-      <max value="2" />
-    </element>
-    <element>
-      <path value="QuestionnaireResponse.group.question.answer.value[x]" />
-      <min value="1" />
-      <type>
-        <code value="Coding" />
-      </type>
-      <type>
-        <code value="Reference" />
-        <profile value="https://fhir.hl7.org.uk/StructureDefinition/CareConnect-DCH-Condition-1" />
+        <profile value="https://fhir.nhs.uk/StructureDefinition/DCH-FollowUp-ReferralRequest-1" />
       </type>
       <binding>
         <strength value="required" />
-        <description value="Condition Clinical Status code" />
+        <description value="Specialty the patient has been referred into" />
         <valueSetReference>
-          <reference value="https://fhir.hl7.org.uk/ValueSet/CareConnect-ConditionClinicalStatus-1" />
+          <reference value="https://fhir.nhs.uk/ValueSet/DCH-SpecialtyReferredTo-1" />
         </valueSetReference>
       </binding>
     </element>
@@ -7487,7 +6180,7 @@
         <valueString value="Question" />
       </extension>
       <path value="QuestionnaireResponse.group.question" />
-      <name value="conditionCategory" />
+      <name value="reason" />
       <max value="1" />
     </element>
     <element>
@@ -7497,7 +6190,7 @@
     <element>
       <path value="QuestionnaireResponse.group.question.text" />
       <min value="1" />
-      <fixedString value="A category assigned to the condition" />
+      <fixedString value="Reason for follow-up request" />
     </element>
     <element>
       <path value="QuestionnaireResponse.group.question.answer" />
@@ -7514,54 +6207,15 @@
       </type>
       <type>
         <code value="Reference" />
-        <profile value="https://fhir.hl7.org.uk/StructureDefinition/CareConnect-DCH-Condition-1" />
+        <profile value="https://fhir.nhs.uk/StructureDefinition/DCH-FollowUp-ReferralRequest-1" />
       </type>
       <binding>
-        <strength value="extensible" />
-        <description value="Condition category code" />
+        <strength value="required" />
+        <description value="Reason for follow-up request" />
         <valueSetReference>
-          <reference value="https://fhir.hl7.org.uk/ValueSet/CareConnect-ConditionCategory-1" />
+          <reference value="https://fhir.nhs.uk/ValueSet/DCH-ReasonForReferral-1" />
         </valueSetReference>
       </binding>
-    </element>
-    <element>
-      <path value="QuestionnaireResponse.group.question.answer.group" />
-      <max value="0" />
-    </element>
-    <element>
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-explicit-type-name">
-        <valueString value="Question" />
-      </extension>
-      <path value="QuestionnaireResponse.group.question" />
-      <name value="conditionOnset" />
-      <max value="1" />
-    </element>
-    <element>
-      <path value="QuestionnaireResponse.group.question.linkId" />
-      <max value="0" />
-    </element>
-    <element>
-      <path value="QuestionnaireResponse.group.question.text" />
-      <min value="1" />
-      <fixedString value="Estimated or actual date or date-time the condition began, in the opinion of the clinician" />
-    </element>
-    <element>
-      <path value="QuestionnaireResponse.group.question.answer" />
-      <short value="The responses will consist of the value and the supporting resource for that value" />
-      <definition value="The responses will consist of the value and the supporting resource for that value." />
-      <min value="1" />
-      <max value="2" />
-    </element>
-    <element>
-      <path value="QuestionnaireResponse.group.question.answer.value[x]" />
-      <min value="1" />
-      <type>
-        <code value="dateTime" />
-      </type>
-      <type>
-        <code value="Reference" />
-        <profile value="https://fhir.hl7.org.uk/StructureDefinition/CareConnect-DCH-Condition-1" />
-      </type>
     </element>
     <element>
       <path value="QuestionnaireResponse.group.question.answer.group" />

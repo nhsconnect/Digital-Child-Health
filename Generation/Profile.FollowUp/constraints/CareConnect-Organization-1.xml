@@ -4,12 +4,9 @@
     <lastUpdated value="2017-03-22T10:34:29.285+00:00" />
     <tag>
       <system value="urn:hscic:publishOrder" />
-      <code value="4" />
+      <code value="3" />
     </tag>
   </meta>
-  <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm">
-    <valueInteger value="4" />
-  </extension>
   <url value="https://fhir.hl7.org.uk/StructureDefinition/CareConnect-Organization-1" />
   <version value="1.0.0" />
   <name value="CareConnect-Organization-1" />

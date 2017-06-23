@@ -1,7 +1,7 @@
-<?xml version="1.0" encoding="utf-8"?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <meta>
-    <lastUpdated value="2017-05-08T14:48:31.926+01:00" />
+    <lastUpdated value="2017-06-23T20:23:40.445+01:00" />
     <tag>
       <system value="urn:hscic:publishOrder" />
       <code value="2" />
@@ -10,9 +10,9 @@
   <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm">
     <valueInteger value="2" />
   </extension>
-  <url value="https://fhir.nhs.uk/StructureDefinition/DCH-FollowUpEvent-MessageHeader-1" />
+  <url value="https://fhir.nhs.uk/StructureDefinition/DCH-MessageHeader-1" />
   <version value="1.0.0" />
-  <name value="DCH-FollowUpEvent-MessageHeader-1" />
+  <name value="DCH-MessageHeader-1" />
   <status value="draft" />
   <publisher value="NHS Digital" />
   <contact>
@@ -24,7 +24,7 @@
     </telecom>
   </contact>
   <date value="2015-09-22T11:02:49+01:00" />
-  <description value="This MessageHeader resource is constrained to represent a message header for a Follow Up Event." />
+  <description value="This MessageHeader resource is constrained to represent a message header for a Child Health Event." />
   <copyright value="Copyright © 2016 Health and Social Care Information Centre. NHS Digital is the trading name of the Health and Social Care Information Centre." />
   <fhirVersion value="1.0.1" />
   <kind value="resource" />
@@ -300,6 +300,10 @@
     </element>
     <element>
       <path value="MessageHeader.extension" />
+      <slicing>
+        <discriminator value="url" />
+        <rules value="open" />
+      </slicing>
       <short value="Additional Content defined by implementations" />
       <definition value="May be used to represent additional information that is not part of the basic definition of the resource. In order to make the use of extensions safe and manageable, there is a strict set of governance  applied to the definition and use of extensions. Though any implementer is allowed to define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension." />
       <comments value="There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone." />
@@ -314,6 +318,44 @@
       </base>
       <type>
         <code value="Extension" />
+      </type>
+      <condition value="ele-1" />
+      <constraint>
+        <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-expression">
+          <valueString value="children()" />
+        </extension>
+        <key value="ele-1" />
+        <severity value="error" />
+        <human value="All FHIR elements must have a @value or children" />
+        <xpath value="@value|f:*|h:div" />
+      </constraint>
+      <mapping>
+        <identity value="rim" />
+        <map value="n/a" />
+      </mapping>
+      <mapping>
+        <identity value="rim" />
+        <map value="N/A" />
+      </mapping>
+    </element>
+    <element>
+      <path value="MessageHeader.extension" />
+      <name value="eventMessageType" />
+      <short value="The type of event applicable to the Child Health event message" />
+      <definition value="The type of event applicable to the Child Health event message." />
+      <comments value="There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone." />
+      <alias value="extensions" />
+      <alias value="user content" />
+      <min value="1" />
+      <max value="1" />
+      <base>
+        <path value="DomainResource.extension" />
+        <min value="0" />
+        <max value="*" />
+      </base>
+      <type>
+        <code value="Extension" />
+        <profile value="https://fhir.nhs.uk/StructureDefinition/Extension-DCH-EventMessageType-1" />
       </type>
       <condition value="ele-1" />
       <constraint>
@@ -417,8 +459,8 @@
     </element>
     <element>
       <path value="MessageHeader.event" />
-      <short value="Code for the Child Health event this message represents" />
-      <definition value="Code that identifies the event this message represents and connects it with its definition. Events defined as part of the FHIR specification have the system value &quot;http://hl7.org/fhir/message-events&quot;." />
+      <short value="The type of Child Health Event" />
+      <definition value="The type of Child Health Event." />
       <comments value="Codes may be defined very casually in enumerations or code lists, up to very formal definitions such as SNOMED CT - see the HL7 v3 Core Principles for more information." />
       <requirements value="Drives the behavior associated with this message." />
       <min value="1" />
@@ -445,7 +487,7 @@
       <isSummary value="true" />
       <binding>
         <strength value="required" />
-        <description value="The type of Child Health event" />
+        <description value="The type of Child Health Event" />
         <valueSetReference>
           <reference value="https://fhir.nhs.uk/ValueSet/DCH-ChildHealthEventType-1" />
         </valueSetReference>
@@ -547,8 +589,8 @@
     </element>
     <element>
       <path value="MessageHeader.event.system" />
-      <short value="The type of Child Health event." />
-      <definition value="The type of Child Health event." />
+      <short value="The type of event applicable to the Child Health Event message." />
+      <definition value="The type of event applicable to the Child Health Event message." />
       <comments value="The URI may be an OID (urn:oid:...) or a UUID (urn:uuid:...).  OIDs and UUIDs SHALL be references to the HL7 OID registry. Otherwise, the URI should come from HL7's list of FHIR defined special URIs or it should de-reference to some definition that establish the system clearly and unambiguously." />
       <requirements value="Need to be unambiguous about the source of the definition of the symbol." />
       <min value="1" />
@@ -649,7 +691,6 @@
       <type>
         <code value="code" />
       </type>
-      <fixedCode value="Referral: Follow Up" />
       <condition value="ele-1" />
       <constraint>
         <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-expression">
@@ -694,7 +735,6 @@
       <type>
         <code value="string" />
       </type>
-      <fixedString value="Referral: Follow Up" />
       <condition value="ele-1" />
       <constraint>
         <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-expression">
@@ -3598,7 +3638,7 @@
       </base>
       <type>
         <code value="Reference" />
-        <profile value="https://fhir.hl7.org.uk/StructureDefinition/CareConnect-DCH-ChildHealthEvent-Encounter-1" />
+        <profile value="https://fhir.hl7.org.uk/StructureDefinition/DCH-QuestionnaireResponse-1" />
       </type>
       <condition value="ele-1" />
       <constraint>
@@ -3704,7 +3744,7 @@
       <short value="Relative, internal or absolute URL reference" />
       <definition value="A reference to a location at which the other resource is found. The reference may be a relative reference, in which case it is relative to the service base URL, or an absolute URL that resolves to the location where the resource is found. The reference may be version specific or not. If the reference is not to a FHIR RESTful server, then it should be assumed to be version specific. Internal fragment references (start with '#') refer to contained resources." />
       <comments value="Using absolute URLs provides a stable scalable approach suitable for a cloud/web context, while using relative/logical references provides a flexible approach suitable for use when trading across closed eco-system boundaries.   Absolute URLs do not need to point to a FHIR RESTful server, though this is the preferred approach. If the URL conforms to the structure &quot;/[type]/[id]&quot; then it should be assumed that the reference is to a FHIR RESTful server." />
-      <min value="1" />
+      <min value="0" />
       <max value="1" />
       <base>
         <path value="Reference.reference" />
@@ -3779,11 +3819,29 @@
       </type>
     </element>
     <element>
+      <path value="MessageHeader.extension" />
+      <slicing>
+        <discriminator value="url" />
+        <rules value="open" />
+      </slicing>
+    </element>
+    <element>
+      <path value="MessageHeader.extension" />
+      <name value="eventMessageType" />
+      <min value="1" />
+      <max value="1" />
+      <type>
+        <code value="Extension" />
+        <profile value="https://fhir.nhs.uk/StructureDefinition/Extension-DCH-EventMessageType-1" />
+      </type>
+    </element>
+    <element>
       <path value="MessageHeader.event" />
-      <short value="Code for the Child Health event this message represents" />
+      <short value="The type of Child Health Event" />
+      <definition value="The type of Child Health Event." />
       <binding>
         <strength value="required" />
-        <description value="The type of Child Health event" />
+        <description value="The type of Child Health Event" />
         <valueSetReference>
           <reference value="https://fhir.nhs.uk/ValueSet/DCH-ChildHealthEventType-1" />
         </valueSetReference>
@@ -3791,8 +3849,8 @@
     </element>
     <element>
       <path value="MessageHeader.event.system" />
-      <short value="The type of Child Health event." />
-      <definition value="The type of Child Health event." />
+      <short value="The type of event applicable to the Child Health Event message." />
+      <definition value="The type of event applicable to the Child Health Event message." />
       <min value="1" />
       <fixedUri value="https://fhir.nhs.uk/dch-childhealtheventtype-1" />
     </element>
@@ -3803,12 +3861,10 @@
     <element>
       <path value="MessageHeader.event.code" />
       <min value="1" />
-      <fixedCode value="Referral: Follow Up" />
     </element>
     <element>
       <path value="MessageHeader.event.display" />
       <min value="1" />
-      <fixedString value="Referral: Follow Up" />
     </element>
     <element>
       <path value="MessageHeader.event.userSelected" />
@@ -3859,12 +3915,8 @@
       <max value="1" />
       <type>
         <code value="Reference" />
-        <profile value="https://fhir.hl7.org.uk/StructureDefinition/CareConnect-DCH-ChildHealthEvent-Encounter-1" />
+        <profile value="https://fhir.hl7.org.uk/StructureDefinition/DCH-QuestionnaireResponse-1" />
       </type>
-    </element>
-    <element>
-      <path value="MessageHeader.data.reference" />
-      <min value="1" />
     </element>
   </differential>
 </StructureDefinition>

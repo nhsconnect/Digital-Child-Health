@@ -26,8 +26,8 @@
 				<timestamp value="2012-03-08T09:00:00+00:00"/>
 				<event>
 					<system value="https://fhir.nhs.uk/dch-childhealtheventtype-1"/>
-					<code value="Medical History"/>
-					<display value="Medical History"/>
+					<code value="Accidents and Injuries"/>
+					<display value="Accidents and Injuries"/>
 				</event>
 				<source>
 					<endpoint value="urn:uuid:1d67bb60-4f45-11e7-b114-b2f933d5fe66"/>

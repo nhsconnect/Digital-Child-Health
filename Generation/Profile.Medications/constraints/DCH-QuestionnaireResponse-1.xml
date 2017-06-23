@@ -1,7 +1,7 @@
-<?xml version="1.0" encoding="utf-8"?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <meta>
-    <lastUpdated value="2017-06-22T12:47:12.131+01:00" />
+    <lastUpdated value="2017-06-23T20:56:19.917+01:00" />
     <tag>
       <system value="urn:hscic:publishOrder" />
       <code value="5" />
@@ -3558,7 +3558,7 @@
       <type>
         <code value="string" />
       </type>
-      <fixedString value="The date the Condition, Problem or Diagnosis as recognised by a Clinician was recorded" />
+      <fixedString value="The date the Medication was prescribed" />
       <condition value="ele-1" />
       <constraint>
         <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-expression">
@@ -3969,7 +3969,7 @@
       <type>
         <code value="string" />
       </type>
-      <fixedString value="The Site Code of where the Condition, Problem or Diagnosis as recognised by a Clinician was recorded" />
+      <fixedString value="The Site Code of where the Medication was recorded/prescribed" />
       <condition value="ele-1" />
       <constraint>
         <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-expression">
@@ -4380,7 +4380,7 @@
       <type>
         <code value="string" />
       </type>
-      <fixedString value="Organisation recording the Condition, Problem or Diagnosis as recognised by a Clinician" />
+      <fixedString value="Organisation recording the prescribed Medication" />
       <condition value="ele-1" />
       <constraint>
         <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-expression">
@@ -4791,7 +4791,7 @@
       <type>
         <code value="string" />
       </type>
-      <fixedString value="Professional Group of the Professional recording  the Condition, Problem or Diagnosis " />
+      <fixedString value="Professional Group of the Professional recording prescribed Medication" />
       <condition value="ele-1" />
       <constraint>
         <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-expression">
@@ -5209,7 +5209,7 @@
       <type>
         <code value="string" />
       </type>
-      <fixedString value="Code of the Professional recording  the Condition, Problem or Diagnosis " />
+      <fixedString value="Code of the Professional recording the prescibed Medication" />
       <condition value="ele-1" />
       <constraint>
         <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-expression">
@@ -7614,7 +7614,7 @@
     <element>
       <path value="QuestionnaireResponse.group.question.text" />
       <min value="1" />
-      <fixedString value="The date the Condition, Problem or Diagnosis as recognised by a Clinician was recorded" />
+      <fixedString value="The date the Medication was prescribed" />
     </element>
     <element>
       <path value="QuestionnaireResponse.group.question.answer" />
@@ -7653,7 +7653,7 @@
     <element>
       <path value="QuestionnaireResponse.group.question.text" />
       <min value="1" />
-      <fixedString value="The Site Code of where the Condition, Problem or Diagnosis as recognised by a Clinician was recorded" />
+      <fixedString value="The Site Code of where the Medication was recorded/prescribed" />
     </element>
     <element>
       <path value="QuestionnaireResponse.group.question.answer" />
@@ -7692,7 +7692,7 @@
     <element>
       <path value="QuestionnaireResponse.group.question.text" />
       <min value="1" />
-      <fixedString value="Organisation recording the Condition, Problem or Diagnosis as recognised by a Clinician" />
+      <fixedString value="Organisation recording the prescribed Medication" />
     </element>
     <element>
       <path value="QuestionnaireResponse.group.question.answer" />
@@ -7731,7 +7731,7 @@
     <element>
       <path value="QuestionnaireResponse.group.question.text" />
       <min value="1" />
-      <fixedString value="Professional Group of the Professional recording  the Condition, Problem or Diagnosis " />
+      <fixedString value="Professional Group of the Professional recording prescribed Medication" />
     </element>
     <element>
       <path value="QuestionnaireResponse.group.question.answer" />
@@ -7777,7 +7777,7 @@
     <element>
       <path value="QuestionnaireResponse.group.question.text" />
       <min value="1" />
-      <fixedString value="Code of the Professional recording  the Condition, Problem or Diagnosis " />
+      <fixedString value="Code of the Professional recording the prescibed Medication" />
     </element>
     <element>
       <path value="QuestionnaireResponse.group.question.answer" />
