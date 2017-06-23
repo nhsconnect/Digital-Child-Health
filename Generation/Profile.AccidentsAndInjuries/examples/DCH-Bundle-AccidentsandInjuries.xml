@@ -112,8 +112,8 @@
 					<display value="SAXTON, Sarah Marie"/>
 				</subject>
 				<author>
-					<reference value="urn:uuid:1d67c1f0-4f45-11e7-b114-b2f933d5fe66"/>
-					<display value="RILEY, Amber"/>
+					<reference value="urn:uuid:5ccb6bb7-a7f1-46cc-a5d3-135320765553"/>
+					<display value="Leeds Teaching Hospitals"/>
 				</author>
 				<encounter>
 					<reference value="urn:uuid:1d67bd36-4f45-11e7-b114-b2f933d5fe66"/>
