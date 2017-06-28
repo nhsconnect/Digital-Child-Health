@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <meta>
-    <lastUpdated value="2017-06-05T11:35:04.132+01:00" />
+    <lastUpdated value="2017-06-28T13:10:17.195+01:00" />
     <tag>
       <system value="urn:hscic:publishOrder" />
       <code value="10" />
@@ -5394,10 +5394,6 @@
         <code value="Reference" />
         <profile value="http://hl7.org/fhir/StructureDefinition/DiagnosticReport" />
       </type>
-      <type>
-        <code value="Reference" />
-        <profile value="https://fhir.hl7.org.uk/StructureDefinition/CareConnect-DCH-BCGCountry-Observation-1" />
-      </type>
       <condition value="ele-1" />
       <condition value="con-1" />
       <constraint>
@@ -7472,10 +7468,6 @@
       <type>
         <code value="Reference" />
         <profile value="http://hl7.org/fhir/StructureDefinition/DiagnosticReport" />
-      </type>
-      <type>
-        <code value="Reference" />
-        <profile value="https://fhir.hl7.org.uk/StructureDefinition/CareConnect-DCH-BCGCountry-Observation-1" />
       </type>
     </element>
     <element>

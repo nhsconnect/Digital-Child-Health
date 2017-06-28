@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <meta>
-    <lastUpdated value="2017-06-05T11:55:20.843+01:00" />
+    <lastUpdated value="2017-06-28T13:12:57.179+01:00" />
     <tag>
       <system value="urn:hscic:publishOrder" />
       <code value="10" />
@@ -5394,10 +5394,6 @@
         <code value="Reference" />
         <profile value="http://hl7.org/fhir/StructureDefinition/DiagnosticReport" />
       </type>
-      <type>
-        <code value="Reference" />
-        <profile value="https://fhir.hl7.org.uk/StructureDefinition/CareConnect-DCH-BCGCountry-Observation-1" />
-      </type>
       <condition value="ele-1" />
       <condition value="con-1" />
       <constraint>
@@ -5438,7 +5434,7 @@
       <definition value="Supporting Evidence / manifestations that are the basis on which this condition is suspected or confirmed." />
       <comments value="The evidence may be a simple list of coded symptoms/manifestations, or references to observations or formal assessments, or both." />
       <min value="0" />
-      <max value="*" />
+      <max value="0" />
       <base>
         <path value="Condition.evidence" />
         <min value="0" />
@@ -6099,7 +6095,7 @@
       </base>
       <type>
         <code value="Reference" />
-        <profile value="https://fhir.hl7.org.uk/StructureDefinition/CareConnect-DCH-BCGCountry-Observation-1" />
+        <profile value="http://hl7.org/fhir/StructureDefinition/Resource" />
       </type>
       <condition value="ele-1" />
       <condition value="con-2" />
@@ -6206,7 +6202,7 @@
       <short value="Relative, internal or absolute URL reference" />
       <definition value="A reference to a location at which the other resource is found. The reference may be a relative reference, in which case it is relative to the service base URL, or an absolute URL that resolves to the location where the resource is found. The reference may be version specific or not. If the reference is not to a FHIR RESTful server, then it should be assumed to be version specific. Internal fragment references (start with '#') refer to contained resources." />
       <comments value="Using absolute URLs provides a stable scalable approach suitable for a cloud/web context, while using relative/logical references provides a flexible approach suitable for use when trading across closed eco-system boundaries.   Absolute URLs do not need to point to a FHIR RESTful server, though this is the preferred approach. If the URL conforms to the structure &quot;/[type]/[id]&quot; then it should be assumed that the reference is to a FHIR RESTful server." />
-      <min value="1" />
+      <min value="0" />
       <max value="1" />
       <base>
         <path value="Reference.reference" />
@@ -7469,25 +7465,14 @@
         <code value="Reference" />
         <profile value="http://hl7.org/fhir/StructureDefinition/DiagnosticReport" />
       </type>
-      <type>
-        <code value="Reference" />
-        <profile value="https://fhir.hl7.org.uk/StructureDefinition/CareConnect-DCH-BCGCountry-Observation-1" />
-      </type>
+    </element>
+    <element>
+      <path value="Condition.evidence" />
+      <max value="0" />
     </element>
     <element>
       <path value="Condition.evidence.code" />
       <max value="0" />
-    </element>
-    <element>
-      <path value="Condition.evidence.detail" />
-      <type>
-        <code value="Reference" />
-        <profile value="https://fhir.hl7.org.uk/StructureDefinition/CareConnect-DCH-BCGCountry-Observation-1" />
-      </type>
-    </element>
-    <element>
-      <path value="Condition.evidence.detail.reference" />
-      <min value="1" />
     </element>
     <element>
       <path value="Condition.bodySite" />

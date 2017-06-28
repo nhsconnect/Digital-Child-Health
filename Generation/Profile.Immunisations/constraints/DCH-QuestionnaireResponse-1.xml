@@ -1,7 +1,7 @@
-<?xml version="1.0" encoding="utf-8"?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <meta>
-    <lastUpdated value="2017-06-07T10:07:18.987+01:00" />
+    <lastUpdated value="2017-06-28T13:12:36.637+01:00" />
     <tag>
       <system value="urn:hscic:publishOrder" />
       <code value="5" />
@@ -7194,7 +7194,7 @@
       </type>
       <type>
         <code value="Reference" />
-        <profile value="https://fhir.hl7.org.uk/StructureDefinition/CareConnect-DCH-BCGCountry-Observation-1" />
+        <profile value="https://fhir.hl7.org.uk/StructureDefinition/CareConnect-DCH-BCGVaccinationRequirement-Condition-1" />
       </type>
       <condition value="ele-1" />
       <constraint>
@@ -7605,7 +7605,7 @@
       </type>
       <type>
         <code value="Reference" />
-        <profile value="https://fhir.hl7.org.uk/StructureDefinition/CareConnect-DCH-BCGCountry-Observation-1" />
+        <profile value="https://fhir.hl7.org.uk/StructureDefinition/CareConnect-DCH-BCGVaccinationRequirement-Condition-1" />
       </type>
       <condition value="ele-1" />
       <constraint>
@@ -8016,7 +8016,7 @@
       </type>
       <type>
         <code value="Reference" />
-        <profile value="https://fhir.hl7.org.uk/StructureDefinition/CareConnect-DCH-BCGCountry-Observation-1" />
+        <profile value="https://fhir.hl7.org.uk/StructureDefinition/CareConnect-DCH-BCGVaccinationRequirement-Condition-1" />
       </type>
       <condition value="ele-1" />
       <constraint>
@@ -20253,7 +20253,7 @@
       </type>
       <type>
         <code value="Reference" />
-        <profile value="https://fhir.hl7.org.uk/StructureDefinition/CareConnect-DCH-BCGCountry-Observation-1" />
+        <profile value="https://fhir.hl7.org.uk/StructureDefinition/CareConnect-DCH-BCGVaccinationRequirement-Condition-1" />
       </type>
     </element>
     <element>
@@ -20292,7 +20292,7 @@
       </type>
       <type>
         <code value="Reference" />
-        <profile value="https://fhir.hl7.org.uk/StructureDefinition/CareConnect-DCH-BCGCountry-Observation-1" />
+        <profile value="https://fhir.hl7.org.uk/StructureDefinition/CareConnect-DCH-BCGVaccinationRequirement-Condition-1" />
       </type>
     </element>
     <element>
@@ -20331,7 +20331,7 @@
       </type>
       <type>
         <code value="Reference" />
-        <profile value="https://fhir.hl7.org.uk/StructureDefinition/CareConnect-DCH-BCGCountry-Observation-1" />
+        <profile value="https://fhir.hl7.org.uk/StructureDefinition/CareConnect-DCH-BCGVaccinationRequirement-Condition-1" />
       </type>
     </element>
     <element>

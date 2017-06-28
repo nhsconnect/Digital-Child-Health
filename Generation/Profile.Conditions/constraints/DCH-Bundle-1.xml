@@ -6,6 +6,11 @@
       <system value="urn:hscic:publishOrder" />
       <code value="1" />
     </tag>
+    <tag>
+      <system value="urn:hscic:examples" />
+      <code value="DCH-Bundle-Conditions" />
+      <display value="DCH-Bundle-Conditions" />
+    </tag>
   </meta>
   <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm">
     <valueInteger value="3" />

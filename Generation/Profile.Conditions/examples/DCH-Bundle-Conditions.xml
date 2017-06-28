@@ -1,16 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!--This example message is provided for illustrative purposes only. It has had no clinical validation. Where there are conflicts with the written message specification or schema, the specification or schema shall be considered to take precedence-->
 <Bundle xmlns="http://hl7.org/fhir" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://hl7.org/fhir ../../Schemas/bundle.xsd">
-	<id value="1d67b8fe-4f45-11e7-b114-b2f933d5fe66"/>
+	<id value="e9dbe6b4-5bdc-11e7-907b-a6006ad3dba0"/>
 	<meta>
 		<profile value="https://fhir.nhs.uk/StructureDefinition/DCH-Bundle-1"/>
 	</meta>
 	<type value="message"/>
 	<entry>
-		<fullUrl value="urn:uuid:1d67bb60-4f45-11e7-b114-b2f933d5fe66"/>
+		<fullUrl value="urn:uuid:e9dbeab0-5bdc-11e7-907b-a6006ad3dba0"/>
 		<resource>
 			<MessageHeader>
-				<id value="1d67bb60-4f45-11e7-b114-b2f933d5fe66"/>
+				<id value="e9dbeab0-5bdc-11e7-907b-a6006ad3dba0"/>
 				<meta>
 					<profile value="https://fhir.nhs.uk/StructureDefinition/DCH-MessageHeader-1"/>
 				</meta>
@@ -26,8 +26,8 @@
 				<timestamp value="2012-03-08T09:00:00+00:00"/>
 				<event>
 					<system value="https://fhir.nhs.uk/dch-childhealtheventtype-1"/>
-					<code value="Accidents and Injuries"/>
-					<display value="Accidents and Injuries"/>
+					<code value="Conditions"/>
+					<display value="Conditions"/>
 				</event>
 				<source>
 					<endpoint value="urn:uuid:1d67bb60-4f45-11e7-b114-b2f933d5fe66"/>
@@ -37,7 +37,7 @@
 					<display value="Leeds Teaching Hospitals"/>
 				</responsible>
 				<data>
-					<reference value="urn:uuid:1d67c2d6-4f45-11e7-b114-b2f933d5fe66"/>
+					<reference value="urn:uuid:e9dbecea-5bdc-11e7-907b-a6006ad3dba0"/>
 				</data>
 			</MessageHeader>
 		</resource>
@@ -95,16 +95,16 @@
 		</resource>
 	</entry>
 	<entry>
-		<fullUrl value="urn:uuid:1d67c2d6-4f45-11e7-b114-b2f933d5fe66"/>
+		<fullUrl value="urn:uuid:e9dbecea-5bdc-11e7-907b-a6006ad3dba0"/>
 		<resource>
 			<QuestionnaireResponse>
-				<id value="1d67c2d6-4f45-11e7-b114-b2f933d5fe66"/>
+				<id value="e9dbecea-5bdc-11e7-907b-a6006ad3dba0"/>
 				<meta>
 					<profile value="https://fhir.nhs.uk/StructureDefinition/DCH-QuestionnaireResponse-1"/>
 				</meta>
 				<identifier>
 					<system value="https://tools.ietf.org/html/rfc4122"/>
-					<value value="1d67c2d6-4f45-11e7-b114-b2f933d5fe66"/>
+					<value value="e9dbecea-5bdc-11e7-907b-a6006ad3dba0"/>
 				</identifier>
 				<status value="completed"/>
 				<subject>
@@ -119,9 +119,9 @@
 					<reference value="urn:uuid:1d67bd36-4f45-11e7-b114-b2f933d5fe66"/>
 				</encounter>
 				<group>
-					<title value="Accidents and Injuries"/>
+					<title value="Conditions"/>
 					<question>
-						<text value="The date of the accident/injury."/>
+						<text value="The date the Condition, Problem or Diagnosis as recognised by a Clinician was recorded"/>
 						<answer>
 							<valueDateTime value="2012-03-06T20:25:00+00:00"/>
 						</answer>
@@ -132,7 +132,7 @@
 						</answer>
 					</question>
 					<question>
-						<text value="The Site Code where the Accident/Injury was recorded."/>
+						<text value="The Site Code of where the Condition, Problem or Diagnosis as recognised by a Clinician was recorded"/>
 						<answer>
 							<valueString value="RR830"/>
 						</answer>
@@ -144,7 +144,7 @@
 						</answer>
 					</question>
 					<question>
-						<text value="Organisation recording the Accident/Injury."/>
+						<text value="Organisation recording the Condition, Problem or Diagnosis as recognised by a Clinician"/>
 						<answer>
 							<valueString value="RR8"/>
 						</answer>
@@ -156,7 +156,7 @@
 						</answer>
 					</question>
 					<question>
-						<text value="Professional Group of the Professional recording the Accident/Injury."/>
+						<text value="Professional Group of the Professional recording the Condition, Problem or Diagnosis"/>
 						<answer>
 							<valueString value="R0050"/>
 						</answer>
@@ -167,7 +167,7 @@
 						</answer>
 					</question>
 					<question>
-						<text value="Code of the Professional recording the activity."/>
+						<text value="Code of the Professional recording the Condition, Problem or Diagnosis"/>
 						<answer>
 							<valueString value="PT1357"/>
 						</answer>
@@ -178,74 +178,7 @@
 						</answer>
 					</question>
 					<question>
-						<text value="Description of the Accident/Injury."/>
-						<answer>
-							<valueString value="Parent reported sudden rash to baby's skin developing from face and spreading to chest."/>
-						</answer>
-						<answer>
-							<valueReference>
-								<reference value="urn:uuid:1d67bd36-4f45-11e7-b114-b2f933d5fe66"/>
-							</valueReference>
-						</answer>
-					</question>
-					<question>
-						<text value="The health problems and issues experienced by the patient resulting in a hospital admission."/>
-						<answer>
-							<valueCoding>
-								<system value="http://snomed.info/sct"/>
-								<code value="271807003"/>
-								<display value="Eruption of skin (disorder)"/>
-							</valueCoding>
-						</answer>
-						<answer>
-							<valueReference>
-								<reference value="urn:uuid:1d67c3a8-4f45-11e7-b114-b2f933d5fe66"/>
-							</valueReference>
-						</answer>
-					</question>
-					<question>
-						<text value="Name of person accompanying the child at Accident and Emergency Attendance."/>
-						<answer>
-							<valueString value="SAXTON, Jane"/>
-						</answer>
-						<answer>
-							<valueReference>
-								<reference value="urn:uuid:1d67e0ea-4f45-11e7-b114-b2f933d5fe66"/>
-							</valueReference>
-						</answer>
-					</question>
-					<question>
-						<text value="Relationship of person accompanying the child at Accident and Emergency Attendance."/>
-						<answer>
-							<valueCoding>
-								<system value="http://hl7.org/fhir/v3/RoleCode"/>
-								<code value="NMTH"/>
-								<display value="natural mother"/>
-							</valueCoding>
-						</answer>
-						<answer>
-							<valueReference>
-								<reference value="urn:uuid:1d67e0ea-4f45-11e7-b114-b2f933d5fe66"/>
-							</valueReference>
-						</answer>
-					</question>
-					<question>
-						<text value="A code to identify how the Accident and Emergency Attendance ended."/>
-						<answer>
-							<valueCoding>
-								<system value="https://fhir.nhs.uk/dch-disposalcode-1"/>
-								<code value="02"/>
-								<display value="Discharged - follow up treatment to be provided by GENERAL PRACTITIONER"/>
-							</valueCoding>
-						</answer>
-						<answer>
-							<valueReference>
-								<reference value="urn:uuid:1d67bd36-4f45-11e7-b114-b2f933d5fe66"/>
-							</valueReference>
-						</answer>
-					</question>
-					<question>
-						<text value="Diagnosis made as a result of the Accident and Emergency Attendance."/>
+						<text value="The provisional Diagnosis of the child or young person"/>
 						<answer>
 							<valueCoding>
 								<system value="http://snomed.info/sct"/>
@@ -253,6 +186,45 @@
 								<display value="Erythroderma neonatorum (disorder)"/>
 							</valueCoding>
 						</answer>
+						<answer>
+							<valueReference>
+								<reference value="urn:uuid:1d67c470-4f45-11e7-b114-b2f933d5fe66"/>
+							</valueReference>
+						</answer>
+					</question>
+					<question>
+						<text value="Clinical status of the Condition, Problem or Diagnosis"/>
+						<answer>
+							<valueCoding>
+								<system value="https://fhir.hl7.org.uk/CareConnect-ConditionClinicalStatus"/>
+								<code value="active"/>
+								<display value="Active"/>
+							</valueCoding>
+						</answer>
+						<answer>
+							<valueReference>
+								<reference value="urn:uuid:1d67c470-4f45-11e7-b114-b2f933d5fe66"/>
+							</valueReference>
+						</answer>
+					</question>
+					<question>
+						<text value="A category assigned to the condition"/>
+						<answer>
+							<valueCoding>
+								<system value="https://fhir.hl7.org.uk/CareConnect-ConditionCategory-1"/>
+								<code value="diagnosis"/>
+								<display value="Diagnosis"/>
+							</valueCoding>
+						</answer>
+						<answer>
+							<valueReference>
+								<reference value="urn:uuid:1d67c470-4f45-11e7-b114-b2f933d5fe66"/>
+							</valueReference>
+						</answer>
+					</question>
+					<question>
+						<text value="Estimated or actual date or date-time the condition began, in the opinion of the clinician"/>
+						<answer/>
 						<answer>
 							<valueReference>
 								<reference value="urn:uuid:1d67c470-4f45-11e7-b114-b2f933d5fe66"/>
@@ -322,48 +294,6 @@
 		</resource>
 	</entry>
 	<entry>
-		<fullUrl value="urn:uuid:1d67c3a8-4f45-11e7-b114-b2f933d5fe66"/>
-		<resource>
-			<Condition>
-				<id value="1d67c3a8-4f45-11e7-b114-b2f933d5fe66"/>
-				<meta>
-					<profile value="https://fhir.hl7.org.uk/StructureDefinition/CareConnect-DCH-Condition-1"/>
-				</meta>
-				<identifier>
-					<system value="https://tools.ietf.org/html/rfc4122"/>
-					<value value="1d67c3a8-4f45-11e7-b114-b2f933d5fe66"/>
-				</identifier>
-				<patient>
-					<reference value="urn:uuid:7368c5fe-bbb4-4e9c-a585-234e06b84e82"/>
-					<display value="SAXTON, Sarah Marie"/>
-				</patient>
-				<encounter>
-					<reference value="urn:uuid:1d67bd36-4f45-11e7-b114-b2f933d5fe66"/>
-				</encounter>
-				<asserter>
-					<reference value="urn:uuid:1d67c1f0-4f45-11e7-b114-b2f933d5fe66"/>
-					<display value="RILEY, Amber"/>
-				</asserter>
-				<dateRecorded value="2012-03-06"/>
-				<code>
-					<coding>
-						<system value="http://snomed.info/sct"/>
-						<code value="271807003"/>
-						<display value="Eruption of skin (disorder)"/>
-					</coding>
-				</code>
-				<category>
-					<coding>
-						<system value="https://hl7.org.uk/fhir/CareConnect-ConditionCategory-1"/>
-						<code value="complaint"/>
-						<display value="Complaint"/>
-					</coding>
-				</category>
-				<verificationStatus value="confirmed"/>
-			</Condition>
-		</resource>
-	</entry>
-	<entry>
 		<fullUrl value="urn:uuid:1d67c470-4f45-11e7-b114-b2f933d5fe66"/>
 		<resource>
 			<Condition>
@@ -405,37 +335,6 @@
 				<verificationStatus value="confirmed"/>
 				<onsetDateTime value="2012-03-06T16:00:00+00:00"/>
 			</Condition>
-		</resource>
-	</entry>
-	<entry>
-		<fullUrl value="urn:uuid:1d67e0ea-4f45-11e7-b114-b2f933d5fe66"/>
-		<resource>
-			<RelatedPerson>
-				<id value="1d67e0ea-4f45-11e7-b114-b2f933d5fe66"/>
-				<meta>
-					<profile value="https://fhir.nhs.uk/StructureDefinition/DCH-RelatedPerson-1"/>
-				</meta>
-				<identifier>
-					<system value="https://tools.ietf.org/html/rfc4122"/>
-					<value value="1d67e022-4f45-11e7-b114-b2f933d5fe66"/>
-				</identifier>
-				<patient>
-					<reference value="urn:uuid:7368c5fe-bbb4-4e9c-a585-234e06b84e82"/>
-					<display value="SAXTON, Sarah Marie"/>
-				</patient>
-				<relationship>
-					<coding>
-						<system value="http://hl7.org/fhir/v3/RoleCode"/>
-						<code value="NMTH"/>
-						<display value="natural mother"/>
-					</coding>
-				</relationship>
-				<name>
-					<use value="usual"/>
-					<family value="SAXTON"/>
-					<given value="Jane"/>
-				</name>
-			</RelatedPerson>
 		</resource>
 	</entry>
 	<entry>
