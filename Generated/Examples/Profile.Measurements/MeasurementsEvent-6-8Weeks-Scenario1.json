@@ -155,7 +155,15 @@
           }
         ],
         "gender": "male",
-        "birthDate": "2012-01-03"
+        "birthDate": "2012-01-03",
+        "_birthDate": {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/patient-birthTime",
+              "valueDateTime": "2012-01-03T09:36:00+00:00"
+            }
+          ]
+        }
       }
     },
     {

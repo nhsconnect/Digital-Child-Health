@@ -20,13 +20,13 @@
         },
         "extension": [
           {
-            "url": "https://fhir.nhs.uk/StructureDefinition/Extension-DCH-ChildHealthEventType-1",
+            "url": "https://fhir.nhs.uk/StructureDefinition/Extension-DCH-EventMessageType-1",
             "valueCodeableConcept": {
               "coding": [
                 {
-                  "system": "https://fhir.nhs.uk/dch-childhealtheventtype-1",
-                  "code": "Medical History",
-                  "display": "Medical History"
+                  "system": "https://fhir.nhs.uk/dch-messageeventtype-1",
+                  "code": "new",
+                  "display": "New event message"
                 }
               ]
             }
@@ -34,9 +34,9 @@
         ],
         "timestamp": "2012-03-08T09:00:00+00:00",
         "event": {
-          "system": "https://fhir.nhs.uk/dch-messageeventtype-1",
-          "code": "new",
-          "display": "New event message"
+          "system": "https://fhir.nhs.uk/dch-childhealtheventtype-1",
+          "code": "Accidents and Injuries",
+          "display": "Accidents and Injuries"
         },
         "source": {
           "endpoint": "urn:uuid:1d67bb60-4f45-11e7-b114-b2f933d5fe66"
@@ -47,7 +47,7 @@
         },
         "data": [
           {
-            "reference": "urn:uuid:1d67bd36-4f45-11e7-b114-b2f933d5fe66"
+            "reference": "urn:uuid:1d67c2d6-4f45-11e7-b114-b2f933d5fe66"
           }
         ]
       }
@@ -114,6 +114,7 @@
           }
         ],
         "gender": "female",
+        "birthDate": "2012-01-07",
         "_birthDate": {
           "extension": [
             {
@@ -121,79 +122,6 @@
               "valueDateTime": "2012-01-07T20:12:00+00:00"
             }
           ]
-        }
-      }
-    },
-    {
-      "fullUrl": "urn:uuid:1d67bd36-4f45-11e7-b114-b2f933d5fe66",
-      "resource": {
-        "resourceType": "Encounter",
-        "id": "1d67bd36-4f45-11e7-b114-b2f933d5fe66",
-        "meta": {
-          "profile": [
-            "https://fhir.hl7.org.uk/StructureDefinition/CareConnect-DCH-Encounter-1"
-          ]
-        },
-        "identifier": [
-          {
-            "system": "https://tools.ietf.org/html/rfc4122",
-            "value": "1d67be12-4f45-11e7-b114-b2f933d5fe66"
-          }
-        ],
-        "status": "finished",
-        "class": "emergency",
-        "type": [
-          {
-            "coding": [
-              {
-                "system": "http://snomed.info/sct",
-                "code": "4525004",
-                "display": "Emergency department patient visit (procedure)"
-              }
-            ]
-          },
-          {
-            "coding": [
-              {
-                "system": "https://fhir.nhs.uk/dch-childhealthencountertype-1",
-                "code": "Accidents and Injuries",
-                "display": "Accidents and Injuries"
-              }
-            ]
-          }
-        ],
-        "patient": {
-          "reference": "urn:uuid:7368c5fe-bbb4-4e9c-a585-234e06b84e82",
-          "display": "SAXTON, Sarah Marie"
-        },
-        "participant": [
-          {
-            "individual": {
-              "reference": "urn:uuid:1d67c1f0-4f45-11e7-b114-b2f933d5fe66",
-              "display": "RILEY, Amber"
-            }
-          }
-        ],
-        "period": {
-          "start": "2012-03-06T20:25:00+00:00",
-          "end": "2012-03-06T22:00:00+00:00"
-        },
-        "reason": [
-          {
-            "text": "Parent reported sudden rash to baby's skin developing from face and spreading to chest."
-          }
-        ],
-        "location": [
-          {
-            "location": {
-              "reference": "urn:uuid:00e72e70-0e37-48b5-b950-ca5ce8c35de7",
-              "display": "Accident and Emergency Department, Leeds General Infirmary"
-            }
-          }
-        ],
-        "serviceProvider": {
-          "reference": "urn:uuid:5ccb6bb7-a7f1-46cc-a5d3-135320765553",
-          "display": "Leeds Teaching Hospitals NHS Trust"
         }
       }
     },
@@ -217,8 +145,8 @@
           "display": "SAXTON, Sarah Marie"
         },
         "author": {
-          "reference": "urn:uuid:1d67c1f0-4f45-11e7-b114-b2f933d5fe66",
-          "display": "RILEY, Amber"
+          "reference": "urn:uuid:5ccb6bb7-a7f1-46cc-a5d3-135320765553",
+          "display": "Leeds Teaching Hospitals"
         },
         "encounter": {
           "reference": "urn:uuid:1d67bd36-4f45-11e7-b114-b2f933d5fe66"
@@ -392,6 +320,79 @@
       }
     },
     {
+      "fullUrl": "urn:uuid:1d67bd36-4f45-11e7-b114-b2f933d5fe66",
+      "resource": {
+        "resourceType": "Encounter",
+        "id": "1d67bd36-4f45-11e7-b114-b2f933d5fe66",
+        "meta": {
+          "profile": [
+            "https://fhir.hl7.org.uk/StructureDefinition/CareConnect-DCH-Encounter-1"
+          ]
+        },
+        "identifier": [
+          {
+            "system": "https://tools.ietf.org/html/rfc4122",
+            "value": "1d67be12-4f45-11e7-b114-b2f933d5fe66"
+          }
+        ],
+        "status": "finished",
+        "class": "emergency",
+        "type": [
+          {
+            "coding": [
+              {
+                "system": "http://snomed.info/sct",
+                "code": "4525004",
+                "display": "Emergency department patient visit (procedure)"
+              }
+            ]
+          },
+          {
+            "coding": [
+              {
+                "system": "https://fhir.nhs.uk/dch-childhealthencountertype-1",
+                "code": "Accidents and Injuries",
+                "display": "Accidents and Injuries"
+              }
+            ]
+          }
+        ],
+        "patient": {
+          "reference": "urn:uuid:7368c5fe-bbb4-4e9c-a585-234e06b84e82",
+          "display": "SAXTON, Sarah Marie"
+        },
+        "participant": [
+          {
+            "individual": {
+              "reference": "urn:uuid:1d67c1f0-4f45-11e7-b114-b2f933d5fe66",
+              "display": "RILEY, Amber"
+            }
+          }
+        ],
+        "period": {
+          "start": "2012-03-06T20:25:00+00:00",
+          "end": "2012-03-06T22:00:00+00:00"
+        },
+        "reason": [
+          {
+            "text": "Parent reported sudden rash to baby's skin developing from face and spreading to chest."
+          }
+        ],
+        "location": [
+          {
+            "location": {
+              "reference": "urn:uuid:00e72e70-0e37-48b5-b950-ca5ce8c35de7",
+              "display": "Accident and Emergency Department, Leeds General Infirmary"
+            }
+          }
+        ],
+        "serviceProvider": {
+          "reference": "urn:uuid:5ccb6bb7-a7f1-46cc-a5d3-135320765553",
+          "display": "Leeds Teaching Hospitals NHS Trust"
+        }
+      }
+    },
+    {
       "fullUrl": "urn:uuid:1d67c3a8-4f45-11e7-b114-b2f933d5fe66",
       "resource": {
         "resourceType": "Condition",
@@ -412,7 +413,7 @@
           "display": "SAXTON, Sarah Marie"
         },
         "encounter": {
-          "reference": "urn:uuid:urn:uuid:1d67bd36-4f45-11e7-b114-b2f933d5fe66"
+          "reference": "urn:uuid:1d67bd36-4f45-11e7-b114-b2f933d5fe66"
         },
         "asserter": {
           "reference": "urn:uuid:1d67c1f0-4f45-11e7-b114-b2f933d5fe66",
@@ -461,7 +462,7 @@
           "display": "SAXTON, Sarah Marie"
         },
         "encounter": {
-          "reference": "urn:uuid:urn:uuid:1d67bd36-4f45-11e7-b114-b2f933d5fe66"
+          "reference": "urn:uuid:1d67bd36-4f45-11e7-b114-b2f933d5fe66"
         },
         "asserter": {
           "reference": "urn:uuid:1d67c1f0-4f45-11e7-b114-b2f933d5fe66",
@@ -486,7 +487,9 @@
             }
           ]
         },
-        "verificationStatus": "confirmed"
+        "clinicalStatus": "active",
+        "verificationStatus": "confirmed",
+        "onsetDateTime": "2012-03-06T16:00:00+00:00"
       }
     },
     {
@@ -536,7 +539,7 @@
         "id": "00e72e70-0e37-48b5-b950-ca5ce8c35de7",
         "meta": {
           "profile": [
-            "https://fhir.hl7.org.uk/StructureDefinition/CareConnect-DCH-Organization-1"
+            "https://fhir.hl7.org.uk/StructureDefinition/CareConnect-Organization-1"
           ]
         },
         "identifier": [

@@ -1,7 +1,7 @@
 {
   "resourceType": "StructureDefinition",
   "meta": {
-    "lastUpdated": "2017-06-12T14:23:40.372+01:00",
+    "lastUpdated": "2017-06-12T13:50:04.368+01:00",
     "tag": [
       {
         "system": "urn:hscic:publishOrder",
@@ -38,7 +38,7 @@
     }
   ],
   "date": "2015-09-22T11:02:49+01:00",
-  "description": "This Bundle resource is constrained to represent a set of resources for a Child Health Event.",
+  "description": "This Bundle resource is constrained to represent a set of resources for a Child Health event.",
   "copyright": "Copyright © 2016 Health and Social Care Information Centre. NHS Digital is the trading name of the Health and Social Care Information Centre.",
   "fhirVersion": "1.0.1",
   "kind": "resource",

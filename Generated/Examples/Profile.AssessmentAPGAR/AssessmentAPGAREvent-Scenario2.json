@@ -161,6 +161,7 @@
           }
         ],
         "gender": "female",
+        "birthDate": "2012-01-07",
         "_birthDate": {
           "extension": [
             {

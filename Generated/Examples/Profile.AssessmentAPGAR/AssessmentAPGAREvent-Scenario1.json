@@ -165,7 +165,7 @@
           "extension": [
             {
               "url": "http://hl7.org/fhir/StructureDefinition/patient-birthTime",
-              "valueTime": "09:36:00"
+              "valueDateTime": "2012-01-03T09:36:00+00:00"
             }
           ]
         }

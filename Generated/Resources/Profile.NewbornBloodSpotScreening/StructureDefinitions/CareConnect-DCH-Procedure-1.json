@@ -15,7 +15,7 @@
   "status": "draft",
   "publisher": "HL7 UK",
   "date": "2017-03-02T10:44:39.7203604Z",
-  "description": "This Procedure resource records an action that is or was performed on a patient, with further constraints applied for a procedure performed during a Child Health Event.",
+  "description": "This Procedure resource records an action that is or was performed on a patient, with further constraints applied for a procedure performed during a Child Health event.",
   "copyright": "Copyright © 2016 HL7 UK\r\n\r\nLicensed under the Apache License, Version 2.0 (the \"License\"); you may not use this file except in compliance with the License. You may obtain a copy of the License at\r\n\r\nhttp://www.apache.org/licenses/LICENSE-2.0\r\n\r\nUnless required by applicable law or agreed to in writing, software distributed under the License is distributed on an \"AS IS\" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the License for the specific language governing permissions and limitations under the License.\r\n\r\nHL7® FHIR® standard Copyright © 2011+ HL7\r\n\r\nThe HL7® FHIR® standard is used under the FHIR license. You may obtain a copy of the FHIR license at\r\n\r\nhttps://www.hl7.org/fhir/license.html",
   "fhirVersion": "1.0.2",
   "kind": "resource",
@@ -4766,7 +4766,7 @@
           {
             "code": "Reference",
             "profile": [
-              "https://fhir.hl7.org.uk/StructureDefinition/CareConnect-DCH-Practitioner-1"
+              "https://fhir.hl7.org.uk/StructureDefinition/CareConnect-Practitioner-1"
             ]
           }
         ],
@@ -6113,7 +6113,7 @@
           {
             "code": "Reference",
             "profile": [
-              "https://fhir.hl7.org.uk/StructureDefinition/CareConnect-DCH-Organization-1"
+              "https://fhir.hl7.org.uk/StructureDefinition/CareConnect-Organization-1"
             ]
           }
         ],
@@ -10615,7 +10615,7 @@
           {
             "code": "Reference",
             "profile": [
-              "https://fhir.hl7.org.uk/StructureDefinition/CareConnect-DCH-Practitioner-1"
+              "https://fhir.hl7.org.uk/StructureDefinition/CareConnect-Practitioner-1"
             ]
           }
         ]
@@ -10705,7 +10705,7 @@
           {
             "code": "Reference",
             "profile": [
-              "https://fhir.hl7.org.uk/StructureDefinition/CareConnect-DCH-Organization-1"
+              "https://fhir.hl7.org.uk/StructureDefinition/CareConnect-Organization-1"
             ]
           }
         ]

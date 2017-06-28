@@ -4002,7 +4002,7 @@
           {
             "code": "Reference",
             "profile": [
-              "https://fhir.hl7.org.uk/StructureDefinition/CareConnect-DCH-Practitioner-1"
+              "https://fhir.hl7.org.uk/StructureDefinition/CareConnect-Practitioner-1"
             ]
           }
         ],
@@ -9345,7 +9345,7 @@
           {
             "code": "Reference",
             "profile": [
-              "https://fhir.hl7.org.uk/StructureDefinition/CareConnect-DCH-Practitioner-1"
+              "https://fhir.hl7.org.uk/StructureDefinition/CareConnect-Practitioner-1"
             ]
           }
         ]

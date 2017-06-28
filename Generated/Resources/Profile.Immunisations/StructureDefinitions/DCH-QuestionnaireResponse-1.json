@@ -1,11 +1,11 @@
 {
   "resourceType": "StructureDefinition",
   "meta": {
-    "lastUpdated": "2017-06-07T10:07:18.987+01:00",
+    "lastUpdated": "2017-06-28T13:12:36.637+01:00",
     "tag": [
       {
         "system": "urn:hscic:publishOrder",
-        "code": "6"
+        "code": "5"
       }
     ]
   },
@@ -27,7 +27,7 @@
     }
   ],
   "date": "2017-06-01T09:44:18.4376117+01:00",
-  "description": "This Questionnaire Response resource is constrained to represent a questionnaire response for a Child Health Event.",
+  "description": "This Questionnaire Response resource is constrained to represent a questionnaire response for a Child Health event.",
   "copyright": "Copyright © 2016 Health and Social Care Information Centre. NHS Digital is the trading name of the Health and Social Care Information Centre.",
   "fhirVersion": "1.0.2",
   "kind": "resource",
@@ -2562,13 +2562,13 @@
           {
             "code": "Reference",
             "profile": [
-              "https://fhir.hl7.org.uk/StructureDefinition/CareConnect-DCH-Practitioner-1"
+              "https://fhir.hl7.org.uk/StructureDefinition/CareConnect-Practitioner-1"
             ]
           },
           {
             "code": "Reference",
             "profile": [
-              "https://fhir.hl7.org.uk/StructureDefinition/CareConnect-DCH-Organization-1"
+              "https://fhir.hl7.org.uk/StructureDefinition/CareConnect-Organization-1"
             ]
           }
         ],
@@ -9490,7 +9490,7 @@
           {
             "code": "Reference",
             "profile": [
-              "https://fhir.hl7.org.uk/StructureDefinition/CareConnect-DCH-BCGCountry-Observation-1"
+              "https://fhir.hl7.org.uk/StructureDefinition/CareConnect-DCH-BCGVaccinationRequirement-Condition-1"
             ]
           }
         ],
@@ -10039,7 +10039,7 @@
           {
             "code": "Reference",
             "profile": [
-              "https://fhir.hl7.org.uk/StructureDefinition/CareConnect-DCH-BCGCountry-Observation-1"
+              "https://fhir.hl7.org.uk/StructureDefinition/CareConnect-DCH-BCGVaccinationRequirement-Condition-1"
             ]
           }
         ],
@@ -10588,7 +10588,7 @@
           {
             "code": "Reference",
             "profile": [
-              "https://fhir.hl7.org.uk/StructureDefinition/CareConnect-DCH-BCGCountry-Observation-1"
+              "https://fhir.hl7.org.uk/StructureDefinition/CareConnect-DCH-BCGVaccinationRequirement-Condition-1"
             ]
           }
         ],
@@ -17423,7 +17423,7 @@
           {
             "code": "Reference",
             "profile": [
-              "https://fhir.hl7.org.uk/StructureDefinition/CareConnect-DCH-Organization-1"
+              "https://fhir.hl7.org.uk/StructureDefinition/CareConnect-Organization-1"
             ]
           }
         ],
@@ -22367,7 +22367,7 @@
           {
             "code": "Reference",
             "profile": [
-              "https://fhir.hl7.org.uk/StructureDefinition/CareConnect-DCH-Practitioner-1"
+              "https://fhir.hl7.org.uk/StructureDefinition/CareConnect-Practitioner-1"
             ]
           }
         ],
@@ -22923,7 +22923,7 @@
           {
             "code": "Reference",
             "profile": [
-              "https://fhir.hl7.org.uk/StructureDefinition/CareConnect-DCH-Practitioner-1"
+              "https://fhir.hl7.org.uk/StructureDefinition/CareConnect-Practitioner-1"
             ]
           }
         ],
@@ -23472,7 +23472,7 @@
           {
             "code": "Reference",
             "profile": [
-              "https://fhir.hl7.org.uk/StructureDefinition/CareConnect-DCH-Organization-1"
+              "https://fhir.hl7.org.uk/StructureDefinition/CareConnect-Organization-1"
             ]
           }
         ],
@@ -24021,7 +24021,7 @@
           {
             "code": "Reference",
             "profile": [
-              "https://fhir.hl7.org.uk/StructureDefinition/CareConnect-DCH-Organization-1"
+              "https://fhir.hl7.org.uk/StructureDefinition/CareConnect-Organization-1"
             ]
           }
         ],
@@ -26454,13 +26454,13 @@
           {
             "code": "Reference",
             "profile": [
-              "https://fhir.hl7.org.uk/StructureDefinition/CareConnect-DCH-Practitioner-1"
+              "https://fhir.hl7.org.uk/StructureDefinition/CareConnect-Practitioner-1"
             ]
           },
           {
             "code": "Reference",
             "profile": [
-              "https://fhir.hl7.org.uk/StructureDefinition/CareConnect-DCH-Organization-1"
+              "https://fhir.hl7.org.uk/StructureDefinition/CareConnect-Organization-1"
             ]
           }
         ]
@@ -26835,7 +26835,7 @@
           {
             "code": "Reference",
             "profile": [
-              "https://fhir.hl7.org.uk/StructureDefinition/CareConnect-DCH-BCGCountry-Observation-1"
+              "https://fhir.hl7.org.uk/StructureDefinition/CareConnect-DCH-BCGVaccinationRequirement-Condition-1"
             ]
           }
         ]
@@ -26881,7 +26881,7 @@
           {
             "code": "Reference",
             "profile": [
-              "https://fhir.hl7.org.uk/StructureDefinition/CareConnect-DCH-BCGCountry-Observation-1"
+              "https://fhir.hl7.org.uk/StructureDefinition/CareConnect-DCH-BCGVaccinationRequirement-Condition-1"
             ]
           }
         ]
@@ -26927,7 +26927,7 @@
           {
             "code": "Reference",
             "profile": [
-              "https://fhir.hl7.org.uk/StructureDefinition/CareConnect-DCH-BCGCountry-Observation-1"
+              "https://fhir.hl7.org.uk/StructureDefinition/CareConnect-DCH-BCGVaccinationRequirement-Condition-1"
             ]
           }
         ]
@@ -27459,7 +27459,7 @@
           {
             "code": "Reference",
             "profile": [
-              "https://fhir.hl7.org.uk/StructureDefinition/CareConnect-DCH-Organization-1"
+              "https://fhir.hl7.org.uk/StructureDefinition/CareConnect-Organization-1"
             ]
           }
         ]
@@ -27872,7 +27872,7 @@
           {
             "code": "Reference",
             "profile": [
-              "https://fhir.hl7.org.uk/StructureDefinition/CareConnect-DCH-Practitioner-1"
+              "https://fhir.hl7.org.uk/StructureDefinition/CareConnect-Practitioner-1"
             ]
           }
         ],
@@ -27925,7 +27925,7 @@
           {
             "code": "Reference",
             "profile": [
-              "https://fhir.hl7.org.uk/StructureDefinition/CareConnect-DCH-Practitioner-1"
+              "https://fhir.hl7.org.uk/StructureDefinition/CareConnect-Practitioner-1"
             ]
           }
         ]
@@ -27971,7 +27971,7 @@
           {
             "code": "Reference",
             "profile": [
-              "https://fhir.hl7.org.uk/StructureDefinition/CareConnect-DCH-Organization-1"
+              "https://fhir.hl7.org.uk/StructureDefinition/CareConnect-Organization-1"
             ]
           }
         ]
@@ -28017,7 +28017,7 @@
           {
             "code": "Reference",
             "profile": [
-              "https://fhir.hl7.org.uk/StructureDefinition/CareConnect-DCH-Organization-1"
+              "https://fhir.hl7.org.uk/StructureDefinition/CareConnect-Organization-1"
             ]
           }
         ]

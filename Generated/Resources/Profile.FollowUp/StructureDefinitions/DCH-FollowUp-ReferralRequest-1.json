@@ -1,7 +1,7 @@
 {
   "resourceType": "StructureDefinition",
   "meta": {
-    "lastUpdated": "2017-03-30T14:21:48.66+01:00",
+    "lastUpdated": "2017-06-22T13:40:07.974+01:00",
     "tag": [
       {
         "system": "urn:hscic:publishOrder",
@@ -27,7 +27,7 @@
     }
   ],
   "date": "2017-03-24T20:51:57.4485586Z",
-  "description": "This ReferralRequest has been constrained to represent a Referral Request for a follow up made during a Referral Event.",
+  "description": "This ReferralRequest resource has been constrained to represent a request for a follow up made during a Child Health event.",
   "copyright": "Copyright © 2016 Health and Social Care Information Centre. NHS Digital is the trading name of the Health and Social Care Information Centre.",
   "fhirVersion": "1.0.2",
   "kind": "resource",
@@ -4275,7 +4275,7 @@
           {
             "code": "Reference",
             "profile": [
-              "https://fhir.hl7.org.uk/StructureDefinition/CareConnect-DCH-ChildHealthEvent-Organization-1"
+              "https://fhir.hl7.org.uk/StructureDefinition/CareConnect-Practitioner-1"
             ]
           }
         ],
@@ -4420,7 +4420,7 @@
           {
             "code": "Reference",
             "profile": [
-              "https://fhir.hl7.org.uk/StructureDefinition/CareConnect-DCH-ChildHealthEvent-Encounter-1"
+              "https://fhir.hl7.org.uk/StructureDefinition/CareConnect-DCH-Encounter-1"
             ]
           }
         ],
@@ -6652,7 +6652,7 @@
           {
             "code": "Reference",
             "profile": [
-              "https://fhir.hl7.org.uk/StructureDefinition/CareConnect-DCH-ChildHealthEvent-Organization-1"
+              "https://fhir.hl7.org.uk/StructureDefinition/CareConnect-Practitioner-1"
             ]
           }
         ]
@@ -6668,7 +6668,7 @@
           {
             "code": "Reference",
             "profile": [
-              "https://fhir.hl7.org.uk/StructureDefinition/CareConnect-DCH-ChildHealthEvent-Encounter-1"
+              "https://fhir.hl7.org.uk/StructureDefinition/CareConnect-DCH-Encounter-1"
             ]
           }
         ]

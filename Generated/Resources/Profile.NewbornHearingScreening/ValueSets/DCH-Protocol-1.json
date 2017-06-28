@@ -1,0 +1,28 @@
+{
+  "resourceType": "ValueSet",
+  "meta": {
+    "lastUpdated": "2016-08-03T00:00:00+01:00"
+  },
+  "url": "https://fhir.nhs.uk/ValueSet/DCH-Protocol-1",
+  "version": "1.0.0",
+  "name": "Protocol",
+  "status": "active",
+  "description": "Care Pathway for newborn hearing screening programme (NHSP).",
+  "compose": {
+    "include": [
+      {
+        "system": "https://fhir.nhs.uk/dch-disposalcode-1",
+        "concept": [
+          {
+            "code": "NICU Protocol",
+            "display": "NICU Protocol"
+          },
+          {
+            "code": "Well Baby Protocol",
+            "display": "Well Baby Protocol"
+          }
+        ]
+      }
+    ]
+  }
+}

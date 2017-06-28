@@ -1,7 +1,7 @@
 {
   "resourceType": "StructureDefinition",
   "meta": {
-    "lastUpdated": "2017-06-02T21:19:24.27+01:00",
+    "lastUpdated": "2017-06-23T20:23:40.445+01:00",
     "tag": [
       {
         "system": "urn:hscic:publishOrder",
@@ -446,9 +446,9 @@
       },
       {
         "path": "MessageHeader.extension",
-        "name": "childHealthEventType",
-        "short": "The Child Health Event represented in the message.",
-        "definition": "The Child Health Event represented in the message.",
+        "name": "eventMessageType",
+        "short": "The type of event applicable to the Child Health event message",
+        "definition": "The type of event applicable to the Child Health event message.",
         "comments": "There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone.",
         "alias": [
           "extensions",
@@ -465,7 +465,7 @@
           {
             "code": "Extension",
             "profile": [
-              "https://fhir.nhs.uk/StructureDefinition/Extension-DCH-ChildHealthEventType-1"
+              "https://fhir.nhs.uk/StructureDefinition/Extension-DCH-EventMessageType-1"
             ]
           }
         ],
@@ -604,8 +604,8 @@
       },
       {
         "path": "MessageHeader.event",
-        "short": "new event | delete event",
-        "definition": "Code that identifies the event this message represents and connects it with its definition. Events defined as part of the FHIR specification have the system value \"http://hl7.org/fhir/message-events\".",
+        "short": "The type of Child Health Event",
+        "definition": "The type of Child Health Event.",
         "comments": "Codes may be defined very casually in enumerations or code lists, up to very formal definitions such as SNOMED CT - see the HL7 v3 Core Principles for more information.",
         "requirements": "Drives the behavior associated with this message.",
         "min": 1,
@@ -641,9 +641,9 @@
         "isSummary": true,
         "binding": {
           "strength": "required",
-          "description": "The type of event applicable to the Child Health Event message.",
+          "description": "The type of Child Health Event",
           "valueSetReference": {
-            "reference": "https://fhir.nhs.uk/ValueSet/DCH-MessageEventType-1"
+            "reference": "https://fhir.nhs.uk/ValueSet/DCH-ChildHealthEventType-1"
           }
         },
         "mapping": [
@@ -785,7 +785,7 @@
             "code": "uri"
           }
         ],
-        "fixedUri": "https://fhir.nhs.uk/dch-messageeventtype-1",
+        "fixedUri": "https://fhir.nhs.uk/dch-childhealtheventtype-1",
         "condition": [
           "ele-1"
         ],
@@ -4719,7 +4719,7 @@
           {
             "code": "Reference",
             "profile": [
-              "https://fhir.hl7.org.uk/StructureDefinition/CareConnect-DCH-Encounter-1"
+              "https://fhir.hl7.org.uk/StructureDefinition/DCH-QuestionnaireResponse-1"
             ]
           }
         ],
@@ -4863,7 +4863,7 @@
         "short": "Relative, internal or absolute URL reference",
         "definition": "A reference to a location at which the other resource is found. The reference may be a relative reference, in which case it is relative to the service base URL, or an absolute URL that resolves to the location where the resource is found. The reference may be version specific or not. If the reference is not to a FHIR RESTful server, then it should be assumed to be version specific. Internal fragment references (start with '#') refer to contained resources.",
         "comments": "Using absolute URLs provides a stable scalable approach suitable for a cloud/web context, while using relative/logical references provides a flexible approach suitable for use when trading across closed eco-system boundaries.   Absolute URLs do not need to point to a FHIR RESTful server, though this is the preferred approach. If the URL conforms to the structure \"/[type]/[id]\" then it should be assumed that the reference is to a FHIR RESTful server.",
-        "min": 1,
+        "min": 0,
         "max": "1",
         "base": {
           "path": "Reference.reference",
@@ -4974,28 +4974,27 @@
       },
       {
         "path": "MessageHeader.extension",
-        "name": "childHealthEventType",
-        "short": "The Child Health Event represented in the message.",
-        "definition": "The Child Health Event represented in the message.",
+        "name": "eventMessageType",
         "min": 1,
         "max": "1",
         "type": [
           {
             "code": "Extension",
             "profile": [
-              "https://fhir.nhs.uk/StructureDefinition/Extension-DCH-ChildHealthEventType-1"
+              "https://fhir.nhs.uk/StructureDefinition/Extension-DCH-EventMessageType-1"
             ]
           }
         ]
       },
       {
         "path": "MessageHeader.event",
-        "short": "new event | delete event",
+        "short": "The type of Child Health Event",
+        "definition": "The type of Child Health Event.",
         "binding": {
           "strength": "required",
-          "description": "The type of event applicable to the Child Health Event message.",
+          "description": "The type of Child Health Event",
           "valueSetReference": {
-            "reference": "https://fhir.nhs.uk/ValueSet/DCH-MessageEventType-1"
+            "reference": "https://fhir.nhs.uk/ValueSet/DCH-ChildHealthEventType-1"
           }
         }
       },
@@ -5004,7 +5003,7 @@
         "short": "The type of event applicable to the Child Health Event message.",
         "definition": "The type of event applicable to the Child Health Event message.",
         "min": 1,
-        "fixedUri": "https://fhir.nhs.uk/dch-messageeventtype-1"
+        "fixedUri": "https://fhir.nhs.uk/dch-childhealtheventtype-1"
       },
       {
         "path": "MessageHeader.event.version",
@@ -5076,14 +5075,10 @@
           {
             "code": "Reference",
             "profile": [
-              "https://fhir.hl7.org.uk/StructureDefinition/CareConnect-DCH-Encounter-1"
+              "https://fhir.hl7.org.uk/StructureDefinition/DCH-QuestionnaireResponse-1"
             ]
           }
         ]
-      },
-      {
-        "path": "MessageHeader.data.reference",
-        "min": 1
       }
     ]
   }

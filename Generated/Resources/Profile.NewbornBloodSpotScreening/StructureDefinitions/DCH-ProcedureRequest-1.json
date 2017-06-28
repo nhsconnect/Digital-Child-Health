@@ -26,7 +26,7 @@
     }
   ],
   "date": "2017-03-28T09:33:24.1993818+01:00",
-  "description": "This ProcedureRequest resource is constrained to represent a request for a procedure to be performed during a Child Health Event.",
+  "description": "This ProcedureRequest resource is constrained to represent a request for a procedure to be performed during a Child Health event.",
   "copyright": "Copyright © 2016 Health and Social Care Information Centre. NHS Digital is the trading name of the Health and Social Care Information Centre.",
   "fhirVersion": "1.0.2",
   "kind": "resource",
@@ -2594,7 +2594,7 @@
           {
             "code": "Reference",
             "profile": [
-              "https://fhir.hl7.org.uk/StructureDefinition/CareConnect-DCH-Practitioner-1"
+              "https://fhir.hl7.org.uk/StructureDefinition/CareConnect-Practitioner-1"
             ]
           }
         ],
@@ -2847,7 +2847,7 @@
           {
             "code": "Reference",
             "profile": [
-              "https://fhir.hl7.org.uk/StructureDefinition/CareConnect-DCH-Practitioner-1"
+              "https://fhir.hl7.org.uk/StructureDefinition/CareConnect-Practitioner-1"
             ]
           }
         ]

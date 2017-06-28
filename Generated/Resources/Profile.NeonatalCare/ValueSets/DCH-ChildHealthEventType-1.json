@@ -13,12 +13,32 @@
         "system": "https://fhir.nhs.uk/dch-childhealtheventtype-1",
         "concept": [
           {
-            "code": "Birth",
-            "display": "Birth"
+            "code": "6-8 Week Health Review",
+            "display": "6-8 Week Health Review"
+          },
+          {
+            "code": "Allergies and Reactions",
+            "display": "Allergies and Reactions"
+          },
+          {
+            "code": "Accidents and Injuries",
+            "display": "Accidents and Injuries"
           },
           {
             "code": "Assessment: APGAR",
             "display": "Assessment: APGAR"
+          },
+          {
+            "code": "Birth",
+            "display": "Birth"
+          },
+          {
+            "code": "Breastfeeding Status",
+            "display": "Breastfeeding Status"
+          },
+          {
+            "code": "Conditions",
+            "display": "Conditions"
           },
           {
             "code": "Demographics: Core",
@@ -29,12 +49,96 @@
             "display": "Demographics: Related Persons"
           },
           {
+            "code": "Immunisation: 8 weeks imms",
+            "display": "Immunisation: 8 weeks imms"
+          },
+          {
+            "code": "Immunisation: 12 weeks imms",
+            "display": "Immunisation: 12 weeks imms"
+          },
+          {
+            "code": "Immunisation: 16 weeks imms",
+            "display": "Immunisation: 16 weeks imms"
+          },
+          {
+            "code": "Immunisation: BCG imms",
+            "display": "Immunisation: BCG imms"
+          },
+          {
+            "code": "Immunisation: Hep B birth",
+            "display": "Immunisation: Hep B birth"
+          },
+          {
+            "code": "Immunisation: Hep B 4 weeks",
+            "display": "Immunisation: Hep B 4 weeks"
+          },
+          {
+            "code": "Immunisation: Hep B 8 weeks",
+            "display": "Immunisation: Hep B 8 weeks"
+          },
+          {
+            "code": "Immunisation: Hep B 12 months",
+            "display": "Immunisation: Hep B 12 months"
+          },
+          {
+            "code": "Immunisation: HPV first imms",
+            "display": "Immunisation: HPV first imms"
+          },
+          {
+            "code": "Immunisation: HPV second imms",
+            "display": "Immunisation: HPV second imms"
+          },
+          {
+            "code": "Immunisation: Influenza 2 years",
+            "display": "Immunisation: Influenza 2 years"
+          },
+          {
+            "code": "Immunisation: Influenza 3 years",
+            "display": "Immunisation: Influenza 3 years"
+          },
+          {
+            "code": "Immunisation: Influenza 4 years",
+            "display": "Immunisation: Influenza 4 years"
+          },
+          {
+            "code": "Immunisation: Influenza year 1",
+            "display": "Immunisation: Influenza year 1"
+          },
+          {
+            "code": "Immunisation: Influenza year 2",
+            "display": "Immunisation: Influenza year 2"
+          },
+          {
+            "code": "Immunisation: MMR",
+            "display": "Immunisation: MMR"
+          },
+          {
+            "code": "Immunisation: Pre-School Booster",
+            "display": "Immunisation: Pre-School Booster"
+          },
+          {
+            "code": "Immunisation: Teenage Booster",
+            "display": "Immunisation: Teenage Booster"
+          },
+          {
             "code": "Intervention: Vitamin K",
             "display": "Intervention: Vitamin K"
           },
           {
-            "code": "Physical Examination",
-            "display": "Physical Examination"
+            "code": "Maternity Discharge",
+            "display": "Maternity Discharge"
+          },
+          {
+            "code": "Measurements",
+            "display": "Measurements"
+          },
+          {
+            "code": "Medical History: Family History",
+            "display": "Medical History: Family History"
+          },
+          {
+            "code": "Medical History: Social History",
+            "display": "Medical History: Social History"
           },
           {
             "code": "Newborn Blood Spot Screening",
@@ -45,16 +149,20 @@
             "display": "Newborn Hearing Screening"
           },
           {
-            "code": "Measurements",
-            "display": "Measurements"
+            "code": "Newborn Physical Examination",
+            "display": "Newborn Physical Examination"
           },
           {
-            "code": "Breastfeeding Status",
-            "display": "Breastfeeding Status"
+            "code": "Physical Examination",
+            "display": "Physical Examination"
           },
           {
-            "code": "Immunisation",
-            "display": "Immunisation"
+            "code": "Professional Advice",
+            "display": "Professional Advice"
+          },
+          {
+            "code": "Professional Comment",
+            "display": "Professional Comment"
           },
           {
             "code": "Referral: Referral",
@@ -63,10 +171,6 @@
           {
             "code": "Referral: Follow Up",
             "display": "Referral: Follow Up"
-          },
-          {
-            "code": "Medical History",
-            "display": "Medical History"
           }
         ]
       }

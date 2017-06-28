@@ -1,0 +1,28 @@
+{
+  "resourceType": "ValueSet",
+  "meta": {
+    "lastUpdated": "2016-08-03T00:00:00+01:00"
+  },
+  "url": "https://fhir.nhs.uk/ValueSet/DCH-TestStatus-1",
+  "version": "1.0.0",
+  "name": "Test Status",
+  "status": "active",
+  "description": "Whether the newborn hearing screening was completed.",
+  "compose": {
+    "include": [
+      {
+        "system": "https://fhir.nhs.uk/dch-teststatus-1",
+        "concept": [
+          {
+            "code": "Test Completed - Yes",
+            "display": "Test Completed - Yes"
+          },
+          {
+            "code": "Test Completed - No",
+            "display": "Test Completed - No"
+          }
+        ]
+      }
+    ]
+  }
+}

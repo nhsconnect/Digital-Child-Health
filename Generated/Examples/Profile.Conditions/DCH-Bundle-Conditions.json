@@ -1,0 +1,473 @@
+{
+  "resourceType": "Bundle",
+  "id": "e9dbe6b4-5bdc-11e7-907b-a6006ad3dba0",
+  "meta": {
+    "profile": [
+      "https://fhir.nhs.uk/StructureDefinition/DCH-Bundle-1"
+    ]
+  },
+  "type": "message",
+  "entry": [
+    {
+      "fullUrl": "urn:uuid:e9dbeab0-5bdc-11e7-907b-a6006ad3dba0",
+      "resource": {
+        "resourceType": "MessageHeader",
+        "id": "e9dbeab0-5bdc-11e7-907b-a6006ad3dba0",
+        "meta": {
+          "profile": [
+            "https://fhir.nhs.uk/StructureDefinition/DCH-MessageHeader-1"
+          ]
+        },
+        "extension": [
+          {
+            "url": "https://fhir.nhs.uk/StructureDefinition/Extension-DCH-EventMessageType-1",
+            "valueCodeableConcept": {
+              "coding": [
+                {
+                  "system": "https://fhir.nhs.uk/dch-messageeventtype-1",
+                  "code": "new",
+                  "display": "New event message"
+                }
+              ]
+            }
+          }
+        ],
+        "timestamp": "2012-03-08T09:00:00+00:00",
+        "event": {
+          "system": "https://fhir.nhs.uk/dch-childhealtheventtype-1",
+          "code": "Conditions",
+          "display": "Conditions"
+        },
+        "source": {
+          "endpoint": "urn:uuid:1d67bb60-4f45-11e7-b114-b2f933d5fe66"
+        },
+        "responsible": {
+          "reference": "urn:uuid:5ccb6bb7-a7f1-46cc-a5d3-135320765553",
+          "display": "Leeds Teaching Hospitals"
+        },
+        "data": [
+          {
+            "reference": "urn:uuid:e9dbecea-5bdc-11e7-907b-a6006ad3dba0"
+          }
+        ]
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:5ccb6bb7-a7f1-46cc-a5d3-135320765553",
+      "resource": {
+        "resourceType": "Organization",
+        "id": "5ccb6bb7-a7f1-46cc-a5d3-135320765553",
+        "meta": {
+          "profile": [
+            "https://fhir.hl7.org.uk/StructureDefinition/CareConnect-Organization-1"
+          ]
+        },
+        "identifier": [
+          {
+            "system": "https://fhir.nhs.uk/Id/ods-organization-code",
+            "value": "RR8"
+          }
+        ],
+        "name": "Leeds Teaching Hospitals NHS Trust"
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:7368c5fe-bbb4-4e9c-a585-234e06b84e82",
+      "resource": {
+        "resourceType": "Patient",
+        "id": "7368c5fe-bbb4-4e9c-a585-234e06b84e82",
+        "meta": {
+          "profile": [
+            "https://fhir.hl7.org.uk/StructureDefinition/CareConnect-DCH-Patient-1"
+          ]
+        },
+        "identifier": [
+          {
+            "extension": [
+              {
+                "url": "https://fhir.hl7.org.uk/StructureDefinition/Extension-CareConnect-NHSNumberVerificationStatus-1",
+                "valueCodeableConcept": {
+                  "coding": [
+                    {
+                      "system": "https://fhir.hl7.org.uk/CareConnect-NHSNumberVerificationStatus-1",
+                      "code": "01",
+                      "display": "Number present and verified"
+                    }
+                  ]
+                }
+              }
+            ],
+            "system": "https://fhir.nhs.uk/Id/nhs-number",
+            "value": "5629874536"
+          }
+        ],
+        "name": [
+          {
+            "use": "official",
+            "family": [
+              "Saxton"
+            ],
+            "given": [
+              "Sarah",
+              "Marie"
+            ]
+          }
+        ],
+        "gender": "female",
+        "birthDate": "2012-01-07",
+        "_birthDate": {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/patient-birthTime",
+              "valueDateTime": "2012-01-07T20:12:00+00:00"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:e9dbecea-5bdc-11e7-907b-a6006ad3dba0",
+      "resource": {
+        "resourceType": "QuestionnaireResponse",
+        "id": "e9dbecea-5bdc-11e7-907b-a6006ad3dba0",
+        "meta": {
+          "profile": [
+            "https://fhir.nhs.uk/StructureDefinition/DCH-QuestionnaireResponse-1"
+          ]
+        },
+        "identifier": {
+          "system": "https://tools.ietf.org/html/rfc4122",
+          "value": "e9dbecea-5bdc-11e7-907b-a6006ad3dba0"
+        },
+        "status": "completed",
+        "subject": {
+          "reference": "urn:uuid:7368c5fe-bbb4-4e9c-a585-234e06b84e82",
+          "display": "SAXTON, Sarah Marie"
+        },
+        "author": {
+          "reference": "urn:uuid:5ccb6bb7-a7f1-46cc-a5d3-135320765553",
+          "display": "Leeds Teaching Hospitals"
+        },
+        "encounter": {
+          "reference": "urn:uuid:1d67bd36-4f45-11e7-b114-b2f933d5fe66"
+        },
+        "group": {
+          "title": "Conditions",
+          "question": [
+            {
+              "text": "The date the Condition, Problem or Diagnosis as recognised by a Clinician was recorded",
+              "answer": [
+                {
+                  "valueDateTime": "2012-03-06T20:25:00+00:00"
+                },
+                {
+                  "valueReference": {
+                    "reference": "urn:uuid:1d67bd36-4f45-11e7-b114-b2f933d5fe66"
+                  }
+                }
+              ]
+            },
+            {
+              "text": "The Site Code of where the Condition, Problem or Diagnosis as recognised by a Clinician was recorded",
+              "answer": [
+                {
+                  "valueString": "RR830"
+                },
+                {
+                  "valueReference": {
+                    "reference": "urn:uuid:00e72e70-0e37-48b5-b950-ca5ce8c35de7",
+                    "display": "Accident and Emergency Department, Leeds General Infirmary"
+                  }
+                }
+              ]
+            },
+            {
+              "text": "Organisation recording the Condition, Problem or Diagnosis as recognised by a Clinician",
+              "answer": [
+                {
+                  "valueString": "RR8"
+                },
+                {
+                  "valueReference": {
+                    "reference": "urn:uuid:5ccb6bb7-a7f1-46cc-a5d3-135320765553",
+                    "display": "Leeds Teaching Hospitals"
+                  }
+                }
+              ]
+            },
+            {
+              "text": "Professional Group of the Professional recording the Condition, Problem or Diagnosis",
+              "answer": [
+                {
+                  "valueString": "R0050"
+                },
+                {
+                  "valueReference": {
+                    "reference": "urn:uuid:1d67c1f0-4f45-11e7-b114-b2f933d5fe66"
+                  }
+                }
+              ]
+            },
+            {
+              "text": "Code of the Professional recording the Condition, Problem or Diagnosis",
+              "answer": [
+                {
+                  "valueString": "PT1357"
+                },
+                {
+                  "valueReference": {
+                    "reference": "urn:uuid:1d67c1f0-4f45-11e7-b114-b2f933d5fe66"
+                  }
+                }
+              ]
+            },
+            {
+              "text": "The provisional Diagnosis of the child or young person",
+              "answer": [
+                {
+                  "valueCoding": {
+                    "system": "http://snomed.info/sct",
+                    "code": "240302002",
+                    "display": "Erythroderma neonatorum (disorder)"
+                  }
+                },
+                {
+                  "valueReference": {
+                    "reference": "urn:uuid:1d67c470-4f45-11e7-b114-b2f933d5fe66"
+                  }
+                }
+              ]
+            },
+            {
+              "text": "Clinical status of the Condition, Problem or Diagnosis",
+              "answer": [
+                {
+                  "valueCoding": {
+                    "system": "https://fhir.hl7.org.uk/CareConnect-ConditionClinicalStatus",
+                    "code": "active",
+                    "display": "Active"
+                  }
+                },
+                {
+                  "valueReference": {
+                    "reference": "urn:uuid:1d67c470-4f45-11e7-b114-b2f933d5fe66"
+                  }
+                }
+              ]
+            },
+            {
+              "text": "A category assigned to the condition",
+              "answer": [
+                {
+                  "valueCoding": {
+                    "system": "https://fhir.hl7.org.uk/CareConnect-ConditionCategory-1",
+                    "code": "diagnosis",
+                    "display": "Diagnosis"
+                  }
+                },
+                {
+                  "valueReference": {
+                    "reference": "urn:uuid:1d67c470-4f45-11e7-b114-b2f933d5fe66"
+                  }
+                }
+              ]
+            },
+            {
+              "text": "Estimated or actual date or date-time the condition began, in the opinion of the clinician",
+              "answer": [
+                null,
+                {
+                  "valueReference": {
+                    "reference": "urn:uuid:1d67c470-4f45-11e7-b114-b2f933d5fe66"
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:1d67bd36-4f45-11e7-b114-b2f933d5fe66",
+      "resource": {
+        "resourceType": "Encounter",
+        "id": "1d67bd36-4f45-11e7-b114-b2f933d5fe66",
+        "meta": {
+          "profile": [
+            "https://fhir.hl7.org.uk/StructureDefinition/CareConnect-DCH-Encounter-1"
+          ]
+        },
+        "identifier": [
+          {
+            "system": "https://tools.ietf.org/html/rfc4122",
+            "value": "1d67be12-4f45-11e7-b114-b2f933d5fe66"
+          }
+        ],
+        "status": "finished",
+        "class": "emergency",
+        "type": [
+          {
+            "coding": [
+              {
+                "system": "http://snomed.info/sct",
+                "code": "4525004",
+                "display": "Emergency department patient visit (procedure)"
+              }
+            ]
+          },
+          {
+            "coding": [
+              {
+                "system": "https://fhir.nhs.uk/dch-childhealthencountertype-1",
+                "code": "Accidents and Injuries",
+                "display": "Accidents and Injuries"
+              }
+            ]
+          }
+        ],
+        "patient": {
+          "reference": "urn:uuid:7368c5fe-bbb4-4e9c-a585-234e06b84e82",
+          "display": "SAXTON, Sarah Marie"
+        },
+        "participant": [
+          {
+            "individual": {
+              "reference": "urn:uuid:1d67c1f0-4f45-11e7-b114-b2f933d5fe66",
+              "display": "RILEY, Amber"
+            }
+          }
+        ],
+        "period": {
+          "start": "2012-03-06T20:25:00+00:00",
+          "end": "2012-03-06T22:00:00+00:00"
+        },
+        "reason": [
+          {
+            "text": "Parent reported sudden rash to baby's skin developing from face and spreading to chest."
+          }
+        ],
+        "location": [
+          {
+            "location": {
+              "reference": "urn:uuid:00e72e70-0e37-48b5-b950-ca5ce8c35de7",
+              "display": "Accident and Emergency Department, Leeds General Infirmary"
+            }
+          }
+        ],
+        "serviceProvider": {
+          "reference": "urn:uuid:5ccb6bb7-a7f1-46cc-a5d3-135320765553",
+          "display": "Leeds Teaching Hospitals NHS Trust"
+        }
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:1d67c470-4f45-11e7-b114-b2f933d5fe66",
+      "resource": {
+        "resourceType": "Condition",
+        "id": "1d67c470-4f45-11e7-b114-b2f933d5fe66",
+        "meta": {
+          "profile": [
+            "https://fhir.hl7.org.uk/StructureDefinition/CareConnect-DCH-Condition-1"
+          ]
+        },
+        "identifier": [
+          {
+            "system": "https://tools.ietf.org/html/rfc4122",
+            "value": "1d67c470-4f45-11e7-b114-b2f933d5fe66"
+          }
+        ],
+        "patient": {
+          "reference": "urn:uuid:7368c5fe-bbb4-4e9c-a585-234e06b84e82",
+          "display": "SAXTON, Sarah Marie"
+        },
+        "encounter": {
+          "reference": "urn:uuid:1d67bd36-4f45-11e7-b114-b2f933d5fe66"
+        },
+        "asserter": {
+          "reference": "urn:uuid:1d67c1f0-4f45-11e7-b114-b2f933d5fe66",
+          "display": "RILEY, Amber"
+        },
+        "dateRecorded": "2012-03-06",
+        "code": {
+          "coding": [
+            {
+              "system": "http://snomed.info/sct",
+              "code": "240302002",
+              "display": "Erythroderma neonatorum (disorder)"
+            }
+          ]
+        },
+        "category": {
+          "coding": [
+            {
+              "system": "https://hl7.org.uk/fhir/CareConnect-ConditionCategory-1",
+              "code": "diagnosis",
+              "display": "Diagnosis"
+            }
+          ]
+        },
+        "clinicalStatus": "active",
+        "verificationStatus": "confirmed",
+        "onsetDateTime": "2012-03-06T16:00:00+00:00"
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:00e72e70-0e37-48b5-b950-ca5ce8c35de7",
+      "resource": {
+        "resourceType": "Organization",
+        "id": "00e72e70-0e37-48b5-b950-ca5ce8c35de7",
+        "meta": {
+          "profile": [
+            "https://fhir.hl7.org.uk/StructureDefinition/CareConnect-Organization-1"
+          ]
+        },
+        "identifier": [
+          {
+            "system": "https://fhir.nhs.uk/Id/ods-site-code",
+            "value": "RR830"
+          }
+        ],
+        "name": "Accident and Emergency Department, Leeds General Infirmary"
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:1d67c1f0-4f45-11e7-b114-b2f933d5fe66",
+      "resource": {
+        "resourceType": "Practitioner",
+        "id": "1d67c1f0-4f45-11e7-b114-b2f933d5fe66",
+        "meta": {
+          "profile": [
+            "https://fhir.hl7.org.uk/StructureDefinition/CareConnect-DCH-Practitioner-1"
+          ]
+        },
+        "identifier": [
+          {
+            "system": "http://fhir.nhs.net/Id/sds-role-profile-id",
+            "value": "PT1357"
+          }
+        ],
+        "name": {
+          "family": [
+            "Riley"
+          ],
+          "given": [
+            "Amber"
+          ]
+        },
+        "practitionerRole": [
+          {
+            "role": {
+              "coding": [
+                {
+                  "system": "https://fhir.hl7.org.uk/CareConnect-SDSJobRoleName-1",
+                  "code": "R0050",
+                  "display": "Consultant"
+                }
+              ]
+            }
+          }
+        ]
+      }
+    }
+  ]
+}

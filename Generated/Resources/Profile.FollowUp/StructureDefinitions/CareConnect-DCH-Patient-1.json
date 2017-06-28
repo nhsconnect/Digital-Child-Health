@@ -1,11 +1,11 @@
 {
   "resourceType": "StructureDefinition",
   "meta": {
-    "lastUpdated": "2017-03-24T23:07:08.813+00:00",
+    "lastUpdated": "2017-03-31T11:19:25.955+01:00",
     "tag": [
       {
         "system": "urn:hscic:publishOrder",
-        "code": "5"
+        "code": "4"
       }
     ]
   },
@@ -20,7 +20,7 @@
   "name": "CareConnect-DCH-Patient-1",
   "status": "draft",
   "publisher": "HL7 UK",
-  "description": "The Patient resource represents the patient involved in the provision of healthcare related services, with further constraints to represent a Patient as a subject of a Follow Up Event.",
+  "description": "The Patient resource represents the patient involved in the provision of healthcare related services, with further constraints to represent a Patient as a subject of a Child Health Event.",
   "copyright": "Copyright © 2016 HL7 UK\r\n\r\nLicensed under the Apache License, Version 2.0 (the \"License\"); you may not use this file except in compliance with the License. You may obtain a copy of the License at\r\n\r\nhttp://www.apache.org/licenses/LICENSE-2.0\r\n\r\nUnless required by applicable law or agreed to in writing, software distributed under the License is distributed on an \"AS IS\" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the License for the specific language governing permissions and limitations under the License.\r\n\r\nHL7® FHIR® standard Copyright © 2011+ HL7\r\n\r\nThe HL7® FHIR® standard is used under the FHIR license. You may obtain a copy of the FHIR license at\r\n\r\nhttps://www.hl7.org/fhir/license.html",
   "fhirVersion": "1.0.1",
   "mapping": [
@@ -17556,13 +17556,13 @@
           {
             "code": "Reference",
             "profile": [
-              "http://hl7.org/fhir/StructureDefinition/Organization"
+              "https://fhir.hl7.org.uk/StructureDefinition/CareConnect-Practitioner-1"
             ]
           },
           {
             "code": "Reference",
             "profile": [
-              "http://hl7.org/fhir/StructureDefinition/Practitioner"
+              "https://fhir.hl7.org.uk/StructureDefinition/CareConnect-Organization-1"
             ]
           }
         ],
@@ -18817,7 +18817,21 @@
       {
         "path": "Patient.careProvider",
         "short": "Patient's nominated practitioner",
-        "max": "0"
+        "max": "0",
+        "type": [
+          {
+            "code": "Reference",
+            "profile": [
+              "https://fhir.hl7.org.uk/StructureDefinition/CareConnect-Practitioner-1"
+            ]
+          },
+          {
+            "code": "Reference",
+            "profile": [
+              "https://fhir.hl7.org.uk/StructureDefinition/CareConnect-Organization-1"
+            ]
+          }
+        ]
       },
       {
         "path": "Patient.managingOrganization",

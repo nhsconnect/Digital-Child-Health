@@ -43,7 +43,7 @@
     }
   ],
   "date": "2015-09-22T11:02:49+01:00",
-  "description": "This Bundle resource is constrained to represent a set of resources for a Child Health Event.",
+  "description": "This Bundle resource is constrained to represent a set of resources for a Child Health event.",
   "copyright": "Copyright © 2016 Health and Social Care Information Centre. NHS Digital is the trading name of the Health and Social Care Information Centre.",
   "fhirVersion": "1.0.1",
   "kind": "resource",

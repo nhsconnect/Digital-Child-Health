@@ -5,7 +5,7 @@
     "tag": [
       {
         "system": "urn:hscic:publishOrder",
-        "code": "6"
+        "code": "5"
       }
     ]
   },
@@ -27,7 +27,8 @@
     }
   ],
   "date": "2017-06-03T10:52:59.2926255+01:00",
-  "description": "This Questionnaire Response resource is constrained to represent a questionnaire response for a Child Health Event.",
+  "description": "This Questionnaire Response resource is constrained to represent a questionnaire response for a Child Health event message.",
+  "copyright": "Copyright © 2016 Health and Social Care Information Centre. NHS Digital is the trading name of the Health and Social Care Information Centre.",
   "fhirVersion": "1.0.2",
   "kind": "resource",
   "constrainedType": "QuestionnaireResponse",
@@ -2560,13 +2561,13 @@
           {
             "code": "Reference",
             "profile": [
-              "https://fhir.hl7.org.uk/StructureDefinition/CareConnect-DCH-Practitioner-1"
+              "https://fhir.hl7.org.uk/StructureDefinition/CareConnect-Practitioner-1"
             ]
           },
           {
             "code": "Reference",
             "profile": [
-              "https://fhir.hl7.org.uk/StructureDefinition/CareConnect-DCH-Organization-1"
+              "https://fhir.hl7.org.uk/StructureDefinition/CareConnect-Organization-1"
             ]
           }
         ],
@@ -7759,13 +7760,13 @@
           {
             "code": "Reference",
             "profile": [
-              "https://fhir.hl7.org.uk/StructureDefinition/CareConnect-DCH-Practitioner-1"
+              "https://fhir.hl7.org.uk/StructureDefinition/CareConnect-Practitioner-1"
             ]
           },
           {
             "code": "Reference",
             "profile": [
-              "https://fhir.hl7.org.uk/StructureDefinition/CareConnect-DCH-Organization-1"
+              "https://fhir.hl7.org.uk/StructureDefinition/CareConnect-Organization-1"
             ]
           }
         ]

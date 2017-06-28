@@ -1,0 +1,58 @@
+{
+  "resourceType": "ValueSet",
+  "meta": {
+    "lastUpdated": "2016-08-03T00:00:00+01:00"
+  },
+  "url": "https://fhir.nhs.uk/ValueSet/DCH-EducationLevel-1",
+  "version": "1.0.0",
+  "name": "Education Level",
+  "status": "active",
+  "publisher": "NHS Digital",
+  "description": "Education level.",
+  "copyright": "Copyright © 2016 Health and Social Care Information Centre. NHS Digital is the trading name of the Health and Social Care Information Centre.",
+  "compose": {
+    "include": [
+      {
+        "system": "https://fhir.nhs.uk/dch-educationlevel-1",
+        "concept": [
+          {
+            "code": "Entry",
+            "display": "Example - Skills for Life"
+          },
+          {
+            "code": "Level 1",
+            "display": "GCSE (grades D-G)"
+          },
+          {
+            "code": "Level 2",
+            "display": "GCSE (grades A*-G)"
+          },
+          {
+            "code": "Level 3",
+            "display": "A Level"
+          },
+          {
+            "code": "Level 4",
+            "display": "Higher National Certificate"
+          },
+          {
+            "code": "Level 5",
+            "display": "Higher National Diploma"
+          },
+          {
+            "code": "Level 6",
+            "display": "Non-Honours Bachelor's degree"
+          },
+          {
+            "code": "Level 7",
+            "display": "Master's degree"
+          },
+          {
+            "code": "Level 8",
+            "display": "Doctoral degree"
+          }
+        ]
+      }
+    ]
+  }
+}
