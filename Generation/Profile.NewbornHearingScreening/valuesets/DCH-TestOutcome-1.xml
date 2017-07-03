@@ -10,7 +10,7 @@
 	<description value="The outcome of the hearing screening test."/>
 	<compose>
 		<include>
-			<system value="https://fhir.nhs.uk/dch-testoutcome-1"/>
+			<system value="https://fhir.nhs.uk/DCH-TestOutcome-1"/>
 			<concept>
 				<code value="Right ear clear response: Yes"/>
 				<display value="Right ear clear response: Yes"/>

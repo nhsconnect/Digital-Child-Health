@@ -12,7 +12,7 @@
 	<description value="Whether or not the mother feels she is supported in pregnancy and looking after a baby, from partner, family or friends."/>
 	<compose>
 		<include>
-			<system value="https://fhir.nhs.uk/dch-supportstatus-1"/>
+			<system value="https://fhir.nhs.uk/DCH-SupportStatus-1"/>
 			<concept>
 				<code value="Y"/>
 				<display value="Yes"/>

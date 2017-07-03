@@ -9,7 +9,7 @@
 	<description value="Whether or not the Newborn Hearing Screening was offered and accepted."/>
 	<compose>
 		<include>
-			<system value="https://fhir.nhs.uk/dch-consentstatusnewbornhearing-1"/>
+			<system value="https://fhir.nhs.uk/DCH-ConsentStatusNewbornHearing-1"/>
 			<concept>
 				<code value="2"/>
 				<display value="Offered and declined"/>

@@ -12,7 +12,7 @@
 	<description value="Education level."/>
 	<compose>
 		<include>
-			<system value="https://fhir.nhs.uk/dch-educationlevel-1"/>
+			<system value="https://fhir.nhs.uk/DCH-EducationLevel-1"/>
 			<concept>
 				<code value="Entry"/>
 				<display value="Example - Skills for Life"/>

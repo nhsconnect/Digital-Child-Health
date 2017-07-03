@@ -9,7 +9,7 @@
 	<description value="The breastfeeding status of a baby."/>
 	<compose>
 		<include>
-			<system value="https://fhir.nhs.uk/dch-breastfeedingstatus-1"/>
+			<system value="https://fhir.nhs.uk/DCH-BreastfeedingStatus-1"/>
 			<concept>
 				<code value="1"/>
 				<display value="Exclusively breast milk feeding"/>

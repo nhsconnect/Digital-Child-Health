@@ -9,7 +9,7 @@
 	<description value="The laboratory screening status for a blood spot specimen."/>
 	<compose>
 		<include>
-			<system value="https://fhir.nhs.uk/dch-laboratoryscreeningstatus-1"/>
+			<system value="https://fhir.nhs.uk/DCH-LaboratoryScreeningStatus-1"/>
 			<concept>
 				<code value="Specimen received in laboratory"/>
 				<display value="Specimen received in laboratory"/>

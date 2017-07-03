@@ -12,7 +12,7 @@
 	<description value="Whether a smoking cessation referral was recommended."/>
 	<compose>
 		<include>
-			<system value="https://fhir.nhs.uk/dch-smokingcessationreferral-1"/>
+			<system value="https://fhir.nhs.uk/DCH-SmokingCessationReferral-1"/>
 			<concept>
 				<code value="Yes"/>
 				<display value="Yes"/>

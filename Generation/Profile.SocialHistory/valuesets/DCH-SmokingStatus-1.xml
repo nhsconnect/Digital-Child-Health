@@ -12,7 +12,7 @@
 	<description value="Smoking status."/>
 	<compose>
 		<include>
-			<system value="https://fhir.nhs.uk/dch-smokingstatus-1"/>
+			<system value="https://fhir.nhs.uk/DCH-SmokingStatus-1"/>
 			<concept>
 				<code value="01"/>
 				<display value="Current smoker"/>

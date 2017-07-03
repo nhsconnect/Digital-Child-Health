@@ -11,7 +11,7 @@
 	<description value="The category applicable to the commentary provided in the Basic resource."/>
 	<compose>
 		<include>
-			<system value="https://fhir.nhs.uk/dch-commentarycategory-1"/>
+			<system value="https://fhir.nhs.uk/DCH-CommentaryCategory-1"/>
 			<concept>
 				<code value="Advice"/>
 				<display value="Advice"/>

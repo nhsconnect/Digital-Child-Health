@@ -10,7 +10,7 @@
 	<description value="Whether the newborn hearing screening was completed."/>
 	<compose>
 		<include>
-			<system value="https://fhir.nhs.uk/dch-teststatus-1"/>
+			<system value="https://fhir.nhs.uk/DCH-TestStatus-1"/>
 			<concept>
 				<code value="Test Completed - Yes"/>
 				<display value="Test Completed - Yes"/>

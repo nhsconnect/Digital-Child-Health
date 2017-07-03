@@ -9,7 +9,7 @@
 	<description value="The type of Child Health Event. The values below have been listed for example only."/>
 	<compose>
 		<include>
-			<system value="https://fhir.nhs.uk/dch-childhealtheventtype-1"/>
+			<system value="https://fhir.nhs.uk/DCH-ChildHealthEventType-1"/>
 			<concept>
 				<code value="6-8 Week Health Review"/>
 				<display value="6-8 Week Health Review"/>

@@ -10,7 +10,7 @@
 	<description value="Care Pathway for newborn hearing screening programme (NHSP)."/>
 	<compose>
 		<include>
-			<system value="https://fhir.nhs.uk/dch-disposalcode-1"/>
+			<system value="https://fhir.nhs.uk/DCH-Protocol-1"/>
 			<concept>
 				<code value="NICU Protocol"/>
 				<display value="NICU Protocol"/>

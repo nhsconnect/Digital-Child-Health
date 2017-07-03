@@ -12,7 +12,7 @@
 	<description value="The current accommodation status."/>
 	<compose>
 		<include>
-			<system value="https://fhir.nhs.uk/dch-accommodationstatus-1"/>
+			<system value="https://fhir.nhs.uk/DCH-AccommodationStatus-1"/>
 			<concept>
 				<code value=" MA00 "/>
 				<display value=" Mainstream Housing "/>

@@ -460,10 +460,10 @@
 			<Practitioner>
 				<id value="1d67c1f0-4f45-11e7-b114-b2f933d5fe66"/>
 				<meta>
-					<profile value="https://fhir.hl7.org.uk/StructureDefinition/CareConnect-DCH-Practitioner-1"/>
+					<profile value="https://fhir.hl7.org.uk/StructureDefinition/CareConnect-Practitioner-1"/>
 				</meta>
 				<identifier>
-					<system value="http://fhir.nhs.net/Id/sds-role-profile-id"/>
+					<system value="https://fhir.nhs.net/Id/sds-role-profile-id"/>
 					<value value="PT1357"/>
 				</identifier>
 				<name>

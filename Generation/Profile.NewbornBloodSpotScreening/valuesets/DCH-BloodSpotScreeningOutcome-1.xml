@@ -10,7 +10,7 @@
 	<description value="The Blood Spot Screening outcome."/>
 	<compose>
 		<include>
-			<system value="https://fhir.nhs.uk/dch-bloodspotscreeningoutcome-1"/>
+			<system value="https://fhir.nhs.uk/DCH-BloodSpotScreeningOutcome-1"/>
 			<concept>
 				<code value="1"/>
 				<display value="Specimen received in Laboratory"/>

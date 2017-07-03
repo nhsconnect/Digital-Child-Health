@@ -9,7 +9,7 @@
 	<description value="An indication of whether or not the baby is preterm."/>
 	<compose>
 		<include>
-			<system value="https://fhir.nhs.uk/dch-pretermindicator-1"/>
+			<system value="https://fhir.nhs.uk/DCH-PretermIndicator-1"/>
 			<concept>
 				<code value="Yes"/>
 				<display value="Yes"/>

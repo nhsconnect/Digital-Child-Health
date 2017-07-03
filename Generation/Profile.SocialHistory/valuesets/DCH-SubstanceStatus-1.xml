@@ -12,7 +12,7 @@
 	<description value="The self-reported status of whether or not non medicinal drugs or other substances have been used or are being used."/>
 	<compose>
 		<include>
-			<system value="https://fhir.nhs.uk/dch-substancestatus-1"/>
+			<system value="https://fhir.nhs.uk/DCH-SubstanceStatus-1"/>
 			<concept>
 				<code value="01"/>
 				<display value="Currently using"/>

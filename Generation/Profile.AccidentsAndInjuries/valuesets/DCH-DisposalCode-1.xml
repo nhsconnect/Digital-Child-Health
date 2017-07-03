@@ -9,7 +9,7 @@
 	<description value="A code to identify how an Accident and Emergency Attendance might end."/>
 	<compose>
 		<include>
-			<system value="https://fhir.nhs.uk/dch-disposalcode-1"/>
+			<system value="https://fhir.nhs.uk/DCH-DisposalCode-1"/>
 			<concept>
 				<code value="01"/>
 				<display value="Admitted to a Hospital Bed / became a LODGED PATIENT of the same Health Care Provider"/>
