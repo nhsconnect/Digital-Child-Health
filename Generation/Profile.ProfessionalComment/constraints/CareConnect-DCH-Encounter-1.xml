@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <meta>
-    <lastUpdated value="2017-06-23T20:08:15.146+01:00" />
+    <lastUpdated value="2017-07-04T11:24:51.996+01:00" />
     <tag>
       <system value="urn:hscic:publishOrder" />
       <code value="6" />
@@ -5767,7 +5767,7 @@
       <alias value="Indication" />
       <alias value="Admission diagnosis" />
       <min value="0" />
-      <max value="0" />
+      <max value="1" />
       <base>
         <path value="Encounter.reason" />
         <min value="0" />
@@ -13314,7 +13314,7 @@
     </element>
     <element>
       <path value="Encounter.reason" />
-      <max value="0" />
+      <max value="1" />
     </element>
     <element>
       <path value="Encounter.reason.coding" />
