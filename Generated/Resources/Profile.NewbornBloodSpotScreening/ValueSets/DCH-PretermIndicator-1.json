@@ -10,7 +10,7 @@
   "compose": {
     "include": [
       {
-        "system": "https://fhir.nhs.uk/dch-pretermindicator-1",
+        "system": "https://fhir.nhs.uk/DCH-PretermIndicator-1",
         "concept": [
           {
             "code": "Yes",

@@ -11,7 +11,7 @@
   "compose": {
     "include": [
       {
-        "system": "https://fhir.nhs.uk/dch-bloodspotscreeningoutcome-1",
+        "system": "https://fhir.nhs.uk/DCH-BloodSpotScreeningOutcome-1",
         "concept": [
           {
             "code": "1",

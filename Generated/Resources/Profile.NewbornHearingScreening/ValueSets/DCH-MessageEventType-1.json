@@ -10,7 +10,7 @@
   "compose": {
     "include": [
       {
-        "system": "https://fhir.nhs.uk/dch-messageeventtype-1",
+        "system": "https://fhir.nhs.uk/DCH-MessageEventType-1",
         "concept": [
           {
             "code": "new",

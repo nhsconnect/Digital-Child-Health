@@ -558,12 +558,12 @@
         "id": "1d67c1f0-4f45-11e7-b114-b2f933d5fe66",
         "meta": {
           "profile": [
-            "https://fhir.hl7.org.uk/StructureDefinition/CareConnect-DCH-Practitioner-1"
+            "https://fhir.hl7.org.uk/StructureDefinition/CareConnect-Practitioner-1"
           ]
         },
         "identifier": [
           {
-            "system": "http://fhir.nhs.net/Id/sds-role-profile-id",
+            "system": "https://fhir.nhs.net/Id/sds-role-profile-id",
             "value": "PT1357"
           }
         ],

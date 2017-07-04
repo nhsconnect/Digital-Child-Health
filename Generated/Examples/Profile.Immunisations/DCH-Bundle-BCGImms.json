@@ -1,0 +1,1060 @@
+{
+  "resourceType": "Bundle",
+  "id": "e9dbeede-5bdc-11e7-907b-a6006ad3dba0",
+  "meta": {
+    "profile": [
+      "https://fhir.nhs.uk/StructureDefinition/DCH-Bundle-1"
+    ]
+  },
+  "type": "message",
+  "entry": [
+    {
+      "fullUrl": "urn:uuid:e9dbf08c-5bdc-11e7-907b-a6006ad3dba0",
+      "resource": {
+        "resourceType": "MessageHeader",
+        "id": "e9dbf08c-5bdc-11e7-907b-a6006ad3dba0",
+        "meta": {
+          "profile": [
+            "https://fhir.nhs.uk/StructureDefinition/DCH-MessageHeader-1"
+          ]
+        },
+        "extension": [
+          {
+            "url": "https://fhir.nhs.uk/StructureDefinition/Extension-DCH-EventMessageType-1",
+            "valueCodeableConcept": {
+              "coding": [
+                {
+                  "system": "https://fhir.nhs.uk/dch-messageeventtype-1",
+                  "code": "new",
+                  "display": "New event message"
+                }
+              ]
+            }
+          }
+        ],
+        "timestamp": "2012-01-31T09:00:00+00:00",
+        "event": {
+          "system": "https://fhir.nhs.uk/dch-childhealtheventtype-1",
+          "code": "Immunisation: BCG imms",
+          "display": "Immunisation: BCG imms"
+        },
+        "source": {
+          "endpoint": "urn:uuid:1d67bb60-4f45-11e7-b114-b2f933d5fe66"
+        },
+        "responsible": {
+          "reference": "urn:uuid:5ccb6bb7-a7f1-46cc-a5d3-135320765553",
+          "display": "Leeds Teaching Hospitals"
+        },
+        "data": [
+          {
+            "reference": "urn:uuid:e9dbf226-5bdc-11e7-907b-a6006ad3dba0"
+          }
+        ]
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:5ccb6bb7-a7f1-46cc-a5d3-135320765553",
+      "resource": {
+        "resourceType": "Organization",
+        "id": "5ccb6bb7-a7f1-46cc-a5d3-135320765553",
+        "meta": {
+          "profile": [
+            "https://fhir.hl7.org.uk/StructureDefinition/CareConnect-Organization-1"
+          ]
+        },
+        "identifier": [
+          {
+            "system": "https://fhir.nhs.uk/Id/ods-organization-code",
+            "value": "RR8"
+          }
+        ],
+        "name": "Leeds Teaching Hospitals NHS Trust"
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:7368c5fe-bbb4-4e9c-a585-234e06b84e82",
+      "resource": {
+        "resourceType": "Patient",
+        "id": "7368c5fe-bbb4-4e9c-a585-234e06b84e82",
+        "meta": {
+          "profile": [
+            "https://fhir.hl7.org.uk/StructureDefinition/CareConnect-DCH-Patient-1"
+          ]
+        },
+        "identifier": [
+          {
+            "extension": [
+              {
+                "url": "https://fhir.hl7.org.uk/StructureDefinition/Extension-CareConnect-NHSNumberVerificationStatus-1",
+                "valueCodeableConcept": {
+                  "coding": [
+                    {
+                      "system": "https://fhir.hl7.org.uk/CareConnect-NHSNumberVerificationStatus-1",
+                      "code": "01",
+                      "display": "Number present and verified"
+                    }
+                  ]
+                }
+              }
+            ],
+            "system": "https://fhir.nhs.uk/Id/nhs-number",
+            "value": "5629874536"
+          }
+        ],
+        "name": [
+          {
+            "use": "official",
+            "family": [
+              "Saxton"
+            ],
+            "given": [
+              "Sarah",
+              "Marie"
+            ]
+          }
+        ],
+        "gender": "female",
+        "birthDate": "2012-01-07",
+        "_birthDate": {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/patient-birthTime",
+              "valueDateTime": "2012-01-07T20:12:00+00:00"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:e9dbf226-5bdc-11e7-907b-a6006ad3dba0",
+      "resource": {
+        "resourceType": "QuestionnaireResponse",
+        "id": "e9dbf226-5bdc-11e7-907b-a6006ad3dba0",
+        "meta": {
+          "profile": [
+            "https://fhir.nhs.uk/StructureDefinition/DCH-QuestionnaireResponse-1"
+          ]
+        },
+        "identifier": {
+          "system": "https://tools.ietf.org/html/rfc4122",
+          "value": "e9dbf226-5bdc-11e7-907b-a6006ad3dba0"
+        },
+        "status": "completed",
+        "subject": {
+          "reference": "urn:uuid:7368c5fe-bbb4-4e9c-a585-234e06b84e82",
+          "display": "SAXTON, Sarah Marie"
+        },
+        "author": {
+          "reference": "urn:uuid:5ccb6bb7-a7f1-46cc-a5d3-135320765553",
+          "display": "Leeds Teaching Hospitals"
+        },
+        "encounter": {
+          "reference": "urn:uuid:e9dbfea6-5bdc-11e7-907b-a6006ad3dba0"
+        },
+        "group": {
+          "group": [
+            {
+              "title": "Indicator BCG",
+              "question": [
+                {
+                  "text": "An indication as to whether BCG vaccine is required",
+                  "answer": [
+                    {
+                      "valueBoolean": true
+                    },
+                    {
+                      "valueReference": {
+                        "reference": "urn:uuid:1d67c470-4f45-11e7-b114-b2f933d5fe66"
+                      }
+                    }
+                  ]
+                },
+                {
+                  "text": "The reason why BCG vaccine is indicated",
+                  "answer": [
+                    {
+                      "valueString": "Parent/grandparent born in a country with a high TB rate"
+                    },
+                    {
+                      "valueReference": {
+                        "reference": "urn:uuid:1d67c470-4f45-11e7-b114-b2f933d5fe66"
+                      }
+                    }
+                  ]
+                },
+                {
+                  "text": "The country of birth of parent or grandparent who was born in a country with a high TB rate",
+                  "answer": [
+                    {
+                      "valueString": "South Africa"
+                    },
+                    {
+                      "valueReference": {
+                        "reference": "urn:uuid:1d67c470-4f45-11e7-b114-b2f933d5fe66"
+                      }
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "title": "HCP Clinical Intervention: Immunisation",
+              "question": [
+                {
+                  "text": "Immunisation Date",
+                  "answer": [
+                    {
+                      "valueDate": "2012-01-29"
+                    },
+                    {
+                      "valueReference": {
+                        "reference": "urn:uuid:e9dbfa46-5bdc-11e7-907b-a6006ad3dba0"
+                      }
+                    }
+                  ]
+                },
+                {
+                  "text": "Consent Status",
+                  "answer": [
+                    {
+                      "valueCoding": {
+                        "system": "https://fhir.nhs.uk/DCH-ConsentStatus-1",
+                        "code": "Consented",
+                        "display": "Consented"
+                      }
+                    },
+                    {
+                      "valueReference": {
+                        "reference": "urn:uuid:e9dbffdc-5bdc-11e7-907b-a6006ad3dba0"
+                      }
+                    }
+                  ]
+                },
+                {
+                  "text": "Attendance Status",
+                  "answer": [
+                    {
+                      "valueCoding": {
+                        "system": "http://hl7.org/fhir/appointmentstatus",
+                        "code": "fulfilled",
+                        "display": "Fulfilled"
+                      }
+                    },
+                    {
+                      "valueReference": {
+                        "reference": "urn:uuid:e9dc055e-5bdc-11e7-907b-a6006ad3dba0"
+                      }
+                    }
+                  ]
+                },
+                {
+                  "text": "Outcome",
+                  "answer": [
+                    {
+                      "valueCoding": {
+                        "system": "http://hl7.org/fhir/procedure-status",
+                        "code": "completed",
+                        "display": "Completed"
+                      }
+                    },
+                    {
+                      "valueReference": {
+                        "reference": "urn:uuid:e9dc055e-5bdc-11e7-907b-a6006ad3dba0"
+                      }
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "text": "Immunisation: Immunisation Administration",
+              "question": [
+                {
+                  "text": "A unique identifier for an immunisation from a specific clinical terminology.",
+                  "answer": [
+                    {
+                      "valueCoding": {
+                        "system": "http://snomed.info/sct",
+                        "code": "42284007",
+                        "display": "Bacillus Calmette-Guerin vaccination (procedure)"
+                      }
+                    },
+                    {
+                      "valueReference": {
+                        "reference": "urn:uuid:e9dc055e-5bdc-11e7-907b-a6006ad3dba0"
+                      }
+                    }
+                  ]
+                },
+                {
+                  "text": "A status to identify whether an immunisation was administered or not",
+                  "answer": [
+                    {
+                      "valueBoolean": true
+                    },
+                    {
+                      "valueReference": {
+                        "reference": "urn:uuid:e9dbfa46-5bdc-11e7-907b-a6006ad3dba0"
+                      }
+                    }
+                  ]
+                },
+                {
+                  "text": "Name of vaccine manufacturer ",
+                  "answer": [
+                    {
+                      "valueString": "Statens Serum Institut (SSI)"
+                    },
+                    {
+                      "valueReference": {
+                        "reference": "urn:uuid:e9dbfbae-5bdc-11e7-907b-a6006ad3dba0"
+                      }
+                    }
+                  ]
+                },
+                {
+                  "text": "Vaccine product administered",
+                  "answer": [
+                    {
+                      "valueCoding": {
+                        "system": "http://snomed.info/sct",
+                        "code": "9316611000001101",
+                        "display": "BCG vaccine powder and solvent for suspension for injection vials (Statens Serum Institut) (product)"
+                      }
+                    },
+                    {
+                      "valueReference": {
+                        "reference": "urn:uuid:e9dbfa46-5bdc-11e7-907b-a6006ad3dba0"
+                      }
+                    }
+                  ]
+                },
+                {
+                  "text": "The batch number of the vaccine product.",
+                  "answer": [
+                    {
+                      "valueString": "114022A"
+                    },
+                    {
+                      "valueReference": {
+                        "reference": "urn:uuid:e9dbfa46-5bdc-11e7-907b-a6006ad3dba0"
+                      }
+                    }
+                  ]
+                },
+                {
+                  "text": "Body site vaccine was administered to.",
+                  "answer": [
+                    {
+                      "valueCoding": {
+                        "system": "http://snomed.info/sct",
+                        "code": "123851003",
+                        "display": "Mouth"
+                      }
+                    },
+                    {
+                      "valueReference": {
+                        "reference": "urn:uuid:e9dbfa46-5bdc-11e7-907b-a6006ad3dba0"
+                      }
+                    }
+                  ]
+                },
+                {
+                  "text": "How vaccine entered the body.",
+                  "answer": [
+                    {
+                      "valueCoding": {
+                        "system": "http://snomed.info/sct",
+                        "code": "26643006",
+                        "display": "Oral route"
+                      }
+                    },
+                    {
+                      "valueReference": {
+                        "reference": "urn:uuid:e9dbfa46-5bdc-11e7-907b-a6006ad3dba0"
+                      }
+                    }
+                  ]
+                },
+                {
+                  "text": "Amount of vaccine administered.",
+                  "answer": [
+                    {
+                      "valueQuantity": {
+                        "value": 0.05,
+                        "system": "http://unitsofmeasure.org",
+                        "code": "ml"
+                      }
+                    },
+                    {
+                      "valueReference": {
+                        "reference": "urn:uuid:e9dbfa46-5bdc-11e7-907b-a6006ad3dba0"
+                      }
+                    }
+                  ]
+                },
+                {
+                  "text": "Diseases protected against",
+                  "answer": [
+                    {
+                      "valueCoding": {
+                        "system": "http://snomed.info/sct",
+                        "code": "56717001",
+                        "display": "Tuberculosis (disorder)"
+                      }
+                    },
+                    {
+                      "valueReference": {
+                        "reference": "urn:uuid:e9dbfa46-5bdc-11e7-907b-a6006ad3dba0"
+                      }
+                    }
+                  ]
+                },
+                {
+                  "text": "Nominal position in a series of vaccines",
+                  "answer": [
+                    {
+                      "valueInteger": 1
+                    },
+                    {
+                      "valueReference": {
+                        "reference": "urn:uuid:e9dbfa46-5bdc-11e7-907b-a6006ad3dba0"
+                      }
+                    }
+                  ]
+                },
+                {
+                  "text": "Where an administration was reported rather than directly administered",
+                  "answer": [
+                    {
+                      "valueBoolean": false
+                    },
+                    {
+                      "valueReference": {
+                        "reference": "urn:uuid:e9dbfa46-5bdc-11e7-907b-a6006ad3dba0"
+                      }
+                    }
+                  ]
+                },
+                {
+                  "text": "Professional Group of the Professional performing the Immunisation.",
+                  "answer": [
+                    {
+                      "valueCoding": {
+                        "system": "https://fhir.hl7.org.uk/CareConnect-SDSJobRoleName-1",
+                        "code": "R8000",
+                        "display": "General Medical Practitioner"
+                      }
+                    },
+                    {
+                      "valueReference": {
+                        "reference": "urn:uuid:e9dbf8e8-5bdc-11e7-907b-a6006ad3dba0"
+                      }
+                    }
+                  ]
+                },
+                {
+                  "text": "Code of the Professional performing the Immunisation.",
+                  "answer": [
+                    {
+                      "valueString": "PT2468"
+                    },
+                    {
+                      "valueReference": {
+                        "reference": "urn:uuid:e9dbf8e8-5bdc-11e7-907b-a6006ad3dba0"
+                      }
+                    }
+                  ]
+                },
+                {
+                  "text": "The Site code of where the Immunisation took place.",
+                  "answer": [
+                    {
+                      "valueString": "B86022"
+                    },
+                    {
+                      "valueReference": {
+                        "reference": "urn:uuid:e9dbf730-5bdc-11e7-907b-a6006ad3dba0"
+                      }
+                    }
+                  ]
+                },
+                {
+                  "text": "Organisation performing the Immunisation.",
+                  "answer": [
+                    {
+                      "valueString": "B86022"
+                    },
+                    {
+                      "valueReference": {
+                        "reference": "urn:uuid:e9dbf730-5bdc-11e7-907b-a6006ad3dba0"
+                      }
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "text": "Breastfeeding Status",
+              "question": [
+                {
+                  "text": "Whether the baby's first feed was breast milk.",
+                  "answer": [
+                    {
+                      "valueCoding": {
+                        "system": "https://fhir.nhs.uk/DCH-FirstMilkFeed-1",
+                        "code": "1",
+                        "display": "Maternal Breast Milk"
+                      }
+                    },
+                    {
+                      "valueReference": {
+                        "reference": "urn:uuid:e9dbfa46-5bdc-11e7-907b-a6006ad3dba0"
+                      }
+                    }
+                  ]
+                },
+                {
+                  "text": "The breastfeeding status of a baby.",
+                  "answer": [
+                    {
+                      "valueCoding": {
+                        "system": "hir.nhs.uk/DCH-BreastfeedingStatus-1",
+                        "code": "1",
+                        "display": "Exclusively breast milk feeding"
+                      }
+                    },
+                    {
+                      "valueReference": {
+                        "reference": "urn:uuid:e9dbf8e8-5bdc-11e7-907b-a6006ad3dba0"
+                      }
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:1d67c470-4f45-11e7-b114-b2f933d5fe66",
+      "resource": {
+        "resourceType": "Condition",
+        "id": "1d67c470-4f45-11e7-b114-b2f933d5fe66",
+        "meta": {
+          "profile": [
+            "https://fhir.hl7.org.uk/StructureDefinition/CareConnect-DCH-BCGVaccineRequirement-Condition-1"
+          ]
+        },
+        "identifier": [
+          {
+            "system": "https://tools.ietf.org/html/rfc4122",
+            "value": "1d67c470-4f45-11e7-b114-b2f933d5fe66"
+          }
+        ],
+        "patient": {
+          "reference": "urn:uuid:7368c5fe-bbb4-4e9c-a585-234e06b84e82",
+          "display": "SAXTON, Sarah Marie"
+        },
+        "asserter": {
+          "reference": "urn:uuid:e9dbf8e8-5bdc-11e7-907b-a6006ad3dba0",
+          "display": "JONES, Bob (Dr.)"
+        },
+        "dateRecorded": "2012-01-22",
+        "code": {
+          "coding": [
+            {
+              "system": "http://snomed.info/sct",
+              "code": "429069001",
+              "display": "Requires Bacillus Calmette-Guerin vaccination (finding)"
+            }
+          ]
+        },
+        "category": {
+          "coding": [
+            {
+              "system": "https://hl7.org.uk/fhir/CareConnect-ConditionCategory-1",
+              "code": "finding",
+              "display": "Finding"
+            }
+          ]
+        },
+        "verificationStatus": "confirmed",
+        "notes": "Parent/grandparent born in a country with a high TB rate - South Africa"
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:e9dbfa46-5bdc-11e7-907b-a6006ad3dba0",
+      "resource": {
+        "resourceType": "Immunization",
+        "id": "e9dbfa46-5bdc-11e7-907b-a6006ad3dba0",
+        "meta": {
+          "profile": [
+            "https://fhir.hl7.org.uk/StructureDefinition/CareConnect-DCH-Immunization-1"
+          ]
+        },
+        "identifier": [
+          {
+            "system": "https://tools.ietf.org/html/rfc4122",
+            "value": "e9dbfa46-5bdc-11e7-907b-a6006ad3dba0"
+          }
+        ],
+        "status": "completed",
+        "date": "2012-01-29",
+        "vaccineCode": {
+          "coding": [
+            {
+              "system": "http://snomed.info/sct",
+              "code": "9316611000001101",
+              "display": "BCG vaccine powder and solvent for suspension for injection vials (Statens Serum Institut) (product)"
+            }
+          ]
+        },
+        "patient": {
+          "reference": "urn:uuid:7368c5fe-bbb4-4e9c-a585-234e06b84e82",
+          "display": "SAXTON, Sarah Marie"
+        },
+        "wasNotGiven": false,
+        "reported": false,
+        "performer": {
+          "reference": "urn:uuid:e9dbf8e8-5bdc-11e7-907b-a6006ad3dba0",
+          "display": "JONES, Bob (Dr.)"
+        },
+        "manufacturer": {
+          "reference": "urn:uuid:e9dbfbae-5bdc-11e7-907b-a6006ad3dba0",
+          "display": "Statens Serum Institut (SSI)"
+        },
+        "location": {
+          "reference": "urn:uuid:e9dbf730-5bdc-11e7-907b-a6006ad3dba0",
+          "display": "Wood Town GP Practice"
+        },
+        "lotNumber": "114022A",
+        "site": {
+          "coding": [
+            {
+              "extension": [
+                {
+                  "url": "https://fhir.hl7.org.uk/StructureDefinition/Extension-coding-sctdescid",
+                  "valueId": "2618974017"
+                }
+              ],
+              "system": "http://snomed.info/sct",
+              "code": "123851003",
+              "display": "Mouth"
+            }
+          ]
+        },
+        "route": {
+          "coding": [
+            {
+              "extension": [
+                {
+                  "url": "https://fhir.hl7.org.uk/StructureDefinition/Extension-coding-sctdescid",
+                  "valueId": "44611018"
+                }
+              ],
+              "system": "http://snomed.info/sct",
+              "code": "26643006",
+              "display": "Oral route"
+            }
+          ]
+        },
+        "doseQuantity": {
+          "value": 0.05,
+          "system": "http://unitsofmeasure.org",
+          "code": "ml"
+        },
+        "vaccinationProtocol": [
+          {
+            "doseSequence": 1,
+            "targetDisease": [
+              {
+                "coding": [
+                  {
+                    "system": "http://snomed.info/sct",
+                    "code": "56717001",
+                    "display": "Tuberculosis (disorder)"
+                  }
+                ]
+              }
+            ],
+            "doseStatus": {
+              "coding": [
+                {
+                  "system": "http://hl7.org/fhir/vaccination-protocol-dose-status",
+                  "code": "count",
+                  "display": "Counts"
+                }
+              ]
+            }
+          }
+        ]
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:e9dbfea6-5bdc-11e7-907b-a6006ad3dba0",
+      "resource": {
+        "resourceType": "Encounter",
+        "id": "e9dbfea6-5bdc-11e7-907b-a6006ad3dba0",
+        "meta": {
+          "profile": [
+            "https://fhir.hl7.org.uk/StructureDefinition/CareConnect-DCH-Encounter-1"
+          ]
+        },
+        "identifier": [
+          {
+            "system": "https://tools.ietf.org/html/rfc4122",
+            "value": "e9dbfea6-5bdc-11e7-907b-a6006ad3dba0"
+          }
+        ],
+        "status": "finished",
+        "patient": {
+          "reference": "urn:uuid:7368c5fe-bbb4-4e9c-a585-234e06b84e82",
+          "display": "SAXTON, Sarah Marie"
+        },
+        "participant": [
+          {
+            "individual": {
+              "reference": "urn:uuid:e9dbf8e8-5bdc-11e7-907b-a6006ad3dba0",
+              "display": "JONES, Bob (Dr.)"
+            }
+          }
+        ],
+        "appointment": {
+          "reference": "urn:uuid:e9dc055e-5bdc-11e7-907b-a6006ad3dba0"
+        },
+        "period": {
+          "start": "2012-01-29T09:00:00"
+        },
+        "location": [
+          {
+            "location": {
+              "reference": "urn:uuid:e9dbf730-5bdc-11e7-907b-a6006ad3dba0",
+              "display": "Wood Town GP Practice"
+            }
+          }
+        ],
+        "serviceProvider": {
+          "reference": "urn:uuid:e9dbf730-5bdc-11e7-907b-a6006ad3dba0",
+          "display": "Wood Town GP Practice"
+        }
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:e9dc055e-5bdc-11e7-907b-a6006ad3dba0",
+      "resource": {
+        "resourceType": "Procedure",
+        "id": "e9dc055e-5bdc-11e7-907b-a6006ad3dba0",
+        "meta": {
+          "profile": [
+            "https://fhir.hl7.org.uk/StructureDefinition/CareConnect-DCH-Procedure-1"
+          ]
+        },
+        "identifier": [
+          {
+            "system": "https://tools.ietf.org/html/rfc4122",
+            "value": "e9dc055e-5bdc-11e7-907b-a6006ad3dba0"
+          }
+        ],
+        "subject": {
+          "reference": "urn:uuid:7368c5fe-bbb4-4e9c-a585-234e06b84e82",
+          "display": "SAXTON, Sarah Marie"
+        },
+        "status": "completed",
+        "code": {
+          "coding": [
+            {
+              "system": "http://snomed.info/sct",
+              "code": "42284007",
+              "display": "Bacillus Calmette-Guerin vaccination (procedure)"
+            }
+          ]
+        },
+        "performer": [
+          {
+            "actor": {
+              "reference": "urn:uuid:e9dbf8e8-5bdc-11e7-907b-a6006ad3dba0",
+              "display": "JONES, Bob (Dr.)"
+            }
+          }
+        ],
+        "encounter": {
+          "reference": "urn:uuid:e9dbfea6-5bdc-11e7-907b-a6006ad3dba0"
+        },
+        "location": {
+          "reference": "urn:uuid:e9dbf730-5bdc-11e7-907b-a6006ad3dba0",
+          "display": "Wood Town GP Practice"
+        },
+        "request": {
+          "reference": "urn:uuid:e9dbffdc-5bdc-11e7-907b-a6006ad3dba0"
+        }
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:e9dbffdc-5bdc-11e7-907b-a6006ad3dba0",
+      "resource": {
+        "resourceType": "ProcedureRequest",
+        "id": "e9dbffdc-5bdc-11e7-907b-a6006ad3dba0",
+        "meta": {
+          "profile": [
+            "https://fhir.hl7.org.uk/StructureDefinition/DCH-ProcedureRequest-1"
+          ]
+        },
+        "extension": [
+          {
+            "url": "https://fhir.nhs.uk/StructureDefinition/Extension-DCH-ConsentStatus-1",
+            "valueCodeableConcept": {
+              "coding": [
+                {
+                  "system": "https://fhir.nhs.uk/dch-consentstatus-1",
+                  "code": "Consented",
+                  "display": "Consented"
+                }
+              ]
+            }
+          }
+        ],
+        "identifier": [
+          {
+            "system": "https://tools.ietf.org/html/rfc4122",
+            "value": "e9dbffdc-5bdc-11e7-907b-a6006ad3dba0"
+          }
+        ],
+        "subject": {
+          "reference": "urn:uuid:7368c5fe-bbb4-4e9c-a585-234e06b84e82",
+          "display": "SAXTON, Sarah Marie"
+        },
+        "code": {
+          "coding": [
+            {
+              "system": "http://snomed.info/sct",
+              "code": "42284007",
+              "display": "Bacillus Calmette-Guerin vaccination (procedure)"
+            }
+          ]
+        },
+        "orderedOn": "2012-01-22",
+        "orderer": {
+          "reference": "urn:uuid:e9dbf8e8-5bdc-11e7-907b-a6006ad3dba0",
+          "display": "JONES, Bob (Dr.)"
+        }
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:e9dbfa46-5bdc-11e7-907b-a6006ad3dba0",
+      "resource": {
+        "resourceType": "Observation",
+        "id": "e9dbfa46-5bdc-11e7-907b-a6006ad3dba0",
+        "meta": {
+          "profile": [
+            "https://fhir.hl7.org.uk/StructureDefinition/CareConnect-DCH-FirstMilkFeed-Observation-1"
+          ]
+        },
+        "identifier": [
+          {
+            "system": "https://tools.ietf.org/html/rfc4122",
+            "value": "e9dbfa46-5bdc-11e7-907b-a6006ad3dba0"
+          }
+        ],
+        "status": "final",
+        "code": {
+          "coding": [
+            {
+              "system": "http://snomed.info/sct",
+              "code": "405027001",
+              "display": "Breastfeeding establishment: infant (observable entity)"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "urn:uuid:7368c5fe-bbb4-4e9c-a585-234e06b84e82",
+          "display": "SAXTON, Sarah Marie"
+        },
+        "encounter": {
+          "reference": "urn:uuid:e9dbfea6-5bdc-11e7-907b-a6006ad3dba0"
+        },
+        "performer": [
+          {
+            "reference": "urn:uuid:e9dbf8e8-5bdc-11e7-907b-a6006ad3dba0",
+            "display": "JONES, Bob (Dr.)"
+          }
+        ],
+        "valueCodeableConcept": {
+          "coding": [
+            {
+              "system": "https://fhir.nhs.uk/ValueSet/DCH-FirstMilkFeed-1",
+              "code": "1",
+              "display": "Maternal Breast Milk"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:e9dbf8e8-5bdc-11e7-907b-a6006ad3dba0",
+      "resource": {
+        "resourceType": "Observation",
+        "id": "e9dbf8e8-5bdc-11e7-907b-a6006ad3dba0",
+        "meta": {
+          "profile": [
+            "https://fhir.hl7.org.uk/StructureDefinition/CareConnect-DCH-BreastfeedingStatus-Observation-1"
+          ]
+        },
+        "identifier": [
+          {
+            "system": "https://tools.ietf.org/html/rfc4122",
+            "value": "e9dbf8e8-5bdc-11e7-907b-a6006ad3dba0"
+          }
+        ],
+        "status": "final",
+        "code": {
+          "coding": [
+            {
+              "system": "http://snomed.info/sct",
+              "code": "413711008",
+              "display": "Breastfeeding (infant) (observable entity)"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "urn:uuid:7368c5fe-bbb4-4e9c-a585-234e06b84e82",
+          "display": "SAXTON, Sarah Marie"
+        },
+        "encounter": {
+          "reference": "urn:uuid:e9dbfea6-5bdc-11e7-907b-a6006ad3dba0"
+        },
+        "performer": [
+          {
+            "reference": "urn:uuid:e9dbf8e8-5bdc-11e7-907b-a6006ad3dba0",
+            "display": "JONES, Bob (Dr.)"
+          }
+        ],
+        "valueCodeableConcept": {
+          "coding": [
+            {
+              "system": "https://fhir.nhs.uk/ValueSet/DCH-BreastfeedingStatus-1",
+              "code": "1",
+              "display": "Exclusively breast milk feeding"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:e9dbf8e8-5bdc-11e7-907b-a6006ad3dba0",
+      "resource": {
+        "resourceType": "Practitioner",
+        "id": "e9dbf8e8-5bdc-11e7-907b-a6006ad3dba0",
+        "meta": {
+          "profile": [
+            "https://fhir.hl7.org.uk/StructureDefinition/CareConnect-Practitioner-1"
+          ]
+        },
+        "identifier": [
+          {
+            "system": "https://fhir.nhs.net/Id/sds-role-profile-id",
+            "value": "PT2468"
+          }
+        ],
+        "name": {
+          "family": [
+            "Jones"
+          ],
+          "given": [
+            "Bob"
+          ],
+          "prefix": [
+            "Dr."
+          ]
+        },
+        "telecom": [
+          {
+            "system": "phone",
+            "value": "0113-333-1222",
+            "use": "work"
+          }
+        ],
+        "address": [
+          {
+            "use": "work",
+            "line": [
+              "13, Amber Street"
+            ],
+            "city": "Leeds",
+            "postalCode": "LS20 1TV",
+            "country": "GBR"
+          }
+        ],
+        "gender": "male",
+        "practitionerRole": [
+          {
+            "managingOrganization": {
+              "reference": "urn:uuid:e9dbf730-5bdc-11e7-907b-a6006ad3dba0",
+              "display": "Wood Town GP Practice"
+            },
+            "role": {
+              "coding": [
+                {
+                  "system": "http://fhir.nhs.net/ValueSet/sds-job-role-name-1",
+                  "code": "R8000",
+                  "display": "General Medical Practitioner"
+                }
+              ]
+            }
+          }
+        ]
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:e9dbf730-5bdc-11e7-907b-a6006ad3dba0",
+      "resource": {
+        "resourceType": "Organization",
+        "id": "e9dbf730-5bdc-11e7-907b-a6006ad3dba0",
+        "meta": {
+          "profile": [
+            "https://fhir.hl7.org.uk/StructureDefinition/CareConnect-Organization-1"
+          ]
+        },
+        "identifier": [
+          {
+            "system": "https://fhir.nhs.uk/Id/ods-organization-code",
+            "value": "B86022"
+          }
+        ],
+        "name": "Wood Town GP practice",
+        "telecom": [
+          {
+            "system": "phone",
+            "value": "0113-333-3579",
+            "use": "work"
+          }
+        ],
+        "address": [
+          {
+            "use": "work",
+            "line": [
+              "13, Amber Street"
+            ],
+            "city": "Leeds",
+            "postalCode": "LS20 1TV",
+            "country": "GBR"
+          }
+        ]
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:e9dbfbae-5bdc-11e7-907b-a6006ad3dba0",
+      "resource": {
+        "resourceType": "Organization",
+        "id": "e9dbfbae-5bdc-11e7-907b-a6006ad3dba0",
+        "meta": {
+          "profile": [
+            "https://fhir.hl7.org.uk/StructureDefinition/CareConnect-Organization-1"
+          ]
+        },
+        "name": "Statens Serum Institut (SSI) "
+      }
+    }
+  ]
+}

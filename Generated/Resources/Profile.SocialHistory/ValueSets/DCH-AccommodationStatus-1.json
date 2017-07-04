@@ -13,7 +13,7 @@
   "compose": {
     "include": [
       {
-        "system": "https://fhir.nhs.uk/dch-accommodationstatus-1",
+        "system": "https://fhir.nhs.uk/DCH-AccommodationStatus-1",
         "concept": [
           {
             "code": " MA00 ",

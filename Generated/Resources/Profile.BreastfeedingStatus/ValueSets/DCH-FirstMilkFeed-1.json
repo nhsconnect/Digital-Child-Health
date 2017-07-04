@@ -10,7 +10,7 @@
   "compose": {
     "include": [
       {
-        "system": "https://fhir.nhs.uk/dch-firstmilkfeed-1",
+        "system": "https://fhir.nhs.uk/DCH-FirstMilkFeed-1",
         "concept": [
           {
             "code": "1",

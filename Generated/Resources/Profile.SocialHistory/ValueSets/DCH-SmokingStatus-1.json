@@ -13,7 +13,7 @@
   "compose": {
     "include": [
       {
-        "system": "https://fhir.nhs.uk/dch-smokingstatus-1",
+        "system": "https://fhir.nhs.uk/DCH-SmokingStatus-1",
         "concept": [
           {
             "code": "01",

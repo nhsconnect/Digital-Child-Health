@@ -1,7 +1,7 @@
 {
   "resourceType": "StructureDefinition",
   "meta": {
-    "lastUpdated": "2017-06-28T13:12:36.637+01:00",
+    "lastUpdated": "2017-07-03T11:14:09.79+01:00",
     "tag": [
       {
         "system": "urn:hscic:publishOrder",
@@ -14033,9 +14033,9 @@
         ],
         "binding": {
           "strength": "required",
-          "description": "Procedure outcome for the Child Health Event",
+          "description": "A code specifying the state of the procedure.",
           "valueSetReference": {
-            "reference": "https://fhir.nhs.uk/ValueSet/DCH-ProcedureOutcome-1"
+            "reference": "http://hl7.org/fhir/ValueSet/procedure-status"
           }
         },
         "mapping": [
@@ -25573,7 +25573,7 @@
         "definition": "The responses will consist of the value and the supporting resource for that value.",
         "comments": "The value is nested because we cannot have a repeating structure that has variable type.",
         "min": 2,
-        "max": "*",
+        "max": "2",
         "base": {
           "path": "QuestionnaireResponse.group.question.answer",
           "min": 0,
@@ -27208,9 +27208,9 @@
         ],
         "binding": {
           "strength": "required",
-          "description": "Procedure outcome for the Child Health Event",
+          "description": "A code specifying the state of the procedure.",
           "valueSetReference": {
-            "reference": "https://fhir.nhs.uk/ValueSet/DCH-ProcedureOutcome-1"
+            "reference": "http://hl7.org/fhir/ValueSet/procedure-status"
           }
         }
       },
@@ -28093,7 +28093,8 @@
         "path": "QuestionnaireResponse.group.question.answer",
         "short": "The responses will consist of the value and the supporting resource for that value",
         "definition": "The responses will consist of the value and the supporting resource for that value.",
-        "min": 2
+        "min": 2,
+        "max": "2"
       },
       {
         "path": "QuestionnaireResponse.group.question.answer.value[x]",

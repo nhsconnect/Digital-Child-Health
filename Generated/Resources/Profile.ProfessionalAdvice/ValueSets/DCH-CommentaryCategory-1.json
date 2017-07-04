@@ -12,7 +12,7 @@
   "compose": {
     "include": [
       {
-        "system": "https://fhir.nhs.uk/dch-commentarycategory-1",
+        "system": "https://fhir.nhs.uk/DCH-CommentaryCategory-1",
         "concept": [
           {
             "code": "Advice",

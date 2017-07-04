@@ -11,7 +11,7 @@
   "compose": {
     "include": [
       {
-        "system": "https://fhir.nhs.uk/dch-disposalcode-1",
+        "system": "https://fhir.nhs.uk/DCH-Protocol-1",
         "concept": [
           {
             "code": "NICU Protocol",

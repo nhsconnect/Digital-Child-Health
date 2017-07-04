@@ -11,7 +11,7 @@
   "compose": {
     "include": [
       {
-        "system": "https://fhir.nhs.uk/dch-testoutcome-1",
+        "system": "https://fhir.nhs.uk/DCH-TestOutcome-1",
         "concept": [
           {
             "code": "Right ear clear response: Yes",

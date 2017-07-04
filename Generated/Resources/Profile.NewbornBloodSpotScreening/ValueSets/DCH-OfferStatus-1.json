@@ -10,7 +10,7 @@
   "compose": {
     "include": [
       {
-        "system": "https://fhir.nhs.uk/dch-offerstatus-1",
+        "system": "https://fhir.nhs.uk/DCH-OfferStatus-1",
         "concept": [
           {
             "code": "Offered and declined",

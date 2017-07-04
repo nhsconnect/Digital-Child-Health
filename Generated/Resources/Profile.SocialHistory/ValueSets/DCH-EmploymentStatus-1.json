@@ -13,7 +13,7 @@
   "compose": {
     "include": [
       {
-        "system": "https://fhir.nhs.uk/dch-employmentstatus-1",
+        "system": "https://fhir.nhs.uk/DCH-EmploymentStatus-1",
         "concept": [
           {
             "code": "01",
