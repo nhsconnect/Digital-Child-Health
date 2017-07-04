@@ -1,7 +1,7 @@
 {
   "resourceType": "StructureDefinition",
   "meta": {
-    "lastUpdated": "2017-06-23T20:09:46.314+01:00",
+    "lastUpdated": "2017-07-04T11:32:58.155+01:00",
     "tag": [
       {
         "system": "urn:hscic:publishOrder",
@@ -7444,7 +7444,7 @@
           "Admission diagnosis"
         ],
         "min": 0,
-        "max": "0",
+        "max": "1",
         "base": {
           "path": "Encounter.reason",
           "min": 0,
@@ -8674,7 +8674,7 @@
         "definition": "Details about the admission to a healthcare service.",
         "comments": "An Encounter may cover more than just the inpatient stay. Contexts such as outpatients, community clinics, and aged care facilities are also included.  The duration recorded in the period of this encounter covers the entire scope of this hospitalization record.",
         "min": 0,
-        "max": "0",
+        "max": "1",
         "base": {
           "path": "Encounter.hospitalization",
           "min": 0,
@@ -11241,7 +11241,7 @@
         "short": "The admitting diagnosis as reported by admitting practitioner",
         "definition": "The admitting diagnosis field is used to record the diagnosis codes as reported by admitting practitioner. This could be different or in addition to the conditions reported as reason-condition(s) for the encounter.",
         "min": 0,
-        "max": "0",
+        "max": "1",
         "base": {
           "path": "Encounter.hospitalization.admittingDiagnosis",
           "min": 0,
@@ -11251,7 +11251,7 @@
           {
             "code": "Reference",
             "profile": [
-              "http://hl7.org/fhir/StructureDefinition/Condition"
+              "https://fhir.hl7.org.uk/StructureDefinition/CareConnect-DCH-Condition-1"
             ]
           }
         ],
@@ -11391,7 +11391,7 @@
         "short": "Relative, internal or absolute URL reference",
         "definition": "A reference to a location at which the other resource is found. The reference may be a relative reference, in which case it is relative to the service base URL, or an absolute URL that resolves to the location where the resource is found. The reference may be version specific or not. If the reference is not to a FHIR RESTful server, then it should be assumed to be version specific. Internal fragment references (start with '#') refer to contained resources.",
         "comments": "Using absolute URLs provides a stable scalable approach suitable for a cloud/web context, while using relative/logical references provides a flexible approach suitable for use when trading across closed eco-system boundaries.   Absolute URLs do not need to point to a FHIR RESTful server, though this is the preferred approach. If the URL conforms to the structure \"/[type]/[id]\" then it should be assumed that the reference is to a FHIR RESTful server.",
-        "min": 0,
+        "min": 1,
         "max": "1",
         "base": {
           "path": "Reference.reference",
@@ -14811,7 +14811,7 @@
         "definition": "Category or kind of location after discharge.",
         "comments": "Not all terminology uses fit this general pattern. In some cases, models should not use CodeableConcept and use Coding directly and provide their own structure for managing text, codings, translations and the relationship between elements and pre- and post-coordination.",
         "min": 0,
-        "max": "0",
+        "max": "1",
         "base": {
           "path": "Encounter.hospitalization.dischargeDisposition",
           "min": 0,
@@ -14971,7 +14971,7 @@
         "comments": "Codes may be defined very casually in enumerations, or code lists, up to very formal definitions such as SNOMED CT - see the HL7 v3 Core Principles for more information.  Ordering of codings is undefined and SHALL NOT be used to infer meaning. Generally, at most only one of the coding values will be labelled as UserSelected = true.",
         "requirements": "Allows for translations and alternate encodings within a code system.  Also supports communication of the same instance to systems requiring different encodings.",
         "min": 0,
-        "max": "*",
+        "max": "1",
         "base": {
           "path": "CodeableConcept.coding",
           "min": 0,
@@ -15000,6 +15000,13 @@
           }
         ],
         "isSummary": true,
+        "binding": {
+          "strength": "required",
+          "description": "A code to identify how an Accident and Emergency Attendance might end.",
+          "valueSetReference": {
+            "reference": "https://fhir.nhs.uk/ValueSet/DCH-DisposalCode-1"
+          }
+        },
         "mapping": [
           {
             "identity": "rim",
@@ -15127,7 +15134,7 @@
         "definition": "The identification of the code system that defines the meaning of the symbol in the code.",
         "comments": "The URI may be an OID (urn:oid:...) or a UUID (urn:uuid:...).  OIDs and UUIDs SHALL be references to the HL7 OID registry. Otherwise, the URI should come from HL7's list of FHIR defined special URIs or it should de-reference to some definition that establish the system clearly and unambiguously.",
         "requirements": "Need to be unambiguous about the source of the definition of the symbol.",
-        "min": 0,
+        "min": 1,
         "max": "1",
         "base": {
           "path": "Coding.system",
@@ -15139,6 +15146,7 @@
             "code": "uri"
           }
         ],
+        "fixedUri": "https://fhir.nhs.uk/DCH-DisposalCode-1",
         "condition": [
           "ele-1"
         ],
@@ -15236,7 +15244,7 @@
         "definition": "A symbol in syntax defined by the system. The symbol may be a predefined code or an expression in a syntax defined by the coding system (e.g. post-coordination).",
         "comments": "Note that FHIR strings may not exceed 1MB in size",
         "requirements": "Need to refer to a particular code in the system.",
-        "min": 0,
+        "min": 1,
         "max": "1",
         "base": {
           "path": "Coding.code",
@@ -15291,7 +15299,7 @@
         "definition": "A representation of the meaning of the code in the system, following the rules of the system.",
         "comments": "Note that FHIR strings may not exceed 1MB in size",
         "requirements": "Need to be able to carry a human-readable meaning of the code for readers that do not know  the system.",
-        "min": 0,
+        "min": 1,
         "max": "1",
         "base": {
           "path": "Coding.display",
@@ -17127,7 +17135,7 @@
       },
       {
         "path": "Encounter.reason",
-        "max": "0"
+        "max": "1"
       },
       {
         "path": "Encounter.reason.coding",
@@ -17187,10 +17195,6 @@
         "max": "0"
       },
       {
-        "path": "Encounter.hospitalization",
-        "max": "0"
-      },
-      {
         "path": "Encounter.hospitalization.preAdmissionIdentifier",
         "max": "0"
       },
@@ -17223,7 +17227,19 @@
       },
       {
         "path": "Encounter.hospitalization.admittingDiagnosis",
-        "max": "0"
+        "max": "1",
+        "type": [
+          {
+            "code": "Reference",
+            "profile": [
+              "https://fhir.hl7.org.uk/StructureDefinition/CareConnect-DCH-Condition-1"
+            ]
+          }
+        ]
+      },
+      {
+        "path": "Encounter.hospitalization.admittingDiagnosis.reference",
+        "min": 1
       },
       {
         "path": "Encounter.hospitalization.reAdmission",
@@ -17304,8 +17320,28 @@
         "max": "0"
       },
       {
-        "path": "Encounter.hospitalization.dischargeDisposition",
-        "max": "0"
+        "path": "Encounter.hospitalization.dischargeDisposition.coding",
+        "max": "1",
+        "binding": {
+          "strength": "required",
+          "description": "A code to identify how an Accident and Emergency Attendance might end.",
+          "valueSetReference": {
+            "reference": "https://fhir.nhs.uk/ValueSet/DCH-DisposalCode-1"
+          }
+        }
+      },
+      {
+        "path": "Encounter.hospitalization.dischargeDisposition.coding.system",
+        "min": 1,
+        "fixedUri": "https://fhir.nhs.uk/DCH-DisposalCode-1"
+      },
+      {
+        "path": "Encounter.hospitalization.dischargeDisposition.coding.code",
+        "min": 1
+      },
+      {
+        "path": "Encounter.hospitalization.dischargeDisposition.coding.display",
+        "min": 1
       },
       {
         "path": "Encounter.hospitalization.dischargeDiagnosis",
