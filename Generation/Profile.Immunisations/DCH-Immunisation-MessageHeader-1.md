@@ -1,0 +1,1 @@
+This MessageHeader resource is constrained to represent a message header for an Immunisation Child Health event.

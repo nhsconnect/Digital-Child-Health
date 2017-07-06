@@ -1,0 +1,1 @@
+This Questionnaire Response resource is constrained to represent an Allergies and Reactions Questionnaire Response for a Child Health event message.

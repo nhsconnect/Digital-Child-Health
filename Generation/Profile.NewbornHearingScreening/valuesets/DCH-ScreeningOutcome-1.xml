@@ -7,10 +7,10 @@
 	<version value="1.0.0"/>
 	<name value="Screening Outcome"/>
 	<status value="active"/>
-	<description value="The outcome of the hearing screening."/>
+	<description value="The outcome of the newborn hearing screening."/>
 	<compose>
 		<include>
-			<system value="https://fhir.nhs.uk/dch-screeningoutcome-1"/>
+			<system value="https://fhir.nhs.uk/DCH-ScreeningOutcome-1"/>
 			<concept>
 				<code value="1"/>
 				<display value="Clear response no follow up required"/>

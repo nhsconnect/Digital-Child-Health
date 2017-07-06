@@ -8,6 +8,7 @@ The FHIR resource profiles within this DMS have been created to support the Chil
 - **[Profile.AssessmentAPGAR]** - FHIR resource profiles combined to support an Assessment APGAR event message.
 - **[Profile.BirthDetails]** - FHIR resource profiles combined to support a Birth Details event message.
 - **[Profile.BirthDischarge]** - FHIR resource profiles combined to support a Birth Discharge event message.
+- **[Profile.BreastfeedingStatus]** - FHIR resource profiles combined to support a Breastfeeding Status event message.
 - **[Profile.FollowUp]** - FHIR resource profiles combined to support a Follow Up event message.
 - **[Profile.Measurements]** - FHIR resource profiles combined to support a Measurements event message.
 - **[Profile.Medications]** - FHIR resource profiles combined to support a Medications event message.
@@ -21,7 +22,6 @@ The FHIR resource profiles within this DMS have been created to support the Chil
 
 - **[Profile.AccidentsAndInjuries]** - FHIR resource profiles combined to support an Accidents and Injuries event message.
 - **[Profile.AllergiesAndReactions]** - FHIR resource profiles combined to support an Allergies and Reactions event message.
-- **[Profile.BreastfeedingStatus]** - FHIR resource profiles combined to support a Breastfeeding Status event message.
 - **[Profile.Conditions]** - FHIR resource profiles combined to support a Conditions event message.
 - **[Profile.FamilyHistory]** - FHIR resource profiles combined to support a Family History event message.
 - **[Profile.Immunisations]** - FHIR resource profiles combined to support an Immunisation event message.  

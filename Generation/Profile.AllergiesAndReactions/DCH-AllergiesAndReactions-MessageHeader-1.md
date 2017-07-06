@@ -1,0 +1,1 @@
+This MessageHeader resource is constrained to represent a message header for an Allergies and Reactions Child Health event.

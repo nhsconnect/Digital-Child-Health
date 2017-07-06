@@ -1,0 +1,1 @@
+This Questionnaire Response resource is constrained to represent a Medications Questionnaire Response for a Child Health event message.

@@ -1,9 +1,9 @@
 This 'DCH-Bundle-1' Bundle resource profile is used as a container to collect a combination of the following resources to capture immunisations:
 
-- [DCH-MessageHeader-1]
+- [DCH-Immunisation-MessageHeader-1]
 - [CareConnect-Organization-1]
 - [CareConnect-DCH-Patient-1]
-- [DCH-QuestionnaireResponse-1]
+- [DCH-Immunisation-QuestionnaireResponse-1]
 - [CareConnect-DCH-Encounter-1]
 - [CareConnect-DCH-Immunization-1]
 - [CareConnect-DCH-VaccinationRequirement-Condition-1]
@@ -12,11 +12,11 @@ This 'DCH-Bundle-1' Bundle resource profile is used as a container to collect a 
 - [CareConnect-Location-1]
 
 
-[DCH-MessageHeader-1]:dch-messageheader-1.html
+[DCH-Immunisation-MessageHeader-1]:dch-immunisation-messageheader-1.html
 [CareConnect-Organization-1]:careconnect-organization-1.html
 [CareConnect-DCH-Patient-1]:careconnect-dch-patient-1.html
 [CareConnect-DCH-Encounter-1]:careconnect-dch-encounter-1.html
-[DCH-QuestionnaireResponse-1]:dch-questionnaireresponse-1.html
+[DCH-Immunisation-QuestionnaireResponse-1]:dch-immunisation-questionnaireresponse-1.html
 [CareConnect-DCH-Immunization-1]:careconnect-dch-immunization-1.html
 [DCH-Appointment-1]:dch-appointment-1.html
 [CareConnect-DCH-Procedure-1]:careconnect-dch-procedure-1.html
