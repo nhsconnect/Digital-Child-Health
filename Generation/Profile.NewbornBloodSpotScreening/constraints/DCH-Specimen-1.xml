@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <meta>
-    <lastUpdated value="2017-06-08T15:37:39.845+01:00" />
+    <lastUpdated value="2017-07-07T14:52:22.568+01:00" />
     <tag>
       <system value="urn:hscic:publishOrder" />
       <code value="10" />
