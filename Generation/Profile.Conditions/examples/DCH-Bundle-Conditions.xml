@@ -111,10 +111,6 @@
 					<reference value="urn:uuid:7368c5fe-bbb4-4e9c-a585-234e06b84e82"/>
 					<display value="SAXTON, Sarah Marie"/>
 				</subject>
-				<author>
-					<reference value="urn:uuid:5ccb6bb7-a7f1-46cc-a5d3-135320765553"/>
-					<display value="Leeds Teaching Hospitals"/>
-				</author>
 				<encounter>
 					<reference value="urn:uuid:1d67bd36-4f45-11e7-b114-b2f933d5fe66"/>
 				</encounter>
@@ -245,7 +241,7 @@
 				</meta>
 				<identifier>
 					<system value="https://tools.ietf.org/html/rfc4122"/>
-					<value value="1d67be12-4f45-11e7-b114-b2f933d5fe66"/>
+					<value value="1d67bd36-4f45-11e7-b114-b2f933d5fe66"/>
 				</identifier>
 				<status value="finished"/>
 				<class value="emergency"/>
@@ -256,18 +252,18 @@
 						<display value="Emergency department patient visit (procedure)"/>
 					</coding>
 				</type>
-				<type>
-					<coding>
-						<system value="https://fhir.nhs.uk/dch-childhealthencountertype-1"/>
-						<code value="Accidents and Injuries"/>
-						<display value="Accidents and Injuries"/>
-					</coding>
-				</type>
 				<patient>
 					<reference value="urn:uuid:7368c5fe-bbb4-4e9c-a585-234e06b84e82"/>
 					<display value="SAXTON, Sarah Marie"/>
 				</patient>
 				<participant>
+					<type>
+						<coding>
+							<system value="http://hl7.org/fhir/v3/ParticipationType"/>
+							<code value="ATND"/>
+							<display value="attender"/>
+						</coding>
+					</type>				
 					<individual>
 						<reference value="urn:uuid:1d67c1f0-4f45-11e7-b114-b2f933d5fe66"/>
 						<display value="RILEY, Amber"/>

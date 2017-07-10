@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <meta>
-    <lastUpdated value="2017-07-06T10:57:37.683+01:00" />
+    <lastUpdated value="2017-07-10T10:24:01.493+01:00" />
     <tag>
       <system value="urn:hscic:publishOrder" />
       <code value="5" />
@@ -1967,8 +1967,8 @@
       <alias value="Practitioner" />
       <alias value="Department" />
       <alias value="Company" />
-      <min value="1" />
-      <max value="1" />
+      <min value="0" />
+      <max value="0" />
       <base>
         <path value="QuestionnaireResponse.author" />
         <min value="0" />
@@ -1976,11 +1976,19 @@
       </base>
       <type>
         <code value="Reference" />
-        <profile value="https://fhir.hl7.org.uk/StructureDefinition/CareConnect-Practitioner-1" />
+        <profile value="http://hl7.org/fhir/StructureDefinition/Device" />
       </type>
       <type>
         <code value="Reference" />
-        <profile value="https://fhir.hl7.org.uk/StructureDefinition/CareConnect-Organization-1" />
+        <profile value="http://hl7.org/fhir/StructureDefinition/Practitioner" />
+      </type>
+      <type>
+        <code value="Reference" />
+        <profile value="http://hl7.org/fhir/StructureDefinition/Patient" />
+      </type>
+      <type>
+        <code value="Reference" />
+        <profile value="http://hl7.org/fhir/StructureDefinition/RelatedPerson" />
       </type>
       <condition value="ele-1" />
       <constraint>
@@ -7133,15 +7141,7 @@
     </element>
     <element>
       <path value="QuestionnaireResponse.author" />
-      <min value="1" />
-      <type>
-        <code value="Reference" />
-        <profile value="https://fhir.hl7.org.uk/StructureDefinition/CareConnect-Practitioner-1" />
-      </type>
-      <type>
-        <code value="Reference" />
-        <profile value="https://fhir.hl7.org.uk/StructureDefinition/CareConnect-Organization-1" />
-      </type>
+      <max value="0" />
     </element>
     <element>
       <path value="QuestionnaireResponse.author.reference" />

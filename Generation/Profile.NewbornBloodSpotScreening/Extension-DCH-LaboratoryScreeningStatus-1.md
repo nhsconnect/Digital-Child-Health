@@ -1,1 +1,0 @@
-This extension resource has been constrained to represent the laboratory screening status for a blood spot specimen.

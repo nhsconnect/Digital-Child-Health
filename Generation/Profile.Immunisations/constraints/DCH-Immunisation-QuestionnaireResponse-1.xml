@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <meta>
     <lastUpdated value="2017-07-07T14:51:07.07+01:00" />
@@ -674,10 +674,6 @@
         <xpath value="@value|f:*|h:div" />
       </constraint>
       <isSummary value="true" />
-      <binding>
-        <strength value="example" />
-        <description value="Codes that represent various types of tags, commonly workflow-related; e.g. &quot;Needs review by Dr. Jones&quot;" />
-      </binding>
       <mapping>
         <identity value="rim" />
         <map value="n/a" />
@@ -1866,10 +1862,6 @@
         <xpath value="@value|f:*|h:div" />
       </constraint>
       <isSummary value="true" />
-      <binding>
-        <strength value="example" />
-        <description value="Codes that represent various types of tags, commonly workflow-related; e.g. &quot;Needs review by Dr. Jones&quot;" />
-      </binding>
       <mapping>
         <identity value="rim" />
         <map value="n/a" />
@@ -5150,10 +5142,6 @@
         <human value="All FHIR elements must have a @value or children" />
         <xpath value="@value|f:*|h:div" />
       </constraint>
-      <binding>
-        <strength value="example" />
-        <description value="Code indicating the response provided for a question." />
-      </binding>
       <mapping>
         <identity value="rim" />
         <map value="n/a" />
@@ -6064,10 +6052,6 @@
         <human value="All FHIR elements must have a @value or children" />
         <xpath value="@value|f:*|h:div" />
       </constraint>
-      <binding>
-        <strength value="example" />
-        <description value="Code indicating the response provided for a question." />
-      </binding>
       <mapping>
         <identity value="rim" />
         <map value="n/a" />
@@ -6479,10 +6463,6 @@
         <human value="All FHIR elements must have a @value or children" />
         <xpath value="@value|f:*|h:div" />
       </constraint>
-      <binding>
-        <strength value="example" />
-        <description value="Code indicating the response provided for a question." />
-      </binding>
       <mapping>
         <identity value="rim" />
         <map value="n/a" />
@@ -6894,10 +6874,6 @@
         <human value="All FHIR elements must have a @value or children" />
         <xpath value="@value|f:*|h:div" />
       </constraint>
-      <binding>
-        <strength value="example" />
-        <description value="Code indicating the response provided for a question." />
-      </binding>
       <mapping>
         <identity value="rim" />
         <map value="n/a" />
@@ -7808,10 +7784,6 @@
         <human value="All FHIR elements must have a @value or children" />
         <xpath value="@value|f:*|h:div" />
       </constraint>
-      <binding>
-        <strength value="example" />
-        <description value="Code indicating the response provided for a question." />
-      </binding>
       <mapping>
         <identity value="rim" />
         <map value="n/a" />
@@ -8223,10 +8195,6 @@
         <human value="All FHIR elements must have a @value or children" />
         <xpath value="@value|f:*|h:div" />
       </constraint>
-      <binding>
-        <strength value="example" />
-        <description value="Code indicating the response provided for a question." />
-      </binding>
       <mapping>
         <identity value="rim" />
         <map value="n/a" />
@@ -8638,10 +8606,6 @@
         <human value="All FHIR elements must have a @value or children" />
         <xpath value="@value|f:*|h:div" />
       </constraint>
-      <binding>
-        <strength value="example" />
-        <description value="Code indicating the response provided for a question." />
-      </binding>
       <mapping>
         <identity value="rim" />
         <map value="n/a" />
@@ -9053,10 +9017,6 @@
         <human value="All FHIR elements must have a @value or children" />
         <xpath value="@value|f:*|h:div" />
       </constraint>
-      <binding>
-        <strength value="example" />
-        <description value="Code indicating the response provided for a question." />
-      </binding>
       <mapping>
         <identity value="rim" />
         <map value="n/a" />
@@ -9468,10 +9428,6 @@
         <human value="All FHIR elements must have a @value or children" />
         <xpath value="@value|f:*|h:div" />
       </constraint>
-      <binding>
-        <strength value="example" />
-        <description value="Code indicating the response provided for a question." />
-      </binding>
       <mapping>
         <identity value="rim" />
         <map value="n/a" />
@@ -9883,10 +9839,6 @@
         <human value="All FHIR elements must have a @value or children" />
         <xpath value="@value|f:*|h:div" />
       </constraint>
-      <binding>
-        <strength value="example" />
-        <description value="Code indicating the response provided for a question." />
-      </binding>
       <mapping>
         <identity value="rim" />
         <map value="n/a" />
@@ -10797,10 +10749,6 @@
         <human value="All FHIR elements must have a @value or children" />
         <xpath value="@value|f:*|h:div" />
       </constraint>
-      <binding>
-        <strength value="example" />
-        <description value="Code indicating the response provided for a question." />
-      </binding>
       <mapping>
         <identity value="rim" />
         <map value="n/a" />
@@ -11207,10 +11155,6 @@
         <code value="Reference" />
         <profile value="https://fhir.nhs.uk/StructureDefinition/DCH-Appointment-1" />
       </type>
-      <type>
-        <code value="Reference" />
-        <profile value="https://fhir.hl7.org.uk/StructureDefinition/CareConnect-DCH-Encounter-1" />
-      </type>
       <condition value="ele-1" />
       <constraint>
         <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-expression">
@@ -11221,10 +11165,6 @@
         <human value="All FHIR elements must have a @value or children" />
         <xpath value="@value|f:*|h:div" />
       </constraint>
-      <binding>
-        <strength value="example" />
-        <description value="Code indicating the response provided for a question." />
-      </binding>
       <mapping>
         <identity value="rim" />
         <map value="n/a" />
@@ -13389,10 +13329,6 @@
         <human value="All FHIR elements must have a @value or children" />
         <xpath value="@value|f:*|h:div" />
       </constraint>
-      <binding>
-        <strength value="example" />
-        <description value="Code indicating the response provided for a question." />
-      </binding>
       <mapping>
         <identity value="rim" />
         <map value="n/a" />
@@ -13804,10 +13740,6 @@
         <human value="All FHIR elements must have a @value or children" />
         <xpath value="@value|f:*|h:div" />
       </constraint>
-      <binding>
-        <strength value="example" />
-        <description value="Code indicating the response provided for a question." />
-      </binding>
       <mapping>
         <identity value="rim" />
         <map value="n/a" />
@@ -14219,10 +14151,6 @@
         <human value="All FHIR elements must have a @value or children" />
         <xpath value="@value|f:*|h:div" />
       </constraint>
-      <binding>
-        <strength value="example" />
-        <description value="Code indicating the response provided for a question." />
-      </binding>
       <mapping>
         <identity value="rim" />
         <map value="n/a" />
@@ -15052,10 +14980,6 @@
         <human value="All FHIR elements must have a @value or children" />
         <xpath value="@value|f:*|h:div" />
       </constraint>
-      <binding>
-        <strength value="example" />
-        <description value="Code indicating the response provided for a question." />
-      </binding>
       <mapping>
         <identity value="rim" />
         <map value="n/a" />
@@ -15467,10 +15391,6 @@
         <human value="All FHIR elements must have a @value or children" />
         <xpath value="@value|f:*|h:div" />
       </constraint>
-      <binding>
-        <strength value="example" />
-        <description value="Code indicating the response provided for a question." />
-      </binding>
       <mapping>
         <identity value="rim" />
         <map value="n/a" />
@@ -15882,11 +15802,7 @@
         <human value="All FHIR elements must have a @value or children" />
         <xpath value="@value|f:*|h:div" />
       </constraint>
-      <binding>
-        <strength value="example" />
-        <description value="Code indicating the response provided for a question." />
-      </binding>
-      <mapping>
+       <mapping>
         <identity value="rim" />
         <map value="n/a" />
       </mapping>
@@ -16297,10 +16213,6 @@
         <human value="All FHIR elements must have a @value or children" />
         <xpath value="@value|f:*|h:div" />
       </constraint>
-      <binding>
-        <strength value="example" />
-        <description value="Code indicating the response provided for a question." />
-      </binding>
       <mapping>
         <identity value="rim" />
         <map value="n/a" />
@@ -16712,10 +16624,6 @@
         <human value="All FHIR elements must have a @value or children" />
         <xpath value="@value|f:*|h:div" />
       </constraint>
-      <binding>
-        <strength value="example" />
-        <description value="Code indicating the response provided for a question." />
-      </binding>
       <mapping>
         <identity value="rim" />
         <map value="n/a" />
@@ -17128,10 +17036,6 @@
         <human value="All FHIR elements must have a @value or children" />
         <xpath value="@value|f:*|h:div" />
       </constraint>
-      <binding>
-        <strength value="example" />
-        <description value="Code indicating the response provided for a question." />
-      </binding>
       <mapping>
         <identity value="rim" />
         <map value="n/a" />
@@ -17543,10 +17447,6 @@
         <human value="All FHIR elements must have a @value or children" />
         <xpath value="@value|f:*|h:div" />
       </constraint>
-      <binding>
-        <strength value="example" />
-        <description value="Code indicating the response provided for a question." />
-      </binding>
       <mapping>
         <identity value="rim" />
         <map value="n/a" />
@@ -17958,10 +17858,6 @@
         <human value="All FHIR elements must have a @value or children" />
         <xpath value="@value|f:*|h:div" />
       </constraint>
-      <binding>
-        <strength value="example" />
-        <description value="Code indicating the response provided for a question." />
-      </binding>
       <mapping>
         <identity value="rim" />
         <map value="n/a" />
@@ -18373,10 +18269,6 @@
         <human value="All FHIR elements must have a @value or children" />
         <xpath value="@value|f:*|h:div" />
       </constraint>
-      <binding>
-        <strength value="example" />
-        <description value="Code indicating the response provided for a question." />
-      </binding>
       <mapping>
         <identity value="rim" />
         <map value="n/a" />
@@ -19206,10 +19098,6 @@
         <human value="All FHIR elements must have a @value or children" />
         <xpath value="@value|f:*|h:div" />
       </constraint>
-      <binding>
-        <strength value="example" />
-        <description value="Code indicating the response provided for a question." />
-      </binding>
       <mapping>
         <identity value="rim" />
         <map value="n/a" />
@@ -19621,10 +19509,6 @@
         <human value="All FHIR elements must have a @value or children" />
         <xpath value="@value|f:*|h:div" />
       </constraint>
-      <binding>
-        <strength value="example" />
-        <description value="Code indicating the response provided for a question." />
-      </binding>
       <mapping>
         <identity value="rim" />
         <map value="n/a" />
@@ -20036,10 +19920,6 @@
         <human value="All FHIR elements must have a @value or children" />
         <xpath value="@value|f:*|h:div" />
       </constraint>
-      <binding>
-        <strength value="example" />
-        <description value="Code indicating the response provided for a question." />
-      </binding>
       <mapping>
         <identity value="rim" />
         <map value="n/a" />
@@ -20950,10 +20830,6 @@
         <human value="All FHIR elements must have a @value or children" />
         <xpath value="@value|f:*|h:div" />
       </constraint>
-      <binding>
-        <strength value="example" />
-        <description value="Code indicating the response provided for a question." />
-      </binding>
       <mapping>
         <identity value="rim" />
         <map value="n/a" />

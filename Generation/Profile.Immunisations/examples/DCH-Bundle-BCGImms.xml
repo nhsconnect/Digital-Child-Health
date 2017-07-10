@@ -111,10 +111,6 @@
 					<reference value="urn:uuid:7368c5fe-bbb4-4e9c-a585-234e06b84e82"/>
 					<display value="SAXTON, Sarah Marie"/>
 				</subject>
-				<author>
-					<reference value="urn:uuid:5ccb6bb7-a7f1-46cc-a5d3-135320765553"/>
-					<display value="Leeds Teaching Hospitals"/>
-				</author>
 				<encounter>
 					<reference value="urn:uuid:e9dbffdc-5bdc-11e7-907b-a6006ad3dba0"/>
 				</encounter>
@@ -585,11 +581,25 @@
 					<value value="e9dbffdc-5bdc-11e7-907b-a6006ad3dba0"/>
 				</identifier>
 				<status value="finished"/>
+				<type>
+					<coding>
+						<system value="http://snomed.info/sct"/>
+						<code value="11429006"/>
+						<display value="Consultation (procedure)"/>
+					</coding>
+				</type>
 				<patient>
 					<reference value="urn:uuid:7368c5fe-bbb4-4e9c-a585-234e06b84e82"/>
 					<display value="SAXTON, Sarah Marie"/>
 				</patient>
 				<participant>
+					<type>
+						<coding>
+							<system value="http://hl7.org/fhir/v3/ParticipationType"/>
+							<code value="ATND"/>
+							<display value="attender"/>
+						</coding>
+					</type>
 					<individual>
 						<reference value="urn:uuid:e9dbf8e8-5bdc-11e7-907b-a6006ad3dba0"/>
 						<display value="JONES, Bob (Dr.)"/>
