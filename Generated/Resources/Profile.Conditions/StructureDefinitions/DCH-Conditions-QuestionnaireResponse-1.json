@@ -1,7 +1,7 @@
 {
   "resourceType": "StructureDefinition",
   "meta": {
-    "lastUpdated": "2017-07-06T10:57:37.683+01:00",
+    "lastUpdated": "2017-07-10T10:24:01.493+01:00",
     "tag": [
       {
         "system": "urn:hscic:publishOrder",
@@ -2550,8 +2550,8 @@
           "Department",
           "Company"
         ],
-        "min": 1,
-        "max": "1",
+        "min": 0,
+        "max": "0",
         "base": {
           "path": "QuestionnaireResponse.author",
           "min": 0,
@@ -2561,13 +2561,25 @@
           {
             "code": "Reference",
             "profile": [
-              "https://fhir.hl7.org.uk/StructureDefinition/CareConnect-Practitioner-1"
+              "http://hl7.org/fhir/StructureDefinition/Device"
             ]
           },
           {
             "code": "Reference",
             "profile": [
-              "https://fhir.hl7.org.uk/StructureDefinition/CareConnect-Organization-1"
+              "http://hl7.org/fhir/StructureDefinition/Practitioner"
+            ]
+          },
+          {
+            "code": "Reference",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/Patient"
+            ]
+          },
+          {
+            "code": "Reference",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/RelatedPerson"
             ]
           }
         ],
@@ -9416,21 +9428,7 @@
       },
       {
         "path": "QuestionnaireResponse.author",
-        "min": 1,
-        "type": [
-          {
-            "code": "Reference",
-            "profile": [
-              "https://fhir.hl7.org.uk/StructureDefinition/CareConnect-Practitioner-1"
-            ]
-          },
-          {
-            "code": "Reference",
-            "profile": [
-              "https://fhir.hl7.org.uk/StructureDefinition/CareConnect-Organization-1"
-            ]
-          }
-        ]
+        "max": "0"
       },
       {
         "path": "QuestionnaireResponse.author.reference",

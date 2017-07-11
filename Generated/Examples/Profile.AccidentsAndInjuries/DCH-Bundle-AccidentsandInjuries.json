@@ -144,10 +144,6 @@
           "reference": "urn:uuid:7368c5fe-bbb4-4e9c-a585-234e06b84e82",
           "display": "SAXTON, Sarah Marie"
         },
-        "author": {
-          "reference": "urn:uuid:5ccb6bb7-a7f1-46cc-a5d3-135320765553",
-          "display": "Leeds Teaching Hospitals"
-        },
         "encounter": {
           "reference": "urn:uuid:1d67bd36-4f45-11e7-b114-b2f933d5fe66"
         },
@@ -346,15 +342,6 @@
                 "display": "Emergency department patient visit (procedure)"
               }
             ]
-          },
-          {
-            "coding": [
-              {
-                "system": "https://fhir.nhs.uk/dch-childhealthencountertype-1",
-                "code": "Accidents and Injuries",
-                "display": "Accidents and Injuries"
-              }
-            ]
           }
         ],
         "patient": {
@@ -363,6 +350,17 @@
         },
         "participant": [
           {
+            "type": [
+              {
+                "coding": [
+                  {
+                    "system": "http://hl7.org/fhir/v3/ParticipationType",
+                    "code": "ATND",
+                    "display": "attender"
+                  }
+                ]
+              }
+            ],
             "individual": {
               "reference": "urn:uuid:1d67c1f0-4f45-11e7-b114-b2f933d5fe66",
               "display": "RILEY, Amber"
@@ -505,7 +503,7 @@
         "identifier": [
           {
             "system": "https://tools.ietf.org/html/rfc4122",
-            "value": "1d67e022-4f45-11e7-b114-b2f933d5fe66"
+            "value": "1d67e0ea-4f45-11e7-b114-b2f933d5fe66"
           }
         ],
         "patient": {

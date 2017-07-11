@@ -5,7 +5,7 @@
 
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
 	<head>
-			<title>NewbornBloodSpotScreening - FHIR Implementation Guide</title>
+			<title>AccidentsAndInjuries - FHIR Implementation Guide</title>
 
 			<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 			<meta name="author" content="HSCIC" />        
@@ -64,7 +64,7 @@
                 </a>
                 <div id="specificationName">
          
-                        <b>NewbornBloodSpotScreening</b>
+                        <b>AccidentsAndInjuries</b>
                   
                 </div>
 
@@ -149,27 +149,23 @@
 							
 <div class="panel panel - default" xmlns="http://www.w3.org/1999/xhtml">
   <div class="panel-heading">
-    <h3 class="panel-title">CareConnect-DCH-Preterm-Observation-1</h3>
+    <h3 class="panel-title">CareConnect-DCH-Emergency-Encounter-1</h3>
   </div>
   <div class="panel-body">
     <div xmlns="http://www.w3.org/1999/xhtml">
       <p>
-        <b>CareConnect-DCH-Preterm-Observation-1</b>
+        <b>CareConnect-DCH-Emergency-Encounter-1</b>
       </p>
       <table class="dict">
         <tr>
           <td colspan="2" class="structure">
-            <a name="Observation"></a>
-            <b>Observation</b>
+            <a name="Encounter"></a>
+            <b>Encounter</b>
           </td>
         </tr>
         <tr>
           <td width="150px">Definition</td>
-          <td>
-            <p>Measurements and simple assertions made about a patient, device or other subject.</p>
-            <p>SHALL only be present if Observation.value[x] is not present 
-Component code SHALL not be same as observation code</p>
-          </td>
+          <td></td>
         </tr>
         <tr>
           <td>
@@ -183,8 +179,8 @@ Component code SHALL not be same as observation code</p>
         </tr>
         <tr>
           <td colspan="2" class="structure">
-            <a name="Observation.id"></a>
-            <b>Observation.id</b>
+            <a name="Encounter.id"></a>
+            <b>Encounter.id</b>
           </td>
         </tr>
         <tr>
@@ -215,8 +211,8 @@ Component code SHALL not be same as observation code</p>
         </tr>
         <tr>
           <td colspan="2" class="structure">
-            <a name="Observation.meta"></a>
-            <b>Observation.meta</b>
+            <a name="Encounter.meta"></a>
+            <b>Encounter.meta</b>
           </td>
         </tr>
         <tr>
@@ -245,8 +241,8 @@ Component code SHALL not be same as observation code</p>
         </tr>
         <tr>
           <td colspan="2" class="structure">
-            <a name="Observation.implicitRules"></a>
-            <b>Observation.implicitRules</b>
+            <a name="Encounter.implicitRules"></a>
+            <b>Encounter.implicitRules</b>
           </td>
         </tr>
         <tr>
@@ -283,8 +279,8 @@ Component code SHALL not be same as observation code</p>
         </tr>
         <tr>
           <td colspan="2" class="structure">
-            <a name="Observation.language"></a>
-            <b>Observation.language</b>
+            <a name="Encounter.language"></a>
+            <b>Encounter.language</b>
           </td>
         </tr>
         <tr>
@@ -326,8 +322,8 @@ Component code SHALL not be same as observation code</p>
         </tr>
         <tr>
           <td colspan="2" class="structure">
-            <a name="Observation.text"></a>
-            <b>Observation.text</b>
+            <a name="Encounter.text"></a>
+            <b>Encounter.text</b>
           </td>
         </tr>
         <tr>
@@ -362,8 +358,8 @@ Component code SHALL not be same as observation code</p>
         </tr>
         <tr>
           <td colspan="2" class="structure">
-            <a name="Observation.contained"></a>
-            <b>Observation.contained</b>
+            <a name="Encounter.contained"></a>
+            <b>Encounter.contained</b>
           </td>
         </tr>
         <tr>
@@ -398,8 +394,8 @@ Component code SHALL not be same as observation code</p>
         </tr>
         <tr>
           <td colspan="2" class="structure">
-            <a name="Observation.extension"></a>
-            <b>Observation.extension</b>
+            <a name="Encounter.extension"></a>
+            <b>Encounter.extension</b>
           </td>
         </tr>
         <tr>
@@ -434,8 +430,8 @@ Component code SHALL not be same as observation code</p>
         </tr>
         <tr>
           <td colspan="2" class="structure">
-            <a name="Observation.modifierExtension"></a>
-            <b>Observation.modifierExtension</b>
+            <a name="Encounter.modifierExtension"></a>
+            <b>Encounter.modifierExtension</b>
           </td>
         </tr>
         <tr>
@@ -476,8 +472,8 @@ Component code SHALL not be same as observation code</p>
         </tr>
         <tr>
           <td colspan="2" class="structure">
-            <a name="Observation.identifier"></a>
-            <b>Observation.identifier</b>
+            <a name="Encounter.identifier"></a>
+            <b>Encounter.identifier</b>
           </td>
         </tr>
         <tr>
@@ -496,8 +492,8 @@ Component code SHALL not be same as observation code</p>
         </tr>
         <tr>
           <td colspan="2" class="structure">
-            <a name="Observation.identifier.id"></a>
-            <b>Observation.identifier.id</b>
+            <a name="Encounter.identifier.id"></a>
+            <b>Encounter.identifier.id</b>
           </td>
         </tr>
         <tr>
@@ -528,8 +524,8 @@ Component code SHALL not be same as observation code</p>
         </tr>
         <tr>
           <td colspan="2" class="structure">
-            <a name="Observation.identifier.extension"></a>
-            <b>Observation.identifier.extension</b>
+            <a name="Encounter.identifier.extension"></a>
+            <b>Encounter.identifier.extension</b>
           </td>
         </tr>
         <tr>
@@ -564,76 +560,109 @@ Component code SHALL not be same as observation code</p>
         </tr>
         <tr>
           <td colspan="2" class="structure">
-            <a name="Observation.identifier.use"></a>
-            <b>Observation.identifier.use</b>
+            <a name="Encounter.identifier.system"></a>
+            <b>Encounter.identifier.system</b>
           </td>
         </tr>
         <tr>
           <td width="150px">Definition</td>
-          <td>
-            <p>The purpose of this identifier.</p>
-          </td>
+          <td></td>
         </tr>
         <tr>
           <td>
             <a href="http://www.hl7.org/fhir/DSTU2/conformance-rules.html#conformance">Control</a>
           </td>
-          <td>0..1 ?</td>
-        </tr>
-        <tr>
-          <td>
-            <a href="http://www.hl7.org/fhir/DSTU2/terminologies.html">Binding</a>
-          </td>
-          <td>
-            <div class="binding-description" xmlns="http://www.w3.org/1999/xhtml">
-              <p>Identifies the purpose for this identifier, if known .</p>
-              <p>The codes SHALL be taken from <a href="http://hl7.org/fhir/DSTU2/valueset-identifier-use.html">http://hl7.org/fhir/DSTU2/valueset-identifier-use.html</a></p>
-            </div>
-          </td>
-        </tr>
-        <tr>
-          <td>
-            <a href="http://www.hl7.org/fhir/DSTU2/datatypes.html">Type</a>
-          </td>
-          <td>
-            <a href="http://www.hl7.org/fhir/DSTU2/datatypes.html#code" xmlns="http://www.w3.org/1999/xhtml">Code</a>
-          </td>
-        </tr>
-        <tr>
-          <td>
-            <a href="http://www.hl7.org/fhir/DSTU2/conformance-rules.html#ismodifier">Is Modifier</a>
-          </td>
-          <td>True</td>
-        </tr>
-        <tr>
-          <td width="150px">Requirements</td>
-          <td>
-            <p>Allows the appropriate identifier for a particular context of use to be selected from among a set of identifiers.</p>
-          </td>
+          <td>1..*</td>
         </tr>
         <tr>
           <td width="150px">Comments</td>
-          <td>
-            <p>This is labeled as "Is Modifier" because applications should not mistake a temporary id for a permanent one. Applications can assume that an identifier is permanent unless it explicitly says that it is temporary.</p>
-          </td>
+          <td></td>
         </tr>
         <tr>
           <td colspan="2" class="structure">
-            <a name="Observation.identifier.type"></a>
-            <b>Observation.identifier.type</b>
+            <a name="Encounter.identifier.value"></a>
+            <b>Encounter.identifier.value</b>
+          </td>
+        </tr>
+        <tr>
+          <td width="150px">Definition</td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>
+            <a href="http://www.hl7.org/fhir/DSTU2/conformance-rules.html#conformance">Control</a>
+          </td>
+          <td>1..*</td>
+        </tr>
+        <tr>
+          <td width="150px">Comments</td>
+          <td></td>
+        </tr>
+        <tr>
+          <td colspan="2" class="structure">
+            <a name="Encounter.status"></a>
+            <b>Encounter.status</b>
+          </td>
+        </tr>
+        <tr>
+          <td width="150px">Definition</td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>
+            <a href="http://www.hl7.org/fhir/DSTU2/conformance-rules.html#conformance">Control</a>
+          </td>
+          <td>0..*</td>
+        </tr>
+        <tr>
+          <td width="150px">Comments</td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>Fixed Value</td>
+          <td>finished</td>
+        </tr>
+        <tr>
+          <td colspan="2" class="structure">
+            <a name="Encounter.class"></a>
+            <b>Encounter.class</b>
+          </td>
+        </tr>
+        <tr>
+          <td width="150px">Definition</td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>
+            <a href="http://www.hl7.org/fhir/DSTU2/conformance-rules.html#conformance">Control</a>
+          </td>
+          <td>0..*</td>
+        </tr>
+        <tr>
+          <td width="150px">Comments</td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>Fixed Value</td>
+          <td>emergency</td>
+        </tr>
+        <tr>
+          <td colspan="2" class="structure">
+            <a name="Encounter.type"></a>
+            <b>Encounter.type</b>
           </td>
         </tr>
         <tr>
           <td width="150px">Definition</td>
           <td>
-            <p>A coded type for the identifier that can be used to determine which identifier to use for a specific purpose.</p>
+            <p>Specific type of encounter (e.g. e-mail consultation, surgical day-care, skilled nursing, rehabilitation).</p>
           </td>
         </tr>
         <tr>
           <td>
             <a href="http://www.hl7.org/fhir/DSTU2/conformance-rules.html#conformance">Control</a>
           </td>
-          <td>0..1 ?</td>
+          <td>0..* ?</td>
         </tr>
         <tr>
           <td>
@@ -641,9 +670,8 @@ Component code SHALL not be same as observation code</p>
           </td>
           <td>
             <div class="binding-description" xmlns="http://www.w3.org/1999/xhtml">
-              <p>A coded type for an identifier that can be used to determine which identifier to use for a specific purpose.</p>
-              <p>The codes SHALL be taken from the following if appropriate, otherwise an alternate coding may be included instead. <a href="http://hl7.org/fhir/DSTU2/valueset-identifier-type.html">http://hl7.org/fhir/DSTU2/valueset-identifier-type.html</a></p>
-            </div>
+              <p>The type of encounter</p>
+              <p>For example codes, see <a href="http://hl7.org/fhir/DSTU2/valueset-encounter-type.html">http://hl7.org/fhir/DSTU2/valueset-encounter-type.html</a></p>; other codes may be used where these codes are not suitable</div>
           </td>
         </tr>
         <tr>
@@ -655,21 +683,15 @@ Component code SHALL not be same as observation code</p>
           </td>
         </tr>
         <tr>
-          <td width="150px">Requirements</td>
-          <td>
-            <p>Allows users to make use of identifiers when the identifier system is not known.</p>
-          </td>
-        </tr>
-        <tr>
           <td width="150px">Comments</td>
           <td>
-            <p>This element deals only with general categories of identifiers.  It SHOULD not be used for codes that correspond 1..1 with the Identifier.system. Some identifiers may fall into multiple categories due to common usage.   Where the system is known, a type is unnecessary because the type is always part of the system definition. However systems often need to handle identifiers where the system is not known. There is not a 1:1 relationship between type and system, since many different systems have the same type.</p>
+            <p>Since there are many ways to further classify encounters, this element is 0..*.</p>
           </td>
         </tr>
         <tr>
           <td colspan="2" class="structure">
-            <a name="Observation.identifier.type.id"></a>
-            <b>Observation.identifier.type.id</b>
+            <a name="Encounter.type.id"></a>
+            <b>Encounter.type.id</b>
           </td>
         </tr>
         <tr>
@@ -700,8 +722,8 @@ Component code SHALL not be same as observation code</p>
         </tr>
         <tr>
           <td colspan="2" class="structure">
-            <a name="Observation.identifier.type.extension"></a>
-            <b>Observation.identifier.type.extension</b>
+            <a name="Encounter.type.extension"></a>
+            <b>Encounter.type.extension</b>
           </td>
         </tr>
         <tr>
@@ -736,46 +758,39 @@ Component code SHALL not be same as observation code</p>
         </tr>
         <tr>
           <td colspan="2" class="structure">
-            <a name="Observation.identifier.type.coding"></a>
-            <b>Observation.identifier.type.coding</b>
+            <a name="Encounter.type.SNOMED CT"></a>
+            <b>Encounter.type.coding(SNOMED CT)</b>
           </td>
         </tr>
         <tr>
           <td width="150px">Definition</td>
-          <td>
-            <p>A reference to a code defined by a terminology system.</p>
-          </td>
+          <td></td>
         </tr>
         <tr>
           <td>
             <a href="http://www.hl7.org/fhir/DSTU2/conformance-rules.html#conformance">Control</a>
           </td>
-          <td>0..* ?</td>
+          <td>0..1</td>
         </tr>
         <tr>
           <td>
-            <a href="http://www.hl7.org/fhir/DSTU2/datatypes.html">Type</a>
+            <a href="http://www.hl7.org/fhir/DSTU2/terminologies.html">Binding</a>
           </td>
           <td>
-            <a href="http://www.hl7.org/fhir/DSTU2/datatypes.html#coding" xmlns="http://www.w3.org/1999/xhtml">Coding</a>
-          </td>
-        </tr>
-        <tr>
-          <td width="150px">Requirements</td>
-          <td>
-            <p>Allows for translations and alternate encodings within a code system.  Also supports communication of the same instance to systems requiring different encodings.</p>
+            <div class="binding-description" xmlns="http://www.w3.org/1999/xhtml">
+              <p>A code from the SNOMED Clinical Terminology UK coding system that describes an encounter between a care professional and the patient (or patient's record).</p>
+              <p>The codes SHALL be taken from <a href="careconnect-encountertype-1.html">https://fhir.hl7.org.uk/ValueSet/CareConnect-EncounterType-1</a></p>
+            </div>
           </td>
         </tr>
         <tr>
           <td width="150px">Comments</td>
-          <td>
-            <p>Codes may be defined very casually in enumerations, or code lists, up to very formal definitions such as SNOMED CT - see the HL7 v3 Core Principles for more information.  Ordering of codings is undefined and SHALL NOT be used to infer meaning. Generally, at most only one of the coding values will be labelled as UserSelected = true.</p>
-          </td>
+          <td></td>
         </tr>
         <tr>
           <td colspan="2" class="structure">
-            <a name="Observation.identifier.type.coding.id"></a>
-            <b>Observation.identifier.type.coding.id</b>
+            <a name="Encounter.type.coding.id"></a>
+            <b>Encounter.type.coding.id</b>
           </td>
         </tr>
         <tr>
@@ -806,21 +821,19 @@ Component code SHALL not be same as observation code</p>
         </tr>
         <tr>
           <td colspan="2" class="structure">
-            <a name="Observation.identifier.type.coding.extension"></a>
-            <b>Observation.identifier.type.coding.extension</b>
+            <a name="Encounter.type.coding.snomedCTDescriptionID"></a>
+            <b>Encounter.type.coding.extension(snomedCTDescriptionID)</b>
           </td>
         </tr>
         <tr>
           <td width="150px">Definition</td>
-          <td>
-            <p>May be used to represent additional information that is not part of the basic definition of the element. In order to make the use of extensions safe and manageable, there is a strict set of governance  applied to the definition and use of extensions. Though any implementer is allowed to define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension.</p>
-          </td>
+          <td></td>
         </tr>
         <tr>
           <td>
             <a href="http://www.hl7.org/fhir/DSTU2/conformance-rules.html#conformance">Control</a>
           </td>
-          <td>0..* ?</td>
+          <td>0..1</td>
         </tr>
         <tr>
           <td>
@@ -831,165 +844,77 @@ Component code SHALL not be same as observation code</p>
           </td>
         </tr>
         <tr>
-          <td>Aliases</td>
-          <td>extensions, user content</td>
-        </tr>
-        <tr>
           <td width="150px">Comments</td>
-          <td>
-            <p>There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone.</p>
-          </td>
+          <td></td>
         </tr>
         <tr>
           <td colspan="2" class="structure">
-            <a name="Observation.identifier.type.coding.system"></a>
-            <b>Observation.identifier.type.coding.system</b>
+            <a name="Encounter.type.coding.system"></a>
+            <b>Encounter.type.coding.system</b>
           </td>
         </tr>
         <tr>
           <td width="150px">Definition</td>
-          <td>
-            <p>The identification of the code system that defines the meaning of the symbol in the code.</p>
-          </td>
+          <td></td>
         </tr>
         <tr>
           <td>
             <a href="http://www.hl7.org/fhir/DSTU2/conformance-rules.html#conformance">Control</a>
           </td>
-          <td>0..1 ?</td>
-        </tr>
-        <tr>
-          <td>
-            <a href="http://www.hl7.org/fhir/DSTU2/datatypes.html">Type</a>
-          </td>
-          <td>
-            <a href="http://www.hl7.org/fhir/DSTU2/datatypes.html#uri" xmlns="http://www.w3.org/1999/xhtml">Uri</a>
-          </td>
-        </tr>
-        <tr>
-          <td width="150px">Requirements</td>
-          <td>
-            <p>Need to be unambiguous about the source of the definition of the symbol.</p>
-          </td>
+          <td>1..*</td>
         </tr>
         <tr>
           <td width="150px">Comments</td>
-          <td>
-            <p>The URI may be an OID (urn:oid:...) or a UUID (urn:uuid:...).  OIDs and UUIDs SHALL be references to the HL7 OID registry. Otherwise, the URI should come from HL7's list of FHIR defined special URIs or it should de-reference to some definition that establish the system clearly and unambiguously.</p>
-          </td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>Fixed Value</td>
+          <td>http://snomed.info/sct</td>
         </tr>
         <tr>
           <td colspan="2" class="structure">
-            <a name="Observation.identifier.type.coding.version"></a>
-            <b>Observation.identifier.type.coding.version</b>
+            <a name="Encounter.type.coding.code"></a>
+            <b>Encounter.type.coding.code</b>
           </td>
         </tr>
         <tr>
           <td width="150px">Definition</td>
-          <td>
-            <p>The version of the code system which was used when choosing this code. Note that a well-maintained code system does not need the version reported, because the meaning of codes is consistent across versions. However this cannot consistently be assured. and when the meaning is not guaranteed to be consistent, the version SHOULD be exchanged.</p>
-          </td>
+          <td></td>
         </tr>
         <tr>
           <td>
             <a href="http://www.hl7.org/fhir/DSTU2/conformance-rules.html#conformance">Control</a>
           </td>
-          <td>0..1 ?</td>
-        </tr>
-        <tr>
-          <td>
-            <a href="http://www.hl7.org/fhir/DSTU2/datatypes.html">Type</a>
-          </td>
-          <td>
-            <a href="http://www.hl7.org/fhir/DSTU2/datatypes.html#string" xmlns="http://www.w3.org/1999/xhtml">String</a>
-          </td>
+          <td>1..*</td>
         </tr>
         <tr>
           <td width="150px">Comments</td>
-          <td>
-            <p>Where the terminology does not clearly define what string should be used to identify code system versions, the recommendation is to use the date (expressed in FHIR date format) on which that version was officially published as the version date.</p>
-          </td>
+          <td></td>
         </tr>
         <tr>
           <td colspan="2" class="structure">
-            <a name="Observation.identifier.type.coding.code"></a>
-            <b>Observation.identifier.type.coding.code</b>
+            <a name="Encounter.type.coding.display"></a>
+            <b>Encounter.type.coding.display</b>
           </td>
         </tr>
         <tr>
           <td width="150px">Definition</td>
-          <td>
-            <p>A symbol in syntax defined by the system. The symbol may be a predefined code or an expression in a syntax defined by the coding system (e.g. post-coordination).</p>
-          </td>
+          <td></td>
         </tr>
         <tr>
           <td>
             <a href="http://www.hl7.org/fhir/DSTU2/conformance-rules.html#conformance">Control</a>
           </td>
-          <td>0..1 ?</td>
-        </tr>
-        <tr>
-          <td>
-            <a href="http://www.hl7.org/fhir/DSTU2/datatypes.html">Type</a>
-          </td>
-          <td>
-            <a href="http://www.hl7.org/fhir/DSTU2/datatypes.html#code" xmlns="http://www.w3.org/1999/xhtml">Code</a>
-          </td>
-        </tr>
-        <tr>
-          <td width="150px">Requirements</td>
-          <td>
-            <p>Need to refer to a particular code in the system.</p>
-          </td>
+          <td>1..*</td>
         </tr>
         <tr>
           <td width="150px">Comments</td>
-          <td>
-            <p>Note that FHIR strings may not exceed 1MB in size</p>
-          </td>
+          <td></td>
         </tr>
         <tr>
           <td colspan="2" class="structure">
-            <a name="Observation.identifier.type.coding.display"></a>
-            <b>Observation.identifier.type.coding.display</b>
-          </td>
-        </tr>
-        <tr>
-          <td width="150px">Definition</td>
-          <td>
-            <p>A representation of the meaning of the code in the system, following the rules of the system.</p>
-          </td>
-        </tr>
-        <tr>
-          <td>
-            <a href="http://www.hl7.org/fhir/DSTU2/conformance-rules.html#conformance">Control</a>
-          </td>
-          <td>0..1 ?</td>
-        </tr>
-        <tr>
-          <td>
-            <a href="http://www.hl7.org/fhir/DSTU2/datatypes.html">Type</a>
-          </td>
-          <td>
-            <a href="http://www.hl7.org/fhir/DSTU2/datatypes.html#string" xmlns="http://www.w3.org/1999/xhtml">String</a>
-          </td>
-        </tr>
-        <tr>
-          <td width="150px">Requirements</td>
-          <td>
-            <p>Need to be able to carry a human-readable meaning of the code for readers that do not know  the system.</p>
-          </td>
-        </tr>
-        <tr>
-          <td width="150px">Comments</td>
-          <td>
-            <p>Note that FHIR strings may not exceed 1MB in size</p>
-          </td>
-        </tr>
-        <tr>
-          <td colspan="2" class="structure">
-            <a name="Observation.identifier.type.coding.userSelected"></a>
-            <b>Observation.identifier.type.coding.userSelected</b>
+            <a name="Encounter.type.coding.userSelected"></a>
+            <b>Encounter.type.coding.userSelected</b>
           </td>
         </tr>
         <tr>
@@ -1026,8 +951,8 @@ Component code SHALL not be same as observation code</p>
         </tr>
         <tr>
           <td colspan="2" class="structure">
-            <a name="Observation.identifier.type.text"></a>
-            <b>Observation.identifier.type.text</b>
+            <a name="Encounter.type.text"></a>
+            <b>Encounter.type.text</b>
           </td>
         </tr>
         <tr>
@@ -1064,8 +989,8 @@ Component code SHALL not be same as observation code</p>
         </tr>
         <tr>
           <td colspan="2" class="structure">
-            <a name="Observation.identifier.system"></a>
-            <b>Observation.identifier.system</b>
+            <a name="Encounter.patient"></a>
+            <b>Encounter.patient</b>
           </td>
         </tr>
         <tr>
@@ -1077,67 +1002,23 @@ Component code SHALL not be same as observation code</p>
             <a href="http://www.hl7.org/fhir/DSTU2/conformance-rules.html#conformance">Control</a>
           </td>
           <td>1..*</td>
-        </tr>
-        <tr>
-          <td width="150px">Comments</td>
-          <td></td>
-        </tr>
-        <tr>
-          <td colspan="2" class="structure">
-            <a name="Observation.identifier.value"></a>
-            <b>Observation.identifier.value</b>
-          </td>
-        </tr>
-        <tr>
-          <td width="150px">Definition</td>
-          <td></td>
-        </tr>
-        <tr>
-          <td>
-            <a href="http://www.hl7.org/fhir/DSTU2/conformance-rules.html#conformance">Control</a>
-          </td>
-          <td>1..*</td>
-        </tr>
-        <tr>
-          <td width="150px">Comments</td>
-          <td></td>
-        </tr>
-        <tr>
-          <td colspan="2" class="structure">
-            <a name="Observation.identifier.period"></a>
-            <b>Observation.identifier.period</b>
-          </td>
-        </tr>
-        <tr>
-          <td width="150px">Definition</td>
-          <td>
-            <p>Time period during which identifier is/was valid for use.</p>
-          </td>
-        </tr>
-        <tr>
-          <td>
-            <a href="http://www.hl7.org/fhir/DSTU2/conformance-rules.html#conformance">Control</a>
-          </td>
-          <td>0..1 ?</td>
         </tr>
         <tr>
           <td>
             <a href="http://www.hl7.org/fhir/DSTU2/datatypes.html">Type</a>
           </td>
           <td>
-            <a href="http://www.hl7.org/fhir/DSTU2/datatypes.html#period" xmlns="http://www.w3.org/1999/xhtml">Period</a>
+            <a href="careconnect-dch-patient-1.html" xmlns="http://www.w3.org/1999/xhtml">https://fhir.hl7.org.uk/StructureDefinition/CareConnect-DCH-Patient-1</a>
           </td>
         </tr>
         <tr>
           <td width="150px">Comments</td>
-          <td>
-            <p>This is not a duration - that's a measure of time (a separate type), but a duration that occurs at a fixed value of time. A Period specifies a range of time; the context of use will specify whether the entire range applies (e.g. "the patient was an inpatient of the hospital for this time range") or one value from the range applies (e.g. "give to the patient between these two times"). If duration is required, specify the type as Interval|Duration.</p>
-          </td>
+          <td></td>
         </tr>
         <tr>
           <td colspan="2" class="structure">
-            <a name="Observation.identifier.period.id"></a>
-            <b>Observation.identifier.period.id</b>
+            <a name="Encounter.patient.id"></a>
+            <b>Encounter.patient.id</b>
           </td>
         </tr>
         <tr>
@@ -1168,8 +1049,8 @@ Component code SHALL not be same as observation code</p>
         </tr>
         <tr>
           <td colspan="2" class="structure">
-            <a name="Observation.identifier.period.extension"></a>
-            <b>Observation.identifier.period.extension</b>
+            <a name="Encounter.patient.extension"></a>
+            <b>Encounter.patient.extension</b>
           </td>
         </tr>
         <tr>
@@ -1204,168 +1085,8 @@ Component code SHALL not be same as observation code</p>
         </tr>
         <tr>
           <td colspan="2" class="structure">
-            <a name="Observation.identifier.period.start"></a>
-            <b>Observation.identifier.period.start</b>
-          </td>
-        </tr>
-        <tr>
-          <td width="150px">Definition</td>
-          <td>
-            <p>The start of the period. The boundary is inclusive.</p>
-          </td>
-        </tr>
-        <tr>
-          <td>
-            <a href="http://www.hl7.org/fhir/DSTU2/conformance-rules.html#conformance">Control</a>
-          </td>
-          <td>0..1 ?</td>
-        </tr>
-        <tr>
-          <td>
-            <a href="http://www.hl7.org/fhir/DSTU2/datatypes.html">Type</a>
-          </td>
-          <td>
-            <a href="http://www.hl7.org/fhir/DSTU2/datatypes.html#datetime" xmlns="http://www.w3.org/1999/xhtml">DateTime</a>
-          </td>
-        </tr>
-        <tr>
-          <td width="150px">Comments</td>
-          <td>
-            <p>If the low element is missing, the meaning is that the low boundary is not known.</p>
-          </td>
-        </tr>
-        <tr>
-          <td colspan="2" class="structure">
-            <a name="Observation.identifier.period.end"></a>
-            <b>Observation.identifier.period.end</b>
-          </td>
-        </tr>
-        <tr>
-          <td width="150px">Definition</td>
-          <td>
-            <p>The end of the period. If the end of the period is missing, it means that the period is ongoing. The start may be in the past, and the end date in the future, which means that period is expected/planned to end at that time.</p>
-          </td>
-        </tr>
-        <tr>
-          <td>
-            <a href="http://www.hl7.org/fhir/DSTU2/conformance-rules.html#conformance">Control</a>
-          </td>
-          <td>0..1 ?</td>
-        </tr>
-        <tr>
-          <td>
-            <a href="http://www.hl7.org/fhir/DSTU2/datatypes.html">Type</a>
-          </td>
-          <td>
-            <a href="http://www.hl7.org/fhir/DSTU2/datatypes.html#datetime" xmlns="http://www.w3.org/1999/xhtml">DateTime</a>
-          </td>
-        </tr>
-        <tr>
-          <td width="150px">Comments</td>
-          <td>
-            <p>The high value includes any matching date/time. i.e. 2012-02-03T10:00:00 is in a period that has a end value of 2012-02-03.</p>
-          </td>
-        </tr>
-        <tr>
-          <td colspan="2" class="structure">
-            <a name="Observation.identifier.assigner"></a>
-            <b>Observation.identifier.assigner</b>
-          </td>
-        </tr>
-        <tr>
-          <td width="150px">Definition</td>
-          <td></td>
-        </tr>
-        <tr>
-          <td>
-            <a href="http://www.hl7.org/fhir/DSTU2/conformance-rules.html#conformance">Control</a>
-          </td>
-          <td>0..*</td>
-        </tr>
-        <tr>
-          <td>
-            <a href="http://www.hl7.org/fhir/DSTU2/datatypes.html">Type</a>
-          </td>
-          <td>
-            <a href="careconnect-organization-1.html" xmlns="http://www.w3.org/1999/xhtml">https://fhir.hl7.org.uk/StructureDefinition/CareConnect-Organization-1</a>
-          </td>
-        </tr>
-        <tr>
-          <td width="150px">Comments</td>
-          <td></td>
-        </tr>
-        <tr>
-          <td colspan="2" class="structure">
-            <a name="Observation.identifier.assigner.id"></a>
-            <b>Observation.identifier.assigner.id</b>
-          </td>
-        </tr>
-        <tr>
-          <td width="150px">Definition</td>
-          <td>
-            <p>unique id for the element within a resource (for internal references).</p>
-          </td>
-        </tr>
-        <tr>
-          <td>
-            <a href="http://www.hl7.org/fhir/DSTU2/conformance-rules.html#conformance">Control</a>
-          </td>
-          <td>0..1 ?</td>
-        </tr>
-        <tr>
-          <td>
-            <a href="http://www.hl7.org/fhir/DSTU2/datatypes.html">Type</a>
-          </td>
-          <td>
-            <a href="http://www.hl7.org/fhir/DSTU2/datatypes.html#id" xmlns="http://www.w3.org/1999/xhtml">Id</a>
-          </td>
-        </tr>
-        <tr>
-          <td width="150px">Comments</td>
-          <td>
-            <p>RFC 4122</p>
-          </td>
-        </tr>
-        <tr>
-          <td colspan="2" class="structure">
-            <a name="Observation.identifier.assigner.extension"></a>
-            <b>Observation.identifier.assigner.extension</b>
-          </td>
-        </tr>
-        <tr>
-          <td width="150px">Definition</td>
-          <td>
-            <p>May be used to represent additional information that is not part of the basic definition of the element. In order to make the use of extensions safe and manageable, there is a strict set of governance  applied to the definition and use of extensions. Though any implementer is allowed to define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension.</p>
-          </td>
-        </tr>
-        <tr>
-          <td>
-            <a href="http://www.hl7.org/fhir/DSTU2/conformance-rules.html#conformance">Control</a>
-          </td>
-          <td>0..* ?</td>
-        </tr>
-        <tr>
-          <td>
-            <a href="http://www.hl7.org/fhir/DSTU2/datatypes.html">Type</a>
-          </td>
-          <td>
-            <a href="http://www.hl7.org/fhir/DSTU2/datatypes.html#extension" xmlns="http://www.w3.org/1999/xhtml">Extension</a>
-          </td>
-        </tr>
-        <tr>
-          <td>Aliases</td>
-          <td>extensions, user content</td>
-        </tr>
-        <tr>
-          <td width="150px">Comments</td>
-          <td>
-            <p>There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone.</p>
-          </td>
-        </tr>
-        <tr>
-          <td colspan="2" class="structure">
-            <a name="Observation.identifier.assigner.reference"></a>
-            <b>Observation.identifier.assigner.reference</b>
+            <a name="Encounter.patient.reference"></a>
+            <b>Encounter.patient.reference</b>
           </td>
         </tr>
         <tr>
@@ -1396,8 +1117,8 @@ Component code SHALL not be same as observation code</p>
         </tr>
         <tr>
           <td colspan="2" class="structure">
-            <a name="Observation.identifier.assigner.display"></a>
-            <b>Observation.identifier.assigner.display</b>
+            <a name="Encounter.patient.display"></a>
+            <b>Encounter.patient.display</b>
           </td>
         </tr>
         <tr>
@@ -1428,39 +1149,118 @@ Component code SHALL not be same as observation code</p>
         </tr>
         <tr>
           <td colspan="2" class="structure">
-            <a name="Observation.status"></a>
-            <b>Observation.status</b>
+            <a name="Encounter.participant"></a>
+            <b>Encounter.participant</b>
           </td>
         </tr>
         <tr>
           <td width="150px">Definition</td>
           <td>
-            <p>The status of the result value.</p>
+            <p>Participant in the encounter, this will be the practitioner that has responsibility for overseeing a patient's care during a patient encounter.</p>
           </td>
         </tr>
         <tr>
           <td>
             <a href="http://www.hl7.org/fhir/DSTU2/conformance-rules.html#conformance">Control</a>
           </td>
-          <td>1..1 ?</td>
+          <td>0..1</td>
+        </tr>
+        <tr>
+          <td width="150px">Comments</td>
+          <td></td>
+        </tr>
+        <tr>
+          <td colspan="2" class="structure">
+            <a name="Encounter.participant.id"></a>
+            <b>Encounter.participant.id</b>
+          </td>
+        </tr>
+        <tr>
+          <td width="150px">Definition</td>
+          <td>
+            <p>unique id for the element within a resource (for internal references).</p>
+          </td>
         </tr>
         <tr>
           <td>
-            <a href="http://www.hl7.org/fhir/DSTU2/terminologies.html">Binding</a>
+            <a href="http://www.hl7.org/fhir/DSTU2/conformance-rules.html#conformance">Control</a>
           </td>
-          <td>
-            <div class="binding-description" xmlns="http://www.w3.org/1999/xhtml">
-              <p>Codes providing the status of an observation.</p>
-              <p>The codes SHALL be taken from <a href="http://hl7.org/fhir/DSTU2/valueset-observation-status.html">http://hl7.org/fhir/DSTU2/valueset-observation-status.html</a></p>
-            </div>
-          </td>
+          <td>0..1 ?</td>
         </tr>
         <tr>
           <td>
             <a href="http://www.hl7.org/fhir/DSTU2/datatypes.html">Type</a>
           </td>
           <td>
-            <a href="http://www.hl7.org/fhir/DSTU2/datatypes.html#code" xmlns="http://www.w3.org/1999/xhtml">Code</a>
+            <a href="http://www.hl7.org/fhir/DSTU2/datatypes.html#id" xmlns="http://www.w3.org/1999/xhtml">Id</a>
+          </td>
+        </tr>
+        <tr>
+          <td width="150px">Comments</td>
+          <td>
+            <p>RFC 4122</p>
+          </td>
+        </tr>
+        <tr>
+          <td colspan="2" class="structure">
+            <a name="Encounter.participant.extension"></a>
+            <b>Encounter.participant.extension</b>
+          </td>
+        </tr>
+        <tr>
+          <td width="150px">Definition</td>
+          <td>
+            <p>May be used to represent additional information that is not part of the basic definition of the element. In order to make the use of extensions safe and manageable, there is a strict set of governance  applied to the definition and use of extensions. Though any implementer is allowed to define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension.</p>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <a href="http://www.hl7.org/fhir/DSTU2/conformance-rules.html#conformance">Control</a>
+          </td>
+          <td>0..* ?</td>
+        </tr>
+        <tr>
+          <td>
+            <a href="http://www.hl7.org/fhir/DSTU2/datatypes.html">Type</a>
+          </td>
+          <td>
+            <a href="http://www.hl7.org/fhir/DSTU2/datatypes.html#extension" xmlns="http://www.w3.org/1999/xhtml">Extension</a>
+          </td>
+        </tr>
+        <tr>
+          <td>Aliases</td>
+          <td>extensions, user content</td>
+        </tr>
+        <tr>
+          <td width="150px">Comments</td>
+          <td>
+            <p>There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone.</p>
+          </td>
+        </tr>
+        <tr>
+          <td colspan="2" class="structure">
+            <a name="Encounter.participant.modifierExtension"></a>
+            <b>Encounter.participant.modifierExtension</b>
+          </td>
+        </tr>
+        <tr>
+          <td width="150px">Definition</td>
+          <td>
+            <p>May be used to represent additional information that is not part of the basic definition of the element, and that modifies the understanding of the element that contains it. Usually modifier elements provide negation or qualification. In order to make the use of extensions safe and manageable, there is a strict set of governance applied to the definition and use of extensions. Though any implementer is allowed to define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension. Applications processing a resource are required to check for modifier extensions.</p>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <a href="http://www.hl7.org/fhir/DSTU2/conformance-rules.html#conformance">Control</a>
+          </td>
+          <td>0..* ?</td>
+        </tr>
+        <tr>
+          <td>
+            <a href="http://www.hl7.org/fhir/DSTU2/datatypes.html">Type</a>
+          </td>
+          <td>
+            <a href="http://www.hl7.org/fhir/DSTU2/datatypes.html#extension" xmlns="http://www.w3.org/1999/xhtml">Extension</a>
           </td>
         </tr>
         <tr>
@@ -1470,120 +1270,8 @@ Component code SHALL not be same as observation code</p>
           <td>True</td>
         </tr>
         <tr>
-          <td width="150px">Requirements</td>
-          <td>
-            <p>Need to track the status of individual results. Some results are finalized before the whole report is finalized.</p>
-          </td>
-        </tr>
-        <tr>
-          <td width="150px">Comments</td>
-          <td>
-            <p>Note that FHIR strings may not exceed 1MB in size</p>
-          </td>
-        </tr>
-        <tr>
-          <td colspan="2" class="structure">
-            <a name="Observation.category"></a>
-            <b>Observation.category</b>
-          </td>
-        </tr>
-        <tr>
-          <td width="150px">Definition</td>
-          <td>
-            <p>A code that classifies the general type of observation being made.  This is used  for searching, sorting and display purposes.</p>
-          </td>
-        </tr>
-        <tr>
-          <td>
-            <a href="http://www.hl7.org/fhir/DSTU2/conformance-rules.html#conformance">Control</a>
-          </td>
-          <td>0..1 ?</td>
-        </tr>
-        <tr>
-          <td>
-            <a href="http://www.hl7.org/fhir/DSTU2/terminologies.html">Binding</a>
-          </td>
-          <td>
-            <div class="binding-description" xmlns="http://www.w3.org/1999/xhtml">
-              <p>Codes for high level observation categories .</p>
-              <p>For example codes, see <a href="http://hl7.org/fhir/DSTU2/valueset-observation-category.html">http://hl7.org/fhir/DSTU2/valueset-observation-category.html</a></p>; other codes may be used where these codes are not suitable</div>
-          </td>
-        </tr>
-        <tr>
-          <td>
-            <a href="http://www.hl7.org/fhir/DSTU2/datatypes.html">Type</a>
-          </td>
-          <td>
-            <a href="http://www.hl7.org/fhir/DSTU2/datatypes.html#codeableconcept" xmlns="http://www.w3.org/1999/xhtml">CodeableConcept</a>
-          </td>
-        </tr>
-        <tr>
-          <td width="150px">Comments</td>
-          <td>
-            <p>The level of granularity is defined by the category concepts in the value set.   More fine-grained filtering can be performed using the metadata and/or terminology hierarchy in Observation.code.</p>
-          </td>
-        </tr>
-        <tr>
-          <td colspan="2" class="structure">
-            <a name="Observation.category.id"></a>
-            <b>Observation.category.id</b>
-          </td>
-        </tr>
-        <tr>
-          <td width="150px">Definition</td>
-          <td>
-            <p>unique id for the element within a resource (for internal references).</p>
-          </td>
-        </tr>
-        <tr>
-          <td>
-            <a href="http://www.hl7.org/fhir/DSTU2/conformance-rules.html#conformance">Control</a>
-          </td>
-          <td>0..1 ?</td>
-        </tr>
-        <tr>
-          <td>
-            <a href="http://www.hl7.org/fhir/DSTU2/datatypes.html">Type</a>
-          </td>
-          <td>
-            <a href="http://www.hl7.org/fhir/DSTU2/datatypes.html#id" xmlns="http://www.w3.org/1999/xhtml">Id</a>
-          </td>
-        </tr>
-        <tr>
-          <td width="150px">Comments</td>
-          <td>
-            <p>RFC 4122</p>
-          </td>
-        </tr>
-        <tr>
-          <td colspan="2" class="structure">
-            <a name="Observation.category.extension"></a>
-            <b>Observation.category.extension</b>
-          </td>
-        </tr>
-        <tr>
-          <td width="150px">Definition</td>
-          <td>
-            <p>May be used to represent additional information that is not part of the basic definition of the element. In order to make the use of extensions safe and manageable, there is a strict set of governance  applied to the definition and use of extensions. Though any implementer is allowed to define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension.</p>
-          </td>
-        </tr>
-        <tr>
-          <td>
-            <a href="http://www.hl7.org/fhir/DSTU2/conformance-rules.html#conformance">Control</a>
-          </td>
-          <td>0..* ?</td>
-        </tr>
-        <tr>
-          <td>
-            <a href="http://www.hl7.org/fhir/DSTU2/datatypes.html">Type</a>
-          </td>
-          <td>
-            <a href="http://www.hl7.org/fhir/DSTU2/datatypes.html#extension" xmlns="http://www.w3.org/1999/xhtml">Extension</a>
-          </td>
-        </tr>
-        <tr>
           <td>Aliases</td>
-          <td>extensions, user content</td>
+          <td>extensions, user content, modifiers</td>
         </tr>
         <tr>
           <td width="150px">Comments</td>
@@ -1593,928 +1281,8 @@ Component code SHALL not be same as observation code</p>
         </tr>
         <tr>
           <td colspan="2" class="structure">
-            <a name="Observation.category.SNOMED CT"></a>
-            <b>Observation.category.coding(SNOMED CT)</b>
-          </td>
-        </tr>
-        <tr>
-          <td width="150px">Definition</td>
-          <td></td>
-        </tr>
-        <tr>
-          <td>
-            <a href="http://www.hl7.org/fhir/DSTU2/conformance-rules.html#conformance">Control</a>
-          </td>
-          <td>0..1</td>
-        </tr>
-        <tr>
-          <td width="150px">Comments</td>
-          <td></td>
-        </tr>
-        <tr>
-          <td colspan="2" class="structure">
-            <a name="Observation.category.coding.id"></a>
-            <b>Observation.category.coding.id</b>
-          </td>
-        </tr>
-        <tr>
-          <td width="150px">Definition</td>
-          <td>
-            <p>unique id for the element within a resource (for internal references).</p>
-          </td>
-        </tr>
-        <tr>
-          <td>
-            <a href="http://www.hl7.org/fhir/DSTU2/conformance-rules.html#conformance">Control</a>
-          </td>
-          <td>0..1 ?</td>
-        </tr>
-        <tr>
-          <td>
-            <a href="http://www.hl7.org/fhir/DSTU2/datatypes.html">Type</a>
-          </td>
-          <td>
-            <a href="http://www.hl7.org/fhir/DSTU2/datatypes.html#id" xmlns="http://www.w3.org/1999/xhtml">Id</a>
-          </td>
-        </tr>
-        <tr>
-          <td width="150px">Comments</td>
-          <td>
-            <p>RFC 4122</p>
-          </td>
-        </tr>
-        <tr>
-          <td colspan="2" class="structure">
-            <a name="Observation.category.coding.snomedCTDescriptionID"></a>
-            <b>Observation.category.coding.extension(snomedCTDescriptionID)</b>
-          </td>
-        </tr>
-        <tr>
-          <td width="150px">Definition</td>
-          <td></td>
-        </tr>
-        <tr>
-          <td>
-            <a href="http://www.hl7.org/fhir/DSTU2/conformance-rules.html#conformance">Control</a>
-          </td>
-          <td>0..1</td>
-        </tr>
-        <tr>
-          <td>
-            <a href="http://www.hl7.org/fhir/DSTU2/datatypes.html">Type</a>
-          </td>
-          <td>
-            <a href="http://www.hl7.org/fhir/DSTU2/datatypes.html#extension" xmlns="http://www.w3.org/1999/xhtml">Extension</a>
-          </td>
-        </tr>
-        <tr>
-          <td width="150px">Comments</td>
-          <td></td>
-        </tr>
-        <tr>
-          <td colspan="2" class="structure">
-            <a name="Observation.category.coding.system"></a>
-            <b>Observation.category.coding.system</b>
-          </td>
-        </tr>
-        <tr>
-          <td width="150px">Definition</td>
-          <td></td>
-        </tr>
-        <tr>
-          <td>
-            <a href="http://www.hl7.org/fhir/DSTU2/conformance-rules.html#conformance">Control</a>
-          </td>
-          <td>1..*</td>
-        </tr>
-        <tr>
-          <td width="150px">Comments</td>
-          <td></td>
-        </tr>
-        <tr>
-          <td>Fixed Value</td>
-          <td>http://snomed.info/sct</td>
-        </tr>
-        <tr>
-          <td colspan="2" class="structure">
-            <a name="Observation.category.coding.code"></a>
-            <b>Observation.category.coding.code</b>
-          </td>
-        </tr>
-        <tr>
-          <td width="150px">Definition</td>
-          <td></td>
-        </tr>
-        <tr>
-          <td>
-            <a href="http://www.hl7.org/fhir/DSTU2/conformance-rules.html#conformance">Control</a>
-          </td>
-          <td>1..*</td>
-        </tr>
-        <tr>
-          <td width="150px">Comments</td>
-          <td></td>
-        </tr>
-        <tr>
-          <td colspan="2" class="structure">
-            <a name="Observation.category.coding.display"></a>
-            <b>Observation.category.coding.display</b>
-          </td>
-        </tr>
-        <tr>
-          <td width="150px">Definition</td>
-          <td></td>
-        </tr>
-        <tr>
-          <td>
-            <a href="http://www.hl7.org/fhir/DSTU2/conformance-rules.html#conformance">Control</a>
-          </td>
-          <td>1..*</td>
-        </tr>
-        <tr>
-          <td width="150px">Comments</td>
-          <td></td>
-        </tr>
-        <tr>
-          <td colspan="2" class="structure">
-            <a name="Observation.category.coding.userSelected"></a>
-            <b>Observation.category.coding.userSelected</b>
-          </td>
-        </tr>
-        <tr>
-          <td width="150px">Definition</td>
-          <td>
-            <p>Indicates that this coding was chosen by a user directly - i.e. off a pick list of available items (codes or displays).</p>
-          </td>
-        </tr>
-        <tr>
-          <td>
-            <a href="http://www.hl7.org/fhir/DSTU2/conformance-rules.html#conformance">Control</a>
-          </td>
-          <td>0..1 ?</td>
-        </tr>
-        <tr>
-          <td>
-            <a href="http://www.hl7.org/fhir/DSTU2/datatypes.html">Type</a>
-          </td>
-          <td>
-            <a href="http://www.hl7.org/fhir/DSTU2/datatypes.html#boolean" xmlns="http://www.w3.org/1999/xhtml">Boolean</a>
-          </td>
-        </tr>
-        <tr>
-          <td width="150px">Requirements</td>
-          <td>
-            <p>This has been identified as a clinical safety criterium - that this exact system/code pair was chosen explicitly, rather than inferred by the system based on some rules or language processing.</p>
-          </td>
-        </tr>
-        <tr>
-          <td width="150px">Comments</td>
-          <td>
-            <p>Amongst a set of alternatives, a directly chosen code is the most appropriate starting point for new translations. There is some ambiguity about what exactly 'directly chosen' implies, and trading partner agreement may be needed to clarify the use of this element and its consequences more completely.</p>
-          </td>
-        </tr>
-        <tr>
-          <td colspan="2" class="structure">
-            <a name="Observation.category.text"></a>
-            <b>Observation.category.text</b>
-          </td>
-        </tr>
-        <tr>
-          <td width="150px">Definition</td>
-          <td>
-            <p>A human language representation of the concept as seen/selected/uttered by the user who entered the data and/or which represents the intended meaning of the user.</p>
-          </td>
-        </tr>
-        <tr>
-          <td>
-            <a href="http://www.hl7.org/fhir/DSTU2/conformance-rules.html#conformance">Control</a>
-          </td>
-          <td>0..1 ?</td>
-        </tr>
-        <tr>
-          <td>
-            <a href="http://www.hl7.org/fhir/DSTU2/datatypes.html">Type</a>
-          </td>
-          <td>
-            <a href="http://www.hl7.org/fhir/DSTU2/datatypes.html#string" xmlns="http://www.w3.org/1999/xhtml">String</a>
-          </td>
-        </tr>
-        <tr>
-          <td width="150px">Requirements</td>
-          <td>
-            <p>The codes from the terminologies do not always capture the correct meaning with all the nuances of the human using them, or sometimes there is no appropriate code at all. In these cases, the text is used to capture the full meaning of the source.</p>
-          </td>
-        </tr>
-        <tr>
-          <td width="150px">Comments</td>
-          <td>
-            <p>Very often the text is the same as a displayName of one of the codings.</p>
-          </td>
-        </tr>
-        <tr>
-          <td colspan="2" class="structure">
-            <a name="Observation.code"></a>
-            <b>Observation.code</b>
-          </td>
-        </tr>
-        <tr>
-          <td width="150px">Definition</td>
-          <td>
-            <p>Describes what was observed. Sometimes this is called the observation "name".</p>
-          </td>
-        </tr>
-        <tr>
-          <td>
-            <a href="http://www.hl7.org/fhir/DSTU2/conformance-rules.html#conformance">Control</a>
-          </td>
-          <td>1..1 ?</td>
-        </tr>
-        <tr>
-          <td>
-            <a href="http://www.hl7.org/fhir/DSTU2/terminologies.html">Binding</a>
-          </td>
-          <td>
-            <div class="binding-description" xmlns="http://www.w3.org/1999/xhtml">
-              <p>Codes identifying names of simple observations.</p>
-              <p>For example codes, see <a href="http://hl7.org/fhir/DSTU2/valueset-observation-codes.html">http://hl7.org/fhir/DSTU2/valueset-observation-codes.html</a></p>; other codes may be used where these codes are not suitable</div>
-          </td>
-        </tr>
-        <tr>
-          <td>
-            <a href="http://www.hl7.org/fhir/DSTU2/datatypes.html">Type</a>
-          </td>
-          <td>
-            <a href="http://www.hl7.org/fhir/DSTU2/datatypes.html#codeableconcept" xmlns="http://www.w3.org/1999/xhtml">CodeableConcept</a>
-          </td>
-        </tr>
-        <tr>
-          <td width="150px">Requirements</td>
-          <td>
-            <p>Knowing what kind of observation is being made is essential to understanding the observation.</p>
-          </td>
-        </tr>
-        <tr>
-          <td width="150px">Comments</td>
-          <td>
-            <p>Not all terminology uses fit this general pattern. In some cases, models should not use CodeableConcept and use Coding directly and provide their own structure for managing text, codings, translations and the relationship between elements and pre- and post-coordination.</p>
-          </td>
-        </tr>
-        <tr>
-          <td colspan="2" class="structure">
-            <a name="Observation.code.id"></a>
-            <b>Observation.code.id</b>
-          </td>
-        </tr>
-        <tr>
-          <td width="150px">Definition</td>
-          <td>
-            <p>unique id for the element within a resource (for internal references).</p>
-          </td>
-        </tr>
-        <tr>
-          <td>
-            <a href="http://www.hl7.org/fhir/DSTU2/conformance-rules.html#conformance">Control</a>
-          </td>
-          <td>0..1 ?</td>
-        </tr>
-        <tr>
-          <td>
-            <a href="http://www.hl7.org/fhir/DSTU2/datatypes.html">Type</a>
-          </td>
-          <td>
-            <a href="http://www.hl7.org/fhir/DSTU2/datatypes.html#id" xmlns="http://www.w3.org/1999/xhtml">Id</a>
-          </td>
-        </tr>
-        <tr>
-          <td width="150px">Comments</td>
-          <td>
-            <p>RFC 4122</p>
-          </td>
-        </tr>
-        <tr>
-          <td colspan="2" class="structure">
-            <a name="Observation.code.extension"></a>
-            <b>Observation.code.extension</b>
-          </td>
-        </tr>
-        <tr>
-          <td width="150px">Definition</td>
-          <td>
-            <p>May be used to represent additional information that is not part of the basic definition of the element. In order to make the use of extensions safe and manageable, there is a strict set of governance  applied to the definition and use of extensions. Though any implementer is allowed to define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension.</p>
-          </td>
-        </tr>
-        <tr>
-          <td>
-            <a href="http://www.hl7.org/fhir/DSTU2/conformance-rules.html#conformance">Control</a>
-          </td>
-          <td>0..* ?</td>
-        </tr>
-        <tr>
-          <td>
-            <a href="http://www.hl7.org/fhir/DSTU2/datatypes.html">Type</a>
-          </td>
-          <td>
-            <a href="http://www.hl7.org/fhir/DSTU2/datatypes.html#extension" xmlns="http://www.w3.org/1999/xhtml">Extension</a>
-          </td>
-        </tr>
-        <tr>
-          <td>Aliases</td>
-          <td>extensions, user content</td>
-        </tr>
-        <tr>
-          <td width="150px">Comments</td>
-          <td>
-            <p>There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone.</p>
-          </td>
-        </tr>
-        <tr>
-          <td colspan="2" class="structure">
-            <a name="Observation.code.SNOMED CT"></a>
-            <b>Observation.code.coding(SNOMED CT)</b>
-          </td>
-        </tr>
-        <tr>
-          <td width="150px">Definition</td>
-          <td></td>
-        </tr>
-        <tr>
-          <td>
-            <a href="http://www.hl7.org/fhir/DSTU2/conformance-rules.html#conformance">Control</a>
-          </td>
-          <td>0..1</td>
-        </tr>
-        <tr>
-          <td width="150px">Comments</td>
-          <td></td>
-        </tr>
-        <tr>
-          <td colspan="2" class="structure">
-            <a name="Observation.code.coding.id"></a>
-            <b>Observation.code.coding.id</b>
-          </td>
-        </tr>
-        <tr>
-          <td width="150px">Definition</td>
-          <td>
-            <p>unique id for the element within a resource (for internal references).</p>
-          </td>
-        </tr>
-        <tr>
-          <td>
-            <a href="http://www.hl7.org/fhir/DSTU2/conformance-rules.html#conformance">Control</a>
-          </td>
-          <td>0..1 ?</td>
-        </tr>
-        <tr>
-          <td>
-            <a href="http://www.hl7.org/fhir/DSTU2/datatypes.html">Type</a>
-          </td>
-          <td>
-            <a href="http://www.hl7.org/fhir/DSTU2/datatypes.html#id" xmlns="http://www.w3.org/1999/xhtml">Id</a>
-          </td>
-        </tr>
-        <tr>
-          <td width="150px">Comments</td>
-          <td>
-            <p>RFC 4122</p>
-          </td>
-        </tr>
-        <tr>
-          <td colspan="2" class="structure">
-            <a name="Observation.code.coding.snomedCTDescriptionID"></a>
-            <b>Observation.code.coding.extension(snomedCTDescriptionID)</b>
-          </td>
-        </tr>
-        <tr>
-          <td width="150px">Definition</td>
-          <td></td>
-        </tr>
-        <tr>
-          <td>
-            <a href="http://www.hl7.org/fhir/DSTU2/conformance-rules.html#conformance">Control</a>
-          </td>
-          <td>0..1</td>
-        </tr>
-        <tr>
-          <td>
-            <a href="http://www.hl7.org/fhir/DSTU2/datatypes.html">Type</a>
-          </td>
-          <td>
-            <a href="http://www.hl7.org/fhir/DSTU2/datatypes.html#extension" xmlns="http://www.w3.org/1999/xhtml">Extension</a>
-          </td>
-        </tr>
-        <tr>
-          <td width="150px">Comments</td>
-          <td></td>
-        </tr>
-        <tr>
-          <td colspan="2" class="structure">
-            <a name="Observation.code.coding.system"></a>
-            <b>Observation.code.coding.system</b>
-          </td>
-        </tr>
-        <tr>
-          <td width="150px">Definition</td>
-          <td></td>
-        </tr>
-        <tr>
-          <td>
-            <a href="http://www.hl7.org/fhir/DSTU2/conformance-rules.html#conformance">Control</a>
-          </td>
-          <td>1..*</td>
-        </tr>
-        <tr>
-          <td width="150px">Comments</td>
-          <td></td>
-        </tr>
-        <tr>
-          <td>Fixed Value</td>
-          <td>http://snomed.info/sct</td>
-        </tr>
-        <tr>
-          <td colspan="2" class="structure">
-            <a name="Observation.code.coding.code"></a>
-            <b>Observation.code.coding.code</b>
-          </td>
-        </tr>
-        <tr>
-          <td width="150px">Definition</td>
-          <td></td>
-        </tr>
-        <tr>
-          <td>
-            <a href="http://www.hl7.org/fhir/DSTU2/conformance-rules.html#conformance">Control</a>
-          </td>
-          <td>1..*</td>
-        </tr>
-        <tr>
-          <td width="150px">Comments</td>
-          <td></td>
-        </tr>
-        <tr>
-          <td colspan="2" class="structure">
-            <a name="Observation.code.coding.display"></a>
-            <b>Observation.code.coding.display</b>
-          </td>
-        </tr>
-        <tr>
-          <td width="150px">Definition</td>
-          <td></td>
-        </tr>
-        <tr>
-          <td>
-            <a href="http://www.hl7.org/fhir/DSTU2/conformance-rules.html#conformance">Control</a>
-          </td>
-          <td>1..*</td>
-        </tr>
-        <tr>
-          <td width="150px">Comments</td>
-          <td></td>
-        </tr>
-        <tr>
-          <td colspan="2" class="structure">
-            <a name="Observation.code.coding.userSelected"></a>
-            <b>Observation.code.coding.userSelected</b>
-          </td>
-        </tr>
-        <tr>
-          <td width="150px">Definition</td>
-          <td>
-            <p>Indicates that this coding was chosen by a user directly - i.e. off a pick list of available items (codes or displays).</p>
-          </td>
-        </tr>
-        <tr>
-          <td>
-            <a href="http://www.hl7.org/fhir/DSTU2/conformance-rules.html#conformance">Control</a>
-          </td>
-          <td>0..1 ?</td>
-        </tr>
-        <tr>
-          <td>
-            <a href="http://www.hl7.org/fhir/DSTU2/datatypes.html">Type</a>
-          </td>
-          <td>
-            <a href="http://www.hl7.org/fhir/DSTU2/datatypes.html#boolean" xmlns="http://www.w3.org/1999/xhtml">Boolean</a>
-          </td>
-        </tr>
-        <tr>
-          <td width="150px">Requirements</td>
-          <td>
-            <p>This has been identified as a clinical safety criterium - that this exact system/code pair was chosen explicitly, rather than inferred by the system based on some rules or language processing.</p>
-          </td>
-        </tr>
-        <tr>
-          <td width="150px">Comments</td>
-          <td>
-            <p>Amongst a set of alternatives, a directly chosen code is the most appropriate starting point for new translations. There is some ambiguity about what exactly 'directly chosen' implies, and trading partner agreement may be needed to clarify the use of this element and its consequences more completely.</p>
-          </td>
-        </tr>
-        <tr>
-          <td colspan="2" class="structure">
-            <a name="Observation.code.text"></a>
-            <b>Observation.code.text</b>
-          </td>
-        </tr>
-        <tr>
-          <td width="150px">Definition</td>
-          <td>
-            <p>A human language representation of the concept as seen/selected/uttered by the user who entered the data and/or which represents the intended meaning of the user.</p>
-          </td>
-        </tr>
-        <tr>
-          <td>
-            <a href="http://www.hl7.org/fhir/DSTU2/conformance-rules.html#conformance">Control</a>
-          </td>
-          <td>0..1 ?</td>
-        </tr>
-        <tr>
-          <td>
-            <a href="http://www.hl7.org/fhir/DSTU2/datatypes.html">Type</a>
-          </td>
-          <td>
-            <a href="http://www.hl7.org/fhir/DSTU2/datatypes.html#string" xmlns="http://www.w3.org/1999/xhtml">String</a>
-          </td>
-        </tr>
-        <tr>
-          <td width="150px">Requirements</td>
-          <td>
-            <p>The codes from the terminologies do not always capture the correct meaning with all the nuances of the human using them, or sometimes there is no appropriate code at all. In these cases, the text is used to capture the full meaning of the source.</p>
-          </td>
-        </tr>
-        <tr>
-          <td width="150px">Comments</td>
-          <td>
-            <p>Very often the text is the same as a displayName of one of the codings.</p>
-          </td>
-        </tr>
-        <tr>
-          <td colspan="2" class="structure">
-            <a name="Observation.subject"></a>
-            <b>Observation.subject</b>
-          </td>
-        </tr>
-        <tr>
-          <td width="150px">Definition</td>
-          <td></td>
-        </tr>
-        <tr>
-          <td>
-            <a href="http://www.hl7.org/fhir/DSTU2/conformance-rules.html#conformance">Control</a>
-          </td>
-          <td>1..*</td>
-        </tr>
-        <tr>
-          <td>
-            <a href="http://www.hl7.org/fhir/DSTU2/datatypes.html">Type</a>
-          </td>
-          <td>
-            <a href="careconnect-dch-patient-1.html" xmlns="http://www.w3.org/1999/xhtml">https://fhir.hl7.org.uk/StructureDefinition/CareConnect-DCH-Patient-1</a>
-          </td>
-        </tr>
-        <tr>
-          <td width="150px">Comments</td>
-          <td></td>
-        </tr>
-        <tr>
-          <td colspan="2" class="structure">
-            <a name="Observation.subject.id"></a>
-            <b>Observation.subject.id</b>
-          </td>
-        </tr>
-        <tr>
-          <td width="150px">Definition</td>
-          <td>
-            <p>unique id for the element within a resource (for internal references).</p>
-          </td>
-        </tr>
-        <tr>
-          <td>
-            <a href="http://www.hl7.org/fhir/DSTU2/conformance-rules.html#conformance">Control</a>
-          </td>
-          <td>0..1 ?</td>
-        </tr>
-        <tr>
-          <td>
-            <a href="http://www.hl7.org/fhir/DSTU2/datatypes.html">Type</a>
-          </td>
-          <td>
-            <a href="http://www.hl7.org/fhir/DSTU2/datatypes.html#id" xmlns="http://www.w3.org/1999/xhtml">Id</a>
-          </td>
-        </tr>
-        <tr>
-          <td width="150px">Comments</td>
-          <td>
-            <p>RFC 4122</p>
-          </td>
-        </tr>
-        <tr>
-          <td colspan="2" class="structure">
-            <a name="Observation.subject.extension"></a>
-            <b>Observation.subject.extension</b>
-          </td>
-        </tr>
-        <tr>
-          <td width="150px">Definition</td>
-          <td>
-            <p>May be used to represent additional information that is not part of the basic definition of the element. In order to make the use of extensions safe and manageable, there is a strict set of governance  applied to the definition and use of extensions. Though any implementer is allowed to define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension.</p>
-          </td>
-        </tr>
-        <tr>
-          <td>
-            <a href="http://www.hl7.org/fhir/DSTU2/conformance-rules.html#conformance">Control</a>
-          </td>
-          <td>0..* ?</td>
-        </tr>
-        <tr>
-          <td>
-            <a href="http://www.hl7.org/fhir/DSTU2/datatypes.html">Type</a>
-          </td>
-          <td>
-            <a href="http://www.hl7.org/fhir/DSTU2/datatypes.html#extension" xmlns="http://www.w3.org/1999/xhtml">Extension</a>
-          </td>
-        </tr>
-        <tr>
-          <td>Aliases</td>
-          <td>extensions, user content</td>
-        </tr>
-        <tr>
-          <td width="150px">Comments</td>
-          <td>
-            <p>There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone.</p>
-          </td>
-        </tr>
-        <tr>
-          <td colspan="2" class="structure">
-            <a name="Observation.subject.reference"></a>
-            <b>Observation.subject.reference</b>
-          </td>
-        </tr>
-        <tr>
-          <td width="150px">Definition</td>
-          <td></td>
-        </tr>
-        <tr>
-          <td>
-            <a href="http://www.hl7.org/fhir/DSTU2/conformance-rules.html#conformance">Control</a>
-          </td>
-          <td>1..*</td>
-        </tr>
-        <tr>
-          <td width="150px">Comments</td>
-          <td></td>
-        </tr>
-        <tr>
-          <td colspan="2" class="structure">
-            <a name="Observation.subject.display"></a>
-            <b>Observation.subject.display</b>
-          </td>
-        </tr>
-        <tr>
-          <td width="150px">Definition</td>
-          <td>
-            <p>Plain text narrative that identifies the resource in addition to the resource reference.</p>
-          </td>
-        </tr>
-        <tr>
-          <td>
-            <a href="http://www.hl7.org/fhir/DSTU2/conformance-rules.html#conformance">Control</a>
-          </td>
-          <td>0..1 ?</td>
-        </tr>
-        <tr>
-          <td>
-            <a href="http://www.hl7.org/fhir/DSTU2/datatypes.html">Type</a>
-          </td>
-          <td>
-            <a href="http://www.hl7.org/fhir/DSTU2/datatypes.html#string" xmlns="http://www.w3.org/1999/xhtml">String</a>
-          </td>
-        </tr>
-        <tr>
-          <td width="150px">Comments</td>
-          <td>
-            <p>This is generally not the same as the Resource.text of the referenced resource.  The purpose is to identify what's being referenced, not to fully describe it.</p>
-          </td>
-        </tr>
-        <tr>
-          <td colspan="2" class="structure">
-            <a name="Observation.encounter"></a>
-            <b>Observation.encounter</b>
-          </td>
-        </tr>
-        <tr>
-          <td width="150px">Definition</td>
-          <td></td>
-        </tr>
-        <tr>
-          <td>
-            <a href="http://www.hl7.org/fhir/DSTU2/conformance-rules.html#conformance">Control</a>
-          </td>
-          <td>1..*</td>
-        </tr>
-        <tr>
-          <td>
-            <a href="http://www.hl7.org/fhir/DSTU2/datatypes.html">Type</a>
-          </td>
-          <td>
-            <a href="careconnect-dch-encounter-1.html" xmlns="http://www.w3.org/1999/xhtml">https://fhir.hl7.org.uk/StructureDefinition/CareConnect-DCH-Encounter-1</a>
-          </td>
-        </tr>
-        <tr>
-          <td width="150px">Comments</td>
-          <td></td>
-        </tr>
-        <tr>
-          <td colspan="2" class="structure">
-            <a name="Observation.encounter.id"></a>
-            <b>Observation.encounter.id</b>
-          </td>
-        </tr>
-        <tr>
-          <td width="150px">Definition</td>
-          <td>
-            <p>unique id for the element within a resource (for internal references).</p>
-          </td>
-        </tr>
-        <tr>
-          <td>
-            <a href="http://www.hl7.org/fhir/DSTU2/conformance-rules.html#conformance">Control</a>
-          </td>
-          <td>0..1 ?</td>
-        </tr>
-        <tr>
-          <td>
-            <a href="http://www.hl7.org/fhir/DSTU2/datatypes.html">Type</a>
-          </td>
-          <td>
-            <a href="http://www.hl7.org/fhir/DSTU2/datatypes.html#id" xmlns="http://www.w3.org/1999/xhtml">Id</a>
-          </td>
-        </tr>
-        <tr>
-          <td width="150px">Comments</td>
-          <td>
-            <p>RFC 4122</p>
-          </td>
-        </tr>
-        <tr>
-          <td colspan="2" class="structure">
-            <a name="Observation.encounter.extension"></a>
-            <b>Observation.encounter.extension</b>
-          </td>
-        </tr>
-        <tr>
-          <td width="150px">Definition</td>
-          <td>
-            <p>May be used to represent additional information that is not part of the basic definition of the element. In order to make the use of extensions safe and manageable, there is a strict set of governance  applied to the definition and use of extensions. Though any implementer is allowed to define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension.</p>
-          </td>
-        </tr>
-        <tr>
-          <td>
-            <a href="http://www.hl7.org/fhir/DSTU2/conformance-rules.html#conformance">Control</a>
-          </td>
-          <td>0..* ?</td>
-        </tr>
-        <tr>
-          <td>
-            <a href="http://www.hl7.org/fhir/DSTU2/datatypes.html">Type</a>
-          </td>
-          <td>
-            <a href="http://www.hl7.org/fhir/DSTU2/datatypes.html#extension" xmlns="http://www.w3.org/1999/xhtml">Extension</a>
-          </td>
-        </tr>
-        <tr>
-          <td>Aliases</td>
-          <td>extensions, user content</td>
-        </tr>
-        <tr>
-          <td width="150px">Comments</td>
-          <td>
-            <p>There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone.</p>
-          </td>
-        </tr>
-        <tr>
-          <td colspan="2" class="structure">
-            <a name="Observation.encounter.reference"></a>
-            <b>Observation.encounter.reference</b>
-          </td>
-        </tr>
-        <tr>
-          <td width="150px">Definition</td>
-          <td></td>
-        </tr>
-        <tr>
-          <td>
-            <a href="http://www.hl7.org/fhir/DSTU2/conformance-rules.html#conformance">Control</a>
-          </td>
-          <td>1..*</td>
-        </tr>
-        <tr>
-          <td width="150px">Comments</td>
-          <td></td>
-        </tr>
-        <tr>
-          <td colspan="2" class="structure">
-            <a name="Observation.encounter.display"></a>
-            <b>Observation.encounter.display</b>
-          </td>
-        </tr>
-        <tr>
-          <td width="150px">Definition</td>
-          <td>
-            <p>Plain text narrative that identifies the resource in addition to the resource reference.</p>
-          </td>
-        </tr>
-        <tr>
-          <td>
-            <a href="http://www.hl7.org/fhir/DSTU2/conformance-rules.html#conformance">Control</a>
-          </td>
-          <td>0..1 ?</td>
-        </tr>
-        <tr>
-          <td>
-            <a href="http://www.hl7.org/fhir/DSTU2/datatypes.html">Type</a>
-          </td>
-          <td>
-            <a href="http://www.hl7.org/fhir/DSTU2/datatypes.html#string" xmlns="http://www.w3.org/1999/xhtml">String</a>
-          </td>
-        </tr>
-        <tr>
-          <td width="150px">Comments</td>
-          <td>
-            <p>This is generally not the same as the Resource.text of the referenced resource.  The purpose is to identify what's being referenced, not to fully describe it.</p>
-          </td>
-        </tr>
-        <tr>
-          <td colspan="2" class="structure">
-            <a name="Observation.effective[x]"></a>
-            <b>Observation.effective[x]</b>
-          </td>
-        </tr>
-        <tr>
-          <td width="150px">Definition</td>
-          <td>
-            <p>The time or time-period the observed value is asserted as being true. For biological subjects - e.g. human patients - this is usually called the "physiologically relevant time". This is usually either the time of the procedure or of specimen collection, but very often the source of the date/time is not known, only the date/time itself.</p>
-          </td>
-        </tr>
-        <tr>
-          <td>
-            <a href="http://www.hl7.org/fhir/DSTU2/conformance-rules.html#conformance">Control</a>
-          </td>
-          <td>0..1 ?</td>
-        </tr>
-        <tr>
-          <td>
-            <a href="http://www.hl7.org/fhir/DSTU2/datatypes.html">Type</a>
-          </td>
-          <td>Choice of: <ul><li><a href="http://www.hl7.org/fhir/DSTU2/datatypes.html#datetime" xmlns="http://www.w3.org/1999/xhtml">DateTime</a></li><li><a href="http://www.hl7.org/fhir/DSTU2/datatypes.html#period" xmlns="http://www.w3.org/1999/xhtml">Period</a></li></ul></td>
-        </tr>
-        <tr>
-          <td width="150px">Requirements</td>
-          <td>
-            <p>Knowing when an observation was deemed true is important to its relevance as well as determining trends.</p>
-          </td>
-        </tr>
-        <tr>
-          <td width="150px">Comments</td>
-          <td>
-            <p>At least a date should be present unless this observation is a historical report.</p>
-          </td>
-        </tr>
-        <tr>
-          <td colspan="2" class="structure">
-            <a name="Observation.issued"></a>
-            <b>Observation.issued</b>
-          </td>
-        </tr>
-        <tr>
-          <td width="150px">Definition</td>
-          <td>
-            <p>The date and time this observation was made available to providers, typically after the results have been reviewed and verified.</p>
-          </td>
-        </tr>
-        <tr>
-          <td>
-            <a href="http://www.hl7.org/fhir/DSTU2/conformance-rules.html#conformance">Control</a>
-          </td>
-          <td>0..1 ?</td>
-        </tr>
-        <tr>
-          <td>
-            <a href="http://www.hl7.org/fhir/DSTU2/datatypes.html">Type</a>
-          </td>
-          <td>
-            <a href="http://www.hl7.org/fhir/DSTU2/datatypes.html#instant" xmlns="http://www.w3.org/1999/xhtml">Instant</a>
-          </td>
-        </tr>
-        <tr>
-          <td width="150px">Comments</td>
-          <td>
-            <p>Updated when the result is updated.</p>
-          </td>
-        </tr>
-        <tr>
-          <td colspan="2" class="structure">
-            <a name="Observation.performer"></a>
-            <b>Observation.performer</b>
+            <a name="Encounter.participant.type"></a>
+            <b>Encounter.participant.type</b>
           </td>
         </tr>
         <tr>
@@ -2526,6 +1294,256 @@ Component code SHALL not be same as observation code</p>
             <a href="http://www.hl7.org/fhir/DSTU2/conformance-rules.html#conformance">Control</a>
           </td>
           <td>1..1</td>
+        </tr>
+        <tr>
+          <td width="150px">Comments</td>
+          <td></td>
+        </tr>
+        <tr>
+          <td colspan="2" class="structure">
+            <a name="Encounter.participant.type.id"></a>
+            <b>Encounter.participant.type.id</b>
+          </td>
+        </tr>
+        <tr>
+          <td width="150px">Definition</td>
+          <td>
+            <p>unique id for the element within a resource (for internal references).</p>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <a href="http://www.hl7.org/fhir/DSTU2/conformance-rules.html#conformance">Control</a>
+          </td>
+          <td>0..1 ?</td>
+        </tr>
+        <tr>
+          <td>
+            <a href="http://www.hl7.org/fhir/DSTU2/datatypes.html">Type</a>
+          </td>
+          <td>
+            <a href="http://www.hl7.org/fhir/DSTU2/datatypes.html#id" xmlns="http://www.w3.org/1999/xhtml">Id</a>
+          </td>
+        </tr>
+        <tr>
+          <td width="150px">Comments</td>
+          <td>
+            <p>RFC 4122</p>
+          </td>
+        </tr>
+        <tr>
+          <td colspan="2" class="structure">
+            <a name="Encounter.participant.type.extension"></a>
+            <b>Encounter.participant.type.extension</b>
+          </td>
+        </tr>
+        <tr>
+          <td width="150px">Definition</td>
+          <td>
+            <p>May be used to represent additional information that is not part of the basic definition of the element. In order to make the use of extensions safe and manageable, there is a strict set of governance  applied to the definition and use of extensions. Though any implementer is allowed to define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension.</p>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <a href="http://www.hl7.org/fhir/DSTU2/conformance-rules.html#conformance">Control</a>
+          </td>
+          <td>0..* ?</td>
+        </tr>
+        <tr>
+          <td>
+            <a href="http://www.hl7.org/fhir/DSTU2/datatypes.html">Type</a>
+          </td>
+          <td>
+            <a href="http://www.hl7.org/fhir/DSTU2/datatypes.html#extension" xmlns="http://www.w3.org/1999/xhtml">Extension</a>
+          </td>
+        </tr>
+        <tr>
+          <td>Aliases</td>
+          <td>extensions, user content</td>
+        </tr>
+        <tr>
+          <td width="150px">Comments</td>
+          <td>
+            <p>There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone.</p>
+          </td>
+        </tr>
+        <tr>
+          <td colspan="2" class="structure">
+            <a name="Encounter.participant.type.coding"></a>
+            <b>Encounter.participant.type.coding</b>
+          </td>
+        </tr>
+        <tr>
+          <td width="150px">Definition</td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>
+            <a href="http://www.hl7.org/fhir/DSTU2/conformance-rules.html#conformance">Control</a>
+          </td>
+          <td>1..1</td>
+        </tr>
+        <tr>
+          <td width="150px">Comments</td>
+          <td></td>
+        </tr>
+        <tr>
+          <td colspan="2" class="structure">
+            <a name="Encounter.participant.type.coding.id"></a>
+            <b>Encounter.participant.type.coding.id</b>
+          </td>
+        </tr>
+        <tr>
+          <td width="150px">Definition</td>
+          <td>
+            <p>unique id for the element within a resource (for internal references).</p>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <a href="http://www.hl7.org/fhir/DSTU2/conformance-rules.html#conformance">Control</a>
+          </td>
+          <td>0..1 ?</td>
+        </tr>
+        <tr>
+          <td>
+            <a href="http://www.hl7.org/fhir/DSTU2/datatypes.html">Type</a>
+          </td>
+          <td>
+            <a href="http://www.hl7.org/fhir/DSTU2/datatypes.html#id" xmlns="http://www.w3.org/1999/xhtml">Id</a>
+          </td>
+        </tr>
+        <tr>
+          <td width="150px">Comments</td>
+          <td>
+            <p>RFC 4122</p>
+          </td>
+        </tr>
+        <tr>
+          <td colspan="2" class="structure">
+            <a name="Encounter.participant.type.coding.extension"></a>
+            <b>Encounter.participant.type.coding.extension</b>
+          </td>
+        </tr>
+        <tr>
+          <td width="150px">Definition</td>
+          <td>
+            <p>May be used to represent additional information that is not part of the basic definition of the element. In order to make the use of extensions safe and manageable, there is a strict set of governance  applied to the definition and use of extensions. Though any implementer is allowed to define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension.</p>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <a href="http://www.hl7.org/fhir/DSTU2/conformance-rules.html#conformance">Control</a>
+          </td>
+          <td>0..* ?</td>
+        </tr>
+        <tr>
+          <td>
+            <a href="http://www.hl7.org/fhir/DSTU2/datatypes.html">Type</a>
+          </td>
+          <td>
+            <a href="http://www.hl7.org/fhir/DSTU2/datatypes.html#extension" xmlns="http://www.w3.org/1999/xhtml">Extension</a>
+          </td>
+        </tr>
+        <tr>
+          <td>Aliases</td>
+          <td>extensions, user content</td>
+        </tr>
+        <tr>
+          <td width="150px">Comments</td>
+          <td>
+            <p>There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone.</p>
+          </td>
+        </tr>
+        <tr>
+          <td colspan="2" class="structure">
+            <a name="Encounter.participant.type.coding.system"></a>
+            <b>Encounter.participant.type.coding.system</b>
+          </td>
+        </tr>
+        <tr>
+          <td width="150px">Definition</td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>
+            <a href="http://www.hl7.org/fhir/DSTU2/conformance-rules.html#conformance">Control</a>
+          </td>
+          <td>1..*</td>
+        </tr>
+        <tr>
+          <td width="150px">Comments</td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>Fixed Value</td>
+          <td>http://hl7.org/fhir/v3/ParticipationType</td>
+        </tr>
+        <tr>
+          <td colspan="2" class="structure">
+            <a name="Encounter.participant.type.coding.code"></a>
+            <b>Encounter.participant.type.coding.code</b>
+          </td>
+        </tr>
+        <tr>
+          <td width="150px">Definition</td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>
+            <a href="http://www.hl7.org/fhir/DSTU2/conformance-rules.html#conformance">Control</a>
+          </td>
+          <td>1..*</td>
+        </tr>
+        <tr>
+          <td width="150px">Comments</td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>Fixed Value</td>
+          <td>ATND</td>
+        </tr>
+        <tr>
+          <td colspan="2" class="structure">
+            <a name="Encounter.participant.type.coding.display"></a>
+            <b>Encounter.participant.type.coding.display</b>
+          </td>
+        </tr>
+        <tr>
+          <td width="150px">Definition</td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>
+            <a href="http://www.hl7.org/fhir/DSTU2/conformance-rules.html#conformance">Control</a>
+          </td>
+          <td>1..*</td>
+        </tr>
+        <tr>
+          <td width="150px">Comments</td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>Fixed Value</td>
+          <td>attender</td>
+        </tr>
+        <tr>
+          <td colspan="2" class="structure">
+            <a name="Encounter.participant.individual"></a>
+            <b>Encounter.participant.individual</b>
+          </td>
+        </tr>
+        <tr>
+          <td width="150px">Definition</td>
+          <td>
+            <p>Practitioner involved in the encounter other than the patient.</p>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <a href="http://www.hl7.org/fhir/DSTU2/conformance-rules.html#conformance">Control</a>
+          </td>
+          <td>1..*</td>
         </tr>
         <tr>
           <td>
@@ -2541,8 +1559,8 @@ Component code SHALL not be same as observation code</p>
         </tr>
         <tr>
           <td colspan="2" class="structure">
-            <a name="Observation.performer.id"></a>
-            <b>Observation.performer.id</b>
+            <a name="Encounter.participant.individual.id"></a>
+            <b>Encounter.participant.individual.id</b>
           </td>
         </tr>
         <tr>
@@ -2573,8 +1591,8 @@ Component code SHALL not be same as observation code</p>
         </tr>
         <tr>
           <td colspan="2" class="structure">
-            <a name="Observation.performer.extension"></a>
-            <b>Observation.performer.extension</b>
+            <a name="Encounter.participant.individual.extension"></a>
+            <b>Encounter.participant.individual.extension</b>
           </td>
         </tr>
         <tr>
@@ -2609,8 +1627,8 @@ Component code SHALL not be same as observation code</p>
         </tr>
         <tr>
           <td colspan="2" class="structure">
-            <a name="Observation.performer.reference"></a>
-            <b>Observation.performer.reference</b>
+            <a name="Encounter.participant.individual.reference"></a>
+            <b>Encounter.participant.individual.reference</b>
           </td>
         </tr>
         <tr>
@@ -2629,8 +1647,8 @@ Component code SHALL not be same as observation code</p>
         </tr>
         <tr>
           <td colspan="2" class="structure">
-            <a name="Observation.performer.display"></a>
-            <b>Observation.performer.display</b>
+            <a name="Encounter.participant.individual.display"></a>
+            <b>Encounter.participant.individual.display</b>
           </td>
         </tr>
         <tr>
@@ -2661,8 +1679,386 @@ Component code SHALL not be same as observation code</p>
         </tr>
         <tr>
           <td colspan="2" class="structure">
-            <a name="Observation.valueCodeableConcept"></a>
-            <b>Observation.valueCodeableConcept</b>
+            <a name="Encounter.appointment"></a>
+            <b>Encounter.appointment</b>
+          </td>
+        </tr>
+        <tr>
+          <td width="150px">Definition</td>
+          <td>
+            <p>The appointment that scheduled this encounter.</p>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <a href="http://www.hl7.org/fhir/DSTU2/conformance-rules.html#conformance">Control</a>
+          </td>
+          <td>0..1 ?</td>
+        </tr>
+        <tr>
+          <td>
+            <a href="http://www.hl7.org/fhir/DSTU2/datatypes.html">Type</a>
+          </td>
+          <td>
+            <a href="http://www.hl7.org/fhir/DSTU2/appointment.html" xmlns="http://www.w3.org/1999/xhtml">Appointment</a>
+          </td>
+        </tr>
+        <tr>
+          <td width="150px">Comments</td>
+          <td></td>
+        </tr>
+        <tr>
+          <td colspan="2" class="structure">
+            <a name="Encounter.appointment.id"></a>
+            <b>Encounter.appointment.id</b>
+          </td>
+        </tr>
+        <tr>
+          <td width="150px">Definition</td>
+          <td>
+            <p>unique id for the element within a resource (for internal references).</p>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <a href="http://www.hl7.org/fhir/DSTU2/conformance-rules.html#conformance">Control</a>
+          </td>
+          <td>0..1 ?</td>
+        </tr>
+        <tr>
+          <td>
+            <a href="http://www.hl7.org/fhir/DSTU2/datatypes.html">Type</a>
+          </td>
+          <td>
+            <a href="http://www.hl7.org/fhir/DSTU2/datatypes.html#id" xmlns="http://www.w3.org/1999/xhtml">Id</a>
+          </td>
+        </tr>
+        <tr>
+          <td width="150px">Comments</td>
+          <td>
+            <p>RFC 4122</p>
+          </td>
+        </tr>
+        <tr>
+          <td colspan="2" class="structure">
+            <a name="Encounter.appointment.extension"></a>
+            <b>Encounter.appointment.extension</b>
+          </td>
+        </tr>
+        <tr>
+          <td width="150px">Definition</td>
+          <td>
+            <p>May be used to represent additional information that is not part of the basic definition of the element. In order to make the use of extensions safe and manageable, there is a strict set of governance  applied to the definition and use of extensions. Though any implementer is allowed to define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension.</p>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <a href="http://www.hl7.org/fhir/DSTU2/conformance-rules.html#conformance">Control</a>
+          </td>
+          <td>0..* ?</td>
+        </tr>
+        <tr>
+          <td>
+            <a href="http://www.hl7.org/fhir/DSTU2/datatypes.html">Type</a>
+          </td>
+          <td>
+            <a href="http://www.hl7.org/fhir/DSTU2/datatypes.html#extension" xmlns="http://www.w3.org/1999/xhtml">Extension</a>
+          </td>
+        </tr>
+        <tr>
+          <td>Aliases</td>
+          <td>extensions, user content</td>
+        </tr>
+        <tr>
+          <td width="150px">Comments</td>
+          <td>
+            <p>There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone.</p>
+          </td>
+        </tr>
+        <tr>
+          <td colspan="2" class="structure">
+            <a name="Encounter.appointment.reference"></a>
+            <b>Encounter.appointment.reference</b>
+          </td>
+        </tr>
+        <tr>
+          <td width="150px">Definition</td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>
+            <a href="http://www.hl7.org/fhir/DSTU2/conformance-rules.html#conformance">Control</a>
+          </td>
+          <td>1..*</td>
+        </tr>
+        <tr>
+          <td width="150px">Comments</td>
+          <td></td>
+        </tr>
+        <tr>
+          <td colspan="2" class="structure">
+            <a name="Encounter.appointment.display"></a>
+            <b>Encounter.appointment.display</b>
+          </td>
+        </tr>
+        <tr>
+          <td width="150px">Definition</td>
+          <td>
+            <p>Plain text narrative that identifies the resource in addition to the resource reference.</p>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <a href="http://www.hl7.org/fhir/DSTU2/conformance-rules.html#conformance">Control</a>
+          </td>
+          <td>0..1 ?</td>
+        </tr>
+        <tr>
+          <td>
+            <a href="http://www.hl7.org/fhir/DSTU2/datatypes.html">Type</a>
+          </td>
+          <td>
+            <a href="http://www.hl7.org/fhir/DSTU2/datatypes.html#string" xmlns="http://www.w3.org/1999/xhtml">String</a>
+          </td>
+        </tr>
+        <tr>
+          <td width="150px">Comments</td>
+          <td>
+            <p>This is generally not the same as the Resource.text of the referenced resource.  The purpose is to identify what's being referenced, not to fully describe it.</p>
+          </td>
+        </tr>
+        <tr>
+          <td colspan="2" class="structure">
+            <a name="Encounter.period"></a>
+            <b>Encounter.period</b>
+          </td>
+        </tr>
+        <tr>
+          <td width="150px">Definition</td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>
+            <a href="http://www.hl7.org/fhir/DSTU2/conformance-rules.html#conformance">Control</a>
+          </td>
+          <td>1..*</td>
+        </tr>
+        <tr>
+          <td width="150px">Comments</td>
+          <td></td>
+        </tr>
+        <tr>
+          <td colspan="2" class="structure">
+            <a name="Encounter.period.id"></a>
+            <b>Encounter.period.id</b>
+          </td>
+        </tr>
+        <tr>
+          <td width="150px">Definition</td>
+          <td>
+            <p>unique id for the element within a resource (for internal references).</p>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <a href="http://www.hl7.org/fhir/DSTU2/conformance-rules.html#conformance">Control</a>
+          </td>
+          <td>0..1 ?</td>
+        </tr>
+        <tr>
+          <td>
+            <a href="http://www.hl7.org/fhir/DSTU2/datatypes.html">Type</a>
+          </td>
+          <td>
+            <a href="http://www.hl7.org/fhir/DSTU2/datatypes.html#id" xmlns="http://www.w3.org/1999/xhtml">Id</a>
+          </td>
+        </tr>
+        <tr>
+          <td width="150px">Comments</td>
+          <td>
+            <p>RFC 4122</p>
+          </td>
+        </tr>
+        <tr>
+          <td colspan="2" class="structure">
+            <a name="Encounter.period.extension"></a>
+            <b>Encounter.period.extension</b>
+          </td>
+        </tr>
+        <tr>
+          <td width="150px">Definition</td>
+          <td>
+            <p>May be used to represent additional information that is not part of the basic definition of the element. In order to make the use of extensions safe and manageable, there is a strict set of governance  applied to the definition and use of extensions. Though any implementer is allowed to define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension.</p>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <a href="http://www.hl7.org/fhir/DSTU2/conformance-rules.html#conformance">Control</a>
+          </td>
+          <td>0..* ?</td>
+        </tr>
+        <tr>
+          <td>
+            <a href="http://www.hl7.org/fhir/DSTU2/datatypes.html">Type</a>
+          </td>
+          <td>
+            <a href="http://www.hl7.org/fhir/DSTU2/datatypes.html#extension" xmlns="http://www.w3.org/1999/xhtml">Extension</a>
+          </td>
+        </tr>
+        <tr>
+          <td>Aliases</td>
+          <td>extensions, user content</td>
+        </tr>
+        <tr>
+          <td width="150px">Comments</td>
+          <td>
+            <p>There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone.</p>
+          </td>
+        </tr>
+        <tr>
+          <td colspan="2" class="structure">
+            <a name="Encounter.period.start"></a>
+            <b>Encounter.period.start</b>
+          </td>
+        </tr>
+        <tr>
+          <td width="150px">Definition</td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>
+            <a href="http://www.hl7.org/fhir/DSTU2/conformance-rules.html#conformance">Control</a>
+          </td>
+          <td>1..*</td>
+        </tr>
+        <tr>
+          <td width="150px">Comments</td>
+          <td></td>
+        </tr>
+        <tr>
+          <td colspan="2" class="structure">
+            <a name="Encounter.period.end"></a>
+            <b>Encounter.period.end</b>
+          </td>
+        </tr>
+        <tr>
+          <td width="150px">Definition</td>
+          <td>
+            <p>The end of the period. If the end of the period is missing, it means that the period is ongoing. The start may be in the past, and the end date in the future, which means that period is expected/planned to end at that time.</p>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <a href="http://www.hl7.org/fhir/DSTU2/conformance-rules.html#conformance">Control</a>
+          </td>
+          <td>0..1 ?</td>
+        </tr>
+        <tr>
+          <td>
+            <a href="http://www.hl7.org/fhir/DSTU2/datatypes.html">Type</a>
+          </td>
+          <td>
+            <a href="http://www.hl7.org/fhir/DSTU2/datatypes.html#datetime" xmlns="http://www.w3.org/1999/xhtml">DateTime</a>
+          </td>
+        </tr>
+        <tr>
+          <td width="150px">Comments</td>
+          <td>
+            <p>The high value includes any matching date/time. i.e. 2012-02-03T10:00:00 is in a period that has a end value of 2012-02-03.</p>
+          </td>
+        </tr>
+        <tr>
+          <td colspan="2" class="structure">
+            <a name="Encounter.reason"></a>
+            <b>Encounter.reason</b>
+          </td>
+        </tr>
+        <tr>
+          <td width="150px">Definition</td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>
+            <a href="http://www.hl7.org/fhir/DSTU2/conformance-rules.html#conformance">Control</a>
+          </td>
+          <td>0..1</td>
+        </tr>
+        <tr>
+          <td width="150px">Comments</td>
+          <td></td>
+        </tr>
+        <tr>
+          <td colspan="2" class="structure">
+            <a name="Encounter.reason.id"></a>
+            <b>Encounter.reason.id</b>
+          </td>
+        </tr>
+        <tr>
+          <td width="150px">Definition</td>
+          <td>
+            <p>unique id for the element within a resource (for internal references).</p>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <a href="http://www.hl7.org/fhir/DSTU2/conformance-rules.html#conformance">Control</a>
+          </td>
+          <td>0..1 ?</td>
+        </tr>
+        <tr>
+          <td>
+            <a href="http://www.hl7.org/fhir/DSTU2/datatypes.html">Type</a>
+          </td>
+          <td>
+            <a href="http://www.hl7.org/fhir/DSTU2/datatypes.html#id" xmlns="http://www.w3.org/1999/xhtml">Id</a>
+          </td>
+        </tr>
+        <tr>
+          <td width="150px">Comments</td>
+          <td>
+            <p>RFC 4122</p>
+          </td>
+        </tr>
+        <tr>
+          <td colspan="2" class="structure">
+            <a name="Encounter.reason.extension"></a>
+            <b>Encounter.reason.extension</b>
+          </td>
+        </tr>
+        <tr>
+          <td width="150px">Definition</td>
+          <td>
+            <p>May be used to represent additional information that is not part of the basic definition of the element. In order to make the use of extensions safe and manageable, there is a strict set of governance  applied to the definition and use of extensions. Though any implementer is allowed to define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension.</p>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <a href="http://www.hl7.org/fhir/DSTU2/conformance-rules.html#conformance">Control</a>
+          </td>
+          <td>0..* ?</td>
+        </tr>
+        <tr>
+          <td>
+            <a href="http://www.hl7.org/fhir/DSTU2/datatypes.html">Type</a>
+          </td>
+          <td>
+            <a href="http://www.hl7.org/fhir/DSTU2/datatypes.html#extension" xmlns="http://www.w3.org/1999/xhtml">Extension</a>
+          </td>
+        </tr>
+        <tr>
+          <td>Aliases</td>
+          <td>extensions, user content</td>
+        </tr>
+        <tr>
+          <td width="150px">Comments</td>
+          <td>
+            <p>There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone.</p>
+          </td>
+        </tr>
+        <tr>
+          <td colspan="2" class="structure">
+            <a name="Encounter.reason.SNOMED CT"></a>
+            <b>Encounter.reason.coding(SNOMED CT)</b>
           </td>
         </tr>
         <tr>
@@ -2676,32 +2072,13 @@ Component code SHALL not be same as observation code</p>
           <td>0..*</td>
         </tr>
         <tr>
-          <td>
-            <a href="http://www.hl7.org/fhir/DSTU2/terminologies.html">Binding</a>
-          </td>
-          <td>
-            <div class="binding-description" xmlns="http://www.w3.org/1999/xhtml">
-              <p>An indication of whether or not the baby is preterm</p>
-              <p>The codes SHALL be taken from <a href="dch-pretermindicator-1.html">https://fhir.nhs.uk/ValueSet/DCH-PretermIndicator-1</a></p>
-            </div>
-          </td>
-        </tr>
-        <tr>
-          <td>
-            <a href="http://www.hl7.org/fhir/DSTU2/datatypes.html">Type</a>
-          </td>
-          <td>
-            <a href="http://www.hl7.org/fhir/DSTU2/datatypes.html#codeableconcept" xmlns="http://www.w3.org/1999/xhtml">CodeableConcept</a>
-          </td>
-        </tr>
-        <tr>
           <td width="150px">Comments</td>
           <td></td>
         </tr>
         <tr>
           <td colspan="2" class="structure">
-            <a name="Observation.valueCodeableConcept.id"></a>
-            <b>Observation.valueCodeableConcept.id</b>
+            <a name="Encounter.reason.coding.id"></a>
+            <b>Encounter.reason.coding.id</b>
           </td>
         </tr>
         <tr>
@@ -2732,44 +2109,8 @@ Component code SHALL not be same as observation code</p>
         </tr>
         <tr>
           <td colspan="2" class="structure">
-            <a name="Observation.valueCodeableConcept.extension"></a>
-            <b>Observation.valueCodeableConcept.extension</b>
-          </td>
-        </tr>
-        <tr>
-          <td width="150px">Definition</td>
-          <td>
-            <p>May be used to represent additional information that is not part of the basic definition of the element. In order to make the use of extensions safe and manageable, there is a strict set of governance  applied to the definition and use of extensions. Though any implementer is allowed to define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension.</p>
-          </td>
-        </tr>
-        <tr>
-          <td>
-            <a href="http://www.hl7.org/fhir/DSTU2/conformance-rules.html#conformance">Control</a>
-          </td>
-          <td>0..* ?</td>
-        </tr>
-        <tr>
-          <td>
-            <a href="http://www.hl7.org/fhir/DSTU2/datatypes.html">Type</a>
-          </td>
-          <td>
-            <a href="http://www.hl7.org/fhir/DSTU2/datatypes.html#extension" xmlns="http://www.w3.org/1999/xhtml">Extension</a>
-          </td>
-        </tr>
-        <tr>
-          <td>Aliases</td>
-          <td>extensions, user content</td>
-        </tr>
-        <tr>
-          <td width="150px">Comments</td>
-          <td>
-            <p>There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone.</p>
-          </td>
-        </tr>
-        <tr>
-          <td colspan="2" class="structure">
-            <a name="Observation.valueCodeableConcept.coding"></a>
-            <b>Observation.valueCodeableConcept.coding</b>
+            <a name="Encounter.reason.coding.snomedCTDescriptionID"></a>
+            <b>Encounter.reason.coding.extension(snomedCTDescriptionID)</b>
           </td>
         </tr>
         <tr>
@@ -2780,61 +2121,7 @@ Component code SHALL not be same as observation code</p>
           <td>
             <a href="http://www.hl7.org/fhir/DSTU2/conformance-rules.html#conformance">Control</a>
           </td>
-          <td>1..1</td>
-        </tr>
-        <tr>
-          <td width="150px">Comments</td>
-          <td></td>
-        </tr>
-        <tr>
-          <td colspan="2" class="structure">
-            <a name="Observation.valueCodeableConcept.coding.id"></a>
-            <b>Observation.valueCodeableConcept.coding.id</b>
-          </td>
-        </tr>
-        <tr>
-          <td width="150px">Definition</td>
-          <td>
-            <p>unique id for the element within a resource (for internal references).</p>
-          </td>
-        </tr>
-        <tr>
-          <td>
-            <a href="http://www.hl7.org/fhir/DSTU2/conformance-rules.html#conformance">Control</a>
-          </td>
-          <td>0..1 ?</td>
-        </tr>
-        <tr>
-          <td>
-            <a href="http://www.hl7.org/fhir/DSTU2/datatypes.html">Type</a>
-          </td>
-          <td>
-            <a href="http://www.hl7.org/fhir/DSTU2/datatypes.html#id" xmlns="http://www.w3.org/1999/xhtml">Id</a>
-          </td>
-        </tr>
-        <tr>
-          <td width="150px">Comments</td>
-          <td>
-            <p>RFC 4122</p>
-          </td>
-        </tr>
-        <tr>
-          <td colspan="2" class="structure">
-            <a name="Observation.valueCodeableConcept.coding.extension"></a>
-            <b>Observation.valueCodeableConcept.coding.extension</b>
-          </td>
-        </tr>
-        <tr>
-          <td width="150px">Definition</td>
-          <td>
-            <p>May be used to represent additional information that is not part of the basic definition of the element. In order to make the use of extensions safe and manageable, there is a strict set of governance  applied to the definition and use of extensions. Though any implementer is allowed to define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension.</p>
-          </td>
-        </tr>
-        <tr>
-          <td>
-            <a href="http://www.hl7.org/fhir/DSTU2/conformance-rules.html#conformance">Control</a>
-          </td>
-          <td>0..* ?</td>
+          <td>0..1</td>
         </tr>
         <tr>
           <td>
@@ -2845,19 +2132,13 @@ Component code SHALL not be same as observation code</p>
           </td>
         </tr>
         <tr>
-          <td>Aliases</td>
-          <td>extensions, user content</td>
-        </tr>
-        <tr>
           <td width="150px">Comments</td>
-          <td>
-            <p>There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone.</p>
-          </td>
+          <td></td>
         </tr>
         <tr>
           <td colspan="2" class="structure">
-            <a name="Observation.valueCodeableConcept.coding.system"></a>
-            <b>Observation.valueCodeableConcept.coding.system</b>
+            <a name="Encounter.reason.coding.system"></a>
+            <b>Encounter.reason.coding.system</b>
           </td>
         </tr>
         <tr>
@@ -2876,12 +2157,651 @@ Component code SHALL not be same as observation code</p>
         </tr>
         <tr>
           <td>Fixed Value</td>
-          <td>https://fhir.nhs.uk/dch-pretermindicator-1</td>
+          <td>http://snomed.info/sct</td>
         </tr>
         <tr>
           <td colspan="2" class="structure">
-            <a name="Observation.valueCodeableConcept.coding.version"></a>
-            <b>Observation.valueCodeableConcept.coding.version</b>
+            <a name="Encounter.reason.coding.code"></a>
+            <b>Encounter.reason.coding.code</b>
+          </td>
+        </tr>
+        <tr>
+          <td width="150px">Definition</td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>
+            <a href="http://www.hl7.org/fhir/DSTU2/conformance-rules.html#conformance">Control</a>
+          </td>
+          <td>1..*</td>
+        </tr>
+        <tr>
+          <td width="150px">Comments</td>
+          <td></td>
+        </tr>
+        <tr>
+          <td colspan="2" class="structure">
+            <a name="Encounter.reason.coding.display"></a>
+            <b>Encounter.reason.coding.display</b>
+          </td>
+        </tr>
+        <tr>
+          <td width="150px">Definition</td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>
+            <a href="http://www.hl7.org/fhir/DSTU2/conformance-rules.html#conformance">Control</a>
+          </td>
+          <td>1..*</td>
+        </tr>
+        <tr>
+          <td width="150px">Comments</td>
+          <td></td>
+        </tr>
+        <tr>
+          <td colspan="2" class="structure">
+            <a name="Encounter.reason.coding.userSelected"></a>
+            <b>Encounter.reason.coding.userSelected</b>
+          </td>
+        </tr>
+        <tr>
+          <td width="150px">Definition</td>
+          <td>
+            <p>Indicates that this coding was chosen by a user directly - i.e. off a pick list of available items (codes or displays).</p>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <a href="http://www.hl7.org/fhir/DSTU2/conformance-rules.html#conformance">Control</a>
+          </td>
+          <td>0..1 ?</td>
+        </tr>
+        <tr>
+          <td>
+            <a href="http://www.hl7.org/fhir/DSTU2/datatypes.html">Type</a>
+          </td>
+          <td>
+            <a href="http://www.hl7.org/fhir/DSTU2/datatypes.html#boolean" xmlns="http://www.w3.org/1999/xhtml">Boolean</a>
+          </td>
+        </tr>
+        <tr>
+          <td width="150px">Requirements</td>
+          <td>
+            <p>This has been identified as a clinical safety criterium - that this exact system/code pair was chosen explicitly, rather than inferred by the system based on some rules or language processing.</p>
+          </td>
+        </tr>
+        <tr>
+          <td width="150px">Comments</td>
+          <td>
+            <p>Amongst a set of alternatives, a directly chosen code is the most appropriate starting point for new translations. There is some ambiguity about what exactly 'directly chosen' implies, and trading partner agreement may be needed to clarify the use of this element and its consequences more completely.</p>
+          </td>
+        </tr>
+        <tr>
+          <td colspan="2" class="structure">
+            <a name="Encounter.reason.text"></a>
+            <b>Encounter.reason.text</b>
+          </td>
+        </tr>
+        <tr>
+          <td width="150px">Definition</td>
+          <td>
+            <p>A human language representation of the concept as seen/selected/uttered by the user who entered the data and/or which represents the intended meaning of the user.</p>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <a href="http://www.hl7.org/fhir/DSTU2/conformance-rules.html#conformance">Control</a>
+          </td>
+          <td>0..1 ?</td>
+        </tr>
+        <tr>
+          <td>
+            <a href="http://www.hl7.org/fhir/DSTU2/datatypes.html">Type</a>
+          </td>
+          <td>
+            <a href="http://www.hl7.org/fhir/DSTU2/datatypes.html#string" xmlns="http://www.w3.org/1999/xhtml">String</a>
+          </td>
+        </tr>
+        <tr>
+          <td width="150px">Requirements</td>
+          <td>
+            <p>The codes from the terminologies do not always capture the correct meaning with all the nuances of the human using them, or sometimes there is no appropriate code at all. In these cases, the text is used to capture the full meaning of the source.</p>
+          </td>
+        </tr>
+        <tr>
+          <td width="150px">Comments</td>
+          <td>
+            <p>Very often the text is the same as a displayName of one of the codings.</p>
+          </td>
+        </tr>
+        <tr>
+          <td colspan="2" class="structure">
+            <a name="Encounter.hospitalization"></a>
+            <b>Encounter.hospitalization</b>
+          </td>
+        </tr>
+        <tr>
+          <td width="150px">Definition</td>
+          <td>
+            <p>Details about the admission to a healthcare service.</p>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <a href="http://www.hl7.org/fhir/DSTU2/conformance-rules.html#conformance">Control</a>
+          </td>
+          <td>0..1 ?</td>
+        </tr>
+        <tr>
+          <td>
+            <a href="http://www.hl7.org/fhir/DSTU2/datatypes.html">Type</a>
+          </td>
+          <td>
+            <a href="http://www.hl7.org/fhir/DSTU2/backboneelement.html" xmlns="http://www.w3.org/1999/xhtml">BackboneElement</a>
+          </td>
+        </tr>
+        <tr>
+          <td width="150px">Comments</td>
+          <td>
+            <p>An Encounter may cover more than just the inpatient stay. Contexts such as outpatients, community clinics, and aged care facilities are also included.  The duration recorded in the period of this encounter covers the entire scope of this hospitalization record.</p>
+          </td>
+        </tr>
+        <tr>
+          <td colspan="2" class="structure">
+            <a name="Encounter.hospitalization.id"></a>
+            <b>Encounter.hospitalization.id</b>
+          </td>
+        </tr>
+        <tr>
+          <td width="150px">Definition</td>
+          <td>
+            <p>unique id for the element within a resource (for internal references).</p>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <a href="http://www.hl7.org/fhir/DSTU2/conformance-rules.html#conformance">Control</a>
+          </td>
+          <td>0..1 ?</td>
+        </tr>
+        <tr>
+          <td>
+            <a href="http://www.hl7.org/fhir/DSTU2/datatypes.html">Type</a>
+          </td>
+          <td>
+            <a href="http://www.hl7.org/fhir/DSTU2/datatypes.html#id" xmlns="http://www.w3.org/1999/xhtml">Id</a>
+          </td>
+        </tr>
+        <tr>
+          <td width="150px">Comments</td>
+          <td>
+            <p>RFC 4122</p>
+          </td>
+        </tr>
+        <tr>
+          <td colspan="2" class="structure">
+            <a name="Encounter.hospitalization.extension"></a>
+            <b>Encounter.hospitalization.extension</b>
+          </td>
+        </tr>
+        <tr>
+          <td width="150px">Definition</td>
+          <td>
+            <p>May be used to represent additional information that is not part of the basic definition of the element. In order to make the use of extensions safe and manageable, there is a strict set of governance  applied to the definition and use of extensions. Though any implementer is allowed to define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension.</p>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <a href="http://www.hl7.org/fhir/DSTU2/conformance-rules.html#conformance">Control</a>
+          </td>
+          <td>0..* ?</td>
+        </tr>
+        <tr>
+          <td>
+            <a href="http://www.hl7.org/fhir/DSTU2/datatypes.html">Type</a>
+          </td>
+          <td>
+            <a href="http://www.hl7.org/fhir/DSTU2/datatypes.html#extension" xmlns="http://www.w3.org/1999/xhtml">Extension</a>
+          </td>
+        </tr>
+        <tr>
+          <td>Aliases</td>
+          <td>extensions, user content</td>
+        </tr>
+        <tr>
+          <td width="150px">Comments</td>
+          <td>
+            <p>There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone.</p>
+          </td>
+        </tr>
+        <tr>
+          <td colspan="2" class="structure">
+            <a name="Encounter.hospitalization.modifierExtension"></a>
+            <b>Encounter.hospitalization.modifierExtension</b>
+          </td>
+        </tr>
+        <tr>
+          <td width="150px">Definition</td>
+          <td>
+            <p>May be used to represent additional information that is not part of the basic definition of the element, and that modifies the understanding of the element that contains it. Usually modifier elements provide negation or qualification. In order to make the use of extensions safe and manageable, there is a strict set of governance applied to the definition and use of extensions. Though any implementer is allowed to define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension. Applications processing a resource are required to check for modifier extensions.</p>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <a href="http://www.hl7.org/fhir/DSTU2/conformance-rules.html#conformance">Control</a>
+          </td>
+          <td>0..* ?</td>
+        </tr>
+        <tr>
+          <td>
+            <a href="http://www.hl7.org/fhir/DSTU2/datatypes.html">Type</a>
+          </td>
+          <td>
+            <a href="http://www.hl7.org/fhir/DSTU2/datatypes.html#extension" xmlns="http://www.w3.org/1999/xhtml">Extension</a>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <a href="http://www.hl7.org/fhir/DSTU2/conformance-rules.html#ismodifier">Is Modifier</a>
+          </td>
+          <td>True</td>
+        </tr>
+        <tr>
+          <td>Aliases</td>
+          <td>extensions, user content, modifiers</td>
+        </tr>
+        <tr>
+          <td width="150px">Comments</td>
+          <td>
+            <p>There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone.</p>
+          </td>
+        </tr>
+        <tr>
+          <td colspan="2" class="structure">
+            <a name="Encounter.hospitalization.admittingDiagnosis"></a>
+            <b>Encounter.hospitalization.admittingDiagnosis</b>
+          </td>
+        </tr>
+        <tr>
+          <td width="150px">Definition</td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>
+            <a href="http://www.hl7.org/fhir/DSTU2/conformance-rules.html#conformance">Control</a>
+          </td>
+          <td>0..1</td>
+        </tr>
+        <tr>
+          <td>
+            <a href="http://www.hl7.org/fhir/DSTU2/datatypes.html">Type</a>
+          </td>
+          <td>
+            <a href="careconnect-dch-condition-1.html" xmlns="http://www.w3.org/1999/xhtml">https://fhir.hl7.org.uk/StructureDefinition/CareConnect-DCH-Condition-1</a>
+          </td>
+        </tr>
+        <tr>
+          <td width="150px">Comments</td>
+          <td></td>
+        </tr>
+        <tr>
+          <td colspan="2" class="structure">
+            <a name="Encounter.hospitalization.admittingDiagnosis.id"></a>
+            <b>Encounter.hospitalization.admittingDiagnosis.id</b>
+          </td>
+        </tr>
+        <tr>
+          <td width="150px">Definition</td>
+          <td>
+            <p>unique id for the element within a resource (for internal references).</p>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <a href="http://www.hl7.org/fhir/DSTU2/conformance-rules.html#conformance">Control</a>
+          </td>
+          <td>0..1 ?</td>
+        </tr>
+        <tr>
+          <td>
+            <a href="http://www.hl7.org/fhir/DSTU2/datatypes.html">Type</a>
+          </td>
+          <td>
+            <a href="http://www.hl7.org/fhir/DSTU2/datatypes.html#id" xmlns="http://www.w3.org/1999/xhtml">Id</a>
+          </td>
+        </tr>
+        <tr>
+          <td width="150px">Comments</td>
+          <td>
+            <p>RFC 4122</p>
+          </td>
+        </tr>
+        <tr>
+          <td colspan="2" class="structure">
+            <a name="Encounter.hospitalization.admittingDiagnosis.extension"></a>
+            <b>Encounter.hospitalization.admittingDiagnosis.extension</b>
+          </td>
+        </tr>
+        <tr>
+          <td width="150px">Definition</td>
+          <td>
+            <p>May be used to represent additional information that is not part of the basic definition of the element. In order to make the use of extensions safe and manageable, there is a strict set of governance  applied to the definition and use of extensions. Though any implementer is allowed to define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension.</p>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <a href="http://www.hl7.org/fhir/DSTU2/conformance-rules.html#conformance">Control</a>
+          </td>
+          <td>0..* ?</td>
+        </tr>
+        <tr>
+          <td>
+            <a href="http://www.hl7.org/fhir/DSTU2/datatypes.html">Type</a>
+          </td>
+          <td>
+            <a href="http://www.hl7.org/fhir/DSTU2/datatypes.html#extension" xmlns="http://www.w3.org/1999/xhtml">Extension</a>
+          </td>
+        </tr>
+        <tr>
+          <td>Aliases</td>
+          <td>extensions, user content</td>
+        </tr>
+        <tr>
+          <td width="150px">Comments</td>
+          <td>
+            <p>There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone.</p>
+          </td>
+        </tr>
+        <tr>
+          <td colspan="2" class="structure">
+            <a name="Encounter.hospitalization.admittingDiagnosis.reference"></a>
+            <b>Encounter.hospitalization.admittingDiagnosis.reference</b>
+          </td>
+        </tr>
+        <tr>
+          <td width="150px">Definition</td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>
+            <a href="http://www.hl7.org/fhir/DSTU2/conformance-rules.html#conformance">Control</a>
+          </td>
+          <td>1..*</td>
+        </tr>
+        <tr>
+          <td width="150px">Comments</td>
+          <td></td>
+        </tr>
+        <tr>
+          <td colspan="2" class="structure">
+            <a name="Encounter.hospitalization.admittingDiagnosis.display"></a>
+            <b>Encounter.hospitalization.admittingDiagnosis.display</b>
+          </td>
+        </tr>
+        <tr>
+          <td width="150px">Definition</td>
+          <td>
+            <p>Plain text narrative that identifies the resource in addition to the resource reference.</p>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <a href="http://www.hl7.org/fhir/DSTU2/conformance-rules.html#conformance">Control</a>
+          </td>
+          <td>0..1 ?</td>
+        </tr>
+        <tr>
+          <td>
+            <a href="http://www.hl7.org/fhir/DSTU2/datatypes.html">Type</a>
+          </td>
+          <td>
+            <a href="http://www.hl7.org/fhir/DSTU2/datatypes.html#string" xmlns="http://www.w3.org/1999/xhtml">String</a>
+          </td>
+        </tr>
+        <tr>
+          <td width="150px">Comments</td>
+          <td>
+            <p>This is generally not the same as the Resource.text of the referenced resource.  The purpose is to identify what's being referenced, not to fully describe it.</p>
+          </td>
+        </tr>
+        <tr>
+          <td colspan="2" class="structure">
+            <a name="Encounter.hospitalization.dischargeDisposition"></a>
+            <b>Encounter.hospitalization.dischargeDisposition</b>
+          </td>
+        </tr>
+        <tr>
+          <td width="150px">Definition</td>
+          <td>
+            <p>Category or kind of location after discharge.</p>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <a href="http://www.hl7.org/fhir/DSTU2/conformance-rules.html#conformance">Control</a>
+          </td>
+          <td>0..1 ?</td>
+        </tr>
+        <tr>
+          <td>
+            <a href="http://www.hl7.org/fhir/DSTU2/terminologies.html">Binding</a>
+          </td>
+          <td>
+            <div class="binding-description" xmlns="http://www.w3.org/1999/xhtml">
+              <p>Discharge Disposition</p>
+              <p>The codes SHOULD be taken from <a href="http://hl7.org/fhir/DSTU2/valueset-encounter-discharge-disposition.html">http://hl7.org/fhir/DSTU2/valueset-encounter-discharge-disposition.html</a></p>; other codes may be used where these codes are not suitable</div>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <a href="http://www.hl7.org/fhir/DSTU2/datatypes.html">Type</a>
+          </td>
+          <td>
+            <a href="http://www.hl7.org/fhir/DSTU2/datatypes.html#codeableconcept" xmlns="http://www.w3.org/1999/xhtml">CodeableConcept</a>
+          </td>
+        </tr>
+        <tr>
+          <td width="150px">Comments</td>
+          <td>
+            <p>Not all terminology uses fit this general pattern. In some cases, models should not use CodeableConcept and use Coding directly and provide their own structure for managing text, codings, translations and the relationship between elements and pre- and post-coordination.</p>
+          </td>
+        </tr>
+        <tr>
+          <td colspan="2" class="structure">
+            <a name="Encounter.hospitalization.dischargeDisposition.id"></a>
+            <b>Encounter.hospitalization.dischargeDisposition.id</b>
+          </td>
+        </tr>
+        <tr>
+          <td width="150px">Definition</td>
+          <td>
+            <p>unique id for the element within a resource (for internal references).</p>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <a href="http://www.hl7.org/fhir/DSTU2/conformance-rules.html#conformance">Control</a>
+          </td>
+          <td>0..1 ?</td>
+        </tr>
+        <tr>
+          <td>
+            <a href="http://www.hl7.org/fhir/DSTU2/datatypes.html">Type</a>
+          </td>
+          <td>
+            <a href="http://www.hl7.org/fhir/DSTU2/datatypes.html#id" xmlns="http://www.w3.org/1999/xhtml">Id</a>
+          </td>
+        </tr>
+        <tr>
+          <td width="150px">Comments</td>
+          <td>
+            <p>RFC 4122</p>
+          </td>
+        </tr>
+        <tr>
+          <td colspan="2" class="structure">
+            <a name="Encounter.hospitalization.dischargeDisposition.extension"></a>
+            <b>Encounter.hospitalization.dischargeDisposition.extension</b>
+          </td>
+        </tr>
+        <tr>
+          <td width="150px">Definition</td>
+          <td>
+            <p>May be used to represent additional information that is not part of the basic definition of the element. In order to make the use of extensions safe and manageable, there is a strict set of governance  applied to the definition and use of extensions. Though any implementer is allowed to define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension.</p>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <a href="http://www.hl7.org/fhir/DSTU2/conformance-rules.html#conformance">Control</a>
+          </td>
+          <td>0..* ?</td>
+        </tr>
+        <tr>
+          <td>
+            <a href="http://www.hl7.org/fhir/DSTU2/datatypes.html">Type</a>
+          </td>
+          <td>
+            <a href="http://www.hl7.org/fhir/DSTU2/datatypes.html#extension" xmlns="http://www.w3.org/1999/xhtml">Extension</a>
+          </td>
+        </tr>
+        <tr>
+          <td>Aliases</td>
+          <td>extensions, user content</td>
+        </tr>
+        <tr>
+          <td width="150px">Comments</td>
+          <td>
+            <p>There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone.</p>
+          </td>
+        </tr>
+        <tr>
+          <td colspan="2" class="structure">
+            <a name="Encounter.hospitalization.dischargeDisposition.coding"></a>
+            <b>Encounter.hospitalization.dischargeDisposition.coding</b>
+          </td>
+        </tr>
+        <tr>
+          <td width="150px">Definition</td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>
+            <a href="http://www.hl7.org/fhir/DSTU2/conformance-rules.html#conformance">Control</a>
+          </td>
+          <td>0..1</td>
+        </tr>
+        <tr>
+          <td>
+            <a href="http://www.hl7.org/fhir/DSTU2/terminologies.html">Binding</a>
+          </td>
+          <td>
+            <div class="binding-description" xmlns="http://www.w3.org/1999/xhtml">
+              <p>A code to identify how an Accident and Emergency Attendance might end.</p>
+              <p>The codes SHALL be taken from <a href="dch-disposalcode-1.html">https://fhir.nhs.uk/ValueSet/DCH-DisposalCode-1</a></p>
+            </div>
+          </td>
+        </tr>
+        <tr>
+          <td width="150px">Comments</td>
+          <td></td>
+        </tr>
+        <tr>
+          <td colspan="2" class="structure">
+            <a name="Encounter.hospitalization.dischargeDisposition.coding.id"></a>
+            <b>Encounter.hospitalization.dischargeDisposition.coding.id</b>
+          </td>
+        </tr>
+        <tr>
+          <td width="150px">Definition</td>
+          <td>
+            <p>unique id for the element within a resource (for internal references).</p>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <a href="http://www.hl7.org/fhir/DSTU2/conformance-rules.html#conformance">Control</a>
+          </td>
+          <td>0..1 ?</td>
+        </tr>
+        <tr>
+          <td>
+            <a href="http://www.hl7.org/fhir/DSTU2/datatypes.html">Type</a>
+          </td>
+          <td>
+            <a href="http://www.hl7.org/fhir/DSTU2/datatypes.html#id" xmlns="http://www.w3.org/1999/xhtml">Id</a>
+          </td>
+        </tr>
+        <tr>
+          <td width="150px">Comments</td>
+          <td>
+            <p>RFC 4122</p>
+          </td>
+        </tr>
+        <tr>
+          <td colspan="2" class="structure">
+            <a name="Encounter.hospitalization.dischargeDisposition.coding.extension"></a>
+            <b>Encounter.hospitalization.dischargeDisposition.coding.extension</b>
+          </td>
+        </tr>
+        <tr>
+          <td width="150px">Definition</td>
+          <td>
+            <p>May be used to represent additional information that is not part of the basic definition of the element. In order to make the use of extensions safe and manageable, there is a strict set of governance  applied to the definition and use of extensions. Though any implementer is allowed to define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension.</p>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <a href="http://www.hl7.org/fhir/DSTU2/conformance-rules.html#conformance">Control</a>
+          </td>
+          <td>0..* ?</td>
+        </tr>
+        <tr>
+          <td>
+            <a href="http://www.hl7.org/fhir/DSTU2/datatypes.html">Type</a>
+          </td>
+          <td>
+            <a href="http://www.hl7.org/fhir/DSTU2/datatypes.html#extension" xmlns="http://www.w3.org/1999/xhtml">Extension</a>
+          </td>
+        </tr>
+        <tr>
+          <td>Aliases</td>
+          <td>extensions, user content</td>
+        </tr>
+        <tr>
+          <td width="150px">Comments</td>
+          <td>
+            <p>There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone.</p>
+          </td>
+        </tr>
+        <tr>
+          <td colspan="2" class="structure">
+            <a name="Encounter.hospitalization.dischargeDisposition.coding.system"></a>
+            <b>Encounter.hospitalization.dischargeDisposition.coding.system</b>
+          </td>
+        </tr>
+        <tr>
+          <td width="150px">Definition</td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>
+            <a href="http://www.hl7.org/fhir/DSTU2/conformance-rules.html#conformance">Control</a>
+          </td>
+          <td>1..*</td>
+        </tr>
+        <tr>
+          <td width="150px">Comments</td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>Fixed Value</td>
+          <td>https://fhir.nhs.uk/DCH-DisposalCode-1</td>
+        </tr>
+        <tr>
+          <td colspan="2" class="structure">
+            <a name="Encounter.hospitalization.dischargeDisposition.coding.version"></a>
+            <b>Encounter.hospitalization.dischargeDisposition.coding.version</b>
           </td>
         </tr>
         <tr>
@@ -2912,8 +2832,8 @@ Component code SHALL not be same as observation code</p>
         </tr>
         <tr>
           <td colspan="2" class="structure">
-            <a name="Observation.valueCodeableConcept.coding.code"></a>
-            <b>Observation.valueCodeableConcept.coding.code</b>
+            <a name="Encounter.hospitalization.dischargeDisposition.coding.code"></a>
+            <b>Encounter.hospitalization.dischargeDisposition.coding.code</b>
           </td>
         </tr>
         <tr>
@@ -2932,8 +2852,8 @@ Component code SHALL not be same as observation code</p>
         </tr>
         <tr>
           <td colspan="2" class="structure">
-            <a name="Observation.valueCodeableConcept.coding.display"></a>
-            <b>Observation.valueCodeableConcept.coding.display</b>
+            <a name="Encounter.hospitalization.dischargeDisposition.coding.display"></a>
+            <b>Encounter.hospitalization.dischargeDisposition.coding.display</b>
           </td>
         </tr>
         <tr>
@@ -2952,8 +2872,8 @@ Component code SHALL not be same as observation code</p>
         </tr>
         <tr>
           <td colspan="2" class="structure">
-            <a name="Observation.valueCodeableConcept.coding.userSelected"></a>
-            <b>Observation.valueCodeableConcept.coding.userSelected</b>
+            <a name="Encounter.hospitalization.dischargeDisposition.coding.userSelected"></a>
+            <b>Encounter.hospitalization.dischargeDisposition.coding.userSelected</b>
           </td>
         </tr>
         <tr>
@@ -2990,8 +2910,8 @@ Component code SHALL not be same as observation code</p>
         </tr>
         <tr>
           <td colspan="2" class="structure">
-            <a name="Observation.valueCodeableConcept.text"></a>
-            <b>Observation.valueCodeableConcept.text</b>
+            <a name="Encounter.hospitalization.dischargeDisposition.text"></a>
+            <b>Encounter.hospitalization.dischargeDisposition.text</b>
           </td>
         </tr>
         <tr>
@@ -3028,57 +2948,28 @@ Component code SHALL not be same as observation code</p>
         </tr>
         <tr>
           <td colspan="2" class="structure">
-            <a name="Observation.dataAbsentReason"></a>
-            <b>Observation.dataAbsentReason</b>
+            <a name="Encounter.location"></a>
+            <b>Encounter.location</b>
           </td>
         </tr>
         <tr>
           <td width="150px">Definition</td>
-          <td>
-            <p>Provides a reason why the expected value in the element Observation.value[x] is missing.</p>
-          </td>
+          <td></td>
         </tr>
         <tr>
           <td>
             <a href="http://www.hl7.org/fhir/DSTU2/conformance-rules.html#conformance">Control</a>
           </td>
-          <td>0..1 ?</td>
-        </tr>
-        <tr>
-          <td>
-            <a href="http://www.hl7.org/fhir/DSTU2/terminologies.html">Binding</a>
-          </td>
-          <td>
-            <div class="binding-description" xmlns="http://www.w3.org/1999/xhtml">
-              <p>Codes specifying why the result (Observation.value[x]) is missing.</p>
-              <p>The codes SHALL be taken from the following if appropriate, otherwise an alternate coding may be included instead. <a href="http://hl7.org/fhir/DSTU2/valueset-observation-valueabsentreason.html">http://hl7.org/fhir/DSTU2/valueset-observation-valueabsentreason.html</a></p>
-            </div>
-          </td>
-        </tr>
-        <tr>
-          <td>
-            <a href="http://www.hl7.org/fhir/DSTU2/datatypes.html">Type</a>
-          </td>
-          <td>
-            <a href="http://www.hl7.org/fhir/DSTU2/datatypes.html#codeableconcept" xmlns="http://www.w3.org/1999/xhtml">CodeableConcept</a>
-          </td>
-        </tr>
-        <tr>
-          <td width="150px">Requirements</td>
-          <td>
-            <p>For many results it is necessary to handle exceptional values in measurements.</p>
-          </td>
+          <td>1..1</td>
         </tr>
         <tr>
           <td width="150px">Comments</td>
-          <td>
-            <p>Null or exceptional values can be represented two ways in FHIR Observations.  One way is to simply include them in the value set and represent the exceptions in the value.  For example, measurement values for a serology test could be  "detected", "not detected", "inconclusive", or  "specimen unsatisfactory".   The alternate way is to use the value element for actual observations and use the explicit dataAbsentReason element to record exceptional values.  For example, the dataAbsentReason code "error" could be used when the measurement was not completed.  Because of these options, use-case agreements are required to interpret general observations for exceptional values.</p>
-          </td>
+          <td></td>
         </tr>
         <tr>
           <td colspan="2" class="structure">
-            <a name="Observation.dataAbsentReason.id"></a>
-            <b>Observation.dataAbsentReason.id</b>
+            <a name="Encounter.location.id"></a>
+            <b>Encounter.location.id</b>
           </td>
         </tr>
         <tr>
@@ -3109,8 +3000,8 @@ Component code SHALL not be same as observation code</p>
         </tr>
         <tr>
           <td colspan="2" class="structure">
-            <a name="Observation.dataAbsentReason.extension"></a>
-            <b>Observation.dataAbsentReason.extension</b>
+            <a name="Encounter.location.extension"></a>
+            <b>Encounter.location.extension</b>
           </td>
         </tr>
         <tr>
@@ -3145,8 +3036,50 @@ Component code SHALL not be same as observation code</p>
         </tr>
         <tr>
           <td colspan="2" class="structure">
-            <a name="Observation.dataAbsentReason.SNOMED CT"></a>
-            <b>Observation.dataAbsentReason.coding(SNOMED CT)</b>
+            <a name="Encounter.location.modifierExtension"></a>
+            <b>Encounter.location.modifierExtension</b>
+          </td>
+        </tr>
+        <tr>
+          <td width="150px">Definition</td>
+          <td>
+            <p>May be used to represent additional information that is not part of the basic definition of the element, and that modifies the understanding of the element that contains it. Usually modifier elements provide negation or qualification. In order to make the use of extensions safe and manageable, there is a strict set of governance applied to the definition and use of extensions. Though any implementer is allowed to define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension. Applications processing a resource are required to check for modifier extensions.</p>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <a href="http://www.hl7.org/fhir/DSTU2/conformance-rules.html#conformance">Control</a>
+          </td>
+          <td>0..* ?</td>
+        </tr>
+        <tr>
+          <td>
+            <a href="http://www.hl7.org/fhir/DSTU2/datatypes.html">Type</a>
+          </td>
+          <td>
+            <a href="http://www.hl7.org/fhir/DSTU2/datatypes.html#extension" xmlns="http://www.w3.org/1999/xhtml">Extension</a>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <a href="http://www.hl7.org/fhir/DSTU2/conformance-rules.html#ismodifier">Is Modifier</a>
+          </td>
+          <td>True</td>
+        </tr>
+        <tr>
+          <td>Aliases</td>
+          <td>extensions, user content, modifiers</td>
+        </tr>
+        <tr>
+          <td width="150px">Comments</td>
+          <td>
+            <p>There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone.</p>
+          </td>
+        </tr>
+        <tr>
+          <td colspan="2" class="structure">
+            <a name="Encounter.location.location"></a>
+            <b>Encounter.location.location</b>
           </td>
         </tr>
         <tr>
@@ -3157,7 +3090,15 @@ Component code SHALL not be same as observation code</p>
           <td>
             <a href="http://www.hl7.org/fhir/DSTU2/conformance-rules.html#conformance">Control</a>
           </td>
-          <td>0..1</td>
+          <td>0..*</td>
+        </tr>
+        <tr>
+          <td>
+            <a href="http://www.hl7.org/fhir/DSTU2/datatypes.html">Type</a>
+          </td>
+          <td>
+            <a href="careconnect-organization-1.html" xmlns="http://www.w3.org/1999/xhtml">https://fhir.hl7.org.uk/StructureDefinition/CareConnect-Organization-1</a>
+          </td>
         </tr>
         <tr>
           <td width="150px">Comments</td>
@@ -3165,8 +3106,8 @@ Component code SHALL not be same as observation code</p>
         </tr>
         <tr>
           <td colspan="2" class="structure">
-            <a name="Observation.dataAbsentReason.coding.id"></a>
-            <b>Observation.dataAbsentReason.coding.id</b>
+            <a name="Encounter.location.location.id"></a>
+            <b>Encounter.location.location.id</b>
           </td>
         </tr>
         <tr>
@@ -3197,19 +3138,21 @@ Component code SHALL not be same as observation code</p>
         </tr>
         <tr>
           <td colspan="2" class="structure">
-            <a name="Observation.dataAbsentReason.coding.snomedCTDescriptionID"></a>
-            <b>Observation.dataAbsentReason.coding.extension(snomedCTDescriptionID)</b>
+            <a name="Encounter.location.location.extension"></a>
+            <b>Encounter.location.location.extension</b>
           </td>
         </tr>
         <tr>
           <td width="150px">Definition</td>
-          <td></td>
+          <td>
+            <p>May be used to represent additional information that is not part of the basic definition of the element. In order to make the use of extensions safe and manageable, there is a strict set of governance  applied to the definition and use of extensions. Though any implementer is allowed to define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension.</p>
+          </td>
         </tr>
         <tr>
           <td>
             <a href="http://www.hl7.org/fhir/DSTU2/conformance-rules.html#conformance">Control</a>
           </td>
-          <td>0..1</td>
+          <td>0..* ?</td>
         </tr>
         <tr>
           <td>
@@ -3220,37 +3163,19 @@ Component code SHALL not be same as observation code</p>
           </td>
         </tr>
         <tr>
+          <td>Aliases</td>
+          <td>extensions, user content</td>
+        </tr>
+        <tr>
           <td width="150px">Comments</td>
-          <td></td>
-        </tr>
-        <tr>
-          <td colspan="2" class="structure">
-            <a name="Observation.dataAbsentReason.coding.system"></a>
-            <b>Observation.dataAbsentReason.coding.system</b>
-          </td>
-        </tr>
-        <tr>
-          <td width="150px">Definition</td>
-          <td></td>
-        </tr>
-        <tr>
           <td>
-            <a href="http://www.hl7.org/fhir/DSTU2/conformance-rules.html#conformance">Control</a>
+            <p>There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone.</p>
           </td>
-          <td>1..*</td>
-        </tr>
-        <tr>
-          <td width="150px">Comments</td>
-          <td></td>
-        </tr>
-        <tr>
-          <td>Fixed Value</td>
-          <td>http://snomed.info/sct</td>
         </tr>
         <tr>
           <td colspan="2" class="structure">
-            <a name="Observation.dataAbsentReason.coding.code"></a>
-            <b>Observation.dataAbsentReason.coding.code</b>
+            <a name="Encounter.location.location.reference"></a>
+            <b>Encounter.location.location.reference</b>
           </td>
         </tr>
         <tr>
@@ -3269,72 +3194,14 @@ Component code SHALL not be same as observation code</p>
         </tr>
         <tr>
           <td colspan="2" class="structure">
-            <a name="Observation.dataAbsentReason.coding.display"></a>
-            <b>Observation.dataAbsentReason.coding.display</b>
-          </td>
-        </tr>
-        <tr>
-          <td width="150px">Definition</td>
-          <td></td>
-        </tr>
-        <tr>
-          <td>
-            <a href="http://www.hl7.org/fhir/DSTU2/conformance-rules.html#conformance">Control</a>
-          </td>
-          <td>1..*</td>
-        </tr>
-        <tr>
-          <td width="150px">Comments</td>
-          <td></td>
-        </tr>
-        <tr>
-          <td colspan="2" class="structure">
-            <a name="Observation.dataAbsentReason.coding.userSelected"></a>
-            <b>Observation.dataAbsentReason.coding.userSelected</b>
+            <a name="Encounter.location.location.display"></a>
+            <b>Encounter.location.location.display</b>
           </td>
         </tr>
         <tr>
           <td width="150px">Definition</td>
           <td>
-            <p>Indicates that this coding was chosen by a user directly - i.e. off a pick list of available items (codes or displays).</p>
-          </td>
-        </tr>
-        <tr>
-          <td>
-            <a href="http://www.hl7.org/fhir/DSTU2/conformance-rules.html#conformance">Control</a>
-          </td>
-          <td>0..1 ?</td>
-        </tr>
-        <tr>
-          <td>
-            <a href="http://www.hl7.org/fhir/DSTU2/datatypes.html">Type</a>
-          </td>
-          <td>
-            <a href="http://www.hl7.org/fhir/DSTU2/datatypes.html#boolean" xmlns="http://www.w3.org/1999/xhtml">Boolean</a>
-          </td>
-        </tr>
-        <tr>
-          <td width="150px">Requirements</td>
-          <td>
-            <p>This has been identified as a clinical safety criterium - that this exact system/code pair was chosen explicitly, rather than inferred by the system based on some rules or language processing.</p>
-          </td>
-        </tr>
-        <tr>
-          <td width="150px">Comments</td>
-          <td>
-            <p>Amongst a set of alternatives, a directly chosen code is the most appropriate starting point for new translations. There is some ambiguity about what exactly 'directly chosen' implies, and trading partner agreement may be needed to clarify the use of this element and its consequences more completely.</p>
-          </td>
-        </tr>
-        <tr>
-          <td colspan="2" class="structure">
-            <a name="Observation.dataAbsentReason.text"></a>
-            <b>Observation.dataAbsentReason.text</b>
-          </td>
-        </tr>
-        <tr>
-          <td width="150px">Definition</td>
-          <td>
-            <p>A human language representation of the concept as seen/selected/uttered by the user who entered the data and/or which represents the intended meaning of the user.</p>
+            <p>Plain text narrative that identifies the resource in addition to the resource reference.</p>
           </td>
         </tr>
         <tr>
@@ -3352,15 +3219,169 @@ Component code SHALL not be same as observation code</p>
           </td>
         </tr>
         <tr>
-          <td width="150px">Requirements</td>
+          <td width="150px">Comments</td>
           <td>
-            <p>The codes from the terminologies do not always capture the correct meaning with all the nuances of the human using them, or sometimes there is no appropriate code at all. In these cases, the text is used to capture the full meaning of the source.</p>
+            <p>This is generally not the same as the Resource.text of the referenced resource.  The purpose is to identify what's being referenced, not to fully describe it.</p>
+          </td>
+        </tr>
+        <tr>
+          <td colspan="2" class="structure">
+            <a name="Encounter.serviceProvider"></a>
+            <b>Encounter.serviceProvider</b>
+          </td>
+        </tr>
+        <tr>
+          <td width="150px">Definition</td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>
+            <a href="http://www.hl7.org/fhir/DSTU2/conformance-rules.html#conformance">Control</a>
+          </td>
+          <td>1..*</td>
+        </tr>
+        <tr>
+          <td>
+            <a href="http://www.hl7.org/fhir/DSTU2/datatypes.html">Type</a>
+          </td>
+          <td>
+            <a href="careconnect-organization-1.html" xmlns="http://www.w3.org/1999/xhtml">https://fhir.hl7.org.uk/StructureDefinition/CareConnect-Organization-1</a>
+          </td>
+        </tr>
+        <tr>
+          <td width="150px">Comments</td>
+          <td></td>
+        </tr>
+        <tr>
+          <td colspan="2" class="structure">
+            <a name="Encounter.serviceProvider.id"></a>
+            <b>Encounter.serviceProvider.id</b>
+          </td>
+        </tr>
+        <tr>
+          <td width="150px">Definition</td>
+          <td>
+            <p>unique id for the element within a resource (for internal references).</p>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <a href="http://www.hl7.org/fhir/DSTU2/conformance-rules.html#conformance">Control</a>
+          </td>
+          <td>0..1 ?</td>
+        </tr>
+        <tr>
+          <td>
+            <a href="http://www.hl7.org/fhir/DSTU2/datatypes.html">Type</a>
+          </td>
+          <td>
+            <a href="http://www.hl7.org/fhir/DSTU2/datatypes.html#id" xmlns="http://www.w3.org/1999/xhtml">Id</a>
           </td>
         </tr>
         <tr>
           <td width="150px">Comments</td>
           <td>
-            <p>Very often the text is the same as a displayName of one of the codings.</p>
+            <p>RFC 4122</p>
+          </td>
+        </tr>
+        <tr>
+          <td colspan="2" class="structure">
+            <a name="Encounter.serviceProvider.extension"></a>
+            <b>Encounter.serviceProvider.extension</b>
+          </td>
+        </tr>
+        <tr>
+          <td width="150px">Definition</td>
+          <td>
+            <p>May be used to represent additional information that is not part of the basic definition of the element. In order to make the use of extensions safe and manageable, there is a strict set of governance  applied to the definition and use of extensions. Though any implementer is allowed to define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension.</p>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <a href="http://www.hl7.org/fhir/DSTU2/conformance-rules.html#conformance">Control</a>
+          </td>
+          <td>0..* ?</td>
+        </tr>
+        <tr>
+          <td>
+            <a href="http://www.hl7.org/fhir/DSTU2/datatypes.html">Type</a>
+          </td>
+          <td>
+            <a href="http://www.hl7.org/fhir/DSTU2/datatypes.html#extension" xmlns="http://www.w3.org/1999/xhtml">Extension</a>
+          </td>
+        </tr>
+        <tr>
+          <td>Aliases</td>
+          <td>extensions, user content</td>
+        </tr>
+        <tr>
+          <td width="150px">Comments</td>
+          <td>
+            <p>There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone.</p>
+          </td>
+        </tr>
+        <tr>
+          <td colspan="2" class="structure">
+            <a name="Encounter.serviceProvider.reference"></a>
+            <b>Encounter.serviceProvider.reference</b>
+          </td>
+        </tr>
+        <tr>
+          <td width="150px">Definition</td>
+          <td>
+            <p>A reference to a location at which the other resource is found. The reference may be a relative reference, in which case it is relative to the service base URL, or an absolute URL that resolves to the location where the resource is found. The reference may be version specific or not. If the reference is not to a FHIR RESTful server, then it should be assumed to be version specific. Internal fragment references (start with '#') refer to contained resources.</p>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <a href="http://www.hl7.org/fhir/DSTU2/conformance-rules.html#conformance">Control</a>
+          </td>
+          <td>0..1 ?</td>
+        </tr>
+        <tr>
+          <td>
+            <a href="http://www.hl7.org/fhir/DSTU2/datatypes.html">Type</a>
+          </td>
+          <td>
+            <a href="http://www.hl7.org/fhir/DSTU2/datatypes.html#string" xmlns="http://www.w3.org/1999/xhtml">String</a>
+          </td>
+        </tr>
+        <tr>
+          <td width="150px">Comments</td>
+          <td>
+            <p>Using absolute URLs provides a stable scalable approach suitable for a cloud/web context, while using relative/logical references provides a flexible approach suitable for use when trading across closed eco-system boundaries.   Absolute URLs do not need to point to a FHIR RESTful server, though this is the preferred approach. If the URL conforms to the structure "/[type]/[id]" then it should be assumed that the reference is to a FHIR RESTful server.</p>
+          </td>
+        </tr>
+        <tr>
+          <td colspan="2" class="structure">
+            <a name="Encounter.serviceProvider.display"></a>
+            <b>Encounter.serviceProvider.display</b>
+          </td>
+        </tr>
+        <tr>
+          <td width="150px">Definition</td>
+          <td>
+            <p>Plain text narrative that identifies the resource in addition to the resource reference.</p>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <a href="http://www.hl7.org/fhir/DSTU2/conformance-rules.html#conformance">Control</a>
+          </td>
+          <td>0..1 ?</td>
+        </tr>
+        <tr>
+          <td>
+            <a href="http://www.hl7.org/fhir/DSTU2/datatypes.html">Type</a>
+          </td>
+          <td>
+            <a href="http://www.hl7.org/fhir/DSTU2/datatypes.html#string" xmlns="http://www.w3.org/1999/xhtml">String</a>
+          </td>
+        </tr>
+        <tr>
+          <td width="150px">Comments</td>
+          <td>
+            <p>This is generally not the same as the Resource.text of the referenced resource.  The purpose is to identify what's being referenced, not to fully describe it.</p>
           </td>
         </tr>
       </table>

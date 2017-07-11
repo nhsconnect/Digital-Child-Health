@@ -1,7 +1,7 @@
 {
   "resourceType": "StructureDefinition",
   "meta": {
-    "lastUpdated": "2017-07-04T11:32:58.155+01:00",
+    "lastUpdated": "2017-07-10T10:20:00.957+01:00",
     "tag": [
       {
         "system": "urn:hscic:publishOrder",
@@ -9,13 +9,13 @@
       }
     ]
   },
-  "url": "https://fhir.hl7.org.uk/StructureDefinition/CareConnect-DCH-Encounter-1",
+  "url": "https://fhir.hl7.org.uk/StructureDefinition/CareConnect-DCH-Emergency-Encounter-1",
   "version": "1.0.0",
-  "name": "CareConnect-DCH-Encounter-1",
+  "name": "CareConnect-DCH-Emergency-Encounter-1",
   "status": "draft",
   "publisher": "HL7 UK",
   "date": "2017-02-22T13:44:33.2447401Z",
-  "description": "The encounter resource represents an encounter between a care professional and the patient (or patient's record), with further constraints applied to represent a Child Health event.",
+  "description": "The encounter resource represents an encounter between a care professional and the patient (or patient's record), with further constraints applied to represent an Emergency encounter for a Child Health event.",
   "copyright": "Copyright © 2016 HL7 UK\r\n\r\nLicensed under the Apache License, Version 2.0 (the \"License\"); you may not use this file except in compliance with the License. You may obtain a copy of the License at\r\n\r\nhttp://www.apache.org/licenses/LICENSE-2.0\r\n\r\nUnless required by applicable law or agreed to in writing, software distributed under the License is distributed on an \"AS IS\" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the License for the specific language governing permissions and limitations under the License.\r\n\r\nHL7® FHIR® standard Copyright © 2011+ HL7\r\n\r\nThe HL7® FHIR® standard is used under the FHIR license. You may obtain a copy of the FHIR license at\r\n\r\nhttps://www.hl7.org/fhir/license.html",
   "fhirVersion": "1.0.2",
   "kind": "resource",
@@ -5127,8 +5127,8 @@
       },
       {
         "path": "Encounter.participant",
-        "short": "List of participants involved in the encounter",
-        "definition": "The list of people responsible for providing the service.",
+        "short": "Participant in the encounter, this will be the practitioner that has responsibility for overseeing a patient's care during a patient encounter",
+        "definition": "Participant in the encounter, this will be the practitioner that has responsibility for overseeing a patient's care during a patient encounter.",
         "min": 0,
         "max": "1",
         "base": {
@@ -5320,8 +5320,8 @@
         "short": "Role of participant in encounter",
         "definition": "Role of participant in encounter.",
         "comments": "The participant type indicates how an individual partitipates in an encounter. It includes non-practitioner participants, and for practitioners this is to describe the action type in the context of this encounter (e.g. Admitting Dr, Attending Dr, Translator, Consulting Dr). This is different to the practitioner roles which are functional roles, derived from terms of employment, education, licensing, etc.",
-        "min": 0,
-        "max": "0",
+        "min": 1,
+        "max": "1",
         "base": {
           "path": "Encounter.participant.type",
           "min": 0,
@@ -5480,8 +5480,8 @@
         "definition": "A reference to a code defined by a terminology system.",
         "comments": "Codes may be defined very casually in enumerations, or code lists, up to very formal definitions such as SNOMED CT - see the HL7 v3 Core Principles for more information.  Ordering of codings is undefined and SHALL NOT be used to infer meaning. Generally, at most only one of the coding values will be labelled as UserSelected = true.",
         "requirements": "Allows for translations and alternate encodings within a code system.  Also supports communication of the same instance to systems requiring different encodings.",
-        "min": 0,
-        "max": "*",
+        "min": 1,
+        "max": "1",
         "base": {
           "path": "CodeableConcept.coding",
           "min": 0,
@@ -5637,7 +5637,7 @@
         "definition": "The identification of the code system that defines the meaning of the symbol in the code.",
         "comments": "The URI may be an OID (urn:oid:...) or a UUID (urn:uuid:...).  OIDs and UUIDs SHALL be references to the HL7 OID registry. Otherwise, the URI should come from HL7's list of FHIR defined special URIs or it should de-reference to some definition that establish the system clearly and unambiguously.",
         "requirements": "Need to be unambiguous about the source of the definition of the symbol.",
-        "min": 0,
+        "min": 1,
         "max": "1",
         "base": {
           "path": "Coding.system",
@@ -5649,6 +5649,7 @@
             "code": "uri"
           }
         ],
+        "fixedUri": "http://hl7.org/fhir/v3/ParticipationType",
         "condition": [
           "ele-1"
         ],
@@ -5692,7 +5693,7 @@
         "definition": "The version of the code system which was used when choosing this code. Note that a well-maintained code system does not need the version reported, because the meaning of codes is consistent across versions. However this cannot consistently be assured. and when the meaning is not guaranteed to be consistent, the version SHOULD be exchanged.",
         "comments": "Where the terminology does not clearly define what string should be used to identify code system versions, the recommendation is to use the date (expressed in FHIR date format) on which that version was officially published as the version date.",
         "min": 0,
-        "max": "1",
+        "max": "0",
         "base": {
           "path": "Coding.version",
           "min": 0,
@@ -5746,7 +5747,7 @@
         "definition": "A symbol in syntax defined by the system. The symbol may be a predefined code or an expression in a syntax defined by the coding system (e.g. post-coordination).",
         "comments": "Note that FHIR strings may not exceed 1MB in size",
         "requirements": "Need to refer to a particular code in the system.",
-        "min": 0,
+        "min": 1,
         "max": "1",
         "base": {
           "path": "Coding.code",
@@ -5758,6 +5759,7 @@
             "code": "code"
           }
         ],
+        "fixedCode": "ATND",
         "condition": [
           "ele-1"
         ],
@@ -5801,7 +5803,7 @@
         "definition": "A representation of the meaning of the code in the system, following the rules of the system.",
         "comments": "Note that FHIR strings may not exceed 1MB in size",
         "requirements": "Need to be able to carry a human-readable meaning of the code for readers that do not know  the system.",
-        "min": 0,
+        "min": 1,
         "max": "1",
         "base": {
           "path": "Coding.display",
@@ -5813,6 +5815,7 @@
             "code": "string"
           }
         ],
+        "fixedString": "attender",
         "condition": [
           "ele-1"
         ],
@@ -5857,7 +5860,7 @@
         "comments": "Amongst a set of alternatives, a directly chosen code is the most appropriate starting point for new translations. There is some ambiguity about what exactly 'directly chosen' implies, and trading partner agreement may be needed to clarify the use of this element and its consequences more completely.",
         "requirements": "This has been identified as a clinical safety criterium - that this exact system/code pair was chosen explicitly, rather than inferred by the system based on some rules or language processing.",
         "min": 0,
-        "max": "1",
+        "max": "0",
         "base": {
           "path": "Coding.userSelected",
           "min": 0,
@@ -5912,7 +5915,7 @@
         "comments": "Very often the text is the same as a displayName of one of the codings.",
         "requirements": "The codes from the terminologies do not always capture the correct meaning with all the nuances of the human using them, or sometimes there is no appropriate code at all. In these cases, the text is used to capture the full meaning of the source.",
         "min": 0,
-        "max": "1",
+        "max": "0",
         "base": {
           "path": "CodeableConcept.text",
           "min": 0,
@@ -6221,8 +6224,8 @@
       },
       {
         "path": "Encounter.participant.individual",
-        "short": "Persons involved in the encounter other than the patient",
-        "definition": "Persons involved in the encounter other than the patient.",
+        "short": "Practitioner involved in the encounter other than the patient",
+        "definition": "Practitioner involved in the encounter other than the patient.",
         "min": 1,
         "max": "1",
         "base": {
@@ -17089,11 +17092,45 @@
       },
       {
         "path": "Encounter.participant",
-        "definition": "The list of people responsible for providing the service.",
+        "short": "Participant in the encounter, this will be the practitioner that has responsibility for overseeing a patient's care during a patient encounter",
+        "definition": "Participant in the encounter, this will be the practitioner that has responsibility for overseeing a patient's care during a patient encounter.",
         "max": "1"
       },
       {
         "path": "Encounter.participant.type",
+        "min": 1,
+        "max": "1"
+      },
+      {
+        "path": "Encounter.participant.type.coding",
+        "min": 1,
+        "max": "1"
+      },
+      {
+        "path": "Encounter.participant.type.coding.system",
+        "min": 1,
+        "fixedUri": "http://hl7.org/fhir/v3/ParticipationType"
+      },
+      {
+        "path": "Encounter.participant.type.coding.version",
+        "max": "0"
+      },
+      {
+        "path": "Encounter.participant.type.coding.code",
+        "min": 1,
+        "fixedCode": "ATND"
+      },
+      {
+        "path": "Encounter.participant.type.coding.display",
+        "min": 1,
+        "fixedString": "attender"
+      },
+      {
+        "path": "Encounter.participant.type.coding.userSelected",
+        "max": "0"
+      },
+      {
+        "path": "Encounter.participant.type.text",
         "max": "0"
       },
       {
@@ -17102,6 +17139,8 @@
       },
       {
         "path": "Encounter.participant.individual",
+        "short": "Practitioner involved in the encounter other than the patient",
+        "definition": "Practitioner involved in the encounter other than the patient.",
         "min": 1,
         "type": [
           {

@@ -394,19 +394,21 @@
         </tr>
         <tr>
           <td colspan="2" class="structure">
-            <a name="Specimen.laboratoryScreeningStatus"></a>
-            <b>Specimen.extension(laboratoryScreeningStatus)</b>
+            <a name="Specimen.extension"></a>
+            <b>Specimen.extension</b>
           </td>
         </tr>
         <tr>
           <td width="150px">Definition</td>
-          <td></td>
+          <td>
+            <p>May be used to represent additional information that is not part of the basic definition of the resource. In order to make the use of extensions safe and manageable, there is a strict set of governance  applied to the definition and use of extensions. Though any implementer is allowed to define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension.</p>
+          </td>
         </tr>
         <tr>
           <td>
             <a href="http://www.hl7.org/fhir/DSTU2/conformance-rules.html#conformance">Control</a>
           </td>
-          <td>1..1</td>
+          <td>0..* ?</td>
         </tr>
         <tr>
           <td>
@@ -417,8 +419,14 @@
           </td>
         </tr>
         <tr>
+          <td>Aliases</td>
+          <td>extensions, user content</td>
+        </tr>
+        <tr>
           <td width="150px">Comments</td>
-          <td></td>
+          <td>
+            <p>There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone.</p>
+          </td>
         </tr>
         <tr>
           <td colspan="2" class="structure">
@@ -3457,27 +3465,27 @@
         </tr>
         <tr>
           <td colspan="2" class="structure">
-            <a name="Specimen.collection.collected[x]"></a>
-            <b>Specimen.collection.collected[x]</b>
+            <a name="Specimen.collection.collectedDateTime"></a>
+            <b>Specimen.collection.collectedDateTime</b>
           </td>
         </tr>
         <tr>
           <td width="150px">Definition</td>
-          <td>
-            <p>Time when specimen was collected from subject - the physiologically relevant time.</p>
-          </td>
+          <td></td>
         </tr>
         <tr>
           <td>
             <a href="http://www.hl7.org/fhir/DSTU2/conformance-rules.html#conformance">Control</a>
           </td>
-          <td>0..1 ?</td>
+          <td>0..*</td>
         </tr>
         <tr>
           <td>
             <a href="http://www.hl7.org/fhir/DSTU2/datatypes.html">Type</a>
           </td>
-          <td>Choice of: <ul><li><a href="http://www.hl7.org/fhir/DSTU2/datatypes.html#datetime" xmlns="http://www.w3.org/1999/xhtml">DateTime</a></li><li><a href="http://www.hl7.org/fhir/DSTU2/datatypes.html#period" xmlns="http://www.w3.org/1999/xhtml">Period</a></li></ul></td>
+          <td>
+            <a href="http://www.hl7.org/fhir/DSTU2/datatypes.html#datetime" xmlns="http://www.w3.org/1999/xhtml">DateTime</a>
+          </td>
         </tr>
         <tr>
           <td width="150px">Comments</td>
@@ -4674,13 +4682,23 @@
         </tr>
         <tr>
           <td width="150px">Definition</td>
-          <td></td>
+          <td>
+            <p>Details concerning treatment and processing steps for the specimen.</p>
+          </td>
         </tr>
         <tr>
           <td>
             <a href="http://www.hl7.org/fhir/DSTU2/conformance-rules.html#conformance">Control</a>
           </td>
-          <td>1..1</td>
+          <td>0..* ?</td>
+        </tr>
+        <tr>
+          <td>
+            <a href="http://www.hl7.org/fhir/DSTU2/datatypes.html">Type</a>
+          </td>
+          <td>
+            <a href="http://www.hl7.org/fhir/DSTU2/backboneelement.html" xmlns="http://www.w3.org/1999/xhtml">BackboneElement</a>
+          </td>
         </tr>
         <tr>
           <td width="150px">Comments</td>
@@ -4836,17 +4854,39 @@
         </tr>
         <tr>
           <td width="150px">Definition</td>
-          <td></td>
+          <td>
+            <p>A coded value specifying the procedure used to process the specimen.</p>
+          </td>
         </tr>
         <tr>
           <td>
             <a href="http://www.hl7.org/fhir/DSTU2/conformance-rules.html#conformance">Control</a>
           </td>
-          <td>1..*</td>
+          <td>0..1 ?</td>
+        </tr>
+        <tr>
+          <td>
+            <a href="http://www.hl7.org/fhir/DSTU2/terminologies.html">Binding</a>
+          </td>
+          <td>
+            <div class="binding-description" xmlns="http://www.w3.org/1999/xhtml">
+              <p>Type indicating the technique used to process the specimen</p>
+              <p>For example codes, see <a href="http://hl7.org/fhir/DSTU2/valueset-specimen-treatment-procedure.html">http://hl7.org/fhir/DSTU2/valueset-specimen-treatment-procedure.html</a></p>; other codes may be used where these codes are not suitable</div>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <a href="http://www.hl7.org/fhir/DSTU2/datatypes.html">Type</a>
+          </td>
+          <td>
+            <a href="http://www.hl7.org/fhir/DSTU2/datatypes.html#codeableconcept" xmlns="http://www.w3.org/1999/xhtml">CodeableConcept</a>
+          </td>
         </tr>
         <tr>
           <td width="150px">Comments</td>
-          <td></td>
+          <td>
+            <p>Not all terminology uses fit this general pattern. In some cases, models should not use CodeableConcept and use Coding directly and provide their own structure for managing text, codings, translations and the relationship between elements and pre- and post-coordination.</p>
+          </td>
         </tr>
         <tr>
           <td colspan="2" class="structure">

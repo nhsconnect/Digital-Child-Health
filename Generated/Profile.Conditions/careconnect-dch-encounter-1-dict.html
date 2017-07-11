@@ -1175,7 +1175,7 @@
         <tr>
           <td width="150px">Definition</td>
           <td>
-            <p>The list of people responsible for providing the service.</p>
+            <p>Participant in the encounter, this will be the practitioner that has responsibility for overseeing a patient's care during a patient encounter.</p>
           </td>
         </tr>
         <tr>
@@ -1300,13 +1300,239 @@
         </tr>
         <tr>
           <td colspan="2" class="structure">
+            <a name="Encounter.participant.type"></a>
+            <b>Encounter.participant.type</b>
+          </td>
+        </tr>
+        <tr>
+          <td width="150px">Definition</td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>
+            <a href="http://www.hl7.org/fhir/DSTU2/conformance-rules.html#conformance">Control</a>
+          </td>
+          <td>1..1</td>
+        </tr>
+        <tr>
+          <td width="150px">Comments</td>
+          <td></td>
+        </tr>
+        <tr>
+          <td colspan="2" class="structure">
+            <a name="Encounter.participant.type.id"></a>
+            <b>Encounter.participant.type.id</b>
+          </td>
+        </tr>
+        <tr>
+          <td width="150px">Definition</td>
+          <td>
+            <p>unique id for the element within a resource (for internal references).</p>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <a href="http://www.hl7.org/fhir/DSTU2/conformance-rules.html#conformance">Control</a>
+          </td>
+          <td>0..1 ?</td>
+        </tr>
+        <tr>
+          <td>
+            <a href="http://www.hl7.org/fhir/DSTU2/datatypes.html">Type</a>
+          </td>
+          <td>
+            <a href="http://www.hl7.org/fhir/DSTU2/datatypes.html#id" xmlns="http://www.w3.org/1999/xhtml">Id</a>
+          </td>
+        </tr>
+        <tr>
+          <td width="150px">Comments</td>
+          <td>
+            <p>RFC 4122</p>
+          </td>
+        </tr>
+        <tr>
+          <td colspan="2" class="structure">
+            <a name="Encounter.participant.type.extension"></a>
+            <b>Encounter.participant.type.extension</b>
+          </td>
+        </tr>
+        <tr>
+          <td width="150px">Definition</td>
+          <td>
+            <p>May be used to represent additional information that is not part of the basic definition of the element. In order to make the use of extensions safe and manageable, there is a strict set of governance  applied to the definition and use of extensions. Though any implementer is allowed to define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension.</p>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <a href="http://www.hl7.org/fhir/DSTU2/conformance-rules.html#conformance">Control</a>
+          </td>
+          <td>0..* ?</td>
+        </tr>
+        <tr>
+          <td>
+            <a href="http://www.hl7.org/fhir/DSTU2/datatypes.html">Type</a>
+          </td>
+          <td>
+            <a href="http://www.hl7.org/fhir/DSTU2/datatypes.html#extension" xmlns="http://www.w3.org/1999/xhtml">Extension</a>
+          </td>
+        </tr>
+        <tr>
+          <td>Aliases</td>
+          <td>extensions, user content</td>
+        </tr>
+        <tr>
+          <td width="150px">Comments</td>
+          <td>
+            <p>There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone.</p>
+          </td>
+        </tr>
+        <tr>
+          <td colspan="2" class="structure">
+            <a name="Encounter.participant.type.coding"></a>
+            <b>Encounter.participant.type.coding</b>
+          </td>
+        </tr>
+        <tr>
+          <td width="150px">Definition</td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>
+            <a href="http://www.hl7.org/fhir/DSTU2/conformance-rules.html#conformance">Control</a>
+          </td>
+          <td>1..1</td>
+        </tr>
+        <tr>
+          <td width="150px">Comments</td>
+          <td></td>
+        </tr>
+        <tr>
+          <td colspan="2" class="structure">
+            <a name="Encounter.participant.type.coding.id"></a>
+            <b>Encounter.participant.type.coding.id</b>
+          </td>
+        </tr>
+        <tr>
+          <td width="150px">Definition</td>
+          <td>
+            <p>unique id for the element within a resource (for internal references).</p>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <a href="http://www.hl7.org/fhir/DSTU2/conformance-rules.html#conformance">Control</a>
+          </td>
+          <td>0..1 ?</td>
+        </tr>
+        <tr>
+          <td>
+            <a href="http://www.hl7.org/fhir/DSTU2/datatypes.html">Type</a>
+          </td>
+          <td>
+            <a href="http://www.hl7.org/fhir/DSTU2/datatypes.html#id" xmlns="http://www.w3.org/1999/xhtml">Id</a>
+          </td>
+        </tr>
+        <tr>
+          <td width="150px">Comments</td>
+          <td>
+            <p>RFC 4122</p>
+          </td>
+        </tr>
+        <tr>
+          <td colspan="2" class="structure">
+            <a name="Encounter.participant.type.coding.extension"></a>
+            <b>Encounter.participant.type.coding.extension</b>
+          </td>
+        </tr>
+        <tr>
+          <td width="150px">Definition</td>
+          <td>
+            <p>May be used to represent additional information that is not part of the basic definition of the element. In order to make the use of extensions safe and manageable, there is a strict set of governance  applied to the definition and use of extensions. Though any implementer is allowed to define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension.</p>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <a href="http://www.hl7.org/fhir/DSTU2/conformance-rules.html#conformance">Control</a>
+          </td>
+          <td>0..* ?</td>
+        </tr>
+        <tr>
+          <td>
+            <a href="http://www.hl7.org/fhir/DSTU2/datatypes.html">Type</a>
+          </td>
+          <td>
+            <a href="http://www.hl7.org/fhir/DSTU2/datatypes.html#extension" xmlns="http://www.w3.org/1999/xhtml">Extension</a>
+          </td>
+        </tr>
+        <tr>
+          <td>Aliases</td>
+          <td>extensions, user content</td>
+        </tr>
+        <tr>
+          <td width="150px">Comments</td>
+          <td>
+            <p>There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone.</p>
+          </td>
+        </tr>
+        <tr>
+          <td colspan="2" class="structure">
+            <a name="Encounter.participant.type.coding.system"></a>
+            <b>Encounter.participant.type.coding.system</b>
+          </td>
+        </tr>
+        <tr>
+          <td width="150px">Definition</td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>
+            <a href="http://www.hl7.org/fhir/DSTU2/conformance-rules.html#conformance">Control</a>
+          </td>
+          <td>1..*</td>
+        </tr>
+        <tr>
+          <td width="150px">Comments</td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>Fixed Value</td>
+          <td>http://hl7.org/fhir/v3/ParticipationType</td>
+        </tr>
+        <tr>
+          <td colspan="2" class="structure">
+            <a name="Encounter.participant.type.coding.code"></a>
+            <b>Encounter.participant.type.coding.code</b>
+          </td>
+        </tr>
+        <tr>
+          <td width="150px">Definition</td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>
+            <a href="http://www.hl7.org/fhir/DSTU2/conformance-rules.html#conformance">Control</a>
+          </td>
+          <td>1..*</td>
+        </tr>
+        <tr>
+          <td width="150px">Comments</td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>Fixed Value</td>
+          <td>ATND</td>
+        </tr>
+        <tr>
+          <td colspan="2" class="structure">
             <a name="Encounter.participant.individual"></a>
             <b>Encounter.participant.individual</b>
           </td>
         </tr>
         <tr>
           <td width="150px">Definition</td>
-          <td></td>
+          <td>
+            <p>Practitioner involved in the encounter other than the patient.</p>
+          </td>
         </tr>
         <tr>
           <td>

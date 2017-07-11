@@ -2232,7 +2232,7 @@
           {
             "code": "Reference",
             "profile": [
-              "https://fhir.hl7.org.uk/StructureDefinition/CareConnect-DCH-Encounter-1"
+              "https://fhir.hl7.org.uk/StructureDefinition/CareConnect-DCH-Emergency-Encounter-1"
             ]
           }
         ],
@@ -9125,7 +9125,7 @@
           {
             "code": "Reference",
             "profile": [
-              "https://fhir.hl7.org.uk/StructureDefinition/CareConnect-DCH-Encounter-1"
+              "https://fhir.hl7.org.uk/StructureDefinition/CareConnect-DCH-Emergency-Encounter-1"
             ]
           }
         ]

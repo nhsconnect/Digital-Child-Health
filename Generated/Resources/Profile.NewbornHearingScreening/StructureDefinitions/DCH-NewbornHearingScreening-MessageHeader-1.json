@@ -1,7 +1,7 @@
 {
   "resourceType": "StructureDefinition",
   "meta": {
-    "lastUpdated": "2017-07-06T12:38:02.54+01:00",
+    "lastUpdated": "2017-07-10T17:03:28.959+01:00",
     "tag": [
       {
         "system": "urn:hscic:publishOrder",
@@ -4721,6 +4721,12 @@
             "profile": [
               "https://fhir.hl7.org.uk/StructureDefinition/DCH-NewbornHearingScreening-QuestionnaireResponse-1"
             ]
+          },
+          {
+            "code": "Reference",
+            "profile": [
+              "https://fhir.hl7.org.uk/StructureDefinition/CareConnect-DCH-Encounter-1"
+            ]
           }
         ],
         "condition": [
@@ -5076,6 +5082,12 @@
             "code": "Reference",
             "profile": [
               "https://fhir.hl7.org.uk/StructureDefinition/DCH-NewbornHearingScreening-QuestionnaireResponse-1"
+            ]
+          },
+          {
+            "code": "Reference",
+            "profile": [
+              "https://fhir.hl7.org.uk/StructureDefinition/CareConnect-DCH-Encounter-1"
             ]
           }
         ]

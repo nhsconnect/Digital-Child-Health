@@ -1,6 +1,6 @@
 {
   "resourceType": "Bundle",
-  "id": "e9dbeede-5bdc-11e7-907b-a6006ad3dba0",
+  "id": "e9dbfbae-5bdc-11e7-907b-a6006ad3dba0",
   "meta": {
     "profile": [
       "https://fhir.nhs.uk/StructureDefinition/DCH-Bundle-1"
@@ -9,10 +9,10 @@
   "type": "message",
   "entry": [
     {
-      "fullUrl": "urn:uuid:e9dbf08c-5bdc-11e7-907b-a6006ad3dba0",
+      "fullUrl": "urn:uuid:e9dbfd2a-5bdc-11e7-907b-a6006ad3dba0",
       "resource": {
         "resourceType": "MessageHeader",
-        "id": "e9dbf08c-5bdc-11e7-907b-a6006ad3dba0",
+        "id": "e9dbfd2a-5bdc-11e7-907b-a6006ad3dba0",
         "meta": {
           "profile": [
             "https://fhir.nhs.uk/StructureDefinition/DCH-MessageHeader-1"
@@ -47,7 +47,7 @@
         },
         "data": [
           {
-            "reference": "urn:uuid:e9dbf226-5bdc-11e7-907b-a6006ad3dba0"
+            "reference": "urn:uuid:e9dbfea6-5bdc-11e7-907b-a6006ad3dba0"
           }
         ]
       }
@@ -126,10 +126,10 @@
       }
     },
     {
-      "fullUrl": "urn:uuid:e9dbf226-5bdc-11e7-907b-a6006ad3dba0",
+      "fullUrl": "urn:uuid:e9dbfea6-5bdc-11e7-907b-a6006ad3dba0",
       "resource": {
         "resourceType": "QuestionnaireResponse",
-        "id": "e9dbf226-5bdc-11e7-907b-a6006ad3dba0",
+        "id": "e9dbfea6-5bdc-11e7-907b-a6006ad3dba0",
         "meta": {
           "profile": [
             "https://fhir.nhs.uk/StructureDefinition/DCH-QuestionnaireResponse-1"
@@ -137,19 +137,15 @@
         },
         "identifier": {
           "system": "https://tools.ietf.org/html/rfc4122",
-          "value": "e9dbf226-5bdc-11e7-907b-a6006ad3dba0"
+          "value": "e9dbfea6-5bdc-11e7-907b-a6006ad3dba0"
         },
         "status": "completed",
         "subject": {
           "reference": "urn:uuid:7368c5fe-bbb4-4e9c-a585-234e06b84e82",
           "display": "SAXTON, Sarah Marie"
         },
-        "author": {
-          "reference": "urn:uuid:5ccb6bb7-a7f1-46cc-a5d3-135320765553",
-          "display": "Leeds Teaching Hospitals"
-        },
         "encounter": {
-          "reference": "urn:uuid:e9dbfea6-5bdc-11e7-907b-a6006ad3dba0"
+          "reference": "urn:uuid:e9dbffdc-5bdc-11e7-907b-a6006ad3dba0"
         },
         "group": {
           "group": [
@@ -208,7 +204,7 @@
                     },
                     {
                       "valueReference": {
-                        "reference": "urn:uuid:e9dbfa46-5bdc-11e7-907b-a6006ad3dba0"
+                        "reference": "urn:uuid:e9dc255c-5bdc-11e7-907b-a6006ad3dba0"
                       }
                     }
                   ]
@@ -225,7 +221,7 @@
                     },
                     {
                       "valueReference": {
-                        "reference": "urn:uuid:e9dbffdc-5bdc-11e7-907b-a6006ad3dba0"
+                        "reference": "urn:uuid:e9dc055e-5bdc-11e7-907b-a6006ad3dba0"
                       }
                     }
                   ]
@@ -242,7 +238,7 @@
                     },
                     {
                       "valueReference": {
-                        "reference": "urn:uuid:e9dc055e-5bdc-11e7-907b-a6006ad3dba0"
+                        "reference": "urn:uuid:e9dc255c-5bdc-11e7-907b-a6006ad3dba0"
                       }
                     }
                   ]
@@ -259,7 +255,7 @@
                     },
                     {
                       "valueReference": {
-                        "reference": "urn:uuid:e9dc055e-5bdc-11e7-907b-a6006ad3dba0"
+                        "reference": "urn:uuid:e9dc1bc0-5bdc-11e7-907b-a6006ad3dba0"
                       }
                     }
                   ]
@@ -307,7 +303,7 @@
                     },
                     {
                       "valueReference": {
-                        "reference": "urn:uuid:e9dbfbae-5bdc-11e7-907b-a6006ad3dba0"
+                        "reference": "urn:uuid:e9dc2412-5bdc-11e7-907b-a6006ad3dba0"
                       }
                     }
                   ]
@@ -509,7 +505,7 @@
                     },
                     {
                       "valueReference": {
-                        "reference": "urn:uuid:e9dbfa46-5bdc-11e7-907b-a6006ad3dba0"
+                        "reference": "urn:uuid:e9dc1cf6-5bdc-11e7-907b-a6006ad3dba0"
                       }
                     }
                   ]
@@ -526,7 +522,7 @@
                     },
                     {
                       "valueReference": {
-                        "reference": "urn:uuid:e9dbf8e8-5bdc-11e7-907b-a6006ad3dba0"
+                        "reference": "urn:uuid:e9dc2278-5bdc-11e7-907b-a6006ad3dba0"
                       }
                     }
                   ]
@@ -622,7 +618,7 @@
           "display": "JONES, Bob (Dr.)"
         },
         "manufacturer": {
-          "reference": "urn:uuid:e9dbfbae-5bdc-11e7-907b-a6006ad3dba0",
+          "reference": "urn:uuid:e9dc2412-5bdc-11e7-907b-a6006ad3dba0",
           "display": "Statens Serum Institut (SSI)"
         },
         "location": {
@@ -693,10 +689,10 @@
       }
     },
     {
-      "fullUrl": "urn:uuid:e9dbfea6-5bdc-11e7-907b-a6006ad3dba0",
+      "fullUrl": "urn:uuid:e9dbffdc-5bdc-11e7-907b-a6006ad3dba0",
       "resource": {
         "resourceType": "Encounter",
-        "id": "e9dbfea6-5bdc-11e7-907b-a6006ad3dba0",
+        "id": "e9dbffdc-5bdc-11e7-907b-a6006ad3dba0",
         "meta": {
           "profile": [
             "https://fhir.hl7.org.uk/StructureDefinition/CareConnect-DCH-Encounter-1"
@@ -705,16 +701,38 @@
         "identifier": [
           {
             "system": "https://tools.ietf.org/html/rfc4122",
-            "value": "e9dbfea6-5bdc-11e7-907b-a6006ad3dba0"
+            "value": "e9dbffdc-5bdc-11e7-907b-a6006ad3dba0"
           }
         ],
         "status": "finished",
+        "type": [
+          {
+            "coding": [
+              {
+                "system": "http://snomed.info/sct",
+                "code": "11429006",
+                "display": "Consultation (procedure)"
+              }
+            ]
+          }
+        ],
         "patient": {
           "reference": "urn:uuid:7368c5fe-bbb4-4e9c-a585-234e06b84e82",
           "display": "SAXTON, Sarah Marie"
         },
         "participant": [
           {
+            "type": [
+              {
+                "coding": [
+                  {
+                    "system": "http://hl7.org/fhir/v3/ParticipationType",
+                    "code": "ATND",
+                    "display": "attender"
+                  }
+                ]
+              }
+            ],
             "individual": {
               "reference": "urn:uuid:e9dbf8e8-5bdc-11e7-907b-a6006ad3dba0",
               "display": "JONES, Bob (Dr.)"
@@ -722,7 +740,7 @@
           }
         ],
         "appointment": {
-          "reference": "urn:uuid:e9dc055e-5bdc-11e7-907b-a6006ad3dba0"
+          "reference": "urn:uuid:e9dc255c-5bdc-11e7-907b-a6006ad3dba0"
         },
         "period": {
           "start": "2012-01-29T09:00:00"
@@ -742,10 +760,45 @@
       }
     },
     {
-      "fullUrl": "urn:uuid:e9dc055e-5bdc-11e7-907b-a6006ad3dba0",
+      "fullUrl": "urn:uuid:e9dc255c-5bdc-11e7-907b-a6006ad3dba0",
+      "resource": {
+        "resourceType": "Appointment",
+        "id": "e9dc255c-5bdc-11e7-907b-a6006ad3dba0",
+        "meta": {
+          "profile": [
+            "https://fhir.hl7.org.uk/StructureDefinition/DCH-Appointment-1"
+          ]
+        },
+        "identifier": [
+          {
+            "system": "https://tools.ietf.org/html/rfc4122",
+            "value": "e9dc255c-5bdc-11e7-907b-a6006ad3dba0"
+          }
+        ],
+        "status": "fulfilled",
+        "participant": [
+          {
+            "actor": {
+              "reference": "urn:uuid:7368c5fe-bbb4-4e9c-a585-234e06b84e82",
+              "display": "SAXTON, Sarah Marie"
+            },
+            "status": "accepted"
+          },
+          {
+            "actor": {
+              "reference": "urn:uuid:e9dbf8e8-5bdc-11e7-907b-a6006ad3dba0",
+              "display": "JONES, Bob (Dr.)"
+            },
+            "status": "accepted"
+          }
+        ]
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:e9dc1bc0-5bdc-11e7-907b-a6006ad3dba0",
       "resource": {
         "resourceType": "Procedure",
-        "id": "e9dc055e-5bdc-11e7-907b-a6006ad3dba0",
+        "id": "e9dc1bc0-5bdc-11e7-907b-a6006ad3dba0",
         "meta": {
           "profile": [
             "https://fhir.hl7.org.uk/StructureDefinition/CareConnect-DCH-Procedure-1"
@@ -754,7 +807,7 @@
         "identifier": [
           {
             "system": "https://tools.ietf.org/html/rfc4122",
-            "value": "e9dc055e-5bdc-11e7-907b-a6006ad3dba0"
+            "value": "e9dc1bc0-5bdc-11e7-907b-a6006ad3dba0"
           }
         ],
         "subject": {
@@ -780,22 +833,22 @@
           }
         ],
         "encounter": {
-          "reference": "urn:uuid:e9dbfea6-5bdc-11e7-907b-a6006ad3dba0"
+          "reference": "urn:uuid:e9dbffdc-5bdc-11e7-907b-a6006ad3dba0"
         },
         "location": {
           "reference": "urn:uuid:e9dbf730-5bdc-11e7-907b-a6006ad3dba0",
           "display": "Wood Town GP Practice"
         },
         "request": {
-          "reference": "urn:uuid:e9dbffdc-5bdc-11e7-907b-a6006ad3dba0"
+          "reference": "urn:uuid:e9dc055e-5bdc-11e7-907b-a6006ad3dba0"
         }
       }
     },
     {
-      "fullUrl": "urn:uuid:e9dbffdc-5bdc-11e7-907b-a6006ad3dba0",
+      "fullUrl": "urn:uuid:e9dc055e-5bdc-11e7-907b-a6006ad3dba0",
       "resource": {
         "resourceType": "ProcedureRequest",
-        "id": "e9dbffdc-5bdc-11e7-907b-a6006ad3dba0",
+        "id": "e9dc055e-5bdc-11e7-907b-a6006ad3dba0",
         "meta": {
           "profile": [
             "https://fhir.hl7.org.uk/StructureDefinition/DCH-ProcedureRequest-1"
@@ -818,7 +871,7 @@
         "identifier": [
           {
             "system": "https://tools.ietf.org/html/rfc4122",
-            "value": "e9dbffdc-5bdc-11e7-907b-a6006ad3dba0"
+            "value": "e9dc055e-5bdc-11e7-907b-a6006ad3dba0"
           }
         ],
         "subject": {
@@ -842,10 +895,10 @@
       }
     },
     {
-      "fullUrl": "urn:uuid:e9dbfa46-5bdc-11e7-907b-a6006ad3dba0",
+      "fullUrl": "urn:uuid:e9dc1cf6-5bdc-11e7-907b-a6006ad3dba0",
       "resource": {
         "resourceType": "Observation",
-        "id": "e9dbfa46-5bdc-11e7-907b-a6006ad3dba0",
+        "id": "e9dc1cf6-5bdc-11e7-907b-a6006ad3dba0",
         "meta": {
           "profile": [
             "https://fhir.hl7.org.uk/StructureDefinition/CareConnect-DCH-FirstMilkFeed-Observation-1"
@@ -854,7 +907,7 @@
         "identifier": [
           {
             "system": "https://tools.ietf.org/html/rfc4122",
-            "value": "e9dbfa46-5bdc-11e7-907b-a6006ad3dba0"
+            "value": "e9dc1cf6-5bdc-11e7-907b-a6006ad3dba0"
           }
         ],
         "status": "final",
@@ -872,7 +925,7 @@
           "display": "SAXTON, Sarah Marie"
         },
         "encounter": {
-          "reference": "urn:uuid:e9dbfea6-5bdc-11e7-907b-a6006ad3dba0"
+          "reference": "urn:uuid:e9dbffdc-5bdc-11e7-907b-a6006ad3dba0"
         },
         "performer": [
           {
@@ -892,10 +945,10 @@
       }
     },
     {
-      "fullUrl": "urn:uuid:e9dbf8e8-5bdc-11e7-907b-a6006ad3dba0",
+      "fullUrl": "urn:uuid:e9dc2278-5bdc-11e7-907b-a6006ad3dba0",
       "resource": {
         "resourceType": "Observation",
-        "id": "e9dbf8e8-5bdc-11e7-907b-a6006ad3dba0",
+        "id": "e9dc2278-5bdc-11e7-907b-a6006ad3dba0",
         "meta": {
           "profile": [
             "https://fhir.hl7.org.uk/StructureDefinition/CareConnect-DCH-BreastfeedingStatus-Observation-1"
@@ -904,7 +957,7 @@
         "identifier": [
           {
             "system": "https://tools.ietf.org/html/rfc4122",
-            "value": "e9dbf8e8-5bdc-11e7-907b-a6006ad3dba0"
+            "value": "e9dc2278-5bdc-11e7-907b-a6006ad3dba0"
           }
         ],
         "status": "final",
@@ -922,7 +975,7 @@
           "display": "SAXTON, Sarah Marie"
         },
         "encounter": {
-          "reference": "urn:uuid:e9dbfea6-5bdc-11e7-907b-a6006ad3dba0"
+          "reference": "urn:uuid:e9dbffdc-5bdc-11e7-907b-a6006ad3dba0"
         },
         "performer": [
           {
@@ -1044,10 +1097,10 @@
       }
     },
     {
-      "fullUrl": "urn:uuid:e9dbfbae-5bdc-11e7-907b-a6006ad3dba0",
+      "fullUrl": "urn:uuid:e9dc2412-5bdc-11e7-907b-a6006ad3dba0",
       "resource": {
         "resourceType": "Organization",
-        "id": "e9dbfbae-5bdc-11e7-907b-a6006ad3dba0",
+        "id": "e9dc2412-5bdc-11e7-907b-a6006ad3dba0",
         "meta": {
           "profile": [
             "https://fhir.hl7.org.uk/StructureDefinition/CareConnect-Organization-1"

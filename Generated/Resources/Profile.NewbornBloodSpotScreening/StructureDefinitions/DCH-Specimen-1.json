@@ -1,7 +1,7 @@
 {
   "resourceType": "StructureDefinition",
   "meta": {
-    "lastUpdated": "2017-06-08T15:37:39.845+01:00",
+    "lastUpdated": "2017-07-10T18:07:49.116+01:00",
     "tag": [
       {
         "system": "urn:hscic:publishOrder",
@@ -368,12 +368,6 @@
       },
       {
         "path": "Specimen.extension",
-        "slicing": {
-          "discriminator": [
-            "url"
-          ],
-          "rules": "open"
-        },
         "short": "Additional Content defined by implementations",
         "definition": "May be used to represent additional information that is not part of the basic definition of the resource. In order to make the use of extensions safe and manageable, there is a strict set of governance  applied to the definition and use of extensions. Though any implementer is allowed to define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension.",
         "comments": "There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone.",
@@ -391,59 +385,6 @@
         "type": [
           {
             "code": "Extension"
-          }
-        ],
-        "condition": [
-          "ele-1"
-        ],
-        "constraint": [
-          {
-            "extension": [
-              {
-                "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-expression",
-                "valueString": "children()"
-              }
-            ],
-            "key": "ele-1",
-            "severity": "error",
-            "human": "All FHIR elements must have a @value or children",
-            "xpath": "@value|f:*|h:div"
-          }
-        ],
-        "mapping": [
-          {
-            "identity": "rim",
-            "map": "n/a"
-          },
-          {
-            "identity": "rim",
-            "map": "N/A"
-          }
-        ]
-      },
-      {
-        "path": "Specimen.extension",
-        "name": "laboratoryScreeningStatus",
-        "short": "The laboratory screening status for a blood spot specimen",
-        "definition": "The laboratory screening status for a blood spot specimen.",
-        "comments": "There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone.",
-        "alias": [
-          "extensions",
-          "user content"
-        ],
-        "min": 1,
-        "max": "1",
-        "base": {
-          "path": "DomainResource.extension",
-          "min": 0,
-          "max": "*"
-        },
-        "type": [
-          {
-            "code": "Extension",
-            "profile": [
-              "https://fhir.hl7.org.uk/StructureDefinition/Extension-DCH-LaboratoryScreeningStatus-1"
-            ]
           }
         ],
         "condition": [
@@ -5083,7 +5024,7 @@
         ]
       },
       {
-        "path": "Specimen.collection.collected[x]",
+        "path": "Specimen.collection.collectedDateTime",
         "short": "Collection time",
         "definition": "Time when specimen was collected from subject - the physiologically relevant time.",
         "min": 0,
@@ -5096,9 +5037,6 @@
         "type": [
           {
             "code": "dateTime"
-          },
-          {
-            "code": "Period"
           }
         ],
         "condition": [
@@ -6874,8 +6812,8 @@
         "path": "Specimen.treatment",
         "short": "Treatment and processing step details",
         "definition": "Details concerning treatment and processing steps for the specimen.",
-        "min": 1,
-        "max": "1",
+        "min": 0,
+        "max": "*",
         "base": {
           "path": "Specimen.treatment",
           "min": 0,
@@ -7105,7 +7043,7 @@
         "short": "Indicates the treatment or processing step  applied to the specimen",
         "definition": "A coded value specifying the procedure used to process the specimen.",
         "comments": "Not all terminology uses fit this general pattern. In some cases, models should not use CodeableConcept and use Coding directly and provide their own structure for managing text, codings, translations and the relationship between elements and pre- and post-coordination.",
-        "min": 1,
+        "min": 0,
         "max": "1",
         "base": {
           "path": "Specimen.treatment.procedure",
@@ -11325,29 +11263,6 @@
         "path": "Specimen"
       },
       {
-        "path": "Specimen.extension",
-        "slicing": {
-          "discriminator": [
-            "url"
-          ],
-          "rules": "open"
-        }
-      },
-      {
-        "path": "Specimen.extension",
-        "name": "laboratoryScreeningStatus",
-        "min": 1,
-        "max": "1",
-        "type": [
-          {
-            "code": "Extension",
-            "profile": [
-              "https://fhir.hl7.org.uk/StructureDefinition/Extension-DCH-LaboratoryScreeningStatus-1"
-            ]
-          }
-        ]
-      },
-      {
         "path": "Specimen.identifier",
         "min": 1,
         "max": "1"
@@ -11376,13 +11291,12 @@
         "min": 1
       },
       {
-        "path": "Specimen.treatment",
-        "min": 1,
-        "max": "1"
-      },
-      {
-        "path": "Specimen.treatment.procedure",
-        "min": 1
+        "path": "Specimen.collection.collectedDateTime",
+        "type": [
+          {
+            "code": "dateTime"
+          }
+        ]
       },
       {
         "path": "Specimen.treatment.procedure.coding.system",

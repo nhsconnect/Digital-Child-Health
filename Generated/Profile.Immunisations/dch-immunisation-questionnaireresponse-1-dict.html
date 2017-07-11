@@ -241,6 +241,749 @@
         </tr>
         <tr>
           <td colspan="2" class="structure">
+            <a name="QuestionnaireResponse.meta.id"></a>
+            <b>QuestionnaireResponse.meta.id</b>
+          </td>
+        </tr>
+        <tr>
+          <td width="150px">Definition</td>
+          <td>
+            <p>unique id for the element within a resource (for internal references).</p>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <a href="http://www.hl7.org/fhir/DSTU2/conformance-rules.html#conformance">Control</a>
+          </td>
+          <td>0..1 ?</td>
+        </tr>
+        <tr>
+          <td>
+            <a href="http://www.hl7.org/fhir/DSTU2/datatypes.html">Type</a>
+          </td>
+          <td>
+            <a href="http://www.hl7.org/fhir/DSTU2/datatypes.html#id" xmlns="http://www.w3.org/1999/xhtml">Id</a>
+          </td>
+        </tr>
+        <tr>
+          <td width="150px">Comments</td>
+          <td>
+            <p>RFC 4122</p>
+          </td>
+        </tr>
+        <tr>
+          <td colspan="2" class="structure">
+            <a name="QuestionnaireResponse.meta.extension"></a>
+            <b>QuestionnaireResponse.meta.extension</b>
+          </td>
+        </tr>
+        <tr>
+          <td width="150px">Definition</td>
+          <td>
+            <p>May be used to represent additional information that is not part of the basic definition of the element. In order to make the use of extensions safe and manageable, there is a strict set of governance  applied to the definition and use of extensions. Though any implementer is allowed to define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension.</p>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <a href="http://www.hl7.org/fhir/DSTU2/conformance-rules.html#conformance">Control</a>
+          </td>
+          <td>0..* ?</td>
+        </tr>
+        <tr>
+          <td>
+            <a href="http://www.hl7.org/fhir/DSTU2/datatypes.html">Type</a>
+          </td>
+          <td>
+            <a href="http://www.hl7.org/fhir/DSTU2/datatypes.html#extension" xmlns="http://www.w3.org/1999/xhtml">Extension</a>
+          </td>
+        </tr>
+        <tr>
+          <td>Aliases</td>
+          <td>extensions, user content</td>
+        </tr>
+        <tr>
+          <td width="150px">Comments</td>
+          <td>
+            <p>There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone.</p>
+          </td>
+        </tr>
+        <tr>
+          <td colspan="2" class="structure">
+            <a name="QuestionnaireResponse.meta.versionId"></a>
+            <b>QuestionnaireResponse.meta.versionId</b>
+          </td>
+        </tr>
+        <tr>
+          <td width="150px">Definition</td>
+          <td>
+            <p>The version specific identifier, as it appears in the version portion of the URL. This values changes when the resource is created, updated, or deleted.</p>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <a href="http://www.hl7.org/fhir/DSTU2/conformance-rules.html#conformance">Control</a>
+          </td>
+          <td>0..1 ?</td>
+        </tr>
+        <tr>
+          <td>
+            <a href="http://www.hl7.org/fhir/DSTU2/datatypes.html">Type</a>
+          </td>
+          <td>
+            <a href="http://www.hl7.org/fhir/DSTU2/datatypes.html#id" xmlns="http://www.w3.org/1999/xhtml">Id</a>
+          </td>
+        </tr>
+        <tr>
+          <td width="150px">Comments</td>
+          <td>
+            <p>The server assigns this value, and ignores what the client specifies, except in the case that the server is imposing version integrity on updates/deletes.</p>
+          </td>
+        </tr>
+        <tr>
+          <td colspan="2" class="structure">
+            <a name="QuestionnaireResponse.meta.lastUpdated"></a>
+            <b>QuestionnaireResponse.meta.lastUpdated</b>
+          </td>
+        </tr>
+        <tr>
+          <td width="150px">Definition</td>
+          <td>
+            <p>When the resource last changed - e.g. when the version changed.</p>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <a href="http://www.hl7.org/fhir/DSTU2/conformance-rules.html#conformance">Control</a>
+          </td>
+          <td>0..1 ?</td>
+        </tr>
+        <tr>
+          <td>
+            <a href="http://www.hl7.org/fhir/DSTU2/datatypes.html">Type</a>
+          </td>
+          <td>
+            <a href="http://www.hl7.org/fhir/DSTU2/datatypes.html#instant" xmlns="http://www.w3.org/1999/xhtml">Instant</a>
+          </td>
+        </tr>
+        <tr>
+          <td width="150px">Comments</td>
+          <td>
+            <p>This value is always populated except when the resource is first being created. The server / resource manager sets this value; what a client provides is irrelevant.</p>
+          </td>
+        </tr>
+        <tr>
+          <td colspan="2" class="structure">
+            <a name="QuestionnaireResponse.meta.profile"></a>
+            <b>QuestionnaireResponse.meta.profile</b>
+          </td>
+        </tr>
+        <tr>
+          <td width="150px">Definition</td>
+          <td>
+            <p>A list of profiles [[[StructureDefinition]]]s that this resource claims to conform to. The URL is a reference to [[[StructureDefinition.url]]].</p>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <a href="http://www.hl7.org/fhir/DSTU2/conformance-rules.html#conformance">Control</a>
+          </td>
+          <td>0..* ?</td>
+        </tr>
+        <tr>
+          <td>
+            <a href="http://www.hl7.org/fhir/DSTU2/datatypes.html">Type</a>
+          </td>
+          <td>
+            <a href="http://www.hl7.org/fhir/DSTU2/datatypes.html#uri" xmlns="http://www.w3.org/1999/xhtml">Uri</a>
+          </td>
+        </tr>
+        <tr>
+          <td width="150px">Comments</td>
+          <td>
+            <p>It is up to the server and/or other infrastructure of policy to determine whether/how these claims are verified and/or updated over time.  The list of profile URLs is a set.</p>
+          </td>
+        </tr>
+        <tr>
+          <td colspan="2" class="structure">
+            <a name="QuestionnaireResponse.meta.security"></a>
+            <b>QuestionnaireResponse.meta.security</b>
+          </td>
+        </tr>
+        <tr>
+          <td width="150px">Definition</td>
+          <td>
+            <p>Security labels applied to this resource. These tags connect specific resources to the overall security policy and infrastructure.</p>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <a href="http://www.hl7.org/fhir/DSTU2/conformance-rules.html#conformance">Control</a>
+          </td>
+          <td>0..* ?</td>
+        </tr>
+        <tr>
+          <td>
+            <a href="http://www.hl7.org/fhir/DSTU2/terminologies.html">Binding</a>
+          </td>
+          <td>
+            <div class="binding-description" xmlns="http://www.w3.org/1999/xhtml">
+              <p>Security Labels from the Healthcare Privacy and Security Classification System.</p>
+              <p>The codes SHALL be taken from the following if appropriate, otherwise an alternate coding may be included instead. <a href="http://hl7.org/fhir/DSTU2/valueset-security-labels.html">http://hl7.org/fhir/DSTU2/valueset-security-labels.html</a></p>
+            </div>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <a href="http://www.hl7.org/fhir/DSTU2/datatypes.html">Type</a>
+          </td>
+          <td>
+            <a href="http://www.hl7.org/fhir/DSTU2/datatypes.html#coding" xmlns="http://www.w3.org/1999/xhtml">Coding</a>
+          </td>
+        </tr>
+        <tr>
+          <td width="150px">Comments</td>
+          <td>
+            <p>The security labels can be updated without changing the stated version of the resource  The list of security labels is a set. Uniqueness is based the system/code, and version and display are ignored.</p>
+          </td>
+        </tr>
+        <tr>
+          <td colspan="2" class="structure">
+            <a name="QuestionnaireResponse.meta.security.id"></a>
+            <b>QuestionnaireResponse.meta.security.id</b>
+          </td>
+        </tr>
+        <tr>
+          <td width="150px">Definition</td>
+          <td>
+            <p>unique id for the element within a resource (for internal references).</p>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <a href="http://www.hl7.org/fhir/DSTU2/conformance-rules.html#conformance">Control</a>
+          </td>
+          <td>0..1 ?</td>
+        </tr>
+        <tr>
+          <td>
+            <a href="http://www.hl7.org/fhir/DSTU2/datatypes.html">Type</a>
+          </td>
+          <td>
+            <a href="http://www.hl7.org/fhir/DSTU2/datatypes.html#id" xmlns="http://www.w3.org/1999/xhtml">Id</a>
+          </td>
+        </tr>
+        <tr>
+          <td width="150px">Comments</td>
+          <td>
+            <p>RFC 4122</p>
+          </td>
+        </tr>
+        <tr>
+          <td colspan="2" class="structure">
+            <a name="QuestionnaireResponse.meta.security.extension"></a>
+            <b>QuestionnaireResponse.meta.security.extension</b>
+          </td>
+        </tr>
+        <tr>
+          <td width="150px">Definition</td>
+          <td>
+            <p>May be used to represent additional information that is not part of the basic definition of the element. In order to make the use of extensions safe and manageable, there is a strict set of governance  applied to the definition and use of extensions. Though any implementer is allowed to define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension.</p>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <a href="http://www.hl7.org/fhir/DSTU2/conformance-rules.html#conformance">Control</a>
+          </td>
+          <td>0..* ?</td>
+        </tr>
+        <tr>
+          <td>
+            <a href="http://www.hl7.org/fhir/DSTU2/datatypes.html">Type</a>
+          </td>
+          <td>
+            <a href="http://www.hl7.org/fhir/DSTU2/datatypes.html#extension" xmlns="http://www.w3.org/1999/xhtml">Extension</a>
+          </td>
+        </tr>
+        <tr>
+          <td>Aliases</td>
+          <td>extensions, user content</td>
+        </tr>
+        <tr>
+          <td width="150px">Comments</td>
+          <td>
+            <p>There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone.</p>
+          </td>
+        </tr>
+        <tr>
+          <td colspan="2" class="structure">
+            <a name="QuestionnaireResponse.meta.security.system"></a>
+            <b>QuestionnaireResponse.meta.security.system</b>
+          </td>
+        </tr>
+        <tr>
+          <td width="150px">Definition</td>
+          <td>
+            <p>The identification of the code system that defines the meaning of the symbol in the code.</p>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <a href="http://www.hl7.org/fhir/DSTU2/conformance-rules.html#conformance">Control</a>
+          </td>
+          <td>0..1 ?</td>
+        </tr>
+        <tr>
+          <td>
+            <a href="http://www.hl7.org/fhir/DSTU2/datatypes.html">Type</a>
+          </td>
+          <td>
+            <a href="http://www.hl7.org/fhir/DSTU2/datatypes.html#uri" xmlns="http://www.w3.org/1999/xhtml">Uri</a>
+          </td>
+        </tr>
+        <tr>
+          <td width="150px">Requirements</td>
+          <td>
+            <p>Need to be unambiguous about the source of the definition of the symbol.</p>
+          </td>
+        </tr>
+        <tr>
+          <td width="150px">Comments</td>
+          <td>
+            <p>The URI may be an OID (urn:oid:...) or a UUID (urn:uuid:...).  OIDs and UUIDs SHALL be references to the HL7 OID registry. Otherwise, the URI should come from HL7's list of FHIR defined special URIs or it should de-reference to some definition that establish the system clearly and unambiguously.</p>
+          </td>
+        </tr>
+        <tr>
+          <td colspan="2" class="structure">
+            <a name="QuestionnaireResponse.meta.security.version"></a>
+            <b>QuestionnaireResponse.meta.security.version</b>
+          </td>
+        </tr>
+        <tr>
+          <td width="150px">Definition</td>
+          <td>
+            <p>The version of the code system which was used when choosing this code. Note that a well-maintained code system does not need the version reported, because the meaning of codes is consistent across versions. However this cannot consistently be assured. and when the meaning is not guaranteed to be consistent, the version SHOULD be exchanged.</p>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <a href="http://www.hl7.org/fhir/DSTU2/conformance-rules.html#conformance">Control</a>
+          </td>
+          <td>0..1 ?</td>
+        </tr>
+        <tr>
+          <td>
+            <a href="http://www.hl7.org/fhir/DSTU2/datatypes.html">Type</a>
+          </td>
+          <td>
+            <a href="http://www.hl7.org/fhir/DSTU2/datatypes.html#string" xmlns="http://www.w3.org/1999/xhtml">String</a>
+          </td>
+        </tr>
+        <tr>
+          <td width="150px">Comments</td>
+          <td>
+            <p>Where the terminology does not clearly define what string should be used to identify code system versions, the recommendation is to use the date (expressed in FHIR date format) on which that version was officially published as the version date.</p>
+          </td>
+        </tr>
+        <tr>
+          <td colspan="2" class="structure">
+            <a name="QuestionnaireResponse.meta.security.code"></a>
+            <b>QuestionnaireResponse.meta.security.code</b>
+          </td>
+        </tr>
+        <tr>
+          <td width="150px">Definition</td>
+          <td>
+            <p>A symbol in syntax defined by the system. The symbol may be a predefined code or an expression in a syntax defined by the coding system (e.g. post-coordination).</p>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <a href="http://www.hl7.org/fhir/DSTU2/conformance-rules.html#conformance">Control</a>
+          </td>
+          <td>0..1 ?</td>
+        </tr>
+        <tr>
+          <td>
+            <a href="http://www.hl7.org/fhir/DSTU2/datatypes.html">Type</a>
+          </td>
+          <td>
+            <a href="http://www.hl7.org/fhir/DSTU2/datatypes.html#code" xmlns="http://www.w3.org/1999/xhtml">Code</a>
+          </td>
+        </tr>
+        <tr>
+          <td width="150px">Requirements</td>
+          <td>
+            <p>Need to refer to a particular code in the system.</p>
+          </td>
+        </tr>
+        <tr>
+          <td width="150px">Comments</td>
+          <td>
+            <p>Note that FHIR strings may not exceed 1MB in size</p>
+          </td>
+        </tr>
+        <tr>
+          <td colspan="2" class="structure">
+            <a name="QuestionnaireResponse.meta.security.display"></a>
+            <b>QuestionnaireResponse.meta.security.display</b>
+          </td>
+        </tr>
+        <tr>
+          <td width="150px">Definition</td>
+          <td>
+            <p>A representation of the meaning of the code in the system, following the rules of the system.</p>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <a href="http://www.hl7.org/fhir/DSTU2/conformance-rules.html#conformance">Control</a>
+          </td>
+          <td>0..1 ?</td>
+        </tr>
+        <tr>
+          <td>
+            <a href="http://www.hl7.org/fhir/DSTU2/datatypes.html">Type</a>
+          </td>
+          <td>
+            <a href="http://www.hl7.org/fhir/DSTU2/datatypes.html#string" xmlns="http://www.w3.org/1999/xhtml">String</a>
+          </td>
+        </tr>
+        <tr>
+          <td width="150px">Requirements</td>
+          <td>
+            <p>Need to be able to carry a human-readable meaning of the code for readers that do not know  the system.</p>
+          </td>
+        </tr>
+        <tr>
+          <td width="150px">Comments</td>
+          <td>
+            <p>Note that FHIR strings may not exceed 1MB in size</p>
+          </td>
+        </tr>
+        <tr>
+          <td colspan="2" class="structure">
+            <a name="QuestionnaireResponse.meta.security.userSelected"></a>
+            <b>QuestionnaireResponse.meta.security.userSelected</b>
+          </td>
+        </tr>
+        <tr>
+          <td width="150px">Definition</td>
+          <td>
+            <p>Indicates that this coding was chosen by a user directly - i.e. off a pick list of available items (codes or displays).</p>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <a href="http://www.hl7.org/fhir/DSTU2/conformance-rules.html#conformance">Control</a>
+          </td>
+          <td>0..1 ?</td>
+        </tr>
+        <tr>
+          <td>
+            <a href="http://www.hl7.org/fhir/DSTU2/datatypes.html">Type</a>
+          </td>
+          <td>
+            <a href="http://www.hl7.org/fhir/DSTU2/datatypes.html#boolean" xmlns="http://www.w3.org/1999/xhtml">Boolean</a>
+          </td>
+        </tr>
+        <tr>
+          <td width="150px">Requirements</td>
+          <td>
+            <p>This has been identified as a clinical safety criterium - that this exact system/code pair was chosen explicitly, rather than inferred by the system based on some rules or language processing.</p>
+          </td>
+        </tr>
+        <tr>
+          <td width="150px">Comments</td>
+          <td>
+            <p>Amongst a set of alternatives, a directly chosen code is the most appropriate starting point for new translations. There is some ambiguity about what exactly 'directly chosen' implies, and trading partner agreement may be needed to clarify the use of this element and its consequences more completely.</p>
+          </td>
+        </tr>
+        <tr>
+          <td colspan="2" class="structure">
+            <a name="QuestionnaireResponse.meta.tag"></a>
+            <b>QuestionnaireResponse.meta.tag</b>
+          </td>
+        </tr>
+        <tr>
+          <td width="150px">Definition</td>
+          <td>
+            <p>Tags applied to this resource. Tags are intended to be used to identify and relate resources to process and workflow, and applications are not required to consider the tags when interpreting the meaning of a resource.</p>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <a href="http://www.hl7.org/fhir/DSTU2/conformance-rules.html#conformance">Control</a>
+          </td>
+          <td>0..* ?</td>
+        </tr>
+        <tr>
+          <td>
+            <a href="http://www.hl7.org/fhir/DSTU2/datatypes.html">Type</a>
+          </td>
+          <td>
+            <a href="http://www.hl7.org/fhir/DSTU2/datatypes.html#coding" xmlns="http://www.w3.org/1999/xhtml">Coding</a>
+          </td>
+        </tr>
+        <tr>
+          <td width="150px">Comments</td>
+          <td>
+            <p>The tags can be updated without changing the stated version of the resource.  The list of tags is a set. Uniqueness is based the system/code, and version and display are ignored.</p>
+          </td>
+        </tr>
+        <tr>
+          <td colspan="2" class="structure">
+            <a name="QuestionnaireResponse.meta.tag.id"></a>
+            <b>QuestionnaireResponse.meta.tag.id</b>
+          </td>
+        </tr>
+        <tr>
+          <td width="150px">Definition</td>
+          <td>
+            <p>unique id for the element within a resource (for internal references).</p>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <a href="http://www.hl7.org/fhir/DSTU2/conformance-rules.html#conformance">Control</a>
+          </td>
+          <td>0..1 ?</td>
+        </tr>
+        <tr>
+          <td>
+            <a href="http://www.hl7.org/fhir/DSTU2/datatypes.html">Type</a>
+          </td>
+          <td>
+            <a href="http://www.hl7.org/fhir/DSTU2/datatypes.html#id" xmlns="http://www.w3.org/1999/xhtml">Id</a>
+          </td>
+        </tr>
+        <tr>
+          <td width="150px">Comments</td>
+          <td>
+            <p>RFC 4122</p>
+          </td>
+        </tr>
+        <tr>
+          <td colspan="2" class="structure">
+            <a name="QuestionnaireResponse.meta.tag.extension"></a>
+            <b>QuestionnaireResponse.meta.tag.extension</b>
+          </td>
+        </tr>
+        <tr>
+          <td width="150px">Definition</td>
+          <td>
+            <p>May be used to represent additional information that is not part of the basic definition of the element. In order to make the use of extensions safe and manageable, there is a strict set of governance  applied to the definition and use of extensions. Though any implementer is allowed to define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension.</p>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <a href="http://www.hl7.org/fhir/DSTU2/conformance-rules.html#conformance">Control</a>
+          </td>
+          <td>0..* ?</td>
+        </tr>
+        <tr>
+          <td>
+            <a href="http://www.hl7.org/fhir/DSTU2/datatypes.html">Type</a>
+          </td>
+          <td>
+            <a href="http://www.hl7.org/fhir/DSTU2/datatypes.html#extension" xmlns="http://www.w3.org/1999/xhtml">Extension</a>
+          </td>
+        </tr>
+        <tr>
+          <td>Aliases</td>
+          <td>extensions, user content</td>
+        </tr>
+        <tr>
+          <td width="150px">Comments</td>
+          <td>
+            <p>There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone.</p>
+          </td>
+        </tr>
+        <tr>
+          <td colspan="2" class="structure">
+            <a name="QuestionnaireResponse.meta.tag.system"></a>
+            <b>QuestionnaireResponse.meta.tag.system</b>
+          </td>
+        </tr>
+        <tr>
+          <td width="150px">Definition</td>
+          <td>
+            <p>The identification of the code system that defines the meaning of the symbol in the code.</p>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <a href="http://www.hl7.org/fhir/DSTU2/conformance-rules.html#conformance">Control</a>
+          </td>
+          <td>0..1 ?</td>
+        </tr>
+        <tr>
+          <td>
+            <a href="http://www.hl7.org/fhir/DSTU2/datatypes.html">Type</a>
+          </td>
+          <td>
+            <a href="http://www.hl7.org/fhir/DSTU2/datatypes.html#uri" xmlns="http://www.w3.org/1999/xhtml">Uri</a>
+          </td>
+        </tr>
+        <tr>
+          <td width="150px">Requirements</td>
+          <td>
+            <p>Need to be unambiguous about the source of the definition of the symbol.</p>
+          </td>
+        </tr>
+        <tr>
+          <td width="150px">Comments</td>
+          <td>
+            <p>The URI may be an OID (urn:oid:...) or a UUID (urn:uuid:...).  OIDs and UUIDs SHALL be references to the HL7 OID registry. Otherwise, the URI should come from HL7's list of FHIR defined special URIs or it should de-reference to some definition that establish the system clearly and unambiguously.</p>
+          </td>
+        </tr>
+        <tr>
+          <td colspan="2" class="structure">
+            <a name="QuestionnaireResponse.meta.tag.version"></a>
+            <b>QuestionnaireResponse.meta.tag.version</b>
+          </td>
+        </tr>
+        <tr>
+          <td width="150px">Definition</td>
+          <td>
+            <p>The version of the code system which was used when choosing this code. Note that a well-maintained code system does not need the version reported, because the meaning of codes is consistent across versions. However this cannot consistently be assured. and when the meaning is not guaranteed to be consistent, the version SHOULD be exchanged.</p>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <a href="http://www.hl7.org/fhir/DSTU2/conformance-rules.html#conformance">Control</a>
+          </td>
+          <td>0..1 ?</td>
+        </tr>
+        <tr>
+          <td>
+            <a href="http://www.hl7.org/fhir/DSTU2/datatypes.html">Type</a>
+          </td>
+          <td>
+            <a href="http://www.hl7.org/fhir/DSTU2/datatypes.html#string" xmlns="http://www.w3.org/1999/xhtml">String</a>
+          </td>
+        </tr>
+        <tr>
+          <td width="150px">Comments</td>
+          <td>
+            <p>Where the terminology does not clearly define what string should be used to identify code system versions, the recommendation is to use the date (expressed in FHIR date format) on which that version was officially published as the version date.</p>
+          </td>
+        </tr>
+        <tr>
+          <td colspan="2" class="structure">
+            <a name="QuestionnaireResponse.meta.tag.code"></a>
+            <b>QuestionnaireResponse.meta.tag.code</b>
+          </td>
+        </tr>
+        <tr>
+          <td width="150px">Definition</td>
+          <td>
+            <p>A symbol in syntax defined by the system. The symbol may be a predefined code or an expression in a syntax defined by the coding system (e.g. post-coordination).</p>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <a href="http://www.hl7.org/fhir/DSTU2/conformance-rules.html#conformance">Control</a>
+          </td>
+          <td>0..1 ?</td>
+        </tr>
+        <tr>
+          <td>
+            <a href="http://www.hl7.org/fhir/DSTU2/datatypes.html">Type</a>
+          </td>
+          <td>
+            <a href="http://www.hl7.org/fhir/DSTU2/datatypes.html#code" xmlns="http://www.w3.org/1999/xhtml">Code</a>
+          </td>
+        </tr>
+        <tr>
+          <td width="150px">Requirements</td>
+          <td>
+            <p>Need to refer to a particular code in the system.</p>
+          </td>
+        </tr>
+        <tr>
+          <td width="150px">Comments</td>
+          <td>
+            <p>Note that FHIR strings may not exceed 1MB in size</p>
+          </td>
+        </tr>
+        <tr>
+          <td colspan="2" class="structure">
+            <a name="QuestionnaireResponse.meta.tag.display"></a>
+            <b>QuestionnaireResponse.meta.tag.display</b>
+          </td>
+        </tr>
+        <tr>
+          <td width="150px">Definition</td>
+          <td>
+            <p>A representation of the meaning of the code in the system, following the rules of the system.</p>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <a href="http://www.hl7.org/fhir/DSTU2/conformance-rules.html#conformance">Control</a>
+          </td>
+          <td>0..1 ?</td>
+        </tr>
+        <tr>
+          <td>
+            <a href="http://www.hl7.org/fhir/DSTU2/datatypes.html">Type</a>
+          </td>
+          <td>
+            <a href="http://www.hl7.org/fhir/DSTU2/datatypes.html#string" xmlns="http://www.w3.org/1999/xhtml">String</a>
+          </td>
+        </tr>
+        <tr>
+          <td width="150px">Requirements</td>
+          <td>
+            <p>Need to be able to carry a human-readable meaning of the code for readers that do not know  the system.</p>
+          </td>
+        </tr>
+        <tr>
+          <td width="150px">Comments</td>
+          <td>
+            <p>Note that FHIR strings may not exceed 1MB in size</p>
+          </td>
+        </tr>
+        <tr>
+          <td colspan="2" class="structure">
+            <a name="QuestionnaireResponse.meta.tag.userSelected"></a>
+            <b>QuestionnaireResponse.meta.tag.userSelected</b>
+          </td>
+        </tr>
+        <tr>
+          <td width="150px">Definition</td>
+          <td>
+            <p>Indicates that this coding was chosen by a user directly - i.e. off a pick list of available items (codes or displays).</p>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <a href="http://www.hl7.org/fhir/DSTU2/conformance-rules.html#conformance">Control</a>
+          </td>
+          <td>0..1 ?</td>
+        </tr>
+        <tr>
+          <td>
+            <a href="http://www.hl7.org/fhir/DSTU2/datatypes.html">Type</a>
+          </td>
+          <td>
+            <a href="http://www.hl7.org/fhir/DSTU2/datatypes.html#boolean" xmlns="http://www.w3.org/1999/xhtml">Boolean</a>
+          </td>
+        </tr>
+        <tr>
+          <td width="150px">Requirements</td>
+          <td>
+            <p>This has been identified as a clinical safety criterium - that this exact system/code pair was chosen explicitly, rather than inferred by the system based on some rules or language processing.</p>
+          </td>
+        </tr>
+        <tr>
+          <td width="150px">Comments</td>
+          <td>
+            <p>Amongst a set of alternatives, a directly chosen code is the most appropriate starting point for new translations. There is some ambiguity about what exactly 'directly chosen' implies, and trading partner agreement may be needed to clarify the use of this element and its consequences more completely.</p>
+          </td>
+        </tr>
+        <tr>
+          <td colspan="2" class="structure">
             <a name="QuestionnaireResponse.implicitRules"></a>
             <b>QuestionnaireResponse.implicitRules</b>
           </td>
@@ -358,6 +1101,149 @@
         </tr>
         <tr>
           <td colspan="2" class="structure">
+            <a name="QuestionnaireResponse.text.id"></a>
+            <b>QuestionnaireResponse.text.id</b>
+          </td>
+        </tr>
+        <tr>
+          <td width="150px">Definition</td>
+          <td>
+            <p>unique id for the element within a resource (for internal references).</p>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <a href="http://www.hl7.org/fhir/DSTU2/conformance-rules.html#conformance">Control</a>
+          </td>
+          <td>0..1 ?</td>
+        </tr>
+        <tr>
+          <td>
+            <a href="http://www.hl7.org/fhir/DSTU2/datatypes.html">Type</a>
+          </td>
+          <td>
+            <a href="http://www.hl7.org/fhir/DSTU2/datatypes.html#id" xmlns="http://www.w3.org/1999/xhtml">Id</a>
+          </td>
+        </tr>
+        <tr>
+          <td width="150px">Comments</td>
+          <td>
+            <p>RFC 4122</p>
+          </td>
+        </tr>
+        <tr>
+          <td colspan="2" class="structure">
+            <a name="QuestionnaireResponse.text.extension"></a>
+            <b>QuestionnaireResponse.text.extension</b>
+          </td>
+        </tr>
+        <tr>
+          <td width="150px">Definition</td>
+          <td>
+            <p>May be used to represent additional information that is not part of the basic definition of the element. In order to make the use of extensions safe and manageable, there is a strict set of governance  applied to the definition and use of extensions. Though any implementer is allowed to define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension.</p>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <a href="http://www.hl7.org/fhir/DSTU2/conformance-rules.html#conformance">Control</a>
+          </td>
+          <td>0..* ?</td>
+        </tr>
+        <tr>
+          <td>
+            <a href="http://www.hl7.org/fhir/DSTU2/datatypes.html">Type</a>
+          </td>
+          <td>
+            <a href="http://www.hl7.org/fhir/DSTU2/datatypes.html#extension" xmlns="http://www.w3.org/1999/xhtml">Extension</a>
+          </td>
+        </tr>
+        <tr>
+          <td>Aliases</td>
+          <td>extensions, user content</td>
+        </tr>
+        <tr>
+          <td width="150px">Comments</td>
+          <td>
+            <p>There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone.</p>
+          </td>
+        </tr>
+        <tr>
+          <td colspan="2" class="structure">
+            <a name="QuestionnaireResponse.text.status"></a>
+            <b>QuestionnaireResponse.text.status</b>
+          </td>
+        </tr>
+        <tr>
+          <td width="150px">Definition</td>
+          <td>
+            <p>The status of the narrative - whether it's entirely generated (from just the defined data or the extensions too), or whether a human authored it and it may contain additional data.</p>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <a href="http://www.hl7.org/fhir/DSTU2/conformance-rules.html#conformance">Control</a>
+          </td>
+          <td>1..1 ?</td>
+        </tr>
+        <tr>
+          <td>
+            <a href="http://www.hl7.org/fhir/DSTU2/terminologies.html">Binding</a>
+          </td>
+          <td>
+            <div class="binding-description" xmlns="http://www.w3.org/1999/xhtml">
+              <p>The status of a resource narrative</p>
+              <p>The codes SHALL be taken from <a href="http://hl7.org/fhir/DSTU2/valueset-narrative-status.html">http://hl7.org/fhir/DSTU2/valueset-narrative-status.html</a></p>
+            </div>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <a href="http://www.hl7.org/fhir/DSTU2/datatypes.html">Type</a>
+          </td>
+          <td>
+            <a href="http://www.hl7.org/fhir/DSTU2/datatypes.html#code" xmlns="http://www.w3.org/1999/xhtml">Code</a>
+          </td>
+        </tr>
+        <tr>
+          <td width="150px">Comments</td>
+          <td>
+            <p>Note that FHIR strings may not exceed 1MB in size</p>
+          </td>
+        </tr>
+        <tr>
+          <td colspan="2" class="structure">
+            <a name="QuestionnaireResponse.text.div"></a>
+            <b>QuestionnaireResponse.text.div</b>
+          </td>
+        </tr>
+        <tr>
+          <td width="150px">Definition</td>
+          <td>
+            <p>The actual narrative content, a stripped down version of XHTML.</p>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <a href="http://www.hl7.org/fhir/DSTU2/conformance-rules.html#conformance">Control</a>
+          </td>
+          <td>1..1 ?</td>
+        </tr>
+        <tr>
+          <td>
+            <a href="http://www.hl7.org/fhir/DSTU2/datatypes.html">Type</a>
+          </td>
+          <td>
+            <a href="http://www.hl7.org/fhir/DSTU2/narrative.html#xhtml" xmlns="http://www.w3.org/1999/xhtml">Xhtml</a>
+          </td>
+        </tr>
+        <tr>
+          <td width="150px">Comments</td>
+          <td>
+            <p>The contents of the html element are an XHTML fragment containing only the basic html formatting elements described in chapters 7-11 and 15 of the HTML 4.0 standard, &lt;a&gt; elements (either name or href), images and internally contained stylesheets. The XHTML content may not contain a head, a body, external stylesheet references, scripts, forms, base/link/xlink, frames, iframes and objects.</p>
+          </td>
+        </tr>
+        <tr>
+          <td colspan="2" class="structure">
             <a name="QuestionnaireResponse.contained"></a>
             <b>QuestionnaireResponse.contained</b>
           </td>
@@ -390,6 +1276,892 @@
           <td width="150px">Comments</td>
           <td>
             <p>This should never be done when the content can be identified properly, as once identification is lost, it is extremely difficult (and context dependent) to restore it again.</p>
+          </td>
+        </tr>
+        <tr>
+          <td colspan="2" class="structure">
+            <a name="QuestionnaireResponse.contained.id"></a>
+            <b>QuestionnaireResponse.contained.id</b>
+          </td>
+        </tr>
+        <tr>
+          <td width="150px">Definition</td>
+          <td>
+            <p>The logical id of the resource, as used in the URL for the resource. Once assigned, this value never changes.</p>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <a href="http://www.hl7.org/fhir/DSTU2/conformance-rules.html#conformance">Control</a>
+          </td>
+          <td>0..1 ?</td>
+        </tr>
+        <tr>
+          <td>
+            <a href="http://www.hl7.org/fhir/DSTU2/datatypes.html">Type</a>
+          </td>
+          <td>
+            <a href="http://www.hl7.org/fhir/DSTU2/datatypes.html#id" xmlns="http://www.w3.org/1999/xhtml">Id</a>
+          </td>
+        </tr>
+        <tr>
+          <td width="150px">Comments</td>
+          <td>
+            <p>The only time that a resource does not have an id is when it is being submitted to the server using a create operation. Bundles always have an id, though it is usually a generated UUID.</p>
+          </td>
+        </tr>
+        <tr>
+          <td colspan="2" class="structure">
+            <a name="QuestionnaireResponse.contained.meta"></a>
+            <b>QuestionnaireResponse.contained.meta</b>
+          </td>
+        </tr>
+        <tr>
+          <td width="150px">Definition</td>
+          <td>
+            <p>The metadata about the resource. This is content that is maintained by the infrastructure. Changes to the content may not always be associated with version changes to the resource.</p>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <a href="http://www.hl7.org/fhir/DSTU2/conformance-rules.html#conformance">Control</a>
+          </td>
+          <td>0..1 ?</td>
+        </tr>
+        <tr>
+          <td>
+            <a href="http://www.hl7.org/fhir/DSTU2/datatypes.html">Type</a>
+          </td>
+          <td>
+            <a href="http://www.hl7.org/fhir/DSTU2/datatypes.html#meta" xmlns="http://www.w3.org/1999/xhtml">Meta</a>
+          </td>
+        </tr>
+        <tr>
+          <td width="150px">Comments</td>
+          <td></td>
+        </tr>
+        <tr>
+          <td colspan="2" class="structure">
+            <a name="QuestionnaireResponse.contained.meta.id"></a>
+            <b>QuestionnaireResponse.contained.meta.id</b>
+          </td>
+        </tr>
+        <tr>
+          <td width="150px">Definition</td>
+          <td>
+            <p>unique id for the element within a resource (for internal references).</p>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <a href="http://www.hl7.org/fhir/DSTU2/conformance-rules.html#conformance">Control</a>
+          </td>
+          <td>0..1 ?</td>
+        </tr>
+        <tr>
+          <td>
+            <a href="http://www.hl7.org/fhir/DSTU2/datatypes.html">Type</a>
+          </td>
+          <td>
+            <a href="http://www.hl7.org/fhir/DSTU2/datatypes.html#id" xmlns="http://www.w3.org/1999/xhtml">Id</a>
+          </td>
+        </tr>
+        <tr>
+          <td width="150px">Comments</td>
+          <td>
+            <p>RFC 4122</p>
+          </td>
+        </tr>
+        <tr>
+          <td colspan="2" class="structure">
+            <a name="QuestionnaireResponse.contained.meta.extension"></a>
+            <b>QuestionnaireResponse.contained.meta.extension</b>
+          </td>
+        </tr>
+        <tr>
+          <td width="150px">Definition</td>
+          <td>
+            <p>May be used to represent additional information that is not part of the basic definition of the element. In order to make the use of extensions safe and manageable, there is a strict set of governance  applied to the definition and use of extensions. Though any implementer is allowed to define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension.</p>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <a href="http://www.hl7.org/fhir/DSTU2/conformance-rules.html#conformance">Control</a>
+          </td>
+          <td>0..* ?</td>
+        </tr>
+        <tr>
+          <td>
+            <a href="http://www.hl7.org/fhir/DSTU2/datatypes.html">Type</a>
+          </td>
+          <td>
+            <a href="http://www.hl7.org/fhir/DSTU2/datatypes.html#extension" xmlns="http://www.w3.org/1999/xhtml">Extension</a>
+          </td>
+        </tr>
+        <tr>
+          <td>Aliases</td>
+          <td>extensions, user content</td>
+        </tr>
+        <tr>
+          <td width="150px">Comments</td>
+          <td>
+            <p>There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone.</p>
+          </td>
+        </tr>
+        <tr>
+          <td colspan="2" class="structure">
+            <a name="QuestionnaireResponse.contained.meta.versionId"></a>
+            <b>QuestionnaireResponse.contained.meta.versionId</b>
+          </td>
+        </tr>
+        <tr>
+          <td width="150px">Definition</td>
+          <td>
+            <p>The version specific identifier, as it appears in the version portion of the URL. This values changes when the resource is created, updated, or deleted.</p>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <a href="http://www.hl7.org/fhir/DSTU2/conformance-rules.html#conformance">Control</a>
+          </td>
+          <td>0..1 ?</td>
+        </tr>
+        <tr>
+          <td>
+            <a href="http://www.hl7.org/fhir/DSTU2/datatypes.html">Type</a>
+          </td>
+          <td>
+            <a href="http://www.hl7.org/fhir/DSTU2/datatypes.html#id" xmlns="http://www.w3.org/1999/xhtml">Id</a>
+          </td>
+        </tr>
+        <tr>
+          <td width="150px">Comments</td>
+          <td>
+            <p>The server assigns this value, and ignores what the client specifies, except in the case that the server is imposing version integrity on updates/deletes.</p>
+          </td>
+        </tr>
+        <tr>
+          <td colspan="2" class="structure">
+            <a name="QuestionnaireResponse.contained.meta.lastUpdated"></a>
+            <b>QuestionnaireResponse.contained.meta.lastUpdated</b>
+          </td>
+        </tr>
+        <tr>
+          <td width="150px">Definition</td>
+          <td>
+            <p>When the resource last changed - e.g. when the version changed.</p>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <a href="http://www.hl7.org/fhir/DSTU2/conformance-rules.html#conformance">Control</a>
+          </td>
+          <td>0..1 ?</td>
+        </tr>
+        <tr>
+          <td>
+            <a href="http://www.hl7.org/fhir/DSTU2/datatypes.html">Type</a>
+          </td>
+          <td>
+            <a href="http://www.hl7.org/fhir/DSTU2/datatypes.html#instant" xmlns="http://www.w3.org/1999/xhtml">Instant</a>
+          </td>
+        </tr>
+        <tr>
+          <td width="150px">Comments</td>
+          <td>
+            <p>This value is always populated except when the resource is first being created. The server / resource manager sets this value; what a client provides is irrelevant.</p>
+          </td>
+        </tr>
+        <tr>
+          <td colspan="2" class="structure">
+            <a name="QuestionnaireResponse.contained.meta.profile"></a>
+            <b>QuestionnaireResponse.contained.meta.profile</b>
+          </td>
+        </tr>
+        <tr>
+          <td width="150px">Definition</td>
+          <td>
+            <p>A list of profiles [[[StructureDefinition]]]s that this resource claims to conform to. The URL is a reference to [[[StructureDefinition.url]]].</p>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <a href="http://www.hl7.org/fhir/DSTU2/conformance-rules.html#conformance">Control</a>
+          </td>
+          <td>0..* ?</td>
+        </tr>
+        <tr>
+          <td>
+            <a href="http://www.hl7.org/fhir/DSTU2/datatypes.html">Type</a>
+          </td>
+          <td>
+            <a href="http://www.hl7.org/fhir/DSTU2/datatypes.html#uri" xmlns="http://www.w3.org/1999/xhtml">Uri</a>
+          </td>
+        </tr>
+        <tr>
+          <td width="150px">Comments</td>
+          <td>
+            <p>It is up to the server and/or other infrastructure of policy to determine whether/how these claims are verified and/or updated over time.  The list of profile URLs is a set.</p>
+          </td>
+        </tr>
+        <tr>
+          <td colspan="2" class="structure">
+            <a name="QuestionnaireResponse.contained.meta.security"></a>
+            <b>QuestionnaireResponse.contained.meta.security</b>
+          </td>
+        </tr>
+        <tr>
+          <td width="150px">Definition</td>
+          <td>
+            <p>Security labels applied to this resource. These tags connect specific resources to the overall security policy and infrastructure.</p>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <a href="http://www.hl7.org/fhir/DSTU2/conformance-rules.html#conformance">Control</a>
+          </td>
+          <td>0..* ?</td>
+        </tr>
+        <tr>
+          <td>
+            <a href="http://www.hl7.org/fhir/DSTU2/terminologies.html">Binding</a>
+          </td>
+          <td>
+            <div class="binding-description" xmlns="http://www.w3.org/1999/xhtml">
+              <p>Security Labels from the Healthcare Privacy and Security Classification System.</p>
+              <p>The codes SHALL be taken from the following if appropriate, otherwise an alternate coding may be included instead. <a href="http://hl7.org/fhir/DSTU2/valueset-security-labels.html">http://hl7.org/fhir/DSTU2/valueset-security-labels.html</a></p>
+            </div>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <a href="http://www.hl7.org/fhir/DSTU2/datatypes.html">Type</a>
+          </td>
+          <td>
+            <a href="http://www.hl7.org/fhir/DSTU2/datatypes.html#coding" xmlns="http://www.w3.org/1999/xhtml">Coding</a>
+          </td>
+        </tr>
+        <tr>
+          <td width="150px">Comments</td>
+          <td>
+            <p>The security labels can be updated without changing the stated version of the resource  The list of security labels is a set. Uniqueness is based the system/code, and version and display are ignored.</p>
+          </td>
+        </tr>
+        <tr>
+          <td colspan="2" class="structure">
+            <a name="QuestionnaireResponse.contained.meta.security.id"></a>
+            <b>QuestionnaireResponse.contained.meta.security.id</b>
+          </td>
+        </tr>
+        <tr>
+          <td width="150px">Definition</td>
+          <td>
+            <p>unique id for the element within a resource (for internal references).</p>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <a href="http://www.hl7.org/fhir/DSTU2/conformance-rules.html#conformance">Control</a>
+          </td>
+          <td>0..1 ?</td>
+        </tr>
+        <tr>
+          <td>
+            <a href="http://www.hl7.org/fhir/DSTU2/datatypes.html">Type</a>
+          </td>
+          <td>
+            <a href="http://www.hl7.org/fhir/DSTU2/datatypes.html#id" xmlns="http://www.w3.org/1999/xhtml">Id</a>
+          </td>
+        </tr>
+        <tr>
+          <td width="150px">Comments</td>
+          <td>
+            <p>RFC 4122</p>
+          </td>
+        </tr>
+        <tr>
+          <td colspan="2" class="structure">
+            <a name="QuestionnaireResponse.contained.meta.security.extension"></a>
+            <b>QuestionnaireResponse.contained.meta.security.extension</b>
+          </td>
+        </tr>
+        <tr>
+          <td width="150px">Definition</td>
+          <td>
+            <p>May be used to represent additional information that is not part of the basic definition of the element. In order to make the use of extensions safe and manageable, there is a strict set of governance  applied to the definition and use of extensions. Though any implementer is allowed to define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension.</p>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <a href="http://www.hl7.org/fhir/DSTU2/conformance-rules.html#conformance">Control</a>
+          </td>
+          <td>0..* ?</td>
+        </tr>
+        <tr>
+          <td>
+            <a href="http://www.hl7.org/fhir/DSTU2/datatypes.html">Type</a>
+          </td>
+          <td>
+            <a href="http://www.hl7.org/fhir/DSTU2/datatypes.html#extension" xmlns="http://www.w3.org/1999/xhtml">Extension</a>
+          </td>
+        </tr>
+        <tr>
+          <td>Aliases</td>
+          <td>extensions, user content</td>
+        </tr>
+        <tr>
+          <td width="150px">Comments</td>
+          <td>
+            <p>There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone.</p>
+          </td>
+        </tr>
+        <tr>
+          <td colspan="2" class="structure">
+            <a name="QuestionnaireResponse.contained.meta.security.system"></a>
+            <b>QuestionnaireResponse.contained.meta.security.system</b>
+          </td>
+        </tr>
+        <tr>
+          <td width="150px">Definition</td>
+          <td>
+            <p>The identification of the code system that defines the meaning of the symbol in the code.</p>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <a href="http://www.hl7.org/fhir/DSTU2/conformance-rules.html#conformance">Control</a>
+          </td>
+          <td>0..1 ?</td>
+        </tr>
+        <tr>
+          <td>
+            <a href="http://www.hl7.org/fhir/DSTU2/datatypes.html">Type</a>
+          </td>
+          <td>
+            <a href="http://www.hl7.org/fhir/DSTU2/datatypes.html#uri" xmlns="http://www.w3.org/1999/xhtml">Uri</a>
+          </td>
+        </tr>
+        <tr>
+          <td width="150px">Requirements</td>
+          <td>
+            <p>Need to be unambiguous about the source of the definition of the symbol.</p>
+          </td>
+        </tr>
+        <tr>
+          <td width="150px">Comments</td>
+          <td>
+            <p>The URI may be an OID (urn:oid:...) or a UUID (urn:uuid:...).  OIDs and UUIDs SHALL be references to the HL7 OID registry. Otherwise, the URI should come from HL7's list of FHIR defined special URIs or it should de-reference to some definition that establish the system clearly and unambiguously.</p>
+          </td>
+        </tr>
+        <tr>
+          <td colspan="2" class="structure">
+            <a name="QuestionnaireResponse.contained.meta.security.version"></a>
+            <b>QuestionnaireResponse.contained.meta.security.version</b>
+          </td>
+        </tr>
+        <tr>
+          <td width="150px">Definition</td>
+          <td>
+            <p>The version of the code system which was used when choosing this code. Note that a well-maintained code system does not need the version reported, because the meaning of codes is consistent across versions. However this cannot consistently be assured. and when the meaning is not guaranteed to be consistent, the version SHOULD be exchanged.</p>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <a href="http://www.hl7.org/fhir/DSTU2/conformance-rules.html#conformance">Control</a>
+          </td>
+          <td>0..1 ?</td>
+        </tr>
+        <tr>
+          <td>
+            <a href="http://www.hl7.org/fhir/DSTU2/datatypes.html">Type</a>
+          </td>
+          <td>
+            <a href="http://www.hl7.org/fhir/DSTU2/datatypes.html#string" xmlns="http://www.w3.org/1999/xhtml">String</a>
+          </td>
+        </tr>
+        <tr>
+          <td width="150px">Comments</td>
+          <td>
+            <p>Where the terminology does not clearly define what string should be used to identify code system versions, the recommendation is to use the date (expressed in FHIR date format) on which that version was officially published as the version date.</p>
+          </td>
+        </tr>
+        <tr>
+          <td colspan="2" class="structure">
+            <a name="QuestionnaireResponse.contained.meta.security.code"></a>
+            <b>QuestionnaireResponse.contained.meta.security.code</b>
+          </td>
+        </tr>
+        <tr>
+          <td width="150px">Definition</td>
+          <td>
+            <p>A symbol in syntax defined by the system. The symbol may be a predefined code or an expression in a syntax defined by the coding system (e.g. post-coordination).</p>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <a href="http://www.hl7.org/fhir/DSTU2/conformance-rules.html#conformance">Control</a>
+          </td>
+          <td>0..1 ?</td>
+        </tr>
+        <tr>
+          <td>
+            <a href="http://www.hl7.org/fhir/DSTU2/datatypes.html">Type</a>
+          </td>
+          <td>
+            <a href="http://www.hl7.org/fhir/DSTU2/datatypes.html#code" xmlns="http://www.w3.org/1999/xhtml">Code</a>
+          </td>
+        </tr>
+        <tr>
+          <td width="150px">Requirements</td>
+          <td>
+            <p>Need to refer to a particular code in the system.</p>
+          </td>
+        </tr>
+        <tr>
+          <td width="150px">Comments</td>
+          <td>
+            <p>Note that FHIR strings may not exceed 1MB in size</p>
+          </td>
+        </tr>
+        <tr>
+          <td colspan="2" class="structure">
+            <a name="QuestionnaireResponse.contained.meta.security.display"></a>
+            <b>QuestionnaireResponse.contained.meta.security.display</b>
+          </td>
+        </tr>
+        <tr>
+          <td width="150px">Definition</td>
+          <td>
+            <p>A representation of the meaning of the code in the system, following the rules of the system.</p>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <a href="http://www.hl7.org/fhir/DSTU2/conformance-rules.html#conformance">Control</a>
+          </td>
+          <td>0..1 ?</td>
+        </tr>
+        <tr>
+          <td>
+            <a href="http://www.hl7.org/fhir/DSTU2/datatypes.html">Type</a>
+          </td>
+          <td>
+            <a href="http://www.hl7.org/fhir/DSTU2/datatypes.html#string" xmlns="http://www.w3.org/1999/xhtml">String</a>
+          </td>
+        </tr>
+        <tr>
+          <td width="150px">Requirements</td>
+          <td>
+            <p>Need to be able to carry a human-readable meaning of the code for readers that do not know  the system.</p>
+          </td>
+        </tr>
+        <tr>
+          <td width="150px">Comments</td>
+          <td>
+            <p>Note that FHIR strings may not exceed 1MB in size</p>
+          </td>
+        </tr>
+        <tr>
+          <td colspan="2" class="structure">
+            <a name="QuestionnaireResponse.contained.meta.security.userSelected"></a>
+            <b>QuestionnaireResponse.contained.meta.security.userSelected</b>
+          </td>
+        </tr>
+        <tr>
+          <td width="150px">Definition</td>
+          <td>
+            <p>Indicates that this coding was chosen by a user directly - i.e. off a pick list of available items (codes or displays).</p>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <a href="http://www.hl7.org/fhir/DSTU2/conformance-rules.html#conformance">Control</a>
+          </td>
+          <td>0..1 ?</td>
+        </tr>
+        <tr>
+          <td>
+            <a href="http://www.hl7.org/fhir/DSTU2/datatypes.html">Type</a>
+          </td>
+          <td>
+            <a href="http://www.hl7.org/fhir/DSTU2/datatypes.html#boolean" xmlns="http://www.w3.org/1999/xhtml">Boolean</a>
+          </td>
+        </tr>
+        <tr>
+          <td width="150px">Requirements</td>
+          <td>
+            <p>This has been identified as a clinical safety criterium - that this exact system/code pair was chosen explicitly, rather than inferred by the system based on some rules or language processing.</p>
+          </td>
+        </tr>
+        <tr>
+          <td width="150px">Comments</td>
+          <td>
+            <p>Amongst a set of alternatives, a directly chosen code is the most appropriate starting point for new translations. There is some ambiguity about what exactly 'directly chosen' implies, and trading partner agreement may be needed to clarify the use of this element and its consequences more completely.</p>
+          </td>
+        </tr>
+        <tr>
+          <td colspan="2" class="structure">
+            <a name="QuestionnaireResponse.contained.meta.tag"></a>
+            <b>QuestionnaireResponse.contained.meta.tag</b>
+          </td>
+        </tr>
+        <tr>
+          <td width="150px">Definition</td>
+          <td>
+            <p>Tags applied to this resource. Tags are intended to be used to identify and relate resources to process and workflow, and applications are not required to consider the tags when interpreting the meaning of a resource.</p>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <a href="http://www.hl7.org/fhir/DSTU2/conformance-rules.html#conformance">Control</a>
+          </td>
+          <td>0..* ?</td>
+        </tr>
+        <tr>
+          <td>
+            <a href="http://www.hl7.org/fhir/DSTU2/datatypes.html">Type</a>
+          </td>
+          <td>
+            <a href="http://www.hl7.org/fhir/DSTU2/datatypes.html#coding" xmlns="http://www.w3.org/1999/xhtml">Coding</a>
+          </td>
+        </tr>
+        <tr>
+          <td width="150px">Comments</td>
+          <td>
+            <p>The tags can be updated without changing the stated version of the resource.  The list of tags is a set. Uniqueness is based the system/code, and version and display are ignored.</p>
+          </td>
+        </tr>
+        <tr>
+          <td colspan="2" class="structure">
+            <a name="QuestionnaireResponse.contained.meta.tag.id"></a>
+            <b>QuestionnaireResponse.contained.meta.tag.id</b>
+          </td>
+        </tr>
+        <tr>
+          <td width="150px">Definition</td>
+          <td>
+            <p>unique id for the element within a resource (for internal references).</p>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <a href="http://www.hl7.org/fhir/DSTU2/conformance-rules.html#conformance">Control</a>
+          </td>
+          <td>0..1 ?</td>
+        </tr>
+        <tr>
+          <td>
+            <a href="http://www.hl7.org/fhir/DSTU2/datatypes.html">Type</a>
+          </td>
+          <td>
+            <a href="http://www.hl7.org/fhir/DSTU2/datatypes.html#id" xmlns="http://www.w3.org/1999/xhtml">Id</a>
+          </td>
+        </tr>
+        <tr>
+          <td width="150px">Comments</td>
+          <td>
+            <p>RFC 4122</p>
+          </td>
+        </tr>
+        <tr>
+          <td colspan="2" class="structure">
+            <a name="QuestionnaireResponse.contained.meta.tag.extension"></a>
+            <b>QuestionnaireResponse.contained.meta.tag.extension</b>
+          </td>
+        </tr>
+        <tr>
+          <td width="150px">Definition</td>
+          <td>
+            <p>May be used to represent additional information that is not part of the basic definition of the element. In order to make the use of extensions safe and manageable, there is a strict set of governance  applied to the definition and use of extensions. Though any implementer is allowed to define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension.</p>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <a href="http://www.hl7.org/fhir/DSTU2/conformance-rules.html#conformance">Control</a>
+          </td>
+          <td>0..* ?</td>
+        </tr>
+        <tr>
+          <td>
+            <a href="http://www.hl7.org/fhir/DSTU2/datatypes.html">Type</a>
+          </td>
+          <td>
+            <a href="http://www.hl7.org/fhir/DSTU2/datatypes.html#extension" xmlns="http://www.w3.org/1999/xhtml">Extension</a>
+          </td>
+        </tr>
+        <tr>
+          <td>Aliases</td>
+          <td>extensions, user content</td>
+        </tr>
+        <tr>
+          <td width="150px">Comments</td>
+          <td>
+            <p>There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone.</p>
+          </td>
+        </tr>
+        <tr>
+          <td colspan="2" class="structure">
+            <a name="QuestionnaireResponse.contained.meta.tag.system"></a>
+            <b>QuestionnaireResponse.contained.meta.tag.system</b>
+          </td>
+        </tr>
+        <tr>
+          <td width="150px">Definition</td>
+          <td>
+            <p>The identification of the code system that defines the meaning of the symbol in the code.</p>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <a href="http://www.hl7.org/fhir/DSTU2/conformance-rules.html#conformance">Control</a>
+          </td>
+          <td>0..1 ?</td>
+        </tr>
+        <tr>
+          <td>
+            <a href="http://www.hl7.org/fhir/DSTU2/datatypes.html">Type</a>
+          </td>
+          <td>
+            <a href="http://www.hl7.org/fhir/DSTU2/datatypes.html#uri" xmlns="http://www.w3.org/1999/xhtml">Uri</a>
+          </td>
+        </tr>
+        <tr>
+          <td width="150px">Requirements</td>
+          <td>
+            <p>Need to be unambiguous about the source of the definition of the symbol.</p>
+          </td>
+        </tr>
+        <tr>
+          <td width="150px">Comments</td>
+          <td>
+            <p>The URI may be an OID (urn:oid:...) or a UUID (urn:uuid:...).  OIDs and UUIDs SHALL be references to the HL7 OID registry. Otherwise, the URI should come from HL7's list of FHIR defined special URIs or it should de-reference to some definition that establish the system clearly and unambiguously.</p>
+          </td>
+        </tr>
+        <tr>
+          <td colspan="2" class="structure">
+            <a name="QuestionnaireResponse.contained.meta.tag.version"></a>
+            <b>QuestionnaireResponse.contained.meta.tag.version</b>
+          </td>
+        </tr>
+        <tr>
+          <td width="150px">Definition</td>
+          <td>
+            <p>The version of the code system which was used when choosing this code. Note that a well-maintained code system does not need the version reported, because the meaning of codes is consistent across versions. However this cannot consistently be assured. and when the meaning is not guaranteed to be consistent, the version SHOULD be exchanged.</p>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <a href="http://www.hl7.org/fhir/DSTU2/conformance-rules.html#conformance">Control</a>
+          </td>
+          <td>0..1 ?</td>
+        </tr>
+        <tr>
+          <td>
+            <a href="http://www.hl7.org/fhir/DSTU2/datatypes.html">Type</a>
+          </td>
+          <td>
+            <a href="http://www.hl7.org/fhir/DSTU2/datatypes.html#string" xmlns="http://www.w3.org/1999/xhtml">String</a>
+          </td>
+        </tr>
+        <tr>
+          <td width="150px">Comments</td>
+          <td>
+            <p>Where the terminology does not clearly define what string should be used to identify code system versions, the recommendation is to use the date (expressed in FHIR date format) on which that version was officially published as the version date.</p>
+          </td>
+        </tr>
+        <tr>
+          <td colspan="2" class="structure">
+            <a name="QuestionnaireResponse.contained.meta.tag.code"></a>
+            <b>QuestionnaireResponse.contained.meta.tag.code</b>
+          </td>
+        </tr>
+        <tr>
+          <td width="150px">Definition</td>
+          <td>
+            <p>A symbol in syntax defined by the system. The symbol may be a predefined code or an expression in a syntax defined by the coding system (e.g. post-coordination).</p>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <a href="http://www.hl7.org/fhir/DSTU2/conformance-rules.html#conformance">Control</a>
+          </td>
+          <td>0..1 ?</td>
+        </tr>
+        <tr>
+          <td>
+            <a href="http://www.hl7.org/fhir/DSTU2/datatypes.html">Type</a>
+          </td>
+          <td>
+            <a href="http://www.hl7.org/fhir/DSTU2/datatypes.html#code" xmlns="http://www.w3.org/1999/xhtml">Code</a>
+          </td>
+        </tr>
+        <tr>
+          <td width="150px">Requirements</td>
+          <td>
+            <p>Need to refer to a particular code in the system.</p>
+          </td>
+        </tr>
+        <tr>
+          <td width="150px">Comments</td>
+          <td>
+            <p>Note that FHIR strings may not exceed 1MB in size</p>
+          </td>
+        </tr>
+        <tr>
+          <td colspan="2" class="structure">
+            <a name="QuestionnaireResponse.contained.meta.tag.display"></a>
+            <b>QuestionnaireResponse.contained.meta.tag.display</b>
+          </td>
+        </tr>
+        <tr>
+          <td width="150px">Definition</td>
+          <td>
+            <p>A representation of the meaning of the code in the system, following the rules of the system.</p>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <a href="http://www.hl7.org/fhir/DSTU2/conformance-rules.html#conformance">Control</a>
+          </td>
+          <td>0..1 ?</td>
+        </tr>
+        <tr>
+          <td>
+            <a href="http://www.hl7.org/fhir/DSTU2/datatypes.html">Type</a>
+          </td>
+          <td>
+            <a href="http://www.hl7.org/fhir/DSTU2/datatypes.html#string" xmlns="http://www.w3.org/1999/xhtml">String</a>
+          </td>
+        </tr>
+        <tr>
+          <td width="150px">Requirements</td>
+          <td>
+            <p>Need to be able to carry a human-readable meaning of the code for readers that do not know  the system.</p>
+          </td>
+        </tr>
+        <tr>
+          <td width="150px">Comments</td>
+          <td>
+            <p>Note that FHIR strings may not exceed 1MB in size</p>
+          </td>
+        </tr>
+        <tr>
+          <td colspan="2" class="structure">
+            <a name="QuestionnaireResponse.contained.meta.tag.userSelected"></a>
+            <b>QuestionnaireResponse.contained.meta.tag.userSelected</b>
+          </td>
+        </tr>
+        <tr>
+          <td width="150px">Definition</td>
+          <td>
+            <p>Indicates that this coding was chosen by a user directly - i.e. off a pick list of available items (codes or displays).</p>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <a href="http://www.hl7.org/fhir/DSTU2/conformance-rules.html#conformance">Control</a>
+          </td>
+          <td>0..1 ?</td>
+        </tr>
+        <tr>
+          <td>
+            <a href="http://www.hl7.org/fhir/DSTU2/datatypes.html">Type</a>
+          </td>
+          <td>
+            <a href="http://www.hl7.org/fhir/DSTU2/datatypes.html#boolean" xmlns="http://www.w3.org/1999/xhtml">Boolean</a>
+          </td>
+        </tr>
+        <tr>
+          <td width="150px">Requirements</td>
+          <td>
+            <p>This has been identified as a clinical safety criterium - that this exact system/code pair was chosen explicitly, rather than inferred by the system based on some rules or language processing.</p>
+          </td>
+        </tr>
+        <tr>
+          <td width="150px">Comments</td>
+          <td>
+            <p>Amongst a set of alternatives, a directly chosen code is the most appropriate starting point for new translations. There is some ambiguity about what exactly 'directly chosen' implies, and trading partner agreement may be needed to clarify the use of this element and its consequences more completely.</p>
+          </td>
+        </tr>
+        <tr>
+          <td colspan="2" class="structure">
+            <a name="QuestionnaireResponse.contained.implicitRules"></a>
+            <b>QuestionnaireResponse.contained.implicitRules</b>
+          </td>
+        </tr>
+        <tr>
+          <td width="150px">Definition</td>
+          <td>
+            <p>A reference to a set of rules that were followed when the resource was constructed, and which must be understood when processing the content.</p>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <a href="http://www.hl7.org/fhir/DSTU2/conformance-rules.html#conformance">Control</a>
+          </td>
+          <td>0..1 ?</td>
+        </tr>
+        <tr>
+          <td>
+            <a href="http://www.hl7.org/fhir/DSTU2/datatypes.html">Type</a>
+          </td>
+          <td>
+            <a href="http://www.hl7.org/fhir/DSTU2/datatypes.html#uri" xmlns="http://www.w3.org/1999/xhtml">Uri</a>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <a href="http://www.hl7.org/fhir/DSTU2/conformance-rules.html#ismodifier">Is Modifier</a>
+          </td>
+          <td>True</td>
+        </tr>
+        <tr>
+          <td width="150px">Comments</td>
+          <td>
+            <p>Asserting this rule set restricts the content to be only understood by a limited set of trading partners. This inherently limits the usefulness of the data in the long term. However, the existing health eco-system is highly fractured, and not yet ready to define, collect, and exchange data in a generally computable sense. Wherever possible, implementers and/or specification writers should avoid using this element as much as possible.</p>
+          </td>
+        </tr>
+        <tr>
+          <td colspan="2" class="structure">
+            <a name="QuestionnaireResponse.contained.language"></a>
+            <b>QuestionnaireResponse.contained.language</b>
+          </td>
+        </tr>
+        <tr>
+          <td width="150px">Definition</td>
+          <td>
+            <p>The base language in which the resource is written.</p>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <a href="http://www.hl7.org/fhir/DSTU2/conformance-rules.html#conformance">Control</a>
+          </td>
+          <td>0..1 ?</td>
+        </tr>
+        <tr>
+          <td>
+            <a href="http://www.hl7.org/fhir/DSTU2/terminologies.html">Binding</a>
+          </td>
+          <td>
+            <div class="binding-description" xmlns="http://www.w3.org/1999/xhtml">
+              <p>A human language.</p>
+              <p>The codes SHALL be taken from <a href="http://tools.ietf.org/html/bcp47">http://tools.ietf.org/html/bcp47</a></p>
+            </div>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <a href="http://www.hl7.org/fhir/DSTU2/datatypes.html">Type</a>
+          </td>
+          <td>
+            <a href="http://www.hl7.org/fhir/DSTU2/datatypes.html#code" xmlns="http://www.w3.org/1999/xhtml">Code</a>
+          </td>
+        </tr>
+        <tr>
+          <td width="150px">Comments</td>
+          <td>
+            <p>Language is provided to support indexing and accessibility (typically, services such as text to speech use the language tag). The html language tag in the narrative applies  to the narrative. The language tag on the resource may be used to specify the language of other presentations generated from the data in the resource  Not all the content has to be in the base language. The Resource.language should not be assumed to apply to the narrative automatically. If a language is specified, it should it also be specified on the div element in the html (see rules in HTML5 for information about the relationship between xml:lang and the html lang attribute).</p>
           </td>
         </tr>
         <tr>
@@ -768,194 +2540,6 @@
           <td width="150px">Comments</td>
           <td>
             <p>This is generally not the same as the Resource.text of the referenced resource.  The purpose is to identify what's being referenced, not to fully describe it.</p>
-          </td>
-        </tr>
-        <tr>
-          <td colspan="2" class="structure">
-            <a name="QuestionnaireResponse.author"></a>
-            <b>QuestionnaireResponse.author</b>
-          </td>
-        </tr>
-        <tr>
-          <td width="150px">Definition</td>
-          <td></td>
-        </tr>
-        <tr>
-          <td>
-            <a href="http://www.hl7.org/fhir/DSTU2/conformance-rules.html#conformance">Control</a>
-          </td>
-          <td>1..*</td>
-        </tr>
-        <tr>
-          <td>
-            <a href="http://www.hl7.org/fhir/DSTU2/datatypes.html">Type</a>
-          </td>
-          <td>Choice of: <ul><li><a href="careconnect-practitioner-1.html" xmlns="http://www.w3.org/1999/xhtml">https://fhir.hl7.org.uk/StructureDefinition/CareConnect-Practitioner-1</a></li><li><a href="careconnect-organization-1.html" xmlns="http://www.w3.org/1999/xhtml">https://fhir.hl7.org.uk/StructureDefinition/CareConnect-Organization-1</a></li></ul></td>
-        </tr>
-        <tr>
-          <td width="150px">Comments</td>
-          <td></td>
-        </tr>
-        <tr>
-          <td colspan="2" class="structure">
-            <a name="QuestionnaireResponse.author.id"></a>
-            <b>QuestionnaireResponse.author.id</b>
-          </td>
-        </tr>
-        <tr>
-          <td width="150px">Definition</td>
-          <td>
-            <p>unique id for the element within a resource (for internal references).</p>
-          </td>
-        </tr>
-        <tr>
-          <td>
-            <a href="http://www.hl7.org/fhir/DSTU2/conformance-rules.html#conformance">Control</a>
-          </td>
-          <td>0..1 ?</td>
-        </tr>
-        <tr>
-          <td>
-            <a href="http://www.hl7.org/fhir/DSTU2/datatypes.html">Type</a>
-          </td>
-          <td>
-            <a href="http://www.hl7.org/fhir/DSTU2/datatypes.html#id" xmlns="http://www.w3.org/1999/xhtml">Id</a>
-          </td>
-        </tr>
-        <tr>
-          <td width="150px">Comments</td>
-          <td>
-            <p>RFC 4122</p>
-          </td>
-        </tr>
-        <tr>
-          <td colspan="2" class="structure">
-            <a name="QuestionnaireResponse.author.extension"></a>
-            <b>QuestionnaireResponse.author.extension</b>
-          </td>
-        </tr>
-        <tr>
-          <td width="150px">Definition</td>
-          <td>
-            <p>May be used to represent additional information that is not part of the basic definition of the element. In order to make the use of extensions safe and manageable, there is a strict set of governance  applied to the definition and use of extensions. Though any implementer is allowed to define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension.</p>
-          </td>
-        </tr>
-        <tr>
-          <td>
-            <a href="http://www.hl7.org/fhir/DSTU2/conformance-rules.html#conformance">Control</a>
-          </td>
-          <td>0..* ?</td>
-        </tr>
-        <tr>
-          <td>
-            <a href="http://www.hl7.org/fhir/DSTU2/datatypes.html">Type</a>
-          </td>
-          <td>
-            <a href="http://www.hl7.org/fhir/DSTU2/datatypes.html#extension" xmlns="http://www.w3.org/1999/xhtml">Extension</a>
-          </td>
-        </tr>
-        <tr>
-          <td>Aliases</td>
-          <td>extensions, user content</td>
-        </tr>
-        <tr>
-          <td width="150px">Comments</td>
-          <td>
-            <p>There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone.</p>
-          </td>
-        </tr>
-        <tr>
-          <td colspan="2" class="structure">
-            <a name="QuestionnaireResponse.author.reference"></a>
-            <b>QuestionnaireResponse.author.reference</b>
-          </td>
-        </tr>
-        <tr>
-          <td width="150px">Definition</td>
-          <td></td>
-        </tr>
-        <tr>
-          <td>
-            <a href="http://www.hl7.org/fhir/DSTU2/conformance-rules.html#conformance">Control</a>
-          </td>
-          <td>1..*</td>
-        </tr>
-        <tr>
-          <td width="150px">Comments</td>
-          <td></td>
-        </tr>
-        <tr>
-          <td colspan="2" class="structure">
-            <a name="QuestionnaireResponse.author.display"></a>
-            <b>QuestionnaireResponse.author.display</b>
-          </td>
-        </tr>
-        <tr>
-          <td width="150px">Definition</td>
-          <td>
-            <p>Plain text narrative that identifies the resource in addition to the resource reference.</p>
-          </td>
-        </tr>
-        <tr>
-          <td>
-            <a href="http://www.hl7.org/fhir/DSTU2/conformance-rules.html#conformance">Control</a>
-          </td>
-          <td>0..1 ?</td>
-        </tr>
-        <tr>
-          <td>
-            <a href="http://www.hl7.org/fhir/DSTU2/datatypes.html">Type</a>
-          </td>
-          <td>
-            <a href="http://www.hl7.org/fhir/DSTU2/datatypes.html#string" xmlns="http://www.w3.org/1999/xhtml">String</a>
-          </td>
-        </tr>
-        <tr>
-          <td width="150px">Comments</td>
-          <td>
-            <p>This is generally not the same as the Resource.text of the referenced resource.  The purpose is to identify what's being referenced, not to fully describe it.</p>
-          </td>
-        </tr>
-        <tr>
-          <td colspan="2" class="structure">
-            <a name="QuestionnaireResponse.authored"></a>
-            <b>QuestionnaireResponse.authored</b>
-          </td>
-        </tr>
-        <tr>
-          <td width="150px">Definition</td>
-          <td>
-            <p>The date and/or time that this version of the questionnaire response was authored.</p>
-          </td>
-        </tr>
-        <tr>
-          <td>
-            <a href="http://www.hl7.org/fhir/DSTU2/conformance-rules.html#conformance">Control</a>
-          </td>
-          <td>0..1 ?</td>
-        </tr>
-        <tr>
-          <td>
-            <a href="http://www.hl7.org/fhir/DSTU2/datatypes.html">Type</a>
-          </td>
-          <td>
-            <a href="http://www.hl7.org/fhir/DSTU2/datatypes.html#datetime" xmlns="http://www.w3.org/1999/xhtml">DateTime</a>
-          </td>
-        </tr>
-        <tr>
-          <td width="150px">Requirements</td>
-          <td>
-            <p>Clinicians need to be able to check the date that the information in the questionnaire was collected, to derive the context of the answers.</p>
-          </td>
-        </tr>
-        <tr>
-          <td>Aliases</td>
-          <td>Date Created, Date published, Date Issued, Date updated</td>
-        </tr>
-        <tr>
-          <td width="150px">Comments</td>
-          <td>
-            <p>May be different from the update time of the resource itself, because that is the status of the collection and authoring.  This element is optional to allow for systems that may not know the value, however it SHOULD be populated if possible.</p>
           </td>
         </tr>
         <tr>
