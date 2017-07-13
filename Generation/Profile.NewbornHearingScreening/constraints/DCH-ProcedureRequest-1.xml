@@ -1,10 +1,10 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <meta>
-    <lastUpdated value="2017-06-13T13:03:44.311+01:00" />
+    <lastUpdated value="2017-07-13T10:57:48.946+01:00" />
     <tag>
       <system value="urn:hscic:publishOrder" />
-      <code value="8" />
+      <code value="9" />
     </tag>
   </meta>
   <url value="https://fhir.nhs.uk/StructureDefinition/DCH-ProcedureRequest-1" />
@@ -288,10 +288,6 @@
     </element>
     <element>
       <path value="ProcedureRequest.extension" />
-      <slicing>
-        <discriminator value="url" />
-        <rules value="open" />
-      </slicing>
       <short value="Additional Content defined by implementations" />
       <definition value="May be used to represent additional information that is not part of the basic definition of the resource. In order to make the use of extensions safe and manageable, there is a strict set of governance  applied to the definition and use of extensions. Though any implementer is allowed to define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension." />
       <comments value="There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone." />
@@ -306,44 +302,6 @@
       </base>
       <type>
         <code value="Extension" />
-      </type>
-      <condition value="ele-1" />
-      <constraint>
-        <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-expression">
-          <valueString value="children()" />
-        </extension>
-        <key value="ele-1" />
-        <severity value="error" />
-        <human value="All FHIR elements must have a @value or children" />
-        <xpath value="@value|f:*|h:div" />
-      </constraint>
-      <mapping>
-        <identity value="rim" />
-        <map value="n/a" />
-      </mapping>
-      <mapping>
-        <identity value="rim" />
-        <map value="N/A" />
-      </mapping>
-    </element>
-    <element>
-      <path value="ProcedureRequest.extension" />
-      <name value="consentStatus" />
-      <short value="The consent given for the Child Health Event" />
-      <definition value="The consent given for the Child Health Event." />
-      <comments value="There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone." />
-      <alias value="extensions" />
-      <alias value="user content" />
-      <min value="1" />
-      <max value="1" />
-      <base>
-        <path value="DomainResource.extension" />
-        <min value="0" />
-        <max value="*" />
-      </base>
-      <type>
-        <code value="Extension" />
-        <profile value="https://fhir.nhs.uk/StructureDefinition/Extension-DCH-ConsentStatusNewbornHearing-1" />
       </type>
       <condition value="ele-1" />
       <constraint>
@@ -2271,7 +2229,7 @@
       <comments value="Only used if not implicit in the code found in ProcedureRequest.type." />
       <requirements value="Knowing where the procedure is made is important for tracking if multiple sites are possible." />
       <min value="0" />
-      <max value="0" />
+      <max value="1" />
       <base>
         <path value="ProcedureRequest.bodySite" />
         <min value="0" />
@@ -2780,7 +2738,7 @@
       <definition value="The reason why the procedure is being proposed or ordered. This procedure request may be motivated by a Condition for instance." />
       <comments value="Not all terminology uses fit this general pattern. In some cases, models should not use CodeableConcept and use Coding directly and provide their own structure for managing text, codings, translations and the relationship between elements and pre- and post-coordination." />
       <min value="0" />
-      <max value="0" />
+      <max value="1" />
       <base>
         <path value="ProcedureRequest.reason[x]" />
         <min value="0" />
@@ -2837,7 +2795,7 @@
       <short value="When procedure should occur" />
       <definition value="The timing schedule for the proposed or ordered procedure. The Schedule data type allows many different expressions.  E.g. &quot;Every 8 hours&quot;; &quot;Three times a day&quot;; &quot;1/2 an hour before breakfast for 10 days from 23-Dec 2011:&quot;; &quot;15 Oct 2013, 17 Oct 2013 and 1 Nov 2013&quot;." />
       <min value="0" />
-      <max value="0" />
+      <max value="1" />
       <base>
         <path value="ProcedureRequest.scheduled[x]" />
         <min value="0" />
@@ -2881,7 +2839,7 @@
       <short value="Encounter request created during" />
       <definition value="The encounter within which the procedure proposal or request was created." />
       <min value="0" />
-      <max value="0" />
+      <max value="1" />
       <base>
         <path value="ProcedureRequest.encounter" />
         <min value="0" />
@@ -2889,7 +2847,7 @@
       </base>
       <type>
         <code value="Reference" />
-        <profile value="http://hl7.org/fhir/StructureDefinition/Encounter" />
+        <profile value="https://fhir.hl7.org.uk/StructureDefinition/CareConnect-DCH-Encounter-1" />
       </type>
       <condition value="ele-1" />
       <constraint>
@@ -3070,7 +3028,7 @@
       <short value="Who should perform the procedure" />
       <definition value="For example, the surgeon, anaethetist, endoscopist, etc." />
       <min value="0" />
-      <max value="0" />
+      <max value="1" />
       <base>
         <path value="ProcedureRequest.performer" />
         <min value="0" />
@@ -3078,19 +3036,11 @@
       </base>
       <type>
         <code value="Reference" />
-        <profile value="http://hl7.org/fhir/StructureDefinition/Practitioner" />
+        <profile value="https://fhir.hl7.org.uk/StructureDefinition/CareConnect-Organization-1" />
       </type>
       <type>
         <code value="Reference" />
-        <profile value="http://hl7.org/fhir/StructureDefinition/Organization" />
-      </type>
-      <type>
-        <code value="Reference" />
-        <profile value="http://hl7.org/fhir/StructureDefinition/Patient" />
-      </type>
-      <type>
-        <code value="Reference" />
-        <profile value="http://hl7.org/fhir/StructureDefinition/RelatedPerson" />
+        <profile value="https://fhir.hl7.org.uk/StructureDefinition/CareConnect-Practitioner-1" />
       </type>
       <condition value="ele-1" />
       <constraint>
@@ -3131,7 +3081,7 @@
       <definition value="The status of the order." />
       <comments value="Note that FHIR strings may not exceed 1MB in size" />
       <min value="0" />
-      <max value="0" />
+      <max value="1" />
       <base>
         <path value="ProcedureRequest.status" />
         <min value="0" />
@@ -3178,7 +3128,7 @@
       <definition value="Any other notes associated with this proposal or order - e.g. provider instructions." />
       <comments value="For systems that do not have structured annotations, they can simply communicate a single annotation with no author or time.  This element may need to be included in narrative because of the potential for modifying information.  *Annotations SHOULD NOT* be used to communicate &quot;modifying&quot; information that could be computable. (This is a SHOULD because enforcing user behavior is nearly impossible)." />
       <min value="0" />
-      <max value="0" />
+      <max value="1" />
       <base>
         <path value="ProcedureRequest.notes" />
         <min value="0" />
@@ -3426,7 +3376,7 @@
       <short value="Preconditions for procedure" />
       <definition value="If a CodeableConcept is present, it indicates the pre-condition for performing the procedure." />
       <min value="0" />
-      <max value="0" />
+      <max value="1" />
       <base>
         <path value="ProcedureRequest.asNeeded[x]" />
         <min value="0" />
@@ -3558,7 +3508,7 @@
       <definition value="The clinical priority associated with this order." />
       <comments value="Note that FHIR strings may not exceed 1MB in size" />
       <min value="0" />
-      <max value="0" />
+      <max value="1" />
       <base>
         <path value="ProcedureRequest.priority" />
         <min value="0" />
@@ -3602,25 +3552,6 @@
   <differential>
     <element>
       <path value="ProcedureRequest" />
-    </element>
-    <element>
-      <path value="ProcedureRequest.extension" />
-      <slicing>
-        <discriminator value="url" />
-        <rules value="open" />
-      </slicing>
-    </element>
-    <element>
-      <path value="ProcedureRequest.extension" />
-      <name value="consentStatus" />
-      <short value="The consent given for the Child Health Event" />
-      <definition value="The consent given for the Child Health Event." />
-      <min value="1" />
-      <max value="1" />
-      <type>
-        <code value="Extension" />
-        <profile value="https://fhir.nhs.uk/StructureDefinition/Extension-DCH-ConsentStatusNewbornHearing-1" />
-      </type>
     </element>
     <element>
       <path value="ProcedureRequest.identifier" />
@@ -3682,35 +3613,29 @@
     </element>
     <element>
       <path value="ProcedureRequest.bodySite" />
-      <max value="0" />
-    </element>
-    <element>
-      <path value="ProcedureRequest.reason[x]" />
-      <max value="0" />
-    </element>
-    <element>
-      <path value="ProcedureRequest.scheduled[x]" />
-      <max value="0" />
+      <max value="1" />
     </element>
     <element>
       <path value="ProcedureRequest.encounter" />
-      <max value="0" />
+      <type>
+        <code value="Reference" />
+        <profile value="https://fhir.hl7.org.uk/StructureDefinition/CareConnect-DCH-Encounter-1" />
+      </type>
     </element>
     <element>
       <path value="ProcedureRequest.performer" />
-      <max value="0" />
-    </element>
-    <element>
-      <path value="ProcedureRequest.status" />
-      <max value="0" />
+      <type>
+        <code value="Reference" />
+        <profile value="https://fhir.hl7.org.uk/StructureDefinition/CareConnect-Organization-1" />
+      </type>
+      <type>
+        <code value="Reference" />
+        <profile value="https://fhir.hl7.org.uk/StructureDefinition/CareConnect-Practitioner-1" />
+      </type>
     </element>
     <element>
       <path value="ProcedureRequest.notes" />
-      <max value="0" />
-    </element>
-    <element>
-      <path value="ProcedureRequest.asNeeded[x]" />
-      <max value="0" />
+      <max value="1" />
     </element>
     <element>
       <path value="ProcedureRequest.orderer" />
@@ -3718,10 +3643,6 @@
         <code value="Reference" />
         <profile value="https://fhir.hl7.org.uk/StructureDefinition/CareConnect-Practitioner-1" />
       </type>
-    </element>
-    <element>
-      <path value="ProcedureRequest.priority" />
-      <max value="0" />
     </element>
   </differential>
 </StructureDefinition>
