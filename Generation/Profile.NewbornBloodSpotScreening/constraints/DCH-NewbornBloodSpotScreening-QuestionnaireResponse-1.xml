@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <meta>
-    <lastUpdated value="2017-07-11T11:49:15.755+01:00" />
+    <lastUpdated value="2017-07-14T10:54:18.385+01:00" />
     <tag>
       <system value="urn:hscic:publishOrder" />
       <code value="5" />
@@ -5113,7 +5113,7 @@
       <alias value="Responses" />
       <alias value="Contents" />
       <min value="0" />
-      <max value="*" />
+      <max value="1" />
       <base>
         <path value="QuestionnaireResponse.group.question" />
         <min value="0" />
@@ -12950,6 +12950,7 @@
       </extension>
       <path value="QuestionnaireResponse.group.question" />
       <name value="siteCode" />
+      <max value="1" />
     </element>
     <element>
       <path value="QuestionnaireResponse.group.question.linkId" />
