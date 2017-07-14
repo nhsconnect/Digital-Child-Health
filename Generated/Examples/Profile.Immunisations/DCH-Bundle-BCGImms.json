@@ -15,16 +15,16 @@
         "id": "e9dbfd2a-5bdc-11e7-907b-a6006ad3dba0",
         "meta": {
           "profile": [
-            "https://fhir.nhs.uk/StructureDefinition/DCH-MessageHeader-1"
+            "https://fhir.nhs.uk/StructureDefinition/DCH-Immunisation-MessageHeader-1"
           ]
         },
         "extension": [
           {
-            "url": "https://fhir.nhs.uk/StructureDefinition/Extension-DCH-EventMessageType-1",
+            "url": "https://fhir.nhs.uk/StructureDefinition/Extension-DCH-MessageEventType-1",
             "valueCodeableConcept": {
               "coding": [
                 {
-                  "system": "https://fhir.nhs.uk/dch-messageeventtype-1",
+                  "system": "https://fhir.nhs.uk/DCH-MessageEventType-1",
                   "code": "new",
                   "display": "New event message"
                 }
@@ -132,7 +132,7 @@
         "id": "e9dbfea6-5bdc-11e7-907b-a6006ad3dba0",
         "meta": {
           "profile": [
-            "https://fhir.nhs.uk/StructureDefinition/DCH-QuestionnaireResponse-1"
+            "https://fhir.nhs.uk/StructureDefinition/DCH-Immunisation-QuestionnaireResponse-1"
           ]
         },
         "identifier": {
@@ -714,6 +714,15 @@
                 "display": "Consultation (procedure)"
               }
             ]
+          },
+          {
+            "coding": [
+              {
+                "system": "https://fhir.nhs.uk/DCH-ChildHealthEncounterType-1",
+                "code": "Immunisation: Immunisation Administration",
+                "display": "Immunisation: Immunisation Administration"
+              }
+            ]
           }
         ],
         "patient": {
@@ -766,7 +775,7 @@
         "id": "e9dc255c-5bdc-11e7-907b-a6006ad3dba0",
         "meta": {
           "profile": [
-            "https://fhir.hl7.org.uk/StructureDefinition/DCH-Appointment-1"
+            "https://fhir.nhs.uk/StructureDefinition/DCH-Appointment-1"
           ]
         },
         "identifier": [
@@ -851,7 +860,7 @@
         "id": "e9dc055e-5bdc-11e7-907b-a6006ad3dba0",
         "meta": {
           "profile": [
-            "https://fhir.hl7.org.uk/StructureDefinition/DCH-ProcedureRequest-1"
+            "https://fhir.nhs.uk/StructureDefinition/DCH-ProcedureRequest-1"
           ]
         },
         "extension": [

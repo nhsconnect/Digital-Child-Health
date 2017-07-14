@@ -1,7 +1,7 @@
 {
   "resourceType": "StructureDefinition",
   "meta": {
-    "lastUpdated": "2017-07-11T11:49:15.755+01:00",
+    "lastUpdated": "2017-07-14T10:54:18.385+01:00",
     "tag": [
       {
         "system": "urn:hscic:publishOrder",
@@ -9,7 +9,7 @@
       }
     ]
   },
-  "url": "https://fhir.hl7.org.uk/StructureDefinition/DCH-NewbornBloodSpotScreening-QuestionnaireResponse-1",
+  "url": "https://fhir.nhs.uk/StructureDefinition/DCH-NewbornBloodSpotScreening-QuestionnaireResponse-1",
   "version": "1.0.0",
   "name": "DCH-NewbornBloodSpotScreening-QuestionnaireResponse-1",
   "status": "draft",
@@ -6108,7 +6108,7 @@
           {
             "code": "Reference",
             "profile": [
-              "https://fhir.hl7.org.uk/StructureDefinition/CareConnect-DCH-Procedure-1"
+              "https://fhir.hl7.org.uk/StructureDefinition/CareConnect-DCH-NewbornBloodSpotScreening-Procedure-1"
             ]
           }
         ],
@@ -6726,7 +6726,7 @@
           "Contents"
         ],
         "min": 0,
-        "max": "*",
+        "max": "1",
         "base": {
           "path": "QuestionnaireResponse.group.question",
           "min": 0,
@@ -8958,7 +8958,7 @@
           {
             "code": "Reference",
             "profile": [
-              "https://fhir.hl7.org.uk/StructureDefinition/DCH-Specimen-1"
+              "https://fhir.nhs.uk/StructureDefinition/DCH-Specimen-1"
             ]
           }
         ],
@@ -11808,7 +11808,7 @@
           {
             "code": "Reference",
             "profile": [
-              "https://fhir.hl7.org.uk/StructureDefinition/DCH-DiagnosticReport-1"
+              "https://fhir.nhs.uk/StructureDefinition/DCH-NewbornBloodSpotScreening-DiagnosticReport-1"
             ]
           }
         ],
@@ -12357,7 +12357,7 @@
           {
             "code": "Reference",
             "profile": [
-              "https://fhir.hl7.org.uk/StructureDefinition/CareConnect-DCH-Procedure-1"
+              "https://fhir.hl7.org.uk/StructureDefinition/CareConnect-DCH-NewbornBloodSpotScreening-Procedure-1"
             ]
           }
         ],
@@ -12913,7 +12913,7 @@
           {
             "code": "Reference",
             "profile": [
-              "https://fhir.hl7.org.uk/StructureDefinition/CareConnect-DCH-Procedure-1"
+              "https://fhir.hl7.org.uk/StructureDefinition/CareConnect-DCH-NewbornBloodSpotScreening-Procedure-1"
             ]
           }
         ],
@@ -13469,7 +13469,7 @@
           {
             "code": "Reference",
             "profile": [
-              "https://fhir.hl7.org.uk/StructureDefinition/CareConnect-DCH-Procedure-1"
+              "https://fhir.hl7.org.uk/StructureDefinition/CareConnect-DCH-NewbornBloodSpotScreening-Procedure-1"
             ]
           }
         ],
@@ -14025,7 +14025,7 @@
           {
             "code": "Reference",
             "profile": [
-              "https://fhir.hl7.org.uk/StructureDefinition/CareConnect-DCH-Procedure-1"
+              "https://fhir.hl7.org.uk/StructureDefinition/CareConnect-DCH-NewbornBloodSpotScreening-Procedure-1"
             ]
           }
         ],
@@ -14581,7 +14581,7 @@
           {
             "code": "Reference",
             "profile": [
-              "https://fhir.hl7.org.uk/StructureDefinition/CareConnect-DCH-Procedure-1"
+              "https://fhir.hl7.org.uk/StructureDefinition/CareConnect-DCH-NewbornBloodSpotScreening-Procedure-1"
             ]
           }
         ],
@@ -15137,7 +15137,7 @@
           {
             "code": "Reference",
             "profile": [
-              "https://fhir.hl7.org.uk/StructureDefinition/CareConnect-DCH-Procedure-1"
+              "https://fhir.hl7.org.uk/StructureDefinition/CareConnect-DCH-NewbornBloodSpotScreening-Procedure-1"
             ]
           }
         ],
@@ -15693,7 +15693,7 @@
           {
             "code": "Reference",
             "profile": [
-              "https://fhir.hl7.org.uk/StructureDefinition/CareConnect-DCH-Procedure-1"
+              "https://fhir.hl7.org.uk/StructureDefinition/CareConnect-DCH-NewbornBloodSpotScreening-Procedure-1"
             ]
           }
         ],
@@ -16249,7 +16249,7 @@
           {
             "code": "Reference",
             "profile": [
-              "https://fhir.hl7.org.uk/StructureDefinition/CareConnect-DCH-Procedure-1"
+              "https://fhir.hl7.org.uk/StructureDefinition/CareConnect-DCH-NewbornBloodSpotScreening-Procedure-1"
             ]
           }
         ],
@@ -16805,7 +16805,7 @@
           {
             "code": "Reference",
             "profile": [
-              "https://fhir.hl7.org.uk/StructureDefinition/CareConnect-DCH-Procedure-1"
+              "https://fhir.hl7.org.uk/StructureDefinition/CareConnect-DCH-NewbornBloodSpotScreening-Procedure-1"
             ]
           }
         ],
@@ -17052,7 +17052,7 @@
           {
             "code": "Reference",
             "profile": [
-              "https://fhir.hl7.org.uk/StructureDefinition/CareConnect-DCH-Procedure-1"
+              "https://fhir.hl7.org.uk/StructureDefinition/CareConnect-DCH-NewbornBloodSpotScreening-Procedure-1"
             ]
           }
         ]
@@ -17115,7 +17115,8 @@
           }
         ],
         "path": "QuestionnaireResponse.group.question",
-        "name": "siteCode"
+        "name": "siteCode",
+        "max": "1"
       },
       {
         "path": "QuestionnaireResponse.group.question.linkId",
@@ -17236,7 +17237,7 @@
           {
             "code": "Reference",
             "profile": [
-              "https://fhir.hl7.org.uk/StructureDefinition/DCH-Specimen-1"
+              "https://fhir.nhs.uk/StructureDefinition/DCH-Specimen-1"
             ]
           }
         ]
@@ -17421,7 +17422,7 @@
           {
             "code": "Reference",
             "profile": [
-              "https://fhir.hl7.org.uk/StructureDefinition/DCH-DiagnosticReport-1"
+              "https://fhir.nhs.uk/StructureDefinition/DCH-NewbornBloodSpotScreening-DiagnosticReport-1"
             ]
           }
         ]
@@ -17465,7 +17466,7 @@
           {
             "code": "Reference",
             "profile": [
-              "https://fhir.hl7.org.uk/StructureDefinition/CareConnect-DCH-Procedure-1"
+              "https://fhir.hl7.org.uk/StructureDefinition/CareConnect-DCH-NewbornBloodSpotScreening-Procedure-1"
             ]
           }
         ],
@@ -17518,7 +17519,7 @@
           {
             "code": "Reference",
             "profile": [
-              "https://fhir.hl7.org.uk/StructureDefinition/CareConnect-DCH-Procedure-1"
+              "https://fhir.hl7.org.uk/StructureDefinition/CareConnect-DCH-NewbornBloodSpotScreening-Procedure-1"
             ]
           }
         ],
@@ -17571,7 +17572,7 @@
           {
             "code": "Reference",
             "profile": [
-              "https://fhir.hl7.org.uk/StructureDefinition/CareConnect-DCH-Procedure-1"
+              "https://fhir.hl7.org.uk/StructureDefinition/CareConnect-DCH-NewbornBloodSpotScreening-Procedure-1"
             ]
           }
         ],
@@ -17624,7 +17625,7 @@
           {
             "code": "Reference",
             "profile": [
-              "https://fhir.hl7.org.uk/StructureDefinition/CareConnect-DCH-Procedure-1"
+              "https://fhir.hl7.org.uk/StructureDefinition/CareConnect-DCH-NewbornBloodSpotScreening-Procedure-1"
             ]
           }
         ],
@@ -17677,7 +17678,7 @@
           {
             "code": "Reference",
             "profile": [
-              "https://fhir.hl7.org.uk/StructureDefinition/CareConnect-DCH-Procedure-1"
+              "https://fhir.hl7.org.uk/StructureDefinition/CareConnect-DCH-NewbornBloodSpotScreening-Procedure-1"
             ]
           }
         ],
@@ -17730,7 +17731,7 @@
           {
             "code": "Reference",
             "profile": [
-              "https://fhir.hl7.org.uk/StructureDefinition/CareConnect-DCH-Procedure-1"
+              "https://fhir.hl7.org.uk/StructureDefinition/CareConnect-DCH-NewbornBloodSpotScreening-Procedure-1"
             ]
           }
         ],
@@ -17783,7 +17784,7 @@
           {
             "code": "Reference",
             "profile": [
-              "https://fhir.hl7.org.uk/StructureDefinition/CareConnect-DCH-Procedure-1"
+              "https://fhir.hl7.org.uk/StructureDefinition/CareConnect-DCH-NewbornBloodSpotScreening-Procedure-1"
             ]
           }
         ],
@@ -17836,7 +17837,7 @@
           {
             "code": "Reference",
             "profile": [
-              "https://fhir.hl7.org.uk/StructureDefinition/CareConnect-DCH-Procedure-1"
+              "https://fhir.hl7.org.uk/StructureDefinition/CareConnect-DCH-NewbornBloodSpotScreening-Procedure-1"
             ]
           }
         ],
@@ -17889,7 +17890,7 @@
           {
             "code": "Reference",
             "profile": [
-              "https://fhir.hl7.org.uk/StructureDefinition/CareConnect-DCH-Procedure-1"
+              "https://fhir.hl7.org.uk/StructureDefinition/CareConnect-DCH-NewbornBloodSpotScreening-Procedure-1"
             ]
           }
         ],

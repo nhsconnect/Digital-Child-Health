@@ -1777,7 +1777,7 @@
           <td>
             <a href="http://www.hl7.org/fhir/DSTU2/conformance-rules.html#conformance">Control</a>
           </td>
-          <td>1..*</td>
+          <td>0..*</td>
         </tr>
         <tr>
           <td>
@@ -1925,7 +1925,7 @@
           <td>
             <a href="http://www.hl7.org/fhir/DSTU2/conformance-rules.html#conformance">Control</a>
           </td>
-          <td>1..*</td>
+          <td>0..*</td>
         </tr>
         <tr>
           <td>
@@ -2067,17 +2067,39 @@
         </tr>
         <tr>
           <td width="150px">Definition</td>
-          <td></td>
+          <td>
+            <p>The outcome of the procedure - did it resolve reasons for the procedure being performed?</p>
+          </td>
         </tr>
         <tr>
           <td>
             <a href="http://www.hl7.org/fhir/DSTU2/conformance-rules.html#conformance">Control</a>
           </td>
-          <td>1..*</td>
+          <td>0..1 ?</td>
+        </tr>
+        <tr>
+          <td>
+            <a href="http://www.hl7.org/fhir/DSTU2/terminologies.html">Binding</a>
+          </td>
+          <td>
+            <div class="binding-description" xmlns="http://www.w3.org/1999/xhtml">
+              <p>An outcome of a procedure - whether it was resolved or otherwise.</p>
+              <p>For example codes, see <a href="http://hl7.org/fhir/DSTU2/valueset-procedure-outcome.html">http://hl7.org/fhir/DSTU2/valueset-procedure-outcome.html</a></p>; other codes may be used where these codes are not suitable</div>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <a href="http://www.hl7.org/fhir/DSTU2/datatypes.html">Type</a>
+          </td>
+          <td>
+            <a href="http://www.hl7.org/fhir/DSTU2/datatypes.html#codeableconcept" xmlns="http://www.w3.org/1999/xhtml">CodeableConcept</a>
+          </td>
         </tr>
         <tr>
           <td width="150px">Comments</td>
-          <td></td>
+          <td>
+            <p>If outcome contains narrative text only, it can be captured using the CodeableConcept.text.</p>
+          </td>
         </tr>
         <tr>
           <td colspan="2" class="structure">
@@ -2381,7 +2403,7 @@
           <td>
             <a href="http://www.hl7.org/fhir/DSTU2/conformance-rules.html#conformance">Control</a>
           </td>
-          <td>1..*</td>
+          <td>0..*</td>
         </tr>
         <tr>
           <td>

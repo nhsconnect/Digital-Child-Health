@@ -9,7 +9,7 @@
       }
     ]
   },
-  "url": "https://fhir.hl7.org.uk/StructureDefinition/DCH-AccidentsAndInjuries-QuestionnaireResponse-1",
+  "url": "https://fhir.nhs.uk/StructureDefinition/DCH-AccidentsAndInjuries-QuestionnaireResponse-1",
   "version": "1.0.0",
   "name": "DCH-AccidentsAndInjuries-QuestionnaireResponse-1",
   "status": "draft",
@@ -8756,7 +8756,7 @@
           {
             "code": "Reference",
             "profile": [
-              "https://fhir.hl7.org.uk/StructureDefinition/DCH-RelatedPerson-1"
+              "https://fhir.nhs.uk/StructureDefinition/DCH-RelatedPerson-1"
             ]
           }
         ],
@@ -9305,7 +9305,7 @@
           {
             "code": "Reference",
             "profile": [
-              "https://fhir.hl7.org.uk/StructureDefinition/DCH-RelatedPerson-1"
+              "https://fhir.nhs.uk/StructureDefinition/DCH-RelatedPerson-1"
             ]
           }
         ],
@@ -10952,7 +10952,7 @@
           {
             "code": "Reference",
             "profile": [
-              "https://fhir.hl7.org.uk/StructureDefinition/DCH-RelatedPerson-1"
+              "https://fhir.nhs.uk/StructureDefinition/DCH-RelatedPerson-1"
             ]
           }
         ]
@@ -10998,7 +10998,7 @@
           {
             "code": "Reference",
             "profile": [
-              "https://fhir.hl7.org.uk/StructureDefinition/DCH-RelatedPerson-1"
+              "https://fhir.nhs.uk/StructureDefinition/DCH-RelatedPerson-1"
             ]
           }
         ],

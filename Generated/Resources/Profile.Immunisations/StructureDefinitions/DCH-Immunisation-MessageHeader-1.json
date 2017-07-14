@@ -446,7 +446,7 @@
       },
       {
         "path": "MessageHeader.extension",
-        "name": "eventMessageType",
+        "name": "messageEventType",
         "short": "The type of event applicable to the Child Health event message",
         "definition": "The type of event applicable to the Child Health event message.",
         "comments": "There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone.",
@@ -465,7 +465,7 @@
           {
             "code": "Extension",
             "profile": [
-              "https://fhir.nhs.uk/StructureDefinition/Extension-DCH-EventMessageType-1"
+              "https://fhir.nhs.uk/StructureDefinition/Extension-DCH-MessageEventType-1"
             ]
           }
         ],
@@ -4719,7 +4719,7 @@
           {
             "code": "Reference",
             "profile": [
-              "https://fhir.hl7.org.uk/StructureDefinition/DCH-Immunisation-QuestionnaireResponse-1"
+              "https://fhir.nhs.uk/StructureDefinition/DCH-Immunisation-QuestionnaireResponse-1"
             ]
           },
           {
@@ -4980,14 +4980,14 @@
       },
       {
         "path": "MessageHeader.extension",
-        "name": "eventMessageType",
+        "name": "messageEventType",
         "min": 1,
         "max": "1",
         "type": [
           {
             "code": "Extension",
             "profile": [
-              "https://fhir.nhs.uk/StructureDefinition/Extension-DCH-EventMessageType-1"
+              "https://fhir.nhs.uk/StructureDefinition/Extension-DCH-MessageEventType-1"
             ]
           }
         ]
@@ -5081,7 +5081,7 @@
           {
             "code": "Reference",
             "profile": [
-              "https://fhir.hl7.org.uk/StructureDefinition/DCH-Immunisation-QuestionnaireResponse-1"
+              "https://fhir.nhs.uk/StructureDefinition/DCH-Immunisation-QuestionnaireResponse-1"
             ]
           },
           {

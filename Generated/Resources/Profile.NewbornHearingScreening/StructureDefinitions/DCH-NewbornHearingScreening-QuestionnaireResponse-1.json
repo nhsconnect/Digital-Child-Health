@@ -9,7 +9,7 @@
       }
     ]
   },
-  "url": "https://fhir.hl7.org.uk/StructureDefinition/DCH-NewbornHearingScreening-QuestionnaireResponse-1",
+  "url": "https://fhir.nhs.uk/StructureDefinition/DCH-NewbornHearingScreening-QuestionnaireResponse-1",
   "version": "1.0.0",
   "name": "DCH-NewbornHearingScreening-QuestionnaireResponse-1",
   "status": "draft",
@@ -15545,7 +15545,7 @@
           {
             "code": "Reference",
             "profile": [
-              "https://fhir.hl7.org.uk/StructureDefinition/CareConnect-DCH-Procedure-1"
+              "https://fhir.hl7.org.uk/StructureDefinition/CareConnect-DCH-NewbornHearingScreening-Procedure-1"
             ]
           }
         ],
@@ -16096,7 +16096,7 @@
           {
             "code": "Reference",
             "profile": [
-              "https://fhir.hl7.org.uk/StructureDefinition/CareConnect-DCH-Procedure-1"
+              "https://fhir.hl7.org.uk/StructureDefinition/CareConnect-DCH-NewbornHearingScreening-Procedure-1"
             ]
           }
         ],
@@ -16650,7 +16650,7 @@
           {
             "code": "Reference",
             "profile": [
-              "https://fhir.hl7.org.uk/StructureDefinition/CareConnect-DCH-Procedure-1"
+              "https://fhir.hl7.org.uk/StructureDefinition/CareConnect-DCH-NewbornHearingScreening-Procedure-1"
             ]
           }
         ],
@@ -17198,7 +17198,7 @@
           {
             "code": "Reference",
             "profile": [
-              "https://fhir.hl7.org.uk/StructureDefinition/CareConnect-DCH-Procedure-1"
+              "https://fhir.hl7.org.uk/StructureDefinition/CareConnect-DCH-NewbornHearingScreening-Procedure-1"
             ]
           }
         ],
@@ -17753,7 +17753,7 @@
           {
             "code": "Reference",
             "profile": [
-              "https://fhir.hl7.org.uk/StructureDefinition/CareConnect-DCH-Procedure-1"
+              "https://fhir.hl7.org.uk/StructureDefinition/CareConnect-DCH-NewbornHearingScreening-Procedure-1"
             ]
           }
         ],
@@ -18308,7 +18308,7 @@
           {
             "code": "Reference",
             "profile": [
-              "https://fhir.hl7.org.uk/StructureDefinition/CareConnect-DCH-Procedure-1"
+              "https://fhir.hl7.org.uk/StructureDefinition/CareConnect-DCH-NewbornHearingScreening-Procedure-1"
             ]
           }
         ],
@@ -21056,7 +21056,7 @@
           {
             "code": "Reference",
             "profile": [
-              "https://fhir.hl7.org.uk/StructureDefinition/CareConnect-DCH-Procedure-1"
+              "https://fhir.hl7.org.uk/StructureDefinition/CareConnect-DCH-NewbornHearingScreening-Procedure-1"
             ]
           }
         ]
@@ -21104,7 +21104,7 @@
           {
             "code": "Reference",
             "profile": [
-              "https://fhir.hl7.org.uk/StructureDefinition/CareConnect-DCH-Procedure-1"
+              "https://fhir.hl7.org.uk/StructureDefinition/CareConnect-DCH-NewbornHearingScreening-Procedure-1"
             ]
           }
         ]
@@ -21155,7 +21155,7 @@
           {
             "code": "Reference",
             "profile": [
-              "https://fhir.hl7.org.uk/StructureDefinition/CareConnect-DCH-Procedure-1"
+              "https://fhir.hl7.org.uk/StructureDefinition/CareConnect-DCH-NewbornHearingScreening-Procedure-1"
             ]
           }
         ]
@@ -21200,7 +21200,7 @@
           {
             "code": "Reference",
             "profile": [
-              "https://fhir.hl7.org.uk/StructureDefinition/CareConnect-DCH-Procedure-1"
+              "https://fhir.hl7.org.uk/StructureDefinition/CareConnect-DCH-NewbornHearingScreening-Procedure-1"
             ]
           }
         ],
@@ -21252,7 +21252,7 @@
           {
             "code": "Reference",
             "profile": [
-              "https://fhir.hl7.org.uk/StructureDefinition/CareConnect-DCH-Procedure-1"
+              "https://fhir.hl7.org.uk/StructureDefinition/CareConnect-DCH-NewbornHearingScreening-Procedure-1"
             ]
           }
         ],
@@ -21304,7 +21304,7 @@
           {
             "code": "Reference",
             "profile": [
-              "https://fhir.hl7.org.uk/StructureDefinition/CareConnect-DCH-Procedure-1"
+              "https://fhir.hl7.org.uk/StructureDefinition/CareConnect-DCH-NewbornHearingScreening-Procedure-1"
             ]
           }
         ],

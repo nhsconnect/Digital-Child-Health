@@ -9,7 +9,7 @@
       }
     ]
   },
-  "url": "https://fhir.hl7.org.uk/StructureDefinition/DCH-Commentary-Basic-1",
+  "url": "https://fhir.nhs.uk/StructureDefinition/DCH-Commentary-Basic-1",
   "name": "DCH-Commentary-Basic-1",
   "status": "draft",
   "date": "2017-06-05T13:43:16.7558215+01:00",

@@ -20,11 +20,11 @@
         },
         "extension": [
           {
-            "url": "https://fhir.nhs.uk/StructureDefinition/Extension-DCH-EventMessageType-1",
+            "url": "https://fhir.nhs.uk/StructureDefinition/Extension-DCH-MessageEventType-1",
             "valueCodeableConcept": {
               "coding": [
                 {
-                  "system": "https://fhir.nhs.uk/dch-messageeventtype-1",
+                  "system": "https://fhir.nhs.uk/DCH-MessageEventType-1",
                   "code": "new",
                   "display": "New event message"
                 }

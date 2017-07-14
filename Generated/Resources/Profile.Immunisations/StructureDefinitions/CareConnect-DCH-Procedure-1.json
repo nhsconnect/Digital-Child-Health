@@ -1,7 +1,7 @@
 {
   "resourceType": "StructureDefinition",
   "meta": {
-    "lastUpdated": "2017-06-30T16:35:41.742+01:00",
+    "lastUpdated": "2017-07-14T11:55:07.997+01:00",
     "tag": [
       {
         "system": "urn:hscic:publishOrder",
@@ -8618,7 +8618,7 @@
         "path": "Procedure.encounter",
         "short": "The encounter associated with the procedure",
         "definition": "The encounter during which the procedure was performed.",
-        "min": 1,
+        "min": 0,
         "max": "1",
         "base": {
           "path": "Procedure.encounter",
@@ -8874,7 +8874,7 @@
         "short": "Where the procedure happened",
         "definition": "The location where the procedure actually happened.  E.g. a newborn at home, a tracheostomy at a restaurant.",
         "requirements": "Ties a procedure to where the records are likely kept.",
-        "min": 1,
+        "min": 0,
         "max": "1",
         "base": {
           "path": "Procedure.location",
@@ -9122,7 +9122,7 @@
         "short": "The result of procedure",
         "definition": "The outcome of the procedure - did it resolve reasons for the procedure being performed?",
         "comments": "If outcome contains narrative text only, it can be captured using the CodeableConcept.text.",
-        "min": 1,
+        "min": 0,
         "max": "1",
         "base": {
           "path": "Procedure.outcome",
@@ -12789,7 +12789,7 @@
         "path": "Procedure.request",
         "short": "A request for this procedure",
         "definition": "A reference to a resource that contains details of the request for this procedure.",
-        "min": 1,
+        "min": 0,
         "max": "1",
         "base": {
           "path": "Procedure.request",
@@ -14867,7 +14867,6 @@
       },
       {
         "path": "Procedure.encounter",
-        "min": 1,
         "type": [
           {
             "code": "Reference",
@@ -14883,7 +14882,6 @@
       },
       {
         "path": "Procedure.location",
-        "min": 1,
         "type": [
           {
             "code": "Reference",
@@ -14895,10 +14893,6 @@
       },
       {
         "path": "Procedure.location.reference",
-        "min": 1
-      },
-      {
-        "path": "Procedure.outcome",
         "min": 1
       },
       {
@@ -15077,7 +15071,6 @@
       },
       {
         "path": "Procedure.request",
-        "min": 1,
         "type": [
           {
             "code": "Reference",
