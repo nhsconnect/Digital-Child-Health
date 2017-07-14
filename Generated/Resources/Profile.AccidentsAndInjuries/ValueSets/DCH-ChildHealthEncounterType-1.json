@@ -1,0 +1,175 @@
+{
+  "resourceType": "ValueSet",
+  "meta": {
+    "lastUpdated": "2016-08-03T00:00:00+01:00"
+  },
+  "url": "https://fhir.nhs.uk/ValueSet/DCH-ChildHealthEncounterType-1",
+  "name": "Child Health Encounter Type",
+  "status": "active",
+  "description": "The Child Health Event applicable to the encounter. The values below have been listed for example only.",
+  "compose": {
+    "include": [
+      {
+        "system": "https://fhir.nhs.uk/DCH-ChildHealthEncounterType-1",
+        "concept": [
+          {
+            "code": "Birth: Birth Details",
+            "display": "Birth: Birth Details"
+          },
+          {
+            "code": "Assessment: APGAR",
+            "display": "Assessment: APGAR"
+          },
+          {
+            "code": "Demographics: Core",
+            "display": "Demographics: Core"
+          },
+          {
+            "code": "Demographics: Related Persons",
+            "display": "Demographics: Related Persons"
+          },
+          {
+            "code": "Birth: Discharge",
+            "display": "Birth: Discharge"
+          },
+          {
+            "code": "Intervention: Vitamin K",
+            "display": "Intervention: Vitamin K"
+          },
+          {
+            "code": "HCP Clinical Intervention: Newborn Physical Examination",
+            "display": "HCP Clinical Intervention: Newborn Physical Examination"
+          },
+          {
+            "code": "Physical Examination: NIPE",
+            "display": "Physical Examination: NIPE"
+          },
+          {
+            "code": "Medical History: Risk Factors",
+            "display": "Medical History: Risk Factors"
+          },
+          {
+            "code": "HCP Clinical Intervention: Newborn Blood Spot Screening",
+            "display": "HCP Clinical Intervention: Newborn Blood Spot Screening"
+          },
+          {
+            "code": "Screening: Blood Spot",
+            "display": "Screening: Blood Spot"
+          },
+          {
+            "code": "HCP Clinical Intervention: Newborn Hearing Screening",
+            "display": "HCP Clinical Intervention: Newborn Hearing Screening"
+          },
+          {
+            "code": "Screening: Hearing",
+            "display": "Screening: Hearing"
+          },
+          {
+            "code": "HCP Clinical Intervention: 6-8 week review",
+            "display": "HCP Clinical Intervention: 6-8 week review"
+          },
+          {
+            "code": "Measurements",
+            "display": "Measurements"
+          },
+          {
+            "code": "Breastfeeding Status: Breastfeeding Status",
+            "display": "Breastfeeding Status: Breastfeeding Status"
+          },
+          {
+            "code": "Physical Examination: NIPE",
+            "display": "Physical Examination: NIPE"
+          },
+          {
+            "code": "HCP Clinical Intervention: BCG immunisation",
+            "display": "HCP Clinical Intervention: BCG immunisation"
+          },
+          {
+            "code": "Indicators: BCG",
+            "display": "Indicators: BCG"
+          },
+          {
+            "code": "Immunisation: Immunisation Adminstration",
+            "display": "Immunisation: Immunisation Adminstration"
+          },
+          {
+            "code": "HCP Clinical Intervention: Hep B birth",
+            "display": "HCP Clinical Intervention: Hep B birth"
+          },
+          {
+            "code": "Indicators: Hep B",
+            "display": "Indicators: Hep B"
+          },
+          {
+            "code": "HCP Clinical Intervention: Hep B 4 weeks",
+            "display": "HCP Clinical Intervention: Hep B 4 weeks"
+          },
+          {
+            "code": "HCP Clinical Intervention: Hep B 8 weeks",
+            "display": "HCP Clinical Intervention: Hep B 8 weeks"
+          },
+          {
+            "code": "HCP Clinical Intervention: Hep B 12 months",
+            "display": "HCP Clinical Intervention: Hep B 12 months"
+          },
+          {
+            "code": "HCP Clinical Intervention: 8 weeks imms",
+            "display": "HCP Clinical Intervention: 8 weeks imms"
+          },
+          {
+            "code": "HCP Clinical Intervention: 12 weeks imms",
+            "display": "HCP Clinical Intervention: 12 weeks imms"
+          },
+          {
+            "code": "HCP Clinical Intervention: 16 weeks imms",
+            "display": "HCP Clinical Intervention: 16 weeks imms"
+          },
+          {
+            "code": "HCP Clinical Intervention: MMR",
+            "display": "HCP Clinical Intervention: MMR"
+          },
+          {
+            "code": "HCP Clinical Intervention: Pre-School Booster",
+            "display": "HCP Clinical Intervention: Pre-School Booster"
+          },
+          {
+            "code": "HCP Clinical Intervention: HPV first imms",
+            "display": "HCP Clinical Intervention: HPV first imms"
+          },
+          {
+            "code": "HCP Clinical Intervention: HPV second imms",
+            "display": "HCP Clinical Intervention: HPV second imms"
+          },
+          {
+            "code": "HCP Clinical Intervention: Teenage Booster",
+            "display": "HCP Clinical Intervention: Teenage Booster"
+          },
+          {
+            "code": "HCP Clinical Intervention: Influenza 2 years",
+            "display": "HCP Clinical Intervention: Influenza 2 years"
+          },
+          {
+            "code": "HCP Clinical Intervention: Influenza 3 years",
+            "display": "HCP Clinical Intervention: Influenza 3 years"
+          },
+          {
+            "code": "HCP Clinical Intervention: Influenza 4 years",
+            "display": "HCP Clinical Intervention: Influenza 4 years"
+          },
+          {
+            "code": "HCP Clinical Intervention: Influenza year 1",
+            "display": "HCP Clinical Intervention: Influenza year 1"
+          },
+          {
+            "code": "HCP Clinical Intervention: Influenza year 2",
+            "display": "HCP Clinical Intervention: Influenza year 2"
+          },
+          {
+            "code": "HCP Clinical Intervention: Influenza year 3",
+            "display": "HCP Clinical Intervention: Influenza year 3"
+          }
+        ]
+      }
+    ]
+  }
+}
