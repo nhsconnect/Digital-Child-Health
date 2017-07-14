@@ -14,10 +14,10 @@
 				<meta>
 					<profile value="https://fhir.nhs.uk/StructureDefinition/DCH-MessageHeader-1"/>
 				</meta>
-				<extension url="https://fhir.nhs.uk/StructureDefinition/Extension-DCH-EventMessageType-1">
+				<extension url="https://fhir.nhs.uk/StructureDefinition/Extension-DCH-MessageEventType-1">
 					<valueCodeableConcept>
 						<coding>
-							<system value="https://fhir.nhs.uk/dch-messageeventtype-1"/>
+							<system value="https://fhir.nhs.uk/DCH-MessageEventType-1"/>
 							<code value="new"/>
 							<display value="New event message"/>
 						</coding>
