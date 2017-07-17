@@ -1,0 +1,1 @@
+This DiagnosticReport resource has been constrained to represent a Newborn Blood Spot screening outcome.
