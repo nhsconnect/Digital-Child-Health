@@ -1,1 +1,0 @@
-This DiagnosticReport resource has been constrained to represent a Blood Spot Test result.

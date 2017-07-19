@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <meta>
-    <lastUpdated value="2017-07-13T11:27:43.309+01:00" />
+    <lastUpdated value="2017-07-18T09:14:59.646+01:00" />
     <tag>
       <system value="urn:hscic:publishOrder" />
       <code value="6" />
@@ -4328,8 +4328,8 @@
     </element>
     <element>
       <path value="Encounter.participant" />
-      <short value="Participant in the encounter, this will be the practitioner that has responsibility for overseeing a patient's care during a patient encounter" />
-      <definition value="Participant in the encounter, this will be the practitioner that has responsibility for overseeing a patient's care during a patient encounter." />
+      <short value="Participant in the encounter, this will be the principal or primary performer of the act" />
+      <definition value="Participant in the encounter, this will be the principal or primary performer of the act." />
       <min value="0" />
       <max value="1" />
       <base>
@@ -4818,7 +4818,7 @@
       <type>
         <code value="code" />
       </type>
-      <fixedCode value="ATND" />
+      <fixedCode value="PPRF" />
       <condition value="ele-1" />
       <constraint>
         <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-expression">
@@ -4853,8 +4853,8 @@
       <definition value="A representation of the meaning of the code in the system, following the rules of the system." />
       <comments value="Note that FHIR strings may not exceed 1MB in size" />
       <requirements value="Need to be able to carry a human-readable meaning of the code for readers that do not know  the system." />
-      <min value="0" />
-      <max value="0" />
+      <min value="1" />
+      <max value="1" />
       <base>
         <path value="Coding.display" />
         <min value="0" />
@@ -4863,7 +4863,7 @@
       <type>
         <code value="string" />
       </type>
-      <fixedString value="attender" />
+      <fixedString value="primary performer" />
       <condition value="ele-1" />
       <constraint>
         <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-expression">
@@ -13652,8 +13652,8 @@
     </element>
     <element>
       <path value="Encounter.participant" />
-      <short value="Participant in the encounter, this will be the practitioner that has responsibility for overseeing a patient's care during a patient encounter" />
-      <definition value="Participant in the encounter, this will be the practitioner that has responsibility for overseeing a patient's care during a patient encounter." />
+      <short value="Participant in the encounter, this will be the principal or primary performer of the act" />
+      <definition value="Participant in the encounter, this will be the principal or primary performer of the act." />
       <max value="1" />
     </element>
     <element>
@@ -13678,12 +13678,12 @@
     <element>
       <path value="Encounter.participant.type.coding.code" />
       <min value="1" />
-      <fixedCode value="ATND" />
+      <fixedCode value="PPRF" />
     </element>
     <element>
       <path value="Encounter.participant.type.coding.display" />
-      <max value="0" />
-      <fixedString value="attender" />
+      <min value="1" />
+      <fixedString value="primary performer" />
     </element>
     <element>
       <path value="Encounter.participant.type.coding.userSelected" />

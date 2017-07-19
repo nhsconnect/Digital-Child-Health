@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <meta>
-    <lastUpdated value="2017-07-14T12:15:10.717+01:00" />
+    <lastUpdated value="2017-07-18T19:03:09.048+01:00" />
     <tag>
       <system value="urn:hscic:publishOrder" />
       <code value="12" />
@@ -3178,7 +3178,7 @@
       <definition value="Details concerning a test or procedure requested." />
       <comments value="Note: Usually there is one test request for each result, however in some circumstances multiple test requests may be represented using a single test result resource. Note that there are also cases where one request leads to multiple reports." />
       <requirements value="Need to be able to track completion of requests based on reports issued and also to report what diagnostic tests were requested (not always the same as what is delivered)." />
-      <min value="1" />
+      <min value="0" />
       <max value="1" />
       <base>
         <path value="DiagnosticReport.request" />
@@ -3369,7 +3369,7 @@
       <definition value="Details about the specimens on which this diagnostic report is based." />
       <comments value="If the specimen is sufficiently specified with a code in the test result name, then this additional data may be redundant. If there are multiple specimens, these may be represented per Observation or group." />
       <requirements value="Need to be able to report information about the collected specimens on which the report is based." />
-      <min value="1" />
+      <min value="0" />
       <max value="1" />
       <base>
         <path value="DiagnosticReport.specimen" />
@@ -5219,7 +5219,6 @@
     </element>
     <element>
       <path value="DiagnosticReport.request" />
-      <min value="1" />
       <max value="1" />
       <type>
         <code value="Reference" />
@@ -5232,7 +5231,6 @@
     </element>
     <element>
       <path value="DiagnosticReport.specimen" />
-      <min value="1" />
       <max value="1" />
       <type>
         <code value="Reference" />

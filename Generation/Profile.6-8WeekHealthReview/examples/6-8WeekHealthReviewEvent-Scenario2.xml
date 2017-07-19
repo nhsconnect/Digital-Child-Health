@@ -16,7 +16,7 @@
 				</meta>
 				<timestamp value="2012-02-24T14:00:00+00:00"/>
 				<event>
-					<system value="https://fhir.nhs.uk/dch-childhealtheventtype-1"/>
+					<system value="https://fhir.nhs.uk/DCH-ChildHealthEventType-1"/>
 					<code value="6-8 Week Health Review"/>
 					<display value="6-8 Week Health Review"/>
 				</event>

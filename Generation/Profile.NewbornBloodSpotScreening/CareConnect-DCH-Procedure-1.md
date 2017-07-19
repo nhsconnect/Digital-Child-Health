@@ -1,1 +1,0 @@
-This Procedure resource records an action that is or was performed on a patient, with further constraints applied for a procedure performed during a Child Health event.

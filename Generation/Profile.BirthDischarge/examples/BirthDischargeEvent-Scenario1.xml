@@ -15,7 +15,7 @@
 				</meta>
 				<timestamp value="2012-01-04T16:15:00+00:00"/>
 				<event>
-					<system value="https://fhir.nhs.uk/dch-childhealtheventtype-1"/>
+					<system value="https://fhir.nhs.uk/DCH-ChildHealthEventType-1"/>
 					<code value="Birth: Discharge"/>
 					<display value="Birth: Discharge"/>
 				</event>

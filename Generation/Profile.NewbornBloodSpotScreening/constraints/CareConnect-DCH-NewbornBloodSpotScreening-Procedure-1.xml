@@ -1,7 +1,7 @@
-<?xml version="1.0" encoding="utf-8"?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <meta>
-    <lastUpdated value="2017-07-14T11:44:48.135+01:00" />
+    <lastUpdated value="2017-07-18T18:50:43.762+01:00" />
     <tag>
       <system value="urn:hscic:publishOrder" />
       <code value="8" />
@@ -5461,7 +5461,7 @@
       <path value="Procedure.performer" />
       <short value="The people who performed the procedure" />
       <definition value="Limited to 'real' people rather than equipment." />
-      <min value="1" />
+      <min value="0" />
       <max value="1" />
       <base>
         <path value="Procedure.performer" />
@@ -6688,7 +6688,7 @@
       </mapping>
     </element>
     <element>
-      <path value="Procedure.performed[x]" />
+      <path value="Procedure.performedDateTime" />
       <short value="Date/Period the procedure was performed" />
       <definition value="The date(time)/period over which the procedure was performed. Allows a period to support complex procedures that span more than one date, and also allows for the length of the procedure to be captured." />
       <min value="0" />
@@ -6700,9 +6700,6 @@
       </base>
       <type>
         <code value="dateTime" />
-      </type>
-      <type>
-        <code value="Period" />
       </type>
       <condition value="ele-1" />
       <constraint>
@@ -6939,7 +6936,7 @@
       </base>
       <type>
         <code value="Reference" />
-        <profile value="https://fhir.hl7.org.uk/StructureDefinition/CareConnect-Organization-1" />
+        <profile value="https://fhir.hl7.org.uk/StructureDefinition/CareConnect-Location-1" />
       </type>
       <condition value="ele-1" />
       <constraint>
@@ -7045,7 +7042,7 @@
       <short value="Relative, internal or absolute URL reference" />
       <definition value="A reference to a location at which the other resource is found. The reference may be a relative reference, in which case it is relative to the service base URL, or an absolute URL that resolves to the location where the resource is found. The reference may be version specific or not. If the reference is not to a FHIR RESTful server, then it should be assumed to be version specific. Internal fragment references (start with '#') refer to contained resources." />
       <comments value="Using absolute URLs provides a stable scalable approach suitable for a cloud/web context, while using relative/logical references provides a flexible approach suitable for use when trading across closed eco-system boundaries.   Absolute URLs do not need to point to a FHIR RESTful server, though this is the preferred approach. If the URL conforms to the structure &quot;/[type]/[id]&quot; then it should be assumed that the reference is to a FHIR RESTful server." />
-      <min value="1" />
+      <min value="0" />
       <max value="1" />
       <base>
         <path value="Reference.reference" />
@@ -11890,7 +11887,6 @@
     </element>
     <element>
       <path value="Procedure.performer" />
-      <min value="1" />
       <max value="1" />
     </element>
     <element>
@@ -11956,6 +11952,12 @@
       <min value="1" />
     </element>
     <element>
+      <path value="Procedure.performedDateTime" />
+      <type>
+        <code value="dateTime" />
+      </type>
+    </element>
+    <element>
       <path value="Procedure.encounter" />
       <type>
         <code value="Reference" />
@@ -11970,12 +11972,8 @@
       <path value="Procedure.location" />
       <type>
         <code value="Reference" />
-        <profile value="https://fhir.hl7.org.uk/StructureDefinition/CareConnect-Organization-1" />
+        <profile value="https://fhir.hl7.org.uk/StructureDefinition/CareConnect-Location-1" />
       </type>
-    </element>
-    <element>
-      <path value="Procedure.location.reference" />
-      <min value="1" />
     </element>
     <element>
       <path value="Procedure.outcome.coding" />

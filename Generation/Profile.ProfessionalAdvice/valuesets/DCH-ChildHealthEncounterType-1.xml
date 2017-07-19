@@ -47,12 +47,16 @@
 				<display value="Medical History: Risk Factors"/>
 			</concept>
 			<concept>
-				<code value="HCP Clinical Intervention: Newborn Blood Spot Screening"/>
-				<display value="HCP Clinical Intervention: Newborn Blood Spot Screening"/>
+				<code value="Newborn Blood Spot Sample Taken"/>
+				<display value="Newborn Blood Spot Sample Taken"/>
 			</concept>
 			<concept>
-				<code value="Screening: Blood Spot"/>
-				<display value="Screening: Blood Spot"/>
+				<code value="Newborn Blood Spot Administrative Status"/>
+				<display value="Newborn Blood Spot Administrative Status"/>
+			</concept>
+			<concept>
+				<code value="Newborn Blood Spot Test Outcome"/>
+				<display value="Newborn Blood Spot Test Outcome"/>
 			</concept>
 			<concept>
 				<code value="HCP Clinical Intervention: Newborn Hearing Screening"/>

@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <meta>
-    <lastUpdated value="2017-07-14T10:54:18.385+01:00" />
+    <lastUpdated value="2017-07-19T10:48:24.107+01:00" />
     <tag>
       <system value="urn:hscic:publishOrder" />
       <code value="5" />
@@ -4651,7 +4651,7 @@
       </type>
       <type>
         <code value="Reference" />
-        <profile value="https://fhir.hl7.org.uk/StructureDefinition/CareConnect-DCH-Procedure-1" />
+        <profile value="https://fhir.hl7.org.uk/StructureDefinition/CareConnect-DCH-NewbornBloodSpotScreening-Procedure-1" />
       </type>
       <condition value="ele-1" />
       <constraint>
@@ -5473,7 +5473,7 @@
       </type>
       <type>
         <code value="Reference" />
-        <profile value="https://fhir.hl7.org.uk/StructureDefinition/CareConnect-Organization-1" />
+        <profile value="https://fhir.hl7.org.uk/StructureDefinition/CareConnect-Location-1" />
       </type>
       <condition value="ele-1" />
       <constraint>
@@ -7660,7 +7660,7 @@
         <valueString value="Group" />
       </extension>
       <path value="QuestionnaireResponse.group" />
-      <name value="ScreeningBloodSpotTestResult" />
+      <name value="ScreeningBloodSpotTestOutcome" />
       <short value="Grouped questions" />
       <definition value="A group of questions to a possibly similarly grouped set of questions in the questionnaire response." />
       <comments value="The Questionnaire itself has one &quot;root&quot; group with the actual contents of the Questionnaire." />
@@ -7858,7 +7858,7 @@
       <type>
         <code value="string" />
       </type>
-      <fixedString value="ScreeningBloodSpotTestResult" />
+      <fixedString value="Screening Blood Spot Test Outcome" />
       <condition value="ele-1" />
       <constraint>
         <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-expression">
@@ -8937,7 +8937,7 @@
       </type>
       <type>
         <code value="Reference" />
-        <profile value="https://fhir.hl7.org.uk/StructureDefinition/DCH-DiagnosticReport-1" />
+        <profile value="https://fhir.nhs.uk/StructureDefinition/DCH-NewbornBloodSpotScreening-DiagnosticReport-1" />
       </type>
       <condition value="ele-1" />
       <constraint>
@@ -9348,7 +9348,7 @@
       </type>
       <type>
         <code value="Reference" />
-        <profile value="https://fhir.hl7.org.uk/StructureDefinition/CareConnect-DCH-Procedure-1" />
+        <profile value="https://fhir.hl7.org.uk/StructureDefinition/CareConnect-DCH-NewbornBloodSpotScreening-Procedure-1" />
       </type>
       <condition value="ele-1" />
       <constraint>
@@ -9766,7 +9766,7 @@
       </type>
       <type>
         <code value="Reference" />
-        <profile value="https://fhir.hl7.org.uk/StructureDefinition/CareConnect-DCH-Procedure-1" />
+        <profile value="https://fhir.hl7.org.uk/StructureDefinition/CareConnect-DCH-NewbornBloodSpotScreening-Procedure-1" />
       </type>
       <condition value="ele-1" />
       <constraint>
@@ -10184,7 +10184,7 @@
       </type>
       <type>
         <code value="Reference" />
-        <profile value="https://fhir.hl7.org.uk/StructureDefinition/CareConnect-DCH-Procedure-1" />
+        <profile value="https://fhir.hl7.org.uk/StructureDefinition/CareConnect-DCH-NewbornBloodSpotScreening-Procedure-1" />
       </type>
       <condition value="ele-1" />
       <constraint>
@@ -10602,7 +10602,7 @@
       </type>
       <type>
         <code value="Reference" />
-        <profile value="https://fhir.hl7.org.uk/StructureDefinition/CareConnect-DCH-Procedure-1" />
+        <profile value="https://fhir.hl7.org.uk/StructureDefinition/CareConnect-DCH-NewbornBloodSpotScreening-Procedure-1" />
       </type>
       <condition value="ele-1" />
       <constraint>
@@ -11020,7 +11020,7 @@
       </type>
       <type>
         <code value="Reference" />
-        <profile value="https://fhir.hl7.org.uk/StructureDefinition/CareConnect-DCH-Procedure-1" />
+        <profile value="https://fhir.hl7.org.uk/StructureDefinition/CareConnect-DCH-NewbornBloodSpotScreening-Procedure-1" />
       </type>
       <condition value="ele-1" />
       <constraint>
@@ -11438,7 +11438,7 @@
       </type>
       <type>
         <code value="Reference" />
-        <profile value="https://fhir.hl7.org.uk/StructureDefinition/CareConnect-DCH-Procedure-1" />
+        <profile value="https://fhir.hl7.org.uk/StructureDefinition/CareConnect-DCH-NewbornBloodSpotScreening-Procedure-1" />
       </type>
       <condition value="ele-1" />
       <constraint>
@@ -11856,7 +11856,7 @@
       </type>
       <type>
         <code value="Reference" />
-        <profile value="https://fhir.hl7.org.uk/StructureDefinition/CareConnect-DCH-Procedure-1" />
+        <profile value="https://fhir.hl7.org.uk/StructureDefinition/CareConnect-DCH-NewbornBloodSpotScreening-Procedure-1" />
       </type>
       <condition value="ele-1" />
       <constraint>
@@ -12274,7 +12274,7 @@
       </type>
       <type>
         <code value="Reference" />
-        <profile value="https://fhir.hl7.org.uk/StructureDefinition/CareConnect-DCH-Procedure-1" />
+        <profile value="https://fhir.hl7.org.uk/StructureDefinition/CareConnect-DCH-NewbornBloodSpotScreening-Procedure-1" />
       </type>
       <condition value="ele-1" />
       <constraint>
@@ -12692,7 +12692,7 @@
       </type>
       <type>
         <code value="Reference" />
-        <profile value="https://fhir.hl7.org.uk/StructureDefinition/CareConnect-DCH-Procedure-1" />
+        <profile value="https://fhir.hl7.org.uk/StructureDefinition/CareConnect-DCH-NewbornBloodSpotScreening-Procedure-1" />
       </type>
       <condition value="ele-1" />
       <constraint>
@@ -12898,7 +12898,7 @@
       </type>
       <type>
         <code value="Reference" />
-        <profile value="https://fhir.hl7.org.uk/StructureDefinition/CareConnect-DCH-Procedure-1" />
+        <profile value="https://fhir.hl7.org.uk/StructureDefinition/CareConnect-DCH-NewbornBloodSpotScreening-Procedure-1" />
       </type>
     </element>
     <element>
@@ -12976,7 +12976,7 @@
       </type>
       <type>
         <code value="Reference" />
-        <profile value="https://fhir.hl7.org.uk/StructureDefinition/CareConnect-Organization-1" />
+        <profile value="https://fhir.hl7.org.uk/StructureDefinition/CareConnect-Location-1" />
       </type>
     </element>
     <element>
@@ -13144,7 +13144,7 @@
         <valueString value="Group" />
       </extension>
       <path value="QuestionnaireResponse.group" />
-      <name value="ScreeningBloodSpotTestResult" />
+      <name value="ScreeningBloodSpotTestOutcome" />
     </element>
     <element>
       <path value="QuestionnaireResponse.group.linkId" />
@@ -13153,7 +13153,7 @@
     <element>
       <path value="QuestionnaireResponse.group.title" />
       <min value="1" />
-      <fixedString value="ScreeningBloodSpotTestResult" />
+      <fixedString value="Screening Blood Spot Test Outcome" />
     </element>
     <element>
       <path value="QuestionnaireResponse.group.text" />
@@ -13210,7 +13210,7 @@
       </type>
       <type>
         <code value="Reference" />
-        <profile value="https://fhir.hl7.org.uk/StructureDefinition/DCH-DiagnosticReport-1" />
+        <profile value="https://fhir.nhs.uk/StructureDefinition/DCH-NewbornBloodSpotScreening-DiagnosticReport-1" />
       </type>
     </element>
     <element>
@@ -13247,7 +13247,7 @@
       </type>
       <type>
         <code value="Reference" />
-        <profile value="https://fhir.hl7.org.uk/StructureDefinition/CareConnect-DCH-Procedure-1" />
+        <profile value="https://fhir.hl7.org.uk/StructureDefinition/CareConnect-DCH-NewbornBloodSpotScreening-Procedure-1" />
       </type>
       <binding>
         <strength value="required" />
@@ -13293,7 +13293,7 @@
       </type>
       <type>
         <code value="Reference" />
-        <profile value="https://fhir.hl7.org.uk/StructureDefinition/CareConnect-DCH-Procedure-1" />
+        <profile value="https://fhir.hl7.org.uk/StructureDefinition/CareConnect-DCH-NewbornBloodSpotScreening-Procedure-1" />
       </type>
       <binding>
         <strength value="required" />
@@ -13339,7 +13339,7 @@
       </type>
       <type>
         <code value="Reference" />
-        <profile value="https://fhir.hl7.org.uk/StructureDefinition/CareConnect-DCH-Procedure-1" />
+        <profile value="https://fhir.hl7.org.uk/StructureDefinition/CareConnect-DCH-NewbornBloodSpotScreening-Procedure-1" />
       </type>
       <binding>
         <strength value="required" />
@@ -13385,7 +13385,7 @@
       </type>
       <type>
         <code value="Reference" />
-        <profile value="https://fhir.hl7.org.uk/StructureDefinition/CareConnect-DCH-Procedure-1" />
+        <profile value="https://fhir.hl7.org.uk/StructureDefinition/CareConnect-DCH-NewbornBloodSpotScreening-Procedure-1" />
       </type>
       <binding>
         <strength value="required" />
@@ -13431,7 +13431,7 @@
       </type>
       <type>
         <code value="Reference" />
-        <profile value="https://fhir.hl7.org.uk/StructureDefinition/CareConnect-DCH-Procedure-1" />
+        <profile value="https://fhir.hl7.org.uk/StructureDefinition/CareConnect-DCH-NewbornBloodSpotScreening-Procedure-1" />
       </type>
       <binding>
         <strength value="required" />
@@ -13477,7 +13477,7 @@
       </type>
       <type>
         <code value="Reference" />
-        <profile value="https://fhir.hl7.org.uk/StructureDefinition/CareConnect-DCH-Procedure-1" />
+        <profile value="https://fhir.hl7.org.uk/StructureDefinition/CareConnect-DCH-NewbornBloodSpotScreening-Procedure-1" />
       </type>
       <binding>
         <strength value="required" />
@@ -13523,7 +13523,7 @@
       </type>
       <type>
         <code value="Reference" />
-        <profile value="https://fhir.hl7.org.uk/StructureDefinition/CareConnect-DCH-Procedure-1" />
+        <profile value="https://fhir.hl7.org.uk/StructureDefinition/CareConnect-DCH-NewbornBloodSpotScreening-Procedure-1" />
       </type>
       <binding>
         <strength value="required" />
@@ -13569,7 +13569,7 @@
       </type>
       <type>
         <code value="Reference" />
-        <profile value="https://fhir.hl7.org.uk/StructureDefinition/CareConnect-DCH-Procedure-1" />
+        <profile value="https://fhir.hl7.org.uk/StructureDefinition/CareConnect-DCH-NewbornBloodSpotScreening-Procedure-1" />
       </type>
       <binding>
         <strength value="required" />
@@ -13615,7 +13615,7 @@
       </type>
       <type>
         <code value="Reference" />
-        <profile value="https://fhir.hl7.org.uk/StructureDefinition/CareConnect-DCH-Procedure-1" />
+        <profile value="https://fhir.hl7.org.uk/StructureDefinition/CareConnect-DCH-NewbornBloodSpotScreening-Procedure-1" />
       </type>
       <binding>
         <strength value="required" />
