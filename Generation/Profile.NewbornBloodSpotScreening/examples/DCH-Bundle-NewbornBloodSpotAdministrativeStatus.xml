@@ -29,11 +29,11 @@
 					<display value="Newborn Blood Spot Screening"/>
 				</event>
 				<source>
-					<endpoint value="urn:nhs-uk:addressing:ods:RR8"/>
+					<endpoint value="urn:nhs-uk:addressing:ods:695N0"/>
 				</source>
 				<responsible>
-					<reference value="urn:uuid:5ccb6bb7-a7f1-46cc-a5d3-135320765553"/>
-					<display value="Leeds Teaching Hospitals NHS Trust"/>
+						<reference value="urn:uuid:9a74549a-686f-11e7-907b-a6006ad3dba0"/>
+						<display value="Leeds General Infirmary Laboratory"/>
 				</responsible>
 				<data>
 					<reference value="urn:uuid:9a745b66-686f-11e7-907b-a6006ad3dba0"/>
@@ -45,18 +45,31 @@
 		</resource>
 	</entry>
 	<entry>
-		<fullUrl value="urn:uuid:5ccb6bb7-a7f1-46cc-a5d3-135320765553"/>
+		<fullUrl value="urn:uuid:9a74549a-686f-11e7-907b-a6006ad3dba0"/>
 		<resource>
 			<Organization>
-				<id value="5ccb6bb7-a7f1-46cc-a5d3-135320765553"/>
+				<id value="9a74549a-686f-11e7-907b-a6006ad3dba0"/>
 				<meta>
 					<profile value="https://fhir.hl7.org.uk/StructureDefinition/CareConnect-Organization-1"/>
 				</meta>
 				<identifier>
 					<system value="https://fhir.nhs.uk/Id/ods-organization-code"/>
-					<value value="RR8"/>
+					<value value="695N0"/>
 				</identifier>
-				<name value="Leeds Teaching Hospitals NHS Trust"/>
+				<name value="Leeds General Infirmary Laboratory"/>
+				<telecom>
+					<system value="phone"/>
+					<value value="01133928766"/>
+					<use value="work"/>
+				</telecom>
+				<address>
+					<use value="work"/>
+					<type value="both"/>
+					<line value="1, Main Street"/>
+					<city value="Leeds"/>
+					<district value="West Yorkshire"/>
+					<postalCode value="LS1 3PO"/>
+				</address>
 			</Organization>
 		</resource>
 	</entry>
@@ -225,94 +238,9 @@
 				</accessionIdentifier>
 				<receivedTime value="2012-01-09T09:00:00+00:00"/>
 				<collection>
-					<collector>
-						<reference value="urn:uuid:9a744220-686f-11e7-907b-a6006ad3dba0"/>
-						<display value="JONES, Jane"/>
-					</collector>
 					<collectedDateTime value="2012-01-08T09:00:00+00:00"/>
 				</collection>
-				<treatment>
-					<procedure>
-						<coding>
-							<system value="http://snomed.info/sct"/>
-							<code value="314081000"/>
-							<display value="Phenylketonuria screening test (procedure)"/>
-						</coding>
-					</procedure>
-				</treatment>
-				<treatment>
-					<procedure>
-						<coding>
-							<system value="http://snomed.info/sct"/>
-							<code value="314090007"/>
-							<display value="Sickle cell disease screening test (procedure)"/>
-						</coding>
-					</procedure>
-				</treatment>
-				<treatment>
-					<procedure>
-						<coding>
-							<system value="http://snomed.info/sct"/>
-							<code value="314080004"/>
-							<display value="Cystic fibrosis screening test (procedure)"/>
-						</coding>
-					</procedure>
-				</treatment>
-				<treatment>
-					<procedure>
-						<coding>
-							<system value="http://snomed.info/sct"/>
-							<code value="400984005"/>
-							<display value="Congenital hypothyroidism screening test (procedure)"/>
-						</coding>
-					</procedure>
-				</treatment>
-				<treatment>
-					<procedure>
-						<coding>
-							<system value="http://snomed.info/sct"/>
-							<code value="428056008"/>
-							<display value="Medium-chain acyl-coenzyme A dehydrogenase deficiency screening test (procedure)"/>
-						</coding>
-					</procedure>
-				</treatment>
-				<treatment>
-					<procedure>
-						<coding>
-							<system value="http://snomed.info/sct"/>
-							<code value="940201000000107"/>
-							<display value="Blood spot homocystinuria screening test (procedure)"/>
-						</coding>
-					</procedure>
-				</treatment>
-				<treatment>
-					<procedure>
-						<coding>
-							<system value="http://snomed.info/sct"/>
-							<code value="940221000000103"/>
-							<display value="Blood spot maple syrup urine disease screening test (procedure)"/>
-						</coding>
-					</procedure>
-				</treatment>
-				<treatment>
-					<procedure>
-						<coding>
-							<system value="http://snomed.info/sct"/>
-							<code value="940131000000109"/>
-							<display value="Blood spot glutaric aciduria type 1 screening test (procedure)"/>
-						</coding>
-					</procedure>
-				</treatment>
-				<treatment>
-					<procedure>
-						<coding>
-							<system value="http://snomed.info/sct"/>
-							<code value="940151000000102"/>
-							<display value="Blood spot isovaleric acidaemia screening test (procedure)"/>
-						</coding>
-					</procedure>
-				</treatment>
-			</Specimen>
+				</Specimen>
 		</resource>
 	</entry>
 	<entry>
@@ -347,88 +275,7 @@
 				</performer>
 				<status value="proposed"/>
 				<orderedOn value="2012-01-08T10:00:00+00:00"/>
-				<orderer>
-					<reference value="urn:uuid:9a744220-686f-11e7-907b-a6006ad3dba0"/>
-					<display value="JONES, Jane"/>
-				</orderer>
 			</ProcedureRequest>
-		</resource>
-	</entry>
-	<entry>
-		<fullUrl value="urn:uuid:9a74549a-686f-11e7-907b-a6006ad3dba0"/>
-		<resource>
-			<Organization>
-				<id value="9a74549a-686f-11e7-907b-a6006ad3dba0"/>
-				<meta>
-					<profile value="https://fhir.hl7.org.uk/StructureDefinition/CareConnect-Organization-1"/>
-				</meta>
-				<identifier>
-					<use value="usual"/>
-					<system value="https://fhir.nhs.uk/Id/ods-organization-code"/>
-					<value value="695N0"/>
-				</identifier>
-				<type>
-					<coding>
-						<system value="http://hl7.org/fhir/organization-type"/>
-						<code value="dept"/>
-						<display value="Hospital Department"/>
-					</coding>
-				</type>
-				<name value="Leeds General Infirmary Laboratory"/>
-				<telecom>
-					<system value="phone"/>
-					<value value="01133928766"/>
-					<use value="work"/>
-				</telecom>
-				<address>
-					<use value="work"/>
-					<type value="both"/>
-					<line value="1, Main Street"/>
-					<city value="Leeds"/>
-					<district value="West Yorkshire"/>
-					<postalCode value="LS1 3PO"/>
-				</address>
-				<partOf>
-					<reference value="urn:uuid:5ccb6bb7-a7f1-46cc-a5d3-135320765553"/>
-					<display value="Leeds Teaching Hospitals NHS Trust"/>
-				</partOf>
-			</Organization>
-		</resource>
-	</entry>
-	<entry>
-		<fullUrl value="urn:uuid:9a744220-686f-11e7-907b-a6006ad3dba0"/>
-		<resource>
-			<Practitioner>
-				<id value="9a744220-686f-11e7-907b-a6006ad3dba0"/>
-				<meta>
-					<profile value="https://fhir.hl7.org.uk/StructureDefinition/CareConnect-Practitioner-1"/>
-				</meta>
-				<identifier>
-					<system value="https://fhir.nhs.uk/Id/sds-user-id"/>
-					<value value="C24682468"/>
-				</identifier>
-				<identifier>
-					<system value="https://fhir.nhs.uk/Id/sds-role-profile-id"/>
-					<value value="AB1233"/>
-				</identifier>
-				<name>
-					<family value="JONES"/>
-					<given value="Jane"/>
-				</name>
-				<practitionerRole>
-					<managingOrganization>
-						<reference value="urn:uuid:5ccb6bb7-a7f1-46cc-a5d3-135320765553"/>
-						<display value="Leeds Teaching Hospitals NHS Trust"/>
-					</managingOrganization>
-					<role>
-						<coding>
-							<system value="https://fhir.hl7.org.uk/CareConnect-SDSJobRoleName-1"/>
-							<code value="R0620"/>
-							<display value="Staff Nurse"/>
-						</coding>
-					</role>
-				</practitionerRole>
-			</Practitioner>
 		</resource>
 	</entry>
 </Bundle>
