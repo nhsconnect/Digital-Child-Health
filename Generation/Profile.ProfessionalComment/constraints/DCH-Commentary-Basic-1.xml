@@ -7,7 +7,7 @@
       <code value="6" />
     </tag>
   </meta>
-  <url value="https://fhir.hl7.org.uk/StructureDefinition/DCH-Commentary-Basic-1" />
+  <url value="https://fhir.nhs.uk/StructureDefinition/DCH-Commentary-Basic-1" />
   <name value="DCH-Commentary-Basic-1" />
   <status value="draft" />
   <date value="2017-06-05T13:43:16.7558215+01:00" />

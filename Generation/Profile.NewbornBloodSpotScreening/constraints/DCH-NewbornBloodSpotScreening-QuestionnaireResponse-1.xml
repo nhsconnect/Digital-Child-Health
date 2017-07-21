@@ -7,7 +7,7 @@
       <code value="5" />
     </tag>
   </meta>
-  <url value="https://fhir.hl7.org.uk/StructureDefinition/DCH-NewbornBloodSpotScreening-QuestionnaireResponse-1" />
+  <url value="https://fhir.nhs.uk/StructureDefinition/DCH-NewbornBloodSpotScreening-QuestionnaireResponse-1" />
   <version value="1.0.0" />
   <name value="DCH-NewbornBloodSpotScreening-QuestionnaireResponse-1" />
   <status value="draft" />
@@ -6794,7 +6794,7 @@
       </type>
       <type>
         <code value="Reference" />
-        <profile value="https://fhir.hl7.org.uk/StructureDefinition/DCH-Specimen-1" />
+        <profile value="https://fhir.nhs.uk/StructureDefinition/DCH-Specimen-1" />
       </type>
       <condition value="ele-1" />
       <constraint>
@@ -13054,7 +13054,7 @@
       </type>
       <type>
         <code value="Reference" />
-        <profile value="https://fhir.hl7.org.uk/StructureDefinition/DCH-Specimen-1" />
+        <profile value="https://fhir.nhs.uk/StructureDefinition/DCH-Specimen-1" />
       </type>
     </element>
     <element>

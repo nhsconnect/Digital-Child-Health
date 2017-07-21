@@ -630,7 +630,7 @@
 			<Appointment>
 				<id value="e9dc255c-5bdc-11e7-907b-a6006ad3dba0"/>
 				<meta>
-					<profile value="https://fhir.hl7.org.uk/StructureDefinition/DCH-Appointment-1"/>
+					<profile value="https://fhir.nhs.uk/StructureDefinition/DCH-Appointment-1"/>
 				</meta>
 				<identifier>
 					<system value="https://tools.ietf.org/html/rfc4122"/>
@@ -703,7 +703,7 @@
 			<ProcedureRequest>
 				<id value="e9dc055e-5bdc-11e7-907b-a6006ad3dba0"/>
 				<meta>
-					<profile value="https://fhir.hl7.org.uk/StructureDefinition/DCH-ProcedureRequest-1"/>
+					<profile value="https://fhir.nhs.uk/StructureDefinition/DCH-ProcedureRequest-1"/>
 				</meta>
 				<extension url="https://fhir.nhs.uk/StructureDefinition/Extension-DCH-ConsentStatus-1">
 					<valueCodeableConcept>

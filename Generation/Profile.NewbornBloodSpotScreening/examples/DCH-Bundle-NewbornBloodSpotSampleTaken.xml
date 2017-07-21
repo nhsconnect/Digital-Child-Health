@@ -22,7 +22,7 @@
 						</coding>
 					</valueCodeableConcept>
 				</extension>
-				<timestamp value="2012-01-09T00:00:00+00:00"/>
+				<timestamp value="2012-01-08T09:00:00+00:00"/>
 				<event>
 					<system value="https://fhir.nhs.uk/DCH-ChildHealthEventType-1"/>
 					<code value="Newborn Blood Spot Screening"/>
@@ -102,7 +102,7 @@
 			<QuestionnaireResponse>
 				<id value="9a7440ae-686f-11e7-907b-a6006ad3dba0"/>
 				<meta>
-					<profile value="https://fhir.hl7.org.uk/StructureDefinition/DCH-NewbornBloodSpotScreening-QuestionnaireResponse-1"/>
+					<profile value="https://fhir.nhs.uk/StructureDefinition/DCH-NewbornBloodSpotScreening-QuestionnaireResponse-1"/>
 				</meta>
 				<identifier>
 					<system value="https://tools.ietf.org/html/rfc4122"/>

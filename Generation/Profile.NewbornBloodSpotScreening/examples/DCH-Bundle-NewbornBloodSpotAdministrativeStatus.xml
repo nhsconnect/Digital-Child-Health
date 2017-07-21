@@ -22,7 +22,7 @@
 						</coding>
 					</valueCodeableConcept>
 				</extension>
-				<timestamp value="2012-01-10T00:00:00+00:00"/>
+				<timestamp value="2012-01-09T09:00:00+00:00"/>
 				<event>
 					<system value="https://fhir.nhs.uk/DCH-ChildHealthEventType-1"/>
 					<code value="Newborn Blood Spot Screening"/>
@@ -115,7 +115,7 @@
 			<QuestionnaireResponse>
 				<id value="9a7451ac-686f-11e7-907b-a6006ad3dba0"/>
 				<meta>
-					<profile value="https://fhir.hl7.org.uk/StructureDefinition/DCH-NewbornBloodSpotScreening-QuestionnaireResponse-1"/>
+					<profile value="https://fhir.nhs.uk/StructureDefinition/DCH-NewbornBloodSpotScreening-QuestionnaireResponse-1"/>
 				</meta>
 				<identifier>
 					<system value="https://tools.ietf.org/html/rfc4122"/>
@@ -207,40 +207,18 @@
 			<Specimen>
 				<id value="9a7459f4-686f-11e7-907b-a6006ad3dba0"/>
 				<meta>
-					<profile value="https://fhir.hl7.org.uk/StructureDefinition/DCH-Specimen-1"/>
+					<profile value="https://fhir.nhs.uk/StructureDefinition/DCH-Specimen-1"/>
 				</meta>
 				<identifier>
 					<system value="https://tools.ietf.org/html/rfc4122"/>
 					<value value="9a7459f4-686f-11e7-907b-a6006ad3dba0"/>
 				</identifier>
-				<type>
-					<coding>
-						<system value="http://snomed.info/sct"/>
-						<version value=" 20150731"/>
-						<code value="119297000"/>
-						<display value="blood specimen"/>
-					</coding>
-				</type>
 				<subject>
 					<reference value="urn:uuid:7368c5fe-bbb4-4e9c-a585-234e06b84e82"/>
 					<display value="SAXTON, Sarah Marie"/>
 				</subject>
-				<accessionIdentifier>
-					<system value="http://www.sampleth.nhs.uk/pathology/bloodsciences/labno"/>
-					<value value="HAEM8667800003"/>
-					<period>
-						<start value="2012-01-09T09:00:00+00:00"/>
-					</period>
-					<assigner>
-						<reference value="urn:uuid:9a74549a-686f-11e7-907b-a6006ad3dba0"/>
-						<display value="Leeds General Infirmary Laboratory"/>
-					</assigner>
-				</accessionIdentifier>
 				<receivedTime value="2012-01-09T09:00:00+00:00"/>
-				<collection>
-					<collectedDateTime value="2012-01-08T09:00:00+00:00"/>
-				</collection>
-				</Specimen>
+			</Specimen>
 		</resource>
 	</entry>
 	<entry>
@@ -249,11 +227,11 @@
 			<ProcedureRequest>
 				<id value="9a745814-686f-11e7-907b-a6006ad3dba0"/>
 				<meta>
-					<profile value="https://fhir.hl7.org.uk/StructureDefinition/DCH-ProcedureRequest-1"/>
+					<profile value="https://fhir.nhs.uk/StructureDefinition/DCH-ProcedureRequest-1"/>
 				</meta>
 				<identifier>
 					<system value="https://tools.ietf.org/html/rfc4122"/>
-					<value value="9a745332-686f-11e7-907b-a6006ad3dba0"/>
+					<value value="9a745814-686f-11e7-907b-a6006ad3dba0"/>
 				</identifier>
 				<subject>
 					<reference value="urn:uuid:7368c5fe-bbb4-4e9c-a585-234e06b84e82"/>
@@ -261,9 +239,6 @@
 				</subject>
 				<code>
 					<coding>
-						<extension url="https://fhir.hl7.org.uk/StructureDefinition/Extension-coding-sctdescid">
-							<valueId value="2692286013"/>
-						</extension>
 						<system value="http://snomed.info/sct"/>
 						<code value="428447008"/>
 						<display value="Newborn blood spot screening"/>

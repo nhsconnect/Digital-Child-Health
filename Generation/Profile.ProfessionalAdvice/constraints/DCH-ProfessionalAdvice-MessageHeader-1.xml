@@ -3638,7 +3638,7 @@
       </base>
       <type>
         <code value="Reference" />
-        <profile value="https://fhir.hl7.org.uk/StructureDefinition/DCH-ProfessionalAdvice-QuestionnaireResponse-1" />
+        <profile value="https://fhir.nhs.uk/StructureDefinition/DCH-ProfessionalAdvice-QuestionnaireResponse-1" />
       </type>
       <type>
         <code value="Reference" />
@@ -3919,7 +3919,7 @@
       <max value="1" />
       <type>
         <code value="Reference" />
-        <profile value="https://fhir.hl7.org.uk/StructureDefinition/DCH-ProfessionalAdvice-QuestionnaireResponse-1" />
+        <profile value="https://fhir.nhs.uk/StructureDefinition/DCH-ProfessionalAdvice-QuestionnaireResponse-1" />
       </type>
       <type>
         <code value="Reference" />

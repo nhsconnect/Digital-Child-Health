@@ -22,7 +22,7 @@
 						</coding>
 					</valueCodeableConcept>
 				</extension>
-				<timestamp value="2012-01-11T00:00:00+00:00"/>
+				<timestamp value="2012-01-10T09:00:00+00:00"/>
 				<event>
 					<system value="https://fhir.nhs.uk/DCH-ChildHealthEventType-1"/>
 					<code value="Newborn Blood Spot Screening"/>
@@ -115,7 +115,7 @@
 			<QuestionnaireResponse>
 				<id value="9a74701a-686f-11e7-907b-a6006ad3dba0"/>
 				<meta>
-					<profile value="https://fhir.hl7.org.uk/StructureDefinition/DCH-NewbornBloodSpotScreening-QuestionnaireResponse-1"/>
+					<profile value="https://fhir.nhs.uk/StructureDefinition/DCH-NewbornBloodSpotScreening-QuestionnaireResponse-1"/>
 				</meta>
 				<identifier>
 					<system value="https://tools.ietf.org/html/rfc4122"/>
@@ -132,7 +132,7 @@
 						<question>
 							<text value="The date that a Blood Spot Screening Test Result was received by a Health Care Provider from the testing laboratory"/>
 							<answer>
-								<valueDateTime value="2012-01-09T10:00:00+00:00"/>
+								<valueDateTime value="2012-01-10T09:00:00+00:00"/>
 							</answer>
 							<answer>
 								<valueReference>
@@ -305,7 +305,7 @@
 					<display value="SAXTON, Sarah Marie"/>
 				</patient>
 				<period>
-					<start value="2012-01-09T10:00:00+00:00"/>
+					<start value="2012-01-10T09:00:00+00:00"/>
 				</period>
 				<serviceProvider>
 					<reference value="urn:uuid:9a74549a-686f-11e7-907b-a6006ad3dba0"/>
@@ -338,8 +338,8 @@
 					<reference value="urn:uuid:7368c5fe-bbb4-4e9c-a585-234e06b84e82"/>
 					<display value="SAXTON, Sarah Marie"/>
 				</subject>
-				<effectiveDateTime value="2012-01-08T09:00:00+00:00"/>
-				<issued value="2012-01-09T10:00:00+00:00"/>
+				<effectiveDateTime value="2012-01-09T10:00:00+00:00"/>
+				<issued value="2012-01-10T09:00:00+00:00"/>
 				<performer>
 					<reference value="urn:uuid:9a74549a-686f-11e7-907b-a6006ad3dba0"/>
 					<display value="Leeds General Infirmary Laboratory"/>
