@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <meta>
-    <lastUpdated value="2017-06-05T10:16:54.342+01:00" />
+    <lastUpdated value="2017-07-24T14:05:33.704+01:00" />
     <tag>
       <system value="urn:hscic:publishOrder" />
       <code value="7" />
@@ -1736,7 +1736,7 @@
       <short value="Relative, internal or absolute URL reference" />
       <definition value="A reference to a location at which the other resource is found. The reference may be a relative reference, in which case it is relative to the service base URL, or an absolute URL that resolves to the location where the resource is found. The reference may be version specific or not. If the reference is not to a FHIR RESTful server, then it should be assumed to be version specific. Internal fragment references (start with '#') refer to contained resources." />
       <comments value="Using absolute URLs provides a stable scalable approach suitable for a cloud/web context, while using relative/logical references provides a flexible approach suitable for use when trading across closed eco-system boundaries.   Absolute URLs do not need to point to a FHIR RESTful server, though this is the preferred approach. If the URL conforms to the structure &quot;/[type]/[id]&quot; then it should be assumed that the reference is to a FHIR RESTful server." />
-      <min value="0" />
+      <min value="1" />
       <max value="1" />
       <base>
         <path value="Reference.reference" />
@@ -2912,7 +2912,7 @@
       <comments value="Person may have multiple ways to be contacted with different uses or applicable periods.  May need to have options for contacting the person urgently, and also to help with identification." />
       <requirements value="People have (primary) ways to contact them in some way such as phone, email." />
       <min value="0" />
-      <max value="0" />
+      <max value="1" />
       <base>
         <path value="RelatedPerson.telecom" />
         <min value="0" />
@@ -3505,7 +3505,7 @@
       <comments value="Note: address is for postal addresses, not physical locations." />
       <requirements value="Need to keep track where the related person can be contacted per postal mail or visited." />
       <min value="0" />
-      <max value="0" />
+      <max value="1" />
       <base>
         <path value="RelatedPerson.address" />
         <min value="0" />
@@ -4268,7 +4268,7 @@
       <comments value="When providing a summary view (for example with Observation.value[x]) Attachment should be represented with a brief display text such as &quot;Attachment&quot;." />
       <requirements value="Many EHR systems have the capability to capture an image of persons. Fits with newer social media usage too." />
       <min value="0" />
-      <max value="0" />
+      <max value="1" />
       <base>
         <path value="RelatedPerson.photo" />
         <min value="0" />
@@ -4703,7 +4703,7 @@
       <definition value="The period of time that this relationship is considered to be valid. If there are no dates defined, then the interval is unknown." />
       <comments value="This is not a duration - that's a measure of time (a separate type), but a duration that occurs at a fixed value of time. A Period specifies a range of time; the context of use will specify whether the entire range applies (e.g. &quot;the patient was an inpatient of the hospital for this time range&quot;) or one value from the range applies (e.g. &quot;give to the patient between these two times&quot;). If duration is required, specify the type as Interval|Duration." />
       <min value="0" />
-      <max value="0" />
+      <max value="1" />
       <base>
         <path value="RelatedPerson.period" />
         <min value="0" />
@@ -4920,9 +4920,6 @@
     <element>
       <path value="RelatedPerson.extension" />
       <name value="link" />
-      <short value="A link to a Patient resource for a Related Person" />
-      <definition value="A link to a Patient resource for a Related Person." />
-      <min value="0" />
       <max value="1" />
       <type>
         <code value="Extension" />
@@ -4955,6 +4952,10 @@
         <code value="Reference" />
         <profile value="https://fhir.hl7.org.uk/StructureDefinition/CareConnect-DCH-Patient-1" />
       </type>
+    </element>
+    <element>
+      <path value="RelatedPerson.patient.reference" />
+      <min value="1" />
     </element>
     <element>
       <path value="RelatedPerson.relationship" />
@@ -4993,7 +4994,7 @@
     </element>
     <element>
       <path value="RelatedPerson.telecom" />
-      <max value="0" />
+      <max value="1" />
     </element>
     <element>
       <path value="RelatedPerson.gender" />
@@ -5011,15 +5012,11 @@
     </element>
     <element>
       <path value="RelatedPerson.address" />
-      <max value="0" />
+      <max value="1" />
     </element>
     <element>
       <path value="RelatedPerson.photo" />
-      <max value="0" />
-    </element>
-    <element>
-      <path value="RelatedPerson.period" />
-      <max value="0" />
+      <max value="1" />
     </element>
   </differential>
 </StructureDefinition>

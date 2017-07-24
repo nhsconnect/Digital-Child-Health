@@ -11,164 +11,280 @@
 		<include>
 			<system value="https://fhir.nhs.uk/DCH-ChildHealthEventType-1"/>
 			<concept>
-				<code value="6-8 Week Health Review"/>
-				<display value="6-8 Week Health Review"/>
+				<code value="Assessment : APGAR"/>
+				<display value="Assessment : APGAR"/>
 			</concept>
 			<concept>
-				<code value="Allergies and Reactions"/>
-				<display value="Allergies and Reactions"/>
+				<code value="Birth : Birth Details"/>
+				<display value="Birth : Birth Details"/>
 			</concept>
 			<concept>
-				<code value="Accidents and Injuries"/>
-				<display value="Accidents and Injuries"/>
+				<code value="Birth : Neonatal Care"/>
+				<display value="Birth : Neonatal Care"/>
 			</concept>
 			<concept>
-				<code value="Assessment: APGAR"/>
-				<display value="Assessment: APGAR"/>
+				<code value="Birth : Discharge"/>
+				<display value="Birth : Discharge"/>
 			</concept>
 			<concept>
-				<code value="Birth"/>
-				<display value="Birth"/>
+				<code value="Breastfeeding Status : Breastfeeding Status"/>
+				<display value="Breastfeeding Status : Breastfeeding Status"/>
 			</concept>
 			<concept>
-				<code value="Breastfeeding Status"/>
-				<display value="Breastfeeding Status"/>
+				<code value="Commentary : Professional Advice"/>
+				<display value="Commentary : Professional Advice"/>
 			</concept>
 			<concept>
-				<code value="Conditions"/>
-				<display value="Conditions"/>
+				<code value="Commentary : Professional Comment"/>
+				<display value="Commentary : Professional Comment"/>
 			</concept>
 			<concept>
-				<code value="Demographics: Core"/>
-				<display value="Demographics: Core"/>
+				<code value="Demographics : Related Persons"/>
+				<display value="Demographics : Related Persons"/>
 			</concept>
 			<concept>
-				<code value="Demographics: Related Persons"/>
-				<display value="Demographics: Related Persons"/>
+				<code value="HCP Clinical Interventions : Newborn Physical Examination"/>
+				<display value="HCP Clinical Interventions : Newborn Physical Examination"/>
 			</concept>
 			<concept>
-				<code value="Immunisation: 8 weeks imms"/>
-				<display value="Immunisation: 8 weeks imms"/>
+				<code value="HCP Clinical Interventions : Newborn Hearing Screening"/>
+				<display value="HCP Clinical Interventions : Newborn Hearing Screening"/>
 			</concept>
 			<concept>
-				<code value="Immunisation: 12 weeks imms"/>
-				<display value="Immunisation: 12 weeks imms"/>
+				<code value="HCP Clinical Interventions : Newborn Blood Spot Screening"/>
+				<display value="HCP Clinical Interventions : Newborn Blood Spot Screening"/>
 			</concept>
 			<concept>
-				<code value="Immunisation: 16 weeks imms"/>
-				<display value="Immunisation: 16 weeks imms"/>
+				<code value="HCP Clinical Interventions : 6-8 Week Review"/>
+				<display value="HCP Clinical Interventions : 6-8 Week Review"/>
 			</concept>
 			<concept>
-				<code value="Immunisation: BCG imms"/>
-				<display value="Immunisation: BCG imms"/>
+				<code value="HCP Clinical Interventions : BCG immunisation"/>
+				<display value="HCP Clinical Interventions : BCG immunisation"/>
 			</concept>
 			<concept>
-				<code value="Immunisation: Hep B birth"/>
-				<display value="Immunisation: Hep B birth"/>
+				<code value="HCP Clinical Interventions : Hep B birth"/>
+				<display value="HCP Clinical Interventions : Hep B birth"/>
 			</concept>
 			<concept>
-				<code value="Immunisation: Hep B 4 weeks"/>
-				<display value="Immunisation: Hep B 4 weeks"/>
+				<code value="HCP Clinical Interventions : Hep B 4 weeks"/>
+				<display value="HCP Clinical Interventions : Hep B 4 weeks"/>
 			</concept>
 			<concept>
-				<code value="Immunisation: Hep B 8 weeks"/>
-				<display value="Immunisation: Hep B 8 weeks"/>
+				<code value="HCP Clinical Interventions : Hep B 8 weeks"/>
+				<display value="HCP Clinical Interventions : Hep B 8 weeks"/>
 			</concept>
 			<concept>
-				<code value="Immunisation: Hep B 12 months"/>
-				<display value="Immunisation: Hep B 12 months"/>
+				<code value="HCP Clinical Interventions : Hep B 12 months"/>
+				<display value="HCP Clinical Interventions : Hep B 12 months"/>
 			</concept>
 			<concept>
-				<code value="Immunisation: HPV first imms"/>
-				<display value="Immunisation: HPV first imms"/>
+				<code value="HCP Clinical Interventions : 8 week imms"/>
+				<display value="HCP Clinical Interventions : 8 week imms"/>
 			</concept>
 			<concept>
-				<code value="Immunisation: HPV second imms"/>
-				<display value="Immunisation: HPV second imms"/>
+				<code value="HCP Clinical Interventions : 12 week imms"/>
+				<display value="HCP Clinical Interventions : 12 week imms"/>
 			</concept>
 			<concept>
-				<code value="Immunisation: Influenza 2 years"/>
-				<display value="Immunisation: Influenza 2 years"/>
+				<code value="HCP Clinical Interventions : 16 week imms"/>
+				<display value="HCP Clinical Interventions : 16 week imms"/>
 			</concept>
 			<concept>
-				<code value="Immunisation: Influenza 3 years"/>
-				<display value="Immunisation: Influenza 3 years"/>
+				<code value="HCP Clinical Interventions : MMR"/>
+				<display value="HCP Clinical Interventions : MMR"/>
 			</concept>
 			<concept>
-				<code value="Immunisation: Influenza 4 years"/>
-				<display value="Immunisation: Influenza 4 years"/>
+				<code value="HCP Clinical Interventions : Pre-school booster"/>
+				<display value="HCP Clinical Interventions : Pre-school booster"/>
 			</concept>
 			<concept>
-				<code value="Immunisation: Influenza year 1"/>
-				<display value="Immunisation: Influenza year 1"/>
+				<code value="HCP Clinical Interventions : HPV first imms"/>
+				<display value="HCP Clinical Interventions : HPV first imms"/>
 			</concept>
 			<concept>
-				<code value="Immunisation: Influenza year 2"/>
-				<display value="Immunisation: Influenza year 2"/>
+				<code value="HCP Clinical Interventions : HPV second imms"/>
+				<display value="HCP Clinical Interventions : HPV second imms"/>
 			</concept>
 			<concept>
-				<code value="Immunisation: MMR"/>
-				<display value="Immunisation: MMR"/>
+				<code value="HCP Clinical Interventions : Teenage booster"/>
+				<display value="HCP Clinical Interventions : Teenage booster"/>
 			</concept>
 			<concept>
-				<code value="Immunisation: Pre-School Booster"/>
-				<display value="Immunisation: Pre-School Booster"/>
+				<code value="HCP Clinical Interventions : Influenza 2 years"/>
+				<display value="HCP Clinical Interventions : Influenza 2 years"/>
 			</concept>
 			<concept>
-				<code value="Immunisation: Teenage Booster"/>
-				<display value="Immunisation: Teenage Booster"/>
+				<code value="HCP Clinical Interventions : Influenza 3 years"/>
+				<display value="HCP Clinical Interventions : Influenza 3 years"/>
 			</concept>
 			<concept>
-				<code value="Intervention: Vitamin K"/>
-				<display value="Intervention: Vitamin K"/>
+				<code value="HCP Clinical Interventions : Influenza 4 years"/>
+				<display value="HCP Clinical Interventions : Influenza 4 years"/>
 			</concept>
 			<concept>
-				<code value="Maternity Discharge"/>
-				<display value="Maternity Discharge"/>
+				<code value="HCP Clinical Interventions : Influenza year 1"/>
+				<display value="HCP Clinical Interventions : Influenza year 1"/>
 			</concept>
 			<concept>
-				<code value="Measurements"/>
-				<display value="Measurements"/>
+				<code value="HCP Clinical Interventions : Influenza year 2"/>
+				<display value="HCP Clinical Interventions : Influenza year 2"/>
 			</concept>
 			<concept>
-				<code value="Medical History: Family History"/>
-				<display value="Medical History: Family History"/>
+				<code value="HCP Clinical Interventions : Influenza year 3"/>
+				<display value="HCP Clinical Interventions : Influenza year 3"/>
 			</concept>
 			<concept>
-				<code value="Medical History: Social History"/>
-				<display value="Medical History: Social History"/>
+				<code value="Indicators : Hep B"/>
+				<display value="Indicators : Hep B"/>
 			</concept>
 			<concept>
-				<code value="Newborn Blood Spot Screening"/>
-				<display value="Newborn Blood Spot Screening"/>
+				<code value="Indicators : BCG"/>
+				<display value="Indicators : BCG"/>
 			</concept>
 			<concept>
-				<code value="Newborn Hearing Screening"/>
-				<display value="Newborn Hearing Screening"/>
+				<code value="Indicators : Influenza"/>
+				<display value="Indicators : Influenza"/>
 			</concept>
 			<concept>
-				<code value="Newborn Physical Examination"/>
-				<display value="Newborn Physical Examination"/>
+				<code value="Indicators : Pneumococcal"/>
+				<display value="Indicators : Pneumococcal"/>
 			</concept>
 			<concept>
-				<code value="Physical Examination"/>
-				<display value="Physical Examination"/>
+				<code value="Indicators : Varicella Zoster"/>
+				<display value="Indicators : Varicella Zoster"/>
 			</concept>
 			<concept>
-				<code value="Professional Advice"/>
-				<display value="Professional Advice"/>
+				<code value="Immunisation Administration : BCG immunisation"/>
+				<display value="Immunisation Administration : BCG immunisation"/>
 			</concept>
 			<concept>
-				<code value="Professional Comment"/>
-				<display value="Professional Comment"/>
+				<code value="Immunisation Administration : Hep B birth"/>
+				<display value="Immunisation Administration : Hep B birth"/>
 			</concept>
 			<concept>
-				<code value="Referral: Referral"/>
-				<display value="Referral: Referral"/>
+				<code value="Immunisation Administration : Hep B 4 weeks"/>
+				<display value="Immunisation Administration : Hep B 4 weeks"/>
 			</concept>
 			<concept>
-				<code value="Referral: Follow Up"/>
-				<display value="Referral: Follow Up"/>
+				<code value="Immunisation Administration : Hep B 8 weeks"/>
+				<display value="Immunisation Administration : Hep B 8 weeks"/>
+			</concept>
+			<concept>
+				<code value="Immunisation Administration : Hep B 12 months"/>
+				<display value="Immunisation Administration : Hep B 12 months"/>
+			</concept>
+			<concept>
+				<code value="Immunisation Administration : 8 week imms"/>
+				<display value="Immunisation Administration : 8 week imms"/>
+			</concept>
+			<concept>
+				<code value="Immunisation Administration : 12 week imms"/>
+				<display value="Immunisation Administration : 12 week imms"/>
+			</concept>
+			<concept>
+				<code value="Immunisation Administration : 16 week imms"/>
+				<display value="Immunisation Administration : 16 week imms"/>
+			</concept>
+			<concept>
+				<code value="Immunisation Administration : MMR"/>
+				<display value="Immunisation Administration : MMR"/>
+			</concept>
+			<concept>
+				<code value="Immunisation Administration : Pre-school booster"/>
+				<display value="Immunisation Administration : Pre-school booster"/>
+			</concept>
+			<concept>
+				<code value="Immunisation Administration : HPV first imms"/>
+				<display value="Immunisation Administration : HPV first imms"/>
+			</concept>
+			<concept>
+				<code value="Immunisation Administration : HPV second imms"/>
+				<display value="Immunisation Administration : HPV second imms"/>
+			</concept>
+			<concept>
+				<code value="Immunisation Administration : Teenage booster"/>
+				<display value="Immunisation Administration : Teenage booster"/>
+			</concept>
+			<concept>
+				<code value="Immunisation Administration : Influenza 2 years"/>
+				<display value="Immunisation Administration : Influenza 2 years"/>
+			</concept>
+			<concept>
+				<code value="Immunisation Administration : Influenza 3 years"/>
+				<display value="Immunisation Administration : Influenza 3 years"/>
+			</concept>
+			<concept>
+				<code value="Immunisation Administration : Influenza 4 years"/>
+				<display value="Immunisation Administration : Influenza 4 years"/>
+			</concept>
+			<concept>
+				<code value="Immunisation Administration : Influenza year 1"/>
+				<display value="Immunisation Administration : Influenza year 1"/>
+			</concept>
+			<concept>
+				<code value="Immunisation Administration : Influenza year 2"/>
+				<display value="Immunisation Administration : Influenza year 2"/>
+			</concept>
+			<concept>
+				<code value="Immunisation Administration : Influenza year 3"/>
+				<display value="Immunisation Administration : Influenza year 3"/>
+			</concept>
+			<concept>
+				<code value="Intervention : Vitamin K"/>
+				<display value="Intervention : Vitamin K"/>
+			</concept>
+			<concept>
+				<code value="Measurements : Measurements"/>
+				<display value="Measurements : Measurements"/>
+			</concept>
+			<concept>
+				<code value="Medical History : Conditions"/>
+				<display value="Medical History : Conditions"/>
+			</concept>
+			<concept>
+				<code value="Medical History : Allergies and Drug Reactions"/>
+				<display value="Medical History : Allergies and Drug Reactions"/>
+			</concept>
+			<concept>
+				<code value="Medical History : Social History"/>
+				<display value="Medical History : Social History"/>
+			</concept>
+			<concept>
+				<code value="Medical History : Accidents and Injuries"/>
+				<display value="Medical History : Accidents and Injuries"/>
+			</concept>
+			<concept>
+				<code value="Medical History : Medication"/>
+				<display value="Medical History : Medication"/>
+			</concept>
+			<concept>
+				<code value="Medical History : Family History"/>
+				<display value="Medical History : Family History"/>
+			</concept>
+			<concept>
+				<code value="Medical History : Risk Factors"/>
+				<display value="Medical History : Risk Factors"/>
+			</concept>
+			<concept>
+				<code value="Physical Examinations : Newborn Physical Examination"/>
+				<display value="Physical Examinations : Newborn Physical Examination"/>
+			</concept>
+			<concept>
+				<code value="Referral : Referral"/>
+				<display value="Referral : Referral"/>
+			</concept>
+			<concept>
+				<code value="Referral : Follow Up"/>
+				<display value="Referral : Follow Up"/>
+			</concept>
+			<concept>
+				<code value="Screening : Hearing"/>
+				<display value="Screening : Hearing"/>
+			</concept>
+			<concept>
+				<code value="Screening : Blood Spot"/>
+				<display value="Screening : Blood Spot"/>
 			</concept>
 		</include>
 	</compose>

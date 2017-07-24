@@ -1,15 +1,15 @@
-<?xml version="1.0" encoding="utf-8"?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <meta>
-    <lastUpdated value="2017-06-02T15:32:50.913+01:00" />
+    <lastUpdated value="2017-07-24T12:43:02.177+01:00" />
     <tag>
       <system value="urn:hscic:publishOrder" />
       <code value="1" />
     </tag>
-    	<tag>
+    <tag>
       <system value="urn:hscic:examples" />
-      <code value="DCH-Bundle-BCGImms" />
-      <display value="DCH-Bundle-BCGImms" />
+      <code value="DCH-Bundle-AccidentsandInjuries" />
+      <display value="DCH-Bundle-AccidentsandInjuries" />
     </tag>
   </meta>
   <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm">
@@ -745,7 +745,7 @@
       <path value="Bundle.entry.resource" />
       <short value="A resource in the bundle" />
       <definition value="The Resources for the entry." />
-      <min value="0" />
+      <min value="1" />
       <max value="1" />
       <base>
         <path value="Bundle.entry.resource" />
@@ -2319,6 +2319,10 @@
     </element>
     <element>
       <path value="Bundle.entry.fullUrl" />
+      <min value="1" />
+    </element>
+    <element>
+      <path value="Bundle.entry.resource" />
       <min value="1" />
     </element>
     <element>

@@ -1,0 +1,1 @@
+This extension has been constrained to represent a link to a Patient resource for a Related Person.
