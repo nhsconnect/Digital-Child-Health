@@ -1,11 +1,7 @@
-<?xml version="1.0" encoding="utf-8"?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <meta>
-    <lastUpdated value="2017-03-22T10:34:35.556+00:00" />
-    <tag>
-      <system value="urn:hscic:publishOrder" />
-      <code value="14" />
-    </tag>
+    <lastUpdated value="2017-03-27T08:55:12.902+01:00" />
   </meta>
   <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm">
     <valueInteger value="1" />
@@ -2514,7 +2510,7 @@
       </base>
       <type>
         <code value="Reference" />
-        <profile value="http://hl7.org/fhir/StructureDefinition/Organization" />
+        <profile value="https://fhir.hl7.org.uk/StructureDefinition/CareConnect-Organization-1" />
       </type>
       <condition value="ele-1" />
       <constraint>
@@ -6978,6 +6974,10 @@
     <element>
       <path value="Location.identifier.assigner" />
       <max value="0" />
+      <type>
+        <code value="Reference" />
+        <profile value="https://fhir.hl7.org.uk/StructureDefinition/CareConnect-Organization-1" />
+      </type>
     </element>
     <element>
       <path value="Location.identifier" />
