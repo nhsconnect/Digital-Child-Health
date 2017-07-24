@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <meta>
-    <lastUpdated value="2017-07-24T14:50:33.083+01:00" />
+    <lastUpdated value="2017-07-24T16:56:58.188+01:00" />
     <tag>
       <system value="urn:hscic:publishOrder" />
       <code value="6" />
@@ -5485,7 +5485,9 @@
       <binding>
         <strength value="required" />
         <description value="Whether or not the Newborn Hearing Screening was offered and accepted" />
-        <valueSetUri value="https://fhir.nhs.uk/ValueSet/DCH-ConsentStatusNewbornHearing-1" />
+        <valueSetReference>
+          <reference value="https://fhir.nhs.uk/ValueSet/DCH-ConsentStatusNewbornHearing-1" />
+        </valueSetReference>
       </binding>
       <mapping>
         <identity value="rim" />
@@ -5900,7 +5902,9 @@
       <binding>
         <strength value="required" />
         <description value="The free/busy status of an appointment" />
-        <valueSetUri value="https://fhir.nhs.uk/ValueSet/AppointmentStatus-1" />
+        <valueSetReference>
+          <reference value="https://fhir.nhs.uk/ValueSet/AppointmentStatus-1" />
+        </valueSetReference>
       </binding>
       <mapping>
         <identity value="rim" />
@@ -6311,7 +6315,9 @@
       <binding>
         <strength value="required" />
         <description value="The outcome of the newborn hearing screening" />
-        <valueSetUri value="https://fhir.nhs.uk/ValueSet/DCH-ScreeningOutcome-1" />
+        <valueSetReference>
+          <reference value="https://fhir.nhs.uk/ValueSet/DCH-ScreeningOutcome-1" />
+        </valueSetReference>
       </binding>
       <mapping>
         <identity value="rim" />
@@ -6404,6 +6410,7 @@
       <type>
         <code value="uri" />
       </type>
+      <fixedUri value="https://fhir.nhs.uk/DCH-ScreeningOutcome-1" />
       <condition value="ele-1" />
       <constraint>
         <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-expression">
@@ -7421,7 +7428,9 @@
       <binding>
         <strength value="required" />
         <description value="Care Connect SDS Job Role Name" />
-        <valueSetUri value="https://fhir.hl7.org.uk/ValueSet/CareConnect-SDSJobRoleName-1" />
+        <valueSetReference>
+          <reference value="https://fhir.hl7.org.uk/ValueSet/CareConnect-SDSJobRoleName-1" />
+        </valueSetReference>
       </binding>
       <mapping>
         <identity value="rim" />
@@ -9968,7 +9977,9 @@
       <binding>
         <strength value="required" />
         <description value="Care Pathway for newborn hearing screening programme (NHSP)" />
-        <valueSetUri value="https://fhir.nhs.uk/ValueSet/DCH-Protocol-1" />
+        <valueSetReference>
+          <reference value="https://fhir.nhs.uk/ValueSet/DCH-Protocol-1" />
+        </valueSetReference>
       </binding>
       <mapping>
         <identity value="rim" />
@@ -10669,7 +10680,9 @@
       <binding>
         <strength value="required" />
         <description value="Classification of the encounter" />
-        <valueSetUri value="http://hl7.org/fhir/ValueSet/encounter-class" />
+        <valueSetReference>
+          <reference value="http://hl7.org/fhir/ValueSet/encounter-class" />
+        </valueSetReference>
       </binding>
       <mapping>
         <identity value="rim" />
@@ -11080,7 +11093,9 @@
       <binding>
         <strength value="required" />
         <description value="Whether the newborn hearing screening was completed" />
-        <valueSetUri value="https://fhir.nhs.uk/ValueSet/DCH-TestStatus-1" />
+        <valueSetReference>
+          <reference value="https://fhir.nhs.uk/ValueSet/DCH-TestStatus-1" />
+        </valueSetReference>
       </binding>
       <mapping>
         <identity value="rim" />
@@ -15522,7 +15537,9 @@
       <binding>
         <strength value="required" />
         <description value="Whether or not the Newborn Hearing Screening was offered and accepted" />
-        <valueSetUri value="https://fhir.nhs.uk/ValueSet/DCH-ConsentStatusNewbornHearing-1" />
+        <valueSetReference>
+          <reference value="https://fhir.nhs.uk/ValueSet/DCH-ConsentStatusNewbornHearing-1" />
+        </valueSetReference>
       </binding>
     </element>
     <element>
@@ -15565,7 +15582,9 @@
       <binding>
         <strength value="required" />
         <description value="The free/busy status of an appointment" />
-        <valueSetUri value="https://fhir.nhs.uk/ValueSet/AppointmentStatus-1" />
+        <valueSetReference>
+          <reference value="https://fhir.nhs.uk/ValueSet/AppointmentStatus-1" />
+        </valueSetReference>
       </binding>
     </element>
     <element>
@@ -15604,12 +15623,15 @@
       <binding>
         <strength value="required" />
         <description value="The outcome of the newborn hearing screening" />
-        <valueSetUri value="https://fhir.nhs.uk/ValueSet/DCH-ScreeningOutcome-1" />
+        <valueSetReference>
+          <reference value="https://fhir.nhs.uk/ValueSet/DCH-ScreeningOutcome-1" />
+        </valueSetReference>
       </binding>
     </element>
     <element>
       <path value="QuestionnaireResponse.group.question.answer.valueCoding.system" />
       <min value="1" />
+      <fixedUri value="https://fhir.nhs.uk/DCH-ScreeningOutcome-1" />
     </element>
     <element>
       <path value="QuestionnaireResponse.group.question.answer.valueCoding.code" />
@@ -15697,7 +15719,9 @@
       <binding>
         <strength value="required" />
         <description value="Care Connect SDS Job Role Name" />
-        <valueSetUri value="https://fhir.hl7.org.uk/ValueSet/CareConnect-SDSJobRoleName-1" />
+        <valueSetReference>
+          <reference value="https://fhir.hl7.org.uk/ValueSet/CareConnect-SDSJobRoleName-1" />
+        </valueSetReference>
       </binding>
     </element>
     <element>
@@ -15881,7 +15905,9 @@
       <binding>
         <strength value="required" />
         <description value="Care Pathway for newborn hearing screening programme (NHSP)" />
-        <valueSetUri value="https://fhir.nhs.uk/ValueSet/DCH-Protocol-1" />
+        <valueSetReference>
+          <reference value="https://fhir.nhs.uk/ValueSet/DCH-Protocol-1" />
+        </valueSetReference>
       </binding>
     </element>
     <element>
@@ -15931,7 +15957,9 @@
       <binding>
         <strength value="required" />
         <description value="Classification of the encounter" />
-        <valueSetUri value="http://hl7.org/fhir/ValueSet/encounter-class" />
+        <valueSetReference>
+          <reference value="http://hl7.org/fhir/ValueSet/encounter-class" />
+        </valueSetReference>
       </binding>
     </element>
     <element>
@@ -15968,7 +15996,9 @@
       <binding>
         <strength value="required" />
         <description value="Whether the newborn hearing screening was completed" />
-        <valueSetUri value="https://fhir.nhs.uk/ValueSet/DCH-TestStatus-1" />
+        <valueSetReference>
+          <reference value="https://fhir.nhs.uk/ValueSet/DCH-TestStatus-1" />
+        </valueSetReference>
       </binding>
     </element>
     <element>

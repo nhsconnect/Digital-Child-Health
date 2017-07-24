@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <meta>
-    <lastUpdated value="2017-07-10T17:03:32.967+01:00" />
+    <lastUpdated value="2017-07-24T16:09:50.259+01:00" />
     <tag>
       <system value="urn:hscic:publishOrder" />
       <code value="2" />
@@ -3629,8 +3629,8 @@
       <definition value="The actual data of the message - a reference to the root/focus class of the event." />
       <comments value="The data is defined where the transaction type is defined. The transaction data is always included in the bundle that is the full message.  Only the root resource is specified.  The resources it references should be contained in the bundle but are not also listed here.  Multiple repetitions are allowed to cater for merges and other situations with multiple focal targets." />
       <requirements value="Every message event is about actual data, a single resource, that is identified in the definition of the event, and perhaps some or all linked resources." />
-      <min value="1" />
-      <max value="1" />
+      <min value="2" />
+      <max value="2" />
       <base>
         <path value="MessageHeader.data" />
         <min value="0" />
@@ -3915,8 +3915,8 @@
     </element>
     <element>
       <path value="MessageHeader.data" />
-      <min value="1" />
-      <max value="1" />
+      <min value="2" />
+      <max value="2" />
       <type>
         <code value="Reference" />
         <profile value="https://fhir.nhs.uk/StructureDefinition/DCH-RelatedPersons-QuestionnaireResponse-1" />

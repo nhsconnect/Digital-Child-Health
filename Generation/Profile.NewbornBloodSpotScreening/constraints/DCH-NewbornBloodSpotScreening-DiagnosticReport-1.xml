@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <meta>
-    <lastUpdated value="2017-07-24T14:48:46.606+01:00" />
+    <lastUpdated value="2017-07-24T16:49:50.417+01:00" />
     <tag>
       <system value="urn:hscic:publishOrder" />
       <code value="12" />
@@ -1607,7 +1607,7 @@
       <alias value="service" />
       <alias value="discipline" />
       <min value="0" />
-      <max value="1" />
+      <max value="0" />
       <base>
         <path value="DiagnosticReport.category" />
         <min value="0" />
@@ -5193,6 +5193,10 @@
     <element>
       <path value="DiagnosticReport.status" />
       <fixedCode value="final" />
+    </element>
+    <element>
+      <path value="DiagnosticReport.category" />
+      <max value="0" />
     </element>
     <element>
       <path value="DiagnosticReport.code.coding.system" />

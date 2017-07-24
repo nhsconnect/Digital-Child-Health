@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <meta>
-    <lastUpdated value="2017-07-24T14:43:00.303+01:00" />
+    <lastUpdated value="2017-07-24T17:27:02.271+01:00" />
     <tag>
       <system value="urn:hscic:publishOrder" />
       <code value="5" />
@@ -3591,7 +3591,7 @@
       <short value="The responses will consist of the value and the supporting resource for that value" />
       <definition value="The responses will consist of the value and the supporting resource for that value." />
       <comments value="The value is nested because we cannot have a repeating structure that has variable type." />
-      <min value="1" />
+      <min value="2" />
       <max value="2" />
       <base>
         <path value="QuestionnaireResponse.group.question.answer" />
@@ -4002,7 +4002,7 @@
       <short value="The responses will consist of the value and the supporting resource for that value" />
       <definition value="The responses will consist of the value and the supporting resource for that value." />
       <comments value="The value is nested because we cannot have a repeating structure that has variable type." />
-      <min value="1" />
+      <min value="2" />
       <max value="2" />
       <base>
         <path value="QuestionnaireResponse.group.question.answer" />
@@ -4413,7 +4413,7 @@
       <short value="The responses will consist of the value and the supporting resource for that value" />
       <definition value="The responses will consist of the value and the supporting resource for that value." />
       <comments value="The value is nested because we cannot have a repeating structure that has variable type." />
-      <min value="1" />
+      <min value="2" />
       <max value="2" />
       <base>
         <path value="QuestionnaireResponse.group.question.answer" />
@@ -4824,7 +4824,7 @@
       <short value="The responses will consist of the value and the supporting resource for that value" />
       <definition value="The responses will consist of the value and the supporting resource for that value." />
       <comments value="The value is nested because we cannot have a repeating structure that has variable type." />
-      <min value="1" />
+      <min value="2" />
       <max value="2" />
       <base>
         <path value="QuestionnaireResponse.group.question.answer" />
@@ -5242,7 +5242,7 @@
       <short value="The responses will consist of the value and the supporting resource for that value" />
       <definition value="The responses will consist of the value and the supporting resource for that value." />
       <comments value="The value is nested because we cannot have a repeating structure that has variable type." />
-      <min value="1" />
+      <min value="2" />
       <max value="2" />
       <base>
         <path value="QuestionnaireResponse.group.question.answer" />
@@ -5653,7 +5653,7 @@
       <short value="The responses will consist of the value and the supporting resource for that value" />
       <definition value="The responses will consist of the value and the supporting resource for that value." />
       <comments value="The value is nested because we cannot have a repeating structure that has variable type." />
-      <min value="1" />
+      <min value="2" />
       <max value="2" />
       <base>
         <path value="QuestionnaireResponse.group.question.answer" />
@@ -5816,6 +5816,11 @@
         <human value="All FHIR elements must have a @value or children" />
         <xpath value="@value|f:*|h:div" />
       </constraint>
+      <binding>
+        <strength value="required" />
+        <description value="Code indicating the response provided for a question." />
+        <valueSetUri value="http://snomed.info/sct" />
+      </binding>
       <mapping>
         <identity value="rim" />
         <map value="n/a" />
@@ -6064,7 +6069,7 @@
       <short value="The responses will consist of the value and the supporting resource for that value" />
       <definition value="The responses will consist of the value and the supporting resource for that value." />
       <comments value="The value is nested because we cannot have a repeating structure that has variable type." />
-      <min value="1" />
+      <min value="2" />
       <max value="2" />
       <base>
         <path value="QuestionnaireResponse.group.question.answer" />
@@ -6227,6 +6232,11 @@
         <human value="All FHIR elements must have a @value or children" />
         <xpath value="@value|f:*|h:div" />
       </constraint>
+      <binding>
+        <strength value="required" />
+        <description value="Code indicating the response provided for a question." />
+        <valueSetUri value="http://snomed.info/sct" />
+      </binding>
       <mapping>
         <identity value="rim" />
         <map value="n/a" />
@@ -6379,7 +6389,7 @@
       <path value="QuestionnaireResponse.group.question.answer" />
       <short value="The responses will consist of the value and the supporting resource for that value" />
       <definition value="The responses will consist of the value and the supporting resource for that value." />
-      <min value="1" />
+      <min value="2" />
       <max value="2" />
     </element>
     <element>
@@ -6418,7 +6428,7 @@
       <path value="QuestionnaireResponse.group.question.answer" />
       <short value="The responses will consist of the value and the supporting resource for that value" />
       <definition value="The responses will consist of the value and the supporting resource for that value." />
-      <min value="1" />
+      <min value="2" />
       <max value="2" />
     </element>
     <element>
@@ -6457,7 +6467,7 @@
       <path value="QuestionnaireResponse.group.question.answer" />
       <short value="The responses will consist of the value and the supporting resource for that value" />
       <definition value="The responses will consist of the value and the supporting resource for that value." />
-      <min value="1" />
+      <min value="2" />
       <max value="2" />
     </element>
     <element>
@@ -6496,7 +6506,7 @@
       <path value="QuestionnaireResponse.group.question.answer" />
       <short value="The responses will consist of the value and the supporting resource for that value" />
       <definition value="The responses will consist of the value and the supporting resource for that value." />
-      <min value="1" />
+      <min value="2" />
       <max value="2" />
     </element>
     <element>
@@ -6542,7 +6552,7 @@
       <path value="QuestionnaireResponse.group.question.answer" />
       <short value="The responses will consist of the value and the supporting resource for that value" />
       <definition value="The responses will consist of the value and the supporting resource for that value." />
-      <min value="1" />
+      <min value="2" />
       <max value="2" />
     </element>
     <element>
@@ -6581,7 +6591,7 @@
       <path value="QuestionnaireResponse.group.question.answer" />
       <short value="The responses will consist of the value and the supporting resource for that value" />
       <definition value="The responses will consist of the value and the supporting resource for that value." />
-      <min value="1" />
+      <min value="2" />
       <max value="2" />
     </element>
     <element>
@@ -6594,6 +6604,10 @@
         <code value="Reference" />
         <profile value="https://fhir.hl7.org.uk/StructureDefinition/CareConnect-DCH-FamilyMemberHistory-1" />
       </type>
+      <binding>
+        <strength value="required" />
+        <valueSetUri value="http://snomed.info/sct" />
+      </binding>
     </element>
     <element>
       <path value="QuestionnaireResponse.group.question.answer.group" />
@@ -6620,7 +6634,7 @@
       <path value="QuestionnaireResponse.group.question.answer" />
       <short value="The responses will consist of the value and the supporting resource for that value" />
       <definition value="The responses will consist of the value and the supporting resource for that value." />
-      <min value="1" />
+      <min value="2" />
       <max value="2" />
     </element>
     <element>
@@ -6633,6 +6647,10 @@
         <code value="Reference" />
         <profile value="https://fhir.hl7.org.uk/StructureDefinition/CareConnect-DCH-FamilyMemberHistory-1" />
       </type>
+      <binding>
+        <strength value="required" />
+        <valueSetUri value="http://snomed.info/sct" />
+      </binding>
     </element>
     <element>
       <path value="QuestionnaireResponse.group.question.answer.group" />

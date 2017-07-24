@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <meta>
-    <lastUpdated value="2017-07-24T14:36:11.694+01:00" />
+    <lastUpdated value="2017-07-24T17:31:24.304+01:00" />
     <tag>
       <system value="urn:hscic:publishOrder" />
       <code value="5" />
@@ -11804,6 +11804,11 @@
         <human value="All FHIR elements must have a @value or children" />
         <xpath value="@value|f:*|h:div" />
       </constraint>
+      <binding>
+        <strength value="required" />
+        <description value="Code indicating the response provided for a question." />
+        <valueSetUri value="http://snomed.info/sct" />
+      </binding>
       <mapping>
         <identity value="rim" />
         <map value="n/a" />
@@ -14277,6 +14282,11 @@
         <human value="All FHIR elements must have a @value or children" />
         <xpath value="@value|f:*|h:div" />
       </constraint>
+      <binding>
+        <strength value="required" />
+        <description value="Code indicating the response provided for a question." />
+        <valueSetUri value="http://snomed.info/sct" />
+      </binding>
       <mapping>
         <identity value="rim" />
         <map value="n/a" />
@@ -14688,6 +14698,11 @@
         <human value="All FHIR elements must have a @value or children" />
         <xpath value="@value|f:*|h:div" />
       </constraint>
+      <binding>
+        <strength value="required" />
+        <description value="Code indicating the response provided for a question." />
+        <valueSetUri value="http://snomed.info/sct" />
+      </binding>
       <mapping>
         <identity value="rim" />
         <map value="n/a" />
@@ -15511,6 +15526,11 @@
         <human value="All FHIR elements must have a @value or children" />
         <xpath value="@value|f:*|h:div" />
       </constraint>
+      <binding>
+        <strength value="required" />
+        <description value="Code indicating the response provided for a question." />
+        <valueSetUri value="http://snomed.info/sct" />
+      </binding>
       <mapping>
         <identity value="rim" />
         <map value="n/a" />
@@ -20523,6 +20543,10 @@
         <code value="Reference" />
         <profile value="https://fhir.nhs.uk/StructureDefinition/DCH-ProcedureRequest-1" />
       </type>
+      <binding>
+        <strength value="required" />
+        <valueSetUri value="http://snomed.info/sct" />
+      </binding>
     </element>
     <element>
       <path value="QuestionnaireResponse.group.question.answer.group" />
@@ -20764,6 +20788,10 @@
         <code value="Reference" />
         <profile value="https://fhir.hl7.org.uk/StructureDefinition/CareConnect-DCH-Immunization-1" />
       </type>
+      <binding>
+        <strength value="required" />
+        <valueSetUri value="http://snomed.info/sct" />
+      </binding>
     </element>
     <element>
       <path value="QuestionnaireResponse.group.question.answer.group" />
@@ -20803,6 +20831,10 @@
         <code value="Reference" />
         <profile value="https://fhir.hl7.org.uk/StructureDefinition/CareConnect-DCH-Immunization-1" />
       </type>
+      <binding>
+        <strength value="required" />
+        <valueSetUri value="http://snomed.info/sct" />
+      </binding>
     </element>
     <element>
       <path value="QuestionnaireResponse.group.question.answer.group" />
@@ -20882,6 +20914,10 @@
         <code value="Reference" />
         <profile value="https://fhir.hl7.org.uk/StructureDefinition/CareConnect-DCH-Immunization-1" />
       </type>
+      <binding>
+        <strength value="required" />
+        <valueSetUri value="http://snomed.info/sct" />
+      </binding>
     </element>
     <element>
       <path value="QuestionnaireResponse.group.question.answer.group" />

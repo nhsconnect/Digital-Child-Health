@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <meta>
-    <lastUpdated value="2017-07-24T14:41:04.546+01:00" />
+    <lastUpdated value="2017-07-24T16:41:46.843+01:00" />
     <tag>
       <system value="urn:hscic:publishOrder" />
       <code value="5" />
@@ -3591,7 +3591,7 @@
       <short value="The responses will consist of the value and the supporting resource for that value" />
       <definition value="The responses will consist of the value and the supporting resource for that value." />
       <comments value="The value is nested because we cannot have a repeating structure that has variable type." />
-      <min value="1" />
+      <min value="2" />
       <max value="2" />
       <base>
         <path value="QuestionnaireResponse.group.question.answer" />
@@ -4002,7 +4002,7 @@
       <short value="The responses will consist of the value and the supporting resource for that value" />
       <definition value="The responses will consist of the value and the supporting resource for that value." />
       <comments value="The value is nested because we cannot have a repeating structure that has variable type." />
-      <min value="1" />
+      <min value="2" />
       <max value="2" />
       <base>
         <path value="QuestionnaireResponse.group.question.answer" />
@@ -4413,7 +4413,7 @@
       <short value="The responses will consist of the value and the supporting resource for that value" />
       <definition value="The responses will consist of the value and the supporting resource for that value." />
       <comments value="The value is nested because we cannot have a repeating structure that has variable type." />
-      <min value="1" />
+      <min value="2" />
       <max value="2" />
       <base>
         <path value="QuestionnaireResponse.group.question.answer" />
@@ -4824,7 +4824,7 @@
       <short value="The responses will consist of the value and the supporting resource for that value" />
       <definition value="The responses will consist of the value and the supporting resource for that value." />
       <comments value="The value is nested because we cannot have a repeating structure that has variable type." />
-      <min value="1" />
+      <min value="2" />
       <max value="2" />
       <base>
         <path value="QuestionnaireResponse.group.question.answer" />
@@ -5242,7 +5242,7 @@
       <short value="The responses will consist of the value and the supporting resource for that value" />
       <definition value="The responses will consist of the value and the supporting resource for that value." />
       <comments value="The value is nested because we cannot have a repeating structure that has variable type." />
-      <min value="1" />
+      <min value="2" />
       <max value="2" />
       <base>
         <path value="QuestionnaireResponse.group.question.answer" />
@@ -5653,7 +5653,7 @@
       <short value="The responses will consist of the value and the supporting resource for that value" />
       <definition value="The responses will consist of the value and the supporting resource for that value." />
       <comments value="The value is nested because we cannot have a repeating structure that has variable type." />
-      <min value="1" />
+      <min value="2" />
       <max value="2" />
       <base>
         <path value="QuestionnaireResponse.group.question.answer" />
@@ -6071,7 +6071,7 @@
       <short value="The responses will consist of the value and the supporting resource for that value" />
       <definition value="The responses will consist of the value and the supporting resource for that value." />
       <comments value="The value is nested because we cannot have a repeating structure that has variable type." />
-      <min value="1" />
+      <min value="2" />
       <max value="2" />
       <base>
         <path value="QuestionnaireResponse.group.question.answer" />
@@ -6482,7 +6482,7 @@
       <short value="The responses will consist of the value and the supporting resource for that value" />
       <definition value="The responses will consist of the value and the supporting resource for that value." />
       <comments value="The value is nested because we cannot have a repeating structure that has variable type." />
-      <min value="1" />
+      <min value="2" />
       <max value="2" />
       <base>
         <path value="QuestionnaireResponse.group.question.answer" />
@@ -6900,7 +6900,7 @@
       <short value="The responses will consist of the value and the supporting resource for that value" />
       <definition value="The responses will consist of the value and the supporting resource for that value." />
       <comments value="The value is nested because we cannot have a repeating structure that has variable type." />
-      <min value="1" />
+      <min value="2" />
       <max value="2" />
       <base>
         <path value="QuestionnaireResponse.group.question.answer" />
@@ -7318,7 +7318,7 @@
       <short value="The responses will consist of the value and the supporting resource for that value" />
       <definition value="The responses will consist of the value and the supporting resource for that value." />
       <comments value="The value is nested because we cannot have a repeating structure that has variable type." />
-      <min value="1" />
+      <min value="2" />
       <max value="2" />
       <base>
         <path value="QuestionnaireResponse.group.question.answer" />
@@ -7736,7 +7736,7 @@
       <short value="The responses will consist of the value and the supporting resource for that value" />
       <definition value="The responses will consist of the value and the supporting resource for that value." />
       <comments value="The value is nested because we cannot have a repeating structure that has variable type." />
-      <min value="1" />
+      <min value="2" />
       <max value="2" />
       <base>
         <path value="QuestionnaireResponse.group.question.answer" />
@@ -8148,7 +8148,7 @@
       <short value="The responses will consist of the value and the supporting resource for that value" />
       <definition value="The responses will consist of the value and the supporting resource for that value." />
       <comments value="The value is nested because we cannot have a repeating structure that has variable type." />
-      <min value="1" />
+      <min value="2" />
       <max value="2" />
       <base>
         <path value="QuestionnaireResponse.group.question.answer" />
@@ -8559,8 +8559,8 @@
       <short value="The responses will consist of the value and the supporting resource for that value" />
       <definition value="The responses will consist of the value and the supporting resource for that value." />
       <comments value="The value is nested because we cannot have a repeating structure that has variable type." />
-      <min value="1" />
-      <max value="3" />
+      <min value="2" />
+      <max value="2" />
       <base>
         <path value="QuestionnaireResponse.group.question.answer" />
         <min value="0" />
@@ -8707,9 +8707,6 @@
       </base>
       <type>
         <code value="dateTime" />
-      </type>
-      <type>
-        <code value="string" />
       </type>
       <type>
         <code value="Reference" />
@@ -8877,7 +8874,7 @@
       <path value="QuestionnaireResponse.group.question.answer" />
       <short value="The responses will consist of the value and the supporting resource for that value" />
       <definition value="The responses will consist of the value and the supporting resource for that value." />
-      <min value="1" />
+      <min value="2" />
       <max value="2" />
     </element>
     <element>
@@ -8916,7 +8913,7 @@
       <path value="QuestionnaireResponse.group.question.answer" />
       <short value="The responses will consist of the value and the supporting resource for that value" />
       <definition value="The responses will consist of the value and the supporting resource for that value." />
-      <min value="1" />
+      <min value="2" />
       <max value="2" />
     </element>
     <element>
@@ -8955,7 +8952,7 @@
       <path value="QuestionnaireResponse.group.question.answer" />
       <short value="The responses will consist of the value and the supporting resource for that value" />
       <definition value="The responses will consist of the value and the supporting resource for that value." />
-      <min value="1" />
+      <min value="2" />
       <max value="2" />
     </element>
     <element>
@@ -8994,7 +8991,7 @@
       <path value="QuestionnaireResponse.group.question.answer" />
       <short value="The responses will consist of the value and the supporting resource for that value" />
       <definition value="The responses will consist of the value and the supporting resource for that value." />
-      <min value="1" />
+      <min value="2" />
       <max value="2" />
     </element>
     <element>
@@ -9040,7 +9037,7 @@
       <path value="QuestionnaireResponse.group.question.answer" />
       <short value="The responses will consist of the value and the supporting resource for that value" />
       <definition value="The responses will consist of the value and the supporting resource for that value." />
-      <min value="1" />
+      <min value="2" />
       <max value="2" />
     </element>
     <element>
@@ -9079,7 +9076,7 @@
       <path value="QuestionnaireResponse.group.question.answer" />
       <short value="The responses will consist of the value and the supporting resource for that value" />
       <definition value="The responses will consist of the value and the supporting resource for that value." />
-      <min value="1" />
+      <min value="2" />
       <max value="2" />
     </element>
     <element>
@@ -9125,7 +9122,7 @@
       <path value="QuestionnaireResponse.group.question.answer" />
       <short value="The responses will consist of the value and the supporting resource for that value" />
       <definition value="The responses will consist of the value and the supporting resource for that value." />
-      <min value="1" />
+      <min value="2" />
       <max value="2" />
     </element>
     <element>
@@ -9164,7 +9161,7 @@
       <path value="QuestionnaireResponse.group.question.answer" />
       <short value="The responses will consist of the value and the supporting resource for that value" />
       <definition value="The responses will consist of the value and the supporting resource for that value." />
-      <min value="1" />
+      <min value="2" />
       <max value="2" />
     </element>
     <element>
@@ -9210,7 +9207,7 @@
       <path value="QuestionnaireResponse.group.question.answer" />
       <short value="The responses will consist of the value and the supporting resource for that value" />
       <definition value="The responses will consist of the value and the supporting resource for that value." />
-      <min value="1" />
+      <min value="2" />
       <max value="2" />
     </element>
     <element>
@@ -9256,7 +9253,7 @@
       <path value="QuestionnaireResponse.group.question.answer" />
       <short value="The responses will consist of the value and the supporting resource for that value" />
       <definition value="The responses will consist of the value and the supporting resource for that value." />
-      <min value="1" />
+      <min value="2" />
       <max value="2" />
     </element>
     <element>
@@ -9302,7 +9299,7 @@
       <path value="QuestionnaireResponse.group.question.answer" />
       <short value="The responses will consist of the value and the supporting resource for that value" />
       <definition value="The responses will consist of the value and the supporting resource for that value." />
-      <min value="1" />
+      <min value="2" />
       <max value="2" />
     </element>
     <element>
@@ -9342,7 +9339,7 @@
       <path value="QuestionnaireResponse.group.question.answer" />
       <short value="The responses will consist of the value and the supporting resource for that value" />
       <definition value="The responses will consist of the value and the supporting resource for that value." />
-      <min value="1" />
+      <min value="2" />
       <max value="2" />
     </element>
     <element>
@@ -9381,17 +9378,14 @@
       <path value="QuestionnaireResponse.group.question.answer" />
       <short value="The responses will consist of the value and the supporting resource for that value" />
       <definition value="The responses will consist of the value and the supporting resource for that value." />
-      <min value="1" />
-      <max value="3" />
+      <min value="2" />
+      <max value="2" />
     </element>
     <element>
       <path value="QuestionnaireResponse.group.question.answer.value[x]" />
       <min value="1" />
       <type>
         <code value="dateTime" />
-      </type>
-      <type>
-        <code value="string" />
       </type>
       <type>
         <code value="Reference" />

@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <meta>
-    <lastUpdated value="2017-07-24T14:40:03.776+01:00" />
+    <lastUpdated value="2017-07-24T17:22:00.491+01:00" />
     <tag>
       <system value="urn:hscic:publishOrder" />
       <code value="5" />
@@ -6090,6 +6090,11 @@
         <human value="All FHIR elements must have a @value or children" />
         <xpath value="@value|f:*|h:div" />
       </constraint>
+      <binding>
+        <strength value="required" />
+        <description value="Code indicating the response provided for a question." />
+        <valueSetUri value="http://snomed.info/sct" />
+      </binding>
       <mapping>
         <identity value="rim" />
         <map value="n/a" />
@@ -7333,7 +7338,9 @@
       <binding>
         <strength value="required" />
         <description value="A code to identify how the Accident and Emergency Attendance ended" />
-        <valueSetUri value="https://fhir.nhs.uk/ValueSet/DCH-DisposalCode-1" />
+        <valueSetReference>
+          <reference value="https://fhir.nhs.uk/ValueSet/DCH-DisposalCode-1" />
+        </valueSetReference>
       </binding>
       <mapping>
         <identity value="rim" />
@@ -7746,6 +7753,11 @@
         <human value="All FHIR elements must have a @value or children" />
         <xpath value="@value|f:*|h:div" />
       </constraint>
+      <binding>
+        <strength value="required" />
+        <description value="Code indicating the response provided for a question." />
+        <valueSetUri value="http://snomed.info/sct" />
+      </binding>
       <mapping>
         <identity value="rim" />
         <map value="n/a" />
@@ -8148,6 +8160,10 @@
         <code value="Reference" />
         <profile value="https://fhir.hl7.org.uk/StructureDefinition/CareConnect-DCH-Condition-1" />
       </type>
+      <binding>
+        <strength value="required" />
+        <valueSetUri value="http://snomed.info/sct" />
+      </binding>
     </element>
     <element>
       <path value="QuestionnaireResponse.group.question.answer.group" />
@@ -8274,7 +8290,9 @@
       <binding>
         <strength value="required" />
         <description value="A code to identify how the Accident and Emergency Attendance ended" />
-        <valueSetUri value="https://fhir.nhs.uk/ValueSet/DCH-DisposalCode-1" />
+        <valueSetReference>
+          <reference value="https://fhir.nhs.uk/ValueSet/DCH-DisposalCode-1" />
+        </valueSetReference>
       </binding>
     </element>
     <element>
@@ -8315,6 +8333,10 @@
         <code value="Reference" />
         <profile value="https://fhir.hl7.org.uk/StructureDefinition/CareConnect-DCH-Condition-1" />
       </type>
+      <binding>
+        <strength value="required" />
+        <valueSetUri value="http://snomed.info/sct" />
+      </binding>
     </element>
     <element>
       <path value="QuestionnaireResponse.group.question.answer.group" />
