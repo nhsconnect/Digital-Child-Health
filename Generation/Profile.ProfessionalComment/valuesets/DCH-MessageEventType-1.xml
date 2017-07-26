@@ -15,6 +15,10 @@
 				<display value="New event message"/>
 			</concept>
 			<concept>
+				<code value="update"/>
+				<display value="Update event message"/>
+			</concept>
+			<concept>
 				<code value="delete"/>
 				<display value="Delete event message"/>
 			</concept>

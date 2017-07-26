@@ -1,14 +1,13 @@
-<?xml version="1.0" encoding="utf-8"?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <meta>
-    <lastUpdated value="2017-03-22T10:34:29.285+00:00" />
-    <tag>
-      <system value="urn:hscic:publishOrder" />
-      <code value="3" />
-    </tag>
+    <lastUpdated value="2017-07-24T11:45:07.257+01:00" />
   </meta>
+  <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm">
+    <valueInteger value="4" />
+  </extension>
   <url value="https://fhir.hl7.org.uk/StructureDefinition/CareConnect-Organization-1" />
-  <version value="1.0.0" />
+  <version value="1.0.1" />
   <name value="CareConnect-Organization-1" />
   <status value="active" />
   <publisher value="HL7 UK" />
@@ -74,12 +73,6 @@
         <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-expression">
           <valueString value="identifier or name" />
         </extension>
-        <key value="org-1" />
-        <severity value="error" />
-        <human value="The organization SHALL at least have a name or an id, and possibly more than one" />
-        <xpath value="count(f:identifier | f:name) &gt; 0" />
-      </constraint>
-      <constraint>
         <key value="org-1" />
         <severity value="error" />
         <human value="The organization SHALL at least have a name or an id, and possibly more than one" />
@@ -385,7 +378,7 @@
     <element>
       <path value="Organization.extension" />
       <name value="organization-period" />
-      <short value="The date range that this organization should be considered available." />
+      <short value="The date range that this organization should be considered available" />
       <definition value="The date range that this organization should be considered available." />
       <comments value="There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone." />
       <alias value="extensions" />
@@ -2632,7 +2625,7 @@
       </base>
       <type>
         <code value="Reference" />
-        <profile value="http://hl7.org/fhir/StructureDefinition/Organization" />
+        <profile value="https://fhir.hl7.org.uk/StructureDefinition/CareConnect-Organization-1" />
       </type>
       <condition value="ele-1" />
       <constraint>
@@ -3808,7 +3801,7 @@
       </base>
       <type>
         <code value="Reference" />
-        <profile value="http://hl7.org/fhir/StructureDefinition/Organization" />
+        <profile value="https://fhir.hl7.org.uk/StructureDefinition/CareConnect-Organization-1" />
       </type>
       <condition value="ele-1" />
       <constraint>
@@ -5166,8 +5159,8 @@
     </element>
     <element>
       <path value="Organization.active" />
-      <short value="Date the organization became active, and if inactive, the date the organization became inactive." />
-      <definition value="Date the organization became active, and if inactive, the date the organization became inactive." />
+      <short value="Whether the organization's record is still in active use." />
+      <definition value="Whether the organization's record is still in active use." />
       <comments value="Default is true." />
       <requirements value="Need a flag to indicate a record is no longer to be used and should generally be hidden for the user in the UI." />
       <min value="0" />
@@ -5563,7 +5556,7 @@
       <definition value="A symbol in syntax defined by the system. The symbol may be a predefined code or an expression in a syntax defined by the coding system (e.g. post-coordination)." />
       <comments value="Note that FHIR strings may not exceed 1MB in size" />
       <requirements value="Need to refer to a particular code in the system." />
-      <min value="0" />
+      <min value="1" />
       <max value="1" />
       <base>
         <path value="Coding.code" />
@@ -5607,7 +5600,7 @@
       <definition value="A representation of the meaning of the code in the system, following the rules of the system." />
       <comments value="Note that FHIR strings may not exceed 1MB in size" />
       <requirements value="Need to be able to carry a human-readable meaning of the code for readers that do not know  the system." />
-      <min value="0" />
+      <min value="1" />
       <max value="1" />
       <base>
         <path value="Coding.display" />
@@ -8050,7 +8043,7 @@
       <comments value="This is labeled as &quot;Is Modifier&quot; because applications should not mistake a temporary or old name etc.for a current/permanent one. Applications can assume that a name is current unless it explicitly says that it is temporary or old." />
       <requirements value="Allows the appropriate name for a particular context of use to be selected from among a set of names." />
       <min value="0" />
-      <max value="0" />
+      <max value="1" />
       <base>
         <path value="HumanName.use" />
         <min value="0" />
@@ -8102,7 +8095,7 @@
       <comments value="Can provide both a text representation and structured parts." />
       <requirements value="A renderable, unencoded form." />
       <min value="0" />
-      <max value="0" />
+      <max value="1" />
       <base>
         <path value="HumanName.text" />
         <min value="0" />
@@ -8141,7 +8134,7 @@
       <definition value="The part of a name that links to the genealogy. In some cultures (e.g. Eritrea) the family name of a son is the first name of his father." />
       <comments value="For family name, hyphenated names such as &quot;Smith-Jones&quot; are a single name, but names with spaces such as &quot;Smith Jones&quot; are broken into multiple parts." />
       <alias value="surname" />
-      <min value="1" />
+      <min value="0" />
       <max value="1" />
       <base>
         <path value="HumanName.family" />
@@ -8230,7 +8223,7 @@
       <definition value="Part of the name that is acquired as a title due to academic, legal, employment or nobility status, etc. and that appears at the start of the name." />
       <comments value="Note that FHIR strings may not exceed 1MB in size" />
       <min value="0" />
-      <max value="1" />
+      <max value="*" />
       <base>
         <path value="HumanName.prefix" />
         <min value="0" />
@@ -8273,7 +8266,7 @@
       <definition value="Part of the name that is acquired as a title due to academic, legal, employment or nobility status, etc. and that appears at the end of the name." />
       <comments value="Note that FHIR strings may not exceed 1MB in size" />
       <min value="0" />
-      <max value="1" />
+      <max value="*" />
       <base>
         <path value="HumanName.suffix" />
         <min value="0" />
@@ -8313,7 +8306,7 @@
       <comments value="This is not a duration - that's a measure of time (a separate type), but a duration that occurs at a fixed value of time. A Period specifies a range of time; the context of use will specify whether the entire range applies (e.g. &quot;the patient was an inpatient of the hospital for this time range&quot;) or one value from the range applies (e.g. &quot;give to the patient between these two times&quot;). If duration is required, specify the type as Interval|Duration." />
       <requirements value="Allows names to be placed in historical context." />
       <min value="0" />
-      <max value="0" />
+      <max value="1" />
       <base>
         <path value="HumanName.period" />
         <min value="0" />
@@ -9800,12 +9793,6 @@
       <type>
         <code value="Organization" />
       </type>
-      <constraint>
-        <key value="org-1" />
-        <severity value="error" />
-        <human value="The organization SHALL at least have a name or an id, and possibly more than one" />
-        <xpath value="count(f:identifier | f:name) &gt; 0" />
-      </constraint>
     </element>
     <element>
       <path value="Organization.extension" />
@@ -9871,6 +9858,10 @@
     <element>
       <path value="Organization.identifier.assigner" />
       <max value="0" />
+      <type>
+        <code value="Reference" />
+        <profile value="https://fhir.hl7.org.uk/StructureDefinition/CareConnect-Organization-1" />
+      </type>
     </element>
     <element>
       <path value="Organization.identifier" />
@@ -9903,6 +9894,10 @@
     <element>
       <path value="Organization.identifier.assigner" />
       <max value="0" />
+      <type>
+        <code value="Reference" />
+        <profile value="https://fhir.hl7.org.uk/StructureDefinition/CareConnect-Organization-1" />
+      </type>
     </element>
     <element>
       <path value="Organization.identifier" />
@@ -9927,8 +9922,7 @@
     </element>
     <element>
       <path value="Organization.active" />
-      <short value="Date the organization became active, and if inactive, the date the organization became inactive." />
-      <definition value="Date the organization became active, and if inactive, the date the organization became inactive." />
+      <short value="Whether the organization's record is still in active use." />
     </element>
     <element>
       <path value="Organization.type.coding.system" />
@@ -9938,6 +9932,14 @@
     <element>
       <path value="Organization.type.coding.version" />
       <max value="0" />
+    </element>
+    <element>
+      <path value="Organization.type.coding.code" />
+      <min value="1" />
+    </element>
+    <element>
+      <path value="Organization.type.coding.display" />
+      <min value="1" />
     </element>
     <element>
       <path value="Organization.type.coding.userSelected" />
@@ -9987,29 +9989,8 @@
       </type>
     </element>
     <element>
-      <path value="Organization.contact.name.use" />
-      <max value="0" />
-    </element>
-    <element>
-      <path value="Organization.contact.name.text" />
-      <max value="0" />
-    </element>
-    <element>
       <path value="Organization.contact.name.family" />
-      <min value="1" />
       <max value="1" />
-    </element>
-    <element>
-      <path value="Organization.contact.name.prefix" />
-      <max value="1" />
-    </element>
-    <element>
-      <path value="Organization.contact.name.suffix" />
-      <max value="1" />
-    </element>
-    <element>
-      <path value="Organization.contact.name.period" />
-      <max value="0" />
     </element>
     <element>
       <path value="Organization.contact.address.use" />

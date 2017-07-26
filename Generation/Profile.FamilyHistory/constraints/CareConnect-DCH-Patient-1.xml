@@ -1,7 +1,7 @@
-<?xml version="1.0" encoding="utf-8"?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <meta>
-    <lastUpdated value="2017-03-31T11:19:25.955+01:00" />
+    <lastUpdated value="2017-07-26T18:42:19.578+01:00" />
     <tag>
       <system value="urn:hscic:publishOrder" />
       <code value="4" />
@@ -11,11 +11,11 @@
     <valueInteger value="5" />
   </extension>
   <url value="https://fhir.hl7.org.uk/StructureDefinition/CareConnect-DCH-Patient-1" />
-  <version value="1.0.0" />
+  <version value="1.0.1" />
   <name value="CareConnect-DCH-Patient-1" />
-  <status value="draft" />
+  <status value="active" />
   <publisher value="HL7 UK" />
-  <description value="The Patient resource represents the patient involved in the provision of healthcare related services, with further constraints to represent a Patient as a subject of a Child Health event." />
+  <description value="The Patient resource represents the patient involved in the provision of healthcare related services, with further constraints applied to represent a patient as the subject of a Child Health Event." />
   <copyright value="Copyright © 2016 HL7 UK&#xD;&#xA;&#xD;&#xA;Licensed under the Apache License, Version 2.0 (the &quot;License&quot;); you may not use this file except in compliance with the License. You may obtain a copy of the License at&#xD;&#xA;&#xD;&#xA;http://www.apache.org/licenses/LICENSE-2.0&#xD;&#xA;&#xD;&#xA;Unless required by applicable law or agreed to in writing, software distributed under the License is distributed on an &quot;AS IS&quot; BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the License for the specific language governing permissions and limitations under the License.&#xD;&#xA;&#xD;&#xA;HL7® FHIR® standard Copyright © 2011+ HL7&#xD;&#xA;&#xD;&#xA;The HL7® FHIR® standard is used under the FHIR license. You may obtain a copy of the FHIR license at&#xD;&#xA;&#xD;&#xA;https://www.hl7.org/fhir/license.html" />
   <fhirVersion value="1.0.1" />
   <mapping>
@@ -301,6 +301,10 @@
     </element>
     <element>
       <path value="Patient.extension" />
+      <slicing>
+        <discriminator value="url" />
+        <rules value="open" />
+      </slicing>
       <short value="Additional Content defined by implementations" />
       <definition value="May be used to represent additional information that is not part of the basic definition of the resource. In order to make the use of extensions safe and manageable, there is a strict set of governance  applied to the definition and use of extensions. Though any implementer is allowed to define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension." />
       <comments value="There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone." />
@@ -326,6 +330,285 @@
         <human value="All FHIR elements must have a @value or children" />
         <xpath value="@value|f:*|h:div" />
       </constraint>
+      <mapping>
+        <identity value="rim" />
+        <map value="n/a" />
+      </mapping>
+      <mapping>
+        <identity value="rim" />
+        <map value="N/A" />
+      </mapping>
+    </element>
+    <element>
+      <path value="Patient.extension" />
+      <name value="registrationDetails" />
+      <short value="Additional registration information for the Patient resource" />
+      <definition value="Additional registration information for the Patient resource." />
+      <comments value="There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone." />
+      <alias value="extensions" />
+      <alias value="user content" />
+      <min value="0" />
+      <max value="1" />
+      <base>
+        <path value="DomainResource.extension" />
+        <min value="0" />
+        <max value="*" />
+      </base>
+      <type>
+        <code value="Extension" />
+        <profile value="https://fhir.hl7.org.uk/StructureDefinition/Extension-CareConnect-RegistrationDetails-1" />
+      </type>
+      <condition value="ele-1" />
+      <constraint>
+        <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-expression">
+          <valueString value="children()" />
+        </extension>
+        <key value="ele-1" />
+        <severity value="error" />
+        <human value="All FHIR elements must have a @value or children" />
+        <xpath value="@value|f:*|h:div" />
+      </constraint>
+      <mapping>
+        <identity value="rim" />
+        <map value="n/a" />
+      </mapping>
+      <mapping>
+        <identity value="rim" />
+        <map value="N/A" />
+      </mapping>
+    </element>
+    <element>
+      <path value="Patient.extension" />
+      <name value="ethnicCategory" />
+      <short value="Ethnic category" />
+      <definition value="The ethnicity of the subject." />
+      <comments value="There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone." />
+      <alias value="extensions" />
+      <alias value="user content" />
+      <min value="0" />
+      <max value="1" />
+      <base>
+        <path value="DomainResource.extension" />
+        <min value="0" />
+        <max value="*" />
+      </base>
+      <type>
+        <code value="Extension" />
+        <profile value="https://fhir.hl7.org.uk/StructureDefinition/Extension-CareConnect-EthnicCategory-1" />
+      </type>
+      <condition value="ele-1" />
+      <constraint>
+        <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-expression">
+          <valueString value="children()" />
+        </extension>
+        <key value="ele-1" />
+        <severity value="error" />
+        <human value="All FHIR elements must have a @value or children" />
+        <xpath value="@value|f:*|h:div" />
+      </constraint>
+      <mapping>
+        <identity value="rim" />
+        <map value="n/a" />
+      </mapping>
+      <mapping>
+        <identity value="rim" />
+        <map value="N/A" />
+      </mapping>
+    </element>
+    <element>
+      <path value="Patient.extension" />
+      <name value="religiousAffiliation" />
+      <short value="Religious affiliation" />
+      <definition value="The religious affiliation of the subject." />
+      <comments value="There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone." />
+      <alias value="extensions" />
+      <alias value="user content" />
+      <min value="0" />
+      <max value="1" />
+      <base>
+        <path value="DomainResource.extension" />
+        <min value="0" />
+        <max value="*" />
+      </base>
+      <type>
+        <code value="Extension" />
+        <profile value="https://fhir.hl7.org.uk/StructureDefinition/Extension-CareConnect-ReligiousAffiliation-1" />
+      </type>
+      <condition value="ele-1" />
+      <constraint>
+        <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-expression">
+          <valueString value="children()" />
+        </extension>
+        <key value="ele-1" />
+        <severity value="error" />
+        <human value="All FHIR elements must have a @value or children" />
+        <xpath value="@value|f:*|h:div" />
+      </constraint>
+      <mapping>
+        <identity value="rim" />
+        <map value="n/a" />
+      </mapping>
+      <mapping>
+        <identity value="rim" />
+        <map value="N/A" />
+      </mapping>
+    </element>
+    <element>
+      <path value="Patient.extension" />
+      <name value="patient-cadavericDonor" />
+      <short value="Flag indicating whether the patient authorized the donation of body parts after death" />
+      <definition value="Flag indicating whether the patient authorized the donation of body parts after death." />
+      <comments value="There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone." />
+      <alias value="extensions" />
+      <alias value="user content" />
+      <min value="0" />
+      <max value="1" />
+      <base>
+        <path value="DomainResource.extension" />
+        <min value="0" />
+        <max value="*" />
+      </base>
+      <type>
+        <code value="Extension" />
+        <profile value="http://hl7.org/fhir/StructureDefinition/patient-cadavericDonor" />
+      </type>
+      <condition value="ele-1" />
+      <constraint>
+        <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-expression">
+          <valueString value="children()" />
+        </extension>
+        <key value="ele-1" />
+        <severity value="error" />
+        <human value="All FHIR elements must have a @value or children" />
+        <xpath value="@value|f:*|h:div" />
+      </constraint>
+      <mapping>
+        <identity value="rim" />
+        <map value="n/a" />
+      </mapping>
+      <mapping>
+        <identity value="rim" />
+        <map value="N/A" />
+      </mapping>
+    </element>
+    <element>
+      <path value="Patient.extension" />
+      <name value="residentialStatus" />
+      <short value="The residential status of the patient " />
+      <definition value="The residential status of the patient. For example if this patient is a UK resident." />
+      <comments value="There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone." />
+      <alias value="extensions" />
+      <alias value="user content" />
+      <min value="0" />
+      <max value="1" />
+      <base>
+        <path value="DomainResource.extension" />
+        <min value="0" />
+        <max value="*" />
+      </base>
+      <type>
+        <code value="Extension" />
+        <profile value="https://fhir.hl7.org.uk/StructureDefinition/Extension-CareConnect-ResidentialStatus-1" />
+      </type>
+      <condition value="ele-1" />
+      <constraint>
+        <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-expression">
+          <valueString value="children()" />
+        </extension>
+        <key value="ele-1" />
+        <severity value="error" />
+        <human value="All FHIR elements must have a @value or children" />
+        <xpath value="@value|f:*|h:div" />
+      </constraint>
+      <isModifier value="false" />
+      <binding>
+        <strength value="required" />
+        <description value="The residential status of the patient" />
+        <valueSetUri value="https://fhir.hl7.org.uk/ValueSet/CareConnect-ResidentialStatus-1" />
+      </binding>
+      <mapping>
+        <identity value="rim" />
+        <map value="n/a" />
+      </mapping>
+      <mapping>
+        <identity value="rim" />
+        <map value="N/A" />
+      </mapping>
+    </element>
+    <element>
+      <path value="Patient.extension" />
+      <name value="treatmentCategory" />
+      <short value="The treatment category for this patient" />
+      <definition value="The treatment category for this patient. For example if this patient is entitled to free healthcare treatment." />
+      <comments value="There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone." />
+      <alias value="extensions" />
+      <alias value="user content" />
+      <min value="0" />
+      <max value="1" />
+      <base>
+        <path value="DomainResource.extension" />
+        <min value="0" />
+        <max value="*" />
+      </base>
+      <type>
+        <code value="Extension" />
+        <profile value="https://fhir.hl7.org.uk/StructureDefinition/Extension-CareConnect-TreatmentCategory-1" />
+      </type>
+      <condition value="ele-1" />
+      <constraint>
+        <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-expression">
+          <valueString value="children()" />
+        </extension>
+        <key value="ele-1" />
+        <severity value="error" />
+        <human value="All FHIR elements must have a @value or children" />
+        <xpath value="@value|f:*|h:div" />
+      </constraint>
+      <isModifier value="false" />
+      <binding>
+        <strength value="required" />
+        <description value="The treatment category of the patient" />
+        <valueSetUri value="https://fhir.hl7.org.uk/ValueSet/CareConnect-TreatmentCategory-1" />
+      </binding>
+      <mapping>
+        <identity value="rim" />
+        <map value="n/a" />
+      </mapping>
+      <mapping>
+        <identity value="rim" />
+        <map value="N/A" />
+      </mapping>
+    </element>
+    <element>
+      <path value="Patient.extension" />
+      <name value="nhsCommunication" />
+      <short value="NHS communication preferences for a resource" />
+      <definition value="Communication preferences including a list of Languages which may be used for communication" />
+      <comments value="There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone." />
+      <alias value="extensions" />
+      <alias value="user content" />
+      <min value="0" />
+      <max value="*" />
+      <base>
+        <path value="DomainResource.extension" />
+        <min value="0" />
+        <max value="*" />
+      </base>
+      <type>
+        <code value="Extension" />
+        <profile value="https://fhir.hl7.org.uk/StructureDefinition/Extension-CareConnect-NHSCommunication-1" />
+      </type>
+      <condition value="ele-1" />
+      <constraint>
+        <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-expression">
+          <valueString value="children()" />
+        </extension>
+        <key value="ele-1" />
+        <severity value="error" />
+        <human value="All FHIR elements must have a @value or children" />
+        <xpath value="@value|f:*|h:div" />
+      </constraint>
+      <isModifier value="false" />
       <mapping>
         <identity value="rim" />
         <map value="n/a" />
@@ -2587,7 +2870,7 @@
       </base>
       <type>
         <code value="Reference" />
-        <profile value="http://hl7.org/fhir/StructureDefinition/Organization" />
+        <profile value="https://fhir.hl7.org.uk/StructureDefinition/CareConnect-Organization-1" />
       </type>
       <condition value="ele-1" />
       <constraint>
@@ -3949,7 +4232,7 @@
       <comments value="Default is true. If a record is inactive, and linked to an active record, then future patient/record updates should occur on the other patient." />
       <requirements value="Need to be able to mark a patient record as not to be used because it was created in error." />
       <min value="0" />
-      <max value="0" />
+      <max value="1" />
       <base>
         <path value="Patient.active" />
         <min value="0" />
@@ -3992,7 +4275,6 @@
       <path value="Patient.name" />
       <slicing>
         <discriminator value="use" />
-        <discriminator value="period.end" />
         <ordered value="false" />
         <rules value="openAtEnd" />
       </slicing>
@@ -4898,7 +5180,7 @@
       <definition value="Part of the name that is acquired as a title due to academic, legal, employment or nobility status, etc. and that appears at the start of the name." />
       <comments value="Note that FHIR strings may not exceed 1MB in size" />
       <min value="0" />
-      <max value="1" />
+      <max value="*" />
       <base>
         <path value="HumanName.prefix" />
         <min value="0" />
@@ -4941,7 +5223,7 @@
       <definition value="Part of the name that is acquired as a title due to academic, legal, employment or nobility status, etc. and that appears at the end of the name." />
       <comments value="Note that FHIR strings may not exceed 1MB in size" />
       <min value="0" />
-      <max value="1" />
+      <max value="*" />
       <base>
         <path value="HumanName.suffix" />
         <min value="0" />
@@ -5147,7 +5429,7 @@
       <definition value="The end of the period. If the end of the period is missing, it means that the period is ongoing. The start may be in the past, and the end date in the future, which means that period is expected/planned to end at that time." />
       <comments value="The high value includes any matching date/time. i.e. 2012-02-03T10:00:00 is in a period that has a end value of 2012-02-03." />
       <min value="0" />
-      <max value="0" />
+      <max value="1" />
       <base>
         <path value="Period.end" />
         <min value="0" />
@@ -5403,7 +5685,7 @@
       <definition value="The part of a name that links to the genealogy. In some cultures (e.g. Eritrea) the family name of a son is the first name of his father." />
       <comments value="For family name, hyphenated names such as &quot;Smith-Jones&quot; are a single name, but names with spaces such as &quot;Smith Jones&quot; are broken into multiple parts." />
       <alias value="surname" />
-      <min value="1" />
+      <min value="0" />
       <max value="1" />
       <base>
         <path value="HumanName.family" />
@@ -5492,7 +5774,7 @@
       <definition value="Part of the name that is acquired as a title due to academic, legal, employment or nobility status, etc. and that appears at the start of the name." />
       <comments value="Note that FHIR strings may not exceed 1MB in size" />
       <min value="0" />
-      <max value="1" />
+      <max value="*" />
       <base>
         <path value="HumanName.prefix" />
         <min value="0" />
@@ -5535,7 +5817,7 @@
       <definition value="Part of the name that is acquired as a title due to academic, legal, employment or nobility status, etc. and that appears at the end of the name." />
       <comments value="Note that FHIR strings may not exceed 1MB in size" />
       <min value="0" />
-      <max value="1" />
+      <max value="*" />
       <base>
         <path value="HumanName.suffix" />
         <min value="0" />
@@ -5783,7 +6065,7 @@
       <comments value="A Patient may have multiple ways to be contacted with different uses or applicable periods.  May need to have options for contacting the person urgently and also to help with identification. The address may not go directly to the individual, but may reach another party that is able to proxy for the patient (i.e. home phone, or pet owner's phone)." />
       <requirements value="People have (primary) ways to contact them in some way such as phone, email." />
       <min value="0" />
-      <max value="0" />
+      <max value="*" />
       <base>
         <path value="Patient.telecom" />
         <min value="0" />
@@ -6060,7 +6342,7 @@
       <definition value="Specifies a preferred order in which to use a set of contacts. Contacts are ranked with lower values coming before higher values." />
       <comments value="Note that rank does not necessarily follow the order in which the contacts are represented in the instance." />
       <min value="0" />
-      <max value="0" />
+      <max value="1" />
       <base>
         <path value="ContactPoint.rank" />
         <min value="0" />
@@ -6302,7 +6584,7 @@
       <definition value="Administrative Gender - the gender that the patient is considered to have for administration and record keeping purposes." />
       <comments value="The gender may not match the biological sex as determined by genetics, or the individual's preferred identification. Note that for both humans and particularly animals, there are other legitimate possibilities than M and F, though the vast majority of systems and contexts only support M and F.  Systems providing decision support or enforcing business rules should ideally do this on the basis of Observations dealing with the specific gender aspect of interest (anatomical, chromosonal, social, etc.)  However, because these observations are infrequently recorded, defaulting to the administrative gender is common practice.  Where such defaulting occurs, rule enforcement should allow for the variation between administrative and biological, chromosonal and other gender aspects.  For example, an alert about a hysterectomy on a male should be handled as a warning or overrideable error, not a &quot;hard&quot; error." />
       <requirements value="Needed for identification of the individual, in combination with (at least) name and birth date. Gender of individual drives many clinical processes." />
-      <min value="1" />
+      <min value="0" />
       <max value="1" />
       <base>
         <path value="Patient.gender" />
@@ -6473,7 +6755,7 @@
       <comments value="There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone." />
       <alias value="extensions" />
       <alias value="user content" />
-      <min value="0" />
+      <min value="1" />
       <max value="1" />
       <base>
         <path value="Element.extension" />
@@ -6536,7 +6818,7 @@
       <comments value="If there's no value in the instance it means there is no statement on whether or not the individual is deceased. Most systems will interpret the absence of a value as a sign of the person being alive." />
       <requirements value="The fact that a patient is deceased influences the clinical process. Also, in human communication and relation management it is necessary to know whether the person is alive." />
       <min value="0" />
-      <max value="0" />
+      <max value="1" />
       <base>
         <path value="Patient.deceased[x]" />
         <min value="0" />
@@ -6584,7 +6866,7 @@
       <comments value="Patient may have multiple addresses with different uses or applicable periods." />
       <requirements value="May need to keep track of patient addresses for contacting, billing or reporting requirements and also to help with identification." />
       <min value="0" />
-      <max value="0" />
+      <max value="*" />
       <base>
         <path value="Patient.address" />
         <min value="0" />
@@ -7352,7 +7634,7 @@
       <comments value="Not all terminology uses fit this general pattern. In some cases, models should not use CodeableConcept and use Coding directly and provide their own structure for managing text, codings, translations and the relationship between elements and pre- and post-coordination." />
       <requirements value="Most, if not all systems capture it." />
       <min value="0" />
-      <max value="0" />
+      <max value="1" />
       <base>
         <path value="Patient.maritalStatus" />
         <min value="0" />
@@ -7375,7 +7657,9 @@
       <binding>
         <strength value="required" />
         <description value="The domestic partnership status of a person." />
-        <valueSetUri value="http://hl7.org/fhir/ValueSet/marital-status" />
+        <valueSetReference>
+          <reference value="https://fhir.hl7.org.uk/ValueSet/CareConnect-MaritalStatus-1" />
+        </valueSetReference>
       </binding>
       <mapping>
         <identity value="rim" />
@@ -7864,7 +8148,7 @@
       <definition value="Indicates whether the patient is part of a multiple or indicates the actual birth order." />
       <requirements value="For disambiguation of multiple-birth children, especially relevant where the care provider doesn't meet the patient, such as labs." />
       <min value="0" />
-      <max value="0" />
+      <max value="1" />
       <base>
         <path value="Patient.multipleBirth[x]" />
         <min value="0" />
@@ -8353,7 +8637,7 @@
       <comments value="Contact covers all kinds of contact parties: family members, business contacts, guardians, caregivers. Not applicable to register pedigree and family ties beyond use of having contact." />
       <requirements value="Need to track people you can contact about the patient." />
       <min value="0" />
-      <max value="0" />
+      <max value="*" />
       <base>
         <path value="Patient.contact" />
         <min value="0" />
@@ -8529,7 +8813,7 @@
         <strength value="extensible" />
         <description value="The nature of the relationship between a patient and a contact person for that patient." />
         <valueSetReference>
-          <reference value="https://fhir.hl7.org.uk/ValueSet/CareConnect-PersonRelationshipType-1" />
+          <reference value="http://hl7.org/fhir/ValueSet/patient-contact-relationship" />
         </valueSetReference>
       </binding>
       <mapping>
@@ -9194,7 +9478,7 @@
       <comments value="Can provide both a text representation and structured parts." />
       <requirements value="A renderable, unencoded form." />
       <min value="0" />
-      <max value="0" />
+      <max value="1" />
       <base>
         <path value="HumanName.text" />
         <min value="0" />
@@ -9233,7 +9517,7 @@
       <definition value="The part of a name that links to the genealogy. In some cultures (e.g. Eritrea) the family name of a son is the first name of his father." />
       <comments value="For family name, hyphenated names such as &quot;Smith-Jones&quot; are a single name, but names with spaces such as &quot;Smith Jones&quot; are broken into multiple parts." />
       <alias value="surname" />
-      <min value="1" />
+      <min value="0" />
       <max value="1" />
       <base>
         <path value="HumanName.family" />
@@ -9322,7 +9606,7 @@
       <definition value="Part of the name that is acquired as a title due to academic, legal, employment or nobility status, etc. and that appears at the start of the name." />
       <comments value="Note that FHIR strings may not exceed 1MB in size" />
       <min value="0" />
-      <max value="1" />
+      <max value="*" />
       <base>
         <path value="HumanName.prefix" />
         <min value="0" />
@@ -9365,7 +9649,7 @@
       <definition value="Part of the name that is acquired as a title due to academic, legal, employment or nobility status, etc. and that appears at the end of the name." />
       <comments value="Note that FHIR strings may not exceed 1MB in size" />
       <min value="0" />
-      <max value="1" />
+      <max value="*" />
       <base>
         <path value="HumanName.suffix" />
         <min value="0" />
@@ -9405,7 +9689,7 @@
       <comments value="This is not a duration - that's a measure of time (a separate type), but a duration that occurs at a fixed value of time. A Period specifies a range of time; the context of use will specify whether the entire range applies (e.g. &quot;the patient was an inpatient of the hospital for this time range&quot;) or one value from the range applies (e.g. &quot;give to the patient between these two times&quot;). If duration is required, specify the type as Interval|Duration." />
       <requirements value="Allows names to be placed in historical context." />
       <min value="0" />
-      <max value="0" />
+      <max value="1" />
       <base>
         <path value="HumanName.period" />
         <min value="0" />
@@ -9890,7 +10174,7 @@
       <definition value="Specifies a preferred order in which to use a set of contacts. Contacts are ranked with lower values coming before higher values." />
       <comments value="Note that rank does not necessarily follow the order in which the contacts are represented in the instance." />
       <min value="0" />
-      <max value="0" />
+      <max value="1" />
       <base>
         <path value="ContactPoint.rank" />
         <min value="0" />
@@ -10958,7 +11242,7 @@
       </base>
       <type>
         <code value="Reference" />
-        <profile value="http://hl7.org/fhir/StructureDefinition/Organization" />
+        <profile value="https://fhir.hl7.org.uk/StructureDefinition/CareConnect-Organization-1" />
       </type>
       <condition value="ele-1" />
       <condition value="pat-1" />
@@ -13732,11 +14016,11 @@
     </element>
     <element>
       <path value="Patient.careProvider" />
-      <short value="Patient's nominated practitioner" />
+      <short value="Patient's nominated care provider" />
       <definition value="Patient's nominated care provider." />
       <comments value="This may be the primary care provider (in a GP context), or it may be a patient nominated care manager in a community/disablity setting, or even organization that will provide people to perform the care provider roles.  This is not to be used to record Care Teams, these should be recorded on either the CarePlan or EpisodeOfCare resources." />
       <min value="0" />
-      <max value="0" />
+      <max value="1" />
       <base>
         <path value="Patient.careProvider" />
         <min value="0" />
@@ -13744,11 +14028,11 @@
       </base>
       <type>
         <code value="Reference" />
-        <profile value="https://fhir.hl7.org.uk/StructureDefinition/CareConnect-Practitioner-1" />
+        <profile value="https://fhir.hl7.org.uk/StructureDefinition/CareConnect-Organization-1" />
       </type>
       <type>
         <code value="Reference" />
-        <profile value="https://fhir.hl7.org.uk/StructureDefinition/CareConnect-Organization-1" />
+        <profile value="https://fhir.hl7.org.uk/StructureDefinition/CareConnect-Practitioner-1" />
       </type>
       <condition value="ele-1" />
       <constraint>
@@ -13798,7 +14082,7 @@
       <comments value="There is only one managing organization for a specific patient record. Other organizations will have their own Patient record, and may use the Link property to join the records together (or a Person resource which can include confidence ratings for the association)." />
       <requirements value="Need to know who recognizes this patient record, manages and updates it." />
       <min value="0" />
-      <max value="0" />
+      <max value="1" />
       <base>
         <path value="Patient.managingOrganization" />
         <min value="0" />
@@ -13989,7 +14273,7 @@
       <comments value="There is no assumption that linked patient records have mutual links." />
       <requirements value="There are multiple usecases:   * Duplicate patient records due to the clerical errors associated with the difficulties of identifying humans consistently, and * Distribution of patient information across multiple servers." />
       <min value="0" />
-      <max value="0" />
+      <max value="*" />
       <base>
         <path value="Patient.link" />
         <min value="0" />
@@ -14376,6 +14660,72 @@
       </type>
     </element>
     <element>
+      <path value="Patient.extension" />
+      <slicing>
+        <discriminator value="url" />
+        <rules value="open" />
+      </slicing>
+    </element>
+    <element>
+      <path value="Patient.extension" />
+      <name value="registrationDetails" />
+      <type>
+        <code value="Extension" />
+        <profile value="https://fhir.hl7.org.uk/StructureDefinition/Extension-CareConnect-RegistrationDetails-1" />
+      </type>
+    </element>
+    <element>
+      <path value="Patient.extension" />
+      <name value="ethnicCategory" />
+      <max value="1" />
+      <type>
+        <code value="Extension" />
+        <profile value="https://fhir.hl7.org.uk/StructureDefinition/Extension-CareConnect-EthnicCategory-1" />
+      </type>
+    </element>
+    <element>
+      <path value="Patient.extension" />
+      <name value="religiousAffiliation" />
+      <max value="1" />
+      <type>
+        <code value="Extension" />
+        <profile value="https://fhir.hl7.org.uk/StructureDefinition/Extension-CareConnect-ReligiousAffiliation-1" />
+      </type>
+    </element>
+    <element>
+      <path value="Patient.extension" />
+      <name value="patient-cadavericDonor" />
+      <max value="1" />
+      <type>
+        <code value="Extension" />
+        <profile value="http://hl7.org/fhir/StructureDefinition/patient-cadavericDonor" />
+      </type>
+    </element>
+    <element>
+      <path value="Patient.extension" />
+      <name value="residentialStatus" />
+      <type>
+        <code value="Extension" />
+        <profile value="https://fhir.hl7.org.uk/StructureDefinition/Extension-CareConnect-ResidentialStatus-1" />
+      </type>
+    </element>
+    <element>
+      <path value="Patient.extension" />
+      <name value="treatmentCategory" />
+      <type>
+        <code value="Extension" />
+        <profile value="https://fhir.hl7.org.uk/StructureDefinition/Extension-CareConnect-TreatmentCategory-1" />
+      </type>
+    </element>
+    <element>
+      <path value="Patient.extension" />
+      <name value="nhsCommunication" />
+      <type>
+        <code value="Extension" />
+        <profile value="https://fhir.hl7.org.uk/StructureDefinition/Extension-CareConnect-NHSCommunication-1" />
+      </type>
+    </element>
+    <element>
       <path value="Patient.identifier" />
       <slicing>
         <discriminator value="system" />
@@ -14434,6 +14784,10 @@
     <element>
       <path value="Patient.identifier.assigner" />
       <max value="0" />
+      <type>
+        <code value="Reference" />
+        <profile value="https://fhir.hl7.org.uk/StructureDefinition/CareConnect-Organization-1" />
+      </type>
     </element>
     <element>
       <path value="Patient.identifier" />
@@ -14457,14 +14811,9 @@
       </type>
     </element>
     <element>
-      <path value="Patient.active" />
-      <max value="0" />
-    </element>
-    <element>
       <path value="Patient.name" />
       <slicing>
         <discriminator value="use" />
-        <discriminator value="period.end" />
         <ordered value="false" />
         <rules value="openAtEnd" />
       </slicing>
@@ -14489,18 +14838,6 @@
       <max value="1" />
     </element>
     <element>
-      <path value="Patient.name.prefix" />
-      <max value="1" />
-    </element>
-    <element>
-      <path value="Patient.name.suffix" />
-      <max value="1" />
-    </element>
-    <element>
-      <path value="Patient.name.period.end" />
-      <max value="0" />
-    </element>
-    <element>
       <path value="Patient.name" />
       <name value="other" />
       <short value="The patient's other names" />
@@ -14512,20 +14849,7 @@
     </element>
     <element>
       <path value="Patient.name.family" />
-      <min value="1" />
       <max value="1" />
-    </element>
-    <element>
-      <path value="Patient.name.prefix" />
-      <max value="1" />
-    </element>
-    <element>
-      <path value="Patient.name.suffix" />
-      <max value="1" />
-    </element>
-    <element>
-      <path value="Patient.telecom" />
-      <max value="0" />
     </element>
     <element>
       <path value="Patient.telecom.system" />
@@ -14536,12 +14860,7 @@
       <min value="1" />
     </element>
     <element>
-      <path value="Patient.telecom.rank" />
-      <max value="0" />
-    </element>
-    <element>
       <path value="Patient.gender" />
-      <min value="1" />
       <binding>
         <strength value="required" />
         <valueSetReference>
@@ -14564,18 +14883,11 @@
     <element>
       <path value="Patient.birthDate.extension" />
       <name value="patient-birthTime" />
+      <min value="1" />
       <type>
         <code value="Extension" />
         <profile value="http://hl7.org/fhir/StructureDefinition/patient-birthTime" />
       </type>
-    </element>
-    <element>
-      <path value="Patient.deceased[x]" />
-      <max value="0" />
-    </element>
-    <element>
-      <path value="Patient.address" />
-      <max value="0" />
     </element>
     <element>
       <path value="Patient.address.text" />
@@ -14607,10 +14919,11 @@
     </element>
     <element>
       <path value="Patient.maritalStatus" />
-      <max value="0" />
       <binding>
         <strength value="required" />
-        <valueSetUri value="http://hl7.org/fhir/ValueSet/marital-status" />
+        <valueSetReference>
+          <reference value="https://fhir.hl7.org.uk/ValueSet/CareConnect-MaritalStatus-1" />
+        </valueSetReference>
       </binding>
     </element>
     <element>
@@ -14644,28 +14957,8 @@
       <max value="0" />
     </element>
     <element>
-      <path value="Patient.multipleBirth[x]" />
-      <max value="0" />
-    </element>
-    <element>
       <path value="Patient.photo" />
       <max value="0" />
-    </element>
-    <element>
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-explicit-type-name">
-        <valueString value="Contact" />
-      </extension>
-      <path value="Patient.contact" />
-      <max value="0" />
-    </element>
-    <element>
-      <path value="Patient.contact.relationship" />
-      <binding>
-        <strength value="extensible" />
-        <valueSetReference>
-          <reference value="https://fhir.hl7.org.uk/ValueSet/CareConnect-PersonRelationshipType-1" />
-        </valueSetReference>
-      </binding>
     </element>
     <element>
       <path value="Patient.contact.relationship.coding.system" />
@@ -14701,29 +14994,8 @@
       <min value="1" />
     </element>
     <element>
-      <path value="Patient.contact.name.text" />
-      <max value="0" />
-    </element>
-    <element>
       <path value="Patient.contact.name.family" />
-      <min value="1" />
       <max value="1" />
-    </element>
-    <element>
-      <path value="Patient.contact.name.prefix" />
-      <max value="1" />
-    </element>
-    <element>
-      <path value="Patient.contact.name.suffix" />
-      <max value="1" />
-    </element>
-    <element>
-      <path value="Patient.contact.name.period" />
-      <max value="0" />
-    </element>
-    <element>
-      <path value="Patient.contact.telecom.rank" />
-      <max value="0" />
     </element>
     <element>
       <path value="Patient.contact.address.text" />
@@ -14763,6 +15035,13 @@
       </binding>
     </element>
     <element>
+      <path value="Patient.contact.organization" />
+      <type>
+        <code value="Reference" />
+        <profile value="https://fhir.hl7.org.uk/StructureDefinition/CareConnect-Organization-1" />
+      </type>
+    </element>
+    <element>
       <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-explicit-type-name">
         <valueString value="Animal" />
       </extension>
@@ -14775,28 +15054,23 @@
     </element>
     <element>
       <path value="Patient.careProvider" />
-      <short value="Patient's nominated practitioner" />
-      <max value="0" />
+      <short value="Patient's nominated care provider" />
+      <max value="1" />
+      <type>
+        <code value="Reference" />
+        <profile value="https://fhir.hl7.org.uk/StructureDefinition/CareConnect-Organization-1" />
+      </type>
       <type>
         <code value="Reference" />
         <profile value="https://fhir.hl7.org.uk/StructureDefinition/CareConnect-Practitioner-1" />
       </type>
-      <type>
-        <code value="Reference" />
-        <profile value="https://fhir.hl7.org.uk/StructureDefinition/CareConnect-Organization-1" />
-      </type>
     </element>
     <element>
       <path value="Patient.managingOrganization" />
-      <max value="0" />
       <type>
         <code value="Reference" />
         <profile value="https://fhir.hl7.org.uk/StructureDefinition/CareConnect-Organization-1" />
       </type>
-    </element>
-    <element>
-      <path value="Patient.link" />
-      <max value="0" />
     </element>
     <element>
       <path value="Patient.link.other" />
