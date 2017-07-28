@@ -1,0 +1,1 @@
+Indicates the legal/contractual nature of a prescription.

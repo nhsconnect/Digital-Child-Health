@@ -1,0 +1,1 @@
+Indicates the amount of medication to supply per dispense.

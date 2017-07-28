@@ -1,0 +1,1 @@
+Used to specify a link to the medication authorisation that this order is part of.

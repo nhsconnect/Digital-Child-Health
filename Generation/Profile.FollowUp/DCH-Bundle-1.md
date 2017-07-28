@@ -5,6 +5,7 @@ This 'DCH-Bundle-1' Bundle resource profile is used as a container to collect a 
 - [CareConnect-DCH-Patient-1]
 - [DCH-FollowUp-QuestionnaireResponse-1]
 - [CareConnect-DCH-Encounter-1]
+- [DCH-FollowUp-ReferralRequest-1]
 - [CareConnect-Practitioner-1]
 - [CareConnect-Location-1]
                                                                                                    
@@ -16,4 +17,5 @@ This 'DCH-Bundle-1' Bundle resource profile is used as a container to collect a 
 [DCH-FollowUp-QuestionnaireResponse-1]:dch-followup-questionnaireresponse-1.html
 [CareConnect-Practitioner-1]:careconnect-practitioner-1.html
 [CareConnect-Location-1]:careconnect-location-1.html
+[DCH-FollowUp-ReferralRequest-1]:dch-followup-referralrequest-1.htm;
 

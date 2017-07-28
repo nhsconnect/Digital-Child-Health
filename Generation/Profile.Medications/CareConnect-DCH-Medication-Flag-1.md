@@ -1,0 +1,1 @@
+This Flag Resource carries prospective warnings of potential issues related to the patient's medications.

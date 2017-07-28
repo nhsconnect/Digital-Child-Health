@@ -1,10 +1,10 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <meta>
-    <lastUpdated value="2017-06-20T20:19:25.096+01:00" />
+    <lastUpdated value="2017-07-28T16:20:20.644+01:00" />
     <tag>
       <system value="urn:hscic:publishOrder" />
-      <code value="7" />
+      <code value="14" />
     </tag>
   </meta>
   <url value="https://fhir.hl7.org.uk/StructureDefinition/CareConnect-DCH-MedicationOrder-1" />
@@ -13,7 +13,7 @@
   <status value="active" />
   <publisher value="HL7 UK" />
   <date value="2017-02-27T09:00:36.5316793Z" />
-  <description value="This MedicationOrder Resource represents an order for both supply of the medication and the instructions for administration of the medication to a patient, with further constraints applied for a Child Health event." />
+  <description value="This MedicationOrder Resource represents an order for both supply of the medication and the instructions for administration of the medication to a patient. Further constraints have been applied within the scope of a Child Health event." />
   <copyright value="Copyright © 2016 HL7 UK&#xD;&#xA;&#xD;&#xA;Licensed under the Apache License, Version 2.0 (the &quot;License&quot;); you may not use this file except in compliance with the License. You may obtain a copy of the License at&#xD;&#xA;&#xD;&#xA;http://www.apache.org/licenses/LICENSE-2.0&#xD;&#xA;&#xD;&#xA;Unless required by applicable law or agreed to in writing, software distributed under the License is distributed on an &quot;AS IS&quot; BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the License for the specific language governing permissions and limitations under the License.&#xD;&#xA;&#xD;&#xA;HL7® FHIR® standard Copyright © 2011+ HL7&#xD;&#xA;&#xD;&#xA;The HL7® FHIR® standard is used under the FHIR license. You may obtain a copy of the FHIR license at&#xD;&#xA;&#xD;&#xA;https://www.hl7.org/fhir/license.html" />
   <fhirVersion value="1.0.2" />
   <kind value="resource" />
@@ -286,6 +286,10 @@
     </element>
     <element>
       <path value="MedicationOrder.extension" />
+      <slicing>
+        <discriminator value="url" />
+        <rules value="open" />
+      </slicing>
       <short value="Additional Content defined by implementations" />
       <definition value="May be used to represent additional information that is not part of the basic definition of the resource. In order to make the use of extensions safe and manageable, there is a strict set of governance  applied to the definition and use of extensions. Though any implementer is allowed to define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension." />
       <comments value="There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone." />
@@ -300,6 +304,158 @@
       </base>
       <type>
         <code value="Extension" />
+      </type>
+      <condition value="ele-1" />
+      <constraint>
+        <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-expression">
+          <valueString value="children()" />
+        </extension>
+        <key value="ele-1" />
+        <severity value="error" />
+        <human value="All FHIR elements must have a @value or children" />
+        <xpath value="@value|f:*|h:div" />
+      </constraint>
+      <mapping>
+        <identity value="rim" />
+        <map value="n/a" />
+      </mapping>
+      <mapping>
+        <identity value="rim" />
+        <map value="N/A" />
+      </mapping>
+    </element>
+    <element>
+      <path value="MedicationOrder.extension" />
+      <name value="reason" />
+      <short value="Reason or indication for writing the prescription" />
+      <definition value="Reason resource added/performed/given." />
+      <comments value="There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone." />
+      <alias value="extensions" />
+      <alias value="user content" />
+      <min value="0" />
+      <max value="*" />
+      <base>
+        <path value="DomainResource.extension" />
+        <min value="0" />
+        <max value="*" />
+      </base>
+      <type>
+        <code value="Extension" />
+        <profile value="https://fhir.hl7.org.uk/StructureDefinition/Extension-CareConnect-DCH-ReasonCondition-1" />
+      </type>
+      <condition value="ele-1" />
+      <constraint>
+        <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-expression">
+          <valueString value="children()" />
+        </extension>
+        <key value="ele-1" />
+        <severity value="error" />
+        <human value="All FHIR elements must have a @value or children" />
+        <xpath value="@value|f:*|h:div" />
+      </constraint>
+      <mapping>
+        <identity value="rim" />
+        <map value="n/a" />
+      </mapping>
+      <mapping>
+        <identity value="rim" />
+        <map value="N/A" />
+      </mapping>
+    </element>
+    <element>
+      <path value="MedicationOrder.extension" />
+      <name value="supplyType" />
+      <short value="Medication supply type" />
+      <definition value="Medication supply type." />
+      <comments value="There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone." />
+      <alias value="extensions" />
+      <alias value="user content" />
+      <min value="1" />
+      <max value="1" />
+      <base>
+        <path value="DomainResource.extension" />
+        <min value="0" />
+        <max value="*" />
+      </base>
+      <type>
+        <code value="Extension" />
+        <profile value="https://fhir.hl7.org.uk/StructureDefinition/Extension-CareConnect-MedicationSupplyType-1" />
+      </type>
+      <condition value="ele-1" />
+      <constraint>
+        <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-expression">
+          <valueString value="children()" />
+        </extension>
+        <key value="ele-1" />
+        <severity value="error" />
+        <human value="All FHIR elements must have a @value or children" />
+        <xpath value="@value|f:*|h:div" />
+      </constraint>
+      <mapping>
+        <identity value="rim" />
+        <map value="n/a" />
+      </mapping>
+      <mapping>
+        <identity value="rim" />
+        <map value="N/A" />
+      </mapping>
+    </element>
+    <element>
+      <path value="MedicationOrder.extension" />
+      <name value="statement" />
+      <short value="Medication Statement link" />
+      <definition value="Medication Statement link." />
+      <comments value="There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone." />
+      <alias value="extensions" />
+      <alias value="user content" />
+      <min value="0" />
+      <max value="1" />
+      <base>
+        <path value="DomainResource.extension" />
+        <min value="0" />
+        <max value="*" />
+      </base>
+      <type>
+        <code value="Extension" />
+        <profile value="https://fhir.hl7.org.uk/StructureDefinition/Extension-CareConnect-DCH-MedicationOrderStatement-1" />
+      </type>
+      <condition value="ele-1" />
+      <constraint>
+        <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-expression">
+          <valueString value="children()" />
+        </extension>
+        <key value="ele-1" />
+        <severity value="error" />
+        <human value="All FHIR elements must have a @value or children" />
+        <xpath value="@value|f:*|h:div" />
+      </constraint>
+      <mapping>
+        <identity value="rim" />
+        <map value="n/a" />
+      </mapping>
+      <mapping>
+        <identity value="rim" />
+        <map value="N/A" />
+      </mapping>
+    </element>
+    <element>
+      <path value="MedicationOrder.extension" />
+      <name value="flag" />
+      <short value="Flags related to the patient's medications" />
+      <definition value="Flags related to the patient's medications." />
+      <comments value="There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone." />
+      <alias value="extensions" />
+      <alias value="user content" />
+      <min value="0" />
+      <max value="*" />
+      <base>
+        <path value="DomainResource.extension" />
+        <min value="0" />
+        <max value="*" />
+      </base>
+      <type>
+        <code value="Extension" />
+        <profile value="https://fhir.hl7.org.uk/StructureDefinition/Extension-CareConnect-DCH-MedicationFlag-1" />
       </type>
       <condition value="ele-1" />
       <constraint>
@@ -484,7 +640,7 @@
       <comments value="This is labeled as &quot;Is Modifier&quot; because applications should not mistake a temporary id for a permanent one. Applications can assume that an identifier is permanent unless it explicitly says that it is temporary." />
       <requirements value="Allows the appropriate identifier for a particular context of use to be selected from among a set of identifiers." />
       <min value="0" />
-      <max value="0" />
+      <max value="1" />
       <base>
         <path value="Identifier.use" />
         <min value="0" />
@@ -532,7 +688,7 @@
       <comments value="This element deals only with general categories of identifiers.  It SHOULD not be used for codes that correspond 1..1 with the Identifier.system. Some identifiers may fall into multiple categories due to common usage.   Where the system is known, a type is unnecessary because the type is always part of the system definition. However systems often need to handle identifiers where the system is not known. There is not a 1:1 relationship between type and system, since many different systems have the same type." />
       <requirements value="Allows users to make use of identifiers when the identifier system is not known." />
       <min value="0" />
-      <max value="0" />
+      <max value="1" />
       <base>
         <path value="Identifier.type" />
         <min value="0" />
@@ -1130,7 +1286,7 @@
       <definition value="Time period during which identifier is/was valid for use." />
       <comments value="This is not a duration - that's a measure of time (a separate type), but a duration that occurs at a fixed value of time. A Period specifies a range of time; the context of use will specify whether the entire range applies (e.g. &quot;the patient was an inpatient of the hospital for this time range&quot;) or one value from the range applies (e.g. &quot;give to the patient between these two times&quot;). If duration is required, specify the type as Interval|Duration." />
       <min value="0" />
-      <max value="0" />
+      <max value="1" />
       <base>
         <path value="Identifier.period" />
         <min value="0" />
@@ -1337,7 +1493,7 @@
       <definition value="Organization that issued/manages the identifier." />
       <comments value="The reference may be just a text description of the assigner." />
       <min value="0" />
-      <max value="0" />
+      <max value="1" />
       <base>
         <path value="Identifier.assigner" />
         <min value="0" />
@@ -3211,7 +3367,7 @@
       </mapping>
     </element>
     <element>
-      <path value="MedicationOrder.medicationCodeableConcept" />
+      <path value="MedicationOrder.medication[x]" />
       <short value="Medication to be taken" />
       <definition value="Identifies the medication being administered. This is a link to a resource that represents the medication which may be the details of the medication or simply an attribute carrying a code that identifies the medication from a known list of medications." />
       <comments value="If only a code is specified, then it needs to be a code for a specific product.  If more information is required, then the use of the medication resource is recommended.  Note: do not use Medication.name to describe the prescribed medication. When the only available information is a text description of the medication, Medication.code.text should be used." />
@@ -3224,6 +3380,10 @@
       </base>
       <type>
         <code value="CodeableConcept" />
+      </type>
+      <type>
+        <code value="Reference" />
+        <profile value="https://fhir.hl7.org.uk/StructureDefinition/CareConnect-Medication-1" />
       </type>
       <condition value="ele-1" />
       <constraint>
@@ -3239,7 +3399,9 @@
       <binding>
         <strength value="required" />
         <description value="A code from the SNOMED Clinical Terminology UK coding system that describes a manufactured material (e.g. a pharmaceutical product or personal medical device)." />
-        <valueSetUri value="https://fhir.hl7.org.uk/ValueSet/CareConnect-ManufacturedMaterialSnCT-1" />
+        <valueSetReference>
+          <reference value="https://fhir.hl7.org.uk/ValueSet/CareConnect-ManufacturedMaterialSnCT-1" />
+        </valueSetReference>
       </binding>
       <mapping>
         <identity value="rim" />
@@ -6211,7 +6373,9 @@
       <binding>
         <strength value="preferred" />
         <description value="A code from the SNOMED Clinical Terminology UK coding system that describes the e-Prescribing route of administration." />
-        <valueSetUri value="https://fhir.hl7.org.uk/ValueSet/CareConnect-MedicationDosageRoute-1" />
+        <valueSetReference>
+          <reference value="https://fhir.hl7.org.uk/ValueSet/CareConnect-MedicationDosageRoute-1" />
+        </valueSetReference>
       </binding>
       <mapping>
         <identity value="rim" />
@@ -7112,7 +7276,9 @@
       <binding>
         <strength value="preferred" />
         <description value="A code from the SNOMED Clinical Terminology UK coding system that describes the e-Prescribing method." />
-        <valueSetUri value="https://fhir.hl7.org.uk/ValueSet/CareConnect-MedicationDosageMethod-1" />
+        <valueSetReference>
+          <reference value="https://fhir.hl7.org.uk/ValueSet/CareConnect-MedicationDosageMethod-1" />
+        </valueSetReference>
       </binding>
       <mapping>
         <identity value="rim" />
@@ -8416,7 +8582,7 @@
       <path value="MedicationOrder.dispenseRequest" />
       <short value="Medication supply authorization" />
       <definition value="Indicates the specific details for the dispense or medication supply part of a medication order (also known as a Medication Prescription).  Note that this information is NOT always sent with the order.  There may be in some settings (e.g. hospitals) institutional or system support for completing the dispense details in the pharmacy department." />
-      <min value="0" />
+      <min value="1" />
       <max value="1" />
       <base>
         <path value="MedicationOrder.dispenseRequest" />
@@ -10913,17 +11079,52 @@
       <path value="MedicationOrder" />
     </element>
     <element>
+      <path value="MedicationOrder.extension" />
+      <slicing>
+        <discriminator value="url" />
+        <rules value="open" />
+      </slicing>
+    </element>
+    <element>
+      <path value="MedicationOrder.extension" />
+      <name value="reason" />
+      <short value="Reason or indication for writing the prescription" />
+      <type>
+        <code value="Extension" />
+        <profile value="https://fhir.hl7.org.uk/StructureDefinition/Extension-CareConnect-DCH-ReasonCondition-1" />
+      </type>
+    </element>
+    <element>
+      <path value="MedicationOrder.extension" />
+      <name value="supplyType" />
+      <min value="1" />
+      <max value="1" />
+      <type>
+        <code value="Extension" />
+        <profile value="https://fhir.hl7.org.uk/StructureDefinition/Extension-CareConnect-MedicationSupplyType-1" />
+      </type>
+    </element>
+    <element>
+      <path value="MedicationOrder.extension" />
+      <name value="statement" />
+      <max value="1" />
+      <type>
+        <code value="Extension" />
+        <profile value="https://fhir.hl7.org.uk/StructureDefinition/Extension-CareConnect-DCH-MedicationOrderStatement-1" />
+      </type>
+    </element>
+    <element>
+      <path value="MedicationOrder.extension" />
+      <name value="flag" />
+      <type>
+        <code value="Extension" />
+        <profile value="https://fhir.hl7.org.uk/StructureDefinition/Extension-CareConnect-DCH-MedicationFlag-1" />
+      </type>
+    </element>
+    <element>
       <path value="MedicationOrder.identifier" />
       <min value="1" />
       <max value="1" />
-    </element>
-    <element>
-      <path value="MedicationOrder.identifier.use" />
-      <max value="0" />
-    </element>
-    <element>
-      <path value="MedicationOrder.identifier.type" />
-      <max value="0" />
     </element>
     <element>
       <path value="MedicationOrder.identifier.system" />
@@ -10934,12 +11135,7 @@
       <min value="1" />
     </element>
     <element>
-      <path value="MedicationOrder.identifier.period" />
-      <max value="0" />
-    </element>
-    <element>
       <path value="MedicationOrder.identifier.assigner" />
-      <max value="0" />
       <type>
         <code value="Reference" />
         <profile value="https://fhir.hl7.org.uk/StructureDefinition/CareConnect-Organization-1" />
@@ -11039,14 +11235,20 @@
       <max value="0" />
     </element>
     <element>
-      <path value="MedicationOrder.medicationCodeableConcept" />
+      <path value="MedicationOrder.medication[x]" />
       <type>
         <code value="CodeableConcept" />
+      </type>
+      <type>
+        <code value="Reference" />
+        <profile value="https://fhir.hl7.org.uk/StructureDefinition/CareConnect-Medication-1" />
       </type>
       <binding>
         <strength value="required" />
         <description value="A code from the SNOMED Clinical Terminology UK coding system that describes a manufactured material (e.g. a pharmaceutical product or personal medical device)." />
-        <valueSetUri value="https://fhir.hl7.org.uk/ValueSet/CareConnect-ManufacturedMaterialSnCT-1" />
+        <valueSetReference>
+          <reference value="https://fhir.hl7.org.uk/ValueSet/CareConnect-ManufacturedMaterialSnCT-1" />
+        </valueSetReference>
       </binding>
     </element>
     <element>
@@ -11122,7 +11324,9 @@
       <binding>
         <strength value="preferred" />
         <description value="A code from the SNOMED Clinical Terminology UK coding system that describes the e-Prescribing route of administration." />
-        <valueSetUri value="https://fhir.hl7.org.uk/ValueSet/CareConnect-MedicationDosageRoute-1" />
+        <valueSetReference>
+          <reference value="https://fhir.hl7.org.uk/ValueSet/CareConnect-MedicationDosageRoute-1" />
+        </valueSetReference>
       </binding>
     </element>
     <element>
@@ -11173,7 +11377,9 @@
       <binding>
         <strength value="preferred" />
         <description value="A code from the SNOMED Clinical Terminology UK coding system that describes the e-Prescribing method." />
-        <valueSetUri value="https://fhir.hl7.org.uk/ValueSet/CareConnect-MedicationDosageMethod-1" />
+        <valueSetReference>
+          <reference value="https://fhir.hl7.org.uk/ValueSet/CareConnect-MedicationDosageMethod-1" />
+        </valueSetReference>
       </binding>
     </element>
     <element>
@@ -11207,6 +11413,10 @@
     </element>
     <element>
       <path value="MedicationOrder.dosageInstruction.method.coding.display" />
+      <min value="1" />
+    </element>
+    <element>
+      <path value="MedicationOrder.dispenseRequest" />
       <min value="1" />
     </element>
     <element>

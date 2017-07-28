@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <meta>
-    <lastUpdated value="2017-05-08T16:14:17.762+01:00" />
+    <lastUpdated value="2017-07-28T17:08:56.988+01:00" />
   </meta>
   <url value="https://fhir.hl7.org.uk/StructureDefinition/Extension-CareConnect-AllergySeverity-1" />
   <version value="1.0.0" />
@@ -180,7 +180,9 @@
       <binding>
         <strength value="required" />
         <description value="A code from the SNOMED Clinical Terminology UK coding system that describes the severity of an allergy." />
-        <valueSetUri value="https://fhir.hl7.org.uk/ValueSet/CareConnect-AllergySeverity-1" />
+        <valueSetReference>
+          <reference value="https://fhir.hl7.org.uk/ValueSet/CareConnect-AllergySeverity-1" />
+        </valueSetReference>
       </binding>
       <mapping>
         <identity value="rim" />
@@ -211,7 +213,9 @@
       <binding>
         <strength value="required" />
         <description value="A code from the SNOMED Clinical Terminology UK coding system that describes the severity of an allergy." />
-        <valueSetUri value="https://fhir.hl7.org.uk/ValueSet/CareConnect-AllergySeverity-1" />
+        <valueSetReference>
+          <reference value="https://fhir.hl7.org.uk/ValueSet/CareConnect-AllergySeverity-1" />
+        </valueSetReference>
       </binding>
     </element>
   </differential>

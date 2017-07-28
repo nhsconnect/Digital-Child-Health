@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <meta>
-    <lastUpdated value="2017-07-26T18:42:19.578+01:00" />
+    <lastUpdated value="2017-07-28T16:24:14.785+01:00" />
     <tag>
       <system value="urn:hscic:publishOrder" />
       <code value="4" />
@@ -524,7 +524,9 @@
       <binding>
         <strength value="required" />
         <description value="The residential status of the patient" />
-        <valueSetUri value="https://fhir.hl7.org.uk/ValueSet/CareConnect-ResidentialStatus-1" />
+        <valueSetReference>
+          <reference value="https://fhir.hl7.org.uk/ValueSet/CareConnect-ResidentialStatus-1" />
+        </valueSetReference>
       </binding>
       <mapping>
         <identity value="rim" />
@@ -568,7 +570,9 @@
       <binding>
         <strength value="required" />
         <description value="The treatment category of the patient" />
-        <valueSetUri value="https://fhir.hl7.org.uk/ValueSet/CareConnect-TreatmentCategory-1" />
+        <valueSetReference>
+          <reference value="https://fhir.hl7.org.uk/ValueSet/CareConnect-TreatmentCategory-1" />
+        </valueSetReference>
       </binding>
       <mapping>
         <identity value="rim" />
@@ -14708,6 +14712,12 @@
         <code value="Extension" />
         <profile value="https://fhir.hl7.org.uk/StructureDefinition/Extension-CareConnect-ResidentialStatus-1" />
       </type>
+      <binding>
+        <strength value="required" />
+        <valueSetReference>
+          <reference value="https://fhir.hl7.org.uk/ValueSet/CareConnect-ResidentialStatus-1" />
+        </valueSetReference>
+      </binding>
     </element>
     <element>
       <path value="Patient.extension" />
@@ -14716,6 +14726,12 @@
         <code value="Extension" />
         <profile value="https://fhir.hl7.org.uk/StructureDefinition/Extension-CareConnect-TreatmentCategory-1" />
       </type>
+      <binding>
+        <strength value="required" />
+        <valueSetReference>
+          <reference value="https://fhir.hl7.org.uk/ValueSet/CareConnect-TreatmentCategory-1" />
+        </valueSetReference>
+      </binding>
     </element>
     <element>
       <path value="Patient.extension" />

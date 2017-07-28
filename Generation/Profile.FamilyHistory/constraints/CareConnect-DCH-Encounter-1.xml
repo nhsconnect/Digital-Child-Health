@@ -1,10 +1,10 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <meta>
-    <lastUpdated value="2017-07-26T19:11:55.853+01:00" />
+    <lastUpdated value="2017-07-28T16:16:11.389+01:00" />
     <tag>
       <system value="urn:hscic:publishOrder" />
-      <code value="6" />
+      <code value="5" />
     </tag>
   </meta>
   <url value="https://fhir.hl7.org.uk/StructureDefinition/CareConnect-DCH-Encounter-1" />
@@ -2538,7 +2538,9 @@
       <binding>
         <strength value="required" />
         <description value="A code from the SNOMED Clinical Terminology UK coding system that describes an encounter between a care professional and the patient (or patient's record)." />
-        <valueSetUri value="https://fhir.hl7.org.uk/ValueSet/CareConnect-EncounterType-1" />
+        <valueSetReference>
+          <reference value="https://fhir.hl7.org.uk/ValueSet/CareConnect-EncounterType-1" />
+        </valueSetReference>
       </binding>
       <mapping>
         <identity value="rim" />
@@ -7075,7 +7077,7 @@
       </base>
       <type>
         <code value="Reference" />
-        <profile value="https://fhir.hl7.org.uk/StructureDefinition/CareConnect-Condition-1" />
+        <profile value="https://fhir.hl7.org.uk/StructureDefinition/CareConnect-DCH-Condition-1" />
       </type>
       <type>
         <code value="Reference" />
@@ -9131,7 +9133,7 @@
       </base>
       <type>
         <code value="Reference" />
-        <profile value="https://fhir.hl7.org.uk/StructureDefinition/CareConnect-Condition-1" />
+        <profile value="https://fhir.hl7.org.uk/StructureDefinition/CareConnect-DCH-Condition-1" />
       </type>
       <condition value="ele-1" />
       <constraint>
@@ -12434,7 +12436,7 @@
       </base>
       <type>
         <code value="Reference" />
-        <profile value="https://fhir.hl7.org.uk/StructureDefinition/CareConnect-Condition-1" />
+        <profile value="https://fhir.hl7.org.uk/StructureDefinition/CareConnect-DCH-Condition-1" />
       </type>
       <condition value="ele-1" />
       <constraint>
@@ -13606,7 +13608,9 @@
       <binding>
         <strength value="required" />
         <description value="A code from the SNOMED Clinical Terminology UK coding system that describes an encounter between a care professional and the patient (or patient's record)." />
-        <valueSetUri value="https://fhir.hl7.org.uk/ValueSet/CareConnect-EncounterType-1" />
+        <valueSetReference>
+          <reference value="https://fhir.hl7.org.uk/ValueSet/CareConnect-EncounterType-1" />
+        </valueSetReference>
       </binding>
     </element>
     <element>
@@ -13785,7 +13789,7 @@
       <path value="Encounter.indication" />
       <type>
         <code value="Reference" />
-        <profile value="https://fhir.hl7.org.uk/StructureDefinition/CareConnect-Condition-1" />
+        <profile value="https://fhir.hl7.org.uk/StructureDefinition/CareConnect-DCH-Condition-1" />
       </type>
       <type>
         <code value="Reference" />
@@ -13818,7 +13822,7 @@
       <path value="Encounter.hospitalization.admittingDiagnosis" />
       <type>
         <code value="Reference" />
-        <profile value="https://fhir.hl7.org.uk/StructureDefinition/CareConnect-Condition-1" />
+        <profile value="https://fhir.hl7.org.uk/StructureDefinition/CareConnect-DCH-Condition-1" />
       </type>
     </element>
     <element>
@@ -13884,7 +13888,7 @@
       <path value="Encounter.hospitalization.dischargeDiagnosis" />
       <type>
         <code value="Reference" />
-        <profile value="https://fhir.hl7.org.uk/StructureDefinition/CareConnect-Condition-1" />
+        <profile value="https://fhir.hl7.org.uk/StructureDefinition/CareConnect-DCH-Condition-1" />
       </type>
     </element>
     <element>

@@ -1,19 +1,19 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <meta>
-    <lastUpdated value="2017-07-18T09:14:59.646+01:00" />
+    <lastUpdated value="2017-07-28T16:16:11.389+01:00" />
     <tag>
       <system value="urn:hscic:publishOrder" />
-      <code value="6" />
+      <code value="5" />
     </tag>
   </meta>
   <url value="https://fhir.hl7.org.uk/StructureDefinition/CareConnect-DCH-Encounter-1" />
   <version value="1.0.0" />
   <name value="CareConnect-DCH-Encounter-1" />
-  <status value="draft" />
+  <status value="active" />
   <publisher value="HL7 UK" />
   <date value="2017-02-22T13:44:33.2447401Z" />
-  <description value="The encounter resource represents an encounter between a care professional and the patient (or patient's record), with further constraints applied to represent a Child Health Event." />
+  <description value="The encounter resource represents an encounter between a care professional and the patient (or patient's record), with further constraints applied to represent an encounter for a Child Health Event." />
   <copyright value="Copyright © 2016 HL7 UK&#xD;&#xA;&#xD;&#xA;Licensed under the Apache License, Version 2.0 (the &quot;License&quot;); you may not use this file except in compliance with the License. You may obtain a copy of the License at&#xD;&#xA;&#xD;&#xA;http://www.apache.org/licenses/LICENSE-2.0&#xD;&#xA;&#xD;&#xA;Unless required by applicable law or agreed to in writing, software distributed under the License is distributed on an &quot;AS IS&quot; BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the License for the specific language governing permissions and limitations under the License.&#xD;&#xA;&#xD;&#xA;HL7® FHIR® standard Copyright © 2011+ HL7&#xD;&#xA;&#xD;&#xA;The HL7® FHIR® standard is used under the FHIR license. You may obtain a copy of the FHIR license at&#xD;&#xA;&#xD;&#xA;https://www.hl7.org/fhir/license.html" />
   <fhirVersion value="1.0.2" />
   <kind value="resource" />
@@ -285,6 +285,10 @@
     </element>
     <element>
       <path value="Encounter.extension" />
+      <slicing>
+        <discriminator value="url" />
+        <rules value="open" />
+      </slicing>
       <short value="Additional Content defined by implementations" />
       <definition value="May be used to represent additional information that is not part of the basic definition of the resource. In order to make the use of extensions safe and manageable, there is a strict set of governance  applied to the definition and use of extensions. Though any implementer is allowed to define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension." />
       <comments value="There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone." />
@@ -299,6 +303,44 @@
       </base>
       <type>
         <code value="Extension" />
+      </type>
+      <condition value="ele-1" />
+      <constraint>
+        <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-expression">
+          <valueString value="children()" />
+        </extension>
+        <key value="ele-1" />
+        <severity value="error" />
+        <human value="All FHIR elements must have a @value or children" />
+        <xpath value="@value|f:*|h:div" />
+      </constraint>
+      <mapping>
+        <identity value="rim" />
+        <map value="n/a" />
+      </mapping>
+      <mapping>
+        <identity value="rim" />
+        <map value="N/A" />
+      </mapping>
+    </element>
+    <element>
+      <path value="Encounter.extension" />
+      <name value="encounterTransport" />
+      <short value="Encounter transport" />
+      <definition value="Encounter transport." />
+      <comments value="There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone." />
+      <alias value="extensions" />
+      <alias value="user content" />
+      <min value="0" />
+      <max value="1" />
+      <base>
+        <path value="DomainResource.extension" />
+        <min value="0" />
+        <max value="*" />
+      </base>
+      <type>
+        <code value="Extension" />
+        <profile value="https://fhir.hl7.org.uk/StructureDefinition/Extension-CareConnect-EncounterTransport-1" />
       </type>
       <condition value="ele-1" />
       <constraint>
@@ -483,7 +525,7 @@
       <comments value="This is labeled as &quot;Is Modifier&quot; because applications should not mistake a temporary id for a permanent one. Applications can assume that an identifier is permanent unless it explicitly says that it is temporary." />
       <requirements value="Allows the appropriate identifier for a particular context of use to be selected from among a set of identifiers." />
       <min value="0" />
-      <max value="0" />
+      <max value="1" />
       <base>
         <path value="Identifier.use" />
         <min value="0" />
@@ -531,7 +573,7 @@
       <comments value="This element deals only with general categories of identifiers.  It SHOULD not be used for codes that correspond 1..1 with the Identifier.system. Some identifiers may fall into multiple categories due to common usage.   Where the system is known, a type is unnecessary because the type is always part of the system definition. However systems often need to handle identifiers where the system is not known. There is not a 1:1 relationship between type and system, since many different systems have the same type." />
       <requirements value="Allows users to make use of identifiers when the identifier system is not known." />
       <min value="0" />
-      <max value="0" />
+      <max value="1" />
       <base>
         <path value="Identifier.type" />
         <min value="0" />
@@ -1129,7 +1171,7 @@
       <definition value="Time period during which identifier is/was valid for use." />
       <comments value="This is not a duration - that's a measure of time (a separate type), but a duration that occurs at a fixed value of time. A Period specifies a range of time; the context of use will specify whether the entire range applies (e.g. &quot;the patient was an inpatient of the hospital for this time range&quot;) or one value from the range applies (e.g. &quot;give to the patient between these two times&quot;). If duration is required, specify the type as Interval|Duration." />
       <min value="0" />
-      <max value="0" />
+      <max value="1" />
       <base>
         <path value="Identifier.period" />
         <min value="0" />
@@ -1336,7 +1378,7 @@
       <definition value="Organization that issued/manages the identifier." />
       <comments value="The reference may be just a text description of the assigner." />
       <min value="0" />
-      <max value="0" />
+      <max value="1" />
       <base>
         <path value="Identifier.assigner" />
         <min value="0" />
@@ -1539,7 +1581,6 @@
       <type>
         <code value="code" />
       </type>
-      <fixedCode value="finished" />
       <condition value="ele-1" />
       <constraint>
         <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-expression">
@@ -1582,7 +1623,7 @@
       <definition value="The status history permits the encounter resource to contain the status history without needing to read through the historical versions of the resource, or even have the server store them." />
       <comments value="The current status is always found in the current version of the resource, not the status history." />
       <min value="0" />
-      <max value="0" />
+      <max value="*" />
       <base>
         <path value="Encounter.statusHistory" />
         <min value="0" />
@@ -1997,7 +2038,7 @@
       <short value="Specific type of encounter" />
       <definition value="Specific type of encounter (e.g. e-mail consultation, surgical day-care, skilled nursing, rehabilitation)." />
       <comments value="Since there are many ways to further classify encounters, this element is 0..*." />
-      <min value="0" />
+      <min value="1" />
       <max value="*" />
       <base>
         <path value="Encounter.type" />
@@ -2497,7 +2538,9 @@
       <binding>
         <strength value="required" />
         <description value="A code from the SNOMED Clinical Terminology UK coding system that describes an encounter between a care professional and the patient (or patient's record)." />
-        <valueSetUri value="https://fhir.hl7.org.uk/ValueSet/CareConnect-EncounterType-1" />
+        <valueSetReference>
+          <reference value="https://fhir.hl7.org.uk/ValueSet/CareConnect-EncounterType-1" />
+        </valueSetReference>
       </binding>
       <mapping>
         <identity value="rim" />
@@ -2858,8 +2901,8 @@
     </element>
     <element>
       <path value="Encounter.type.coding" />
-      <name value="childHealthEncounterType" />
-      <short value="The Child Health Event applicable to the encounter" />
+      <name value="childHealthEventType" />
+      <short value="Code defined by a terminology system" />
       <definition value="A reference to a code defined by a terminology system." />
       <comments value="Codes may be defined very casually in enumerations, or code lists, up to very formal definitions such as SNOMED CT - see the HL7 v3 Core Principles for more information.  Ordering of codings is undefined and SHALL NOT be used to infer meaning. Generally, at most only one of the coding values will be labelled as UserSelected = true." />
       <requirements value="Allows for translations and alternate encodings within a code system.  Also supports communication of the same instance to systems requiring different encodings." />
@@ -2886,9 +2929,9 @@
       <isSummary value="true" />
       <binding>
         <strength value="required" />
-        <description value="The Child Health Event applicable to the encounter" />
+        <description value="The type of Child Health Event" />
         <valueSetReference>
-          <reference value="https://fhir.nhs.uk/ValueSet/DCH-ChildHealthEncounterType-1" />
+          <reference value="https://fhir.nhs.uk/ValueSet/DCH-ChildHealthEventType-1" />
         </valueSetReference>
       </binding>
       <mapping>
@@ -3002,7 +3045,7 @@
       <type>
         <code value="uri" />
       </type>
-      <fixedUri value="https://fhir.nhs.uk/DCH-ChildHealthEncounterType-1" />
+      <fixedUri value="https://fhir.nhs.uk/dch-childhealtheventtype-1" />
       <condition value="ele-1" />
       <constraint>
         <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-expression">
@@ -3256,7 +3299,7 @@
       <definition value="Indicates the urgency of the encounter." />
       <comments value="Not all terminology uses fit this general pattern. In some cases, models should not use CodeableConcept and use Coding directly and provide their own structure for managing text, codings, translations and the relationship between elements and pre- and post-coordination." />
       <min value="0" />
-      <max value="0" />
+      <max value="1" />
       <base>
         <path value="Encounter.priority" />
         <min value="0" />
@@ -3277,9 +3320,11 @@
       </constraint>
       <isSummary value="true" />
       <binding>
-        <strength value="example" />
+        <strength value="preferred" />
         <description value="Indicates the urgency of the encounter." />
-        <valueSetUri value="http://hl7.org/fhir/ValueSet/encounter-priority" />
+        <valueSetReference>
+          <reference value="http://hl7.org/fhir/ValueSet/encounter-priority" />
+        </valueSetReference>
       </binding>
       <mapping>
         <identity value="rim" />
@@ -3890,7 +3935,7 @@
       <short value="Relative, internal or absolute URL reference" />
       <definition value="A reference to a location at which the other resource is found. The reference may be a relative reference, in which case it is relative to the service base URL, or an absolute URL that resolves to the location where the resource is found. The reference may be version specific or not. If the reference is not to a FHIR RESTful server, then it should be assumed to be version specific. Internal fragment references (start with '#') refer to contained resources." />
       <comments value="Using absolute URLs provides a stable scalable approach suitable for a cloud/web context, while using relative/logical references provides a flexible approach suitable for use when trading across closed eco-system boundaries.   Absolute URLs do not need to point to a FHIR RESTful server, though this is the preferred approach. If the URL conforms to the structure &quot;/[type]/[id]&quot; then it should be assumed that the reference is to a FHIR RESTful server." />
-      <min value="0" />
+      <min value="1" />
       <max value="1" />
       <base>
         <path value="Reference.reference" />
@@ -3961,7 +4006,7 @@
       <short value="Episode(s) of care that this encounter should be recorded against" />
       <definition value="Where a specific encounter should be classified as a part of a specific episode(s) of care this field should be used. This association can facilitate grouping of related encounters together for a specific purpose, such as government reporting, issue tracking, association via a common problem.  The association is recorded on the encounter as these are typically created after the episode of care, and grouped on entry rather than editing the episode of care to append another encounter to it (the episode of care could span years)." />
       <min value="0" />
-      <max value="0" />
+      <max value="*" />
       <base>
         <path value="Encounter.episodeOfCare" />
         <min value="0" />
@@ -4150,7 +4195,7 @@
       <short value="The ReferralRequest that initiated this encounter" />
       <definition value="The referral request this encounter satisfies (incoming referral)." />
       <min value="0" />
-      <max value="0" />
+      <max value="*" />
       <base>
         <path value="Encounter.incomingReferral" />
         <min value="0" />
@@ -4328,10 +4373,10 @@
     </element>
     <element>
       <path value="Encounter.participant" />
-      <short value="Participant in the encounter, this will be the principal or primary performer of the act" />
-      <definition value="Participant in the encounter, this will be the principal or primary performer of the act." />
+      <short value="Participant involved in the encounter, this will be the principal or primary performer of the act" />
+      <definition value="Participant involved in the encounter, this will be the principal or primary performer of the act." />
       <min value="0" />
-      <max value="1" />
+      <max value="*" />
       <base>
         <path value="Encounter.participant" />
         <min value="0" />
@@ -4730,7 +4775,7 @@
       <type>
         <code value="uri" />
       </type>
-      <fixedUri value="http://hl7.org/fhir/v3/ParticipationType" />
+      <fixedUri value="http://hl7.org/fhir/ValueSet/encounter-participant-type" />
       <condition value="ele-1" />
       <constraint>
         <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-expression">
@@ -4765,7 +4810,7 @@
       <definition value="The version of the code system which was used when choosing this code. Note that a well-maintained code system does not need the version reported, because the meaning of codes is consistent across versions. However this cannot consistently be assured. and when the meaning is not guaranteed to be consistent, the version SHOULD be exchanged." />
       <comments value="Where the terminology does not clearly define what string should be used to identify code system versions, the recommendation is to use the date (expressed in FHIR date format) on which that version was officially published as the version date." />
       <min value="0" />
-      <max value="0" />
+      <max value="1" />
       <base>
         <path value="Coding.version" />
         <min value="0" />
@@ -4899,7 +4944,7 @@
       <comments value="Amongst a set of alternatives, a directly chosen code is the most appropriate starting point for new translations. There is some ambiguity about what exactly 'directly chosen' implies, and trading partner agreement may be needed to clarify the use of this element and its consequences more completely." />
       <requirements value="This has been identified as a clinical safety criterium - that this exact system/code pair was chosen explicitly, rather than inferred by the system based on some rules or language processing." />
       <min value="0" />
-      <max value="0" />
+      <max value="1" />
       <base>
         <path value="Coding.userSelected" />
         <min value="0" />
@@ -4943,7 +4988,7 @@
       <comments value="Very often the text is the same as a displayName of one of the codings." />
       <requirements value="The codes from the terminologies do not always capture the correct meaning with all the nuances of the human using them, or sometimes there is no appropriate code at all. In these cases, the text is used to capture the full meaning of the source." />
       <min value="0" />
-      <max value="0" />
+      <max value="1" />
       <base>
         <path value="CodeableConcept.text" />
         <min value="0" />
@@ -4986,7 +5031,7 @@
       <definition value="The period of time that the specified participant was present during the encounter. These can overlap or be sub-sets of the overall encounters period." />
       <comments value="This is not a duration - that's a measure of time (a separate type), but a duration that occurs at a fixed value of time. A Period specifies a range of time; the context of use will specify whether the entire range applies (e.g. &quot;the patient was an inpatient of the hospital for this time range&quot;) or one value from the range applies (e.g. &quot;give to the patient between these two times&quot;). If duration is required, specify the type as Interval|Duration." />
       <min value="0" />
-      <max value="0" />
+      <max value="1" />
       <base>
         <path value="Encounter.participant.period" />
         <min value="0" />
@@ -5181,8 +5226,8 @@
     </element>
     <element>
       <path value="Encounter.participant.individual" />
-      <short value="Practitioner involved in the encounter other than the patient" />
-      <definition value="Practitioner involved in the encounter other than the patient." />
+      <short value="Persons involved in the encounter other than the patient" />
+      <definition value="Persons involved in the encounter other than the patient." />
       <min value="1" />
       <max value="1" />
       <base>
@@ -5495,7 +5540,7 @@
       <short value="Relative, internal or absolute URL reference" />
       <definition value="A reference to a location at which the other resource is found. The reference may be a relative reference, in which case it is relative to the service base URL, or an absolute URL that resolves to the location where the resource is found. The reference may be version specific or not. If the reference is not to a FHIR RESTful server, then it should be assumed to be version specific. Internal fragment references (start with '#') refer to contained resources." />
       <comments value="Using absolute URLs provides a stable scalable approach suitable for a cloud/web context, while using relative/logical references provides a flexible approach suitable for use when trading across closed eco-system boundaries.   Absolute URLs do not need to point to a FHIR RESTful server, though this is the preferred approach. If the URL conforms to the structure &quot;/[type]/[id]&quot; then it should be assumed that the reference is to a FHIR RESTful server." />
-      <min value="1" />
+      <min value="0" />
       <max value="1" />
       <base>
         <path value="Reference.reference" />
@@ -5775,7 +5820,7 @@
       <definition value="Quantity of time the encounter lasted. This excludes the time during leaves of absence." />
       <comments value="May differ from the time the Encounter.period lasted because of leave of absence." />
       <min value="0" />
-      <max value="0" />
+      <max value="1" />
       <base>
         <path value="Encounter.length" />
         <min value="0" />
@@ -6120,7 +6165,7 @@
       <alias value="Indication" />
       <alias value="Admission diagnosis" />
       <min value="0" />
-      <max value="1" />
+      <max value="*" />
       <base>
         <path value="Encounter.reason" />
         <min value="0" />
@@ -7024,7 +7069,7 @@
       <comments value="For systems that need to know which was the primary diagnosis, these will be marked with the standard extension primaryDiagnosis (which is a sequence value rather than a flag, 1 = primary diagnosis)." />
       <alias value="Admission diagnosis" />
       <min value="0" />
-      <max value="0" />
+      <max value="*" />
       <base>
         <path value="Encounter.indication" />
         <min value="0" />
@@ -7032,11 +7077,11 @@
       </base>
       <type>
         <code value="Reference" />
-        <profile value="http://hl7.org/fhir/StructureDefinition/Condition" />
+        <profile value="https://fhir.hl7.org.uk/StructureDefinition/CareConnect-DCH-Condition-1" />
       </type>
       <type>
         <code value="Reference" />
-        <profile value="http://hl7.org/fhir/StructureDefinition/Procedure" />
+        <profile value="https://fhir.hl7.org.uk/StructureDefinition/CareConnect-DCH-Procedure-1" />
       </type>
       <condition value="ele-1" />
       <constraint>
@@ -7085,7 +7130,7 @@
       <definition value="Details about the admission to a healthcare service." />
       <comments value="An Encounter may cover more than just the inpatient stay. Contexts such as outpatients, community clinics, and aged care facilities are also included.  The duration recorded in the period of this encounter covers the entire scope of this hospitalization record." />
       <min value="0" />
-      <max value="0" />
+      <max value="1" />
       <base>
         <path value="Encounter.hospitalization" />
         <min value="0" />
@@ -7222,7 +7267,7 @@
       <short value="Pre-admission identifier" />
       <definition value="Pre-admission identifier." />
       <min value="0" />
-      <max value="0" />
+      <max value="1" />
       <base>
         <path value="Encounter.hospitalization.preAdmissionIdentifier" />
         <min value="0" />
@@ -8386,7 +8431,7 @@
       <short value="The location from which the patient came before admission" />
       <definition value="The location from which the patient came before admission." />
       <min value="0" />
-      <max value="0" />
+      <max value="1" />
       <base>
         <path value="Encounter.hospitalization.origin" />
         <min value="0" />
@@ -8394,7 +8439,7 @@
       </base>
       <type>
         <code value="Reference" />
-        <profile value="http://hl7.org/fhir/StructureDefinition/Location" />
+        <profile value="https://fhir.hl7.org.uk/StructureDefinition/CareConnect-Location-1" />
       </type>
       <condition value="ele-1" />
       <constraint>
@@ -8572,7 +8617,7 @@
       <definition value="From where patient was admitted (physician referral, transfer)." />
       <comments value="Not all terminology uses fit this general pattern. In some cases, models should not use CodeableConcept and use Coding directly and provide their own structure for managing text, codings, translations and the relationship between elements and pre- and post-coordination." />
       <min value="0" />
-      <max value="0" />
+      <max value="1" />
       <base>
         <path value="Encounter.hospitalization.admitSource" />
         <min value="0" />
@@ -9080,7 +9125,7 @@
       <short value="The admitting diagnosis as reported by admitting practitioner" />
       <definition value="The admitting diagnosis field is used to record the diagnosis codes as reported by admitting practitioner. This could be different or in addition to the conditions reported as reason-condition(s) for the encounter." />
       <min value="0" />
-      <max value="0" />
+      <max value="*" />
       <base>
         <path value="Encounter.hospitalization.admittingDiagnosis" />
         <min value="0" />
@@ -9088,7 +9133,7 @@
       </base>
       <type>
         <code value="Reference" />
-        <profile value="http://hl7.org/fhir/StructureDefinition/Condition" />
+        <profile value="https://fhir.hl7.org.uk/StructureDefinition/CareConnect-DCH-Condition-1" />
       </type>
       <condition value="ele-1" />
       <constraint>
@@ -9262,7 +9307,7 @@
       <definition value="Whether this hospitalization is a readmission and why if known." />
       <comments value="Not all terminology uses fit this general pattern. In some cases, models should not use CodeableConcept and use Coding directly and provide their own structure for managing text, codings, translations and the relationship between elements and pre- and post-coordination." />
       <min value="0" />
-      <max value="0" />
+      <max value="1" />
       <base>
         <path value="Encounter.hospitalization.reAdmission" />
         <min value="0" />
@@ -10159,7 +10204,7 @@
       <comments value="For example a patient may request both a dairy-free and nut-free diet preference (not mutually exclusive)." />
       <requirements value="Used to track patient's diet restrictions and/or preference. For a complete description of the nutrition needs of a patient during their stay, one should use the nutritionOrder resource which links to Encounter." />
       <min value="0" />
-      <max value="0" />
+      <max value="*" />
       <base>
         <path value="Encounter.hospitalization.dietPreference" />
         <min value="0" />
@@ -10180,9 +10225,11 @@
       </constraint>
       <isSummary value="true" />
       <binding>
-        <strength value="example" />
+        <strength value="extensible" />
         <description value="Medical, cultural or ethical food preferences to help with catering requirements." />
-        <valueSetUri value="http://hl7.org/fhir/ValueSet/encounter-diet" />
+        <valueSetReference>
+          <reference value="http://hl7.org/fhir/ValueSet/encounter-diet" />
+        </valueSetReference>
       </binding>
       <mapping>
         <identity value="rim" />
@@ -10666,7 +10713,7 @@
       <definition value="Special courtesies (VIP, board member)." />
       <comments value="Not all terminology uses fit this general pattern. In some cases, models should not use CodeableConcept and use Coding directly and provide their own structure for managing text, codings, translations and the relationship between elements and pre- and post-coordination." />
       <min value="0" />
-      <max value="0" />
+      <max value="*" />
       <base>
         <path value="Encounter.hospitalization.specialCourtesy" />
         <min value="0" />
@@ -11175,7 +11222,7 @@
       <definition value="Wheelchair, translator, stretcher, etc." />
       <comments value="Not all terminology uses fit this general pattern. In some cases, models should not use CodeableConcept and use Coding directly and provide their own structure for managing text, codings, translations and the relationship between elements and pre- and post-coordination." />
       <min value="0" />
-      <max value="0" />
+      <max value="*" />
       <base>
         <path value="Encounter.hospitalization.specialArrangement" />
         <min value="0" />
@@ -11683,7 +11730,7 @@
       <short value="Location to which the patient is discharged" />
       <definition value="Location to which the patient is discharged." />
       <min value="0" />
-      <max value="0" />
+      <max value="1" />
       <base>
         <path value="Encounter.hospitalization.destination" />
         <min value="0" />
@@ -11691,7 +11738,7 @@
       </base>
       <type>
         <code value="Reference" />
-        <profile value="http://hl7.org/fhir/StructureDefinition/Location" />
+        <profile value="https://fhir.hl7.org.uk/StructureDefinition/CareConnect-Location-1" />
       </type>
       <condition value="ele-1" />
       <constraint>
@@ -11873,7 +11920,7 @@
       <definition value="Category or kind of location after discharge." />
       <comments value="Not all terminology uses fit this general pattern. In some cases, models should not use CodeableConcept and use Coding directly and provide their own structure for managing text, codings, translations and the relationship between elements and pre- and post-coordination." />
       <min value="0" />
-      <max value="0" />
+      <max value="1" />
       <base>
         <path value="Encounter.hospitalization.dischargeDisposition" />
         <min value="0" />
@@ -12381,7 +12428,7 @@
       <short value="The final diagnosis given a patient before release from the hospital after all testing, surgery, and workup are complete" />
       <definition value="The final diagnosis given a patient before release from the hospital after all testing, surgery, and workup are complete." />
       <min value="0" />
-      <max value="0" />
+      <max value="*" />
       <base>
         <path value="Encounter.hospitalization.dischargeDiagnosis" />
         <min value="0" />
@@ -12389,7 +12436,7 @@
       </base>
       <type>
         <code value="Reference" />
-        <profile value="http://hl7.org/fhir/StructureDefinition/Condition" />
+        <profile value="https://fhir.hl7.org.uk/StructureDefinition/CareConnect-DCH-Condition-1" />
       </type>
       <condition value="ele-1" />
       <constraint>
@@ -12567,7 +12614,7 @@
       <definition value="List of locations where  the patient has been during this encounter." />
       <comments value="Virtual encounters can be recorded in the Encounter by specifying a location reference to a location of type &quot;kind&quot; such as &quot;client's home&quot; and an encounter.class = &quot;virtual&quot;." />
       <min value="1" />
-      <max value="1" />
+      <max value="*" />
       <base>
         <path value="Encounter.location" />
         <min value="0" />
@@ -12712,7 +12759,7 @@
       </base>
       <type>
         <code value="Reference" />
-        <profile value="https://fhir.hl7.org.uk/StructureDefinition/CareConnect-Organization-1" />
+        <profile value="https://fhir.hl7.org.uk/StructureDefinition/CareConnect-Location-1" />
       </type>
       <condition value="ele-1" />
       <constraint>
@@ -12898,7 +12945,7 @@
       <definition value="The status of the participants' presence at the specified location during the period specified. If the participant is is no longer at the location, then the period will have an end date/time." />
       <comments value="When the patient is no longer active at a location, then the period end date is entered, and the status may be changed to completed." />
       <min value="0" />
-      <max value="0" />
+      <max value="1" />
       <base>
         <path value="Encounter.location.status" />
         <min value="0" />
@@ -12935,7 +12982,7 @@
       <definition value="Time period during which the patient was present at the location." />
       <comments value="This is not a duration - that's a measure of time (a separate type), but a duration that occurs at a fixed value of time. A Period specifies a range of time; the context of use will specify whether the entire range applies (e.g. &quot;the patient was an inpatient of the hospital for this time range&quot;) or one value from the range applies (e.g. &quot;give to the patient between these two times&quot;). If duration is required, specify the type as Interval|Duration." />
       <min value="0" />
-      <max value="0" />
+      <max value="1" />
       <base>
         <path value="Encounter.location.period" />
         <min value="0" />
@@ -13251,7 +13298,7 @@
       <short value="Relative, internal or absolute URL reference" />
       <definition value="A reference to a location at which the other resource is found. The reference may be a relative reference, in which case it is relative to the service base URL, or an absolute URL that resolves to the location where the resource is found. The reference may be version specific or not. If the reference is not to a FHIR RESTful server, then it should be assumed to be version specific. Internal fragment references (start with '#') refer to contained resources." />
       <comments value="Using absolute URLs provides a stable scalable approach suitable for a cloud/web context, while using relative/logical references provides a flexible approach suitable for use when trading across closed eco-system boundaries.   Absolute URLs do not need to point to a FHIR RESTful server, though this is the preferred approach. If the URL conforms to the structure &quot;/[type]/[id]&quot; then it should be assumed that the reference is to a FHIR RESTful server." />
-      <min value="0" />
+      <min value="1" />
       <max value="1" />
       <base>
         <path value="Reference.reference" />
@@ -13322,7 +13369,7 @@
       <short value="Another Encounter this encounter is part of" />
       <definition value="Another Encounter of which this encounter is a part of (administratively or in time)." />
       <min value="0" />
-      <max value="0" />
+      <max value="1" />
       <base>
         <path value="Encounter.partOf" />
         <min value="0" />
@@ -13330,7 +13377,7 @@
       </base>
       <type>
         <code value="Reference" />
-        <profile value="http://hl7.org/fhir/StructureDefinition/Encounter" />
+        <profile value="https://fhir.hl7.org.uk/StructureDefinition/CareConnect-DCH-Encounter-1" />
       </type>
       <condition value="ele-1" />
       <constraint>
@@ -13508,17 +13555,24 @@
       <path value="Encounter" />
     </element>
     <element>
+      <path value="Encounter.extension" />
+      <slicing>
+        <discriminator value="url" />
+        <rules value="open" />
+      </slicing>
+    </element>
+    <element>
+      <path value="Encounter.extension" />
+      <name value="encounterTransport" />
+      <type>
+        <code value="Extension" />
+        <profile value="https://fhir.hl7.org.uk/StructureDefinition/Extension-CareConnect-EncounterTransport-1" />
+      </type>
+    </element>
+    <element>
       <path value="Encounter.identifier" />
       <min value="1" />
       <max value="1" />
-    </element>
-    <element>
-      <path value="Encounter.identifier.use" />
-      <max value="0" />
-    </element>
-    <element>
-      <path value="Encounter.identifier.type" />
-      <max value="0" />
     </element>
     <element>
       <path value="Encounter.identifier.system" />
@@ -13529,24 +13583,15 @@
       <min value="1" />
     </element>
     <element>
-      <path value="Encounter.identifier.period" />
-      <max value="0" />
-    </element>
-    <element>
       <path value="Encounter.identifier.assigner" />
-      <max value="0" />
       <type>
         <code value="Reference" />
         <profile value="https://fhir.hl7.org.uk/StructureDefinition/CareConnect-Organization-1" />
       </type>
     </element>
     <element>
-      <path value="Encounter.status" />
-      <fixedCode value="finished" />
-    </element>
-    <element>
-      <path value="Encounter.statusHistory" />
-      <max value="0" />
+      <path value="Encounter.type" />
+      <min value="1" />
     </element>
     <element>
       <path value="Encounter.type.coding" />
@@ -13563,7 +13608,9 @@
       <binding>
         <strength value="required" />
         <description value="A code from the SNOMED Clinical Terminology UK coding system that describes an encounter between a care professional and the patient (or patient's record)." />
-        <valueSetUri value="https://fhir.hl7.org.uk/ValueSet/CareConnect-EncounterType-1" />
+        <valueSetReference>
+          <reference value="https://fhir.hl7.org.uk/ValueSet/CareConnect-EncounterType-1" />
+        </valueSetReference>
       </binding>
     </element>
     <element>
@@ -13601,22 +13648,21 @@
     </element>
     <element>
       <path value="Encounter.type.coding" />
-      <name value="childHealthEncounterType" />
-      <short value="The Child Health Event applicable to the encounter" />
+      <name value="childHealthEventType" />
       <min value="1" />
       <max value="1" />
       <binding>
         <strength value="required" />
-        <description value="The Child Health Event applicable to the encounter" />
+        <description value="The type of Child Health Event" />
         <valueSetReference>
-          <reference value="https://fhir.nhs.uk/ValueSet/DCH-ChildHealthEncounterType-1" />
+          <reference value="https://fhir.nhs.uk/ValueSet/DCH-ChildHealthEventType-1" />
         </valueSetReference>
       </binding>
     </element>
     <element>
       <path value="Encounter.type.coding.system" />
       <min value="1" />
-      <fixedUri value="https://fhir.nhs.uk/DCH-ChildHealthEncounterType-1" />
+      <fixedUri value="https://fhir.nhs.uk/dch-childhealtheventtype-1" />
     </element>
     <element>
       <path value="Encounter.type.coding.code" />
@@ -13628,10 +13674,8 @@
     </element>
     <element>
       <path value="Encounter.priority" />
-      <max value="0" />
       <binding>
-        <strength value="example" />
-        <valueSetUri value="http://hl7.org/fhir/ValueSet/encounter-priority" />
+        <strength value="preferred" />
       </binding>
     </element>
     <element>
@@ -13643,18 +13687,13 @@
       </type>
     </element>
     <element>
-      <path value="Encounter.episodeOfCare" />
-      <max value="0" />
-    </element>
-    <element>
-      <path value="Encounter.incomingReferral" />
-      <max value="0" />
+      <path value="Encounter.patient.reference" />
+      <min value="1" />
     </element>
     <element>
       <path value="Encounter.participant" />
-      <short value="Participant in the encounter, this will be the principal or primary performer of the act" />
-      <definition value="Participant in the encounter, this will be the principal or primary performer of the act." />
-      <max value="1" />
+      <short value="Participant involved in the encounter, this will be the principal or primary performer of the act" />
+      <definition value="Participant involved in the encounter, this will be the principal or primary performer of the act." />
     </element>
     <element>
       <path value="Encounter.participant.type" />
@@ -13669,11 +13708,7 @@
     <element>
       <path value="Encounter.participant.type.coding.system" />
       <min value="1" />
-      <fixedUri value="http://hl7.org/fhir/v3/ParticipationType" />
-    </element>
-    <element>
-      <path value="Encounter.participant.type.coding.version" />
-      <max value="0" />
+      <fixedUri value="http://hl7.org/fhir/ValueSet/encounter-participant-type" />
     </element>
     <element>
       <path value="Encounter.participant.type.coding.code" />
@@ -13686,21 +13721,7 @@
       <fixedString value="primary performer" />
     </element>
     <element>
-      <path value="Encounter.participant.type.coding.userSelected" />
-      <max value="0" />
-    </element>
-    <element>
-      <path value="Encounter.participant.type.text" />
-      <max value="0" />
-    </element>
-    <element>
-      <path value="Encounter.participant.period" />
-      <max value="0" />
-    </element>
-    <element>
       <path value="Encounter.participant.individual" />
-      <short value="Practitioner involved in the encounter other than the patient" />
-      <definition value="Practitioner involved in the encounter other than the patient." />
       <min value="1" />
       <type>
         <code value="Reference" />
@@ -13712,25 +13733,12 @@
       <min value="1" />
     </element>
     <element>
-      <path value="Encounter.appointment.reference" />
-      <min value="1" />
-    </element>
-    <element>
       <path value="Encounter.period" />
       <min value="1" />
     </element>
     <element>
       <path value="Encounter.period.start" />
       <min value="1" />
-    </element>
-    <element>
-      <path value="Encounter.length" />
-      <name value="Duration" />
-      <max value="0" />
-    </element>
-    <element>
-      <path value="Encounter.reason" />
-      <max value="1" />
     </element>
     <element>
       <path value="Encounter.reason.coding" />
@@ -13779,15 +13787,14 @@
     </element>
     <element>
       <path value="Encounter.indication" />
-      <max value="0" />
-    </element>
-    <element>
-      <path value="Encounter.hospitalization" />
-      <max value="0" />
-    </element>
-    <element>
-      <path value="Encounter.hospitalization.preAdmissionIdentifier" />
-      <max value="0" />
+      <type>
+        <code value="Reference" />
+        <profile value="https://fhir.hl7.org.uk/StructureDefinition/CareConnect-DCH-Condition-1" />
+      </type>
+      <type>
+        <code value="Reference" />
+        <profile value="https://fhir.hl7.org.uk/StructureDefinition/CareConnect-DCH-Procedure-1" />
+      </type>
     </element>
     <element>
       <path value="Encounter.hospitalization.preAdmissionIdentifier.system" />
@@ -13806,19 +13813,17 @@
     </element>
     <element>
       <path value="Encounter.hospitalization.origin" />
-      <max value="0" />
-    </element>
-    <element>
-      <path value="Encounter.hospitalization.admitSource" />
-      <max value="0" />
+      <type>
+        <code value="Reference" />
+        <profile value="https://fhir.hl7.org.uk/StructureDefinition/CareConnect-Location-1" />
+      </type>
     </element>
     <element>
       <path value="Encounter.hospitalization.admittingDiagnosis" />
-      <max value="0" />
-    </element>
-    <element>
-      <path value="Encounter.hospitalization.reAdmission" />
-      <max value="0" />
+      <type>
+        <code value="Reference" />
+        <profile value="https://fhir.hl7.org.uk/StructureDefinition/CareConnect-DCH-Condition-1" />
+      </type>
     </element>
     <element>
       <path value="Encounter.hospitalization.reAdmission.coding" />
@@ -13868,55 +13873,38 @@
     </element>
     <element>
       <path value="Encounter.hospitalization.dietPreference" />
-      <max value="0" />
       <binding>
-        <strength value="example" />
-        <valueSetUri value="http://hl7.org/fhir/ValueSet/encounter-diet" />
+        <strength value="extensible" />
       </binding>
     </element>
     <element>
-      <path value="Encounter.hospitalization.specialCourtesy" />
-      <max value="0" />
-    </element>
-    <element>
-      <path value="Encounter.hospitalization.specialArrangement" />
-      <max value="0" />
-    </element>
-    <element>
       <path value="Encounter.hospitalization.destination" />
-      <max value="0" />
-    </element>
-    <element>
-      <path value="Encounter.hospitalization.dischargeDisposition" />
-      <max value="0" />
+      <type>
+        <code value="Reference" />
+        <profile value="https://fhir.hl7.org.uk/StructureDefinition/CareConnect-Location-1" />
+      </type>
     </element>
     <element>
       <path value="Encounter.hospitalization.dischargeDiagnosis" />
-      <max value="0" />
+      <type>
+        <code value="Reference" />
+        <profile value="https://fhir.hl7.org.uk/StructureDefinition/CareConnect-DCH-Condition-1" />
+      </type>
     </element>
     <element>
       <path value="Encounter.location" />
       <min value="1" />
-      <max value="1" />
     </element>
     <element>
       <path value="Encounter.location.location" />
       <type>
         <code value="Reference" />
-        <profile value="https://fhir.hl7.org.uk/StructureDefinition/CareConnect-Organization-1" />
+        <profile value="https://fhir.hl7.org.uk/StructureDefinition/CareConnect-Location-1" />
       </type>
     </element>
     <element>
       <path value="Encounter.location.location.reference" />
       <min value="1" />
-    </element>
-    <element>
-      <path value="Encounter.location.status" />
-      <max value="0" />
-    </element>
-    <element>
-      <path value="Encounter.location.period" />
-      <max value="0" />
     </element>
     <element>
       <path value="Encounter.serviceProvider" />
@@ -13927,8 +13915,15 @@
       </type>
     </element>
     <element>
+      <path value="Encounter.serviceProvider.reference" />
+      <min value="1" />
+    </element>
+    <element>
       <path value="Encounter.partOf" />
-      <max value="0" />
+      <type>
+        <code value="Reference" />
+        <profile value="https://fhir.hl7.org.uk/StructureDefinition/CareConnect-DCH-Encounter-1" />
+      </type>
     </element>
   </differential>
 </StructureDefinition>

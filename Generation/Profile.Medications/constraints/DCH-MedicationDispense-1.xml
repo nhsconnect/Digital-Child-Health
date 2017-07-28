@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <meta>
-    <lastUpdated value="2017-07-24T16:37:26.218+01:00" />
+    <lastUpdated value="2017-07-28T14:59:30.555+01:00" />
     <tag>
       <system value="urn:hscic:publishOrder" />
       <code value="7" />
@@ -1589,7 +1589,7 @@
       <short value="Who the dispense is for" />
       <definition value="A link to a resource representing the person to whom the medication will be given." />
       <comments value="SubstanceAdministration-&gt;subject-&gt;Patient." />
-      <min value="1" />
+      <min value="0" />
       <max value="1" />
       <base>
         <path value="MedicationDispense.patient" />
@@ -1712,7 +1712,7 @@
       <short value="Relative, internal or absolute URL reference" />
       <definition value="A reference to a location at which the other resource is found. The reference may be a relative reference, in which case it is relative to the service base URL, or an absolute URL that resolves to the location where the resource is found. The reference may be version specific or not. If the reference is not to a FHIR RESTful server, then it should be assumed to be version specific. Internal fragment references (start with '#') refer to contained resources." />
       <comments value="Using absolute URLs provides a stable scalable approach suitable for a cloud/web context, while using relative/logical references provides a flexible approach suitable for use when trading across closed eco-system boundaries.   Absolute URLs do not need to point to a FHIR RESTful server, though this is the preferred approach. If the URL conforms to the structure &quot;/[type]/[id]&quot; then it should be assumed that the reference is to a FHIR RESTful server." />
-      <min value="1" />
+      <min value="0" />
       <max value="1" />
       <base>
         <path value="Reference.reference" />
@@ -2166,7 +2166,7 @@
       <definition value="Indicates the type of dispensing event that is performed. For example, Trial Fill, Completion of Trial, Partial Fill, Emergency Fill, Samples, etc." />
       <comments value="Not all terminology uses fit this general pattern. In some cases, models should not use CodeableConcept and use Coding directly and provide their own structure for managing text, codings, translations and the relationship between elements and pre- and post-coordination." />
       <min value="0" />
-      <max value="0" />
+      <max value="1" />
       <base>
         <path value="MedicationDispense.type" />
         <min value="0" />
@@ -2676,7 +2676,7 @@
       <definition value="The amount of medication that has been dispensed. Includes unit of measure." />
       <comments value="The context of use may frequently define what kind of quantity this is and therefore what kind of units can be used. The context of use may also restrict the values for the comparator." />
       <min value="0" />
-      <max value="0" />
+      <max value="1" />
       <base>
         <path value="MedicationDispense.quantity" />
         <min value="0" />
@@ -3020,7 +3020,7 @@
       <definition value="The amount of medication expressed as a timing amount." />
       <comments value="The context of use may frequently define what kind of quantity this is and therefore what kind of units can be used. The context of use may also restrict the values for the comparator." />
       <min value="0" />
-      <max value="0" />
+      <max value="1" />
       <base>
         <path value="MedicationDispense.daysSupply" />
         <min value="0" />
@@ -3409,7 +3409,7 @@
       <short value="Dispense processing time" />
       <definition value="The time when the dispensed product was packaged and reviewed." />
       <min value="0" />
-      <max value="0" />
+      <max value="1" />
       <base>
         <path value="MedicationDispense.whenPrepared" />
         <min value="0" />
@@ -3447,7 +3447,7 @@
       <short value="When product was given out" />
       <definition value="The time the dispensed product was provided to the patient or their representative." />
       <min value="0" />
-      <max value="0" />
+      <max value="1" />
       <base>
         <path value="MedicationDispense.whenHandedOver" />
         <min value="0" />
@@ -3485,7 +3485,7 @@
       <short value="Where the medication was sent" />
       <definition value="Identification of the facility/location where the medication was shipped to, as part of the dispense event." />
       <min value="0" />
-      <max value="0" />
+      <max value="1" />
       <base>
         <path value="MedicationDispense.destination" />
         <min value="0" />
@@ -3674,7 +3674,7 @@
       <short value="Who collected the medication" />
       <definition value="Identifies the person who picked up the medication.  This will usually be a patient or their caregiver, but some cases exist where it can be a healthcare professional." />
       <min value="0" />
-      <max value="0" />
+      <max value="*" />
       <base>
         <path value="MedicationDispense.receiver" />
         <min value="0" />
@@ -3727,7 +3727,7 @@
       <definition value="Extra information about the dispense that could not be conveyed in the other attributes." />
       <comments value="Note that FHIR strings may not exceed 1MB in size" />
       <min value="0" />
-      <max value="0" />
+      <max value="1" />
       <base>
         <path value="MedicationDispense.note" />
         <min value="0" />
@@ -3762,7 +3762,7 @@
       <definition value="Indicates how the medication is to be used by the patient." />
       <comments value="When the dose or rate is intended to change over the entire administration period (e.g. Tapering dose prescriptions), multiple instances of dosage instructions will need to be supplied to convey the different doses/rates." />
       <min value="0" />
-      <max value="0" />
+      <max value="*" />
       <base>
         <path value="MedicationDispense.dosageInstruction" />
         <min value="0" />
@@ -7705,7 +7705,7 @@
       <short value="Deals with substitution of one medicine for another" />
       <definition value="Indicates whether or not substitution was made as part of the dispense.  In some cases substitution will be expected but does not happen, in other cases substitution is not expected but does happen.  This block explains what substitution did or did not happen and why." />
       <min value="0" />
-      <max value="0" />
+      <max value="1" />
       <base>
         <path value="MedicationDispense.substitution" />
         <min value="0" />
@@ -9076,15 +9076,10 @@
     </element>
     <element>
       <path value="MedicationDispense.patient" />
-      <min value="1" />
       <type>
         <code value="Reference" />
         <profile value="https://fhir.hl7.org.uk/StructureDefinition/CareConnect-DCH-Patient-1" />
       </type>
-    </element>
-    <element>
-      <path value="MedicationDispense.patient.reference" />
-      <min value="1" />
     </element>
     <element>
       <path value="MedicationDispense.dispenser" />
@@ -9112,34 +9107,7 @@
       <min value="1" />
     </element>
     <element>
-      <path value="MedicationDispense.type" />
-      <max value="0" />
-    </element>
-    <element>
-      <path value="MedicationDispense.quantity" />
-      <name value="SimpleQuantity" />
-      <max value="0" />
-    </element>
-    <element>
-      <path value="MedicationDispense.daysSupply" />
-      <name value="SimpleQuantity" />
-      <max value="0" />
-    </element>
-    <element>
-      <path value="MedicationDispense.whenPrepared" />
-      <max value="0" />
-    </element>
-    <element>
-      <path value="MedicationDispense.whenHandedOver" />
-      <max value="0" />
-    </element>
-    <element>
-      <path value="MedicationDispense.destination" />
-      <max value="0" />
-    </element>
-    <element>
       <path value="MedicationDispense.receiver" />
-      <max value="0" />
       <type>
         <code value="Reference" />
         <profile value="https://fhir.hl7.org.uk/StructureDefinition/CareConnect-DCH-Patient-1" />
@@ -9148,18 +9116,6 @@
         <code value="Reference" />
         <profile value="https://fhir.hl7.org.uk/StructureDefinition/CareConnect-Practitioner-1" />
       </type>
-    </element>
-    <element>
-      <path value="MedicationDispense.note" />
-      <max value="0" />
-    </element>
-    <element>
-      <path value="MedicationDispense.dosageInstruction" />
-      <max value="0" />
-    </element>
-    <element>
-      <path value="MedicationDispense.substitution" />
-      <max value="0" />
     </element>
   </differential>
 </StructureDefinition>
