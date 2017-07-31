@@ -449,7 +449,7 @@
 			<Condition>
 				<id value="1d67c470-4f45-11e7-b114-b2f933d5fe66"/>
 				<meta>
-					<profile value="https://fhir.hl7.org.uk/StructureDefinition/CareConnect-DCH-BCGVaccineRequirement-Condition-1"/>
+					<profile value="https://fhir.hl7.org.uk/StructureDefinition/CareConnect-DCH-VaccinationRequirement-Condition-1"/>
 				</meta>
 				<identifier>
 					<system value="https://tools.ietf.org/html/rfc4122"/>
@@ -708,7 +708,7 @@
 				<extension url="https://fhir.nhs.uk/StructureDefinition/Extension-DCH-ConsentStatus-1">
 					<valueCodeableConcept>
 						<coding>
-							<system value="https://fhir.nhs.uk/dch-consentstatus-1"/>
+							<system value="https://fhir.nhs.uk/DCH-ConsentStatus-1"/>
 							<code value="Consented"/>
 							<display value="Consented"/>
 						</coding>

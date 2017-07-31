@@ -5,7 +5,7 @@ This 'DCH-Bundle-1' Bundle resource profile is used as a container to collect a 
 - [CareConnect-DCH-Patient-1]
 - [DCH-NewbornBloodSpotScreening-QuestionnaireResponse-1]
 - [CareConnect-DCH-Encounter-1]
-- [CareConnect-DCH-Procedure-1]
+- [CareConnect-DCH-NewbornBloodSpotScreening-Procedure-1]
 - [DCH-ProcedureRequest-1]
 - [DCH-Specimen-1]
 - [DCH-DiagnosticReport-1]
@@ -24,3 +24,4 @@ This 'DCH-Bundle-1' Bundle resource profile is used as a container to collect a 
 [CareConnect-Location-1]:careconnect-location-1.html
 [DCH-Specimen-1]:dch-specimen-1.html
 [DCH-DiagnosticReport-1]:dch-diagnosticreport-1.html
+[CareConnect-DCH-NewbornBloodSpotScreening-Procedure-1]:careconnect-dch-newbornbloodspotscreening-procedure-1.html

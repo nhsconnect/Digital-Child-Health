@@ -6,10 +6,10 @@
 	<url value="https://fhir.nhs.uk/ValueSet/DCH-ConsentStatus-1"/>
 	<name value="Child Health Event Consent Status"/>
 	<status value="active"/>
-	<description value="The Consent Status for the Child Health Event"/>
+	<description value="The Consent Status for the Child Health Event."/>
 	<compose>
 		<include>
-			<system value="https://fhir.nhs.uk/dch-consentstatus-1"/>
+			<system value="https://fhir.nhs.uk/DCH-ConsentStatus-1"/>
 			<concept>
 				<code value="Consented"/>
 				<display value="Consented"/>

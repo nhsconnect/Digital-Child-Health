@@ -1,10 +1,10 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <meta>
-    <lastUpdated value="2017-07-24T16:30:33.782+01:00" />
+    <lastUpdated value="2017-07-31T08:02:12.298+01:00" />
     <tag>
       <system value="urn:hscic:publishOrder" />
-      <code value="9" />
+      <code value="19" />
     </tag>
   </meta>
   <url value="https://fhir.nhs.uk/StructureDefinition/DCH-ProcedureRequest-1" />
@@ -20,7 +20,7 @@
     </telecom>
   </contact>
   <date value="2017-03-28T09:33:24.1993818+01:00" />
-  <description value="This ProcedureRequest resource is constrained to represent a request for a procedure to be performed during a Child Health event." />
+  <description value="This ProcedureRequest resource is constrained to represent a request for a procedure to be performed during a Child Health Event." />
   <copyright value="Copyright © 2016 Health and Social Care Information Centre. NHS Digital is the trading name of the Health and Social Care Information Centre." />
   <fhirVersion value="1.0.2" />
   <kind value="resource" />
@@ -329,8 +329,8 @@
     <element>
       <path value="ProcedureRequest.extension" />
       <name value="consentStatus" />
-      <short value="The consent given for Newborn Hearing Screening" />
-      <definition value="The consent given for Newborn Hearing Screening." />
+      <short value="The consent given for the Child Health event" />
+      <definition value="The consent given for the Child Health event." />
       <comments value="There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone." />
       <alias value="extensions" />
       <alias value="user content" />
@@ -343,7 +343,7 @@
       </base>
       <type>
         <code value="Extension" />
-        <profile value="https://fhir.nhs.uk/StructureDefinition/Extension-DCH-ConsentStatusNewbornHearing-1" />
+        <profile value="https://fhir.nhs.uk/StructureDefinition/Extension-DCH-ConsentStatus-1" />
       </type>
       <condition value="ele-1" />
       <constraint>
@@ -2271,7 +2271,7 @@
       <comments value="Only used if not implicit in the code found in ProcedureRequest.type." />
       <requirements value="Knowing where the procedure is made is important for tracking if multiple sites are possible." />
       <min value="0" />
-      <max value="0" />
+      <max value="1" />
       <base>
         <path value="ProcedureRequest.bodySite" />
         <min value="0" />
@@ -2527,6 +2527,7 @@
       <type>
         <code value="uri" />
       </type>
+      <fixedUri value="http://snomed.info/sct" />
       <condition value="ele-1" />
       <constraint>
         <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-expression">
@@ -2780,7 +2781,7 @@
       <definition value="The reason why the procedure is being proposed or ordered. This procedure request may be motivated by a Condition for instance." />
       <comments value="Not all terminology uses fit this general pattern. In some cases, models should not use CodeableConcept and use Coding directly and provide their own structure for managing text, codings, translations and the relationship between elements and pre- and post-coordination." />
       <min value="0" />
-      <max value="0" />
+      <max value="1" />
       <base>
         <path value="ProcedureRequest.reason[x]" />
         <min value="0" />
@@ -3123,7 +3124,7 @@
       <definition value="The status of the order." />
       <comments value="Note that FHIR strings may not exceed 1MB in size" />
       <min value="0" />
-      <max value="0" />
+      <max value="1" />
       <base>
         <path value="ProcedureRequest.status" />
         <min value="0" />
@@ -3170,7 +3171,7 @@
       <definition value="Any other notes associated with this proposal or order - e.g. provider instructions." />
       <comments value="For systems that do not have structured annotations, they can simply communicate a single annotation with no author or time.  This element may need to be included in narrative because of the potential for modifying information.  *Annotations SHOULD NOT* be used to communicate &quot;modifying&quot; information that could be computable. (This is a SHOULD because enforcing user behavior is nearly impossible)." />
       <min value="0" />
-      <max value="0" />
+      <max value="1" />
       <base>
         <path value="ProcedureRequest.notes" />
         <min value="0" />
@@ -3418,7 +3419,7 @@
       <short value="Preconditions for procedure" />
       <definition value="If a CodeableConcept is present, it indicates the pre-condition for performing the procedure." />
       <min value="0" />
-      <max value="0" />
+      <max value="1" />
       <base>
         <path value="ProcedureRequest.asNeeded[x]" />
         <min value="0" />
@@ -3550,7 +3551,7 @@
       <definition value="The clinical priority associated with this order." />
       <comments value="Note that FHIR strings may not exceed 1MB in size" />
       <min value="0" />
-      <max value="0" />
+      <max value="1" />
       <base>
         <path value="ProcedureRequest.priority" />
         <min value="0" />
@@ -3605,12 +3606,12 @@
     <element>
       <path value="ProcedureRequest.extension" />
       <name value="consentStatus" />
-      <short value="The consent given for Newborn Hearing Screening" />
-      <definition value="The consent given for Newborn Hearing Screening." />
+      <short value="The consent given for the Child Health event" />
+      <definition value="The consent given for the Child Health event." />
       <max value="1" />
       <type>
         <code value="Extension" />
-        <profile value="https://fhir.nhs.uk/StructureDefinition/Extension-DCH-ConsentStatusNewbornHearing-1" />
+        <profile value="https://fhir.nhs.uk/StructureDefinition/Extension-DCH-ConsentStatus-1" />
       </type>
     </element>
     <element>
@@ -3673,11 +3674,11 @@
     </element>
     <element>
       <path value="ProcedureRequest.bodySite" />
-      <max value="0" />
+      <max value="1" />
     </element>
     <element>
-      <path value="ProcedureRequest.reason[x]" />
-      <max value="0" />
+      <path value="ProcedureRequest.bodySite.coding.system" />
+      <fixedUri value="http://snomed.info/sct" />
     </element>
     <element>
       <path value="ProcedureRequest.encounter" />
@@ -3698,16 +3699,8 @@
       </type>
     </element>
     <element>
-      <path value="ProcedureRequest.status" />
-      <max value="0" />
-    </element>
-    <element>
       <path value="ProcedureRequest.notes" />
-      <max value="0" />
-    </element>
-    <element>
-      <path value="ProcedureRequest.asNeeded[x]" />
-      <max value="0" />
+      <max value="1" />
     </element>
     <element>
       <path value="ProcedureRequest.orderer" />
@@ -3715,10 +3708,6 @@
         <code value="Reference" />
         <profile value="https://fhir.hl7.org.uk/StructureDefinition/CareConnect-Practitioner-1" />
       </type>
-    </element>
-    <element>
-      <path value="ProcedureRequest.priority" />
-      <max value="0" />
     </element>
   </differential>
 </StructureDefinition>

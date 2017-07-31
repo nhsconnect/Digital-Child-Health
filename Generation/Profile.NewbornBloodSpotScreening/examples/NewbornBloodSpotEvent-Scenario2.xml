@@ -138,7 +138,7 @@
 				<extension url="https://fhir.nhs.uk/StructureDefinition/Extension-DCH-ConsentStatus-1">
 					<valueCodeableConcept>
 						<coding>
-							<system value="https://fhir.nhs.uk/dch-consentstatus-1"/>
+							<system value="https://fhir.nhs.uk/DCH-ConsentStatus-1"/>
 							<code value="Consented"/>
 							<display value="Consented"/>
 						</coding>

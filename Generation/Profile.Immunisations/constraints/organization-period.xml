@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <meta>
-    <lastUpdated value="2017-03-02T14:08:28.013+00:00" />
+    <lastUpdated value="2017-05-08T15:43:09.478+01:00" />
   </meta>
   <url value="http://hl7.org/fhir/StructureDefinition/organization-period" />
   <version value="1.0.0" />
@@ -21,7 +21,7 @@
   <snapshot>
     <element>
       <path value="Extension" />
-      <short value="The date range that this organization should be considered available." />
+      <short value="The date range that this organization should be considered available" />
       <definition value="The date range that this organization should be considered available." />
       <min value="0" />
       <max value="*" />
@@ -190,7 +190,7 @@
   <differential>
     <element>
       <path value="Extension" />
-      <short value="The date range that this organization should be considered available." />
+      <short value="The date range that this organization should be considered available" />
       <definition value="The date range that this organization should be considered available." />
     </element>
     <element>
