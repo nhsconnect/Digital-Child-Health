@@ -1,10 +1,25 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <meta>
-    <lastUpdated value="2017-07-24T12:43:02.177+01:00" />
+    <lastUpdated value="2017-07-31T12:09:26.316+01:00" />
     <tag>
       <system value="urn:hscic:publishOrder" />
       <code value="1" />
+    </tag>
+    <tag>
+      <system value="urn:hscic:examples" />
+      <code value="DCH-Bundle-NewbornBloodSpotSampleTaken" />
+      <display value="DCH-Bundle-NewbornBloodSpotSampleTaken" />
+    </tag>
+    <tag>
+      <system value="urn:hscic:examples" />
+      <code value="DCH-Bundle-NewbornBloodSpotAdministrativeStatus" />
+      <display value="DCH-Bundle-NewbornBloodSpotAdministrativeStatus" />
+    </tag>
+    <tag>
+      <system value="urn:hscic:examples" />
+      <code value="DCH-Bundle-NewbornBloodSpotTestOutcome" />
+      <display value="DCH-Bundle-NewbornBloodSpotTestOutcome" />
     </tag>
   </meta>
   <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm">

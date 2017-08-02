@@ -1,10 +1,25 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <meta>
-    <lastUpdated value="2017-07-24T12:43:02.177+01:00" />
+    <lastUpdated value="2017-07-31T14:29:18.958+01:00" />
     <tag>
       <system value="urn:hscic:publishOrder" />
       <code value="1" />
+    </tag>
+    <tag>
+      <system value="urn:hscic:examples" />
+      <code value="DCH-Bundle-BCGIndicators" />
+      <display value="DCH-Bundle-BCGIndicators" />
+    </tag>
+    <tag>
+      <system value="urn:hscic:examples" />
+      <code value="DCH-Bundle-HCPClinicalInterventionBCG" />
+      <display value="DCH-Bundle-HCPClinicalInterventionBCG" />
+    </tag>
+    <tag>
+      <system value="urn:hscic:examples" />
+      <code value="DCH-Bundle-ImmunisationAdministrationBCG" />
+      <display value="DCH-Bundle-ImmunisationAdministrationBCG" />
     </tag>
   </meta>
   <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm">
