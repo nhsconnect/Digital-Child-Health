@@ -1,7 +1,7 @@
 {
   "resourceType": "StructureDefinition",
   "meta": {
-    "lastUpdated": "2017-07-10T11:31:30.604+01:00",
+    "lastUpdated": "2017-07-24T16:56:58.188+01:00",
     "tag": [
       {
         "system": "urn:hscic:publishOrder",
@@ -2828,7 +2828,7 @@
           "Date updated"
         ],
         "min": 0,
-        "max": "1",
+        "max": "0",
         "base": {
           "path": "QuestionnaireResponse.authored",
           "min": 0,
@@ -3118,7 +3118,7 @@
         "short": "Relative, internal or absolute URL reference",
         "definition": "A reference to a location at which the other resource is found. The reference may be a relative reference, in which case it is relative to the service base URL, or an absolute URL that resolves to the location where the resource is found. The reference may be version specific or not. If the reference is not to a FHIR RESTful server, then it should be assumed to be version specific. Internal fragment references (start with '#') refer to contained resources.",
         "comments": "Using absolute URLs provides a stable scalable approach suitable for a cloud/web context, while using relative/logical references provides a flexible approach suitable for use when trading across closed eco-system boundaries.   Absolute URLs do not need to point to a FHIR RESTful server, though this is the preferred approach. If the URL conforms to the structure \"/[type]/[id]\" then it should be assumed that the reference is to a FHIR RESTful server.",
-        "min": 1,
+        "min": 0,
         "max": "1",
         "base": {
           "path": "Reference.reference",
@@ -7227,7 +7227,9 @@
         "binding": {
           "strength": "required",
           "description": "Whether or not the Newborn Hearing Screening was offered and accepted",
-          "valueSetUri": "https://fhir.nhs.uk/ValueSet/DCH-ConsentStatusNewbornHearing-1"
+          "valueSetReference": {
+            "reference": "https://fhir.nhs.uk/ValueSet/DCH-ConsentStatusNewbornHearing-1"
+          }
         },
         "mapping": [
           {
@@ -7780,7 +7782,9 @@
         "binding": {
           "strength": "required",
           "description": "The free/busy status of an appointment",
-          "valueSetUri": "https://fhir.nhs.uk/ValueSet/AppointmentStatus-1"
+          "valueSetReference": {
+            "reference": "https://fhir.nhs.uk/ValueSet/AppointmentStatus-1"
+          }
         },
         "mapping": [
           {
@@ -8327,7 +8331,9 @@
         "binding": {
           "strength": "required",
           "description": "The outcome of the newborn hearing screening",
-          "valueSetUri": "https://fhir.nhs.uk/ValueSet/DCH-ScreeningOutcome-1"
+          "valueSetReference": {
+            "reference": "https://fhir.nhs.uk/ValueSet/DCH-ScreeningOutcome-1"
+          }
         },
         "mapping": [
           {
@@ -8448,6 +8454,7 @@
             "code": "uri"
           }
         ],
+        "fixedUri": "https://fhir.nhs.uk/DCH-ScreeningOutcome-1",
         "condition": [
           "ele-1"
         ],
@@ -9792,7 +9799,9 @@
         "binding": {
           "strength": "required",
           "description": "Care Connect SDS Job Role Name",
-          "valueSetUri": "https://fhir.hl7.org.uk/ValueSet/CareConnect-SDSJobRoleName-1"
+          "valueSetReference": {
+            "reference": "https://fhir.hl7.org.uk/ValueSet/CareConnect-SDSJobRoleName-1"
+          }
         },
         "mapping": [
           {
@@ -13180,7 +13189,9 @@
         "binding": {
           "strength": "required",
           "description": "Care Pathway for newborn hearing screening programme (NHSP)",
-          "valueSetUri": "https://fhir.nhs.uk/ValueSet/DCH-Protocol-1"
+          "valueSetReference": {
+            "reference": "https://fhir.nhs.uk/ValueSet/DCH-Protocol-1"
+          }
         },
         "mapping": [
           {
@@ -14098,7 +14109,9 @@
         "binding": {
           "strength": "required",
           "description": "Classification of the encounter",
-          "valueSetUri": "http://hl7.org/fhir/ValueSet/encounter-class"
+          "valueSetReference": {
+            "reference": "http://hl7.org/fhir/ValueSet/encounter-class"
+          }
         },
         "mapping": [
           {
@@ -14645,7 +14658,9 @@
         "binding": {
           "strength": "required",
           "description": "Whether the newborn hearing screening was completed",
-          "valueSetUri": "https://fhir.nhs.uk/ValueSet/DCH-TestStatus-1"
+          "valueSetReference": {
+            "reference": "https://fhir.nhs.uk/ValueSet/DCH-TestStatus-1"
+          }
         },
         "mapping": [
           {
@@ -15545,7 +15560,7 @@
           {
             "code": "Reference",
             "profile": [
-              "https://fhir.hl7.org.uk/StructureDefinition/CareConnect-DCH-NewbornHearingScreening-Procedure-1"
+              "https://fhir.hl7.org.uk/StructureDefinition/CareConnect-DCH-Procedure-1"
             ]
           }
         ],
@@ -16096,7 +16111,7 @@
           {
             "code": "Reference",
             "profile": [
-              "https://fhir.hl7.org.uk/StructureDefinition/CareConnect-DCH-NewbornHearingScreening-Procedure-1"
+              "https://fhir.hl7.org.uk/StructureDefinition/CareConnect-DCH-Procedure-1"
             ]
           }
         ],
@@ -16650,7 +16665,7 @@
           {
             "code": "Reference",
             "profile": [
-              "https://fhir.hl7.org.uk/StructureDefinition/CareConnect-DCH-NewbornHearingScreening-Procedure-1"
+              "https://fhir.hl7.org.uk/StructureDefinition/CareConnect-DCH-Procedure-1"
             ]
           }
         ],
@@ -17198,7 +17213,7 @@
           {
             "code": "Reference",
             "profile": [
-              "https://fhir.hl7.org.uk/StructureDefinition/CareConnect-DCH-NewbornHearingScreening-Procedure-1"
+              "https://fhir.hl7.org.uk/StructureDefinition/CareConnect-DCH-Procedure-1"
             ]
           }
         ],
@@ -17753,7 +17768,7 @@
           {
             "code": "Reference",
             "profile": [
-              "https://fhir.hl7.org.uk/StructureDefinition/CareConnect-DCH-NewbornHearingScreening-Procedure-1"
+              "https://fhir.hl7.org.uk/StructureDefinition/CareConnect-DCH-Procedure-1"
             ]
           }
         ],
@@ -18308,7 +18323,7 @@
           {
             "code": "Reference",
             "profile": [
-              "https://fhir.hl7.org.uk/StructureDefinition/CareConnect-DCH-NewbornHearingScreening-Procedure-1"
+              "https://fhir.hl7.org.uk/StructureDefinition/CareConnect-DCH-Procedure-1"
             ]
           }
         ],
@@ -20259,6 +20274,10 @@
         "min": 1
       },
       {
+        "path": "QuestionnaireResponse.authored",
+        "max": "0"
+      },
+      {
         "path": "QuestionnaireResponse.source",
         "max": "0"
       },
@@ -20272,10 +20291,6 @@
             ]
           }
         ]
-      },
-      {
-        "path": "QuestionnaireResponse.encounter.reference",
-        "min": 1
       },
       {
         "extension": [
@@ -20478,7 +20493,9 @@
         "binding": {
           "strength": "required",
           "description": "Whether or not the Newborn Hearing Screening was offered and accepted",
-          "valueSetUri": "https://fhir.nhs.uk/ValueSet/DCH-ConsentStatusNewbornHearing-1"
+          "valueSetReference": {
+            "reference": "https://fhir.nhs.uk/ValueSet/DCH-ConsentStatusNewbornHearing-1"
+          }
         }
       },
       {
@@ -20528,7 +20545,9 @@
         "binding": {
           "strength": "required",
           "description": "The free/busy status of an appointment",
-          "valueSetUri": "https://fhir.nhs.uk/ValueSet/AppointmentStatus-1"
+          "valueSetReference": {
+            "reference": "https://fhir.nhs.uk/ValueSet/AppointmentStatus-1"
+          }
         }
       },
       {
@@ -20572,12 +20591,15 @@
         "binding": {
           "strength": "required",
           "description": "The outcome of the newborn hearing screening",
-          "valueSetUri": "https://fhir.nhs.uk/ValueSet/DCH-ScreeningOutcome-1"
+          "valueSetReference": {
+            "reference": "https://fhir.nhs.uk/ValueSet/DCH-ScreeningOutcome-1"
+          }
         }
       },
       {
         "path": "QuestionnaireResponse.group.question.answer.valueCoding.system",
-        "min": 1
+        "min": 1,
+        "fixedUri": "https://fhir.nhs.uk/DCH-ScreeningOutcome-1"
       },
       {
         "path": "QuestionnaireResponse.group.question.answer.valueCoding.code",
@@ -20679,7 +20701,9 @@
         "binding": {
           "strength": "required",
           "description": "Care Connect SDS Job Role Name",
-          "valueSetUri": "https://fhir.hl7.org.uk/ValueSet/CareConnect-SDSJobRoleName-1"
+          "valueSetReference": {
+            "reference": "https://fhir.hl7.org.uk/ValueSet/CareConnect-SDSJobRoleName-1"
+          }
         }
       },
       {
@@ -20895,7 +20919,9 @@
         "binding": {
           "strength": "required",
           "description": "Care Pathway for newborn hearing screening programme (NHSP)",
-          "valueSetUri": "https://fhir.nhs.uk/ValueSet/DCH-Protocol-1"
+          "valueSetReference": {
+            "reference": "https://fhir.nhs.uk/ValueSet/DCH-Protocol-1"
+          }
         }
       },
       {
@@ -20952,7 +20978,9 @@
         "binding": {
           "strength": "required",
           "description": "Classification of the encounter",
-          "valueSetUri": "http://hl7.org/fhir/ValueSet/encounter-class"
+          "valueSetReference": {
+            "reference": "http://hl7.org/fhir/ValueSet/encounter-class"
+          }
         }
       },
       {
@@ -20994,7 +21022,9 @@
         "binding": {
           "strength": "required",
           "description": "Whether the newborn hearing screening was completed",
-          "valueSetUri": "https://fhir.nhs.uk/ValueSet/DCH-TestStatus-1"
+          "valueSetReference": {
+            "reference": "https://fhir.nhs.uk/ValueSet/DCH-TestStatus-1"
+          }
         }
       },
       {
@@ -21056,7 +21086,7 @@
           {
             "code": "Reference",
             "profile": [
-              "https://fhir.hl7.org.uk/StructureDefinition/CareConnect-DCH-NewbornHearingScreening-Procedure-1"
+              "https://fhir.hl7.org.uk/StructureDefinition/CareConnect-DCH-Procedure-1"
             ]
           }
         ]
@@ -21104,7 +21134,7 @@
           {
             "code": "Reference",
             "profile": [
-              "https://fhir.hl7.org.uk/StructureDefinition/CareConnect-DCH-NewbornHearingScreening-Procedure-1"
+              "https://fhir.hl7.org.uk/StructureDefinition/CareConnect-DCH-Procedure-1"
             ]
           }
         ]
@@ -21155,7 +21185,7 @@
           {
             "code": "Reference",
             "profile": [
-              "https://fhir.hl7.org.uk/StructureDefinition/CareConnect-DCH-NewbornHearingScreening-Procedure-1"
+              "https://fhir.hl7.org.uk/StructureDefinition/CareConnect-DCH-Procedure-1"
             ]
           }
         ]
@@ -21200,7 +21230,7 @@
           {
             "code": "Reference",
             "profile": [
-              "https://fhir.hl7.org.uk/StructureDefinition/CareConnect-DCH-NewbornHearingScreening-Procedure-1"
+              "https://fhir.hl7.org.uk/StructureDefinition/CareConnect-DCH-Procedure-1"
             ]
           }
         ],
@@ -21252,7 +21282,7 @@
           {
             "code": "Reference",
             "profile": [
-              "https://fhir.hl7.org.uk/StructureDefinition/CareConnect-DCH-NewbornHearingScreening-Procedure-1"
+              "https://fhir.hl7.org.uk/StructureDefinition/CareConnect-DCH-Procedure-1"
             ]
           }
         ],
@@ -21304,7 +21334,7 @@
           {
             "code": "Reference",
             "profile": [
-              "https://fhir.hl7.org.uk/StructureDefinition/CareConnect-DCH-NewbornHearingScreening-Procedure-1"
+              "https://fhir.hl7.org.uk/StructureDefinition/CareConnect-DCH-Procedure-1"
             ]
           }
         ],

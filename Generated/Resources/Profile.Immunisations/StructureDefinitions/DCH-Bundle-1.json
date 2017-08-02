@@ -1,7 +1,7 @@
 {
   "resourceType": "StructureDefinition",
   "meta": {
-    "lastUpdated": "2017-06-02T15:32:50.913+01:00",
+    "lastUpdated": "2017-07-31T14:29:18.958+01:00",
     "tag": [
       {
         "system": "urn:hscic:publishOrder",
@@ -9,8 +9,18 @@
       },
       {
         "system": "urn:hscic:examples",
-        "code": "DCH-Bundle-BCGImms",
-        "display": "DCH-Bundle-BCGImms"
+        "code": "DCH-Bundle-BCGIndicators",
+        "display": "DCH-Bundle-BCGIndicators"
+      },
+      {
+        "system": "urn:hscic:examples",
+        "code": "DCH-Bundle-HCPClinicalInterventionBCG",
+        "display": "DCH-Bundle-HCPClinicalInterventionBCG"
+      },
+      {
+        "system": "urn:hscic:examples",
+        "code": "DCH-Bundle-ImmunisationAdministrationBCG",
+        "display": "DCH-Bundle-ImmunisationAdministrationBCG"
       }
     ]
   },
@@ -977,7 +987,7 @@
         "path": "Bundle.entry.resource",
         "short": "A resource in the bundle",
         "definition": "The Resources for the entry.",
-        "min": 0,
+        "min": 1,
         "max": "1",
         "base": {
           "path": "Bundle.entry.resource",
@@ -3060,6 +3070,10 @@
       },
       {
         "path": "Bundle.entry.fullUrl",
+        "min": 1
+      },
+      {
+        "path": "Bundle.entry.resource",
         "min": 1
       },
       {

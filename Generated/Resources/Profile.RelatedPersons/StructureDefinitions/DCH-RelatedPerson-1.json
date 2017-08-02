@@ -1,11 +1,11 @@
 {
   "resourceType": "StructureDefinition",
   "meta": {
-    "lastUpdated": "2017-06-05T10:16:54.342+01:00",
+    "lastUpdated": "2017-07-24T14:05:33.704+01:00",
     "tag": [
       {
         "system": "urn:hscic:publishOrder",
-        "code": "7"
+        "code": "20"
       }
     ]
   },
@@ -2248,7 +2248,7 @@
         "short": "Relative, internal or absolute URL reference",
         "definition": "A reference to a location at which the other resource is found. The reference may be a relative reference, in which case it is relative to the service base URL, or an absolute URL that resolves to the location where the resource is found. The reference may be version specific or not. If the reference is not to a FHIR RESTful server, then it should be assumed to be version specific. Internal fragment references (start with '#') refer to contained resources.",
         "comments": "Using absolute URLs provides a stable scalable approach suitable for a cloud/web context, while using relative/logical references provides a flexible approach suitable for use when trading across closed eco-system boundaries.   Absolute URLs do not need to point to a FHIR RESTful server, though this is the preferred approach. If the URL conforms to the structure \"/[type]/[id]\" then it should be assumed that the reference is to a FHIR RESTful server.",
-        "min": 0,
+        "min": 1,
         "max": "1",
         "base": {
           "path": "Reference.reference",
@@ -3747,7 +3747,7 @@
         "comments": "Person may have multiple ways to be contacted with different uses or applicable periods.  May need to have options for contacting the person urgently, and also to help with identification.",
         "requirements": "People have (primary) ways to contact them in some way such as phone, email.",
         "min": 0,
-        "max": "0",
+        "max": "1",
         "base": {
           "path": "RelatedPerson.telecom",
           "min": 0,
@@ -4504,7 +4504,7 @@
         "comments": "Note: address is for postal addresses, not physical locations.",
         "requirements": "Need to keep track where the related person can be contacted per postal mail or visited.",
         "min": 0,
-        "max": "0",
+        "max": "1",
         "base": {
           "path": "RelatedPerson.address",
           "min": 0,
@@ -5469,7 +5469,7 @@
         "comments": "When providing a summary view (for example with Observation.value[x]) Attachment should be represented with a brief display text such as \"Attachment\".",
         "requirements": "Many EHR systems have the capability to capture an image of persons. Fits with newer social media usage too.",
         "min": 0,
-        "max": "0",
+        "max": "1",
         "base": {
           "path": "RelatedPerson.photo",
           "min": 0,
@@ -6030,7 +6030,7 @@
         "definition": "The period of time that this relationship is considered to be valid. If there are no dates defined, then the interval is unknown.",
         "comments": "This is not a duration - that's a measure of time (a separate type), but a duration that occurs at a fixed value of time. A Period specifies a range of time; the context of use will specify whether the entire range applies (e.g. \"the patient was an inpatient of the hospital for this time range\") or one value from the range applies (e.g. \"give to the patient between these two times\"). If duration is required, specify the type as Interval|Duration.",
         "min": 0,
-        "max": "0",
+        "max": "1",
         "base": {
           "path": "RelatedPerson.period",
           "min": 0,
@@ -6315,9 +6315,6 @@
       {
         "path": "RelatedPerson.extension",
         "name": "link",
-        "short": "A link to a Patient resource for a Related Person",
-        "definition": "A link to a Patient resource for a Related Person.",
-        "min": 0,
         "max": "1",
         "type": [
           {
@@ -6364,6 +6361,10 @@
         ]
       },
       {
+        "path": "RelatedPerson.patient.reference",
+        "min": 1
+      },
+      {
         "path": "RelatedPerson.relationship",
         "min": 1
       },
@@ -6400,7 +6401,7 @@
       },
       {
         "path": "RelatedPerson.telecom",
-        "max": "0"
+        "max": "1"
       },
       {
         "path": "RelatedPerson.gender",
@@ -6418,15 +6419,11 @@
       },
       {
         "path": "RelatedPerson.address",
-        "max": "0"
+        "max": "1"
       },
       {
         "path": "RelatedPerson.photo",
-        "max": "0"
-      },
-      {
-        "path": "RelatedPerson.period",
-        "max": "0"
+        "max": "1"
       }
     ]
   }

@@ -785,7 +785,7 @@
             "code": "uri"
           }
         ],
-        "fixedUri": "https://fhir.nhs.uk/dch-childhealtheventtype-1",
+        "fixedUri": "https://fhir.nhs.uk/DCH-ChildHealthEventType-1",
         "condition": [
           "ele-1"
         ],
@@ -5003,7 +5003,7 @@
         "short": "The type of event applicable to the Child Health Event message.",
         "definition": "The type of event applicable to the Child Health Event message.",
         "min": 1,
-        "fixedUri": "https://fhir.nhs.uk/dch-childhealtheventtype-1"
+        "fixedUri": "https://fhir.nhs.uk/DCH-ChildHealthEventType-1"
       },
       {
         "path": "MessageHeader.event.version",

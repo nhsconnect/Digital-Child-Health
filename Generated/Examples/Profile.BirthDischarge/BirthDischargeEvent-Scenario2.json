@@ -20,7 +20,7 @@
         },
         "timestamp": "2012-01-10T12:00:00+00:00",
         "event": {
-          "system": "https://fhir.nhs.uk/dch-childhealtheventtype-1",
+          "system": "https://fhir.nhs.uk/DCH-ChildHealthEventType-1",
           "code": "Birth: Discharge",
           "display": "Birth: Discharge"
         },

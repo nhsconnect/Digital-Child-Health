@@ -1,7 +1,7 @@
 {
   "resourceType": "StructureDefinition",
   "meta": {
-    "lastUpdated": "2017-06-20T20:02:43.655+01:00"
+    "lastUpdated": "2017-05-10T17:26:57.842+01:00"
   },
   "url": "https://fhir.hl7.org.uk/StructureDefinition/Extension-coding-sctdescid",
   "version": "1.0.0",

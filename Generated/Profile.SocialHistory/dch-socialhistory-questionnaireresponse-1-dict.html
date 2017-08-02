@@ -113,7 +113,7 @@
 												<a href='../Chapter.6.Glossary/index.html'>Glossary</a>
 											</li>
 											<li>
-												<a href='../Chapter.7.Valuesets/valuesets.html'>Valuesets</a>
+												<a href='../Chapter.7.ValueSets/valuesets.html'>ValueSets</a>
 											</li>
 
                             </ul>
@@ -905,17 +905,29 @@
         </tr>
         <tr>
           <td width="150px">Definition</td>
-          <td></td>
+          <td>
+            <p>A reference to a location at which the other resource is found. The reference may be a relative reference, in which case it is relative to the service base URL, or an absolute URL that resolves to the location where the resource is found. The reference may be version specific or not. If the reference is not to a FHIR RESTful server, then it should be assumed to be version specific. Internal fragment references (start with '#') refer to contained resources.</p>
+          </td>
         </tr>
         <tr>
           <td>
             <a href="http://www.hl7.org/fhir/DSTU2/conformance-rules.html#conformance">Control</a>
           </td>
-          <td>1..*</td>
+          <td>0..1 ?</td>
+        </tr>
+        <tr>
+          <td>
+            <a href="http://www.hl7.org/fhir/DSTU2/datatypes.html">Type</a>
+          </td>
+          <td>
+            <a href="http://www.hl7.org/fhir/DSTU2/datatypes.html#string" xmlns="http://www.w3.org/1999/xhtml">String</a>
+          </td>
         </tr>
         <tr>
           <td width="150px">Comments</td>
-          <td></td>
+          <td>
+            <p>Using absolute URLs provides a stable scalable approach suitable for a cloud/web context, while using relative/logical references provides a flexible approach suitable for use when trading across closed eco-system boundaries.   Absolute URLs do not need to point to a FHIR RESTful server, though this is the preferred approach. If the URL conforms to the structure "/[type]/[id]" then it should be assumed that the reference is to a FHIR RESTful server.</p>
+          </td>
         </tr>
         <tr>
           <td colspan="2" class="structure">
@@ -1291,7 +1303,7 @@
           <td>
             <a href="http://www.hl7.org/fhir/DSTU2/conformance-rules.html#conformance">Control</a>
           </td>
-          <td>1..2</td>
+          <td>2..2</td>
         </tr>
         <tr>
           <td width="150px">Comments</td>
@@ -1603,7 +1615,7 @@
           <td>
             <a href="http://www.hl7.org/fhir/DSTU2/conformance-rules.html#conformance">Control</a>
           </td>
-          <td>1..2</td>
+          <td>2..2</td>
         </tr>
         <tr>
           <td width="150px">Comments</td>
@@ -1915,7 +1927,7 @@
           <td>
             <a href="http://www.hl7.org/fhir/DSTU2/conformance-rules.html#conformance">Control</a>
           </td>
-          <td>1..2</td>
+          <td>2..2</td>
         </tr>
         <tr>
           <td width="150px">Comments</td>
@@ -2227,7 +2239,7 @@
           <td>
             <a href="http://www.hl7.org/fhir/DSTU2/conformance-rules.html#conformance">Control</a>
           </td>
-          <td>1..2</td>
+          <td>2..2</td>
         </tr>
         <tr>
           <td width="150px">Comments</td>
@@ -2539,7 +2551,7 @@
           <td>
             <a href="http://www.hl7.org/fhir/DSTU2/conformance-rules.html#conformance">Control</a>
           </td>
-          <td>1..2</td>
+          <td>2..2</td>
         </tr>
         <tr>
           <td width="150px">Comments</td>
@@ -2851,7 +2863,7 @@
           <td>
             <a href="http://www.hl7.org/fhir/DSTU2/conformance-rules.html#conformance">Control</a>
           </td>
-          <td>1..2</td>
+          <td>2..2</td>
         </tr>
         <tr>
           <td width="150px">Comments</td>
@@ -3378,7 +3390,7 @@
           <td>
             <a href="http://www.hl7.org/fhir/DSTU2/conformance-rules.html#conformance">Control</a>
           </td>
-          <td>1..2</td>
+          <td>2..2</td>
         </tr>
         <tr>
           <td width="150px">Comments</td>
@@ -3905,7 +3917,7 @@
           <td>
             <a href="http://www.hl7.org/fhir/DSTU2/conformance-rules.html#conformance">Control</a>
           </td>
-          <td>1..2</td>
+          <td>2..2</td>
         </tr>
         <tr>
           <td width="150px">Comments</td>
@@ -4219,7 +4231,7 @@
           <td>
             <a href="http://www.hl7.org/fhir/DSTU2/conformance-rules.html#conformance">Control</a>
           </td>
-          <td>1..2</td>
+          <td>2..2</td>
         </tr>
         <tr>
           <td width="150px">Comments</td>
@@ -4533,7 +4545,7 @@
           <td>
             <a href="http://www.hl7.org/fhir/DSTU2/conformance-rules.html#conformance">Control</a>
           </td>
-          <td>1..2</td>
+          <td>2..2</td>
         </tr>
         <tr>
           <td width="150px">Comments</td>
@@ -4847,7 +4859,7 @@
           <td>
             <a href="http://www.hl7.org/fhir/DSTU2/conformance-rules.html#conformance">Control</a>
           </td>
-          <td>1..2</td>
+          <td>2..2</td>
         </tr>
         <tr>
           <td width="150px">Comments</td>
@@ -5161,7 +5173,7 @@
           <td>
             <a href="http://www.hl7.org/fhir/DSTU2/conformance-rules.html#conformance">Control</a>
           </td>
-          <td>1..2</td>
+          <td>2..2</td>
         </tr>
         <tr>
           <td width="150px">Comments</td>
@@ -5475,7 +5487,7 @@
           <td>
             <a href="http://www.hl7.org/fhir/DSTU2/conformance-rules.html#conformance">Control</a>
           </td>
-          <td>1..2</td>
+          <td>2..2</td>
         </tr>
         <tr>
           <td width="150px">Comments</td>
@@ -5789,7 +5801,7 @@
           <td>
             <a href="http://www.hl7.org/fhir/DSTU2/conformance-rules.html#conformance">Control</a>
           </td>
-          <td>1..2</td>
+          <td>2..2</td>
         </tr>
         <tr>
           <td width="150px">Comments</td>
@@ -6103,7 +6115,7 @@
           <td>
             <a href="http://www.hl7.org/fhir/DSTU2/conformance-rules.html#conformance">Control</a>
           </td>
-          <td>1..2</td>
+          <td>2..2</td>
         </tr>
         <tr>
           <td width="150px">Comments</td>
@@ -6417,7 +6429,7 @@
           <td>
             <a href="http://www.hl7.org/fhir/DSTU2/conformance-rules.html#conformance">Control</a>
           </td>
-          <td>1..2</td>
+          <td>2..2</td>
         </tr>
         <tr>
           <td width="150px">Comments</td>
@@ -6731,7 +6743,7 @@
           <td>
             <a href="http://www.hl7.org/fhir/DSTU2/conformance-rules.html#conformance">Control</a>
           </td>
-          <td>1..2</td>
+          <td>2..2</td>
         </tr>
         <tr>
           <td width="150px">Comments</td>
@@ -7045,7 +7057,7 @@
           <td>
             <a href="http://www.hl7.org/fhir/DSTU2/conformance-rules.html#conformance">Control</a>
           </td>
-          <td>1..2</td>
+          <td>2..2</td>
         </tr>
         <tr>
           <td width="150px">Comments</td>
@@ -7359,7 +7371,7 @@
           <td>
             <a href="http://www.hl7.org/fhir/DSTU2/conformance-rules.html#conformance">Control</a>
           </td>
-          <td>1..2</td>
+          <td>2..2</td>
         </tr>
         <tr>
           <td width="150px">Comments</td>
@@ -7673,7 +7685,7 @@
           <td>
             <a href="http://www.hl7.org/fhir/DSTU2/conformance-rules.html#conformance">Control</a>
           </td>
-          <td>1..2</td>
+          <td>2..2</td>
         </tr>
         <tr>
           <td width="150px">Comments</td>
@@ -8200,7 +8212,7 @@
           <td>
             <a href="http://www.hl7.org/fhir/DSTU2/conformance-rules.html#conformance">Control</a>
           </td>
-          <td>1..2</td>
+          <td>2..2</td>
         </tr>
         <tr>
           <td width="150px">Comments</td>
@@ -8727,7 +8739,7 @@
           <td>
             <a href="http://www.hl7.org/fhir/DSTU2/conformance-rules.html#conformance">Control</a>
           </td>
-          <td>1..2</td>
+          <td>2..2</td>
         </tr>
         <tr>
           <td width="150px">Comments</td>
@@ -9041,7 +9053,7 @@
           <td>
             <a href="http://www.hl7.org/fhir/DSTU2/conformance-rules.html#conformance">Control</a>
           </td>
-          <td>1..2</td>
+          <td>2..2</td>
         </tr>
         <tr>
           <td width="150px">Comments</td>
@@ -9355,7 +9367,7 @@
           <td>
             <a href="http://www.hl7.org/fhir/DSTU2/conformance-rules.html#conformance">Control</a>
           </td>
-          <td>1..2</td>
+          <td>2..2</td>
         </tr>
         <tr>
           <td width="150px">Comments</td>
@@ -9882,7 +9894,7 @@
           <td>
             <a href="http://www.hl7.org/fhir/DSTU2/conformance-rules.html#conformance">Control</a>
           </td>
-          <td>1..2</td>
+          <td>2..2</td>
         </tr>
         <tr>
           <td width="150px">Comments</td>
@@ -10196,7 +10208,7 @@
           <td>
             <a href="http://www.hl7.org/fhir/DSTU2/conformance-rules.html#conformance">Control</a>
           </td>
-          <td>1..2</td>
+          <td>2..2</td>
         </tr>
         <tr>
           <td width="150px">Comments</td>
@@ -10510,7 +10522,7 @@
           <td>
             <a href="http://www.hl7.org/fhir/DSTU2/conformance-rules.html#conformance">Control</a>
           </td>
-          <td>1..2</td>
+          <td>2..2</td>
         </tr>
         <tr>
           <td width="150px">Comments</td>
@@ -10824,7 +10836,7 @@
           <td>
             <a href="http://www.hl7.org/fhir/DSTU2/conformance-rules.html#conformance">Control</a>
           </td>
-          <td>1..2</td>
+          <td>2..2</td>
         </tr>
         <tr>
           <td width="150px">Comments</td>

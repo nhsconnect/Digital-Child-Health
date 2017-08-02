@@ -49,12 +49,16 @@
             "display": "Medical History: Risk Factors"
           },
           {
-            "code": "HCP Clinical Intervention: Newborn Blood Spot Screening",
-            "display": "HCP Clinical Intervention: Newborn Blood Spot Screening"
+            "code": "Newborn Blood Spot Sample Taken",
+            "display": "Newborn Blood Spot Sample Taken"
           },
           {
-            "code": "Screening: Blood Spot",
-            "display": "Screening: Blood Spot"
+            "code": "Newborn Blood Spot Administrative Status",
+            "display": "Newborn Blood Spot Administrative Status"
+          },
+          {
+            "code": "Newborn Blood Spot Test Outcome",
+            "display": "Newborn Blood Spot Test Outcome"
           },
           {
             "code": "HCP Clinical Intervention: Newborn Hearing Screening",
@@ -89,8 +93,8 @@
             "display": "Indicators: BCG"
           },
           {
-            "code": "Immunisation: Immunisation Administration",
-            "display": "Immunisation: Immunisation Administration"
+            "code": "Immunisation: Immunisation Adminstration",
+            "display": "Immunisation: Immunisation Adminstration"
           },
           {
             "code": "HCP Clinical Intervention: Hep B birth",

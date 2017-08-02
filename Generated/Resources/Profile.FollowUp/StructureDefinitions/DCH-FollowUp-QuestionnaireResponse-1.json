@@ -1,7 +1,7 @@
 {
   "resourceType": "StructureDefinition",
   "meta": {
-    "lastUpdated": "2017-07-06T13:08:19.089+01:00",
+    "lastUpdated": "2017-07-24T16:47:00.302+01:00",
     "tag": [
       {
         "system": "urn:hscic:publishOrder",
@@ -2550,8 +2550,8 @@
           "Department",
           "Company"
         ],
-        "min": 1,
-        "max": "1",
+        "min": 0,
+        "max": "0",
         "base": {
           "path": "QuestionnaireResponse.author",
           "min": 0,
@@ -2561,13 +2561,25 @@
           {
             "code": "Reference",
             "profile": [
-              "https://fhir.hl7.org.uk/StructureDefinition/CareConnect-Practitioner-1"
+              "http://hl7.org/fhir/StructureDefinition/Device"
             ]
           },
           {
             "code": "Reference",
             "profile": [
-              "https://fhir.hl7.org.uk/StructureDefinition/CareConnect-Organization-1"
+              "http://hl7.org/fhir/StructureDefinition/Practitioner"
+            ]
+          },
+          {
+            "code": "Reference",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/Patient"
+            ]
+          },
+          {
+            "code": "Reference",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/RelatedPerson"
             ]
           }
         ],
@@ -2816,7 +2828,7 @@
           "Date updated"
         ],
         "min": 0,
-        "max": "1",
+        "max": "0",
         "base": {
           "path": "QuestionnaireResponse.authored",
           "min": 0,
@@ -2947,7 +2959,7 @@
         "short": "Primary encounter during which the answers were collected",
         "definition": "Encounter during which this set of questionnaire response were collected. When there were multiple encounters, this is the one considered most relevant to the context of the answers.",
         "requirements": "Some institutions track questionnaires under a specific encounter.",
-        "min": 1,
+        "min": 0,
         "max": "1",
         "base": {
           "path": "QuestionnaireResponse.encounter",
@@ -3106,7 +3118,7 @@
         "short": "Relative, internal or absolute URL reference",
         "definition": "A reference to a location at which the other resource is found. The reference may be a relative reference, in which case it is relative to the service base URL, or an absolute URL that resolves to the location where the resource is found. The reference may be version specific or not. If the reference is not to a FHIR RESTful server, then it should be assumed to be version specific. Internal fragment references (start with '#') refer to contained resources.",
         "comments": "Using absolute URLs provides a stable scalable approach suitable for a cloud/web context, while using relative/logical references provides a flexible approach suitable for use when trading across closed eco-system boundaries.   Absolute URLs do not need to point to a FHIR RESTful server, though this is the preferred approach. If the URL conforms to the structure \"/[type]/[id]\" then it should be assumed that the reference is to a FHIR RESTful server.",
-        "min": 1,
+        "min": 0,
         "max": "1",
         "base": {
           "path": "Reference.reference",
@@ -4693,7 +4705,7 @@
         "short": "The responses will consist of the value and the supporting resource for that value",
         "definition": "The responses will consist of the value and the supporting resource for that value.",
         "comments": "The value is nested because we cannot have a repeating structure that has variable type.",
-        "min": 1,
+        "min": 2,
         "max": "2",
         "base": {
           "path": "QuestionnaireResponse.group.question.answer",
@@ -5242,7 +5254,7 @@
         "short": "The responses will consist of the value and the supporting resource for that value",
         "definition": "The responses will consist of the value and the supporting resource for that value.",
         "comments": "The value is nested because we cannot have a repeating structure that has variable type.",
-        "min": 1,
+        "min": 2,
         "max": "2",
         "base": {
           "path": "QuestionnaireResponse.group.question.answer",
@@ -5791,7 +5803,7 @@
         "short": "The responses will consist of the value and the supporting resource for that value",
         "definition": "The responses will consist of the value and the supporting resource for that value.",
         "comments": "The value is nested because we cannot have a repeating structure that has variable type.",
-        "min": 1,
+        "min": 2,
         "max": "2",
         "base": {
           "path": "QuestionnaireResponse.group.question.answer",
@@ -6347,7 +6359,7 @@
         "short": "The responses will consist of the value and the supporting resource for that value",
         "definition": "The responses will consist of the value and the supporting resource for that value.",
         "comments": "The value is nested because we cannot have a repeating structure that has variable type.",
-        "min": 1,
+        "min": 2,
         "max": "2",
         "base": {
           "path": "QuestionnaireResponse.group.question.answer",
@@ -6896,7 +6908,7 @@
         "short": "The responses will consist of the value and the supporting resource for that value",
         "definition": "The responses will consist of the value and the supporting resource for that value.",
         "comments": "The value is nested because we cannot have a repeating structure that has variable type.",
-        "min": 1,
+        "min": 2,
         "max": "2",
         "base": {
           "path": "QuestionnaireResponse.group.question.answer",
@@ -7452,7 +7464,7 @@
         "short": "The responses will consist of the value and the supporting resource for that value",
         "definition": "The responses will consist of the value and the supporting resource for that value.",
         "comments": "The value is nested because we cannot have a repeating structure that has variable type.",
-        "min": 1,
+        "min": 2,
         "max": "2",
         "base": {
           "path": "QuestionnaireResponse.group.question.answer",
@@ -7769,25 +7781,15 @@
       },
       {
         "path": "QuestionnaireResponse.author",
-        "min": 1,
-        "type": [
-          {
-            "code": "Reference",
-            "profile": [
-              "https://fhir.hl7.org.uk/StructureDefinition/CareConnect-Practitioner-1"
-            ]
-          },
-          {
-            "code": "Reference",
-            "profile": [
-              "https://fhir.hl7.org.uk/StructureDefinition/CareConnect-Organization-1"
-            ]
-          }
-        ]
+        "max": "0"
       },
       {
         "path": "QuestionnaireResponse.author.reference",
         "min": 1
+      },
+      {
+        "path": "QuestionnaireResponse.authored",
+        "max": "0"
       },
       {
         "path": "QuestionnaireResponse.source",
@@ -7795,7 +7797,6 @@
       },
       {
         "path": "QuestionnaireResponse.encounter",
-        "min": 1,
         "type": [
           {
             "code": "Reference",
@@ -7804,10 +7805,6 @@
             ]
           }
         ]
-      },
-      {
-        "path": "QuestionnaireResponse.encounter.reference",
-        "min": 1
       },
       {
         "path": "QuestionnaireResponse.group.linkId",
@@ -7870,7 +7867,7 @@
         "path": "QuestionnaireResponse.group.question.answer",
         "short": "The responses will consist of the value and the supporting resource for that value",
         "definition": "The responses will consist of the value and the supporting resource for that value.",
-        "min": 1,
+        "min": 2,
         "max": "2"
       },
       {
@@ -7916,7 +7913,7 @@
         "path": "QuestionnaireResponse.group.question.answer",
         "short": "The responses will consist of the value and the supporting resource for that value",
         "definition": "The responses will consist of the value and the supporting resource for that value.",
-        "min": 1,
+        "min": 2,
         "max": "2"
       },
       {
@@ -7962,7 +7959,7 @@
         "path": "QuestionnaireResponse.group.question.answer",
         "short": "The responses will consist of the value and the supporting resource for that value",
         "definition": "The responses will consist of the value and the supporting resource for that value.",
-        "min": 1,
+        "min": 2,
         "max": "2"
       },
       {
@@ -8015,7 +8012,7 @@
         "path": "QuestionnaireResponse.group.question.answer",
         "short": "The responses will consist of the value and the supporting resource for that value",
         "definition": "The responses will consist of the value and the supporting resource for that value.",
-        "min": 1,
+        "min": 2,
         "max": "2"
       },
       {
@@ -8061,7 +8058,7 @@
         "path": "QuestionnaireResponse.group.question.answer",
         "short": "The responses will consist of the value and the supporting resource for that value",
         "definition": "The responses will consist of the value and the supporting resource for that value.",
-        "min": 1,
+        "min": 2,
         "max": "2"
       },
       {
@@ -8114,7 +8111,7 @@
         "path": "QuestionnaireResponse.group.question.answer",
         "short": "The responses will consist of the value and the supporting resource for that value",
         "definition": "The responses will consist of the value and the supporting resource for that value.",
-        "min": 1,
+        "min": 2,
         "max": "2"
       },
       {

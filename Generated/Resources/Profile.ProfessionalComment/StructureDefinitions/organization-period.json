@@ -1,7 +1,7 @@
 {
   "resourceType": "StructureDefinition",
   "meta": {
-    "lastUpdated": "2017-03-02T14:08:28.013+00:00"
+    "lastUpdated": "2017-05-08T15:43:09.478+01:00"
   },
   "url": "http://hl7.org/fhir/StructureDefinition/organization-period",
   "version": "1.0.0",
@@ -24,7 +24,7 @@
     "element": [
       {
         "path": "Extension",
-        "short": "The date range that this organization should be considered available.",
+        "short": "The date range that this organization should be considered available",
         "definition": "The date range that this organization should be considered available.",
         "min": 0,
         "max": "*",
@@ -252,7 +252,7 @@
     "element": [
       {
         "path": "Extension",
-        "short": "The date range that this organization should be considered available.",
+        "short": "The date range that this organization should be considered available",
         "definition": "The date range that this organization should be considered available."
       },
       {

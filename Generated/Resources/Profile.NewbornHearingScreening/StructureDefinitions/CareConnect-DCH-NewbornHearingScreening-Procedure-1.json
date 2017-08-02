@@ -1,7 +1,7 @@
 {
   "resourceType": "StructureDefinition",
   "meta": {
-    "lastUpdated": "2017-07-14T11:56:57.174+01:00",
+    "lastUpdated": "2017-07-31T09:18:56.339+01:00",
     "tag": [
       {
         "system": "urn:hscic:publishOrder",
@@ -646,7 +646,7 @@
         "comments": "This is labeled as \"Is Modifier\" because applications should not mistake a temporary id for a permanent one. Applications can assume that an identifier is permanent unless it explicitly says that it is temporary.",
         "requirements": "Allows the appropriate identifier for a particular context of use to be selected from among a set of identifiers.",
         "min": 0,
-        "max": "0",
+        "max": "1",
         "base": {
           "path": "Identifier.use",
           "min": 0,
@@ -705,7 +705,7 @@
         "comments": "This element deals only with general categories of identifiers.  It SHOULD not be used for codes that correspond 1..1 with the Identifier.system. Some identifiers may fall into multiple categories due to common usage.   Where the system is known, a type is unnecessary because the type is always part of the system definition. However systems often need to handle identifiers where the system is not known. There is not a 1:1 relationship between type and system, since many different systems have the same type.",
         "requirements": "Allows users to make use of identifiers when the identifier system is not known.",
         "min": 0,
-        "max": "0",
+        "max": "1",
         "base": {
           "path": "Identifier.type",
           "min": 0,
@@ -1461,7 +1461,7 @@
         "definition": "Time period during which identifier is/was valid for use.",
         "comments": "This is not a duration - that's a measure of time (a separate type), but a duration that occurs at a fixed value of time. A Period specifies a range of time; the context of use will specify whether the entire range applies (e.g. \"the patient was an inpatient of the hospital for this time range\") or one value from the range applies (e.g. \"give to the patient between these two times\"). If duration is required, specify the type as Interval|Duration.",
         "min": 0,
-        "max": "0",
+        "max": "1",
         "base": {
           "path": "Identifier.period",
           "min": 0,
@@ -1728,7 +1728,7 @@
         "definition": "Organization that issued/manages the identifier.",
         "comments": "The reference may be just a text description of the assigner.",
         "min": 0,
-        "max": "0",
+        "max": "1",
         "base": {
           "path": "Identifier.assigner",
           "min": 0,
@@ -2289,7 +2289,7 @@
         "definition": "A code that classifies the procedure for searching, sorting and display purposes (e.g. \"Surgical Procedure\").",
         "comments": "Not all terminology uses fit this general pattern. In some cases, models should not use CodeableConcept and use Coding directly and provide their own structure for managing text, codings, translations and the relationship between elements and pre- and post-coordination.",
         "min": 0,
-        "max": "0",
+        "max": "1",
         "base": {
           "path": "Procedure.category",
           "min": 0,
@@ -5764,7 +5764,7 @@
         "definition": "Detailed and structured anatomical location information. Multiple locations are allowed - e.g. multiple punch biopsies of a lesion.",
         "comments": "Not all terminology uses fit this general pattern. In some cases, models should not use CodeableConcept and use Coding directly and provide their own structure for managing text, codings, translations and the relationship between elements and pre- and post-coordination.",
         "min": 0,
-        "max": "0",
+        "max": "*",
         "base": {
           "path": "Procedure.bodySite",
           "min": 0,
@@ -6977,7 +6977,7 @@
         "path": "Procedure.performer",
         "short": "The people who performed the procedure",
         "definition": "Limited to 'real' people rather than equipment.",
-        "min": 1,
+        "min": 0,
         "max": "1",
         "base": {
           "path": "Procedure.performer",
@@ -7176,6 +7176,18 @@
             "profile": [
               "https://fhir.hl7.org.uk/StructureDefinition/CareConnect-Practitioner-1"
             ]
+          },
+          {
+            "code": "Reference",
+            "profile": [
+              "https://fhir.hl7.org.uk/StructureDefinition/CareConnect-DCH-Patient-1"
+            ]
+          },
+          {
+            "code": "Reference",
+            "profile": [
+              "https://fhir.hl7.org.uk/StructureDefinition/CareConnect-Organization-1"
+            ]
           }
         ],
         "condition": [
@@ -7232,195 +7244,12 @@
         ]
       },
       {
-        "path": "Procedure.performer.actor.id",
-        "short": "xml:id (or equivalent in JSON)",
-        "definition": "unique id for the element within a resource (for internal references).",
-        "comments": "RFC 4122",
-        "min": 0,
-        "max": "1",
-        "base": {
-          "path": "Element.id",
-          "min": 0,
-          "max": "1"
-        },
-        "type": [
-          {
-            "code": "id"
-          }
-        ],
-        "condition": [
-          "ele-1"
-        ],
-        "constraint": [
-          {
-            "extension": [
-              {
-                "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-expression",
-                "valueString": "children()"
-              }
-            ],
-            "key": "ele-1",
-            "severity": "error",
-            "human": "All FHIR elements must have a @value or children",
-            "xpath": "@value|f:*|h:div"
-          }
-        ],
-        "mapping": [
-          {
-            "identity": "rim",
-            "map": "n/a"
-          }
-        ]
-      },
-      {
-        "path": "Procedure.performer.actor.extension",
-        "short": "Additional Content defined by implementations",
-        "definition": "May be used to represent additional information that is not part of the basic definition of the element. In order to make the use of extensions safe and manageable, there is a strict set of governance  applied to the definition and use of extensions. Though any implementer is allowed to define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension.",
-        "comments": "There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone.",
-        "alias": [
-          "extensions",
-          "user content"
-        ],
-        "min": 0,
-        "max": "*",
-        "base": {
-          "path": "Element.extension",
-          "min": 0,
-          "max": "*"
-        },
-        "type": [
-          {
-            "code": "Extension"
-          }
-        ],
-        "condition": [
-          "ele-1"
-        ],
-        "constraint": [
-          {
-            "extension": [
-              {
-                "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-expression",
-                "valueString": "children()"
-              }
-            ],
-            "key": "ele-1",
-            "severity": "error",
-            "human": "All FHIR elements must have a @value or children",
-            "xpath": "@value|f:*|h:div"
-          }
-        ],
-        "mapping": [
-          {
-            "identity": "rim",
-            "map": "n/a"
-          },
-          {
-            "identity": "rim",
-            "map": "N/A"
-          }
-        ]
-      },
-      {
-        "path": "Procedure.performer.actor.reference",
-        "short": "Relative, internal or absolute URL reference",
-        "definition": "A reference to a location at which the other resource is found. The reference may be a relative reference, in which case it is relative to the service base URL, or an absolute URL that resolves to the location where the resource is found. The reference may be version specific or not. If the reference is not to a FHIR RESTful server, then it should be assumed to be version specific. Internal fragment references (start with '#') refer to contained resources.",
-        "comments": "Using absolute URLs provides a stable scalable approach suitable for a cloud/web context, while using relative/logical references provides a flexible approach suitable for use when trading across closed eco-system boundaries.   Absolute URLs do not need to point to a FHIR RESTful server, though this is the preferred approach. If the URL conforms to the structure \"/[type]/[id]\" then it should be assumed that the reference is to a FHIR RESTful server.",
-        "min": 1,
-        "max": "1",
-        "base": {
-          "path": "Reference.reference",
-          "min": 0,
-          "max": "1"
-        },
-        "type": [
-          {
-            "code": "string"
-          }
-        ],
-        "condition": [
-          "ele-1",
-          "ref-1"
-        ],
-        "constraint": [
-          {
-            "extension": [
-              {
-                "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-expression",
-                "valueString": "children()"
-              }
-            ],
-            "key": "ele-1",
-            "severity": "error",
-            "human": "All FHIR elements must have a @value or children",
-            "xpath": "@value|f:*|h:div"
-          }
-        ],
-        "isSummary": true,
-        "mapping": [
-          {
-            "identity": "rim",
-            "map": "n/a"
-          },
-          {
-            "identity": "rim",
-            "map": "N/A"
-          }
-        ]
-      },
-      {
-        "path": "Procedure.performer.actor.display",
-        "short": "Text alternative for the resource",
-        "definition": "Plain text narrative that identifies the resource in addition to the resource reference.",
-        "comments": "This is generally not the same as the Resource.text of the referenced resource.  The purpose is to identify what's being referenced, not to fully describe it.",
-        "min": 0,
-        "max": "1",
-        "base": {
-          "path": "Reference.display",
-          "min": 0,
-          "max": "1"
-        },
-        "type": [
-          {
-            "code": "string"
-          }
-        ],
-        "condition": [
-          "ele-1"
-        ],
-        "constraint": [
-          {
-            "extension": [
-              {
-                "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-expression",
-                "valueString": "children()"
-              }
-            ],
-            "key": "ele-1",
-            "severity": "error",
-            "human": "All FHIR elements must have a @value or children",
-            "xpath": "@value|f:*|h:div"
-          }
-        ],
-        "isSummary": true,
-        "mapping": [
-          {
-            "identity": "rim",
-            "map": "n/a"
-          },
-          {
-            "identity": "rim",
-            "map": "N/A"
-          }
-        ]
-      },
-      {
         "path": "Procedure.performer.role",
         "short": "The role the actor was in",
         "definition": "For example: surgeon, anaethetist, endoscopist.",
         "comments": "Not all terminology uses fit this general pattern. In some cases, models should not use CodeableConcept and use Coding directly and provide their own structure for managing text, codings, translations and the relationship between elements and pre- and post-coordination.",
         "min": 0,
-        "max": "0",
+        "max": "1",
         "base": {
           "path": "Procedure.performer.role",
           "min": 0,
@@ -8874,7 +8703,7 @@
         "short": "Where the procedure happened",
         "definition": "The location where the procedure actually happened.  E.g. a newborn at home, a tracheostomy at a restaurant.",
         "requirements": "Ties a procedure to where the records are likely kept.",
-        "min": 1,
+        "min": 0,
         "max": "1",
         "base": {
           "path": "Procedure.location",
@@ -9029,7 +8858,7 @@
         "short": "Relative, internal or absolute URL reference",
         "definition": "A reference to a location at which the other resource is found. The reference may be a relative reference, in which case it is relative to the service base URL, or an absolute URL that resolves to the location where the resource is found. The reference may be version specific or not. If the reference is not to a FHIR RESTful server, then it should be assumed to be version specific. Internal fragment references (start with '#') refer to contained resources.",
         "comments": "Using absolute URLs provides a stable scalable approach suitable for a cloud/web context, while using relative/logical references provides a flexible approach suitable for use when trading across closed eco-system boundaries.   Absolute URLs do not need to point to a FHIR RESTful server, though this is the preferred approach. If the URL conforms to the structure \"/[type]/[id]\" then it should be assumed that the reference is to a FHIR RESTful server.",
-        "min": 1,
+        "min": 0,
         "max": "1",
         "base": {
           "path": "Reference.reference",
@@ -13229,7 +13058,7 @@
         "path": "Procedure.request",
         "short": "A request for this procedure",
         "definition": "A reference to a resource that contains details of the request for this procedure.",
-        "min": 1,
+        "min": 0,
         "max": "1",
         "base": {
           "path": "Procedure.request",
@@ -13282,189 +13111,6 @@
           {
             "identity": "rim",
             "map": "The target of a resource reference is a RIM entry point (Act, Role, or Entity)"
-          }
-        ]
-      },
-      {
-        "path": "Procedure.request.id",
-        "short": "xml:id (or equivalent in JSON)",
-        "definition": "unique id for the element within a resource (for internal references).",
-        "comments": "RFC 4122",
-        "min": 0,
-        "max": "1",
-        "base": {
-          "path": "Element.id",
-          "min": 0,
-          "max": "1"
-        },
-        "type": [
-          {
-            "code": "id"
-          }
-        ],
-        "condition": [
-          "ele-1"
-        ],
-        "constraint": [
-          {
-            "extension": [
-              {
-                "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-expression",
-                "valueString": "children()"
-              }
-            ],
-            "key": "ele-1",
-            "severity": "error",
-            "human": "All FHIR elements must have a @value or children",
-            "xpath": "@value|f:*|h:div"
-          }
-        ],
-        "mapping": [
-          {
-            "identity": "rim",
-            "map": "n/a"
-          }
-        ]
-      },
-      {
-        "path": "Procedure.request.extension",
-        "short": "Additional Content defined by implementations",
-        "definition": "May be used to represent additional information that is not part of the basic definition of the element. In order to make the use of extensions safe and manageable, there is a strict set of governance  applied to the definition and use of extensions. Though any implementer is allowed to define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension.",
-        "comments": "There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone.",
-        "alias": [
-          "extensions",
-          "user content"
-        ],
-        "min": 0,
-        "max": "*",
-        "base": {
-          "path": "Element.extension",
-          "min": 0,
-          "max": "*"
-        },
-        "type": [
-          {
-            "code": "Extension"
-          }
-        ],
-        "condition": [
-          "ele-1"
-        ],
-        "constraint": [
-          {
-            "extension": [
-              {
-                "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-expression",
-                "valueString": "children()"
-              }
-            ],
-            "key": "ele-1",
-            "severity": "error",
-            "human": "All FHIR elements must have a @value or children",
-            "xpath": "@value|f:*|h:div"
-          }
-        ],
-        "mapping": [
-          {
-            "identity": "rim",
-            "map": "n/a"
-          },
-          {
-            "identity": "rim",
-            "map": "N/A"
-          }
-        ]
-      },
-      {
-        "path": "Procedure.request.reference",
-        "short": "Relative, internal or absolute URL reference",
-        "definition": "A reference to a location at which the other resource is found. The reference may be a relative reference, in which case it is relative to the service base URL, or an absolute URL that resolves to the location where the resource is found. The reference may be version specific or not. If the reference is not to a FHIR RESTful server, then it should be assumed to be version specific. Internal fragment references (start with '#') refer to contained resources.",
-        "comments": "Using absolute URLs provides a stable scalable approach suitable for a cloud/web context, while using relative/logical references provides a flexible approach suitable for use when trading across closed eco-system boundaries.   Absolute URLs do not need to point to a FHIR RESTful server, though this is the preferred approach. If the URL conforms to the structure \"/[type]/[id]\" then it should be assumed that the reference is to a FHIR RESTful server.",
-        "min": 1,
-        "max": "1",
-        "base": {
-          "path": "Reference.reference",
-          "min": 0,
-          "max": "1"
-        },
-        "type": [
-          {
-            "code": "string"
-          }
-        ],
-        "condition": [
-          "ele-1",
-          "ref-1"
-        ],
-        "constraint": [
-          {
-            "extension": [
-              {
-                "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-expression",
-                "valueString": "children()"
-              }
-            ],
-            "key": "ele-1",
-            "severity": "error",
-            "human": "All FHIR elements must have a @value or children",
-            "xpath": "@value|f:*|h:div"
-          }
-        ],
-        "isSummary": true,
-        "mapping": [
-          {
-            "identity": "rim",
-            "map": "n/a"
-          },
-          {
-            "identity": "rim",
-            "map": "N/A"
-          }
-        ]
-      },
-      {
-        "path": "Procedure.request.display",
-        "short": "Text alternative for the resource",
-        "definition": "Plain text narrative that identifies the resource in addition to the resource reference.",
-        "comments": "This is generally not the same as the Resource.text of the referenced resource.  The purpose is to identify what's being referenced, not to fully describe it.",
-        "min": 0,
-        "max": "1",
-        "base": {
-          "path": "Reference.display",
-          "min": 0,
-          "max": "1"
-        },
-        "type": [
-          {
-            "code": "string"
-          }
-        ],
-        "condition": [
-          "ele-1"
-        ],
-        "constraint": [
-          {
-            "extension": [
-              {
-                "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-expression",
-                "valueString": "children()"
-              }
-            ],
-            "key": "ele-1",
-            "severity": "error",
-            "human": "All FHIR elements must have a @value or children",
-            "xpath": "@value|f:*|h:div"
-          }
-        ],
-        "isSummary": true,
-        "mapping": [
-          {
-            "identity": "rim",
-            "map": "n/a"
-          },
-          {
-            "identity": "rim",
-            "map": "N/A"
           }
         ]
       },
@@ -14939,14 +14585,6 @@
         "max": "1"
       },
       {
-        "path": "Procedure.identifier.use",
-        "max": "0"
-      },
-      {
-        "path": "Procedure.identifier.type",
-        "max": "0"
-      },
-      {
         "path": "Procedure.identifier.system",
         "min": 1
       },
@@ -14955,12 +14593,7 @@
         "min": 1
       },
       {
-        "path": "Procedure.identifier.period",
-        "max": "0"
-      },
-      {
         "path": "Procedure.identifier.assigner",
-        "max": "0",
         "type": [
           {
             "code": "Reference",
@@ -14984,10 +14617,6 @@
       {
         "path": "Procedure.subject.reference",
         "min": 1
-      },
-      {
-        "path": "Procedure.category",
-        "max": "0"
       },
       {
         "path": "Procedure.category.coding",
@@ -15165,10 +14794,6 @@
         "min": 1
       },
       {
-        "path": "Procedure.bodySite",
-        "max": "0"
-      },
-      {
         "path": "Procedure.bodySite.coding",
         "slicing": {
           "discriminator": [
@@ -15228,7 +14853,6 @@
       },
       {
         "path": "Procedure.performer",
-        "min": 1,
         "max": "1"
       },
       {
@@ -15240,16 +14864,20 @@
             "profile": [
               "https://fhir.hl7.org.uk/StructureDefinition/CareConnect-Practitioner-1"
             ]
+          },
+          {
+            "code": "Reference",
+            "profile": [
+              "https://fhir.hl7.org.uk/StructureDefinition/CareConnect-DCH-Patient-1"
+            ]
+          },
+          {
+            "code": "Reference",
+            "profile": [
+              "https://fhir.hl7.org.uk/StructureDefinition/CareConnect-Organization-1"
+            ]
           }
         ]
-      },
-      {
-        "path": "Procedure.performer.actor.reference",
-        "min": 1
-      },
-      {
-        "path": "Procedure.performer.role",
-        "max": "0"
       },
       {
         "path": "Procedure.performer.role.coding",
@@ -15323,7 +14951,6 @@
       },
       {
         "path": "Procedure.location",
-        "min": 1,
         "type": [
           {
             "code": "Reference",
@@ -15332,10 +14959,6 @@
             ]
           }
         ]
-      },
-      {
-        "path": "Procedure.location.reference",
-        "min": 1
       },
       {
         "path": "Procedure.outcome",
@@ -15545,7 +15168,6 @@
       },
       {
         "path": "Procedure.request",
-        "min": 1,
         "type": [
           {
             "code": "Reference",
@@ -15554,10 +15176,6 @@
             ]
           }
         ]
-      },
-      {
-        "path": "Procedure.request.reference",
-        "min": 1
       },
       {
         "path": "Procedure.notes",

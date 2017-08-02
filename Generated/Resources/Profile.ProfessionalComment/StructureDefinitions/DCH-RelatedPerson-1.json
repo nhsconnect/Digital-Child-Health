@@ -1,11 +1,11 @@
 {
   "resourceType": "StructureDefinition",
   "meta": {
-    "lastUpdated": "2017-06-05T12:08:39.199+01:00",
+    "lastUpdated": "2017-07-24T14:05:33.704+01:00",
     "tag": [
       {
         "system": "urn:hscic:publishOrder",
-        "code": "7"
+        "code": "20"
       }
     ]
   },
@@ -380,6 +380,12 @@
       },
       {
         "path": "RelatedPerson.extension",
+        "slicing": {
+          "discriminator": [
+            "url"
+          ],
+          "rules": "open"
+        },
         "short": "Additional Content defined by implementations",
         "definition": "May be used to represent additional information that is not part of the basic definition of the resource. In order to make the use of extensions safe and manageable, there is a strict set of governance  applied to the definition and use of extensions. Though any implementer is allowed to define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension.",
         "comments": "There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone.",
@@ -397,6 +403,112 @@
         "type": [
           {
             "code": "Extension"
+          }
+        ],
+        "condition": [
+          "ele-1"
+        ],
+        "constraint": [
+          {
+            "extension": [
+              {
+                "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-expression",
+                "valueString": "children()"
+              }
+            ],
+            "key": "ele-1",
+            "severity": "error",
+            "human": "All FHIR elements must have a @value or children",
+            "xpath": "@value|f:*|h:div"
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "rim",
+            "map": "n/a"
+          },
+          {
+            "identity": "rim",
+            "map": "N/A"
+          }
+        ]
+      },
+      {
+        "path": "RelatedPerson.extension",
+        "name": "householdMember",
+        "short": "Household member information for a related person ",
+        "definition": "Household member information for a related person ",
+        "comments": "There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone.",
+        "alias": [
+          "extensions",
+          "user content"
+        ],
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "DomainResource.extension",
+          "min": 0,
+          "max": "*"
+        },
+        "type": [
+          {
+            "code": "Extension",
+            "profile": [
+              "https://fhir.hl7.org.uk/StructureDefinition/Extension-DCH-HouseholdMember-1"
+            ]
+          }
+        ],
+        "condition": [
+          "ele-1"
+        ],
+        "constraint": [
+          {
+            "extension": [
+              {
+                "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-expression",
+                "valueString": "children()"
+              }
+            ],
+            "key": "ele-1",
+            "severity": "error",
+            "human": "All FHIR elements must have a @value or children",
+            "xpath": "@value|f:*|h:div"
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "rim",
+            "map": "n/a"
+          },
+          {
+            "identity": "rim",
+            "map": "N/A"
+          }
+        ]
+      },
+      {
+        "path": "RelatedPerson.extension",
+        "name": "link",
+        "short": "A link to a Patient resource for a Related Person",
+        "definition": "A link to a Patient resource for a Related Person.",
+        "comments": "There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone.",
+        "alias": [
+          "extensions",
+          "user content"
+        ],
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "DomainResource.extension",
+          "min": 0,
+          "max": "*"
+        },
+        "type": [
+          {
+            "code": "Extension",
+            "profile": [
+              "https://fhir.hl7.org.uk/StructureDefinition/Extension-DCH-Link-1"
+            ]
           }
         ],
         "condition": [
@@ -2136,7 +2248,7 @@
         "short": "Relative, internal or absolute URL reference",
         "definition": "A reference to a location at which the other resource is found. The reference may be a relative reference, in which case it is relative to the service base URL, or an absolute URL that resolves to the location where the resource is found. The reference may be version specific or not. If the reference is not to a FHIR RESTful server, then it should be assumed to be version specific. Internal fragment references (start with '#') refer to contained resources.",
         "comments": "Using absolute URLs provides a stable scalable approach suitable for a cloud/web context, while using relative/logical references provides a flexible approach suitable for use when trading across closed eco-system boundaries.   Absolute URLs do not need to point to a FHIR RESTful server, though this is the preferred approach. If the URL conforms to the structure \"/[type]/[id]\" then it should be assumed that the reference is to a FHIR RESTful server.",
-        "min": 0,
+        "min": 1,
         "max": "1",
         "base": {
           "path": "Reference.reference",
@@ -3635,7 +3747,7 @@
         "comments": "Person may have multiple ways to be contacted with different uses or applicable periods.  May need to have options for contacting the person urgently, and also to help with identification.",
         "requirements": "People have (primary) ways to contact them in some way such as phone, email.",
         "min": 0,
-        "max": "0",
+        "max": "1",
         "base": {
           "path": "RelatedPerson.telecom",
           "min": 0,
@@ -4292,8 +4404,8 @@
         "definition": "Administrative Gender - the gender that the person is considered to have for administration and record keeping purposes.",
         "comments": "Note that FHIR strings may not exceed 1MB in size",
         "requirements": "Needed for identification of the person, in combination with (at least) name and birth date.",
-        "min": 0,
-        "max": "0",
+        "min": 1,
+        "max": "1",
         "base": {
           "path": "RelatedPerson.gender",
           "min": 0,
@@ -4325,7 +4437,9 @@
         "binding": {
           "strength": "required",
           "description": "The gender of a person used for administrative purposes.",
-          "valueSetUri": "http://hl7.org/fhir/ValueSet/administrative-gender"
+          "valueSetReference": {
+            "reference": "https://fhir.hl7.org.uk/ValueSet/CareConnect-AdministrativeGender-1"
+          }
         },
         "mapping": [
           {
@@ -4346,8 +4460,8 @@
         "path": "RelatedPerson.birthDate",
         "short": "The date on which the related person was born",
         "definition": "The date on which the related person was born.",
-        "min": 0,
-        "max": "0",
+        "min": 1,
+        "max": "1",
         "base": {
           "path": "RelatedPerson.birthDate",
           "min": 0,
@@ -4390,7 +4504,7 @@
         "comments": "Note: address is for postal addresses, not physical locations.",
         "requirements": "Need to keep track where the related person can be contacted per postal mail or visited.",
         "min": 0,
-        "max": "0",
+        "max": "1",
         "base": {
           "path": "RelatedPerson.address",
           "min": 0,
@@ -5355,7 +5469,7 @@
         "comments": "When providing a summary view (for example with Observation.value[x]) Attachment should be represented with a brief display text such as \"Attachment\".",
         "requirements": "Many EHR systems have the capability to capture an image of persons. Fits with newer social media usage too.",
         "min": 0,
-        "max": "0",
+        "max": "1",
         "base": {
           "path": "RelatedPerson.photo",
           "min": 0,
@@ -5916,7 +6030,7 @@
         "definition": "The period of time that this relationship is considered to be valid. If there are no dates defined, then the interval is unknown.",
         "comments": "This is not a duration - that's a measure of time (a separate type), but a duration that occurs at a fixed value of time. A Period specifies a range of time; the context of use will specify whether the entire range applies (e.g. \"the patient was an inpatient of the hospital for this time range\") or one value from the range applies (e.g. \"give to the patient between these two times\"). If duration is required, specify the type as Interval|Duration.",
         "min": 0,
-        "max": "0",
+        "max": "1",
         "base": {
           "path": "RelatedPerson.period",
           "min": 0,
@@ -6177,6 +6291,41 @@
         "path": "RelatedPerson"
       },
       {
+        "path": "RelatedPerson.extension",
+        "slicing": {
+          "discriminator": [
+            "url"
+          ],
+          "rules": "open"
+        }
+      },
+      {
+        "path": "RelatedPerson.extension",
+        "name": "householdMember",
+        "max": "1",
+        "type": [
+          {
+            "code": "Extension",
+            "profile": [
+              "https://fhir.hl7.org.uk/StructureDefinition/Extension-DCH-HouseholdMember-1"
+            ]
+          }
+        ]
+      },
+      {
+        "path": "RelatedPerson.extension",
+        "name": "link",
+        "max": "1",
+        "type": [
+          {
+            "code": "Extension",
+            "profile": [
+              "https://fhir.hl7.org.uk/StructureDefinition/Extension-DCH-Link-1"
+            ]
+          }
+        ]
+      },
+      {
         "path": "RelatedPerson.identifier",
         "min": 1,
         "max": "1"
@@ -6210,6 +6359,10 @@
             ]
           }
         ]
+      },
+      {
+        "path": "RelatedPerson.patient.reference",
+        "min": 1
       },
       {
         "path": "RelatedPerson.relationship",
@@ -6248,31 +6401,29 @@
       },
       {
         "path": "RelatedPerson.telecom",
-        "max": "0"
+        "max": "1"
       },
       {
         "path": "RelatedPerson.gender",
-        "max": "0",
+        "min": 1,
         "binding": {
           "strength": "required",
-          "valueSetUri": "http://hl7.org/fhir/ValueSet/administrative-gender"
+          "valueSetReference": {
+            "reference": "https://fhir.hl7.org.uk/ValueSet/CareConnect-AdministrativeGender-1"
+          }
         }
       },
       {
         "path": "RelatedPerson.birthDate",
-        "max": "0"
+        "min": 1
       },
       {
         "path": "RelatedPerson.address",
-        "max": "0"
+        "max": "1"
       },
       {
         "path": "RelatedPerson.photo",
-        "max": "0"
-      },
-      {
-        "path": "RelatedPerson.period",
-        "max": "0"
+        "max": "1"
       }
     ]
   }

@@ -21,7 +21,7 @@
     }
   ],
   "date": "2017-03-28T10:02:24.7119398+01:00",
-  "description": "This extension has been constrained to represent the Consent Status for a Procedure Request that has been offered for a Child Health event.",
+  "description": "This extension has been constrained to represent the Consent Status for a Procedure Request that has been offered for a Child Health Event.",
   "copyright": "Copyright © 2016 Health and Social Care Information Centre. NHS Digital is the trading name of the Health and Social Care Information Centre.",
   "fhirVersion": "1.0.2",
   "kind": "datatype",
@@ -537,7 +537,7 @@
             "code": "uri"
           }
         ],
-        "fixedUri": "https://fhir.nhs.uk/dch-consentstatus-1",
+        "fixedUri": "https://fhir.nhs.uk/DCH-ConsentStatus-1",
         "condition": [
           "ele-1"
         ],
@@ -896,7 +896,7 @@
       {
         "path": "Extension.valueCodeableConcept.coding.system",
         "min": 1,
-        "fixedUri": "https://fhir.nhs.uk/dch-consentstatus-1"
+        "fixedUri": "https://fhir.nhs.uk/DCH-ConsentStatus-1"
       },
       {
         "path": "Extension.valueCodeableConcept.coding.code",

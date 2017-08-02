@@ -1,7 +1,7 @@
 {
   "resourceType": "StructureDefinition",
   "meta": {
-    "lastUpdated": "2017-06-12T13:50:04.368+01:00",
+    "lastUpdated": "2017-07-24T12:43:02.177+01:00",
     "tag": [
       {
         "system": "urn:hscic:publishOrder",
@@ -977,7 +977,7 @@
         "path": "Bundle.entry.resource",
         "short": "A resource in the bundle",
         "definition": "The Resources for the entry.",
-        "min": 0,
+        "min": 1,
         "max": "1",
         "base": {
           "path": "Bundle.entry.resource",
@@ -3060,6 +3060,10 @@
       },
       {
         "path": "Bundle.entry.fullUrl",
+        "min": 1
+      },
+      {
+        "path": "Bundle.entry.resource",
         "min": 1
       },
       {

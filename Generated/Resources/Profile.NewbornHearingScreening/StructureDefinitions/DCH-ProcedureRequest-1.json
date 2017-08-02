@@ -1,11 +1,11 @@
 {
   "resourceType": "StructureDefinition",
   "meta": {
-    "lastUpdated": "2017-07-13T10:57:48.946+01:00",
+    "lastUpdated": "2017-07-31T08:02:12.298+01:00",
     "tag": [
       {
         "system": "urn:hscic:publishOrder",
-        "code": "9"
+        "code": "19"
       }
     ]
   },
@@ -26,7 +26,7 @@
     }
   ],
   "date": "2017-03-28T09:33:24.1993818+01:00",
-  "description": "This ProcedureRequest resource is constrained to represent a request for a procedure to be performed during a Child Health event.",
+  "description": "This ProcedureRequest resource is constrained to represent a request for a procedure to be performed during a Child Health Event.",
   "copyright": "Copyright © 2016 Health and Social Care Information Centre. NHS Digital is the trading name of the Health and Social Care Information Centre.",
   "fhirVersion": "1.0.2",
   "kind": "resource",
@@ -376,6 +376,12 @@
       },
       {
         "path": "ProcedureRequest.extension",
+        "slicing": {
+          "discriminator": [
+            "url"
+          ],
+          "rules": "open"
+        },
         "short": "Additional Content defined by implementations",
         "definition": "May be used to represent additional information that is not part of the basic definition of the resource. In order to make the use of extensions safe and manageable, there is a strict set of governance  applied to the definition and use of extensions. Though any implementer is allowed to define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension.",
         "comments": "There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone.",
@@ -393,6 +399,59 @@
         "type": [
           {
             "code": "Extension"
+          }
+        ],
+        "condition": [
+          "ele-1"
+        ],
+        "constraint": [
+          {
+            "extension": [
+              {
+                "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-expression",
+                "valueString": "children()"
+              }
+            ],
+            "key": "ele-1",
+            "severity": "error",
+            "human": "All FHIR elements must have a @value or children",
+            "xpath": "@value|f:*|h:div"
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "rim",
+            "map": "n/a"
+          },
+          {
+            "identity": "rim",
+            "map": "N/A"
+          }
+        ]
+      },
+      {
+        "path": "ProcedureRequest.extension",
+        "name": "consentStatus",
+        "short": "The consent given for the Child Health event",
+        "definition": "The consent given for the Child Health event.",
+        "comments": "There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone.",
+        "alias": [
+          "extensions",
+          "user content"
+        ],
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "DomainResource.extension",
+          "min": 0,
+          "max": "*"
+        },
+        "type": [
+          {
+            "code": "Extension",
+            "profile": [
+              "https://fhir.nhs.uk/StructureDefinition/Extension-DCH-ConsentStatus-1"
+            ]
           }
         ],
         "condition": [
@@ -3195,6 +3254,7 @@
             "code": "uri"
           }
         ],
+        "fixedUri": "http://snomed.info/sct",
         "condition": [
           "ele-1"
         ],
@@ -4571,6 +4631,30 @@
         "path": "ProcedureRequest"
       },
       {
+        "path": "ProcedureRequest.extension",
+        "slicing": {
+          "discriminator": [
+            "url"
+          ],
+          "rules": "open"
+        }
+      },
+      {
+        "path": "ProcedureRequest.extension",
+        "name": "consentStatus",
+        "short": "The consent given for the Child Health event",
+        "definition": "The consent given for the Child Health event.",
+        "max": "1",
+        "type": [
+          {
+            "code": "Extension",
+            "profile": [
+              "https://fhir.nhs.uk/StructureDefinition/Extension-DCH-ConsentStatus-1"
+            ]
+          }
+        ]
+      },
+      {
         "path": "ProcedureRequest.identifier",
         "min": 1,
         "max": "1"
@@ -4635,6 +4719,10 @@
       {
         "path": "ProcedureRequest.bodySite",
         "max": "1"
+      },
+      {
+        "path": "ProcedureRequest.bodySite.coding.system",
+        "fixedUri": "http://snomed.info/sct"
       },
       {
         "path": "ProcedureRequest.encounter",

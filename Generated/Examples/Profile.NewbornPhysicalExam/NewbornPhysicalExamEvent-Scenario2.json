@@ -20,7 +20,7 @@
         },
         "timestamp": "2012-01-09T14:00:00+00:00",
         "event": {
-          "system": "https://fhir.nhs.uk/dch-childhealtheventtype-1",
+          "system": "https://fhir.nhs.uk/DCH-ChildHealthEventType-1",
           "code": "HCP Clinical Intervention: Newborn Physical Examination",
           "display": "HCP Clinical Intervention: Newborn Physical Examination"
         },
@@ -202,7 +202,7 @@
             "valueCodeableConcept": {
               "coding": [
                 {
-                  "system": "https://fhir.nhs.uk/dch-consentstatus-1",
+                  "system": "https://fhir.nhs.uk/DCH-ConsentStatus-1",
                   "code": "Consented",
                   "display": "Consented"
                 }

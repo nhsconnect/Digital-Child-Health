@@ -17,6 +17,10 @@
             "display": "New event message"
           },
           {
+            "code": "update",
+            "display": "Update event message"
+          },
+          {
             "code": "delete",
             "display": "Delete event message"
           }

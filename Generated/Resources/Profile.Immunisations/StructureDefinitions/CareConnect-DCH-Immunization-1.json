@@ -1,7 +1,7 @@
 {
   "resourceType": "StructureDefinition",
   "meta": {
-    "lastUpdated": "2017-06-05T11:35:25.084+01:00",
+    "lastUpdated": "2017-07-27T19:21:24.984+01:00",
     "tag": [
       {
         "system": "urn:hscic:publishOrder",
@@ -767,7 +767,7 @@
         "comments": "This is labeled as \"Is Modifier\" because applications should not mistake a temporary id for a permanent one. Applications can assume that an identifier is permanent unless it explicitly says that it is temporary.",
         "requirements": "Allows the appropriate identifier for a particular context of use to be selected from among a set of identifiers.",
         "min": 0,
-        "max": "0",
+        "max": "1",
         "base": {
           "path": "Identifier.use",
           "min": 0,
@@ -826,7 +826,7 @@
         "comments": "This element deals only with general categories of identifiers.  It SHOULD not be used for codes that correspond 1..1 with the Identifier.system. Some identifiers may fall into multiple categories due to common usage.   Where the system is known, a type is unnecessary because the type is always part of the system definition. However systems often need to handle identifiers where the system is not known. There is not a 1:1 relationship between type and system, since many different systems have the same type.",
         "requirements": "Allows users to make use of identifiers when the identifier system is not known.",
         "min": 0,
-        "max": "0",
+        "max": "1",
         "base": {
           "path": "Identifier.type",
           "min": 0,
@@ -1582,7 +1582,7 @@
         "definition": "Time period during which identifier is/was valid for use.",
         "comments": "This is not a duration - that's a measure of time (a separate type), but a duration that occurs at a fixed value of time. A Period specifies a range of time; the context of use will specify whether the entire range applies (e.g. \"the patient was an inpatient of the hospital for this time range\") or one value from the range applies (e.g. \"give to the patient between these two times\"). If duration is required, specify the type as Interval|Duration.",
         "min": 0,
-        "max": "0",
+        "max": "1",
         "base": {
           "path": "Identifier.period",
           "min": 0,
@@ -1849,7 +1849,7 @@
         "definition": "Organization that issued/manages the identifier.",
         "comments": "The reference may be just a text description of the assigner.",
         "min": 0,
-        "max": "0",
+        "max": "1",
         "base": {
           "path": "Identifier.assigner",
           "min": 0,
@@ -2162,7 +2162,7 @@
         "short": "Vaccination administration date",
         "definition": "Date vaccine administered or was to be administered.",
         "comments": "When immunizations are given a specific date and time should always be known.   When immunizations are patient reported, a specific date might not be known. ??Although partial dates are allowed, an adult patient might not be able to recall the year a childhood immunization was given.",
-        "min": 1,
+        "min": 0,
         "max": "1",
         "base": {
           "path": "Immunization.date",
@@ -3533,7 +3533,7 @@
         "short": "Relative, internal or absolute URL reference",
         "definition": "A reference to a location at which the other resource is found. The reference may be a relative reference, in which case it is relative to the service base URL, or an absolute URL that resolves to the location where the resource is found. The reference may be version specific or not. If the reference is not to a FHIR RESTful server, then it should be assumed to be version specific. Internal fragment references (start with '#') refer to contained resources.",
         "comments": "Using absolute URLs provides a stable scalable approach suitable for a cloud/web context, while using relative/logical references provides a flexible approach suitable for use when trading across closed eco-system boundaries.   Absolute URLs do not need to point to a FHIR RESTful server, though this is the preferred approach. If the URL conforms to the structure \"/[type]/[id]\" then it should be assumed that the reference is to a FHIR RESTful server.",
-        "min": 0,
+        "min": 1,
         "max": "1",
         "base": {
           "path": "Reference.reference",
@@ -3727,7 +3727,7 @@
         "path": "Immunization.performer",
         "short": "Who administered vaccine",
         "definition": "Clinician who administered the vaccine.",
-        "min": 1,
+        "min": 0,
         "max": "1",
         "base": {
           "path": "Immunization.performer",
@@ -3988,7 +3988,7 @@
         "definition": "Clinician who ordered the vaccination.",
         "comments": "Other participants - delegate to Provenance resource.",
         "min": 0,
-        "max": "0",
+        "max": "1",
         "base": {
           "path": "Immunization.requester",
           "min": 0,
@@ -4497,7 +4497,7 @@
         "path": "Immunization.manufacturer",
         "short": "Vaccine manufacturer",
         "definition": "Name of vaccine manufacturer.",
-        "min": 1,
+        "min": 0,
         "max": "1",
         "base": {
           "path": "Immunization.manufacturer",
@@ -4660,7 +4660,7 @@
         "short": "Relative, internal or absolute URL reference",
         "definition": "A reference to a location at which the other resource is found. The reference may be a relative reference, in which case it is relative to the service base URL, or an absolute URL that resolves to the location where the resource is found. The reference may be version specific or not. If the reference is not to a FHIR RESTful server, then it should be assumed to be version specific. Internal fragment references (start with '#') refer to contained resources.",
         "comments": "Using absolute URLs provides a stable scalable approach suitable for a cloud/web context, while using relative/logical references provides a flexible approach suitable for use when trading across closed eco-system boundaries.   Absolute URLs do not need to point to a FHIR RESTful server, though this is the preferred approach. If the URL conforms to the structure \"/[type]/[id]\" then it should be assumed that the reference is to a FHIR RESTful server.",
-        "min": 1,
+        "min": 0,
         "max": "1",
         "base": {
           "path": "Reference.reference",
@@ -4752,7 +4752,7 @@
         "path": "Immunization.location",
         "short": "Where vaccination occurred",
         "definition": "The service delivery location where the vaccine administration occurred.",
-        "min": 1,
+        "min": 0,
         "max": "1",
         "base": {
           "path": "Immunization.location",
@@ -4763,7 +4763,7 @@
           {
             "code": "Reference",
             "profile": [
-              "https://fhir.hl7.org.uk/StructureDefinition/CareConnect-Organization-1"
+              "https://fhir.hl7.org.uk/StructureDefinition/CareConnect-Location-1"
             ]
           }
         ],
@@ -4915,7 +4915,7 @@
         "short": "Relative, internal or absolute URL reference",
         "definition": "A reference to a location at which the other resource is found. The reference may be a relative reference, in which case it is relative to the service base URL, or an absolute URL that resolves to the location where the resource is found. The reference may be version specific or not. If the reference is not to a FHIR RESTful server, then it should be assumed to be version specific. Internal fragment references (start with '#') refer to contained resources.",
         "comments": "Using absolute URLs provides a stable scalable approach suitable for a cloud/web context, while using relative/logical references provides a flexible approach suitable for use when trading across closed eco-system boundaries.   Absolute URLs do not need to point to a FHIR RESTful server, though this is the preferred approach. If the URL conforms to the structure \"/[type]/[id]\" then it should be assumed that the reference is to a FHIR RESTful server.",
-        "min": 1,
+        "min": 0,
         "max": "1",
         "base": {
           "path": "Reference.reference",
@@ -5008,7 +5008,7 @@
         "short": "Vaccine lot number",
         "definition": "Lot number of the  vaccine product.",
         "comments": "Note that FHIR strings may not exceed 1MB in size",
-        "min": 1,
+        "min": 0,
         "max": "1",
         "base": {
           "path": "Immunization.lotNumber",
@@ -5061,7 +5061,7 @@
         "short": "Vaccine expiration date",
         "definition": "Date vaccine batch expires.",
         "min": 0,
-        "max": "0",
+        "max": "1",
         "base": {
           "path": "Immunization.expirationDate",
           "min": 0,
@@ -5109,7 +5109,7 @@
         "short": "Body site vaccine was administered",
         "definition": "Body site where vaccine was administered.",
         "comments": "Not all terminology uses fit this general pattern. In some cases, models should not use CodeableConcept and use Coding directly and provide their own structure for managing text, codings, translations and the relationship between elements and pre- and post-coordination.",
-        "min": 1,
+        "min": 0,
         "max": "1",
         "base": {
           "path": "Immunization.site",
@@ -6257,7 +6257,7 @@
         "short": "How vaccine entered body",
         "definition": "The path by which the vaccine product is taken into the body.",
         "comments": "Not all terminology uses fit this general pattern. In some cases, models should not use CodeableConcept and use Coding directly and provide their own structure for managing text, codings, translations and the relationship between elements and pre- and post-coordination.",
-        "min": 1,
+        "min": 0,
         "max": "1",
         "base": {
           "path": "Immunization.route",
@@ -7406,7 +7406,7 @@
         "short": "Amount of vaccine administered",
         "definition": "The quantity of vaccine product that was administered.",
         "comments": "The context of use may frequently define what kind of quantity this is and therefore what kind of units can be used. The context of use may also restrict the values for the comparator.",
-        "min": 1,
+        "min": 0,
         "max": "1",
         "base": {
           "path": "Immunization.doseQuantity",
@@ -7848,7 +7848,7 @@
         "definition": "Extra information about the immunization that is not conveyed by the other attributes.",
         "comments": "For systems that do not have structured annotations, they can simply communicate a single annotation with no author or time.  This element may need to be included in narrative because of the potential for modifying information.  *Annotations SHOULD NOT* be used to communicate \"modifying\" information that could be computable. (This is a SHOULD because enforcing user behavior is nearly impossible).",
         "min": 0,
-        "max": "0",
+        "max": "*",
         "base": {
           "path": "Immunization.note",
           "min": 0,
@@ -8010,13 +8010,13 @@
           {
             "code": "Reference",
             "profile": [
-              "https://fhir.hl7.org.uk/StructureDefinition/CareConnect-Patient-1"
+              "https://fhir.hl7.org.uk/StructureDefinition/CareConnect-Practitioner-1"
             ]
           },
           {
             "code": "Reference",
             "profile": [
-              "https://fhir.hl7.org.uk/StructureDefinition/CareConnect-Practitioner-1"
+              "https://fhir.hl7.org.uk/StructureDefinition/CareConnect-DCH-Patient-1"
             ]
           }
         ],
@@ -8355,7 +8355,7 @@
         "definition": "Reasons why a vaccine was administered.",
         "comments": "Not all terminology uses fit this general pattern. In some cases, models should not use CodeableConcept and use Coding directly and provide their own structure for managing text, codings, translations and the relationship between elements and pre- and post-coordination.",
         "min": 0,
-        "max": "0",
+        "max": "*",
         "base": {
           "path": "Immunization.explanation.reason",
           "min": 0,
@@ -8996,7 +8996,7 @@
         "definition": "Reason why a vaccine was not administered.",
         "comments": "Not all terminology uses fit this general pattern. In some cases, models should not use CodeableConcept and use Coding directly and provide their own structure for managing text, codings, translations and the relationship between elements and pre- and post-coordination.",
         "min": 0,
-        "max": "1",
+        "max": "*",
         "base": {
           "path": "Immunization.explanation.reasonNotGiven",
           "min": 0,
@@ -9155,8 +9155,8 @@
         "definition": "A reference to a code defined by a terminology system.",
         "comments": "Codes may be defined very casually in enumerations, or code lists, up to very formal definitions such as SNOMED CT - see the HL7 v3 Core Principles for more information.  Ordering of codings is undefined and SHALL NOT be used to infer meaning. Generally, at most only one of the coding values will be labelled as UserSelected = true.",
         "requirements": "Allows for translations and alternate encodings within a code system.  Also supports communication of the same instance to systems requiring different encodings.",
-        "min": 1,
-        "max": "1",
+        "min": 0,
+        "max": "*",
         "base": {
           "path": "CodeableConcept.coding",
           "min": 0,
@@ -9185,13 +9185,6 @@
           }
         ],
         "isSummary": true,
-        "binding": {
-          "strength": "required",
-          "description": "The reason why an immunisation was not administered.",
-          "valueSetReference": {
-            "reference": "https://fhir.nhs.uk/ValueSet/DCH-NotAdministeredReason-1"
-          }
-        },
         "mapping": [
           {
             "identity": "rim",
@@ -9319,7 +9312,7 @@
         "definition": "The identification of the code system that defines the meaning of the symbol in the code.",
         "comments": "The URI may be an OID (urn:oid:...) or a UUID (urn:uuid:...).  OIDs and UUIDs SHALL be references to the HL7 OID registry. Otherwise, the URI should come from HL7's list of FHIR defined special URIs or it should de-reference to some definition that establish the system clearly and unambiguously.",
         "requirements": "Need to be unambiguous about the source of the definition of the symbol.",
-        "min": 1,
+        "min": 0,
         "max": "1",
         "base": {
           "path": "Coding.system",
@@ -9331,7 +9324,6 @@
             "code": "uri"
           }
         ],
-        "fixedUri": "https://fhir.nhs.uk/dch-notadministeredreason-1",
         "condition": [
           "ele-1"
         ],
@@ -9375,7 +9367,7 @@
         "definition": "The version of the code system which was used when choosing this code. Note that a well-maintained code system does not need the version reported, because the meaning of codes is consistent across versions. However this cannot consistently be assured. and when the meaning is not guaranteed to be consistent, the version SHOULD be exchanged.",
         "comments": "Where the terminology does not clearly define what string should be used to identify code system versions, the recommendation is to use the date (expressed in FHIR date format) on which that version was officially published as the version date.",
         "min": 0,
-        "max": "0",
+        "max": "1",
         "base": {
           "path": "Coding.version",
           "min": 0,
@@ -9429,7 +9421,7 @@
         "definition": "A symbol in syntax defined by the system. The symbol may be a predefined code or an expression in a syntax defined by the coding system (e.g. post-coordination).",
         "comments": "Note that FHIR strings may not exceed 1MB in size",
         "requirements": "Need to refer to a particular code in the system.",
-        "min": 1,
+        "min": 0,
         "max": "1",
         "base": {
           "path": "Coding.code",
@@ -9484,7 +9476,7 @@
         "definition": "A representation of the meaning of the code in the system, following the rules of the system.",
         "comments": "Note that FHIR strings may not exceed 1MB in size",
         "requirements": "Need to be able to carry a human-readable meaning of the code for readers that do not know  the system.",
-        "min": 1,
+        "min": 0,
         "max": "1",
         "base": {
           "path": "Coding.display",
@@ -9540,7 +9532,7 @@
         "comments": "Amongst a set of alternatives, a directly chosen code is the most appropriate starting point for new translations. There is some ambiguity about what exactly 'directly chosen' implies, and trading partner agreement may be needed to clarify the use of this element and its consequences more completely.",
         "requirements": "This has been identified as a clinical safety criterium - that this exact system/code pair was chosen explicitly, rather than inferred by the system based on some rules or language processing.",
         "min": 0,
-        "max": "0",
+        "max": "1",
         "base": {
           "path": "Coding.userSelected",
           "min": 0,
@@ -9649,7 +9641,7 @@
         "definition": "Categorical data indicating that an adverse event is associated in time to an immunization.",
         "comments": "A reaction may be an indication of an allergy or intolerance and, if this is determined to be the case,  it should be recorded as a new [[[AllergyIntolerance]]] resource instance as most systems will not query against  past Immunization.reaction elements.",
         "min": 0,
-        "max": "0",
+        "max": "*",
         "base": {
           "path": "Immunization.reaction",
           "min": 0,
@@ -9896,7 +9888,7 @@
           {
             "code": "Reference",
             "profile": [
-              "https://fhir.hl7.org.uk/StructureDefinition/CareConnect-Observation-1"
+              "https://fhir.hl7.org.uk/StructureDefinition/CareConnect-DCH-Observation-1"
             ]
           }
         ],
@@ -10184,8 +10176,8 @@
         "path": "Immunization.vaccinationProtocol",
         "short": "What protocol was followed",
         "definition": "Contains information about the protocol(s) under which the vaccine was administered.",
-        "min": 1,
-        "max": "1",
+        "min": 0,
+        "max": "*",
         "base": {
           "path": "Immunization.vaccinationProtocol",
           "min": 0,
@@ -13269,14 +13261,6 @@
         "max": "1"
       },
       {
-        "path": "Immunization.identifier.use",
-        "max": "0"
-      },
-      {
-        "path": "Immunization.identifier.type",
-        "max": "0"
-      },
-      {
         "path": "Immunization.identifier.system",
         "min": 1
       },
@@ -13285,12 +13269,7 @@
         "min": 1
       },
       {
-        "path": "Immunization.identifier.period",
-        "max": "0"
-      },
-      {
         "path": "Immunization.identifier.assigner",
-        "max": "0",
         "type": [
           {
             "code": "Reference",
@@ -13299,10 +13278,6 @@
             ]
           }
         ]
-      },
-      {
-        "path": "Immunization.date",
-        "min": 1
       },
       {
         "path": "Immunization.vaccineCode.coding",
@@ -13370,8 +13345,11 @@
         ]
       },
       {
+        "path": "Immunization.patient.reference",
+        "min": 1
+      },
+      {
         "path": "Immunization.performer",
-        "min": 1,
         "type": [
           {
             "code": "Reference",
@@ -13383,7 +13361,6 @@
       },
       {
         "path": "Immunization.requester",
-        "max": "0",
         "type": [
           {
             "code": "Reference",
@@ -13411,7 +13388,6 @@
       },
       {
         "path": "Immunization.manufacturer",
-        "min": 1,
         "type": [
           {
             "code": "Reference",
@@ -13420,39 +13396,21 @@
             ]
           }
         ]
-      },
-      {
-        "path": "Immunization.manufacturer.reference",
-        "min": 1
       },
       {
         "path": "Immunization.location",
-        "min": 1,
         "type": [
           {
             "code": "Reference",
             "profile": [
-              "https://fhir.hl7.org.uk/StructureDefinition/CareConnect-Organization-1"
+              "https://fhir.hl7.org.uk/StructureDefinition/CareConnect-Location-1"
             ]
           }
         ]
       },
       {
-        "path": "Immunization.location.reference",
-        "min": 1
-      },
-      {
-        "path": "Immunization.lotNumber",
-        "min": 1
-      },
-      {
-        "path": "Immunization.expirationDate",
-        "max": "0"
-      },
-      {
         "path": "Immunization.site",
-        "short": "Body site vaccine was administered",
-        "min": 1
+        "short": "Body site vaccine was administered"
       },
       {
         "path": "Immunization.site.coding",
@@ -13506,10 +13464,6 @@
       },
       {
         "path": "Immunization.site.coding.display",
-        "min": 1
-      },
-      {
-        "path": "Immunization.route",
         "min": 1
       },
       {
@@ -13567,15 +13521,6 @@
         "min": 1
       },
       {
-        "path": "Immunization.doseQuantity",
-        "name": "SimpleQuantity",
-        "min": 1
-      },
-      {
-        "path": "Immunization.note",
-        "max": "0"
-      },
-      {
         "path": "Immunization.note.author[x]",
         "type": [
           {
@@ -13590,61 +13535,16 @@
           {
             "code": "Reference",
             "profile": [
-              "https://fhir.hl7.org.uk/StructureDefinition/CareConnect-Patient-1"
+              "https://fhir.hl7.org.uk/StructureDefinition/CareConnect-Practitioner-1"
             ]
           },
           {
             "code": "Reference",
             "profile": [
-              "https://fhir.hl7.org.uk/StructureDefinition/CareConnect-Practitioner-1"
+              "https://fhir.hl7.org.uk/StructureDefinition/CareConnect-DCH-Patient-1"
             ]
           }
         ]
-      },
-      {
-        "path": "Immunization.explanation.reason",
-        "max": "0"
-      },
-      {
-        "path": "Immunization.explanation.reasonNotGiven",
-        "max": "1"
-      },
-      {
-        "path": "Immunization.explanation.reasonNotGiven.coding",
-        "min": 1,
-        "max": "1",
-        "binding": {
-          "strength": "required",
-          "description": "The reason why an immunisation was not administered.",
-          "valueSetReference": {
-            "reference": "https://fhir.nhs.uk/ValueSet/DCH-NotAdministeredReason-1"
-          }
-        }
-      },
-      {
-        "path": "Immunization.explanation.reasonNotGiven.coding.system",
-        "min": 1,
-        "fixedUri": "https://fhir.nhs.uk/dch-notadministeredreason-1"
-      },
-      {
-        "path": "Immunization.explanation.reasonNotGiven.coding.version",
-        "max": "0"
-      },
-      {
-        "path": "Immunization.explanation.reasonNotGiven.coding.code",
-        "min": 1
-      },
-      {
-        "path": "Immunization.explanation.reasonNotGiven.coding.display",
-        "min": 1
-      },
-      {
-        "path": "Immunization.explanation.reasonNotGiven.coding.userSelected",
-        "max": "0"
-      },
-      {
-        "path": "Immunization.reaction",
-        "max": "0"
       },
       {
         "path": "Immunization.reaction.detail",
@@ -13652,15 +13552,10 @@
           {
             "code": "Reference",
             "profile": [
-              "https://fhir.hl7.org.uk/StructureDefinition/CareConnect-Observation-1"
+              "https://fhir.hl7.org.uk/StructureDefinition/CareConnect-DCH-Observation-1"
             ]
           }
         ]
-      },
-      {
-        "path": "Immunization.vaccinationProtocol",
-        "min": 1,
-        "max": "1"
       },
       {
         "path": "Immunization.vaccinationProtocol.doseSequence",

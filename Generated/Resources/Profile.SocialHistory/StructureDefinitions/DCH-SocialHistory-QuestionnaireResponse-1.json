@@ -1,7 +1,7 @@
 {
   "resourceType": "StructureDefinition",
   "meta": {
-    "lastUpdated": "2017-07-10T11:38:36.12+01:00",
+    "lastUpdated": "2017-07-24T17:07:06.888+01:00",
     "tag": [
       {
         "system": "urn:hscic:publishOrder",
@@ -2828,7 +2828,7 @@
           "Date updated"
         ],
         "min": 0,
-        "max": "1",
+        "max": "0",
         "base": {
           "path": "QuestionnaireResponse.authored",
           "min": 0,
@@ -3118,7 +3118,7 @@
         "short": "Relative, internal or absolute URL reference",
         "definition": "A reference to a location at which the other resource is found. The reference may be a relative reference, in which case it is relative to the service base URL, or an absolute URL that resolves to the location where the resource is found. The reference may be version specific or not. If the reference is not to a FHIR RESTful server, then it should be assumed to be version specific. Internal fragment references (start with '#') refer to contained resources.",
         "comments": "Using absolute URLs provides a stable scalable approach suitable for a cloud/web context, while using relative/logical references provides a flexible approach suitable for use when trading across closed eco-system boundaries.   Absolute URLs do not need to point to a FHIR RESTful server, though this is the preferred approach. If the URL conforms to the structure \"/[type]/[id]\" then it should be assumed that the reference is to a FHIR RESTful server.",
-        "min": 1,
+        "min": 0,
         "max": "1",
         "base": {
           "path": "Reference.reference",
@@ -4705,7 +4705,7 @@
         "short": "The responses will consist of the value and the supporting resource for that value",
         "definition": "The responses will consist of the value and the supporting resource for that value.",
         "comments": "The value is nested because we cannot have a repeating structure that has variable type.",
-        "min": 1,
+        "min": 2,
         "max": "2",
         "base": {
           "path": "QuestionnaireResponse.group.question.answer",
@@ -5254,7 +5254,7 @@
         "short": "The responses will consist of the value and the supporting resource for that value",
         "definition": "The responses will consist of the value and the supporting resource for that value",
         "comments": "The value is nested because we cannot have a repeating structure that has variable type.",
-        "min": 1,
+        "min": 2,
         "max": "2",
         "base": {
           "path": "QuestionnaireResponse.group.question.answer",
@@ -5803,7 +5803,7 @@
         "short": "The responses will consist of the value and the supporting resource for that value",
         "definition": "The responses will consist of the value and the supporting resource for that value",
         "comments": "The value is nested because we cannot have a repeating structure that has variable type.",
-        "min": 1,
+        "min": 2,
         "max": "2",
         "base": {
           "path": "QuestionnaireResponse.group.question.answer",
@@ -6352,7 +6352,7 @@
         "short": "The responses will consist of the value and the supporting resource for that value",
         "definition": "The responses will consist of the value and the supporting resource for that value.",
         "comments": "The value is nested because we cannot have a repeating structure that has variable type.",
-        "min": 1,
+        "min": 2,
         "max": "2",
         "base": {
           "path": "QuestionnaireResponse.group.question.answer",
@@ -6908,7 +6908,7 @@
         "short": "The responses will consist of the value and the supporting resource for that value",
         "definition": "The responses will consist of the value and the supporting resource for that value",
         "comments": "The value is nested because we cannot have a repeating structure that has variable type.",
-        "min": 1,
+        "min": 2,
         "max": "2",
         "base": {
           "path": "QuestionnaireResponse.group.question.answer",
@@ -15990,7 +15990,7 @@
         "definition": "The answer (or one of the answers) provided by the respondent to the question.",
         "comments": "More complex structures (Attachment, Resource and Quantity) will typically be limited to electronic forms that can expose an appropriate user interface to capture the components and enforce the constraints of a complex data type.  Additional complex types can be introduced through extensions.",
         "requirements": "Ability to retain a single-valued answer to a question.",
-        "min": 0,
+        "min": 1,
         "max": "1",
         "base": {
           "path": "QuestionnaireResponse.group.question.answer.value[x]",
@@ -21482,7 +21482,9 @@
         "binding": {
           "strength": "required",
           "description": "The current accommodation status",
-          "valueSetUri": "https://fhir.nhs.uk/ValueSet/DCH-AccommodationStatus-1"
+          "valueSetReference": {
+            "reference": "https://fhir.nhs.uk/ValueSet/DCH-AccommodationStatus-1"
+          }
         },
         "mapping": [
           {
@@ -21944,6 +21946,10 @@
         "min": 1
       },
       {
+        "path": "QuestionnaireResponse.authored",
+        "max": "0"
+      },
+      {
         "path": "QuestionnaireResponse.source",
         "max": "0"
       },
@@ -21957,10 +21963,6 @@
             ]
           }
         ]
-      },
-      {
-        "path": "QuestionnaireResponse.encounter.reference",
-        "min": 1
       },
       {
         "path": "QuestionnaireResponse.group.linkId",
@@ -22023,7 +22025,7 @@
         "path": "QuestionnaireResponse.group.question.answer",
         "short": "The responses will consist of the value and the supporting resource for that value",
         "definition": "The responses will consist of the value and the supporting resource for that value.",
-        "min": 1,
+        "min": 2,
         "max": "2"
       },
       {
@@ -22069,7 +22071,7 @@
         "path": "QuestionnaireResponse.group.question.answer",
         "short": "The responses will consist of the value and the supporting resource for that value",
         "definition": "The responses will consist of the value and the supporting resource for that value",
-        "min": 1,
+        "min": 2,
         "max": "2"
       },
       {
@@ -22115,7 +22117,7 @@
         "path": "QuestionnaireResponse.group.question.answer",
         "short": "The responses will consist of the value and the supporting resource for that value",
         "definition": "The responses will consist of the value and the supporting resource for that value",
-        "min": 1,
+        "min": 2,
         "max": "2"
       },
       {
@@ -22161,7 +22163,7 @@
         "path": "QuestionnaireResponse.group.question.answer",
         "short": "The responses will consist of the value and the supporting resource for that value",
         "definition": "The responses will consist of the value and the supporting resource for that value.",
-        "min": 1,
+        "min": 2,
         "max": "2"
       },
       {
@@ -22214,7 +22216,7 @@
         "path": "QuestionnaireResponse.group.question.answer",
         "short": "The responses will consist of the value and the supporting resource for that value",
         "definition": "The responses will consist of the value and the supporting resource for that value",
-        "min": 1,
+        "min": 2,
         "max": "2"
       },
       {
@@ -22831,6 +22833,7 @@
       },
       {
         "path": "QuestionnaireResponse.group.question.answer.valueCoding",
+        "min": 1,
         "type": [
           {
             "code": "Coding"
@@ -23203,7 +23206,9 @@
         "binding": {
           "strength": "required",
           "description": "The current accommodation status",
-          "valueSetUri": "https://fhir.nhs.uk/ValueSet/DCH-AccommodationStatus-1"
+          "valueSetReference": {
+            "reference": "https://fhir.nhs.uk/ValueSet/DCH-AccommodationStatus-1"
+          }
         }
       },
       {

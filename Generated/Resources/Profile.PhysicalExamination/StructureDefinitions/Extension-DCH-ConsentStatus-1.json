@@ -537,7 +537,7 @@
             "code": "uri"
           }
         ],
-        "fixedUri": "https://fhir.nhs.uk/dch-consentstatus-1",
+        "fixedUri": "https://fhir.nhs.uk/DCH-ConsentStatus-1",
         "condition": [
           "ele-1"
         ],
@@ -894,7 +894,7 @@
       {
         "path": "Extension.valueCodeableConcept.coding.system",
         "min": 1,
-        "fixedUri": "https://fhir.nhs.uk/dch-consentstatus-1"
+        "fixedUri": "https://fhir.nhs.uk/DCH-ConsentStatus-1"
       },
       {
         "path": "Extension.valueCodeableConcept.coding.code",

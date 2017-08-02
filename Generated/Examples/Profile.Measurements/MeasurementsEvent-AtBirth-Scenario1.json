@@ -20,7 +20,7 @@
         },
         "timestamp": "2012-01-03T10:00:00+00:00",
         "event": {
-          "system": "https://fhir.nhs.uk/dch-childhealtheventtype-1",
+          "system": "https://fhir.nhs.uk/DCH-ChildHealthEventType-1",
           "code": "Measurements",
           "display": "Measurements"
         },

@@ -1,7 +1,7 @@
 {
   "resourceType": "StructureDefinition",
   "meta": {
-    "lastUpdated": "2017-07-10T17:03:31.667+01:00",
+    "lastUpdated": "2017-07-24T14:56:47.566+01:00",
     "tag": [
       {
         "system": "urn:hscic:publishOrder",
@@ -785,7 +785,7 @@
             "code": "uri"
           }
         ],
-        "fixedUri": "https://fhir.nhs.uk/dch-childhealtheventtype-1",
+        "fixedUri": "https://fhir.nhs.uk/DCH-ChildHealthEventType-1",
         "condition": [
           "ele-1"
         ],
@@ -4708,8 +4708,8 @@
         "definition": "The actual data of the message - a reference to the root/focus class of the event.",
         "comments": "The data is defined where the transaction type is defined. The transaction data is always included in the bundle that is the full message.  Only the root resource is specified.  The resources it references should be contained in the bundle but are not also listed here.  Multiple repetitions are allowed to cater for merges and other situations with multiple focal targets.",
         "requirements": "Every message event is about actual data, a single resource, that is identified in the definition of the event, and perhaps some or all linked resources.",
-        "min": 1,
-        "max": "1",
+        "min": 2,
+        "max": "2",
         "base": {
           "path": "MessageHeader.data",
           "min": 0,
@@ -5009,7 +5009,7 @@
         "short": "The type of event applicable to the Child Health Event message.",
         "definition": "The type of event applicable to the Child Health Event message.",
         "min": 1,
-        "fixedUri": "https://fhir.nhs.uk/dch-childhealtheventtype-1"
+        "fixedUri": "https://fhir.nhs.uk/DCH-ChildHealthEventType-1"
       },
       {
         "path": "MessageHeader.event.version",
@@ -5075,8 +5075,8 @@
       },
       {
         "path": "MessageHeader.data",
-        "min": 1,
-        "max": "1",
+        "min": 2,
+        "max": "2",
         "type": [
           {
             "code": "Reference",

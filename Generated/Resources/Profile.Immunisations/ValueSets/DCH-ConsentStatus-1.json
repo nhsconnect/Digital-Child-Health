@@ -6,11 +6,11 @@
   "url": "https://fhir.nhs.uk/ValueSet/DCH-ConsentStatus-1",
   "name": "Child Health Event Consent Status",
   "status": "active",
-  "description": "The Consent Status for the Child Health Event",
+  "description": "The Consent Status for the Child Health Event.",
   "compose": {
     "include": [
       {
-        "system": "https://fhir.nhs.uk/dch-consentstatus-1",
+        "system": "https://fhir.nhs.uk/DCH-ConsentStatus-1",
         "concept": [
           {
             "code": "Consented",

@@ -10,167 +10,267 @@
   "compose": {
     "include": [
       {
-        "system": "https://fhir.nhs.uk/dch-childhealtheventtype-1",
+        "system": "https://fhir.nhs.uk/DCH-ChildHealthEventType-1",
         "concept": [
           {
-            "code": "6-8 Week Health Review",
-            "display": "6-8 Week Health Review"
+            "code": "Assessment : APGAR",
+            "display": "Assessment : APGAR"
           },
           {
-            "code": "Allergies and Reactions",
-            "display": "Allergies and Reactions"
+            "code": "Birth : Birth Details",
+            "display": "Birth : Birth Details"
           },
           {
-            "code": "Accidents and Injuries",
-            "display": "Accidents and Injuries"
+            "code": "Birth : Neonatal Care",
+            "display": "Birth : Neonatal Care"
           },
           {
-            "code": "Assessment: APGAR",
-            "display": "Assessment: APGAR"
+            "code": "Birth : Discharge",
+            "display": "Birth : Discharge"
           },
           {
-            "code": "Birth",
-            "display": "Birth"
+            "code": "Breastfeeding Status : Breastfeeding Status",
+            "display": "Breastfeeding Status : Breastfeeding Status"
           },
           {
-            "code": "Breastfeeding Status",
-            "display": "Breastfeeding Status"
+            "code": "Child Health Contacts : Responsible Professional/Team",
+            "display": "Child Health Contacts : Responsible Professional/Team"
           },
           {
-            "code": "Conditions",
-            "display": "Conditions"
+            "code": "Child Health Contacts : Responsible Organisation",
+            "display": "Child Health Contacts : Responsible Organisation"
           },
           {
-            "code": "Demographics: Core",
-            "display": "Demographics: Core"
+            "code": "Commentary : Professional Advice",
+            "display": "Commentary : Professional Advice"
           },
           {
-            "code": "Demographics: Related Persons",
-            "display": "Demographics: Related Persons"
+            "code": "Commentary : Professional Comment",
+            "display": "Commentary : Professional Comment"
           },
           {
-            "code": "Immunisation: 8 weeks imms",
-            "display": "Immunisation: 8 weeks imms"
+            "code": "Commentary Personal or Parental Comment",
+            "display": "Commentary Personal or Parental Comment"
           },
           {
-            "code": "Immunisation: 12 weeks imms",
-            "display": "Immunisation: 12 weeks imms"
+            "code": "Demographics : Related Persons",
+            "display": "Demographics : Related Persons"
           },
           {
-            "code": "Immunisation: 16 weeks imms",
-            "display": "Immunisation: 16 weeks imms"
+            "code": "Developmental Review : School Entry Review",
+            "display": "Developmental Review : School Entry Review"
           },
           {
-            "code": "Immunisation: BCG imms",
-            "display": "Immunisation: BCG imms"
+            "code": "Developmental Review : Early Years Progress Check",
+            "display": "Developmental Review : Early Years Progress Check"
           },
           {
-            "code": "Immunisation: Hep B birth",
-            "display": "Immunisation: Hep B birth"
+            "code": "Developmental Review : New Baby Review",
+            "display": "Developmental Review : New Baby Review"
           },
           {
-            "code": "Immunisation: Hep B 4 weeks",
-            "display": "Immunisation: Hep B 4 weeks"
+            "code": "Developmental Review : Problems and Issues",
+            "display": "Developmental Review : Problems and Issues"
           },
           {
-            "code": "Immunisation: Hep B 8 weeks",
-            "display": "Immunisation: Hep B 8 weeks"
+            "code": "Developmental Review : Assessment Results",
+            "display": "Developmental Review : Assessment Results"
           },
           {
-            "code": "Immunisation: Hep B 12 months",
-            "display": "Immunisation: Hep B 12 months"
+            "code": "HCP Clinical Interventions : Newborn Physical Examination",
+            "display": "HCP Clinical Interventions : Newborn Physical Examination"
           },
           {
-            "code": "Immunisation: HPV first imms",
-            "display": "Immunisation: HPV first imms"
+            "code": "HCP Clinical Interventions : Newborn Hearing Screening",
+            "display": "HCP Clinical Interventions : Newborn Hearing Screening"
           },
           {
-            "code": "Immunisation: HPV second imms",
-            "display": "Immunisation: HPV second imms"
+            "code": "HCP Clinical Interventions : Newborn Blood Spot Screening",
+            "display": "HCP Clinical Interventions : Newborn Blood Spot Screening"
           },
           {
-            "code": "Immunisation: Influenza 2 years",
-            "display": "Immunisation: Influenza 2 years"
+            "code": "HCP Clinical Interventions : 6-8 Week Review",
+            "display": "HCP Clinical Interventions : 6-8 Week Review"
           },
           {
-            "code": "Immunisation: Influenza 3 years",
-            "display": "Immunisation: Influenza 3 years"
+            "code": "HCP Clinical Interventions : BCG immunisation",
+            "display": "HCP Clinical Interventions : BCG immunisation"
           },
           {
-            "code": "Immunisation: Influenza 4 years",
-            "display": "Immunisation: Influenza 4 years"
+            "code": "HCP Clinical Interventions : Hep B birth",
+            "display": "HCP Clinical Interventions : Hep B birth"
           },
           {
-            "code": "Immunisation: Influenza year 1",
-            "display": "Immunisation: Influenza year 1"
+            "code": "HCP Clinical Interventions : Hep B 4 weeks",
+            "display": "HCP Clinical Interventions : Hep B 4 weeks"
           },
           {
-            "code": "Immunisation: Influenza year 2",
-            "display": "Immunisation: Influenza year 2"
+            "code": "HCP Clinical Interventions : Hep B 8 weeks",
+            "display": "HCP Clinical Interventions : Hep B 8 weeks"
           },
           {
-            "code": "Immunisation: MMR",
-            "display": "Immunisation: MMR"
+            "code": "HCP Clinical Interventions : Hep B 12 months",
+            "display": "HCP Clinical Interventions : Hep B 12 months"
           },
           {
-            "code": "Immunisation: Pre-School Booster",
-            "display": "Immunisation: Pre-School Booster"
+            "code": "HCP Clinical Interventions : 8 week imms",
+            "display": "HCP Clinical Interventions : 8 week imms"
           },
           {
-            "code": "Immunisation: Teenage Booster",
-            "display": "Immunisation: Teenage Booster"
+            "code": "HCP Clinical Interventions : 12 week imms",
+            "display": "HCP Clinical Interventions : 12 week imms"
           },
           {
-            "code": "Intervention: Vitamin K",
-            "display": "Intervention: Vitamin K"
+            "code": "HCP Clinical Interventions : 16 week imms",
+            "display": "HCP Clinical Interventions : 16 week imms"
           },
           {
-            "code": "Maternity Discharge",
-            "display": "Maternity Discharge"
+            "code": "HCP Clinical Interventions : MMR",
+            "display": "HCP Clinical Interventions : MMR"
           },
           {
-            "code": "Measurements",
-            "display": "Measurements"
+            "code": "HCP Clinical Interventions : Pre-school booster",
+            "display": "HCP Clinical Interventions : Pre-school booster"
           },
           {
-            "code": "Medical History: Family History",
-            "display": "Medical History: Family History"
+            "code": "HCP Clinical Interventions : HPV first imms",
+            "display": "HCP Clinical Interventions : HPV first imms"
           },
           {
-            "code": "Medical History: Social History",
-            "display": "Medical History: Social History"
+            "code": "HCP Clinical Interventions : HPV second imms",
+            "display": "HCP Clinical Interventions : HPV second imms"
           },
           {
-            "code": "Newborn Blood Spot Screening",
-            "display": "Newborn Blood Spot Screening"
+            "code": "HCP Clinical Interventions : Teenage booster",
+            "display": "HCP Clinical Interventions : Teenage booster"
           },
           {
-            "code": "Newborn Hearing Screening",
-            "display": "Newborn Hearing Screening"
+            "code": "HCP Clinical Interventions : Influenza 2 years",
+            "display": "HCP Clinical Interventions : Influenza 2 years"
           },
           {
-            "code": "Newborn Physical Examination",
-            "display": "Newborn Physical Examination"
+            "code": "HCP Clinical Interventions : Influenza 3 years",
+            "display": "HCP Clinical Interventions : Influenza 3 years"
           },
           {
-            "code": "Physical Examination",
-            "display": "Physical Examination"
+            "code": "HCP Clinical Interventions : Influenza 4 years",
+            "display": "HCP Clinical Interventions : Influenza 4 years"
           },
           {
-            "code": "Professional Advice",
-            "display": "Professional Advice"
+            "code": "HCP Clinical Interventions : Influenza year 1",
+            "display": "HCP Clinical Interventions : Influenza year 1"
           },
           {
-            "code": "Professional Comment",
-            "display": "Professional Comment"
+            "code": "HCP Clinical Interventions : Influenza year 2",
+            "display": "HCP Clinical Interventions : Influenza year 2"
           },
           {
-            "code": "Referral: Referral",
-            "display": "Referral: Referral"
+            "code": "HCP Clinical Interventions : Influenza year 3",
+            "display": "HCP Clinical Interventions : Influenza year 3"
           },
           {
-            "code": "Referral: Follow Up",
-            "display": "Referral: Follow Up"
+            "code": "HCP Clinical Interventions : 2-2 1/2 Year Early Years Progress",
+            "display": "HCP Clinical Interventions : 2-2 1/2 Year Early Years Progress"
+          },
+          {
+            "code": "HCP Clinical Interventions : 2-2 1/2 Year Early Health and Development Review",
+            "display": "HCP Clinical Interventions : 2-2 1/2 Year Early Health and Development Review"
+          },
+          {
+            "code": "HCP Clinical Interventions : 1 Year Review",
+            "display": "HCP Clinical Interventions : 1 Year Review"
+          },
+          {
+            "code": "HCP Clinical Interventions : 6-8 Week HV review",
+            "display": "HCP Clinical Interventions : 6-8 Week HV review"
+          },
+          {
+            "code": "HCP Clinical Interventions : New Baby Review",
+            "display": "HCP Clinical Interventions : New Baby Review"
+          },
+          {
+            "code": "HCP Clinical Interventions : School Entry Review",
+            "display": "HCP Clinical Interventions : School Entry Review"
+          },
+          {
+            "code": "Indicators : Hep B",
+            "display": "Indicators : Hep B"
+          },
+          {
+            "code": "Indicators : BCG",
+            "display": "Indicators : BCG"
+          },
+          {
+            "code": "Indicators : Influenza",
+            "display": "Indicators : Influenza"
+          },
+          {
+            "code": "Indicators : Pneumococcal",
+            "display": "Indicators : Pneumococcal"
+          },
+          {
+            "code": "Indicators : Varicella Zoster",
+            "display": "Indicators : Varicella Zoster"
+          },
+          {
+            "code": "Immunisation : Immunisation Administration",
+            "display": "Immunisation : Immunisation Administration"
+          },
+          {
+            "code": "Intervention : Vitamin K",
+            "display": "Intervention : Vitamin K"
+          },
+          {
+            "code": "Measurements : Measurements",
+            "display": "Measurements : Measurements"
+          },
+          {
+            "code": "Medical History : Conditions",
+            "display": "Medical History : Conditions"
+          },
+          {
+            "code": "Medical History : Allergies and Drug Reactions",
+            "display": "Medical History : Allergies and Drug Reactions"
+          },
+          {
+            "code": "Medical History : Social History",
+            "display": "Medical History : Social History"
+          },
+          {
+            "code": "Medical History : Accidents and Injuries",
+            "display": "Medical History : Accidents and Injuries"
+          },
+          {
+            "code": "Medical History : Medication",
+            "display": "Medical History : Medication"
+          },
+          {
+            "code": "Medical History : Family History",
+            "display": "Medical History : Family History"
+          },
+          {
+            "code": "Medical History : Risk Factors",
+            "display": "Medical History : Risk Factors"
+          },
+          {
+            "code": "Physical Examinations : Newborn Physical Examination",
+            "display": "Physical Examinations : Newborn Physical Examination"
+          },
+          {
+            "code": "Referral : Referral",
+            "display": "Referral : Referral"
+          },
+          {
+            "code": "Referral : Follow Up",
+            "display": "Referral : Follow Up"
+          },
+          {
+            "code": "Screening : Hearing",
+            "display": "Screening : Hearing"
+          },
+          {
+            "code": "Screening : Blood Spot",
+            "display": "Screening : Blood Spot"
           }
         ]
       }

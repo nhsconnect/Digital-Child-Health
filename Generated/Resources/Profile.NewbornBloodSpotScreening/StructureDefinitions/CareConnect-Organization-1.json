@@ -1,20 +1,26 @@
 {
   "resourceType": "StructureDefinition",
   "meta": {
-    "lastUpdated": "2017-06-09T15:06:08.892+01:00",
+    "lastUpdated": "2017-07-27T13:59:09.019+01:00",
     "tag": [
       {
         "system": "urn:hscic:publishOrder",
-        "code": "14"
+        "code": "3"
       }
     ]
   },
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm",
+      "valueInteger": 4
+    }
+  ],
   "url": "https://fhir.hl7.org.uk/StructureDefinition/CareConnect-Organization-1",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "name": "CareConnect-Organization-1",
   "status": "active",
   "publisher": "HL7 UK",
-  "description": "The Organization resource represents the organisation that employs the healthcare professional.",
+  "description": "The Organization resource represents a formally or informally recognized grouping of people or organizations formed for the purpose of achieving some form of collective action.",
   "copyright": "Copyright © 2016 HL7 UK\r\n\r\nLicensed under the Apache License, Version 2.0 (the \"License\"); you may not use this file except in compliance with the License. You may obtain a copy of the License at\r\n\r\nhttp://www.apache.org/licenses/LICENSE-2.0\r\n\r\nUnless required by applicable law or agreed to in writing, software distributed under the License is distributed on an \"AS IS\" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the License for the specific language governing permissions and limitations under the License.\r\n\r\nHL7® FHIR® standard Copyright © 2011+ HL7\r\n\r\nThe HL7® FHIR® standard is used under the FHIR license. You may obtain a copy of the FHIR license at\r\n\r\nhttps://www.hl7.org/fhir/license.html",
   "fhirVersion": "1.0.1",
   "kind": "resource",
@@ -95,12 +101,6 @@
                 "valueString": "identifier or name"
               }
             ],
-            "key": "org-1",
-            "severity": "error",
-            "human": "The organization SHALL at least have a name or an id, and possibly more than one",
-            "xpath": "count(f:identifier | f:name) > 0"
-          },
-          {
             "key": "org-1",
             "severity": "error",
             "human": "The organization SHALL at least have a name or an id, and possibly more than one",
@@ -502,7 +502,7 @@
       {
         "path": "Organization.extension",
         "name": "organization-period",
-        "short": "The date range that this organization should be considered available.",
+        "short": "The date range that this organization should be considered available",
         "definition": "The date range that this organization should be considered available.",
         "comments": "There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone.",
         "alias": [
@@ -3371,7 +3371,7 @@
           {
             "code": "Reference",
             "profile": [
-              "http://hl7.org/fhir/StructureDefinition/Organization"
+              "https://fhir.hl7.org.uk/StructureDefinition/CareConnect-Organization-1"
             ]
           }
         ],
@@ -4873,7 +4873,7 @@
           {
             "code": "Reference",
             "profile": [
-              "http://hl7.org/fhir/StructureDefinition/Organization"
+              "https://fhir.hl7.org.uk/StructureDefinition/CareConnect-Organization-1"
             ]
           }
         ],
@@ -6617,8 +6617,8 @@
       },
       {
         "path": "Organization.active",
-        "short": "Date the organization became active, and if inactive, the date the organization became inactive.",
-        "definition": "Date the organization became active, and if inactive, the date the organization became inactive.",
+        "short": "Whether the organization's record is still in active use.",
+        "definition": "Whether the organization's record is still in active use.",
         "comments": "Default is true.",
         "requirements": "Need a flag to indicate a record is no longer to be used and should generally be hidden for the user in the UI.",
         "min": 0,
@@ -7117,7 +7117,7 @@
         "definition": "A symbol in syntax defined by the system. The symbol may be a predefined code or an expression in a syntax defined by the coding system (e.g. post-coordination).",
         "comments": "Note that FHIR strings may not exceed 1MB in size",
         "requirements": "Need to refer to a particular code in the system.",
-        "min": 0,
+        "min": 1,
         "max": "1",
         "base": {
           "path": "Coding.code",
@@ -7172,7 +7172,7 @@
         "definition": "A representation of the meaning of the code in the system, following the rules of the system.",
         "comments": "Note that FHIR strings may not exceed 1MB in size",
         "requirements": "Need to be able to carry a human-readable meaning of the code for readers that do not know  the system.",
-        "min": 0,
+        "min": 1,
         "max": "1",
         "base": {
           "path": "Coding.display",
@@ -10290,7 +10290,7 @@
         "comments": "This is labeled as \"Is Modifier\" because applications should not mistake a temporary or old name etc.for a current/permanent one. Applications can assume that a name is current unless it explicitly says that it is temporary or old.",
         "requirements": "Allows the appropriate name for a particular context of use to be selected from among a set of names.",
         "min": 0,
-        "max": "0",
+        "max": "1",
         "base": {
           "path": "HumanName.use",
           "min": 0,
@@ -10353,7 +10353,7 @@
         "comments": "Can provide both a text representation and structured parts.",
         "requirements": "A renderable, unencoded form.",
         "min": 0,
-        "max": "0",
+        "max": "1",
         "base": {
           "path": "HumanName.text",
           "min": 0,
@@ -10405,7 +10405,7 @@
         "alias": [
           "surname"
         ],
-        "min": 1,
+        "min": 0,
         "max": "1",
         "base": {
           "path": "HumanName.family",
@@ -10518,7 +10518,7 @@
         "definition": "Part of the name that is acquired as a title due to academic, legal, employment or nobility status, etc. and that appears at the start of the name.",
         "comments": "Note that FHIR strings may not exceed 1MB in size",
         "min": 0,
-        "max": "1",
+        "max": "*",
         "base": {
           "path": "HumanName.prefix",
           "min": 0,
@@ -10572,7 +10572,7 @@
         "definition": "Part of the name that is acquired as a title due to academic, legal, employment or nobility status, etc. and that appears at the end of the name.",
         "comments": "Note that FHIR strings may not exceed 1MB in size",
         "min": 0,
-        "max": "1",
+        "max": "*",
         "base": {
           "path": "HumanName.suffix",
           "min": 0,
@@ -10623,7 +10623,7 @@
         "comments": "This is not a duration - that's a measure of time (a separate type), but a duration that occurs at a fixed value of time. A Period specifies a range of time; the context of use will specify whether the entire range applies (e.g. \"the patient was an inpatient of the hospital for this time range\") or one value from the range applies (e.g. \"give to the patient between these two times\"). If duration is required, specify the type as Interval|Duration.",
         "requirements": "Allows names to be placed in historical context.",
         "min": 0,
-        "max": "0",
+        "max": "1",
         "base": {
           "path": "HumanName.period",
           "min": 0,
@@ -12517,14 +12517,6 @@
           {
             "code": "Organization"
           }
-        ],
-        "constraint": [
-          {
-            "key": "org-1",
-            "severity": "error",
-            "human": "The organization SHALL at least have a name or an id, and possibly more than one",
-            "xpath": "count(f:identifier | f:name) > 0"
-          }
         ]
       },
       {
@@ -12602,7 +12594,15 @@
       },
       {
         "path": "Organization.identifier.assigner",
-        "max": "0"
+        "max": "0",
+        "type": [
+          {
+            "code": "Reference",
+            "profile": [
+              "https://fhir.hl7.org.uk/StructureDefinition/CareConnect-Organization-1"
+            ]
+          }
+        ]
       },
       {
         "path": "Organization.identifier",
@@ -12634,7 +12634,15 @@
       },
       {
         "path": "Organization.identifier.assigner",
-        "max": "0"
+        "max": "0",
+        "type": [
+          {
+            "code": "Reference",
+            "profile": [
+              "https://fhir.hl7.org.uk/StructureDefinition/CareConnect-Organization-1"
+            ]
+          }
+        ]
       },
       {
         "path": "Organization.identifier",
@@ -12663,8 +12671,7 @@
       },
       {
         "path": "Organization.active",
-        "short": "Date the organization became active, and if inactive, the date the organization became inactive.",
-        "definition": "Date the organization became active, and if inactive, the date the organization became inactive."
+        "short": "Whether the organization's record is still in active use."
       },
       {
         "path": "Organization.type.coding.system",
@@ -12674,6 +12681,14 @@
       {
         "path": "Organization.type.coding.version",
         "max": "0"
+      },
+      {
+        "path": "Organization.type.coding.code",
+        "min": 1
+      },
+      {
+        "path": "Organization.type.coding.display",
+        "min": 1
       },
       {
         "path": "Organization.type.coding.userSelected",
@@ -12727,29 +12742,8 @@
         ]
       },
       {
-        "path": "Organization.contact.name.use",
-        "max": "0"
-      },
-      {
-        "path": "Organization.contact.name.text",
-        "max": "0"
-      },
-      {
         "path": "Organization.contact.name.family",
-        "min": 1,
         "max": "1"
-      },
-      {
-        "path": "Organization.contact.name.prefix",
-        "max": "1"
-      },
-      {
-        "path": "Organization.contact.name.suffix",
-        "max": "1"
-      },
-      {
-        "path": "Organization.contact.name.period",
-        "max": "0"
       },
       {
         "path": "Organization.contact.address.use",

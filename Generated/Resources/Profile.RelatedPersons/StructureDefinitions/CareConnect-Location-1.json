@@ -5,7 +5,7 @@
     "tag": [
       {
         "system": "urn:hscic:publishOrder",
-        "code": "14"
+        "code": "22"
       }
     ]
   },
@@ -3221,7 +3221,7 @@
           {
             "code": "Reference",
             "profile": [
-              "http://hl7.org/fhir/StructureDefinition/Organization"
+              "https://fhir.hl7.org.uk/StructureDefinition/CareConnect-Organization-1"
             ]
           }
         ],
@@ -8941,7 +8941,15 @@
       },
       {
         "path": "Location.identifier.assigner",
-        "max": "0"
+        "max": "0",
+        "type": [
+          {
+            "code": "Reference",
+            "profile": [
+              "https://fhir.hl7.org.uk/StructureDefinition/CareConnect-Organization-1"
+            ]
+          }
+        ]
       },
       {
         "path": "Location.identifier",

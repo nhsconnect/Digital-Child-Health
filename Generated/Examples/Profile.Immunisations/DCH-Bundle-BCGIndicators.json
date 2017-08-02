@@ -1,0 +1,383 @@
+{
+  "resourceType": "Bundle",
+  "id": "e9dbfbae-5bdc-11e7-907b-a6006ad3dba0",
+  "meta": {
+    "profile": [
+      "https://fhir.nhs.uk/StructureDefinition/DCH-Bundle-1"
+    ]
+  },
+  "type": "message",
+  "entry": [
+    {
+      "fullUrl": "urn:uuid:e9dbfd2a-5bdc-11e7-907b-a6006ad3dba0",
+      "resource": {
+        "resourceType": "MessageHeader",
+        "id": "e9dbfd2a-5bdc-11e7-907b-a6006ad3dba0",
+        "meta": {
+          "profile": [
+            "https://fhir.nhs.uk/StructureDefinition/DCH-Immunisation-MessageHeader-1"
+          ]
+        },
+        "extension": [
+          {
+            "url": "https://fhir.nhs.uk/StructureDefinition/Extension-DCH-MessageEventType-1",
+            "valueCodeableConcept": {
+              "coding": [
+                {
+                  "system": "https://fhir.nhs.uk/DCH-MessageEventType-1",
+                  "code": "new",
+                  "display": "New event message"
+                }
+              ]
+            }
+          }
+        ],
+        "timestamp": "2012-01-31T09:00:00+00:00",
+        "event": {
+          "system": "https://fhir.nhs.uk/DCH-ChildHealthEventType-1",
+          "code": "Indicators : BCG",
+          "display": "Indicators : BCG"
+        },
+        "source": {
+          "endpoint": "urn:nhs-uk:addressing:ods:RR8"
+        },
+        "responsible": {
+          "reference": "urn:uuid:5ccb6bb7-a7f1-46cc-a5d3-135320765553",
+          "display": "Leeds Teaching Hospitals NHS Trust"
+        },
+        "data": [
+          {
+            "reference": "urn:uuid:a8ca9f14-72aa-11e7-8cf7-a6006ad3dba0"
+          },
+          {
+            "reference": "urn:uuid:e9dbfea6-5bdc-11e7-907b-a6006ad3dba0"
+          }
+        ]
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:5ccb6bb7-a7f1-46cc-a5d3-135320765553",
+      "resource": {
+        "resourceType": "Organization",
+        "id": "5ccb6bb7-a7f1-46cc-a5d3-135320765553",
+        "meta": {
+          "profile": [
+            "https://fhir.hl7.org.uk/StructureDefinition/CareConnect-Organization-1"
+          ]
+        },
+        "identifier": [
+          {
+            "system": "https://fhir.nhs.uk/Id/ods-organization-code",
+            "value": "RR8"
+          }
+        ],
+        "name": "Leeds Teaching Hospitals NHS Trust"
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:7368c5fe-bbb4-4e9c-a585-234e06b84e82",
+      "resource": {
+        "resourceType": "Patient",
+        "id": "7368c5fe-bbb4-4e9c-a585-234e06b84e82",
+        "meta": {
+          "profile": [
+            "https://fhir.hl7.org.uk/StructureDefinition/CareConnect-DCH-Patient-1"
+          ]
+        },
+        "identifier": [
+          {
+            "extension": [
+              {
+                "url": "https://fhir.hl7.org.uk/StructureDefinition/Extension-CareConnect-NHSNumberVerificationStatus-1",
+                "valueCodeableConcept": {
+                  "coding": [
+                    {
+                      "system": "https://fhir.hl7.org.uk/CareConnect-NHSNumberVerificationStatus-1",
+                      "code": "01",
+                      "display": "Number present and verified"
+                    }
+                  ]
+                }
+              }
+            ],
+            "system": "https://fhir.nhs.uk/Id/nhs-number",
+            "value": "5629874536"
+          }
+        ],
+        "name": [
+          {
+            "use": "official",
+            "family": [
+              "Saxton"
+            ],
+            "given": [
+              "Sarah",
+              "Marie"
+            ]
+          }
+        ],
+        "gender": "female",
+        "birthDate": "2012-01-07",
+        "_birthDate": {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/patient-birthTime",
+              "valueDateTime": "2012-01-07T20:12:00+00:00"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:e9dbfea6-5bdc-11e7-907b-a6006ad3dba0",
+      "resource": {
+        "resourceType": "QuestionnaireResponse",
+        "id": "e9dbfea6-5bdc-11e7-907b-a6006ad3dba0",
+        "meta": {
+          "profile": [
+            "https://fhir.nhs.uk/StructureDefinition/DCH-Immunisation-QuestionnaireResponse-1"
+          ]
+        },
+        "identifier": {
+          "system": "https://tools.ietf.org/html/rfc4122",
+          "value": "e9dbfea6-5bdc-11e7-907b-a6006ad3dba0"
+        },
+        "status": "completed",
+        "subject": {
+          "reference": "urn:uuid:7368c5fe-bbb4-4e9c-a585-234e06b84e82",
+          "display": "SAXTON, Sarah Marie"
+        },
+        "encounter": {
+          "reference": "urn:uuid:a8ca9f14-72aa-11e7-8cf7-a6006ad3dba0"
+        },
+        "group": {
+          "group": [
+            {
+              "title": "Indicator BCG",
+              "question": [
+                {
+                  "text": "An indication as to whether BCG vaccine is required",
+                  "answer": [
+                    {
+                      "valueBoolean": true
+                    },
+                    {
+                      "valueReference": {
+                        "reference": "urn:uuid:1d67c470-4f45-11e7-b114-b2f933d5fe66"
+                      }
+                    }
+                  ]
+                },
+                {
+                  "text": "The reason why BCG vaccine is indicated",
+                  "answer": [
+                    {
+                      "valueString": "Parent/grandparent born in a country with a high TB rate"
+                    },
+                    {
+                      "valueReference": {
+                        "reference": "urn:uuid:1d67c470-4f45-11e7-b114-b2f933d5fe66"
+                      }
+                    }
+                  ]
+                },
+                {
+                  "text": "The country of birth of parent or grandparent who was born in a country with a high TB rate",
+                  "answer": [
+                    {
+                      "valueString": "South Africa"
+                    },
+                    {
+                      "valueReference": {
+                        "reference": "urn:uuid:1d67c470-4f45-11e7-b114-b2f933d5fe66"
+                      }
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:1d67c470-4f45-11e7-b114-b2f933d5fe66",
+      "resource": {
+        "resourceType": "Condition",
+        "id": "1d67c470-4f45-11e7-b114-b2f933d5fe66",
+        "meta": {
+          "profile": [
+            "https://fhir.hl7.org.uk/StructureDefinition/CareConnect-DCH-VaccinationRequirement-Condition-1"
+          ]
+        },
+        "identifier": [
+          {
+            "system": "https://tools.ietf.org/html/rfc4122",
+            "value": "1d67c470-4f45-11e7-b114-b2f933d5fe66"
+          }
+        ],
+        "patient": {
+          "reference": "urn:uuid:7368c5fe-bbb4-4e9c-a585-234e06b84e82",
+          "display": "SAXTON, Sarah Marie"
+        },
+        "encounter": {
+          "reference": "urn:uuid:a8ca9f14-72aa-11e7-8cf7-a6006ad3dba0"
+        },
+        "dateRecorded": "2012-01-22",
+        "code": {
+          "coding": [
+            {
+              "system": "http://snomed.info/sct",
+              "code": "429069001",
+              "display": "Requires Bacillus Calmette-Guerin vaccination (finding)"
+            }
+          ]
+        },
+        "category": {
+          "coding": [
+            {
+              "system": "https://hl7.org.uk/fhir/CareConnect-ConditionCategory-1",
+              "code": "finding",
+              "display": "Finding"
+            }
+          ]
+        },
+        "verificationStatus": "confirmed",
+        "notes": "Parent/grandparent born in a country with a high TB rate - South Africa"
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:a8ca9f14-72aa-11e7-8cf7-a6006ad3dba0",
+      "resource": {
+        "resourceType": "Encounter",
+        "id": "a8ca9f14-72aa-11e7-8cf7-a6006ad3dba0",
+        "meta": {
+          "profile": [
+            "https://fhir.hl7.org.uk/StructureDefinition/CareConnect-DCH-Encounter-1"
+          ]
+        },
+        "identifier": [
+          {
+            "system": "https://tools.ietf.org/html/rfc4122",
+            "value": "a8ca9f14-72aa-11e7-8cf7-a6006ad3dba0"
+          }
+        ],
+        "status": "finished",
+        "type": [
+          {
+            "coding": [
+              {
+                "system": "https://fhir.nhs.uk/DCH-ChildHealthEventType-1",
+                "code": "Indicators : BCG",
+                "display": "Indicators : BCG"
+              }
+            ]
+          }
+        ],
+        "patient": {
+          "reference": "urn:uuid:7368c5fe-bbb4-4e9c-a585-234e06b84e82",
+          "display": "SAXTON, Sarah Marie"
+        },
+        "participant": [
+          {
+            "type": [
+              {
+                "coding": [
+                  {
+                    "system": "http://hl7.org/fhir/v3/ParticipationType",
+                    "code": "PPRF",
+                    "display": "primary performer"
+                  }
+                ]
+              }
+            ],
+            "individual": {
+              "reference": "urn:uuid:e9dbf8e8-5bdc-11e7-907b-a6006ad3dba0",
+              "display": "JONES, Bob (Dr.)"
+            }
+          }
+        ],
+        "period": {
+          "start": "2012-01-22T09:00:00"
+        },
+        "location": [
+          {
+            "location": {
+              "reference": "urn:uuid:e9dbf730-5bdc-11e7-907b-a6006ad3dba0",
+              "display": "Wood Town GP Practice"
+            }
+          }
+        ],
+        "serviceProvider": {
+          "reference": "urn:uuid:5ccb6bb7-a7f1-46cc-a5d3-135320765553",
+          "display": "Leeds Teaching Hospitals NHS Trust"
+        }
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:e9dbf8e8-5bdc-11e7-907b-a6006ad3dba0",
+      "resource": {
+        "resourceType": "Practitioner",
+        "id": "e9dbf8e8-5bdc-11e7-907b-a6006ad3dba0",
+        "meta": {
+          "profile": [
+            "https://fhir.hl7.org.uk/StructureDefinition/CareConnect-Practitioner-1"
+          ]
+        },
+        "identifier": [
+          {
+            "system": "https://fhir.nhs.net/Id/sds-role-profile-id",
+            "value": "PT2468"
+          }
+        ],
+        "name": {
+          "family": [
+            "Jones"
+          ],
+          "given": [
+            "Bob"
+          ],
+          "prefix": [
+            "Dr."
+          ]
+        },
+        "practitionerRole": [
+          {
+            "managingOrganization": {
+              "reference": "urn:uuid:5ccb6bb7-a7f1-46cc-a5d3-135320765553",
+              "display": "Leeds Teaching Hospitals NHS Trust"
+            },
+            "role": {
+              "coding": [
+                {
+                  "system": "http://fhir.nhs.net/ValueSet/sds-job-role-name-1",
+                  "code": "R8000",
+                  "display": "General Medical Practitioner"
+                }
+              ]
+            }
+          }
+        ]
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:e9dbf730-5bdc-11e7-907b-a6006ad3dba0",
+      "resource": {
+        "resourceType": "Location",
+        "id": "e9dbf730-5bdc-11e7-907b-a6006ad3dba0",
+        "meta": {
+          "profile": [
+            "https://fhir.hl7.org.uk/StructureDefinition/CareConnect-Location-1"
+          ]
+        },
+        "identifier": [
+          {
+            "system": "https://fhir.nhs.uk/Id/ods-site-code",
+            "value": "B86022"
+          }
+        ],
+        "name": "Wood Town GP practice"
+      }
+    }
+  ]
+}

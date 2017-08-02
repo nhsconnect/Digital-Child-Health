@@ -20,7 +20,7 @@
         },
         "timestamp": "2012-02-24T14:00:00+00:00",
         "event": {
-          "system": "https://fhir.nhs.uk/dch-childhealtheventtype-1",
+          "system": "https://fhir.nhs.uk/DCH-ChildHealthEventType-1",
           "code": "6-8 Week Health Review",
           "display": "6-8 Week Health Review"
         },
@@ -233,7 +233,7 @@
             "valueCodeableConcept": {
               "coding": [
                 {
-                  "system": "https://fhir.nhs.uk/dch-consentstatus-1",
+                  "system": "https://fhir.nhs.uk/DCH-ConsentStatus-1",
                   "code": "Consented",
                   "display": "Consented"
                 }

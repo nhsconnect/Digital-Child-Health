@@ -1,21 +1,21 @@
 {
   "resourceType": "StructureDefinition",
   "meta": {
-    "lastUpdated": "2017-07-13T11:27:43.309+01:00",
+    "lastUpdated": "2017-07-28T16:16:11.389+01:00",
     "tag": [
       {
         "system": "urn:hscic:publishOrder",
-        "code": "6"
+        "code": "5"
       }
     ]
   },
   "url": "https://fhir.hl7.org.uk/StructureDefinition/CareConnect-DCH-Encounter-1",
   "version": "1.0.0",
   "name": "CareConnect-DCH-Encounter-1",
-  "status": "draft",
+  "status": "active",
   "publisher": "HL7 UK",
   "date": "2017-02-22T13:44:33.2447401Z",
-  "description": "The encounter resource represents an encounter between a care professional and the patient (or patient's record), with further constraints applied to represent a Child Health Event.",
+  "description": "The encounter resource represents an encounter between a care professional and the patient (or patient's record), with further constraints applied to represent an encounter for a Child Health Event.",
   "copyright": "Copyright © 2016 HL7 UK\r\n\r\nLicensed under the Apache License, Version 2.0 (the \"License\"); you may not use this file except in compliance with the License. You may obtain a copy of the License at\r\n\r\nhttp://www.apache.org/licenses/LICENSE-2.0\r\n\r\nUnless required by applicable law or agreed to in writing, software distributed under the License is distributed on an \"AS IS\" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the License for the specific language governing permissions and limitations under the License.\r\n\r\nHL7® FHIR® standard Copyright © 2011+ HL7\r\n\r\nThe HL7® FHIR® standard is used under the FHIR license. You may obtain a copy of the FHIR license at\r\n\r\nhttps://www.hl7.org/fhir/license.html",
   "fhirVersion": "1.0.2",
   "kind": "resource",
@@ -371,6 +371,12 @@
       },
       {
         "path": "Encounter.extension",
+        "slicing": {
+          "discriminator": [
+            "url"
+          ],
+          "rules": "open"
+        },
         "short": "Additional Content defined by implementations",
         "definition": "May be used to represent additional information that is not part of the basic definition of the resource. In order to make the use of extensions safe and manageable, there is a strict set of governance  applied to the definition and use of extensions. Though any implementer is allowed to define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension.",
         "comments": "There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone.",
@@ -388,6 +394,59 @@
         "type": [
           {
             "code": "Extension"
+          }
+        ],
+        "condition": [
+          "ele-1"
+        ],
+        "constraint": [
+          {
+            "extension": [
+              {
+                "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-expression",
+                "valueString": "children()"
+              }
+            ],
+            "key": "ele-1",
+            "severity": "error",
+            "human": "All FHIR elements must have a @value or children",
+            "xpath": "@value|f:*|h:div"
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "rim",
+            "map": "n/a"
+          },
+          {
+            "identity": "rim",
+            "map": "N/A"
+          }
+        ]
+      },
+      {
+        "path": "Encounter.extension",
+        "name": "encounterTransport",
+        "short": "Encounter transport",
+        "definition": "Encounter transport.",
+        "comments": "There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone.",
+        "alias": [
+          "extensions",
+          "user content"
+        ],
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "DomainResource.extension",
+          "min": 0,
+          "max": "*"
+        },
+        "type": [
+          {
+            "code": "Extension",
+            "profile": [
+              "https://fhir.hl7.org.uk/StructureDefinition/Extension-CareConnect-EncounterTransport-1"
+            ]
           }
         ],
         "condition": [
@@ -630,7 +689,7 @@
         "comments": "This is labeled as \"Is Modifier\" because applications should not mistake a temporary id for a permanent one. Applications can assume that an identifier is permanent unless it explicitly says that it is temporary.",
         "requirements": "Allows the appropriate identifier for a particular context of use to be selected from among a set of identifiers.",
         "min": 0,
-        "max": "0",
+        "max": "1",
         "base": {
           "path": "Identifier.use",
           "min": 0,
@@ -689,7 +748,7 @@
         "comments": "This element deals only with general categories of identifiers.  It SHOULD not be used for codes that correspond 1..1 with the Identifier.system. Some identifiers may fall into multiple categories due to common usage.   Where the system is known, a type is unnecessary because the type is always part of the system definition. However systems often need to handle identifiers where the system is not known. There is not a 1:1 relationship between type and system, since many different systems have the same type.",
         "requirements": "Allows users to make use of identifiers when the identifier system is not known.",
         "min": 0,
-        "max": "0",
+        "max": "1",
         "base": {
           "path": "Identifier.type",
           "min": 0,
@@ -1445,7 +1504,7 @@
         "definition": "Time period during which identifier is/was valid for use.",
         "comments": "This is not a duration - that's a measure of time (a separate type), but a duration that occurs at a fixed value of time. A Period specifies a range of time; the context of use will specify whether the entire range applies (e.g. \"the patient was an inpatient of the hospital for this time range\") or one value from the range applies (e.g. \"give to the patient between these two times\"). If duration is required, specify the type as Interval|Duration.",
         "min": 0,
-        "max": "0",
+        "max": "1",
         "base": {
           "path": "Identifier.period",
           "min": 0,
@@ -1712,7 +1771,7 @@
         "definition": "Organization that issued/manages the identifier.",
         "comments": "The reference may be just a text description of the assigner.",
         "min": 0,
-        "max": "0",
+        "max": "1",
         "base": {
           "path": "Identifier.assigner",
           "min": 0,
@@ -1979,7 +2038,6 @@
             "code": "code"
           }
         ],
-        "fixedCode": "finished",
         "condition": [
           "ele-1"
         ],
@@ -2031,7 +2089,7 @@
         "definition": "The status history permits the encounter resource to contain the status history without needing to read through the historical versions of the resource, or even have the server store them.",
         "comments": "The current status is always found in the current version of the resource, not the status history.",
         "min": 0,
-        "max": "0",
+        "max": "*",
         "base": {
           "path": "Encounter.statusHistory",
           "min": 0,
@@ -2576,7 +2634,7 @@
         "short": "Specific type of encounter",
         "definition": "Specific type of encounter (e.g. e-mail consultation, surgical day-care, skilled nursing, rehabilitation).",
         "comments": "Since there are many ways to further classify encounters, this element is 0..*.",
-        "min": 0,
+        "min": 1,
         "max": "*",
         "base": {
           "path": "Encounter.type",
@@ -3212,7 +3270,9 @@
         "binding": {
           "strength": "required",
           "description": "A code from the SNOMED Clinical Terminology UK coding system that describes an encounter between a care professional and the patient (or patient's record).",
-          "valueSetUri": "https://fhir.hl7.org.uk/ValueSet/CareConnect-EncounterType-1"
+          "valueSetReference": {
+            "reference": "https://fhir.hl7.org.uk/ValueSet/CareConnect-EncounterType-1"
+          }
         },
         "mapping": [
           {
@@ -3671,8 +3731,8 @@
       },
       {
         "path": "Encounter.type.coding",
-        "name": "childHealthEncounterType",
-        "short": "The Child Health Event applicable to the encounter",
+        "name": "childHealthEventType",
+        "short": "Code defined by a terminology system",
         "definition": "A reference to a code defined by a terminology system.",
         "comments": "Codes may be defined very casually in enumerations, or code lists, up to very formal definitions such as SNOMED CT - see the HL7 v3 Core Principles for more information.  Ordering of codings is undefined and SHALL NOT be used to infer meaning. Generally, at most only one of the coding values will be labelled as UserSelected = true.",
         "requirements": "Allows for translations and alternate encodings within a code system.  Also supports communication of the same instance to systems requiring different encodings.",
@@ -3708,9 +3768,9 @@
         "isSummary": true,
         "binding": {
           "strength": "required",
-          "description": "The Child Health Event applicable to the encounter",
+          "description": "The type of Child Health Event",
           "valueSetReference": {
-            "reference": "https://fhir.nhs.uk/ValueSet/DCH-ChildHealthEncounterType-1"
+            "reference": "https://fhir.nhs.uk/ValueSet/DCH-ChildHealthEventType-1"
           }
         },
         "mapping": [
@@ -3852,7 +3912,7 @@
             "code": "uri"
           }
         ],
-        "fixedUri": "https://fhir.nhs.uk/DCH-ChildHealthEncounterType-1",
+        "fixedUri": "https://fhir.nhs.uk/dch-childhealtheventtype-1",
         "condition": [
           "ele-1"
         ],
@@ -4170,7 +4230,7 @@
         "definition": "Indicates the urgency of the encounter.",
         "comments": "Not all terminology uses fit this general pattern. In some cases, models should not use CodeableConcept and use Coding directly and provide their own structure for managing text, codings, translations and the relationship between elements and pre- and post-coordination.",
         "min": 0,
-        "max": "0",
+        "max": "1",
         "base": {
           "path": "Encounter.priority",
           "min": 0,
@@ -4200,9 +4260,11 @@
         ],
         "isSummary": true,
         "binding": {
-          "strength": "example",
+          "strength": "preferred",
           "description": "Indicates the urgency of the encounter.",
-          "valueSetUri": "http://hl7.org/fhir/ValueSet/encounter-priority"
+          "valueSetReference": {
+            "reference": "http://hl7.org/fhir/ValueSet/encounter-priority"
+          }
         },
         "mapping": [
           {
@@ -4982,7 +5044,7 @@
         "short": "Relative, internal or absolute URL reference",
         "definition": "A reference to a location at which the other resource is found. The reference may be a relative reference, in which case it is relative to the service base URL, or an absolute URL that resolves to the location where the resource is found. The reference may be version specific or not. If the reference is not to a FHIR RESTful server, then it should be assumed to be version specific. Internal fragment references (start with '#') refer to contained resources.",
         "comments": "Using absolute URLs provides a stable scalable approach suitable for a cloud/web context, while using relative/logical references provides a flexible approach suitable for use when trading across closed eco-system boundaries.   Absolute URLs do not need to point to a FHIR RESTful server, though this is the preferred approach. If the URL conforms to the structure \"/[type]/[id]\" then it should be assumed that the reference is to a FHIR RESTful server.",
-        "min": 0,
+        "min": 1,
         "max": "1",
         "base": {
           "path": "Reference.reference",
@@ -5075,7 +5137,7 @@
         "short": "Episode(s) of care that this encounter should be recorded against",
         "definition": "Where a specific encounter should be classified as a part of a specific episode(s) of care this field should be used. This association can facilitate grouping of related encounters together for a specific purpose, such as government reporting, issue tracking, association via a common problem.  The association is recorded on the encounter as these are typically created after the episode of care, and grouped on entry rather than editing the episode of care to append another encounter to it (the episode of care could span years).",
         "min": 0,
-        "max": "0",
+        "max": "*",
         "base": {
           "path": "Encounter.episodeOfCare",
           "min": 0,
@@ -5326,7 +5388,7 @@
         "short": "The ReferralRequest that initiated this encounter",
         "definition": "The referral request this encounter satisfies (incoming referral).",
         "min": 0,
-        "max": "0",
+        "max": "*",
         "base": {
           "path": "Encounter.incomingReferral",
           "min": 0,
@@ -5566,10 +5628,10 @@
       },
       {
         "path": "Encounter.participant",
-        "short": "Participant in the encounter, this will be the practitioner that has responsibility for overseeing a patient's care during a patient encounter",
-        "definition": "Participant in the encounter, this will be the practitioner that has responsibility for overseeing a patient's care during a patient encounter.",
+        "short": "Participant involved in the encounter, this will be the principal or primary performer of the act",
+        "definition": "Participant involved in the encounter, this will be the principal or primary performer of the act.",
         "min": 0,
-        "max": "1",
+        "max": "*",
         "base": {
           "path": "Encounter.participant",
           "min": 0,
@@ -6088,7 +6150,7 @@
             "code": "uri"
           }
         ],
-        "fixedUri": "http://hl7.org/fhir/v3/ParticipationType",
+        "fixedUri": "http://hl7.org/fhir/ValueSet/encounter-participant-type",
         "condition": [
           "ele-1"
         ],
@@ -6132,7 +6194,7 @@
         "definition": "The version of the code system which was used when choosing this code. Note that a well-maintained code system does not need the version reported, because the meaning of codes is consistent across versions. However this cannot consistently be assured. and when the meaning is not guaranteed to be consistent, the version SHOULD be exchanged.",
         "comments": "Where the terminology does not clearly define what string should be used to identify code system versions, the recommendation is to use the date (expressed in FHIR date format) on which that version was officially published as the version date.",
         "min": 0,
-        "max": "0",
+        "max": "1",
         "base": {
           "path": "Coding.version",
           "min": 0,
@@ -6198,7 +6260,7 @@
             "code": "code"
           }
         ],
-        "fixedCode": "ATND",
+        "fixedCode": "PPRF",
         "condition": [
           "ele-1"
         ],
@@ -6242,8 +6304,8 @@
         "definition": "A representation of the meaning of the code in the system, following the rules of the system.",
         "comments": "Note that FHIR strings may not exceed 1MB in size",
         "requirements": "Need to be able to carry a human-readable meaning of the code for readers that do not know  the system.",
-        "min": 0,
-        "max": "0",
+        "min": 1,
+        "max": "1",
         "base": {
           "path": "Coding.display",
           "min": 0,
@@ -6254,7 +6316,7 @@
             "code": "string"
           }
         ],
-        "fixedString": "attender",
+        "fixedString": "primary performer",
         "condition": [
           "ele-1"
         ],
@@ -6299,7 +6361,7 @@
         "comments": "Amongst a set of alternatives, a directly chosen code is the most appropriate starting point for new translations. There is some ambiguity about what exactly 'directly chosen' implies, and trading partner agreement may be needed to clarify the use of this element and its consequences more completely.",
         "requirements": "This has been identified as a clinical safety criterium - that this exact system/code pair was chosen explicitly, rather than inferred by the system based on some rules or language processing.",
         "min": 0,
-        "max": "0",
+        "max": "1",
         "base": {
           "path": "Coding.userSelected",
           "min": 0,
@@ -6354,7 +6416,7 @@
         "comments": "Very often the text is the same as a displayName of one of the codings.",
         "requirements": "The codes from the terminologies do not always capture the correct meaning with all the nuances of the human using them, or sometimes there is no appropriate code at all. In these cases, the text is used to capture the full meaning of the source.",
         "min": 0,
-        "max": "0",
+        "max": "1",
         "base": {
           "path": "CodeableConcept.text",
           "min": 0,
@@ -6408,7 +6470,7 @@
         "definition": "The period of time that the specified participant was present during the encounter. These can overlap or be sub-sets of the overall encounters period.",
         "comments": "This is not a duration - that's a measure of time (a separate type), but a duration that occurs at a fixed value of time. A Period specifies a range of time; the context of use will specify whether the entire range applies (e.g. \"the patient was an inpatient of the hospital for this time range\") or one value from the range applies (e.g. \"give to the patient between these two times\"). If duration is required, specify the type as Interval|Duration.",
         "min": 0,
-        "max": "0",
+        "max": "1",
         "base": {
           "path": "Encounter.participant.period",
           "min": 0,
@@ -6663,8 +6725,8 @@
       },
       {
         "path": "Encounter.participant.individual",
-        "short": "Practitioner involved in the encounter other than the patient",
-        "definition": "Practitioner involved in the encounter other than the patient.",
+        "short": "Persons involved in the encounter other than the patient",
+        "definition": "Persons involved in the encounter other than the patient.",
         "min": 1,
         "max": "1",
         "base": {
@@ -7079,7 +7141,7 @@
         "short": "Relative, internal or absolute URL reference",
         "definition": "A reference to a location at which the other resource is found. The reference may be a relative reference, in which case it is relative to the service base URL, or an absolute URL that resolves to the location where the resource is found. The reference may be version specific or not. If the reference is not to a FHIR RESTful server, then it should be assumed to be version specific. Internal fragment references (start with '#') refer to contained resources.",
         "comments": "Using absolute URLs provides a stable scalable approach suitable for a cloud/web context, while using relative/logical references provides a flexible approach suitable for use when trading across closed eco-system boundaries.   Absolute URLs do not need to point to a FHIR RESTful server, though this is the preferred approach. If the URL conforms to the structure \"/[type]/[id]\" then it should be assumed that the reference is to a FHIR RESTful server.",
-        "min": 1,
+        "min": 0,
         "max": "1",
         "base": {
           "path": "Reference.reference",
@@ -7441,7 +7503,7 @@
         "definition": "Quantity of time the encounter lasted. This excludes the time during leaves of absence.",
         "comments": "May differ from the time the Encounter.period lasted because of leave of absence.",
         "min": 0,
-        "max": "0",
+        "max": "1",
         "base": {
           "path": "Encounter.length",
           "min": 0,
@@ -7886,7 +7948,7 @@
           "Admission diagnosis"
         ],
         "min": 0,
-        "max": "1",
+        "max": "*",
         "base": {
           "path": "Encounter.reason",
           "min": 0,
@@ -9037,7 +9099,7 @@
           "Admission diagnosis"
         ],
         "min": 0,
-        "max": "0",
+        "max": "*",
         "base": {
           "path": "Encounter.indication",
           "min": 0,
@@ -9047,13 +9109,13 @@
           {
             "code": "Reference",
             "profile": [
-              "http://hl7.org/fhir/StructureDefinition/Condition"
+              "https://fhir.hl7.org.uk/StructureDefinition/CareConnect-DCH-Condition-1"
             ]
           },
           {
             "code": "Reference",
             "profile": [
-              "http://hl7.org/fhir/StructureDefinition/Procedure"
+              "https://fhir.hl7.org.uk/StructureDefinition/CareConnect-DCH-Procedure-1"
             ]
           }
         ],
@@ -9116,7 +9178,7 @@
         "definition": "Details about the admission to a healthcare service.",
         "comments": "An Encounter may cover more than just the inpatient stay. Contexts such as outpatients, community clinics, and aged care facilities are also included.  The duration recorded in the period of this encounter covers the entire scope of this hospitalization record.",
         "min": 0,
-        "max": "0",
+        "max": "1",
         "base": {
           "path": "Encounter.hospitalization",
           "min": 0,
@@ -9301,7 +9363,7 @@
         "short": "Pre-admission identifier",
         "definition": "Pre-admission identifier.",
         "min": 0,
-        "max": "0",
+        "max": "1",
         "base": {
           "path": "Encounter.hospitalization.preAdmissionIdentifier",
           "min": 0,
@@ -10791,7 +10853,7 @@
         "short": "The location from which the patient came before admission",
         "definition": "The location from which the patient came before admission.",
         "min": 0,
-        "max": "0",
+        "max": "1",
         "base": {
           "path": "Encounter.hospitalization.origin",
           "min": 0,
@@ -10801,7 +10863,7 @@
           {
             "code": "Reference",
             "profile": [
-              "http://hl7.org/fhir/StructureDefinition/Location"
+              "https://fhir.hl7.org.uk/StructureDefinition/CareConnect-Location-1"
             ]
           }
         ],
@@ -11039,7 +11101,7 @@
         "definition": "From where patient was admitted (physician referral, transfer).",
         "comments": "Not all terminology uses fit this general pattern. In some cases, models should not use CodeableConcept and use Coding directly and provide their own structure for managing text, codings, translations and the relationship between elements and pre- and post-coordination.",
         "min": 0,
-        "max": "0",
+        "max": "1",
         "base": {
           "path": "Encounter.hospitalization.admitSource",
           "min": 0,
@@ -11683,7 +11745,7 @@
         "short": "The admitting diagnosis as reported by admitting practitioner",
         "definition": "The admitting diagnosis field is used to record the diagnosis codes as reported by admitting practitioner. This could be different or in addition to the conditions reported as reason-condition(s) for the encounter.",
         "min": 0,
-        "max": "0",
+        "max": "*",
         "base": {
           "path": "Encounter.hospitalization.admittingDiagnosis",
           "min": 0,
@@ -11693,7 +11755,7 @@
           {
             "code": "Reference",
             "profile": [
-              "http://hl7.org/fhir/StructureDefinition/Condition"
+              "https://fhir.hl7.org.uk/StructureDefinition/CareConnect-DCH-Condition-1"
             ]
           }
         ],
@@ -11927,7 +11989,7 @@
         "definition": "Whether this hospitalization is a readmission and why if known.",
         "comments": "Not all terminology uses fit this general pattern. In some cases, models should not use CodeableConcept and use Coding directly and provide their own structure for managing text, codings, translations and the relationship between elements and pre- and post-coordination.",
         "min": 0,
-        "max": "0",
+        "max": "1",
         "base": {
           "path": "Encounter.hospitalization.reAdmission",
           "min": 0,
@@ -13069,7 +13131,7 @@
         "comments": "For example a patient may request both a dairy-free and nut-free diet preference (not mutually exclusive).",
         "requirements": "Used to track patient's diet restrictions and/or preference. For a complete description of the nutrition needs of a patient during their stay, one should use the nutritionOrder resource which links to Encounter.",
         "min": 0,
-        "max": "0",
+        "max": "*",
         "base": {
           "path": "Encounter.hospitalization.dietPreference",
           "min": 0,
@@ -13099,9 +13161,11 @@
         ],
         "isSummary": true,
         "binding": {
-          "strength": "example",
+          "strength": "extensible",
           "description": "Medical, cultural or ethical food preferences to help with catering requirements.",
-          "valueSetUri": "http://hl7.org/fhir/ValueSet/encounter-diet"
+          "valueSetReference": {
+            "reference": "http://hl7.org/fhir/ValueSet/encounter-diet"
+          }
         },
         "mapping": [
           {
@@ -13712,7 +13776,7 @@
         "definition": "Special courtesies (VIP, board member).",
         "comments": "Not all terminology uses fit this general pattern. In some cases, models should not use CodeableConcept and use Coding directly and provide their own structure for managing text, codings, translations and the relationship between elements and pre- and post-coordination.",
         "min": 0,
-        "max": "0",
+        "max": "*",
         "base": {
           "path": "Encounter.hospitalization.specialCourtesy",
           "min": 0,
@@ -14357,7 +14421,7 @@
         "definition": "Wheelchair, translator, stretcher, etc.",
         "comments": "Not all terminology uses fit this general pattern. In some cases, models should not use CodeableConcept and use Coding directly and provide their own structure for managing text, codings, translations and the relationship between elements and pre- and post-coordination.",
         "min": 0,
-        "max": "0",
+        "max": "*",
         "base": {
           "path": "Encounter.hospitalization.specialArrangement",
           "min": 0,
@@ -15001,7 +15065,7 @@
         "short": "Location to which the patient is discharged",
         "definition": "Location to which the patient is discharged.",
         "min": 0,
-        "max": "0",
+        "max": "1",
         "base": {
           "path": "Encounter.hospitalization.destination",
           "min": 0,
@@ -15011,7 +15075,7 @@
           {
             "code": "Reference",
             "profile": [
-              "http://hl7.org/fhir/StructureDefinition/Location"
+              "https://fhir.hl7.org.uk/StructureDefinition/CareConnect-Location-1"
             ]
           }
         ],
@@ -15253,7 +15317,7 @@
         "definition": "Category or kind of location after discharge.",
         "comments": "Not all terminology uses fit this general pattern. In some cases, models should not use CodeableConcept and use Coding directly and provide their own structure for managing text, codings, translations and the relationship between elements and pre- and post-coordination.",
         "min": 0,
-        "max": "0",
+        "max": "1",
         "base": {
           "path": "Encounter.hospitalization.dischargeDisposition",
           "min": 0,
@@ -15897,7 +15961,7 @@
         "short": "The final diagnosis given a patient before release from the hospital after all testing, surgery, and workup are complete",
         "definition": "The final diagnosis given a patient before release from the hospital after all testing, surgery, and workup are complete.",
         "min": 0,
-        "max": "0",
+        "max": "*",
         "base": {
           "path": "Encounter.hospitalization.dischargeDiagnosis",
           "min": 0,
@@ -15907,7 +15971,7 @@
           {
             "code": "Reference",
             "profile": [
-              "http://hl7.org/fhir/StructureDefinition/Condition"
+              "https://fhir.hl7.org.uk/StructureDefinition/CareConnect-DCH-Condition-1"
             ]
           }
         ],
@@ -16145,7 +16209,7 @@
         "definition": "List of locations where  the patient has been during this encounter.",
         "comments": "Virtual encounters can be recorded in the Encounter by specifying a location reference to a location of type \"kind\" such as \"client's home\" and an encounter.class = \"virtual\".",
         "min": 1,
-        "max": "1",
+        "max": "*",
         "base": {
           "path": "Encounter.location",
           "min": 0,
@@ -16340,7 +16404,7 @@
           {
             "code": "Reference",
             "profile": [
-              "https://fhir.hl7.org.uk/StructureDefinition/CareConnect-Organization-1"
+              "https://fhir.hl7.org.uk/StructureDefinition/CareConnect-Location-1"
             ]
           }
         ],
@@ -16586,7 +16650,7 @@
         "definition": "The status of the participants' presence at the specified location during the period specified. If the participant is is no longer at the location, then the period will have an end date/time.",
         "comments": "When the patient is no longer active at a location, then the period end date is entered, and the status may be changed to completed.",
         "min": 0,
-        "max": "0",
+        "max": "1",
         "base": {
           "path": "Encounter.location.status",
           "min": 0,
@@ -16634,7 +16698,7 @@
         "definition": "Time period during which the patient was present at the location.",
         "comments": "This is not a duration - that's a measure of time (a separate type), but a duration that occurs at a fixed value of time. A Period specifies a range of time; the context of use will specify whether the entire range applies (e.g. \"the patient was an inpatient of the hospital for this time range\") or one value from the range applies (e.g. \"give to the patient between these two times\"). If duration is required, specify the type as Interval|Duration.",
         "min": 0,
-        "max": "0",
+        "max": "1",
         "base": {
           "path": "Encounter.location.period",
           "min": 0,
@@ -17050,7 +17114,7 @@
         "short": "Relative, internal or absolute URL reference",
         "definition": "A reference to a location at which the other resource is found. The reference may be a relative reference, in which case it is relative to the service base URL, or an absolute URL that resolves to the location where the resource is found. The reference may be version specific or not. If the reference is not to a FHIR RESTful server, then it should be assumed to be version specific. Internal fragment references (start with '#') refer to contained resources.",
         "comments": "Using absolute URLs provides a stable scalable approach suitable for a cloud/web context, while using relative/logical references provides a flexible approach suitable for use when trading across closed eco-system boundaries.   Absolute URLs do not need to point to a FHIR RESTful server, though this is the preferred approach. If the URL conforms to the structure \"/[type]/[id]\" then it should be assumed that the reference is to a FHIR RESTful server.",
-        "min": 0,
+        "min": 1,
         "max": "1",
         "base": {
           "path": "Reference.reference",
@@ -17143,7 +17207,7 @@
         "short": "Another Encounter this encounter is part of",
         "definition": "Another Encounter of which this encounter is a part of (administratively or in time).",
         "min": 0,
-        "max": "0",
+        "max": "1",
         "base": {
           "path": "Encounter.partOf",
           "min": 0,
@@ -17153,7 +17217,7 @@
           {
             "code": "Reference",
             "profile": [
-              "http://hl7.org/fhir/StructureDefinition/Encounter"
+              "https://fhir.hl7.org.uk/StructureDefinition/CareConnect-DCH-Encounter-1"
             ]
           }
         ],
@@ -17393,17 +17457,30 @@
         "path": "Encounter"
       },
       {
+        "path": "Encounter.extension",
+        "slicing": {
+          "discriminator": [
+            "url"
+          ],
+          "rules": "open"
+        }
+      },
+      {
+        "path": "Encounter.extension",
+        "name": "encounterTransport",
+        "type": [
+          {
+            "code": "Extension",
+            "profile": [
+              "https://fhir.hl7.org.uk/StructureDefinition/Extension-CareConnect-EncounterTransport-1"
+            ]
+          }
+        ]
+      },
+      {
         "path": "Encounter.identifier",
         "min": 1,
         "max": "1"
-      },
-      {
-        "path": "Encounter.identifier.use",
-        "max": "0"
-      },
-      {
-        "path": "Encounter.identifier.type",
-        "max": "0"
       },
       {
         "path": "Encounter.identifier.system",
@@ -17414,12 +17491,7 @@
         "min": 1
       },
       {
-        "path": "Encounter.identifier.period",
-        "max": "0"
-      },
-      {
         "path": "Encounter.identifier.assigner",
-        "max": "0",
         "type": [
           {
             "code": "Reference",
@@ -17430,12 +17502,8 @@
         ]
       },
       {
-        "path": "Encounter.status",
-        "fixedCode": "finished"
-      },
-      {
-        "path": "Encounter.statusHistory",
-        "max": "0"
+        "path": "Encounter.type",
+        "min": 1
       },
       {
         "path": "Encounter.type.coding",
@@ -17454,7 +17522,9 @@
         "binding": {
           "strength": "required",
           "description": "A code from the SNOMED Clinical Terminology UK coding system that describes an encounter between a care professional and the patient (or patient's record).",
-          "valueSetUri": "https://fhir.hl7.org.uk/ValueSet/CareConnect-EncounterType-1"
+          "valueSetReference": {
+            "reference": "https://fhir.hl7.org.uk/ValueSet/CareConnect-EncounterType-1"
+          }
         }
       },
       {
@@ -17498,22 +17568,21 @@
       },
       {
         "path": "Encounter.type.coding",
-        "name": "childHealthEncounterType",
-        "short": "The Child Health Event applicable to the encounter",
+        "name": "childHealthEventType",
         "min": 1,
         "max": "1",
         "binding": {
           "strength": "required",
-          "description": "The Child Health Event applicable to the encounter",
+          "description": "The type of Child Health Event",
           "valueSetReference": {
-            "reference": "https://fhir.nhs.uk/ValueSet/DCH-ChildHealthEncounterType-1"
+            "reference": "https://fhir.nhs.uk/ValueSet/DCH-ChildHealthEventType-1"
           }
         }
       },
       {
         "path": "Encounter.type.coding.system",
         "min": 1,
-        "fixedUri": "https://fhir.nhs.uk/DCH-ChildHealthEncounterType-1"
+        "fixedUri": "https://fhir.nhs.uk/dch-childhealtheventtype-1"
       },
       {
         "path": "Encounter.type.coding.code",
@@ -17525,10 +17594,8 @@
       },
       {
         "path": "Encounter.priority",
-        "max": "0",
         "binding": {
-          "strength": "example",
-          "valueSetUri": "http://hl7.org/fhir/ValueSet/encounter-priority"
+          "strength": "preferred"
         }
       },
       {
@@ -17544,18 +17611,13 @@
         ]
       },
       {
-        "path": "Encounter.episodeOfCare",
-        "max": "0"
-      },
-      {
-        "path": "Encounter.incomingReferral",
-        "max": "0"
+        "path": "Encounter.patient.reference",
+        "min": 1
       },
       {
         "path": "Encounter.participant",
-        "short": "Participant in the encounter, this will be the practitioner that has responsibility for overseeing a patient's care during a patient encounter",
-        "definition": "Participant in the encounter, this will be the practitioner that has responsibility for overseeing a patient's care during a patient encounter.",
-        "max": "1"
+        "short": "Participant involved in the encounter, this will be the principal or primary performer of the act",
+        "definition": "Participant involved in the encounter, this will be the principal or primary performer of the act."
       },
       {
         "path": "Encounter.participant.type",
@@ -17570,38 +17632,20 @@
       {
         "path": "Encounter.participant.type.coding.system",
         "min": 1,
-        "fixedUri": "http://hl7.org/fhir/v3/ParticipationType"
-      },
-      {
-        "path": "Encounter.participant.type.coding.version",
-        "max": "0"
+        "fixedUri": "http://hl7.org/fhir/ValueSet/encounter-participant-type"
       },
       {
         "path": "Encounter.participant.type.coding.code",
         "min": 1,
-        "fixedCode": "ATND"
+        "fixedCode": "PPRF"
       },
       {
         "path": "Encounter.participant.type.coding.display",
-        "max": "0",
-        "fixedString": "attender"
-      },
-      {
-        "path": "Encounter.participant.type.coding.userSelected",
-        "max": "0"
-      },
-      {
-        "path": "Encounter.participant.type.text",
-        "max": "0"
-      },
-      {
-        "path": "Encounter.participant.period",
-        "max": "0"
+        "min": 1,
+        "fixedString": "primary performer"
       },
       {
         "path": "Encounter.participant.individual",
-        "short": "Practitioner involved in the encounter other than the patient",
-        "definition": "Practitioner involved in the encounter other than the patient.",
         "min": 1,
         "type": [
           {
@@ -17617,25 +17661,12 @@
         "min": 1
       },
       {
-        "path": "Encounter.appointment.reference",
-        "min": 1
-      },
-      {
         "path": "Encounter.period",
         "min": 1
       },
       {
         "path": "Encounter.period.start",
         "min": 1
-      },
-      {
-        "path": "Encounter.length",
-        "name": "Duration",
-        "max": "0"
-      },
-      {
-        "path": "Encounter.reason",
-        "max": "1"
       },
       {
         "path": "Encounter.reason.coding",
@@ -17692,15 +17723,20 @@
       },
       {
         "path": "Encounter.indication",
-        "max": "0"
-      },
-      {
-        "path": "Encounter.hospitalization",
-        "max": "0"
-      },
-      {
-        "path": "Encounter.hospitalization.preAdmissionIdentifier",
-        "max": "0"
+        "type": [
+          {
+            "code": "Reference",
+            "profile": [
+              "https://fhir.hl7.org.uk/StructureDefinition/CareConnect-DCH-Condition-1"
+            ]
+          },
+          {
+            "code": "Reference",
+            "profile": [
+              "https://fhir.hl7.org.uk/StructureDefinition/CareConnect-DCH-Procedure-1"
+            ]
+          }
+        ]
       },
       {
         "path": "Encounter.hospitalization.preAdmissionIdentifier.system",
@@ -17723,19 +17759,25 @@
       },
       {
         "path": "Encounter.hospitalization.origin",
-        "max": "0"
-      },
-      {
-        "path": "Encounter.hospitalization.admitSource",
-        "max": "0"
+        "type": [
+          {
+            "code": "Reference",
+            "profile": [
+              "https://fhir.hl7.org.uk/StructureDefinition/CareConnect-Location-1"
+            ]
+          }
+        ]
       },
       {
         "path": "Encounter.hospitalization.admittingDiagnosis",
-        "max": "0"
-      },
-      {
-        "path": "Encounter.hospitalization.reAdmission",
-        "max": "0"
+        "type": [
+          {
+            "code": "Reference",
+            "profile": [
+              "https://fhir.hl7.org.uk/StructureDefinition/CareConnect-DCH-Condition-1"
+            ]
+          }
+        ]
       },
       {
         "path": "Encounter.hospitalization.reAdmission.coding",
@@ -17793,36 +17835,35 @@
       },
       {
         "path": "Encounter.hospitalization.dietPreference",
-        "max": "0",
         "binding": {
-          "strength": "example",
-          "valueSetUri": "http://hl7.org/fhir/ValueSet/encounter-diet"
+          "strength": "extensible"
         }
       },
       {
-        "path": "Encounter.hospitalization.specialCourtesy",
-        "max": "0"
-      },
-      {
-        "path": "Encounter.hospitalization.specialArrangement",
-        "max": "0"
-      },
-      {
         "path": "Encounter.hospitalization.destination",
-        "max": "0"
-      },
-      {
-        "path": "Encounter.hospitalization.dischargeDisposition",
-        "max": "0"
+        "type": [
+          {
+            "code": "Reference",
+            "profile": [
+              "https://fhir.hl7.org.uk/StructureDefinition/CareConnect-Location-1"
+            ]
+          }
+        ]
       },
       {
         "path": "Encounter.hospitalization.dischargeDiagnosis",
-        "max": "0"
+        "type": [
+          {
+            "code": "Reference",
+            "profile": [
+              "https://fhir.hl7.org.uk/StructureDefinition/CareConnect-DCH-Condition-1"
+            ]
+          }
+        ]
       },
       {
         "path": "Encounter.location",
-        "min": 1,
-        "max": "1"
+        "min": 1
       },
       {
         "path": "Encounter.location.location",
@@ -17830,7 +17871,7 @@
           {
             "code": "Reference",
             "profile": [
-              "https://fhir.hl7.org.uk/StructureDefinition/CareConnect-Organization-1"
+              "https://fhir.hl7.org.uk/StructureDefinition/CareConnect-Location-1"
             ]
           }
         ]
@@ -17838,14 +17879,6 @@
       {
         "path": "Encounter.location.location.reference",
         "min": 1
-      },
-      {
-        "path": "Encounter.location.status",
-        "max": "0"
-      },
-      {
-        "path": "Encounter.location.period",
-        "max": "0"
       },
       {
         "path": "Encounter.serviceProvider",
@@ -17860,8 +17893,19 @@
         ]
       },
       {
+        "path": "Encounter.serviceProvider.reference",
+        "min": 1
+      },
+      {
         "path": "Encounter.partOf",
-        "max": "0"
+        "type": [
+          {
+            "code": "Reference",
+            "profile": [
+              "https://fhir.hl7.org.uk/StructureDefinition/CareConnect-DCH-Encounter-1"
+            ]
+          }
+        ]
       }
     ]
   }

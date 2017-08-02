@@ -1,7 +1,7 @@
 {
   "resourceType": "StructureDefinition",
   "meta": {
-    "lastUpdated": "2017-06-03T10:48:05.182+01:00",
+    "lastUpdated": "2017-07-31T12:09:26.316+01:00",
     "tag": [
       {
         "system": "urn:hscic:publishOrder",
@@ -9,8 +9,18 @@
       },
       {
         "system": "urn:hscic:examples",
-        "code": "NewbornBloodSpotEvent-Scenario2",
-        "display": "NewbornBloodSpotEvent-Scenario2"
+        "code": "DCH-Bundle-NewbornBloodSpotSampleTaken",
+        "display": "DCH-Bundle-NewbornBloodSpotSampleTaken"
+      },
+      {
+        "system": "urn:hscic:examples",
+        "code": "DCH-Bundle-NewbornBloodSpotAdministrativeStatus",
+        "display": "DCH-Bundle-NewbornBloodSpotAdministrativeStatus"
+      },
+      {
+        "system": "urn:hscic:examples",
+        "code": "DCH-Bundle-NewbornBloodSpotTestOutcome",
+        "display": "DCH-Bundle-NewbornBloodSpotTestOutcome"
       }
     ]
   },
@@ -977,7 +987,7 @@
         "path": "Bundle.entry.resource",
         "short": "A resource in the bundle",
         "definition": "The Resources for the entry.",
-        "min": 0,
+        "min": 1,
         "max": "1",
         "base": {
           "path": "Bundle.entry.resource",
@@ -3060,6 +3070,10 @@
       },
       {
         "path": "Bundle.entry.fullUrl",
+        "min": 1
+      },
+      {
+        "path": "Bundle.entry.resource",
         "min": 1
       },
       {
