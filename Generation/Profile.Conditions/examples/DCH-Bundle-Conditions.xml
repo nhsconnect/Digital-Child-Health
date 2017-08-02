@@ -30,12 +30,15 @@
 					<display value="Conditions"/>
 				</event>
 				<source>
-					<endpoint value="urn:uuid:1d67bb60-4f45-11e7-b114-b2f933d5fe66"/>
+					<endpoint value="urn:nhs-uk:addressing:ods:RR8"/>
 				</source>
 				<responsible>
 					<reference value="urn:uuid:5ccb6bb7-a7f1-46cc-a5d3-135320765553"/>
-					<display value="Leeds Teaching Hospitals"/>
+					<display value="Leeds Teaching Hospitals NHS Trust"/>
 				</responsible>
+				<data>
+					<reference value="urn:uuid:1d67bd36-4f45-11e7-b114-b2f933d5fe66"/>
+				</data>
 				<data>
 					<reference value="urn:uuid:e9dbecea-5bdc-11e7-907b-a6006ad3dba0"/>
 				</data>
@@ -111,9 +114,6 @@
 					<reference value="urn:uuid:7368c5fe-bbb4-4e9c-a585-234e06b84e82"/>
 					<display value="SAXTON, Sarah Marie"/>
 				</subject>
-				<encounter>
-					<reference value="urn:uuid:1d67bd36-4f45-11e7-b114-b2f933d5fe66"/>
-				</encounter>
 				<group>
 					<title value="Conditions"/>
 					<question>
@@ -147,7 +147,7 @@
 						<answer>
 							<valueReference>
 								<reference value="urn:uuid:5ccb6bb7-a7f1-46cc-a5d3-135320765553"/>
-								<display value="Leeds Teaching Hospitals"/>
+								<display value="Leeds Teaching Hospitals NHS Trust"/>
 							</valueReference>
 						</answer>
 					</question>
@@ -263,7 +263,7 @@
 							<code value="ATND"/>
 							<display value="attender"/>
 						</coding>
-					</type>				
+					</type>
 					<individual>
 						<reference value="urn:uuid:1d67c1f0-4f45-11e7-b114-b2f933d5fe66"/>
 						<display value="RILEY, Amber"/>
@@ -336,17 +336,21 @@
 	<entry>
 		<fullUrl value="urn:uuid:00e72e70-0e37-48b5-b950-ca5ce8c35de7"/>
 		<resource>
-			<Organization>
+			<Location>
 				<id value="00e72e70-0e37-48b5-b950-ca5ce8c35de7"/>
 				<meta>
-					<profile value="https://fhir.hl7.org.uk/StructureDefinition/CareConnect-Organization-1"/>
+					<profile value="https://fhir.hl7.org.uk/StructureDefinition/CareConnect-Location-1"/>
 				</meta>
 				<identifier>
 					<system value="https://fhir.nhs.uk/Id/ods-site-code"/>
 					<value value="RR830"/>
 				</identifier>
 				<name value="Accident and Emergency Department, Leeds General Infirmary"/>
-			</Organization>
+				<managingOrganization>
+					<reference value="urn:uuid:5ccb6bb7-a7f1-46cc-a5d3-135320765553"/>
+					<display value="Leeds Teaching Hospitals NHS Trust"/>
+				</managingOrganization>
+			</Location>
 		</resource>
 	</entry>
 	<entry>
@@ -355,10 +359,10 @@
 			<Practitioner>
 				<id value="1d67c1f0-4f45-11e7-b114-b2f933d5fe66"/>
 				<meta>
-					<profile value="https://fhir.hl7.org.uk/StructureDefinition/CareConnect-DCH-Practitioner-1"/>
+					<profile value="https://fhir.hl7.org.uk/StructureDefinition/CareConnect-Practitioner-1"/>
 				</meta>
 				<identifier>
-					<system value="http://fhir.nhs.net/Id/sds-role-profile-id"/>
+					<system value="https://fhir.nhs.net/Id/sds-role-profile-id"/>
 					<value value="PT1357"/>
 				</identifier>
 				<name>
@@ -366,6 +370,10 @@
 					<given value="Amber"/>
 				</name>
 				<practitionerRole>
+					<managingOrganization>
+						<reference value="urn:uuid:5ccb6bb7-a7f1-46cc-a5d3-135320765553"/>
+						<display value="Leeds Teaching Hospitals NHS Trust"/>
+					</managingOrganization>
 					<role>
 						<coding>
 							<system value="https://fhir.hl7.org.uk/CareConnect-SDSJobRoleName-1"/>

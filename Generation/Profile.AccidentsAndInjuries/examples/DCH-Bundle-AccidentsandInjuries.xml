@@ -30,12 +30,15 @@
 					<display value="Accidents and Injuries"/>
 				</event>
 				<source>
-					<endpoint value="urn:uuid:1d67bb60-4f45-11e7-b114-b2f933d5fe66"/>
+					<endpoint value="urn:nhs-uk:addressing:ods:RR8"/>
 				</source>
 				<responsible>
 					<reference value="urn:uuid:5ccb6bb7-a7f1-46cc-a5d3-135320765553"/>
-					<display value="Leeds Teaching Hospitals"/>
+					<display value="Leeds Teaching Hospitals NHS Trust"/>
 				</responsible>
+				<data>
+					<reference value="urn:uuid:1d67bd36-4f45-11e7-b114-b2f933d5fe66"/>
+				</data>
 				<data>
 					<reference value="urn:uuid:1d67c2d6-4f45-11e7-b114-b2f933d5fe66"/>
 				</data>
@@ -111,9 +114,6 @@
 					<reference value="urn:uuid:7368c5fe-bbb4-4e9c-a585-234e06b84e82"/>
 					<display value="SAXTON, Sarah Marie"/>
 				</subject>
-				<encounter>
-					<reference value="urn:uuid:1d67bd36-4f45-11e7-b114-b2f933d5fe66"/>
-				</encounter>
 				<group>
 					<title value="Accidents and Injuries"/>
 					<question>
@@ -147,7 +147,7 @@
 						<answer>
 							<valueReference>
 								<reference value="urn:uuid:5ccb6bb7-a7f1-46cc-a5d3-135320765553"/>
-								<display value="Leeds Teaching Hospitals"/>
+								<display value="Leeds Teaching Hospitals NHS Trust"/>
 							</valueReference>
 						</answer>
 					</question>
@@ -437,17 +437,21 @@
 	<entry>
 		<fullUrl value="urn:uuid:00e72e70-0e37-48b5-b950-ca5ce8c35de7"/>
 		<resource>
-			<Organization>
+			<Location>
 				<id value="00e72e70-0e37-48b5-b950-ca5ce8c35de7"/>
 				<meta>
-					<profile value="https://fhir.hl7.org.uk/StructureDefinition/CareConnect-Organization-1"/>
+					<profile value="https://fhir.hl7.org.uk/StructureDefinition/CareConnect-Location-1"/>
 				</meta>
 				<identifier>
 					<system value="https://fhir.nhs.uk/Id/ods-site-code"/>
 					<value value="RR830"/>
 				</identifier>
 				<name value="Accident and Emergency Department, Leeds General Infirmary"/>
-			</Organization>
+				<managingOrganization>
+					<reference value="urn:uuid:5ccb6bb7-a7f1-46cc-a5d3-135320765553"/>
+					<display value="Leeds Teaching Hospitals NHS Trust"/>
+				</managingOrganization>
+			</Location>
 		</resource>
 	</entry>
 	<entry>
@@ -467,6 +471,10 @@
 					<given value="Amber"/>
 				</name>
 				<practitionerRole>
+					<managingOrganization>
+						<reference value="urn:uuid:5ccb6bb7-a7f1-46cc-a5d3-135320765553"/>
+						<display value="Leeds Teaching Hospitals NHS Trust"/>
+					</managingOrganization>
 					<role>
 						<coding>
 							<system value="https://fhir.hl7.org.uk/CareConnect-SDSJobRoleName-1"/>

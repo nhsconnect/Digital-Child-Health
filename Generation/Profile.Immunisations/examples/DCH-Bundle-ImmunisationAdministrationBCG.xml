@@ -305,11 +305,11 @@
 						<question>
 							<text value="Organisation performing the Immunisation."/>
 							<answer>
-								<valueString value="B86022"/>
+								<valueString value="RR8"/>
 							</answer>
 							<answer>
 								<valueReference>
-									<reference value="urn:uuid:e9dbf730-5bdc-11e7-907b-a6006ad3dba0"/>
+									<reference value="urn:uuid:5ccb6bb7-a7f1-46cc-a5d3-135320765553"/>
 								</valueReference>
 							</answer>
 						</question>
@@ -526,6 +526,10 @@
 					<value value="B86022"/>
 				</identifier>
 				<name value="Wood Town GP practice"/>
+				<managingOrganization>
+					<reference value="urn:uuid:5ccb6bb7-a7f1-46cc-a5d3-135320765553"/>
+					<display value="Leeds Teaching Hospitals"/>
+				</managingOrganization>
 			</Location>
 		</resource>
 	</entry>
