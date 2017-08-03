@@ -397,7 +397,6 @@
 						<display value="Diagnosis"/>
 					</coding>
 				</category>
-				<clinicalStatus value="active"/>
 				<verificationStatus value="confirmed"/>
 				<onsetDateTime value="2012-03-06T16:00:00+00:00"/>
 			</Condition>
@@ -431,6 +430,8 @@
 					<family value="SAXTON"/>
 					<given value="Jane"/>
 				</name>
+				<gender value="female"/>
+				<birthDate value="1988-01-31"/>
 			</RelatedPerson>
 		</resource>
 	</entry>

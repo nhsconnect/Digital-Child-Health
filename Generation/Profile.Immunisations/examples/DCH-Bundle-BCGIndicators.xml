@@ -164,7 +164,7 @@
 			<Condition>
 				<id value="1d67c470-4f45-11e7-b114-b2f933d5fe66"/>
 				<meta>
-					<profile value="https://fhir.hl7.org.uk/StructureDefinition/CareConnect-DCH-VaccinationRequirement-Condition-1"/>
+					<profile value="https://fhir.hl7.org.uk/StructureDefinition/CareConnect-DCH-Condition-1"/>
 				</meta>
 				<identifier>
 					<system value="https://tools.ietf.org/html/rfc4122"/>
@@ -177,6 +177,10 @@
 				<encounter>
 					<reference value="urn:uuid:a8ca9f14-72aa-11e7-8cf7-a6006ad3dba0"/>
 				</encounter>
+				<asserter>
+					<reference value="urn:uuid:e9dbf8e8-5bdc-11e7-907b-a6006ad3dba0"/>
+					<display value="JONES, Bob (Dr.)"/>
+				</asserter>
 				<dateRecorded value="2012-01-22"/>
 				<code>
 					<coding>

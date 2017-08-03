@@ -327,7 +327,6 @@
 						<display value="Diagnosis"/>
 					</coding>
 				</category>
-				<clinicalStatus value="active"/>
 				<verificationStatus value="confirmed"/>
 				<onsetDateTime value="2012-03-06T16:00:00+00:00"/>
 			</Condition>

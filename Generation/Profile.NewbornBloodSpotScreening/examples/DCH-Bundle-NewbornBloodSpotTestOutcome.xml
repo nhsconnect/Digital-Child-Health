@@ -57,19 +57,6 @@
 					<value value="695N0"/>
 				</identifier>
 				<name value="Leeds General Infirmary Laboratory"/>
-				<telecom>
-					<system value="phone"/>
-					<value value="01133928766"/>
-					<use value="work"/>
-				</telecom>
-				<address>
-					<use value="work"/>
-					<type value="both"/>
-					<line value="1, Main Street"/>
-					<city value="Leeds"/>
-					<district value="West Yorkshire"/>
-					<postalCode value="LS1 3PO"/>
-				</address>
 			</Organization>
 		</resource>
 	</entry>

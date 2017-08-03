@@ -320,10 +320,6 @@
 				<encounter>
 					<reference value="urn:uuid:a8caa0ae-72aa-11e7-8cf7-a6006ad3dba0"/>
 				</encounter>
-				<location>
-					<reference value="urn:uuid:e9dbf730-5bdc-11e7-907b-a6006ad3dba0"/>
-					<display value="Wood Town GP Practice"/>
-				</location>
 				<request>
 					<reference value="urn:uuid:e9dc055e-5bdc-11e7-907b-a6006ad3dba0"/>
 				</request>
