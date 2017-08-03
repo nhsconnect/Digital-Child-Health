@@ -3912,7 +3912,7 @@
             "code": "uri"
           }
         ],
-        "fixedUri": "https://fhir.nhs.uk/dch-childhealtheventtype-1",
+        "fixedUri": "https://fhir.nhs.uk/DCH-ChildHealthEventType-1",
         "condition": [
           "ele-1"
         ],
@@ -17582,7 +17582,7 @@
       {
         "path": "Encounter.type.coding.system",
         "min": 1,
-        "fixedUri": "https://fhir.nhs.uk/dch-childhealtheventtype-1"
+        "fixedUri": "https://fhir.nhs.uk/DCH-ChildHealthEventType-1"
       },
       {
         "path": "Encounter.type.coding.code",
