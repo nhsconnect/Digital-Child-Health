@@ -3045,7 +3045,7 @@
       <type>
         <code value="uri" />
       </type>
-      <fixedUri value="https://fhir.nhs.uk/dch-childhealtheventtype-1" />
+      <fixedUri value="https://fhir.nhs.uk/DCH-ChildHealthEventType-1" />
       <condition value="ele-1" />
       <constraint>
         <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-expression">
@@ -13662,7 +13662,7 @@
     <element>
       <path value="Encounter.type.coding.system" />
       <min value="1" />
-      <fixedUri value="https://fhir.nhs.uk/dch-childhealtheventtype-1" />
+      <fixedUri value="https://fhir.nhs.uk/DCH-ChildHealthEventType-1" />
     </element>
     <element>
       <path value="Encounter.type.coding.code" />

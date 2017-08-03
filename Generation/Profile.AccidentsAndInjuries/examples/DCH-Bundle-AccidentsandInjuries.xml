@@ -83,7 +83,7 @@
 					<value value="5629874536"/>
 				</identifier>
 				<name>
-					<use value="official"/>
+					<use value="usual"/>
 					<family value="Saxton"/>
 					<given value="Sarah"/>
 					<given value="Marie"/>
@@ -275,9 +275,9 @@
 				<class value="emergency"/>
 				<type>
 					<coding>
-						<system value="http://snomed.info/sct"/>
-						<code value="4525004"/>
-						<display value="Emergency department patient visit (procedure)"/>
+						<system value="https://fhir.nhs.uk/DCH-ChildHealthEventType-1"/>
+						<code value="Accidents and Injuries"/>
+						<display value="Accidents and Injuries"/>
 					</coding>
 				</type>
 				<patient>
@@ -288,8 +288,8 @@
 					<type>
 						<coding>
 							<system value="http://hl7.org/fhir/v3/ParticipationType"/>
-							<code value="ATND"/>
-							<display value="attender"/>
+							<code value="PPRF"/>
+							<display value="primary performer"/>
 						</coding>
 					</type>
 					<individual>
