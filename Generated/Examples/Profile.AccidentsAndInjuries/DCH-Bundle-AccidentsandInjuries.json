@@ -39,13 +39,16 @@
           "display": "Accidents and Injuries"
         },
         "source": {
-          "endpoint": "urn:uuid:1d67bb60-4f45-11e7-b114-b2f933d5fe66"
+          "endpoint": "urn:nhs-uk:addressing:ods:RR8"
         },
         "responsible": {
           "reference": "urn:uuid:5ccb6bb7-a7f1-46cc-a5d3-135320765553",
-          "display": "Leeds Teaching Hospitals"
+          "display": "Leeds Teaching Hospitals NHS Trust"
         },
         "data": [
+          {
+            "reference": "urn:uuid:1d67bd36-4f45-11e7-b114-b2f933d5fe66"
+          },
           {
             "reference": "urn:uuid:1d67c2d6-4f45-11e7-b114-b2f933d5fe66"
           }
@@ -144,9 +147,6 @@
           "reference": "urn:uuid:7368c5fe-bbb4-4e9c-a585-234e06b84e82",
           "display": "SAXTON, Sarah Marie"
         },
-        "encounter": {
-          "reference": "urn:uuid:1d67bd36-4f45-11e7-b114-b2f933d5fe66"
-        },
         "group": {
           "title": "Accidents and Injuries",
           "question": [
@@ -186,7 +186,7 @@
                 {
                   "valueReference": {
                     "reference": "urn:uuid:5ccb6bb7-a7f1-46cc-a5d3-135320765553",
-                    "display": "Leeds Teaching Hospitals"
+                    "display": "Leeds Teaching Hospitals NHS Trust"
                   }
                 }
               ]
@@ -533,11 +533,11 @@
     {
       "fullUrl": "urn:uuid:00e72e70-0e37-48b5-b950-ca5ce8c35de7",
       "resource": {
-        "resourceType": "Organization",
+        "resourceType": "Location",
         "id": "00e72e70-0e37-48b5-b950-ca5ce8c35de7",
         "meta": {
           "profile": [
-            "https://fhir.hl7.org.uk/StructureDefinition/CareConnect-Organization-1"
+            "https://fhir.hl7.org.uk/StructureDefinition/CareConnect-Location-1"
           ]
         },
         "identifier": [
@@ -546,7 +546,11 @@
             "value": "RR830"
           }
         ],
-        "name": "Accident and Emergency Department, Leeds General Infirmary"
+        "name": "Accident and Emergency Department, Leeds General Infirmary",
+        "managingOrganization": {
+          "reference": "urn:uuid:5ccb6bb7-a7f1-46cc-a5d3-135320765553",
+          "display": "Leeds Teaching Hospitals NHS Trust"
+        }
       }
     },
     {
@@ -575,6 +579,10 @@
         },
         "practitionerRole": [
           {
+            "managingOrganization": {
+              "reference": "urn:uuid:5ccb6bb7-a7f1-46cc-a5d3-135320765553",
+              "display": "Leeds Teaching Hospitals NHS Trust"
+            },
             "role": {
               "coding": [
                 {

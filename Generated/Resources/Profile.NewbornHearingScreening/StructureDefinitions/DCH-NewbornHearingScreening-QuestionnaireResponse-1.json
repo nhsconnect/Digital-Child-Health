@@ -1,7 +1,7 @@
 {
   "resourceType": "StructureDefinition",
   "meta": {
-    "lastUpdated": "2017-07-24T16:56:58.188+01:00",
+    "lastUpdated": "2017-08-02T19:55:26.403+01:00",
     "tag": [
       {
         "system": "urn:hscic:publishOrder",
@@ -6655,7 +6655,7 @@
           {
             "code": "Reference",
             "profile": [
-              "https://fhir.hl7.org.uk/StructureDefinition/CareConnect-Organization-1"
+              "https://fhir.hl7.org.uk/StructureDefinition/CareConnect-Location-1"
             ]
           }
         ],
@@ -20441,7 +20441,7 @@
           {
             "code": "Reference",
             "profile": [
-              "https://fhir.hl7.org.uk/StructureDefinition/CareConnect-Organization-1"
+              "https://fhir.hl7.org.uk/StructureDefinition/CareConnect-Location-1"
             ]
           }
         ]

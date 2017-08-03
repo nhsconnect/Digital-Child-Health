@@ -369,11 +369,11 @@
                   "text": "Organisation performing the Immunisation.",
                   "answer": [
                     {
-                      "valueString": "B86022"
+                      "valueString": "RR8"
                     },
                     {
                       "valueReference": {
-                        "reference": "urn:uuid:e9dbf730-5bdc-11e7-907b-a6006ad3dba0"
+                        "reference": "urn:uuid:5ccb6bb7-a7f1-46cc-a5d3-135320765553"
                       }
                     }
                   ]
@@ -645,7 +645,11 @@
             "value": "B86022"
           }
         ],
-        "name": "Wood Town GP practice"
+        "name": "Wood Town GP practice",
+        "managingOrganization": {
+          "reference": "urn:uuid:5ccb6bb7-a7f1-46cc-a5d3-135320765553",
+          "display": "Leeds Teaching Hospitals"
+        }
       }
     },
     {
