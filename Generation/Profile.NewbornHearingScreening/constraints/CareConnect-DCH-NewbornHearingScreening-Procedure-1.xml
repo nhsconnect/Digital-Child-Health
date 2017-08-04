@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <meta>
-    <lastUpdated value="2017-07-31T09:18:56.339+01:00" />
+    <lastUpdated value="2017-08-04T10:59:02.884+01:00" />
     <tag>
       <system value="urn:hscic:publishOrder" />
       <code value="9" />
@@ -299,6 +299,10 @@
     </element>
     <element>
       <path value="Procedure.extension" />
+      <slicing>
+        <discriminator value="url" />
+        <rules value="open" />
+      </slicing>
       <short value="Additional Content defined by implementations" />
       <definition value="May be used to represent additional information that is not part of the basic definition of the resource. In order to make the use of extensions safe and manageable, there is a strict set of governance  applied to the definition and use of extensions. Though any implementer is allowed to define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension." />
       <comments value="There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone." />
@@ -313,6 +317,44 @@
       </base>
       <type>
         <code value="Extension" />
+      </type>
+      <condition value="ele-1" />
+      <constraint>
+        <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-expression">
+          <valueString value="children()" />
+        </extension>
+        <key value="ele-1" />
+        <severity value="error" />
+        <human value="All FHIR elements must have a @value or children" />
+        <xpath value="@value|f:*|h:div" />
+      </constraint>
+      <mapping>
+        <identity value="rim" />
+        <map value="n/a" />
+      </mapping>
+      <mapping>
+        <identity value="rim" />
+        <map value="N/A" />
+      </mapping>
+    </element>
+    <element>
+      <path value="Procedure.extension" />
+      <name value="dateRecorded" />
+      <short value="The date that the event was recorded" />
+      <definition value="The date that the event was recorded." />
+      <comments value="There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone." />
+      <alias value="extensions" />
+      <alias value="user content" />
+      <min value="0" />
+      <max value="1" />
+      <base>
+        <path value="DomainResource.extension" />
+        <min value="0" />
+        <max value="*" />
+      </base>
+      <type>
+        <code value="Extension" />
+        <profile value="https://fhir.hl7.org.uk/StructureDefinition/Extension-CareConnect-DateRecorded-1" />
       </type>
       <condition value="ele-1" />
       <constraint>
@@ -2805,8 +2847,8 @@
       <definition value="A reference to a code defined by a terminology system." />
       <comments value="Codes may be defined very casually in enumerations, or code lists, up to very formal definitions such as SNOMED CT - see the HL7 v3 Core Principles for more information.  Ordering of codings is undefined and SHALL NOT be used to infer meaning. Generally, at most only one of the coding values will be labelled as UserSelected = true." />
       <requirements value="Allows for translations and alternate encodings within a code system.  Also supports communication of the same instance to systems requiring different encodings." />
-      <min value="1" />
-      <max value="1" />
+      <min value="0" />
+      <max value="*" />
       <base>
         <path value="CodeableConcept.coding" />
         <min value="0" />
@@ -3147,7 +3189,7 @@
       <definition value="A reference to a code defined by a terminology system." />
       <comments value="Codes may be defined very casually in enumerations, or code lists, up to very formal definitions such as SNOMED CT - see the HL7 v3 Core Principles for more information.  Ordering of codings is undefined and SHALL NOT be used to infer meaning. Generally, at most only one of the coding values will be labelled as UserSelected = true." />
       <requirements value="Allows for translations and alternate encodings within a code system.  Also supports communication of the same instance to systems requiring different encodings." />
-      <min value="1" />
+      <min value="0" />
       <max value="1" />
       <base>
         <path value="CodeableConcept.coding" />
@@ -5599,7 +5641,7 @@
       <path value="Procedure.performer.actor" />
       <short value="The reference to the practitioner" />
       <definition value="The practitioner who was involved in the procedure." />
-      <min value="1" />
+      <min value="0" />
       <max value="1" />
       <base>
         <path value="Procedure.performer.actor" />
@@ -7979,7 +8021,7 @@
       <type>
         <code value="uri" />
       </type>
-      <fixedUri value="https://fhir.nhs.uk/dch-testoutcome-1" />
+      <fixedUri value="https://fhir.nhs.uk/DCH-TestOutcome-1" />
       <condition value="ele-1" />
       <constraint>
         <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-expression">
@@ -8233,7 +8275,7 @@
       <definition value="This could be a histology result, pathology report, surgical report, etc.." />
       <comments value="There could potentially be multiple reports - e.g. if this was a procedure which took multiple biopsies resulting in a number of anatomical pathology reports." />
       <min value="0" />
-      <max value="0" />
+      <max value="*" />
       <base>
         <path value="Procedure.report" />
         <min value="0" />
@@ -8419,7 +8461,7 @@
       <definition value="Any complications that occurred during the procedure, or in the immediate post-performance period. These are generally tracked separately from the notes, which will typically describe the procedure itself rather than any 'post procedure' issues." />
       <comments value="If complications are only expressed by the narrative text, they can be captured using the CodeableConcept.text." />
       <min value="0" />
-      <max value="0" />
+      <max value="*" />
       <base>
         <path value="Procedure.complication" />
         <min value="0" />
@@ -9314,7 +9356,7 @@
       <definition value="If the procedure required specific follow up - e.g. removal of sutures. The followup may be represented as a simple note, or could potentially be more complex in which case the CarePlan resource can be used." />
       <comments value="Not all terminology uses fit this general pattern. In some cases, models should not use CodeableConcept and use Coding directly and provide their own structure for managing text, codings, translations and the relationship between elements and pre- and post-coordination." />
       <min value="0" />
-      <max value="0" />
+      <max value="*" />
       <base>
         <path value="Procedure.followUp" />
         <min value="0" />
@@ -10253,7 +10295,7 @@
       <definition value="Any other notes about the procedure.  E.g. the operative notes." />
       <comments value="For systems that do not have structured annotations, they can simply communicate a single annotation with no author or time.  This element may need to be included in narrative because of the potential for modifying information.  *Annotations SHOULD NOT* be used to communicate &quot;modifying&quot; information that could be computable. (This is a SHOULD because enforcing user behavior is nearly impossible)." />
       <min value="0" />
-      <max value="0" />
+      <max value="*" />
       <base>
         <path value="Procedure.notes" />
         <min value="0" />
@@ -10361,7 +10403,7 @@
       </mapping>
     </element>
     <element>
-      <path value="Procedure.notes.authorReference" />
+      <path value="Procedure.notes.author[x]" />
       <short value="Individual responsible for the annotation" />
       <definition value="The individual responsible for making the annotation." />
       <min value="0" />
@@ -10373,7 +10415,18 @@
       </base>
       <type>
         <code value="Reference" />
-        <profile value="https://fhir.hl7.org.uk/StructureDefinition/CareConnect-DCH-ChildHealthEvent-Practitioner-1" />
+        <profile value="http://hl7.org/fhir/StructureDefinition/RelatedPerson" />
+      </type>
+      <type>
+        <code value="string" />
+      </type>
+      <type>
+        <code value="Reference" />
+        <profile value="https://fhir.hl7.org.uk/StructureDefinition/CareConnect-Practitioner-1" />
+      </type>
+      <type>
+        <code value="Reference" />
+        <profile value="https://fhir.hl7.org.uk/StructureDefinition/CareConnect-DCH-Patient-1" />
       </type>
       <condition value="ele-1" />
       <constraint>
@@ -10494,7 +10547,7 @@
       <short value="Device changed in procedure" />
       <definition value="A device that is implanted, removed or otherwise manipulated (calibration, battery replacement, fitting a prosthesis, attaching a wound-vac, etc.) as a focal portion of the Procedure." />
       <min value="0" />
-      <max value="0" />
+      <max value="*" />
       <base>
         <path value="Procedure.focalDevice" />
         <min value="0" />
@@ -11311,7 +11364,7 @@
       <comments value="For devices actually implanted or removed, use Procedure.device." />
       <requirements value="Used for tracking contamination, etc." />
       <min value="0" />
-      <max value="0" />
+      <max value="*" />
       <base>
         <path value="Procedure.used" />
         <min value="0" />
@@ -11368,6 +11421,22 @@
         <human value="Reason not performed is only permitted if notPerformed indicator is true" />
         <xpath value="not(exists(f:reasonNotPerformed)) or f:notPerformed/@value=true()" />
       </constraint>
+    </element>
+    <element>
+      <path value="Procedure.extension" />
+      <slicing>
+        <discriminator value="url" />
+        <rules value="open" />
+      </slicing>
+    </element>
+    <element>
+      <path value="Procedure.extension" />
+      <name value="dateRecorded" />
+      <max value="1" />
+      <type>
+        <code value="Extension" />
+        <profile value="https://fhir.hl7.org.uk/StructureDefinition/Extension-CareConnect-DateRecorded-1" />
+      </type>
     </element>
     <element>
       <path value="Procedure.identifier" />
@@ -11459,13 +11528,10 @@
         <ordered value="false" />
         <rules value="open" />
       </slicing>
-      <min value="1" />
-      <max value="1" />
     </element>
     <element>
       <path value="Procedure.code.coding" />
       <name value="SNOMED CT" />
-      <min value="1" />
       <max value="1" />
     </element>
     <element>
@@ -11607,7 +11673,6 @@
     </element>
     <element>
       <path value="Procedure.performer.actor" />
-      <min value="1" />
       <type>
         <code value="Reference" />
         <profile value="https://fhir.hl7.org.uk/StructureDefinition/CareConnect-Practitioner-1" />
@@ -11754,7 +11819,7 @@
     <element>
       <path value="Procedure.outcome.coding.system" />
       <min value="1" />
-      <fixedUri value="https://fhir.nhs.uk/dch-testoutcome-1" />
+      <fixedUri value="https://fhir.nhs.uk/DCH-TestOutcome-1" />
     </element>
     <element>
       <path value="Procedure.outcome.coding.code" />
@@ -11763,14 +11828,6 @@
     <element>
       <path value="Procedure.outcome.coding.display" />
       <min value="1" />
-    </element>
-    <element>
-      <path value="Procedure.report" />
-      <max value="0" />
-    </element>
-    <element>
-      <path value="Procedure.complication" />
-      <max value="0" />
     </element>
     <element>
       <path value="Procedure.complication.coding" />
@@ -11817,10 +11874,6 @@
     <element>
       <path value="Procedure.complication.coding.display" />
       <min value="1" />
-    </element>
-    <element>
-      <path value="Procedure.followUp" />
-      <max value="0" />
     </element>
     <element>
       <path value="Procedure.followUp.coding" />
@@ -11876,23 +11929,25 @@
       </type>
     </element>
     <element>
-      <path value="Procedure.notes" />
-      <max value="0" />
-    </element>
-    <element>
-      <path value="Procedure.notes.authorReference" />
+      <path value="Procedure.notes.author[x]" />
       <type>
         <code value="Reference" />
-        <profile value="https://fhir.hl7.org.uk/StructureDefinition/CareConnect-DCH-ChildHealthEvent-Practitioner-1" />
+        <profile value="http://hl7.org/fhir/StructureDefinition/RelatedPerson" />
+      </type>
+      <type>
+        <code value="string" />
+      </type>
+      <type>
+        <code value="Reference" />
+        <profile value="https://fhir.hl7.org.uk/StructureDefinition/CareConnect-Practitioner-1" />
+      </type>
+      <type>
+        <code value="Reference" />
+        <profile value="https://fhir.hl7.org.uk/StructureDefinition/CareConnect-DCH-Patient-1" />
       </type>
     </element>
     <element>
-      <path value="Procedure.focalDevice" />
-      <max value="0" />
-    </element>
-    <element>
       <path value="Procedure.used" />
-      <max value="0" />
       <type>
         <code value="Reference" />
         <profile value="http://hl7.org/fhir/StructureDefinition/Device" />

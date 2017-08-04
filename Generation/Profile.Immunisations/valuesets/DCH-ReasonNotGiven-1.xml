@@ -3,13 +3,13 @@
 	<meta>
 		<lastUpdated value="2016-08-03T00:00:00+01:00"/>
 	</meta>
-	<url value="https://fhir.nhs.uk/ValueSet/DCH-NotAdministeredReason-1"/>
+	<url value="https://fhir.nhs.uk/ValueSet/DCH-ReasonNotGiven-1"/>
 	<name value="Not Administered Reason"/>
 	<status value="active"/>
 	<description value="The reason why an immunisation was not administered."/>
 	<compose>
 		<include>
-			<system value="https://fhir.nhs.uk/dch-notadministeredreason-1"/>
+			<system value="https://fhir.nhs.uk/DCH-ReasonNotGiven-1"/>
 			<concept>
 				<code value="Did not attend"/>
 				<display value="Did not attend"/>

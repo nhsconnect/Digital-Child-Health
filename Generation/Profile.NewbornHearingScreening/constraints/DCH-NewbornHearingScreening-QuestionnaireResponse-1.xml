@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <meta>
-    <lastUpdated value="2017-08-02T19:55:26.403+01:00" />
+    <lastUpdated value="2017-08-04T18:14:22.56+01:00" />
     <tag>
       <system value="urn:hscic:publishOrder" />
       <code value="6" />
@@ -4651,6 +4651,10 @@
       <type>
         <code value="Reference" />
         <profile value="https://fhir.hl7.org.uk/StructureDefinition/CareConnect-DCH-Encounter-1" />
+      </type>
+      <type>
+        <code value="Reference" />
+        <profile value="https://fhir.hl7.org.uk/StructureDefinition/CareConnect-DCH-NewbornHearingScreening-Procedure-1" />
       </type>
       <condition value="ele-1" />
       <constraint>
@@ -15457,6 +15461,10 @@
       <type>
         <code value="Reference" />
         <profile value="https://fhir.hl7.org.uk/StructureDefinition/CareConnect-DCH-Encounter-1" />
+      </type>
+      <type>
+        <code value="Reference" />
+        <profile value="https://fhir.hl7.org.uk/StructureDefinition/CareConnect-DCH-NewbornHearingScreening-Procedure-1" />
       </type>
     </element>
     <element>

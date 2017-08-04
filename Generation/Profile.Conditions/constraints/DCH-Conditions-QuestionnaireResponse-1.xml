@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <meta>
-    <lastUpdated value="2017-08-02T19:56:28.28+01:00" />
+    <lastUpdated value="2017-08-04T13:02:25.64+01:00" />
     <tag>
       <system value="urn:hscic:publishOrder" />
       <code value="5" />
@@ -3744,6 +3744,10 @@
         <code value="Reference" />
         <profile value="https://fhir.hl7.org.uk/StructureDefinition/CareConnect-DCH-Encounter-1" />
       </type>
+      <type>
+        <code value="Reference" />
+        <profile value="https://fhir.hl7.org.uk/StructureDefinition/CareConnect-DCH-Condition-1" />
+      </type>
       <condition value="ele-1" />
       <constraint>
         <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-expression">
@@ -7227,6 +7231,10 @@
       <type>
         <code value="Reference" />
         <profile value="https://fhir.hl7.org.uk/StructureDefinition/CareConnect-DCH-Encounter-1" />
+      </type>
+      <type>
+        <code value="Reference" />
+        <profile value="https://fhir.hl7.org.uk/StructureDefinition/CareConnect-DCH-Condition-1" />
       </type>
     </element>
     <element>

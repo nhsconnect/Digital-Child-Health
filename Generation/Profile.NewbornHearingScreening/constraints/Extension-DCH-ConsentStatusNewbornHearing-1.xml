@@ -412,7 +412,7 @@
       <type>
         <code value="uri" />
       </type>
-      <fixedUri value="https://fhir.nhs.uk/dch-consentstatusnewbornhearing-1" />
+      <fixedUri value="https://fhir.nhs.uk/DCH-ConsentStatusNewbornHearing-1" />
       <condition value="ele-1" />
       <constraint>
         <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-expression">
@@ -704,7 +704,7 @@
     <element>
       <path value="Extension.valueCodeableConcept.coding.system" />
       <min value="1" />
-      <fixedUri value="https://fhir.nhs.uk/dch-consentstatusnewbornhearing-1" />
+      <fixedUri value="https://fhir.nhs.uk/DCH-ConsentStatusNewbornHearing-1" />
     </element>
     <element>
       <path value="Extension.valueCodeableConcept.coding.code" />

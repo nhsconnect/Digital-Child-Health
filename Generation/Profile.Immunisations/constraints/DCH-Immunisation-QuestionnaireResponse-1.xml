@@ -4511,7 +4511,7 @@
       </type>
       <type>
         <code value="Reference" />
-        <profile value="https://fhir.hl7.org.uk/StructureDefinition/CareConnect-DCH-VaccinationRequirement-Condition-1" />
+        <profile value="https://fhir.hl7.org.uk/StructureDefinition/CareConnect-DCH-Condition-1" />
       </type>
       <condition value="ele-1" />
       <constraint>
@@ -4922,7 +4922,7 @@
       </type>
       <type>
         <code value="Reference" />
-        <profile value="https://fhir.hl7.org.uk/StructureDefinition/CareConnect-DCH-VaccinationRequirement-Condition-1" />
+        <profile value="https://fhir.hl7.org.uk/StructureDefinition/CareConnect-DCH-Condition-1" />
       </type>
       <condition value="ele-1" />
       <constraint>
@@ -6243,7 +6243,7 @@
       </type>
       <type>
         <code value="Reference" />
-        <profile value="https://fhir.hl7.org.uk/StructureDefinition/CareConnect-DCH-VaccinationRequirement-Condition-1" />
+        <profile value="https://fhir.hl7.org.uk/StructureDefinition/CareConnect-DCH-Condition-1" />
       </type>
       <condition value="ele-1" />
       <constraint>
@@ -6654,7 +6654,7 @@
       </type>
       <type>
         <code value="Reference" />
-        <profile value="https://fhir.hl7.org.uk/StructureDefinition/CareConnect-DCH-VaccinationRequirement-Condition-1" />
+        <profile value="https://fhir.hl7.org.uk/StructureDefinition/CareConnect-DCH-Condition-1" />
       </type>
       <condition value="ele-1" />
       <constraint>
@@ -7065,7 +7065,7 @@
       </type>
       <type>
         <code value="Reference" />
-        <profile value="https://fhir.hl7.org.uk/StructureDefinition/CareConnect-DCH-VaccinationRequirement-Condition-1" />
+        <profile value="https://fhir.hl7.org.uk/StructureDefinition/CareConnect-DCH-Condition-1" />
       </type>
       <condition value="ele-1" />
       <constraint>
@@ -7476,7 +7476,7 @@
       </type>
       <type>
         <code value="Reference" />
-        <profile value="https://fhir.hl7.org.uk/StructureDefinition/CareConnect-DCH-VaccinationRequirement-Condition-1" />
+        <profile value="https://fhir.hl7.org.uk/StructureDefinition/CareConnect-DCH-Condition-1" />
       </type>
       <condition value="ele-1" />
       <constraint>
@@ -7887,7 +7887,7 @@
       </type>
       <type>
         <code value="Reference" />
-        <profile value="https://fhir.hl7.org.uk/StructureDefinition/CareConnect-DCH-VaccinationRequirement-Condition-1" />
+        <profile value="https://fhir.hl7.org.uk/StructureDefinition/CareConnect-DCH-Condition-1" />
       </type>
       <condition value="ele-1" />
       <constraint>
@@ -18194,7 +18194,7 @@
       </type>
       <type>
         <code value="Reference" />
-        <profile value="https://fhir.hl7.org.uk/StructureDefinition/CareConnect-DCH-VaccinationRequirement-Condition-1" />
+        <profile value="https://fhir.hl7.org.uk/StructureDefinition/CareConnect-DCH-Condition-1" />
       </type>
     </element>
     <element>
@@ -18233,7 +18233,7 @@
       </type>
       <type>
         <code value="Reference" />
-        <profile value="https://fhir.hl7.org.uk/StructureDefinition/CareConnect-DCH-VaccinationRequirement-Condition-1" />
+        <profile value="https://fhir.hl7.org.uk/StructureDefinition/CareConnect-DCH-Condition-1" />
       </type>
     </element>
     <element>
@@ -18311,7 +18311,7 @@
       </type>
       <type>
         <code value="Reference" />
-        <profile value="https://fhir.hl7.org.uk/StructureDefinition/CareConnect-DCH-VaccinationRequirement-Condition-1" />
+        <profile value="https://fhir.hl7.org.uk/StructureDefinition/CareConnect-DCH-Condition-1" />
       </type>
     </element>
     <element>
@@ -18350,7 +18350,7 @@
       </type>
       <type>
         <code value="Reference" />
-        <profile value="https://fhir.hl7.org.uk/StructureDefinition/CareConnect-DCH-VaccinationRequirement-Condition-1" />
+        <profile value="https://fhir.hl7.org.uk/StructureDefinition/CareConnect-DCH-Condition-1" />
       </type>
     </element>
     <element>
@@ -18389,7 +18389,7 @@
       </type>
       <type>
         <code value="Reference" />
-        <profile value="https://fhir.hl7.org.uk/StructureDefinition/CareConnect-DCH-VaccinationRequirement-Condition-1" />
+        <profile value="https://fhir.hl7.org.uk/StructureDefinition/CareConnect-DCH-Condition-1" />
       </type>
     </element>
     <element>
@@ -18428,7 +18428,7 @@
       </type>
       <type>
         <code value="Reference" />
-        <profile value="https://fhir.hl7.org.uk/StructureDefinition/CareConnect-DCH-VaccinationRequirement-Condition-1" />
+        <profile value="https://fhir.hl7.org.uk/StructureDefinition/CareConnect-DCH-Condition-1" />
       </type>
     </element>
     <element>
@@ -18467,7 +18467,7 @@
       </type>
       <type>
         <code value="Reference" />
-        <profile value="https://fhir.hl7.org.uk/StructureDefinition/CareConnect-DCH-VaccinationRequirement-Condition-1" />
+        <profile value="https://fhir.hl7.org.uk/StructureDefinition/CareConnect-DCH-Condition-1" />
       </type>
     </element>
     <element>

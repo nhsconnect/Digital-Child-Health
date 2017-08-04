@@ -3,6 +3,10 @@
 
 ### Experimental Phase #
 
+When referring to the pack, please note that the current approach to profiling the events is applied to the Wave 2 events. 
+
+The Wave 1 events used an initial approach experimenting with the different profiling options with the initial set of requirements. These Wave 1 events will be changed to use the profiling approach in Wave 2 events, and also because the information requirements they are intended to support will have changed since their creation. Where a Care Connect profile has been used, elements have not been profiled out. Where changes have been made, these are intended to support requirements that are specific to Child Health event messages.
+
 **Events Catalogue Wave 1 of the Personal Child Health Record and Healthy Child Programme**
 
 This initial experimental version adds FHIR profiles to support the following Digital Child Health Event messages:
@@ -40,7 +44,6 @@ This initial experimental version adds FHIR profiles to support the following Di
 - Risk Factors
 - Social History
 
-Note the FHIR profiles for the Events Catalogue Wave 1 are expected to be updated to match Wave 2 FHIR profiling in a later instance of this specification.
 
 **XML Examples**
 

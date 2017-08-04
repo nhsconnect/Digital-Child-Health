@@ -1,11 +1,11 @@
-<?xml version="1.0" encoding="utf-8"?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <meta>
-    <lastUpdated value="2017-07-27T19:21:24.984+01:00" />
-		<tag>
-			<system value="urn:hscic:publishOrder"/>
-			<code value="11"/>
-		</tag>    
+    <lastUpdated value="2017-08-04T15:03:23.41+01:00" />
+    <tag>
+      <system value="urn:hscic:publishOrder" />
+      <code value="11" />
+    </tag>
   </meta>
   <url value="https://fhir.hl7.org.uk/StructureDefinition/CareConnect-DCH-Immunization-1" />
   <version value="1.0.0" />
@@ -7011,10 +7011,10 @@
       </constraint>
       <isSummary value="true" />
       <binding>
-        <strength value="example" />
+        <strength value="required" />
         <description value="The reason why a vaccine was not administered" />
         <valueSetReference>
-          <reference value="http://hl7.org/fhir/ValueSet/no-immunization-reason" />
+          <reference value="https://fhir.nhs.uk/ValueSet/DCH-ReasonNotGiven-1" />
         </valueSetReference>
       </binding>
       <mapping>
@@ -7246,6 +7246,7 @@
       <type>
         <code value="uri" />
       </type>
+      <fixedUri value="https://fhir.nhs.uk/DCH-ReasonNotGiven-1" />
       <condition value="ele-1" />
       <constraint>
         <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-expression">
@@ -10528,6 +10529,19 @@
         <code value="Reference" />
         <profile value="https://fhir.hl7.org.uk/StructureDefinition/CareConnect-DCH-Patient-1" />
       </type>
+    </element>
+    <element>
+      <path value="Immunization.explanation.reasonNotGiven" />
+      <binding>
+        <strength value="required" />
+        <valueSetReference>
+          <reference value="https://fhir.nhs.uk/ValueSet/DCH-ReasonNotGiven-1" />
+        </valueSetReference>
+      </binding>
+    </element>
+    <element>
+      <path value="Immunization.explanation.reasonNotGiven.coding.system" />
+      <fixedUri value="https://fhir.nhs.uk/DCH-ReasonNotGiven-1" />
     </element>
     <element>
       <path value="Immunization.reaction.detail" />

@@ -229,7 +229,7 @@
 						<text value="A code to identify how the Accident and Emergency Attendance ended."/>
 						<answer>
 							<valueCoding>
-								<system value="https://fhir.nhs.uk/dch-disposalcode-1"/>
+								<system value="https://fhir.nhs.uk/DCH-DisposalCode-1"/>
 								<code value="02"/>
 								<display value="Discharged - follow up treatment to be provided by GENERAL PRACTITIONER"/>
 							</valueCoding>
