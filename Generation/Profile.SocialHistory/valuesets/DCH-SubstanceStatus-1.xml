@@ -6,7 +6,7 @@
 	<url value="https://fhir.nhs.uk/ValueSet/DCH-SubstanceStatus-1"/>
 	<copyright value="Copyright © 2016 Health and Social Care Information Centre. NHS Digital is the trading name of the Health and Social Care Information Centre."/>
 	<version value="1.0.0"/>
-	<name value="Substance Status."/>
+	<name value="Substance Status"/>
 	<status value="draft"/>
 	<publisher value="NHS Digital"/>
 	<description value="The self-reported status of whether or not non medicinal drugs or other substances have been used or are being used."/>
