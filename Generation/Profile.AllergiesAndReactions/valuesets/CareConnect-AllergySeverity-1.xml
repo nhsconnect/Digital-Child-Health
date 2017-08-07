@@ -1,12 +1,12 @@
 <ValueSet xmlns="http://hl7.org/fhir">
 	<meta>
-		<lastUpdated value="2016-08-03T00:00:00+01:00"/>
+		<lastUpdated value="2017-07-31T00:00:00+01:00"/>
 	</meta>
 	<extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm">
 		<valueInteger value="1"/>
 	</extension>
 	<url value="https://fhir.hl7.org.uk/ValueSet/CareConnect-AllergySeverity-1"/>
-	<version value="1.0.0"/>
+	<version value="1.1.0"/>
 	<name value="Care Connect Allergy Severity"/>
 	<status value="active"/>
 	<publisher value="HL7 UK"/>
@@ -25,11 +25,11 @@
 			</concept>
 			<concept>
 				<code value="24484000"/>
-				<display value="Mild (qualifier value)"/>
+				<display value="Severe (severity modifier) (qualifier value)"/>
 			</concept>
 			<concept>
-				<code value="255604002"/>
-				<display value="Severe (severity modifier) (qualifier value)"/>
+				<code value="442452003"/>
+				<display value="Life threatening severity (qualifier value)"/>
 			</concept>
 			<concept>
 				<code value="399166001"/>

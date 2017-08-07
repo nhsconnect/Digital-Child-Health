@@ -1,12 +1,12 @@
 <ValueSet xmlns="http://hl7.org/fhir">
 	<meta>
-		<lastUpdated value="2016-08-03T00:00:00+01:00"/>
+		<lastUpdated value="2017-07-31T00:00:00+01:00"/>
 	</meta>
 	<extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm">
 		<valueInteger value="1"/>
 	</extension>
 	<url value="https://fhir.hl7.org.uk/ValueSet/CareConnect-AllergyCertainty-1"/>
-	<version value="1.0.0"/>
+	<version value="1.1.0"/>
 	<name value="Care Connect Allergy Certainty"/>
 	<status value="active"/>
 	<publisher value="HL7 UK"/>
@@ -16,12 +16,12 @@
 		<include>
 			<system value="http://snomed.info/sct"/>
 			<concept>
-				<code value="1491118016"/>
-				<display value="Unlikely [The reaction is thought unlikely to have been caused by the agent.]"/>
+				<code value="385434005"/>
+				<display value="Improbable diagnosis (contextual qualifier) (qualifier value)"/>
 			</concept>
 			<concept>
-				<code value="5961011"/>
-				<display value="Likely [The reaction is thought likely to have been caused by the agent.]"/>
+				<code value="2931005"/>
+				<display value="Probable diagnosis (contextual qualifier) (qualifier value)"/>
 			</concept>
 			<concept>
 				<code value="255545003"/>
@@ -29,7 +29,7 @@
 			</concept>
 			<concept>
 				<code value="410605003"/>
-				<display value="(Confirmed present (qualifier value))"/>
+				<display value="Confirmed present (qualifier value)"/>
 			</concept>
 		</include>
 	</compose>

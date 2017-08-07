@@ -11172,6 +11172,7 @@
     <element>
       <path value="MedicationOrder.reasonEnded.coding.extension" />
       <name value="snomedCTDescriptionID" />
+      <short value="The SNOMED CT Description ID for the display" />
       <type>
         <code value="Extension" />
         <profile value="https://fhir.hl7.org.uk/StructureDefinition/Extension-coding-sctdescid" />
@@ -11283,6 +11284,7 @@
     <element>
       <path value="MedicationOrder.dosageInstruction.additionalInstructions.coding.extension" />
       <name value="snomedCTDescriptionID" />
+      <short value="The SNOMED CT Description ID for the display" />
       <max value="1" />
       <type>
         <code value="Extension" />
@@ -11339,6 +11341,7 @@
     <element>
       <path value="MedicationOrder.dosageInstruction.route.coding.extension" />
       <name value="snomedCTDescriptionID" />
+      <short value="The SNOMED CT Description ID for the display" />
       <max value="1" />
       <type>
         <code value="Extension" />
@@ -11392,6 +11395,7 @@
     <element>
       <path value="MedicationOrder.dosageInstruction.method.coding.extension" />
       <name value="snomedCTDescriptionID" />
+      <short value="The SNOMED CT Description ID for the display" />
       <max value="1" />
       <type>
         <code value="Extension" />
@@ -11437,6 +11441,7 @@
     <element>
       <path value="MedicationOrder.dispenseRequest.quantity.extension" />
       <name value="quantityText" />
+      <short value="Quantity representation" />
       <max value="1" />
       <type>
         <code value="Extension" />

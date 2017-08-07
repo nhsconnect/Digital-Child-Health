@@ -12635,7 +12635,7 @@
         <strength value="required" />
         <description value="The reason why an immunisation was not administered." />
         <valueSetReference>
-          <reference value="https://fhir.nhs.uk/ValueSet/DCH-NotAdministeredReason-1" />
+          <reference value="https://fhir.nhs.uk/ValueSet/DCH-ReasonNotGiven-1" />
         </valueSetReference>
       </binding>
       <mapping>
@@ -18883,7 +18883,7 @@
         <strength value="required" />
         <description value="The reason why an immunisation was not administered." />
         <valueSetReference>
-          <reference value="https://fhir.nhs.uk/ValueSet/DCH-NotAdministeredReason-1" />
+          <reference value="https://fhir.nhs.uk/ValueSet/DCH-ReasonNotGiven-1" />
         </valueSetReference>
       </binding>
     </element>
