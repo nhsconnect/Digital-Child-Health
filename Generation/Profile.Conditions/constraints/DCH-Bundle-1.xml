@@ -1,12 +1,13 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <meta>
-    <lastUpdated value="2017-08-03T14:46:51.617+01:00" />
+    <lastUpdated value="2017-08-07T12:41:18.212+01:00" />
     <tag>
       <system value="urn:hscic:publishOrder" />
       <code value="1" />
     </tag>
     <tag>
+      <system value="urn:hscic:examples" />
       <code value="DCH-Bundle-Conditions" />
       <display value="DCH-Bundle-Conditions" />
     </tag>
