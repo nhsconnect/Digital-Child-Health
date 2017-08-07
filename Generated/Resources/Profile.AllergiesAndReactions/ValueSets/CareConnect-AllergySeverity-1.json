@@ -1,7 +1,7 @@
 {
   "resourceType": "ValueSet",
   "meta": {
-    "lastUpdated": "2016-08-03T00:00:00+01:00"
+    "lastUpdated": "2017-07-31T00:00:00+01:00"
   },
   "extension": [
     {
@@ -10,7 +10,7 @@
     }
   ],
   "url": "https://fhir.hl7.org.uk/ValueSet/CareConnect-AllergySeverity-1",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "name": "Care Connect Allergy Severity",
   "status": "active",
   "publisher": "HL7 UK",
@@ -31,11 +31,11 @@
           },
           {
             "code": "24484000",
-            "display": "Mild (qualifier value)"
+            "display": "Severe (severity modifier) (qualifier value)"
           },
           {
-            "code": "255604002",
-            "display": "Severe (severity modifier) (qualifier value)"
+            "code": "442452003",
+            "display": "Life threatening severity (qualifier value)"
           },
           {
             "code": "399166001",

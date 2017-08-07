@@ -1,7 +1,7 @@
 {
   "resourceType": "ValueSet",
   "meta": {
-    "lastUpdated": "2016-08-03T00:00:00+01:00"
+    "lastUpdated": "2017-07-31T00:00:00+01:00"
   },
   "extension": [
     {
@@ -10,7 +10,7 @@
     }
   ],
   "url": "https://fhir.hl7.org.uk/ValueSet/CareConnect-AllergyCertainty-1",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "name": "Care Connect Allergy Certainty",
   "status": "active",
   "publisher": "HL7 UK",
@@ -22,12 +22,12 @@
         "system": "http://snomed.info/sct",
         "concept": [
           {
-            "code": "1491118016",
-            "display": "Unlikely [The reaction is thought unlikely to have been caused by the agent.]"
+            "code": "385434005",
+            "display": "Improbable diagnosis (contextual qualifier) (qualifier value)"
           },
           {
-            "code": "5961011",
-            "display": "Likely [The reaction is thought likely to have been caused by the agent.]"
+            "code": "2931005",
+            "display": "Probable diagnosis (contextual qualifier) (qualifier value)"
           },
           {
             "code": "255545003",
@@ -35,7 +35,7 @@
           },
           {
             "code": "410605003",
-            "display": "(Confirmed present (qualifier value))"
+            "display": "Confirmed present (qualifier value)"
           }
         ]
       }

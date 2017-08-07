@@ -1,7 +1,7 @@
 {
   "resourceType": "StructureDefinition",
   "meta": {
-    "lastUpdated": "2017-08-02T19:56:28.28+01:00",
+    "lastUpdated": "2017-08-04T13:02:25.64+01:00",
     "tag": [
       {
         "system": "urn:hscic:publishOrder",
@@ -4908,6 +4908,12 @@
             "profile": [
               "https://fhir.hl7.org.uk/StructureDefinition/CareConnect-DCH-Encounter-1"
             ]
+          },
+          {
+            "code": "Reference",
+            "profile": [
+              "https://fhir.hl7.org.uk/StructureDefinition/CareConnect-DCH-Condition-1"
+            ]
           }
         ],
         "condition": [
@@ -9528,6 +9534,12 @@
             "code": "Reference",
             "profile": [
               "https://fhir.hl7.org.uk/StructureDefinition/CareConnect-DCH-Encounter-1"
+            ]
+          },
+          {
+            "code": "Reference",
+            "profile": [
+              "https://fhir.hl7.org.uk/StructureDefinition/CareConnect-DCH-Condition-1"
             ]
           }
         ]

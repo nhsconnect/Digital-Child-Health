@@ -1,7 +1,7 @@
 {
   "resourceType": "StructureDefinition",
   "meta": {
-    "lastUpdated": "2017-08-02T19:55:04.392+01:00",
+    "lastUpdated": "2017-08-04T15:39:28.205+01:00",
     "tag": [
       {
         "system": "urn:hscic:publishOrder",
@@ -2828,7 +2828,7 @@
           "Date updated"
         ],
         "min": 0,
-        "max": "0",
+        "max": "1",
         "base": {
           "path": "QuestionnaireResponse.authored",
           "min": 0,
@@ -21944,10 +21944,6 @@
       {
         "path": "QuestionnaireResponse.author.reference",
         "min": 1
-      },
-      {
-        "path": "QuestionnaireResponse.authored",
-        "max": "0"
       },
       {
         "path": "QuestionnaireResponse.source",

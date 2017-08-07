@@ -106,7 +106,7 @@
         ],
         "name": [
           {
-            "use": "official",
+            "use": "usual",
             "family": [
               "Saxton"
             ],
@@ -394,10 +394,6 @@
         },
         "encounter": {
           "reference": "urn:uuid:a8caa0ae-72aa-11e7-8cf7-a6006ad3dba0"
-        },
-        "location": {
-          "reference": "urn:uuid:e9dbf730-5bdc-11e7-907b-a6006ad3dba0",
-          "display": "Wood Town GP Practice"
         },
         "request": {
           "reference": "urn:uuid:e9dc055e-5bdc-11e7-907b-a6006ad3dba0"

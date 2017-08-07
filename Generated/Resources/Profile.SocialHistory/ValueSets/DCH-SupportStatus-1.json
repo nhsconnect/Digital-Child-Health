@@ -5,7 +5,7 @@
   },
   "url": "https://fhir.nhs.uk/ValueSet/DCH-SupportStatus-1",
   "version": "1.0.0",
-  "name": "Support Status.",
+  "name": "Support Status",
   "status": "active",
   "publisher": "NHS Digital",
   "description": "Whether or not the mother feels she is supported in pregnancy and looking after a baby, from partner, family or friends.",

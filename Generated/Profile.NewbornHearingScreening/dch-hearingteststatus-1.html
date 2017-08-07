@@ -152,7 +152,7 @@
 							
 <div class="panel panel - default" xmlns="http://www.w3.org/1999/xhtml">
   <div class="panel-heading">
-    <h3 class="panel-title">Screening Outcome</h3>
+    <h3 class="panel-title">Hearing Test Status</h3>
   </div>
   <div class="panel-body">
     <div class="valueset-content">
@@ -166,14 +166,18 @@
           </tr>
           <tr>
             <td>Defining URL:</td>
-            <td>https://fhir.nhs.uk/ValueSet/DCH-ScreeningOutcome-1</td>
+            <td>https://fhir.nhs.uk/ValueSet/DCH-HearingTestStatus-1</td>
             <tr>
               <td>Name:</td>
-              <td>Screening Outcome</td>
+              <td>Hearing Test Status</td>
             </tr>
             <tr>
               <td>Definition:</td>
-              <td>The outcome of the newborn hearing screening.</td>
+              <td>Whether the newborn hearing screening was completed.</td>
+            </tr>
+            <tr>
+              <td>Copyright:</td>
+              <td>Copyright © 2016 Health and Social Care Information Centre. NHS Digital is the trading name of the Health and Social Care Information Centre.</td>
             </tr>
             <tr>
               <td>Status:</td>
@@ -187,7 +191,7 @@
               <td>Source Resource:</td>
               <td>
                 <p>
-                  <a target="_blank" href="..\Resources\Profile.NewbornHearingScreening\ValueSets\DCH-ScreeningOutcome-1.xml">XML</a> / <a target="_blank" href="..\Resources\Profile.NewbornHearingScreening\ValueSets\DCH-ScreeningOutcome-1.json">JSON</a></p>
+                  <a target="_blank" href="..\Resources\Profile.NewbornHearingScreening\ValueSets\DCH-HearingTestStatus-1.xml">XML</a> / <a target="_blank" href="..\Resources\Profile.NewbornHearingScreening\ValueSets\DCH-HearingTestStatus-1.json">JSON</a></p>
               </td>
             </tr>
           </tr>
@@ -195,7 +199,7 @@
         <p />
       </div>
       <div class="logical-definition">
-        <p>Include these codes as defined in https://fhir.nhs.uk/DCH-ScreeningOutcome-1 :<br /></p>
+        <p>Include these codes as defined in https://fhir.nhs.uk/DCH-HearingTestStatus-1 :<br /></p>
         <div class="codeSystem-table">
           <table>
             <tr class="table-header">
@@ -204,115 +208,17 @@
             </tr>
             <div class="table-rows">
               <tr>
-                <td>1</td>
+                <td>Test Completed - Yes</td>
                 <td>
-                  <p>Clear response no follow up required</p>
-                  <a name="Clear response no follow up required" />
+                  <p>Test Completed - Yes</p>
+                  <a name="Test Completed - Yes" />
                 </td>
               </tr>
               <tr>
-                <td>2</td>
+                <td>Test Completed - No</td>
                 <td>
-                  <p>Clear response targeted follow-up required</p>
-                  <a name="Clear response targeted follow-up required" />
-                </td>
-              </tr>
-              <tr>
-                <td>3</td>
-                <td>
-                  <p>No clear response bilateral referral</p>
-                  <a name="No clear response bilateral referral" />
-                </td>
-              </tr>
-              <tr>
-                <td>4</td>
-                <td>
-                  <p>No clear response unilateral referral</p>
-                  <a name="No clear response unilateral referral" />
-                </td>
-              </tr>
-              <tr>
-                <td>5</td>
-                <td>
-                  <p>Incomplete - screening contraindicated</p>
-                  <a name="Incomplete - screening contraindicated" />
-                </td>
-              </tr>
-              <tr>
-                <td>6</td>
-                <td>
-                  <p>Incomplete - baby deceased</p>
-                  <a name="Incomplete - baby deceased" />
-                </td>
-              </tr>
-              <tr>
-                <td>7</td>
-                <td>
-                  <p>Incomplete - baby unsettled</p>
-                  <a name="Incomplete - baby unsettled" />
-                </td>
-              </tr>
-              <tr>
-                <td>8</td>
-                <td>
-                  <p>Incomplete - parent declined screening</p>
-                  <a name="Incomplete - parent declined screening" />
-                </td>
-              </tr>
-              <tr>
-                <td>9</td>
-                <td>
-                  <p>Incomplete - appointment missed</p>
-                  <a name="Incomplete - appointment missed" />
-                </td>
-              </tr>
-              <tr>
-                <td>10</td>
-                <td>
-                  <p>Incomplete - lack of service capacity</p>
-                  <a name="Incomplete - lack of service capacity" />
-                </td>
-              </tr>
-              <tr>
-                <td>11</td>
-                <td>
-                  <p>Incomplete - lost contact</p>
-                  <a name="Incomplete - lost contact" />
-                </td>
-              </tr>
-              <tr>
-                <td>12</td>
-                <td>
-                  <p>Incomplete - out of screening coverage</p>
-                  <a name="Incomplete - out of screening coverage" />
-                </td>
-              </tr>
-              <tr>
-                <td>13</td>
-                <td>
-                  <p>Incomplete - late entry</p>
-                  <a name="Incomplete - late entry" />
-                </td>
-              </tr>
-              <tr>
-                <td>14</td>
-                <td>
-                  <p>Incomplete - equipment malfunction</p>
-                  <a name="Incomplete - equipment malfunction" />
-                </td>
-              </tr>
-              <tr>
-                <td>15</td>
-                <td>
-                  <p>Incomplete - equipment not available</p>
-                  <a name="Incomplete - equipment not available" />
-                </td>
-              </tr>
-              <tr>
-                <td>16</td>
-                <td>
-                  <p>Incomplete - parent withdrew consent</p>
-                  <a name="Incomplete - parent withdrew consent" />
+                  <p>Test Completed - No</p>
+                  <a name="Test Completed - No" />
                 </td>
               </tr>
             </div>

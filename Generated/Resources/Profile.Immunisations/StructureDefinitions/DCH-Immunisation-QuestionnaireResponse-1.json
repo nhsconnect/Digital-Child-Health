@@ -5920,7 +5920,7 @@
           {
             "code": "Reference",
             "profile": [
-              "https://fhir.hl7.org.uk/StructureDefinition/CareConnect-DCH-VaccinationRequirement-Condition-1"
+              "https://fhir.hl7.org.uk/StructureDefinition/CareConnect-DCH-Condition-1"
             ]
           }
         ],
@@ -6469,7 +6469,7 @@
           {
             "code": "Reference",
             "profile": [
-              "https://fhir.hl7.org.uk/StructureDefinition/CareConnect-DCH-VaccinationRequirement-Condition-1"
+              "https://fhir.hl7.org.uk/StructureDefinition/CareConnect-DCH-Condition-1"
             ]
           }
         ],
@@ -8221,7 +8221,7 @@
           {
             "code": "Reference",
             "profile": [
-              "https://fhir.hl7.org.uk/StructureDefinition/CareConnect-DCH-VaccinationRequirement-Condition-1"
+              "https://fhir.hl7.org.uk/StructureDefinition/CareConnect-DCH-Condition-1"
             ]
           }
         ],
@@ -8770,7 +8770,7 @@
           {
             "code": "Reference",
             "profile": [
-              "https://fhir.hl7.org.uk/StructureDefinition/CareConnect-DCH-VaccinationRequirement-Condition-1"
+              "https://fhir.hl7.org.uk/StructureDefinition/CareConnect-DCH-Condition-1"
             ]
           }
         ],
@@ -9319,7 +9319,7 @@
           {
             "code": "Reference",
             "profile": [
-              "https://fhir.hl7.org.uk/StructureDefinition/CareConnect-DCH-VaccinationRequirement-Condition-1"
+              "https://fhir.hl7.org.uk/StructureDefinition/CareConnect-DCH-Condition-1"
             ]
           }
         ],
@@ -9868,7 +9868,7 @@
           {
             "code": "Reference",
             "profile": [
-              "https://fhir.hl7.org.uk/StructureDefinition/CareConnect-DCH-VaccinationRequirement-Condition-1"
+              "https://fhir.hl7.org.uk/StructureDefinition/CareConnect-DCH-Condition-1"
             ]
           }
         ],
@@ -10417,7 +10417,7 @@
           {
             "code": "Reference",
             "profile": [
-              "https://fhir.hl7.org.uk/StructureDefinition/CareConnect-DCH-VaccinationRequirement-Condition-1"
+              "https://fhir.hl7.org.uk/StructureDefinition/CareConnect-DCH-Condition-1"
             ]
           }
         ],
@@ -16732,7 +16732,7 @@
           "strength": "required",
           "description": "The reason why an immunisation was not administered.",
           "valueSetReference": {
-            "reference": "https://fhir.nhs.uk/ValueSet/DCH-NotAdministeredReason-1"
+            "reference": "https://fhir.nhs.uk/ValueSet/DCH-ReasonNotGiven-1"
           }
         },
         "mapping": [
@@ -24125,7 +24125,7 @@
           {
             "code": "Reference",
             "profile": [
-              "https://fhir.hl7.org.uk/StructureDefinition/CareConnect-DCH-VaccinationRequirement-Condition-1"
+              "https://fhir.hl7.org.uk/StructureDefinition/CareConnect-DCH-Condition-1"
             ]
           }
         ]
@@ -24171,7 +24171,7 @@
           {
             "code": "Reference",
             "profile": [
-              "https://fhir.hl7.org.uk/StructureDefinition/CareConnect-DCH-VaccinationRequirement-Condition-1"
+              "https://fhir.hl7.org.uk/StructureDefinition/CareConnect-DCH-Condition-1"
             ]
           }
         ]
@@ -24264,7 +24264,7 @@
           {
             "code": "Reference",
             "profile": [
-              "https://fhir.hl7.org.uk/StructureDefinition/CareConnect-DCH-VaccinationRequirement-Condition-1"
+              "https://fhir.hl7.org.uk/StructureDefinition/CareConnect-DCH-Condition-1"
             ]
           }
         ]
@@ -24310,7 +24310,7 @@
           {
             "code": "Reference",
             "profile": [
-              "https://fhir.hl7.org.uk/StructureDefinition/CareConnect-DCH-VaccinationRequirement-Condition-1"
+              "https://fhir.hl7.org.uk/StructureDefinition/CareConnect-DCH-Condition-1"
             ]
           }
         ]
@@ -24356,7 +24356,7 @@
           {
             "code": "Reference",
             "profile": [
-              "https://fhir.hl7.org.uk/StructureDefinition/CareConnect-DCH-VaccinationRequirement-Condition-1"
+              "https://fhir.hl7.org.uk/StructureDefinition/CareConnect-DCH-Condition-1"
             ]
           }
         ]
@@ -24402,7 +24402,7 @@
           {
             "code": "Reference",
             "profile": [
-              "https://fhir.hl7.org.uk/StructureDefinition/CareConnect-DCH-VaccinationRequirement-Condition-1"
+              "https://fhir.hl7.org.uk/StructureDefinition/CareConnect-DCH-Condition-1"
             ]
           }
         ]
@@ -24448,7 +24448,7 @@
           {
             "code": "Reference",
             "profile": [
-              "https://fhir.hl7.org.uk/StructureDefinition/CareConnect-DCH-VaccinationRequirement-Condition-1"
+              "https://fhir.hl7.org.uk/StructureDefinition/CareConnect-DCH-Condition-1"
             ]
           }
         ]
@@ -24945,7 +24945,7 @@
           "strength": "required",
           "description": "The reason why an immunisation was not administered.",
           "valueSetReference": {
-            "reference": "https://fhir.nhs.uk/ValueSet/DCH-NotAdministeredReason-1"
+            "reference": "https://fhir.nhs.uk/ValueSet/DCH-ReasonNotGiven-1"
           }
         }
       },

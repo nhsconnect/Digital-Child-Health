@@ -106,7 +106,7 @@
         ],
         "name": [
           {
-            "use": "official",
+            "use": "usual",
             "family": [
               "Saxton"
             ],
@@ -282,7 +282,7 @@
               "answer": [
                 {
                   "valueCoding": {
-                    "system": "https://fhir.nhs.uk/dch-disposalcode-1",
+                    "system": "https://fhir.nhs.uk/DCH-DisposalCode-1",
                     "code": "02",
                     "display": "Discharged - follow up treatment to be provided by GENERAL PRACTITIONER"
                   }
@@ -337,9 +337,9 @@
           {
             "coding": [
               {
-                "system": "http://snomed.info/sct",
-                "code": "4525004",
-                "display": "Emergency department patient visit (procedure)"
+                "system": "https://fhir.nhs.uk/DCH-ChildHealthEventType-1",
+                "code": "Accidents and Injuries",
+                "display": "Accidents and Injuries"
               }
             ]
           }
@@ -355,8 +355,8 @@
                 "coding": [
                   {
                     "system": "http://hl7.org/fhir/v3/ParticipationType",
-                    "code": "ATND",
-                    "display": "attender"
+                    "code": "PPRF",
+                    "display": "primary performer"
                   }
                 ]
               }
@@ -485,7 +485,6 @@
             }
           ]
         },
-        "clinicalStatus": "active",
         "verificationStatus": "confirmed",
         "onsetDateTime": "2012-03-06T16:00:00+00:00"
       }
@@ -527,7 +526,9 @@
           "given": [
             "Jane"
           ]
-        }
+        },
+        "gender": "female",
+        "birthDate": "1988-01-31"
       }
     },
     {

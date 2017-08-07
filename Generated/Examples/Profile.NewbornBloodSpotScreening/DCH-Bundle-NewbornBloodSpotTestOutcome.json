@@ -71,26 +71,7 @@
             "value": "695N0"
           }
         ],
-        "name": "Leeds General Infirmary Laboratory",
-        "telecom": [
-          {
-            "system": "phone",
-            "value": "01133928766",
-            "use": "work"
-          }
-        ],
-        "address": [
-          {
-            "use": "work",
-            "type": "both",
-            "line": [
-              "1, Main Street"
-            ],
-            "city": "Leeds",
-            "district": "West Yorkshire",
-            "postalCode": "LS1 3PO"
-          }
-        ]
+        "name": "Leeds General Infirmary Laboratory"
       }
     },
     {
@@ -125,7 +106,7 @@
         ],
         "name": [
           {
-            "use": "official",
+            "use": "usual",
             "family": [
               "SAXTON"
             ],

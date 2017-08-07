@@ -1,7 +1,7 @@
 {
   "resourceType": "StructureDefinition",
   "meta": {
-    "lastUpdated": "2017-07-27T19:21:24.984+01:00",
+    "lastUpdated": "2017-08-04T15:03:23.41+01:00",
     "tag": [
       {
         "system": "urn:hscic:publishOrder",
@@ -9026,10 +9026,10 @@
         ],
         "isSummary": true,
         "binding": {
-          "strength": "example",
+          "strength": "required",
           "description": "The reason why a vaccine was not administered",
           "valueSetReference": {
-            "reference": "http://hl7.org/fhir/ValueSet/no-immunization-reason"
+            "reference": "https://fhir.nhs.uk/ValueSet/DCH-ReasonNotGiven-1"
           }
         },
         "mapping": [
@@ -9324,6 +9324,7 @@
             "code": "uri"
           }
         ],
+        "fixedUri": "https://fhir.nhs.uk/DCH-ReasonNotGiven-1",
         "condition": [
           "ele-1"
         ],
@@ -13545,6 +13546,19 @@
             ]
           }
         ]
+      },
+      {
+        "path": "Immunization.explanation.reasonNotGiven",
+        "binding": {
+          "strength": "required",
+          "valueSetReference": {
+            "reference": "https://fhir.nhs.uk/ValueSet/DCH-ReasonNotGiven-1"
+          }
+        }
+      },
+      {
+        "path": "Immunization.explanation.reasonNotGiven.coding.system",
+        "fixedUri": "https://fhir.nhs.uk/DCH-ReasonNotGiven-1"
       },
       {
         "path": "Immunization.reaction.detail",

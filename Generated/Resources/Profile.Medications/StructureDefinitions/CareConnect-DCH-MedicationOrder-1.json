@@ -14367,6 +14367,7 @@
       {
         "path": "MedicationOrder.reasonEnded.coding.extension",
         "name": "snomedCTDescriptionID",
+        "short": "The SNOMED CT Description ID for the display",
         "type": [
           {
             "code": "Extension",
@@ -14502,6 +14503,7 @@
       {
         "path": "MedicationOrder.dosageInstruction.additionalInstructions.coding.extension",
         "name": "snomedCTDescriptionID",
+        "short": "The SNOMED CT Description ID for the display",
         "max": "1",
         "type": [
           {
@@ -14566,6 +14568,7 @@
       {
         "path": "MedicationOrder.dosageInstruction.route.coding.extension",
         "name": "snomedCTDescriptionID",
+        "short": "The SNOMED CT Description ID for the display",
         "max": "1",
         "type": [
           {
@@ -14627,6 +14630,7 @@
       {
         "path": "MedicationOrder.dosageInstruction.method.coding.extension",
         "name": "snomedCTDescriptionID",
+        "short": "The SNOMED CT Description ID for the display",
         "max": "1",
         "type": [
           {
@@ -14678,6 +14682,7 @@
       {
         "path": "MedicationOrder.dispenseRequest.quantity.extension",
         "name": "quantityText",
+        "short": "Quantity representation",
         "max": "1",
         "type": [
           {

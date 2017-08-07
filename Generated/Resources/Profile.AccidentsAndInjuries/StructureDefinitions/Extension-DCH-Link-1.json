@@ -3,7 +3,7 @@
   "meta": {
     "lastUpdated": "2017-06-05T10:17:39.798+01:00"
   },
-  "url": "https://fhir.hl7.org.uk/StructureDefinition/Extension-DCH-Link-1",
+  "url": "https://fhir.nhs.net/StructureDefinition/Extension-DCH-Link-1",
   "version": "1.0.",
   "name": "Extension-DCH-Link-1",
   "status": "draft",
@@ -173,7 +173,7 @@
             "code": "uri"
           }
         ],
-        "fixedUri": "https://fhir.hl7.org.uk/StructureDefinition/Extension-DCH-Link-1",
+        "fixedUri": "https://fhir.nhs.net/StructureDefinition/Extension-DCH-Link-1",
         "condition": [
           "ele-1"
         ],
@@ -260,7 +260,7 @@
       },
       {
         "path": "Extension.url",
-        "fixedUri": "https://fhir.hl7.org.uk/StructureDefinition/Extension-DCH-Link-1"
+        "fixedUri": "https://fhir.nhs.net/StructureDefinition/Extension-DCH-Link-1"
       },
       {
         "path": "Extension.valueReference",

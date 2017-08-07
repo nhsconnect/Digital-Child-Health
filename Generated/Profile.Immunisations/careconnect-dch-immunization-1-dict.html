@@ -4640,15 +4640,13 @@
         </tr>
         <tr>
           <td width="150px">Definition</td>
-          <td>
-            <p>Reason why a vaccine was not administered.</p>
-          </td>
+          <td></td>
         </tr>
         <tr>
           <td>
             <a href="http://www.hl7.org/fhir/DSTU2/conformance-rules.html#conformance">Control</a>
           </td>
-          <td>0..* ?</td>
+          <td>0..*</td>
         </tr>
         <tr>
           <td>
@@ -4656,23 +4654,13 @@
           </td>
           <td>
             <div class="binding-description" xmlns="http://www.w3.org/1999/xhtml">
-              <p>The reason why a vaccine was not administered</p>
-              <p>For example codes, see <a href="http://hl7.org/fhir/DSTU2/valueset-no-immunization-reason.html">http://hl7.org/fhir/DSTU2/valueset-no-immunization-reason.html</a></p>; other codes may be used where these codes are not suitable</div>
-          </td>
-        </tr>
-        <tr>
-          <td>
-            <a href="http://www.hl7.org/fhir/DSTU2/datatypes.html">Type</a>
-          </td>
-          <td>
-            <a href="http://www.hl7.org/fhir/DSTU2/datatypes.html#codeableconcept" xmlns="http://www.w3.org/1999/xhtml">CodeableConcept</a>
+              <p>The codes SHALL be taken from <a href="dch-reasonnotgiven-1.html">https://fhir.nhs.uk/ValueSet/DCH-ReasonNotGiven-1</a></p>
+            </div>
           </td>
         </tr>
         <tr>
           <td width="150px">Comments</td>
-          <td>
-            <p>Not all terminology uses fit this general pattern. In some cases, models should not use CodeableConcept and use Coding directly and provide their own structure for managing text, codings, translations and the relationship between elements and pre- and post-coordination.</p>
-          </td>
+          <td></td>
         </tr>
         <tr>
           <td colspan="2" class="structure">
@@ -4856,35 +4844,21 @@
         </tr>
         <tr>
           <td width="150px">Definition</td>
-          <td>
-            <p>The identification of the code system that defines the meaning of the symbol in the code.</p>
-          </td>
+          <td></td>
         </tr>
         <tr>
           <td>
             <a href="http://www.hl7.org/fhir/DSTU2/conformance-rules.html#conformance">Control</a>
           </td>
-          <td>0..1 ?</td>
-        </tr>
-        <tr>
-          <td>
-            <a href="http://www.hl7.org/fhir/DSTU2/datatypes.html">Type</a>
-          </td>
-          <td>
-            <a href="http://www.hl7.org/fhir/DSTU2/datatypes.html#uri" xmlns="http://www.w3.org/1999/xhtml">Uri</a>
-          </td>
-        </tr>
-        <tr>
-          <td width="150px">Requirements</td>
-          <td>
-            <p>Need to be unambiguous about the source of the definition of the symbol.</p>
-          </td>
+          <td>0..*</td>
         </tr>
         <tr>
           <td width="150px">Comments</td>
-          <td>
-            <p>The URI may be an OID (urn:oid:...) or a UUID (urn:uuid:...).  OIDs and UUIDs SHALL be references to the HL7 OID registry. Otherwise, the URI should come from HL7's list of FHIR defined special URIs or it should de-reference to some definition that establish the system clearly and unambiguously.</p>
-          </td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>Fixed Value</td>
+          <td>https://fhir.nhs.uk/DCH-ReasonNotGiven-1</td>
         </tr>
         <tr>
           <td colspan="2" class="structure">

@@ -10,7 +10,7 @@
   "compose": {
     "include": [
       {
-        "system": "https://fhir.nhs.uk/dch-reasonforreferral-1",
+        "system": "https://fhir.nhs.uk/DCH-ReasonForReferral-1",
         "concept": [
           {
             "code": "01",

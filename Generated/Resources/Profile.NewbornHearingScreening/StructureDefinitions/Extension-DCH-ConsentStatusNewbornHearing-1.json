@@ -537,7 +537,7 @@
             "code": "uri"
           }
         ],
-        "fixedUri": "https://fhir.nhs.uk/dch-consentstatusnewbornhearing-1",
+        "fixedUri": "https://fhir.nhs.uk/DCH-ConsentStatusNewbornHearing-1",
         "condition": [
           "ele-1"
         ],
@@ -897,7 +897,7 @@
       {
         "path": "Extension.valueCodeableConcept.coding.system",
         "min": 1,
-        "fixedUri": "https://fhir.nhs.uk/dch-consentstatusnewbornhearing-1"
+        "fixedUri": "https://fhir.nhs.uk/DCH-ConsentStatusNewbornHearing-1"
       },
       {
         "path": "Extension.valueCodeableConcept.coding.code",

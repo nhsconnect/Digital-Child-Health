@@ -1,7 +1,7 @@
 {
   "resourceType": "StructureDefinition",
   "meta": {
-    "lastUpdated": "2017-08-02T19:55:26.403+01:00",
+    "lastUpdated": "2017-08-04T18:14:22.56+01:00",
     "tag": [
       {
         "system": "urn:hscic:publishOrder",
@@ -6109,6 +6109,12 @@
             "profile": [
               "https://fhir.hl7.org.uk/StructureDefinition/CareConnect-DCH-Encounter-1"
             ]
+          },
+          {
+            "code": "Reference",
+            "profile": [
+              "https://fhir.hl7.org.uk/StructureDefinition/CareConnect-DCH-NewbornHearingScreening-Procedure-1"
+            ]
           }
         ],
         "condition": [
@@ -7203,7 +7209,7 @@
           {
             "code": "Reference",
             "profile": [
-              "https://fhir.nhs.uk/StructureDefinition/DCH-ProcedureRequest-1"
+              "https://fhir.nhs.uk/StructureDefinition/DCH-NewbornHearingScreening-ProcedureRequest-1"
             ]
           }
         ],
@@ -8332,7 +8338,7 @@
           "strength": "required",
           "description": "The outcome of the newborn hearing screening",
           "valueSetReference": {
-            "reference": "https://fhir.nhs.uk/ValueSet/DCH-ScreeningOutcome-1"
+            "reference": "https://fhir.nhs.uk/ValueSet/DCH-HearingScreeningOutcome-1"
           }
         },
         "mapping": [
@@ -8454,7 +8460,7 @@
             "code": "uri"
           }
         ],
-        "fixedUri": "https://fhir.nhs.uk/DCH-ScreeningOutcome-1",
+        "fixedUri": "https://fhir.nhs.uk/DCH-HearingScreeningOutcome-1",
         "condition": [
           "ele-1"
         ],
@@ -12623,7 +12629,7 @@
           {
             "code": "Reference",
             "profile": [
-              "https://fhir.nhs.uk/StructureDefinition/DCH-ProcedureRequest-1"
+              "https://fhir.nhs.uk/StructureDefinition/DCH-NewbornHearingScreening-ProcedureRequest-1"
             ]
           }
         ],
@@ -13190,7 +13196,7 @@
           "strength": "required",
           "description": "Care Pathway for newborn hearing screening programme (NHSP)",
           "valueSetReference": {
-            "reference": "https://fhir.nhs.uk/ValueSet/DCH-Protocol-1"
+            "reference": "https://fhir.nhs.uk/ValueSet/DCH-HearingScreeningProtocol-1"
           }
         },
         "mapping": [
@@ -13312,7 +13318,7 @@
             "code": "uri"
           }
         ],
-        "fixedUri": "https://fhir.nhs.uk/DCH-Protocol-1",
+        "fixedUri": "https://fhir.nhs.uk/DCH-HearingScreeningProtocol-1",
         "condition": [
           "ele-1"
         ],
@@ -14659,7 +14665,7 @@
           "strength": "required",
           "description": "Whether the newborn hearing screening was completed",
           "valueSetReference": {
-            "reference": "https://fhir.nhs.uk/ValueSet/DCH-TestStatus-1"
+            "reference": "https://fhir.nhs.uk/ValueSet/DCH-HearingTestStatus-1"
           }
         },
         "mapping": [
@@ -14781,7 +14787,7 @@
             "code": "uri"
           }
         ],
-        "fixedUri": "https://fhir.nhs.uk/DCH-TestStatus-1",
+        "fixedUri": "https://fhir.nhs.uk/DCH-HearingTestStatus-1",
         "condition": [
           "ele-1"
         ],
@@ -17238,7 +17244,7 @@
           "strength": "required",
           "description": "The outcome of the hearing screening test",
           "valueSetReference": {
-            "reference": "https://fhir.nhs.uk/ValueSet/DCH-TestOutcome-1"
+            "reference": "https://fhir.nhs.uk/ValueSet/DCH-HearingTestOutcome-1"
           }
         },
         "mapping": [
@@ -17793,7 +17799,7 @@
           "strength": "required",
           "description": "The outcome of the hearing screening test",
           "valueSetReference": {
-            "reference": "https://fhir.nhs.uk/ValueSet/DCH-TestOutcome-1"
+            "reference": "https://fhir.nhs.uk/ValueSet/DCH-HearingTestOutcome-1"
           }
         },
         "mapping": [
@@ -18348,7 +18354,7 @@
           "strength": "required",
           "description": "The outcome of the hearing screening test",
           "valueSetReference": {
-            "reference": "https://fhir.nhs.uk/ValueSet/DCH-TestOutcome-1"
+            "reference": "https://fhir.nhs.uk/ValueSet/DCH-HearingTestOutcome-1"
           }
         },
         "mapping": [
@@ -18897,7 +18903,7 @@
           "strength": "required",
           "description": "The outcome of the newborn hearing screening",
           "valueSetReference": {
-            "reference": "https://fhir.nhs.uk/ValueSet/DCH-ScreeningOutcome-1"
+            "reference": "https://fhir.nhs.uk/ValueSet/DCH-HearingScreeningOutcome-1"
           }
         },
         "mapping": [
@@ -19019,7 +19025,7 @@
             "code": "uri"
           }
         ],
-        "fixedUri": "https://fhir.nhs.uk/DCH-ScreeningOutcome-1",
+        "fixedUri": "https://fhir.nhs.uk/DCH-HearingScreeningOutcome-1",
         "condition": [
           "ele-1"
         ],
@@ -19811,7 +19817,7 @@
           "strength": "required",
           "description": "The outcome of the newborn hearing screening.",
           "valueSetReference": {
-            "reference": "https://fhir.nhs.uk/ValueSet/DCH-ScreeningOutcome-1"
+            "reference": "https://fhir.nhs.uk/ValueSet/DCH-HearingScreeningOutcome-1"
           }
         },
         "mapping": [
@@ -19933,7 +19939,7 @@
             "code": "uri"
           }
         ],
-        "fixedUri": "https://fhir.nhs.uk/DCH-ScreeningOutcome-1",
+        "fixedUri": "https://fhir.nhs.uk/DCH-HearingScreeningOutcome-1",
         "condition": [
           "ele-1"
         ],
@@ -20398,6 +20404,12 @@
             "profile": [
               "https://fhir.hl7.org.uk/StructureDefinition/CareConnect-DCH-Encounter-1"
             ]
+          },
+          {
+            "code": "Reference",
+            "profile": [
+              "https://fhir.hl7.org.uk/StructureDefinition/CareConnect-DCH-NewbornHearingScreening-Procedure-1"
+            ]
           }
         ]
       },
@@ -20486,7 +20498,7 @@
           {
             "code": "Reference",
             "profile": [
-              "https://fhir.nhs.uk/StructureDefinition/DCH-ProcedureRequest-1"
+              "https://fhir.nhs.uk/StructureDefinition/DCH-NewbornHearingScreening-ProcedureRequest-1"
             ]
           }
         ],
@@ -20592,14 +20604,14 @@
           "strength": "required",
           "description": "The outcome of the newborn hearing screening",
           "valueSetReference": {
-            "reference": "https://fhir.nhs.uk/ValueSet/DCH-ScreeningOutcome-1"
+            "reference": "https://fhir.nhs.uk/ValueSet/DCH-HearingScreeningOutcome-1"
           }
         }
       },
       {
         "path": "QuestionnaireResponse.group.question.answer.valueCoding.system",
         "min": 1,
-        "fixedUri": "https://fhir.nhs.uk/DCH-ScreeningOutcome-1"
+        "fixedUri": "https://fhir.nhs.uk/DCH-HearingScreeningOutcome-1"
       },
       {
         "path": "QuestionnaireResponse.group.question.answer.valueCoding.code",
@@ -20875,7 +20887,7 @@
           {
             "code": "Reference",
             "profile": [
-              "https://fhir.nhs.uk/StructureDefinition/DCH-ProcedureRequest-1"
+              "https://fhir.nhs.uk/StructureDefinition/DCH-NewbornHearingScreening-ProcedureRequest-1"
             ]
           }
         ]
@@ -20920,14 +20932,14 @@
           "strength": "required",
           "description": "Care Pathway for newborn hearing screening programme (NHSP)",
           "valueSetReference": {
-            "reference": "https://fhir.nhs.uk/ValueSet/DCH-Protocol-1"
+            "reference": "https://fhir.nhs.uk/ValueSet/DCH-HearingScreeningProtocol-1"
           }
         }
       },
       {
         "path": "QuestionnaireResponse.group.question.answer.valueCoding.system",
         "min": 1,
-        "fixedUri": "https://fhir.nhs.uk/DCH-Protocol-1"
+        "fixedUri": "https://fhir.nhs.uk/DCH-HearingScreeningProtocol-1"
       },
       {
         "path": "QuestionnaireResponse.group.question.answer.valueCoding.code",
@@ -21023,14 +21035,14 @@
           "strength": "required",
           "description": "Whether the newborn hearing screening was completed",
           "valueSetReference": {
-            "reference": "https://fhir.nhs.uk/ValueSet/DCH-TestStatus-1"
+            "reference": "https://fhir.nhs.uk/ValueSet/DCH-HearingTestStatus-1"
           }
         }
       },
       {
         "path": "QuestionnaireResponse.group.question.answer.valueCoding.system",
         "min": 1,
-        "fixedUri": "https://fhir.nhs.uk/DCH-TestStatus-1"
+        "fixedUri": "https://fhir.nhs.uk/DCH-HearingTestStatus-1"
       },
       {
         "path": "QuestionnaireResponse.group.question.answer.valueCoding.code",
@@ -21238,7 +21250,7 @@
           "strength": "required",
           "description": "The outcome of the hearing screening test",
           "valueSetReference": {
-            "reference": "https://fhir.nhs.uk/ValueSet/DCH-TestOutcome-1"
+            "reference": "https://fhir.nhs.uk/ValueSet/DCH-HearingTestOutcome-1"
           }
         }
       },
@@ -21290,7 +21302,7 @@
           "strength": "required",
           "description": "The outcome of the hearing screening test",
           "valueSetReference": {
-            "reference": "https://fhir.nhs.uk/ValueSet/DCH-TestOutcome-1"
+            "reference": "https://fhir.nhs.uk/ValueSet/DCH-HearingTestOutcome-1"
           }
         }
       },
@@ -21342,7 +21354,7 @@
           "strength": "required",
           "description": "The outcome of the hearing screening test",
           "valueSetReference": {
-            "reference": "https://fhir.nhs.uk/ValueSet/DCH-TestOutcome-1"
+            "reference": "https://fhir.nhs.uk/ValueSet/DCH-HearingTestOutcome-1"
           }
         }
       },
@@ -21386,14 +21398,14 @@
           "strength": "required",
           "description": "The outcome of the newborn hearing screening",
           "valueSetReference": {
-            "reference": "https://fhir.nhs.uk/ValueSet/DCH-ScreeningOutcome-1"
+            "reference": "https://fhir.nhs.uk/ValueSet/DCH-HearingScreeningOutcome-1"
           }
         }
       },
       {
         "path": "QuestionnaireResponse.group.question.answer.valueCoding.system",
         "min": 1,
-        "fixedUri": "https://fhir.nhs.uk/DCH-ScreeningOutcome-1"
+        "fixedUri": "https://fhir.nhs.uk/DCH-HearingScreeningOutcome-1"
       },
       {
         "path": "QuestionnaireResponse.group.question.answer.valueCoding.code",
@@ -21443,14 +21455,14 @@
           "strength": "required",
           "description": "The outcome of the newborn hearing screening.",
           "valueSetReference": {
-            "reference": "https://fhir.nhs.uk/ValueSet/DCH-ScreeningOutcome-1"
+            "reference": "https://fhir.nhs.uk/ValueSet/DCH-HearingScreeningOutcome-1"
           }
         }
       },
       {
         "path": "QuestionnaireResponse.group.question.answer.valueCoding.system",
         "min": 1,
-        "fixedUri": "https://fhir.nhs.uk/DCH-ScreeningOutcome-1"
+        "fixedUri": "https://fhir.nhs.uk/DCH-HearingScreeningOutcome-1"
       },
       {
         "path": "QuestionnaireResponse.group.question.answer.valueCoding.code",

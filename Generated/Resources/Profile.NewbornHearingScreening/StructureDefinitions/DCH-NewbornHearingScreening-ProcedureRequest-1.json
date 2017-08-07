@@ -1,7 +1,7 @@
 {
   "resourceType": "StructureDefinition",
   "meta": {
-    "lastUpdated": "2017-07-31T08:02:12.298+01:00",
+    "lastUpdated": "2017-08-07T11:53:12.167+01:00",
     "tag": [
       {
         "system": "urn:hscic:publishOrder",
@@ -9,9 +9,9 @@
       }
     ]
   },
-  "url": "https://fhir.nhs.uk/StructureDefinition/DCH-ProcedureRequest-1",
+  "url": "https://fhir.nhs.uk/StructureDefinition/DCH-NewbornHearingScreening-ProcedureRequest-1",
   "version": "1.0.0",
-  "name": "DCH-ProcedureRequest-1",
+  "name": "DCH-NewbornHearingScreening-ProcedureRequest-1",
   "status": "draft",
   "publisher": "NHS Digital",
   "contact": [
@@ -450,7 +450,7 @@
           {
             "code": "Extension",
             "profile": [
-              "https://fhir.nhs.uk/StructureDefinition/Extension-DCH-ConsentStatus-1"
+              "https://fhir.nhs.uk/StructureDefinition/Extension-DCH-ConsentStatusNewbornHearing-1"
             ]
           }
         ],
@@ -4649,7 +4649,7 @@
           {
             "code": "Extension",
             "profile": [
-              "https://fhir.nhs.uk/StructureDefinition/Extension-DCH-ConsentStatus-1"
+              "https://fhir.nhs.uk/StructureDefinition/Extension-DCH-ConsentStatusNewbornHearing-1"
             ]
           }
         ]

@@ -454,7 +454,7 @@
           {
             "code": "Extension",
             "profile": [
-              "https://fhir.hl7.org.uk/StructureDefinition/Extension-DCH-HouseholdMember-1"
+              "https://fhir.nhs.net/StructureDefinition/Extension-DCH-HouseholdMember-1"
             ]
           }
         ],
@@ -507,7 +507,7 @@
           {
             "code": "Extension",
             "profile": [
-              "https://fhir.hl7.org.uk/StructureDefinition/Extension-DCH-Link-1"
+              "https://fhir.nhs.net/StructureDefinition/Extension-DCH-Link-1"
             ]
           }
         ],
@@ -6307,7 +6307,7 @@
           {
             "code": "Extension",
             "profile": [
-              "https://fhir.hl7.org.uk/StructureDefinition/Extension-DCH-HouseholdMember-1"
+              "https://fhir.nhs.net/StructureDefinition/Extension-DCH-HouseholdMember-1"
             ]
           }
         ]
@@ -6320,7 +6320,7 @@
           {
             "code": "Extension",
             "profile": [
-              "https://fhir.hl7.org.uk/StructureDefinition/Extension-DCH-Link-1"
+              "https://fhir.nhs.net/StructureDefinition/Extension-DCH-Link-1"
             ]
           }
         ]

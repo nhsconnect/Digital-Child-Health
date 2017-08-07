@@ -106,7 +106,7 @@
         ],
         "name": [
           {
-            "use": "official",
+            "use": "usual",
             "family": [
               "Saxton"
             ],
@@ -207,7 +207,7 @@
         "id": "1d67c470-4f45-11e7-b114-b2f933d5fe66",
         "meta": {
           "profile": [
-            "https://fhir.hl7.org.uk/StructureDefinition/CareConnect-DCH-VaccinationRequirement-Condition-1"
+            "https://fhir.hl7.org.uk/StructureDefinition/CareConnect-DCH-Condition-1"
           ]
         },
         "identifier": [
@@ -222,6 +222,10 @@
         },
         "encounter": {
           "reference": "urn:uuid:a8ca9f14-72aa-11e7-8cf7-a6006ad3dba0"
+        },
+        "asserter": {
+          "reference": "urn:uuid:e9dbf8e8-5bdc-11e7-907b-a6006ad3dba0",
+          "display": "JONES, Bob (Dr.)"
         },
         "dateRecorded": "2012-01-22",
         "code": {

@@ -1,7 +1,7 @@
 {
   "resourceType": "StructureDefinition",
   "meta": {
-    "lastUpdated": "2017-07-27T19:18:55.618+01:00",
+    "lastUpdated": "2017-08-07T08:01:03.636+01:00",
     "tag": [
       {
         "system": "urn:hscic:publishOrder",
@@ -2096,6 +2096,12 @@
           "max": "1"
         },
         "type": [
+          {
+            "code": "Reference",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/Group"
+            ]
+          },
           {
             "code": "Reference",
             "profile": [
@@ -14339,6 +14345,12 @@
       {
         "path": "Procedure.subject",
         "type": [
+          {
+            "code": "Reference",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/Group"
+            ]
+          },
           {
             "code": "Reference",
             "profile": [

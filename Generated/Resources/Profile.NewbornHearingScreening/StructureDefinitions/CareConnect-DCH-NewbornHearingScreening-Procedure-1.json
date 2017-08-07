@@ -1,7 +1,7 @@
 {
   "resourceType": "StructureDefinition",
   "meta": {
-    "lastUpdated": "2017-07-31T09:18:56.339+01:00",
+    "lastUpdated": "2017-08-07T09:05:39.835+01:00",
     "tag": [
       {
         "system": "urn:hscic:publishOrder",
@@ -12,10 +12,10 @@
   "url": "https://fhir.hl7.org.uk/StructureDefinition/CareConnect-DCH-NewbornHearingScreening-Procedure-1",
   "version": "1.0.0",
   "name": "CareConnect-DCH-NewbornHearingScreening-Procedure-1",
-  "status": "draft",
+  "status": "active",
   "publisher": "HL7 UK",
   "date": "2017-03-02T10:44:39.7203604Z",
-  "description": "This Procedure resource records an action that is or was performed on a patient, with further constraints applied for a Newborn Hearing Screening procedure performed during a Child Health event.",
+  "description": "An action that is or was performed on a patient, with further constraints applied for a Newborn Hearing Screening procedure performed during a Child Health event.",
   "copyright": "Copyright © 2016 HL7 UK\r\n\r\nLicensed under the Apache License, Version 2.0 (the \"License\"); you may not use this file except in compliance with the License. You may obtain a copy of the License at\r\n\r\nhttp://www.apache.org/licenses/LICENSE-2.0\r\n\r\nUnless required by applicable law or agreed to in writing, software distributed under the License is distributed on an \"AS IS\" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the License for the specific language governing permissions and limitations under the License.\r\n\r\nHL7® FHIR® standard Copyright © 2011+ HL7\r\n\r\nThe HL7® FHIR® standard is used under the FHIR license. You may obtain a copy of the FHIR license at\r\n\r\nhttps://www.hl7.org/fhir/license.html",
   "fhirVersion": "1.0.2",
   "kind": "resource",
@@ -386,6 +386,12 @@
       },
       {
         "path": "Procedure.extension",
+        "slicing": {
+          "discriminator": [
+            "url"
+          ],
+          "rules": "open"
+        },
         "short": "Additional Content defined by implementations",
         "definition": "May be used to represent additional information that is not part of the basic definition of the resource. In order to make the use of extensions safe and manageable, there is a strict set of governance  applied to the definition and use of extensions. Though any implementer is allowed to define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension.",
         "comments": "There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone.",
@@ -403,6 +409,59 @@
         "type": [
           {
             "code": "Extension"
+          }
+        ],
+        "condition": [
+          "ele-1"
+        ],
+        "constraint": [
+          {
+            "extension": [
+              {
+                "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-expression",
+                "valueString": "children()"
+              }
+            ],
+            "key": "ele-1",
+            "severity": "error",
+            "human": "All FHIR elements must have a @value or children",
+            "xpath": "@value|f:*|h:div"
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "rim",
+            "map": "n/a"
+          },
+          {
+            "identity": "rim",
+            "map": "N/A"
+          }
+        ]
+      },
+      {
+        "path": "Procedure.extension",
+        "name": "dateRecorded",
+        "short": "The date that the event was recorded",
+        "definition": "The date that the event was recorded.",
+        "comments": "There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone.",
+        "alias": [
+          "extensions",
+          "user content"
+        ],
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "DomainResource.extension",
+          "min": 0,
+          "max": "*"
+        },
+        "type": [
+          {
+            "code": "Extension",
+            "profile": [
+              "https://fhir.hl7.org.uk/StructureDefinition/Extension-CareConnect-DateRecorded-1"
+            ]
           }
         ],
         "condition": [
@@ -1990,6 +2049,12 @@
           "max": "1"
         },
         "type": [
+          {
+            "code": "Reference",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/Group"
+            ]
+          },
           {
             "code": "Reference",
             "profile": [
@@ -3599,8 +3664,8 @@
         "definition": "A reference to a code defined by a terminology system.",
         "comments": "Codes may be defined very casually in enumerations, or code lists, up to very formal definitions such as SNOMED CT - see the HL7 v3 Core Principles for more information.  Ordering of codings is undefined and SHALL NOT be used to infer meaning. Generally, at most only one of the coding values will be labelled as UserSelected = true.",
         "requirements": "Allows for translations and alternate encodings within a code system.  Also supports communication of the same instance to systems requiring different encodings.",
-        "min": 1,
-        "max": "1",
+        "min": 0,
+        "max": "*",
         "base": {
           "path": "CodeableConcept.coding",
           "min": 0,
@@ -4031,7 +4096,7 @@
         "definition": "A reference to a code defined by a terminology system.",
         "comments": "Codes may be defined very casually in enumerations, or code lists, up to very formal definitions such as SNOMED CT - see the HL7 v3 Core Principles for more information.  Ordering of codings is undefined and SHALL NOT be used to infer meaning. Generally, at most only one of the coding values will be labelled as UserSelected = true.",
         "requirements": "Allows for translations and alternate encodings within a code system.  Also supports communication of the same instance to systems requiring different encodings.",
-        "min": 1,
+        "min": 0,
         "max": "1",
         "base": {
           "path": "CodeableConcept.coding",
@@ -4623,7 +4688,7 @@
         "definition": "A code indicating why the procedure was not performed.",
         "comments": "Not all terminology uses fit this general pattern. In some cases, models should not use CodeableConcept and use Coding directly and provide their own structure for managing text, codings, translations and the relationship between elements and pre- and post-coordination.",
         "min": 0,
-        "max": "1",
+        "max": "*",
         "base": {
           "path": "Procedure.reasonNotPerformed",
           "min": 0,
@@ -6978,7 +7043,7 @@
         "short": "The people who performed the procedure",
         "definition": "Limited to 'real' people rather than equipment.",
         "min": 0,
-        "max": "1",
+        "max": "*",
         "base": {
           "path": "Procedure.performer",
           "min": 0,
@@ -7163,7 +7228,7 @@
         "path": "Procedure.performer.actor",
         "short": "The reference to the practitioner",
         "definition": "The practitioner who was involved in the procedure.",
-        "min": 1,
+        "min": 0,
         "max": "1",
         "base": {
           "path": "Procedure.performer.actor",
@@ -7171,6 +7236,12 @@
           "max": "1"
         },
         "type": [
+          {
+            "code": "Reference",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/RelatedPerson"
+            ]
+          },
           {
             "code": "Reference",
             "profile": [
@@ -8714,7 +8785,7 @@
           {
             "code": "Reference",
             "profile": [
-              "https://fhir.hl7.org.uk/StructureDefinition/CareConnect-Organization-1"
+              "https://fhir.hl7.org.uk/StructureDefinition/CareConnect-Location-1"
             ]
           }
         ],
@@ -10072,7 +10143,7 @@
           "strength": "required",
           "description": "The outcome of the hearing screening test",
           "valueSetReference": {
-            "reference": "https://fhir.nhs.uk/ValueSet/DCH-TestOutcome-1"
+            "reference": "https://fhir.nhs.uk/ValueSet/DCH-HearingTestOutcome-1"
           }
         },
         "mapping": [
@@ -10214,7 +10285,7 @@
             "code": "uri"
           }
         ],
-        "fixedUri": "https://fhir.nhs.uk/dch-testoutcome-1",
+        "fixedUri": "https://fhir.nhs.uk/DCH-HearingTestOutcome-1",
         "condition": [
           "ele-1"
         ],
@@ -10532,7 +10603,7 @@
         "definition": "This could be a histology result, pathology report, surgical report, etc..",
         "comments": "There could potentially be multiple reports - e.g. if this was a procedure which took multiple biopsies resulting in a number of anatomical pathology reports.",
         "min": 0,
-        "max": "0",
+        "max": "*",
         "base": {
           "path": "Procedure.report",
           "min": 0,
@@ -10780,7 +10851,7 @@
         "definition": "Any complications that occurred during the procedure, or in the immediate post-performance period. These are generally tracked separately from the notes, which will typically describe the procedure itself rather than any 'post procedure' issues.",
         "comments": "If complications are only expressed by the narrative text, they can be captured using the CodeableConcept.text.",
         "min": 0,
-        "max": "0",
+        "max": "*",
         "base": {
           "path": "Procedure.complication",
           "min": 0,
@@ -11920,7 +11991,7 @@
         "definition": "If the procedure required specific follow up - e.g. removal of sutures. The followup may be represented as a simple note, or could potentially be more complex in which case the CarePlan resource can be used.",
         "comments": "Not all terminology uses fit this general pattern. In some cases, models should not use CodeableConcept and use Coding directly and provide their own structure for managing text, codings, translations and the relationship between elements and pre- and post-coordination.",
         "min": 0,
-        "max": "0",
+        "max": "*",
         "base": {
           "path": "Procedure.followUp",
           "min": 0,
@@ -13069,7 +13140,25 @@
           {
             "code": "Reference",
             "profile": [
-              "https://fhir.nhs.uk/StructureDefinition/DCH-ProcedureRequest-1"
+              "http://hl7.org/fhir/StructureDefinition/CarePlan"
+            ]
+          },
+          {
+            "code": "Reference",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/DiagnosticOrder"
+            ]
+          },
+          {
+            "code": "Reference",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/ReferralRequest"
+            ]
+          },
+          {
+            "code": "Reference",
+            "profile": [
+              "https://fhir.nhs.uk/StructureDefinition/DCH-NewbornHearingScreening-ProcedureRequest-1"
             ]
           }
         ],
@@ -13120,7 +13209,7 @@
         "definition": "Any other notes about the procedure.  E.g. the operative notes.",
         "comments": "For systems that do not have structured annotations, they can simply communicate a single annotation with no author or time.  This element may need to be included in narrative because of the potential for modifying information.  *Annotations SHOULD NOT* be used to communicate \"modifying\" information that could be computable. (This is a SHOULD because enforcing user behavior is nearly impossible).",
         "min": 0,
-        "max": "0",
+        "max": "*",
         "base": {
           "path": "Procedure.notes",
           "min": 0,
@@ -13263,7 +13352,7 @@
         ]
       },
       {
-        "path": "Procedure.notes.authorReference",
+        "path": "Procedure.notes.author[x]",
         "short": "Individual responsible for the annotation",
         "definition": "The individual responsible for making the annotation.",
         "min": 0,
@@ -13277,7 +13366,22 @@
           {
             "code": "Reference",
             "profile": [
-              "https://fhir.hl7.org.uk/StructureDefinition/CareConnect-DCH-ChildHealthEvent-Practitioner-1"
+              "http://hl7.org/fhir/StructureDefinition/RelatedPerson"
+            ]
+          },
+          {
+            "code": "string"
+          },
+          {
+            "code": "Reference",
+            "profile": [
+              "https://fhir.hl7.org.uk/StructureDefinition/CareConnect-Practitioner-1"
+            ]
+          },
+          {
+            "code": "Reference",
+            "profile": [
+              "https://fhir.hl7.org.uk/StructureDefinition/CareConnect-DCH-Patient-1"
             ]
           }
         ],
@@ -13434,7 +13538,7 @@
         "short": "Device changed in procedure",
         "definition": "A device that is implanted, removed or otherwise manipulated (calibration, battery replacement, fitting a prosthesis, attaching a wound-vac, etc.) as a focal portion of the Procedure.",
         "min": 0,
-        "max": "0",
+        "max": "*",
         "base": {
           "path": "Procedure.focalDevice",
           "min": 0,
@@ -14497,7 +14601,7 @@
         "comments": "For devices actually implanted or removed, use Procedure.device.",
         "requirements": "Used for tracking contamination, etc.",
         "min": 0,
-        "max": "0",
+        "max": "*",
         "base": {
           "path": "Procedure.used",
           "min": 0,
@@ -14580,6 +14684,28 @@
         ]
       },
       {
+        "path": "Procedure.extension",
+        "slicing": {
+          "discriminator": [
+            "url"
+          ],
+          "rules": "open"
+        }
+      },
+      {
+        "path": "Procedure.extension",
+        "name": "dateRecorded",
+        "max": "1",
+        "type": [
+          {
+            "code": "Extension",
+            "profile": [
+              "https://fhir.hl7.org.uk/StructureDefinition/Extension-CareConnect-DateRecorded-1"
+            ]
+          }
+        ]
+      },
+      {
         "path": "Procedure.identifier",
         "min": 1,
         "max": "1"
@@ -14606,6 +14732,12 @@
       {
         "path": "Procedure.subject",
         "type": [
+          {
+            "code": "Reference",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/Group"
+            ]
+          },
           {
             "code": "Reference",
             "profile": [
@@ -14686,14 +14818,11 @@
           ],
           "ordered": false,
           "rules": "open"
-        },
-        "min": 1,
-        "max": "1"
+        }
       },
       {
         "path": "Procedure.code.coding",
         "name": "SNOMED CT",
-        "min": 1,
         "max": "1"
       },
       {
@@ -14734,10 +14863,6 @@
       {
         "path": "Procedure.code.coding.display",
         "min": 1
-      },
-      {
-        "path": "Procedure.reasonNotPerformed",
-        "max": "1"
       },
       {
         "path": "Procedure.reasonNotPerformed.coding",
@@ -14852,13 +14977,14 @@
         "max": "0"
       },
       {
-        "path": "Procedure.performer",
-        "max": "1"
-      },
-      {
         "path": "Procedure.performer.actor",
-        "min": 1,
         "type": [
+          {
+            "code": "Reference",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/RelatedPerson"
+            ]
+          },
           {
             "code": "Reference",
             "profile": [
@@ -14955,7 +15081,7 @@
           {
             "code": "Reference",
             "profile": [
-              "https://fhir.hl7.org.uk/StructureDefinition/CareConnect-Organization-1"
+              "https://fhir.hl7.org.uk/StructureDefinition/CareConnect-Location-1"
             ]
           }
         ]
@@ -15029,14 +15155,14 @@
           "strength": "required",
           "description": "The outcome of the hearing screening test",
           "valueSetReference": {
-            "reference": "https://fhir.nhs.uk/ValueSet/DCH-TestOutcome-1"
+            "reference": "https://fhir.nhs.uk/ValueSet/DCH-HearingTestOutcome-1"
           }
         }
       },
       {
         "path": "Procedure.outcome.coding.system",
         "min": 1,
-        "fixedUri": "https://fhir.nhs.uk/dch-testoutcome-1"
+        "fixedUri": "https://fhir.nhs.uk/DCH-HearingTestOutcome-1"
       },
       {
         "path": "Procedure.outcome.coding.code",
@@ -15045,14 +15171,6 @@
       {
         "path": "Procedure.outcome.coding.display",
         "min": 1
-      },
-      {
-        "path": "Procedure.report",
-        "max": "0"
-      },
-      {
-        "path": "Procedure.complication",
-        "max": "0"
       },
       {
         "path": "Procedure.complication.coding",
@@ -15107,10 +15225,6 @@
       {
         "path": "Procedure.complication.coding.display",
         "min": 1
-      },
-      {
-        "path": "Procedure.followUp",
-        "max": "0"
       },
       {
         "path": "Procedure.followUp.coding",
@@ -15172,33 +15286,57 @@
           {
             "code": "Reference",
             "profile": [
-              "https://fhir.nhs.uk/StructureDefinition/DCH-ProcedureRequest-1"
+              "http://hl7.org/fhir/StructureDefinition/CarePlan"
+            ]
+          },
+          {
+            "code": "Reference",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/DiagnosticOrder"
+            ]
+          },
+          {
+            "code": "Reference",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/ReferralRequest"
+            ]
+          },
+          {
+            "code": "Reference",
+            "profile": [
+              "https://fhir.nhs.uk/StructureDefinition/DCH-NewbornHearingScreening-ProcedureRequest-1"
             ]
           }
         ]
       },
       {
-        "path": "Procedure.notes",
-        "max": "0"
-      },
-      {
-        "path": "Procedure.notes.authorReference",
+        "path": "Procedure.notes.author[x]",
         "type": [
           {
             "code": "Reference",
             "profile": [
-              "https://fhir.hl7.org.uk/StructureDefinition/CareConnect-DCH-ChildHealthEvent-Practitioner-1"
+              "http://hl7.org/fhir/StructureDefinition/RelatedPerson"
+            ]
+          },
+          {
+            "code": "string"
+          },
+          {
+            "code": "Reference",
+            "profile": [
+              "https://fhir.hl7.org.uk/StructureDefinition/CareConnect-Practitioner-1"
+            ]
+          },
+          {
+            "code": "Reference",
+            "profile": [
+              "https://fhir.hl7.org.uk/StructureDefinition/CareConnect-DCH-Patient-1"
             ]
           }
         ]
       },
       {
-        "path": "Procedure.focalDevice",
-        "max": "0"
-      },
-      {
         "path": "Procedure.used",
-        "max": "0",
         "type": [
           {
             "code": "Reference",

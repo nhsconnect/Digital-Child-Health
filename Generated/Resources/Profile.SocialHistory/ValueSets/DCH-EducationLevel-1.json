@@ -6,7 +6,7 @@
   "url": "https://fhir.nhs.uk/ValueSet/DCH-EducationLevel-1",
   "version": "1.0.0",
   "name": "Education Level",
-  "status": "active",
+  "status": "draft",
   "publisher": "NHS Digital",
   "description": "Education level.",
   "copyright": "Copyright © 2016 Health and Social Care Information Centre. NHS Digital is the trading name of the Health and Social Care Information Centre.",

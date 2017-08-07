@@ -3049,7 +3049,7 @@
             "code": "uri"
           }
         ],
-        "fixedUri": "https://fhir.nhs.uk/dch-specialtyreferredto-1",
+        "fixedUri": "https://fhir.nhs.uk/DCH-SpecialtyReferredTo-1",
         "condition": [
           "ele-1"
         ],
@@ -5225,7 +5225,7 @@
             "code": "uri"
           }
         ],
-        "fixedUri": "https://fhir.nhs.uk/dch-reasonforreferral-1",
+        "fixedUri": "https://fhir.nhs.uk/DCH-ReasonForReferral-1",
         "condition": [
           "ele-1"
         ],
@@ -6802,7 +6802,7 @@
       {
         "path": "ReferralRequest.specialty.coding.system",
         "min": 1,
-        "fixedUri": "https://fhir.nhs.uk/dch-specialtyreferredto-1"
+        "fixedUri": "https://fhir.nhs.uk/DCH-SpecialtyReferredTo-1"
       },
       {
         "path": "ReferralRequest.specialty.coding.code",
@@ -6893,7 +6893,7 @@
       {
         "path": "ReferralRequest.reason.coding.system",
         "min": 1,
-        "fixedUri": "https://fhir.nhs.uk/dch-reasonforreferral-1"
+        "fixedUri": "https://fhir.nhs.uk/DCH-ReasonForReferral-1"
       },
       {
         "path": "ReferralRequest.reason.coding.code",
