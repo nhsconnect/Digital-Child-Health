@@ -347,7 +347,7 @@
       </base>
       <type>
         <code value="Extension" />
-        <profile value="https://fhir.hl7.org.uk/StructureDefinition/Extension-DCH-HouseholdMember-1" />
+        <profile value="https://fhir.nhs.net/StructureDefinition/Extension-DCH-HouseholdMember-1" />
       </type>
       <condition value="ele-1" />
       <constraint>
@@ -385,7 +385,7 @@
       </base>
       <type>
         <code value="Extension" />
-        <profile value="https://fhir.hl7.org.uk/StructureDefinition/Extension-DCH-Link-1" />
+        <profile value="https://fhir.nhs.net/StructureDefinition/Extension-DCH-Link-1" />
       </type>
       <condition value="ele-1" />
       <constraint>
@@ -4914,7 +4914,7 @@
       <max value="1" />
       <type>
         <code value="Extension" />
-        <profile value="https://fhir.hl7.org.uk/StructureDefinition/Extension-DCH-HouseholdMember-1" />
+        <profile value="https://fhir.nhs.net/StructureDefinition/Extension-DCH-HouseholdMember-1" />
       </type>
     </element>
     <element>
@@ -4923,7 +4923,7 @@
       <max value="1" />
       <type>
         <code value="Extension" />
-        <profile value="https://fhir.hl7.org.uk/StructureDefinition/Extension-DCH-Link-1" />
+        <profile value="https://fhir.nhs.net/StructureDefinition/Extension-DCH-Link-1" />
       </type>
     </element>
     <element>
