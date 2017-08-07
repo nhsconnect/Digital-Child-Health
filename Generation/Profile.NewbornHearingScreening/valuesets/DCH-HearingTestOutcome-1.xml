@@ -3,14 +3,14 @@
 	<meta>
 		<lastUpdated value="2016-08-03T00:00:00+01:00"/>
 	</meta>
-	<url value="https://fhir.nhs.uk/ValueSet/DCH-TestOutcome-1"/>
+	<url value="https://fhir.nhs.uk/ValueSet/DCH-HearingTestOutcome-1"/>
 	<version value="1.0.0"/>
-	<name value="Test Outcome"/>
-	<status value="active"/>
+	<name value="Hearing Test Outcome"/>
+	<status value="draft"/>
 	<description value="The outcome of the hearing screening test."/>
 	<compose>
 		<include>
-			<system value="https://fhir.nhs.uk/DCH-TestOutcome-1"/>
+			<system value="https://fhir.nhs.uk/DCH-HearingTestOutcome-1"/>
 			<concept>
 				<code value="Right ear clear response: Yes"/>
 				<display value="Right ear clear response: Yes"/>

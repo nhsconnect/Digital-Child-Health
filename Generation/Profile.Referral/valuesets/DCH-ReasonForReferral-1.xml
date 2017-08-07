@@ -9,7 +9,7 @@
 	<description value="Reason for Referral to include clinical intervention/event which triggers Referral."/>
 	<compose>
 		<include>
-			<system value="https://fhir.nhs.uk/dch-reasonforreferral-1"/>
+			<system value="https://fhir.nhs.uk/DCH-ReasonForReferral-1"/>
 			<concept>
 				<code value="01"/>
 				<display value="Transfer of Clinical Responsibility"/>

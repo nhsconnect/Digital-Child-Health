@@ -3,14 +3,14 @@
 	<meta>
 		<lastUpdated value="2016-08-03T00:00:00+01:00"/>
 	</meta>
-	<url value="https://fhir.nhs.uk/ValueSet/DCH-ScreeningOutcome-1"/>
+	<url value="https://fhir.nhs.uk/ValueSet/DCH-HearingScreeningOutcome-1"/>
 	<version value="1.0.0"/>
-	<name value="Screening Outcome"/>
+	<name value="Hearing Screening Outcome"/>
 	<status value="active"/>
 	<description value="The outcome of the newborn hearing screening."/>
 	<compose>
 		<include>
-			<system value="https://fhir.nhs.uk/DCH-ScreeningOutcome-1"/>
+			<system value="https://fhir.nhs.uk/DCH-HearingScreeningOutcome-1"/>
 			<concept>
 				<code value="1"/>
 				<display value="Clear response no follow up required"/>

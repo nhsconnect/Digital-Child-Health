@@ -4,8 +4,9 @@
 		<lastUpdated value="2016-08-03T00:00:00+01:00"/>
 	</meta>
 	<url value="https://fhir.nhs.uk/ValueSet/DCH-DisposalCode-1"/>
+	<version value="1.0.0"/>
 	<name value="Disposal Code"/>
-	<status value="active"/>
+	<status value="draft"/>
 	<description value="A code to identify how an Accident and Emergency Attendance might end."/>
 	<compose>
 		<include>

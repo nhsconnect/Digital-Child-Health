@@ -4,8 +4,9 @@
 		<lastUpdated value="2016-08-03T00:00:00+01:00"/>
 	</meta>
 	<url value="https://fhir.nhs.uk/ValueSet/DCH-ReasonNotGiven-1"/>
-	<name value="Not Administered Reason"/>
-	<status value="active"/>
+	<version value="1.0.0"/>
+	<name value="Reason Not Given"/>
+	<status value="draft"/>
 	<description value="The reason why an immunisation was not administered."/>
 	<compose>
 		<include>

@@ -3,14 +3,14 @@
 	<meta>
 		<lastUpdated value="2016-08-03T00:00:00+01:00"/>
 	</meta>
-	<url value="https://fhir.nhs.uk/ValueSet/DCH-Protocol-1"/>
+	<url value="https://fhir.nhs.uk/ValueSet/DCH-HearingScreeningProtocol-1"/>
 	<version value="1.0.0"/>
-	<name value="Protocol"/>
+	<name value="Hearing Screening Protocol"/>
 	<status value="active"/>
 	<description value="Care Pathway for newborn hearing screening programme (NHSP)."/>
 	<compose>
 		<include>
-			<system value="https://fhir.nhs.uk/DCH-Protocol-1"/>
+			<system value="https://fhir.nhs.uk/DCH-HearingScreeningProtocol-1"/>
 			<concept>
 				<code value="NICU Protocol"/>
 				<display value="NICU Protocol"/>

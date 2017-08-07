@@ -6320,7 +6320,7 @@
         <strength value="required" />
         <description value="The outcome of the newborn hearing screening" />
         <valueSetReference>
-          <reference value="https://fhir.nhs.uk/ValueSet/DCH-ScreeningOutcome-1" />
+          <reference value="https://fhir.nhs.uk/ValueSet/DCH-HearingScreeningOutcome-1" />
         </valueSetReference>
       </binding>
       <mapping>
@@ -6414,7 +6414,7 @@
       <type>
         <code value="uri" />
       </type>
-      <fixedUri value="https://fhir.nhs.uk/DCH-ScreeningOutcome-1" />
+      <fixedUri value="https://fhir.nhs.uk/DCH-HearingScreeningOutcome-1" />
       <condition value="ele-1" />
       <constraint>
         <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-expression">
@@ -9982,7 +9982,7 @@
         <strength value="required" />
         <description value="Care Pathway for newborn hearing screening programme (NHSP)" />
         <valueSetReference>
-          <reference value="https://fhir.nhs.uk/ValueSet/DCH-Protocol-1" />
+          <reference value="https://fhir.nhs.uk/ValueSet/DCH-HearingScreeningProtocol-1" />
         </valueSetReference>
       </binding>
       <mapping>
@@ -10076,7 +10076,7 @@
       <type>
         <code value="uri" />
       </type>
-      <fixedUri value="https://fhir.nhs.uk/DCH-Protocol-1" />
+      <fixedUri value="https://fhir.nhs.uk/DCH-HearingScreeningProtocol-1" />
       <condition value="ele-1" />
       <constraint>
         <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-expression">
@@ -11098,7 +11098,7 @@
         <strength value="required" />
         <description value="Whether the newborn hearing screening was completed" />
         <valueSetReference>
-          <reference value="https://fhir.nhs.uk/ValueSet/DCH-TestStatus-1" />
+          <reference value="https://fhir.nhs.uk/ValueSet/DCH-HearingTestStatus-1" />
         </valueSetReference>
       </binding>
       <mapping>
@@ -11192,7 +11192,7 @@
       <type>
         <code value="uri" />
       </type>
-      <fixedUri value="https://fhir.nhs.uk/DCH-TestStatus-1" />
+      <fixedUri value="https://fhir.nhs.uk/DCH-HearingTestStatus-1" />
       <condition value="ele-1" />
       <constraint>
         <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-expression">
@@ -13040,7 +13040,7 @@
         <strength value="required" />
         <description value="The outcome of the hearing screening test" />
         <valueSetReference>
-          <reference value="https://fhir.nhs.uk/ValueSet/DCH-TestOutcome-1" />
+          <reference value="https://fhir.nhs.uk/ValueSet/DCH-HearingTestOutcome-1" />
         </valueSetReference>
       </binding>
       <mapping>
@@ -13457,7 +13457,7 @@
         <strength value="required" />
         <description value="The outcome of the hearing screening test" />
         <valueSetReference>
-          <reference value="https://fhir.nhs.uk/ValueSet/DCH-TestOutcome-1" />
+          <reference value="https://fhir.nhs.uk/ValueSet/DCH-HearingTestOutcome-1" />
         </valueSetReference>
       </binding>
       <mapping>
@@ -13874,7 +13874,7 @@
         <strength value="required" />
         <description value="The outcome of the hearing screening test" />
         <valueSetReference>
-          <reference value="https://fhir.nhs.uk/ValueSet/DCH-TestOutcome-1" />
+          <reference value="https://fhir.nhs.uk/ValueSet/DCH-HearingTestOutcome-1" />
         </valueSetReference>
       </binding>
       <mapping>
@@ -14287,7 +14287,7 @@
         <strength value="required" />
         <description value="The outcome of the newborn hearing screening" />
         <valueSetReference>
-          <reference value="https://fhir.nhs.uk/ValueSet/DCH-ScreeningOutcome-1" />
+          <reference value="https://fhir.nhs.uk/ValueSet/DCH-HearingScreeningOutcome-1" />
         </valueSetReference>
       </binding>
       <mapping>
@@ -14381,7 +14381,7 @@
       <type>
         <code value="uri" />
       </type>
-      <fixedUri value="https://fhir.nhs.uk/DCH-ScreeningOutcome-1" />
+      <fixedUri value="https://fhir.nhs.uk/DCH-HearingScreeningOutcome-1" />
       <condition value="ele-1" />
       <constraint>
         <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-expression">
@@ -14986,7 +14986,7 @@
         <strength value="required" />
         <description value="The outcome of the newborn hearing screening." />
         <valueSetReference>
-          <reference value="https://fhir.nhs.uk/ValueSet/DCH-ScreeningOutcome-1" />
+          <reference value="https://fhir.nhs.uk/ValueSet/DCH-HearingScreeningOutcome-1" />
         </valueSetReference>
       </binding>
       <mapping>
@@ -15080,7 +15080,7 @@
       <type>
         <code value="uri" />
       </type>
-      <fixedUri value="https://fhir.nhs.uk/DCH-ScreeningOutcome-1" />
+      <fixedUri value="https://fhir.nhs.uk/DCH-HearingScreeningOutcome-1" />
       <condition value="ele-1" />
       <constraint>
         <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-expression">
@@ -15632,14 +15632,14 @@
         <strength value="required" />
         <description value="The outcome of the newborn hearing screening" />
         <valueSetReference>
-          <reference value="https://fhir.nhs.uk/ValueSet/DCH-ScreeningOutcome-1" />
+          <reference value="https://fhir.nhs.uk/ValueSet/DCH-HearingScreeningOutcome-1" />
         </valueSetReference>
       </binding>
     </element>
     <element>
       <path value="QuestionnaireResponse.group.question.answer.valueCoding.system" />
       <min value="1" />
-      <fixedUri value="https://fhir.nhs.uk/DCH-ScreeningOutcome-1" />
+      <fixedUri value="https://fhir.nhs.uk/DCH-HearingScreeningOutcome-1" />
     </element>
     <element>
       <path value="QuestionnaireResponse.group.question.answer.valueCoding.code" />
@@ -15914,14 +15914,14 @@
         <strength value="required" />
         <description value="Care Pathway for newborn hearing screening programme (NHSP)" />
         <valueSetReference>
-          <reference value="https://fhir.nhs.uk/ValueSet/DCH-Protocol-1" />
+          <reference value="https://fhir.nhs.uk/ValueSet/DCH-HearingScreeningProtocol-1" />
         </valueSetReference>
       </binding>
     </element>
     <element>
       <path value="QuestionnaireResponse.group.question.answer.valueCoding.system" />
       <min value="1" />
-      <fixedUri value="https://fhir.nhs.uk/DCH-Protocol-1" />
+      <fixedUri value="https://fhir.nhs.uk/DCH-HearingScreeningProtocol-1" />
     </element>
     <element>
       <path value="QuestionnaireResponse.group.question.answer.valueCoding.code" />
@@ -16005,14 +16005,14 @@
         <strength value="required" />
         <description value="Whether the newborn hearing screening was completed" />
         <valueSetReference>
-          <reference value="https://fhir.nhs.uk/ValueSet/DCH-TestStatus-1" />
+          <reference value="https://fhir.nhs.uk/ValueSet/DCH-HearingTestStatus-1" />
         </valueSetReference>
       </binding>
     </element>
     <element>
       <path value="QuestionnaireResponse.group.question.answer.valueCoding.system" />
       <min value="1" />
-      <fixedUri value="https://fhir.nhs.uk/DCH-TestStatus-1" />
+      <fixedUri value="https://fhir.nhs.uk/DCH-HearingTestStatus-1" />
     </element>
     <element>
       <path value="QuestionnaireResponse.group.question.answer.valueCoding.code" />
@@ -16186,7 +16186,7 @@
         <strength value="required" />
         <description value="The outcome of the hearing screening test" />
         <valueSetReference>
-          <reference value="https://fhir.nhs.uk/ValueSet/DCH-TestOutcome-1" />
+          <reference value="https://fhir.nhs.uk/ValueSet/DCH-HearingTestOutcome-1" />
         </valueSetReference>
       </binding>
     </element>
@@ -16231,7 +16231,7 @@
         <strength value="required" />
         <description value="The outcome of the hearing screening test" />
         <valueSetReference>
-          <reference value="https://fhir.nhs.uk/ValueSet/DCH-TestOutcome-1" />
+          <reference value="https://fhir.nhs.uk/ValueSet/DCH-HearingTestOutcome-1" />
         </valueSetReference>
       </binding>
     </element>
@@ -16276,7 +16276,7 @@
         <strength value="required" />
         <description value="The outcome of the hearing screening test" />
         <valueSetReference>
-          <reference value="https://fhir.nhs.uk/ValueSet/DCH-TestOutcome-1" />
+          <reference value="https://fhir.nhs.uk/ValueSet/DCH-HearingTestOutcome-1" />
         </valueSetReference>
       </binding>
     </element>
@@ -16315,14 +16315,14 @@
         <strength value="required" />
         <description value="The outcome of the newborn hearing screening" />
         <valueSetReference>
-          <reference value="https://fhir.nhs.uk/ValueSet/DCH-ScreeningOutcome-1" />
+          <reference value="https://fhir.nhs.uk/ValueSet/DCH-HearingScreeningOutcome-1" />
         </valueSetReference>
       </binding>
     </element>
     <element>
       <path value="QuestionnaireResponse.group.question.answer.valueCoding.system" />
       <min value="1" />
-      <fixedUri value="https://fhir.nhs.uk/DCH-ScreeningOutcome-1" />
+      <fixedUri value="https://fhir.nhs.uk/DCH-HearingScreeningOutcome-1" />
     </element>
     <element>
       <path value="QuestionnaireResponse.group.question.answer.valueCoding.code" />
@@ -16367,14 +16367,14 @@
         <strength value="required" />
         <description value="The outcome of the newborn hearing screening." />
         <valueSetReference>
-          <reference value="https://fhir.nhs.uk/ValueSet/DCH-ScreeningOutcome-1" />
+          <reference value="https://fhir.nhs.uk/ValueSet/DCH-HearingScreeningOutcome-1" />
         </valueSetReference>
       </binding>
     </element>
     <element>
       <path value="QuestionnaireResponse.group.question.answer.valueCoding.system" />
       <min value="1" />
-      <fixedUri value="https://fhir.nhs.uk/DCH-ScreeningOutcome-1" />
+      <fixedUri value="https://fhir.nhs.uk/DCH-HearingScreeningOutcome-1" />
     </element>
     <element>
       <path value="QuestionnaireResponse.group.question.answer.valueCoding.code" />

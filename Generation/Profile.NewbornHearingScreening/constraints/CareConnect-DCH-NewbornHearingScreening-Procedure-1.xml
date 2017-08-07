@@ -7915,7 +7915,7 @@
         <strength value="required" />
         <description value="The outcome of the hearing screening test" />
         <valueSetReference>
-          <reference value="https://fhir.nhs.uk/ValueSet/DCH-TestOutcome-1" />
+          <reference value="https://fhir.nhs.uk/ValueSet/DCH-HearingTestOutcome-1" />
         </valueSetReference>
       </binding>
       <mapping>
@@ -8029,7 +8029,7 @@
       <type>
         <code value="uri" />
       </type>
-      <fixedUri value="https://fhir.nhs.uk/DCH-TestOutcome-1" />
+      <fixedUri value="https://fhir.nhs.uk/DCH-HearingTestOutcome-1" />
       <condition value="ele-1" />
       <constraint>
         <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-expression">
@@ -11832,14 +11832,14 @@
         <strength value="required" />
         <description value="The outcome of the hearing screening test" />
         <valueSetReference>
-          <reference value="https://fhir.nhs.uk/ValueSet/DCH-TestOutcome-1" />
+          <reference value="https://fhir.nhs.uk/ValueSet/DCH-HearingTestOutcome-1" />
         </valueSetReference>
       </binding>
     </element>
     <element>
       <path value="Procedure.outcome.coding.system" />
       <min value="1" />
-      <fixedUri value="https://fhir.nhs.uk/DCH-TestOutcome-1" />
+      <fixedUri value="https://fhir.nhs.uk/DCH-HearingTestOutcome-1" />
     </element>
     <element>
       <path value="Procedure.outcome.coding.code" />

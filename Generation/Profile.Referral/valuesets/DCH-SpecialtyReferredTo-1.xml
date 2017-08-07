@@ -9,7 +9,7 @@
 	<description value="The type of community service or team that the patient has been referred into."/>
 	<compose>
 		<include>
-			<system value="https://fhir.nhs.uk/dch-specialtyreferredto-1"/>
+			<system value="https://fhir.nhs.uk/DCH-SpecialtyReferredTo-1"/>
 			<concept>
 				<code value="01"/>
 				<display value="Appliances Service"/>

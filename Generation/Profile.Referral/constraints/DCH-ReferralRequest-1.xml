@@ -2377,7 +2377,7 @@
       <type>
         <code value="uri" />
       </type>
-      <fixedUri value="https://fhir.nhs.uk/dch-specialtyreferredto-1" />
+      <fixedUri value="https://fhir.nhs.uk/DCH-SpecialtyReferredTo-1" />
       <condition value="ele-1" />
       <constraint>
         <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-expression">
@@ -4066,7 +4066,7 @@
       <type>
         <code value="uri" />
       </type>
-      <fixedUri value="https://fhir.nhs.uk/dch-reasonforreferral-1" />
+      <fixedUri value="https://fhir.nhs.uk/DCH-ReasonForReferral-1" />
       <condition value="ele-1" />
       <constraint>
         <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-expression">
@@ -5306,7 +5306,7 @@
     <element>
       <path value="ReferralRequest.specialty.coding.system" />
       <min value="1" />
-      <fixedUri value="https://fhir.nhs.uk/dch-specialtyreferredto-1" />
+      <fixedUri value="https://fhir.nhs.uk/DCH-SpecialtyReferredTo-1" />
     </element>
     <element>
       <path value="ReferralRequest.specialty.coding.code" />
@@ -5385,7 +5385,7 @@
     <element>
       <path value="ReferralRequest.reason.coding.system" />
       <min value="1" />
-      <fixedUri value="https://fhir.nhs.uk/dch-reasonforreferral-1" />
+      <fixedUri value="https://fhir.nhs.uk/DCH-ReasonForReferral-1" />
     </element>
     <element>
       <path value="ReferralRequest.reason.coding.code" />

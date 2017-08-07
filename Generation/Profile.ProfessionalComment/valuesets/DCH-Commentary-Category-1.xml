@@ -6,9 +6,9 @@
 	<url value="https://fhir.nhs.uk/ValueSet/DCH-CommentaryCategory-1"/>
 	<version value="1.0.0"/>
 	<name value="Commentary Category"/>
-	<status value="active"/>
+	<status value="draft"/>
     <publisher value="NHS Digital" />
-	<description value="The category applicable to the commentary provided in the Basic resource."/>
+	<description value="The category applicable to the professional advice or comment provided in the Basic resource."/>
 	<compose>
 		<include>
 			<system value="https://fhir.nhs.uk/DCH-CommentaryCategory-1"/>

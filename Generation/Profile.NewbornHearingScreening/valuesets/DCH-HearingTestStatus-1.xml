@@ -3,14 +3,14 @@
 	<meta>
 		<lastUpdated value="2016-08-03T00:00:00+01:00"/>
 	</meta>
-	<url value="https://fhir.nhs.uk/ValueSet/DCH-TestStatus-1"/>
+	<url value="https://fhir.nhs.uk/ValueSet/DCH-HearingTestStatus-1"/>
 	<version value="1.0.0"/>
-	<name value="Test Status"/>
+	<name value="Hearing Test Status"/>
 	<status value="active"/>
 	<description value="Whether the newborn hearing screening was completed."/>
 	<compose>
 		<include>
-			<system value="https://fhir.nhs.uk/DCH-TestStatus-1"/>
+			<system value="https://fhir.nhs.uk/DCH-HearingTestStatus-1"/>
 			<concept>
 				<code value="Test Completed - Yes"/>
 				<display value="Test Completed - Yes"/>

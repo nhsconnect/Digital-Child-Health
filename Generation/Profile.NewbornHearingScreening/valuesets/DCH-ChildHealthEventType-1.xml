@@ -4,8 +4,9 @@
 		<lastUpdated value="2016-08-03T00:00:00+01:00"/>
 	</meta>
 	<url value="https://fhir.nhs.uk/ValueSet/DCH-ChildHealthEventType-1"/>
+	<version value="1.0.0"/>
 	<name value="Child Health Event Type"/>
-	<status value="active"/>
+	status value="draft"/>
 	<description value="The type of Child Health Event. The values below have been listed for example only."/>
 	<compose>
 		<include>
