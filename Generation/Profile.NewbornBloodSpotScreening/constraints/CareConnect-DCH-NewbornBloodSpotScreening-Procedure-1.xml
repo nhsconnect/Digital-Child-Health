@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <meta>
-    <lastUpdated value="2017-08-04T10:58:59.452+01:00" />
+    <lastUpdated value="2017-08-07T09:00:10.326+01:00" />
     <tag>
       <system value="urn:hscic:publishOrder" />
       <code value="8" />
@@ -10,10 +10,10 @@
   <url value="https://fhir.hl7.org.uk/StructureDefinition/CareConnect-DCH-NewbornBloodSpotScreening-Procedure-1" />
   <version value="1.0.0" />
   <name value="CareConnect-DCH-NewbornBloodSpotScreening-Procedure-1" />
-  <status value="draft" />
+  <status value="active" />
   <publisher value="HL7 UK" />
   <date value="2017-03-02T10:44:39.7203604Z" />
-  <description value="This Procedure resource records an action that is or was performed on a patient, with further constraints applied for a Newborn Blood Spot Screening procedure performed during a Child Health event." />
+  <description value="An action that is or was performed on a patient, with further constraints applied for a Newborn Blood Spot Screening procedure performed during a Child Health event." />
   <copyright value="Copyright © 2016 HL7 UK&#xD;&#xA;&#xD;&#xA;Licensed under the Apache License, Version 2.0 (the &quot;License&quot;); you may not use this file except in compliance with the License. You may obtain a copy of the License at&#xD;&#xA;&#xD;&#xA;http://www.apache.org/licenses/LICENSE-2.0&#xD;&#xA;&#xD;&#xA;Unless required by applicable law or agreed to in writing, software distributed under the License is distributed on an &quot;AS IS&quot; BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the License for the specific language governing permissions and limitations under the License.&#xD;&#xA;&#xD;&#xA;HL7® FHIR® standard Copyright © 2011+ HL7&#xD;&#xA;&#xD;&#xA;The HL7® FHIR® standard is used under the FHIR license. You may obtain a copy of the FHIR license at&#xD;&#xA;&#xD;&#xA;https://www.hl7.org/fhir/license.html" />
   <fhirVersion value="1.0.2" />
   <kind value="resource" />
@@ -340,7 +340,7 @@
     <element>
       <path value="Procedure.extension" />
       <name value="dateRecorded" />
-      <short value="The date that the event was recorded" />
+      <short value="The date that the Procedure was recorded" />
       <definition value="The date that the event was recorded." />
       <comments value="There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone." />
       <alias value="extensions" />
@@ -1592,6 +1592,10 @@
         <min value="1" />
         <max value="1" />
       </base>
+      <type>
+        <code value="Reference" />
+        <profile value="http://hl7.org/fhir/StructureDefinition/Group" />
+      </type>
       <type>
         <code value="Reference" />
         <profile value="https://fhir.hl7.org.uk/StructureDefinition/CareConnect-DCH-Patient-1" />
@@ -5648,6 +5652,10 @@
         <min value="0" />
         <max value="1" />
       </base>
+      <type>
+        <code value="Reference" />
+        <profile value="http://hl7.org/fhir/StructureDefinition/RelatedPerson" />
+      </type>
       <type>
         <code value="Reference" />
         <profile value="https://fhir.hl7.org.uk/StructureDefinition/CareConnect-Practitioner-1" />
@@ -10258,6 +10266,18 @@
       </base>
       <type>
         <code value="Reference" />
+        <profile value="http://hl7.org/fhir/StructureDefinition/CarePlan" />
+      </type>
+      <type>
+        <code value="Reference" />
+        <profile value="http://hl7.org/fhir/StructureDefinition/DiagnosticOrder" />
+      </type>
+      <type>
+        <code value="Reference" />
+        <profile value="http://hl7.org/fhir/StructureDefinition/ReferralRequest" />
+      </type>
+      <type>
+        <code value="Reference" />
         <profile value="https://fhir.nhs.uk/StructureDefinition/DCH-ProcedureRequest-1" />
       </type>
       <condition value="ele-1" />
@@ -11569,6 +11589,7 @@
     <element>
       <path value="Procedure.extension" />
       <name value="dateRecorded" />
+      <short value="The date that the Procedure was recorded" />
       <max value="1" />
       <type>
         <code value="Extension" />
@@ -11610,6 +11631,10 @@
     </element>
     <element>
       <path value="Procedure.subject" />
+      <type>
+        <code value="Reference" />
+        <profile value="http://hl7.org/fhir/StructureDefinition/Group" />
+      </type>
       <type>
         <code value="Reference" />
         <profile value="https://fhir.hl7.org.uk/StructureDefinition/CareConnect-DCH-Patient-1" />
@@ -11815,6 +11840,10 @@
     </element>
     <element>
       <path value="Procedure.performer.actor" />
+      <type>
+        <code value="Reference" />
+        <profile value="http://hl7.org/fhir/StructureDefinition/RelatedPerson" />
+      </type>
       <type>
         <code value="Reference" />
         <profile value="https://fhir.hl7.org.uk/StructureDefinition/CareConnect-Practitioner-1" />
@@ -12074,6 +12103,18 @@
     </element>
     <element>
       <path value="Procedure.request" />
+      <type>
+        <code value="Reference" />
+        <profile value="http://hl7.org/fhir/StructureDefinition/CarePlan" />
+      </type>
+      <type>
+        <code value="Reference" />
+        <profile value="http://hl7.org/fhir/StructureDefinition/DiagnosticOrder" />
+      </type>
+      <type>
+        <code value="Reference" />
+        <profile value="http://hl7.org/fhir/StructureDefinition/ReferralRequest" />
+      </type>
       <type>
         <code value="Reference" />
         <profile value="https://fhir.nhs.uk/StructureDefinition/DCH-ProcedureRequest-1" />
