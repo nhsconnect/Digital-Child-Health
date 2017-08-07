@@ -1,15 +1,15 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <meta>
-    <lastUpdated value="2017-07-31T08:02:12.298+01:00" />
+    <lastUpdated value="2017-08-07T11:53:12.167+01:00" />
     <tag>
       <system value="urn:hscic:publishOrder" />
       <code value="19" />
     </tag>
   </meta>
-  <url value="https://fhir.nhs.uk/StructureDefinition/DCH-ProcedureRequest-1" />
+  <url value="https://fhir.nhs.uk/StructureDefinition/DCH-NewbornHearingScreening-ProcedureRequest-1" />
   <version value="1.0.0" />
-  <name value="DCH-ProcedureRequest-1" />
+  <name value="DCH-NewbornHearingScreening-ProcedureRequest-1" />
   <status value="draft" />
   <publisher value="NHS Digital" />
   <contact>
@@ -343,7 +343,7 @@
       </base>
       <type>
         <code value="Extension" />
-        <profile value="https://fhir.nhs.uk/StructureDefinition/Extension-DCH-ConsentStatus-1" />
+        <profile value="https://fhir.nhs.uk/StructureDefinition/Extension-DCH-ConsentStatusNewbornHearing-1" />
       </type>
       <condition value="ele-1" />
       <constraint>
@@ -3611,7 +3611,7 @@
       <max value="1" />
       <type>
         <code value="Extension" />
-        <profile value="https://fhir.nhs.uk/StructureDefinition/Extension-DCH-ConsentStatus-1" />
+        <profile value="https://fhir.nhs.uk/StructureDefinition/Extension-DCH-ConsentStatusNewbornHearing-1" />
       </type>
     </element>
     <element>

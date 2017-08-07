@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <meta>
     <lastUpdated value="2017-08-07T09:05:39.835+01:00" />
@@ -10278,7 +10278,7 @@
       </type>
       <type>
         <code value="Reference" />
-        <profile value="https://fhir.nhs.uk/StructureDefinition/DCH-ProcedureRequest-1" />
+        <profile value="https://fhir.nhs.uk/StructureDefinition/DCH-NewbornHearingScreening-ProcedureRequest-1" />
       </type>
       <condition value="ele-1" />
       <constraint>
@@ -11957,7 +11957,7 @@
       </type>
       <type>
         <code value="Reference" />
-        <profile value="https://fhir.nhs.uk/StructureDefinition/DCH-ProcedureRequest-1" />
+        <profile value="https://fhir.nhs.uk/StructureDefinition/DCH-NewbornHearingScreening-ProcedureRequest-1" />
       </type>
     </element>
     <element>

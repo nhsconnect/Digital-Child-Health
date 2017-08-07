@@ -5474,7 +5474,7 @@
       </type>
       <type>
         <code value="Reference" />
-        <profile value="https://fhir.nhs.uk/StructureDefinition/DCH-ProcedureRequest-1" />
+        <profile value="https://fhir.nhs.uk/StructureDefinition/DCH-NewbornHearingScreening-ProcedureRequest-1" />
       </type>
       <condition value="ele-1" />
       <constraint>
@@ -9560,7 +9560,7 @@
       </type>
       <type>
         <code value="Reference" />
-        <profile value="https://fhir.nhs.uk/StructureDefinition/DCH-ProcedureRequest-1" />
+        <profile value="https://fhir.nhs.uk/StructureDefinition/DCH-NewbornHearingScreening-ProcedureRequest-1" />
       </type>
       <condition value="ele-1" />
       <constraint>
@@ -15540,7 +15540,7 @@
       </type>
       <type>
         <code value="Reference" />
-        <profile value="https://fhir.nhs.uk/StructureDefinition/DCH-ProcedureRequest-1" />
+        <profile value="https://fhir.nhs.uk/StructureDefinition/DCH-NewbornHearingScreening-ProcedureRequest-1" />
       </type>
       <binding>
         <strength value="required" />
@@ -15876,7 +15876,7 @@
       </type>
       <type>
         <code value="Reference" />
-        <profile value="https://fhir.nhs.uk/StructureDefinition/DCH-ProcedureRequest-1" />
+        <profile value="https://fhir.nhs.uk/StructureDefinition/DCH-NewbornHearingScreening-ProcedureRequest-1" />
       </type>
     </element>
     <element>
