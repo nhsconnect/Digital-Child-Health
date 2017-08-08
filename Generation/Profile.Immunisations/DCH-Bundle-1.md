@@ -6,7 +6,6 @@ This 'DCH-Bundle-1' Bundle resource profile is used as a container to collect a 
 - [DCH-Immunisation-QuestionnaireResponse-1]
 - [CareConnect-DCH-Encounter-1]
 - [CareConnect-DCH-Immunization-1]
-- [CareConnect-DCH-VaccinationRequirement-Condition-1]
 - [CareConnect-Practitioner-1]
 - [CareConnect-Location-1]
 
@@ -22,4 +21,3 @@ This 'DCH-Bundle-1' Bundle resource profile is used as a container to collect a 
 [DCH-ProcedureRequest-1]:dch-procedurerequest-1.html
 [CareConnect-Practitioner-1]:careconnect-practitioner-1.html
 [CareConnect-Location-1]:careconnect-location-1.html
-[CareConnect-DCH-VaccinationRequirement-Condition-1]:careconnect-dch-vaccinationrequirement-condition-1.html
