@@ -1,7 +1,7 @@
 {
   "resourceType": "StructureDefinition",
   "meta": {
-    "lastUpdated": "2017-07-28T17:14:30.14+01:00"
+    "lastUpdated": "2017-09-14T11:43:53.593+01:00"
   },
   "extension": [
     {
@@ -10,7 +10,7 @@
     }
   ],
   "url": "https://fhir.hl7.org.uk/StructureDefinition/Extension-CareConnect-TreatmentCategory-1",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "name": "Extension-CareConnect-TreatmentCategory-1",
   "status": "active",
   "publisher": "HL7 UK",
@@ -22,7 +22,7 @@
   "abstract": false,
   "contextType": "resource",
   "context": [
-    "Patient.identifier"
+    "Patient"
   ],
   "base": "http://hl7.org/fhir/StructureDefinition/Extension",
   "snapshot": {
@@ -64,7 +64,9 @@
         "binding": {
           "strength": "required",
           "description": "The treatment category of the patient",
-          "valueSetUri": "https://fhir.hl7.org.uk/ValueSet/CareConnect-TreatmentCategory-1"
+          "valueSetReference": {
+            "reference": "https://fhir.hl7.org.uk/ValueSet/CareConnect-TreatmentCategory-1"
+          }
         },
         "mapping": [
           {

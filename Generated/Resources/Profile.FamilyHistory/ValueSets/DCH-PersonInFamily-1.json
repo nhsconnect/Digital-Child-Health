@@ -1,0 +1,26 @@
+{
+  "resourceType": "ValueSet",
+  "meta": {
+    "lastUpdated": "2016-08-03T00:00:00+01:00"
+  },
+  "url": "https://fhir.nhs.uk/ValueSet/DCH-PersonInFamily-1",
+  "version": "1.0.0",
+  "name": "Person In Family",
+  "status": "draft",
+  "description": "A code from the SNOMED Clinical Terminology UK coding system that describes a person with characteristic related to the subject. Any code from the SNOMED CT UK 'Person in family of subject (person)' subset with subset original id 444148008.",
+  "copyright": "This value set includes content from SNOMED CT, which is copyright © 2002+ International Health Terminology Standards Development Organisation (IHTSDO), and distributed by agreement between IHTSDO and HL7. Implementer use of SNOMED CT is not covered by this agreement.",
+  "compose": {
+    "include": [
+      {
+        "system": "http://snomed.info/sct",
+        "filter": [
+          {
+            "property": "concept",
+            "op": "in",
+            "value": "444148008"
+          }
+        ]
+      }
+    ]
+  }
+}

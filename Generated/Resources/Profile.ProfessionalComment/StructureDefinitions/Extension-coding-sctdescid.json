@@ -1,7 +1,7 @@
 {
   "resourceType": "StructureDefinition",
   "meta": {
-    "lastUpdated": "2017-05-10T17:26:57.842+01:00"
+    "lastUpdated": "2017-08-10T11:23:19.538+01:00"
   },
   "url": "https://fhir.hl7.org.uk/StructureDefinition/Extension-coding-sctdescid",
   "version": "1.0.0",
@@ -36,7 +36,7 @@
         "short": "The SNOMED CT Description ID for the display",
         "definition": "The SNOMED CT Description ID for the display.",
         "min": 0,
-        "max": "*",
+        "max": "1",
         "base": {
           "path": "Element",
           "min": 0,
@@ -262,7 +262,8 @@
       {
         "path": "Extension",
         "short": "The SNOMED CT Description ID for the display",
-        "definition": "The SNOMED CT Description ID for the display."
+        "definition": "The SNOMED CT Description ID for the display.",
+        "max": "1"
       },
       {
         "path": "Extension.url",

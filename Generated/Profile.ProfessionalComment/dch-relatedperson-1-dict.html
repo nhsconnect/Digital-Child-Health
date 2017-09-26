@@ -119,7 +119,7 @@
                             </ul>
 							
                             <p class="navbar-text pull-right" style="padding-right: 10px;padding-top: 3px;">
-                                <span class="label label-default"  style="font-size: 95%;">Experimental</span>
+                                <span class="label label-default"  style="font-size: 95%;">Alpha</span>
                             </p>
 
                         </div>
@@ -406,7 +406,7 @@
           <td>
             <a href="http://www.hl7.org/fhir/DSTU2/conformance-rules.html#conformance">Control</a>
           </td>
-          <td>0..1</td>
+          <td>1..1</td>
         </tr>
         <tr>
           <td>
@@ -603,7 +603,7 @@
           <td>
             <div class="binding-description" xmlns="http://www.w3.org/1999/xhtml">
               <p>Identifies the purpose for this identifier, if known .</p>
-              <p>The codes SHALL be taken from <a href="http://hl7.org/fhir/DSTU2/valueset-identifier-use.html">http://hl7.org/fhir/DSTU2/valueset-identifier-use.html</a></p>
+              <p>The codes SHALL be taken from <a href="http://hl7.org/fhir/ValueSet/identifier-use">http://hl7.org/fhir/ValueSet/identifier-use</a></p>
             </div>
           </td>
         </tr>
@@ -658,7 +658,7 @@
           <td>
             <div class="binding-description" xmlns="http://www.w3.org/1999/xhtml">
               <p>A coded type for an identifier that can be used to determine which identifier to use for a specific purpose.</p>
-              <p>The codes SHALL be taken from the following if appropriate, otherwise an alternate coding may be included instead. <a href="http://hl7.org/fhir/DSTU2/valueset-identifier-type.html">http://hl7.org/fhir/DSTU2/valueset-identifier-type.html</a></p>
+              <p>The codes SHALL be taken from the following if appropriate, otherwise an alternate coding may be included instead. <a href="http://hl7.org/fhir/ValueSet/identifier-type">http://hl7.org/fhir/ValueSet/identifier-type</a></p>
             </div>
           </td>
         </tr>
@@ -1303,7 +1303,7 @@
             <a href="http://www.hl7.org/fhir/DSTU2/datatypes.html">Type</a>
           </td>
           <td>
-            <a href="careconnect-organization-1.html" xmlns="http://www.w3.org/1999/xhtml">https://fhir.hl7.org.uk/StructureDefinition/CareConnect-Organization-1</a>
+            <a href="careconnect-dch-organization-1.html" xmlns="http://www.w3.org/1999/xhtml">https://fhir.hl7.org.uk/StructureDefinition/CareConnect-DCH-Organization-1</a>
           </td>
         </tr>
         <tr>
@@ -2047,7 +2047,7 @@
           <td>
             <div class="binding-description" xmlns="http://www.w3.org/1999/xhtml">
               <p>The use of a human name</p>
-              <p>The codes SHALL be taken from <a href="http://hl7.org/fhir/DSTU2/valueset-name-use.html">http://hl7.org/fhir/DSTU2/valueset-name-use.html</a></p>
+              <p>The codes SHALL be taken from <a href="http://hl7.org/fhir/ValueSet/name-use">http://hl7.org/fhir/ValueSet/name-use</a></p>
             </div>
           </td>
         </tr>
@@ -2406,6 +2406,12 @@
           <td>0..1</td>
         </tr>
         <tr>
+          <td>
+            <a href="http://www.hl7.org/fhir/DSTU2/conformance-rules.html#mustSupport">Must Support</a>
+          </td>
+          <td>True</td>
+        </tr>
+        <tr>
           <td width="150px">Comments</td>
           <td></td>
         </tr>
@@ -2502,7 +2508,7 @@
           <td>
             <div class="binding-description" xmlns="http://www.w3.org/1999/xhtml">
               <p>Telecommunications form for contact point</p>
-              <p>The codes SHALL be taken from <a href="http://hl7.org/fhir/DSTU2/valueset-contact-point-system.html">http://hl7.org/fhir/DSTU2/valueset-contact-point-system.html</a></p>
+              <p>The codes SHALL be taken from <a href="http://hl7.org/fhir/ValueSet/contact-point-system">http://hl7.org/fhir/ValueSet/contact-point-system</a></p>
             </div>
           </td>
         </tr>
@@ -2583,7 +2589,7 @@
           <td>
             <div class="binding-description" xmlns="http://www.w3.org/1999/xhtml">
               <p>Use of contact point</p>
-              <p>The codes SHALL be taken from <a href="http://hl7.org/fhir/DSTU2/valueset-contact-point-use.html">http://hl7.org/fhir/DSTU2/valueset-contact-point-use.html</a></p>
+              <p>The codes SHALL be taken from <a href="http://hl7.org/fhir/ValueSet/contact-point-use">http://hl7.org/fhir/ValueSet/contact-point-use</a></p>
             </div>
           </td>
         </tr>
@@ -2876,6 +2882,12 @@
           <td>0..1</td>
         </tr>
         <tr>
+          <td>
+            <a href="http://www.hl7.org/fhir/DSTU2/conformance-rules.html#mustSupport">Must Support</a>
+          </td>
+          <td>True</td>
+        </tr>
+        <tr>
           <td width="150px">Comments</td>
           <td></td>
         </tr>
@@ -2972,7 +2984,7 @@
           <td>
             <div class="binding-description" xmlns="http://www.w3.org/1999/xhtml">
               <p>The use of an address</p>
-              <p>The codes SHALL be taken from <a href="http://hl7.org/fhir/DSTU2/valueset-address-use.html">http://hl7.org/fhir/DSTU2/valueset-address-use.html</a></p>
+              <p>The codes SHALL be taken from <a href="http://hl7.org/fhir/ValueSet/address-use">http://hl7.org/fhir/ValueSet/address-use</a></p>
             </div>
           </td>
         </tr>
@@ -3031,7 +3043,7 @@
           <td>
             <div class="binding-description" xmlns="http://www.w3.org/1999/xhtml">
               <p>The type of an address (physical / postal)</p>
-              <p>The codes SHALL be taken from <a href="http://hl7.org/fhir/DSTU2/valueset-address-type.html">http://hl7.org/fhir/DSTU2/valueset-address-type.html</a></p>
+              <p>The codes SHALL be taken from <a href="http://hl7.org/fhir/ValueSet/address-type">http://hl7.org/fhir/ValueSet/address-type</a></p>
             </div>
           </td>
         </tr>

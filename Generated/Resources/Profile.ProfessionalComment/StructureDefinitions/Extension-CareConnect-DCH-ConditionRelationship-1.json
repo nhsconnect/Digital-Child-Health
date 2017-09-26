@@ -1,10 +1,10 @@
 {
   "resourceType": "StructureDefinition",
   "meta": {
-    "lastUpdated": "2017-07-28T17:29:17.786+01:00"
+    "lastUpdated": "2017-09-25T18:23:52.246+01:00"
   },
   "url": "https://fhir.hl7.org.uk/StructureDefinition/Extension-CareConnect-DCH-ConditionRelationship-1",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "name": "Extension-CareConnect-DCH-ConditionRelationship-1",
   "status": "active",
   "publisher": "HL7 UK",

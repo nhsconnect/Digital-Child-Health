@@ -1,0 +1,133 @@
+{
+  "resourceType": "ValueSet",
+  "meta": {
+    "lastUpdated": "2016-08-03T00:00:00+01:00"
+  },
+  "url": "https://fhir.nhs.uk/ValueSet/DCH-ChildHealthEncounterType-1",
+  "version": "1.0.0",
+  "name": "Child Health Encounter Type",
+  "status": "active",
+  "description": "The type of Child Health encounter.",
+  "copyright": "Copyright © 2016 Health and Social Care Information Centre. NHS Digital is the trading name of the Health and Social Care Information Centre.",
+  "compose": {
+    "include": [
+      {
+        "system": "https://fhir.nhs.uk/DCH-ChildHealthEncounterType-1",
+        "concept": [
+          {
+            "code": "Birth",
+            "display": "Birth"
+          },
+          {
+            "code": "Maternity Discharge",
+            "display": "Maternity Discharge"
+          },
+          {
+            "code": "Newborn Physical Examination",
+            "display": "Newborn Physical Examination"
+          },
+          {
+            "code": "Newborn Hearing Screening",
+            "display": "Newborn Hearing Screening"
+          },
+          {
+            "code": "6-8 Week Review",
+            "display": "6-8 Week Review"
+          },
+          {
+            "code": "BCG immunisation",
+            "display": "BCG immunisation"
+          },
+          {
+            "code": "8 week immunisations",
+            "display": "8 week immunisations"
+          },
+          {
+            "code": "12 week immunisations",
+            "display": "12 week immunisations"
+          },
+          {
+            "code": "16 week immunisations",
+            "display": "16 week immunisations"
+          },
+          {
+            "code": "MMR immunisations",
+            "display": "MMR immunisations"
+          },
+          {
+            "code": "Pre-school booster immunisations",
+            "display": "Pre-school booster immunisations"
+          },
+          {
+            "code": "HPV first immunisations",
+            "display": "HPV first immunisations"
+          },
+          {
+            "code": "HPV second immunisations",
+            "display": "HPV second immunisations"
+          },
+          {
+            "code": "Teenage booster immunisations",
+            "display": "Teenage booster immunisations"
+          },
+          {
+            "code": "Influenza 2 years immunisations",
+            "display": "Influenza 2 years immunisations"
+          },
+          {
+            "code": "Influenza 3 years immunisations",
+            "display": "Influenza 3 years"
+          },
+          {
+            "code": "Influenza 4 years",
+            "display": "Influenza 4 years immunisations"
+          },
+          {
+            "code": "Influenza year 1 immunisations",
+            "display": "Influenza year immunisations1"
+          },
+          {
+            "code": "Influenza year 2 immunisations",
+            "display": "Influenza year 2 immunisations"
+          },
+          {
+            "code": "Influenza year 3 immunisations",
+            "display": "Influenza year 3 immunisations"
+          },
+          {
+            "code": "2-2 1/2 Year Early Years Progress",
+            "display": "2-2 1/2 Year Early Years Progress"
+          },
+          {
+            "code": "2-2 1/2 Year Health Visitor Review",
+            "display": "2-2 1/2 Year Health Visitor Review"
+          },
+          {
+            "code": "1 Year Health Review",
+            "display": "1 Year Health Review"
+          },
+          {
+            "code": "6-8 Week HV review",
+            "display": "6-8 Week HV review"
+          },
+          {
+            "code": "New Baby Health Visitor Review",
+            "display": "New Baby Health Visitor Review"
+          },
+          {
+            "code": "School Entry Review",
+            "display": "School Entry Review"
+          },
+          {
+            "code": "Ad-hoc Health Review",
+            "display": "Ad-hoc Health Review"
+          },
+          {
+            "code": "Urgent Care Attendance",
+            "display": "Urgent Care Attendance"
+          }
+        ]
+      }
+    ]
+  }
+}

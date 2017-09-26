@@ -1,7 +1,7 @@
 {
   "resourceType": "StructureDefinition",
   "meta": {
-    "lastUpdated": "2017-07-28T16:24:14.785+01:00",
+    "lastUpdated": "2017-08-14T09:57:06.183+01:00",
     "tag": [
       {
         "system": "urn:hscic:publishOrder",
@@ -16,7 +16,7 @@
     }
   ],
   "url": "https://fhir.hl7.org.uk/StructureDefinition/CareConnect-DCH-Patient-1",
-  "version": "1.0.1",
+  "version": "1.1.0",
   "name": "CareConnect-DCH-Patient-1",
   "status": "active",
   "publisher": "HL7 UK",
@@ -3709,7 +3709,7 @@
           {
             "code": "Reference",
             "profile": [
-              "https://fhir.hl7.org.uk/StructureDefinition/CareConnect-Organization-1"
+              "https://fhir.hl7.org.uk/StructureDefinition/CareConnect-DCH-Organization-1"
             ]
           }
         ],
@@ -5210,7 +5210,7 @@
           {
             "code": "Reference",
             "profile": [
-              "https://fhir.hl7.org.uk/StructureDefinition/CareConnect-Organization-1"
+              "https://fhir.hl7.org.uk/StructureDefinition/CareConnect-DCH-Organization-1"
             ]
           }
         ],
@@ -14389,7 +14389,7 @@
           {
             "code": "Reference",
             "profile": [
-              "https://fhir.hl7.org.uk/StructureDefinition/CareConnect-Organization-1"
+              "https://fhir.hl7.org.uk/StructureDefinition/CareConnect-DCH-Organization-1"
             ]
           }
         ],
@@ -17951,13 +17951,13 @@
           {
             "code": "Reference",
             "profile": [
-              "https://fhir.hl7.org.uk/StructureDefinition/CareConnect-Organization-1"
+              "https://fhir.hl7.org.uk/StructureDefinition/CareConnect-DCH-Organization-1"
             ]
           },
           {
             "code": "Reference",
             "profile": [
-              "https://fhir.hl7.org.uk/StructureDefinition/CareConnect-Practitioner-1"
+              "https://fhir.hl7.org.uk/StructureDefinition/CareConnect-DCH-Practitioner-1"
             ]
           }
         ],
@@ -18031,7 +18031,7 @@
           {
             "code": "Reference",
             "profile": [
-              "https://fhir.hl7.org.uk/StructureDefinition/CareConnect-Organization-1"
+              "https://fhir.hl7.org.uk/StructureDefinition/CareConnect-DCH-Organization-1"
             ]
           }
         ],
@@ -18855,13 +18855,7 @@
               "https://fhir.hl7.org.uk/StructureDefinition/Extension-CareConnect-ResidentialStatus-1"
             ]
           }
-        ],
-        "binding": {
-          "strength": "required",
-          "valueSetReference": {
-            "reference": "https://fhir.hl7.org.uk/ValueSet/CareConnect-ResidentialStatus-1"
-          }
-        }
+        ]
       },
       {
         "path": "Patient.extension",
@@ -18873,13 +18867,7 @@
               "https://fhir.hl7.org.uk/StructureDefinition/Extension-CareConnect-TreatmentCategory-1"
             ]
           }
-        ],
-        "binding": {
-          "strength": "required",
-          "valueSetReference": {
-            "reference": "https://fhir.hl7.org.uk/ValueSet/CareConnect-TreatmentCategory-1"
-          }
-        }
+        ]
       },
       {
         "path": "Patient.extension",
@@ -18964,7 +18952,7 @@
           {
             "code": "Reference",
             "profile": [
-              "https://fhir.hl7.org.uk/StructureDefinition/CareConnect-Organization-1"
+              "https://fhir.hl7.org.uk/StructureDefinition/CareConnect-DCH-Organization-1"
             ]
           }
         ]
@@ -18989,7 +18977,7 @@
           {
             "code": "Reference",
             "profile": [
-              "https://fhir.hl7.org.uk/StructureDefinition/CareConnect-Organization-1"
+              "https://fhir.hl7.org.uk/StructureDefinition/CareConnect-DCH-Organization-1"
             ]
           }
         ]
@@ -19232,7 +19220,7 @@
           {
             "code": "Reference",
             "profile": [
-              "https://fhir.hl7.org.uk/StructureDefinition/CareConnect-Organization-1"
+              "https://fhir.hl7.org.uk/StructureDefinition/CareConnect-DCH-Organization-1"
             ]
           }
         ]
@@ -19259,13 +19247,13 @@
           {
             "code": "Reference",
             "profile": [
-              "https://fhir.hl7.org.uk/StructureDefinition/CareConnect-Organization-1"
+              "https://fhir.hl7.org.uk/StructureDefinition/CareConnect-DCH-Organization-1"
             ]
           },
           {
             "code": "Reference",
             "profile": [
-              "https://fhir.hl7.org.uk/StructureDefinition/CareConnect-Practitioner-1"
+              "https://fhir.hl7.org.uk/StructureDefinition/CareConnect-DCH-Practitioner-1"
             ]
           }
         ]
@@ -19276,7 +19264,7 @@
           {
             "code": "Reference",
             "profile": [
-              "https://fhir.hl7.org.uk/StructureDefinition/CareConnect-Organization-1"
+              "https://fhir.hl7.org.uk/StructureDefinition/CareConnect-DCH-Organization-1"
             ]
           }
         ]

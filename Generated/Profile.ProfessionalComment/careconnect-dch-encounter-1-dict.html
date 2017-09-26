@@ -119,7 +119,7 @@
                             </ul>
 							
                             <p class="navbar-text pull-right" style="padding-right: 10px;padding-top: 3px;">
-                                <span class="label label-default"  style="font-size: 95%;">Experimental</span>
+                                <span class="label label-default"  style="font-size: 95%;">Alpha</span>
                             </p>
 
                         </div>
@@ -575,7 +575,7 @@
           <td>
             <div class="binding-description" xmlns="http://www.w3.org/1999/xhtml">
               <p>Identifies the purpose for this identifier, if known .</p>
-              <p>The codes SHALL be taken from <a href="http://hl7.org/fhir/DSTU2/valueset-identifier-use.html">http://hl7.org/fhir/DSTU2/valueset-identifier-use.html</a></p>
+              <p>The codes SHALL be taken from <a href="http://hl7.org/fhir/ValueSet/identifier-use">http://hl7.org/fhir/ValueSet/identifier-use</a></p>
             </div>
           </td>
         </tr>
@@ -630,7 +630,7 @@
           <td>
             <div class="binding-description" xmlns="http://www.w3.org/1999/xhtml">
               <p>A coded type for an identifier that can be used to determine which identifier to use for a specific purpose.</p>
-              <p>The codes SHALL be taken from the following if appropriate, otherwise an alternate coding may be included instead. <a href="http://hl7.org/fhir/DSTU2/valueset-identifier-type.html">http://hl7.org/fhir/DSTU2/valueset-identifier-type.html</a></p>
+              <p>The codes SHALL be taken from the following if appropriate, otherwise an alternate coding may be included instead. <a href="http://hl7.org/fhir/ValueSet/identifier-type">http://hl7.org/fhir/ValueSet/identifier-type</a></p>
             </div>
           </td>
         </tr>
@@ -1275,7 +1275,7 @@
             <a href="http://www.hl7.org/fhir/DSTU2/datatypes.html">Type</a>
           </td>
           <td>
-            <a href="careconnect-organization-1.html" xmlns="http://www.w3.org/1999/xhtml">https://fhir.hl7.org.uk/StructureDefinition/CareConnect-Organization-1</a>
+            <a href="careconnect-dch-organization-1.html" xmlns="http://www.w3.org/1999/xhtml">https://fhir.hl7.org.uk/StructureDefinition/CareConnect-DCH-Organization-1</a>
           </td>
         </tr>
         <tr>
@@ -1439,7 +1439,7 @@
           <td>
             <div class="binding-description" xmlns="http://www.w3.org/1999/xhtml">
               <p>Current state of the encounter</p>
-              <p>The codes SHALL be taken from <a href="http://hl7.org/fhir/DSTU2/valueset-encounter-state.html">http://hl7.org/fhir/DSTU2/valueset-encounter-state.html</a></p>
+              <p>The codes SHALL be taken from <a href="http://hl7.org/fhir/ValueSet/encounter-state">http://hl7.org/fhir/ValueSet/encounter-state</a></p>
             </div>
           </td>
         </tr>
@@ -1630,7 +1630,7 @@
           <td>
             <div class="binding-description" xmlns="http://www.w3.org/1999/xhtml">
               <p>Current state of the encounter</p>
-              <p>The codes SHALL be taken from <a href="http://hl7.org/fhir/DSTU2/valueset-encounter-state.html">http://hl7.org/fhir/DSTU2/valueset-encounter-state.html</a></p>
+              <p>The codes SHALL be taken from <a href="http://hl7.org/fhir/ValueSet/encounter-state">http://hl7.org/fhir/ValueSet/encounter-state</a></p>
             </div>
           </td>
         </tr>
@@ -1837,7 +1837,7 @@
           <td>
             <div class="binding-description" xmlns="http://www.w3.org/1999/xhtml">
               <p>Classification of the encounter</p>
-              <p>The codes SHALL be taken from <a href="http://hl7.org/fhir/DSTU2/valueset-encounter-class.html">http://hl7.org/fhir/DSTU2/valueset-encounter-class.html</a></p>
+              <p>The codes SHALL be taken from <a href="http://hl7.org/fhir/ValueSet/encounter-class">http://hl7.org/fhir/ValueSet/encounter-class</a></p>
             </div>
           </td>
         </tr>
@@ -2020,7 +2020,7 @@
           <td>
             <a href="http://www.hl7.org/fhir/DSTU2/conformance-rules.html#conformance">Control</a>
           </td>
-          <td>0..1</td>
+          <td>0..*</td>
         </tr>
         <tr>
           <td>
@@ -2138,8 +2138,8 @@
         </tr>
         <tr>
           <td colspan="2" class="structure">
-            <a name="Encounter.type.childHealthEventType"></a>
-            <b>Encounter.type.coding(childHealthEventType)</b>
+            <a name="Encounter.type.childHealthEncounterType"></a>
+            <b>Encounter.type.coding(childHealthEncounterType)</b>
           </td>
         </tr>
         <tr>
@@ -2158,8 +2158,8 @@
           </td>
           <td>
             <div class="binding-description" xmlns="http://www.w3.org/1999/xhtml">
-              <p>The type of Child Health Event</p>
-              <p>The codes SHALL be taken from <a href="dch-childhealtheventtype-1.html">https://fhir.nhs.uk/ValueSet/DCH-ChildHealthEventType-1</a></p>
+              <p>The type of Child Health encounter</p>
+              <p>The codes SHALL be taken from <a href="dch-childhealthencountertype-1.html">https://fhir.nhs.uk/ValueSet/DCH-ChildHealthEncounterType-1</a></p>
             </div>
           </td>
         </tr>
@@ -3262,14 +3262,14 @@
         <tr>
           <td width="150px">Definition</td>
           <td>
-            <p>Participant involved in the encounter, this will be the principal or primary performer of the act.</p>
+            <p>The list of people involved in the encounter</p>
           </td>
         </tr>
         <tr>
           <td>
             <a href="http://www.hl7.org/fhir/DSTU2/conformance-rules.html#conformance">Control</a>
           </td>
-          <td>0..*</td>
+          <td>1..*</td>
         </tr>
         <tr>
           <td width="150px">Comments</td>
@@ -3393,17 +3393,40 @@
         </tr>
         <tr>
           <td width="150px">Definition</td>
-          <td></td>
+          <td>
+            <p>Role of participant in encounter.</p>
+          </td>
         </tr>
         <tr>
           <td>
             <a href="http://www.hl7.org/fhir/DSTU2/conformance-rules.html#conformance">Control</a>
           </td>
-          <td>1..1</td>
+          <td>0..* ?</td>
+        </tr>
+        <tr>
+          <td>
+            <a href="http://www.hl7.org/fhir/DSTU2/terminologies.html">Binding</a>
+          </td>
+          <td>
+            <div class="binding-description" xmlns="http://www.w3.org/1999/xhtml">
+              <p>Role of participant in encounter</p>
+              <p>The codes SHALL be taken from the following if appropriate, otherwise an alternate coding may be included instead. <a href="http://hl7.org/fhir/ValueSet/encounter-participant-type">http://hl7.org/fhir/ValueSet/encounter-participant-type</a></p>
+            </div>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <a href="http://www.hl7.org/fhir/DSTU2/datatypes.html">Type</a>
+          </td>
+          <td>
+            <a href="http://www.hl7.org/fhir/DSTU2/datatypes.html#codeableconcept" xmlns="http://www.w3.org/1999/xhtml">CodeableConcept</a>
+          </td>
         </tr>
         <tr>
           <td width="150px">Comments</td>
-          <td></td>
+          <td>
+            <p>The participant type indicates how an individual partitipates in an encounter. It includes non-practitioner participants, and for practitioners this is to describe the action type in the context of this encounter (e.g. Admitting Dr, Attending Dr, Translator, Consulting Dr). This is different to the practitioner roles which are functional roles, derived from terms of employment, education, licensing, etc.</p>
+          </td>
         </tr>
         <tr>
           <td colspan="2" class="structure">
@@ -3481,17 +3504,35 @@
         </tr>
         <tr>
           <td width="150px">Definition</td>
-          <td></td>
+          <td>
+            <p>A reference to a code defined by a terminology system.</p>
+          </td>
         </tr>
         <tr>
           <td>
             <a href="http://www.hl7.org/fhir/DSTU2/conformance-rules.html#conformance">Control</a>
           </td>
-          <td>1..1</td>
+          <td>0..* ?</td>
+        </tr>
+        <tr>
+          <td>
+            <a href="http://www.hl7.org/fhir/DSTU2/datatypes.html">Type</a>
+          </td>
+          <td>
+            <a href="http://www.hl7.org/fhir/DSTU2/datatypes.html#coding" xmlns="http://www.w3.org/1999/xhtml">Coding</a>
+          </td>
+        </tr>
+        <tr>
+          <td width="150px">Requirements</td>
+          <td>
+            <p>Allows for translations and alternate encodings within a code system.  Also supports communication of the same instance to systems requiring different encodings.</p>
+          </td>
         </tr>
         <tr>
           <td width="150px">Comments</td>
-          <td></td>
+          <td>
+            <p>Codes may be defined very casually in enumerations, or code lists, up to very formal definitions such as SNOMED CT - see the HL7 v3 Core Principles for more information.  Ordering of codings is undefined and SHALL NOT be used to infer meaning. Generally, at most only one of the coding values will be labelled as UserSelected = true.</p>
+          </td>
         </tr>
         <tr>
           <td colspan="2" class="structure">
@@ -3569,21 +3610,35 @@
         </tr>
         <tr>
           <td width="150px">Definition</td>
-          <td></td>
+          <td>
+            <p>The identification of the code system that defines the meaning of the symbol in the code.</p>
+          </td>
         </tr>
         <tr>
           <td>
             <a href="http://www.hl7.org/fhir/DSTU2/conformance-rules.html#conformance">Control</a>
           </td>
-          <td>1..*</td>
+          <td>0..1 ?</td>
+        </tr>
+        <tr>
+          <td>
+            <a href="http://www.hl7.org/fhir/DSTU2/datatypes.html">Type</a>
+          </td>
+          <td>
+            <a href="http://www.hl7.org/fhir/DSTU2/datatypes.html#uri" xmlns="http://www.w3.org/1999/xhtml">Uri</a>
+          </td>
+        </tr>
+        <tr>
+          <td width="150px">Requirements</td>
+          <td>
+            <p>Need to be unambiguous about the source of the definition of the symbol.</p>
+          </td>
         </tr>
         <tr>
           <td width="150px">Comments</td>
-          <td></td>
-        </tr>
-        <tr>
-          <td>Fixed Value</td>
-          <td>http://hl7.org/fhir/DSTU2/valueset-encounter-participant-type.html</td>
+          <td>
+            <p>The URI may be an OID (urn:oid:...) or a UUID (urn:uuid:...).  OIDs and UUIDs SHALL be references to the HL7 OID registry. Otherwise, the URI should come from HL7's list of FHIR defined special URIs or it should de-reference to some definition that establish the system clearly and unambiguously.</p>
+          </td>
         </tr>
         <tr>
           <td colspan="2" class="structure">
@@ -3625,21 +3680,35 @@
         </tr>
         <tr>
           <td width="150px">Definition</td>
-          <td></td>
+          <td>
+            <p>A symbol in syntax defined by the system. The symbol may be a predefined code or an expression in a syntax defined by the coding system (e.g. post-coordination).</p>
+          </td>
         </tr>
         <tr>
           <td>
             <a href="http://www.hl7.org/fhir/DSTU2/conformance-rules.html#conformance">Control</a>
           </td>
-          <td>1..*</td>
+          <td>0..1 ?</td>
+        </tr>
+        <tr>
+          <td>
+            <a href="http://www.hl7.org/fhir/DSTU2/datatypes.html">Type</a>
+          </td>
+          <td>
+            <a href="http://www.hl7.org/fhir/DSTU2/datatypes.html#code" xmlns="http://www.w3.org/1999/xhtml">Code</a>
+          </td>
+        </tr>
+        <tr>
+          <td width="150px">Requirements</td>
+          <td>
+            <p>Need to refer to a particular code in the system.</p>
+          </td>
         </tr>
         <tr>
           <td width="150px">Comments</td>
-          <td></td>
-        </tr>
-        <tr>
-          <td>Fixed Value</td>
-          <td>PPRF</td>
+          <td>
+            <p>Note that FHIR strings may not exceed 1MB in size</p>
+          </td>
         </tr>
         <tr>
           <td colspan="2" class="structure">
@@ -3649,21 +3718,35 @@
         </tr>
         <tr>
           <td width="150px">Definition</td>
-          <td></td>
+          <td>
+            <p>A representation of the meaning of the code in the system, following the rules of the system.</p>
+          </td>
         </tr>
         <tr>
           <td>
             <a href="http://www.hl7.org/fhir/DSTU2/conformance-rules.html#conformance">Control</a>
           </td>
-          <td>1..*</td>
+          <td>0..1 ?</td>
+        </tr>
+        <tr>
+          <td>
+            <a href="http://www.hl7.org/fhir/DSTU2/datatypes.html">Type</a>
+          </td>
+          <td>
+            <a href="http://www.hl7.org/fhir/DSTU2/datatypes.html#string" xmlns="http://www.w3.org/1999/xhtml">String</a>
+          </td>
+        </tr>
+        <tr>
+          <td width="150px">Requirements</td>
+          <td>
+            <p>Need to be able to carry a human-readable meaning of the code for readers that do not know  the system.</p>
+          </td>
         </tr>
         <tr>
           <td width="150px">Comments</td>
-          <td></td>
-        </tr>
-        <tr>
-          <td>Fixed Value</td>
-          <td>primary performer</td>
+          <td>
+            <p>Note that FHIR strings may not exceed 1MB in size</p>
+          </td>
         </tr>
         <tr>
           <td colspan="2" class="structure">
@@ -3925,9 +4008,7 @@
           <td>
             <a href="http://www.hl7.org/fhir/DSTU2/datatypes.html">Type</a>
           </td>
-          <td>
-            <a href="careconnect-practitioner-1.html" xmlns="http://www.w3.org/1999/xhtml">https://fhir.hl7.org.uk/StructureDefinition/CareConnect-Practitioner-1</a>
-          </td>
+          <td>Choice of: <ul><li><a href="careconnect-dch-practitioner-1.html" xmlns="http://www.w3.org/1999/xhtml">https://fhir.hl7.org.uk/StructureDefinition/CareConnect-DCH-Practitioner-1</a></li><li><a href="dch-relatedperson-1.html" xmlns="http://www.w3.org/1999/xhtml">https://fhir.nhs.uk/StructureDefinition/DCH-RelatedPerson-1</a></li></ul></td>
         </tr>
         <tr>
           <td width="150px">Comments</td>
@@ -4518,7 +4599,7 @@
           <td>
             <div class="binding-description" xmlns="http://www.w3.org/1999/xhtml">
               <p>How the Quantity should be understood and represented.</p>
-              <p>The codes SHALL be taken from <a href="http://hl7.org/fhir/DSTU2/valueset-quantity-comparator.html">http://hl7.org/fhir/DSTU2/valueset-quantity-comparator.html</a></p>
+              <p>The codes SHALL be taken from <a href="http://hl7.org/fhir/ValueSet/quantity-comparator">http://hl7.org/fhir/ValueSet/quantity-comparator</a></p>
             </div>
           </td>
         </tr>
@@ -4687,7 +4768,7 @@
           <td>
             <div class="binding-description" xmlns="http://www.w3.org/1999/xhtml">
               <p>Reason why the encounter takes place.</p>
-              <p>For example codes, see <a href="http://hl7.org/fhir/DSTU2/valueset-encounter-reason.html">http://hl7.org/fhir/DSTU2/valueset-encounter-reason.html</a></p>; other codes may be used where these codes are not suitable</div>
+              <p>For example codes, see <a href="http://hl7.org/fhir/ValueSet/encounter-reason">http://hl7.org/fhir/ValueSet/encounter-reason</a></p>; other codes may be used where these codes are not suitable</div>
           </td>
         </tr>
         <tr>
@@ -4842,7 +4923,7 @@
           <td>
             <a href="http://www.hl7.org/fhir/DSTU2/conformance-rules.html#conformance">Control</a>
           </td>
-          <td>0..1</td>
+          <td>0..*</td>
         </tr>
         <tr>
           <td>
@@ -5287,7 +5368,7 @@
           <td>
             <div class="binding-description" xmlns="http://www.w3.org/1999/xhtml">
               <p>Identifies the purpose for this identifier, if known .</p>
-              <p>The codes SHALL be taken from <a href="http://hl7.org/fhir/DSTU2/valueset-identifier-use.html">http://hl7.org/fhir/DSTU2/valueset-identifier-use.html</a></p>
+              <p>The codes SHALL be taken from <a href="http://hl7.org/fhir/ValueSet/identifier-use">http://hl7.org/fhir/ValueSet/identifier-use</a></p>
             </div>
           </td>
         </tr>
@@ -5342,7 +5423,7 @@
           <td>
             <div class="binding-description" xmlns="http://www.w3.org/1999/xhtml">
               <p>A coded type for an identifier that can be used to determine which identifier to use for a specific purpose.</p>
-              <p>The codes SHALL be taken from the following if appropriate, otherwise an alternate coding may be included instead. <a href="http://hl7.org/fhir/DSTU2/valueset-identifier-type.html">http://hl7.org/fhir/DSTU2/valueset-identifier-type.html</a></p>
+              <p>The codes SHALL be taken from the following if appropriate, otherwise an alternate coding may be included instead. <a href="http://hl7.org/fhir/ValueSet/identifier-type">http://hl7.org/fhir/ValueSet/identifier-type</a></p>
             </div>
           </td>
         </tr>
@@ -5987,7 +6068,7 @@
             <a href="http://www.hl7.org/fhir/DSTU2/datatypes.html">Type</a>
           </td>
           <td>
-            <a href="careconnect-organization-1.html" xmlns="http://www.w3.org/1999/xhtml">https://fhir.hl7.org.uk/StructureDefinition/CareConnect-Organization-1</a>
+            <a href="careconnect-dch-organization-1.html" xmlns="http://www.w3.org/1999/xhtml">https://fhir.hl7.org.uk/StructureDefinition/CareConnect-DCH-Organization-1</a>
           </td>
         </tr>
         <tr>
@@ -6147,7 +6228,7 @@
             <a href="http://www.hl7.org/fhir/DSTU2/datatypes.html">Type</a>
           </td>
           <td>
-            <a href="careconnect-location-1.html" xmlns="http://www.w3.org/1999/xhtml">https://fhir.hl7.org.uk/StructureDefinition/CareConnect-Location-1</a>
+            <a href="careconnect-dch-location-1.html" xmlns="http://www.w3.org/1999/xhtml">https://fhir.hl7.org.uk/StructureDefinition/CareConnect-DCH-Location-1</a>
           </td>
         </tr>
         <tr>
@@ -6311,7 +6392,7 @@
           <td>
             <div class="binding-description" xmlns="http://www.w3.org/1999/xhtml">
               <p>From where the patient was admitted.</p>
-              <p>The codes SHOULD be taken from <a href="http://hl7.org/fhir/DSTU2/valueset-encounter-admit-source.html">http://hl7.org/fhir/DSTU2/valueset-encounter-admit-source.html</a></p>; other codes may be used where these codes are not suitable</div>
+              <p>The codes SHOULD be taken from <a href="http://hl7.org/fhir/ValueSet/encounter-admit-source">http://hl7.org/fhir/ValueSet/encounter-admit-source</a></p>; other codes may be used where these codes are not suitable</div>
           </td>
         </tr>
         <tr>
@@ -7056,7 +7137,7 @@
           <td>
             <a href="http://www.hl7.org/fhir/DSTU2/conformance-rules.html#conformance">Control</a>
           </td>
-          <td>0..1</td>
+          <td>0..*</td>
         </tr>
         <tr>
           <td>
@@ -7657,7 +7738,7 @@
           <td>
             <div class="binding-description" xmlns="http://www.w3.org/1999/xhtml">
               <p>Special courtesies</p>
-              <p>The codes SHOULD be taken from <a href="http://hl7.org/fhir/DSTU2/valueset-encounter-special-courtesy.html">http://hl7.org/fhir/DSTU2/valueset-encounter-special-courtesy.html</a></p>; other codes may be used where these codes are not suitable</div>
+              <p>The codes SHOULD be taken from <a href="http://hl7.org/fhir/ValueSet/encounter-special-courtesy">http://hl7.org/fhir/ValueSet/encounter-special-courtesy</a></p>; other codes may be used where these codes are not suitable</div>
           </td>
         </tr>
         <tr>
@@ -8095,7 +8176,7 @@
           <td>
             <div class="binding-description" xmlns="http://www.w3.org/1999/xhtml">
               <p>Special arrangements</p>
-              <p>The codes SHOULD be taken from <a href="http://hl7.org/fhir/DSTU2/valueset-encounter-special-arrangements.html">http://hl7.org/fhir/DSTU2/valueset-encounter-special-arrangements.html</a></p>; other codes may be used where these codes are not suitable</div>
+              <p>The codes SHOULD be taken from <a href="http://hl7.org/fhir/ValueSet/encounter-special-arrangements">http://hl7.org/fhir/ValueSet/encounter-special-arrangements</a></p>; other codes may be used where these codes are not suitable</div>
           </td>
         </tr>
         <tr>
@@ -8529,7 +8610,7 @@
             <a href="http://www.hl7.org/fhir/DSTU2/datatypes.html">Type</a>
           </td>
           <td>
-            <a href="careconnect-location-1.html" xmlns="http://www.w3.org/1999/xhtml">https://fhir.hl7.org.uk/StructureDefinition/CareConnect-Location-1</a>
+            <a href="careconnect-dch-location-1.html" xmlns="http://www.w3.org/1999/xhtml">https://fhir.hl7.org.uk/StructureDefinition/CareConnect-DCH-Location-1</a>
           </td>
         </tr>
         <tr>
@@ -8693,7 +8774,7 @@
           <td>
             <div class="binding-description" xmlns="http://www.w3.org/1999/xhtml">
               <p>Discharge Disposition</p>
-              <p>The codes SHOULD be taken from <a href="http://hl7.org/fhir/DSTU2/valueset-encounter-discharge-disposition.html">http://hl7.org/fhir/DSTU2/valueset-encounter-discharge-disposition.html</a></p>; other codes may be used where these codes are not suitable</div>
+              <p>The codes SHOULD be taken from <a href="http://hl7.org/fhir/ValueSet/encounter-discharge-disposition">http://hl7.org/fhir/ValueSet/encounter-discharge-disposition</a></p>; other codes may be used where these codes are not suitable</div>
           </td>
         </tr>
         <tr>
@@ -9417,7 +9498,7 @@
             <a href="http://www.hl7.org/fhir/DSTU2/datatypes.html">Type</a>
           </td>
           <td>
-            <a href="careconnect-location-1.html" xmlns="http://www.w3.org/1999/xhtml">https://fhir.hl7.org.uk/StructureDefinition/CareConnect-Location-1</a>
+            <a href="careconnect-dch-location-1.html" xmlns="http://www.w3.org/1999/xhtml">https://fhir.hl7.org.uk/StructureDefinition/CareConnect-DCH-Location-1</a>
           </td>
         </tr>
         <tr>
@@ -9569,7 +9650,7 @@
           <td>
             <div class="binding-description" xmlns="http://www.w3.org/1999/xhtml">
               <p>The status of the location.</p>
-              <p>The codes SHALL be taken from <a href="http://hl7.org/fhir/DSTU2/valueset-encounter-location-status.html">http://hl7.org/fhir/DSTU2/valueset-encounter-location-status.html</a></p>
+              <p>The codes SHALL be taken from <a href="http://hl7.org/fhir/ValueSet/encounter-location-status">http://hl7.org/fhir/ValueSet/encounter-location-status</a></p>
             </div>
           </td>
         </tr>
@@ -9772,7 +9853,7 @@
             <a href="http://www.hl7.org/fhir/DSTU2/datatypes.html">Type</a>
           </td>
           <td>
-            <a href="careconnect-organization-1.html" xmlns="http://www.w3.org/1999/xhtml">https://fhir.hl7.org.uk/StructureDefinition/CareConnect-Organization-1</a>
+            <a href="careconnect-dch-organization-1.html" xmlns="http://www.w3.org/1999/xhtml">https://fhir.hl7.org.uk/StructureDefinition/CareConnect-DCH-Organization-1</a>
           </td>
         </tr>
         <tr>

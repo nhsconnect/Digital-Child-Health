@@ -1,7 +1,7 @@
 {
   "resourceType": "StructureDefinition",
   "meta": {
-    "lastUpdated": "2017-07-28T16:16:11.389+01:00",
+    "lastUpdated": "2017-09-26T07:22:58.119+01:00",
     "tag": [
       {
         "system": "urn:hscic:publishOrder",
@@ -10,7 +10,7 @@
     ]
   },
   "url": "https://fhir.hl7.org.uk/StructureDefinition/CareConnect-DCH-Encounter-1",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "name": "CareConnect-DCH-Encounter-1",
   "status": "active",
   "publisher": "HL7 UK",
@@ -1781,7 +1781,7 @@
           {
             "code": "Reference",
             "profile": [
-              "https://fhir.hl7.org.uk/StructureDefinition/CareConnect-Organization-1"
+              "https://fhir.hl7.org.uk/StructureDefinition/CareConnect-DCH-Organization-1"
             ]
           }
         ],
@@ -3731,7 +3731,7 @@
       },
       {
         "path": "Encounter.type.coding",
-        "name": "childHealthEventType",
+        "name": "childHealthEncounterType",
         "short": "Code defined by a terminology system",
         "definition": "A reference to a code defined by a terminology system.",
         "comments": "Codes may be defined very casually in enumerations, or code lists, up to very formal definitions such as SNOMED CT - see the HL7 v3 Core Principles for more information.  Ordering of codings is undefined and SHALL NOT be used to infer meaning. Generally, at most only one of the coding values will be labelled as UserSelected = true.",
@@ -3768,9 +3768,9 @@
         "isSummary": true,
         "binding": {
           "strength": "required",
-          "description": "The type of Child Health Event",
+          "description": "The type of Child Health encounter",
           "valueSetReference": {
-            "reference": "https://fhir.nhs.uk/ValueSet/DCH-ChildHealthEventType-1"
+            "reference": "https://fhir.nhs.uk/ValueSet/DCH-ChildHealthEncounterType-1"
           }
         },
         "mapping": [
@@ -3912,7 +3912,7 @@
             "code": "uri"
           }
         ],
-        "fixedUri": "https://fhir.nhs.uk/DCH-ChildHealthEventType-1",
+        "fixedUri": "https://fhir.nhs.uk/DCH-ChildHealthEncounterType-1",
         "condition": [
           "ele-1"
         ],
@@ -5628,9 +5628,9 @@
       },
       {
         "path": "Encounter.participant",
-        "short": "Participant involved in the encounter, this will be the principal or primary performer of the act",
-        "definition": "Participant involved in the encounter, this will be the principal or primary performer of the act.",
-        "min": 0,
+        "short": "List of participants involved in the encounter",
+        "definition": "The list of people involved in the encounter",
+        "min": 1,
         "max": "*",
         "base": {
           "path": "Encounter.participant",
@@ -5821,8 +5821,8 @@
         "short": "Role of participant in encounter",
         "definition": "Role of participant in encounter.",
         "comments": "The participant type indicates how an individual partitipates in an encounter. It includes non-practitioner participants, and for practitioners this is to describe the action type in the context of this encounter (e.g. Admitting Dr, Attending Dr, Translator, Consulting Dr). This is different to the practitioner roles which are functional roles, derived from terms of employment, education, licensing, etc.",
-        "min": 1,
-        "max": "1",
+        "min": 0,
+        "max": "*",
         "base": {
           "path": "Encounter.participant.type",
           "min": 0,
@@ -5981,8 +5981,8 @@
         "definition": "A reference to a code defined by a terminology system.",
         "comments": "Codes may be defined very casually in enumerations, or code lists, up to very formal definitions such as SNOMED CT - see the HL7 v3 Core Principles for more information.  Ordering of codings is undefined and SHALL NOT be used to infer meaning. Generally, at most only one of the coding values will be labelled as UserSelected = true.",
         "requirements": "Allows for translations and alternate encodings within a code system.  Also supports communication of the same instance to systems requiring different encodings.",
-        "min": 1,
-        "max": "1",
+        "min": 0,
+        "max": "*",
         "base": {
           "path": "CodeableConcept.coding",
           "min": 0,
@@ -6138,7 +6138,7 @@
         "definition": "The identification of the code system that defines the meaning of the symbol in the code.",
         "comments": "The URI may be an OID (urn:oid:...) or a UUID (urn:uuid:...).  OIDs and UUIDs SHALL be references to the HL7 OID registry. Otherwise, the URI should come from HL7's list of FHIR defined special URIs or it should de-reference to some definition that establish the system clearly and unambiguously.",
         "requirements": "Need to be unambiguous about the source of the definition of the symbol.",
-        "min": 1,
+        "min": 0,
         "max": "1",
         "base": {
           "path": "Coding.system",
@@ -6150,7 +6150,6 @@
             "code": "uri"
           }
         ],
-        "fixedUri": "http://hl7.org/fhir/ValueSet/encounter-participant-type",
         "condition": [
           "ele-1"
         ],
@@ -6248,7 +6247,7 @@
         "definition": "A symbol in syntax defined by the system. The symbol may be a predefined code or an expression in a syntax defined by the coding system (e.g. post-coordination).",
         "comments": "Note that FHIR strings may not exceed 1MB in size",
         "requirements": "Need to refer to a particular code in the system.",
-        "min": 1,
+        "min": 0,
         "max": "1",
         "base": {
           "path": "Coding.code",
@@ -6260,7 +6259,6 @@
             "code": "code"
           }
         ],
-        "fixedCode": "PPRF",
         "condition": [
           "ele-1"
         ],
@@ -6304,7 +6302,7 @@
         "definition": "A representation of the meaning of the code in the system, following the rules of the system.",
         "comments": "Note that FHIR strings may not exceed 1MB in size",
         "requirements": "Need to be able to carry a human-readable meaning of the code for readers that do not know  the system.",
-        "min": 1,
+        "min": 0,
         "max": "1",
         "base": {
           "path": "Coding.display",
@@ -6316,7 +6314,6 @@
             "code": "string"
           }
         ],
-        "fixedString": "primary performer",
         "condition": [
           "ele-1"
         ],
@@ -6738,7 +6735,13 @@
           {
             "code": "Reference",
             "profile": [
-              "https://fhir.hl7.org.uk/StructureDefinition/CareConnect-Practitioner-1"
+              "https://fhir.hl7.org.uk/StructureDefinition/CareConnect-DCH-Practitioner-1"
+            ]
+          },
+          {
+            "code": "Reference",
+            "profile": [
+              "https://fhir.nhs.uk/StructureDefinition/DCH-RelatedPerson-1"
             ]
           }
         ],
@@ -10608,7 +10611,7 @@
           {
             "code": "Reference",
             "profile": [
-              "https://fhir.hl7.org.uk/StructureDefinition/CareConnect-Organization-1"
+              "https://fhir.hl7.org.uk/StructureDefinition/CareConnect-DCH-Organization-1"
             ]
           }
         ],
@@ -10863,7 +10866,7 @@
           {
             "code": "Reference",
             "profile": [
-              "https://fhir.hl7.org.uk/StructureDefinition/CareConnect-Location-1"
+              "https://fhir.hl7.org.uk/StructureDefinition/CareConnect-DCH-Location-1"
             ]
           }
         ],
@@ -15075,7 +15078,7 @@
           {
             "code": "Reference",
             "profile": [
-              "https://fhir.hl7.org.uk/StructureDefinition/CareConnect-Location-1"
+              "https://fhir.hl7.org.uk/StructureDefinition/CareConnect-DCH-Location-1"
             ]
           }
         ],
@@ -16404,7 +16407,7 @@
           {
             "code": "Reference",
             "profile": [
-              "https://fhir.hl7.org.uk/StructureDefinition/CareConnect-Location-1"
+              "https://fhir.hl7.org.uk/StructureDefinition/CareConnect-DCH-Location-1"
             ]
           }
         ],
@@ -16966,7 +16969,7 @@
           {
             "code": "Reference",
             "profile": [
-              "https://fhir.hl7.org.uk/StructureDefinition/CareConnect-Organization-1"
+              "https://fhir.hl7.org.uk/StructureDefinition/CareConnect-DCH-Organization-1"
             ]
           }
         ],
@@ -17496,7 +17499,7 @@
           {
             "code": "Reference",
             "profile": [
-              "https://fhir.hl7.org.uk/StructureDefinition/CareConnect-Organization-1"
+              "https://fhir.hl7.org.uk/StructureDefinition/CareConnect-DCH-Organization-1"
             ]
           }
         ]
@@ -17539,7 +17542,6 @@
       {
         "path": "Encounter.type.coding.extension",
         "name": "snomedCTDescriptionID",
-        "max": "1",
         "type": [
           {
             "code": "Extension",
@@ -17568,21 +17570,21 @@
       },
       {
         "path": "Encounter.type.coding",
-        "name": "childHealthEventType",
+        "name": "childHealthEncounterType",
         "min": 1,
         "max": "1",
         "binding": {
           "strength": "required",
-          "description": "The type of Child Health Event",
+          "description": "The type of Child Health encounter",
           "valueSetReference": {
-            "reference": "https://fhir.nhs.uk/ValueSet/DCH-ChildHealthEventType-1"
+            "reference": "https://fhir.nhs.uk/ValueSet/DCH-ChildHealthEncounterType-1"
           }
         }
       },
       {
         "path": "Encounter.type.coding.system",
         "min": 1,
-        "fixedUri": "https://fhir.nhs.uk/DCH-ChildHealthEventType-1"
+        "fixedUri": "https://fhir.nhs.uk/DCH-ChildHealthEncounterType-1"
       },
       {
         "path": "Encounter.type.coding.code",
@@ -17616,33 +17618,8 @@
       },
       {
         "path": "Encounter.participant",
-        "short": "Participant involved in the encounter, this will be the principal or primary performer of the act",
-        "definition": "Participant involved in the encounter, this will be the principal or primary performer of the act."
-      },
-      {
-        "path": "Encounter.participant.type",
-        "min": 1,
-        "max": "1"
-      },
-      {
-        "path": "Encounter.participant.type.coding",
-        "min": 1,
-        "max": "1"
-      },
-      {
-        "path": "Encounter.participant.type.coding.system",
-        "min": 1,
-        "fixedUri": "http://hl7.org/fhir/ValueSet/encounter-participant-type"
-      },
-      {
-        "path": "Encounter.participant.type.coding.code",
-        "min": 1,
-        "fixedCode": "PPRF"
-      },
-      {
-        "path": "Encounter.participant.type.coding.display",
-        "min": 1,
-        "fixedString": "primary performer"
+        "definition": "The list of people involved in the encounter",
+        "min": 1
       },
       {
         "path": "Encounter.participant.individual",
@@ -17651,7 +17628,13 @@
           {
             "code": "Reference",
             "profile": [
-              "https://fhir.hl7.org.uk/StructureDefinition/CareConnect-Practitioner-1"
+              "https://fhir.hl7.org.uk/StructureDefinition/CareConnect-DCH-Practitioner-1"
+            ]
+          },
+          {
+            "code": "Reference",
+            "profile": [
+              "https://fhir.nhs.uk/StructureDefinition/DCH-RelatedPerson-1"
             ]
           }
         ]
@@ -17694,7 +17677,6 @@
       {
         "path": "Encounter.reason.coding.extension",
         "name": "snomedCTDescriptionID",
-        "max": "1",
         "type": [
           {
             "code": "Extension",
@@ -17752,7 +17734,7 @@
           {
             "code": "Reference",
             "profile": [
-              "https://fhir.hl7.org.uk/StructureDefinition/CareConnect-Organization-1"
+              "https://fhir.hl7.org.uk/StructureDefinition/CareConnect-DCH-Organization-1"
             ]
           }
         ]
@@ -17763,7 +17745,7 @@
           {
             "code": "Reference",
             "profile": [
-              "https://fhir.hl7.org.uk/StructureDefinition/CareConnect-Location-1"
+              "https://fhir.hl7.org.uk/StructureDefinition/CareConnect-DCH-Location-1"
             ]
           }
         ]
@@ -17806,7 +17788,6 @@
       {
         "path": "Encounter.hospitalization.reAdmission.coding.extension",
         "name": "snomedCTDescriptionID",
-        "max": "1",
         "type": [
           {
             "code": "Extension",
@@ -17845,7 +17826,7 @@
           {
             "code": "Reference",
             "profile": [
-              "https://fhir.hl7.org.uk/StructureDefinition/CareConnect-Location-1"
+              "https://fhir.hl7.org.uk/StructureDefinition/CareConnect-DCH-Location-1"
             ]
           }
         ]
@@ -17871,7 +17852,7 @@
           {
             "code": "Reference",
             "profile": [
-              "https://fhir.hl7.org.uk/StructureDefinition/CareConnect-Location-1"
+              "https://fhir.hl7.org.uk/StructureDefinition/CareConnect-DCH-Location-1"
             ]
           }
         ]
@@ -17887,7 +17868,7 @@
           {
             "code": "Reference",
             "profile": [
-              "https://fhir.hl7.org.uk/StructureDefinition/CareConnect-Organization-1"
+              "https://fhir.hl7.org.uk/StructureDefinition/CareConnect-DCH-Organization-1"
             ]
           }
         ]

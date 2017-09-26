@@ -119,7 +119,7 @@
                             </ul>
 							
                             <p class="navbar-text pull-right" style="padding-right: 10px;padding-top: 3px;">
-                                <span class="label label-default"  style="font-size: 95%;">Experimental</span>
+                                <span class="label label-default"  style="font-size: 95%;">Alpha</span>
                             </p>
 
                         </div>
@@ -169,19 +169,69 @@
 <p>The FHIR event message is made up of the resources. These resources are bundled within an FHIR Bundle wrapper to create the FHIR structure.</p>
 <p>In FHIR messaging, a &quot;message&quot; is sent from a source application to a destination application when an event happens. </p>
 <p>The event message consists of a Bundle identified by the type &quot;message&quot;, with the first resource in the bundle being a MessageHeader. The MessageHeader resource has an event code that identifies the type of event being published. It also carries additional metadata.</p>
-<p>Each event will carry a standard set of data to act as an event &quot;header&quot; (to help identify the patient, publisher, and actual event). This standard header consists of:</p>
-<ul>
-<li>patient identification data (NHS Number, Date of Birth, name, etc.)</li>
-<li>event type</li>
-<li>service originating the event</li>
-<li>service provider originating the event</li>
-<li>IT system holding the event data</li>
-<li>location at which the event occurred</li>
-<li>event date time</li>
-<li>event publisher</li>
-<li>event published date</li>
-<li>a publication reference number</li>
-</ul>
+<p>Each event will carry a standard set of data to act as an event &quot;header&quot; (to help identify the patient, publisher, and actual event). This standard header consists of the following items and their corresponding FHIR resource element:</p>
+<table>
+<thead>
+<tr>
+	<th>Event Metadata Item</th>
+	<th>FHIR element</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+	<td>patient identification data:</td>
+	<td>CareConnect-DCH-Patient-1</td>
+</tr>
+<tr>
+	<td>NHS Number</td>
+	<td>Patient.identifier</td>
+</tr>
+<tr>
+	<td>Date of Birth</td>
+	<td>Patient.birthDate</td>
+</tr>
+<tr>
+	<td>name</td>
+	<td>Patient.name</td>
+</tr>
+<tr>
+	<td>event type</td>
+	<td>MessageHeader.event</td>
+</tr>
+<tr>
+	<td>service originating the event</td>
+	<td>CareConnect-DCH-Organization</td>
+</tr>
+<tr>
+	<td>service provider originating the event</td>
+	<td>Encounter.serviceProvider</td>
+</tr>
+<tr>
+	<td>IT system holding the event data</td>
+	<td>MessageHeader.source</td>
+</tr>
+<tr>
+	<td>location at which the event occurred</td>
+	<td>Encounter.location</td>
+</tr>
+<tr>
+	<td>event date time</td>
+	<td>Encounter.period.start</td>
+</tr>
+<tr>
+	<td>event publisher</td>
+	<td>MessageHeader.responsible</td>
+</tr>
+<tr>
+	<td>event published date</td>
+	<td>MessageHeader.timestamp</td>
+</tr>
+<tr>
+	<td>a publication reference number</td>
+	<td>Message Header logical id</td>
+</tr>
+</tbody>
+</table>
 <p>The other resources in the bundle depend on the event type.</p>
 <p><strong>Further Information</strong></p>
 <p>For more information about FHIR messaging please visit: <a href="https://www.hl7.org/fhir/DSTU2/messaging.html">HL7 FHIR DSTU2 1.0.1 Messaging Implementation</a></p>

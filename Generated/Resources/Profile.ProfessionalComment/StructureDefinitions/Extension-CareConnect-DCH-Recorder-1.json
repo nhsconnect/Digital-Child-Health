@@ -1,7 +1,7 @@
 {
   "resourceType": "StructureDefinition",
   "meta": {
-    "lastUpdated": "2017-07-27T19:30:50.159+01:00"
+    "lastUpdated": "2017-05-10T16:53:20.046+01:00"
   },
   "url": "https://fhir.hl7.org.uk/StructureDefinition/Extension-CareConnect-DCH-Recorder-1",
   "version": "1.0.0",
@@ -217,7 +217,7 @@
           {
             "code": "Reference",
             "profile": [
-              "https://fhir.hl7.org.uk/StructureDefinition/CareConnect-Practitioner-1"
+              "https://fhir.hl7.org.uk/StructureDefinition/CareConnect-DCH-Practitioner-1"
             ]
           },
           {
@@ -277,7 +277,7 @@
           {
             "code": "Reference",
             "profile": [
-              "https://fhir.hl7.org.uk/StructureDefinition/CareConnect-Practitioner-1"
+              "https://fhir.hl7.org.uk/StructureDefinition/CareConnect-DCH-Practitioner-1"
             ]
           },
           {

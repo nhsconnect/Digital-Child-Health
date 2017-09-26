@@ -1,7 +1,7 @@
 {
   "resourceType": "StructureDefinition",
   "meta": {
-    "lastUpdated": "2017-06-08T11:55:07.229+01:00"
+    "lastUpdated": "2017-09-11T11:07:14.089+01:00"
   },
   "extension": [
     {
@@ -10,7 +10,7 @@
     }
   ],
   "url": "https://fhir.hl7.org.uk/StructureDefinition/Extension-CareConnect-RegistrationDetails-1",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "name": "Extension-CareConnect-RegistrationDetails-1",
   "status": "active",
   "publisher": "HL7 UK",
@@ -177,7 +177,7 @@
           "extensions",
           "user content"
         ],
-        "min": 1,
+        "min": 0,
         "max": "1",
         "base": {
           "path": "Element.extension",
@@ -407,7 +407,7 @@
           "extensions",
           "user content"
         ],
-        "min": 1,
+        "min": 0,
         "max": "1",
         "base": {
           "path": "Element.extension",
@@ -644,7 +644,7 @@
           "extensions",
           "user content"
         ],
-        "min": 1,
+        "min": 0,
         "max": "1",
         "base": {
           "path": "Element.extension",
@@ -1081,7 +1081,6 @@
         "name": "registrationPeriod",
         "short": "The period of time during which the Patient registration applies",
         "definition": "The period of time during which the Patient registration applies.",
-        "min": 1,
         "max": "1"
       },
       {
@@ -1104,7 +1103,6 @@
         "name": "registrationType",
         "short": "The type of patient registration at the healthcare organisation",
         "definition": "The type of patient registration at the healthcare organisation.",
-        "min": 1,
         "max": "1"
       },
       {
@@ -1134,7 +1132,6 @@
         "name": "registrationStatus",
         "short": "The registration status for this patient at the healthcare organisation",
         "definition": "The registration status for this patient at the healthcare organisation.",
-        "min": 1,
         "max": "1"
       },
       {

@@ -1,7 +1,7 @@
 {
   "resourceType": "StructureDefinition",
   "meta": {
-    "lastUpdated": "2017-07-26T20:30:11.972+01:00"
+    "lastUpdated": "2017-05-08T15:42:58.627+01:00"
   },
   "url": "https://fhir.hl7.org.uk/StructureDefinition/Extension-CareConnect-DCH-ReasonCondition-1",
   "version": "1.0.0",

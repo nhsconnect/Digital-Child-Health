@@ -10,7 +10,7 @@
     ]
   },
   "url": "https://fhir.hl7.org.uk/StructureDefinition/CareConnect-DCH-Observation-1",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "name": "CareConnect-DCH-Observation-1",
   "status": "active",
   "publisher": "HL7 UK",
@@ -1814,7 +1814,7 @@
           {
             "code": "Reference",
             "profile": [
-              "https://fhir.hl7.org.uk/StructureDefinition/CareConnect-Organization-1"
+              "https://fhir.hl7.org.uk/StructureDefinition/CareConnect-DCH-Organization-1"
             ]
           }
         ],
@@ -4445,7 +4445,7 @@
           {
             "code": "Reference",
             "profile": [
-              "https://fhir.hl7.org.uk/StructureDefinition/CareConnect-Location-1"
+              "https://fhir.hl7.org.uk/StructureDefinition/CareConnect-DCH-Location-1"
             ]
           },
           {
@@ -5081,13 +5081,13 @@
           {
             "code": "Reference",
             "profile": [
-              "https://fhir.hl7.org.uk/StructureDefinition/CareConnect-Organization-1"
+              "https://fhir.hl7.org.uk/StructureDefinition/CareConnect-DCH-Organization-1"
             ]
           },
           {
             "code": "Reference",
             "profile": [
-              "https://fhir.hl7.org.uk/StructureDefinition/CareConnect-Practitioner-1"
+              "https://fhir.hl7.org.uk/StructureDefinition/CareConnect-DCH-Practitioner-1"
             ]
           },
           {
@@ -13887,6 +13887,7 @@
             "code": "uri"
           }
         ],
+        "fixedUri": "http://snomed.info/sct",
         "condition": [
           "ele-1"
         ],
@@ -15017,7 +15018,7 @@
           {
             "code": "Reference",
             "profile": [
-              "https://fhir.hl7.org.uk/StructureDefinition/CareConnect-Organization-1"
+              "https://fhir.hl7.org.uk/StructureDefinition/CareConnect-DCH-Organization-1"
             ]
           }
         ]
@@ -15149,7 +15150,7 @@
           {
             "code": "Reference",
             "profile": [
-              "https://fhir.hl7.org.uk/StructureDefinition/CareConnect-Location-1"
+              "https://fhir.hl7.org.uk/StructureDefinition/CareConnect-DCH-Location-1"
             ]
           },
           {
@@ -15192,13 +15193,13 @@
           {
             "code": "Reference",
             "profile": [
-              "https://fhir.hl7.org.uk/StructureDefinition/CareConnect-Organization-1"
+              "https://fhir.hl7.org.uk/StructureDefinition/CareConnect-DCH-Organization-1"
             ]
           },
           {
             "code": "Reference",
             "profile": [
-              "https://fhir.hl7.org.uk/StructureDefinition/CareConnect-Practitioner-1"
+              "https://fhir.hl7.org.uk/StructureDefinition/CareConnect-DCH-Practitioner-1"
             ]
           },
           {
@@ -15427,7 +15428,8 @@
       },
       {
         "path": "Observation.component.code.coding.system",
-        "min": 1
+        "min": 1,
+        "fixedUri": "http://snomed.info/sct"
       },
       {
         "path": "Observation.component.code.coding.version",

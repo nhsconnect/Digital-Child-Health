@@ -1,0 +1,54 @@
+{
+  "resourceType": "ValueSet",
+  "meta": {
+    "lastUpdated": "2016-08-03T00:00:00+01:00"
+  },
+  "url": "https://fhir.nhs.uk/ValueSet/DCH-HearingTestOutcome-1",
+  "version": "1.0.0",
+  "name": "Hearing Test Outcome",
+  "status": "draft",
+  "publisher": "NHS Digital",
+  "description": "The outcome of the hearing screening test.",
+  "copyright": "This value set includes content from SNOMED CT, which is copyright © 2002+ International Health Terminology Standards Development Organisation (IHTSDO), and distributed by agreement between IHTSDO and HL7. Implementer use of SNOMED CT is not covered by this agreement.",
+  "compose": {
+    "include": [
+      {
+        "system": "http://snomed.info/sct",
+        "concept": [
+          {
+            "code": "751581000000103",
+            "display": "Automated auditory brainstem response test left ear clear response (finding)"
+          },
+          {
+            "code": "751581000000103",
+            "display": "Automated auditory brainstem response test  right ear clear response (finding)"
+          },
+          {
+            "code": "752881000000109",
+            "display": "Automated auditory brainstem response test  left ear no clear response (finding)"
+          },
+          {
+            "code": "752881000000109",
+            "display": "Automated auditory brainstem response test right ear no clear response (finding)"
+          },
+          {
+            "code": "751501000000108",
+            "display": "Automated oto-acoustic emission test  left ear clear response (finding)"
+          },
+          {
+            "code": "751501000000108",
+            "display": "Automated oto-acoustic emission test right ear clear response (finding)"
+          },
+          {
+            "code": "751521000000104",
+            "display": "Automated oto-acoustic emission test  left ear no clear response (finding)"
+          },
+          {
+            "code": "751521000000104",
+            "display": "Automated oto-acoustic emission test right ear no clear response (finding)"
+          }
+        ]
+      }
+    ]
+  }
+}
