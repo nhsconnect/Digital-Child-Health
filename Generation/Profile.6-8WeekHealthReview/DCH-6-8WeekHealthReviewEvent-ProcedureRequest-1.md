@@ -1,1 +1,0 @@
-This ProcedureRequest resource is constrained to represent a request for a procedure for the 6-8 Week Health Review Event.

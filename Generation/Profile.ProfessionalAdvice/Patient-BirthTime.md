@@ -1,1 +1,0 @@
-The time of day that the Patient was born. This includes the date to ensure that the timezone information can be communicated effectively.

@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <meta>
-    <lastUpdated value="2017-07-27T19:30:50.159+01:00" />
+    <lastUpdated value="2017-05-10T16:53:20.046+01:00" />
   </meta>
   <url value="https://fhir.hl7.org.uk/StructureDefinition/Extension-CareConnect-DCH-Recorder-1" />
   <version value="1.0.0" />
@@ -166,7 +166,7 @@
       </base>
       <type>
         <code value="Reference" />
-        <profile value="https://fhir.hl7.org.uk/StructureDefinition/CareConnect-Practitioner-1" />
+        <profile value="https://fhir.hl7.org.uk/StructureDefinition/CareConnect-DCH-Practitioner-1" />
       </type>
       <type>
         <code value="Reference" />
@@ -209,7 +209,7 @@
       <min value="1" />
       <type>
         <code value="Reference" />
-        <profile value="https://fhir.hl7.org.uk/StructureDefinition/CareConnect-Practitioner-1" />
+        <profile value="https://fhir.hl7.org.uk/StructureDefinition/CareConnect-DCH-Practitioner-1" />
       </type>
       <type>
         <code value="Reference" />

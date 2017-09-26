@@ -1,1 +1,0 @@
-The type of event applicable to the Child Health event message.

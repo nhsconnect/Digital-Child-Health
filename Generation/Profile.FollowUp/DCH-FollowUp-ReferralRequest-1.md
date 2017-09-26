@@ -1,1 +1,0 @@
-This ReferralRequest resource has been constrained to represent a request for a follow up made during a Child Health event.

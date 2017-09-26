@@ -1,1 +1,0 @@
-This Basic resource has been constrained to carry the professional commentary provided during the Child Health Event. 

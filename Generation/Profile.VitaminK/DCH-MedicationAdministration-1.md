@@ -1,1 +1,0 @@
-This MedicationAdministration resource is constrained to represent a Vitamin K injection as part of a procedure for the Vitamin K Event.

@@ -1,0 +1,1 @@
+This Communication resource has been constrained to represent a professional comment made by a Practitioner during a Child Health Event.

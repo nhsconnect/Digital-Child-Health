@@ -1,1 +1,0 @@
-This Questionnaire Response resource is constrained to represent a Professional Comment Questionnaire Response for a Child Health event message.

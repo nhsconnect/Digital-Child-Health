@@ -1,0 +1,1 @@
+An action that is or was performed on a patient, with further constraints applied for a Newborn Hearing Test procedure performed during a Child Health event.

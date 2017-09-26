@@ -8,7 +8,7 @@
 		</tag>
   </meta>
   <url value="https://fhir.hl7.org.uk/StructureDefinition/CareConnect-DCH-Observation-1" />
-  <version value="1.0.0" />
+  <version value="1.1.0" />
   <name value="CareConnect-DCH-Observation-1" />
   <status value="active" />
   <publisher value="HL7 UK" />
@@ -1413,7 +1413,7 @@
       </base>
       <type>
         <code value="Reference" />
-        <profile value="https://fhir.hl7.org.uk/StructureDefinition/CareConnect-Organization-1" />
+        <profile value="https://fhir.hl7.org.uk/StructureDefinition/CareConnect-DCH-Organization-1" />
       </type>
       <condition value="ele-1" />
       <constraint>
@@ -3474,7 +3474,7 @@
       </type>
       <type>
         <code value="Reference" />
-        <profile value="https://fhir.hl7.org.uk/StructureDefinition/CareConnect-Location-1" />
+        <profile value="https://fhir.hl7.org.uk/StructureDefinition/CareConnect-DCH-Location-1" />
       </type>
       <type>
         <code value="Reference" />
@@ -3960,11 +3960,11 @@
       </type>
       <type>
         <code value="Reference" />
-        <profile value="https://fhir.hl7.org.uk/StructureDefinition/CareConnect-Organization-1" />
+        <profile value="https://fhir.hl7.org.uk/StructureDefinition/CareConnect-DCH-Organization-1" />
       </type>
       <type>
         <code value="Reference" />
-        <profile value="https://fhir.hl7.org.uk/StructureDefinition/CareConnect-Practitioner-1" />
+        <profile value="https://fhir.hl7.org.uk/StructureDefinition/CareConnect-DCH-Practitioner-1" />
       </type>
       <type>
         <code value="Reference" />
@@ -10836,6 +10836,7 @@
       <type>
         <code value="uri" />
       </type>
+      <fixedUri value="http://snomed.info/sct" />
       <condition value="ele-1" />
       <constraint>
         <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-expression">
@@ -11740,7 +11741,7 @@
       <path value="Observation.identifier.assigner" />
       <type>
         <code value="Reference" />
-        <profile value="https://fhir.hl7.org.uk/StructureDefinition/CareConnect-Organization-1" />
+        <profile value="https://fhir.hl7.org.uk/StructureDefinition/CareConnect-DCH-Organization-1" />
       </type>
     </element>
     <element>
@@ -11848,7 +11849,7 @@
       </type>
       <type>
         <code value="Reference" />
-        <profile value="https://fhir.hl7.org.uk/StructureDefinition/CareConnect-Location-1" />
+        <profile value="https://fhir.hl7.org.uk/StructureDefinition/CareConnect-DCH-Location-1" />
       </type>
       <type>
         <code value="Reference" />
@@ -11879,11 +11880,11 @@
       </type>
       <type>
         <code value="Reference" />
-        <profile value="https://fhir.hl7.org.uk/StructureDefinition/CareConnect-Organization-1" />
+        <profile value="https://fhir.hl7.org.uk/StructureDefinition/CareConnect-DCH-Organization-1" />
       </type>
       <type>
         <code value="Reference" />
-        <profile value="https://fhir.hl7.org.uk/StructureDefinition/CareConnect-Practitioner-1" />
+        <profile value="https://fhir.hl7.org.uk/StructureDefinition/CareConnect-DCH-Practitioner-1" />
       </type>
       <type>
         <code value="Reference" />
@@ -12071,6 +12072,7 @@
     <element>
       <path value="Observation.component.code.coding.system" />
       <min value="1" />
+      <fixedUri value="http://snomed.info/sct" />
     </element>
     <element>
       <path value="Observation.component.code.coding.version" />

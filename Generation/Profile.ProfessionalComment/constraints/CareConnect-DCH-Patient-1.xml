@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <meta>
-    <lastUpdated value="2017-07-28T16:24:14.785+01:00" />
+    <lastUpdated value="2017-08-14T09:57:06.183+01:00" />
     <tag>
       <system value="urn:hscic:publishOrder" />
       <code value="4" />
@@ -11,7 +11,7 @@
     <valueInteger value="5" />
   </extension>
   <url value="https://fhir.hl7.org.uk/StructureDefinition/CareConnect-DCH-Patient-1" />
-  <version value="1.0.1" />
+  <version value="1.1.0" />
   <name value="CareConnect-DCH-Patient-1" />
   <status value="active" />
   <publisher value="HL7 UK" />
@@ -2874,7 +2874,7 @@
       </base>
       <type>
         <code value="Reference" />
-        <profile value="https://fhir.hl7.org.uk/StructureDefinition/CareConnect-Organization-1" />
+        <profile value="https://fhir.hl7.org.uk/StructureDefinition/CareConnect-DCH-Organization-1" />
       </type>
       <condition value="ele-1" />
       <constraint>
@@ -4049,7 +4049,7 @@
       </base>
       <type>
         <code value="Reference" />
-        <profile value="https://fhir.hl7.org.uk/StructureDefinition/CareConnect-Organization-1" />
+        <profile value="https://fhir.hl7.org.uk/StructureDefinition/CareConnect-DCH-Organization-1" />
       </type>
       <condition value="ele-1" />
       <constraint>
@@ -11246,7 +11246,7 @@
       </base>
       <type>
         <code value="Reference" />
-        <profile value="https://fhir.hl7.org.uk/StructureDefinition/CareConnect-Organization-1" />
+        <profile value="https://fhir.hl7.org.uk/StructureDefinition/CareConnect-DCH-Organization-1" />
       </type>
       <condition value="ele-1" />
       <condition value="pat-1" />
@@ -14032,11 +14032,11 @@
       </base>
       <type>
         <code value="Reference" />
-        <profile value="https://fhir.hl7.org.uk/StructureDefinition/CareConnect-Organization-1" />
+        <profile value="https://fhir.hl7.org.uk/StructureDefinition/CareConnect-DCH-Organization-1" />
       </type>
       <type>
         <code value="Reference" />
-        <profile value="https://fhir.hl7.org.uk/StructureDefinition/CareConnect-Practitioner-1" />
+        <profile value="https://fhir.hl7.org.uk/StructureDefinition/CareConnect-DCH-Practitioner-1" />
       </type>
       <condition value="ele-1" />
       <constraint>
@@ -14094,7 +14094,7 @@
       </base>
       <type>
         <code value="Reference" />
-        <profile value="https://fhir.hl7.org.uk/StructureDefinition/CareConnect-Organization-1" />
+        <profile value="https://fhir.hl7.org.uk/StructureDefinition/CareConnect-DCH-Organization-1" />
       </type>
       <condition value="ele-1" />
       <constraint>
@@ -14712,12 +14712,6 @@
         <code value="Extension" />
         <profile value="https://fhir.hl7.org.uk/StructureDefinition/Extension-CareConnect-ResidentialStatus-1" />
       </type>
-      <binding>
-        <strength value="required" />
-        <valueSetReference>
-          <reference value="https://fhir.hl7.org.uk/ValueSet/CareConnect-ResidentialStatus-1" />
-        </valueSetReference>
-      </binding>
     </element>
     <element>
       <path value="Patient.extension" />
@@ -14726,12 +14720,6 @@
         <code value="Extension" />
         <profile value="https://fhir.hl7.org.uk/StructureDefinition/Extension-CareConnect-TreatmentCategory-1" />
       </type>
-      <binding>
-        <strength value="required" />
-        <valueSetReference>
-          <reference value="https://fhir.hl7.org.uk/ValueSet/CareConnect-TreatmentCategory-1" />
-        </valueSetReference>
-      </binding>
     </element>
     <element>
       <path value="Patient.extension" />
@@ -14802,7 +14790,7 @@
       <max value="0" />
       <type>
         <code value="Reference" />
-        <profile value="https://fhir.hl7.org.uk/StructureDefinition/CareConnect-Organization-1" />
+        <profile value="https://fhir.hl7.org.uk/StructureDefinition/CareConnect-DCH-Organization-1" />
       </type>
     </element>
     <element>
@@ -14823,7 +14811,7 @@
       <path value="Patient.identifier.assigner" />
       <type>
         <code value="Reference" />
-        <profile value="https://fhir.hl7.org.uk/StructureDefinition/CareConnect-Organization-1" />
+        <profile value="https://fhir.hl7.org.uk/StructureDefinition/CareConnect-DCH-Organization-1" />
       </type>
     </element>
     <element>
@@ -15054,7 +15042,7 @@
       <path value="Patient.contact.organization" />
       <type>
         <code value="Reference" />
-        <profile value="https://fhir.hl7.org.uk/StructureDefinition/CareConnect-Organization-1" />
+        <profile value="https://fhir.hl7.org.uk/StructureDefinition/CareConnect-DCH-Organization-1" />
       </type>
     </element>
     <element>
@@ -15074,18 +15062,18 @@
       <max value="1" />
       <type>
         <code value="Reference" />
-        <profile value="https://fhir.hl7.org.uk/StructureDefinition/CareConnect-Organization-1" />
+        <profile value="https://fhir.hl7.org.uk/StructureDefinition/CareConnect-DCH-Organization-1" />
       </type>
       <type>
         <code value="Reference" />
-        <profile value="https://fhir.hl7.org.uk/StructureDefinition/CareConnect-Practitioner-1" />
+        <profile value="https://fhir.hl7.org.uk/StructureDefinition/CareConnect-DCH-Practitioner-1" />
       </type>
     </element>
     <element>
       <path value="Patient.managingOrganization" />
       <type>
         <code value="Reference" />
-        <profile value="https://fhir.hl7.org.uk/StructureDefinition/CareConnect-Organization-1" />
+        <profile value="https://fhir.hl7.org.uk/StructureDefinition/CareConnect-DCH-Organization-1" />
       </type>
     </element>
     <element>

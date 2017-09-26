@@ -1,26 +1,35 @@
 This 'DCH-Bundle-1' Bundle resource profile is used as a container to collect a combination of the following resources to capture professional comments made:
 
-- [DCH-ProfessionalComment-MessageHeader-1]
-- [CareConnect-Organization-1]
+- [DCH-MessageHeader-1] - where the coding and display for the event element is fixed to 'Professional Comment'
+- [CareConnect-DCH-Organization-1]
 - [CareConnect-DCH-Patient-1]
-- [DCH-ProfessionalComment-QuestionnaireResponse-1]
 - [CareConnect-DCH-Encounter-1]
-- [DCH-Commentary-Basic-1]
+- [DCH-Communication-1]
 - [DCH-RelatedPerson-1]
-- [CareConnect-Practitioner-1]
-- [CareConnect-Location-1]
+- [CareConnect-DCH-Practitioner-1]
+- [CareConnect-DCH-Location-1]
                                                                                                    
+### Professional Comment event data item mapping to FHIR profiles ###
+----------
+The Child Health Event data items are fulfilled by elements within the FHIR resources listed below:
 
-[DCH-ProfessionalComment-MessageHeader-1]:dch-professionalcomment-messageheader-1.html
-[CareConnect-Organization-1]:careconnect-organization-1.html
+| DCH Data Item Name | FHIR Resource Element                           |
+|--------------------|-------------------------------------------------|
+| Date               | CareConnect-DCH-Encounter-1.period.start        |
+| ODS Site Code      | CareConnect-DCH-Location-1.identifier           |
+| SDS Job Role Name  | CareConnect-DCH-Practitioner-1.practitionerRole |
+| Professional Name  | CareConnect-DCH-Practitioner-1.name               |
+| Comment Type       | DCH-Communication-1.category                    |
+| Comment            | DCH-Communication-1.category.contentString      |
+| Recipient          | DCH-RelatedPerson-1.relationship                |
+|                    | CareConnect-DCH-Encounter-1.type                |
+
+
+[DCH-MessageHeader-1]:dch-messageheader-1.html
+[CareConnect-DCH-Organization-1]:careconnect-organization-1.html
 [CareConnect-DCH-Patient-1]:careconnect-dch-patient-1.html
 [CareConnect-DCH-Encounter-1]:careconnect-dch-encounter-1.html
-[DCH-ProfessionalComment-QuestionnaireResponse-1]:dch-professionalcomment-questionnaireresponse-1.html
-[CareConnect-DCH-Immunization-1]:careconnect-dch-immunization-1.html
-[DCH-Appointment-1]:dch-appointment-1.html
-[DCH-Procedure-1]:dch-procedure-1.html
-[DCH-ProcedureRequest-1]:dch-procedurerequest-1.html
-[CareConnect-Practitioner-1]:careconnect-practitioner-1.html
-[CareConnect-Location-1]:careconnect-location-1.html
-[DCH-Commentary-Basic-1]:dch-commentary-basic-1.html
+[CareConnect-DCH-Practitioner-1]:careconnect-practitioner-1.html
+[CareConnect-DCH-Location-1]:careconnect-location-1.html
+[DCH-Communication-1]:dch-communication-1.html
 [DCH-RelatedPerson-1]:dch-relatedperson-1.html

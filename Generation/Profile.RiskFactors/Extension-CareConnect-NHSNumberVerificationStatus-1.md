@@ -1,1 +1,0 @@
-This extension is constrained to represent the NHS Number Verification Status.

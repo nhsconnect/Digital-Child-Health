@@ -1,14 +1,14 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <meta>
-    <lastUpdated value="2017-07-28T16:16:11.389+01:00" />
+    <lastUpdated value="2017-09-26T07:22:58.119+01:00" />
     <tag>
       <system value="urn:hscic:publishOrder" />
       <code value="5" />
     </tag>
   </meta>
   <url value="https://fhir.hl7.org.uk/StructureDefinition/CareConnect-DCH-Encounter-1" />
-  <version value="1.0.0" />
+  <version value="1.1.0" />
   <name value="CareConnect-DCH-Encounter-1" />
   <status value="active" />
   <publisher value="HL7 UK" />
@@ -1386,7 +1386,7 @@
       </base>
       <type>
         <code value="Reference" />
-        <profile value="https://fhir.hl7.org.uk/StructureDefinition/CareConnect-Organization-1" />
+        <profile value="https://fhir.hl7.org.uk/StructureDefinition/CareConnect-DCH-Organization-1" />
       </type>
       <condition value="ele-1" />
       <constraint>
@@ -2901,7 +2901,7 @@
     </element>
     <element>
       <path value="Encounter.type.coding" />
-      <name value="childHealthEventType" />
+      <name value="childHealthEncounterType" />
       <short value="Code defined by a terminology system" />
       <definition value="A reference to a code defined by a terminology system." />
       <comments value="Codes may be defined very casually in enumerations, or code lists, up to very formal definitions such as SNOMED CT - see the HL7 v3 Core Principles for more information.  Ordering of codings is undefined and SHALL NOT be used to infer meaning. Generally, at most only one of the coding values will be labelled as UserSelected = true." />
@@ -2929,9 +2929,9 @@
       <isSummary value="true" />
       <binding>
         <strength value="required" />
-        <description value="The type of Child Health Event" />
+        <description value="The type of Child Health encounter" />
         <valueSetReference>
-          <reference value="https://fhir.nhs.uk/ValueSet/DCH-ChildHealthEventType-1" />
+          <reference value="https://fhir.nhs.uk/ValueSet/DCH-ChildHealthEncounterType-1" />
         </valueSetReference>
       </binding>
       <mapping>
@@ -3045,7 +3045,7 @@
       <type>
         <code value="uri" />
       </type>
-      <fixedUri value="https://fhir.nhs.uk/DCH-ChildHealthEventType-1" />
+      <fixedUri value="https://fhir.nhs.uk/DCH-ChildHealthEncounterType-1" />
       <condition value="ele-1" />
       <constraint>
         <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-expression">
@@ -4373,9 +4373,9 @@
     </element>
     <element>
       <path value="Encounter.participant" />
-      <short value="Participant involved in the encounter, this will be the principal or primary performer of the act" />
-      <definition value="Participant involved in the encounter, this will be the principal or primary performer of the act." />
-      <min value="0" />
+      <short value="List of participants involved in the encounter" />
+      <definition value="The list of people involved in the encounter" />
+      <min value="1" />
       <max value="*" />
       <base>
         <path value="Encounter.participant" />
@@ -4518,8 +4518,8 @@
       <short value="Role of participant in encounter" />
       <definition value="Role of participant in encounter." />
       <comments value="The participant type indicates how an individual partitipates in an encounter. It includes non-practitioner participants, and for practitioners this is to describe the action type in the context of this encounter (e.g. Admitting Dr, Attending Dr, Translator, Consulting Dr). This is different to the practitioner roles which are functional roles, derived from terms of employment, education, licensing, etc." />
-      <min value="1" />
-      <max value="1" />
+      <min value="0" />
+      <max value="*" />
       <base>
         <path value="Encounter.participant.type" />
         <min value="0" />
@@ -4643,8 +4643,8 @@
       <definition value="A reference to a code defined by a terminology system." />
       <comments value="Codes may be defined very casually in enumerations, or code lists, up to very formal definitions such as SNOMED CT - see the HL7 v3 Core Principles for more information.  Ordering of codings is undefined and SHALL NOT be used to infer meaning. Generally, at most only one of the coding values will be labelled as UserSelected = true." />
       <requirements value="Allows for translations and alternate encodings within a code system.  Also supports communication of the same instance to systems requiring different encodings." />
-      <min value="1" />
-      <max value="1" />
+      <min value="0" />
+      <max value="*" />
       <base>
         <path value="CodeableConcept.coding" />
         <min value="0" />
@@ -4765,7 +4765,7 @@
       <definition value="The identification of the code system that defines the meaning of the symbol in the code." />
       <comments value="The URI may be an OID (urn:oid:...) or a UUID (urn:uuid:...).  OIDs and UUIDs SHALL be references to the HL7 OID registry. Otherwise, the URI should come from HL7's list of FHIR defined special URIs or it should de-reference to some definition that establish the system clearly and unambiguously." />
       <requirements value="Need to be unambiguous about the source of the definition of the symbol." />
-      <min value="1" />
+      <min value="0" />
       <max value="1" />
       <base>
         <path value="Coding.system" />
@@ -4775,7 +4775,6 @@
       <type>
         <code value="uri" />
       </type>
-      <fixedUri value="http://hl7.org/fhir/ValueSet/encounter-participant-type" />
       <condition value="ele-1" />
       <constraint>
         <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-expression">
@@ -4853,7 +4852,7 @@
       <definition value="A symbol in syntax defined by the system. The symbol may be a predefined code or an expression in a syntax defined by the coding system (e.g. post-coordination)." />
       <comments value="Note that FHIR strings may not exceed 1MB in size" />
       <requirements value="Need to refer to a particular code in the system." />
-      <min value="1" />
+      <min value="0" />
       <max value="1" />
       <base>
         <path value="Coding.code" />
@@ -4863,7 +4862,6 @@
       <type>
         <code value="code" />
       </type>
-      <fixedCode value="PPRF" />
       <condition value="ele-1" />
       <constraint>
         <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-expression">
@@ -4898,7 +4896,7 @@
       <definition value="A representation of the meaning of the code in the system, following the rules of the system." />
       <comments value="Note that FHIR strings may not exceed 1MB in size" />
       <requirements value="Need to be able to carry a human-readable meaning of the code for readers that do not know  the system." />
-      <min value="1" />
+      <min value="0" />
       <max value="1" />
       <base>
         <path value="Coding.display" />
@@ -4908,7 +4906,6 @@
       <type>
         <code value="string" />
       </type>
-      <fixedString value="primary performer" />
       <condition value="ele-1" />
       <constraint>
         <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-expression">
@@ -5237,7 +5234,11 @@
       </base>
       <type>
         <code value="Reference" />
-        <profile value="https://fhir.hl7.org.uk/StructureDefinition/CareConnect-Practitioner-1" />
+        <profile value="https://fhir.hl7.org.uk/StructureDefinition/CareConnect-DCH-Practitioner-1" />
+      </type>
+      <type>
+        <code value="Reference" />
+        <profile value="https://fhir.nhs.uk/StructureDefinition/DCH-RelatedPerson-1" />
       </type>
       <condition value="ele-1" />
       <constraint>
@@ -8246,7 +8247,7 @@
       </base>
       <type>
         <code value="Reference" />
-        <profile value="https://fhir.hl7.org.uk/StructureDefinition/CareConnect-Organization-1" />
+        <profile value="https://fhir.hl7.org.uk/StructureDefinition/CareConnect-DCH-Organization-1" />
       </type>
       <condition value="ele-1" />
       <constraint>
@@ -8439,7 +8440,7 @@
       </base>
       <type>
         <code value="Reference" />
-        <profile value="https://fhir.hl7.org.uk/StructureDefinition/CareConnect-Location-1" />
+        <profile value="https://fhir.hl7.org.uk/StructureDefinition/CareConnect-DCH-Location-1" />
       </type>
       <condition value="ele-1" />
       <constraint>
@@ -11738,7 +11739,7 @@
       </base>
       <type>
         <code value="Reference" />
-        <profile value="https://fhir.hl7.org.uk/StructureDefinition/CareConnect-Location-1" />
+        <profile value="https://fhir.hl7.org.uk/StructureDefinition/CareConnect-DCH-Location-1" />
       </type>
       <condition value="ele-1" />
       <constraint>
@@ -12759,7 +12760,7 @@
       </base>
       <type>
         <code value="Reference" />
-        <profile value="https://fhir.hl7.org.uk/StructureDefinition/CareConnect-Location-1" />
+        <profile value="https://fhir.hl7.org.uk/StructureDefinition/CareConnect-DCH-Location-1" />
       </type>
       <condition value="ele-1" />
       <constraint>
@@ -13188,7 +13189,7 @@
       </base>
       <type>
         <code value="Reference" />
-        <profile value="https://fhir.hl7.org.uk/StructureDefinition/CareConnect-Organization-1" />
+        <profile value="https://fhir.hl7.org.uk/StructureDefinition/CareConnect-DCH-Organization-1" />
       </type>
       <condition value="ele-1" />
       <constraint>
@@ -13586,7 +13587,7 @@
       <path value="Encounter.identifier.assigner" />
       <type>
         <code value="Reference" />
-        <profile value="https://fhir.hl7.org.uk/StructureDefinition/CareConnect-Organization-1" />
+        <profile value="https://fhir.hl7.org.uk/StructureDefinition/CareConnect-DCH-Organization-1" />
       </type>
     </element>
     <element>
@@ -13623,7 +13624,6 @@
     <element>
       <path value="Encounter.type.coding.extension" />
       <name value="snomedCTDescriptionID" />
-      <max value="1" />
       <type>
         <code value="Extension" />
         <profile value="https://fhir.hl7.org.uk/StructureDefinition/Extension-coding-sctdescid" />
@@ -13648,21 +13648,21 @@
     </element>
     <element>
       <path value="Encounter.type.coding" />
-      <name value="childHealthEventType" />
+      <name value="childHealthEncounterType" />
       <min value="1" />
       <max value="1" />
       <binding>
         <strength value="required" />
-        <description value="The type of Child Health Event" />
+        <description value="The type of Child Health encounter" />
         <valueSetReference>
-          <reference value="https://fhir.nhs.uk/ValueSet/DCH-ChildHealthEventType-1" />
+          <reference value="https://fhir.nhs.uk/ValueSet/DCH-ChildHealthEncounterType-1" />
         </valueSetReference>
       </binding>
     </element>
     <element>
       <path value="Encounter.type.coding.system" />
       <min value="1" />
-      <fixedUri value="https://fhir.nhs.uk/DCH-ChildHealthEventType-1" />
+      <fixedUri value="https://fhir.nhs.uk/DCH-ChildHealthEncounterType-1" />
     </element>
     <element>
       <path value="Encounter.type.coding.code" />
@@ -13692,40 +13692,19 @@
     </element>
     <element>
       <path value="Encounter.participant" />
-      <short value="Participant involved in the encounter, this will be the principal or primary performer of the act" />
-      <definition value="Participant involved in the encounter, this will be the principal or primary performer of the act." />
-    </element>
-    <element>
-      <path value="Encounter.participant.type" />
+      <definition value="The list of people involved in the encounter" />
       <min value="1" />
-      <max value="1" />
-    </element>
-    <element>
-      <path value="Encounter.participant.type.coding" />
-      <min value="1" />
-      <max value="1" />
-    </element>
-    <element>
-      <path value="Encounter.participant.type.coding.system" />
-      <min value="1" />
-      <fixedUri value="http://hl7.org/fhir/ValueSet/encounter-participant-type" />
-    </element>
-    <element>
-      <path value="Encounter.participant.type.coding.code" />
-      <min value="1" />
-      <fixedCode value="PPRF" />
-    </element>
-    <element>
-      <path value="Encounter.participant.type.coding.display" />
-      <min value="1" />
-      <fixedString value="primary performer" />
     </element>
     <element>
       <path value="Encounter.participant.individual" />
       <min value="1" />
       <type>
         <code value="Reference" />
-        <profile value="https://fhir.hl7.org.uk/StructureDefinition/CareConnect-Practitioner-1" />
+        <profile value="https://fhir.hl7.org.uk/StructureDefinition/CareConnect-DCH-Practitioner-1" />
+      </type>
+      <type>
+        <code value="Reference" />
+        <profile value="https://fhir.nhs.uk/StructureDefinition/DCH-RelatedPerson-1" />
       </type>
     </element>
     <element>
@@ -13762,7 +13741,6 @@
     <element>
       <path value="Encounter.reason.coding.extension" />
       <name value="snomedCTDescriptionID" />
-      <max value="1" />
       <type>
         <code value="Extension" />
         <profile value="https://fhir.hl7.org.uk/StructureDefinition/Extension-coding-sctdescid" />
@@ -13808,14 +13786,14 @@
       <path value="Encounter.hospitalization.preAdmissionIdentifier.assigner" />
       <type>
         <code value="Reference" />
-        <profile value="https://fhir.hl7.org.uk/StructureDefinition/CareConnect-Organization-1" />
+        <profile value="https://fhir.hl7.org.uk/StructureDefinition/CareConnect-DCH-Organization-1" />
       </type>
     </element>
     <element>
       <path value="Encounter.hospitalization.origin" />
       <type>
         <code value="Reference" />
-        <profile value="https://fhir.hl7.org.uk/StructureDefinition/CareConnect-Location-1" />
+        <profile value="https://fhir.hl7.org.uk/StructureDefinition/CareConnect-DCH-Location-1" />
       </type>
     </element>
     <element>
@@ -13848,7 +13826,6 @@
     <element>
       <path value="Encounter.hospitalization.reAdmission.coding.extension" />
       <name value="snomedCTDescriptionID" />
-      <max value="1" />
       <type>
         <code value="Extension" />
         <profile value="https://fhir.hl7.org.uk/StructureDefinition/Extension-coding-sctdescid" />
@@ -13881,7 +13858,7 @@
       <path value="Encounter.hospitalization.destination" />
       <type>
         <code value="Reference" />
-        <profile value="https://fhir.hl7.org.uk/StructureDefinition/CareConnect-Location-1" />
+        <profile value="https://fhir.hl7.org.uk/StructureDefinition/CareConnect-DCH-Location-1" />
       </type>
     </element>
     <element>
@@ -13899,7 +13876,7 @@
       <path value="Encounter.location.location" />
       <type>
         <code value="Reference" />
-        <profile value="https://fhir.hl7.org.uk/StructureDefinition/CareConnect-Location-1" />
+        <profile value="https://fhir.hl7.org.uk/StructureDefinition/CareConnect-DCH-Location-1" />
       </type>
     </element>
     <element>
@@ -13911,7 +13888,7 @@
       <min value="1" />
       <type>
         <code value="Reference" />
-        <profile value="https://fhir.hl7.org.uk/StructureDefinition/CareConnect-Organization-1" />
+        <profile value="https://fhir.hl7.org.uk/StructureDefinition/CareConnect-DCH-Organization-1" />
       </type>
     </element>
     <element>

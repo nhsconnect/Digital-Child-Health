@@ -1,1 +1,0 @@
-This Extension resource is constrained to support the date that an event was recorded.

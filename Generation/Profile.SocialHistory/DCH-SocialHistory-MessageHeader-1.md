@@ -1,1 +1,0 @@
-This MessageHeader resource is constrained to represent a message header for a Social History Child Health event.

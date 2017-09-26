@@ -1,5 +1,10 @@
 # Change History #
 
+### Alpha Phase #
+
+
+Following internal review and assurance, the Wave 1 and 2 Events have been removed and new Child Health Events added for the Alpha version of the specification.
+
 
 ### Experimental Phase #
 

@@ -1,0 +1,1 @@
+This CarePlan resource has been constrained to represent a professional plan made by a Practitioner during a Child Health Event.

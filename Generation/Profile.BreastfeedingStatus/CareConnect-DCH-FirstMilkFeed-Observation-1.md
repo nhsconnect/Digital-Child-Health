@@ -1,1 +1,0 @@
-The Observation resource is used for tracking the current and historical observations that have been made for a patient, with further constraints applied to represent the First Milk Feed recorded.

@@ -13,264 +13,112 @@
 		<include>
 			<system value="https://fhir.nhs.uk/DCH-ChildHealthEventType-1"/>
 			<concept>
-				<code value="Assessment : APGAR"/>
-				<display value="Assessment : APGAR"/>
+				<code value="Additional Demographics"/>
+				<display value="Additional Demographics"/>
 			</concept>
 			<concept>
-				<code value="Birth : Birth Details"/>
-				<display value="Birth : Birth Details"/>
+				<code value="Admission Details"/>
+				<display value="Admission Details"/>
 			</concept>
 			<concept>
-				<code value="Birth : Neonatal Care"/>
-				<display value="Birth : Neonatal Care"/>
+				<code value="Allergies and Drug Reactions"/>
+				<display value="Allergies and Drug Reactions"/>
 			</concept>
 			<concept>
-				<code value="Birth : Discharge"/>
-				<display value="Birth : Discharge"/>
+				<code value="Birth Details"/>
+				<display value="Birth Details"/>
 			</concept>
 			<concept>
-				<code value="Breastfeeding Status : Breastfeeding Status"/>
-				<display value="Breastfeeding Status : Breastfeeding Status"/>
+				<code value="Blood Spot Sample Taken Event"/>
+				<display value="Blood Spot Sample Taken Event"/>
 			</concept>
 			<concept>
-				<code value="Child Health Contacts : Responsible Professional/Team"/>
-				<display value="Child Health Contacts : Responsible Professional/Team"/>
+				<code value="Blood Spot Administrative Status Event"/>
+				<display value="Blood Spot Administrative Status Event"/>
 			</concept>
 			<concept>
-				<code value="Child Health Contacts : Responsible Organisation"/>
-				<display value="Child Health Contacts : Responsible Organisation"/>
+				<code value="Blood Spot Test Outcome Event"/>
+				<display value="Blood Spot Test Outcome  Event"/>
 			</concept>
 			<concept>
-				<code value="Commentary : Professional Advice"/>
-				<display value="Commentary : Professional Advice"/>
+				<code value=" Clinical Risk Factors"/>
+				<display value="Clinical Risk Factors"/>
 			</concept>
 			<concept>
-				<code value="Commentary : Professional Comment"/>
-				<display value="Commentary : Professional Comment"/>
+				<code value="Conditions Or Diagnoses"/>
+				<display value="Conditions Or Diagnoses"/>
 			</concept>
 			<concept>
-				<code value="Commentary Personal or Parental Comment"/>
-				<display value="Commentary Personal or Parental Comment"/>
+				<code value="Discharge"/>
+				<display value="Discharge"/>
 			</concept>
 			<concept>
-				<code value="Demographics : Related Persons"/>
-				<display value="Demographics : Related Persons"/>
+				<code value="Family History"/>
+				<display value="Family History"/>
 			</concept>
 			<concept>
-				<code value="Developmental Review : School Entry Review"/>
-				<display value="Developmental Review : School Entry Review"/>
+				<code value="Feeding Status"/>
+				<display value="Feeding Status"/>
 			</concept>
 			<concept>
-				<code value="Developmental Review : Early Years Progress Check"/>
-				<display value="Developmental Review : Early Years Progress Check"/>
+				<code value="Immunisation Administration"/>
+				<display value="Immunisation Administration"/>
 			</concept>
 			<concept>
-				<code value="Developmental Review : New Baby Review"/>
-				<display value="Developmental Review : New Baby Review"/>
+				<code value="Measurements"/>
+				<display value="Measurements"/>
 			</concept>
 			<concept>
-				<code value="Developmental Review : Problems and Issues"/>
-				<display value="Developmental Review : Problems and Issues"/>
+				<code value="Medication"/>
+				<display value="Medication"/>
 			</concept>
 			<concept>
-				<code value="Developmental Review : Assessment Results"/>
-				<display value="Developmental Review : Assessment Results"/>
+				<code value="Newborn Hearing"/>
+				<display value="Newborn Hearing"/>
 			</concept>
 			<concept>
-				<code value="HCP Clinical Interventions : Newborn Physical Examination"/>
-				<display value="HCP Clinical Interventions : Newborn Physical Examination"/>
+				<code value="Physical Examination"/>
+				<display value="Physical Examination"/>
 			</concept>
 			<concept>
-				<code value="HCP Clinical Interventions : Newborn Hearing Screening"/>
-				<display value="HCP Clinical Interventions : Newborn Hearing Screening"/>
+				<code value="Professional Comment"/>
+				<display value="Professional Comment"/>
 			</concept>
 			<concept>
-				<code value="HCP Clinical Interventions : Newborn Blood Spot Screening"/>
-				<display value="HCP Clinical Interventions : Newborn Blood Spot Screening"/>
+				<code value="Professional Plan"/>
+				<display value="Professional Plan"/>
 			</concept>
 			<concept>
-				<code value="HCP Clinical Interventions : 6-8 Week Review"/>
-				<display value="HCP Clinical Interventions : 6-8 Week Review"/>
+				<code value="Referral"/>
+				<display value="Referral"/>
 			</concept>
 			<concept>
-				<code value="HCP Clinical Interventions : BCG immunisation"/>
-				<display value="HCP Clinical Interventions : BCG immunisation"/>
+				<code value="Related  Or Significant Persons"/>
+				<display value="Related Or Significant Persons"/>
 			</concept>
 			<concept>
-				<code value="HCP Clinical Interventions : Hep B birth"/>
-				<display value="HCP Clinical Interventions : Hep B birth"/>
+				<code value="Responsible Professional Team"/>
+				<display value="Responsible Professional Team"/>
 			</concept>
 			<concept>
-				<code value="HCP Clinical Interventions : Hep B 4 weeks"/>
-				<display value="HCP Clinical Interventions : Hep B 4 weeks"/>
+				<code value="Responsible Organisation"/>
+				<display value="Responsible Organisation"/>
 			</concept>
 			<concept>
-				<code value="HCP Clinical Interventions : Hep B 8 weeks"/>
-				<display value="HCP Clinical Interventions : Hep B 8 weeks"/>
+				<code value="Safety Alerts"/>
+				<display value="Safety Alerts"/>
 			</concept>
 			<concept>
-				<code value="HCP Clinical Interventions : Hep B 12 months"/>
-				<display value="HCP Clinical Interventions : Hep B 12 months"/>
+				<code value="Social Context Person"/>
+				<display value="Social Context Person"/>
 			</concept>
 			<concept>
-				<code value="HCP Clinical Interventions : 8 week imms"/>
-				<display value="HCP Clinical Interventions : 8 week imms"/>
+				<code value="Social Context Household"/>
+				<display value="Social Context Household"/>
 			</concept>
 			<concept>
-				<code value="HCP Clinical Interventions : 12 week imms"/>
-				<display value="HCP Clinical Interventions : 12 week imms"/>
-			</concept>
-			<concept>
-				<code value="HCP Clinical Interventions : 16 week imms"/>
-				<display value="HCP Clinical Interventions : 16 week imms"/>
-			</concept>
-			<concept>
-				<code value="HCP Clinical Interventions : MMR"/>
-				<display value="HCP Clinical Interventions : MMR"/>
-			</concept>
-			<concept>
-				<code value="HCP Clinical Interventions : Pre-school booster"/>
-				<display value="HCP Clinical Interventions : Pre-school booster"/>
-			</concept>
-			<concept>
-				<code value="HCP Clinical Interventions : HPV first imms"/>
-				<display value="HCP Clinical Interventions : HPV first imms"/>
-			</concept>
-			<concept>
-				<code value="HCP Clinical Interventions : HPV second imms"/>
-				<display value="HCP Clinical Interventions : HPV second imms"/>
-			</concept>
-			<concept>
-				<code value="HCP Clinical Interventions : Teenage booster"/>
-				<display value="HCP Clinical Interventions : Teenage booster"/>
-			</concept>
-			<concept>
-				<code value="HCP Clinical Interventions : Influenza 2 years"/>
-				<display value="HCP Clinical Interventions : Influenza 2 years"/>
-			</concept>
-			<concept>
-				<code value="HCP Clinical Interventions : Influenza 3 years"/>
-				<display value="HCP Clinical Interventions : Influenza 3 years"/>
-			</concept>
-			<concept>
-				<code value="HCP Clinical Interventions : Influenza 4 years"/>
-				<display value="HCP Clinical Interventions : Influenza 4 years"/>
-			</concept>
-			<concept>
-				<code value="HCP Clinical Interventions : Influenza year 1"/>
-				<display value="HCP Clinical Interventions : Influenza year 1"/>
-			</concept>
-			<concept>
-				<code value="HCP Clinical Interventions : Influenza year 2"/>
-				<display value="HCP Clinical Interventions : Influenza year 2"/>
-			</concept>
-			<concept>
-				<code value="HCP Clinical Interventions : Influenza year 3"/>
-				<display value="HCP Clinical Interventions : Influenza year 3"/>
-			</concept>
-			<concept>
-				<code value="HCP Clinical Interventions : 2-2 1/2 Year Early Years Progress"/>
-				<display value="HCP Clinical Interventions : 2-2 1/2 Year Early Years Progress"/>
-			</concept>
-			<concept>
-				<code value="HCP Clinical Interventions : 2-2 1/2 Year Early Health and Development Review"/>
-				<display value="HCP Clinical Interventions : 2-2 1/2 Year Early Health and Development Review"/>
-			</concept>
-			<concept>
-				<code value="HCP Clinical Interventions : 1 Year Review"/>
-				<display value="HCP Clinical Interventions : 1 Year Review"/>
-			</concept>
-			<concept>
-				<code value="HCP Clinical Interventions : 6-8 Week HV review"/>
-				<display value="HCP Clinical Interventions : 6-8 Week HV review"/>
-			</concept>
-			<concept>
-				<code value="HCP Clinical Interventions : New Baby Review"/>
-				<display value="HCP Clinical Interventions : New Baby Review"/>
-			</concept>
-			<concept>
-				<code value="HCP Clinical Interventions : School Entry Review"/>
-				<display value="HCP Clinical Interventions : School Entry Review"/>
-			</concept>
-			<concept>
-				<code value="Indicators : Hep B"/>
-				<display value="Indicators : Hep B"/>
-			</concept>
-			<concept>
-				<code value="Indicators : BCG"/>
-				<display value="Indicators : BCG"/>
-			</concept>
-			<concept>
-				<code value="Indicators : Influenza"/>
-				<display value="Indicators : Influenza"/>
-			</concept>
-			<concept>
-				<code value="Indicators : Pneumococcal"/>
-				<display value="Indicators : Pneumococcal"/>
-			</concept>
-			<concept>
-				<code value="Indicators : Varicella Zoster"/>
-				<display value="Indicators : Varicella Zoster"/>
-			</concept>
-			<concept>
-				<code value="Immunisation : Immunisation Administration"/>
-				<display value="Immunisation : Immunisation Administration"/>
-			</concept>
-			<concept>
-				<code value="Intervention : Vitamin K"/>
-				<display value="Intervention : Vitamin K"/>
-			</concept>
-			<concept>
-				<code value="Measurements : Measurements"/>
-				<display value="Measurements : Measurements"/>
-			</concept>
-			<concept>
-				<code value="Medical History : Conditions"/>
-				<display value="Medical History : Conditions"/>
-			</concept>
-			<concept>
-				<code value="Medical History : Allergies and Drug Reactions"/>
-				<display value="Medical History : Allergies and Drug Reactions"/>
-			</concept>
-			<concept>
-				<code value="Medical History : Social History"/>
-				<display value="Medical History : Social History"/>
-			</concept>
-			<concept>
-				<code value="Medical History : Accidents and Injuries"/>
-				<display value="Medical History : Accidents and Injuries"/>
-			</concept>
-			<concept>
-				<code value="Medical History : Medication"/>
-				<display value="Medical History : Medication"/>
-			</concept>
-			<concept>
-				<code value="Medical History : Family History"/>
-				<display value="Medical History : Family History"/>
-			</concept>
-			<concept>
-				<code value="Medical History : Risk Factors"/>
-				<display value="Medical History : Risk Factors"/>
-			</concept>
-			<concept>
-				<code value="Physical Examinations : Newborn Physical Examination"/>
-				<display value="Physical Examinations : Newborn Physical Examination"/>
-			</concept>
-			<concept>
-				<code value="Referral : Referral"/>
-				<display value="Referral : Referral"/>
-			</concept>
-			<concept>
-				<code value="Referral : Follow Up"/>
-				<display value="Referral : Follow Up"/>
-			</concept>
-			<concept>
-				<code value="Screening : Hearing"/>
-				<display value="Screening : Hearing"/>
-			</concept>
-			<concept>
-				<code value="Screening : Blood Spot"/>
-				<display value="Screening : Blood Spot"/>
+				<code value="Urgent Care Attendance"/>
+				<display value="Urgent Care Attendance"/>
 			</concept>
 		</include>
 	</compose>

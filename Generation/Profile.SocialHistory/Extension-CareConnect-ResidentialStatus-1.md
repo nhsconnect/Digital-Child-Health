@@ -1,1 +1,0 @@
-This extension is constrained to represent the residential status for a patient.

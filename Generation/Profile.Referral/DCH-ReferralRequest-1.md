@@ -1,1 +1,0 @@
-This ReferralRequest has been constrained to represent a Referral Request made during a Referral Event.

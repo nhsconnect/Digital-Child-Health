@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValueSet xmlns="http://hl7.org/fhir">
+	<meta>
+		<lastUpdated value="2016-08-03T00:00:00+01:00"/>
+	</meta>
+	<url value="https://fhir.nhs.uk/ValueSet/DCH-ReasonNotGiven-1"/>
+	<copyright value="Copyright © 2016 Health and Social Care Information Centre. NHS Digital is the trading name of the Health and Social Care Information Centre."/>
+	<version value="1.0.0"/>
+	<name value="Reason Not Given"/>
+	<status value="draft"/>
+	<publisher value="NHS Digital"/>
+	<description value="The reason why an immunisation was not administered."/>
+	<compose>
+		<include>
+			<system value="https://fhir.nhs.uk/DCH-ReasonNotGiven-1"/>
+			<concept>
+				<code value="Given by other healthcare provider"/>
+				<display value="Given by other healthcare provider"/>
+			</concept>
+			<concept>
+				<code value="Did not attend"/>
+				<display value="Did not attend"/>
+			</concept>
+			<concept>
+				<code value="Declined"/>
+				<display value="Declined"/>
+			</concept>
+			<concept>
+				<code value="Contraindicated"/>
+				<display value="Contraindicated"/>
+			</concept>
+						<concept>
+				<code value="Adverse reaction"/>
+				<display value="Adverse reaction"/>
+			</concept>
+						<concept>
+				<code value="No consent"/>
+				<display value="No consent"/>
+			</concept>
+		</include>
+	</compose>
+</ValueSet>

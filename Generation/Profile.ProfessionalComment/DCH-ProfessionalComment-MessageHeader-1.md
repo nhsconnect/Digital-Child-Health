@@ -1,1 +1,0 @@
-This MessageHeader resource is constrained to represent a message header for a Professional Comment Child Health event.

@@ -1,1 +1,0 @@
-This extension is constrained to support the communication preferences for a resource in the NHS

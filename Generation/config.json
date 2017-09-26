@@ -10,6 +10,6 @@
   "OPERATIONS_XML"   : "TRUE",
   "OPERATIONS_JSON" : "TRUE",
   "DMS_TITLE"		:   "Digital Child Health Service - Events Catalogue",
-  "DMS_VERSION"		:	"Experimental",
+  "DMS_VERSION"		:	"Alpha",
   "SCHEMAS"			:	"TRUE"
 }

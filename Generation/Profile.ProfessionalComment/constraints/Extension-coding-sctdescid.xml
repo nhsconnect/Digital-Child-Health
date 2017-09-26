@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <meta>
-    <lastUpdated value="2017-05-10T17:26:57.842+01:00" />
+    <lastUpdated value="2017-08-10T11:23:19.538+01:00" />
   </meta>
   <url value="https://fhir.hl7.org.uk/StructureDefinition/Extension-coding-sctdescid" />
   <version value="1.0.0" />
@@ -33,7 +33,7 @@
       <short value="The SNOMED CT Description ID for the display" />
       <definition value="The SNOMED CT Description ID for the display." />
       <min value="0" />
-      <max value="*" />
+      <max value="1" />
       <base>
         <path value="Element" />
         <min value="0" />
@@ -201,6 +201,7 @@
       <path value="Extension" />
       <short value="The SNOMED CT Description ID for the display" />
       <definition value="The SNOMED CT Description ID for the display." />
+      <max value="1" />
     </element>
     <element>
       <path value="Extension.url" />
