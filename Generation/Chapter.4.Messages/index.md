@@ -36,6 +36,7 @@ The various downloads (including Schema files) and reference implementations are
 
 [Profile.AllergiesAndDrugReactions]: ../Profile.AllergiesAndDrugReactions/Profile.AllergiesAndDrugReactions.html 
 [Profile.BloodSpot]: ../Profile.BloodSpot/Profile.BloodSpot.html
+[Profile.ClinicalRiskFactors]: ../Profile.ClinicalRiskFactors/Profile.ClinicalRiskFactors.html
 [Profile.ConditionsOrDiagnoses]: ../Profile.ConditionsOrDiagnoses/Profile.ConditionsOrDiagnoses.html
 [Profile.FamilyHistory]: ../Profile.FamilyHistory/Profile.FamilyHistory.html
 [Profile.ImmunisationAdministration]: ../Profile.ImmunisationAdministration/Profile.ImmunisationAdministration.html

@@ -1,0 +1,1 @@
+This Extension is used to specify the person who recorded the event

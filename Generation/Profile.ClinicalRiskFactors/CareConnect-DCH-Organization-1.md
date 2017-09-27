@@ -1,0 +1,1 @@
+The Organization resource represents a formally or informally recognized grouping of people or organizations formed for the purpose of achieving some form of collective action.

@@ -1,0 +1,1 @@
+This RiskAssessment resource has been constrained to represent a Clinical Risk Factor identified during a Child Health event.
