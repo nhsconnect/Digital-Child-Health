@@ -22,7 +22,7 @@ The Child Health Event data items are fulfilled by elements within the FHIR reso
 | Comment Type       | DCH-Communication-1.category                    |
 | Comment            | DCH-Communication-1.category.contentString      |
 | Recipient          | DCH-RelatedPerson-1.relationship                |
-|                    | CareConnect-DCH-Encounter-1.type                |
+| Encounter Type     | CareConnect-DCH-Encounter-1.type                |
 
 
 [DCH-MessageHeader-1]:dch-messageheader-1.html

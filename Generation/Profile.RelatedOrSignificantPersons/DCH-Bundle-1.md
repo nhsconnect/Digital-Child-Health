@@ -21,7 +21,7 @@ The Child Health Event data items are fulfilled by elements within the FHIR reso
 | Sex                | DCH-RelatedPerson-1.gender                                     |
 | Date of Birth      | DCH-RelatedPerson-1.birthDate                                  |
 | Relationship Type  | DCH-RelatedPerson-1.relationship                               |
-| Household member   | DCH-RelatedPerson-1.householdMember                            |
+| Household Member   | DCH-RelatedPerson-1.householdMember                            |
 
 [DCH-MessageHeader-1]:dch-messageheader-1.html
 [CareConnect-DCH-Organization-1]:careconnect-dch-organization-1.html

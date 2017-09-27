@@ -9,7 +9,7 @@ The FHIR resource profiles within this DMS have been created to support the Chil
 - **[Profile.BirthDetails]** - FHIR resource profiles combined to support a Birth Details event message.
 - **[Profile.BloodSpot]** - FHIR resource profiles combined to support a Newborn Blood Spot Screening event message.
 - **[Profile.ClinicalRiskFactors]** - FHIR resource profiles combined to support a Clinical Risk Factors event message.
-- **[Profile.ConditionsOrDiagnoses]** - FHIR resource profiles combined to support a Conditions or Diagnosses event message.
+- **[Profile.ConditionsOrDiagnoses]** - FHIR resource profiles combined to support a Conditions or Diagnoses event message.
 - **[Profile.Discharge]** - FHIR resource profiles combined to support a Discharge event message.
 - **[Profile.FamilyHistory]** - FHIR resource profiles combined to support a Family History event message.
 - **[Profile.FeedingStatus]** - FHIR resource profiles combined to support a Feeding Status event message.
@@ -44,6 +44,7 @@ The various downloads (including Schema files) and reference implementations are
 [Profile.NewbornHearing]: ../Profile.NewbornHearing/Profile.NewbornHearing.html
 [Profile.ProfessionalComment]:../Profile.ProfessionalComment/Profile.ProfessionalComment.html
 [Profile.ProfessionalPlan]:../Profile.ProfessionalPlan/Profile.ProfessionalPlan.html
+[Profile.Referral]: ../Profile.Referral/Profile.Referral.html
 [Profile.RelatedOrSignificantPersons]:../Profile.RelatedOrSignificantPersons/Profile.RelatedOrSignificantPersons.html
 
 

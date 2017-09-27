@@ -8,6 +8,7 @@
 	<version value="1.0.0"/>
 	<name value="Blood Spot Screening Outcome"/>
 	<status value="draft"/>
+	<publisher value="NHS Digital"/>
 	<description value="The Blood Spot Screening outcome."/>
 	<compose>
 		<include>

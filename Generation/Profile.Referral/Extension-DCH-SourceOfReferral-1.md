@@ -1,0 +1,1 @@
+This extension is constrained to represent the source of referral of a Referral Request.

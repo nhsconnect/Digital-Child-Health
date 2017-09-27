@@ -1,0 +1,1 @@
+This extension is constrained to represent the Specialty of the requester of a Referral Request.

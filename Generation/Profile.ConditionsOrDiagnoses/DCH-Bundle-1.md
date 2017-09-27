@@ -16,7 +16,8 @@ The Child Health Event data items are fulfilled by elements within the FHIR reso
 |------------------------|-----------------------------------------|
 | Condition              | CareConnect-DCH-Condition-1.code          |
 | Condition category     | CareConnect-DCH-Condition-1.category      |
-| Condition   onset Date | CareConnect-DCH-Condition-1.onsetDateTime |
+| Stage of Disease     	 | CareConnect-DCH-Condition-1.stage      |
+| Condition Onset Date | CareConnect-DCH-Condition-1.onsetDateTime |
 
 
 [DCH-MessageHeader-1]:dch-messageheader-1.html

@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValueSet xmlns="http://hl7.org/fhir">
+	<meta>
+		<lastUpdated value="2016-08-03T00:00:00+01:00"/>
+	</meta>
+	<url value="https://fhir.nhs.uk/ValueSet/DCH-ReferralRequestMethod-1"/>
+	<copyright value="Copyright © 2016 Health and Social Care Information Centre. NHS Digital is the trading name of the Health and Social Care Information Centre."/>
+	<version value="1.0.0"/>
+	<name value="Referral Request Method"/>
+	<status value="draft"/>
+	<publisher value="NHS Digital"/>
+	<description value="The method used to send or receive a Referral Request for a Child Health event."/>
+	<compose>
+		<include>
+			<system value="https://fhir.nhs.uk/DCH-ReferralRequestMethod-1"/>
+			<concept>
+				<code value="Fax"/>
+				<display value="Fax"/>
+			</concept>
+			<concept>
+				<code value="Phone"/>
+				<display value="Phone"/>
+			</concept>
+			<concept>
+				<code value="Secure Messaging"/>
+				<display value="Secure Messaging"/>
+			</concept>
+			<concept>
+				<code value="Secure Email"/>
+				<display value="Secure Email"/>
+			</concept>
+			<concept>
+				<code value="Letter"/>
+				<display value="Letter"/>
+			</concept>
+			<concept>
+				<code value="Choose and Book"/>
+				<display value="Choose and Book"/>
+			</concept>
+			<concept>
+				<code value="Self Referral"/>
+				<display value="Self Referral"/>
+			</concept>
+		</include>
+	</compose>
+</ValueSet>
