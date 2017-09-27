@@ -1,0 +1,118 @@
+{
+  "resourceType": "ValueSet",
+  "meta": {
+    "lastUpdated": "2016-08-03T00:00:00+01:00"
+  },
+  "url": "https://fhir.nhs.uk/ValueSet/DCH-SourceOfReferral-1",
+  "version": "1.0.0",
+  "name": "Source Of Referral",
+  "status": "draft",
+  "publisher": "NHS Digital",
+  "description": "A classification which identifies the source of referral.",
+  "copyright": "Copyright © 2016 Health and Social Care Information Centre. NHS Digital is the trading name of the Health and Social Care Information Centre.",
+  "compose": {
+    "include": [
+      {
+        "system": "https://fhir.nhs.uk/DCH-SourceOfReferral-1",
+        "concept": [
+          {
+            "code": "1",
+            "display": "General Medical Practitioner Practice"
+          },
+          {
+            "code": "2",
+            "display": "Self Referral"
+          },
+          {
+            "code": "3",
+            "display": "Carer/Relative"
+          },
+          {
+            "code": "4",
+            "display": "Employer"
+          },
+          {
+            "code": "5",
+            "display": "Accident and Emergency Department (including Minor Injuries Units and Walk In Centres)"
+          },
+          {
+            "code": "6",
+            "display": "Acute Hospital Inpatient/Outpatient Department"
+          },
+          {
+            "code": "7",
+            "display": "Community Health Service (same or other Health Care Provider) "
+          },
+          {
+            "code": "8",
+            "display": "Dental Practice"
+          },
+          {
+            "code": "9",
+            "display": "National Screening Programme"
+          },
+          {
+            "code": "10",
+            "display": "Educational Establishment"
+          },
+          {
+            "code": "11",
+            "display": "Local Authority Social Services"
+          },
+          {
+            "code": "12",
+            "display": "Hospice"
+          },
+          {
+            "code": "13",
+            "display": "Care Home"
+          },
+          {
+            "code": "14",
+            "display": "Police"
+          },
+          {
+            "code": "15",
+            "display": "Courts"
+          },
+          {
+            "code": "16",
+            "display": "Probation Service"
+          },
+          {
+            "code": "17",
+            "display": "Prison Health Service"
+          },
+          {
+            "code": "18",
+            "display": "Asylum Service"
+          },
+          {
+            "code": "19",
+            "display": "Telephone or Electronic Access Service"
+          },
+          {
+            "code": "20",
+            "display": "Voluntary Sector"
+          },
+          {
+            "code": "21",
+            "display": "Independent Sector"
+          },
+          {
+            "code": "22",
+            "display": "Ambulance Service"
+          },
+          {
+            "code": "23",
+            "display": "Mental Health Service"
+          },
+          {
+            "code": "99",
+            "display": "Not Known"
+          }
+        ]
+      }
+    ]
+  }
+}

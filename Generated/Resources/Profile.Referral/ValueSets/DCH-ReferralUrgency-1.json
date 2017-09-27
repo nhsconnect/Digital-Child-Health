@@ -1,0 +1,31 @@
+{
+  "resourceType": "ValueSet",
+  "meta": {
+    "lastUpdated": "2016-08-03T00:00:00+01:00"
+  },
+  "url": "https://fhir.nhs.uk/ValueSet/DCH-ReferralUrgency-1",
+  "name": "Referral Urgency",
+  "status": "active",
+  "description": "The priority of the Referral Request.",
+  "compose": {
+    "include": [
+      {
+        "system": "https://fhir.nhs.uk/DCH-ReferralUrgency-1",
+        "concept": [
+          {
+            "code": "1",
+            "display": "Routine"
+          },
+          {
+            "code": "2",
+            "display": "Urgent"
+          },
+          {
+            "code": "3",
+            "display": "2 Week Wait"
+          }
+        ]
+      }
+    ]
+  }
+}

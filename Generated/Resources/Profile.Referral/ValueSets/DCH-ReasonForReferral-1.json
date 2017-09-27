@@ -1,0 +1,371 @@
+{
+  "resourceType": "ValueSet",
+  "meta": {
+    "lastUpdated": "2016-08-03T00:00:00+01:00"
+  },
+  "url": "https://fhir.nhs.uk/ValueSet/DCH-ReasonForReferral-1",
+  "name": "Reason For Referral",
+  "status": "active",
+  "description": "Reason for Referral to include clinical intervention/event which triggers Referral.",
+  "compose": {
+    "include": [
+      {
+        "system": "https://fhir.nhs.uk/DCH-ReasonForReferral-1",
+        "concept": [
+          {
+            "code": "1",
+            "display": "Accident/Trauma"
+          },
+          {
+            "code": "2",
+            "display": "Alopecia"
+          },
+          {
+            "code": "3",
+            "display": "Antenatal Care"
+          },
+          {
+            "code": "4",
+            "display": "Bereavement"
+          },
+          {
+            "code": "5",
+            "display": "Bladder Care"
+          },
+          {
+            "code": "6",
+            "display": "Blood Pressure"
+          },
+          {
+            "code": "7",
+            "display": "Bowel Problems"
+          },
+          {
+            "code": "8",
+            "display": "Cancer"
+          },
+          {
+            "code": "9",
+            "display": "Cardiac Conditions"
+          },
+          {
+            "code": "10",
+            "display": "Catheter Problems"
+          },
+          {
+            "code": "11",
+            "display": "Cerebral Palsy"
+          },
+          {
+            "code": "12",
+            "display": "Cleft Palate"
+          },
+          {
+            "code": "13",
+            "display": "Cognitive Problems"
+          },
+          {
+            "code": "14",
+            "display": "Colostomy Care"
+          },
+          {
+            "code": "15",
+            "display": "Continence Problems"
+          },
+          {
+            "code": "17",
+            "display": "Developmental Problems"
+          },
+          {
+            "code": "18",
+            "display": "Diabetes"
+          },
+          {
+            "code": "19",
+            "display": "Diarrhoea and Vomiting"
+          },
+          {
+            "code": "20",
+            "display": "Dizziness/Balance Problems"
+          },
+          {
+            "code": "21",
+            "display": "Downs Syndrome"
+          },
+          {
+            "code": "22",
+            "display": "Deep Vein Thrombosis"
+          },
+          {
+            "code": "23",
+            "display": "Ear Infections/Problems"
+          },
+          {
+            "code": "24",
+            "display": "Eating Disorder"
+          },
+          {
+            "code": "25",
+            "display": "Emotional/Behavioural Problems"
+          },
+          {
+            "code": "26",
+            "display": "End of Life Support"
+          },
+          {
+            "code": "27",
+            "display": "Epilepsy"
+          },
+          {
+            "code": "28",
+            "display": "Equipment Provision"
+          },
+          {
+            "code": "29",
+            "display": "Eustachian Tube Dysfunction"
+          },
+          {
+            "code": "30",
+            "display": "Falls Risk"
+          },
+          {
+            "code": "31",
+            "display": "Family Support"
+          },
+          {
+            "code": "32",
+            "display": "Feeding/Swallowing Problems"
+          },
+          {
+            "code": "33",
+            "display": "Foot Care/Problems"
+          },
+          {
+            "code": "34",
+            "display": "Head Injury"
+          },
+          {
+            "code": "35",
+            "display": "Hearing Problems/Loss"
+          },
+          {
+            "code": "36",
+            "display": "Immunisation"
+          },
+          {
+            "code": "37",
+            "display": "Laryngectomy"
+          },
+          {
+            "code": "38",
+            "display": "Leg Ulcer"
+          },
+          {
+            "code": "39",
+            "display": "Looked After Children"
+          },
+          {
+            "code": "40",
+            "display": "Low Muscle Tone"
+          },
+          {
+            "code": "41",
+            "display": "Lymphoedema Management"
+          },
+          {
+            "code": "42",
+            "display": "Mobility Problems"
+          },
+          {
+            "code": "43",
+            "display": "Musculoskeletal Problems"
+          },
+          {
+            "code": "44",
+            "display": "Neurological Problems"
+          },
+          {
+            "code": "45",
+            "display": "Healthy Child Pathway"
+          },
+          {
+            "code": "46",
+            "display": "Nutrition and Dietetics"
+          },
+          {
+            "code": "47",
+            "display": "Ophthalmic Problems"
+          },
+          {
+            "code": "48",
+            "display": "Over 75 Assessment"
+          },
+          {
+            "code": "49",
+            "display": "Pain/Symptom Control"
+          },
+          {
+            "code": "50",
+            "display": "Parkinsons Disease"
+          },
+          {
+            "code": "51",
+            "display": "Personal Hygiene"
+          },
+          {
+            "code": "52",
+            "display": "Post Operative Care"
+          },
+          {
+            "code": "53",
+            "display": "Pressure Ulcer"
+          },
+          {
+            "code": "54",
+            "display": "Problems with Activities of Daily Living"
+          },
+          {
+            "code": "55",
+            "display": "Psychological Conditions"
+          },
+          {
+            "code": "56",
+            "display": "Rehabilitation"
+          },
+          {
+            "code": "57",
+            "display": "Respiratory Conditions"
+          },
+          {
+            "code": "58",
+            "display": "Safeguarding"
+          },
+          {
+            "code": "59",
+            "display": "Skin Problems"
+          },
+          {
+            "code": "60",
+            "display": "Sleep Problems"
+          },
+          {
+            "code": "61",
+            "display": "Smoking Cessation"
+          },
+          {
+            "code": "62",
+            "display": "Speech and Language Problems"
+          },
+          {
+            "code": "63",
+            "display": "Stoma Care"
+          },
+          {
+            "code": "64",
+            "display": "Structural/Functional Impairment"
+          },
+          {
+            "code": "65",
+            "display": "Substance Misuse"
+          },
+          {
+            "code": "66",
+            "display": "Trismus/Restricted Mouth Opening"
+          },
+          {
+            "code": "67",
+            "display": "Tuberculosis"
+          },
+          {
+            "code": "68",
+            "display": "Vascular Problems"
+          },
+          {
+            "code": "69",
+            "display": "Vomiting/Nausea"
+          },
+          {
+            "code": "70",
+            "display": "Wound Care"
+          },
+          {
+            "code": "71",
+            "display": "Multiple Complex Communication Difficulties"
+          },
+          {
+            "code": "72",
+            "display": "Dental Care/Problems"
+          },
+          {
+            "code": "73",
+            "display": "Haematology/Phlebotomy"
+          },
+          {
+            "code": "74",
+            "display": "Chronic Fatigue Syndrome/Myalgic Encephalopathy"
+          },
+          {
+            "code": "75",
+            "display": "Chronic Allergy/Immunological Problem"
+          },
+          {
+            "code": "76",
+            "display": "Metabolic/Endocrine Disorders"
+          },
+          {
+            "code": "77",
+            "display": "Renal Problems"
+          },
+          {
+            "code": "78",
+            "display": "Minor Surgery"
+          },
+          {
+            "code": "79",
+            "display": "Gastrostomy Management/Care"
+          },
+          {
+            "code": "80",
+            "display": "Care of the Next Infant (CONI) Pathway"
+          },
+          {
+            "code": "81",
+            "display": "Failure to Thrive"
+          },
+          {
+            "code": "82",
+            "display": "Maternal Mood Problems"
+          },
+          {
+            "code": "83",
+            "display": "Complex Social Factors"
+          },
+          {
+            "code": "84",
+            "display": "Condition(s) Requiring Respite Care"
+          },
+          {
+            "code": "85",
+            "display": "Other Congenital Conditions"
+          },
+          {
+            "code": "86",
+            "display": "Blood Disorders"
+          },
+          {
+            "code": "87",
+            "display": "Genetic Disorders"
+          },
+          {
+            "code": "88",
+            "display": "Neonatal Abstinence Syndrome"
+          },
+          {
+            "code": "999",
+            "display": "Not known"
+          }
+        ]
+      }
+    ]
+  }
+}

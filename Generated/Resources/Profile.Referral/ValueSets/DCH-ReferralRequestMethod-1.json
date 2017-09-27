@@ -1,0 +1,50 @@
+{
+  "resourceType": "ValueSet",
+  "meta": {
+    "lastUpdated": "2016-08-03T00:00:00+01:00"
+  },
+  "url": "https://fhir.nhs.uk/ValueSet/DCH-ReferralRequestMethod-1",
+  "version": "1.0.0",
+  "name": "Referral Request Method",
+  "status": "draft",
+  "publisher": "NHS Digital",
+  "description": "The method used to send or receive a Referral Request for a Child Health event.",
+  "copyright": "Copyright © 2016 Health and Social Care Information Centre. NHS Digital is the trading name of the Health and Social Care Information Centre.",
+  "compose": {
+    "include": [
+      {
+        "system": "https://fhir.nhs.uk/DCH-ReferralRequestMethod-1",
+        "concept": [
+          {
+            "code": "Fax",
+            "display": "Fax"
+          },
+          {
+            "code": "Phone",
+            "display": "Phone"
+          },
+          {
+            "code": "Secure Messaging",
+            "display": "Secure Messaging"
+          },
+          {
+            "code": "Secure Email",
+            "display": "Secure Email"
+          },
+          {
+            "code": "Letter",
+            "display": "Letter"
+          },
+          {
+            "code": "Choose and Book",
+            "display": "Choose and Book"
+          },
+          {
+            "code": "Self Referral",
+            "display": "Self Referral"
+          }
+        ]
+      }
+    ]
+  }
+}
