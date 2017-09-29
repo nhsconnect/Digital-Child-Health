@@ -8,7 +8,7 @@
 	<version value="1.0.0"/>
 	<name value="Child Health Event Type"/>
 	<status value="draft"/>
-	<description value="The type of Child Health Event. The values below have been listed for example only."/>
+	<description value="The type of Child Health Event. Note the values below may change."/>
 	<compose>
 		<include>
 			<system value="https://fhir.nhs.uk/DCH-ChildHealthEventType-1"/>
@@ -41,7 +41,7 @@
 				<display value="Blood Spot Test Outcome  Event"/>
 			</concept>
 			<concept>
-				<code value=" Clinical Risk Factors"/>
+				<code value="Clinical Risk Factors"/>
 				<display value="Clinical Risk Factors"/>
 			</concept>
 			<concept>
@@ -93,20 +93,16 @@
 				<display value="Physical Examination"/>
 			</concept>
 			<concept>
+				<code value="Professional Contact"/>
+				<display value="Professional Contact"/>
+			</concept>
+			<concept>
 				<code value="Professional Comment"/>
 				<display value="Professional Comment"/>
 			</concept>
 			<concept>
 				<code value="Referral"/>
 				<display value="Referral"/>
-			</concept>
-			<concept>
-				<code value="Responsible Professional Team"/>
-				<display value="Responsible Professional Team"/>
-			</concept>
-			<concept>
-				<code value="Responsible Organisation"/>
-				<display value="Responsible Organisation"/>
 			</concept>
 			<concept>
 				<code value="Safety Alerts"/>
