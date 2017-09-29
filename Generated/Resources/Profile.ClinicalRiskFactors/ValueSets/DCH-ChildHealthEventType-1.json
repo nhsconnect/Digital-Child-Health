@@ -55,6 +55,10 @@
             "display": "Discharge"
           },
           {
+            "code": "Emergency Care Attendance",
+            "display": "Emergency Care Attendance"
+          },
+          {
             "code": "Family History",
             "display": "Family History"
           },
@@ -79,6 +83,14 @@
             "display": "Newborn Hearing"
           },
           {
+            "code": "Personal Contacts",
+            "display": "Personal Contacts"
+          },
+          {
+            "code": "Plan and Required Actions",
+            "display": "Plan and Required Actions"
+          },
+          {
             "code": "Physical Examination",
             "display": "Physical Examination"
           },
@@ -87,16 +99,8 @@
             "display": "Professional Comment"
           },
           {
-            "code": "Professional Plan",
-            "display": "Professional Plan"
-          },
-          {
             "code": "Referral",
             "display": "Referral"
-          },
-          {
-            "code": "Related  Or Significant Persons",
-            "display": "Related Or Significant Persons"
           },
           {
             "code": "Responsible Professional Team",
@@ -117,10 +121,6 @@
           {
             "code": "Social Context Household",
             "display": "Social Context Household"
-          },
-          {
-            "code": "Urgent Care Attendance",
-            "display": "Urgent Care Attendance"
           }
         ]
       }

@@ -1,0 +1,234 @@
+{
+  "resourceType": "ValueSet",
+  "meta": {
+    "lastUpdated": "2016-08-03T00:00:00+01:00"
+  },
+  "url": "https://fhir.nhs.uk/ValueSet/DCH-AccommodationStatus-1",
+  "version": "1.0.0",
+  "name": "Accommodation Status",
+  "status": "draft",
+  "publisher": "NHS Digital",
+  "description": "The current accommodation status.",
+  "copyright": "Copyright © 2016 Health and Social Care Information Centre. NHS Digital is the trading name of the Health and Social Care Information Centre.",
+  "compose": {
+    "include": [
+      {
+        "system": "https://fhir.nhs.uk/DCH-AccommodationStatus-1",
+        "concept": [
+          {
+            "code": " MA00 ",
+            "display": " Mainstream Housing "
+          },
+          {
+            "code": " MA01 ",
+            "display": " Owner occupier "
+          },
+          {
+            "code": " MA02 ",
+            "display": " Settled mainstream housing with family/friends "
+          },
+          {
+            "code": " MA03 ",
+            "display": " Shared ownership scheme e.g. Social Homebuy Scheme (tenant purchase percentage of home value from landlord) "
+          },
+          {
+            "code": " MA04 ",
+            "display": " Tenant - Local Authority/Arms Length Management Organisation/Registered Landlord "
+          },
+          {
+            "code": " MA05 ",
+            "display": " Tenant - Housing Association "
+          },
+          {
+            "code": " MA06 ",
+            "display": " Tenant - private landlord "
+          },
+          {
+            "code": " MA09 ",
+            "display": " Other mainstream housing "
+          },
+          {
+            "code": " HM00 ",
+            "display": " Homeless "
+          },
+          {
+            "code": " HM01 ",
+            "display": " Rough sleeper "
+          },
+          {
+            "code": " HM02 ",
+            "display": " Squatting "
+          },
+          {
+            "code": " HM03 ",
+            "display": " Night shelter/emergency hostel/Direct access hostel (temporary accommodation accepting self referrals, no waiting list and relatively frequent vacancies) "
+          },
+          {
+            "code": " HM04 ",
+            "display": " Sofa surfing (sleeps on different friends floor each night) "
+          },
+          {
+            "code": " HM05 ",
+            "display": " Placed in temporary accommodation by Local Authority (including Homelessness resettlement service) e.g. Bed and Breakfast accommodation "
+          },
+          {
+            "code": " HM06 ",
+            "display": " Staying with friends/family as a short term guest "
+          },
+          {
+            "code": " HM07 ",
+            "display": " Other homeless "
+          },
+          {
+            "code": " MH00 ",
+            "display": " Accommodation with mental health care support "
+          },
+          {
+            "code": " MH01 ",
+            "display": " Supported accommodation (accommodation supported by staff or resident caretaker) "
+          },
+          {
+            "code": " MH02 ",
+            "display": " Supported lodgings (lodgings supported by staff or resident caretaker) "
+          },
+          {
+            "code": " MH03 ",
+            "display": " Supported group home (supported by staff or resident caretaker) "
+          },
+          {
+            "code": " MH04 ",
+            "display": " Mental Health Registered Care Home "
+          },
+          {
+            "code": " MH09 ",
+            "display": " Other accommodation with mental health care and support "
+          },
+          {
+            "code": " HS00 ",
+            "display": " Acute/long stay healthcare residential facility/hospital "
+          },
+          {
+            "code": " HS01 ",
+            "display": " NHS acute psychiatric ward "
+          },
+          {
+            "code": " HS02 ",
+            "display": " Independent hospital/clinic "
+          },
+          {
+            "code": " HS03 ",
+            "display": " Specialist rehabilitation/recovery "
+          },
+          {
+            "code": " HS04 ",
+            "display": " Secure psychiatric unit "
+          },
+          {
+            "code": " HS05 ",
+            "display": " Other NHS facilities/hospital "
+          },
+          {
+            "code": " HS09 ",
+            "display": " Other acute/long stay healthcare residential facility/hospital "
+          },
+          {
+            "code": " CH00 ",
+            "display": " Accommodation with other (not specialist mental health) care support "
+          },
+          {
+            "code": " CH01 ",
+            "display": " Foyer - accommodation for young people aged 16-25 who are homeless or in housing need "
+          },
+          {
+            "code": " CH02 ",
+            "display": " Refuge "
+          },
+          {
+            "code": " CH03 ",
+            "display": " Non-Mental Health Registered Care Home "
+          },
+          {
+            "code": " CH09 ",
+            "display": " Other accommodation with care and support (not specialist mental health) "
+          },
+          {
+            "code": " CJ00 ",
+            "display": " Accommodation with criminal justice support "
+          },
+          {
+            "code": " CJ01 ",
+            "display": " Bail/Probation hostel "
+          },
+          {
+            "code": " CJ02 ",
+            "display": " Prison "
+          },
+          {
+            "code": " CJ03 ",
+            "display": " Young Offenders Institute "
+          },
+          {
+            "code": " CJ04 ",
+            "display": " Detention Centre "
+          },
+          {
+            "code": " CJ09 ",
+            "display": " Other accommodation with criminal justice support such as ex-offender support "
+          },
+          {
+            "code": " SH00 ",
+            "display": " Sheltered Housing (accommodation with a scheme manager or warden living on the premises or nearby, contactable by an alarm system if necessary) "
+          },
+          {
+            "code": " SH01 ",
+            "display": " Sheltered housing for older persons "
+          },
+          {
+            "code": " SH02 ",
+            "display": " Extra care sheltered housing (also known as 'very sheltered housing'. For people who are less able to manage on their own, but who do need an extra level of care. Services offered vary between schemes, but meals and some personal care are often provided.) "
+          },
+          {
+            "code": " SH03 ",
+            "display": " Nursing Home for older persons "
+          },
+          {
+            "code": " SH09 ",
+            "display": " Other sheltered housing "
+          },
+          {
+            "code": " ML00 ",
+            "display": " Mobile accommodation "
+          },
+          {
+            "code": " ",
+            "display": " Other (specify) "
+          },
+          {
+            "code": " OC96 ",
+            "display": " Not elsewhere classified "
+          },
+          {
+            "code": " OC97 ",
+            "display": " Not specified "
+          },
+          {
+            "code": " OC98 ",
+            "display": " Not applicable "
+          },
+          {
+            "code": " OC99 ",
+            "display": " Not known "
+          },
+          {
+            "code": " UK Border Agency ",
+            "display": " UK Border Agency "
+          },
+          {
+            "code": " No Fixed Abode ",
+            "display": " No Fixed Abode "
+          }
+        ]
+      }
+    ]
+  }
+}

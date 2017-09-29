@@ -1,0 +1,636 @@
+
+
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+	<head>
+			<title>Digital Child Health Service - Events Catalogue - FHIR Implementation Guide</title>
+
+			<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+			<meta name="author" content="HSCIC" />        
+			<meta name="publisher version" content=	"FHIR-Furnace : 2.7.6276.17249" />
+		
+			<link href="../dist/css/fhir.css" rel="stylesheet" />
+	 
+			<!-- Bootstrap core CSS -->
+			<link href="../dist/css/bootstrap.css" rel="stylesheet" />
+			<link href="../dist/css/bootstrap-fhir.css" rel="stylesheet" />
+			<link href="../dist/css/bootstrap-glyphicons.css" rel="stylesheet" />
+
+			<!-- Project extras -->
+			
+			<link href="../dist/css/pygments-manni.css" rel="stylesheet" />
+
+			<script src="../dist/js/jquery.js"> </script>
+			<script src="../dist/js/bootstrap.min.js"> </script>
+
+			<script src="../dist/js/fhir.js"> </script>
+			
+				<script>
+				  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+				  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+				  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+				  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+				  ga('create', 'UA-67795986-1', 'auto');
+				  ga('send', 'pageview');
+
+				</script>
+			
+			<!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+			<!--[if lt IE 9]>
+				<script src="../dist/js/html5shiv.js"></script>
+				<script src="../dist/js/respond.min.js"></script>
+			<![endif]-->
+
+			<!-- Favicons -->
+			<link rel="apple-touch-icon-precomposed" sizes="144x144" href="../dist/images/apple-touch-icon-144-precomposed.png" />
+			<link rel="apple-touch-icon-precomposed" sizes="114x114" href="../dist/images/apple-touch-icon-114-precomposed.png" />
+			<link rel="apple-touch-icon-precomposed" sizes="72x72" href="../dist/images/apple-touch-icon-72-precomposed.png" />
+			<link rel="apple-touch-icon-precomposed" href="../dist/images/apple-touch-icon-57-precomposed.png" />
+			<link rel="shortcut icon" href="../dist/images/favicon.ico" />
+	</head>
+	
+	<body>  
+		
+		<!-- segment-header -->
+		<div id="segment-header" class="segment">
+            
+            <div class="container">
+                <!-- container -->
+                <a id="logo" href="http://www.digital.nhs.uk" target="_blank">
+                    <img src="../dist/images/logo.png" alt="logo NHS Digital" />
+                </a>
+                <div id="specificationName">
+         
+                        <b>Digital Child Health Service - Events Catalogue</b>
+                  
+                </div>
+
+            </div>
+            <div class="container">
+                <!-- container -->
+            </div>
+        </div>
+        
+		<!-- /segment-header -->
+		
+		
+		<div id="segment-navbar" class="segment">
+            <!-- segment-navbar -->
+            <div id="stripe"> </div>
+            <div class="container">
+                <!-- container -->
+                <!-- HEADER CONTENT -->
+
+                <nav class="navbar navbar-inverse">
+                    <div class="container">
+                        <button data-target=".navbar-inverse-collapse" data-toggle="collapse" class="navbar-toggle" type="button">
+                            <span class="icon-bar"> </span>
+                            <span class="icon-bar"> </span>
+                            <span class="icon-bar"> </span>
+                        </button>
+                        <div class="nav-collapse collapse navbar-inverse-collapse">
+                            <ul class="nav navbar-nav">   
+
+											<li>
+												<a href='../Chapter.1.About/index.html'>About</a>
+											</li>
+											<li>
+												<a href='../Chapter.2.Change History/index.html'>Change History</a>
+											</li>
+											<li>
+												<a href='../Chapter.3.Architecture/index.html'>Architecture</a>
+											</li>
+											<li>
+												<a href='../Chapter.4.Messages/index.html'>Messages</a>
+											</li>
+											<li>
+												<a href='../Chapter.5.Examples/examples.html'>Examples</a>
+											</li>
+											<li>
+												<a href='../Chapter.6.Glossary/index.html'>Glossary</a>
+											</li>
+											<li>
+												<a href='../Chapter.7.Valuesets/valuesets.html'>Valuesets</a>
+											</li>
+
+                            </ul>
+							
+                            <p class="navbar-text pull-right" style="padding-right: 10px;padding-top: 3px;">
+                                <span class="label label-default"  style="font-size: 95%;">Experimental</span>
+                            </p>
+
+                        </div>
+                    </div>
+                </nav>				
+            </div>
+        </div>
+		
+		<div id="segment-breadcrumb" class="segment">
+            <!-- segment-breadcrumb -->
+            <div class="container">
+                <!-- container -->
+                <ul class="breadcrumb"></ul>
+            </div>
+            <!-- /container -->
+        </div>
+        <div id="segment-content" class="segment">
+            <!-- segment-content -->
+            <div class="container">
+                <!-- container -->
+                <div class="row">
+                    <div class="inner-wrapper">
+						<!-- CONTENT CONTENT -->
+                        <div class="col-12">
+							
+							
+							
+							
+							
+							
+<div class="panel panel - default" xmlns="http://www.w3.org/1999/xhtml">
+  <div class="panel-heading">
+    <h3 class="panel-title">Accommodation Status</h3>
+  </div>
+  <div class="panel-body">
+    <div class="valueset-content">
+      <div class="valueset-summary">
+        <h3 xmlns="" />Summary</div>
+      <div class="valueset-summary-table">
+        <table>
+          <tr class="valueset-summary-table-header">
+            <th title="The name of the element." class="col-name">Name</th>
+            <th title="The value of the element." class="col-description">Description</th>
+          </tr>
+          <tr>
+            <td>Defining URL:</td>
+            <td>https://fhir.nhs.uk/ValueSet/DCH-AccommodationStatus-1</td>
+            <tr>
+              <td>Name:</td>
+              <td>Accommodation Status</td>
+            </tr>
+            <tr>
+              <td>Definition:</td>
+              <td>The current accommodation status.</td>
+            </tr>
+            <tr>
+              <td>Copyright:</td>
+              <td>Copyright © 2016 Health and Social Care Information Centre. NHS Digital is the trading name of the Health and Social Care Information Centre.</td>
+            </tr>
+            <tr>
+              <td>Status:</td>
+              <td>Draft</td>
+            </tr>
+            <tr>
+              <td>Last Updated:</td>
+              <td>03/08/2016 00:00:00 +01:00</td>
+            </tr>
+            <tr>
+              <td>Source Resource:</td>
+              <td>
+                <p>
+                  <a target="_blank" href="..\Resources\Profile.SocialContextHousehold\ValueSets\DCH-AccommodationStatus-1.xml">XML</a> / <a target="_blank" href="..\Resources\Profile.SocialContextHousehold\ValueSets\DCH-AccommodationStatus-1.json">JSON</a></p>
+              </td>
+            </tr>
+          </tr>
+        </table>
+        <p />
+      </div>
+      <div class="logical-definition">
+        <p>Include these codes as defined in https://fhir.nhs.uk/DCH-AccommodationStatus-1 :<br /></p>
+        <div class="codeSystem-table">
+          <table>
+            <tr class="table-header">
+              <th title="Code that identifies concept" class="col-code">Code</th>
+              <th title="Text to display to the user" class="col-display">Display</th>
+            </tr>
+            <div class="table-rows">
+              <tr>
+                <td> MA00 </td>
+                <td>
+                  <p> Mainstream Housing </p>
+                  <a name=" Mainstream Housing " />
+                </td>
+              </tr>
+              <tr>
+                <td> MA01 </td>
+                <td>
+                  <p> Owner occupier </p>
+                  <a name=" Owner occupier " />
+                </td>
+              </tr>
+              <tr>
+                <td> MA02 </td>
+                <td>
+                  <p> Settled mainstream housing with family/friends </p>
+                  <a name=" Settled mainstream housing with family/friends " />
+                </td>
+              </tr>
+              <tr>
+                <td> MA03 </td>
+                <td>
+                  <p> Shared ownership scheme e.g. Social Homebuy Scheme (tenant purchase percentage of home value from landlord) </p>
+                  <a name=" Shared ownership scheme e.g. Social Homebuy Scheme (tenant purchase percentage of home value from landlord) " />
+                </td>
+              </tr>
+              <tr>
+                <td> MA04 </td>
+                <td>
+                  <p> Tenant - Local Authority/Arms Length Management Organisation/Registered Landlord </p>
+                  <a name=" Tenant - Local Authority/Arms Length Management Organisation/Registered Landlord " />
+                </td>
+              </tr>
+              <tr>
+                <td> MA05 </td>
+                <td>
+                  <p> Tenant - Housing Association </p>
+                  <a name=" Tenant - Housing Association " />
+                </td>
+              </tr>
+              <tr>
+                <td> MA06 </td>
+                <td>
+                  <p> Tenant - private landlord </p>
+                  <a name=" Tenant - private landlord " />
+                </td>
+              </tr>
+              <tr>
+                <td> MA09 </td>
+                <td>
+                  <p> Other mainstream housing </p>
+                  <a name=" Other mainstream housing " />
+                </td>
+              </tr>
+              <tr>
+                <td> HM00 </td>
+                <td>
+                  <p> Homeless </p>
+                  <a name=" Homeless " />
+                </td>
+              </tr>
+              <tr>
+                <td> HM01 </td>
+                <td>
+                  <p> Rough sleeper </p>
+                  <a name=" Rough sleeper " />
+                </td>
+              </tr>
+              <tr>
+                <td> HM02 </td>
+                <td>
+                  <p> Squatting </p>
+                  <a name=" Squatting " />
+                </td>
+              </tr>
+              <tr>
+                <td> HM03 </td>
+                <td>
+                  <p> Night shelter/emergency hostel/Direct access hostel (temporary accommodation accepting self referrals, no waiting list and relatively frequent vacancies) </p>
+                  <a name=" Night shelter/emergency hostel/Direct access hostel (temporary accommodation accepting self referrals, no waiting list and relatively frequent vacancies) " />
+                </td>
+              </tr>
+              <tr>
+                <td> HM04 </td>
+                <td>
+                  <p> Sofa surfing (sleeps on different friends floor each night) </p>
+                  <a name=" Sofa surfing (sleeps on different friends floor each night) " />
+                </td>
+              </tr>
+              <tr>
+                <td> HM05 </td>
+                <td>
+                  <p> Placed in temporary accommodation by Local Authority (including Homelessness resettlement service) e.g. Bed and Breakfast accommodation </p>
+                  <a name=" Placed in temporary accommodation by Local Authority (including Homelessness resettlement service) e.g. Bed and Breakfast accommodation " />
+                </td>
+              </tr>
+              <tr>
+                <td> HM06 </td>
+                <td>
+                  <p> Staying with friends/family as a short term guest </p>
+                  <a name=" Staying with friends/family as a short term guest " />
+                </td>
+              </tr>
+              <tr>
+                <td> HM07 </td>
+                <td>
+                  <p> Other homeless </p>
+                  <a name=" Other homeless " />
+                </td>
+              </tr>
+              <tr>
+                <td> MH00 </td>
+                <td>
+                  <p> Accommodation with mental health care support </p>
+                  <a name=" Accommodation with mental health care support " />
+                </td>
+              </tr>
+              <tr>
+                <td> MH01 </td>
+                <td>
+                  <p> Supported accommodation (accommodation supported by staff or resident caretaker) </p>
+                  <a name=" Supported accommodation (accommodation supported by staff or resident caretaker) " />
+                </td>
+              </tr>
+              <tr>
+                <td> MH02 </td>
+                <td>
+                  <p> Supported lodgings (lodgings supported by staff or resident caretaker) </p>
+                  <a name=" Supported lodgings (lodgings supported by staff or resident caretaker) " />
+                </td>
+              </tr>
+              <tr>
+                <td> MH03 </td>
+                <td>
+                  <p> Supported group home (supported by staff or resident caretaker) </p>
+                  <a name=" Supported group home (supported by staff or resident caretaker) " />
+                </td>
+              </tr>
+              <tr>
+                <td> MH04 </td>
+                <td>
+                  <p> Mental Health Registered Care Home </p>
+                  <a name=" Mental Health Registered Care Home " />
+                </td>
+              </tr>
+              <tr>
+                <td> MH09 </td>
+                <td>
+                  <p> Other accommodation with mental health care and support </p>
+                  <a name=" Other accommodation with mental health care and support " />
+                </td>
+              </tr>
+              <tr>
+                <td> HS00 </td>
+                <td>
+                  <p> Acute/long stay healthcare residential facility/hospital </p>
+                  <a name=" Acute/long stay healthcare residential facility/hospital " />
+                </td>
+              </tr>
+              <tr>
+                <td> HS01 </td>
+                <td>
+                  <p> NHS acute psychiatric ward </p>
+                  <a name=" NHS acute psychiatric ward " />
+                </td>
+              </tr>
+              <tr>
+                <td> HS02 </td>
+                <td>
+                  <p> Independent hospital/clinic </p>
+                  <a name=" Independent hospital/clinic " />
+                </td>
+              </tr>
+              <tr>
+                <td> HS03 </td>
+                <td>
+                  <p> Specialist rehabilitation/recovery </p>
+                  <a name=" Specialist rehabilitation/recovery " />
+                </td>
+              </tr>
+              <tr>
+                <td> HS04 </td>
+                <td>
+                  <p> Secure psychiatric unit </p>
+                  <a name=" Secure psychiatric unit " />
+                </td>
+              </tr>
+              <tr>
+                <td> HS05 </td>
+                <td>
+                  <p> Other NHS facilities/hospital </p>
+                  <a name=" Other NHS facilities/hospital " />
+                </td>
+              </tr>
+              <tr>
+                <td> HS09 </td>
+                <td>
+                  <p> Other acute/long stay healthcare residential facility/hospital </p>
+                  <a name=" Other acute/long stay healthcare residential facility/hospital " />
+                </td>
+              </tr>
+              <tr>
+                <td> CH00 </td>
+                <td>
+                  <p> Accommodation with other (not specialist mental health) care support </p>
+                  <a name=" Accommodation with other (not specialist mental health) care support " />
+                </td>
+              </tr>
+              <tr>
+                <td> CH01 </td>
+                <td>
+                  <p> Foyer - accommodation for young people aged 16-25 who are homeless or in housing need </p>
+                  <a name=" Foyer - accommodation for young people aged 16-25 who are homeless or in housing need " />
+                </td>
+              </tr>
+              <tr>
+                <td> CH02 </td>
+                <td>
+                  <p> Refuge </p>
+                  <a name=" Refuge " />
+                </td>
+              </tr>
+              <tr>
+                <td> CH03 </td>
+                <td>
+                  <p> Non-Mental Health Registered Care Home </p>
+                  <a name=" Non-Mental Health Registered Care Home " />
+                </td>
+              </tr>
+              <tr>
+                <td> CH09 </td>
+                <td>
+                  <p> Other accommodation with care and support (not specialist mental health) </p>
+                  <a name=" Other accommodation with care and support (not specialist mental health) " />
+                </td>
+              </tr>
+              <tr>
+                <td> CJ00 </td>
+                <td>
+                  <p> Accommodation with criminal justice support </p>
+                  <a name=" Accommodation with criminal justice support " />
+                </td>
+              </tr>
+              <tr>
+                <td> CJ01 </td>
+                <td>
+                  <p> Bail/Probation hostel </p>
+                  <a name=" Bail/Probation hostel " />
+                </td>
+              </tr>
+              <tr>
+                <td> CJ02 </td>
+                <td>
+                  <p> Prison </p>
+                  <a name=" Prison " />
+                </td>
+              </tr>
+              <tr>
+                <td> CJ03 </td>
+                <td>
+                  <p> Young Offenders Institute </p>
+                  <a name=" Young Offenders Institute " />
+                </td>
+              </tr>
+              <tr>
+                <td> CJ04 </td>
+                <td>
+                  <p> Detention Centre </p>
+                  <a name=" Detention Centre " />
+                </td>
+              </tr>
+              <tr>
+                <td> CJ09 </td>
+                <td>
+                  <p> Other accommodation with criminal justice support such as ex-offender support </p>
+                  <a name=" Other accommodation with criminal justice support such as ex-offender support " />
+                </td>
+              </tr>
+              <tr>
+                <td> SH00 </td>
+                <td>
+                  <p> Sheltered Housing (accommodation with a scheme manager or warden living on the premises or nearby, contactable by an alarm system if necessary) </p>
+                  <a name=" Sheltered Housing (accommodation with a scheme manager or warden living on the premises or nearby, contactable by an alarm system if necessary) " />
+                </td>
+              </tr>
+              <tr>
+                <td> SH01 </td>
+                <td>
+                  <p> Sheltered housing for older persons </p>
+                  <a name=" Sheltered housing for older persons " />
+                </td>
+              </tr>
+              <tr>
+                <td> SH02 </td>
+                <td>
+                  <p> Extra care sheltered housing (also known as 'very sheltered housing'. For people who are less able to manage on their own, but who do need an extra level of care. Services offered vary between schemes, but meals and some personal care are often provided.) </p>
+                  <a name=" Extra care sheltered housing (also known as 'very sheltered housing'. For people who are less able to manage on their own, but who do need an extra level of care. Services offered vary between schemes, but meals and some personal care are often provided.) " />
+                </td>
+              </tr>
+              <tr>
+                <td> SH03 </td>
+                <td>
+                  <p> Nursing Home for older persons </p>
+                  <a name=" Nursing Home for older persons " />
+                </td>
+              </tr>
+              <tr>
+                <td> SH09 </td>
+                <td>
+                  <p> Other sheltered housing </p>
+                  <a name=" Other sheltered housing " />
+                </td>
+              </tr>
+              <tr>
+                <td> ML00 </td>
+                <td>
+                  <p> Mobile accommodation </p>
+                  <a name=" Mobile accommodation " />
+                </td>
+              </tr>
+              <tr>
+                <td> </td>
+                <td>
+                  <p> Other (specify) </p>
+                  <a name=" Other (specify) " />
+                </td>
+              </tr>
+              <tr>
+                <td> OC96 </td>
+                <td>
+                  <p> Not elsewhere classified </p>
+                  <a name=" Not elsewhere classified " />
+                </td>
+              </tr>
+              <tr>
+                <td> OC97 </td>
+                <td>
+                  <p> Not specified </p>
+                  <a name=" Not specified " />
+                </td>
+              </tr>
+              <tr>
+                <td> OC98 </td>
+                <td>
+                  <p> Not applicable </p>
+                  <a name=" Not applicable " />
+                </td>
+              </tr>
+              <tr>
+                <td> OC99 </td>
+                <td>
+                  <p> Not known </p>
+                  <a name=" Not known " />
+                </td>
+              </tr>
+              <tr>
+                <td> UK Border Agency </td>
+                <td>
+                  <p> UK Border Agency </p>
+                  <a name=" UK Border Agency " />
+                </td>
+              </tr>
+              <tr>
+                <td> No Fixed Abode </td>
+                <td>
+                  <p> No Fixed Abode </p>
+                  <a name=" No Fixed Abode " />
+                </td>
+              </tr>
+            </div>
+          </table>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>						
+					   </div>                      
+                    </div>
+                    <!-- /inner-wrapper -->                   
+                </div>
+                <!-- /row -->              
+            </div>
+            <!-- /container -->           
+        </div>
+    <!-- /segment-content -->
+
+        <div id="segment-footer" class="segment">
+            <!-- segment-footer -->
+            <div class="container">
+                <!-- container -->
+                <div class="inner-wrapper">
+					<div id="explanatoryline">
+                         <img src="../dist/images/explanatoryline.png" alt="Information and technology for better health and care" />
+						 <p>
+                        Copyright &copy; 2017 Health and Social Care Information Centre<br/>
+						NHS Digital is the trading name of the Health and Social Care Information Centre.
+                    </p>
+                    </div>
+				<div id="hl7-nav">
+                    <a id="hl7-logo" href="http://www.hl7.org" target="_blank">
+                        <img src="../dist/images/hl7-logo.png" alt="visit the hl7 website" />
+                    </a>
+					<p>
+					FHIR&reg; is the registered trademark of HL7<br/>
+					and is used with the permission of HL7.
+					</p>
+				</div>
+					<p>
+						<!--<span class="glyphicon glyphicon-download-alt" aria-hidden="true"></span> -->
+                    </p>
+                </div>
+                <!-- /inner-wrapper -->
+            </div>
+            <!-- /container -->
+        </div>
+
+        <div id="segment-post-footer" class="segment">
+            <!-- segment-post-footer -->
+            <div class="container">
+                <!-- container -->
+            </div>
+            <!-- /container -->
+        </div>
+	</body>
+</html>
