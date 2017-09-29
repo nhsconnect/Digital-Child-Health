@@ -1,0 +1,1 @@
+This Questionnaire Response resource is constrained to represent the responses given to a Social Context Household questionnaire during a Child Health event.

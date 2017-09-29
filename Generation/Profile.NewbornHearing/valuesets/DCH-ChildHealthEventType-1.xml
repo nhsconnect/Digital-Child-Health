@@ -53,6 +53,10 @@
 				<display value="Discharge"/>
 			</concept>
 			<concept>
+				<code value="Emergency Care Attendance"/>
+				<display value="Emergency Care Attendance"/>
+			</concept>
+			<concept>
 				<code value="Family History"/>
 				<display value="Family History"/>
 			</concept>
@@ -77,6 +81,14 @@
 				<display value="Newborn Hearing"/>
 			</concept>
 			<concept>
+				<code value="Personal Contacts"/>
+				<display value="Personal Contacts"/>
+			</concept>
+			<concept>
+				<code value="Plan and Required Actions"/>
+				<display value="Plan and Required Actions"/>
+			</concept>
+			<concept>
 				<code value="Physical Examination"/>
 				<display value="Physical Examination"/>
 			</concept>
@@ -85,16 +97,8 @@
 				<display value="Professional Comment"/>
 			</concept>
 			<concept>
-				<code value="Professional Plan"/>
-				<display value="Professional Plan"/>
-			</concept>
-			<concept>
 				<code value="Referral"/>
 				<display value="Referral"/>
-			</concept>
-			<concept>
-				<code value="Related  Or Significant Persons"/>
-				<display value="Related Or Significant Persons"/>
 			</concept>
 			<concept>
 				<code value="Responsible Professional Team"/>
@@ -115,10 +119,6 @@
 			<concept>
 				<code value="Social Context Household"/>
 				<display value="Social Context Household"/>
-			</concept>
-			<concept>
-				<code value="Urgent Care Attendance"/>
-				<display value="Urgent Care Attendance"/>
 			</concept>
 		</include>
 	</compose>
