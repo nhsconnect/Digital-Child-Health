@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <meta>
-    <lastUpdated value="2017-09-26T07:22:58.119+01:00" />
+    <lastUpdated value="2017-10-01T06:01:21.215+01:00" />
     <tag>
       <system value="urn:hscic:publishOrder" />
       <code value="5" />
@@ -2038,7 +2038,7 @@
       <short value="Specific type of encounter" />
       <definition value="Specific type of encounter (e.g. e-mail consultation, surgical day-care, skilled nursing, rehabilitation)." />
       <comments value="Since there are many ways to further classify encounters, this element is 0..*." />
-      <min value="1" />
+      <min value="0" />
       <max value="*" />
       <base>
         <path value="Encounter.type" />
@@ -2906,7 +2906,7 @@
       <definition value="A reference to a code defined by a terminology system." />
       <comments value="Codes may be defined very casually in enumerations, or code lists, up to very formal definitions such as SNOMED CT - see the HL7 v3 Core Principles for more information.  Ordering of codings is undefined and SHALL NOT be used to infer meaning. Generally, at most only one of the coding values will be labelled as UserSelected = true." />
       <requirements value="Allows for translations and alternate encodings within a code system.  Also supports communication of the same instance to systems requiring different encodings." />
-      <min value="1" />
+      <min value="0" />
       <max value="1" />
       <base>
         <path value="CodeableConcept.coding" />
@@ -13591,10 +13591,6 @@
       </type>
     </element>
     <element>
-      <path value="Encounter.type" />
-      <min value="1" />
-    </element>
-    <element>
       <path value="Encounter.type.coding" />
       <slicing>
         <discriminator value="system" />
@@ -13649,7 +13645,6 @@
     <element>
       <path value="Encounter.type.coding" />
       <name value="childHealthEncounterType" />
-      <min value="1" />
       <max value="1" />
       <binding>
         <strength value="required" />

@@ -97,10 +97,6 @@
 				<display value="Professional Contact"/>
 			</concept>
 			<concept>
-				<code value="Professional Comment"/>
-				<display value="Professional Comment"/>
-			</concept>
-			<concept>
 				<code value="Referral"/>
 				<display value="Referral"/>
 			</concept>
