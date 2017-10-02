@@ -3,7 +3,7 @@
   <meta>
     <lastUpdated value="2017-09-25T18:23:52.246+01:00" />
   </meta>
-  <url value="https://fhir.hl7.org.uk/StructureDefinition/Extension-CareConnect-DCH-ConditionRelationship-1" />
+  <url value="https://fhir.nhs.uk/StructureDefinition/Extension-CareConnect-DCH-ConditionRelationship-1" />
   <version value="1.1.0" />
   <name value="Extension-CareConnect-DCH-ConditionRelationship-1" />
   <status value="active" />
@@ -451,7 +451,7 @@
       </base>
       <type>
         <code value="Reference" />
-        <profile value="https://fhir.hl7.org.uk/StructureDefinition/CareConnect-DCH-Condition-1" />
+        <profile value="https://fhir.nhs.uk/StructureDefinition/CareConnect-DCH-Condition-1" />
       </type>
       <condition value="ele-1" />
       <constraint>
@@ -487,7 +487,7 @@
       <type>
         <code value="uri" />
       </type>
-      <fixedUri value="https://fhir.hl7.org.uk/StructureDefinition/Extension-CareConnect-DCH-ConditionRelationship-1" />
+      <fixedUri value="https://fhir.nhs.uk/StructureDefinition/Extension-CareConnect-DCH-ConditionRelationship-1" />
       <condition value="ele-1" />
       <constraint>
         <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-expression">
@@ -695,12 +695,12 @@
       <definition value="Target condition." />
       <type>
         <code value="Reference" />
-        <profile value="https://fhir.hl7.org.uk/StructureDefinition/CareConnect-DCH-Condition-1" />
+        <profile value="https://fhir.nhs.uk/StructureDefinition/CareConnect-DCH-Condition-1" />
       </type>
     </element>
     <element>
       <path value="Extension.url" />
-      <fixedUri value="https://fhir.hl7.org.uk/StructureDefinition/Extension-CareConnect-DCH-ConditionRelationship-1" />
+      <fixedUri value="https://fhir.nhs.uk/StructureDefinition/Extension-CareConnect-DCH-ConditionRelationship-1" />
     </element>
     <element>
       <path value="Extension.value[x]" />

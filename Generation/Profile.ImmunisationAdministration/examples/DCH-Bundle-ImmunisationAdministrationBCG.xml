@@ -67,7 +67,7 @@
 			<Patient>
 				<id value="7368c5fe-bbb4-4e9c-a585-234e06b84e82"/>
 				<meta>
-					<profile value="https://fhir.hl7.org.uk/StructureDefinition/CareConnect-DCH-Patient-1"/>
+					<profile value="https://fhir.nhs.uk/StructureDefinition/CareConnect-DCH-Patient-1"/>
 				</meta>
 				<identifier>
 					<extension url="https://fhir.hl7.org.uk/StructureDefinition/Extension-CareConnect-NHSNumberVerificationStatus-1">
@@ -324,7 +324,7 @@
 			<Immunization>
 				<id value="e9dbfa46-5bdc-11e7-907b-a6006ad3dba0"/>
 				<meta>
-					<profile value="https://fhir.hl7.org.uk/StructureDefinition/CareConnect-DCH-Immunization-1"/>
+					<profile value="https://fhir.nhs.uk/StructureDefinition/CareConnect-DCH-Immunization-1"/>
 				</meta>
 				<identifier>
 					<system value="https://tools.ietf.org/html/rfc4122"/>
@@ -402,7 +402,7 @@
 			<Encounter>
 				<id value="a8ca9fe6-72aa-11e7-8cf7-a6006ad3dba0"/>
 				<meta>
-					<profile value="https://fhir.hl7.org.uk/StructureDefinition/CareConnect-DCH-Encounter-1"/>
+					<profile value="https://fhir.nhs.uk/StructureDefinition/CareConnect-DCH-Encounter-1"/>
 				</meta>
 				<identifier>
 					<system value="https://tools.ietf.org/html/rfc4122"/>
@@ -455,7 +455,7 @@
 			<Procedure>
 				<id value="e9dc1bc0-5bdc-11e7-907b-a6006ad3dba0"/>
 				<meta>
-					<profile value="https://fhir.hl7.org.uk/StructureDefinition/CareConnect-DCH-Procedure-1"/>
+					<profile value="https://fhir.nhs.uk/StructureDefinition/CareConnect-DCH-Procedure-1"/>
 				</meta>
 				<identifier>
 					<system value="https://tools.ietf.org/html/rfc4122"/>

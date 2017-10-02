@@ -7,7 +7,7 @@
       <code value="15" />
     </tag>
   </meta>
-  <url value="https://fhir.hl7.org.uk/StructureDefinition/CareConnect-DCH-MedicationStatement-1" />
+  <url value="https://fhir.nhs.uk/StructureDefinition/CareConnect-DCH-MedicationStatement-1" />
   <version value="1.1.0" />
   <name value="CareConnect-DCH-MedicationStatement-1" />
   <status value="active" />
@@ -358,7 +358,7 @@
       </base>
       <type>
         <code value="Extension" />
-        <profile value="https://fhir.hl7.org.uk/StructureDefinition/Extension-CareConnect-DCH-ReasonCondition-1" />
+        <profile value="https://fhir.nhs.uk/StructureDefinition/Extension-CareConnect-DCH-ReasonCondition-1" />
       </type>
       <condition value="ele-1" />
       <constraint>
@@ -548,7 +548,7 @@
       </base>
       <type>
         <code value="Extension" />
-        <profile value="https://fhir.hl7.org.uk/StructureDefinition/Extension-CareConnect-DCH-MedicationFlag-1" />
+        <profile value="https://fhir.nhs.uk/StructureDefinition/Extension-CareConnect-DCH-MedicationFlag-1" />
       </type>
       <condition value="ele-1" />
       <constraint>
@@ -1590,7 +1590,7 @@
       </base>
       <type>
         <code value="Reference" />
-        <profile value="https://fhir.hl7.org.uk/StructureDefinition/CareConnect-DCH-Organization-1" />
+        <profile value="https://fhir.nhs.uk/StructureDefinition/CareConnect-DCH-Organization-1" />
       </type>
       <condition value="ele-1" />
       <constraint>
@@ -1783,7 +1783,7 @@
       </base>
       <type>
         <code value="Reference" />
-        <profile value="https://fhir.hl7.org.uk/StructureDefinition/CareConnect-DCH-Patient-1" />
+        <profile value="https://fhir.nhs.uk/StructureDefinition/CareConnect-DCH-Patient-1" />
       </type>
       <condition value="ele-1" />
       <constraint>
@@ -1980,11 +1980,11 @@
       </type>
       <type>
         <code value="Reference" />
-        <profile value="https://fhir.hl7.org.uk/StructureDefinition/CareConnect-DCH-Practitioner-1" />
+        <profile value="https://fhir.nhs.uk/StructureDefinition/CareConnect-DCH-Practitioner-1" />
       </type>
       <type>
         <code value="Reference" />
-        <profile value="https://fhir.hl7.org.uk/StructureDefinition/CareConnect-DCH-Patient-1" />
+        <profile value="https://fhir.nhs.uk/StructureDefinition/CareConnect-DCH-Patient-1" />
       </type>
       <condition value="ele-1" />
       <constraint>
@@ -3350,7 +3350,7 @@
       </type>
       <type>
         <code value="Reference" />
-        <profile value="https://fhir.hl7.org.uk/StructureDefinition/CareConnect-DCH-Medication-1" />
+        <profile value="https://fhir.nhs.uk/StructureDefinition/CareConnect-DCH-Medication-1" />
       </type>
       <condition value="ele-1" />
       <constraint>
@@ -7675,7 +7675,7 @@
       <short value="Reason medication is being/was taken" />
       <type>
         <code value="Extension" />
-        <profile value="https://fhir.hl7.org.uk/StructureDefinition/Extension-CareConnect-DCH-ReasonCondition-1" />
+        <profile value="https://fhir.nhs.uk/StructureDefinition/Extension-CareConnect-DCH-ReasonCondition-1" />
       </type>
     </element>
     <element>
@@ -7719,7 +7719,7 @@
       <name value="flag" />
       <type>
         <code value="Extension" />
-        <profile value="https://fhir.hl7.org.uk/StructureDefinition/Extension-CareConnect-DCH-MedicationFlag-1" />
+        <profile value="https://fhir.nhs.uk/StructureDefinition/Extension-CareConnect-DCH-MedicationFlag-1" />
       </type>
     </element>
     <element>
@@ -7734,14 +7734,14 @@
       <path value="MedicationStatement.identifier.assigner" />
       <type>
         <code value="Reference" />
-        <profile value="https://fhir.hl7.org.uk/StructureDefinition/CareConnect-DCH-Organization-1" />
+        <profile value="https://fhir.nhs.uk/StructureDefinition/CareConnect-DCH-Organization-1" />
       </type>
     </element>
     <element>
       <path value="MedicationStatement.patient" />
       <type>
         <code value="Reference" />
-        <profile value="https://fhir.hl7.org.uk/StructureDefinition/CareConnect-DCH-Patient-1" />
+        <profile value="https://fhir.nhs.uk/StructureDefinition/CareConnect-DCH-Patient-1" />
       </type>
     </element>
     <element>
@@ -7752,11 +7752,11 @@
       </type>
       <type>
         <code value="Reference" />
-        <profile value="https://fhir.hl7.org.uk/StructureDefinition/CareConnect-DCH-Practitioner-1" />
+        <profile value="https://fhir.nhs.uk/StructureDefinition/CareConnect-DCH-Practitioner-1" />
       </type>
       <type>
         <code value="Reference" />
-        <profile value="https://fhir.hl7.org.uk/StructureDefinition/CareConnect-DCH-Patient-1" />
+        <profile value="https://fhir.nhs.uk/StructureDefinition/CareConnect-DCH-Patient-1" />
       </type>
     </element>
     <element>
@@ -7815,7 +7815,7 @@
       </type>
       <type>
         <code value="Reference" />
-        <profile value="https://fhir.hl7.org.uk/StructureDefinition/CareConnect-DCH-Medication-1" />
+        <profile value="https://fhir.nhs.uk/StructureDefinition/CareConnect-DCH-Medication-1" />
       </type>
       <binding>
         <strength value="required" />

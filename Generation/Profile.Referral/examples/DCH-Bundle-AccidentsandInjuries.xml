@@ -51,7 +51,7 @@
 			<Organization>
 				<id value="5ccb6bb7-a7f1-46cc-a5d3-135320765553"/>
 				<meta>
-					<profile value="https://fhir.hl7.org.uk/StructureDefinition/CareConnect-DCH-Organization-1"/>
+					<profile value="https://fhir.nhs.uk/StructureDefinition/CareConnect-DCH-Organization-1"/>
 				</meta>
 				<identifier>
 					<system value="https://fhir.nhs.uk/Id/ods-organization-code"/>
@@ -67,7 +67,7 @@
 			<Patient>
 				<id value="7368c5fe-bbb4-4e9c-a585-234e06b84e82"/>
 				<meta>
-					<profile value="https://fhir.hl7.org.uk/StructureDefinition/CareConnect-DCH-Patient-1"/>
+					<profile value="https://fhir.nhs.uk/StructureDefinition/CareConnect-DCH-Patient-1"/>
 				</meta>
 				<identifier>
 					<extension url="https://fhir.hl7.org.uk/StructureDefinition/Extension-CareConnect-NHSNumberVerificationStatus-1">
@@ -265,7 +265,7 @@
 			<Encounter>
 				<id value="1d67bd36-4f45-11e7-b114-b2f933d5fe66"/>
 				<meta>
-					<profile value="https://fhir.hl7.org.uk/StructureDefinition/CareConnect-DCH-Encounter-1"/>
+					<profile value="https://fhir.nhs.uk/StructureDefinition/CareConnect-DCH-Encounter-1"/>
 				</meta>
 				<identifier>
 					<system value="https://tools.ietf.org/html/rfc4122"/>
@@ -323,7 +323,7 @@
 			<Condition>
 				<id value="1d67c3a8-4f45-11e7-b114-b2f933d5fe66"/>
 				<meta>
-					<profile value="https://fhir.hl7.org.uk/StructureDefinition/CareConnect-DCH-Condition-1"/>
+					<profile value="https://fhir.nhs.uk/StructureDefinition/CareConnect-DCH-Condition-1"/>
 				</meta>
 				<identifier>
 					<system value="https://tools.ietf.org/html/rfc4122"/>
@@ -365,7 +365,7 @@
 			<Condition>
 				<id value="1d67c470-4f45-11e7-b114-b2f933d5fe66"/>
 				<meta>
-					<profile value="https://fhir.hl7.org.uk/StructureDefinition/CareConnect-DCH-Condition-1"/>
+					<profile value="https://fhir.nhs.uk/StructureDefinition/CareConnect-DCH-Condition-1"/>
 				</meta>
 				<identifier>
 					<system value="https://tools.ietf.org/html/rfc4122"/>
@@ -441,7 +441,7 @@
 			<Location>
 				<id value="00e72e70-0e37-48b5-b950-ca5ce8c35de7"/>
 				<meta>
-					<profile value="https://fhir.hl7.org.uk/StructureDefinition/CareConnect-DCH-Location-1"/>
+					<profile value="https://fhir.nhs.uk/StructureDefinition/CareConnect-DCH-Location-1"/>
 				</meta>
 				<identifier>
 					<system value="https://fhir.nhs.uk/Id/ods-site-code"/>
@@ -461,7 +461,7 @@
 			<Practitioner>
 				<id value="1d67c1f0-4f45-11e7-b114-b2f933d5fe66"/>
 				<meta>
-					<profile value="https://fhir.hl7.org.uk/StructureDefinition/CareConnect-DCH-Practitioner-1"/>
+					<profile value="https://fhir.nhs.uk/StructureDefinition/CareConnect-DCH-Practitioner-1"/>
 				</meta>
 				<identifier>
 					<system value="https://fhir.nhs.net/Id/sds-role-profile-id"/>

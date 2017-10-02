@@ -50,7 +50,7 @@
 			<Organization>
 				<id value="9a74549a-686f-11e7-907b-a6006ad3dba0"/>
 				<meta>
-					<profile value="https://fhir.hl7.org.uk/StructureDefinition/CareConnect-DCH-Organization-1"/>
+					<profile value="https://fhir.nhs.uk/StructureDefinition/CareConnect-DCH-Organization-1"/>
 				</meta>
 				<identifier>
 					<system value="https://fhir.nhs.uk/Id/ods-organization-code"/>
@@ -66,7 +66,7 @@
 			<Patient>
 				<id value="7368c5fe-bbb4-4e9c-a585-234e06b84e82"/>
 				<meta>
-					<profile value="https://fhir.hl7.org.uk/StructureDefinition/CareConnect-DCH-Patient-1"/>
+					<profile value="https://fhir.nhs.uk/StructureDefinition/CareConnect-DCH-Patient-1"/>
 				</meta>
 				<identifier>
 					<extension url="https://fhir.hl7.org.uk/StructureDefinition/Extension-CareConnect-NHSNumberVerificationStatus-1">
@@ -273,7 +273,7 @@
 			<Encounter>
 				<id value="9a746f52-686f-11e7-907b-a6006ad3dba0"/>
 				<meta>
-					<profile value="https://fhir.hl7.org.uk/StructureDefinition/CareConnect-DCH-Encounter-1"/>
+					<profile value="https://fhir.nhs.uk/StructureDefinition/CareConnect-DCH-Encounter-1"/>
 				</meta>
 				<identifier>
 					<system value="https://tools.ietf.org/html/rfc4122"/>
@@ -367,7 +367,7 @@
 			<Procedure>
 				<id value="9a745cb0-686f-11e7-907b-a6006ad3dba0"/>
 				<meta>
-					<profile value="https://fhir.hl7.org.uk/StructureDefinition/CareConnect-DCH-NewbornBloodSpotScreening-Procedure-1"/>
+					<profile value="https://fhir.nhs.uk/StructureDefinition/CareConnect-DCH-NewbornBloodSpotScreening-Procedure-1"/>
 				</meta>
 				<identifier>
 					<system value="https://tools.ietf.org/html/rfc4122"/>
@@ -402,7 +402,7 @@
 			<Procedure>
 				<id value="9a7467c8-686f-11e7-907b-a6006ad3dba0"/>
 				<meta>
-					<profile value="https://fhir.hl7.org.uk/StructureDefinition/CareConnect-DCH-NewbornBloodSpotScreening-Procedure-1"/>
+					<profile value="https://fhir.nhs.uk/StructureDefinition/CareConnect-DCH-NewbornBloodSpotScreening-Procedure-1"/>
 				</meta>
 				<identifier>
 					<system value="https://tools.ietf.org/html/rfc4122"/>
@@ -437,7 +437,7 @@
 			<Procedure>
 				<id value="9a74670a-686f-11e7-907b-a6006ad3dba0"/>
 				<meta>
-					<profile value="https://fhir.hl7.org.uk/StructureDefinition/CareConnect-DCH-NewbornBloodSpotScreening-Procedure-1"/>
+					<profile value="https://fhir.nhs.uk/StructureDefinition/CareConnect-DCH-NewbornBloodSpotScreening-Procedure-1"/>
 				</meta>
 				<identifier>
 					<system value="https://tools.ietf.org/html/rfc4122"/>
@@ -472,7 +472,7 @@
 			<Procedure>
 				<id value="9a74664c-686f-11e7-907b-a6006ad3dba0"/>
 				<meta>
-					<profile value="https://fhir.hl7.org.uk/StructureDefinition/CareConnect-DCH-NewbornBloodSpotScreening-Procedure-1"/>
+					<profile value="https://fhir.nhs.uk/StructureDefinition/CareConnect-DCH-NewbornBloodSpotScreening-Procedure-1"/>
 				</meta>
 				<identifier>
 					<system value="https://tools.ietf.org/html/rfc4122"/>
@@ -507,7 +507,7 @@
 			<Procedure>
 				<id value="9a745ecc-686f-11e7-907b-a6006ad3dba0"/>
 				<meta>
-					<profile value="https://fhir.hl7.org.uk/StructureDefinition/CareConnect-DCH-NewbornBloodSpotScreening-Procedure-1"/>
+					<profile value="https://fhir.nhs.uk/StructureDefinition/CareConnect-DCH-NewbornBloodSpotScreening-Procedure-1"/>
 				</meta>
 				<identifier>
 					<system value="https://tools.ietf.org/html/rfc4122"/>
@@ -542,7 +542,7 @@
 			<Procedure>
 				<id value="9a7464c6-686f-11e7-907b-a6006ad3dba0"/>
 				<meta>
-					<profile value="https://fhir.hl7.org.uk/StructureDefinition/CareConnect-DCH-NewbornBloodSpotScreening-Procedure-1"/>
+					<profile value="https://fhir.nhs.uk/StructureDefinition/CareConnect-DCH-NewbornBloodSpotScreening-Procedure-1"/>
 				</meta>
 				<identifier>
 					<system value="https://tools.ietf.org/html/rfc4122"/>
@@ -577,7 +577,7 @@
 			<Procedure>
 				<id value="9a745df0-686f-11e7-907b-a6006ad3dba0"/>
 				<meta>
-					<profile value="https://fhir.hl7.org.uk/StructureDefinition/CareConnect-DCH-NewbornBloodSpotScreening-Procedure-1"/>
+					<profile value="https://fhir.nhs.uk/StructureDefinition/CareConnect-DCH-NewbornBloodSpotScreening-Procedure-1"/>
 				</meta>
 				<identifier>
 					<system value="https://tools.ietf.org/html/rfc4122"/>
@@ -612,7 +612,7 @@
 			<Procedure>
 				<id value="9a74658e-686f-11e7-907b-a6006ad3dba0"/>
 				<meta>
-					<profile value="https://fhir.hl7.org.uk/StructureDefinition/CareConnect-DCH-NewbornBloodSpotScreening-Procedure-1"/>
+					<profile value="https://fhir.nhs.uk/StructureDefinition/CareConnect-DCH-NewbornBloodSpotScreening-Procedure-1"/>
 				</meta>
 				<identifier>
 					<system value="https://tools.ietf.org/html/rfc4122"/>
@@ -647,7 +647,7 @@
 			<Procedure>
 				<id value="9a7463ae-686f-11e7-907b-a6006ad3dba0"/>
 				<meta>
-					<profile value="https://fhir.hl7.org.uk/StructureDefinition/CareConnect-DCH-NewbornBloodSpotScreening-Procedure-1"/>
+					<profile value="https://fhir.nhs.uk/StructureDefinition/CareConnect-DCH-NewbornBloodSpotScreening-Procedure-1"/>
 				</meta>
 				<identifier>
 					<system value="https://tools.ietf.org/html/rfc4122"/>

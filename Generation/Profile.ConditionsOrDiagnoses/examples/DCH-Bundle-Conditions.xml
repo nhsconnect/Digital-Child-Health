@@ -67,7 +67,7 @@
 			<Patient>
 				<id value="7368c5fe-bbb4-4e9c-a585-234e06b84e82"/>
 				<meta>
-					<profile value="https://fhir.hl7.org.uk/StructureDefinition/CareConnect-DCH-Patient-1"/>
+					<profile value="https://fhir.nhs.uk/StructureDefinition/CareConnect-DCH-Patient-1"/>
 				</meta>
 				<identifier>
 					<extension url="https://fhir.hl7.org.uk/StructureDefinition/Extension-CareConnect-NHSNumberVerificationStatus-1">
@@ -237,7 +237,7 @@
 			<Encounter>
 				<id value="1d67bd36-4f45-11e7-b114-b2f933d5fe66"/>
 				<meta>
-					<profile value="https://fhir.hl7.org.uk/StructureDefinition/CareConnect-DCH-Encounter-1"/>
+					<profile value="https://fhir.nhs.uk/StructureDefinition/CareConnect-DCH-Encounter-1"/>
 				</meta>
 				<identifier>
 					<system value="https://tools.ietf.org/html/rfc4122"/>
@@ -295,7 +295,7 @@
 			<Condition>
 				<id value="1d67c470-4f45-11e7-b114-b2f933d5fe66"/>
 				<meta>
-					<profile value="https://fhir.hl7.org.uk/StructureDefinition/CareConnect-DCH-Condition-1"/>
+					<profile value="https://fhir.nhs.uk/StructureDefinition/CareConnect-DCH-Condition-1"/>
 				</meta>
 				<identifier>
 					<system value="https://tools.ietf.org/html/rfc4122"/>

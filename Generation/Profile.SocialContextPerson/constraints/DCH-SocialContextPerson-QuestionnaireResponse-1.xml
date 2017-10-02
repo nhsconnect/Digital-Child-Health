@@ -1780,7 +1780,7 @@
       </base>
       <type>
         <code value="Reference" />
-        <profile value="https://fhir.hl7.org.uk/StructureDefinition/CareConnect-DCH-Patient-1" />
+        <profile value="https://fhir.nhs.uk/StructureDefinition/CareConnect-DCH-Patient-1" />
       </type>
       <condition value="ele-1" />
       <constraint>
@@ -2284,7 +2284,7 @@
       </base>
       <type>
         <code value="Reference" />
-        <profile value="https://fhir.hl7.org.uk/StructureDefinition/CareConnect-DCH-Encounter-1" />
+        <profile value="https://fhir.nhs.uk/StructureDefinition/CareConnect-DCH-Encounter-1" />
       </type>
       <condition value="ele-1" />
       <constraint>
@@ -6036,7 +6036,7 @@
       <min value="1" />
       <type>
         <code value="Reference" />
-        <profile value="https://fhir.hl7.org.uk/StructureDefinition/CareConnect-DCH-Patient-1" />
+        <profile value="https://fhir.nhs.uk/StructureDefinition/CareConnect-DCH-Patient-1" />
       </type>
     </element>
     <element>
@@ -6059,7 +6059,7 @@
       <path value="QuestionnaireResponse.encounter" />
       <type>
         <code value="Reference" />
-        <profile value="https://fhir.hl7.org.uk/StructureDefinition/CareConnect-DCH-Encounter-1" />
+        <profile value="https://fhir.nhs.uk/StructureDefinition/CareConnect-DCH-Encounter-1" />
       </type>
     </element>
     <element>
