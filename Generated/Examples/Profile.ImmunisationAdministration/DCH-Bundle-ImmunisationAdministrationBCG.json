@@ -81,7 +81,7 @@
         "id": "7368c5fe-bbb4-4e9c-a585-234e06b84e82",
         "meta": {
           "profile": [
-            "https://fhir.hl7.org.uk/StructureDefinition/CareConnect-DCH-Patient-1"
+            "https://fhir.nhs.uk/StructureDefinition/CareConnect-DCH-Patient-1"
           ]
         },
         "identifier": [
@@ -391,7 +391,7 @@
         "id": "e9dbfa46-5bdc-11e7-907b-a6006ad3dba0",
         "meta": {
           "profile": [
-            "https://fhir.hl7.org.uk/StructureDefinition/CareConnect-DCH-Immunization-1"
+            "https://fhir.nhs.uk/StructureDefinition/CareConnect-DCH-Immunization-1"
           ]
         },
         "identifier": [
@@ -486,7 +486,7 @@
         "id": "a8ca9fe6-72aa-11e7-8cf7-a6006ad3dba0",
         "meta": {
           "profile": [
-            "https://fhir.hl7.org.uk/StructureDefinition/CareConnect-DCH-Encounter-1"
+            "https://fhir.nhs.uk/StructureDefinition/CareConnect-DCH-Encounter-1"
           ]
         },
         "identifier": [
@@ -554,7 +554,7 @@
         "id": "e9dc1bc0-5bdc-11e7-907b-a6006ad3dba0",
         "meta": {
           "profile": [
-            "https://fhir.hl7.org.uk/StructureDefinition/CareConnect-DCH-Procedure-1"
+            "https://fhir.nhs.uk/StructureDefinition/CareConnect-DCH-Procedure-1"
           ]
         },
         "identifier": [

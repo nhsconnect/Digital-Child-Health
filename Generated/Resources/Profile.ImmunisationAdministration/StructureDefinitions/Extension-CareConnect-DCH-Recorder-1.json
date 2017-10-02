@@ -3,7 +3,7 @@
   "meta": {
     "lastUpdated": "2017-05-10T16:53:20.046+01:00"
   },
-  "url": "https://fhir.hl7.org.uk/StructureDefinition/Extension-CareConnect-DCH-Recorder-1",
+  "url": "https://fhir.nhs.uk/StructureDefinition/Extension-CareConnect-DCH-Recorder-1",
   "version": "1.0.0",
   "name": "Extension-CareConnect-DCH-Recorder-1",
   "status": "active",
@@ -173,7 +173,7 @@
             "code": "uri"
           }
         ],
-        "fixedUri": "https://fhir.hl7.org.uk/StructureDefinition/Extension-CareConnect-DCH-Recorder-1",
+        "fixedUri": "https://fhir.nhs.uk/StructureDefinition/Extension-CareConnect-DCH-Recorder-1",
         "condition": [
           "ele-1"
         ],
@@ -217,13 +217,13 @@
           {
             "code": "Reference",
             "profile": [
-              "https://fhir.hl7.org.uk/StructureDefinition/CareConnect-DCH-Practitioner-1"
+              "https://fhir.nhs.uk/StructureDefinition/CareConnect-DCH-Practitioner-1"
             ]
           },
           {
             "code": "Reference",
             "profile": [
-              "https://fhir.hl7.org.uk/StructureDefinition/CareConnect-DCH-Patient-1"
+              "https://fhir.nhs.uk/StructureDefinition/CareConnect-DCH-Patient-1"
             ]
           }
         ],
@@ -266,7 +266,7 @@
       },
       {
         "path": "Extension.url",
-        "fixedUri": "https://fhir.hl7.org.uk/StructureDefinition/Extension-CareConnect-DCH-Recorder-1"
+        "fixedUri": "https://fhir.nhs.uk/StructureDefinition/Extension-CareConnect-DCH-Recorder-1"
       },
       {
         "path": "Extension.valueReference",
@@ -277,13 +277,13 @@
           {
             "code": "Reference",
             "profile": [
-              "https://fhir.hl7.org.uk/StructureDefinition/CareConnect-DCH-Practitioner-1"
+              "https://fhir.nhs.uk/StructureDefinition/CareConnect-DCH-Practitioner-1"
             ]
           },
           {
             "code": "Reference",
             "profile": [
-              "https://fhir.hl7.org.uk/StructureDefinition/CareConnect-DCH-Patient-1"
+              "https://fhir.nhs.uk/StructureDefinition/CareConnect-DCH-Patient-1"
             ]
           }
         ]

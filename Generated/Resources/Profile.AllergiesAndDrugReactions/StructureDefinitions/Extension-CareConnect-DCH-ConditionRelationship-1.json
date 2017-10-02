@@ -3,7 +3,7 @@
   "meta": {
     "lastUpdated": "2017-09-25T18:23:52.246+01:00"
   },
-  "url": "https://fhir.hl7.org.uk/StructureDefinition/Extension-CareConnect-DCH-ConditionRelationship-1",
+  "url": "https://fhir.nhs.uk/StructureDefinition/Extension-CareConnect-DCH-ConditionRelationship-1",
   "version": "1.1.0",
   "name": "Extension-CareConnect-DCH-ConditionRelationship-1",
   "status": "active",
@@ -600,7 +600,7 @@
           {
             "code": "Reference",
             "profile": [
-              "https://fhir.hl7.org.uk/StructureDefinition/CareConnect-DCH-Condition-1"
+              "https://fhir.nhs.uk/StructureDefinition/CareConnect-DCH-Condition-1"
             ]
           }
         ],
@@ -649,7 +649,7 @@
             "code": "uri"
           }
         ],
-        "fixedUri": "https://fhir.hl7.org.uk/StructureDefinition/Extension-CareConnect-DCH-ConditionRelationship-1",
+        "fixedUri": "https://fhir.nhs.uk/StructureDefinition/Extension-CareConnect-DCH-ConditionRelationship-1",
         "condition": [
           "ele-1"
         ],
@@ -885,14 +885,14 @@
           {
             "code": "Reference",
             "profile": [
-              "https://fhir.hl7.org.uk/StructureDefinition/CareConnect-DCH-Condition-1"
+              "https://fhir.nhs.uk/StructureDefinition/CareConnect-DCH-Condition-1"
             ]
           }
         ]
       },
       {
         "path": "Extension.url",
-        "fixedUri": "https://fhir.hl7.org.uk/StructureDefinition/Extension-CareConnect-DCH-ConditionRelationship-1"
+        "fixedUri": "https://fhir.nhs.uk/StructureDefinition/Extension-CareConnect-DCH-ConditionRelationship-1"
       },
       {
         "path": "Extension.value[x]",

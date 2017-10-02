@@ -9,7 +9,7 @@
       }
     ]
   },
-  "url": "https://fhir.hl7.org.uk/StructureDefinition/CareConnect-DCH-MedicationStatement-1",
+  "url": "https://fhir.nhs.uk/StructureDefinition/CareConnect-DCH-MedicationStatement-1",
   "version": "1.1.0",
   "name": "CareConnect-DCH-MedicationStatement-1",
   "status": "active",
@@ -467,7 +467,7 @@
           {
             "code": "Extension",
             "profile": [
-              "https://fhir.hl7.org.uk/StructureDefinition/Extension-CareConnect-DCH-ReasonCondition-1"
+              "https://fhir.nhs.uk/StructureDefinition/Extension-CareConnect-DCH-ReasonCondition-1"
             ]
           }
         ],
@@ -732,7 +732,7 @@
           {
             "code": "Extension",
             "profile": [
-              "https://fhir.hl7.org.uk/StructureDefinition/Extension-CareConnect-DCH-MedicationFlag-1"
+              "https://fhir.nhs.uk/StructureDefinition/Extension-CareConnect-DCH-MedicationFlag-1"
             ]
           }
         ],
@@ -2064,7 +2064,7 @@
           {
             "code": "Reference",
             "profile": [
-              "https://fhir.hl7.org.uk/StructureDefinition/CareConnect-DCH-Organization-1"
+              "https://fhir.nhs.uk/StructureDefinition/CareConnect-DCH-Organization-1"
             ]
           }
         ],
@@ -2319,7 +2319,7 @@
           {
             "code": "Reference",
             "profile": [
-              "https://fhir.hl7.org.uk/StructureDefinition/CareConnect-DCH-Patient-1"
+              "https://fhir.nhs.uk/StructureDefinition/CareConnect-DCH-Patient-1"
             ]
           }
         ],
@@ -2580,13 +2580,13 @@
           {
             "code": "Reference",
             "profile": [
-              "https://fhir.hl7.org.uk/StructureDefinition/CareConnect-DCH-Practitioner-1"
+              "https://fhir.nhs.uk/StructureDefinition/CareConnect-DCH-Practitioner-1"
             ]
           },
           {
             "code": "Reference",
             "profile": [
-              "https://fhir.hl7.org.uk/StructureDefinition/CareConnect-DCH-Patient-1"
+              "https://fhir.nhs.uk/StructureDefinition/CareConnect-DCH-Patient-1"
             ]
           }
         ],
@@ -4343,7 +4343,7 @@
           {
             "code": "Reference",
             "profile": [
-              "https://fhir.hl7.org.uk/StructureDefinition/CareConnect-DCH-Medication-1"
+              "https://fhir.nhs.uk/StructureDefinition/CareConnect-DCH-Medication-1"
             ]
           }
         ],
@@ -9899,7 +9899,7 @@
           {
             "code": "Extension",
             "profile": [
-              "https://fhir.hl7.org.uk/StructureDefinition/Extension-CareConnect-DCH-ReasonCondition-1"
+              "https://fhir.nhs.uk/StructureDefinition/Extension-CareConnect-DCH-ReasonCondition-1"
             ]
           }
         ]
@@ -9963,7 +9963,7 @@
           {
             "code": "Extension",
             "profile": [
-              "https://fhir.hl7.org.uk/StructureDefinition/Extension-CareConnect-DCH-MedicationFlag-1"
+              "https://fhir.nhs.uk/StructureDefinition/Extension-CareConnect-DCH-MedicationFlag-1"
             ]
           }
         ]
@@ -9982,7 +9982,7 @@
           {
             "code": "Reference",
             "profile": [
-              "https://fhir.hl7.org.uk/StructureDefinition/CareConnect-DCH-Organization-1"
+              "https://fhir.nhs.uk/StructureDefinition/CareConnect-DCH-Organization-1"
             ]
           }
         ]
@@ -9993,7 +9993,7 @@
           {
             "code": "Reference",
             "profile": [
-              "https://fhir.hl7.org.uk/StructureDefinition/CareConnect-DCH-Patient-1"
+              "https://fhir.nhs.uk/StructureDefinition/CareConnect-DCH-Patient-1"
             ]
           }
         ]
@@ -10010,13 +10010,13 @@
           {
             "code": "Reference",
             "profile": [
-              "https://fhir.hl7.org.uk/StructureDefinition/CareConnect-DCH-Practitioner-1"
+              "https://fhir.nhs.uk/StructureDefinition/CareConnect-DCH-Practitioner-1"
             ]
           },
           {
             "code": "Reference",
             "profile": [
-              "https://fhir.hl7.org.uk/StructureDefinition/CareConnect-DCH-Patient-1"
+              "https://fhir.nhs.uk/StructureDefinition/CareConnect-DCH-Patient-1"
             ]
           }
         ]
@@ -10087,7 +10087,7 @@
           {
             "code": "Reference",
             "profile": [
-              "https://fhir.hl7.org.uk/StructureDefinition/CareConnect-DCH-Medication-1"
+              "https://fhir.nhs.uk/StructureDefinition/CareConnect-DCH-Medication-1"
             ]
           }
         ],

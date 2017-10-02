@@ -9,7 +9,7 @@
       }
     ]
   },
-  "url": "https://fhir.hl7.org.uk/StructureDefinition/CareConnect-DCH-Medication-1",
+  "url": "https://fhir.nhs.uk/StructureDefinition/CareConnect-DCH-Medication-1",
   "version": "1.0.0",
   "name": "CareConnect-DCH-Medication-1",
   "status": "active",
@@ -1179,7 +1179,7 @@
           {
             "code": "Reference",
             "profile": [
-              "https://fhir.hl7.org.uk/StructureDefinition/CareConnect-DCH-Organization-1"
+              "https://fhir.nhs.uk/StructureDefinition/CareConnect-DCH-Organization-1"
             ]
           }
         ],
@@ -2457,7 +2457,7 @@
           {
             "code": "Reference",
             "profile": [
-              "https://fhir.hl7.org.uk/StructureDefinition/CareConnect-DCH-Medication-1"
+              "https://fhir.nhs.uk/StructureDefinition/CareConnect-DCH-Medication-1"
             ]
           }
         ],
@@ -4807,7 +4807,7 @@
           {
             "code": "Reference",
             "profile": [
-              "https://fhir.hl7.org.uk/StructureDefinition/CareConnect-DCH-Medication-1"
+              "https://fhir.nhs.uk/StructureDefinition/CareConnect-DCH-Medication-1"
             ]
           }
         ],
@@ -5502,7 +5502,7 @@
           {
             "code": "Reference",
             "profile": [
-              "https://fhir.hl7.org.uk/StructureDefinition/CareConnect-DCH-Organization-1"
+              "https://fhir.nhs.uk/StructureDefinition/CareConnect-DCH-Organization-1"
             ]
           }
         ]
@@ -5523,7 +5523,7 @@
           {
             "code": "Reference",
             "profile": [
-              "https://fhir.hl7.org.uk/StructureDefinition/CareConnect-DCH-Medication-1"
+              "https://fhir.nhs.uk/StructureDefinition/CareConnect-DCH-Medication-1"
             ]
           }
         ]
@@ -5534,7 +5534,7 @@
           {
             "code": "Reference",
             "profile": [
-              "https://fhir.hl7.org.uk/StructureDefinition/CareConnect-DCH-Medication-1"
+              "https://fhir.nhs.uk/StructureDefinition/CareConnect-DCH-Medication-1"
             ]
           }
         ]

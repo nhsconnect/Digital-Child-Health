@@ -3,7 +3,7 @@
   "meta": {
     "lastUpdated": "2017-05-08T15:42:24.102+01:00"
   },
-  "url": "https://fhir.hl7.org.uk/StructureDefinition/Extension-CareConnect-DCH-MedicationOrderStatement-1",
+  "url": "https://fhir.nhs.uk/StructureDefinition/Extension-CareConnect-DCH-MedicationOrderStatement-1",
   "version": "1.0.0",
   "name": "Extension-CareConnect-DCH-MedicationOrderStatement-1",
   "status": "active",
@@ -173,7 +173,7 @@
             "code": "uri"
           }
         ],
-        "fixedUri": "https://fhir.hl7.org.uk/StructureDefinition/Extension-CareConnect-DCH-MedicationOrderStatement-1",
+        "fixedUri": "https://fhir.nhs.uk/StructureDefinition/Extension-CareConnect-DCH-MedicationOrderStatement-1",
         "condition": [
           "ele-1"
         ],
@@ -217,7 +217,7 @@
           {
             "code": "Reference",
             "profile": [
-              "https://fhir.hl7.org.uk/StructureDefinition/CareConnect-DCH-MedicationStatement-1"
+              "https://fhir.nhs.uk/StructureDefinition/CareConnect-DCH-MedicationStatement-1"
             ]
           }
         ],
@@ -260,7 +260,7 @@
       },
       {
         "path": "Extension.url",
-        "fixedUri": "https://fhir.hl7.org.uk/StructureDefinition/Extension-CareConnect-DCH-MedicationOrderStatement-1"
+        "fixedUri": "https://fhir.nhs.uk/StructureDefinition/Extension-CareConnect-DCH-MedicationOrderStatement-1"
       },
       {
         "path": "Extension.valueReference",
@@ -269,7 +269,7 @@
           {
             "code": "Reference",
             "profile": [
-              "https://fhir.hl7.org.uk/StructureDefinition/CareConnect-DCH-MedicationStatement-1"
+              "https://fhir.nhs.uk/StructureDefinition/CareConnect-DCH-MedicationStatement-1"
             ]
           }
         ]
