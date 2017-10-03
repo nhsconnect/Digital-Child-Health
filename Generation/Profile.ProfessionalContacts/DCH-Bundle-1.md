@@ -1,4 +1,4 @@
-This 'DCH-Bundle-1' Bundle resource profile is used as a container to collect a combination of the following resources, as ordered below, to capture   :
+This 'DCH-Bundle-1' Bundle resource profile is used as a container to collect a combination of the following resources, as ordered below, to capture professional contacts assigned to the patient:
 
 - [DCH-MessageHeader-1] - where the coding and display elements for the event type are fixed to 'Professional Contacts'
 - [CareConnect-DCH-Organization-1]
@@ -11,7 +11,7 @@ This 'DCH-Bundle-1' Bundle resource profile is used as a container to collect a 
 - [DCH-HealthcareService-1]
 - [DCH-ProfessionalContact-EpisodeOfCare-1]
 
-### PDS Professional Contact event data item mapping to FHIR profiles ###
+### Professional Contact event data item mapping to FHIR profiles ###
 ----------
 The Child Health Event data items are fulfilled by elements within the FHIR resources listed below:
                                                                                                    
