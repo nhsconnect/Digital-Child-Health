@@ -21,40 +21,44 @@
 				<display value="Admission Details"/>
 			</concept>
 			<concept>
-				<code value="Allergies and Drug Reactions"/>
-				<display value="Allergies and Drug Reactions"/>
+				<code value="Allergies and Adverse Reactions"/>
+				<display value="Allergies and Adverse Reactions"/>
+			</concept>
+			<concept>
+				<code value="Assessment Scales"/>
+				<display value="Assessment Scales"/>
 			</concept>
 			<concept>
 				<code value="Birth Details"/>
 				<display value="Birth Details"/>
 			</concept>
 			<concept>
-				<code value="Blood Spot Sample Taken Event"/>
-				<display value="Blood Spot Sample Taken Event"/>
-			</concept>
-			<concept>
-				<code value="Blood Spot Administrative Status Event"/>
-				<display value="Blood Spot Administrative Status Event"/>
-			</concept>
-			<concept>
-				<code value="Blood Spot Test Outcome Event"/>
-				<display value="Blood Spot Test Outcome  Event"/>
+				<code value="Blood Spot"/>
+				<display value="Blood Spot"/>
 			</concept>
 			<concept>
 				<code value="Clinical Risk Factors"/>
 				<display value="Clinical Risk Factors"/>
 			</concept>
 			<concept>
-				<code value="Conditions Or Diagnoses"/>
-				<display value="Conditions Or Diagnoses"/>
+				<code value="Conditions or Diagnoses"/>
+				<display value="Conditions or Diagnoses"/>
 			</concept>
 			<concept>
-				<code value="Discharge"/>
-				<display value="Discharge"/>
+				<code value="Discharge Details"/>
+				<display value="Discharge Details"/>
+			</concept>
+			<concept>
+				<code value="Early Years Progress"/>
+				<display value="Early Years Progress"/>
 			</concept>
 			<concept>
 				<code value="Emergency Care Attendance"/>
 				<display value="Emergency Care Attendance"/>
+			</concept>
+			<concept>
+				<code value="Examination Findings"/>
+				<display value="Examination Findings"/>
 			</concept>
 			<concept>
 				<code value="Family History"/>
@@ -69,6 +73,14 @@
 				<display value="Immunisation Administration"/>
 			</concept>
 			<concept>
+				<code value="Individual Requirements"/>
+				<display value="Individual Requirements"/>
+			</concept>
+			<concept>
+				<code value="Information and Advice Given"/>
+				<display value="Information and Advice Given"/>
+			</concept>
+			<concept>
 				<code value="Measurements"/>
 				<display value="Measurements"/>
 			</concept>
@@ -77,36 +89,52 @@
 				<display value="Medication"/>
 			</concept>
 			<concept>
+				<code value="Milestones"/>
+				<display value="Milestones"/>
+			</concept>
+			<concept>
 				<code value="Newborn Hearing"/>
 				<display value="Newborn Hearing"/>
+			</concept>
+			<concept>
+				<code value="Parent Guardian or Personal Comment"/>
+				<display value="Parent Guardian or Personal Comment"/>
 			</concept>
 			<concept>
 				<code value="Personal Contacts"/>
 				<display value="Personal Contacts"/>
 			</concept>
 			<concept>
-				<code value="Plan and Required Actions"/>
-				<display value="Plan and Required Actions"/>
-			</concept>
-			<concept>
 				<code value="Physical Examination"/>
 				<display value="Physical Examination"/>
 			</concept>
 			<concept>
-				<code value="Professional Contact"/>
-				<display value="Professional Contact"/>
+				<code value="Plan and Requested Actions"/>
+				<display value="Plan and Requested Actions"/>
+			</concept>
+			<concept>
+				<code value="Professional Comment"/>
+				<display value="Professional Comment"/>
+			</concept>
+			<concept>
+				<code value="Professional Contacts"/>
+				<display value="Professional Contacts"/>
 			</concept>
 			<concept>
 				<code value="Referral"/>
 				<display value="Referral"/>
 			</concept>
 			<concept>
+				<code value="Review Checks"/>
+				<display value="Review Checks"/>
+			</concept>
+			<concept>
 				<code value="Safety Alerts"/>
 				<display value="Safety Alerts"/>
 			</concept>
 			<concept>
-				<code value="Social Context Person"/>
-				<display value="Social Context Person"/>
+				<code value="Social Context Household"/>
+				<display value="Social Context Household"/>
 			</concept>
 			<concept>
 				<code value="Social Context Household"/>

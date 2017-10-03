@@ -1,6 +1,6 @@
-This 'DCH-Bundle-1' Bundle resource profile is used as a container to collect a combination of the following resources to capture allergies and reactions:
+This 'DCH-Bundle-1' Bundle resource profile is used as a container to collect a combination of the following resources to capture allergies and adverse reactions:
 
-- [DCH-MessageHeader-1] - where the coding and display for the event element is fixed to 'Allergies and Drug Reactions'
+- [DCH-MessageHeader-1] - where the coding and display for the event element is fixed to 'Allergies and Adverse Reactions'
 - [CareConnect-DCH-Organization-1]
 - [CareConnect-DCH-Patient-1]
 - [CareConnect-DCH-Encounter-1]

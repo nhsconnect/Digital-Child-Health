@@ -1,0 +1,39 @@
+This 'DCH-Bundle-1' Bundle resource profile is used as a container to collect a combination of the following resources, as ordered below, to capture   :
+
+- [DCH-MessageHeader-1] - where the coding and display elements for the event type are fixed to 'Professional Contacts'
+- [CareConnect-DCH-Organization-1]
+- [CareConnect-DCH-Patient-1]
+- [CareConnect-DCH-Encounter-1]
+- [CareConnect-DCH-Practitioner-1]
+- [CareConnect-DCH-Location-1]
+- [CareConnect-DCH-Team-Organization-1]
+- [CareConnect-DCH-ProfessionalContact-Practitioner-1]
+- [DCH-HealthcareService-1]
+- [DCH-ProfessionalContact-EpisodeOfCare-1]
+
+### PDS Professional Contact event data item mapping to FHIR profiles ###
+----------
+The Child Health Event data items are fulfilled by elements within the FHIR resources listed below:
+                                                                                                   
+| DCH Data Item Name            | FHIR Resource Element                                                                                                                              |
+|-------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------|
+| Organisation                  | CareConnect-DCH-Organization-1                                                                                                                     |
+| Team                          | CareConnect-DCH-Team-Organization-1                                                                                                                |
+| Name                          | CareConnect-DCH-ProfessionalContact-Practitioner-1.name                                                                                            |
+| Care Professional Type        | CareConnect-DCH-ProfessionalContact-Practitioner-1.practitionerRole.careProfessionalType / DCH-HealthcareService-1.serviceType.type                |
+| Care Professional Association | DCH-ProfessionalContact-EpisodeOfCare-1.type                                                                                                       |
+| Speciality                    | CareConnect-DCH-ProfessionalContact-Practitioner-1.practitionerRole.careProfessionalType.specialty / DCH-HealthcareService-1.serviceType.specialty |
+| Telephone Number              | CareConnect-DCH-ProfessionalContact-Practitioner-1.telecom / CareConnect-DCH-Team-Organization-1.telecom                                           |
+| Start date                    | DCH-ProfessionalContact-EpisodeOfCare-1.period.start                                                                                               |
+| End date                    | DCH-ProfessionalContact-EpisodeOfCare-1.period.end                                                                                               |
+
+[DCH-MessageHeader-1]:dch-messageheader-1.html
+[CareConnect-DCH-Organization-1]:careconnect-dch-organization-1.html
+[CareConnect-DCH-Patient-1]:careconnect-dch-patient-1.html
+[CareConnect-DCH-Encounter-1]:careconnect-dch-encounter-1.html
+[CareConnect-DCH-Practitioner-1]:careconnect-dch-practitioner-1.html
+[CareConnect-DCH-Location-1]:careconnect-dch-location-1.html
+[CareConnect-DCH-Team-Organization-1]:careconnect-dch-team-organization-1.html
+[CareConnect-DCH-ProfessionalContact-Practitioner-1]:careconnect-dch-professionalcontact-practitioner-1.html
+[DCH-HealthcareService-1]:dch-healthcareservice-1.html
+[DCH-ProfessionalContact-EpisodeOfCare-1]:dch-professionalcontact-episodeofcare-1.html

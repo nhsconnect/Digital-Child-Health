@@ -1,0 +1,313 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--This example message is provided for illustrative purposes only. It has had no clinical validation. Where there are conflicts with the written message specification or schema, the specification or schema shall be considered to take precedence-->
+<!--
+Scenario
+Patient Sarah Marie Saxton has a professional contact with Amber Riley (Health Visitor) under the specialty
+Allied health professional episode. The contact took place at Wood Town GP Practice. The contact took place
+at 9:00 am on the 22nd Jan 2012
+
+In this example, the Type of Care is found against the Practitioner; the Specialty is also found against the 
+Practitioner.
+
+Data
+Organisation of the care professional team (https://fhir.nhs.uk/StructureDefinition/CareConnect-DCH-Organization-1)
+/Bundle/entry[2]/resource/Organization/name/@value
+
+Team associated with care professional (https://fhir.nhs.uk/StructureDefinition/CareConnect-DCH-Team-Organization-1)
+/Bundle/entry[7]/resource/Organization/name/@value
+
+Name of care professional (https://fhir.nhs.uk/StructureDefinition/CareConnect-DCH-ProfessionalContact-Practitioner-1)
+/Bundle/entry[6]/resource/Practitioner/name
+
+Care professional type (https://fhir.nhs.uk/StructureDefinition/CareConnect-DCH-ProfessionalContact-Practitioner-1)
+/Bundle/entry[6]/resource/Practitioner/practitionerRole/role/coding/code/@value
+
+care professional association (to child) (https://fhir.nhs.uk/StructureDefinition/DCH-ProfessionalContact-EpisodeOfCare-1)
+/Bundle/entry[5]/resource/EpisodeOfCare/type/coding/code/@value
+
+Specialty (https://fhir.nhs.uk/StructureDefinition/CareConnect-DCH-ProfessionalContact-Practitioner-1)
+/Bundle/entry[6]/resource/Practitioner/practitionerRole/specialty/coding/code/@value
+
+Phone number
+/Bundle/entry[7]/resource/Organization/telecom/value/@value
+
+Start date https://fhir.nhs.uk/StructureDefinition/DCH-ProfessionalContact-EpisodeOfCare-1
+/Bundle/entry[5]/resource/EpisodeOfCare/period/start/@value
+
+End date
+/Bundle/entry[5]/resource/EpisodeOfCare/period/end/@value
+--><Bundle xmlns="http://hl7.org/fhir" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://hl7.org/fhir ../../Schemas/bundle.xsd">
+	<id value="681a91ce-a5fc-11e7-abc4-cec278b6b50a"/>
+	<meta>
+		<profile value="https://fhir.nhs.uk/StructureDefinition/DCH-Bundle-1"/>
+	</meta>
+	<type value="message"/>
+	<entry>
+		<fullUrl value="urn:uuid:681a9994-a5fc-11e7-abc4-cec278b6b50a"/>
+		<resource>
+			<MessageHeader>
+				<id value="681a9994-a5fc-11e7-abc4-cec278b6b50a"/>
+				<meta>
+					<profile value="https://fhir.nhs.uk/StructureDefinition/DCH-MessageHeader-1"/>
+				</meta>
+				<extension url="https://fhir.nhs.uk/StructureDefinition/Extension-DCH-MessageEventType-1">
+					<valueCodeableConcept>
+						<coding>
+							<system value="https://fhir.nhs.uk/DCH-MessageEventType-1"/>
+							<code value="new"/>
+							<display value="New event message"/>
+						</coding>
+					</valueCodeableConcept>
+				</extension>
+				<timestamp value="2012-01-31T09:00:00+00:00"/>
+				<event>
+					<system value="https://fhir.nhs.uk/DCH-ChildHealthEventType-1"/>
+					<code value="Professional Contact"/>
+					<display value="Professional Contact"/>
+				</event>
+				<source>
+					<endpoint value="urn:nhs-uk:addressing:ods:RY6"/>
+				</source>
+				<responsible>
+					<reference value="urn:uuid:681abdb6-a5fc-11e7-abc4-cec278b6b50a"/>
+					<display value="Leeds Community NHS Trust"/>
+				</responsible>
+				<data>
+					<reference value="urn:uuid:681a9cdc-a5fc-11e7-abc4-cec278b6b50a"/>
+				</data>
+			</MessageHeader>
+		</resource>
+	</entry>
+	<entry>
+		<fullUrl value="urn:uuid:681abdb6-a5fc-11e7-abc4-cec278b6b50a"/>
+		<resource>
+			<Organization>
+				<id value="681abdb6-a5fc-11e7-abc4-cec278b6b50a"/>
+				<meta>
+					<profile value="https://fhir.nhs.uk/StructureDefinition/CareConnect-DCH-Organization-1"/>
+				</meta>
+				<identifier>
+					<system value="https://fhir.nhs.uk/Id/ods-organization-code"/>
+					<value value="RY6"/>
+				</identifier>
+				<name value="Leeds Community NHS Trust"/>
+			</Organization>
+		</resource>
+	</entry>
+	<entry>
+		<fullUrl value="urn:uuid:7368c5fe-bbb4-4e9c-a585-234e06b84e82"/>
+		<resource>
+			<Patient>
+				<id value="7368c5fe-bbb4-4e9c-a585-234e06b84e82"/>
+				<meta>
+					<profile value="https://fhir.nhs.uk/StructureDefinition/CareConnect-DCH-Patient-1"/>
+				</meta>
+				<identifier>
+					<extension url="https://fhir.hl7.org.uk/StructureDefinition/Extension-CareConnect-NHSNumberVerificationStatus-1">
+						<valueCodeableConcept>
+							<coding>
+								<system value="https://fhir.hl7.org.uk/CareConnect-NHSNumberVerificationStatus-1"/>
+								<code value="01"/>
+								<display value="Number present and verified"/>
+							</coding>
+						</valueCodeableConcept>
+					</extension>
+					<system value="https://fhir.nhs.uk/Id/nhs-number"/>
+					<value value="5629874536"/>
+				</identifier>
+				<name>
+					<use value="usual"/>
+					<family value="Saxton"/>
+					<given value="Sarah"/>
+					<given value="Marie"/>
+				</name>
+				<gender value="female"/>
+				<birthDate value="2012-01-07">
+					<extension url="http://hl7.org/fhir/StructureDefinition/patient-birthTime">
+						<valueDateTime value="2012-01-07T20:12:00+00:00"/>
+					</extension>
+				</birthDate>
+			</Patient>
+		</resource>
+	</entry>
+	<entry>
+		<fullUrl value="urn:uuid:681a9cdc-a5fc-11e7-abc4-cec278b6b50a"/>
+		<resource>
+			<Encounter>
+				<id value="681a9cdc-a5fc-11e7-abc4-cec278b6b50a"/>
+				<meta>
+					<profile value="https://fhir.nhs.uk/StructureDefinition/CareConnect-DCH-Encounter-1"/>
+				</meta>
+				<identifier>
+					<system value="https://tools.ietf.org/html/rfc4122"/>
+					<value value="681a9cdc-a5fc-11e7-abc4-cec278b6b50a"/>
+				</identifier>
+				<status value="finished"/>
+				<type>
+					<coding>
+						<system value="https://fhir.nhs.uk/DCH-ChildHealthEncounterType-1"/>
+						<code value="New Baby Health Visitor Review"/>
+						<display value="New Baby Health Visitor Review"/>
+					</coding>
+				</type>
+				<patient>
+					<reference value="urn:uuid:7368c5fe-bbb4-4e9c-a585-234e06b84e82"/>
+					<display value="SAXTON, Sarah Marie"/>
+				</patient>
+				<participant>
+					<type>
+						<coding>
+							<system value="http://hl7.org/fhir/v3/ParticipationType"/>
+							<code value="PPRF"/>
+							<display value="primary performer"/>
+						</coding>
+					</type>
+					<individual>
+						<reference value="urn:uuid:681ab654-a5fc-11e7-abc4-cec278b6b50a"/>
+						<display value="RILEY, Amber"/>
+					</individual>
+				</participant>
+				<period>
+					<start value="2012-01-22T09:00:00+01:00"/>
+					<end value="2012-01-22T09:15:00+01:00"/>
+				</period>
+				<location>
+					<location>
+						<reference value="urn:uuid:681abe7e-a5fc-11e7-abc4-cec278b6b50a"/>
+						<display value="Wood Town GP Practice"/>
+					</location>
+				</location>
+				<serviceProvider>
+					<reference value="urn:uuid:681abdb6-a5fc-11e7-abc4-cec278b6b50a"/>
+					<display value="Leeds Community NHS Trust"/>
+				</serviceProvider>
+			</Encounter>
+		</resource>
+	</entry>
+	<entry>
+		<fullUrl value="681ab4ce-a5fc-11e7-abc4-cec278b6b50a"/>
+		<resource>
+			<EpisodeOfCare>
+				<id value="681ab4ce-a5fc-11e7-abc4-cec278b6b50a"/>
+				<meta>
+					<profile value="https://fhir.nhs.uk/StructureDefinition/DCH-ProfessionalContact-EpisodeOfCare-1"/>
+				</meta>
+				<identifier>
+					<system value="https://tools.ietf.org/html/rfc4122"/>
+					<value value="681ab4ce-a5fc-11e7-abc4-cec278b6b50a"/>
+				</identifier>
+				<status value="active"/>
+				<type>
+					<coding>
+						<system value="https://fhir.nhs.uk/DCH-AssociationType-1"/>
+						<code value="Assumed"/>
+						<display value="Assumed"/>
+					</coding>
+				</type>
+				<patient>
+					<reference value="urn:uuid:7368c5fe-bbb4-4e9c-a585-234e06b84e82"/>
+					<display value="SAXTON, Sarah Marie"/>
+				</patient>
+				<managingOrganization>
+					<reference value="urn:uuid:681aad76-a5fc-11e7-abc4-cec278b6b50a"/>
+					<display value="The Reginald Joint Service Centre"/>
+				</managingOrganization>
+				<period>
+					<start value="2012-01-22T09:00:00+01:00"/>
+				</period>
+				<careTeam>
+					<member>
+						<reference value="urn:uuid:681ab654-a5fc-11e7-abc4-cec278b6b50a"/>
+						<display value="RILEY, Amber"/>
+					</member>
+				</careTeam>
+			</EpisodeOfCare>
+		</resource>
+	</entry>
+	<entry>
+		<fullUrl value="urn:uuid:681ab654-a5fc-11e7-abc4-cec278b6b50a"/>
+		<resource>
+			<Practitioner>
+				<id value="681ab654-a5fc-11e7-abc4-cec278b6b50a"/>
+				<meta>
+					<profile value="https://fhir.nhs.uk/StructureDefinition/CareConnect-DCH-ProfessionalContact-Practitioner-1"/>
+				</meta>
+				<identifier>
+					<system value="https://fhir.nhs.net/Id/sds-role-profile-id"/>
+					<value value="PT1357"/>
+				</identifier>
+				<name>
+					<family value="Riley"/>
+					<given value="Amber"/>
+				</name>
+				<practitionerRole>
+					<managingOrganization>
+						<reference value="urn:uuid:681aad76-a5fc-11e7-abc4-cec278b6b50a"/>
+						<display value="The Reginald Joint Service Centre"/>
+					</managingOrganization>
+					<role>
+						<coding>
+							<system value="https://fhir.nhs.uk/DCH-ProfessionalContactType-1"/>
+							<code value="N03"/>
+							<display value="Health Visitor"/>
+						</coding>
+					</role>
+					<specialty>
+						<coding>
+							<system value="https://fhir.nhs.uk/DCH-Specialty-1"/>
+							<code value="960"/>
+							<display value="ALLIED HEALTH PROFESSIONAL EPISODE"/>
+						</coding>
+					</specialty>
+				</practitionerRole>
+			</Practitioner>
+		</resource>
+	</entry>
+	<entry>
+		<fullUrl value="urn:uuid:681aad76-a5fc-11e7-abc4-cec278b6b50a"/>
+		<resource>
+			<Organization>
+				<id value="681aad76-a5fc-11e7-abc4-cec278b6b50a"/>
+				<meta>
+					<profile value="https://fhir.nhs.uk/StructureDefinition/CareConnect-DCH-Team-Organization-1"/>
+				</meta>
+				<identifier>
+					<system value="https://fhir.nhs.uk/Id/local-organization-code"/>
+					<value value="RY6001"/>
+				</identifier>
+				<type>
+					<coding>
+						<system value="http://hl7.org/fhir/organization-type"/>
+						<code value="team"/>
+						<display value="Organizational team"/>
+					</coding>
+				</type>
+				<name value="The Reginald Joint Service Centre"/>
+				<telecom>
+					<system value="phone"/>
+					<value value="0113 8435683"/>
+				</telecom>
+				<partOf>
+					<reference value="urn:uuid:681abdb6-a5fc-11e7-abc4-cec278b6b50a"/>
+					<display value="Leeds Community NHS Trust"/>
+				</partOf>
+			</Organization>
+		</resource>
+	</entry>
+	<entry>
+		<fullUrl value="urn:uuid:681abe7e-a5fc-11e7-abc4-cec278b6b50a"/>
+		<resource>
+			<Location>
+				<id value="681abe7e-a5fc-11e7-abc4-cec278b6b50a"/>
+				<meta>
+					<profile value="https://fhir.nhs.uk/StructureDefinition/CareConnect-DCH-Location-1"/>
+				</meta>
+				<identifier>
+					<system value="https://fhir.nhs.uk/Id/ods-site-code"/>
+					<value value="B86022"/>
+				</identifier>
+				<name value="Wood Town GP practice"/>
+			</Location>
+		</resource>
+	</entry>
+</Bundle>
