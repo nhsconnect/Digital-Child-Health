@@ -1,0 +1,51 @@
+{
+  "resourceType": "ValueSet",
+  "meta": {
+    "lastUpdated": "2016-08-03T00:00:00+01:00"
+  },
+  "url": "https://fhir.nhs.uk/ValueSet/DCH-FeedingMethod-1",
+  "name": "Feeding Method",
+  "status": "draft",
+  "description": "A record of the predominant feeding method for the baby.",
+  "compose": {
+    "include": [
+      {
+        "system": "https://fhir.nhs.uk/dch-FeedingMethod-1",
+        "concept": [
+          {
+            "code": "1",
+            "display": "Cup"
+          },
+          {
+            "code": "2",
+            "display": "Bottle"
+          },
+          {
+            "code": "3",
+            "display": "Cup"
+          },
+          {
+            "code": "4",
+            "display": "Nasogastric tube"
+          },
+          {
+            "code": "5",
+            "display": "Orogastric tube"
+          },
+          {
+            "code": "6",
+            "display": "Gastrostomy"
+          },
+          {
+            "code": "7",
+            "display": "Nasojejunal tube"
+          },
+          {
+            "code": "8",
+            "display": "Other"
+          }
+        ]
+      }
+    ]
+  }
+}

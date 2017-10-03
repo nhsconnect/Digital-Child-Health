@@ -1,0 +1,57 @@
+{
+  "resourceType": "ValueSet",
+  "meta": {
+    "lastUpdated": "2016-08-03T00:00:00+01:00"
+  },
+  "url": "https://fhir.nhs.uk/ValueSet/DCH-NCMPWithdrawalReason-1",
+  "version": "1.0.0",
+  "name": "NCMP Withdrawal Reason",
+  "status": "draft",
+  "description": "Reason for child being withdrawn from the measurement as part of the National Child Measurement Programme.",
+  "copyright": "Copyright © 2016 Health and Social Care Information Centre. NHS Digital is the trading name of the Health and Social Care Information Centre.",
+  "compose": {
+    "include": [
+      {
+        "system": "https://fhir.nhs.uk/DCH-ConsentStatus-1",
+        "concept": [
+          {
+            "code": "nm01",
+            "display": "Absent"
+          },
+          {
+            "code": "nm02",
+            "display": "Child opt-out"
+          },
+          {
+            "code": "nm03",
+            "display": "Parent opt-out"
+          },
+          {
+            "code": "nm05",
+            "display": "No longer at school"
+          },
+          {
+            "code": "nm06",
+            "display": "Awaiting consent"
+          },
+          {
+            "code": "nm07",
+            "display": "Other"
+          },
+          {
+            "code": "nm08",
+            "display": "School opt-out"
+          },
+          {
+            "code": "nm09",
+            "display": "Unsuitable for measurement due to physical impairment"
+          },
+          {
+            "code": "nm10",
+            "display": "Unable or unwilling to comply due to cognitive impairment"
+          }
+        ]
+      }
+    ]
+  }
+}
