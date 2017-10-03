@@ -18,9 +18,9 @@ The Child Health Event data items are fulfilled by elements within the FHIR reso
 | First Milk Feed                              | DCH-FeedingStatus-QuestionnaireResponse-1.question.answer.value (firstMilkFeed)                | Mandatory                   |
 | Feeding Status of the baby                   | DCH-FeedingStatus-QuestionnaireResponse-1.question.answer.value (feedingStatus)                | Mandatory                   |
 | Feeding method                               | DCH-FeedingStatus-QuestionnaireResponse-1.question.answer.value (feedingMethod)                | Required                    |
-| How many months was the child breastfed for? | DCH-FeedingStatus-QuestionnaireResponse-1.question.answer.value (introductionOfSolids)         | Required                    |
-| Encounter Type                               | DCH-FeedingStatus-QuestionnaireResponse-1.question.answer.value (breastfedMonths)              | Required                    |
-|                                              | CareConnect-DCH-Encounter-1.type (childHealthEncounterType)                                    | Mandatory                   |
+| Introduction of Solids                       | DCH-FeedingStatus-QuestionnaireResponse-1.question.answer.value (introductionOfSolids)         | Required                    |
+| How many months was the child breastfed for? | DCH-FeedingStatus-QuestionnaireResponse-1.question.answer.value (breastfedMonths)              | Required                    |
+| Encounter Type                               | CareConnect-DCH-Encounter-1.type (childHealthEncounterType)                                    | Mandatory                   |
 
 [DCH-MessageHeader-1]:dch-messageheader-1.html
 [CareConnect-DCH-Organization-1]:careconnect-dch-organization-1.html
