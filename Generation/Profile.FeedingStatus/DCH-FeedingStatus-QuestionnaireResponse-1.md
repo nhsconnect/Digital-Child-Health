@@ -1,0 +1,1 @@
+This Questionnaire Response resource is constrained to represent a questionnaire response to capture feeding status information for a Child Health event message.

@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValueSet xmlns="http://hl7.org/fhir">
+	<meta>
+		<lastUpdated value="2016-08-03T00:00:00+01:00"/>
+	</meta>
+	<url value="https://fhir.nhs.uk/ValueSet/DCH-NCMPWithdrawalReason-1"/>
+	<copyright value="Copyright © 2016 Health and Social Care Information Centre. NHS Digital is the trading name of the Health and Social Care Information Centre."/>
+	<version value="1.0.0"/>
+	<name value="NCMP Withdrawal Reason"/>
+	<status value="draft"/>
+	<description value="Reason for child being withdrawn from the measurement as part of the National Child Measurement Programme."/>
+	<compose>
+		<include>
+			<system value="https://fhir.nhs.uk/DCH-ConsentStatus-1"/>
+			<concept>
+				<code value="nm01"/>
+				<display value="Absent"/>
+			</concept>
+			<concept>
+				<code value="nm02"/>
+				<display value="Child opt-out"/>
+			</concept>
+			<concept>
+				<code value="nm03"/>
+				<display value="Parent opt-out"/>
+			</concept>
+			<concept>
+				<code value="nm05"/>
+				<display value="No longer at school"/>
+			</concept>
+			<concept>
+				<code value="nm06"/>
+				<display value="Awaiting consent"/>
+			</concept>
+			<concept>
+				<code value="nm07"/>
+				<display value="Other"/>
+			</concept>
+			<concept>
+				<code value="nm08"/>
+				<display value="School opt-out"/>
+			</concept>
+			<concept>
+				<code value="nm09"/>
+				<display value="Unsuitable for measurement due to physical impairment"/>
+			</concept>
+			<concept>
+				<code value="nm10"/>
+				<display value="Unable or unwilling to comply due to cognitive impairment"/>
+			</concept>
+		</include>
+	</compose>
+</ValueSet>

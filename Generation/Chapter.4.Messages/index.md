@@ -49,8 +49,10 @@ The various downloads (including Schema files) and reference implementations are
 [Profile.ClinicalRiskFactors]: ../Profile.ClinicalRiskFactors/Profile.ClinicalRiskFactors.html
 [Profile.ConditionsOrDiagnoses]: ../Profile.ConditionsOrDiagnoses/Profile.ConditionsOrDiagnoses.html
 [Profile.FamilyHistory]: ../Profile.FamilyHistory/Profile.FamilyHistory.html
+[Profile.FeedingStatus]: ../Profile.FeedingStatus/Profile.FeedingStatus.html
 [Profile.ImmunisationAdministration]: ../Profile.ImmunisationAdministration/Profile.ImmunisationAdministration.html
 [Profile.Medication]: ../Profile.Medication/Profile.Medication.html
+[Profile.Measurements]: ../Profile.Measurements/Profile.Measurements.html
 [Profile.NewbornHearing]: ../Profile.NewbornHearing/Profile.NewbornHearing.html
 [Profile.PersonalContacts]:../Profile.PersonalContacts/Profile.PersonalContacts.html
 [Profile.PlanAndRequestedActions]:../Profile.PlanAndRequestedActions/Profile.PlanAndRequestedActions.html

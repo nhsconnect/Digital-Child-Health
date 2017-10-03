@@ -1,0 +1,1 @@
+An action that is or was performed on a patient, with further constraints applied to represent a National Child Measurement Programme procedure within the scope of a Child Health event.

@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValueSet xmlns="http://hl7.org/fhir">
+	<meta>
+		<lastUpdated value="2016-08-03T00:00:00+01:00"/>
+	</meta>
+	<url value="https://fhir.nhs.uk/ValueSet/DCH-FeedingMethod-1"/>
+	<name value="Feeding Method"/>
+	<status value="draft"/>
+	<description value="A record of the predominant feeding method for the baby."/>
+	<compose>
+		<include>
+			<system value="https://fhir.nhs.uk/dch-FeedingMethod-1"/>
+			<concept>
+				<code value="1"/>
+				<display value="Cup"/>
+			</concept>
+			<concept>
+				<code value="2"/>
+				<display value="Bottle"/>
+			</concept>
+			<concept>
+				<code value="3"/>
+				<display value="Cup"/>
+			</concept>
+			<concept>
+				<code value="4"/>
+				<display value="Nasogastric tube"/>
+			</concept>
+			<concept>
+				<code value="5"/>
+				<display value="Orogastric tube"/>
+			</concept>
+			<concept>
+				<code value="6"/>
+				<display value="Gastrostomy"/>
+			</concept>
+			<concept>
+				<code value="7"/>
+				<display value="Nasojejunal tube"/>
+			</concept>
+			<concept>
+				<code value="8"/>
+				<display value="Other"/>
+			</concept>
+		</include>
+	</compose>
+</ValueSet>
