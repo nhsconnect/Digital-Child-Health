@@ -23,40 +23,44 @@
             "display": "Admission Details"
           },
           {
-            "code": "Allergies and Drug Reactions",
-            "display": "Allergies and Drug Reactions"
+            "code": "Allergies and Adverse Reactions",
+            "display": "Allergies and Adverse Reactions"
+          },
+          {
+            "code": "Assessment Scales",
+            "display": "Assessment Scales"
           },
           {
             "code": "Birth Details",
             "display": "Birth Details"
           },
           {
-            "code": "Blood Spot Sample Taken Event",
-            "display": "Blood Spot Sample Taken Event"
-          },
-          {
-            "code": "Blood Spot Administrative Status Event",
-            "display": "Blood Spot Administrative Status Event"
-          },
-          {
-            "code": "Blood Spot Test Outcome Event",
-            "display": "Blood Spot Test Outcome  Event"
+            "code": "Blood Spot",
+            "display": "Blood Spot"
           },
           {
             "code": "Clinical Risk Factors",
             "display": "Clinical Risk Factors"
           },
           {
-            "code": "Conditions Or Diagnoses",
-            "display": "Conditions Or Diagnoses"
+            "code": "Conditions or Diagnoses",
+            "display": "Conditions or Diagnoses"
           },
           {
-            "code": "Discharge",
-            "display": "Discharge"
+            "code": "Discharge Details",
+            "display": "Discharge Details"
+          },
+          {
+            "code": "Early Years Progress",
+            "display": "Early Years Progress"
           },
           {
             "code": "Emergency Care Attendance",
             "display": "Emergency Care Attendance"
+          },
+          {
+            "code": "Examination Findings",
+            "display": "Examination Findings"
           },
           {
             "code": "Family History",
@@ -71,6 +75,14 @@
             "display": "Immunisation Administration"
           },
           {
+            "code": "Individual Requirements",
+            "display": "Individual Requirements"
+          },
+          {
+            "code": "Information and Advice Given",
+            "display": "Information and Advice Given"
+          },
+          {
             "code": "Measurements",
             "display": "Measurements"
           },
@@ -79,36 +91,52 @@
             "display": "Medication"
           },
           {
+            "code": "Milestones",
+            "display": "Milestones"
+          },
+          {
             "code": "Newborn Hearing",
             "display": "Newborn Hearing"
+          },
+          {
+            "code": "Parent Guardian or Personal Comment",
+            "display": "Parent Guardian or Personal Comment"
           },
           {
             "code": "Personal Contacts",
             "display": "Personal Contacts"
           },
           {
-            "code": "Plan and Required Actions",
-            "display": "Plan and Required Actions"
-          },
-          {
             "code": "Physical Examination",
             "display": "Physical Examination"
           },
           {
-            "code": "Professional Contact",
-            "display": "Professional Contact"
+            "code": "Plan and Requested Actions",
+            "display": "Plan and Requested Actions"
+          },
+          {
+            "code": "Professional Comment",
+            "display": "Professional Comment"
+          },
+          {
+            "code": "Professional Contacts",
+            "display": "Professional Contacts"
           },
           {
             "code": "Referral",
             "display": "Referral"
           },
           {
+            "code": "Review Checks",
+            "display": "Review Checks"
+          },
+          {
             "code": "Safety Alerts",
             "display": "Safety Alerts"
           },
           {
-            "code": "Social Context Person",
-            "display": "Social Context Person"
+            "code": "Social Context Household",
+            "display": "Social Context Household"
           },
           {
             "code": "Social Context Household",
