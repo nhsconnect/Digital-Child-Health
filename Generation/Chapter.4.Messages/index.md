@@ -31,7 +31,6 @@ The FHIR resource profiles within this DMS have been created to support the Chil
 - **[Profile.ProfessionalComment]** - FHIR resource profiles combined to support a Professional Comment event message.
 - **[Profile.ProfessionalContacts]** - FHIR resource profiles combined to support a Professional Contacts event message.
 - **[Profile.Referral]** - FHIR resource profiles combined to support a Referral event message.
-- **[Profile.ReviewChecks]** - FHIR resource profiles combined to support a Review Checks event message.
 - **[Profile.SafetyAlerts]** - FHIR resource profiles combined to support a Safety Alerts event message.
 - **[Profile.SocialContextPerson]** - FHIR resource profiles combined to support a Social Context Person event message.
 - **[Profile.SocialContextHousehold]** - FHIR resource profiles combined to support a Social Context Household event message.
