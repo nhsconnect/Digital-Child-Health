@@ -1,0 +1,390 @@
+{
+  "resourceType": "ValueSet",
+  "meta": {
+    "lastUpdated": "2016-08-03T00:00:00+01:00"
+  },
+  "url": "https://fhir.nhs.uk/ValueSet/DCH-Specialty-1",
+  "version": "1.0.0",
+  "name": "Specialty",
+  "status": "draft",
+  "publisher": "NHS Digital",
+  "description": "The specialty of the care professional or team.",
+  "copyright": "Copyright © 2016 Health and Social Care Information Centre. NHS Digital is the trading name of the Health and Social Care Information Centre.",
+  "compose": {
+    "include": [
+      {
+        "system": "https://fhir.nhs.uk/DCH-Specialty-1",
+        "concept": [
+          {
+            "code": "100",
+            "display": "GENERAL SURGERY"
+          },
+          {
+            "code": "101",
+            "display": "UROLOGY"
+          },
+          {
+            "code": "110",
+            "display": "TRAUMA and ORTHOPAEDICS"
+          },
+          {
+            "code": "120",
+            "display": "ENT"
+          },
+          {
+            "code": "130",
+            "display": "OPHTHALMOLOGY"
+          },
+          {
+            "code": "140",
+            "display": "ORAL SURGERY"
+          },
+          {
+            "code": "141",
+            "display": "RESTORATIVE DENTISTRY"
+          },
+          {
+            "code": "142",
+            "display": "PAEDIATRIC DENTISTRY"
+          },
+          {
+            "code": "143",
+            "display": "ORTHODONTICS"
+          },
+          {
+            "code": "145",
+            "display": "ORAL and MAXILLO FACIAL SURGERY"
+          },
+          {
+            "code": "146",
+            "display": "ENDODONTICS"
+          },
+          {
+            "code": "147",
+            "display": "PERIODONTICS"
+          },
+          {
+            "code": "148",
+            "display": "PROSTHODONTICS"
+          },
+          {
+            "code": "149",
+            "display": "SURGICAL DENTISTRY"
+          },
+          {
+            "code": "150",
+            "display": "NEUROSURGERY"
+          },
+          {
+            "code": "160",
+            "display": "PLASTIC SURGERY"
+          },
+          {
+            "code": "170",
+            "display": "CARDIOTHORACIC SURGERY"
+          },
+          {
+            "code": "171",
+            "display": "PAEDIATRIC SURGERY"
+          },
+          {
+            "code": "180",
+            "display": "ACCIDENT and EMERGENCY"
+          },
+          {
+            "code": "191 ",
+            "display": "PAIN MANAGEMENT (Retired 1 April 2004) "
+          },
+          {
+            "code": "190",
+            "display": "ANAESTHETICS"
+          },
+          {
+            "code": "192",
+            "display": "CRITICAL CARE MEDICINE"
+          },
+          {
+            "code": "300",
+            "display": "GENERAL MEDICINE"
+          },
+          {
+            "code": "301",
+            "display": "GASTROENTEROLOGY"
+          },
+          {
+            "code": "302",
+            "display": "ENDOCRINOLOGY"
+          },
+          {
+            "code": "303",
+            "display": "CLINICAL HAEMATOLOGY"
+          },
+          {
+            "code": "304",
+            "display": "CLINICAL PHYSIOLOGY"
+          },
+          {
+            "code": "305",
+            "display": "CLINICAL PHARMACOLOGY"
+          },
+          {
+            "code": "310",
+            "display": "AUDIOLOGICAL MEDICINE"
+          },
+          {
+            "code": "311",
+            "display": "CLINICAL GENETICS"
+          },
+          {
+            "code": "312 ",
+            "display": "CLINICAL CYTOGENETICS and MOLECULAR GENETICS (Retired 1 April 2010) "
+          },
+          {
+            "code": "313",
+            "display": "CLINICAL IMMUNOLOGY and ALLERGY"
+          },
+          {
+            "code": "314",
+            "display": "REHABILITATION"
+          },
+          {
+            "code": "315",
+            "display": "PALLIATIVE MEDICINE"
+          },
+          {
+            "code": "320",
+            "display": "CARDIOLOGY"
+          },
+          {
+            "code": "321",
+            "display": "PAEDIATRIC CARDIOLOGY"
+          },
+          {
+            "code": "325",
+            "display": "SPORT AND EXERCISE MEDICINE"
+          },
+          {
+            "code": "326",
+            "display": "ACUTE INTERNAL MEDICINE"
+          },
+          {
+            "code": "330",
+            "display": "DERMATOLOGY"
+          },
+          {
+            "code": "340",
+            "display": "RESPIRATORY MEDICINE (also known as thoracic medicine)"
+          },
+          {
+            "code": "350",
+            "display": "INFECTIOUS DISEASES"
+          },
+          {
+            "code": "352",
+            "display": "TROPICAL MEDICINE"
+          },
+          {
+            "code": "360",
+            "display": "GENITOURINARY MEDICINE"
+          },
+          {
+            "code": "361",
+            "display": "NEPHROLOGY"
+          },
+          {
+            "code": "370",
+            "display": "MEDICAL ONCOLOGY"
+          },
+          {
+            "code": "371",
+            "display": "NUCLEAR MEDICINE"
+          },
+          {
+            "code": "400",
+            "display": "NEUROLOGY"
+          },
+          {
+            "code": "401",
+            "display": "CLINICAL NEURO-PHYSIOLOGY"
+          },
+          {
+            "code": "410",
+            "display": "RHEUMATOLOGY"
+          },
+          {
+            "code": "420",
+            "display": "PAEDIATRICS"
+          },
+          {
+            "code": "421",
+            "display": "PAEDIATRIC NEUROLOGY"
+          },
+          {
+            "code": "430",
+            "display": "GERIATRIC MEDICINE"
+          },
+          {
+            "code": "450",
+            "display": "DENTAL MEDICINE SPECIALTIES"
+          },
+          {
+            "code": "451",
+            "display": "SPECIAL CARE DENTISTRY"
+          },
+          {
+            "code": "460",
+            "display": "MEDICAL OPHTHALMOLOGY"
+          },
+          {
+            "code": "500",
+            "display": "OBSTETRICS and GYNAECOLOGY"
+          },
+          {
+            "code": "501",
+            "display": "OBSTETRICS"
+          },
+          {
+            "code": "502",
+            "display": "GYNAECOLOGY"
+          },
+          {
+            "code": "504",
+            "display": "COMMUNITY SEXUAL AND REPRODUCTIVE HEALTH"
+          },
+          {
+            "code": "510 ",
+            "display": "ANTENATAL CLINIC (Retired 1 April 2004) "
+          },
+          {
+            "code": "520 ",
+            "display": "POSTNATAL CLINIC (Retired 1 April 2004) "
+          },
+          {
+            "code": "560",
+            "display": "MIDWIFE EPISODE"
+          },
+          {
+            "code": "600",
+            "display": "GENERAL MEDICAL PRACTICE"
+          },
+          {
+            "code": "601",
+            "display": "GENERAL DENTAL PRACTICE"
+          },
+          {
+            "code": "610 ",
+            "display": "MATERNITY FUNCTION (Retired 1 April 2004) "
+          },
+          {
+            "code": "620 ",
+            "display": "OTHER THAN MATERNITY (Retired 1 April 2004) "
+          },
+          {
+            "code": "700",
+            "display": "LEARNING DISABILITY"
+          },
+          {
+            "code": "710",
+            "display": "ADULT MENTAL ILLNESS"
+          },
+          {
+            "code": "711",
+            "display": "CHILD and ADOLESCENT PSYCHIATRY"
+          },
+          {
+            "code": "712",
+            "display": "FORENSIC PSYCHIATRY"
+          },
+          {
+            "code": "713",
+            "display": "PSYCHOTHERAPY"
+          },
+          {
+            "code": "715",
+            "display": "OLD AGE PSYCHIATRY"
+          },
+          {
+            "code": "800",
+            "display": "CLINICAL ONCOLOGY (previously RADIOTHERAPY)"
+          },
+          {
+            "code": "810",
+            "display": "RADIOLOGY"
+          },
+          {
+            "code": "820",
+            "display": "GENERAL PATHOLOGY"
+          },
+          {
+            "code": "821",
+            "display": "BLOOD TRANSFUSION"
+          },
+          {
+            "code": "822",
+            "display": "CHEMICAL PATHOLOGY"
+          },
+          {
+            "code": "823",
+            "display": "HAEMATOLOGY"
+          },
+          {
+            "code": "824",
+            "display": "HISTOPATHOLOGY"
+          },
+          {
+            "code": "830",
+            "display": "IMMUNOPATHOLOGY"
+          },
+          {
+            "code": "831",
+            "display": "MEDICAL MICROBIOLOGY AND VIROLOGY"
+          },
+          {
+            "code": "832 ",
+            "display": "NEUROPATHOLOGY (Retired 1 April 2004) "
+          },
+          {
+            "code": "833",
+            "display": "MEDICAL MICROBIOLOGY (also known as MICROBIOLOGY AND BACTERIOLOGY)"
+          },
+          {
+            "code": "834",
+            "display": "MEDICAL VIROLOGY"
+          },
+          {
+            "code": "900",
+            "display": "COMMUNITY MEDICINE"
+          },
+          {
+            "code": "901",
+            "display": "OCCUPATIONAL MEDICINE"
+          },
+          {
+            "code": "902",
+            "display": "COMMUNITY HEALTH SERVICES DENTAL"
+          },
+          {
+            "code": "903",
+            "display": "PUBLIC HEALTH MEDICINE"
+          },
+          {
+            "code": "904",
+            "display": "PUBLIC HEALTH DENTAL"
+          },
+          {
+            "code": "950",
+            "display": "NURSING EPISODE"
+          },
+          {
+            "code": "960",
+            "display": "ALLIED HEALTH PROFESSIONAL EPISODE"
+          },
+          {
+            "code": "990 ",
+            "display": "JOINT CONSULTANT CLINICS (Retired 1 April 2004) "
+          }
+        ]
+      }
+    ]
+  }
+}

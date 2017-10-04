@@ -598,6 +598,36 @@
         </tr>
         <tr>
           <td colspan="2" class="structure">
+            <a name="Patient.birthPlace"></a>
+            <b>Patient.extension(birthPlace)</b>
+          </td>
+        </tr>
+        <tr>
+          <td width="150px">Definition</td>
+          <td>
+            <p>The registered place of birth of the patient. A sytem may use the address.text if they don't store the birthPlace address in discrete elements.</p>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <a href="http://www.hl7.org/fhir/DSTU2/conformance-rules.html#conformance">Control</a>
+          </td>
+          <td>0..1</td>
+        </tr>
+        <tr>
+          <td>
+            <a href="http://www.hl7.org/fhir/DSTU2/datatypes.html">Type</a>
+          </td>
+          <td>
+            <a href="http://www.hl7.org/fhir/DSTU2/datatypes.html#extension" xmlns="http://www.w3.org/1999/xhtml">Extension</a>
+          </td>
+        </tr>
+        <tr>
+          <td width="150px">Comments</td>
+          <td></td>
+        </tr>
+        <tr>
+          <td colspan="2" class="structure">
             <a name="Patient.modifierExtension"></a>
             <b>Patient.modifierExtension</b>
           </td>
@@ -5388,11 +5418,143 @@
           <td>
             <a href="http://www.hl7.org/fhir/DSTU2/datatypes.html">Type</a>
           </td>
-          <td>Choice of: <ul><li><a href="careconnect-dch-organization-1.html" xmlns="http://www.w3.org/1999/xhtml">https://fhir.nhs.uk/StructureDefinition/CareConnect-DCH-Organization-1</a></li><li><a href="careconnect-dch-practitioner-1.html" xmlns="http://www.w3.org/1999/xhtml">https://fhir.nhs.uk/StructureDefinition/CareConnect-DCH-Practitioner-1</a></li><li><a href="careconnect-dch-team-organization-1.html" xmlns="http://www.w3.org/1999/xhtml">https://fhir.nhs.uk/StructureDefinition/CareConnect-DCH-Team-Organization-1</a></li><li><a href="careconnect-dch-professionalcontact-practitioner-1.html" xmlns="http://www.w3.org/1999/xhtml">https://fhir.nhs.uk/StructureDefinition/CareConnect-DCH-ProfessionalContact-Practitioner-1</a></li></ul></td>
+          <td>Choice of: <ul><li><a href="careconnect-dch-organization-1.html" xmlns="http://www.w3.org/1999/xhtml">https://fhir.nhs.uk/StructureDefinition/CareConnect-DCH-Organization-1</a></li><li><a href="careconnect-dch-practitioner-1.html" xmlns="http://www.w3.org/1999/xhtml">https://fhir.nhs.uk/StructureDefinition/CareConnect-DCH-Practitioner-1</a></li></ul></td>
         </tr>
         <tr>
           <td width="150px">Comments</td>
           <td></td>
+        </tr>
+        <tr>
+          <td colspan="2" class="structure">
+            <a name="Patient.careProvider.id"></a>
+            <b>Patient.careProvider.id</b>
+          </td>
+        </tr>
+        <tr>
+          <td width="150px">Definition</td>
+          <td>
+            <p>unique id for the element within a resource (for internal references).</p>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <a href="http://www.hl7.org/fhir/DSTU2/conformance-rules.html#conformance">Control</a>
+          </td>
+          <td>0..1 ?</td>
+        </tr>
+        <tr>
+          <td>
+            <a href="http://www.hl7.org/fhir/DSTU2/datatypes.html">Type</a>
+          </td>
+          <td>
+            <a href="http://www.hl7.org/fhir/DSTU2/datatypes.html#id" xmlns="http://www.w3.org/1999/xhtml">Id</a>
+          </td>
+        </tr>
+        <tr>
+          <td width="150px">Comments</td>
+          <td>
+            <p>RFC 4122</p>
+          </td>
+        </tr>
+        <tr>
+          <td colspan="2" class="structure">
+            <a name="Patient.careProvider.extension"></a>
+            <b>Patient.careProvider.extension</b>
+          </td>
+        </tr>
+        <tr>
+          <td width="150px">Definition</td>
+          <td>
+            <p>May be used to represent additional information that is not part of the basic definition of the element. In order to make the use of extensions safe and manageable, there is a strict set of governance  applied to the definition and use of extensions. Though any implementer is allowed to define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension.</p>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <a href="http://www.hl7.org/fhir/DSTU2/conformance-rules.html#conformance">Control</a>
+          </td>
+          <td>0..* ?</td>
+        </tr>
+        <tr>
+          <td>
+            <a href="http://www.hl7.org/fhir/DSTU2/datatypes.html">Type</a>
+          </td>
+          <td>
+            <a href="http://www.hl7.org/fhir/DSTU2/datatypes.html#extension" xmlns="http://www.w3.org/1999/xhtml">Extension</a>
+          </td>
+        </tr>
+        <tr>
+          <td>Aliases</td>
+          <td>extensions, user content</td>
+        </tr>
+        <tr>
+          <td width="150px">Comments</td>
+          <td>
+            <p>There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone.</p>
+          </td>
+        </tr>
+        <tr>
+          <td colspan="2" class="structure">
+            <a name="Patient.careProvider.reference"></a>
+            <b>Patient.careProvider.reference</b>
+          </td>
+        </tr>
+        <tr>
+          <td width="150px">Definition</td>
+          <td>
+            <p>A reference to a location at which the other resource is found. The reference may be a relative reference, in which case it is relative to the service base URL, or an absolute URL that resolves to the location where the resource is found. The reference may be version specific or not. If the reference is not to a FHIR RESTful server, then it should be assumed to be version specific. Internal fragment references (start with '#') refer to contained resources.</p>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <a href="http://www.hl7.org/fhir/DSTU2/conformance-rules.html#conformance">Control</a>
+          </td>
+          <td>0..1 ?</td>
+        </tr>
+        <tr>
+          <td>
+            <a href="http://www.hl7.org/fhir/DSTU2/datatypes.html">Type</a>
+          </td>
+          <td>
+            <a href="http://www.hl7.org/fhir/DSTU2/datatypes.html#string" xmlns="http://www.w3.org/1999/xhtml">String</a>
+          </td>
+        </tr>
+        <tr>
+          <td width="150px">Comments</td>
+          <td>
+            <p>Using absolute URLs provides a stable scalable approach suitable for a cloud/web context, while using relative/logical references provides a flexible approach suitable for use when trading across closed eco-system boundaries.   Absolute URLs do not need to point to a FHIR RESTful server, though this is the preferred approach. If the URL conforms to the structure "/[type]/[id]" then it should be assumed that the reference is to a FHIR RESTful server.</p>
+          </td>
+        </tr>
+        <tr>
+          <td colspan="2" class="structure">
+            <a name="Patient.careProvider.display"></a>
+            <b>Patient.careProvider.display</b>
+          </td>
+        </tr>
+        <tr>
+          <td width="150px">Definition</td>
+          <td>
+            <p>Plain text narrative that identifies the resource in addition to the resource reference.</p>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <a href="http://www.hl7.org/fhir/DSTU2/conformance-rules.html#conformance">Control</a>
+          </td>
+          <td>0..1 ?</td>
+        </tr>
+        <tr>
+          <td>
+            <a href="http://www.hl7.org/fhir/DSTU2/datatypes.html">Type</a>
+          </td>
+          <td>
+            <a href="http://www.hl7.org/fhir/DSTU2/datatypes.html#string" xmlns="http://www.w3.org/1999/xhtml">String</a>
+          </td>
+        </tr>
+        <tr>
+          <td width="150px">Comments</td>
+          <td>
+            <p>This is generally not the same as the Resource.text of the referenced resource.  The purpose is to identify what's being referenced, not to fully describe it.</p>
+          </td>
         </tr>
         <tr>
           <td colspan="2" class="structure">

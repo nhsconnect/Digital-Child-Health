@@ -1863,17 +1863,39 @@
         </tr>
         <tr>
           <td width="150px">Definition</td>
-          <td></td>
+          <td>
+            <p>Specific type of encounter (e.g. e-mail consultation, surgical day-care, skilled nursing, rehabilitation).</p>
+          </td>
         </tr>
         <tr>
           <td>
             <a href="http://www.hl7.org/fhir/DSTU2/conformance-rules.html#conformance">Control</a>
           </td>
-          <td>1..*</td>
+          <td>0..* ?</td>
+        </tr>
+        <tr>
+          <td>
+            <a href="http://www.hl7.org/fhir/DSTU2/terminologies.html">Binding</a>
+          </td>
+          <td>
+            <div class="binding-description" xmlns="http://www.w3.org/1999/xhtml">
+              <p>The type of encounter</p>
+              <p>For example codes, see <a href="http://hl7.org/fhir/ValueSet/encounter-type">http://hl7.org/fhir/ValueSet/encounter-type</a></p>; other codes may be used where these codes are not suitable</div>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <a href="http://www.hl7.org/fhir/DSTU2/datatypes.html">Type</a>
+          </td>
+          <td>
+            <a href="http://www.hl7.org/fhir/DSTU2/datatypes.html#codeableconcept" xmlns="http://www.w3.org/1999/xhtml">CodeableConcept</a>
+          </td>
         </tr>
         <tr>
           <td width="150px">Comments</td>
-          <td></td>
+          <td>
+            <p>Since there are many ways to further classify encounters, this element is 0..*.</p>
+          </td>
         </tr>
         <tr>
           <td colspan="2" class="structure">
@@ -2937,22 +2959,20 @@
         </tr>
         <tr>
           <td width="150px">Definition</td>
-          <td>
-            <p>Where a specific encounter should be classified as a part of a specific episode(s) of care this field should be used. This association can facilitate grouping of related encounters together for a specific purpose, such as government reporting, issue tracking, association via a common problem.  The association is recorded on the encounter as these are typically created after the episode of care, and grouped on entry rather than editing the episode of care to append another encounter to it (the episode of care could span years).</p>
-          </td>
+          <td></td>
         </tr>
         <tr>
           <td>
             <a href="http://www.hl7.org/fhir/DSTU2/conformance-rules.html#conformance">Control</a>
           </td>
-          <td>0..* ?</td>
+          <td>0..*</td>
         </tr>
         <tr>
           <td>
             <a href="http://www.hl7.org/fhir/DSTU2/datatypes.html">Type</a>
           </td>
           <td>
-            <a href="http://www.hl7.org/fhir/DSTU2/episodeofcare.html" xmlns="http://www.w3.org/1999/xhtml">EpisodeOfCare</a>
+            <a href="dch-episodeofcare-1.html" xmlns="http://www.w3.org/1999/xhtml">https://fhir.nhs.uk/StructureDefinition/DCH-EpisodeOfCare-1</a>
           </td>
         </tr>
         <tr>
@@ -5105,6 +5125,138 @@
         </tr>
         <tr>
           <td colspan="2" class="structure">
+            <a name="Encounter.indication.id"></a>
+            <b>Encounter.indication.id</b>
+          </td>
+        </tr>
+        <tr>
+          <td width="150px">Definition</td>
+          <td>
+            <p>unique id for the element within a resource (for internal references).</p>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <a href="http://www.hl7.org/fhir/DSTU2/conformance-rules.html#conformance">Control</a>
+          </td>
+          <td>0..1 ?</td>
+        </tr>
+        <tr>
+          <td>
+            <a href="http://www.hl7.org/fhir/DSTU2/datatypes.html">Type</a>
+          </td>
+          <td>
+            <a href="http://www.hl7.org/fhir/DSTU2/datatypes.html#id" xmlns="http://www.w3.org/1999/xhtml">Id</a>
+          </td>
+        </tr>
+        <tr>
+          <td width="150px">Comments</td>
+          <td>
+            <p>RFC 4122</p>
+          </td>
+        </tr>
+        <tr>
+          <td colspan="2" class="structure">
+            <a name="Encounter.indication.extension"></a>
+            <b>Encounter.indication.extension</b>
+          </td>
+        </tr>
+        <tr>
+          <td width="150px">Definition</td>
+          <td>
+            <p>May be used to represent additional information that is not part of the basic definition of the element. In order to make the use of extensions safe and manageable, there is a strict set of governance  applied to the definition and use of extensions. Though any implementer is allowed to define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension.</p>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <a href="http://www.hl7.org/fhir/DSTU2/conformance-rules.html#conformance">Control</a>
+          </td>
+          <td>0..* ?</td>
+        </tr>
+        <tr>
+          <td>
+            <a href="http://www.hl7.org/fhir/DSTU2/datatypes.html">Type</a>
+          </td>
+          <td>
+            <a href="http://www.hl7.org/fhir/DSTU2/datatypes.html#extension" xmlns="http://www.w3.org/1999/xhtml">Extension</a>
+          </td>
+        </tr>
+        <tr>
+          <td>Aliases</td>
+          <td>extensions, user content</td>
+        </tr>
+        <tr>
+          <td width="150px">Comments</td>
+          <td>
+            <p>There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone.</p>
+          </td>
+        </tr>
+        <tr>
+          <td colspan="2" class="structure">
+            <a name="Encounter.indication.reference"></a>
+            <b>Encounter.indication.reference</b>
+          </td>
+        </tr>
+        <tr>
+          <td width="150px">Definition</td>
+          <td>
+            <p>A reference to a location at which the other resource is found. The reference may be a relative reference, in which case it is relative to the service base URL, or an absolute URL that resolves to the location where the resource is found. The reference may be version specific or not. If the reference is not to a FHIR RESTful server, then it should be assumed to be version specific. Internal fragment references (start with '#') refer to contained resources.</p>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <a href="http://www.hl7.org/fhir/DSTU2/conformance-rules.html#conformance">Control</a>
+          </td>
+          <td>0..1 ?</td>
+        </tr>
+        <tr>
+          <td>
+            <a href="http://www.hl7.org/fhir/DSTU2/datatypes.html">Type</a>
+          </td>
+          <td>
+            <a href="http://www.hl7.org/fhir/DSTU2/datatypes.html#string" xmlns="http://www.w3.org/1999/xhtml">String</a>
+          </td>
+        </tr>
+        <tr>
+          <td width="150px">Comments</td>
+          <td>
+            <p>Using absolute URLs provides a stable scalable approach suitable for a cloud/web context, while using relative/logical references provides a flexible approach suitable for use when trading across closed eco-system boundaries.   Absolute URLs do not need to point to a FHIR RESTful server, though this is the preferred approach. If the URL conforms to the structure "/[type]/[id]" then it should be assumed that the reference is to a FHIR RESTful server.</p>
+          </td>
+        </tr>
+        <tr>
+          <td colspan="2" class="structure">
+            <a name="Encounter.indication.display"></a>
+            <b>Encounter.indication.display</b>
+          </td>
+        </tr>
+        <tr>
+          <td width="150px">Definition</td>
+          <td>
+            <p>Plain text narrative that identifies the resource in addition to the resource reference.</p>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <a href="http://www.hl7.org/fhir/DSTU2/conformance-rules.html#conformance">Control</a>
+          </td>
+          <td>0..1 ?</td>
+        </tr>
+        <tr>
+          <td>
+            <a href="http://www.hl7.org/fhir/DSTU2/datatypes.html">Type</a>
+          </td>
+          <td>
+            <a href="http://www.hl7.org/fhir/DSTU2/datatypes.html#string" xmlns="http://www.w3.org/1999/xhtml">String</a>
+          </td>
+        </tr>
+        <tr>
+          <td width="150px">Comments</td>
+          <td>
+            <p>This is generally not the same as the Resource.text of the referenced resource.  The purpose is to identify what's being referenced, not to fully describe it.</p>
+          </td>
+        </tr>
+        <tr>
+          <td colspan="2" class="structure">
             <a name="Encounter.hospitalization"></a>
             <b>Encounter.hospitalization</b>
           </td>
@@ -6375,15 +6527,13 @@
         </tr>
         <tr>
           <td width="150px">Definition</td>
-          <td>
-            <p>From where patient was admitted (physician referral, transfer).</p>
-          </td>
+          <td></td>
         </tr>
         <tr>
           <td>
             <a href="http://www.hl7.org/fhir/DSTU2/conformance-rules.html#conformance">Control</a>
           </td>
-          <td>0..1 ?</td>
+          <td>0..*</td>
         </tr>
         <tr>
           <td>
@@ -6391,23 +6541,14 @@
           </td>
           <td>
             <div class="binding-description" xmlns="http://www.w3.org/1999/xhtml">
-              <p>From where the patient was admitted.</p>
-              <p>The codes SHOULD be taken from <a href="http://hl7.org/fhir/ValueSet/encounter-admit-source">http://hl7.org/fhir/ValueSet/encounter-admit-source</a></p>; other codes may be used where these codes are not suitable</div>
-          </td>
-        </tr>
-        <tr>
-          <td>
-            <a href="http://www.hl7.org/fhir/DSTU2/datatypes.html">Type</a>
-          </td>
-          <td>
-            <a href="http://www.hl7.org/fhir/DSTU2/datatypes.html#codeableconcept" xmlns="http://www.w3.org/1999/xhtml">CodeableConcept</a>
+              <p>The method of admission</p>
+              <p>The codes SHALL be taken from <a href="dch-admissionmethod-1.html">https://fhir.nhs.uk/ValueSet/DCH-AdmissionMethod-1</a></p>
+            </div>
           </td>
         </tr>
         <tr>
           <td width="150px">Comments</td>
-          <td>
-            <p>Not all terminology uses fit this general pattern. In some cases, models should not use CodeableConcept and use Coding directly and provide their own structure for managing text, codings, translations and the relationship between elements and pre- and post-coordination.</p>
-          </td>
+          <td></td>
         </tr>
         <tr>
           <td colspan="2" class="structure">
@@ -6485,35 +6626,17 @@
         </tr>
         <tr>
           <td width="150px">Definition</td>
-          <td>
-            <p>A reference to a code defined by a terminology system.</p>
-          </td>
+          <td></td>
         </tr>
         <tr>
           <td>
             <a href="http://www.hl7.org/fhir/DSTU2/conformance-rules.html#conformance">Control</a>
           </td>
-          <td>0..* ?</td>
-        </tr>
-        <tr>
-          <td>
-            <a href="http://www.hl7.org/fhir/DSTU2/datatypes.html">Type</a>
-          </td>
-          <td>
-            <a href="http://www.hl7.org/fhir/DSTU2/datatypes.html#coding" xmlns="http://www.w3.org/1999/xhtml">Coding</a>
-          </td>
-        </tr>
-        <tr>
-          <td width="150px">Requirements</td>
-          <td>
-            <p>Allows for translations and alternate encodings within a code system.  Also supports communication of the same instance to systems requiring different encodings.</p>
-          </td>
+          <td>0..1</td>
         </tr>
         <tr>
           <td width="150px">Comments</td>
-          <td>
-            <p>Codes may be defined very casually in enumerations, or code lists, up to very formal definitions such as SNOMED CT - see the HL7 v3 Core Principles for more information.  Ordering of codings is undefined and SHALL NOT be used to infer meaning. Generally, at most only one of the coding values will be labelled as UserSelected = true.</p>
-          </td>
+          <td></td>
         </tr>
         <tr>
           <td colspan="2" class="structure">
@@ -6591,35 +6714,21 @@
         </tr>
         <tr>
           <td width="150px">Definition</td>
-          <td>
-            <p>The identification of the code system that defines the meaning of the symbol in the code.</p>
-          </td>
+          <td></td>
         </tr>
         <tr>
           <td>
             <a href="http://www.hl7.org/fhir/DSTU2/conformance-rules.html#conformance">Control</a>
           </td>
-          <td>0..1 ?</td>
-        </tr>
-        <tr>
-          <td>
-            <a href="http://www.hl7.org/fhir/DSTU2/datatypes.html">Type</a>
-          </td>
-          <td>
-            <a href="http://www.hl7.org/fhir/DSTU2/datatypes.html#uri" xmlns="http://www.w3.org/1999/xhtml">Uri</a>
-          </td>
-        </tr>
-        <tr>
-          <td width="150px">Requirements</td>
-          <td>
-            <p>Need to be unambiguous about the source of the definition of the symbol.</p>
-          </td>
+          <td>1..*</td>
         </tr>
         <tr>
           <td width="150px">Comments</td>
-          <td>
-            <p>The URI may be an OID (urn:oid:...) or a UUID (urn:uuid:...).  OIDs and UUIDs SHALL be references to the HL7 OID registry. Otherwise, the URI should come from HL7's list of FHIR defined special URIs or it should de-reference to some definition that establish the system clearly and unambiguously.</p>
-          </td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>Fixed Value</td>
+          <td>https://fhir.nhs.uk/DCH-AdmissionMethod-1</td>
         </tr>
         <tr>
           <td colspan="2" class="structure">
@@ -6661,35 +6770,17 @@
         </tr>
         <tr>
           <td width="150px">Definition</td>
-          <td>
-            <p>A symbol in syntax defined by the system. The symbol may be a predefined code or an expression in a syntax defined by the coding system (e.g. post-coordination).</p>
-          </td>
+          <td></td>
         </tr>
         <tr>
           <td>
             <a href="http://www.hl7.org/fhir/DSTU2/conformance-rules.html#conformance">Control</a>
           </td>
-          <td>0..1 ?</td>
-        </tr>
-        <tr>
-          <td>
-            <a href="http://www.hl7.org/fhir/DSTU2/datatypes.html">Type</a>
-          </td>
-          <td>
-            <a href="http://www.hl7.org/fhir/DSTU2/datatypes.html#code" xmlns="http://www.w3.org/1999/xhtml">Code</a>
-          </td>
-        </tr>
-        <tr>
-          <td width="150px">Requirements</td>
-          <td>
-            <p>Need to refer to a particular code in the system.</p>
-          </td>
+          <td>1..*</td>
         </tr>
         <tr>
           <td width="150px">Comments</td>
-          <td>
-            <p>Note that FHIR strings may not exceed 1MB in size</p>
-          </td>
+          <td></td>
         </tr>
         <tr>
           <td colspan="2" class="structure">
@@ -6699,35 +6790,17 @@
         </tr>
         <tr>
           <td width="150px">Definition</td>
-          <td>
-            <p>A representation of the meaning of the code in the system, following the rules of the system.</p>
-          </td>
+          <td></td>
         </tr>
         <tr>
           <td>
             <a href="http://www.hl7.org/fhir/DSTU2/conformance-rules.html#conformance">Control</a>
           </td>
-          <td>0..1 ?</td>
-        </tr>
-        <tr>
-          <td>
-            <a href="http://www.hl7.org/fhir/DSTU2/datatypes.html">Type</a>
-          </td>
-          <td>
-            <a href="http://www.hl7.org/fhir/DSTU2/datatypes.html#string" xmlns="http://www.w3.org/1999/xhtml">String</a>
-          </td>
-        </tr>
-        <tr>
-          <td width="150px">Requirements</td>
-          <td>
-            <p>Need to be able to carry a human-readable meaning of the code for readers that do not know  the system.</p>
-          </td>
+          <td>1..*</td>
         </tr>
         <tr>
           <td width="150px">Comments</td>
-          <td>
-            <p>Note that FHIR strings may not exceed 1MB in size</p>
-          </td>
+          <td></td>
         </tr>
         <tr>
           <td colspan="2" class="structure">
@@ -8757,15 +8830,13 @@
         </tr>
         <tr>
           <td width="150px">Definition</td>
-          <td>
-            <p>Category or kind of location after discharge.</p>
-          </td>
+          <td></td>
         </tr>
         <tr>
           <td>
             <a href="http://www.hl7.org/fhir/DSTU2/conformance-rules.html#conformance">Control</a>
           </td>
-          <td>0..1 ?</td>
+          <td>0..*</td>
         </tr>
         <tr>
           <td>
@@ -8773,23 +8844,14 @@
           </td>
           <td>
             <div class="binding-description" xmlns="http://www.w3.org/1999/xhtml">
-              <p>Discharge Disposition</p>
-              <p>The codes SHOULD be taken from <a href="http://hl7.org/fhir/ValueSet/encounter-discharge-disposition">http://hl7.org/fhir/ValueSet/encounter-discharge-disposition</a></p>; other codes may be used where these codes are not suitable</div>
-          </td>
-        </tr>
-        <tr>
-          <td>
-            <a href="http://www.hl7.org/fhir/DSTU2/datatypes.html">Type</a>
-          </td>
-          <td>
-            <a href="http://www.hl7.org/fhir/DSTU2/datatypes.html#codeableconcept" xmlns="http://www.w3.org/1999/xhtml">CodeableConcept</a>
+              <p>The method of discharge from hospital</p>
+              <p>The codes SHALL be taken from <a href="dch-dischargemethod-1.html">https://fhir.nhs.uk/ValueSet/DCH-DischargeMethod-1</a></p>
+            </div>
           </td>
         </tr>
         <tr>
           <td width="150px">Comments</td>
-          <td>
-            <p>Not all terminology uses fit this general pattern. In some cases, models should not use CodeableConcept and use Coding directly and provide their own structure for managing text, codings, translations and the relationship between elements and pre- and post-coordination.</p>
-          </td>
+          <td></td>
         </tr>
         <tr>
           <td colspan="2" class="structure">
@@ -8867,35 +8929,17 @@
         </tr>
         <tr>
           <td width="150px">Definition</td>
-          <td>
-            <p>A reference to a code defined by a terminology system.</p>
-          </td>
+          <td></td>
         </tr>
         <tr>
           <td>
             <a href="http://www.hl7.org/fhir/DSTU2/conformance-rules.html#conformance">Control</a>
           </td>
-          <td>0..* ?</td>
-        </tr>
-        <tr>
-          <td>
-            <a href="http://www.hl7.org/fhir/DSTU2/datatypes.html">Type</a>
-          </td>
-          <td>
-            <a href="http://www.hl7.org/fhir/DSTU2/datatypes.html#coding" xmlns="http://www.w3.org/1999/xhtml">Coding</a>
-          </td>
-        </tr>
-        <tr>
-          <td width="150px">Requirements</td>
-          <td>
-            <p>Allows for translations and alternate encodings within a code system.  Also supports communication of the same instance to systems requiring different encodings.</p>
-          </td>
+          <td>0..1</td>
         </tr>
         <tr>
           <td width="150px">Comments</td>
-          <td>
-            <p>Codes may be defined very casually in enumerations, or code lists, up to very formal definitions such as SNOMED CT - see the HL7 v3 Core Principles for more information.  Ordering of codings is undefined and SHALL NOT be used to infer meaning. Generally, at most only one of the coding values will be labelled as UserSelected = true.</p>
-          </td>
+          <td></td>
         </tr>
         <tr>
           <td colspan="2" class="structure">
@@ -8973,35 +9017,21 @@
         </tr>
         <tr>
           <td width="150px">Definition</td>
-          <td>
-            <p>The identification of the code system that defines the meaning of the symbol in the code.</p>
-          </td>
+          <td></td>
         </tr>
         <tr>
           <td>
             <a href="http://www.hl7.org/fhir/DSTU2/conformance-rules.html#conformance">Control</a>
           </td>
-          <td>0..1 ?</td>
-        </tr>
-        <tr>
-          <td>
-            <a href="http://www.hl7.org/fhir/DSTU2/datatypes.html">Type</a>
-          </td>
-          <td>
-            <a href="http://www.hl7.org/fhir/DSTU2/datatypes.html#uri" xmlns="http://www.w3.org/1999/xhtml">Uri</a>
-          </td>
-        </tr>
-        <tr>
-          <td width="150px">Requirements</td>
-          <td>
-            <p>Need to be unambiguous about the source of the definition of the symbol.</p>
-          </td>
+          <td>1..*</td>
         </tr>
         <tr>
           <td width="150px">Comments</td>
-          <td>
-            <p>The URI may be an OID (urn:oid:...) or a UUID (urn:uuid:...).  OIDs and UUIDs SHALL be references to the HL7 OID registry. Otherwise, the URI should come from HL7's list of FHIR defined special URIs or it should de-reference to some definition that establish the system clearly and unambiguously.</p>
-          </td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>Fixed Value</td>
+          <td>https://fhir.nhs.uk/DCH-DischargeMethod-1</td>
         </tr>
         <tr>
           <td colspan="2" class="structure">
@@ -9043,35 +9073,17 @@
         </tr>
         <tr>
           <td width="150px">Definition</td>
-          <td>
-            <p>A symbol in syntax defined by the system. The symbol may be a predefined code or an expression in a syntax defined by the coding system (e.g. post-coordination).</p>
-          </td>
+          <td></td>
         </tr>
         <tr>
           <td>
             <a href="http://www.hl7.org/fhir/DSTU2/conformance-rules.html#conformance">Control</a>
           </td>
-          <td>0..1 ?</td>
-        </tr>
-        <tr>
-          <td>
-            <a href="http://www.hl7.org/fhir/DSTU2/datatypes.html">Type</a>
-          </td>
-          <td>
-            <a href="http://www.hl7.org/fhir/DSTU2/datatypes.html#code" xmlns="http://www.w3.org/1999/xhtml">Code</a>
-          </td>
-        </tr>
-        <tr>
-          <td width="150px">Requirements</td>
-          <td>
-            <p>Need to refer to a particular code in the system.</p>
-          </td>
+          <td>1..*</td>
         </tr>
         <tr>
           <td width="150px">Comments</td>
-          <td>
-            <p>Note that FHIR strings may not exceed 1MB in size</p>
-          </td>
+          <td></td>
         </tr>
         <tr>
           <td colspan="2" class="structure">
@@ -9081,35 +9093,17 @@
         </tr>
         <tr>
           <td width="150px">Definition</td>
-          <td>
-            <p>A representation of the meaning of the code in the system, following the rules of the system.</p>
-          </td>
+          <td></td>
         </tr>
         <tr>
           <td>
             <a href="http://www.hl7.org/fhir/DSTU2/conformance-rules.html#conformance">Control</a>
           </td>
-          <td>0..1 ?</td>
-        </tr>
-        <tr>
-          <td>
-            <a href="http://www.hl7.org/fhir/DSTU2/datatypes.html">Type</a>
-          </td>
-          <td>
-            <a href="http://www.hl7.org/fhir/DSTU2/datatypes.html#string" xmlns="http://www.w3.org/1999/xhtml">String</a>
-          </td>
-        </tr>
-        <tr>
-          <td width="150px">Requirements</td>
-          <td>
-            <p>Need to be able to carry a human-readable meaning of the code for readers that do not know  the system.</p>
-          </td>
+          <td>1..*</td>
         </tr>
         <tr>
           <td width="150px">Comments</td>
-          <td>
-            <p>Note that FHIR strings may not exceed 1MB in size</p>
-          </td>
+          <td></td>
         </tr>
         <tr>
           <td colspan="2" class="structure">

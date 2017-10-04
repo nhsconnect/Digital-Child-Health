@@ -1,7 +1,7 @@
 {
   "resourceType": "StructureDefinition",
   "meta": {
-    "lastUpdated": "2017-09-26T08:53:34.673+01:00",
+    "lastUpdated": "2017-10-04T19:09:48.753+01:00",
     "tag": [
       {
         "system": "urn:hscic:publishOrder",
@@ -7405,6 +7405,7 @@
             "xpath": "not(exists(f:value)) or exists(f:system)"
           }
         ],
+        "mustSupport": true,
         "isSummary": true,
         "mapping": [
           {
@@ -14693,7 +14694,7 @@
         "name": "careProfessionalType",
         "short": "Roles/organizations the practitioner is associated with",
         "definition": "The list of roles/organizations that the practitioner is associated with.",
-        "min": 0,
+        "min": 1,
         "max": "1",
         "base": {
           "path": "Practitioner.practitionerRole",
@@ -14878,7 +14879,7 @@
         "path": "Practitioner.practitionerRole.managingOrganization",
         "short": "Organization where the roles are performed",
         "definition": "The organization where the Practitioner performs the roles associated.",
-        "min": 0,
+        "min": 1,
         "max": "1",
         "base": {
           "path": "Practitioner.practitionerRole.managingOrganization",
@@ -14889,7 +14890,7 @@
           {
             "code": "Reference",
             "profile": [
-              "https://fhir.nhs.uk/StructureDefinition/CareConnect-DCH-Organization-1"
+              "https://fhir.nhs.uk/StructureDefinition/CareConnect-DCH-Team-Organization-1"
             ]
           }
         ],
@@ -15127,7 +15128,7 @@
         "definition": "Roles which this practitioner is authorized to perform for the organization.",
         "comments": "A person may have more than one role. At least one role is required.",
         "requirements": "Need to know what authority the practitioner has - what can they do?",
-        "min": 0,
+        "min": 1,
         "max": "1",
         "base": {
           "path": "Practitioner.practitionerRole.role",
@@ -15158,10 +15159,10 @@
         ],
         "isSummary": true,
         "binding": {
-          "strength": "example",
-          "description": "The role a person plays representing an organization",
+          "strength": "required",
+          "description": "The type of care professional or team",
           "valueSetReference": {
-            "reference": "http://hl7.org/fhir/ValueSet/practitioner-role"
+            "reference": "https://fhir.nhs.uk/ValueSet/DCH-ProfessionalContactType-1"
           }
         },
         "mapping": [
@@ -15291,7 +15292,7 @@
         "definition": "A reference to a code defined by a terminology system.",
         "comments": "Codes may be defined very casually in enumerations, or code lists, up to very formal definitions such as SNOMED CT - see the HL7 v3 Core Principles for more information.  Ordering of codings is undefined and SHALL NOT be used to infer meaning. Generally, at most only one of the coding values will be labelled as UserSelected = true.",
         "requirements": "Allows for translations and alternate encodings within a code system.  Also supports communication of the same instance to systems requiring different encodings.",
-        "min": 0,
+        "min": 1,
         "max": "*",
         "base": {
           "path": "CodeableConcept.coding",
@@ -15448,7 +15449,7 @@
         "definition": "The identification of the code system that defines the meaning of the symbol in the code.",
         "comments": "The URI may be an OID (urn:oid:...) or a UUID (urn:uuid:...).  OIDs and UUIDs SHALL be references to the HL7 OID registry. Otherwise, the URI should come from HL7's list of FHIR defined special URIs or it should de-reference to some definition that establish the system clearly and unambiguously.",
         "requirements": "Need to be unambiguous about the source of the definition of the symbol.",
-        "min": 0,
+        "min": 1,
         "max": "1",
         "base": {
           "path": "Coding.system",
@@ -15460,6 +15461,7 @@
             "code": "uri"
           }
         ],
+        "fixedUri": "https://fhir.nhs.uk/DCH-ProfessionalContactType-1",
         "condition": [
           "ele-1"
         ],
@@ -15557,7 +15559,7 @@
         "definition": "A symbol in syntax defined by the system. The symbol may be a predefined code or an expression in a syntax defined by the coding system (e.g. post-coordination).",
         "comments": "Note that FHIR strings may not exceed 1MB in size",
         "requirements": "Need to refer to a particular code in the system.",
-        "min": 0,
+        "min": 1,
         "max": "1",
         "base": {
           "path": "Coding.code",
@@ -15612,7 +15614,7 @@
         "definition": "A representation of the meaning of the code in the system, following the rules of the system.",
         "comments": "Note that FHIR strings may not exceed 1MB in size",
         "requirements": "Need to be able to carry a human-readable meaning of the code for readers that do not know  the system.",
-        "min": 0,
+        "min": 1,
         "max": "1",
         "base": {
           "path": "Coding.display",
@@ -15776,8 +15778,8 @@
         "short": "Specific specialty of the practitioner",
         "definition": "Specific specialty of the practitioner.",
         "comments": "Not all terminology uses fit this general pattern. In some cases, models should not use CodeableConcept and use Coding directly and provide their own structure for managing text, codings, translations and the relationship between elements and pre- and post-coordination.",
-        "min": 0,
-        "max": "*",
+        "min": 1,
+        "max": "1",
         "base": {
           "path": "Practitioner.practitionerRole.specialty",
           "min": 0,
@@ -15807,10 +15809,10 @@
         ],
         "isSummary": true,
         "binding": {
-          "strength": "example",
-          "description": "Specific specialty associated with the agency",
+          "strength": "required",
+          "description": "The specialty of the care professional or team",
           "valueSetReference": {
-            "reference": "http://hl7.org/fhir/ValueSet/practitioner-specialty"
+            "reference": "https://fhir.nhs.uk/ValueSet/DCH-Specialty-1"
           }
         },
         "mapping": [
@@ -15940,7 +15942,7 @@
         "definition": "A reference to a code defined by a terminology system.",
         "comments": "Codes may be defined very casually in enumerations, or code lists, up to very formal definitions such as SNOMED CT - see the HL7 v3 Core Principles for more information.  Ordering of codings is undefined and SHALL NOT be used to infer meaning. Generally, at most only one of the coding values will be labelled as UserSelected = true.",
         "requirements": "Allows for translations and alternate encodings within a code system.  Also supports communication of the same instance to systems requiring different encodings.",
-        "min": 0,
+        "min": 1,
         "max": "*",
         "base": {
           "path": "CodeableConcept.coding",
@@ -16097,7 +16099,7 @@
         "definition": "The identification of the code system that defines the meaning of the symbol in the code.",
         "comments": "The URI may be an OID (urn:oid:...) or a UUID (urn:uuid:...).  OIDs and UUIDs SHALL be references to the HL7 OID registry. Otherwise, the URI should come from HL7's list of FHIR defined special URIs or it should de-reference to some definition that establish the system clearly and unambiguously.",
         "requirements": "Need to be unambiguous about the source of the definition of the symbol.",
-        "min": 0,
+        "min": 1,
         "max": "1",
         "base": {
           "path": "Coding.system",
@@ -16109,6 +16111,7 @@
             "code": "uri"
           }
         ],
+        "fixedUri": "https://fhir.nhs.uk/DCH-Specialty-1",
         "condition": [
           "ele-1"
         ],
@@ -16206,7 +16209,7 @@
         "definition": "A symbol in syntax defined by the system. The symbol may be a predefined code or an expression in a syntax defined by the coding system (e.g. post-coordination).",
         "comments": "Note that FHIR strings may not exceed 1MB in size",
         "requirements": "Need to refer to a particular code in the system.",
-        "min": 0,
+        "min": 1,
         "max": "1",
         "base": {
           "path": "Coding.code",
@@ -16261,7 +16264,7 @@
         "definition": "A representation of the meaning of the code in the system, following the rules of the system.",
         "comments": "Note that FHIR strings may not exceed 1MB in size",
         "requirements": "Need to be able to carry a human-readable meaning of the code for readers that do not know  the system.",
-        "min": 0,
+        "min": 1,
         "max": "1",
         "base": {
           "path": "Coding.display",
@@ -16951,7 +16954,7 @@
         "path": "Practitioner.practitionerRole.healthcareService",
         "short": "The list of healthcare services that this worker provides for this role's Organization/Location(s)",
         "definition": "The list of healthcare services that this worker provides for this role's Organization/Location(s).",
-        "min": 0,
+        "min": 1,
         "max": "*",
         "base": {
           "path": "Practitioner.practitionerRole.healthcareService",
@@ -16962,7 +16965,7 @@
           {
             "code": "Reference",
             "profile": [
-              "http://hl7.org/fhir/StructureDefinition/HealthcareService"
+              "https://fhir.nhs.uk/StructureDefinition/DCH-HealthcareService-1"
             ]
           }
         ],
@@ -20833,6 +20836,10 @@
         "max": "1"
       },
       {
+        "path": "Practitioner.telecom",
+        "mustSupport": true
+      },
+      {
         "path": "Practitioner.address.use",
         "exampleCode": "work"
       },
@@ -20971,15 +20978,86 @@
       {
         "path": "Practitioner.practitionerRole",
         "name": "careProfessionalType",
+        "min": 1,
         "max": "1"
       },
       {
         "path": "Practitioner.practitionerRole.managingOrganization",
+        "min": 1,
         "type": [
           {
             "code": "Reference",
             "profile": [
-              "https://fhir.nhs.uk/StructureDefinition/CareConnect-DCH-Organization-1"
+              "https://fhir.nhs.uk/StructureDefinition/CareConnect-DCH-Team-Organization-1"
+            ]
+          }
+        ]
+      },
+      {
+        "path": "Practitioner.practitionerRole.role",
+        "min": 1,
+        "binding": {
+          "strength": "required",
+          "description": "The type of care professional or team",
+          "valueSetReference": {
+            "reference": "https://fhir.nhs.uk/ValueSet/DCH-ProfessionalContactType-1"
+          }
+        }
+      },
+      {
+        "path": "Practitioner.practitionerRole.role.coding",
+        "min": 1
+      },
+      {
+        "path": "Practitioner.practitionerRole.role.coding.system",
+        "min": 1,
+        "fixedUri": "https://fhir.nhs.uk/DCH-ProfessionalContactType-1"
+      },
+      {
+        "path": "Practitioner.practitionerRole.role.coding.code",
+        "min": 1
+      },
+      {
+        "path": "Practitioner.practitionerRole.role.coding.display",
+        "min": 1
+      },
+      {
+        "path": "Practitioner.practitionerRole.specialty",
+        "min": 1,
+        "max": "1",
+        "binding": {
+          "strength": "required",
+          "description": "The specialty of the care professional or team",
+          "valueSetReference": {
+            "reference": "https://fhir.nhs.uk/ValueSet/DCH-Specialty-1"
+          }
+        }
+      },
+      {
+        "path": "Practitioner.practitionerRole.specialty.coding",
+        "min": 1
+      },
+      {
+        "path": "Practitioner.practitionerRole.specialty.coding.system",
+        "min": 1,
+        "fixedUri": "https://fhir.nhs.uk/DCH-Specialty-1"
+      },
+      {
+        "path": "Practitioner.practitionerRole.specialty.coding.code",
+        "min": 1
+      },
+      {
+        "path": "Practitioner.practitionerRole.specialty.coding.display",
+        "min": 1
+      },
+      {
+        "path": "Practitioner.practitionerRole.healthcareService",
+        "min": 1,
+        "type": [
+          {
+            "code": "Reference",
+            "profile": [
+              "https://fhir.nhs.uk/StructureDefinition/DCH-HealthcareService-1"
             ]
           }
         ]
