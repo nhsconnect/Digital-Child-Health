@@ -2,6 +2,7 @@ This 'DCH-Bundle-1' Bundle resource profile is used as a container to collect a 
 
 - [DCH-MessageHeader-1] - where the coding and display for the event element is fixed to 'Newborn Hearing'
 - [CareConnect-DCH-Organization-1]
+- [DCH-HealthcareService-1]
 - [CareConnect-DCH-Patient-1]
 - [CareConnect-DCH-Encounter-1]
 - [CareConnect-DCH-HearingTest-Procedure-1]
@@ -27,6 +28,7 @@ The Child Health Event data items are fulfilled by elements within the FHIR reso
 [CareConnect-DCH-Organization-1]:careconnect-dch-organization-1.html
 [CareConnect-DCH-Patient-1]:careconnect-dch-patient-1.html
 [CareConnect-DCH-Encounter-1]:careconnect-dch-encounter-1.html
+[DCH-HealthcareService-1]:dch-healthcareservice-1.html
 [CareConnect-DCH-Practitioner-1]:careconnect-dch-practitioner-1.html
 [CareConnect-DCH-Location-1]:careconnect-dch-location-1.html
 [CareConnect-DCH-HearingTest-Procedure-1]:careconnect-dch-hearingtest-procedure-1.html

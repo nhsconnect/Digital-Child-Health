@@ -1,0 +1,1 @@
+The date range that this organization should be considered available.

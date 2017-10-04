@@ -16,16 +16,16 @@ Organisation of the care professional team (https://fhir.nhs.uk/StructureDefinit
 Team associated with care professional (https://fhir.nhs.uk/StructureDefinition/CareConnect-DCH-Team-Organization-1)
 /Bundle/entry[7]/resource/Organization/name/@value
 
-Name of care professional (https://fhir.nhs.uk/StructureDefinition/CareConnect-DCH-ProfessionalContact-Practitioner-1)
+Name of care professional (https://fhir.nhs.uk/StructureDefinition/CareConnect-DCH-Practitioner-1)
 /Bundle/entry[6]/resource/Practitioner/name
 
-Care professional type (https://fhir.nhs.uk/StructureDefinition/CareConnect-DCH-ProfessionalContact-Practitioner-1)
+Care professional type (https://fhir.nhs.uk/StructureDefinition/CareConnect-DCH-Practitioner-1)
 /Bundle/entry[6]/resource/Practitioner/practitionerRole/role/coding/code/@value
 
 care professional association (to child) (https://fhir.nhs.uk/StructureDefinition/DCH-ProfessionalContact-EpisodeOfCare-1)
 /Bundle/entry[5]/resource/EpisodeOfCare/type/coding/code/@value
 
-Specialty (https://fhir.nhs.uk/StructureDefinition/CareConnect-DCH-ProfessionalContact-Practitioner-1)
+Specialty (https://fhir.nhs.uk/StructureDefinition/CareConnect-DCH-Practitioner-1)
 /Bundle/entry[6]/resource/Practitioner/practitionerRole/specialty/coding/code/@value
 
 Phone number
@@ -230,7 +230,7 @@ End date
 			<Practitioner>
 				<id value="681ab654-a5fc-11e7-abc4-cec278b6b50a"/>
 				<meta>
-					<profile value="https://fhir.nhs.uk/StructureDefinition/CareConnect-DCH-ProfessionalContact-Practitioner-1"/>
+					<profile value="https://fhir.nhs.uk/StructureDefinition/CareConnect-DCH-Practitioner-1"/>
 				</meta>
 				<identifier>
 					<system value="https://fhir.nhs.net/Id/sds-role-profile-id"/>

@@ -1,0 +1,1 @@
+This HealthcareService resource is constrained to represent a Child Health event service.

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValueSet xmlns="http://hl7.org/fhir">
+	<meta>
+		<lastUpdated value="2016-08-03T00:00:00+01:00"/>
+	</meta>
+	<url value="https://fhir.nhs.uk/ValueSet/DCH-AssociationType-1"/>
+	<copyright value="Copyright © 2016 Health and Social Care Information Centre. NHS Digital is the trading name of the Health and Social Care Information Centre."/>
+	<version value="1.0.0"/>
+	<name value="Association Type"/>
+	<status value="draft"/>
+	<publisher value="NHS Digital"/>
+	<description value="The type of association between the patient and the care professional or team."/>
+	<compose>
+		<include>
+			<system value="https://fhir.nhs.uk/DCH-AssociationType-1"/>
+			<concept>
+				<code value="Assumed"/>
+				<display value="Assumed"/>
+			</concept>
+			<concept>
+				<code value="Temporary"/>
+				<display value="Temporary"/>
+			</concept>
+			<concept>
+				<code value="Permanent"/>
+				<display value="Permanent"/>
+			</concept>
+		</include>
+	</compose>
+</ValueSet>

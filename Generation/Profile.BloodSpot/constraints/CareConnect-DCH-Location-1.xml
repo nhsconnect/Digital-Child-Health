@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <meta>
-    <lastUpdated value="2017-09-26T08:53:16.664+01:00" />
+    <lastUpdated value="2017-10-04T13:52:52.038+01:00" />
     <tag>
       <system value="urn:hscic:publishOrder" />
       <code value="22" />
@@ -5809,7 +5809,7 @@
     </element>
     <element>
       <path value="Location.physicalType" />
-      <short value="Physical form of the location" />
+      <short value="Physical form of the location for source of admission and discharge destination" />
       <definition value="Physical form of the location, e.g. building, room, vehicle, road." />
       <comments value="Not all terminology uses fit this general pattern. In some cases, models should not use CodeableConcept and use Coding directly and provide their own structure for managing text, codings, translations and the relationship between elements and pre- and post-coordination." />
       <requirements value="For purposes of showing relevant locations in queries, we need to categorize locations." />
@@ -5835,10 +5835,10 @@
       </constraint>
       <isSummary value="true" />
       <binding>
-        <strength value="example" />
-        <description value="Physical form of the location" />
+        <strength value="required" />
+        <description value="A code to identify the source of admission, or discharge destination" />
         <valueSetReference>
-          <reference value="http://hl7.org/fhir/ValueSet/location-physical-type" />
+          <reference value="https://fhir.nhs.uk/ValueSet/DCH-HospitalisationDetail-1" />
         </valueSetReference>
       </binding>
       <mapping>
@@ -6060,7 +6060,7 @@
       <definition value="The identification of the code system that defines the meaning of the symbol in the code." />
       <comments value="The URI may be an OID (urn:oid:...) or a UUID (urn:uuid:...).  OIDs and UUIDs SHALL be references to the HL7 OID registry. Otherwise, the URI should come from HL7's list of FHIR defined special URIs or it should de-reference to some definition that establish the system clearly and unambiguously." />
       <requirements value="Need to be unambiguous about the source of the definition of the symbol." />
-      <min value="0" />
+      <min value="1" />
       <max value="1" />
       <base>
         <path value="Coding.system" />
@@ -6070,6 +6070,7 @@
       <type>
         <code value="uri" />
       </type>
+      <fixedUri value="https://fhir.nhs.uk/DCH-HospitalisationDetail-1" />
       <condition value="ele-1" />
       <constraint>
         <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-expression">
@@ -6147,7 +6148,7 @@
       <definition value="A symbol in syntax defined by the system. The symbol may be a predefined code or an expression in a syntax defined by the coding system (e.g. post-coordination)." />
       <comments value="Note that FHIR strings may not exceed 1MB in size" />
       <requirements value="Need to refer to a particular code in the system." />
-      <min value="0" />
+      <min value="1" />
       <max value="1" />
       <base>
         <path value="Coding.code" />
@@ -6191,7 +6192,7 @@
       <definition value="A representation of the meaning of the code in the system, following the rules of the system." />
       <comments value="Note that FHIR strings may not exceed 1MB in size" />
       <requirements value="Need to be able to carry a human-readable meaning of the code for readers that do not know  the system." />
-      <min value="0" />
+      <min value="1" />
       <max value="1" />
       <base>
         <path value="Coding.display" />
@@ -7038,6 +7039,30 @@
     <element>
       <path value="Location.address.country" />
       <exampleString value="GBR" />
+    </element>
+    <element>
+      <path value="Location.physicalType" />
+      <short value="Physical form of the location for source of admission and discharge destination" />
+      <binding>
+        <strength value="required" />
+        <description value="A code to identify the source of admission, or discharge destination" />
+        <valueSetReference>
+          <reference value="https://fhir.nhs.uk/ValueSet/DCH-HospitalisationDetail-1" />
+        </valueSetReference>
+      </binding>
+    </element>
+    <element>
+      <path value="Location.physicalType.coding.system" />
+      <min value="1" />
+      <fixedUri value="https://fhir.nhs.uk/DCH-HospitalisationDetail-1" />
+    </element>
+    <element>
+      <path value="Location.physicalType.coding.code" />
+      <min value="1" />
+    </element>
+    <element>
+      <path value="Location.physicalType.coding.display" />
+      <min value="1" />
     </element>
     <element>
       <path value="Location.managingOrganization" />

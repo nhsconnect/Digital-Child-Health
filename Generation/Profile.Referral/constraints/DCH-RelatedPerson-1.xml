@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <meta>
-    <lastUpdated value="2017-07-24T14:05:33.704+01:00" />
+    <lastUpdated value="2017-09-26T14:18:03.101+01:00" />
     <tag>
       <system value="urn:hscic:publishOrder" />
       <code value="20" />
@@ -338,7 +338,7 @@
       <comments value="There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone." />
       <alias value="extensions" />
       <alias value="user content" />
-      <min value="0" />
+      <min value="1" />
       <max value="1" />
       <base>
         <path value="DomainResource.extension" />
@@ -2940,6 +2940,7 @@
         <human value="A system is required if a value is provided." />
         <xpath value="not(exists(f:value)) or exists(f:system)" />
       </constraint>
+      <mustSupport value="true" />
       <isSummary value="true" />
       <mapping>
         <identity value="rim" />
@@ -3524,6 +3525,7 @@
         <human value="All FHIR elements must have a @value or children" />
         <xpath value="@value|f:*|h:div" />
       </constraint>
+      <mustSupport value="true" />
       <isSummary value="true" />
       <mapping>
         <identity value="rim" />
@@ -4911,6 +4913,7 @@
     <element>
       <path value="RelatedPerson.extension" />
       <name value="householdMember" />
+      <min value="1" />
       <max value="1" />
       <type>
         <code value="Extension" />
@@ -4995,6 +4998,7 @@
     <element>
       <path value="RelatedPerson.telecom" />
       <max value="1" />
+      <mustSupport value="true" />
     </element>
     <element>
       <path value="RelatedPerson.gender" />
@@ -5013,6 +5017,7 @@
     <element>
       <path value="RelatedPerson.address" />
       <max value="1" />
+      <mustSupport value="true" />
     </element>
     <element>
       <path value="RelatedPerson.photo" />

@@ -43,10 +43,13 @@ For more information about message profiles visit the [Profiling FHIR] and for r
 
 The various downloads (including Schema files) and reference implementations are available on [FHIR website]. 
 
+[Profile.AdmissionDetails]: ../Profile.AdmissionDetails/Profile.AdmissionDetails.html
+[Profile.AdditionalDemographics]: ../Profile.AdditionalDemographics/Profile.AdditionalDemographics.html
 [Profile.AllergiesAndAdverseReactions]: ../Profile.AllergiesAndAdverseReactions/Profile.AllergiesAndAdverseReactions.html 
 [Profile.BloodSpot]: ../Profile.BloodSpot/Profile.BloodSpot.html
 [Profile.ClinicalRiskFactors]: ../Profile.ClinicalRiskFactors/Profile.ClinicalRiskFactors.html
 [Profile.ConditionsOrDiagnoses]: ../Profile.ConditionsOrDiagnoses/Profile.ConditionsOrDiagnoses.html
+[Profile.DischargeDetails]: ../Profile.DischargeDetails/Profile.DischargeDetails.html
 [Profile.FamilyHistory]: ../Profile.FamilyHistory/Profile.FamilyHistory.html
 [Profile.FeedingStatus]: ../Profile.FeedingStatus/Profile.FeedingStatus.html
 [Profile.ImmunisationAdministration]: ../Profile.ImmunisationAdministration/Profile.ImmunisationAdministration.html
