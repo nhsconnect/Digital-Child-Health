@@ -5,7 +5,7 @@
   },
   "url": "https://fhir.nhs.uk/ValueSet/DCH-ReferralUrgency-1",
   "name": "Referral Urgency",
-  "status": "active",
+  "status": "draft",
   "description": "The priority of the Referral Request.",
   "compose": {
     "include": [

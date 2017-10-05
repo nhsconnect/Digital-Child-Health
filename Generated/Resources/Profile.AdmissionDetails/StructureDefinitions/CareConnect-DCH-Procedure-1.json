@@ -8576,7 +8576,7 @@
           {
             "code": "Reference",
             "profile": [
-              "https://fhir.nhs.uk/StructureDefinition/CareConnect-DCH-Encounter-1"
+              "https://fhir.nhs.uk/StructureDefinition/CareConnect-DCH-Admission-Encounter-1"
             ]
           }
         ],
@@ -14679,7 +14679,7 @@
           {
             "code": "Reference",
             "profile": [
-              "https://fhir.nhs.uk/StructureDefinition/CareConnect-DCH-Encounter-1"
+              "https://fhir.nhs.uk/StructureDefinition/CareConnect-DCH-Admission-Encounter-1"
             ]
           }
         ]

@@ -1,7 +1,7 @@
 {
   "resourceType": "StructureDefinition",
   "meta": {
-    "lastUpdated": "2017-10-04T19:35:08.396+01:00",
+    "lastUpdated": "2017-10-05T16:11:17.602+01:00",
     "tag": [
       {
         "system": "urn:hscic:publishOrder",
@@ -5630,7 +5630,7 @@
         "path": "Encounter.participant",
         "short": "List of participants involved in the encounter",
         "definition": "The list of people involved in the encounter",
-        "min": 1,
+        "min": 0,
         "max": "*",
         "base": {
           "path": "Encounter.participant",
@@ -17809,8 +17809,7 @@
       },
       {
         "path": "Encounter.participant",
-        "definition": "The list of people involved in the encounter",
-        "min": 1
+        "definition": "The list of people involved in the encounter"
       },
       {
         "path": "Encounter.participant.individual",

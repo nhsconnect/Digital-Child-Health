@@ -5,7 +5,7 @@
   },
   "url": "https://fhir.nhs.uk/ValueSet/DCH-SpecialtyReferredTo-1",
   "name": "Specialty Referred To",
-  "status": "active",
+  "status": "draft",
   "description": "The type of community service or team that the patient has been referred into.",
   "compose": {
     "include": [

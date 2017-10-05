@@ -5,7 +5,7 @@
   },
   "url": "https://fhir.nhs.uk/ValueSet/DCH-ReasonForReferral-1",
   "name": "Reason For Referral",
-  "status": "active",
+  "status": "draft",
   "description": "Reason for Referral to include clinical intervention/event which triggers Referral.",
   "compose": {
     "include": [

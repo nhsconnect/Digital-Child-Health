@@ -2305,17 +2305,6 @@
           <td>0..*</td>
         </tr>
         <tr>
-          <td>
-            <a href="http://www.hl7.org/fhir/DSTU2/terminologies.html">Binding</a>
-          </td>
-          <td>
-            <div class="binding-description" xmlns="http://www.w3.org/1999/xhtml">
-              <p>A code to identify the source of admission, or discharge destination</p>
-              <p>The codes SHALL be taken from <a href="dch-hospitalisationdetail-1.html">https://fhir.nhs.uk/ValueSet/DCH-HospitalisationDetail-1</a></p>
-            </div>
-          </td>
-        </tr>
-        <tr>
           <td width="150px">Comments</td>
           <td></td>
         </tr>
@@ -2501,21 +2490,35 @@
         </tr>
         <tr>
           <td width="150px">Definition</td>
-          <td></td>
+          <td>
+            <p>The identification of the code system that defines the meaning of the symbol in the code.</p>
+          </td>
         </tr>
         <tr>
           <td>
             <a href="http://www.hl7.org/fhir/DSTU2/conformance-rules.html#conformance">Control</a>
           </td>
-          <td>1..*</td>
+          <td>0..1 ?</td>
+        </tr>
+        <tr>
+          <td>
+            <a href="http://www.hl7.org/fhir/DSTU2/datatypes.html">Type</a>
+          </td>
+          <td>
+            <a href="http://www.hl7.org/fhir/DSTU2/datatypes.html#uri" xmlns="http://www.w3.org/1999/xhtml">Uri</a>
+          </td>
+        </tr>
+        <tr>
+          <td width="150px">Requirements</td>
+          <td>
+            <p>Need to be unambiguous about the source of the definition of the symbol.</p>
+          </td>
         </tr>
         <tr>
           <td width="150px">Comments</td>
-          <td></td>
-        </tr>
-        <tr>
-          <td>Fixed Value</td>
-          <td>https://fhir.nhs.uk/DCH-HospitalisationDetail-1</td>
+          <td>
+            <p>The URI may be an OID (urn:oid:...) or a UUID (urn:uuid:...).  OIDs and UUIDs SHALL be references to the HL7 OID registry. Otherwise, the URI should come from HL7's list of FHIR defined special URIs or it should de-reference to some definition that establish the system clearly and unambiguously.</p>
+          </td>
         </tr>
         <tr>
           <td colspan="2" class="structure">
@@ -2557,17 +2560,35 @@
         </tr>
         <tr>
           <td width="150px">Definition</td>
-          <td></td>
+          <td>
+            <p>A symbol in syntax defined by the system. The symbol may be a predefined code or an expression in a syntax defined by the coding system (e.g. post-coordination).</p>
+          </td>
         </tr>
         <tr>
           <td>
             <a href="http://www.hl7.org/fhir/DSTU2/conformance-rules.html#conformance">Control</a>
           </td>
-          <td>1..*</td>
+          <td>0..1 ?</td>
+        </tr>
+        <tr>
+          <td>
+            <a href="http://www.hl7.org/fhir/DSTU2/datatypes.html">Type</a>
+          </td>
+          <td>
+            <a href="http://www.hl7.org/fhir/DSTU2/datatypes.html#code" xmlns="http://www.w3.org/1999/xhtml">Code</a>
+          </td>
+        </tr>
+        <tr>
+          <td width="150px">Requirements</td>
+          <td>
+            <p>Need to refer to a particular code in the system.</p>
+          </td>
         </tr>
         <tr>
           <td width="150px">Comments</td>
-          <td></td>
+          <td>
+            <p>Note that FHIR strings may not exceed 1MB in size</p>
+          </td>
         </tr>
         <tr>
           <td colspan="2" class="structure">
@@ -2577,17 +2598,35 @@
         </tr>
         <tr>
           <td width="150px">Definition</td>
-          <td></td>
+          <td>
+            <p>A representation of the meaning of the code in the system, following the rules of the system.</p>
+          </td>
         </tr>
         <tr>
           <td>
             <a href="http://www.hl7.org/fhir/DSTU2/conformance-rules.html#conformance">Control</a>
           </td>
-          <td>1..*</td>
+          <td>0..1 ?</td>
+        </tr>
+        <tr>
+          <td>
+            <a href="http://www.hl7.org/fhir/DSTU2/datatypes.html">Type</a>
+          </td>
+          <td>
+            <a href="http://www.hl7.org/fhir/DSTU2/datatypes.html#string" xmlns="http://www.w3.org/1999/xhtml">String</a>
+          </td>
+        </tr>
+        <tr>
+          <td width="150px">Requirements</td>
+          <td>
+            <p>Need to be able to carry a human-readable meaning of the code for readers that do not know  the system.</p>
+          </td>
         </tr>
         <tr>
           <td width="150px">Comments</td>
-          <td></td>
+          <td>
+            <p>Note that FHIR strings may not exceed 1MB in size</p>
+          </td>
         </tr>
         <tr>
           <td colspan="2" class="structure">

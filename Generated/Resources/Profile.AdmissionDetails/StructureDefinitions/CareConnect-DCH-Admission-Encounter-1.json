@@ -1,7 +1,7 @@
 {
   "resourceType": "StructureDefinition",
   "meta": {
-    "lastUpdated": "2017-10-04T19:35:08.396+01:00",
+    "lastUpdated": "2017-10-05T16:13:57.427+01:00",
     "tag": [
       {
         "system": "urn:hscic:publishOrder",
@@ -9,13 +9,13 @@
       }
     ]
   },
-  "url": "https://fhir.nhs.uk/StructureDefinition/CareConnect-DCH-Encounter-1",
+  "url": "https://fhir.nhs.uk/StructureDefinition/CareConnect-DCH-Admission-Encounter-1",
   "version": "1.1.0",
-  "name": "CareConnect-DCH-Encounter-1",
+  "name": "CareConnect-DCH-Admission-Encounter-1",
   "status": "active",
   "publisher": "HL7 UK",
   "date": "2017-02-22T13:44:33.2447401Z",
-  "description": "The encounter resource represents an encounter between a care professional and the patient (or patient's record), with further constraints applied to represent an encounter for a Child Health Event.",
+  "description": "The encounter resource represents an encounter between a care professional and the patient (or patient's record), with further constraints applied to represent a hospital admission for a Child Health Event.",
   "copyright": "Copyright © 2016 HL7 UK\r\n\r\nLicensed under the Apache License, Version 2.0 (the \"License\"); you may not use this file except in compliance with the License. You may obtain a copy of the License at\r\n\r\nhttp://www.apache.org/licenses/LICENSE-2.0\r\n\r\nUnless required by applicable law or agreed to in writing, software distributed under the License is distributed on an \"AS IS\" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the License for the specific language governing permissions and limitations under the License.\r\n\r\nHL7® FHIR® standard Copyright © 2011+ HL7\r\n\r\nThe HL7® FHIR® standard is used under the FHIR license. You may obtain a copy of the FHIR license at\r\n\r\nhttps://www.hl7.org/fhir/license.html",
   "fhirVersion": "1.0.2",
   "kind": "resource",
@@ -5630,7 +5630,7 @@
         "path": "Encounter.participant",
         "short": "List of participants involved in the encounter",
         "definition": "The list of people involved in the encounter",
-        "min": 1,
+        "min": 0,
         "max": "*",
         "base": {
           "path": "Encounter.participant",
@@ -11049,7 +11049,7 @@
           {
             "code": "Reference",
             "profile": [
-              "https://fhir.nhs.uk/StructureDefinition/CareConnect-DCH-Location-1"
+              "https://fhir.nhs.uk/StructureDefinition/CareConnect-DCH-SourceOfAdmission-Location-1"
             ]
           }
         ],
@@ -17405,7 +17405,7 @@
           {
             "code": "Reference",
             "profile": [
-              "https://fhir.nhs.uk/StructureDefinition/CareConnect-DCH-Encounter-1"
+              "https://fhir.nhs.uk/StructureDefinition/CareConnect-DCH-Admission-Encounter-1"
             ]
           }
         ],
@@ -17809,8 +17809,7 @@
       },
       {
         "path": "Encounter.participant",
-        "definition": "The list of people involved in the encounter",
-        "min": 1
+        "definition": "The list of people involved in the encounter"
       },
       {
         "path": "Encounter.participant.individual",
@@ -17936,7 +17935,7 @@
           {
             "code": "Reference",
             "profile": [
-              "https://fhir.nhs.uk/StructureDefinition/CareConnect-DCH-Location-1"
+              "https://fhir.nhs.uk/StructureDefinition/CareConnect-DCH-SourceOfAdmission-Location-1"
             ]
           }
         ]
@@ -18128,7 +18127,7 @@
           {
             "code": "Reference",
             "profile": [
-              "https://fhir.nhs.uk/StructureDefinition/CareConnect-DCH-Encounter-1"
+              "https://fhir.nhs.uk/StructureDefinition/CareConnect-DCH-Admission-Encounter-1"
             ]
           }
         ]

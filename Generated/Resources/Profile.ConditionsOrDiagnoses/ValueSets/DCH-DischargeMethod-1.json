@@ -6,7 +6,7 @@
   "url": "https://fhir.nhs.uk/ValueSet/DCH-DischargeMethod-1",
   "version": "1.0.0",
   "name": "Discharge Method",
-  "status": "active",
+  "status": "draft",
   "publisher": "NHS Digital",
   "description": "The method of discharge from hospital.",
   "copyright": "Copyright © 2016 Health and Social Care Information Centre. NHS Digital is the trading name of the Health and Social Care Information Centre.",

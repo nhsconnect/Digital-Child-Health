@@ -166,15 +166,14 @@
         <li>
           <a href="careconnect-dch-patient-1.html">CareConnect-DCH-Patient-1</a>
         </li>
-        <li>
-          <a href="careconnect-dch-encounter-1.html">CareConnect-DCH-Encounter-1</a>
-        </li>
+        <li>[CareConnect-DCH-Discharge-Encounter-1]</li>
         <li>
           <a href="careconnect-dch-practitioner-1.html">CareConnect-DCH-Practitioner-1</a>
         </li>
         <li>
           <a href="careconnect-dch-location-1.html">CareConnect-DCH-Location-1</a>
         </li>
+        <li>[CareConnect-DCH-DischargeDestination-Location-1]</li>
       </ul>
       <h3>Admission Details event data item mapping to FHIR profiles</h3>
       <hr />
@@ -190,7 +189,7 @@
         <tbody>
           <tr>
             <td>Date and Time of Discharge</td>
-            <td>CareConnect-DCH-Encounter-1.period.end</td>
+            <td>CareConnect-DCH-Discharge-Encounter-1.period.end</td>
             <td>Mandatory</td>
           </tr>
           <tr>
@@ -210,22 +209,22 @@
           </tr>
           <tr>
             <td>Discharge method</td>
-            <td>CareConnect-DCH-Encounter-1.hospitalization.dischargeDisposition</td>
+            <td>CareConnect-DCH-Discharge-Encounter-1.hospitalization.dischargeDisposition</td>
             <td>Required</td>
           </tr>
           <tr>
             <td>Discharge destination</td>
-            <td>CareConnect-DCH-Location-1.physicalType</td>
+            <td>CareConnect-DCH-DischargeDestination-Location-1.physicalType</td>
             <td>Required</td>
           </tr>
           <tr>
             <td>Discharge address</td>
-            <td>CareConnect-DCH-Location-1.address</td>
+            <td>CareConnect-DCH-DischargeDestination-Location-1.address</td>
             <td>Required</td>
           </tr>
           <tr>
             <td>Encounter Type</td>
-            <td>CareConnect-DCH-Encounter-1.type</td>
+            <td>CareConnect-DCH-Discharge-Encounter-1.type</td>
             <td>Mandatory</td>
           </tr>
         </tbody>

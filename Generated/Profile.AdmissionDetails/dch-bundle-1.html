@@ -167,13 +167,16 @@
           <a href="careconnect-dch-patient-1.html">CareConnect-DCH-Patient-1</a>
         </li>
         <li>
-          <a href="careconnect-dch-encounter-1.html">CareConnect-DCH-Encounter-1</a>
+          <a href="careconnect-dch-admission-encounter-1.html">CareConnect-DCH-Admission-Encounter-1</a>
         </li>
         <li>
           <a href="careconnect-dch-practitioner-1.html">CareConnect-DCH-Practitioner-1</a>
         </li>
         <li>
           <a href="careconnect-dch-location-1.html">CareConnect-DCH-Location-1</a>
+        </li>
+        <li>
+          <a href="careconnect-dch-sourceofadmission-location-1.html">CareConnect-DCH-SourceOfAdmission-Location-1</a>
         </li>
       </ul>
       <h3>Admission Details event data item mapping to FHIR profiles</h3>
@@ -190,7 +193,7 @@
         <tbody>
           <tr>
             <td>Date</td>
-            <td>CareConnect-DCH-Encounter-1.period.start</td>
+            <td>CareConnect-DCH-Admission-Encounter-1.period.start</td>
             <td>Mandatory</td>
           </tr>
           <tr>
@@ -205,12 +208,12 @@
           </tr>
           <tr>
             <td>Reason for Admission</td>
-            <td>CareConnect-DCH-Encounter-1.reason</td>
+            <td>CareConnect-DCH-Admission-Encounter-1.reason</td>
             <td>Required</td>
           </tr>
           <tr>
             <td>Admission Method</td>
-            <td>CareConnect-DCH-Encounter-1.hospitalization.admitSource</td>
+            <td>CareConnect-DCH-Admission-Encounter-1.hospitalization.admitSource</td>
             <td>Required</td>
           </tr>
           <tr>
@@ -220,7 +223,7 @@
           </tr>
           <tr>
             <td>Source of Admission</td>
-            <td>CareConnect-DCH-Location-1.physicalType</td>
+            <td>CareConnect-DCH-SourceOfAdmission-Location-1.physicalType</td>
             <td>Required</td>
           </tr>
           <tr>
