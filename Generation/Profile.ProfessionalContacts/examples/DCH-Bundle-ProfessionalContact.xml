@@ -196,7 +196,7 @@ End date
 					<system value="https://tools.ietf.org/html/rfc4122"/>
 					<value value="681ab4ce-a5fc-11e7-abc4-cec278b6b50a"/>
 				</identifier>
-				<status value="active"/>
+				<status value="draft"/>
 				<type>
 					<coding>
 						<system value="https://fhir.nhs.uk/DCH-AssociationType-1"/>

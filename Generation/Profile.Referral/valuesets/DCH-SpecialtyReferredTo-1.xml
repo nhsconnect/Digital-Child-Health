@@ -5,7 +5,7 @@
 	</meta>
 	<url value="https://fhir.nhs.uk/ValueSet/DCH-SpecialtyReferredTo-1"/>
 	<name value="Specialty Referred To"/>
-	<status value="active"/>
+	<status value="draft"/>
 	<description value="The type of community service or team that the patient has been referred into."/>
 	<compose>
 		<include>

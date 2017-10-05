@@ -20,9 +20,10 @@ The Child Health Event data items are fulfilled by elements within the FHIR reso
 | ODS Site Code       | CareConnect-DCH-Location-1.identifier                |
 | Professional Name   | CareConnect-DCH-Practitioner-1.practitionerRole      |
 | SDS Job Role Name   | CareConnect-DCH-Practitioner-1.name                  |
-| Hearing Test Result | CareConnect-DCH-HearingTest-Procedure-1.outcome      |
+| Hearing Test Result | CareConnect-DCH-HearingTest-Procedure-1.outcome*      |
 | Summary Outcome     | CareConnect-DCH-HearingScreening-Procedure-1.outcome |
 
+*up to two occurrences of this resource are required, one for each ear.
 
 [DCH-MessageHeader-1]:dch-messageheader-1.html
 [CareConnect-DCH-Organization-1]:careconnect-dch-organization-1.html
