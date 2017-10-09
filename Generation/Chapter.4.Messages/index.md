@@ -45,7 +45,8 @@ The various downloads (including Schema files) and reference implementations are
 
 [Profile.AdmissionDetails]: ../Profile.AdmissionDetails/Profile.AdmissionDetails.html
 [Profile.AdditionalDemographics]: ../Profile.AdditionalDemographics/Profile.AdditionalDemographics.html
-[Profile.AllergiesAndAdverseReactions]: ../Profile.AllergiesAndAdverseReactions/Profile.AllergiesAndAdverseReactions.html 
+[Profile.AllergiesAndAdverseReactions]: ../Profile.AllergiesAndAdverseReactions/Profile.AllergiesAndAdverseReactions.html
+[Profile.AssessmentScales]: ../Profile.AssessmentScales/Profile.AssessmentScales.html 
 [Profile.BirthDetails]: ../Profile.BirthDetails/Profile.BirthDetails.html
 [Profile.BloodSpot]: ../Profile.BloodSpot/Profile.BloodSpot.html
 [Profile.ClinicalRiskFactors]: ../Profile.ClinicalRiskFactors/Profile.ClinicalRiskFactors.html

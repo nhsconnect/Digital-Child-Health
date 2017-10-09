@@ -1,0 +1,1 @@
+Indicates the specific repeat information of a medication item.

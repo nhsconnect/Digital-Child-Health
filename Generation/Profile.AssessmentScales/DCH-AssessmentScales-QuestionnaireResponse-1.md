@@ -1,0 +1,1 @@
+This Questionnaire Response resource is constrained to represent a questionnaire response for Assessment Scales for a Child Health event message.

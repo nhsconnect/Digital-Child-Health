@@ -1,0 +1,1 @@
+Supports the date that the allergy was no longer valid.

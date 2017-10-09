@@ -1,0 +1,1 @@
+Indicates the date a prescription was last issued.

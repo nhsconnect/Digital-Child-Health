@@ -1,0 +1,1 @@
+This Extension is used to specify the flags related to the patient's medications.

@@ -1,0 +1,1 @@
+This EpisodeOfCare resource has been constrained to represent a Professional Contact Association between a Care Professional or a Team with a subject for a Child Health event.

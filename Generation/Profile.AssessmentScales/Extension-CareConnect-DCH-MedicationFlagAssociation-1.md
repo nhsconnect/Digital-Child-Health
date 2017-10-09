@@ -1,0 +1,1 @@
+This Extension is used to specify the links between a MedicationFlag and its associated MedicationOrder/MedicationStatement resource(s).

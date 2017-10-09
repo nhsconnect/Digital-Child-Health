@@ -1,0 +1,1 @@
+This Extension resource is constrained to indicate whether a parent was present at the Immunization.
