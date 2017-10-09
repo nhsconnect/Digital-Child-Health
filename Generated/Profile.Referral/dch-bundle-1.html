@@ -162,9 +162,6 @@
           <a href="careconnect-dch-organization-1.html">CareConnect-DCH-Organization-1</a>
         </li>
         <li>
-          <a href="dch-healthcareservice-1.html">DCH-HealthcareService-1</a>
-        </li>
-        <li>
           <a href="careconnect-dch-patient-1.html">CareConnect-DCH-Patient-1</a>
         </li>
         <li>
@@ -188,48 +185,59 @@
           <tr>
             <th>DCH Data Item</th>
             <th>FHIR resource element</th>
+            <th>Mandatory/Required/Optional</th>
           </tr>
         </thead>
         <tbody>
           <tr>
             <td>Date of Referral</td>
             <td>DCH-ReferralRequest-1.dateSent</td>
+            <td>Mandatory</td>
           </tr>
           <tr>
             <td>ODS Site Code</td>
             <td>CareConnect-DCH-Location-1.identifier (ODS Site Code)</td>
+            <td>Mandatory</td>
           </tr>
           <tr>
             <td>Professional Name</td>
             <td>CareConnect-DCH-Practitioner-1.name</td>
+            <td>Mandatory</td>
           </tr>
           <tr>
             <td>SDS Job Role Name</td>
             <td>CareConnect-DCH-Practitioner-1.practitionerRole (SDS Job Role Name)</td>
+            <td>Mandatory</td>
           </tr>
           <tr>
             <td>Encounter Type</td>
-            <td>CareConnect-DCH-Encounter-1.type</td>
+            <td>CareConnect-DCH-Encounter-1.type (childHealthEncounterType)</td>
+            <td>Mandatory</td>
           </tr>
           <tr>
             <td>Speciality Referred to</td>
             <td>DCH-ReferralRequest-1.specialty</td>
+            <td>Mandatory</td>
           </tr>
           <tr>
             <td>Method</td>
-            <td>DCH-ReferralRequest-1.method</td>
+            <td>DCH-ReferralRequest-1.referralMethod (extension)</td>
+            <td>Required</td>
           </tr>
           <tr>
             <td>Source of Referral</td>
-            <td>DCH-ReferralRequest-1.sourceOfReferral</td>
+            <td>DCH-ReferralRequest-1.sourceOfReferral (extension)</td>
+            <td>Required</td>
           </tr>
           <tr>
             <td>Urgency</td>
             <td>DCH-ReferralRequest-1.priority</td>
+            <td>Required</td>
           </tr>
           <tr>
             <td>Reason</td>
-            <td>DCH-ReferralRequest-1.description</td>
+            <td>DCH-ReferralRequest-1.reason</td>
+            <td>Mandatory</td>
           </tr>
         </tbody>
       </table>

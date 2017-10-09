@@ -1,0 +1,50 @@
+{
+  "resourceType": "ValueSet",
+  "meta": {
+    "lastUpdated": "2016-08-03T00:00:00+01:00"
+  },
+  "url": "https://fhir.nhs.uk/ValueSet/DCH-TestesExaminationOutcome-1",
+  "version": "1.0.0",
+  "name": "Testes Examination Outcome",
+  "status": "draft",
+  "publisher": "NHS Digital",
+  "description": "A code from the SNOMED Clinical Terminology UK coding system to represent the outcome of a physical examination of the testes.",
+  "copyright": "This value set includes content from SNOMED CT, which is copyright © 2002+ International Health Terminology Standards Development Organisation (IHTSDO), and distributed by agreement between IHTSDO and HL7. Implementer use of SNOMED CT is not covered by this agreement.",
+  "compose": {
+    "include": [
+      {
+        "system": "http://snomed.info/sct",
+        "concept": [
+          {
+            "code": "988911000000109",
+            "display": "Newborn and Infant Physical Examination Screening Programme, testis examination incomplete"
+          },
+          {
+            "code": "988891000000106",
+            "display": "Newborn and Infant Physical Examination Screening Programme, testis examination declined"
+          },
+          {
+            "code": "988871000000107",
+            "display": "Newborn and Infant Physical Examination Screening Programme, testis examination not done"
+          },
+          {
+            "code": "988931000000101",
+            "display": "Newborn and Infant Physical Examination Screening Programme, testis examination done, no abnormality"
+          },
+          {
+            "code": "988951000000108",
+            "display": "Newborn and Infant Physical Examination Screening Programme, testis examination done, bilateral abnormality suspected"
+          },
+          {
+            "code": "988991000000100",
+            "display": "Newborn and Infant Physical Examination Screening Programme, testis examination done, left abnormality suspected"
+          },
+          {
+            "code": "988971000000104",
+            "display": "Newborn and Infant Physical Examination Screening Programme, testis examination done, right abnormality suspected"
+          }
+        ]
+      }
+    ]
+  }
+}

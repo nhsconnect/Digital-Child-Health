@@ -1,0 +1,86 @@
+{
+  "resourceType": "ValueSet",
+  "meta": {
+    "lastUpdated": "2016-08-03T00:00:00+01:00"
+  },
+  "url": "https://fhir.nhs.uk/ValueSet/DCH-DischargeStatus-1",
+  "version": "1.0.0",
+  "name": "Discharge Status",
+  "status": "draft",
+  "publisher": "NHS Digital",
+  "description": "A code from the SNOMED Clinical Terminology UK 'Emergency care discharge status' simple reference set with RefSet ID 999003021000000104, to represent the patient status on discharge from emergency care.",
+  "copyright": "This value set includes content from SNOMED CT, which is copyright © 2002+ International Health Terminology Standards Development Organisation (IHTSDO), and distributed by agreement between IHTSDO and HL7. Implementer use of SNOMED CT is not covered by this agreement.",
+  "compose": {
+    "include": [
+      {
+        "system": "http://snomed.info/sct",
+        "concept": [
+          {
+            "code": "1077021000000100",
+            "display": "Streamed from emergency department to general practitioner following initial assessment (situation)"
+          },
+          {
+            "code": "1077061000000100",
+            "display": "Streamed from emergency department to ophthalmology service following initial assessment (situation)"
+          },
+          {
+            "code": "1066321000000100",
+            "display": "Left care setting before treatment completed (finding)"
+          },
+          {
+            "code": "1077091000000100",
+            "display": "Streamed from emergency department to falls service following initial assessment (situation)"
+          },
+          {
+            "code": "1077031000000100",
+            "display": "Streamed from emergency department to urgent care service following initial assessment (situation)"
+          },
+          {
+            "code": "75004002",
+            "display": "Emergency room admission, died in emergency room (procedure)"
+          },
+          {
+            "code": "182992009",
+            "display": "Treatment completed (situation)"
+          },
+          {
+            "code": "1077781000000100",
+            "display": "Streamed to emergency department following initial assessment (situation)"
+          },
+          {
+            "code": "1077071000000100",
+            "display": "Streamed from emergency department to pharmacy service following initial assessment (situation)"
+          },
+          {
+            "code": "1077101000000100",
+            "display": "Streamed from emergency department to frailty service following initial assessment (situation)"
+          },
+          {
+            "code": "1066311000000100",
+            "display": "Left care setting after initial assessment (finding)"
+          },
+          {
+            "code": "63238001",
+            "display": "Dead on arrival at hospital (finding)"
+          },
+          {
+            "code": "1077041000000100",
+            "display": "Streamed from emergency department to mental health service following initial assessment (situation)"
+          },
+          {
+            "code": "1066301000000100",
+            "display": "Left care setting before initial assessment (finding)"
+          },
+          {
+            "code": "1077081000000100",
+            "display": "Streamed from emergency department to ambulatory emergency care service following initial assessment (situation)"
+          },
+          {
+            "code": "1077051000000100",
+            "display": "Streamed from emergency department to dental service following initial assessment (situation)"
+          }
+        ]
+      }
+    ]
+  }
+}

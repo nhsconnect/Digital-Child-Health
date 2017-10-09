@@ -1,0 +1,178 @@
+{
+  "resourceType": "ValueSet",
+  "meta": {
+    "lastUpdated": "2016-08-03T00:00:00+01:00"
+  },
+  "url": "https://fhir.nhs.uk/ValueSet/DCH-PresentingComplaint-1",
+  "version": "1.0.0",
+  "name": "Presenting Complaint",
+  "status": "draft",
+  "publisher": "NHS Digital",
+  "description": "The health problem or issue experienced by the patient resulting in their attendance.",
+  "copyright": "Copyright © 2016 Health and Social Care Information Centre. NHS Digital is the trading name of the Health and Social Care Information Centre.",
+  "compose": {
+    "include": [
+      {
+        "system": "https://fhir.nhs.uk/DCH-PresentingComplaint-1",
+        "concept": [
+          {
+            "code": "1",
+            "display": "Laceration"
+          },
+          {
+            "code": "2",
+            "display": "Contusion/abrasion*"
+          },
+          {
+            "code": "3",
+            "display": "Soft tissue inflammation"
+          },
+          {
+            "code": "4",
+            "display": "Head injury*"
+          },
+          {
+            "code": "5",
+            "display": "Dislocation/fracture/joint injury/amputation*"
+          },
+          {
+            "code": "6",
+            "display": "Sprain/ligament injury"
+          },
+          {
+            "code": "7",
+            "display": "Muscle/tendon injury"
+          },
+          {
+            "code": "8",
+            "display": "Nerve injury"
+          },
+          {
+            "code": "9",
+            "display": "Vascular injury"
+          },
+          {
+            "code": "10",
+            "display": "Burns and scalds*"
+          },
+          {
+            "code": "11",
+            "display": "Electric shock"
+          },
+          {
+            "code": "12",
+            "display": "Foreign body"
+          },
+          {
+            "code": "13",
+            "display": "Bites/stings"
+          },
+          {
+            "code": "14",
+            "display": "Poisoning* (including overdose)"
+          },
+          {
+            "code": "15",
+            "display": "Near drowning"
+          },
+          {
+            "code": "16",
+            "display": "Visceral injury"
+          },
+          {
+            "code": "17",
+            "display": "Infectious disease*"
+          },
+          {
+            "code": "18",
+            "display": "Local infection"
+          },
+          {
+            "code": "19",
+            "display": "Septicaemia"
+          },
+          {
+            "code": "20",
+            "display": "Cardiac conditions*"
+          },
+          {
+            "code": "21",
+            "display": "Cerebro-vascular conditions"
+          },
+          {
+            "code": "22",
+            "display": "Other vascular conditions"
+          },
+          {
+            "code": "23",
+            "display": "Haematological conditions"
+          },
+          {
+            "code": "24",
+            "display": "Central Nervous System conditions* (excluding strokes)"
+          },
+          {
+            "code": "25",
+            "display": "Respiratory conditions*"
+          },
+          {
+            "code": "26",
+            "display": "Gastrointestinal conditions*"
+          },
+          {
+            "code": "27",
+            "display": "Urological conditions (including cystitis)"
+          },
+          {
+            "code": "28",
+            "display": "Obstetric conditions"
+          },
+          {
+            "code": "29",
+            "display": "Gynaecological conditions"
+          },
+          {
+            "code": "30",
+            "display": "Diabetes and other endocrinological conditions*"
+          },
+          {
+            "code": "31",
+            "display": "Dermatological conditions"
+          },
+          {
+            "code": "32",
+            "display": "Allergy (including anaphylaxis)"
+          },
+          {
+            "code": "33",
+            "display": "Facio-maxillary conditions"
+          },
+          {
+            "code": "34",
+            "display": "ENT conditions"
+          },
+          {
+            "code": "35",
+            "display": "Psychiatric conditions"
+          },
+          {
+            "code": "36",
+            "display": "Ophthalmological conditions"
+          },
+          {
+            "code": "37",
+            "display": "Social problem (includes chronic alcoholism and homelessness)"
+          },
+          {
+            "code": "38",
+            "display": "Diagnosis not classifiable"
+          },
+          {
+            "code": "39",
+            "display": "Nothing abnormal detected"
+          }
+        ]
+      }
+    ]
+  }
+}

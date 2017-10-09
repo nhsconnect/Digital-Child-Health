@@ -161,9 +161,6 @@
           <a href="careconnect-dch-organization-1.html">CareConnect-DCH-Organization-1</a>
         </li>
         <li>
-          <a href="dch-healthcareservice-1.html">DCH-HealthcareService-1</a>
-        </li>
-        <li>
           <a href="careconnect-dch-patient-1.html">CareConnect-DCH-Patient-1</a>
         </li>
         <li>
@@ -171,9 +168,6 @@
         </li>
         <li>
           <a href="careconnect-dch-allergyintolerance-1.html">CareConnect-DCH-AllergyIntolerance-1</a>
-        </li>
-        <li>
-          <a href="careconnect-dch-practitioner-1.html">CareConnect-DCH-Practitioner-1</a>
         </li>
         <li>
           <a href="careconnect-dch-location-1.html">CareConnect-DCH-Location-1</a>
@@ -185,46 +179,56 @@
       <table>
         <thead>
           <tr>
-            <th>DCH Data Item Name</th>
-            <th>FHIR Resource Element</th>
+            <th>DCH Data Item</th>
+            <th>FHIR resource element</th>
+            <th>Mandatory/Required/Optional</th>
           </tr>
         </thead>
         <tbody>
           <tr>
             <td>Date</td>
             <td>CareConnect-DCH-AllergyIntolerance-1.recorded date</td>
+            <td>Mandatory</td>
           </tr>
           <tr>
             <td>Causative Agent</td>
             <td>CareConnect-DCH-AllergyIntolerance-1.reaction.substance</td>
+            <td>Mandatory</td>
           </tr>
           <tr>
             <td>Description of Reaction</td>
             <td>CareConnect-DCH-AllergyIntolerance-1.reaction.manifestation.description</td>
+            <td>Optional</td>
           </tr>
           <tr>
             <td>Reaction Details</td>
-            <td>CareConnect-DCH-AllergyIntolerance-1.type</td>
+            <td>CareConnect-DCH-AllergyIntolerance.type</td>
+            <td>Required</td>
           </tr>
           <tr>
             <td>Certainty</td>
-            <td>CareConnect-DCH-AllergyIntolerance-1.reaction using allergyCertainty extension</td>
+            <td>CareConnect-DCH-AllergyIntolerance-1.allergyCertainty</td>
+            <td>Optional</td>
           </tr>
           <tr>
             <td>Severity</td>
-            <td>CareConnect-DCH-AllergyIntolerance-1.reaction using allergySeverity extension</td>
+            <td>CareConnect-DCH-AllergyIntolerance-1.allergySeverity</td>
+            <td>Required</td>
           </tr>
           <tr>
             <td>Evidence</td>
             <td>CareConnect-DCH-AllergyIntolerance-1.evidence</td>
+            <td>Optional</td>
           </tr>
           <tr>
-            <td>Probability of Recurrence</td>
-            <td>CareConnect-DCH-AllergyIntolerance-1.probabilityOfRecurrence</td>
+            <td>Probability   of Recurrence</td>
+            <td>CareConnect-DCH-AllergyIntolerance.probabilityOfRecurrence</td>
+            <td>Optional</td>
           </tr>
           <tr>
-            <td>Date First Experienced</td>
-            <td>CareConnect-DCH-AllergyIntolerance-1.onset</td>
+            <td>Date First   Experienced</td>
+            <td>CareConnect-DCH-AllergyIntolerance.onset</td>
+            <td>Optional</td>
           </tr>
         </tbody>
       </table>

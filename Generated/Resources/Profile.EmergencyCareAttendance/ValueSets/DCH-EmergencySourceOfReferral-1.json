@@ -1,0 +1,66 @@
+{
+  "resourceType": "ValueSet",
+  "meta": {
+    "lastUpdated": "2016-08-03T00:00:00+01:00"
+  },
+  "url": "https://fhir.nhs.uk/ValueSet/DCH-EmergencySourceOfReferral-1",
+  "version": "1.0.0",
+  "name": "Emergency Source Of Referral",
+  "status": "draft",
+  "publisher": "NHS Digital",
+  "description": "A classification which identifies the source of referral for an Emergency Care Attendance.",
+  "copyright": "Copyright © 2016 Health and Social Care Information Centre. NHS Digital is the trading name of the Health and Social Care Information Centre.",
+  "compose": {
+    "include": [
+      {
+        "system": "https://fhir.nhs.uk/DCH-SourceOfReferral-1",
+        "concept": [
+          {
+            "code": "0",
+            "display": "GENERAL MEDICAL PRACTITIONER "
+          },
+          {
+            "code": "1",
+            "display": "Self referral"
+          },
+          {
+            "code": "2",
+            "display": "Local Authority Social Services"
+          },
+          {
+            "code": "3",
+            "display": "Emergency services"
+          },
+          {
+            "code": "4",
+            "display": "Work"
+          },
+          {
+            "code": "5",
+            "display": "Educational Establishment "
+          },
+          {
+            "code": "6",
+            "display": "Police"
+          },
+          {
+            "code": "7",
+            "display": "Health Care Provider: same or other"
+          },
+          {
+            "code": "8",
+            "display": "Other"
+          },
+          {
+            "code": "92",
+            "display": "GENERAL DENTAL PRACTITIONER "
+          },
+          {
+            "code": "93",
+            "display": "Community Dental Service"
+          }
+        ]
+      }
+    ]
+  }
+}

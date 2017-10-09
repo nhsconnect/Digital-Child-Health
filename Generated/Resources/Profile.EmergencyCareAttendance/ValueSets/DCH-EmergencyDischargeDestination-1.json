@@ -1,0 +1,86 @@
+{
+  "resourceType": "ValueSet",
+  "meta": {
+    "lastUpdated": "2016-08-03T00:00:00+01:00"
+  },
+  "url": "https://fhir.nhs.uk/ValueSet/DCH-EmergencyDischargeDestination-1",
+  "version": "1.0.0",
+  "name": "Emergency Discharge Destination",
+  "status": "draft",
+  "publisher": "NHS Digital",
+  "description": "A code from the SNOMED Clinical Terminology UK coding system to represent the destination of the patient on discharge from the Emergency Care Attendance.",
+  "copyright": "This value set includes content from SNOMED CT, which is copyright © 2002+ International Health Terminology Standards Development Organisation (IHTSDO), and distributed by agreement between IHTSDO and HL7. Implementer use of SNOMED CT is not covered by this agreement.",
+  "compose": {
+    "include": [
+      {
+        "system": "http://snomed.info/sct",
+        "concept": [
+          {
+            "code": "306705005",
+            "display": "Discharge to police custody (procedure)"
+          },
+          {
+            "code": "1066351000000100",
+            "display": "Discharge to hospital at home service (procedure)"
+          },
+          {
+            "code": "306706006",
+            "display": "Discharge to ward (procedure)"
+          },
+          {
+            "code": "1066391000000100",
+            "display": "Emergency department discharge to intensive care unit (procedure)"
+          },
+          {
+            "code": "1066381000000108",
+            "display": "Emergency department discharge to special care baby unit (procedure)"
+          },
+          {
+            "code": "306689006",
+            "display": "Discharge to home (procedure)"
+          },
+          {
+            "code": "19712007",
+            "display": "Patient transfer, to another health care facility (procedure)"
+          },
+          {
+            "code": "1066361000000100",
+            "display": "Emergency department discharge to high dependency unit (procedure)"
+          },
+          {
+            "code": "50861005",
+            "display": "Patient discharge, to legal custody (procedure)"
+          },
+          {
+            "code": "305398007",
+            "display": "Admission to the mortuary (procedure)"
+          },
+          {
+            "code": "1066331000000100",
+            "display": "Emergency department discharge to emergency department short stay ward (procedure)"
+          },
+          {
+            "code": "306691003",
+            "display": "Discharge to residential home (procedure)"
+          },
+          {
+            "code": "1066401000000100",
+            "display": "Emergency department discharge to neonatal intensive care unit (procedure)"
+          },
+          {
+            "code": "306694006",
+            "display": "Discharge to nursing home (procedure)"
+          },
+          {
+            "code": "1066371000000100",
+            "display": "Emergency department discharge to coronary care unit (procedure)"
+          },
+          {
+            "code": "1066341000000100",
+            "display": "Emergency department discharge to ambulatory emergency care service (procedure)"
+          }
+        ]
+      }
+    ]
+  }
+}

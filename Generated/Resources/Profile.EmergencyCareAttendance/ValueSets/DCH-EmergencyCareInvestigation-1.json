@@ -1,0 +1,210 @@
+{
+  "resourceType": "ValueSet",
+  "meta": {
+    "lastUpdated": "2016-08-03T00:00:00+01:00"
+  },
+  "url": "https://fhir.nhs.uk/ValueSet/DCH-EmergencyCareInvestigation-1",
+  "version": "1.0.0",
+  "name": "Emergency Care Investigation",
+  "status": "draft",
+  "publisher": "NHS Digital",
+  "description": "A code from the SNOMED Clinical Terminology UK 'Emergency care investigations' simple reference set with RefSet ID 991261000000107, to represent the therapeutic or diagnostic procedure performed on the patient.",
+  "copyright": "This value set includes content from SNOMED CT, which is copyright © 2002+ International Health Terminology Standards Development Organisation (IHTSDO), and distributed by agreement between IHTSDO and HL7. Implementer use of SNOMED CT is not covered by this agreement.",
+  "compose": {
+    "include": [
+      {
+        "system": "http://snomed.info/sct",
+        "concept": [
+          {
+            "code": "55235003",
+            "display": "C-reactive protein measurement (procedure)"
+          },
+          {
+            "code": "68793005",
+            "display": " Serologic test (procedure)"
+          },
+          {
+            "code": "164729009",
+            "display": " Tonometry (procedure)"
+          },
+          {
+            "code": "113091000",
+            "display": " Magnetic resonance imaging (procedure)"
+          },
+          {
+            "code": "252167001",
+            "display": " Urea and electrolytes (procedure)"
+          },
+          {
+            "code": "397798009",
+            "display": " Creatine kinase measurement (procedure)"
+          },
+          {
+            "code": "77477000",
+            "display": " Computerized axial tomography (procedure)"
+          },
+          {
+            "code": "26958001",
+            "display": " Hepatic function panel (procedure)"
+          },
+          {
+            "code": "53115007",
+            "display": " Diagnostic dental procedure (procedure)"
+          },
+          {
+            "code": "165320004",
+            "display": " Dementia test (procedure)"
+          },
+          {
+            "code": "363255004",
+            "display": " Paracentesis of eye (procedure)"
+          },
+          {
+            "code": "168338000",
+            "display": " Urine sent for culture (situation)"
+          },
+          {
+            "code": "60170009",
+            "display": " Analysis of arterial blood gases and pH (procedure)"
+          },
+          {
+            "code": "67900009",
+            "display": " Human chorionic gonadotropin measurement (procedure)"
+          },
+          {
+            "code": "252316009",
+            "display": " Group and save (procedure)"
+          },
+          {
+            "code": "89659001",
+            "display": " Amylase measurement, serum (procedure)"
+          },
+          {
+            "code": "167036008",
+            "display": " Bone profile (procedure)"
+          },
+          {
+            "code": "29303009",
+            "display": " Electrocardiographic procedure (procedure)"
+          },
+          {
+            "code": "56027003",
+            "display": " Thromboelastography (procedure)"
+          },
+          {
+            "code": "3116009",
+            "display": " Blood coagulation panel (procedure)"
+          },
+          {
+            "code": "29893006",
+            "display": " Peak expiratory flow measurement (procedure)"
+          },
+          {
+            "code": "416838001",
+            "display": " Erythrocyte sedimentation rate measurement (procedure)"
+          },
+          {
+            "code": "271232007",
+            "display": " Serum lipase measurement (procedure)"
+          },
+          {
+            "code": "74500006",
+            "display": " Cardiac enzymes/isoenzymes measurement (procedure)"
+          },
+          {
+            "code": "70648006",
+            "display": " D-dimer assay (procedure)"
+          },
+          {
+            "code": "104686004",
+            "display": " Glucose measurement, blood, test strip (procedure)"
+          },
+          {
+            "code": "16310003",
+            "display": " Diagnostic ultrasonography (procedure)"
+          },
+          {
+            "code": "252375001",
+            "display": " Immunology profile (procedure)"
+          },
+          {
+            "code": "270982000",
+            "display": " Serum lactate measurement (procedure)"
+          },
+          {
+            "code": "86944008",
+            "display": " Visual field study (procedure)"
+          },
+          {
+            "code": "62847008",
+            "display": " Tryptase release from mast cell measurement (procedure)"
+          },
+          {
+            "code": "179929004",
+            "display": " Examination of joint under image intensifier (procedure)"
+          },
+          {
+            "code": "282096008",
+            "display": " Retinal photography (procedure)"
+          },
+          {
+            "code": "35650009",
+            "display": " Thyroid panel (procedure)"
+          },
+          {
+            "code": "26604007",
+            "display": " Complete blood count (procedure)"
+          },
+          {
+            "code": "27171005",
+            "display": " Urinalysis (procedure)"
+          },
+          {
+            "code": "392010000",
+            "display": " Optical coherence tomography (procedure)"
+          },
+          {
+            "code": "30088009",
+            "display": " Blood culture (procedure)"
+          },
+          {
+            "code": "401294003",
+            "display": " Wound microscopy, culture and sensitivities (procedure)"
+          },
+          {
+            "code": "40701008",
+            "display": " Echocardiography (procedure)"
+          },
+          {
+            "code": "43396009",
+            "display": " Hemoglobin A1c measurement (procedure)"
+          },
+          {
+            "code": "168537006",
+            "display": " Plain radiography (procedure)"
+          },
+          {
+            "code": "16830007",
+            "display": " Visual acuity testing (procedure)"
+          },
+          {
+            "code": "61911006",
+            "display": " Blood gases, venous measurement (procedure)"
+          },
+          {
+            "code": "269874008",
+            "display": " Serum paracetamol measurement (procedure)"
+          },
+          {
+            "code": "105000003",
+            "display": " Troponin measurement (procedure)"
+          },
+          {
+            "code": "16254007",
+            "display": " Lipid panel (procedure)"
+          }
+        ]
+      }
+    ]
+  }
+}

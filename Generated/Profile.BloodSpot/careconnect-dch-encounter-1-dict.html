@@ -6527,13 +6527,15 @@
         </tr>
         <tr>
           <td width="150px">Definition</td>
-          <td></td>
+          <td>
+            <p>From where patient was admitted (physician referral, transfer).</p>
+          </td>
         </tr>
         <tr>
           <td>
             <a href="http://www.hl7.org/fhir/DSTU2/conformance-rules.html#conformance">Control</a>
           </td>
-          <td>0..*</td>
+          <td>0..1 ?</td>
         </tr>
         <tr>
           <td>
@@ -6541,14 +6543,23 @@
           </td>
           <td>
             <div class="binding-description" xmlns="http://www.w3.org/1999/xhtml">
-              <p>The method of admission</p>
-              <p>The codes SHALL be taken from <a href="dch-admissionmethod-1.html">https://fhir.nhs.uk/ValueSet/DCH-AdmissionMethod-1</a></p>
-            </div>
+              <p>From where the patient was admitted.</p>
+              <p>The codes SHOULD be taken from <a href="http://hl7.org/fhir/ValueSet/encounter-admit-source">http://hl7.org/fhir/ValueSet/encounter-admit-source</a></p>; other codes may be used where these codes are not suitable</div>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <a href="http://www.hl7.org/fhir/DSTU2/datatypes.html">Type</a>
+          </td>
+          <td>
+            <a href="http://www.hl7.org/fhir/DSTU2/datatypes.html#codeableconcept" xmlns="http://www.w3.org/1999/xhtml">CodeableConcept</a>
           </td>
         </tr>
         <tr>
           <td width="150px">Comments</td>
-          <td></td>
+          <td>
+            <p>Not all terminology uses fit this general pattern. In some cases, models should not use CodeableConcept and use Coding directly and provide their own structure for managing text, codings, translations and the relationship between elements and pre- and post-coordination.</p>
+          </td>
         </tr>
         <tr>
           <td colspan="2" class="structure">
@@ -6725,10 +6736,6 @@
         <tr>
           <td width="150px">Comments</td>
           <td></td>
-        </tr>
-        <tr>
-          <td>Fixed Value</td>
-          <td>https://fhir.nhs.uk/DCH-AdmissionMethod-1</td>
         </tr>
         <tr>
           <td colspan="2" class="structure">
@@ -8830,13 +8837,15 @@
         </tr>
         <tr>
           <td width="150px">Definition</td>
-          <td></td>
+          <td>
+            <p>Category or kind of location after discharge.</p>
+          </td>
         </tr>
         <tr>
           <td>
             <a href="http://www.hl7.org/fhir/DSTU2/conformance-rules.html#conformance">Control</a>
           </td>
-          <td>0..*</td>
+          <td>0..1 ?</td>
         </tr>
         <tr>
           <td>
@@ -8844,14 +8853,23 @@
           </td>
           <td>
             <div class="binding-description" xmlns="http://www.w3.org/1999/xhtml">
-              <p>The method of discharge from hospital</p>
-              <p>The codes SHALL be taken from <a href="dch-dischargemethod-1.html">https://fhir.nhs.uk/ValueSet/DCH-DischargeMethod-1</a></p>
-            </div>
+              <p>Discharge Disposition</p>
+              <p>The codes SHOULD be taken from <a href="http://hl7.org/fhir/ValueSet/encounter-discharge-disposition">http://hl7.org/fhir/ValueSet/encounter-discharge-disposition</a></p>; other codes may be used where these codes are not suitable</div>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <a href="http://www.hl7.org/fhir/DSTU2/datatypes.html">Type</a>
+          </td>
+          <td>
+            <a href="http://www.hl7.org/fhir/DSTU2/datatypes.html#codeableconcept" xmlns="http://www.w3.org/1999/xhtml">CodeableConcept</a>
           </td>
         </tr>
         <tr>
           <td width="150px">Comments</td>
-          <td></td>
+          <td>
+            <p>Not all terminology uses fit this general pattern. In some cases, models should not use CodeableConcept and use Coding directly and provide their own structure for managing text, codings, translations and the relationship between elements and pre- and post-coordination.</p>
+          </td>
         </tr>
         <tr>
           <td colspan="2" class="structure">
@@ -9028,10 +9046,6 @@
         <tr>
           <td width="150px">Comments</td>
           <td></td>
-        </tr>
-        <tr>
-          <td>Fixed Value</td>
-          <td>https://fhir.nhs.uk/DCH-DischargeMethod-1</td>
         </tr>
         <tr>
           <td colspan="2" class="structure">

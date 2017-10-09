@@ -1,0 +1,70 @@
+{
+  "resourceType": "ValueSet",
+  "meta": {
+    "lastUpdated": "2016-08-03T00:00:00+01:00"
+  },
+  "url": "https://fhir.nhs.uk/ValueSet/DCH-CommunicationCategory-1",
+  "version": "1.0.0",
+  "name": "Communication Category",
+  "status": "draft",
+  "publisher": "NHS Digital",
+  "description": "The type of Communication recorded.",
+  "copyright": "Copyright © 2016 Health and Social Care Information Centre. NHS Digital is the trading name of the Health and Social Care Information Centre.",
+  "compose": {
+    "include": [
+      {
+        "system": "https://fhir.nhs.uk/DCH-CommunicationCategory-1",
+        "concept": [
+          {
+            "code": "Family History",
+            "display": "Family History"
+          },
+          {
+            "code": "Problems and Issues",
+            "display": "Problems and Issues"
+          },
+          {
+            "code": "Diagnoses",
+            "display": "Diagnoses"
+          },
+          {
+            "code": "Medications and medical devices",
+            "display": "Medications and medical devices"
+          },
+          {
+            "code": "Urgent Care Attendance",
+            "display": "Urgent Care Attendance"
+          },
+          {
+            "code": "Immunisations",
+            "display": "Immunisations"
+          },
+          {
+            "code": "Newborn Blood Spot Screening",
+            "display": "Newborn Blood Spot Screening"
+          },
+          {
+            "code": "Newborn Hearing Screening",
+            "display": "Newborn Hearing Screening"
+          },
+          {
+            "code": "Newborn and Infant Physical Examination (72 hours",
+            "display": "Newborn and Infant Physical Examination (72 hours"
+          },
+          {
+            "code": "Newborn and Infant Physical Examination (6-8 Weeks).",
+            "display": "Newborn and Infant Physical Examination (6-8 Weeks)."
+          },
+          {
+            "code": "Feeding Status",
+            "display": "Feeding Status"
+          },
+          {
+            "code": "Allergies and Adverse Reactions",
+            "display": "Allergies and Adverse Reactions"
+          }
+        ]
+      }
+    ]
+  }
+}

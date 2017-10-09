@@ -161,9 +161,6 @@
           <a href="careconnect-dch-organization-1.html">CareConnect-DCH-Organization-1</a>
         </li>
         <li>
-          <a href="dch-healthcareservice-1.html">DCH-HealthcareService-1</a>
-        </li>
-        <li>
           <a href="careconnect-dch-patient-1.html">CareConnect-DCH-Patient-1</a>
         </li>
         <li>
@@ -194,46 +191,56 @@
       <table>
         <thead>
           <tr>
-            <th>DCH Data Item Name</th>
-            <th>FHIR Resource Element</th>
+            <th>DCH Data Item</th>
+            <th>FHIR resource element</th>
+            <th>Mandatory/Required/Optional</th>
           </tr>
         </thead>
         <tbody>
           <tr>
             <td>Organisation</td>
-            <td>CareConnect-DCH-Organization-1</td>
+            <td>CareConnect-DCH-Team-Organisation-1.identifier (ODS Code or ODS Site Code)</td>
+            <td>Required</td>
           </tr>
           <tr>
             <td>Team</td>
-            <td>CareConnect-DCH-Team-Organization-1</td>
+            <td>CareConnect-DCH-Team-Organisation-1</td>
+            <td>Mandatory</td>
           </tr>
           <tr>
             <td>Name</td>
             <td>CareConnect-DCH-Practitioner-1.name</td>
+            <td>Required</td>
           </tr>
           <tr>
             <td>Care Professional Type</td>
-            <td>CareConnect-DCH-Practitioner-1.practitionerRole.careProfessionalType / DCH-HealthcareService-1.serviceType.type</td>
+            <td>CareConnect-DCH-Practitioner-1.practitionerRole (careProfessionalType) or DCH-HealthcareService-1.serviceType.type</td>
+            <td>Mandatory</td>
           </tr>
           <tr>
             <td>Care Professional Association</td>
-            <td>DCH-ProfessionalContact-EpisodeOfCare-1.type</td>
+            <td>DCH-EpisodeOfCare-1.type</td>
+            <td>Mandatory</td>
           </tr>
           <tr>
             <td>Speciality</td>
-            <td>CareConnect-DCH-Practitioner-1.practitionerRole.careProfessionalType.specialty / DCH-HealthcareService-1.serviceType.specialty</td>
+            <td>CareConnect-DCH-Practitioner-1.practitionerRole.specialty (careProfessionalType) or DCH-HealthcareService-1.serviceType.specialty</td>
+            <td>Mandatory</td>
           </tr>
           <tr>
             <td>Telephone Number</td>
-            <td>CareConnect-DCH-Practitioner-1.telecom / CareConnect-DCH-Team-Organization-1.telecom</td>
+            <td>CareConnect-DCH-Practitioner-1.telecom or CareConnect-DCH-Team-Organization-1.telecome</td>
+            <td>Required</td>
           </tr>
           <tr>
             <td>Start date</td>
             <td>DCH-EpisodeOfCare-1.period.start</td>
+            <td>Mandatory</td>
           </tr>
           <tr>
             <td>End date</td>
             <td>DCH-EpisodeOfCare-1.period.end</td>
+            <td>Mandatory</td>
           </tr>
         </tbody>
       </table>

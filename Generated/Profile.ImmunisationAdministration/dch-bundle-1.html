@@ -161,9 +161,6 @@
           <a href="careconnect-dch-organization-1.html">CareConnect-DCH-Organization-1</a>
         </li>
         <li>
-          <a href="dch-healthcareservice-1.html">DCH-HealthcareService-1</a>
-        </li>
-        <li>
           <a href="careconnect-dch-patient-1.html">CareConnect-DCH-Patient-1</a>
         </li>
         <li>
@@ -185,62 +182,76 @@
       <table>
         <thead>
           <tr>
-            <th>DCH Data Item Name</th>
-            <th>FHIR Resource Element</th>
+            <th>DCH Data Item</th>
+            <th>FHIR resource element</th>
+            <th>Mandatory/Required/Optional</th>
           </tr>
         </thead>
         <tbody>
           <tr>
             <td>Date</td>
             <td>CareConnect-DCH-Immunisation-1.date</td>
+            <td>Mandatory</td>
           </tr>
           <tr>
             <td>ODS Site code</td>
-            <td>CareConnect-DCH-Location-1.identifier</td>
+            <td>CareConnect-DCH-Location-1.identifier (ODS Site Code)</td>
+            <td>Mandatory</td>
           </tr>
           <tr>
             <td>Professional Name</td>
             <td>CareConnect-DCH-Practitioner-1.name</td>
+            <td>Mandatory</td>
           </tr>
           <tr>
             <td>SDS Job Role Name</td>
-            <td>CareConnect-DCH-Practitioner-1.practitionerRole</td>
+            <td>CareConnect-DCH-Practitioner-1.practitionerRole (SDS Job Role Name)</td>
+            <td>Mandatory</td>
           </tr>
           <tr>
             <td>Name of Immunisation</td>
             <td>CareConnect-DCH-Immunization-1.vaccineCode.coding.display</td>
+            <td>Mandatory</td>
           </tr>
           <tr>
             <td>Dose sequence</td>
             <td>CareConnect-DCH-Immunization-1.vaccinationProtocol.doseSequence</td>
+            <td>Mandatory</td>
           </tr>
           <tr>
             <td>Outcome Status</td>
             <td>CareConnect-DCH-Immunization-1.explanation</td>
+            <td>Mandatory</td>
           </tr>
           <tr>
             <td>Vaccine Product (DM+D code)</td>
             <td>CareConnect-DCH-Immunization-1.vaccineCode</td>
+            <td>Required</td>
           </tr>
           <tr>
             <td>Vaccine Manufacturer</td>
             <td>CareConnect-DCH-Immunization-1.vaccineCode</td>
+            <td>Required</td>
           </tr>
           <tr>
             <td>Batch Number</td>
             <td>CareConnect-DCH-Immunization-1.lotNumber</td>
+            <td>Required</td>
           </tr>
           <tr>
             <td>Site</td>
             <td>CareConnect-DCH-Immunization-1.site</td>
+            <td>Required</td>
           </tr>
           <tr>
             <td>Route</td>
             <td>CareConnect-DCH-Immunization-1.route</td>
+            <td>Required</td>
           </tr>
           <tr>
-            <td>Reported</td>
+            <td>Dose Amount</td>
             <td>CareConnect-DCH-Immunization-1.reported</td>
+            <td>Optional</td>
           </tr>
         </tbody>
       </table>

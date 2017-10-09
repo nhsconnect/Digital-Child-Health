@@ -161,9 +161,6 @@
           <a href="careconnect-dch-organization-1.html">CareConnect-DCH-Organization-1</a>
         </li>
         <li>
-          <a href="dch-healthcareservice-1.html">DCH-HealthcareService-1</a>
-        </li>
-        <li>
           <a href="careconnect-dch-patient-1.html">CareConnect-DCH-Patient-1</a>
         </li>
         <li>
@@ -171,9 +168,6 @@
         </li>
         <li>
           <a href="dch-familymemberhistory-1.html">DCH-FamilyMemberHistory-1</a>
-        </li>
-        <li>
-          <a href="careconnect-dch-practitioner-1.html">CareConnect-DCH-Practitioner-1</a>
         </li>
         <li>
           <a href="careconnect-dch-location-1.html">CareConnect-DCH-Location-1</a>
@@ -185,26 +179,31 @@
       <table>
         <thead>
           <tr>
-            <th>DCH Data Item Name</th>
-            <th>FHIR Resource Element</th>
+            <th>DCH Data Item</th>
+            <th>FHIR resource element</th>
+            <th>Mandatory/Required/Optional</th>
           </tr>
         </thead>
         <tbody>
           <tr>
             <td>Date</td>
             <td>CareConnect-DCH-Encounter-1.period.start</td>
+            <td>Mandatory</td>
           </tr>
           <tr>
             <td>ODS Site Code</td>
-            <td>CareConnect-DCH-Location-1.identifier using ODS Site Code slice</td>
+            <td>CareConnect-DCH-Location-1.identifier (ODS Site Code)</td>
+            <td>Mandatory</td>
           </tr>
           <tr>
             <td>Family History</td>
             <td>CareConnect-DCH-FamilyMemberHistory-1.code</td>
+            <td>Mandatory</td>
           </tr>
           <tr>
             <td>Person in the Family</td>
             <td>CareConnect-DCH-FamilyMemberHistory-1.relationship</td>
+            <td>Mandatory</td>
           </tr>
         </tbody>
       </table>
