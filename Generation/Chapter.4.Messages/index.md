@@ -52,6 +52,7 @@ The various downloads (including Schema files) and reference implementations are
 [Profile.ClinicalRiskFactors]: ../Profile.ClinicalRiskFactors/Profile.ClinicalRiskFactors.html
 [Profile.ConditionsOrDiagnoses]: ../Profile.ConditionsOrDiagnoses/Profile.ConditionsOrDiagnoses.html
 [Profile.DischargeDetails]: ../Profile.DischargeDetails/Profile.DischargeDetails.html
+[Profile.EarlyYearsProgress]: ../Profile.EarlyYearsProgress/Profile.EarlyYearsProgress.html
 [Profile.EmergencyCareAttendance]: ../Profile.EmergencyCareAttendance/Profile.EmergencyCareAttendance.html
 [Profile.FamilyHistory]: ../Profile.FamilyHistory/Profile.FamilyHistory.html
 [Profile.FeedingStatus]: ../Profile.FeedingStatus/Profile.FeedingStatus.html
