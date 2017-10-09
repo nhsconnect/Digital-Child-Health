@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValueSet xmlns="http://hl7.org/fhir">
+	<meta>
+		<lastUpdated value="2016-08-03T00:00:00+01:00"/>
+	</meta>
+	<url value="https://fhir.nhs.uk/ValueSet/DCH-HeartExaminationOutcome-1"/>
+	<copyright value="This value set includes content from SNOMED CT, which is copyright © 2002+ International Health Terminology Standards Development Organisation (IHTSDO), and distributed by agreement between IHTSDO and HL7. Implementer use of SNOMED CT is not covered by this agreement."/>
+	<version value="1.0.0"/>
+	<name value="Heart Examination Outcome"/>
+	<status value="draft"/>
+	<publisher value="NHS Digital"/>
+	<description value="A code from the SNOMED Clinical Terminology UK coding system to represent the outcome of a physical examination of the heart."/>
+	<compose>
+		<include>
+			<system value="http://snomed.info/sct"/>
+			<concept>
+				<code value="988611000000101"/>
+				<display value="Newborn and Infant Physical Examination Screening Programme, heart examination incomplete"/>
+			</concept>
+			<concept>
+				<code value="988591000000109"/>
+				<display value="Newborn and Infant Physical Examination Screening Programme, heart examination declined"/>
+			</concept>
+			<concept>
+				<code value="988491000000108"/>
+				<display value="Newborn and Infant Physical Examination Screening Programme, heart examination not done"/>
+			</concept>
+			<concept>
+				<code value="988511000000100"/>
+				<display value="Newborn and Infant Physical Examination Screening Programme, heart examination done, no abnormality and no risk factor"/>
+			</concept>
+			<concept>
+				<code value="988531000000108"/>
+				<display value="Newborn and Infant Physical Examination Screening Programme, heart examination done, no abnormality with risk factor"/>
+			</concept>
+			<concept>
+				<code value="988571000000105"/>
+				<display value="Newborn and Infant Physical Examination Screening Programme, heart examination done, abnormality suspected and no risk factor"/>
+			</concept>
+			<concept>
+				<code value="988551000000101"/>
+				<display value="Newborn and Infant Physical Examination Screening Programme, heart examination done, abnormality suspected with risk factor"/>
+			</concept>
+		</include>
+	</compose>
+</ValueSet>

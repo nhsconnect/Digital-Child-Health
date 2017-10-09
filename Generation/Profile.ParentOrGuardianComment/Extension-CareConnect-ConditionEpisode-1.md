@@ -1,0 +1,1 @@
+The episodicity status of a condition.

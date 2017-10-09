@@ -1,0 +1,1 @@
+This extension is constrained to represent the ethnic category for a patient.

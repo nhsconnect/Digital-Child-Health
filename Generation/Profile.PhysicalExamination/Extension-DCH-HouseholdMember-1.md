@@ -1,0 +1,1 @@
+This extension has been constrained to represent the household member information for a person related to the patient subject to the Child Health Event.

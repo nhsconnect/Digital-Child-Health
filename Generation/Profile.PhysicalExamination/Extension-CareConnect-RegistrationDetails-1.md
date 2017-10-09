@@ -1,0 +1,1 @@
+This extension is constrained to represent the additional registration information for a patient.

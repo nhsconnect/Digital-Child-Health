@@ -46,17 +46,23 @@ The various downloads (including Schema files) and reference implementations are
 [Profile.AdmissionDetails]: ../Profile.AdmissionDetails/Profile.AdmissionDetails.html
 [Profile.AdditionalDemographics]: ../Profile.AdditionalDemographics/Profile.AdditionalDemographics.html
 [Profile.AllergiesAndAdverseReactions]: ../Profile.AllergiesAndAdverseReactions/Profile.AllergiesAndAdverseReactions.html 
+[Profile.BirthDetails]: ../Profile.BirthDetails/Profile.BirthDetails.html
 [Profile.BloodSpot]: ../Profile.BloodSpot/Profile.BloodSpot.html
 [Profile.ClinicalRiskFactors]: ../Profile.ClinicalRiskFactors/Profile.ClinicalRiskFactors.html
 [Profile.ConditionsOrDiagnoses]: ../Profile.ConditionsOrDiagnoses/Profile.ConditionsOrDiagnoses.html
 [Profile.DischargeDetails]: ../Profile.DischargeDetails/Profile.DischargeDetails.html
+[Profile.EmergencyCareAttendance]: ../Profile.EmergencyCareAttendance/Profile.EmergencyCareAttendance.html
 [Profile.FamilyHistory]: ../Profile.FamilyHistory/Profile.FamilyHistory.html
 [Profile.FeedingStatus]: ../Profile.FeedingStatus/Profile.FeedingStatus.html
 [Profile.ImmunisationAdministration]: ../Profile.ImmunisationAdministration/Profile.ImmunisationAdministration.html
+[Profile.InformationAndAdviceGiven]:../Profile.InformationAndAdviceGiven/Profile.InformationAndAdviceGiven.html
 [Profile.Medication]: ../Profile.Medication/Profile.Medication.html
 [Profile.Measurements]: ../Profile.Measurements/Profile.Measurements.html
+[Profile.Milestones]: ../Profile.Milestones/Profile.Milestones.html
 [Profile.NewbornHearing]: ../Profile.NewbornHearing/Profile.NewbornHearing.html
+[Profile.ParentOrGuardianComment]:../Profile.ParentOrGuardianComment/Profile.ParentOrGuardianComment.html
 [Profile.PersonalContacts]:../Profile.PersonalContacts/Profile.PersonalContacts.html
+[Profile.PhysicalExamination]:../Profile.PhysicalExamination/Profile.PhysicalExamination.html
 [Profile.PlanAndRequestedActions]:../Profile.PlanAndRequestedActions/Profile.PlanAndRequestedActions.html
 [Profile.ProfessionalComment]:../Profile.ProfessionalComment/Profile.ProfessionalComment.html
 [Profile.Referral]: ../Profile.Referral/Profile.Referral.html

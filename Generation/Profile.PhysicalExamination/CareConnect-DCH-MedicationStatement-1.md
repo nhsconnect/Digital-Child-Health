@@ -1,0 +1,1 @@
+This MedicationStatement Resource is a record of a medication that is being consumed by a patient.

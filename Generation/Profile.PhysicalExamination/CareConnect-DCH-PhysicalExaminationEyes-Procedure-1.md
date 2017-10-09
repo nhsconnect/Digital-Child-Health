@@ -1,0 +1,1 @@
+An action that is or was performed on a patient, with further constraints applied to represent the outcome of a physical examination of the eyes during a Child Health event.

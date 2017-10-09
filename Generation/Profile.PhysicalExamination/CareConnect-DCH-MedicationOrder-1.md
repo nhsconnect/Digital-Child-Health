@@ -1,0 +1,1 @@
+This MedicationOrder Resource represents an order for both supply of the medication and the instructions for administration of the medication to a patient. Further constraints have been applied within the scope of a Child Health event.

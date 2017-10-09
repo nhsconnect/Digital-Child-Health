@@ -1,0 +1,1 @@
+This Condition resource records detailed information about conditions or diagnoses recognised by a clinician, with further constraints applied to represent a physical problem identified with the baby at, or shortly after, birth.

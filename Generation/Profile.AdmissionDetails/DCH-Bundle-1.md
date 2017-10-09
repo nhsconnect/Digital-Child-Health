@@ -8,6 +8,7 @@ This 'DCH-Bundle-1' Bundle resource profile is used as a container to collect a 
 - [CareConnect-DCH-Practitioner-1]
 - [CareConnect-DCH-Location-1]
 - [CareConnect-DCH-SourceOfAdmission-Location-1]
+- [DCH-RelatedPerson-1] 
                                                                                                    
 ### Admission Details event data item mapping to FHIR profiles ###
 ----------
@@ -32,4 +33,5 @@ The Child Health Event data items are fulfilled by elements within the FHIR reso
 [CareConnect-DCH-Practitioner-1]:careconnect-dch-practitioner-1.html
 [CareConnect-DCH-Location-1]:careconnect-dch-location-1.html
 [CareConnect-DCH-SourceOfAdmission-Location-1]:careconnect-dch-sourceofadmission-location-1.html
+[DCH-RelatedPerson-1]:dch-relatedperson-1.html
 

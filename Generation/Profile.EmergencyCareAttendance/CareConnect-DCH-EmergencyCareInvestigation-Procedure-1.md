@@ -1,0 +1,1 @@
+An action that is or was performed on a patient, to represent the therapeutic or diagnostic procedure performed on the patient during an emergency care attendance Child Health event.

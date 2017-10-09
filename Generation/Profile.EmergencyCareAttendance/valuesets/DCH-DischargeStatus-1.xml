@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValueSet xmlns="http://hl7.org/fhir">
+	<meta>
+		<lastUpdated value="2016-08-03T00:00:00+01:00"/>
+	</meta>
+	<url value="https://fhir.nhs.uk/ValueSet/DCH-DischargeStatus-1"/>
+	<copyright value="This value set includes content from SNOMED CT, which is copyright © 2002+ International Health Terminology Standards Development Organisation (IHTSDO), and distributed by agreement between IHTSDO and HL7. Implementer use of SNOMED CT is not covered by this agreement."/>
+	<version value="1.0.0"/>
+	<name value="Discharge Status"/>
+	<status value="draft"/>
+	<publisher value="NHS Digital"/>
+	<description value="A code from the SNOMED Clinical Terminology UK 'Emergency care discharge status' simple reference set with RefSet ID 999003021000000104, to represent the patient status on discharge from emergency care."/>
+	<compose>
+		<include>
+			<system value="http://snomed.info/sct"/>
+			<concept>
+				<code value="1077021000000100"/>
+				<display value="Streamed from emergency department to general practitioner following initial assessment (situation)"/>
+			</concept>
+			<concept>
+				<code value="1077061000000100"/>
+				<display value="Streamed from emergency department to ophthalmology service following initial assessment (situation)"/>
+			</concept>
+			<concept>
+				<code value="1066321000000100"/>
+				<display value="Left care setting before treatment completed (finding)"/>
+			</concept>
+			<concept>
+				<code value="1077091000000100"/>
+				<display value="Streamed from emergency department to falls service following initial assessment (situation)"/>
+			</concept>
+			<concept>
+				<code value="1077031000000100"/>
+				<display value="Streamed from emergency department to urgent care service following initial assessment (situation)"/>
+			</concept>
+			<concept>
+				<code value="75004002"/>
+				<display value="Emergency room admission, died in emergency room (procedure)"/>
+			</concept>
+			<concept>
+				<code value="182992009"/>
+				<display value="Treatment completed (situation)"/>
+			</concept>
+			<concept>
+				<code value="1077781000000100"/>
+				<display value="Streamed to emergency department following initial assessment (situation)"/>
+			</concept>
+			<concept>
+				<code value="1077071000000100"/>
+				<display value="Streamed from emergency department to pharmacy service following initial assessment (situation)"/>
+			</concept>
+			<concept>
+				<code value="1077101000000100"/>
+				<display value="Streamed from emergency department to frailty service following initial assessment (situation)"/>
+			</concept>
+			<concept>
+				<code value="1066311000000100"/>
+				<display value="Left care setting after initial assessment (finding)"/>
+			</concept>
+			<concept>
+				<code value="63238001"/>
+				<display value="Dead on arrival at hospital (finding)"/>
+			</concept>
+			<concept>
+				<code value="1077041000000100"/>
+				<display value="Streamed from emergency department to mental health service following initial assessment (situation)"/>
+			</concept>
+			<concept>
+				<code value="1066301000000100"/>
+				<display value="Left care setting before initial assessment (finding)"/>
+			</concept>
+			<concept>
+				<code value="1077081000000100"/>
+				<display value="Streamed from emergency department to ambulatory emergency care service following initial assessment (situation)"/>
+			</concept>
+			<concept>
+				<code value="1077051000000100"/>
+				<display value="Streamed from emergency department to dental service following initial assessment (situation)"/>
+			</concept>
+		</include>
+	</compose>
+</ValueSet>

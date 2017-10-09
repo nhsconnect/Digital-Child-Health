@@ -1,0 +1,1 @@
+The Location resource provides information and details on the physical location and the services provided, with further constraints to represent a location where the baby was delivered.

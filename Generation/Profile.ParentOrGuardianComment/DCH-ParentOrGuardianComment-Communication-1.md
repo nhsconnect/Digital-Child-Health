@@ -1,0 +1,1 @@
+This Communication resource has been constrained to represent comments made by a parent or guardian during a Child Health Event.

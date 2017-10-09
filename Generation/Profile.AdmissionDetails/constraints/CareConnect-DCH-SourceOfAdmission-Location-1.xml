@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <meta>
-    <lastUpdated value="2017-10-05T13:22:21.91+01:00" />
+    <lastUpdated value="2017-10-07T21:55:28.666+01:00" />
     <tag>
       <system value="urn:hscic:publishOrder" />
       <code value="22" />
@@ -5809,7 +5809,7 @@
     </element>
     <element>
       <path value="Location.physicalType" />
-      <short value="Physical form of the location for source of admission and discharge destination" />
+      <short value="Physical form of the location for source of admission" />
       <definition value="Physical form of the location, e.g. building, room, vehicle, road." />
       <comments value="Not all terminology uses fit this general pattern. In some cases, models should not use CodeableConcept and use Coding directly and provide their own structure for managing text, codings, translations and the relationship between elements and pre- and post-coordination." />
       <requirements value="For purposes of showing relevant locations in queries, we need to categorize locations." />
@@ -7042,7 +7042,7 @@
     </element>
     <element>
       <path value="Location.physicalType" />
-      <short value="Physical form of the location for source of admission and discharge destination" />
+      <short value="Physical form of the location for source of admission" />
       <min value="1" />
       <binding>
         <strength value="required" />

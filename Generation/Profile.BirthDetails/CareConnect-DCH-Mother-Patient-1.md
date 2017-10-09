@@ -1,0 +1,1 @@
+The Patient resource represents the patient involved in the provision of healthcare related services, with further constraints applied to represent the mother as the subject of a delivery event.

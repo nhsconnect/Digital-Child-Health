@@ -1,0 +1,210 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValueSet xmlns="http://hl7.org/fhir">
+	<meta>
+		<lastUpdated value="2016-08-03T00:00:00+01:00"/>
+	</meta>
+	<url value="https://fhir.nhs.uk/ValueSet/DCH-Milestone-1"/>
+	<copyright value="Copyright © 2016 Health and Social Care Information Centre. NHS Digital is the trading name of the Health and Social Care Information Centre."/>
+	<version value="1.0.0"/>
+	<name value="Milestone"/>
+	<status value="draft"/>
+	<publisher value="NHS Digital"/>
+	<description value="The name of the Milestone achieved."/>
+	<compose>
+		<include>
+			<system value="https://fhir.nhs.uk/DCH-Milestone-1"/>
+			<concept>
+				<code value="1"/>
+				<display value="Lifts head clear of ground"/>
+			</concept>
+			<concept>
+				<code value="2"/>
+				<display value="Sits with support"/>
+			</concept>
+			<concept>
+				<code value="3"/>
+				<display value="Crawls"/>
+			</concept>
+			<concept>
+				<code value="4"/>
+				<display value="Stands holding on"/>
+			</concept>
+			<concept>
+				<code value="5"/>
+				<display value="Walks holding on"/>
+			</concept>
+			<concept>
+				<code value="6"/>
+				<display value="Almost walking alone, but you need to be close by"/>
+			</concept>
+			<concept>
+				<code value="7"/>
+				<display value="First outdoor walk"/>
+			</concept>
+			<concept>
+				<code value="8"/>
+				<display value="Stares at hands"/>
+			</concept>
+			<concept>
+				<code value="9"/>
+				<display value="Grabs and holds things using whole hand"/>
+			</concept>
+			<concept>
+				<code value="10"/>
+				<display value="Reaches out for things"/>
+			</concept>
+			<concept>
+				<code value="11"/>
+				<display value="Drops things on purpose"/>
+			</concept>
+			<concept>
+				<code value="12"/>
+				<display value="Finger feeds"/>
+			</concept>
+			<concept>
+				<code value="13"/>
+				<display value="Feeds with a spoon"/>
+			</concept>
+			<concept>
+				<code value="14"/>
+				<display value="Uses a feeder cup"/>
+			</concept>
+			<concept>
+				<code value="15"/>
+				<display value="Picking up small things"/>
+			</concept>
+			<concept>
+				<code value="16"/>
+				<display value="Holds pencil and makes marks"/>
+			</concept>
+			<concept>
+				<code value="17"/>
+				<display value="Open cupboards"/>
+			</concept>
+			<concept>
+				<code value="18"/>
+				<display value="Wanting to run and climb"/>
+			</concept>
+			<concept>
+				<code value="19"/>
+				<display value="Smiles"/>
+			</concept>
+			<concept>
+				<code value="20"/>
+				<display value="Babbles (lots of new sounds)"/>
+			</concept>
+			<concept>
+				<code value="21"/>
+				<display value="Turns to his or her name"/>
+			</concept>
+			<concept>
+				<code value="22"/>
+				<display value="Copies noises"/>
+			</concept>
+			<concept>
+				<code value="23"/>
+				<display value="Says 'mama' - to anyone"/>
+			</concept>
+			<concept>
+				<code value="24"/>
+				<display value="Says recognisable word"/>
+			</concept>
+			<concept>
+				<code value="25"/>
+				<display value="Plays pat-a-cake"/>
+			</concept>
+			<concept>
+				<code value="26"/>
+				<display value="Likes toys that make noise"/>
+			</concept>
+			<concept>
+				<code value="27"/>
+				<display value="Pointing to things that are out of reach"/>
+			</concept>
+			<concept>
+				<code value="28"/>
+				<display value="Helps turn pages in a book"/>
+			</concept>
+			<concept>
+				<code value="29"/>
+				<display value="Joins two recognisable words"/>
+			</concept>
+			<concept>
+				<code value="30"/>
+				<display value="Favourite words are 'no' and 'mine'"/>
+			</concept>
+			<concept>
+				<code value="31"/>
+				<display value="Speaks in sentences"/>
+			</concept>
+			<concept>
+				<code value="32"/>
+				<display value="Enjoys books"/>
+			</concept>
+			<concept>
+				<code value="33"/>
+				<display value="Joining in with songs and rhymes"/>
+			</concept>
+			<concept>
+				<code value="34"/>
+				<display value="Stares at your face"/>
+			</concept>
+			<concept>
+				<code value="35"/>
+				<display value="Moves eyes to watch you"/>
+			</concept>
+			<concept>
+				<code value="36"/>
+				<display value="Smiles for special people"/>
+			</concept>
+			<concept>
+				<code value="37"/>
+				<display value="Cries when you leave the room"/>
+			</concept>
+			<concept>
+				<code value="38"/>
+				<display value="Holds up arms to be lifted"/>
+			</concept>
+			<concept>
+				<code value="39"/>
+				<display value="Usually sleeps through the night"/>
+			</concept>
+			<concept>
+				<code value="40"/>
+				<display value="Wanting to explore and be more independent"/>
+			</concept>
+			<concept>
+				<code value="41"/>
+				<display value="Enjoys messy play but not sharing"/>
+			</concept>
+			<concept>
+				<code value="42"/>
+				<display value="Likes being close and enjoys having cuddles and hugs"/>
+			</concept>
+			<concept>
+				<code value="43"/>
+				<display value="Playing with other children"/>
+			</concept>
+			<concept>
+				<code value="44"/>
+				<display value="Showing interest in potty training"/>
+			</concept>
+			<concept>
+				<code value="45"/>
+				<display value="Turning from laughter to anger quickly"/>
+			</concept>
+			<concept>
+				<code value="46"/>
+				<display value="Has first tooth"/>
+			</concept>
+			<concept>
+				<code value="47"/>
+				<display value="Has been to the dentist"/>
+			</concept>
+			<concept>
+				<code value="48"/>
+				<display value="Is used to tooth brushing"/>
+			</concept>
+		</include>
+	</compose>
+</ValueSet>

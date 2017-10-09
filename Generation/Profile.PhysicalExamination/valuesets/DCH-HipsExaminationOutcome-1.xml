@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValueSet xmlns="http://hl7.org/fhir">
+	<meta>
+		<lastUpdated value="2016-08-03T00:00:00+01:00"/>
+	</meta>
+	<url value="https://fhir.nhs.uk/ValueSet/DCH-HipsExaminationOutcome-1"/>
+	<copyright value="This value set includes content from SNOMED CT, which is copyright © 2002+ International Health Terminology Standards Development Organisation (IHTSDO), and distributed by agreement between IHTSDO and HL7. Implementer use of SNOMED CT is not covered by this agreement."/>
+	<version value="1.0.0"/>
+	<name value="Hips Examination Outcome"/>
+	<status value="draft"/>
+	<publisher value="NHS Digital"/>
+	<description value="A code from the SNOMED Clinical Terminology UK coding system to represent the outcome of a physical examination of the hips."/>
+	<compose>
+		<include>
+			<system value="http://snomed.info/sct"/>
+			<concept>
+				<code value="988201000000100"/>
+				<display value="Newborn and Infant Physical Examination Screening Programme, hip examination incomplete "/>
+			</concept>
+			<concept>
+				<code value="988181000000104"/>
+				<display value="Newborn and Infant Physical Examination Screening Programme, hip examination declined"/>
+			</concept>
+			<concept>
+				<code value="988161000000108"/>
+				<display value="Newborn and Infant Physical Examination Screening Programme, hip examination not done"/>
+			</concept>
+			<concept>
+				<code value="985701000000100"/>
+				<display value="Newborn and Infant Physical Examination Screening Programme, hip examination done, no abnormality and no risk factor"/>
+			</concept>
+			<concept>
+				<code value="985741000000102"/>
+				<display value="Newborn and Infant Physical Examination Screening Programme, hip examination done, no abnormality with risk factor "/>
+			</concept>
+			<concept>
+				<code value="988241000000102"/>
+				<display value="Newborn and Infant Physical Examination Screening Programme, hip examination done, bilateral abnormality suspected and no risk factor"/>
+			</concept>
+			<concept>
+				<code value="985431000000103"/>
+				<display value="Newborn and Infant Physical Examination Screening Programme, hip examination done, bilateral abnormality suspected with risk factor"/>
+			</concept>
+			<concept>
+				<code value="988331000000100"/>
+				<display value="Newborn and Infant Physical Examination Screening Programme, hip examination done, left abnormality suspected and no risk factor"/>
+			</concept>
+			<concept>
+				<code value="988311000000108"/>
+				<display value="Newborn and Infant Physical Examination Screening Programme, hip examination done, left abnormality suspected with risk factor"/>
+			</concept>
+			<concept>
+				<code value="988221000000109"/>
+				<display value="Newborn and Infant Physical Examination Screening Programme, hip examination done, right abnormality suspected and no risk factor"/>
+			</concept>
+			<concept>
+				<code value="985891000000104"/>
+				<display value="Newborn and Infant Physical Examination Screening Programme, hip examination done, right abnormality suspected with risk factor"/>
+			</concept>
+		</include>
+	</compose>
+</ValueSet>

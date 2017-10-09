@@ -1,0 +1,1 @@
+Flag indicating whether the patient authorized the donation of body parts after death.

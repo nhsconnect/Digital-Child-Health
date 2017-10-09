@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValueSet xmlns="http://hl7.org/fhir">
+	<meta>
+		<lastUpdated value="2016-08-03T00:00:00+01:00"/>
+	</meta>
+	<url value="https://fhir.nhs.uk/ValueSet/DCH-ProblemDuringDelivery-1"/>
+	<copyright value="Copyright © 2016 Health and Social Care Information Centre. NHS Digital is the trading name of the Health and Social Care Information Centre."/>
+	<version value="1.0.0"/>
+	<name value="Problem During Delivery"/>
+	<status value="draft"/>
+	<description value="A problem encountered by the baby, during delivery."/>
+	<compose>
+		<include>
+			<system value="https://fhir.nhs.uk/DCH-ProblemDuringDelivery-1"/>
+			<concept>
+				<code value="1"/>
+				<display value="Cephalohaematoma"/>
+			</concept>
+			<concept>
+				<code value="2"/>
+				<display value="Caput succedaneum"/>
+			</concept>
+			<concept>
+				<code value="3"/>
+				<display value="Extensive bruising"/>
+			</concept>
+			<concept>
+				<code value="4"/>
+				<display value="Erythematous skin rash"/>
+			</concept>
+			<concept>
+				<code value="5"/>
+				<display value="Vesicular skin rash"/>
+			</concept>
+			<concept>
+				<code value="6"/>
+				<display value="Talipes equina varus"/>
+			</concept>
+			<concept>
+				<code value="7"/>
+				<display value="Plagiocephaly"/>
+			</concept>
+			<concept>
+				<code value="8"/>
+				<display value="Laceration"/>
+			</concept>
+			<concept>
+				<code value="9"/>
+				<display value=" Erb’s Palsy"/>
+			</concept>
+			<concept>
+				<code value="10"/>
+				<display value="Cleft lip"/>
+			</concept>
+			<concept>
+				<code value="11"/>
+				<display value="Cleft palate"/>
+			</concept>
+			<concept>
+				<code value="12"/>
+				<display value=" Anal atresia"/>
+			</concept>
+			<concept>
+				<code value="13"/>
+				<display value="Absent finger"/>
+			</concept>
+			<concept>
+				<code value="14"/>
+				<display value="Absent toe"/>
+			</concept>
+			<concept>
+				<code value="15"/>
+				<display value="Fractured clavicle"/>
+			</concept>
+		</include>
+	</compose>
+</ValueSet>

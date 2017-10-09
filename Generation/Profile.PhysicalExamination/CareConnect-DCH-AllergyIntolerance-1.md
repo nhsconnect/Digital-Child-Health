@@ -1,0 +1,1 @@
+This AllergyIntolerance Resource records Risk of harmful or undesirable, physiological response which is unique to an individual and associated with exposure to a substance, with further constraints applied within the scope of a Child Health event.

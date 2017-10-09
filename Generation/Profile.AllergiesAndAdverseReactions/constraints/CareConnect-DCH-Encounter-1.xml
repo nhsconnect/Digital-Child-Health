@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <meta>
-    <lastUpdated value="2017-10-05T16:11:17.602+01:00" />
+    <lastUpdated value="2017-10-07T16:45:23.15+01:00" />
     <tag>
       <system value="urn:hscic:publishOrder" />
       <code value="5" />
@@ -8776,10 +8776,10 @@
       </constraint>
       <isSummary value="true" />
       <binding>
-        <strength value="required" />
-        <description value="The method of admission" />
+        <strength value="preferred" />
+        <description value="From where the patient was admitted." />
         <valueSetReference>
-          <reference value="https://fhir.nhs.uk/ValueSet/DCH-AdmissionMethod-1" />
+          <reference value="http://hl7.org/fhir/ValueSet/encounter-admit-source" />
         </valueSetReference>
       </binding>
       <mapping>
@@ -9011,7 +9011,6 @@
       <type>
         <code value="uri" />
       </type>
-      <fixedUri value="https://fhir.nhs.uk/DCH-AdmissionMethod-1" />
       <condition value="ele-1" />
       <constraint>
         <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-expression">
@@ -12080,10 +12079,10 @@
       </constraint>
       <isSummary value="true" />
       <binding>
-        <strength value="required" />
-        <description value="The method of discharge from hospital" />
+        <strength value="preferred" />
+        <description value="Discharge Disposition" />
         <valueSetReference>
-          <reference value="https://fhir.nhs.uk/ValueSet/DCH-DischargeMethod-1" />
+          <reference value="http://hl7.org/fhir/ValueSet/encounter-discharge-disposition" />
         </valueSetReference>
       </binding>
       <mapping>
@@ -12315,7 +12314,6 @@
       <type>
         <code value="uri" />
       </type>
-      <fixedUri value="https://fhir.nhs.uk/DCH-DischargeMethod-1" />
       <condition value="ele-1" />
       <constraint>
         <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-expression">
@@ -13937,23 +13935,12 @@
       </type>
     </element>
     <element>
-      <path value="Encounter.hospitalization.admitSource" />
-      <binding>
-        <strength value="required" />
-        <description value="The method of admission" />
-        <valueSetReference>
-          <reference value="https://fhir.nhs.uk/ValueSet/DCH-AdmissionMethod-1" />
-        </valueSetReference>
-      </binding>
-    </element>
-    <element>
       <path value="Encounter.hospitalization.admitSource.coding" />
       <max value="1" />
     </element>
     <element>
       <path value="Encounter.hospitalization.admitSource.coding.system" />
       <min value="1" />
-      <fixedUri value="https://fhir.nhs.uk/DCH-AdmissionMethod-1" />
     </element>
     <element>
       <path value="Encounter.hospitalization.admitSource.coding.code" />
@@ -14029,23 +14016,12 @@
       </type>
     </element>
     <element>
-      <path value="Encounter.hospitalization.dischargeDisposition" />
-      <binding>
-        <strength value="required" />
-        <description value="The method of discharge from hospital" />
-        <valueSetReference>
-          <reference value="https://fhir.nhs.uk/ValueSet/DCH-DischargeMethod-1" />
-        </valueSetReference>
-      </binding>
-    </element>
-    <element>
       <path value="Encounter.hospitalization.dischargeDisposition.coding" />
       <max value="1" />
     </element>
     <element>
       <path value="Encounter.hospitalization.dischargeDisposition.coding.system" />
       <min value="1" />
-      <fixedUri value="https://fhir.nhs.uk/DCH-DischargeMethod-1" />
     </element>
     <element>
       <path value="Encounter.hospitalization.dischargeDisposition.coding.code" />

@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValueSet xmlns="http://hl7.org/fhir">
+	<meta>
+		<lastUpdated value="2016-08-03T00:00:00+01:00"/>
+	</meta>
+	<url value="https://fhir.nhs.uk/ValueSet/DCH-ProblemAtBirth-1"/>
+	<copyright value="Copyright © 2016 Health and Social Care Information Centre. NHS Digital is the trading name of the Health and Social Care Information Centre."/>
+	<version value="1.0.0"/>
+	<name value="Problem at Birth"/>
+	<status value="draft"/>
+	<description value="A problem encountered by the baby, at birth."/>
+	<compose>
+		<include>
+			<system value="https://fhir.nhs.uk/DCH-ProblemAtBirth-1"/>
+			<concept>
+				<code value="1"/>
+				<display value="Shoulder dystocia"/>
+			</concept>
+			<concept>
+				<code value="2"/>
+				<display value="Cord prolapse"/>
+			</concept>
+			<concept>
+				<code value="3"/>
+				<display value="Acute fetal compromise"/>
+			</concept>
+			<concept>
+				<code value="4"/>
+				<display value="Fetal acidaemia"/>
+			</concept>
+			<concept>
+				<code value="5"/>
+				<display value="Meconium Aspiration Syndrome"/>
+			</concept>
+			<concept>
+				<code value="6"/>
+				<display value="Acute blood loss"/>
+			</concept>
+						<concept>
+				<code value="7"/>
+				<display value="Birth Trauma"/>
+			</concept>
+		</include>
+	</compose>
+</ValueSet>

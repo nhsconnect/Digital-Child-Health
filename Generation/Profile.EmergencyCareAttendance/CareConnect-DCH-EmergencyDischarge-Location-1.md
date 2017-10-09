@@ -1,0 +1,1 @@
+The encounter resource represents an encounter between a care professional and the patient (or patient's record), with further constraints applied to represent the discharge destination from an emergency care attendance Child Health Event.

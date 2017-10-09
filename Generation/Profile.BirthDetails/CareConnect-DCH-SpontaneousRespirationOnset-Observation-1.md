@@ -1,0 +1,1 @@
+The Observation resource is used for tracking the current and historical observations that have been made for a patient, with further constraints applied to represent duration of the length of time between delivery of the baby and the time spontaneous respiration began.

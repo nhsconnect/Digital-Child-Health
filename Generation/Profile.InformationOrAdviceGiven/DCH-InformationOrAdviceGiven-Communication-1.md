@@ -1,0 +1,1 @@
+This Communication resource has been constrained to represent information or advice given by a Practitioner during a Child Health Event.
