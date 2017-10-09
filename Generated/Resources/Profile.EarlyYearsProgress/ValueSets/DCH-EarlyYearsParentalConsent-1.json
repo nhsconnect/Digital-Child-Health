@@ -1,0 +1,30 @@
+{
+  "resourceType": "ValueSet",
+  "meta": {
+    "lastUpdated": "2016-08-03T00:00:00+01:00"
+  },
+  "url": "https://fhir.nhs.uk/ValueSet/DCH-EarlyYearsParentalConsent-1",
+  "version": "1.0.0",
+  "name": "Early Years Parental Consent",
+  "status": "draft",
+  "publisher": "NHS Digital",
+  "description": "A code from the SNOMED Clinical Terminology UK coding system to represent whether parental consent to share information with health professionals and other practitioners has been obtained.",
+  "copyright": "This value set includes content from SNOMED CT, which is copyright © 2002+ International Health Terminology Standards Development Organisation (IHTSDO), and distributed by agreement between IHTSDO and HL7. Implementer use of SNOMED CT is not covered by this agreement.",
+  "compose": {
+    "include": [
+      {
+        "system": "http://snomed.info/sct",
+        "concept": [
+          {
+            "code": "752221000000109",
+            "display": "Consent given by person with parental responsibility (finding)"
+          },
+          {
+            "code": "752241000000102",
+            "display": "Consent declined by person with parental responsibility (finding)"
+          }
+        ]
+      }
+    ]
+  }
+}

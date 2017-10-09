@@ -1,0 +1,62 @@
+{
+  "resourceType": "ValueSet",
+  "meta": {
+    "lastUpdated": "2016-08-03T00:00:00+01:00"
+  },
+  "url": "https://fhir.nhs.uk/ValueSet/DCH-ASQSEAssessmentToolType-1",
+  "version": "1.0.0",
+  "name": "ASQ-SE Assessment Tool Type",
+  "status": "draft",
+  "publisher": "NHS Digital",
+  "description": "A code from the SNOMED Clinical Terminology UK coding system to identify the ASQ-SE Assessment Tool score in use.",
+  "copyright": "This value set includes content from SNOMED CT, which is copyright © 2002+ International Health Terminology Standards Development Organisation (IHTSDO), and distributed by agreement between IHTSDO and HL7. Implementer use of SNOMED CT is not covered by this agreement.",
+  "compose": {
+    "include": [
+      {
+        "system": "http://snomed.info/sct",
+        "concept": [
+          {
+            "code": "953641000000102",
+            "display": "ASQ-3 (Ages and Stages Questionnaires Third Edition) 60 month questionnaire - problem solving score"
+          },
+          {
+            "code": "1053941000000101",
+            "display": "Ages and Stages Questionnaires:Social-Emotional second edition 2 month questionnaire score"
+          },
+          {
+            "code": "1053951000000103",
+            "display": "Ages and Stages Questionnaires:Social-Emotional second edition 6 month questionnaire score"
+          },
+          {
+            "code": "1053971000000107",
+            "display": "Ages and Stages Questionnaires:Social-Emotional second edition 12 month questionnaire score"
+          },
+          {
+            "code": "1053991000000106",
+            "display": "Ages and Stages Questionnaires:Social-Emotional second edition 18 month questionnaire score"
+          },
+          {
+            "code": "1054011000000104",
+            "display": "Ages and Stages Questionnaires:Social-Emotional second edition 24 month questionnaire score"
+          },
+          {
+            "code": "1054021000000105",
+            "display": "Ages and Stages Questionnaires:Social-Emotional second edition 30 month questionnaire score"
+          },
+          {
+            "code": "1054031000000107",
+            "display": "Ages and Stages Questionnaires:Social-Emotional second edition 36 month questionnaire score"
+          },
+          {
+            "code": "1054041000000103",
+            "display": "Ages and Stages Questionnaires:Social-Emotional second edition 48 month questionnaire score"
+          },
+          {
+            "code": "1054051000000100",
+            "display": "Ages and Stages Questionnaires:Social-Emotional second edition 60 month questionnaire score"
+          }
+        ]
+      }
+    ]
+  }
+}
