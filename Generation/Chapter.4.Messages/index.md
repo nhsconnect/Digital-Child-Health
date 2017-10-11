@@ -54,6 +54,7 @@ The various downloads (including Schema files) and reference implementations are
 [Profile.DischargeDetails]: ../Profile.DischargeDetails/Profile.DischargeDetails.html
 [Profile.EarlyYearsProgress]: ../Profile.EarlyYearsProgress/Profile.EarlyYearsProgress.html
 [Profile.EmergencyCareAttendance]: ../Profile.EmergencyCareAttendance/Profile.EmergencyCareAttendance.html
+[Profile.ExaminationFindings]: ../Profile.ExaminationFindings/Profile.ExaminationFindings.html
 [Profile.FamilyHistory]: ../Profile.FamilyHistory/Profile.FamilyHistory.html
 [Profile.FeedingStatus]: ../Profile.FeedingStatus/Profile.FeedingStatus.html
 [Profile.ImmunisationAdministration]: ../Profile.ImmunisationAdministration/Profile.ImmunisationAdministration.html
@@ -69,6 +70,7 @@ The various downloads (including Schema files) and reference implementations are
 [Profile.ProfessionalComment]:../Profile.ProfessionalComment/Profile.ProfessionalComment.html
 [Profile.Referral]: ../Profile.Referral/Profile.Referral.html
 [Profile.ProfessionalContacts]:../Profile.ProfessionalContacts/Profile.ProfessionalContacts.html
+[Profile.SafetyAlerts]: ../Profile.SafetyAlerts/Profile.SafetyAlerts.html
 [Profile.SocialContextHousehold]: ../Profile.SocialContextHousehold/Profile.SocialContextHousehold.html
 [Profile.SocialContextPerson]: ../Profile.SocialContextPerson/Profile.SocialContextPerson.html
 

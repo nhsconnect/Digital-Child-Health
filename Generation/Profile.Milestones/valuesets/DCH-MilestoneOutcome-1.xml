@@ -22,8 +22,8 @@
 				<display value="Milestone Not achieved"/>
 			</concept>
 			<concept>
-				<code value="Milestone Observed "/>
-				<display value="Milestone Observed "/>
+				<code value="Milestone Observed"/>
+				<display value="Milestone Observed"/>
 			</concept>
 			<concept>
 				<code value="Milestone Not observed"/>

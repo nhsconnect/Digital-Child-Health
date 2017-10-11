@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValueSet xmlns="http://hl7.org/fhir">
+	<meta>
+		<lastUpdated value="2016-08-03T00:00:00+01:00"/>
+	</meta>
+	<url value="https://fhir.nhs.uk/ValueSet/DCH-ExaminationFindingObservation-1"/>
+	<copyright value="Copyright © 2016 Health and Social Care Information Centre. NHS Digital is the trading name of the Health and Social Care Information Centre."/>
+	<version value="1.0.0"/>
+	<name value="Examination Finding Observation"/>
+	<status value="draft"/>
+	<publisher value="NHS Digital"/>
+	<description value="The examination finding observation."/>
+	<compose>
+		<include>
+			<system value="https://fhir.nhs.uk/DCH-ExaminationFindingObservation-1"/>
+			<concept>
+				<code value="01"/>
+				<display value="Assessment/Examination declined"/>
+			</concept>
+			<concept>
+				<code value="02"/>
+				<display value="Assessment/Examination not done"/>
+			</concept>
+			<concept>
+				<code value="03"/>
+				<display value="Assessment/Examination Incomplete"/>
+			</concept>
+			<concept>
+				<code value="04"/>
+				<display value="Assessment/Examination done, difficulty suspected"/>
+			</concept>
+			<concept>
+				<code value="05"/>
+				<display value="Assessment/Examination done, difficulty suspected with risk factors"/>
+			</concept>
+			<concept>
+				<code value="06"/>
+				<display value="Assessment/Examination done, difficulty suspected and no risk factors"/>
+			</concept>
+			<concept>
+				<code value="07"/>
+				<display value="Assessment/Examination done, no difficulty suspected and no risk factor"/>
+			</concept>
+			<concept>
+				<code value="08"/>
+				<display value="Assessment/Examination done, no difficulty with risk factors"/>
+			</concept>
+			<concept>
+				<code value="09"/>
+				<display value="Assessment/Examination done, no difficulty suspected"/>
+			</concept>
+		</include>
+	</compose>
+</ValueSet>

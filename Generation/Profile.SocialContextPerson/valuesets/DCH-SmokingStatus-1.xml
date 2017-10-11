@@ -31,11 +31,11 @@
 			</concept>
 			<concept>
 				<code value="05"/>
-				<display value="Non-smoker - history unknown "/>
+				<display value="Non-smoker - history unknown"/>
 			</concept>
 			<concept>
 				<code value="06"/>
-				<display value="Never smoked "/>
+				<display value="Never smoked"/>
 			</concept>
 			<concept>
 				<code value="09"/>

@@ -15,7 +15,7 @@
 			<system value="http://snomed.info/sct"/>
 			<concept>
 				<code value="988201000000100"/>
-				<display value="Newborn and Infant Physical Examination Screening Programme, hip examination incomplete "/>
+				<display value="Newborn and Infant Physical Examination Screening Programme, hip examination incomplete"/>
 			</concept>
 			<concept>
 				<code value="988181000000104"/>
@@ -31,7 +31,7 @@
 			</concept>
 			<concept>
 				<code value="985741000000102"/>
-				<display value="Newborn and Infant Physical Examination Screening Programme, hip examination done, no abnormality with risk factor "/>
+				<display value="Newborn and Infant Physical Examination Screening Programme, hip examination done, no abnormality with risk factor"/>
 			</concept>
 			<concept>
 				<code value="988241000000102"/>

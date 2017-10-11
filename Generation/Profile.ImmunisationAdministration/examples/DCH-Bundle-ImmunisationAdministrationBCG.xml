@@ -147,7 +147,7 @@
 							</answer>
 						</question>
 						<question>
-							<text value="Name of vaccine manufacturer "/>
+							<text value="Name of vaccine manufacturer"/>
 							<answer>
 								<valueString value="Statens Serum Institut (SSI)"/>
 							</answer>
@@ -541,7 +541,7 @@
 				<meta>
 					<profile value="https://fhir.hl7.org.uk/StructureDefinition/CareConnect-Organization-1"/>
 				</meta>
-				<name value="Statens Serum Institut (SSI) "/>
+				<name value="Statens Serum Institut (SSI)"/>
 			</Organization>
 		</resource>
 	</entry>

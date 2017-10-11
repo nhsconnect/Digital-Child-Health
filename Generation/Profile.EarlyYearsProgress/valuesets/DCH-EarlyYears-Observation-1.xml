@@ -15,7 +15,7 @@
 			<system value="https://fhir.nhs.uk/DCH-EarlyYears-Observation-1"/>
 			<concept>
 				<code value="01"/>
-				<display value="Communication and Language "/>
+				<display value="Communication and Language"/>
 			</concept>
 			<concept>
 				<code value="02"/>
@@ -23,11 +23,11 @@
 			</concept>
 			<concept>
 				<code value="03"/>
-				<display value="Personal, Social and Emotional Development "/>
+				<display value="Personal, Social and Emotional Development"/>
 			</concept>
 			<concept>
 				<code value="04"/>
-				<display value="Any Areas of Concern "/>
+				<display value="Any Areas of Concern"/>
 			</concept>
 			<concept>
 				<code value="05"/>

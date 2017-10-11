@@ -35,11 +35,11 @@
 			</concept>
 			<concept>
 				<code value="6"/>
-				<display value="PATIENT discharged him/herself "/>
+				<display value="PATIENT discharged him/herself"/>
 			</concept>
 			<concept>
 				<code value="7"/>
-				<display value="PATIENT discharged by a relative or advocate "/>
+				<display value="PATIENT discharged by a relative or advocate"/>
 			</concept>
 		</include>
 	</compose>
