@@ -1,4 +1,4 @@
-This 'DCH-Bundle-1' Bundle resource profile is used as a container to collect a combination of the following resources to capture prescribed medications:
+This 'DCH-Bundle-1' Bundle resource profile is used as a container to collect a combination of the following resources to capture medications that have been prescribed or administered:
 
 - [DCH-MessageHeader-1] - where the coding and display for the event element is fixed to 'Medication'
 - [CareConnect-DCH-Organization-1]
@@ -16,7 +16,8 @@ The Child Health Event data items are fulfilled by elements within the FHIR reso
 
 | DCH Data Item               | FHIR resource element                                                                                             | Mandatory/Required/Optional |
 |-----------------------------|-------------------------------------------------------------------------------------------------------------------|-----------------------------|
-| Date                        | CareConnect-DCH-MedicationOrder-1.dateWritten or CareConnect-DCH-MedicationAdministration-1.effectiveTimeDateTime | Mandatory                   |
+| Date Prescribed             | CareConnect-DCH-MedicationAdministration-1.effectiveTimeDateTime 												  | Mandatory                   |
+| Date Administered           | CareConnect-DCH-MedicationOrder-1.dateWritten 																	  | Mandatory                   |
 | Start Date                  | CareConnect-DCH-MedicationOrder-1.dosageInstruction.timing.period.start                                           | Required                    |
 | End Date                    | CareConnect-DCH-MedicationOrder-1.dosageInstruction.timing.period.end                                             | Required                    |
 | ODS Site Code               | CareConnect-DCH-Location.identifer (ODS Site Code)                                                                | Required                    |

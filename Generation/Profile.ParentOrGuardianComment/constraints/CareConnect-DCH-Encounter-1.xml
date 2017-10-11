@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <meta>
-    <lastUpdated value="2017-10-07T16:45:23.15+01:00" />
+    <lastUpdated value="2017-10-10T20:04:56.314+01:00" />
     <tag>
       <system value="urn:hscic:publishOrder" />
       <code value="5" />
@@ -2902,7 +2902,7 @@
     <element>
       <path value="Encounter.type.coding" />
       <name value="childHealthEncounterType" />
-      <short value="Code defined by a terminology system" />
+      <short value="The type of Child Health encounter" />
       <definition value="A reference to a code defined by a terminology system." />
       <comments value="Codes may be defined very casually in enumerations, or code lists, up to very formal definitions such as SNOMED CT - see the HL7 v3 Core Principles for more information.  Ordering of codings is undefined and SHALL NOT be used to infer meaning. Generally, at most only one of the coding values will be labelled as UserSelected = true." />
       <requirements value="Allows for translations and alternate encodings within a code system.  Also supports communication of the same instance to systems requiring different encodings." />
@@ -13782,6 +13782,7 @@
     <element>
       <path value="Encounter.type.coding" />
       <name value="childHealthEncounterType" />
+      <short value="The type of Child Health encounter" />
       <max value="1" />
       <binding>
         <strength value="required" />
