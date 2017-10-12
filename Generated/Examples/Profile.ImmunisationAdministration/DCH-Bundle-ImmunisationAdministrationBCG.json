@@ -186,7 +186,7 @@
                   ]
                 },
                 {
-                  "text": "Name of vaccine manufacturer ",
+                  "text": "Name of vaccine manufacturer",
                   "answer": [
                     {
                       "valueString": "Statens Serum Institut (SSI)"
@@ -662,7 +662,7 @@
             "https://fhir.hl7.org.uk/StructureDefinition/CareConnect-Organization-1"
           ]
         },
-        "name": "Statens Serum Institut (SSI) "
+        "name": "Statens Serum Institut (SSI)"
       }
     }
   ]

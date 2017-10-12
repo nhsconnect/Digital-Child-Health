@@ -1,0 +1,206 @@
+{
+  "resourceType": "ValueSet",
+  "meta": {
+    "lastUpdated": "2016-08-03T00:00:00+01:00"
+  },
+  "url": "https://fhir.nhs.uk/ValueSet/DCH-SafeguardingConcern-1",
+  "version": "1.0.0",
+  "name": "Safeguarding Concern",
+  "status": "draft",
+  "publisher": "NHS Digital",
+  "description": "A code from the SNOMED Clinical Terminology UK coding system to represent an unresolved issue or concern regarding adult and child safeguarding that requires communication to another organisation or care agency. And code from the SNOMED CT 'Safeguarding issues' subset with Subset Original ID 69241000000138.",
+  "copyright": "This value set includes content from SNOMED CT, which is copyright © 2002+ International Health Terminology Standards Development Organisation (IHTSDO), and distributed by agreement between IHTSDO and HL7. Implementer use of SNOMED CT is not covered by this agreement.",
+  "compose": {
+    "include": [
+      {
+        "system": "http://snomed.info/sct",
+        "concept": [
+          {
+            "code": "1065901000000100",
+            "display": "Alleged being subjected to abuse (situation)"
+          },
+          {
+            "code": "160877008",
+            "display": "Child at risk (finding)"
+          },
+          {
+            "code": "248054003",
+            "display": "Self-neglect (finding)"
+          },
+          {
+            "code": "1045831000000100",
+            "display": "At risk of psychological abuse (finding)"
+          },
+          {
+            "code": "1076841000000100",
+            "display": "At risk of radicalisation (finding)"
+          },
+          {
+            "code": "861931000000100",
+            "display": "No safeguarding issues identified (finding)"
+          },
+          {
+            "code": "761571000000106",
+            "display": "At risk of financial abuse (finding)"
+          },
+          {
+            "code": "1045861000000100",
+            "display": "At risk of human trafficking (finding)"
+          },
+          {
+            "code": "864491000000105",
+            "display": "Has child subject of child protection plan (situation)"
+          },
+          {
+            "code": "697949003",
+            "display": "Suspected victim of physical abuse (situation)"
+          },
+          {
+            "code": "1076171000000100",
+            "display": "Carer behaviour is cause for safeguarding concern (situation)"
+          },
+          {
+            "code": "702579009",
+            "display": "Suspected victim of sexual abuse (situation)"
+          },
+          {
+            "code": "449889006",
+            "display": "Delay in seeking medical advice (finding)"
+          },
+          {
+            "code": "1065911000000100",
+            "display": "Suspected victim of bullying (situation)"
+          },
+          {
+            "code": "297591000000108",
+            "display": "Alleged victim of sexual assault (situation)"
+          },
+          {
+            "code": "1054321000000100",
+            "display": "At risk of forced marriage (finding)"
+          },
+          {
+            "code": "878111000000109",
+            "display": "Unborn child is cause for safeguarding concern (finding)"
+          },
+          {
+            "code": "300731000000106",
+            "display": "Family is cause for concern (finding)"
+          },
+          {
+            "code": "1065691000000100",
+            "display": "At risk of emotional abuse (finding)"
+          },
+          {
+            "code": "919461000000108",
+            "display": "At risk of sexual exploitation (finding)"
+          },
+          {
+            "code": "881081000000100",
+            "display": "Domestic abuse victim in household (finding)"
+          },
+          {
+            "code": "713201008",
+            "display": "At risk of female genital mutilation (finding)"
+          },
+          {
+            "code": "417430008",
+            "display": "Vulnerable adult (finding)"
+          },
+          {
+            "code": "401206008",
+            "display": " At risk for deliberate self harm (finding)"
+          },
+          {
+            "code": "1066201000000100",
+            "display": "At risk of honour based violence (finding)"
+          },
+          {
+            "code": "707087005",
+            "display": "At risk of domestic violence (finding)"
+          },
+          {
+            "code": "375041000000100",
+            "display": "Family member subject of child protection plan (situation)"
+          },
+          {
+            "code": "702953007",
+            "display": "Suspected victim of child neglect (situation)"
+          },
+          {
+            "code": "826931000000104",
+            "display": "Frequent attender of accident and emergency department (finding)"
+          },
+          {
+            "code": "162591001",
+            "display": "Suspected drug abuse (situation)"
+          },
+          {
+            "code": "287351000000105",
+            "display": "Family history of substance misuse (situation)"
+          },
+          {
+            "code": "416936003",
+            "display": "At risk of physical abuse (finding)"
+          },
+          {
+            "code": "700254002",
+            "display": "Suspected victim of child sexual abuse (situation)"
+          },
+          {
+            "code": "700253008",
+            "display": "Suspected victim of sexual grooming (situation)"
+          },
+          {
+            "code": "417361000",
+            "display": "At risk of sexual abuse (finding)"
+          },
+          {
+            "code": "162596006",
+            "display": "Suspected victim of child abuse (situation)"
+          },
+          {
+            "code": "417427001",
+            "display": "At risk of discriminatory abuse (finding)"
+          },
+          {
+            "code": "700255001",
+            "display": "Suspected non-accidental injury to child (situation)"
+          },
+          {
+            "code": "415685003",
+            "display": "Suspected alcohol abuse (situation)"
+          },
+          {
+            "code": "697950003",
+            "display": "Suspected domestic abuse (situation)"
+          },
+          {
+            "code": "697951004",
+            "display": "Suspected victim of emotional abuse (situation)"
+          },
+          {
+            "code": "836881000000105",
+            "display": "Child is cause for safeguarding concern (finding)"
+          },
+          {
+            "code": "838481000000106",
+            "display": "At risk of institutional abuse (finding)"
+          },
+          {
+            "code": "129707006",
+            "display": "At risk for other-directed violence (finding)"
+          },
+          {
+            "code": "293161000000103",
+            "display": "Family history of alcohol misuse (situation)"
+          },
+          {
+            "code": "766561000000109",
+            "display": "Adult safeguarding concern (finding)"
+          }
+        ]
+      }
+    ]
+  }
+}

@@ -37,11 +37,11 @@
           },
           {
             "code": "6",
-            "display": "PATIENT discharged him/herself "
+            "display": "PATIENT discharged him/herself"
           },
           {
             "code": "7",
-            "display": "PATIENT discharged by a relative or advocate "
+            "display": "PATIENT discharged by a relative or advocate"
           }
         ]
       }

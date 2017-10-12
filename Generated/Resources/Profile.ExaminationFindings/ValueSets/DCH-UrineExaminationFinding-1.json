@@ -1,0 +1,30 @@
+{
+  "resourceType": "ValueSet",
+  "meta": {
+    "lastUpdated": "2016-08-03T00:00:00+01:00"
+  },
+  "url": "https://fhir.nhs.uk/ValueSet/DCH-UrineExaminationFinding-1",
+  "version": "1.0.0",
+  "name": "Urine Examination Finding",
+  "status": "draft",
+  "publisher": "NHS Digital",
+  "description": "The urine physical examination finding.",
+  "copyright": "This value set includes content from SNOMED CT, which is copyright © 2002+ International Health Terminology Standards Development Organisation (IHTSDO), and distributed by agreement between IHTSDO and HL7. Implementer use of SNOMED CT is not covered by this agreement.",
+  "compose": {
+    "include": [
+      {
+        "system": "http://snomed.info/sct",
+        "concept": [
+          {
+            "code": "807181000000107",
+            "display": "Confirming patient has passed urine prior to discharge"
+          },
+          {
+            "code": "249287002",
+            "display": "Incomplete urination (finding)"
+          }
+        ]
+      }
+    ]
+  }
+}

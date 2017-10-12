@@ -17,7 +17,7 @@
         "concept": [
           {
             "code": "0",
-            "display": "GENERAL MEDICAL PRACTITIONER "
+            "display": "GENERAL MEDICAL PRACTITIONER"
           },
           {
             "code": "1",
@@ -37,7 +37,7 @@
           },
           {
             "code": "5",
-            "display": "Educational Establishment "
+            "display": "Educational Establishment"
           },
           {
             "code": "6",
@@ -53,7 +53,7 @@
           },
           {
             "code": "92",
-            "display": "GENERAL DENTAL PRACTITIONER "
+            "display": "GENERAL DENTAL PRACTITIONER"
           },
           {
             "code": "93",

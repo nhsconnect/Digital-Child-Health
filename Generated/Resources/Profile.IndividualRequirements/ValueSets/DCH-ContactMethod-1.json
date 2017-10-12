@@ -1,0 +1,58 @@
+{
+  "resourceType": "ValueSet",
+  "meta": {
+    "lastUpdated": "2016-08-03T00:00:00+01:00"
+  },
+  "url": "https://fhir.nhs.uk/ValueSet/DCH-ContactMethod-1",
+  "version": "1.0.0",
+  "name": "Contact Method",
+  "status": "draft",
+  "publisher": "NHS Digital",
+  "description": "A code from the SNOMED Clinical Terminology UK coding system to represent the contact method requirement.",
+  "copyright": "This value set includes content from SNOMED CT, which is copyright © 2002+ International Health Terminology Standards Development Organisation (IHTSDO), and distributed by agreement between IHTSDO and HL7. Implementer use of SNOMED CT is not covered by this agreement.",
+  "compose": {
+    "include": [
+      {
+        "system": "http://snomed.info/sct",
+        "concept": [
+          {
+            "code": "945971000000104",
+            "display": "Requires tactile alert (finding)"
+          },
+          {
+            "code": "936701000000103",
+            "display": "Requires contact by short message service text message (finding)"
+          },
+          {
+            "code": "719561001",
+            "display": "Requires contact via carer (finding)"
+          },
+          {
+            "code": "936741000000100",
+            "display": "Requires contact by email (finding)"
+          },
+          {
+            "code": "795661000000104",
+            "display": "Requires contact by telephone (finding)"
+          },
+          {
+            "code": "945951000000108",
+            "display": "Requires visual alert (finding)"
+          },
+          {
+            "code": "796081000000106",
+            "display": "Requires contact by text relay (finding)"
+          },
+          {
+            "code": "936721000000107",
+            "display": "Requires contact by letter (finding)"
+          },
+          {
+            "code": "945931000000101",
+            "display": "Requires audible alert (finding)"
+          }
+        ]
+      }
+    ]
+  }
+}

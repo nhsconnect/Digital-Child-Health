@@ -17,11 +17,11 @@
         "concept": [
           {
             "code": "276781000000109",
-            "display": "Newborn hearing screening programme completed, clear response no follow-up required "
+            "display": "Newborn hearing screening programme completed, clear response no follow-up required"
           },
           {
             "code": "276791000000106",
-            "display": "Newborn hearing screening programme completed, clear response targeted follow-up required "
+            "display": "Newborn hearing screening programme completed, clear response targeted follow-up required"
           },
           {
             "code": "276811000000107",
@@ -69,15 +69,15 @@
           },
           {
             "code": "276891000000103",
-            "display": "Newborn hearing screening programme incomplete as screening equipment malfunction "
+            "display": "Newborn hearing screening programme incomplete as screening equipment malfunction"
           },
           {
             "code": "276901000000102",
-            "display": "Newborn hearing screening programme incomplete as screening equipment not available "
+            "display": "Newborn hearing screening programme incomplete as screening equipment not available"
           },
           {
             "code": "276871000000102",
-            "display": "Newborn hearing screening programme incomplete as withdrew consent during screening "
+            "display": "Newborn hearing screening programme incomplete as withdrew consent during screening"
           }
         ]
       }

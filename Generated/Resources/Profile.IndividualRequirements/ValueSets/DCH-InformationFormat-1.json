@@ -1,0 +1,94 @@
+{
+  "resourceType": "ValueSet",
+  "meta": {
+    "lastUpdated": "2016-08-03T00:00:00+01:00"
+  },
+  "url": "https://fhir.nhs.uk/ValueSet/DCH-InformationFormat-1",
+  "version": "1.0.0",
+  "name": "Information Format",
+  "status": "draft",
+  "publisher": "NHS Digital",
+  "description": "A code from the SNOMED Clinical Terminology UK coding system to represent the information format requirement.",
+  "copyright": "This value set includes content from SNOMED CT, which is copyright © 2002+ International Health Terminology Standards Development Organisation (IHTSDO), and distributed by agreement between IHTSDO and HL7. Implementer use of SNOMED CT is not covered by this agreement.",
+  "compose": {
+    "include": [
+      {
+        "system": "http://snomed.info/sct",
+        "concept": [
+          {
+            "code": "985021000000106",
+            "display": "Requires third party to read out written information (finding)"
+          },
+          {
+            "code": "957351000000102",
+            "display": "Requires written information in at least 24 point sans serif font (finding)"
+          },
+          {
+            "code": "936641000000108",
+            "display": "Requires information in Makaton (finding)"
+          },
+          {
+            "code": "936601000000105",
+            "display": "Requires information in electronic audio format (finding)"
+          },
+          {
+            "code": "796161000000101",
+            "display": "Requires information in Easyread (finding)"
+          },
+          {
+            "code": "795691000000105",
+            "display": "Requires information on digital versatile disc (finding)"
+          },
+          {
+            "code": "945751000000106",
+            "display": "Requires information in electronic downloadable format (finding)"
+          },
+          {
+            "code": "719758004",
+            "display": "Requires healthcare information recording on personal audio recording device (finding)"
+          },
+          {
+            "code": "936581000000101",
+            "display": "Requires information by email (finding)"
+          },
+          {
+            "code": "936681000000100",
+            "display": "Requires information in uncontracted (Grade 1) Braille (finding)"
+          },
+          {
+            "code": "945691000000105",
+            "display": "Requires information on universal serial bus mass storage device (finding)"
+          },
+          {
+            "code": "957331000000109",
+            "display": "Requires written information in at least 20 point sans serif font (finding)"
+          },
+          {
+            "code": "795731000000104",
+            "display": "Requires information on compact disc (finding)"
+          },
+          {
+            "code": "936621000000101",
+            "display": "Requires information in Moon alphabet (finding)"
+          },
+          {
+            "code": "957371000000106",
+            "display": "Requires written information in at least 28 point sans serif font (finding)"
+          },
+          {
+            "code": "367741000000102",
+            "display": "Requires information verbally (finding)"
+          },
+          {
+            "code": "795801000000104",
+            "display": "Requires information on audio cassette tape (finding)"
+          },
+          {
+            "code": "936661000000109",
+            "display": "Requires information in contracted (Grade 2) Braille (finding)"
+          }
+        ]
+      }
+    ]
+  }
+}

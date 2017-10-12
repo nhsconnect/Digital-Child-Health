@@ -1,0 +1,74 @@
+{
+  "resourceType": "ValueSet",
+  "meta": {
+    "lastUpdated": "2016-08-03T00:00:00+01:00"
+  },
+  "url": "https://fhir.nhs.uk/ValueSet/DCH-DisabilityIndication-1",
+  "version": "1.0.0",
+  "name": "Disability Indication",
+  "status": "draft",
+  "publisher": "NHS Digital",
+  "description": "An indication of whether the person is disabled and what the disability is.",
+  "copyright": "Copyright © 2016 Health and Social Care Information Centre. NHS Digital is the trading name of the Health and Social Care Information Centre.",
+  "compose": {
+    "include": [
+      {
+        "system": "https://fhir.nhs.uk/DCH-DisabilityIndication-1",
+        "concept": [
+          {
+            "code": "1",
+            "display": "Behaviour and Emotional"
+          },
+          {
+            "code": "2",
+            "display": "Hearing"
+          },
+          {
+            "code": "3",
+            "display": "Manual Dexterity"
+          },
+          {
+            "code": "4",
+            "display": "Memory or ability to concentrate, learn or understand (Learning Disability)"
+          },
+          {
+            "code": "5",
+            "display": "Mobility and Gross Motor"
+          },
+          {
+            "code": "6",
+            "display": "Perception of Physical Danger"
+          },
+          {
+            "code": "7",
+            "display": "Personal, Self Care and Continence"
+          },
+          {
+            "code": "8",
+            "display": "Progressive Conditions and Physical Health (such as HIV, cancer, multiple sclerosis, fits etc)"
+          },
+          {
+            "code": "9",
+            "display": "Sight"
+          },
+          {
+            "code": "10",
+            "display": "Speech"
+          },
+          {
+            "code": "XX",
+            "display": "Other"
+          },
+          {
+            "code": "NN",
+            "display": "No Disability"
+          },
+          {
+            "code": "ZZ",
+            "display": "Not Stated (Person asked but declined to provide a response)"
+          }
+        ]
+      }
+    ]
+  }
+}

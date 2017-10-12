@@ -1,0 +1,342 @@
+{
+  "resourceType": "ValueSet",
+  "meta": {
+    "lastUpdated": "2016-08-03T00:00:00+01:00"
+  },
+  "url": "https://fhir.nhs.uk/ValueSet/DCH-CognitionFinding-1",
+  "version": "1.0.0",
+  "name": "Cognition Finding",
+  "status": "draft",
+  "publisher": "NHS Digital",
+  "description": "A code from the SNOMED Clinical Terminology UK coding system to represent the cognition finding.",
+  "copyright": "This value set includes content from SNOMED CT, which is copyright © 2002+ International Health Terminology Standards Development Organisation (IHTSDO), and distributed by agreement between IHTSDO and HL7. Implementer use of SNOMED CT is not covered by this agreement.",
+  "compose": {
+    "include": [
+      {
+        "system": "http://snomed.info/sct",
+        "concept": [
+          {
+            "code": "307087004",
+            "display": "Able to analyze information (finding)"
+          },
+          {
+            "code": "395662007",
+            "display": "Able to comprehend concept of danger (finding)"
+          },
+          {
+            "code": "719750006",
+            "display": "Able to comprehend language (finding)"
+          },
+          {
+            "code": "719362007",
+            "display": "Able to comprehend speech (finding)"
+          },
+          {
+            "code": "719382006",
+            "display": "Able to comprehend written material (finding)"
+          },
+          {
+            "code": "719734003",
+            "display": "Able to identify choices (finding)"
+          },
+          {
+            "code": "304687006",
+            "display": "Able to make considered choices (finding)"
+          },
+          {
+            "code": "720438009",
+            "display": "Able to make decision on safe entry of visitors (finding)"
+          },
+          {
+            "code": "716415003",
+            "display": "Able to make decision on safe information to give over telephone (finding)"
+          },
+          {
+            "code": "719743007",
+            "display": "Able to make decisions (finding)"
+          },
+          {
+            "code": "719734003",
+            "display": "Able to make informed choice (finding)"
+          },
+          {
+            "code": "307083000",
+            "display": "Able to process information (finding)"
+          },
+          {
+            "code": "311538008",
+            "display": "Able to process information accurately (finding)"
+          },
+          {
+            "code": "311541004",
+            "display": "Able to process information at normal speed (finding)"
+          },
+          {
+            "code": "334751000000101",
+            "display": "Able to react to an emergency (finding)"
+          },
+          {
+            "code": "309251006",
+            "display": "Able to read (finding)"
+          },
+          {
+            "code": "309251006",
+            "display": "Able to tell the time (finding)"
+          },
+          {
+            "code": "281136009",
+            "display": "Able to think abstractly (finding)"
+          },
+          {
+            "code": "225662002",
+            "display": "Able to think clearly (finding)"
+          },
+          {
+            "code": "716454002",
+            "display": "Able to think creatively (finding)"
+          },
+          {
+            "code": "285256006",
+            "display": "Able to think independently (finding)"
+          },
+          {
+            "code": "719350008",
+            "display": "Able to understand verbal language (finding)"
+          },
+          {
+            "code": "719365009",
+            "display": "Able to understand written language (finding)"
+          },
+          {
+            "code": "304650003",
+            "display": "Able to use decision making strategies (finding)"
+          },
+          {
+            "code": "304664003",
+            "display": "Able to use verbal reasoning (finding)"
+          },
+          {
+            "code": "323351000000104",
+            "display": "Anxiety about mood (finding)"
+          },
+          {
+            "code": "225642005",
+            "display": "Anxiety about not coping with parenthood (finding)"
+          },
+          {
+            "code": "225638007",
+            "display": "Anxiety about resuming sexual relations (finding)"
+          },
+          {
+            "code": "50829006",
+            "display": "Basic learning problem (finding)"
+          },
+          {
+            "code": "81511006",
+            "display": "Basic learning problem in language (finding)"
+          },
+          {
+            "code": "23766009",
+            "display": "Basic learning problem in reading (finding)"
+          },
+          {
+            "code": "45418009",
+            "display": "Basic learning problem in speaking (finding)"
+          },
+          {
+            "code": "46781003",
+            "display": "Basic learning problem in writing (finding)"
+          },
+          {
+            "code": "18541000119100",
+            "display": "Borderline cognitive developmental delay (disorder)"
+          },
+          {
+            "code": "142261000119100",
+            "display": "Cognitive deficit in attention (finding)"
+          },
+          {
+            "code": "425805004",
+            "display": "Cognitive developmental delay (disorder)"
+          },
+          {
+            "code": "397699006",
+            "display": "Demonstrates knowledge of medication management (finding)"
+          },
+          {
+            "code": "397598006",
+            "display": "Demonstrates knowledge of nutritional requirements related to operative procedure (finding)"
+          },
+          {
+            "code": "708571001",
+            "display": "Demonstrates knowledge of who to contact in medical emergency (finding)"
+          },
+          {
+            "code": "307089001",
+            "display": "Difficulty analyzing information (finding)"
+          },
+          {
+            "code": "395664008",
+            "display": "Difficulty comprehending concept of danger (finding)"
+          },
+          {
+            "code": "716474009",
+            "display": "Difficulty comprehending language (finding)"
+          },
+          {
+            "code": "716475005",
+            "display": "Difficulty comprehending speech (finding)"
+          },
+          {
+            "code": "716476006",
+            "display": "Difficulty comprehending written material (finding)"
+          },
+          {
+            "code": "4941000175101",
+            "display": "Difficulty following instructions (finding)"
+          },
+          {
+            "code": "285257002",
+            "display": "Difficulty in thinking independently (finding)"
+          },
+          {
+            "code": "304689009",
+            "display": "Difficulty making considered choices (finding)"
+          },
+          {
+            "code": "247585004",
+            "display": "Difficulty making decisions (finding)"
+          },
+          {
+            "code": "247584000",
+            "display": "Difficulty making plans (finding)"
+          },
+          {
+            "code": "307085007",
+            "display": "Difficulty processing information (finding)"
+          },
+          {
+            "code": "311540003",
+            "display": "Difficulty processing information accurately (finding)"
+          },
+          {
+            "code": "311543001",
+            "display": "Difficulty processing information at normal speed (finding)"
+          },
+          {
+            "code": "334761000000103",
+            "display": "Difficulty reacting to an emergency (finding)"
+          },
+          {
+            "code": "309253009",
+            "display": "Difficulty reading (finding)"
+          },
+          {
+            "code": "304644008",
+            "display": "Difficulty reasoning (finding)"
+          },
+          {
+            "code": "247582001",
+            "display": "Difficulty solving problems (finding)"
+          },
+          {
+            "code": "285628005",
+            "display": "Difficulty telling the time (finding)"
+          },
+          {
+            "code": "716477002",
+            "display": "Difficulty understanding instructions of more than two parts (finding)"
+          },
+          {
+            "code": "716478007",
+            "display": "Difficulty understanding more than three word instructions (finding)"
+          },
+          {
+            "code": "716479004",
+            "display": "Difficulty understanding one part instructions (finding)"
+          },
+          {
+            "code": "716480001",
+            "display": "Difficulty understanding single word instructions (finding)"
+          },
+          {
+            "code": "716481002",
+            "display": "Difficulty understanding three word instructions (finding)"
+          },
+          {
+            "code": "716482009",
+            "display": "Difficulty understanding two part instructions (finding)"
+          },
+          {
+            "code": "716483004",
+            "display": "Difficulty understanding two word instructions (finding)"
+          },
+          {
+            "code": "716484005",
+            "display": "Difficulty understanding verbal language (finding)"
+          },
+          {
+            "code": "716485006",
+            "display": "Difficulty understanding written language (finding)"
+          },
+          {
+            "code": "304652006",
+            "display": "Difficulty using decision making strategies (finding)"
+          },
+          {
+            "code": "304666001",
+            "display": "Difficulty using verbal reasoning (finding)"
+          },
+          {
+            "code": "716490009",
+            "display": "Does comprehend language (finding)"
+          },
+          {
+            "code": "716491008",
+            "display": "Does comprehend speech (finding)"
+          },
+          {
+            "code": "716492001",
+            "display": "Does comprehend written material (finding)"
+          },
+          {
+            "code": "334781000000107",
+            "display": "Does react to an emergency (finding)"
+          },
+          {
+            "code": "247588002",
+            "display": "Poor long-term memory (finding)"
+          },
+          {
+            "code": "247592009",
+            "display": "Poor short-term memory (finding)"
+          },
+          {
+            "code": "247627003",
+            "display": "Slow flow of thought (finding)"
+          },
+          {
+            "code": "224998004",
+            "display": "Slow learner (finding)"
+          },
+          {
+            "code": "285243004",
+            "display": "Sluggish thought (finding)"
+          },
+          {
+            "code": "225640002",
+            "display": "Worried about being a bad father (finding)"
+          },
+          {
+            "code": "225640002",
+            "display": "Worried about being a bad mother (finding)"
+          },
+          {
+            "code": "225639004",
+            "display": "Worried about not coping with baby (finding)"
+          }
+        ]
+      }
+    ]
+  }
+}

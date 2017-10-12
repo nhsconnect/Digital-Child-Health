@@ -1,0 +1,102 @@
+{
+  "resourceType": "ValueSet",
+  "meta": {
+    "lastUpdated": "2016-08-03T00:00:00+01:00"
+  },
+  "url": "https://fhir.nhs.uk/ValueSet/DCH-CommunicationSupport-1",
+  "version": "1.0.0",
+  "name": "Communication Support",
+  "status": "draft",
+  "publisher": "NHS Digital",
+  "description": "A code from the SNOMED Clinical Terminology UK coding system to represent the communication support requirement.",
+  "copyright": "This value set includes content from SNOMED CT, which is copyright © 2002+ International Health Terminology Standards Development Organisation (IHTSDO), and distributed by agreement between IHTSDO and HL7. Implementer use of SNOMED CT is not covered by this agreement.",
+  "compose": {
+    "include": [
+      {
+        "system": "http://snomed.info/sct",
+        "concept": [
+          {
+            "code": "445121000",
+            "display": "Uses electronic note taker (finding)"
+          },
+          {
+            "code": "404903008",
+            "display": "Uses sign language (finding)"
+          },
+          {
+            "code": "445123002",
+            "display": "Uses speech to text reporter (finding)"
+          },
+          {
+            "code": "957031000000107",
+            "display": "Uses deafblind intervener (finding)"
+          },
+          {
+            "code": "761541000000100",
+            "display": "Uses alternative communication skill (finding)"
+          },
+          {
+            "code": "445129003",
+            "display": "Uses cued speech transliterator (finding)"
+          },
+          {
+            "code": "720462004",
+            "display": "Uses personal audio recording device to record information (finding)"
+          },
+          {
+            "code": "415803005",
+            "display": "Uses British sign language (finding)"
+          },
+          {
+            "code": "445076009",
+            "display": "Uses manual note taker (finding)"
+          },
+          {
+            "code": "445143008",
+            "display": "Uses lipspeaker (finding)"
+          },
+          {
+            "code": "285055002",
+            "display": "Does use hearing aid (finding)"
+          },
+          {
+            "code": "415805003",
+            "display": "Uses Makaton sign language (finding)"
+          },
+          {
+            "code": "837341000000108",
+            "display": "Uses Personal Communication Passport (finding)"
+          },
+          {
+            "code": "225833001",
+            "display": "Uses a legal advocate (finding)"
+          },
+          {
+            "code": "441092009",
+            "display": "Does lip read (finding)"
+          },
+          {
+            "code": "225834007",
+            "display": "Uses a citizen advocate (finding)"
+          },
+          {
+            "code": "445488003",
+            "display": "Uses telecommunications device for the deaf (finding)"
+          },
+          {
+            "code": "719369003",
+            "display": "Does use communication device (finding)"
+          },
+          {
+            "code": "520491000000109",
+            "display": "Preferred method of communication: written (finding)"
+          },
+          {
+            "code": "981781000000107",
+            "display": "Uses Deafblind Manual Alphabet (finding)"
+          }
+        ]
+      }
+    ]
+  }
+}

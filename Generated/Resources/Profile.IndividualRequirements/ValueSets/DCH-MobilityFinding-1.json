@@ -1,0 +1,422 @@
+{
+  "resourceType": "ValueSet",
+  "meta": {
+    "lastUpdated": "2016-08-03T00:00:00+01:00"
+  },
+  "url": "https://fhir.nhs.uk/ValueSet/DCH-MobilityFinding-1",
+  "version": "1.0.0",
+  "name": "Mobility Finding",
+  "status": "draft",
+  "publisher": "NHS Digital",
+  "description": "A code from the SNOMED Clinical Terminology UK coding system to represent a mobility finding.",
+  "copyright": "This value set includes content from SNOMED CT, which is copyright © 2002+ International Health Terminology Standards Development Organisation (IHTSDO), and distributed by agreement between IHTSDO and HL7. Implementer use of SNOMED CT is not covered by this agreement.",
+  "compose": {
+    "include": [
+      {
+        "system": "http://snomed.info/sct",
+        "concept": [
+          {
+            "code": "282185002",
+            "display": " Able to walk down step (finding)"
+          },
+          {
+            "code": "282513005",
+            "display": " Unable to run up steps (finding)"
+          },
+          {
+            "code": "282210009",
+            "display": " Unable to stop walking (finding)"
+          },
+          {
+            "code": "282488006",
+            "display": " Unable to run up a slope (finding)"
+          },
+          {
+            "code": "282199003",
+            "display": " Does walk down stairs (finding)"
+          },
+          {
+            "code": "301546002",
+            "display": " Does get on to toilet (finding)"
+          },
+          {
+            "code": "301678003",
+            "display": " Does not get off a bed (finding)"
+          },
+          {
+            "code": "301532002",
+            "display": " Difficulty getting in bath (finding)"
+          },
+          {
+            "code": "282527000",
+            "display": " Does not run up stairs (finding)"
+          },
+          {
+            "code": "301491009",
+            "display": " Able to negotiate curbs (finding)"
+          },
+          {
+            "code": "282238001",
+            "display": " Difficulty in walking carrying large toy (finding)"
+          },
+          {
+            "code": "282170008",
+            "display": " Does not walk up hill (finding)"
+          },
+          {
+            "code": "282489003",
+            "display": " Does run up a slope (finding)"
+          },
+          {
+            "code": "282225009",
+            "display": " Does not walk on a narrow line (finding)"
+          },
+          {
+            "code": "282514004",
+            "display": " Does run up steps (finding)"
+          },
+          {
+            "code": "282186001",
+            "display": " Unable to walk down step (finding)"
+          },
+          {
+            "code": "301559005",
+            "display": " Does move around supporting self on furniture (finding)"
+          },
+          {
+            "code": "282211008",
+            "display": " Does stop walking (finding)"
+          },
+          {
+            "code": "282500004",
+            "display": " Unable to run up hill (finding)"
+          },
+          {
+            "code": "301545003",
+            "display": " Unable to get on to toilet (finding)"
+          },
+          {
+            "code": "282171007",
+            "display": " Difficulty walking up hill (finding)"
+          },
+          {
+            "code": "282528005",
+            "display": " Difficulty running up stairs (finding)"
+          },
+          {
+            "code": "301677008",
+            "display": " Does get off a bed (finding)"
+          },
+          {
+            "code": "301531009",
+            "display": " Does not get in bath (finding)"
+          },
+          {
+            "code": "301492002",
+            "display": " Unable to negotiate curbs (finding)"
+          },
+          {
+            "code": "301494001",
+            "display": " Does not negotiate curbs (finding)"
+          },
+          {
+            "code": "282212001",
+            "display": " Does not stop walking (finding)"
+          },
+          {
+            "code": "282173005",
+            "display": " Able to walk down hill (finding)"
+          },
+          {
+            "code": "941771000000100",
+            "display": "Able to get into bed without assistance (finding)"
+          },
+          {
+            "code": "301548001",
+            "display": " Difficulty getting on to toilet (finding)"
+          },
+          {
+            "code": "282501000",
+            "display": " Does run up hill (finding)"
+          },
+          {
+            "code": "282187005",
+            "display": " Does walk down step (finding)"
+          },
+          {
+            "code": "301534001",
+            "display": " Able to get out of bath (finding)"
+          },
+          {
+            "code": "443392007",
+            "display": " Uses single crutch for walking (finding)"
+          },
+          {
+            "code": "301520001",
+            "display": " Difficulty getting out of shower (finding)"
+          },
+          {
+            "code": "282515003",
+            "display": " Does not run up steps (finding)"
+          },
+          {
+            "code": "940421000000102",
+            "display": "Able to use through floor lift (finding)"
+          },
+          {
+            "code": "282226005",
+            "display": " Difficulty walking on a narrow line (finding)"
+          },
+          {
+            "code": "719737005",
+            "display": " Able to manage internal stairs (finding)"
+          },
+          {
+            "code": "301493007",
+            "display": " Does negotiate curbs (finding)"
+          },
+          {
+            "code": "282188000",
+            "display": " Does not walk down step (finding)"
+          },
+          {
+            "code": "282213006",
+            "display": " Difficulty in stopping walking (finding)"
+          },
+          {
+            "code": "301495000",
+            "display": " Difficulty negotiating curbs (finding)"
+          },
+          {
+            "code": "282502007",
+            "display": " Does not run up hill (finding)"
+          },
+          {
+            "code": "282174004",
+            "display": " Unable to walk down hill (finding)"
+          },
+          {
+            "code": "301547006",
+            "display": " Does not get on to toilet (finding)"
+          },
+          {
+            "code": "301679006",
+            "display": " Difficulty getting off a bed (finding)"
+          },
+          {
+            "code": "282516002",
+            "display": " Difficulty running up steps (finding)"
+          },
+          {
+            "code": "282200000",
+            "display": " Does not walk down stairs (finding)"
+          },
+          {
+            "code": "282189008",
+            "display": " Difficulty walking down step (finding)"
+          },
+          {
+            "code": "282161005",
+            "display": " Able to walk down a slope (finding)"
+          },
+          {
+            "code": "301536004",
+            "display": " Does get out of bath (finding)"
+          },
+          {
+            "code": "301668001",
+            "display": " Able to get on a bed (finding)"
+          },
+          {
+            "code": "282175003",
+            "display": " Does walk down hill (finding)"
+          },
+          {
+            "code": "160693001",
+            "display": " Mobility poor (finding)"
+          },
+          {
+            "code": "282503002",
+            "display": " Difficulty running up hill (finding)"
+          },
+          {
+            "code": "225985003",
+            "display": " Optimum mobility (finding)"
+          },
+          {
+            "code": "282228006",
+            "display": " Able to walk heel to toe (finding)"
+          },
+          {
+            "code": "282176002",
+            "display": " Does not walk down hill (finding)"
+          },
+          {
+            "code": "282201001",
+            "display": " Difficulty walking down stairs (finding)"
+          },
+          {
+            "code": "160692006",
+            "display": " Mobility very poor (finding)"
+          },
+          {
+            "code": "282162003",
+            "display": " Unable to walk down a slope (finding)"
+          },
+          {
+            "code": "301535000",
+            "display": " Unable to get out of bath (finding)"
+          },
+          {
+            "code": "282229003",
+            "display": " Unable to walk heel to toe (finding)"
+          },
+          {
+            "code": "914031000000109",
+            "display": "Uses orthotic shoes (finding)"
+          },
+          {
+            "code": "282237006",
+            "display": " Does not walk carrying large toy (finding)"
+          },
+          {
+            "code": "301660008",
+            "display": " Difficulty getting out of a chair (finding)"
+          },
+          {
+            "code": "282198006",
+            "display": " Unable to walk down stairs (finding)"
+          },
+          {
+            "code": "282526009",
+            "display": " Does run up stairs (finding)"
+          },
+          {
+            "code": "282487001",
+            "display": " Able to run up a slope (finding)"
+          },
+          {
+            "code": "282223002",
+            "display": " Unable to walk on a narrow line (finding)"
+          },
+          {
+            "code": "301557007",
+            "display": " Able to move around supporting self on furniture (finding)"
+          },
+          {
+            "code": "282183009",
+            "display": " Difficulty walking up step (finding)"
+          },
+          {
+            "code": "719746004",
+            "display": " Able to manage internal steps (finding)"
+          },
+          {
+            "code": "301689005",
+            "display": " Does roll over in bed (finding)"
+          },
+          {
+            "code": "301675000",
+            "display": " Able to get off a bed (finding)"
+          },
+          {
+            "code": "129050009",
+            "display": " Able to get out of bed without assistance (finding)"
+          },
+          {
+            "code": "282224008",
+            "display": " Does walk on a narrow line (finding)"
+          },
+          {
+            "code": "282215004",
+            "display": " Able to start and stop walking spontaneously (finding)"
+          },
+          {
+            "code": "711387003",
+            "display": " Deterioration in ability to walk (finding)"
+          },
+          {
+            "code": "282177006",
+            "display": " Difficulty walking down hill (finding)"
+          },
+          {
+            "code": "443699005",
+            "display": " Uses two walking sticks (finding)"
+          },
+          {
+            "code": "301656005",
+            "display": " Able to get out of a chair (finding)"
+          },
+          {
+            "code": "282163008",
+            "display": " Does walk down a slope (finding)"
+          },
+          {
+            "code": "160681005",
+            "display": " Mobile outside with aid (finding)"
+          },
+          {
+            "code": "301510006",
+            "display": " Unable to get into shower (finding)"
+          },
+          {
+            "code": "282505009",
+            "display": " Able to run down hill (finding)"
+          },
+          {
+            "code": "707261001",
+            "display": " Deterioration in ability to walk up stairs (finding)"
+          },
+          {
+            "code": "282519009",
+            "display": " Unable to run down steps (finding)"
+          },
+          {
+            "code": "282216003",
+            "display": " Unable to start and stop walking spontaneously (finding)"
+          },
+          {
+            "code": "282164002",
+            "display": " Does not walk down a slope (finding)"
+          },
+          {
+            "code": "160680006",
+            "display": " Fully mobile (finding)"
+          },
+          {
+            "code": "282150002",
+            "display": " Unable to walk on the flat (finding)"
+          },
+          {
+            "code": "282203003",
+            "display": " Able to initiate walking (finding)"
+          },
+          {
+            "code": "282506005",
+            "display": " Unable to run down hill (finding)"
+          },
+          {
+            "code": "160683008",
+            "display": " Needs walking aid in home (finding)"
+          },
+          {
+            "code": "282165001",
+            "display": " Difficulty walking down a slope (finding)"
+          },
+          {
+            "code": "301526007",
+            "display": " Difficulty getting in and out of bath (finding)"
+          },
+          {
+            "code": "301658006",
+            "display": " Does get out of a chair (finding)"
+          },
+          {
+            "code": "301512003",
+            "display": " Does not get into shower (finding)"
+          }
+        ]
+      }
+    ]
+  }
+}

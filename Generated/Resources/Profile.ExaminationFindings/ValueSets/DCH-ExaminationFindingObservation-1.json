@@ -1,0 +1,58 @@
+{
+  "resourceType": "ValueSet",
+  "meta": {
+    "lastUpdated": "2016-08-03T00:00:00+01:00"
+  },
+  "url": "https://fhir.nhs.uk/ValueSet/DCH-ExaminationFindingObservation-1",
+  "version": "1.0.0",
+  "name": "Examination Finding Observation",
+  "status": "draft",
+  "publisher": "NHS Digital",
+  "description": "The examination finding observation.",
+  "copyright": "Copyright © 2016 Health and Social Care Information Centre. NHS Digital is the trading name of the Health and Social Care Information Centre.",
+  "compose": {
+    "include": [
+      {
+        "system": "https://fhir.nhs.uk/DCH-ExaminationFindingObservation-1",
+        "concept": [
+          {
+            "code": "01",
+            "display": "Assessment/Examination declined"
+          },
+          {
+            "code": "02",
+            "display": "Assessment/Examination not done"
+          },
+          {
+            "code": "03",
+            "display": "Assessment/Examination Incomplete"
+          },
+          {
+            "code": "04",
+            "display": "Assessment/Examination done, difficulty suspected"
+          },
+          {
+            "code": "05",
+            "display": "Assessment/Examination done, difficulty suspected with risk factors"
+          },
+          {
+            "code": "06",
+            "display": "Assessment/Examination done, difficulty suspected and no risk factors"
+          },
+          {
+            "code": "07",
+            "display": "Assessment/Examination done, no difficulty suspected and no risk factor"
+          },
+          {
+            "code": "08",
+            "display": "Assessment/Examination done, no difficulty with risk factors"
+          },
+          {
+            "code": "09",
+            "display": "Assessment/Examination done, no difficulty suspected"
+          }
+        ]
+      }
+    ]
+  }
+}

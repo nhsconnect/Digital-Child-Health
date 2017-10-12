@@ -1,7 +1,7 @@
 {
   "resourceType": "StructureDefinition",
   "meta": {
-    "lastUpdated": "2017-10-07T22:48:02.215+01:00",
+    "lastUpdated": "2017-10-09T14:27:04.725+01:00",
     "tag": [
       {
         "system": "urn:hscic:publishOrder",
@@ -9075,6 +9075,13 @@
           }
         ],
         "isSummary": true,
+        "binding": {
+          "strength": "required",
+          "description": "The health problem or issue experienced by the patient resulting in their attendance",
+          "valueSetReference": {
+            "reference": "https://fhir.nhs.uk/ValueSet/DCH-PresentingComplaint-1"
+          }
+        },
         "mapping": [
           {
             "identity": "rim",
@@ -9202,7 +9209,7 @@
         "definition": "The identification of the code system that defines the meaning of the symbol in the code.",
         "comments": "The URI may be an OID (urn:oid:...) or a UUID (urn:uuid:...).  OIDs and UUIDs SHALL be references to the HL7 OID registry. Otherwise, the URI should come from HL7's list of FHIR defined special URIs or it should de-reference to some definition that establish the system clearly and unambiguously.",
         "requirements": "Need to be unambiguous about the source of the definition of the symbol.",
-        "min": 0,
+        "min": 1,
         "max": "1",
         "base": {
           "path": "Coding.system",
@@ -9214,6 +9221,7 @@
             "code": "uri"
           }
         ],
+        "fixedUri": "https://fhir.nhs.uk/DCH-PresentingComplaint-1",
         "condition": [
           "ele-1"
         ],
@@ -9311,7 +9319,7 @@
         "definition": "A symbol in syntax defined by the system. The symbol may be a predefined code or an expression in a syntax defined by the coding system (e.g. post-coordination).",
         "comments": "Note that FHIR strings may not exceed 1MB in size",
         "requirements": "Need to refer to a particular code in the system.",
-        "min": 0,
+        "min": 1,
         "max": "1",
         "base": {
           "path": "Coding.code",
@@ -9366,7 +9374,7 @@
         "definition": "A representation of the meaning of the code in the system, following the rules of the system.",
         "comments": "Note that FHIR strings may not exceed 1MB in size",
         "requirements": "Need to be able to carry a human-readable meaning of the code for readers that do not know  the system.",
-        "min": 0,
+        "min": 1,
         "max": "1",
         "base": {
           "path": "Coding.display",
@@ -18332,6 +18340,26 @@
       {
         "path": "Encounter.reason.coding",
         "name": "presentingComplaint",
+        "min": 1,
+        "binding": {
+          "strength": "required",
+          "description": "The health problem or issue experienced by the patient resulting in their attendance",
+          "valueSetReference": {
+            "reference": "https://fhir.nhs.uk/ValueSet/DCH-PresentingComplaint-1"
+          }
+        }
+      },
+      {
+        "path": "Encounter.reason.coding.system",
+        "min": 1,
+        "fixedUri": "https://fhir.nhs.uk/DCH-PresentingComplaint-1"
+      },
+      {
+        "path": "Encounter.reason.coding.code",
+        "min": 1
+      },
+      {
+        "path": "Encounter.reason.coding.display",
         "min": 1
       },
       {

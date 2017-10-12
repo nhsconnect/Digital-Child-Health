@@ -1,0 +1,182 @@
+{
+  "resourceType": "ValueSet",
+  "meta": {
+    "lastUpdated": "2016-08-03T00:00:00+01:00"
+  },
+  "url": "https://fhir.nhs.uk/ValueSet/DCH-ExaminationFindingType-1",
+  "version": "1.0.0",
+  "name": "Examination Finding Type",
+  "status": "draft",
+  "publisher": "NHS Digital",
+  "description": "The type of examination finding.",
+  "copyright": "Copyright © 2016 Health and Social Care Information Centre. NHS Digital is the trading name of the Health and Social Care Information Centre.",
+  "compose": {
+    "include": [
+      {
+        "system": "https://fhir.nhs.uk/DCH-ExaminationFindingType-1",
+        "concept": [
+          {
+            "code": "01",
+            "display": "General Appearance"
+          },
+          {
+            "code": "02",
+            "display": "General Appearance - Colour"
+          },
+          {
+            "code": "03",
+            "display": "Vital signs"
+          },
+          {
+            "code": "04",
+            "display": "Mental state"
+          },
+          {
+            "code": "05",
+            "display": "Head and neck"
+          },
+          {
+            "code": "06",
+            "display": "Head and Neck - Head and Skull"
+          },
+          {
+            "code": "07",
+            "display": "Head and Neck - Face"
+          },
+          {
+            "code": "08",
+            "display": "Head and Neck - Ears"
+          },
+          {
+            "code": "09",
+            "display": "Head and Neck - Neck and Clavicles"
+          },
+          {
+            "code": "10",
+            "display": "Oral examination"
+          },
+          {
+            "code": "11",
+            "display": "Oral examination - Mouth and Palate"
+          },
+          {
+            "code": "12",
+            "display": "Cardiovascular system"
+          },
+          {
+            "code": "13",
+            "display": "Cardiovascular system - Chest"
+          },
+          {
+            "code": "14",
+            "display": "Respiratory system"
+          },
+          {
+            "code": "15",
+            "display": "Respiratory system - Respiratory Abdomen"
+          },
+          {
+            "code": "16",
+            "display": "Abdomen"
+          },
+          {
+            "code": "17",
+            "display": "Abdomen - Abdomen"
+          },
+          {
+            "code": "18",
+            "display": "Umbilicus"
+          },
+          {
+            "code": "19",
+            "display": "Genitourinary"
+          },
+          {
+            "code": "20",
+            "display": "Genitourinary - Genitalia"
+          },
+          {
+            "code": "21",
+            "display": "Genitourinary - Anus"
+          },
+          {
+            "code": "22",
+            "display": "Nervous system"
+          },
+          {
+            "code": "23",
+            "display": "Nervous system - Reflexes"
+          },
+          {
+            "code": "24",
+            "display": "Musculoskeletal"
+          },
+          {
+            "code": "25",
+            "display": "Musculoskeletal - Manipulation"
+          },
+          {
+            "code": "26",
+            "display": "Musculoskeletal - Upper Limbs"
+          },
+          {
+            "code": "27",
+            "display": "Musculoskeletal - Lower Limbs, feet"
+          },
+          {
+            "code": "28",
+            "display": "Musculoskeletal - Back and Spine"
+          },
+          {
+            "code": "29",
+            "display": "Skin"
+          },
+          {
+            "code": "30",
+            "display": "Skin - Physical Examination"
+          },
+          {
+            "code": "31",
+            "display": "Developmental Assessment"
+          },
+          {
+            "code": "32",
+            "display": "Developmental Assessment - Hearing"
+          },
+          {
+            "code": "33",
+            "display": "Developmental Assessment - Locomotion"
+          },
+          {
+            "code": "34",
+            "display": "Developmental Assessment - Speech/Language"
+          },
+          {
+            "code": "35",
+            "display": "Developmental Assessment - Behaviour"
+          },
+          {
+            "code": "36",
+            "display": "Developmental Assessment - Posture and Behaviour"
+          },
+          {
+            "code": "37",
+            "display": "Examination"
+          },
+          {
+            "code": "38",
+            "display": "Examination - Vision"
+          },
+          {
+            "code": "39",
+            "display": "Examination Bowels"
+          },
+          {
+            "code": "40",
+            "display": "Examination Urine"
+          }
+        ]
+      }
+    ]
+  }
+}

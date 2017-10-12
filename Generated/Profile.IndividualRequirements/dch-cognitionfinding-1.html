@@ -1,0 +1,825 @@
+
+
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+	<head>
+			<title>Digital Child Health Service - Events Catalogue - FHIR Implementation Guide</title>
+
+			<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+			<meta name="author" content="HSCIC" />        
+			<meta name="publisher version" content=	"FHIR-Furnace : 2.7.6276.17249" />
+		
+			<link href="../dist/css/fhir.css" rel="stylesheet" />
+	 
+			<!-- Bootstrap core CSS -->
+			<link href="../dist/css/bootstrap.css" rel="stylesheet" />
+			<link href="../dist/css/bootstrap-fhir.css" rel="stylesheet" />
+			<link href="../dist/css/bootstrap-glyphicons.css" rel="stylesheet" />
+
+			<!-- Project extras -->
+			
+			<link href="../dist/css/pygments-manni.css" rel="stylesheet" />
+
+			<script src="../dist/js/jquery.js"> </script>
+			<script src="../dist/js/bootstrap.min.js"> </script>
+
+			<script src="../dist/js/fhir.js"> </script>
+			
+				<script>
+				  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+				  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+				  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+				  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+				  ga('create', 'UA-67795986-1', 'auto');
+				  ga('send', 'pageview');
+
+				</script>
+			
+			<!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+			<!--[if lt IE 9]>
+				<script src="../dist/js/html5shiv.js"></script>
+				<script src="../dist/js/respond.min.js"></script>
+			<![endif]-->
+
+			<!-- Favicons -->
+			<link rel="apple-touch-icon-precomposed" sizes="144x144" href="../dist/images/apple-touch-icon-144-precomposed.png" />
+			<link rel="apple-touch-icon-precomposed" sizes="114x114" href="../dist/images/apple-touch-icon-114-precomposed.png" />
+			<link rel="apple-touch-icon-precomposed" sizes="72x72" href="../dist/images/apple-touch-icon-72-precomposed.png" />
+			<link rel="apple-touch-icon-precomposed" href="../dist/images/apple-touch-icon-57-precomposed.png" />
+			<link rel="shortcut icon" href="../dist/images/favicon.ico" />
+	</head>
+	
+	<body>  
+		
+		<!-- segment-header -->
+		<div id="segment-header" class="segment">
+            
+            <div class="container">
+                <!-- container -->
+                <a id="logo" href="http://www.digital.nhs.uk" target="_blank">
+                    <img src="../dist/images/logo.png" alt="logo NHS Digital" />
+                </a>
+                <div id="specificationName">
+         
+                        <b>Digital Child Health Service - Events Catalogue</b>
+                  
+                </div>
+
+            </div>
+            <div class="container">
+                <!-- container -->
+            </div>
+        </div>
+        
+		<!-- /segment-header -->
+		
+		
+		<div id="segment-navbar" class="segment">
+            <!-- segment-navbar -->
+            <div id="stripe"> </div>
+            <div class="container">
+                <!-- container -->
+                <!-- HEADER CONTENT -->
+
+                <nav class="navbar navbar-inverse">
+                    <div class="container">
+                        <button data-target=".navbar-inverse-collapse" data-toggle="collapse" class="navbar-toggle" type="button">
+                            <span class="icon-bar"> </span>
+                            <span class="icon-bar"> </span>
+                            <span class="icon-bar"> </span>
+                        </button>
+                        <div class="nav-collapse collapse navbar-inverse-collapse">
+                            <ul class="nav navbar-nav">   
+
+											<li>
+												<a href='../Chapter.1.About/index.html'>About</a>
+											</li>
+											<li>
+												<a href='../Chapter.2.Change History/index.html'>Change History</a>
+											</li>
+											<li>
+												<a href='../Chapter.3.Architecture/index.html'>Architecture</a>
+											</li>
+											<li>
+												<a href='../Chapter.4.Messages/index.html'>Messages</a>
+											</li>
+											<li>
+												<a href='../Chapter.5.Examples/examples.html'>Examples</a>
+											</li>
+											<li>
+												<a href='../Chapter.6.Glossary/index.html'>Glossary</a>
+											</li>
+											<li>
+												<a href='../Chapter.7.Valuesets/valuesets.html'>Valuesets</a>
+											</li>
+
+                            </ul>
+							
+                            <p class="navbar-text pull-right" style="padding-right: 10px;padding-top: 3px;">
+                                <span class="label label-default"  style="font-size: 95%;">Experimental</span>
+                            </p>
+
+                        </div>
+                    </div>
+                </nav>				
+            </div>
+        </div>
+		
+		<div id="segment-breadcrumb" class="segment">
+            <!-- segment-breadcrumb -->
+            <div class="container">
+                <!-- container -->
+                <ul class="breadcrumb"></ul>
+            </div>
+            <!-- /container -->
+        </div>
+        <div id="segment-content" class="segment">
+            <!-- segment-content -->
+            <div class="container">
+                <!-- container -->
+                <div class="row">
+                    <div class="inner-wrapper">
+						<!-- CONTENT CONTENT -->
+                        <div class="col-12">
+							
+							
+							
+							
+							
+							
+<div class="panel panel - default" xmlns="http://www.w3.org/1999/xhtml">
+  <div class="panel-heading">
+    <h3 class="panel-title">Cognition Finding</h3>
+  </div>
+  <div class="panel-body">
+    <div class="valueset-content">
+      <div class="valueset-summary">
+        <h3 xmlns="" />Summary</div>
+      <div class="valueset-summary-table">
+        <table>
+          <tr class="valueset-summary-table-header">
+            <th title="The name of the element." class="col-name">Name</th>
+            <th title="The value of the element." class="col-description">Description</th>
+          </tr>
+          <tr>
+            <td>Defining URL:</td>
+            <td>https://fhir.nhs.uk/ValueSet/DCH-CognitionFinding-1</td>
+            <tr>
+              <td>Name:</td>
+              <td>Cognition Finding</td>
+            </tr>
+            <tr>
+              <td>Definition:</td>
+              <td>A code from the SNOMED Clinical Terminology UK coding system to represent the cognition finding.</td>
+            </tr>
+            <tr>
+              <td>Copyright:</td>
+              <td>This value set includes content from SNOMED CT, which is copyright © 2002+ International Health Terminology Standards Development Organisation (IHTSDO), and distributed by agreement between IHTSDO and HL7. Implementer use of SNOMED CT is not covered by this agreement.</td>
+            </tr>
+            <tr>
+              <td>Status:</td>
+              <td>Draft</td>
+            </tr>
+            <tr>
+              <td>Last Updated:</td>
+              <td>03/08/2016 00:00:00 +01:00</td>
+            </tr>
+            <tr>
+              <td>Source Resource:</td>
+              <td>
+                <p>
+                  <a target="_blank" href="..\Resources\Profile.IndividualRequirements\ValueSets\DCH-CognitionFinding-1.xml">XML</a> / <a target="_blank" href="..\Resources\Profile.IndividualRequirements\ValueSets\DCH-CognitionFinding-1.json">JSON</a></p>
+              </td>
+            </tr>
+          </tr>
+        </table>
+        <p />
+      </div>
+      <div class="logical-definition">
+        <p>Include these codes as defined in http://snomed.info/sct :<br /></p>
+        <div class="codeSystem-table">
+          <table>
+            <tr class="table-header">
+              <th title="Code that identifies concept" class="col-code">Code</th>
+              <th title="Text to display to the user" class="col-display">Display</th>
+            </tr>
+            <div class="table-rows">
+              <tr>
+                <td>307087004</td>
+                <td>
+                  <p>Able to analyze information (finding)</p>
+                  <a name="Able to analyze information (finding)" />
+                </td>
+              </tr>
+              <tr>
+                <td>395662007</td>
+                <td>
+                  <p>Able to comprehend concept of danger (finding)</p>
+                  <a name="Able to comprehend concept of danger (finding)" />
+                </td>
+              </tr>
+              <tr>
+                <td>719750006</td>
+                <td>
+                  <p>Able to comprehend language (finding)</p>
+                  <a name="Able to comprehend language (finding)" />
+                </td>
+              </tr>
+              <tr>
+                <td>719362007</td>
+                <td>
+                  <p>Able to comprehend speech (finding)</p>
+                  <a name="Able to comprehend speech (finding)" />
+                </td>
+              </tr>
+              <tr>
+                <td>719382006</td>
+                <td>
+                  <p>Able to comprehend written material (finding)</p>
+                  <a name="Able to comprehend written material (finding)" />
+                </td>
+              </tr>
+              <tr>
+                <td>719734003</td>
+                <td>
+                  <p>Able to identify choices (finding)</p>
+                  <a name="Able to identify choices (finding)" />
+                </td>
+              </tr>
+              <tr>
+                <td>304687006</td>
+                <td>
+                  <p>Able to make considered choices (finding)</p>
+                  <a name="Able to make considered choices (finding)" />
+                </td>
+              </tr>
+              <tr>
+                <td>720438009</td>
+                <td>
+                  <p>Able to make decision on safe entry of visitors (finding)</p>
+                  <a name="Able to make decision on safe entry of visitors (finding)" />
+                </td>
+              </tr>
+              <tr>
+                <td>716415003</td>
+                <td>
+                  <p>Able to make decision on safe information to give over telephone (finding)</p>
+                  <a name="Able to make decision on safe information to give over telephone (finding)" />
+                </td>
+              </tr>
+              <tr>
+                <td>719743007</td>
+                <td>
+                  <p>Able to make decisions (finding)</p>
+                  <a name="Able to make decisions (finding)" />
+                </td>
+              </tr>
+              <tr>
+                <td>719734003</td>
+                <td>
+                  <p>Able to make informed choice (finding)</p>
+                  <a name="Able to make informed choice (finding)" />
+                </td>
+              </tr>
+              <tr>
+                <td>307083000</td>
+                <td>
+                  <p>Able to process information (finding)</p>
+                  <a name="Able to process information (finding)" />
+                </td>
+              </tr>
+              <tr>
+                <td>311538008</td>
+                <td>
+                  <p>Able to process information accurately (finding)</p>
+                  <a name="Able to process information accurately (finding)" />
+                </td>
+              </tr>
+              <tr>
+                <td>311541004</td>
+                <td>
+                  <p>Able to process information at normal speed (finding)</p>
+                  <a name="Able to process information at normal speed (finding)" />
+                </td>
+              </tr>
+              <tr>
+                <td>334751000000101</td>
+                <td>
+                  <p>Able to react to an emergency (finding)</p>
+                  <a name="Able to react to an emergency (finding)" />
+                </td>
+              </tr>
+              <tr>
+                <td>309251006</td>
+                <td>
+                  <p>Able to read (finding)</p>
+                  <a name="Able to read (finding)" />
+                </td>
+              </tr>
+              <tr>
+                <td>309251006</td>
+                <td>
+                  <p>Able to tell the time (finding)</p>
+                  <a name="Able to tell the time (finding)" />
+                </td>
+              </tr>
+              <tr>
+                <td>281136009</td>
+                <td>
+                  <p>Able to think abstractly (finding)</p>
+                  <a name="Able to think abstractly (finding)" />
+                </td>
+              </tr>
+              <tr>
+                <td>225662002</td>
+                <td>
+                  <p>Able to think clearly (finding)</p>
+                  <a name="Able to think clearly (finding)" />
+                </td>
+              </tr>
+              <tr>
+                <td>716454002</td>
+                <td>
+                  <p>Able to think creatively (finding)</p>
+                  <a name="Able to think creatively (finding)" />
+                </td>
+              </tr>
+              <tr>
+                <td>285256006</td>
+                <td>
+                  <p>Able to think independently (finding)</p>
+                  <a name="Able to think independently (finding)" />
+                </td>
+              </tr>
+              <tr>
+                <td>719350008</td>
+                <td>
+                  <p>Able to understand verbal language (finding)</p>
+                  <a name="Able to understand verbal language (finding)" />
+                </td>
+              </tr>
+              <tr>
+                <td>719365009</td>
+                <td>
+                  <p>Able to understand written language (finding)</p>
+                  <a name="Able to understand written language (finding)" />
+                </td>
+              </tr>
+              <tr>
+                <td>304650003</td>
+                <td>
+                  <p>Able to use decision making strategies (finding)</p>
+                  <a name="Able to use decision making strategies (finding)" />
+                </td>
+              </tr>
+              <tr>
+                <td>304664003</td>
+                <td>
+                  <p>Able to use verbal reasoning (finding)</p>
+                  <a name="Able to use verbal reasoning (finding)" />
+                </td>
+              </tr>
+              <tr>
+                <td>323351000000104</td>
+                <td>
+                  <p>Anxiety about mood (finding)</p>
+                  <a name="Anxiety about mood (finding)" />
+                </td>
+              </tr>
+              <tr>
+                <td>225642005</td>
+                <td>
+                  <p>Anxiety about not coping with parenthood (finding)</p>
+                  <a name="Anxiety about not coping with parenthood (finding)" />
+                </td>
+              </tr>
+              <tr>
+                <td>225638007</td>
+                <td>
+                  <p>Anxiety about resuming sexual relations (finding)</p>
+                  <a name="Anxiety about resuming sexual relations (finding)" />
+                </td>
+              </tr>
+              <tr>
+                <td>50829006</td>
+                <td>
+                  <p>Basic learning problem (finding)</p>
+                  <a name="Basic learning problem (finding)" />
+                </td>
+              </tr>
+              <tr>
+                <td>81511006</td>
+                <td>
+                  <p>Basic learning problem in language (finding)</p>
+                  <a name="Basic learning problem in language (finding)" />
+                </td>
+              </tr>
+              <tr>
+                <td>23766009</td>
+                <td>
+                  <p>Basic learning problem in reading (finding)</p>
+                  <a name="Basic learning problem in reading (finding)" />
+                </td>
+              </tr>
+              <tr>
+                <td>45418009</td>
+                <td>
+                  <p>Basic learning problem in speaking (finding)</p>
+                  <a name="Basic learning problem in speaking (finding)" />
+                </td>
+              </tr>
+              <tr>
+                <td>46781003</td>
+                <td>
+                  <p>Basic learning problem in writing (finding)</p>
+                  <a name="Basic learning problem in writing (finding)" />
+                </td>
+              </tr>
+              <tr>
+                <td>18541000119100</td>
+                <td>
+                  <p>Borderline cognitive developmental delay (disorder)</p>
+                  <a name="Borderline cognitive developmental delay (disorder)" />
+                </td>
+              </tr>
+              <tr>
+                <td>142261000119100</td>
+                <td>
+                  <p>Cognitive deficit in attention (finding)</p>
+                  <a name="Cognitive deficit in attention (finding)" />
+                </td>
+              </tr>
+              <tr>
+                <td>425805004</td>
+                <td>
+                  <p>Cognitive developmental delay (disorder)</p>
+                  <a name="Cognitive developmental delay (disorder)" />
+                </td>
+              </tr>
+              <tr>
+                <td>397699006</td>
+                <td>
+                  <p>Demonstrates knowledge of medication management (finding)</p>
+                  <a name="Demonstrates knowledge of medication management (finding)" />
+                </td>
+              </tr>
+              <tr>
+                <td>397598006</td>
+                <td>
+                  <p>Demonstrates knowledge of nutritional requirements related to operative procedure (finding)</p>
+                  <a name="Demonstrates knowledge of nutritional requirements related to operative procedure (finding)" />
+                </td>
+              </tr>
+              <tr>
+                <td>708571001</td>
+                <td>
+                  <p>Demonstrates knowledge of who to contact in medical emergency (finding)</p>
+                  <a name="Demonstrates knowledge of who to contact in medical emergency (finding)" />
+                </td>
+              </tr>
+              <tr>
+                <td>307089001</td>
+                <td>
+                  <p>Difficulty analyzing information (finding)</p>
+                  <a name="Difficulty analyzing information (finding)" />
+                </td>
+              </tr>
+              <tr>
+                <td>395664008</td>
+                <td>
+                  <p>Difficulty comprehending concept of danger (finding)</p>
+                  <a name="Difficulty comprehending concept of danger (finding)" />
+                </td>
+              </tr>
+              <tr>
+                <td>716474009</td>
+                <td>
+                  <p>Difficulty comprehending language (finding)</p>
+                  <a name="Difficulty comprehending language (finding)" />
+                </td>
+              </tr>
+              <tr>
+                <td>716475005</td>
+                <td>
+                  <p>Difficulty comprehending speech (finding)</p>
+                  <a name="Difficulty comprehending speech (finding)" />
+                </td>
+              </tr>
+              <tr>
+                <td>716476006</td>
+                <td>
+                  <p>Difficulty comprehending written material (finding)</p>
+                  <a name="Difficulty comprehending written material (finding)" />
+                </td>
+              </tr>
+              <tr>
+                <td>4941000175101</td>
+                <td>
+                  <p>Difficulty following instructions (finding)</p>
+                  <a name="Difficulty following instructions (finding)" />
+                </td>
+              </tr>
+              <tr>
+                <td>285257002</td>
+                <td>
+                  <p>Difficulty in thinking independently (finding)</p>
+                  <a name="Difficulty in thinking independently (finding)" />
+                </td>
+              </tr>
+              <tr>
+                <td>304689009</td>
+                <td>
+                  <p>Difficulty making considered choices (finding)</p>
+                  <a name="Difficulty making considered choices (finding)" />
+                </td>
+              </tr>
+              <tr>
+                <td>247585004</td>
+                <td>
+                  <p>Difficulty making decisions (finding)</p>
+                  <a name="Difficulty making decisions (finding)" />
+                </td>
+              </tr>
+              <tr>
+                <td>247584000</td>
+                <td>
+                  <p>Difficulty making plans (finding)</p>
+                  <a name="Difficulty making plans (finding)" />
+                </td>
+              </tr>
+              <tr>
+                <td>307085007</td>
+                <td>
+                  <p>Difficulty processing information (finding)</p>
+                  <a name="Difficulty processing information (finding)" />
+                </td>
+              </tr>
+              <tr>
+                <td>311540003</td>
+                <td>
+                  <p>Difficulty processing information accurately (finding)</p>
+                  <a name="Difficulty processing information accurately (finding)" />
+                </td>
+              </tr>
+              <tr>
+                <td>311543001</td>
+                <td>
+                  <p>Difficulty processing information at normal speed (finding)</p>
+                  <a name="Difficulty processing information at normal speed (finding)" />
+                </td>
+              </tr>
+              <tr>
+                <td>334761000000103</td>
+                <td>
+                  <p>Difficulty reacting to an emergency (finding)</p>
+                  <a name="Difficulty reacting to an emergency (finding)" />
+                </td>
+              </tr>
+              <tr>
+                <td>309253009</td>
+                <td>
+                  <p>Difficulty reading (finding)</p>
+                  <a name="Difficulty reading (finding)" />
+                </td>
+              </tr>
+              <tr>
+                <td>304644008</td>
+                <td>
+                  <p>Difficulty reasoning (finding)</p>
+                  <a name="Difficulty reasoning (finding)" />
+                </td>
+              </tr>
+              <tr>
+                <td>247582001</td>
+                <td>
+                  <p>Difficulty solving problems (finding)</p>
+                  <a name="Difficulty solving problems (finding)" />
+                </td>
+              </tr>
+              <tr>
+                <td>285628005</td>
+                <td>
+                  <p>Difficulty telling the time (finding)</p>
+                  <a name="Difficulty telling the time (finding)" />
+                </td>
+              </tr>
+              <tr>
+                <td>716477002</td>
+                <td>
+                  <p>Difficulty understanding instructions of more than two parts (finding)</p>
+                  <a name="Difficulty understanding instructions of more than two parts (finding)" />
+                </td>
+              </tr>
+              <tr>
+                <td>716478007</td>
+                <td>
+                  <p>Difficulty understanding more than three word instructions (finding)</p>
+                  <a name="Difficulty understanding more than three word instructions (finding)" />
+                </td>
+              </tr>
+              <tr>
+                <td>716479004</td>
+                <td>
+                  <p>Difficulty understanding one part instructions (finding)</p>
+                  <a name="Difficulty understanding one part instructions (finding)" />
+                </td>
+              </tr>
+              <tr>
+                <td>716480001</td>
+                <td>
+                  <p>Difficulty understanding single word instructions (finding)</p>
+                  <a name="Difficulty understanding single word instructions (finding)" />
+                </td>
+              </tr>
+              <tr>
+                <td>716481002</td>
+                <td>
+                  <p>Difficulty understanding three word instructions (finding)</p>
+                  <a name="Difficulty understanding three word instructions (finding)" />
+                </td>
+              </tr>
+              <tr>
+                <td>716482009</td>
+                <td>
+                  <p>Difficulty understanding two part instructions (finding)</p>
+                  <a name="Difficulty understanding two part instructions (finding)" />
+                </td>
+              </tr>
+              <tr>
+                <td>716483004</td>
+                <td>
+                  <p>Difficulty understanding two word instructions (finding)</p>
+                  <a name="Difficulty understanding two word instructions (finding)" />
+                </td>
+              </tr>
+              <tr>
+                <td>716484005</td>
+                <td>
+                  <p>Difficulty understanding verbal language (finding)</p>
+                  <a name="Difficulty understanding verbal language (finding)" />
+                </td>
+              </tr>
+              <tr>
+                <td>716485006</td>
+                <td>
+                  <p>Difficulty understanding written language (finding)</p>
+                  <a name="Difficulty understanding written language (finding)" />
+                </td>
+              </tr>
+              <tr>
+                <td>304652006</td>
+                <td>
+                  <p>Difficulty using decision making strategies (finding)</p>
+                  <a name="Difficulty using decision making strategies (finding)" />
+                </td>
+              </tr>
+              <tr>
+                <td>304666001</td>
+                <td>
+                  <p>Difficulty using verbal reasoning (finding)</p>
+                  <a name="Difficulty using verbal reasoning (finding)" />
+                </td>
+              </tr>
+              <tr>
+                <td>716490009</td>
+                <td>
+                  <p>Does comprehend language (finding)</p>
+                  <a name="Does comprehend language (finding)" />
+                </td>
+              </tr>
+              <tr>
+                <td>716491008</td>
+                <td>
+                  <p>Does comprehend speech (finding)</p>
+                  <a name="Does comprehend speech (finding)" />
+                </td>
+              </tr>
+              <tr>
+                <td>716492001</td>
+                <td>
+                  <p>Does comprehend written material (finding)</p>
+                  <a name="Does comprehend written material (finding)" />
+                </td>
+              </tr>
+              <tr>
+                <td>334781000000107</td>
+                <td>
+                  <p>Does react to an emergency (finding)</p>
+                  <a name="Does react to an emergency (finding)" />
+                </td>
+              </tr>
+              <tr>
+                <td>247588002</td>
+                <td>
+                  <p>Poor long-term memory (finding)</p>
+                  <a name="Poor long-term memory (finding)" />
+                </td>
+              </tr>
+              <tr>
+                <td>247592009</td>
+                <td>
+                  <p>Poor short-term memory (finding)</p>
+                  <a name="Poor short-term memory (finding)" />
+                </td>
+              </tr>
+              <tr>
+                <td>247627003</td>
+                <td>
+                  <p>Slow flow of thought (finding)</p>
+                  <a name="Slow flow of thought (finding)" />
+                </td>
+              </tr>
+              <tr>
+                <td>224998004</td>
+                <td>
+                  <p>Slow learner (finding)</p>
+                  <a name="Slow learner (finding)" />
+                </td>
+              </tr>
+              <tr>
+                <td>285243004</td>
+                <td>
+                  <p>Sluggish thought (finding)</p>
+                  <a name="Sluggish thought (finding)" />
+                </td>
+              </tr>
+              <tr>
+                <td>225640002</td>
+                <td>
+                  <p>Worried about being a bad father (finding)</p>
+                  <a name="Worried about being a bad father (finding)" />
+                </td>
+              </tr>
+              <tr>
+                <td>225640002</td>
+                <td>
+                  <p>Worried about being a bad mother (finding)</p>
+                  <a name="Worried about being a bad mother (finding)" />
+                </td>
+              </tr>
+              <tr>
+                <td>225639004</td>
+                <td>
+                  <p>Worried about not coping with baby (finding)</p>
+                  <a name="Worried about not coping with baby (finding)" />
+                </td>
+              </tr>
+            </div>
+          </table>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>						
+					   </div>                      
+                    </div>
+                    <!-- /inner-wrapper -->                   
+                </div>
+                <!-- /row -->              
+            </div>
+            <!-- /container -->           
+        </div>
+    <!-- /segment-content -->
+
+        <div id="segment-footer" class="segment">
+            <!-- segment-footer -->
+            <div class="container">
+                <!-- container -->
+                <div class="inner-wrapper">
+					<div id="explanatoryline">
+                         <img src="../dist/images/explanatoryline.png" alt="Information and technology for better health and care" />
+						 <p>
+                        Copyright &copy; 2017 Health and Social Care Information Centre<br/>
+						NHS Digital is the trading name of the Health and Social Care Information Centre.
+                    </p>
+                    </div>
+				<div id="hl7-nav">
+                    <a id="hl7-logo" href="http://www.hl7.org" target="_blank">
+                        <img src="../dist/images/hl7-logo.png" alt="visit the hl7 website" />
+                    </a>
+					<p>
+					FHIR&reg; is the registered trademark of HL7<br/>
+					and is used with the permission of HL7.
+					</p>
+				</div>
+					<p>
+						<!--<span class="glyphicon glyphicon-download-alt" aria-hidden="true"></span> -->
+                    </p>
+                </div>
+                <!-- /inner-wrapper -->
+            </div>
+            <!-- /container -->
+        </div>
+
+        <div id="segment-post-footer" class="segment">
+            <!-- segment-post-footer -->
+            <div class="container">
+                <!-- container -->
+            </div>
+            <!-- /container -->
+        </div>
+	</body>
+</html>
