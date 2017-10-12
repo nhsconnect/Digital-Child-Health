@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValueSet xmlns="http://hl7.org/fhir">
+	<meta>
+		<lastUpdated value="2016-08-03T00:00:00+01:00"/>
+	</meta>
+	<url value="https://fhir.nhs.uk/ValueSet/DCH-IndividualNeedsPerson-1"/>
+	<copyright value="Copyright © 2016 Health and Social Care Information Centre. NHS Digital is the trading name of the Health and Social Care Information Centre."/>
+	<version value="1.0.0"/>
+	<name value="Individual Needs Person"/>
+	<status value="draft"/>
+	<publisher value="NHS Digital"/>
+	<description value="An indicator of whether the individual requirement relates to the child or their primary carer."/>
+	<compose>
+		<include>
+			<system value="https://fhir.nhs.uk/DCH-IndividualNeedsPerson-1"/>
+			<concept>
+				<code value="01"/>
+				<display value="Child's Individual Needs"/>
+			</concept>
+			<concept>
+				<code value="02"/>
+				<display value="Parent/Guardian's Individual needs"/>
+			</concept>
+			<concept>
+				<code value="02"/>
+				<display value="Legal representative's Individual needs"/>
+			</concept>
+		</include>
+	</compose>
+</ValueSet>

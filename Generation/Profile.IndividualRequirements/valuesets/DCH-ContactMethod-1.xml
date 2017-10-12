@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValueSet xmlns="http://hl7.org/fhir">
+	<meta>
+		<lastUpdated value="2016-08-03T00:00:00+01:00"/>
+	</meta>
+	<url value="https://fhir.nhs.uk/ValueSet/DCH-ContactMethod-1"/>
+	<copyright value="This value set includes content from SNOMED CT, which is copyright © 2002+ International Health Terminology Standards Development Organisation (IHTSDO), and distributed by agreement between IHTSDO and HL7. Implementer use of SNOMED CT is not covered by this agreement."/>
+	<version value="1.0.0"/>
+	<name value="Contact Method"/>
+	<status value="draft"/>
+	<publisher value="NHS Digital"/>
+	<description value="A code from the SNOMED Clinical Terminology UK coding system to represent the contact method requirement."/>
+	<compose>
+		<include>
+			<system value="http://snomed.info/sct"/>
+			<concept>
+				<code value="945971000000104"/>
+				<display value="Requires tactile alert (finding)"/>
+			</concept>
+			<concept>
+				<code value="936701000000103"/>
+				<display value="Requires contact by short message service text message (finding)"/>
+			</concept>
+			<concept>
+				<code value="719561001"/>
+				<display value="Requires contact via carer (finding)"/>
+			</concept>
+			<concept>
+				<code value="936741000000100"/>
+				<display value="Requires contact by email (finding)"/>
+			</concept>
+			<concept>
+				<code value="795661000000104"/>
+				<display value="Requires contact by telephone (finding)"/>
+			</concept>
+			<concept>
+				<code value="945951000000108"/>
+				<display value="Requires visual alert (finding)"/>
+			</concept>
+			<concept>
+				<code value="796081000000106"/>
+				<display value="Requires contact by text relay (finding)"/>
+			</concept>
+			<concept>
+				<code value="936721000000107"/>
+				<display value="Requires contact by letter (finding)"/>
+			</concept>
+			<concept>
+				<code value="945931000000101"/>
+				<display value="Requires audible alert (finding)"/>
+			</concept>
+		</include>
+	</compose>
+</ValueSet>

@@ -1,0 +1,1 @@
+This Condition resource records detailed information about conditions or diagnoses recognised by a clinician, with further constraints applied to represent findings for a child's personal physical movement between two spaces that achieves participation and a degree of independence.

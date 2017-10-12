@@ -1,0 +1,1 @@
+This Condition resource records detailed information about conditions or diagnoses recognised by a clinician, with further constraints applied to represent the requirement for a specific contact method in order to provide accessibility.
