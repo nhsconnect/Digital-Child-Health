@@ -15162,7 +15162,7 @@
           "strength": "required",
           "description": "The type of care professional or team",
           "valueSetReference": {
-            "reference": "https://fhir.nhs.uk/ValueSet/DCH-ProfessionalContactType-1"
+            "reference": "https://fhir.nhs.uk/ValueSet/DCH-ProfessionalType-1"
           }
         },
         "mapping": [
@@ -15461,7 +15461,7 @@
             "code": "uri"
           }
         ],
-        "fixedUri": "https://fhir.nhs.uk/DCH-ProfessionalContactType-1",
+        "fixedUri": "https://fhir.nhs.uk/DCH-ProfessionalType-1",
         "condition": [
           "ele-1"
         ],
@@ -21000,7 +21000,7 @@
           "strength": "required",
           "description": "The type of care professional or team",
           "valueSetReference": {
-            "reference": "https://fhir.nhs.uk/ValueSet/DCH-ProfessionalContactType-1"
+            "reference": "https://fhir.nhs.uk/ValueSet/DCH-ProfessionalType-1"
           }
         }
       },
@@ -21011,7 +21011,7 @@
       {
         "path": "Practitioner.practitionerRole.role.coding.system",
         "min": 1,
-        "fixedUri": "https://fhir.nhs.uk/DCH-ProfessionalContactType-1"
+        "fixedUri": "https://fhir.nhs.uk/DCH-ProfessionalType-1"
       },
       {
         "path": "Practitioner.practitionerRole.role.coding.code",

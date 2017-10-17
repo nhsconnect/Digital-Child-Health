@@ -8,7 +8,7 @@
   "name": "Specialty",
   "status": "draft",
   "publisher": "NHS Digital",
-  "description": "The specialty of the care professional or team.",
+  "description": "The specialty of the care professional or team. Note the values below may change.",
   "copyright": "Copyright © 2016 Health and Social Care Information Centre. NHS Digital is the trading name of the Health and Social Care Information Centre.",
   "compose": {
     "include": [
@@ -92,8 +92,8 @@
             "display": "ACCIDENT and EMERGENCY"
           },
           {
-            "code": "191 ",
-            "display": "PAIN MANAGEMENT (Retired 1 April 2004) "
+            "code": "191",
+            "display": "PAIN MANAGEMENT (Retired 1 April 2004)"
           },
           {
             "code": "190",
@@ -136,8 +136,8 @@
             "display": "CLINICAL GENETICS"
           },
           {
-            "code": "312 ",
-            "display": "CLINICAL CYTOGENETICS and MOLECULAR GENETICS (Retired 1 April 2010) "
+            "code": "312",
+            "display": "CLINICAL CYTOGENETICS and MOLECULAR GENETICS (Retired 1 April 2010)"
           },
           {
             "code": "313",
@@ -252,12 +252,12 @@
             "display": "COMMUNITY SEXUAL AND REPRODUCTIVE HEALTH"
           },
           {
-            "code": "510 ",
-            "display": "ANTENATAL CLINIC (Retired 1 April 2004) "
+            "code": "510",
+            "display": "ANTENATAL CLINIC (Retired 1 April 2004)"
           },
           {
-            "code": "520 ",
-            "display": "POSTNATAL CLINIC (Retired 1 April 2004) "
+            "code": "520",
+            "display": "POSTNATAL CLINIC (Retired 1 April 2004)"
           },
           {
             "code": "560",
@@ -272,12 +272,12 @@
             "display": "GENERAL DENTAL PRACTICE"
           },
           {
-            "code": "610 ",
-            "display": "MATERNITY FUNCTION (Retired 1 April 2004) "
+            "code": "610",
+            "display": "MATERNITY FUNCTION (Retired 1 April 2004)"
           },
           {
-            "code": "620 ",
-            "display": "OTHER THAN MATERNITY (Retired 1 April 2004) "
+            "code": "620",
+            "display": "OTHER THAN MATERNITY (Retired 1 April 2004)"
           },
           {
             "code": "700",
@@ -340,8 +340,8 @@
             "display": "MEDICAL MICROBIOLOGY AND VIROLOGY"
           },
           {
-            "code": "832 ",
-            "display": "NEUROPATHOLOGY (Retired 1 April 2004) "
+            "code": "832",
+            "display": "NEUROPATHOLOGY (Retired 1 April 2004)"
           },
           {
             "code": "833",
@@ -380,8 +380,8 @@
             "display": "ALLIED HEALTH PROFESSIONAL EPISODE"
           },
           {
-            "code": "990 ",
-            "display": "JOINT CONSULTANT CLINICS (Retired 1 April 2004) "
+            "code": "990",
+            "display": "JOINT CONSULTANT CLINICS (Retired 1 April 2004)"
           }
         ]
       }

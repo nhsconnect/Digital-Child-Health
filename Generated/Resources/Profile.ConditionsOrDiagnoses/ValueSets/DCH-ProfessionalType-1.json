@@ -1,0 +1,282 @@
+{
+  "resourceType": "ValueSet",
+  "meta": {
+    "lastUpdated": "2016-08-03T00:00:00+01:00"
+  },
+  "url": "https://fhir.nhs.uk/ValueSet/DCH-ProfessionalType-1",
+  "version": "1.0.0",
+  "name": "Professional Type",
+  "status": "draft",
+  "publisher": "NHS Digital",
+  "description": "The type of care professional or team. Note the values below may change.",
+  "copyright": "Copyright © 2016 Health and Social Care Information Centre. NHS Digital is the trading name of the Health and Social Care Information Centre.",
+  "compose": {
+    "include": [
+      {
+        "system": "https://fhir.nhs.uk/DCH-ProfessionalType-1",
+        "concept": [
+          {
+            "code": "A01",
+            "display": "Art Therapist"
+          },
+          {
+            "code": "A02",
+            "display": "Clinical Psychologist"
+          },
+          {
+            "code": "A03",
+            "display": "Dietitian"
+          },
+          {
+            "code": "A04",
+            "display": "Drama Therapist"
+          },
+          {
+            "code": "A05",
+            "display": "Music Therapist"
+          },
+          {
+            "code": "A06",
+            "display": "Occupational Therapist"
+          },
+          {
+            "code": "A07",
+            "display": "Orthotist"
+          },
+          {
+            "code": "A08",
+            "display": "Physiotherapist"
+          },
+          {
+            "code": "A09",
+            "display": "Podiatrist"
+          },
+          {
+            "code": "A10",
+            "display": "Prosthetist"
+          },
+          {
+            "code": "A11",
+            "display": "Psychotherapist"
+          },
+          {
+            "code": "A12",
+            "display": "Radiographer"
+          },
+          {
+            "code": "A13",
+            "display": "Speech and Language Therapist"
+          },
+          {
+            "code": "A14",
+            "display": "Orthoptist"
+          },
+          {
+            "code": "M01",
+            "display": "Community Dentist"
+          },
+          {
+            "code": "M02",
+            "display": "Consultant"
+          },
+          {
+            "code": "M03",
+            "display": "General Medical Practitioner"
+          },
+          {
+            "code": "M04",
+            "display": "General Medical Practitioner with Special Interests"
+          },
+          {
+            "code": "N01",
+            "display": "Midwife"
+          },
+          {
+            "code": "N02",
+            "display": "District Nurse"
+          },
+          {
+            "code": "N03",
+            "display": "Health Visitor"
+          },
+          {
+            "code": "N04",
+            "display": "Macmillan Nurse"
+          },
+          {
+            "code": "N05",
+            "display": "School Nurse"
+          },
+          {
+            "code": "N06",
+            "display": "Specialist Nursing - Active Case Management (Community Matrons)"
+          },
+          {
+            "code": "N07",
+            "display": "Specialist Nursing - Arthritis Nursing / Liaison"
+          },
+          {
+            "code": "N08",
+            "display": "Specialist Nursing - Asthma and Respiratory Nursing / Liaison"
+          },
+          {
+            "code": "N09",
+            "display": "Specialist Nursing - Breast Care Nursing / Liaison"
+          },
+          {
+            "code": "N10",
+            "display": "Specialist Nursing - Cancer Related"
+          },
+          {
+            "code": "N11",
+            "display": "Specialist Nursing - Cardiac Nursing / Liaison"
+          },
+          {
+            "code": "N12",
+            "display": "Specialist Nursing - Children's Services"
+          },
+          {
+            "code": "N13",
+            "display": "Specialist Nursing - Community Cystic Fibrosis"
+          },
+          {
+            "code": "N14",
+            "display": "Specialist Nursing - Continence Services"
+          },
+          {
+            "code": "N15",
+            "display": "Specialist Nursing - Diabetic Nursing / Liaison"
+          },
+          {
+            "code": "N16",
+            "display": "Specialist Nursing - Enteral Feeding Nursing Services"
+          },
+          {
+            "code": "N17",
+            "display": "Specialist Nursing - Haemophilia Nursing Services"
+          },
+          {
+            "code": "N19",
+            "display": "Specialist Nursing - Infectious Diseases"
+          },
+          {
+            "code": "N20",
+            "display": "Specialist Nursing - Intensive Care Nursing"
+          },
+          {
+            "code": "N21",
+            "display": "Specialist Nursing - Palliative / Respite Care"
+          },
+          {
+            "code": "N22",
+            "display": "Specialist Nursing - Parkinson and Alzheimer Nursing / Liaison"
+          },
+          {
+            "code": "N23",
+            "display": "Specialist Nursing - Rehabilitation Nursing"
+          },
+          {
+            "code": "N24",
+            "display": "Specialist Nursing - Stoma Care Services"
+          },
+          {
+            "code": "N25",
+            "display": "Specialist Nursing - Tissue Viability Nursing / Liaison"
+          },
+          {
+            "code": "N26",
+            "display": "Specialist Nursing - Transplantation Patients Nursing Services"
+          },
+          {
+            "code": "N27",
+            "display": "Specialist Nursing - Treatment Room Nursing Services"
+          },
+          {
+            "code": "N28",
+            "display": "Specialist Nursing - Tuberculosis Specialist Nursing"
+          },
+          {
+            "code": "N29",
+            "display": "Specialist Nursing - Other Specialist Nursing"
+          },
+          {
+            "code": "N30",
+            "display": "Specialist Nursing - Safeguarding"
+          },
+          {
+            "code": "N31",
+            "display": "Practice Nursing"
+          },
+          {
+            "code": "N32",
+            "display": "Staff Nurse"
+          },
+          {
+            "code": "N33",
+            "display": "Other Registered Nurse"
+          },
+          {
+            "code": "N34",
+            "display": "Public Health Nurse"
+          },
+          {
+            "code": "C01",
+            "display": "Appliances Technician"
+          },
+          {
+            "code": "C02",
+            "display": "Audiologist"
+          },
+          {
+            "code": "C03",
+            "display": "Counsellor"
+          },
+          {
+            "code": "C04",
+            "display": "Nursery Nurse"
+          },
+          {
+            "code": "C06",
+            "display": "Play Therapist"
+          },
+          {
+            "code": "C07",
+            "display": "Social Worker"
+          },
+          {
+            "code": "C08",
+            "display": "Voluntary Care Worker"
+          },
+          {
+            "code": "C09",
+            "display": "Screener (in a National Screening Programme)"
+          },
+          {
+            "code": "C10",
+            "display": "Health Trainer (Non Clinical)"
+          },
+          {
+            "code": "C11",
+            "display": "Health Trainer (Clinical)"
+          },
+          {
+            "code": "C12",
+            "display": "Health Care Assistant"
+          },
+          {
+            "code": "C13",
+            "display": "Health Care Support Worker"
+          },
+          {
+            "code": "C99",
+            "display": "Other Care Professional"
+          },
+          {
+            "code": "C99",
+            "display": "Other Care Professional - Child Health Organisation"
+          }
+        ]
+      }
+    ]
+  }
+}
