@@ -4,7 +4,7 @@
 
 **Events Catalogue Alpha updates**
 
-Following review and assurance, the Digital Child Events Catalogue has been updated. This specification is now being updated with these events in preparation for an Alpha release.
+Following review and assurance, the Digital Child Events Catalogue has been updated. This specification is now being updated with these events in preparation for an Alpha release. The Alpha release status represents *'Initial test APIs, likely to change substantially, or be discontinued as the project develops'*.
 
 
 **Events Catalogue Wave 1 of the Personal Child Health Record and Healthy Child Programme**
