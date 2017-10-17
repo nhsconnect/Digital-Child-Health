@@ -9,7 +9,7 @@
 	<name value="Association Type"/>
 	<status value="draft"/>
 	<publisher value="NHS Digital"/>
-	<description value="The type of association between the patient and the care professional or team."/>
+	<description value="The type of association between the patient and the care professional or team. Note the values below may change."/>
 	<compose>
 		<include>
 			<system value="https://fhir.nhs.uk/DCH-AssociationType-1"/>

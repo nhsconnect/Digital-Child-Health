@@ -247,7 +247,7 @@ End date
 					</managingOrganization>
 					<role>
 						<coding>
-							<system value="https://fhir.nhs.uk/DCH-ProfessionalContactType-1"/>
+							<system value="https://fhir.nhs.uk/DCH-ProfessionalType-1"/>
 							<code value="N03"/>
 							<display value="Health Visitor"/>
 						</coding>

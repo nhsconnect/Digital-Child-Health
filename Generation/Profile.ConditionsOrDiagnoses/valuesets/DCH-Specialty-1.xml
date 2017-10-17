@@ -9,7 +9,7 @@
 	<name value="Specialty"/>
 	<status value="draft"/>
 	<publisher value="NHS Digital"/>
-	<description value="The specialty of the care professional or team."/>
+	<description value="The specialty of the care professional or team. Note the values below may change."/>
 	<compose>
 		<include>
 			<system value="https://fhir.nhs.uk/DCH-Specialty-1"/>

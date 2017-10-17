@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <meta>
-    <lastUpdated value="2017-10-08T16:13:36.92+01:00" />
+    <lastUpdated value="2017-10-17T16:17:35.296+01:00" />
     <tag>
       <system value="urn:hscic:publishOrder" />
       <code value="5" />
@@ -3133,6 +3133,7 @@
       <type>
         <code value="code" />
       </type>
+      <fixedCode value="Birth" />
       <condition value="ele-1" />
       <constraint>
         <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-expression">
@@ -3177,6 +3178,7 @@
       <type>
         <code value="string" />
       </type>
+      <fixedString value="Birth" />
       <condition value="ele-1" />
       <constraint>
         <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-expression">
@@ -13803,10 +13805,12 @@
     <element>
       <path value="Encounter.type.coding.code" />
       <min value="1" />
+      <fixedCode value="Birth" />
     </element>
     <element>
       <path value="Encounter.type.coding.display" />
       <min value="1" />
+      <fixedString value="Birth" />
     </element>
     <element>
       <path value="Encounter.priority" />

@@ -11805,7 +11805,7 @@
         <strength value="required" />
         <description value="The type of care professional or team" />
         <valueSetReference>
-          <reference value="https://fhir.nhs.uk/ValueSet/DCH-ProfessionalContactType-1" />
+          <reference value="https://fhir.nhs.uk/ValueSet/DCH-ProfessionalType-1" />
         </valueSetReference>
       </binding>
       <mapping>
@@ -12041,7 +12041,7 @@
       <type>
         <code value="uri" />
       </type>
-      <fixedUri value="https://fhir.nhs.uk/DCH-ProfessionalContactType-1" />
+      <fixedUri value="https://fhir.nhs.uk/DCH-ProfessionalType-1" />
       <condition value="ele-1" />
       <constraint>
         <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-expression">
@@ -16382,7 +16382,7 @@
         <strength value="required" />
         <description value="The type of care professional or team" />
         <valueSetReference>
-          <reference value="https://fhir.nhs.uk/ValueSet/DCH-ProfessionalContactType-1" />
+          <reference value="https://fhir.nhs.uk/ValueSet/DCH-ProfessionalType-1" />
         </valueSetReference>
       </binding>
     </element>
@@ -16393,7 +16393,7 @@
     <element>
       <path value="Practitioner.practitionerRole.role.coding.system" />
       <min value="1" />
-      <fixedUri value="https://fhir.nhs.uk/DCH-ProfessionalContactType-1" />
+      <fixedUri value="https://fhir.nhs.uk/DCH-ProfessionalType-1" />
     </element>
     <element>
       <path value="Practitioner.practitionerRole.role.coding.code" />
