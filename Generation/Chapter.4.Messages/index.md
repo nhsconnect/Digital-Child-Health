@@ -18,7 +18,7 @@ The FHIR resource profiles within this DMS have been created to support the Chil
 - **[Profile.FamilyHistory]** - FHIR resource profiles combined to support a Family History event message.
 - **[Profile.FeedingStatus]** - FHIR resource profiles combined to support a Feeding Status event message.
 - **[Profile.ImmunisationAdministration]** - FHIR resource profiles combined to support an Immunisation Administration event message.
-- **[Profile.Individual Requirements]** - FHIR resource profiles combined to support an Individual Requirements event message.
+- **[Profile.IndividualRequirements]** - FHIR resource profiles combined to support an Individual Requirements event message.
 - **[Profile.InformationAndAdviceGiven]** - FHIR resource profiles combined to support an Information And Advice Given event message.
 - **[Profile.Measurements]** - FHIR resource profiles combined to support a Measurements event message.
 - **[Profile.Medication]** - FHIR resource profiles combined to support a Medication event message. 
@@ -57,6 +57,7 @@ The various downloads (including Schema files) and reference implementations are
 [Profile.ExaminationFindings]: ../Profile.ExaminationFindings/Profile.ExaminationFindings.html
 [Profile.FamilyHistory]: ../Profile.FamilyHistory/Profile.FamilyHistory.html
 [Profile.FeedingStatus]: ../Profile.FeedingStatus/Profile.FeedingStatus.html
+[Profile.IndividualRequirements]: ../Profile.IndividualRequirements/Profile.IndividualRequirements.html
 [Profile.ImmunisationAdministration]: ../Profile.ImmunisationAdministration/Profile.ImmunisationAdministration.html
 [Profile.InformationAndAdviceGiven]:../Profile.InformationAndAdviceGiven/Profile.InformationAndAdviceGiven.html
 [Profile.Medication]: ../Profile.Medication/Profile.Medication.html
