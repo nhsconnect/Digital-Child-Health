@@ -11,7 +11,7 @@
 			<MessageHeader>
 				<id value="9a743d52-686f-11e7-907b-a6006ad3dba0"/>
 				<meta>
-					<profile value="https://fhir.nhs.uk/StructureDefinition/DCH-NewbornBloodSpotScreening-MessageHeader-1"/>
+					<profile value="https://fhir.nhs.uk/StructureDefinition/DCH-MessageHeader-1"/>
 				</meta>
 				<extension url="https://fhir.nhs.uk/StructureDefinition/Extension-DCH-MessageEventType-1">
 					<valueCodeableConcept>
@@ -37,9 +37,6 @@
 				</responsible>
 				<data>
 					<reference value="urn:uuid:9a7447a2-686f-11e7-907b-a6006ad3dba0"/>
-				</data>
-				<data>
-					<reference value="urn:uuid:9a7440ae-686f-11e7-907b-a6006ad3dba0"/>
 				</data>
 			</MessageHeader>
 		</resource>
@@ -97,67 +94,6 @@
 		</resource>
 	</entry>
 	<entry>
-		<fullUrl value="urn:uuid:9a7440ae-686f-11e7-907b-a6006ad3dba0"/>
-		<resource>
-			<QuestionnaireResponse>
-				<id value="9a7440ae-686f-11e7-907b-a6006ad3dba0"/>
-				<meta>
-					<profile value="https://fhir.nhs.uk/StructureDefinition/DCH-NewbornBloodSpotScreening-QuestionnaireResponse-1"/>
-				</meta>
-				<identifier>
-					<system value="https://tools.ietf.org/html/rfc4122"/>
-					<value value="9a7440ae-686f-11e7-907b-a6006ad3dba0"/>
-				</identifier>
-				<status value="completed"/>
-				<subject>
-					<reference value="urn:uuid:7368c5fe-bbb4-4e9c-a585-234e06b84e82"/>
-					<display value="SAXTON, Sarah Marie"/>
-				</subject>
-				<encounter>
-					<reference value="urn:uuid:9a7447a2-686f-11e7-907b-a6006ad3dba0"/>
-				</encounter>
-				<group>
-					<group>
-						<title value="Screening Blood Spot Sample Taken"/>
-						<question>
-							<text value="Date on which Blood Spot card was completed"/>
-							<answer>
-								<valueDateTime value="2012-01-08T09:00:00+00:00"/>
-							</answer>
-							<answer>
-								<valueReference>
-									<reference value="urn:uuid:9a744874-686f-11e7-907b-a6006ad3dba0"/>
-								</valueReference>
-							</answer>
-						</question>
-						<question>
-							<text value="Name of Professional who took the Blood Spot sample"/>
-							<answer>
-								<valueString value="JONES, Jane"/>
-							</answer>
-							<answer>
-								<valueReference>
-									<reference value="urn:uuid:9a744220-686f-11e7-907b-a6006ad3dba0"/>
-								</valueReference>
-							</answer>
-						</question>
-						<question>
-							<text value="The ODS site code of the organisation associated with the professional performing the Blood Spot sample collection"/>
-							<answer>
-								<valueString value="RR801"/>
-							</answer>
-							<answer>
-								<valueReference>
-									<reference value="urn:uuid:9a744676-686f-11e7-907b-a6006ad3dba0"/>
-								</valueReference>
-							</answer>
-						</question>
-					</group>
-				</group>
-			</QuestionnaireResponse>
-		</resource>
-	</entry>
-	<entry>
 		<fullUrl value="urn:uuid:9a7447a2-686f-11e7-907b-a6006ad3dba0"/>
 		<resource>
 			<Encounter>
@@ -170,30 +106,10 @@
 					<value value="9a7447a2-686f-11e7-907b-a6006ad3dba0"/>
 				</identifier>
 				<status value="finished"/>
-				<type>
-					<coding>
-						<system value="https://fhir.nhs.uk/DCH-ChildHealthEncounterType-1"/>
-						<code value="Newborn Blood Spot Sample Taken"/>
-						<display value="Newborn Blood Spot Sample Taken"/>
-					</coding>
-				</type>
 				<patient>
 					<reference value="urn:uuid:7368c5fe-bbb4-4e9c-a585-234e06b84e82"/>
 					<display value="SAXTON, Sarah Marie"/>
 				</patient>
-				<participant>
-					<type>
-						<coding>
-							<system value="http://hl7.org/fhir/v3/ParticipationType"/>
-							<code value="PPRF"/>
-							<display value="primary performer"/>
-						</coding>
-					</type>
-					<individual>
-						<reference value="urn:uuid:9a744220-686f-11e7-907b-a6006ad3dba0"/>
-						<display value="JONES, Jane"/>
-					</individual>
-				</participant>
 				<period>
 					<start value="2012-01-08T09:00:00+00:00"/>
 				</period>
@@ -211,44 +127,26 @@
 		</resource>
 	</entry>
 	<entry>
-		<fullUrl value="urn:uuid:9a744874-686f-11e7-907b-a6006ad3dba0"/>
+		<fullUrl value="urn:uuid:260b224e-b3df-11e7-abc4-cec278b6b50a"/>
 		<resource>
-			<Procedure>
-				<id value="9a744874-686f-11e7-907b-a6006ad3dba0"/>
+			<ProcedureRequest>
+				<id value="260b224e-b3df-11e7-abc4-cec278b6b50a"/>
 				<meta>
-					<profile value="https://fhir.nhs.uk/StructureDefinition/CareConnect-DCH-NewbornBloodSpotScreening-Procedure-1"/>
+					<profile value="https://fhir.nhs.uk/StructureDefinition/DCH-ProcedureRequest-1"/>
 				</meta>
-				<identifier>
-					<system value="https://tools.ietf.org/html/rfc4122"/>
-					<value value="9a744874-686f-11e7-907b-a6006ad3dba0"/>
-				</identifier>
 				<subject>
 					<reference value="urn:uuid:7368c5fe-bbb4-4e9c-a585-234e06b84e82"/>
 					<display value="SAXTON, Sarah Marie"/>
 				</subject>
-				<status value="completed"/>
 				<code>
 					<coding>
 						<system value="http://snomed.info/sct"/>
 						<code value="428447008"/>
-						<display value="Newborn blood spot screening"/>
+						<display value="Newborn blood spot screening (procedure)"/>
 					</coding>
 				</code>
-				<performer>
-					<actor>
-						<reference value="urn:uuid:9a744220-686f-11e7-907b-a6006ad3dba0"/>
-						<display value="JONES, Jane"/>
-					</actor>
-				</performer>
-				<performedDateTime value="2012-01-08T09:00:00+00:00"/>
-				<encounter>
-					<reference value="urn:uuid:9a7447a2-686f-11e7-907b-a6006ad3dba0"/>
-				</encounter>
-				<location>
-					<reference value="urn:uuid:9a744676-686f-11e7-907b-a6006ad3dba0"/>
-					<display value="Leeds General Infirmary"/>
-				</location>
-			</Procedure>
+				<orderedOn value="2012-01-08T09:00:00+00:00"/>
+			</ProcedureRequest>
 		</resource>
 	</entry>
 	<entry>

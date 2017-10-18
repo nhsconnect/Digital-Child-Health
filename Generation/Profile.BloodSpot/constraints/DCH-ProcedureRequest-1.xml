@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <meta>
-    <lastUpdated value="2017-10-07T18:14:10.052+01:00" />
+    <lastUpdated value="2017-10-18T09:51:48.478+01:00" />
     <tag>
       <system value="urn:hscic:publishOrder" />
       <code value="19" />
@@ -3554,7 +3554,7 @@
       <path value="ProcedureRequest.orderedOn" />
       <short value="When request was created" />
       <definition value="The time when the request was made." />
-      <min value="0" />
+      <min value="1" />
       <max value="1" />
       <base>
         <path value="ProcedureRequest.orderedOn" />
@@ -3915,6 +3915,10 @@
     <element>
       <path value="ProcedureRequest.notes" />
       <max value="1" />
+    </element>
+    <element>
+      <path value="ProcedureRequest.orderedOn" />
+      <min value="1" />
     </element>
     <element>
       <path value="ProcedureRequest.orderer" />

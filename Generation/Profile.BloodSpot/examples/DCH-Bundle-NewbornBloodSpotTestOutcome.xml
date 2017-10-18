@@ -11,7 +11,7 @@
 			<MessageHeader>
 				<id value="9a746d04-686f-11e7-907b-a6006ad3dba0"/>
 				<meta>
-					<profile value="https://fhir.nhs.uk/StructureDefinition/DCH-NewbornBloodSpotScreening-MessageHeader-1"/>
+					<profile value="https://fhir.nhs.uk/StructureDefinition/DCH-MessageHeader-1"/>
 				</meta>
 				<extension url="https://fhir.nhs.uk/StructureDefinition/Extension-DCH-MessageEventType-1">
 					<valueCodeableConcept>
@@ -37,9 +37,6 @@
 				</responsible>
 				<data>
 					<reference value="urn:uuid:9a746f52-686f-11e7-907b-a6006ad3dba0"/>
-				</data>
-				<data>
-					<reference value="urn:uuid:9a74701a-686f-11e7-907b-a6006ad3dba0"/>
 				</data>
 			</MessageHeader>
 		</resource>
@@ -97,177 +94,6 @@
 		</resource>
 	</entry>
 	<entry>
-		<fullUrl value="urn:uuid:9a74701a-686f-11e7-907b-a6006ad3dba0"/>
-		<resource>
-			<QuestionnaireResponse>
-				<id value="9a74701a-686f-11e7-907b-a6006ad3dba0"/>
-				<meta>
-					<profile value="https://fhir.nhs.uk/StructureDefinition/DCH-NewbornBloodSpotScreening-QuestionnaireResponse-1"/>
-				</meta>
-				<identifier>
-					<system value="https://tools.ietf.org/html/rfc4122"/>
-					<value value="9a74701a-686f-11e7-907b-a6006ad3dba0"/>
-				</identifier>
-				<status value="completed"/>
-				<subject>
-					<reference value="urn:uuid:7368c5fe-bbb4-4e9c-a585-234e06b84e82"/>
-					<display value="SAXTON, Sarah Marie"/>
-				</subject>
-				<group>
-					<group>
-						<title value="Screening Blood Spot Test Outcome"/>
-						<question>
-							<text value="The date that a Blood Spot Screening Test Result was received by a Health Care Provider from the testing laboratory"/>
-							<answer>
-								<valueDateTime value="2012-01-10T09:00:00+00:00"/>
-							</answer>
-							<answer>
-								<valueReference>
-									<reference value="urn:uuid:9a746b4c-686f-11e7-907b-a6006ad3dba0"/>
-								</valueReference>
-							</answer>
-						</question>
-						<question>
-							<text value="Screening outcome for Phenylketonuria (PKU)"/>
-							<answer>
-								<valueCoding>
-									<system value="https://fhir.nhs.uk/DCH-BloodSpotScreeningOutcome-1"/>
-									<code value="04"/>
-									<display value="(Condition screened for) Not suspected"/>
-								</valueCoding>
-							</answer>
-							<answer>
-								<valueReference>
-									<reference value="urn:uuid:9a745cb0-686f-11e7-907b-a6006ad3dba0"/>
-								</valueReference>
-							</answer>
-						</question>
-						<question>
-							<text value="Screening outcome for Sickle Cell Disease (SCD)"/>
-							<answer>
-								<valueCoding>
-									<system value="https://fhir.nhs.uk/DCH-BloodSpotScreeningOutcome-1"/>
-									<code value="04"/>
-									<display value="(Condition screened for) Not suspected"/>
-								</valueCoding>
-							</answer>
-							<answer>
-								<valueReference>
-									<reference value="urn:uuid:9a7467c8-686f-11e7-907b-a6006ad3dba0"/>
-								</valueReference>
-							</answer>
-						</question>
-						<question>
-							<text value="Screening outcome for Cystic Fibrosis (CF)"/>
-							<answer>
-								<valueCoding>
-									<system value="https://fhir.nhs.uk/DCH-BloodSpotScreeningOutcome-1"/>
-									<code value="04"/>
-									<display value="(Condition screened for) Not suspected"/>
-								</valueCoding>
-							</answer>
-							<answer>
-								<valueReference>
-									<reference value="urn:uuid:9a74670a-686f-11e7-907b-a6006ad3dba0"/>
-								</valueReference>
-							</answer>
-						</question>
-						<question>
-							<text value="Screening outcome for Congenital hypothyroidism (CHT)"/>
-							<answer>
-								<valueCoding>
-									<system value="https://fhir.nhs.uk/DCH-BloodSpotScreeningOutcome-1"/>
-									<code value="04"/>
-									<display value="(Condition screened for) Not suspected"/>
-								</valueCoding>
-							</answer>
-							<answer>
-								<valueReference>
-									<reference value="urn:uuid:9a74664c-686f-11e7-907b-a6006ad3dba0"/>
-								</valueReference>
-							</answer>
-						</question>
-						<question>
-							<text value="Screening outcome for Medium-chain acyl-COA dehydrogenase deficiency (MCADD)"/>
-							<answer>
-								<valueCoding>
-									<system value="https://fhir.nhs.uk/DCH-BloodSpotScreeningOutcome-1"/>
-									<code value="04"/>
-									<display value="(Condition screened for) Not suspected"/>
-								</valueCoding>
-							</answer>
-							<answer>
-								<valueReference>
-									<reference value="urn:uuid:9a745ecc-686f-11e7-907b-a6006ad3dba0"/>
-								</valueReference>
-							</answer>
-						</question>
-						<question>
-							<text value="Screening outcome for Homocystinuria (pyroxidine unresponsive) (HCU)"/>
-							<answer>
-								<valueCoding>
-									<system value="https://fhir.nhs.uk/DCH-BloodSpotScreeningOutcome-1"/>
-									<code value="04"/>
-									<display value="(Condition screened for) Not suspected"/>
-								</valueCoding>
-							</answer>
-							<answer>
-								<valueReference>
-									<reference value="urn:uuid:9a7464c6-686f-11e7-907b-a6006ad3dba0"/>
-								</valueReference>
-							</answer>
-						</question>
-						<question>
-							<text value="Screening outcome for Maple syrup urine disease (MSUD)"/>
-							<answer>
-								<valueCoding>
-									<system value="https://fhir.nhs.uk/DCH-BloodSpotScreeningOutcome-1"/>
-									<code value="04"/>
-									<display value="(Condition screened for) Not suspected"/>
-								</valueCoding>
-							</answer>
-							<answer>
-								<valueReference>
-									<reference value="urn:uuid:9a745df0-686f-11e7-907b-a6006ad3dba0"/>
-								</valueReference>
-							</answer>
-						</question>
-						<question>
-							<text value="Screening outcome for Glutaric aciduria type 1 (GA1)"/>
-							<answer>
-								<valueCoding>
-									<system value="https://fhir.nhs.uk/DCH-BloodSpotScreeningOutcome-1"/>
-									<code value="04"/>
-									<display value="(Condition screened for) Not suspected"/>
-								</valueCoding>
-							</answer>
-							<answer>
-								<valueReference>
-									<reference value="urn:uuid:9a74658e-686f-11e7-907b-a6006ad3dba0"/>
-								</valueReference>
-							</answer>
-						</question>
-						<question>
-							<text value="Screening outcome for Isovaleric acidaemia (IVA)"/>
-							<answer>
-								<valueCoding>
-									<system value="https://fhir.nhs.uk/DCH-BloodSpotScreeningOutcome-1"/>
-									<code value="04"/>
-									<display value="(Condition screened for) Not suspected"/>
-								</valueCoding>
-							</answer>
-							<answer>
-								<valueReference>
-									<reference value="urn:uuid:9a7463ae-686f-11e7-907b-a6006ad3dba0"/>
-								</valueReference>
-							</answer>
-						</question>
-					</group>
-				</group>
-			</QuestionnaireResponse>
-		</resource>
-	</entry>
-	<entry>
 		<fullUrl value="urn:uuid:9a746f52-686f-11e7-907b-a6006ad3dba0"/>
 		<resource>
 			<Encounter>
@@ -280,13 +106,6 @@
 					<value value="9a746f52-686f-11e7-907b-a6006ad3dba0"/>
 				</identifier>
 				<status value="finished"/>
-				<type>
-					<coding>
-						<system value="https://fhir.nhs.uk/DCH-ChildHealthEncounterType-1"/>
-						<code value="Newborn Blood Spot Test Outcome"/>
-						<display value="Newborn Blood Spot Test Outcome"/>
-					</coding>
-				</type>
 				<patient>
 					<reference value="urn:uuid:7368c5fe-bbb4-4e9c-a585-234e06b84e82"/>
 					<display value="SAXTON, Sarah Marie"/>

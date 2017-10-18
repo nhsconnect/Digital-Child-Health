@@ -44,18 +44,18 @@ Each event will carry a standard set of data to act as an event "header" (to hel
 | Event Metadata Item                    | FHIR element                 |
 |----------------------------------------|------------------------------|
 | patient identification data:           | CareConnect-DCH-Patient-1    |
-| NHS Number                             | Patient.identifier           |
-| Date of Birth                          | Patient.birthDate            |
-| name                                   | Patient.name                 |
-| event type                             | MessageHeader.event          |
-| service originating the event          | CareConnect-DCH-Organization |
-| service provider originating the event | Encounter.serviceProvider    |
-| IT system holding the event data       | MessageHeader.source         |
-| location at which the event occurred   | Encounter.location           |
-| event date time                        | Encounter.period.start       |
-| event publisher                        | MessageHeader.responsible    |
-| event published date                   | MessageHeader.timestamp      |
-| a publication reference number         | Message Header logical id    |
+| NHS Number                             | CareConnect-DCH-Patient-1.identifier           |
+| Date of Birth                          | CareConnect-DCH-Patient-1.birthDate            |
+| name                                   | CareConnect-DCH-Patient-1.name                 |
+| event type                             | DCH-MessageHeader-1.event          |
+| service originating the event          | CareConnect-DCH-Organization-1 |
+| service provider originating the event | CareConnect-DCH-Encounter-1.serviceProvider    |
+| IT system holding the event data       | DCH-MessageHeader-1.source         |
+| location at which the event occurred   | CareConnect-DCH-Encounter-1.location           |
+| event date time                        | CareConnect-DCH-Encounter-1.period.start       |
+| event publisher                        | DCH-MessageHeader-1.responsible    |
+| event published date                   | DCH-MessageHeader-1.timestamp      |
+| a publication reference number         | DCH-MessageHeader-1 logical id    |
 
 The other resources in the bundle depend on the event type.
 

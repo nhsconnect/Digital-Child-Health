@@ -11,7 +11,7 @@
 			<MessageHeader>
 				<id value="9a74504e-686f-11e7-907b-a6006ad3dba0"/>
 				<meta>
-					<profile value="https://fhir.nhs.uk/StructureDefinition/DCH-NewbornBloodSpotScreening-MessageHeader-1"/>
+					<profile value="https://fhir.nhs.uk/StructureDefinition/DCH-MessageHeader-1"/>
 				</meta>
 				<extension url="https://fhir.nhs.uk/StructureDefinition/Extension-DCH-MessageEventType-1">
 					<valueCodeableConcept>
@@ -37,9 +37,6 @@
 				</responsible>
 				<data>
 					<reference value="urn:uuid:9a745b66-686f-11e7-907b-a6006ad3dba0"/>
-				</data>
-				<data>
-					<reference value="urn:uuid:9a7451ac-686f-11e7-907b-a6006ad3dba0"/>
 				</data>
 			</MessageHeader>
 		</resource>
@@ -97,64 +94,6 @@
 		</resource>
 	</entry>
 	<entry>
-		<fullUrl value="urn:uuid:9a7451ac-686f-11e7-907b-a6006ad3dba0"/>
-		<resource>
-			<QuestionnaireResponse>
-				<id value="9a7451ac-686f-11e7-907b-a6006ad3dba0"/>
-				<meta>
-					<profile value="https://fhir.nhs.uk/StructureDefinition/DCH-NewbornBloodSpotScreening-QuestionnaireResponse-1"/>
-				</meta>
-				<identifier>
-					<system value="https://tools.ietf.org/html/rfc4122"/>
-					<value value="9a7451ac-686f-11e7-907b-a6006ad3dba0"/>
-				</identifier>
-				<status value="completed"/>
-				<subject>
-					<reference value="urn:uuid:7368c5fe-bbb4-4e9c-a585-234e06b84e82"/>
-					<display value="SAXTON, Sarah Marie"/>
-				</subject>
-				<group>
-					<group>
-						<title value="Screening Blood Spot Administrative Status"/>
-						<question>
-							<text value="The date that a Blood Spot Test result was received by testing laboratory"/>
-							<answer>
-								<valueDateTime value="2012-01-09T09:00:00+00:00"/>
-							</answer>
-							<answer>
-								<valueReference>
-									<reference value="urn:uuid:9a7459f4-686f-11e7-907b-a6006ad3dba0"/>
-								</valueReference>
-							</answer>
-						</question>
-						<question>
-							<text value="The unique identifier of the laboratory undertaking blood spot screening"/>
-							<answer>
-								<valueString value="695N0"/>
-							</answer>
-							<answer>
-								<valueReference>
-									<reference value="urn:uuid:9a74549a-686f-11e7-907b-a6006ad3dba0"/>
-								</valueReference>
-							</answer>
-						</question>
-						<question>
-							<text value="The date that a Blood Spot sample was sent to the testing laboratory"/>
-							<answer>
-								<valueDateTime value="2012-01-08T10:00:00+00:00"/>
-							</answer>
-							<answer>
-								<valueReference>
-									<reference value="urn:uuid:9a745814-686f-11e7-907b-a6006ad3dba0"/>
-								</valueReference>
-							</answer>
-						</question>
-					</group>
-				</group>
-			</QuestionnaireResponse>
-		</resource>
-	</entry>
-	<entry>
 		<fullUrl value="urn:uuid:9a745b66-686f-11e7-907b-a6006ad3dba0"/>
 		<resource>
 			<Encounter>
@@ -167,13 +106,6 @@
 					<value value="9a745b66-686f-11e7-907b-a6006ad3dba0"/>
 				</identifier>
 				<status value="finished"/>
-				<type>
-					<coding>
-						<system value="https://fhir.nhs.uk/DCH-ChildHealthEncounterType-1"/>
-						<code value="Newborn Blood Spot Administrative Status"/>
-						<display value="Newborn Blood Spot Administrative Status"/>
-					</coding>
-				</type>
 				<patient>
 					<reference value="urn:uuid:7368c5fe-bbb4-4e9c-a585-234e06b84e82"/>
 					<display value="SAXTON, Sarah Marie"/>
@@ -206,38 +138,6 @@
 				</subject>
 				<receivedTime value="2012-01-09T09:00:00+00:00"/>
 			</Specimen>
-		</resource>
-	</entry>
-	<entry>
-		<fullUrl value="urn:uuid:9a745814-686f-11e7-907b-a6006ad3dba0"/>
-		<resource>
-			<ProcedureRequest>
-				<id value="9a745814-686f-11e7-907b-a6006ad3dba0"/>
-				<meta>
-					<profile value="https://fhir.nhs.uk/StructureDefinition/DCH-ProcedureRequest-1"/>
-				</meta>
-				<identifier>
-					<system value="https://tools.ietf.org/html/rfc4122"/>
-					<value value="9a745814-686f-11e7-907b-a6006ad3dba0"/>
-				</identifier>
-				<subject>
-					<reference value="urn:uuid:7368c5fe-bbb4-4e9c-a585-234e06b84e82"/>
-					<display value="SAXTON, Sarah Marie"/>
-				</subject>
-				<code>
-					<coding>
-						<system value="http://snomed.info/sct"/>
-						<code value="428447008"/>
-						<display value="Newborn blood spot screening"/>
-					</coding>
-				</code>
-				<performer>
-					<reference value="urn:uuid:9a74549a-686f-11e7-907b-a6006ad3dba0"/>
-					<display value="Leeds General Infirmary Laboratory"/>
-				</performer>
-				<status value="proposed"/>
-				<orderedOn value="2012-01-08T10:00:00+00:00"/>
-			</ProcedureRequest>
 		</resource>
 	</entry>
 </Bundle>

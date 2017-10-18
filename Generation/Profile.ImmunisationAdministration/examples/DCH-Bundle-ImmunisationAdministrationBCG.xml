@@ -12,7 +12,7 @@
 			<MessageHeader>
 				<id value="a8ca9bb8-72aa-11e7-8cf7-a6006ad3dba0"/>
 				<meta>
-					<profile value="https://fhir.nhs.uk/StructureDefinition/DCH-Immunisation-MessageHeader-1"/>
+					<profile value="https://fhir.nhs.uk/StructureDefinition/DCH-MessageHeader-1"/>
 				</meta>
 				<extension url="https://fhir.nhs.uk/StructureDefinition/Extension-DCH-MessageEventType-1">
 					<valueCodeableConcept>
@@ -26,8 +26,8 @@
 				<timestamp value="2012-01-31T09:00:00+00:00"/>
 				<event>
 					<system value="https://fhir.nhs.uk/DCH-ChildHealthEventType-1"/>
-					<code value="Immunisation : Immunisation Administration"/>
-					<display value="Immunisation : Immunisation Administration"/>
+					<code value="Immunisation Administration"/>
+					<display value="Immunisation Administration"/>
 				</event>
 				<source>
 					<endpoint value="urn:nhs-uk:addressing:ods:RR8"/>
@@ -39,9 +39,6 @@
 				<data>
 					<reference value="urn:uuid:a8ca9fe6-72aa-11e7-8cf7-a6006ad3dba0"/>
 				</data>
-				<data>
-					<reference value="urn:uuid:a8ca9e4c-72aa-11e7-8cf7-a6006ad3dba0"/>
-				</data>
 			</MessageHeader>
 		</resource>
 	</entry>
@@ -51,7 +48,7 @@
 			<Organization>
 				<id value="5ccb6bb7-a7f1-46cc-a5d3-135320765553"/>
 				<meta>
-					<profile value="https://fhir.hl7.org.uk/StructureDefinition/CareConnect-Organization-1"/>
+					<profile value="https://fhir.hl7.org.uk/StructureDefinition/CareConnect-DCH-Organization-1"/>
 				</meta>
 				<identifier>
 					<system value="https://fhir.nhs.uk/Id/ods-organization-code"/>
@@ -95,227 +92,6 @@
 					</extension>
 				</birthDate>
 			</Patient>
-		</resource>
-	</entry>
-	<entry>
-		<fullUrl value="urn:uuid:a8ca9e4c-72aa-11e7-8cf7-a6006ad3dba0"/>
-		<resource>
-			<QuestionnaireResponse>
-				<id value="a8ca9e4c-72aa-11e7-8cf7-a6006ad3dba0"/>
-				<meta>
-					<profile value="https://fhir.nhs.uk/StructureDefinition/DCH-Immunisation-QuestionnaireResponse-1"/>
-				</meta>
-				<identifier>
-					<system value="https://tools.ietf.org/html/rfc4122"/>
-					<value value="a8ca9e4c-72aa-11e7-8cf7-a6006ad3dba0"/>
-				</identifier>
-				<status value="completed"/>
-				<subject>
-					<reference value="urn:uuid:7368c5fe-bbb4-4e9c-a585-234e06b84e82"/>
-					<display value="SAXTON, Sarah Marie"/>
-				</subject>
-				<encounter>
-					<reference value="urn:uuid:a8ca9fe6-72aa-11e7-8cf7-a6006ad3dba0"/>
-				</encounter>
-				<group>
-					<group>
-						<text value="Immunisation: Immunisation Administration"/>
-						<question>
-							<text value="A unique identifier for an immunisation from a specific clinical terminology."/>
-							<answer>
-								<valueCoding>
-									<system value="http://snomed.info/sct"/>
-									<code value="42284007"/>
-									<display value="Bacillus Calmette-Guerin vaccination (procedure)"/>
-								</valueCoding>
-							</answer>
-							<answer>
-								<valueReference>
-									<reference value="urn:uuid:e9dc1bc0-5bdc-11e7-907b-a6006ad3dba0"/>
-								</valueReference>
-							</answer>
-						</question>
-						<question>
-							<text value="A status to identify whether an immunisation was administered or not"/>
-							<answer>
-								<valueBoolean value="true"/>
-							</answer>
-							<answer>
-								<valueReference>
-									<reference value="urn:uuid:e9dbfa46-5bdc-11e7-907b-a6006ad3dba0"/>
-								</valueReference>
-							</answer>
-						</question>
-						<question>
-							<text value="Name of vaccine manufacturer"/>
-							<answer>
-								<valueString value="Statens Serum Institut (SSI)"/>
-							</answer>
-							<answer>
-								<valueReference>
-									<reference value="urn:uuid:e9dc2412-5bdc-11e7-907b-a6006ad3dba0"/>
-								</valueReference>
-							</answer>
-						</question>
-						<question>
-							<text value="Vaccine product administered"/>
-							<answer>
-								<valueCoding>
-									<system value="http://snomed.info/sct"/>
-									<code value="9316611000001101"/>
-									<display value="BCG vaccine powder and solvent for suspension for injection vials (Statens Serum Institut) (product)"/>
-								</valueCoding>
-							</answer>
-							<answer>
-								<valueReference>
-									<reference value="urn:uuid:e9dbfa46-5bdc-11e7-907b-a6006ad3dba0"/>
-								</valueReference>
-							</answer>
-						</question>
-						<question>
-							<text value="The batch number of the vaccine product."/>
-							<answer>
-								<valueString value="114022A"/>
-							</answer>
-							<answer>
-								<valueReference>
-									<reference value="urn:uuid:e9dbfa46-5bdc-11e7-907b-a6006ad3dba0"/>
-								</valueReference>
-							</answer>
-						</question>
-						<question>
-							<text value="Body site vaccine was administered to."/>
-							<answer>
-								<valueCoding>
-									<system value="http://snomed.info/sct"/>
-									<code value="123851003"/>
-									<display value="Mouth"/>
-								</valueCoding>
-							</answer>
-							<answer>
-								<valueReference>
-									<reference value="urn:uuid:e9dbfa46-5bdc-11e7-907b-a6006ad3dba0"/>
-								</valueReference>
-							</answer>
-						</question>
-						<question>
-							<text value="How vaccine entered the body."/>
-							<answer>
-								<valueCoding>
-									<system value="http://snomed.info/sct"/>
-									<code value="26643006"/>
-									<display value="Oral route"/>
-								</valueCoding>
-							</answer>
-							<answer>
-								<valueReference>
-									<reference value="urn:uuid:e9dbfa46-5bdc-11e7-907b-a6006ad3dba0"/>
-								</valueReference>
-							</answer>
-						</question>
-						<question>
-							<text value="Amount of vaccine administered."/>
-							<answer>
-								<valueQuantity>
-									<value value="0.05"/>
-									<system value="http://unitsofmeasure.org"/>
-									<code value="ml"/>
-								</valueQuantity>
-							</answer>
-							<answer>
-								<valueReference>
-									<reference value="urn:uuid:e9dbfa46-5bdc-11e7-907b-a6006ad3dba0"/>
-								</valueReference>
-							</answer>
-						</question>
-						<question>
-							<text value="Diseases protected against"/>
-							<answer>
-								<valueCoding>
-									<system value="http://snomed.info/sct"/>
-									<code value="56717001"/>
-									<display value="Tuberculosis (disorder)"/>
-								</valueCoding>
-							</answer>
-							<answer>
-								<valueReference>
-									<reference value="urn:uuid:e9dbfa46-5bdc-11e7-907b-a6006ad3dba0"/>
-								</valueReference>
-							</answer>
-						</question>
-						<question>
-							<text value="Nominal position in a series of vaccines"/>
-							<answer>
-								<valueInteger value="1"/>
-							</answer>
-							<answer>
-								<valueReference>
-									<reference value="urn:uuid:e9dbfa46-5bdc-11e7-907b-a6006ad3dba0"/>
-								</valueReference>
-							</answer>
-						</question>
-						<question>
-							<text value="Where an administration was reported rather than directly administered"/>
-							<answer>
-								<valueBoolean value="false"/>
-							</answer>
-							<answer>
-								<valueReference>
-									<reference value="urn:uuid:e9dbfa46-5bdc-11e7-907b-a6006ad3dba0"/>
-								</valueReference>
-							</answer>
-						</question>
-						<question>
-							<text value="Professional Group of the Professional performing the Immunisation."/>
-							<answer>
-								<valueCoding>
-									<system value="https://fhir.hl7.org.uk/CareConnect-SDSJobRoleName-1"/>
-									<code value="R8000"/>
-									<display value="General Medical Practitioner"/>
-								</valueCoding>
-							</answer>
-							<answer>
-								<valueReference>
-									<reference value="urn:uuid:e9dbf8e8-5bdc-11e7-907b-a6006ad3dba0"/>
-								</valueReference>
-							</answer>
-						</question>
-						<question>
-							<text value="Code of the Professional performing the Immunisation."/>
-							<answer>
-								<valueString value="PT2468"/>
-							</answer>
-							<answer>
-								<valueReference>
-									<reference value="urn:uuid:e9dbf8e8-5bdc-11e7-907b-a6006ad3dba0"/>
-								</valueReference>
-							</answer>
-						</question>
-						<question>
-							<text value="The Site code of where the Immunisation took place."/>
-							<answer>
-								<valueString value="B86022"/>
-							</answer>
-							<answer>
-								<valueReference>
-									<reference value="urn:uuid:e9dbf730-5bdc-11e7-907b-a6006ad3dba0"/>
-								</valueReference>
-							</answer>
-						</question>
-						<question>
-							<text value="Organisation performing the Immunisation."/>
-							<answer>
-								<valueString value="RR8"/>
-							</answer>
-							<answer>
-								<valueReference>
-									<reference value="urn:uuid:5ccb6bb7-a7f1-46cc-a5d3-135320765553"/>
-								</valueReference>
-							</answer>
-						</question>
-					</group>
-				</group>
-			</QuestionnaireResponse>
 		</resource>
 	</entry>
 	<entry>
@@ -486,7 +262,7 @@
 			<Practitioner>
 				<id value="e9dbf8e8-5bdc-11e7-907b-a6006ad3dba0"/>
 				<meta>
-					<profile value="https://fhir.hl7.org.uk/StructureDefinition/CareConnect-Practitioner-1"/>
+					<profile value="https://fhir.hl7.org.uk/StructureDefinition/CareConnect-DCH-Practitioner-1"/>
 				</meta>
 				<identifier>
 					<system value="https://fhir.nhs.net/Id/sds-role-profile-id"/>
@@ -519,7 +295,7 @@
 			<Location>
 				<id value="e9dbf730-5bdc-11e7-907b-a6006ad3dba0"/>
 				<meta>
-					<profile value="https://fhir.hl7.org.uk/StructureDefinition/CareConnect-Location-1"/>
+					<profile value="https://fhir.hl7.org.uk/StructureDefinition/CareConnect-DCH-Location-1"/>
 				</meta>
 				<identifier>
 					<system value="https://fhir.nhs.uk/Id/ods-site-code"/>
@@ -539,7 +315,7 @@
 			<Organization>
 				<id value="e9dc2412-5bdc-11e7-907b-a6006ad3dba0"/>
 				<meta>
-					<profile value="https://fhir.hl7.org.uk/StructureDefinition/CareConnect-Organization-1"/>
+					<profile value="https://fhir.hl7.org.uk/StructureDefinition/CareConnect-DCH-Organization-1"/>
 				</meta>
 				<name value="Statens Serum Institut (SSI)"/>
 			</Organization>
