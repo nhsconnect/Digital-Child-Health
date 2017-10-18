@@ -1,1 +1,0 @@
-This Condition resource records detailed information about conditions or diagnoses recognised by a clinician, with further constraints applied to represent the patient's perception of whether their day-to-day activities are limited because of a health problem or disability which has lasted, or is expected to last, at least 12 months.

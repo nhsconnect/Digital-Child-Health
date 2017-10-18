@@ -1,1 +1,0 @@
-This Flag Resource records prospective warnings of potential issues when providing care to the patient, with further constraints applied to represent an unresolved issue or concern regarding adult and child safeguarding that requires communication to another organisation or care agency.

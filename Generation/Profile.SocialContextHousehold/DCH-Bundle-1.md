@@ -18,7 +18,9 @@ The Child Health Event data items are fulfilled by elements within the FHIR reso
 | Household substance status                           | DCH-SocialContextHousehold-QuestionnaireResponse-1.question (householdSubstanceStatus)       |
 | Household alcohol drinking status                    | DCH-SocialContextHousehold-QuestionnaireResponse-1.question (householdAlcoholDrinkingStatus) |
 | Employment status (Mother)                           | DCH-SocialContextHousehold-QuestionnaireResponse-1.question (employmentStatusMother)         |
+| Mother's Occupation                                  | DCH-SocialContextHousehold-QuestionnaireResponse-1.question (occupationMother)               |
 | Employment status (Father)                           | DCH-SocialContextHousehold-QuestionnaireResponse-1.question (employmentStatusFather)         |
+| Father's Occupation                                  | DCH-SocialContextHousehold-QuestionnaireResponse-1.question (occupationFather)               |
 | Any Household member has/had social services support | DCH-SocialContextHousehold-QuestionnaireResponse-1.question (socialServicesSupport)          |
 | Accommodation status                                 | DCH-SocialContextHousehold-QuestionnaireResponse-1.question (accommodationStatus)            |
 

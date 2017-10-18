@@ -1,0 +1,1 @@
+This Extension resource is constrained to support SNOMED CT Description ID for the display.

@@ -1,0 +1,1 @@
+This Medication Resource is primarily used for the identification and definition of a medication.

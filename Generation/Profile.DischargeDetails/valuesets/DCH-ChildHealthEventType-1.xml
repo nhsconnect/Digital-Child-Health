@@ -41,8 +41,8 @@
 				<display value="Clinical Risk Factors"/>
 			</concept>
 			<concept>
-				<code value="Conditions or Diagnoses"/>
-				<display value="Conditions or Diagnoses"/>
+				<code value="Conditions / Diagnoses"/>
+				<display value="Conditions / Diagnoses"/>
 			</concept>
 			<concept>
 				<code value="Discharge Details"/>
@@ -89,16 +89,16 @@
 				<display value="Medication"/>
 			</concept>
 			<concept>
-				<code value="Milestones"/>
-				<display value="Milestones"/>
+				<code value="Developmental Skills"/>
+				<display value="Developmental Skills"/>
 			</concept>
 			<concept>
 				<code value="Newborn Hearing"/>
 				<display value="Newborn Hearing"/>
 			</concept>
 			<concept>
-				<code value="Parent Guardian or Personal Comment"/>
-				<display value="Parent Guardian or Personal Comment"/>
+				<code value="Parent Guardian or Personal Comment "/>
+				<display value="Parent Guardian or Personal Comment "/>
 			</concept>
 			<concept>
 				<code value="Personal Contacts"/>
@@ -125,10 +125,6 @@
 				<display value="Referral"/>
 			</concept>
 			<concept>
-				<code value="Review Checks"/>
-				<display value="Review Checks"/>
-			</concept>
-			<concept>
 				<code value="Safety Alerts"/>
 				<display value="Safety Alerts"/>
 			</concept>
@@ -137,8 +133,16 @@
 				<display value="Social Context Household"/>
 			</concept>
 			<concept>
-				<code value="Social Context Household"/>
-				<display value="Social Context Household"/>
+				<code value="Social Context Person"/>
+				<display value="Social Context Person"/>
+			</concept>
+			<concept>
+				<code value="Educational History"/>
+				<display value="Educational History"/>
+			</concept>
+			<concept>
+				<code value="Legal Information"/>
+				<display value="Legal Information"/>
 			</concept>
 		</include>
 	</compose>

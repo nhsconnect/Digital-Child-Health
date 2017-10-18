@@ -186,6 +186,22 @@
 				<code value="45"/>
 				<display value="Integrated Multi-Disciplinary Team (jointly commissioned)"/>
 			</concept>
+			<concept>
+				<code value="812"/>
+				<display value="Diagnostic Imaging"/>
+			</concept>
+			<concept>
+				<code value="110"/>
+				<display value="Trauma and Orthopaedics"/>
+			</concept>
+			<concept>
+				<code value="130"/>
+				<display value="Ophthalmology"/>
+			</concept>
+			<concept>
+				<code value="171"/>
+				<display value="Paediatric Surgery"/>
+			</concept>
 		</include>
 	</compose>
 </ValueSet>

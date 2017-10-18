@@ -1,0 +1,1 @@
+An action that is or was performed on a patient, within the scope of a Child Health event.

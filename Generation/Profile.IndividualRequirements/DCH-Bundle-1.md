@@ -33,8 +33,6 @@ The Child Health Event data items are fulfilled by elements within the FHIR reso
 | Accessible Information - Requires specific information format | CareConnect-DCH-InformationFormat-Condition-1.code                       | Required                    |
 | Mobility Needs                                                | CareConnect-DCH-MobilityFinding-Condition-1.code                         | Required                    |
 | Cognition                                                     | CareConnect-DCH-CognitionFinding-Condition-1.code                        | Required                    |
-| Disabililty Code                                              | CareConnect-DCH-DisabilityFinding-Condition-1.code                       | Required                    |
-| Disability Level                                              | CareConnect-DCH-DisabilityLevel-Condition-1.code                         | Required                    |
 | Educational Assessment                                        | CareConnect-DCH-EducationalAssessment-Condition-1.code                   | Required                    |
 | Type of Special Educational Need                              | CareConnect-DCH-SpecialEducationalNeed-Condition-1.code                  | Required                    |
 

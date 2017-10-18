@@ -4,13 +4,14 @@ The FHIR resource profiles within this DMS have been created to support the Chil
 
 
 - **[Profile.AdditionalDemographics]** - FHIR resource profiles combined to support an Additional Demographics event message.
-- **[Profile.AdmissionDetails]** - FHIR resource profiles combined to support an Admission Deails event message.
+- **[Profile.AdmissionDetails]** - FHIR resource profiles combined to support an Admission Details event message.
 - **[Profile.AllergiesAndAdverseReactions]** - FHIR resource profiles combined to support an Allergies and Adverse Reactions event message.
 - **[Profile.AssessmentScales]** - FHIR resource profiles combined to support an Assessment Scales event message.
 - **[Profile.BirthDetails]** - FHIR resource profiles combined to support a Birth Details event message.
 - **[Profile.BloodSpot]** - FHIR resource profiles combined to support a Newborn Blood Spot Screening event message.
 - **[Profile.ClinicalRiskFactors]** - FHIR resource profiles combined to support a Clinical Risk Factors event message.
 - **[Profile.ConditionsOrDiagnoses]** - FHIR resource profiles combined to support a Conditions or Diagnoses event message.
+- **[Profile.DevelopmentalSkills]** - FHIR resource profiles combined to support a Developmental Skills event message. 
 - **[Profile.DischargeDetails]** - FHIR resource profiles combined to support a Discharge Details event message.
 - **[Profile.EarlyYearsProgress]** - FHIR resource profiles combined to support an Early Years Progress event message.
 - **[Profile.EmergencyCareAttendance]** - FHIR resource profiles combined to support an Emergency Care Attendance event message.
@@ -20,9 +21,9 @@ The FHIR resource profiles within this DMS have been created to support the Chil
 - **[Profile.ImmunisationAdministration]** - FHIR resource profiles combined to support an Immunisation Administration event message.
 - **[Profile.IndividualRequirements]** - FHIR resource profiles combined to support an Individual Requirements event message.
 - **[Profile.InformationAndAdviceGiven]** - FHIR resource profiles combined to support an Information And Advice Given event message.
+- **[Profile.LegalInformation]** - FHIR resource profiles combined to support a Legal Information event message.
 - **[Profile.Measurements]** - FHIR resource profiles combined to support a Measurements event message.
 - **[Profile.Medication]** - FHIR resource profiles combined to support a Medication event message. 
-- **[Profile.Milestones]** - FHIR resource profiles combined to support a Milestones event message. 
 - **[Profile.NewbornHearing]** - FHIR resource profiles combined to support a Newborn Hearing event message.
 - **[Profile.ParentOrGuardianComment]** - FHIR resource profiles combined to support a Parent Or Guardian Comment event message.
 - **[Profile.PersonalContacts]** - FHIR resource profiles combined to support a Personal Contacts event message.
@@ -51,6 +52,7 @@ The various downloads (including Schema files) and reference implementations are
 [Profile.BloodSpot]: ../Profile.BloodSpot/Profile.BloodSpot.html
 [Profile.ClinicalRiskFactors]: ../Profile.ClinicalRiskFactors/Profile.ClinicalRiskFactors.html
 [Profile.ConditionsOrDiagnoses]: ../Profile.ConditionsOrDiagnoses/Profile.ConditionsOrDiagnoses.html
+[Profile.DevelopmentalSkills]: ../Profile.DevelopmentalSkills/Profile.DevelopmentalSkills.html
 [Profile.DischargeDetails]: ../Profile.DischargeDetails/Profile.DischargeDetails.html
 [Profile.EarlyYearsProgress]: ../Profile.EarlyYearsProgress/Profile.EarlyYearsProgress.html
 [Profile.EmergencyCareAttendance]: ../Profile.EmergencyCareAttendance/Profile.EmergencyCareAttendance.html
@@ -60,9 +62,9 @@ The various downloads (including Schema files) and reference implementations are
 [Profile.IndividualRequirements]: ../Profile.IndividualRequirements/Profile.IndividualRequirements.html
 [Profile.ImmunisationAdministration]: ../Profile.ImmunisationAdministration/Profile.ImmunisationAdministration.html
 [Profile.InformationAndAdviceGiven]:../Profile.InformationAndAdviceGiven/Profile.InformationAndAdviceGiven.html
+[Profile.LegalInformation]:../Profile.LegalInformation/Profile.LegalInformation.html
 [Profile.Medication]: ../Profile.Medication/Profile.Medication.html
 [Profile.Measurements]: ../Profile.Measurements/Profile.Measurements.html
-[Profile.Milestones]: ../Profile.Milestones/Profile.Milestones.html
 [Profile.NewbornHearing]: ../Profile.NewbornHearing/Profile.NewbornHearing.html
 [Profile.ParentOrGuardianComment]:../Profile.ParentOrGuardianComment/Profile.ParentOrGuardianComment.html
 [Profile.PersonalContacts]:../Profile.PersonalContacts/Profile.PersonalContacts.html

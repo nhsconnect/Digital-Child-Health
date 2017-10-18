@@ -1,0 +1,1 @@
+This CarePlan resource is constrained to represent a Child Protection Plan within the scope of a Child Health event.

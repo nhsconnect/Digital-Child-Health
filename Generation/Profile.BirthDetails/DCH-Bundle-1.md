@@ -8,6 +8,7 @@ This 'DCH-Bundle-1' Bundle resource profile is used as a container to collect a 
 - [CareConnect-DCH-ProblemDuringDelivery-Condition-1]
 - [CareConnect-DCH-APGARScore-Observation-1]
 - [CareConnect-DCH-LengthOfGestation-Observation-1]
+- [CareConnect-DCH-NumberOfBirths-Observation-1]
 - [CareConnect-DCH-SpontaneousRespirationOnset-Observation-1]
 - [CareConnect-DCH-NeonatalResuscitationMethod-Procedure-1]
 - [CareConnect-DCH-TypeOfDelivery-Procedure-1]
@@ -25,11 +26,12 @@ The Child Health Event data items are fulfilled by elements within the FHIR reso
 | Delivery Place Type Code            | CareConnect-DCH-Delivery-Location-1.physicalType                        | Mandatory                   |
 | Birth Order                         | CareConnect-DCH-Baby-Patient-1.multipleBirthInteger                     | Mandatory                   |
 | Length of Gestation at Birth        | CareConnect-DCH-LengthOfGestation-Observation-1.valueQuantity           | Mandatory                   |
-| Number of Births in confinement     | CareConnect-DCH-ProblemDuringDelivery-Condition-1.code                  | Required                    |
-| Problems during Delivery            | CareConnect-DCH-ProblemAtBirth-Condition-1.code                         | Required                    |
-| Physical Problems detected at Birth | CareConnect-DCH-NeonatalResuscitationMethod-Procedure-1.code            | Required                    |
-| Neonatal Resuscitation Method       | CareConnect-DCH-TypeOfDelivery-Procedure-1.code                         | Mandatory                   |
-| Type of Delivery                    | CareConnect-DCH-SpontaneousRespirationOnset-Observation-1.valueDuration | Optional                    |
+| Number of Births in confinement     | CareConnect-DCH-NumberOfBirths-Observation-1.valueQuantity                  | Required                    |
+| Problems during Delivery            | CareConnect-DCH-ProblemDuringDelivery-Condition-1.code                          | Required                    |
+| Physical Problems detected at Birth | CareConnect-DCH-ProblemAtBirth-Condition-1.code            | Required                    |
+| Neonatal Resuscitation Method       | CareConnect-DCH-NeonatalResuscitationMethod-Procedure-1.code                           | Mandatory                   |
+| Type of Delivery                    | CareConnect-DCH-TypeOfDelivery-Procedure-1.code   | Mandatory                    |
+| Attempted Type of Delivery          | CareConnect-DCH-TypeOfDelivery-Procedure-1.code with status fixed to 'aborted'  | Required                    |
 | APGAR Score (1 Minute)              | CareConnect-DCH-APGARScore-Observation-1.valueQuantity                  | Mandatory                   |
 | APGAR Score (5 Minute)              | CareConnect-DCH-APGARScore-Observation-1.valueQuantity                  | Mandatory                   |
 | APGAR Score (10 Minute)             | CareConnect-DCH-APGARScore-Observation-1.valueQuantity                  | Optional                    |
@@ -48,3 +50,4 @@ The Child Health Event data items are fulfilled by elements within the FHIR reso
 [CareConnect-DCH-Practitioner-1]:careconnect-dch-practitioner-1.html
 [CareConnect-DCH-Location-1]:careconnect-dch-location-1.html
 [CareConnect-DCH-Delivery-Location-1]:careconnect-dch-delivery-location-1.html
+[CareConnect-DCH-NumberOfBirths-Observation-1]:careconnect-dch-numberofbirths-observation-1.html

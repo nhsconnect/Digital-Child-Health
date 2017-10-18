@@ -6,9 +6,6 @@ This 'DCH-Bundle-1' Bundle resource profile is used as a container to collect a 
 - [CareConnect-DCH-Encounter-1]
 - [CareConnect-DCH-Practitioner-1]
 - [CareConnect-DCH-Location-1]
-- [CareConnect-DCH-SafeguardingConcern-Flag-1]
-- [CareConnect-DCH-SafeguardingVulnerability-Observation-1]
-- [CareConnect-DCH-LookedAfterChild-Observation-1]
 - [CareConnect-DCH-SafeguardingRisk-Observation-1]
                                                                                                    
 ### Safety Alerts event data item mapping to FHIR profiles ###
@@ -21,9 +18,6 @@ The Child Health Event data items are fulfilled by elements within the FHIR reso
 | ODS Site Code              | CareConnect-DCH-Location-1.identifier (ODS Site Code)                | Mandatory                   |
 | SDS Job Role Name          | CareConnect-DCH-Practitioner-1.practitionerRole (SDS Job Role Name)  | Mandatory                   |
 | Professional Name          | CareConnect-DCH-Practitioner-1.name                                  | Mandatory                   |
-| Safeguarding Vulnerability | CareConnect-DCH-SafeguardingVulnerability-Observation-1.valueBoolean | Required                    |
-| Safeguarding Concerns      | CareConnect-DCH-SafeguardingConcern-Flag-1.code                                          | Mandatory                   |
-| Looked After Children      | CareConnect-DCH-LookedAfterChild-Observation-1.valueCoding           | Mandatory                   |
 | Risk to self               | CareConnect-DCH-SafeguardingRisk-Observation-1.valueString                       | Required                    |
 | Risk to others             | CareConnect-DCH-SafeguardingRisk-Observation-1.valueString                       | Required                    |
 | Risk from others           | CareConnect-DCH-SafeguardingRisk-Observation-1.valueString                       | Required                    |
@@ -39,7 +33,4 @@ The Child Health Event data items are fulfilled by elements within the FHIR reso
 [DCH-ProcedureRequest-1]:dch-procedurerequest-1.html
 [CareConnect-DCH-Practitioner-1]:careconnect-dch-practitioner-1.html
 [CareConnect-DCH-Location-1]:careconnect-dch-location-1.html
-[CareConnect-DCH-SafeguardingConcern-Flag-1]:careconnect-dch-safeguardingconcern-flag-1.html
-[CareConnect-DCH-SafeguardingVulnerability-Observation-1]:careconnect-dch-safeguardingvulnerability-observation-1.html
-[CareConnect-DCH-LookedAfterChild-Observation-1]:careconnect-dch-lookedafterchild-observation-1.html
 [CareConnect-DCH-SafeguardingRisk-Observation-1]:careconnect-dch-safeguardingrisk-observation-1.html
