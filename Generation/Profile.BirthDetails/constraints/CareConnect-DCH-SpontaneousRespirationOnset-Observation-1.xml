@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <meta>
-    <lastUpdated value="2017-10-08T16:44:59.493+01:00" />
+    <lastUpdated value="2017-10-19T13:53:58.486+01:00" />
     <tag>
       <system value="urn:hscic:publishOrder" />
       <code value="16" />
@@ -4156,7 +4156,7 @@
       <comments value="The context of use may frequently define what kind of quantity this is and therefore what kind of units can be used. The context of use may also restrict the values for the comparator." />
       <requirements value="An observation exists to have a value, though it may not if it is in error, or it represents a group of observations." />
       <min value="1" />
-      <max value="*" />
+      <max value="1" />
       <base>
         <path value="Observation.value[x]" />
         <min value="0" />
@@ -12288,6 +12288,7 @@
     <element>
       <path value="Observation.valueQuantity" />
       <min value="1" />
+      <max value="1" />
       <type>
         <code value="Quantity" />
         <profile value="http://hl7.org/fhir/StructureDefinition/Duration" />
