@@ -1,0 +1,1 @@
+Points to the Observation, AllergyIntolerance or other record that provides additional supporting information about this particular flag.

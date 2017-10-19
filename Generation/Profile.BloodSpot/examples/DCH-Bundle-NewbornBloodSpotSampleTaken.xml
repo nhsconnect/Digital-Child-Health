@@ -25,8 +25,8 @@
 				<timestamp value="2012-01-08T09:00:00+00:00"/>
 				<event>
 					<system value="https://fhir.nhs.uk/DCH-ChildHealthEventType-1"/>
-					<code value="Newborn Blood Spot Screening"/>
-					<display value="Newborn Blood Spot Screening"/>
+					<code value="CH006"/>
+					<display value="Blood Spot"/>
 				</event>
 				<source>
 					<endpoint value="urn:nhs-uk:addressing:ods:RR8"/>

@@ -26,7 +26,7 @@
 				<timestamp value="2012-03-08T09:00:00+00:00"/>
 				<event>
 					<system value="https://fhir.nhs.uk/dch-childhealtheventtype-1"/>
-					<code value="Emergency Care Attendance"/>
+					<code value="CH011"/>
 					<display value="Emergency Care Attendance"/>
 				</event>
 				<source>

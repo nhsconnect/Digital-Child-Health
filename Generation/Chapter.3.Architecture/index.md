@@ -40,7 +40,6 @@ The event message consists of a Bundle identified by the type "message", with th
 Each event will carry a standard set of data to act as an event "header" (to help identify the patient, publisher, and actual event). This standard header consists of the following items and their corresponding FHIR resource element:
 
 
-
 | Event Metadata Item                    | FHIR element                 |
 |----------------------------------------|------------------------------|
 | patient identification data:           | CareConnect-DCH-Patient-1    |
@@ -48,7 +47,7 @@ Each event will carry a standard set of data to act as an event "header" (to hel
 | Date of Birth                          | CareConnect-DCH-Patient-1.birthDate            |
 | name                                   | CareConnect-DCH-Patient-1.name                 |
 | event type                             | DCH-MessageHeader-1.event          |
-| service originating the event          | CareConnect-DCH-Organization-1 |
+| type of service originating the event  | DCH-HealthcareService-1.serviceType.type |
 | service provider originating the event | CareConnect-DCH-Encounter-1.serviceProvider    |
 | IT system holding the event data       | DCH-MessageHeader-1.source         |
 | location at which the event occurred   | CareConnect-DCH-Encounter-1.location           |
@@ -58,6 +57,14 @@ Each event will carry a standard set of data to act as an event "header" (to hel
 | a publication reference number         | DCH-MessageHeader-1 logical id    |
 
 The other resources in the bundle depend on the event type.
+
+**Digital Child Health Data Item requirement notation**
+
+Each child health event message will detail the information requirements applicable to each Digital Child Health data item, these are described as: 
+
+**Mandatory:** should always be included in the electronic communication. Where there is no information then the message will contain appropriate coded text to identify this.   
+**Required:** where information should be recorded (and communicated) if available.           
+**Optional:** where local decisions can be made about whether or not to communicate the information  
 
 **Further Information**
   

@@ -4,7 +4,7 @@
 		<lastUpdated value="2016-08-03T00:00:00+01:00"/>
 	</meta>
 	<url value="https://fhir.nhs.uk/ValueSet/DCH-ChildHealthEncounterType-1"/>
-		<copyright value="Copyright © 2016 Health and Social Care Information Centre. NHS Digital is the trading name of the Health and Social Care Information Centre."/>
+	<copyright value="Copyright © 2016 Health and Social Care Information Centre. NHS Digital is the trading name of the Health and Social Care Information Centre."/>
 	<version value="1.0.0"/>
 	<name value="Child Health Encounter Type"/>
 	<status value="draft"/>
@@ -17,8 +17,12 @@
 				<display value="Birth"/>
 			</concept>
 			<concept>
-				<code value="Maternity Discharge"/>
-				<display value="Maternity Discharge"/>
+				<code value="Post Birth Review"/>
+				<display value="Post Birth Review"/>
+			</concept>
+			<concept>
+				<code value="Community Midwife Discharge"/>
+				<display value="Community Midwife Discharge"/>
 			</concept>
 			<concept>
 				<code value="Newborn Physical Examination"/>
@@ -27,6 +31,10 @@
 			<concept>
 				<code value="Newborn Hearing Screening"/>
 				<display value="Newborn Hearing Screening"/>
+			</concept>
+			<concept>
+				<code value="Newborn Blood Spot Screening"/>
+				<display value="Newborn Blood Spot Screening"/>
 			</concept>
 			<concept>
 				<code value="6-8 Week Review"/>
@@ -41,72 +49,48 @@
 				<display value="8 week immunisations"/>
 			</concept>
 			<concept>
-				<code value="12 week immunisations"/>
-				<display value="12 week immunisations"/>
+				<code value="12 week immunisations "/>
+				<display value="12 week immunisations "/>
 			</concept>
 			<concept>
-				<code value="16 week immunisations"/>
-				<display value="16 week immunisations"/>
+				<code value="16 week immunisations "/>
+				<display value="16 week immunisations "/>
 			</concept>
 			<concept>
-				<code value="MMR immunisations"/>
-				<display value="MMR immunisations"/>
+				<code value="1 Year immunisations "/>
+				<display value="1 Year immunisations "/>
 			</concept>
 			<concept>
-				<code value="Pre-school booster immunisations"/>
-				<display value="Pre-school booster immunisations"/>
+				<code value="Pre-school immunisations "/>
+				<display value="Pre-school immunisations "/>
 			</concept>
 			<concept>
-				<code value="HPV first immunisations"/>
-				<display value="HPV first immunisations"/>
+				<code value="HPV immunisations "/>
+				<display value="HPV immunisations "/>
 			</concept>
 			<concept>
-				<code value="HPV second immunisations"/>
-				<display value="HPV second immunisations"/>
+				<code value="Teenage booster immunisations "/>
+				<display value="Teenage booster immunisations "/>
 			</concept>
 			<concept>
-				<code value="Teenage booster immunisations"/>
-				<display value="Teenage booster immunisations"/>
+				<code value="Influenza immunisations "/>
+				<display value="Influenza immunisations "/>
 			</concept>
 			<concept>
-				<code value="Influenza 2 years immunisations"/>
-				<display value="Influenza 2 years immunisations"/>
+				<code value="2-2 ½ Year Early Years Progress"/>
+				<display value="2-2 ½ Year Early Years Progress"/>
 			</concept>
 			<concept>
-				<code value="Influenza 3 years immunisations"/>
-				<display value="Influenza 3 years"/>
-			</concept>
-			<concept>
-				<code value="Influenza 4 years"/>
-				<display value="Influenza 4 years immunisations"/>
-			</concept>
-			<concept>
-				<code value="Influenza year 1 immunisations"/>
-				<display value="Influenza year immunisations1"/>
-			</concept>
-			<concept>
-				<code value="Influenza year 2 immunisations"/>
-				<display value="Influenza year 2 immunisations"/>
-			</concept>
-			<concept>
-				<code value="Influenza year 3 immunisations"/>
-				<display value="Influenza year 3 immunisations"/>
-			</concept>
-			<concept>
-				<code value="2-2 1/2 Year Early Years Progress"/>
-				<display value="2-2 1/2 Year Early Years Progress"/>
-			</concept>
-			<concept>
-				<code value="2-2 1/2 Year Health Visitor Review"/>
-				<display value="2-2 1/2 Year Health Visitor Review"/>
+				<code value="2-2 ½ Year Heath Visitor Review"/>
+				<display value="2-2 ½ Year Heath Visitor Review"/>
 			</concept>
 			<concept>
 				<code value="1 Year Health Review"/>
 				<display value="1 Year Health Review"/>
 			</concept>
 			<concept>
-				<code value="6-8 Week HV review"/>
-				<display value="6-8 Week HV review"/>
+				<code value="6-8 Week Health Visitor review"/>
+				<display value="6-8 Week Health Visitor review"/>
 			</concept>
 			<concept>
 				<code value="New Baby Health Visitor Review"/>
@@ -117,12 +101,20 @@
 				<display value="School Entry Review"/>
 			</concept>
 			<concept>
+				<code value="National Child Measurement Programme"/>
+				<display value="National Child Measurement Programme"/>
+			</concept>
+			<concept>
 				<code value="Ad-hoc Health Review"/>
 				<display value="Ad-hoc Health Review"/>
 			</concept>
 			<concept>
-				<code value="National Child Measurement Programme"/>
-				<display value="National Child Measurement Programme"/>
+				<code value="Ad-hoc Immunisation"/>
+				<display value="Ad-hoc Immunisation"/>
+			</concept>
+			<concept>
+				<code value="GP Appointment"/>
+				<display value="GP Appointment"/>
 			</concept>
 		</include>
 	</compose>

@@ -4,6 +4,7 @@ This 'DCH-Bundle-1' Bundle resource profile is used as a container to collect a 
 - [CareConnect-DCH-Organization-1]
 - [CareConnect-DCH-Baby-Patient-1]
 - [CareConnect-DCH-Birth-Encounter-1]
+- [DCH-HealthcareService-1]
 - [CareConnect-DCH-ProblemAtBirth-Condition-1]
 - [CareConnect-DCH-ProblemDuringDelivery-Condition-1]
 - [CareConnect-DCH-APGARScore-Observation-1]
@@ -12,6 +13,8 @@ This 'DCH-Bundle-1' Bundle resource profile is used as a container to collect a 
 - [CareConnect-DCH-SpontaneousRespirationOnset-Observation-1]
 - [CareConnect-DCH-NeonatalResuscitationMethod-Procedure-1]
 - [CareConnect-DCH-TypeOfDelivery-Procedure-1]
+- [CareConnect-DCH-PutToBreastIndicator-Observation-1]
+- [CareConnect-DCH-FraternalTwinIndicator-Observation-1]
 - [CareConnect-DCH-Practitioner-1]
 - [CareConnect-DCH-Delivery-Location-1]
 - [CareConnect-DCH-Location-1]
@@ -35,6 +38,9 @@ The Child Health Event data items are fulfilled by elements within the FHIR reso
 | APGAR Score (1 Minute)              | CareConnect-DCH-APGARScore-Observation-1.valueQuantity                  | Mandatory                   |
 | APGAR Score (5 Minute)              | CareConnect-DCH-APGARScore-Observation-1.valueQuantity                  | Mandatory                   |
 | APGAR Score (10 Minute)             | CareConnect-DCH-APGARScore-Observation-1.valueQuantity                  | Optional                    |
+| Put To Breast                       | CareConnect-DCH-PutToBreastIndicator-Observation-1.valueCodeableConcept                  | Required                    |
+| Identical Twin		              | CareConnect-DCH-FraternalTwinIndicator-Observation-1.valueCodeableConcept               | Optional                    |
+
 
 [DCH-MessageHeader-1]:dch-messageheader-1.html
 [CareConnect-DCH-Organization-1]:careconnect-dch-organization-1.html
@@ -51,3 +57,6 @@ The Child Health Event data items are fulfilled by elements within the FHIR reso
 [CareConnect-DCH-Location-1]:careconnect-dch-location-1.html
 [CareConnect-DCH-Delivery-Location-1]:careconnect-dch-delivery-location-1.html
 [CareConnect-DCH-NumberOfBirths-Observation-1]:careconnect-dch-numberofbirths-observation-1.html
+[CareConnect-DCH-PutToBreastIndicator-Observation-1]:careconnect-dch-puttobreastindicator-observation-1.html
+[CareConnect-DCH-FraternalTwinIndicator-Observation-1]:careconnect-dch-fraternaltwinindicator-observation-1.html
+[DCH-HealthcareService-1]:dch-healthcareservice-1.html

@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValueSet xmlns="http://hl7.org/fhir">
+	<meta>
+		<lastUpdated value="2016-08-03T00:00:00+01:00"/>
+	</meta>
+	<url value="https://fhir.nhs.uk/ValueSet/DCH-PutToBreastIndicator-1"/>
+	<copyright value="Copyright © 2016 Health and Social Care Information Centre. NHS Digital is the trading name of the Health and Social Care Information Centre."/>
+	<version value="1.0.0"/>
+	<name value="Put To Breast Indicator"/>
+	<status value="draft"/>
+	<publisher value="NHS Digital"/>
+	<description value="Whether or not the baby was put to breast after delivery."/>
+	<compose>
+		<include>
+			<system value="https://fhir.nhs.uk/DCH-PutToBreastIndicator-1"/>
+			<concept>
+				<code value="Y"/>
+				<display value="Yes, baby was put to breast"/>
+			</concept>
+			<concept>
+				<code value="N"/>
+				<display value="No, baby was not put to breast"/>
+			</concept>
+		</include>
+	</compose>
+</ValueSet>

@@ -1,0 +1,1 @@
+Thie Flag resource has been constrained to represent an indication of type of reaction experienced by the Patient for Allergies and Adverse Reactions.

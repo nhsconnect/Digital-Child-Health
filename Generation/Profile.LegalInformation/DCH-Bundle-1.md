@@ -2,6 +2,7 @@ This 'DCH-Bundle-1' Bundle resource profile is used as a container to collect a 
 
 - [DCH-MessageHeader-1] - where the coding and display for the event element is fixed to 'Legal Information'
 - [CareConnect-DCH-Organization-1]
+- [DCH-HealthcareService-1]
 - [CareConnect-DCH-Patient-1]
 - [CareConnect-DCH-Encounter-1]
 - [CareConnect-DCH-Practitioner-1]
@@ -37,3 +38,4 @@ The Child Health Event data items are fulfilled by elements within the FHIR reso
 [CareConnect-DCH-Location-1]:careconnect-dch-location-1.html
 [CareConnect-DCH-LookedAfterChild-Observation-1]:careconnect-dch-lookedafterchild-observation-1.html
 [DCH-ChildProtection-CarePlan-1]:dch-childprotection-careplan-1.html
+[DCH-HealthcareService-1]:dch-healthcareservice-1.html

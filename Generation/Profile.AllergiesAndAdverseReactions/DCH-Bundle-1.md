@@ -4,7 +4,9 @@ This 'DCH-Bundle-1' Bundle resource profile is used as a container to collect a 
 - [CareConnect-DCH-Organization-1]
 - [CareConnect-DCH-Patient-1]
 - [CareConnect-DCH-Encounter-1]
+- [DCH-HealthcareService-1]
 - [CareConnect-DCH-AllergyIntolerance-1]
+- [DCH-AllergiesAndAdverseReactions-Flag-1]
 - [CareConnect-DCH-Location-1]
 
 ### Allergies and Drug Reactions event data item mapping to FHIR profiles ###
@@ -16,7 +18,7 @@ The Child Health Event data items are fulfilled by elements within the FHIR reso
 | Date                        | CareConnect-DCH-AllergyIntolerance-1.onset or CareConnect-DCH-AllergyIntolerance-1.reaction.onset                                                      | Mandatory                   |
 | Causative Agent             | CareConnect-DCH-AllergyIntolerance-1.reaction.substance                                                 | Mandatory                   |
 | Description of Reaction     | CareConnect-DCH-AllergyIntolerance-1.reaction.manifestation.description                                 | Optional                    |
-| Reaction Details            | CareConnect-DCH-AllergyIntolerance.type                                                                 | Required                    |
+| Type Of Reaction            | DCH-AllergiesAndAdverseReactions-Flag-1.code                                                                 | Required                    |
 | Certainty                   | CareConnect-DCH-AllergyIntolerance-1.reaction.allergyCertainty                           | Optional                    |
 | Severity                    | CareConnect-DCH-AllergyIntolerance-1.reaction.allergySeverity                            | Required                    |
 | Evidence                    | CareConnect-DCH-AllergyIntolerance-1.evidence															 | Optional                    |
@@ -29,4 +31,5 @@ The Child Health Event data items are fulfilled by elements within the FHIR reso
 [CareConnect-DCH-Encounter-1]:careconnect-dch-encounter-1.html
 [CareConnect-DCH-AllergyIntolerance-1]:careconnect-dch-allergyintolerance-1.html
 [CareConnect-DCH-Location-1]:careconnect-dch-location-1.html
-
+[DCH-HealthcareService-1]:dch-healthcareservice-1.html
+[DCH-AllergiesAndAdverseReactions-Flag-1]:dch-allergiesandadversereactions-flag-1.html

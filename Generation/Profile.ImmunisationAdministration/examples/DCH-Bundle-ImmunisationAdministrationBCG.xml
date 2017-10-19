@@ -26,7 +26,7 @@
 				<timestamp value="2012-01-31T09:00:00+00:00"/>
 				<event>
 					<system value="https://fhir.nhs.uk/DCH-ChildHealthEventType-1"/>
-					<code value="Immunisation Administration"/>
+					<code value="CH015"/>
 					<display value="Immunisation Administration"/>
 				</event>
 				<source>

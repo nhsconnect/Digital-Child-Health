@@ -2,13 +2,13 @@ This 'DCH-Bundle-1' Bundle resource profile is used as a container to collect a 
 
 - [DCH-MessageHeader-1] - where the coding and display elements for the event type are fixed to 'Professional Contacts'
 - [CareConnect-DCH-Organization-1]
+- [DCH-HealthcareService-1]
 - [CareConnect-DCH-Patient-1]
 - [CareConnect-DCH-Encounter-1]
 - [CareConnect-DCH-Practitioner-1]
 - [CareConnect-DCH-Location-1]
 - [CareConnect-DCH-Team-Organization-1]
 - [CareConnect-DCH-Practitioner-1]
-- [DCH-HealthcareService-1]
 - [DCH-EpisodeOfCare-1]
 
 ### Professional Contact event data item mapping to FHIR profiles ###

@@ -1,7 +1,7 @@
-<?xml version="1.0" encoding="utf-8"?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <meta>
-    <lastUpdated value="2017-10-03T20:02:12.696+01:00" />
+    <lastUpdated value="2017-10-19T17:39:33.66+01:00" />
     <tag>
       <system value="urn:hscic:publishOrder" />
       <code value="5" />
@@ -6009,7 +6009,7 @@
         <valueString value="Question" />
       </extension>
       <path value="QuestionnaireResponse.group.question" />
-      <name value="breastfedMonths" />
+      <name value="breastfeedingEndedDate" />
       <short value="Questions in this group" />
       <definition value="Set of questions within this group. The order of questions within the group is relevant." />
       <requirements value="Must register answers to questions." />
@@ -6200,7 +6200,7 @@
       <type>
         <code value="string" />
       </type>
-      <fixedString value="How many months was the child breastfed for?" />
+      <fixedString value="Approximate Date breastfeeding stopped" />
       <condition value="ele-1" />
       <constraint>
         <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-expression">
@@ -6359,7 +6359,7 @@
       </mapping>
     </element>
     <element>
-      <path value="QuestionnaireResponse.group.question.answer.valueInteger" />
+      <path value="QuestionnaireResponse.group.question.answer.valueDate" />
       <short value="Single-valued answer to the question" />
       <definition value="The answer (or one of the answers) provided by the respondent to the question." />
       <comments value="More complex structures (Attachment, Resource and Quantity) will typically be limited to electronic forms that can expose an appropriate user interface to capture the components and enforce the constraints of a complex data type.  Additional complex types can be introduced through extensions." />
@@ -6372,10 +6372,8 @@
         <max value="1" />
       </base>
       <type>
-        <code value="integer" />
+        <code value="date" />
       </type>
-      <minValueInteger value="0" />
-      <maxValueInteger value="12" />
       <condition value="ele-1" />
       <constraint>
         <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-expression">
@@ -6732,7 +6730,7 @@
         <valueString value="Question" />
       </extension>
       <path value="QuestionnaireResponse.group.question" />
-      <name value="breastfedMonths" />
+      <name value="breastfeedingEndedDate" />
       <max value="1" />
     </element>
     <element>
@@ -6742,7 +6740,7 @@
     <element>
       <path value="QuestionnaireResponse.group.question.text" />
       <min value="1" />
-      <fixedString value="How many months was the child breastfed for?" />
+      <fixedString value="Approximate Date breastfeeding stopped" />
     </element>
     <element>
       <path value="QuestionnaireResponse.group.question.answer" />
@@ -6750,13 +6748,11 @@
       <max value="1" />
     </element>
     <element>
-      <path value="QuestionnaireResponse.group.question.answer.valueInteger" />
+      <path value="QuestionnaireResponse.group.question.answer.valueDate" />
       <min value="1" />
       <type>
-        <code value="integer" />
+        <code value="date" />
       </type>
-      <minValueInteger value="0" />
-      <maxValueInteger value="12" />
     </element>
     <element>
       <path value="QuestionnaireResponse.group.question.answer.group" />

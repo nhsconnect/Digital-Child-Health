@@ -62,8 +62,8 @@ End date
 				<timestamp value="2012-01-31T09:00:00+00:00"/>
 				<event>
 					<system value="https://fhir.nhs.uk/DCH-ChildHealthEventType-1"/>
-					<code value="Professional Contact"/>
-					<display value="Professional Contact"/>
+					<code value="CH027"/>
+					<display value="Professional Contacts"/>
 				</event>
 				<source>
 					<endpoint value="urn:nhs-uk:addressing:ods:RY6"/>

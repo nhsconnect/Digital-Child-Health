@@ -26,8 +26,8 @@
 				<timestamp value="2012-03-08T09:00:00+00:00"/>
 				<event>
 					<system value="https://fhir.nhs.uk/DCH-ChildHealthEventType-1"/>
-					<code value="Conditions or Diagnoses"/>
-					<display value="Conditions or Diagnoses"/>
+					<code value="CH008"/>
+					<display value="Conditions/Diagnoses"/>
 				</event>
 				<source>
 					<endpoint value="urn:nhs-uk:addressing:ods:RR8"/>

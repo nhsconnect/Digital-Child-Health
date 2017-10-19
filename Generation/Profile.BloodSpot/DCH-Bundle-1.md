@@ -5,6 +5,7 @@ This 'DCH-Bundle-1' Bundle resource profile is used as a container to collect a 
 	- Blood Spot Administrative Status Event
 	- Blood Spot Test Outcome Event
 - [CareConnect-DCH-Organization-1]
+- [DCH-HealthcareService-1]
 - [CareConnect-DCH-Patient-1]
 - [CareConnect-DCH-Encounter-1]
 - [CareConnect-DCH-NewbornBloodSpotScreening-Procedure-1]
@@ -58,3 +59,4 @@ The Child Health Event data items are fulfilled by elements within the FHIR reso
 [CareConnect-DCH-Location-1]:careconnect-dch-location-1.html
 [DCH-Specimen-1]:dch-specimen-1.html
 [CareConnect-DCH-NewbornBloodSpotScreening-Procedure-1]:careconnect-dch-newbornbloodspotscreening-procedure-1.html
+[DCH-HealthcareService-1]:dch-healthcareservice-1.html

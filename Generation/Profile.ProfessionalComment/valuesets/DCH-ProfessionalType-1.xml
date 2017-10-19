@@ -9,7 +9,7 @@
 	<name value="Professional Type"/>
 	<status value="draft"/>
 	<publisher value="NHS Digital"/>
-	<description value="The type of care professional or team. Note the values below may change."/>
+	<description value="The type of care professional, team or service. Note the values below may change."/>
 	<compose>
 		<include>
 			<system value="https://fhir.nhs.uk/DCH-ProfessionalType-1"/>
@@ -269,8 +269,8 @@
 				<code value="C99"/>
 				<display value="Other Care Professional"/>
 			</concept>
-						<concept>
-				<code value="C99"/>
+			<concept>
+				<code value="C999"/>
 				<display value="Other Care Professional - Child Health Organisation"/>
 			</concept>
 		</include>
