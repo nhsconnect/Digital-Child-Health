@@ -35,7 +35,6 @@ The Alpha release status represents *'Initial test APIs, likely to change substa
 - Legal Information
 - Measurements
 - Medication
-- Developmental Skills
 - Newborn Hearing
 - Parent Guardian or Personal Comment 
 - Personal Contacts
@@ -47,8 +46,6 @@ The Alpha release status represents *'Initial test APIs, likely to change substa
 - Safety Alerts
 - Social Context Household
 - Social Context Person
-- Educational History
-- Legal Information
 
 
 **Events Catalogue Wave 1 of the Personal Child Health Record and Healthy Child Programme**
