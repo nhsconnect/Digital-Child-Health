@@ -4,16 +4,17 @@ The FHIR resource profiles within this DMS have been created to support the Chil
 
 
 - **[Profile.AdditionalDemographics]** - FHIR resource profiles combined to support an Additional Demographics event message.
-- **[Profile.AdmissionDetails]** - FHIR resource profiles combined to support an Admission Details event message.
+- **[Profile.AdmissionDetails]** - FHIR resource profiles combined to support an Admission Deails event message.
 - **[Profile.AllergiesAndAdverseReactions]** - FHIR resource profiles combined to support an Allergies and Adverse Reactions event message.
 - **[Profile.AssessmentScales]** - FHIR resource profiles combined to support an Assessment Scales event message.
 - **[Profile.BirthDetails]** - FHIR resource profiles combined to support a Birth Details event message.
 - **[Profile.BloodSpot]** - FHIR resource profiles combined to support a Newborn Blood Spot Screening event message.
 - **[Profile.ClinicalRiskFactors]** - FHIR resource profiles combined to support a Clinical Risk Factors event message.
 - **[Profile.ConditionsOrDiagnoses]** - FHIR resource profiles combined to support a Conditions or Diagnoses event message.
-- **[Profile.DevelopmentalSkills]** - FHIR resource profiles combined to support a Developmental Skills event message. 
+- **[Profile.DevelopmentalSkills]** - FHIR resource profiles combined to support a Developmental Skills event message.
 - **[Profile.DischargeDetails]** - FHIR resource profiles combined to support a Discharge Details event message.
 - **[Profile.EarlyYearsProgress]** - FHIR resource profiles combined to support an Early Years Progress event message.
+- **[Profile.EducationalHistory]** - FHIR resource profiles combined to support an Educational History event message.
 - **[Profile.EmergencyCareAttendance]** - FHIR resource profiles combined to support an Emergency Care Attendance event message.
 - **[Profile.ExaminationFindings]** - FHIR resource profiles combined to support an Examination Findings event message.
 - **[Profile.FamilyHistory]** - FHIR resource profiles combined to support a Family History event message.
@@ -55,6 +56,7 @@ The various downloads (including Schema files) and reference implementations are
 [Profile.DevelopmentalSkills]: ../Profile.DevelopmentalSkills/Profile.DevelopmentalSkills.html
 [Profile.DischargeDetails]: ../Profile.DischargeDetails/Profile.DischargeDetails.html
 [Profile.EarlyYearsProgress]: ../Profile.EarlyYearsProgress/Profile.EarlyYearsProgress.html
+[Profile.EducationalHistory]: ../Profile.EducationalHistory/Profile.EducationalHistory.html
 [Profile.EmergencyCareAttendance]: ../Profile.EmergencyCareAttendance/Profile.EmergencyCareAttendance.html
 [Profile.ExaminationFindings]: ../Profile.ExaminationFindings/Profile.ExaminationFindings.html
 [Profile.FamilyHistory]: ../Profile.FamilyHistory/Profile.FamilyHistory.html
@@ -62,9 +64,10 @@ The various downloads (including Schema files) and reference implementations are
 [Profile.IndividualRequirements]: ../Profile.IndividualRequirements/Profile.IndividualRequirements.html
 [Profile.ImmunisationAdministration]: ../Profile.ImmunisationAdministration/Profile.ImmunisationAdministration.html
 [Profile.InformationAndAdviceGiven]:../Profile.InformationAndAdviceGiven/Profile.InformationAndAdviceGiven.html
-[Profile.LegalInformation]:../Profile.LegalInformation/Profile.LegalInformation.html
+[Profile.LegalInformation]: ../Profile.LegalInformation/Profile.LegalInformation.html
 [Profile.Medication]: ../Profile.Medication/Profile.Medication.html
 [Profile.Measurements]: ../Profile.Measurements/Profile.Measurements.html
+[Profile.Milestones]: ../Profile.Milestones/Profile.Milestones.html
 [Profile.NewbornHearing]: ../Profile.NewbornHearing/Profile.NewbornHearing.html
 [Profile.ParentOrGuardianComment]:../Profile.ParentOrGuardianComment/Profile.ParentOrGuardianComment.html
 [Profile.PersonalContacts]:../Profile.PersonalContacts/Profile.PersonalContacts.html
