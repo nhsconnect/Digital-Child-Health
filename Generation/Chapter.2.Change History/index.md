@@ -21,8 +21,10 @@ The Alpha release status represents *'Initial test APIs, likely to change substa
 - Blood Spot
 - Clinical Risk Factors
 - Conditions / Diagnoses
+- Developmental Skills
 - Discharge Details
 - Early Years Progress
+- Educational History
 - Emergency Care Attendance
 - Examination Findings
 - Family History
@@ -30,6 +32,7 @@ The Alpha release status represents *'Initial test APIs, likely to change substa
 - Immunisation Administration
 - Individual Requirements
 - Information and Advice Given
+- Legal Information
 - Measurements
 - Medication
 - Developmental Skills
