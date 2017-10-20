@@ -1,0 +1,1 @@
+This MedicationStatement resource has been constrained to represent additional information about medications as part of a Child Health event.

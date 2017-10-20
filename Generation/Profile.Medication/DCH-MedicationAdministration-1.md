@@ -1,0 +1,1 @@
+This MedicationAdministration resource has been constrained to represent information about medication administered as part of a Child Health event.

@@ -1,0 +1,1 @@
+This EpisodeOfCare resource has been constrained to represent a Looked after child intervention for a Child Health event.
