@@ -35,8 +35,8 @@
         "timestamp": "2012-03-08T09:00:00+00:00",
         "event": {
           "system": "https://fhir.nhs.uk/DCH-ChildHealthEventType-1",
-          "code": "Conditions",
-          "display": "Conditions"
+          "code": "CH008",
+          "display": "Conditions/Diagnoses"
         },
         "source": {
           "endpoint": "urn:nhs-uk:addressing:ods:RR8"
@@ -48,9 +48,6 @@
         "data": [
           {
             "reference": "urn:uuid:1d67bd36-4f45-11e7-b114-b2f933d5fe66"
-          },
-          {
-            "reference": "urn:uuid:e9dbecea-5bdc-11e7-907b-a6006ad3dba0"
           }
         ]
       }
@@ -62,7 +59,7 @@
         "id": "5ccb6bb7-a7f1-46cc-a5d3-135320765553",
         "meta": {
           "profile": [
-            "https://fhir.hl7.org.uk/StructureDefinition/CareConnect-Organization-1"
+            "https://fhir.hl7.org.uk/StructureDefinition/CareConnect-DCH-Organization-1"
           ]
         },
         "identifier": [
@@ -129,161 +126,6 @@
       }
     },
     {
-      "fullUrl": "urn:uuid:e9dbecea-5bdc-11e7-907b-a6006ad3dba0",
-      "resource": {
-        "resourceType": "QuestionnaireResponse",
-        "id": "e9dbecea-5bdc-11e7-907b-a6006ad3dba0",
-        "meta": {
-          "profile": [
-            "https://fhir.nhs.uk/StructureDefinition/DCH-QuestionnaireResponse-1"
-          ]
-        },
-        "identifier": {
-          "system": "https://tools.ietf.org/html/rfc4122",
-          "value": "e9dbecea-5bdc-11e7-907b-a6006ad3dba0"
-        },
-        "status": "completed",
-        "subject": {
-          "reference": "urn:uuid:7368c5fe-bbb4-4e9c-a585-234e06b84e82",
-          "display": "SAXTON, Sarah Marie"
-        },
-        "group": {
-          "title": "Conditions",
-          "question": [
-            {
-              "text": "The date the Condition, Problem or Diagnosis as recognised by a Clinician was recorded",
-              "answer": [
-                {
-                  "valueDateTime": "2012-03-06T20:25:00+00:00"
-                },
-                {
-                  "valueReference": {
-                    "reference": "urn:uuid:1d67bd36-4f45-11e7-b114-b2f933d5fe66"
-                  }
-                }
-              ]
-            },
-            {
-              "text": "The Site Code of where the Condition, Problem or Diagnosis as recognised by a Clinician was recorded",
-              "answer": [
-                {
-                  "valueString": "RR830"
-                },
-                {
-                  "valueReference": {
-                    "reference": "urn:uuid:00e72e70-0e37-48b5-b950-ca5ce8c35de7",
-                    "display": "Accident and Emergency Department, Leeds General Infirmary"
-                  }
-                }
-              ]
-            },
-            {
-              "text": "Organisation recording the Condition, Problem or Diagnosis as recognised by a Clinician",
-              "answer": [
-                {
-                  "valueString": "RR8"
-                },
-                {
-                  "valueReference": {
-                    "reference": "urn:uuid:5ccb6bb7-a7f1-46cc-a5d3-135320765553",
-                    "display": "Leeds Teaching Hospitals NHS Trust"
-                  }
-                }
-              ]
-            },
-            {
-              "text": "Professional Group of the Professional recording the Condition, Problem or Diagnosis",
-              "answer": [
-                {
-                  "valueString": "R0050"
-                },
-                {
-                  "valueReference": {
-                    "reference": "urn:uuid:1d67c1f0-4f45-11e7-b114-b2f933d5fe66"
-                  }
-                }
-              ]
-            },
-            {
-              "text": "Code of the Professional recording the Condition, Problem or Diagnosis",
-              "answer": [
-                {
-                  "valueString": "PT1357"
-                },
-                {
-                  "valueReference": {
-                    "reference": "urn:uuid:1d67c1f0-4f45-11e7-b114-b2f933d5fe66"
-                  }
-                }
-              ]
-            },
-            {
-              "text": "The provisional Diagnosis of the child or young person",
-              "answer": [
-                {
-                  "valueCoding": {
-                    "system": "http://snomed.info/sct",
-                    "code": "240302002",
-                    "display": "Erythroderma neonatorum (disorder)"
-                  }
-                },
-                {
-                  "valueReference": {
-                    "reference": "urn:uuid:1d67c470-4f45-11e7-b114-b2f933d5fe66"
-                  }
-                }
-              ]
-            },
-            {
-              "text": "Clinical status of the Condition, Problem or Diagnosis",
-              "answer": [
-                {
-                  "valueCoding": {
-                    "system": "https://fhir.hl7.org.uk/CareConnect-ConditionClinicalStatus",
-                    "code": "active",
-                    "display": "Active"
-                  }
-                },
-                {
-                  "valueReference": {
-                    "reference": "urn:uuid:1d67c470-4f45-11e7-b114-b2f933d5fe66"
-                  }
-                }
-              ]
-            },
-            {
-              "text": "A category assigned to the condition",
-              "answer": [
-                {
-                  "valueCoding": {
-                    "system": "https://fhir.hl7.org.uk/CareConnect-ConditionCategory-1",
-                    "code": "diagnosis",
-                    "display": "Diagnosis"
-                  }
-                },
-                {
-                  "valueReference": {
-                    "reference": "urn:uuid:1d67c470-4f45-11e7-b114-b2f933d5fe66"
-                  }
-                }
-              ]
-            },
-            {
-              "text": "Estimated or actual date or date-time the condition began, in the opinion of the clinician",
-              "answer": [
-                null,
-                {
-                  "valueReference": {
-                    "reference": "urn:uuid:1d67c470-4f45-11e7-b114-b2f933d5fe66"
-                  }
-                }
-              ]
-            }
-          ]
-        }
-      }
-    },
-    {
       "fullUrl": "urn:uuid:1d67bd36-4f45-11e7-b114-b2f933d5fe66",
       "resource": {
         "resourceType": "Encounter",
@@ -301,17 +143,6 @@
         ],
         "status": "finished",
         "class": "emergency",
-        "type": [
-          {
-            "coding": [
-              {
-                "system": "https://fhir.nhs.uk/DCH-ChildHealthEventType-1",
-                "code": "Accidents and Injuries",
-                "display": "Accidents and Injuries"
-              }
-            ]
-          }
-        ],
         "patient": {
           "reference": "urn:uuid:7368c5fe-bbb4-4e9c-a585-234e06b84e82",
           "display": "SAXTON, Sarah Marie"
@@ -415,7 +246,7 @@
         "id": "00e72e70-0e37-48b5-b950-ca5ce8c35de7",
         "meta": {
           "profile": [
-            "https://fhir.hl7.org.uk/StructureDefinition/CareConnect-Location-1"
+            "https://fhir.hl7.org.uk/StructureDefinition/CareConnect-DCH-Location-1"
           ]
         },
         "identifier": [
@@ -438,7 +269,7 @@
         "id": "1d67c1f0-4f45-11e7-b114-b2f933d5fe66",
         "meta": {
           "profile": [
-            "https://fhir.hl7.org.uk/StructureDefinition/CareConnect-Practitioner-1"
+            "https://fhir.hl7.org.uk/StructureDefinition/CareConnect-DCH-Practitioner-1"
           ]
         },
         "identifier": [

@@ -1,11 +1,16 @@
 {
   "resourceType": "StructureDefinition",
   "meta": {
-    "lastUpdated": "2017-07-24T12:43:02.177+01:00",
+    "lastUpdated": "2017-10-18T13:31:29.709+01:00",
     "tag": [
       {
         "system": "urn:hscic:publishOrder",
         "code": "1"
+      },
+      {
+        "system": "urn:hscic:examples",
+        "code": "DCH-Bundle-EmergencyCareAttendance",
+        "display": "DCH-Bundle-EmergencyCareAttendance"
       }
     ]
   },

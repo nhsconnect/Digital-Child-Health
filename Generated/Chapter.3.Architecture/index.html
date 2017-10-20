@@ -184,55 +184,60 @@
 </tr>
 <tr>
 	<td>NHS Number</td>
-	<td>Patient.identifier</td>
+	<td>CareConnect-DCH-Patient-1.identifier</td>
 </tr>
 <tr>
 	<td>Date of Birth</td>
-	<td>Patient.birthDate</td>
+	<td>CareConnect-DCH-Patient-1.birthDate</td>
 </tr>
 <tr>
 	<td>name</td>
-	<td>Patient.name</td>
+	<td>CareConnect-DCH-Patient-1.name</td>
 </tr>
 <tr>
 	<td>event type</td>
-	<td>MessageHeader.event</td>
+	<td>DCH-MessageHeader-1.event</td>
 </tr>
 <tr>
-	<td>service originating the event</td>
-	<td>CareConnect-DCH-Organization</td>
+	<td>type of service originating the event</td>
+	<td>DCH-HealthcareService-1.serviceType.type</td>
 </tr>
 <tr>
 	<td>service provider originating the event</td>
-	<td>Encounter.serviceProvider</td>
+	<td>CareConnect-DCH-Encounter-1.serviceProvider</td>
 </tr>
 <tr>
 	<td>IT system holding the event data</td>
-	<td>MessageHeader.source</td>
+	<td>DCH-MessageHeader-1.source</td>
 </tr>
 <tr>
 	<td>location at which the event occurred</td>
-	<td>Encounter.location</td>
+	<td>CareConnect-DCH-Encounter-1.location</td>
 </tr>
 <tr>
 	<td>event date time</td>
-	<td>Encounter.period.start</td>
+	<td>CareConnect-DCH-Encounter-1.period.start</td>
 </tr>
 <tr>
 	<td>event publisher</td>
-	<td>MessageHeader.responsible</td>
+	<td>DCH-MessageHeader-1.responsible</td>
 </tr>
 <tr>
 	<td>event published date</td>
-	<td>MessageHeader.timestamp</td>
+	<td>DCH-MessageHeader-1.timestamp</td>
 </tr>
 <tr>
 	<td>a publication reference number</td>
-	<td>Message Header logical id</td>
+	<td>DCH-MessageHeader-1 logical id</td>
 </tr>
 </tbody>
 </table>
 <p>The other resources in the bundle depend on the event type.</p>
+<p><strong>Digital Child Health Data Item requirement notation</strong></p>
+<p>Each child health event message will detail the information requirements applicable to each Digital Child Health data item, these are described as: </p>
+<p><strong>Mandatory:</strong> should always be included in the electronic communication. Where there is no information then the message will contain appropriate coded text to identify this. <br />
+<strong>Required:</strong> where information should be recorded (and communicated) if available.         <br />
+<strong>Optional:</strong> where local decisions can be made about whether or not to communicate the information  </p>
 <p><strong>Further Information</strong></p>
 <p>For more information about FHIR messaging please visit: <a href="https://www.hl7.org/fhir/DSTU2/messaging.html">HL7 FHIR DSTU2 1.0.1 Messaging Implementation</a></p>
 

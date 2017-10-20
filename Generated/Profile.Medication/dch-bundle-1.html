@@ -161,19 +161,28 @@
           <a href="careconnect-dch-organization-1.html">CareConnect-DCH-Organization-1</a>
         </li>
         <li>
+          <a href="dch-healthcareservice-1.html">DCH-HealthcareService-1</a>
+        </li>
+        <li>
           <a href="careconnect-dch-patient-1.html">CareConnect-DCH-Patient-1</a>
         </li>
         <li>
           <a href="careconnect-dch-encounter-1.html">CareConnect-DCH-Encounter-1</a>
         </li>
         <li>
-          <a href="careconnect-dch-dedication-1.html">CareConnect-DCH-Medication-1</a>
+          <a href="careconnect-dch-medication-1.html">CareConnect-DCH-Medication-1</a>
+        </li>
+        <li>
+          <a href="dch-medicationadministration-1.html">DCH-MedicationAdministration-1</a>
         </li>
         <li>
           <a href="careconnect-dch-medicationorder-1.html">CareConnect-DCH-MedicationOrder-1</a>
         </li>
         <li>
-          <a href="careconnect-dch-medicationstatement-1.html">CareConnect-DCH-MedicationStatement-1</a>
+          <a href="careconnect-dch-medication-flag-1.html">CareConnect-DCH-Medication-Flag-1</a>
+        </li>
+        <li>
+          <a href="dch-medicationstatement-1.html">DCH-MedicationStatement-1</a>
         </li>
         <li>
           <a href="careconnect-dch-practitioner-1.html">CareConnect-DCH-Practitioner-1</a>
@@ -189,19 +198,14 @@
         <thead>
           <tr>
             <th>DCH Data Item</th>
-            <th>FHIR resource element</th>
+            <th>FHIR Resource element</th>
             <th>Mandatory/Required/Optional</th>
           </tr>
         </thead>
         <tbody>
           <tr>
-            <td>Date Prescribed</td>
-            <td>CareConnect-DCH-MedicationAdministration-1.effectiveTimeDateTime</td>
-            <td>Mandatory</td>
-          </tr>
-          <tr>
-            <td>Date Administered</td>
-            <td>CareConnect-DCH-MedicationOrder-1.dateWritten</td>
+            <td>Date</td>
+            <td>DCH-MedicationAdministration-1.effectiveTimeDateTime</td>
             <td>Mandatory</td>
           </tr>
           <tr>
@@ -216,7 +220,7 @@
           </tr>
           <tr>
             <td>ODS Site Code</td>
-            <td>CareConnect-DCH-Location.identifer (ODS Site Code)</td>
+            <td>CareConnect-DCH-Location.identifier (ODS Site Code)</td>
             <td>Required</td>
           </tr>
           <tr>
@@ -241,7 +245,7 @@
           </tr>
           <tr>
             <td>Route</td>
-            <td>CareConnect-DCH-MedicationOrder-1.dosageInstruction.route</td>
+            <td>DCH-MedicationAdministration-1.dosage.route</td>
             <td>Required</td>
           </tr>
           <tr>
@@ -251,12 +255,17 @@
           </tr>
           <tr>
             <td>Dose directions description</td>
-            <td>CareConnect-DCH-MedicationOrder-1.dosageInstruction.text</td>
+            <td>CareConnect-DCH-MedicationOrder-1.dosageInstruction.text or</td>
+            <td>Required</td>
+          </tr>
+          <tr>
+            <td></td>
+            <td>DCH-MedicationAdministration-1.dosage.text</td>
             <td>Required</td>
           </tr>
           <tr>
             <td>Dose Direction Duration</td>
-            <td>CareConnect-MedicationOrder-1.dosageInstruction.timing</td>
+            <td>CareConnect-DCH-Medication-Flag-1.code</td>
             <td>Required</td>
           </tr>
           <tr>
@@ -266,7 +275,7 @@
           </tr>
           <tr>
             <td>Medical devices</td>
-            <td>CareConnect-DCH-MedicationStatement-1</td>
+            <td>DCH-MedicationStatement-1</td>
             <td>Optional</td>
           </tr>
           <tr>

@@ -1,7 +1,7 @@
 {
   "resourceType": "StructureDefinition",
   "meta": {
-    "lastUpdated": "2017-10-03T20:02:12.696+01:00",
+    "lastUpdated": "2017-10-19T17:39:33.66+01:00",
     "tag": [
       {
         "system": "urn:hscic:publishOrder",
@@ -7874,7 +7874,7 @@
           }
         ],
         "path": "QuestionnaireResponse.group.question",
-        "name": "breastfedMonths",
+        "name": "breastfeedingEndedDate",
         "short": "Questions in this group",
         "definition": "Set of questions within this group. The order of questions within the group is relevant.",
         "requirements": "Must register answers to questions.",
@@ -8128,7 +8128,7 @@
             "code": "string"
           }
         ],
-        "fixedString": "How many months was the child breastfed for?",
+        "fixedString": "Approximate Date breastfeeding stopped",
         "condition": [
           "ele-1"
         ],
@@ -8344,7 +8344,7 @@
         ]
       },
       {
-        "path": "QuestionnaireResponse.group.question.answer.valueInteger",
+        "path": "QuestionnaireResponse.group.question.answer.valueDate",
         "short": "Single-valued answer to the question",
         "definition": "The answer (or one of the answers) provided by the respondent to the question.",
         "comments": "More complex structures (Attachment, Resource and Quantity) will typically be limited to electronic forms that can expose an appropriate user interface to capture the components and enforce the constraints of a complex data type.  Additional complex types can be introduced through extensions.",
@@ -8358,11 +8358,9 @@
         },
         "type": [
           {
-            "code": "integer"
+            "code": "date"
           }
         ],
-        "minValueInteger": 0,
-        "maxValueInteger": 12,
         "condition": [
           "ele-1"
         ],
@@ -8777,7 +8775,7 @@
           }
         ],
         "path": "QuestionnaireResponse.group.question",
-        "name": "breastfedMonths",
+        "name": "breastfeedingEndedDate",
         "max": "1"
       },
       {
@@ -8787,7 +8785,7 @@
       {
         "path": "QuestionnaireResponse.group.question.text",
         "min": 1,
-        "fixedString": "How many months was the child breastfed for?"
+        "fixedString": "Approximate Date breastfeeding stopped"
       },
       {
         "path": "QuestionnaireResponse.group.question.answer",
@@ -8795,15 +8793,13 @@
         "max": "1"
       },
       {
-        "path": "QuestionnaireResponse.group.question.answer.valueInteger",
+        "path": "QuestionnaireResponse.group.question.answer.valueDate",
         "min": 1,
         "type": [
           {
-            "code": "integer"
+            "code": "date"
           }
-        ],
-        "minValueInteger": 0,
-        "maxValueInteger": 12
+        ]
       },
       {
         "path": "QuestionnaireResponse.group.question.answer.group",

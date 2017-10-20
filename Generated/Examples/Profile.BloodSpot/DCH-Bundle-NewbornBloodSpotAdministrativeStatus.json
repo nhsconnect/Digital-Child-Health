@@ -15,7 +15,7 @@
         "id": "9a74504e-686f-11e7-907b-a6006ad3dba0",
         "meta": {
           "profile": [
-            "https://fhir.nhs.uk/StructureDefinition/DCH-NewbornBloodSpotScreening-MessageHeader-1"
+            "https://fhir.nhs.uk/StructureDefinition/DCH-MessageHeader-1"
           ]
         },
         "extension": [
@@ -35,8 +35,8 @@
         "timestamp": "2012-01-09T09:00:00+00:00",
         "event": {
           "system": "https://fhir.nhs.uk/DCH-ChildHealthEventType-1",
-          "code": "Newborn Blood Spot Screening",
-          "display": "Newborn Blood Spot Screening"
+          "code": "CH006",
+          "display": "Blood Spot"
         },
         "source": {
           "endpoint": "urn:nhs-uk:addressing:ods:695N0"
@@ -48,9 +48,6 @@
         "data": [
           {
             "reference": "urn:uuid:9a745b66-686f-11e7-907b-a6006ad3dba0"
-          },
-          {
-            "reference": "urn:uuid:9a7451ac-686f-11e7-907b-a6006ad3dba0"
           }
         ]
       }
@@ -129,75 +126,6 @@
       }
     },
     {
-      "fullUrl": "urn:uuid:9a7451ac-686f-11e7-907b-a6006ad3dba0",
-      "resource": {
-        "resourceType": "QuestionnaireResponse",
-        "id": "9a7451ac-686f-11e7-907b-a6006ad3dba0",
-        "meta": {
-          "profile": [
-            "https://fhir.nhs.uk/StructureDefinition/DCH-NewbornBloodSpotScreening-QuestionnaireResponse-1"
-          ]
-        },
-        "identifier": {
-          "system": "https://tools.ietf.org/html/rfc4122",
-          "value": "9a7451ac-686f-11e7-907b-a6006ad3dba0"
-        },
-        "status": "completed",
-        "subject": {
-          "reference": "urn:uuid:7368c5fe-bbb4-4e9c-a585-234e06b84e82",
-          "display": "SAXTON, Sarah Marie"
-        },
-        "group": {
-          "group": [
-            {
-              "title": "Screening Blood Spot Administrative Status",
-              "question": [
-                {
-                  "text": "The date that a Blood Spot Test result was received by testing laboratory",
-                  "answer": [
-                    {
-                      "valueDateTime": "2012-01-09T09:00:00+00:00"
-                    },
-                    {
-                      "valueReference": {
-                        "reference": "urn:uuid:9a7459f4-686f-11e7-907b-a6006ad3dba0"
-                      }
-                    }
-                  ]
-                },
-                {
-                  "text": "The unique identifier of the laboratory undertaking blood spot screening",
-                  "answer": [
-                    {
-                      "valueString": "695N0"
-                    },
-                    {
-                      "valueReference": {
-                        "reference": "urn:uuid:9a74549a-686f-11e7-907b-a6006ad3dba0"
-                      }
-                    }
-                  ]
-                },
-                {
-                  "text": "The date that a Blood Spot sample was sent to the testing laboratory",
-                  "answer": [
-                    {
-                      "valueDateTime": "2012-01-08T10:00:00+00:00"
-                    },
-                    {
-                      "valueReference": {
-                        "reference": "urn:uuid:9a745814-686f-11e7-907b-a6006ad3dba0"
-                      }
-                    }
-                  ]
-                }
-              ]
-            }
-          ]
-        }
-      }
-    },
-    {
       "fullUrl": "urn:uuid:9a745b66-686f-11e7-907b-a6006ad3dba0",
       "resource": {
         "resourceType": "Encounter",
@@ -214,17 +142,6 @@
           }
         ],
         "status": "finished",
-        "type": [
-          {
-            "coding": [
-              {
-                "system": "https://fhir.nhs.uk/DCH-ChildHealthEncounterType-1",
-                "code": "Newborn Blood Spot Administrative Status",
-                "display": "Newborn Blood Spot Administrative Status"
-              }
-            ]
-          }
-        ],
         "patient": {
           "reference": "urn:uuid:7368c5fe-bbb4-4e9c-a585-234e06b84e82",
           "display": "SAXTON, Sarah Marie"
@@ -259,43 +176,6 @@
           "display": "SAXTON, Sarah Marie"
         },
         "receivedTime": "2012-01-09T09:00:00+00:00"
-      }
-    },
-    {
-      "fullUrl": "urn:uuid:9a745814-686f-11e7-907b-a6006ad3dba0",
-      "resource": {
-        "resourceType": "ProcedureRequest",
-        "id": "9a745814-686f-11e7-907b-a6006ad3dba0",
-        "meta": {
-          "profile": [
-            "https://fhir.nhs.uk/StructureDefinition/DCH-ProcedureRequest-1"
-          ]
-        },
-        "identifier": [
-          {
-            "system": "https://tools.ietf.org/html/rfc4122",
-            "value": "9a745814-686f-11e7-907b-a6006ad3dba0"
-          }
-        ],
-        "subject": {
-          "reference": "urn:uuid:7368c5fe-bbb4-4e9c-a585-234e06b84e82",
-          "display": "SAXTON, Sarah Marie"
-        },
-        "code": {
-          "coding": [
-            {
-              "system": "http://snomed.info/sct",
-              "code": "428447008",
-              "display": "Newborn blood spot screening"
-            }
-          ]
-        },
-        "performer": {
-          "reference": "urn:uuid:9a74549a-686f-11e7-907b-a6006ad3dba0",
-          "display": "Leeds General Infirmary Laboratory"
-        },
-        "status": "proposed",
-        "orderedOn": "2012-01-08T10:00:00+00:00"
       }
     }
   ]

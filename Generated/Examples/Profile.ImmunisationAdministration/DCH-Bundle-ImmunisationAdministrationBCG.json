@@ -15,7 +15,7 @@
         "id": "a8ca9bb8-72aa-11e7-8cf7-a6006ad3dba0",
         "meta": {
           "profile": [
-            "https://fhir.nhs.uk/StructureDefinition/DCH-Immunisation-MessageHeader-1"
+            "https://fhir.nhs.uk/StructureDefinition/DCH-MessageHeader-1"
           ]
         },
         "extension": [
@@ -35,8 +35,8 @@
         "timestamp": "2012-01-31T09:00:00+00:00",
         "event": {
           "system": "https://fhir.nhs.uk/DCH-ChildHealthEventType-1",
-          "code": "Immunisation : Immunisation Administration",
-          "display": "Immunisation : Immunisation Administration"
+          "code": "CH015",
+          "display": "Immunisation Administration"
         },
         "source": {
           "endpoint": "urn:nhs-uk:addressing:ods:RR8"
@@ -48,9 +48,6 @@
         "data": [
           {
             "reference": "urn:uuid:a8ca9fe6-72aa-11e7-8cf7-a6006ad3dba0"
-          },
-          {
-            "reference": "urn:uuid:a8ca9e4c-72aa-11e7-8cf7-a6006ad3dba0"
           }
         ]
       }
@@ -62,7 +59,7 @@
         "id": "5ccb6bb7-a7f1-46cc-a5d3-135320765553",
         "meta": {
           "profile": [
-            "https://fhir.hl7.org.uk/StructureDefinition/CareConnect-Organization-1"
+            "https://fhir.hl7.org.uk/StructureDefinition/CareConnect-DCH-Organization-1"
           ]
         },
         "identifier": [
@@ -123,262 +120,6 @@
             {
               "url": "http://hl7.org/fhir/StructureDefinition/patient-birthTime",
               "valueDateTime": "2012-01-07T20:12:00+00:00"
-            }
-          ]
-        }
-      }
-    },
-    {
-      "fullUrl": "urn:uuid:a8ca9e4c-72aa-11e7-8cf7-a6006ad3dba0",
-      "resource": {
-        "resourceType": "QuestionnaireResponse",
-        "id": "a8ca9e4c-72aa-11e7-8cf7-a6006ad3dba0",
-        "meta": {
-          "profile": [
-            "https://fhir.nhs.uk/StructureDefinition/DCH-Immunisation-QuestionnaireResponse-1"
-          ]
-        },
-        "identifier": {
-          "system": "https://tools.ietf.org/html/rfc4122",
-          "value": "a8ca9e4c-72aa-11e7-8cf7-a6006ad3dba0"
-        },
-        "status": "completed",
-        "subject": {
-          "reference": "urn:uuid:7368c5fe-bbb4-4e9c-a585-234e06b84e82",
-          "display": "SAXTON, Sarah Marie"
-        },
-        "encounter": {
-          "reference": "urn:uuid:a8ca9fe6-72aa-11e7-8cf7-a6006ad3dba0"
-        },
-        "group": {
-          "group": [
-            {
-              "text": "Immunisation: Immunisation Administration",
-              "question": [
-                {
-                  "text": "A unique identifier for an immunisation from a specific clinical terminology.",
-                  "answer": [
-                    {
-                      "valueCoding": {
-                        "system": "http://snomed.info/sct",
-                        "code": "42284007",
-                        "display": "Bacillus Calmette-Guerin vaccination (procedure)"
-                      }
-                    },
-                    {
-                      "valueReference": {
-                        "reference": "urn:uuid:e9dc1bc0-5bdc-11e7-907b-a6006ad3dba0"
-                      }
-                    }
-                  ]
-                },
-                {
-                  "text": "A status to identify whether an immunisation was administered or not",
-                  "answer": [
-                    {
-                      "valueBoolean": true
-                    },
-                    {
-                      "valueReference": {
-                        "reference": "urn:uuid:e9dbfa46-5bdc-11e7-907b-a6006ad3dba0"
-                      }
-                    }
-                  ]
-                },
-                {
-                  "text": "Name of vaccine manufacturer",
-                  "answer": [
-                    {
-                      "valueString": "Statens Serum Institut (SSI)"
-                    },
-                    {
-                      "valueReference": {
-                        "reference": "urn:uuid:e9dc2412-5bdc-11e7-907b-a6006ad3dba0"
-                      }
-                    }
-                  ]
-                },
-                {
-                  "text": "Vaccine product administered",
-                  "answer": [
-                    {
-                      "valueCoding": {
-                        "system": "http://snomed.info/sct",
-                        "code": "9316611000001101",
-                        "display": "BCG vaccine powder and solvent for suspension for injection vials (Statens Serum Institut) (product)"
-                      }
-                    },
-                    {
-                      "valueReference": {
-                        "reference": "urn:uuid:e9dbfa46-5bdc-11e7-907b-a6006ad3dba0"
-                      }
-                    }
-                  ]
-                },
-                {
-                  "text": "The batch number of the vaccine product.",
-                  "answer": [
-                    {
-                      "valueString": "114022A"
-                    },
-                    {
-                      "valueReference": {
-                        "reference": "urn:uuid:e9dbfa46-5bdc-11e7-907b-a6006ad3dba0"
-                      }
-                    }
-                  ]
-                },
-                {
-                  "text": "Body site vaccine was administered to.",
-                  "answer": [
-                    {
-                      "valueCoding": {
-                        "system": "http://snomed.info/sct",
-                        "code": "123851003",
-                        "display": "Mouth"
-                      }
-                    },
-                    {
-                      "valueReference": {
-                        "reference": "urn:uuid:e9dbfa46-5bdc-11e7-907b-a6006ad3dba0"
-                      }
-                    }
-                  ]
-                },
-                {
-                  "text": "How vaccine entered the body.",
-                  "answer": [
-                    {
-                      "valueCoding": {
-                        "system": "http://snomed.info/sct",
-                        "code": "26643006",
-                        "display": "Oral route"
-                      }
-                    },
-                    {
-                      "valueReference": {
-                        "reference": "urn:uuid:e9dbfa46-5bdc-11e7-907b-a6006ad3dba0"
-                      }
-                    }
-                  ]
-                },
-                {
-                  "text": "Amount of vaccine administered.",
-                  "answer": [
-                    {
-                      "valueQuantity": {
-                        "value": 0.05,
-                        "system": "http://unitsofmeasure.org",
-                        "code": "ml"
-                      }
-                    },
-                    {
-                      "valueReference": {
-                        "reference": "urn:uuid:e9dbfa46-5bdc-11e7-907b-a6006ad3dba0"
-                      }
-                    }
-                  ]
-                },
-                {
-                  "text": "Diseases protected against",
-                  "answer": [
-                    {
-                      "valueCoding": {
-                        "system": "http://snomed.info/sct",
-                        "code": "56717001",
-                        "display": "Tuberculosis (disorder)"
-                      }
-                    },
-                    {
-                      "valueReference": {
-                        "reference": "urn:uuid:e9dbfa46-5bdc-11e7-907b-a6006ad3dba0"
-                      }
-                    }
-                  ]
-                },
-                {
-                  "text": "Nominal position in a series of vaccines",
-                  "answer": [
-                    {
-                      "valueInteger": 1
-                    },
-                    {
-                      "valueReference": {
-                        "reference": "urn:uuid:e9dbfa46-5bdc-11e7-907b-a6006ad3dba0"
-                      }
-                    }
-                  ]
-                },
-                {
-                  "text": "Where an administration was reported rather than directly administered",
-                  "answer": [
-                    {
-                      "valueBoolean": false
-                    },
-                    {
-                      "valueReference": {
-                        "reference": "urn:uuid:e9dbfa46-5bdc-11e7-907b-a6006ad3dba0"
-                      }
-                    }
-                  ]
-                },
-                {
-                  "text": "Professional Group of the Professional performing the Immunisation.",
-                  "answer": [
-                    {
-                      "valueCoding": {
-                        "system": "https://fhir.hl7.org.uk/CareConnect-SDSJobRoleName-1",
-                        "code": "R8000",
-                        "display": "General Medical Practitioner"
-                      }
-                    },
-                    {
-                      "valueReference": {
-                        "reference": "urn:uuid:e9dbf8e8-5bdc-11e7-907b-a6006ad3dba0"
-                      }
-                    }
-                  ]
-                },
-                {
-                  "text": "Code of the Professional performing the Immunisation.",
-                  "answer": [
-                    {
-                      "valueString": "PT2468"
-                    },
-                    {
-                      "valueReference": {
-                        "reference": "urn:uuid:e9dbf8e8-5bdc-11e7-907b-a6006ad3dba0"
-                      }
-                    }
-                  ]
-                },
-                {
-                  "text": "The Site code of where the Immunisation took place.",
-                  "answer": [
-                    {
-                      "valueString": "B86022"
-                    },
-                    {
-                      "valueReference": {
-                        "reference": "urn:uuid:e9dbf730-5bdc-11e7-907b-a6006ad3dba0"
-                      }
-                    }
-                  ]
-                },
-                {
-                  "text": "Organisation performing the Immunisation.",
-                  "answer": [
-                    {
-                      "valueString": "RR8"
-                    },
-                    {
-                      "valueReference": {
-                        "reference": "urn:uuid:5ccb6bb7-a7f1-46cc-a5d3-135320765553"
-                      }
-                    }
-                  ]
-                }
-              ]
             }
           ]
         }
@@ -590,7 +331,7 @@
         "id": "e9dbf8e8-5bdc-11e7-907b-a6006ad3dba0",
         "meta": {
           "profile": [
-            "https://fhir.hl7.org.uk/StructureDefinition/CareConnect-Practitioner-1"
+            "https://fhir.hl7.org.uk/StructureDefinition/CareConnect-DCH-Practitioner-1"
           ]
         },
         "identifier": [
@@ -636,7 +377,7 @@
         "id": "e9dbf730-5bdc-11e7-907b-a6006ad3dba0",
         "meta": {
           "profile": [
-            "https://fhir.hl7.org.uk/StructureDefinition/CareConnect-Location-1"
+            "https://fhir.hl7.org.uk/StructureDefinition/CareConnect-DCH-Location-1"
           ]
         },
         "identifier": [
@@ -659,7 +400,7 @@
         "id": "e9dc2412-5bdc-11e7-907b-a6006ad3dba0",
         "meta": {
           "profile": [
-            "https://fhir.hl7.org.uk/StructureDefinition/CareConnect-Organization-1"
+            "https://fhir.hl7.org.uk/StructureDefinition/CareConnect-DCH-Organization-1"
           ]
         },
         "name": "Statens Serum Institut (SSI)"

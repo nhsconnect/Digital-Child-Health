@@ -167,6 +167,9 @@
           <a href="careconnect-dch-birth-encounter-1.html">CareConnect-DCH-Birth-Encounter-1</a>
         </li>
         <li>
+          <a href="dch-healthcareservice-1.html">DCH-HealthcareService-1</a>
+        </li>
+        <li>
           <a href="careconnect-dch-problematbirth-condition-1.html">CareConnect-DCH-ProblemAtBirth-Condition-1</a>
         </li>
         <li>
@@ -179,6 +182,9 @@
           <a href="careconnect-dch-lengthofgestation-observation-1.html">CareConnect-DCH-LengthOfGestation-Observation-1</a>
         </li>
         <li>
+          <a href="careconnect-dch-numberofbirths-observation-1.html">CareConnect-DCH-NumberOfBirths-Observation-1</a>
+        </li>
+        <li>
           <a href="careconnect-dch-spontaneousrespirationonset-observation-1.html">CareConnect-DCH-SpontaneousRespirationOnset-Observation-1</a>
         </li>
         <li>
@@ -186,6 +192,12 @@
         </li>
         <li>
           <a href="careconnect-dch-typeofdelivery-procedure-1.html">CareConnect-DCH-TypeOfDelivery-Procedure-1</a>
+        </li>
+        <li>
+          <a href="careconnect-dch-puttobreastindicator-observation-1.html">CareConnect-DCH-PutToBreastIndicator-Observation-1</a>
+        </li>
+        <li>
+          <a href="careconnect-dch-fraternaltwinindicator-observation-1.html">CareConnect-DCH-FraternalTwinIndicator-Observation-1</a>
         </li>
         <li>
           <a href="careconnect-dch-practitioner-1.html">CareConnect-DCH-Practitioner-1</a>
@@ -231,28 +243,33 @@
           </tr>
           <tr>
             <td>Number of Births in confinement</td>
-            <td>CareConnect-DCH-ProblemDuringDelivery-Condition-1.code</td>
+            <td>CareConnect-DCH-NumberOfBirths-Observation-1.valueQuantity</td>
             <td>Required</td>
           </tr>
           <tr>
             <td>Problems during Delivery</td>
-            <td>CareConnect-DCH-ProblemAtBirth-Condition-1.code</td>
+            <td>CareConnect-DCH-ProblemDuringDelivery-Condition-1.code</td>
             <td>Required</td>
           </tr>
           <tr>
             <td>Physical Problems detected at Birth</td>
-            <td>CareConnect-DCH-NeonatalResuscitationMethod-Procedure-1.code</td>
+            <td>CareConnect-DCH-ProblemAtBirth-Condition-1.code</td>
             <td>Required</td>
           </tr>
           <tr>
             <td>Neonatal Resuscitation Method</td>
-            <td>CareConnect-DCH-TypeOfDelivery-Procedure-1.code</td>
+            <td>CareConnect-DCH-NeonatalResuscitationMethod-Procedure-1.code</td>
             <td>Mandatory</td>
           </tr>
           <tr>
             <td>Type of Delivery</td>
-            <td>CareConnect-DCH-SpontaneousRespirationOnset-Observation-1.valueDuration</td>
-            <td>Optional</td>
+            <td>CareConnect-DCH-TypeOfDelivery-Procedure-1.code</td>
+            <td>Mandatory</td>
+          </tr>
+          <tr>
+            <td>Attempted Type of Delivery</td>
+            <td>CareConnect-DCH-TypeOfDelivery-Procedure-1.code with status fixed to 'aborted'</td>
+            <td>Required</td>
           </tr>
           <tr>
             <td>APGAR Score (1 Minute)</td>
@@ -267,6 +284,16 @@
           <tr>
             <td>APGAR Score (10 Minute)</td>
             <td>CareConnect-DCH-APGARScore-Observation-1.valueQuantity</td>
+            <td>Optional</td>
+          </tr>
+          <tr>
+            <td>Put To Breast</td>
+            <td>CareConnect-DCH-PutToBreastIndicator-Observation-1.valueCodeableConcept</td>
+            <td>Required</td>
+          </tr>
+          <tr>
+            <td>Identical Twin</td>
+            <td>CareConnect-DCH-FraternalTwinIndicator-Observation-1.valueCodeableConcept</td>
             <td>Optional</td>
           </tr>
         </tbody>

@@ -15,7 +15,7 @@
         "id": "9a743d52-686f-11e7-907b-a6006ad3dba0",
         "meta": {
           "profile": [
-            "https://fhir.nhs.uk/StructureDefinition/DCH-NewbornBloodSpotScreening-MessageHeader-1"
+            "https://fhir.nhs.uk/StructureDefinition/DCH-MessageHeader-1"
           ]
         },
         "extension": [
@@ -35,8 +35,8 @@
         "timestamp": "2012-01-08T09:00:00+00:00",
         "event": {
           "system": "https://fhir.nhs.uk/DCH-ChildHealthEventType-1",
-          "code": "Newborn Blood Spot Screening",
-          "display": "Newborn Blood Spot Screening"
+          "code": "CH006",
+          "display": "Blood Spot"
         },
         "source": {
           "endpoint": "urn:nhs-uk:addressing:ods:RR8"
@@ -48,9 +48,6 @@
         "data": [
           {
             "reference": "urn:uuid:9a7447a2-686f-11e7-907b-a6006ad3dba0"
-          },
-          {
-            "reference": "urn:uuid:9a7440ae-686f-11e7-907b-a6006ad3dba0"
           }
         ]
       }
@@ -129,78 +126,6 @@
       }
     },
     {
-      "fullUrl": "urn:uuid:9a7440ae-686f-11e7-907b-a6006ad3dba0",
-      "resource": {
-        "resourceType": "QuestionnaireResponse",
-        "id": "9a7440ae-686f-11e7-907b-a6006ad3dba0",
-        "meta": {
-          "profile": [
-            "https://fhir.nhs.uk/StructureDefinition/DCH-NewbornBloodSpotScreening-QuestionnaireResponse-1"
-          ]
-        },
-        "identifier": {
-          "system": "https://tools.ietf.org/html/rfc4122",
-          "value": "9a7440ae-686f-11e7-907b-a6006ad3dba0"
-        },
-        "status": "completed",
-        "subject": {
-          "reference": "urn:uuid:7368c5fe-bbb4-4e9c-a585-234e06b84e82",
-          "display": "SAXTON, Sarah Marie"
-        },
-        "encounter": {
-          "reference": "urn:uuid:9a7447a2-686f-11e7-907b-a6006ad3dba0"
-        },
-        "group": {
-          "group": [
-            {
-              "title": "Screening Blood Spot Sample Taken",
-              "question": [
-                {
-                  "text": "Date on which Blood Spot card was completed",
-                  "answer": [
-                    {
-                      "valueDateTime": "2012-01-08T09:00:00+00:00"
-                    },
-                    {
-                      "valueReference": {
-                        "reference": "urn:uuid:9a744874-686f-11e7-907b-a6006ad3dba0"
-                      }
-                    }
-                  ]
-                },
-                {
-                  "text": "Name of Professional who took the Blood Spot sample",
-                  "answer": [
-                    {
-                      "valueString": "JONES, Jane"
-                    },
-                    {
-                      "valueReference": {
-                        "reference": "urn:uuid:9a744220-686f-11e7-907b-a6006ad3dba0"
-                      }
-                    }
-                  ]
-                },
-                {
-                  "text": "The ODS site code of the organisation associated with the professional performing the Blood Spot sample collection",
-                  "answer": [
-                    {
-                      "valueString": "RR801"
-                    },
-                    {
-                      "valueReference": {
-                        "reference": "urn:uuid:9a744676-686f-11e7-907b-a6006ad3dba0"
-                      }
-                    }
-                  ]
-                }
-              ]
-            }
-          ]
-        }
-      }
-    },
-    {
       "fullUrl": "urn:uuid:9a7447a2-686f-11e7-907b-a6006ad3dba0",
       "resource": {
         "resourceType": "Encounter",
@@ -217,40 +142,10 @@
           }
         ],
         "status": "finished",
-        "type": [
-          {
-            "coding": [
-              {
-                "system": "https://fhir.nhs.uk/DCH-ChildHealthEncounterType-1",
-                "code": "Newborn Blood Spot Sample Taken",
-                "display": "Newborn Blood Spot Sample Taken"
-              }
-            ]
-          }
-        ],
         "patient": {
           "reference": "urn:uuid:7368c5fe-bbb4-4e9c-a585-234e06b84e82",
           "display": "SAXTON, Sarah Marie"
         },
-        "participant": [
-          {
-            "type": [
-              {
-                "coding": [
-                  {
-                    "system": "http://hl7.org/fhir/v3/ParticipationType",
-                    "code": "PPRF",
-                    "display": "primary performer"
-                  }
-                ]
-              }
-            ],
-            "individual": {
-              "reference": "urn:uuid:9a744220-686f-11e7-907b-a6006ad3dba0",
-              "display": "JONES, Jane"
-            }
-          }
-        ],
         "period": {
           "start": "2012-01-08T09:00:00+00:00"
         },
@@ -269,51 +164,29 @@
       }
     },
     {
-      "fullUrl": "urn:uuid:9a744874-686f-11e7-907b-a6006ad3dba0",
+      "fullUrl": "urn:uuid:260b224e-b3df-11e7-abc4-cec278b6b50a",
       "resource": {
-        "resourceType": "Procedure",
-        "id": "9a744874-686f-11e7-907b-a6006ad3dba0",
+        "resourceType": "ProcedureRequest",
+        "id": "260b224e-b3df-11e7-abc4-cec278b6b50a",
         "meta": {
           "profile": [
-            "https://fhir.nhs.uk/StructureDefinition/CareConnect-DCH-NewbornBloodSpotScreening-Procedure-1"
+            "https://fhir.nhs.uk/StructureDefinition/DCH-ProcedureRequest-1"
           ]
         },
-        "identifier": [
-          {
-            "system": "https://tools.ietf.org/html/rfc4122",
-            "value": "9a744874-686f-11e7-907b-a6006ad3dba0"
-          }
-        ],
         "subject": {
           "reference": "urn:uuid:7368c5fe-bbb4-4e9c-a585-234e06b84e82",
           "display": "SAXTON, Sarah Marie"
         },
-        "status": "completed",
         "code": {
           "coding": [
             {
               "system": "http://snomed.info/sct",
               "code": "428447008",
-              "display": "Newborn blood spot screening"
+              "display": "Newborn blood spot screening (procedure)"
             }
           ]
         },
-        "performer": [
-          {
-            "actor": {
-              "reference": "urn:uuid:9a744220-686f-11e7-907b-a6006ad3dba0",
-              "display": "JONES, Jane"
-            }
-          }
-        ],
-        "performedDateTime": "2012-01-08T09:00:00+00:00",
-        "encounter": {
-          "reference": "urn:uuid:9a7447a2-686f-11e7-907b-a6006ad3dba0"
-        },
-        "location": {
-          "reference": "urn:uuid:9a744676-686f-11e7-907b-a6006ad3dba0",
-          "display": "Leeds General Infirmary"
-        }
+        "orderedOn": "2012-01-08T09:00:00+00:00"
       }
     },
     {

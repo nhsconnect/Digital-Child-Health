@@ -15,132 +15,136 @@
         "system": "https://fhir.nhs.uk/DCH-ChildHealthEventType-1",
         "concept": [
           {
-            "code": "Additional Demographics",
+            "code": "CH001",
             "display": "Additional Demographics"
           },
           {
-            "code": "Admission Details",
+            "code": "CH002",
             "display": "Admission Details"
           },
           {
-            "code": "Allergies and Adverse Reactions",
+            "code": "CH003",
             "display": "Allergies and Adverse Reactions"
           },
           {
-            "code": "Assessment Scales",
+            "code": "CH004",
             "display": "Assessment Scales"
           },
           {
-            "code": "Birth Details",
+            "code": "CH005",
             "display": "Birth Details"
           },
           {
-            "code": "Blood Spot",
+            "code": "CH006",
             "display": "Blood Spot"
           },
           {
-            "code": "Clinical Risk Factors",
+            "code": "CH007",
             "display": "Clinical Risk Factors"
           },
           {
-            "code": "Conditions or Diagnoses",
-            "display": "Conditions or Diagnoses"
+            "code": "CH008",
+            "display": "Conditions / Diagnoses"
           },
           {
-            "code": "Discharge Details",
+            "code": "CH009",
             "display": "Discharge Details"
           },
           {
-            "code": "Early Years Progress",
+            "code": "CH010",
             "display": "Early Years Progress"
           },
           {
-            "code": "Emergency Care Attendance",
+            "code": "CH011",
             "display": "Emergency Care Attendance"
           },
           {
-            "code": "Examination Findings",
+            "code": "CH012",
             "display": "Examination Findings"
           },
           {
-            "code": "Family History",
+            "code": "CH013",
             "display": "Family History"
           },
           {
-            "code": "Feeding Status",
+            "code": "CH014",
             "display": "Feeding Status"
           },
           {
-            "code": "Immunisation Administration",
+            "code": "CH015",
             "display": "Immunisation Administration"
           },
           {
-            "code": "Individual Requirements",
+            "code": "CH016",
             "display": "Individual Requirements"
           },
           {
-            "code": "Information and Advice Given",
+            "code": "CH017",
             "display": "Information and Advice Given"
           },
           {
-            "code": "Measurements",
+            "code": "CH018",
             "display": "Measurements"
           },
           {
-            "code": "Medication",
+            "code": "CH019",
             "display": "Medication"
           },
           {
-            "code": "Milestones",
-            "display": "Milestones"
+            "code": "CH020",
+            "display": "Developmental Skills"
           },
           {
-            "code": "Newborn Hearing",
+            "code": "CH021",
             "display": "Newborn Hearing"
           },
           {
-            "code": "Parent Guardian or Personal Comment",
+            "code": "CH022",
             "display": "Parent Guardian or Personal Comment"
           },
           {
-            "code": "Personal Contacts",
+            "code": "CH023",
             "display": "Personal Contacts"
           },
           {
-            "code": "Physical Examination",
+            "code": "CH024",
             "display": "Physical Examination"
           },
           {
-            "code": "Plan and Requested Actions",
+            "code": "CH025",
             "display": "Plan and Requested Actions"
           },
           {
-            "code": "Professional Comment",
+            "code": "CH026",
             "display": "Professional Comment"
           },
           {
-            "code": "Professional Contacts",
+            "code": "CH027",
             "display": "Professional Contacts"
           },
           {
-            "code": "Referral",
+            "code": "CH028",
             "display": "Referral"
           },
           {
-            "code": "Review Checks",
-            "display": "Review Checks"
-          },
-          {
-            "code": "Safety Alerts",
+            "code": "CH029",
             "display": "Safety Alerts"
           },
           {
-            "code": "Social Context Household",
+            "code": "CH030",
             "display": "Social Context Household"
           },
           {
-            "code": "Social Context Household",
-            "display": "Social Context Household"
+            "code": "CH031",
+            "display": "Social Context Person"
+          },
+          {
+            "code": "CH032",
+            "display": "Educational History"
+          },
+          {
+            "code": "CH033",
+            "display": "Legal Information"
           }
         ]
       }

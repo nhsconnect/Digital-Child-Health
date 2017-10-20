@@ -187,6 +187,22 @@
           {
             "code": "45",
             "display": "Integrated Multi-Disciplinary Team (jointly commissioned)"
+          },
+          {
+            "code": "812",
+            "display": "Diagnostic Imaging"
+          },
+          {
+            "code": "110",
+            "display": "Trauma and Orthopaedics"
+          },
+          {
+            "code": "130",
+            "display": "Ophthalmology"
+          },
+          {
+            "code": "171",
+            "display": "Paediatric Surgery"
           }
         ]
       }

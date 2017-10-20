@@ -1,7 +1,7 @@
 {
   "resourceType": "StructureDefinition",
   "meta": {
-    "lastUpdated": "2017-10-08T16:44:59.493+01:00",
+    "lastUpdated": "2017-10-19T13:53:58.486+01:00",
     "tag": [
       {
         "system": "urn:hscic:publishOrder",
@@ -5341,7 +5341,7 @@
         "comments": "The context of use may frequently define what kind of quantity this is and therefore what kind of units can be used. The context of use may also restrict the values for the comparator.",
         "requirements": "An observation exists to have a value, though it may not if it is in error, or it represents a group of observations.",
         "min": 1,
-        "max": "*",
+        "max": "1",
         "base": {
           "path": "Observation.value[x]",
           "min": 0,
@@ -15750,6 +15750,7 @@
       {
         "path": "Observation.valueQuantity",
         "min": 1,
+        "max": "1",
         "type": [
           {
             "code": "Quantity",

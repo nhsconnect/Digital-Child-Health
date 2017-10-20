@@ -1,0 +1,30 @@
+{
+  "resourceType": "ValueSet",
+  "meta": {
+    "lastUpdated": "2016-08-03T00:00:00+01:00"
+  },
+  "url": "https://fhir.nhs.uk/ValueSet/DCH-EducationalAssessment-1",
+  "version": "1.0.0",
+  "name": "Educational Assessment",
+  "status": "draft",
+  "publisher": "NHS Digital",
+  "description": "The educational assessment outcome.",
+  "copyright": "Copyright © 2016 Health and Social Care Information Centre. NHS Digital is the trading name of the Health and Social Care Information Centre.",
+  "compose": {
+    "include": [
+      {
+        "system": "https://fhir.nhs.uk/DCH-EducationalAssessment-1",
+        "concept": [
+          {
+            "code": "1",
+            "display": "No Special Educational Needs"
+          },
+          {
+            "code": "5",
+            "display": "Subject to Education, Health and Care (EHC) plan"
+          }
+        ]
+      }
+    ]
+  }
+}

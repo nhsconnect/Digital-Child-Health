@@ -1,0 +1,30 @@
+{
+  "resourceType": "ValueSet",
+  "meta": {
+    "lastUpdated": "2016-08-03T00:00:00+01:00"
+  },
+  "url": "https://fhir.nhs.uk/ValueSet/DCH-TypeOfReaction-1",
+  "version": "1.0.0",
+  "name": "Type Of Reaction",
+  "status": "draft",
+  "publisher": "NHS Digital",
+  "description": "The type of reaction experienced by the patient (allergic, adverse, intolerance).",
+  "copyright": "Copyright © 2016 Health and Social Care Information Centre. NHS Digital is the trading name of the Health and Social Care Information Centre.",
+  "compose": {
+    "include": [
+      {
+        "system": "https://fhir.nhs.uk/DCH-TypeOfReaction-1",
+        "concept": [
+          {
+            "code": "Y",
+            "display": "Identical Twin"
+          },
+          {
+            "code": "N",
+            "display": "Non-identical twin"
+          }
+        ]
+      }
+    ]
+  }
+}
