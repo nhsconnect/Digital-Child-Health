@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <meta>
-    <lastUpdated value="2017-10-18T16:36:34.471+01:00" />
+    <lastUpdated value="2017-10-20T11:41:09.668+01:00" />
     <tag>
       <system value="urn:hscic:publishOrder" />
       <code value="8" />
@@ -3378,13 +3378,6 @@
         <xpath value="@value|f:*|h:div" />
       </constraint>
       <isSummary value="true" />
-      <binding>
-        <strength value="required" />
-        <description value="The name of the Milestone achieved" />
-        <valueSetReference>
-          <reference value="https://fhir.nhs.uk/ValueSet/DCH-Milestone-1" />
-        </valueSetReference>
-      </binding>
       <mapping>
         <identity value="rim" />
         <map value="n/a" />
@@ -8281,13 +8274,6 @@
     <element>
       <path value="Condition.code.coding.display" />
       <min value="1" />
-      <binding>
-        <strength value="required" />
-        <description value="The name of the Milestone achieved" />
-        <valueSetReference>
-          <reference value="https://fhir.nhs.uk/ValueSet/DCH-Milestone-1" />
-        </valueSetReference>
-      </binding>
     </element>
     <element>
       <path value="Condition.category" />
