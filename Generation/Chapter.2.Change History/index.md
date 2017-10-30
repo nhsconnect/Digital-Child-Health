@@ -1,10 +1,12 @@
 # Change History #
 
+### Alpha Phase #
+
+This specification has been updated to Alpha status, which represents *'Initial test APIs, likely to change substantially, or be discontinued as the project develops'*.
+
 ### Experimental Phase #
 
 Following review and assurance, this Digital Child Events Catalogue specification is now being updated in preparation for an Alpha release. 
-
-The Alpha release status represents *'Initial test APIs, likely to change substantially, or be discontinued as the project develops'*.
 
 **Architecture** - Updated to detail:
 
