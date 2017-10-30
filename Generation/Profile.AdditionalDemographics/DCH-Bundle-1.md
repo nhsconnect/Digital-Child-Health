@@ -1,4 +1,4 @@
-This 'DCH-Bundle-1' Bundle resource profile is used as a container to collect a combination of the following resources, as ordered below, to capture additional demographics:
+This 'DCH-Bundle-1' Bundle resource profile is used as a container to collect a combination of the following resources to capture additional demographics:
 
 - [DCH-MessageHeader-1] - where the coding and display for the event element is fixed to 'Additional Demographics'
 - [CareConnect-DCH-Organization-1]

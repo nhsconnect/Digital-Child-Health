@@ -1,4 +1,4 @@
-This 'DCH-Bundle-1' Bundle resource profile is used as a container to collect a combination of the following resources, as ordered below, to capture professional contacts assigned to the patient:
+This 'DCH-Bundle-1' Bundle resource profile is used as a container to collect a combination of the following resources to capture professional contacts assigned to the patient:
 
 - [DCH-MessageHeader-1] - where the coding and display elements for the event type are fixed to 'Professional Contacts'
 - [CareConnect-DCH-Organization-1]

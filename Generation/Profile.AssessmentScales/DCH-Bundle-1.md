@@ -1,4 +1,4 @@
-This 'DCH-Bundle-1' Bundle resource profile is used as a container to collect a combination of the following resources, as ordered below, to capture assessment scales:
+This 'DCH-Bundle-1' Bundle resource profile is used as a container to collect a combination of the following resources to capture assessment scales:
 
 - [DCH-MessageHeader-1] - where the coding and display for the event element is fixed to 'Assessment Scales'
 - [CareConnect-DCH-Organization-1]

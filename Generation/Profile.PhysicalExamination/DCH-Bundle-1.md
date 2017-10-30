@@ -1,4 +1,4 @@
-This 'DCH-Bundle-1' Bundle resource profile is used as a container to collect a combination of the following resources, as ordered below, to capture physical examination information:
+This 'DCH-Bundle-1' Bundle resource profile is used as a container to collect a combination of the following resources to capture physical examination information:
 
 - [DCH-MessageHeader-1]- where the coding and display for the event element is fixed to 'Physical Examination'
 - [CareConnect-DCH-Organization-1]

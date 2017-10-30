@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <meta>
-    <lastUpdated value="2017-10-08T16:20:06.135+01:00" />
+    <lastUpdated value="2017-10-30T12:37:47.297+00:00" />
     <tag>
       <system value="urn:hscic:publishOrder" />
       <code value="5" />
@@ -8579,6 +8579,10 @@
         <code value="Reference" />
         <profile value="https://fhir.nhs.uk/StructureDefinition/CareConnect-DCH-Location-1" />
       </type>
+      <type>
+        <code value="Reference" />
+        <profile value="https://fhir.nhs.uk/StructureDefinition/CareConnect-DCH-SourceOfAdmission-Location-1" />
+      </type>
       <condition value="ele-1" />
       <constraint>
         <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-expression">
@@ -8776,10 +8780,10 @@
       </constraint>
       <isSummary value="true" />
       <binding>
-        <strength value="preferred" />
-        <description value="From where the patient was admitted." />
+        <strength value="required" />
+        <description value="The method of admission" />
         <valueSetReference>
-          <reference value="http://hl7.org/fhir/ValueSet/encounter-admit-source" />
+          <reference value="https://fhir.nhs.uk/ValueSet/DCH-AdmissionMethod-1" />
         </valueSetReference>
       </binding>
       <mapping>
@@ -9011,6 +9015,7 @@
       <type>
         <code value="uri" />
       </type>
+      <fixedUri value="https://fhir.nhs.uk/DCH-AdmissionMethod-1" />
       <condition value="ele-1" />
       <constraint>
         <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-expression">
@@ -11878,6 +11883,10 @@
         <code value="Reference" />
         <profile value="https://fhir.nhs.uk/StructureDefinition/CareConnect-DCH-Location-1" />
       </type>
+      <type>
+        <code value="Reference" />
+        <profile value="https://fhir.nhs.uk/StructureDefinition/CareConnect-DCH-DischargeDestination-Location-1" />
+      </type>
       <condition value="ele-1" />
       <constraint>
         <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-expression">
@@ -12079,10 +12088,10 @@
       </constraint>
       <isSummary value="true" />
       <binding>
-        <strength value="preferred" />
-        <description value="Discharge Disposition" />
+        <strength value="required" />
+        <description value="The method of discharge from hospital" />
         <valueSetReference>
-          <reference value="http://hl7.org/fhir/ValueSet/encounter-discharge-disposition" />
+          <reference value="https://fhir.nhs.uk/ValueSet/DCH-DischargeMethod-1" />
         </valueSetReference>
       </binding>
       <mapping>
@@ -12314,6 +12323,7 @@
       <type>
         <code value="uri" />
       </type>
+      <fixedUri value="https://fhir.nhs.uk/DCH-DischargeMethod-1" />
       <condition value="ele-1" />
       <constraint>
         <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-expression">
@@ -13933,6 +13943,20 @@
         <code value="Reference" />
         <profile value="https://fhir.nhs.uk/StructureDefinition/CareConnect-DCH-Location-1" />
       </type>
+      <type>
+        <code value="Reference" />
+        <profile value="https://fhir.nhs.uk/StructureDefinition/CareConnect-DCH-SourceOfAdmission-Location-1" />
+      </type>
+    </element>
+    <element>
+      <path value="Encounter.hospitalization.admitSource" />
+      <binding>
+        <strength value="required" />
+        <description value="The method of admission" />
+        <valueSetReference>
+          <reference value="https://fhir.nhs.uk/ValueSet/DCH-AdmissionMethod-1" />
+        </valueSetReference>
+      </binding>
     </element>
     <element>
       <path value="Encounter.hospitalization.admitSource.coding" />
@@ -13941,6 +13965,7 @@
     <element>
       <path value="Encounter.hospitalization.admitSource.coding.system" />
       <min value="1" />
+      <fixedUri value="https://fhir.nhs.uk/DCH-AdmissionMethod-1" />
     </element>
     <element>
       <path value="Encounter.hospitalization.admitSource.coding.code" />
@@ -14014,6 +14039,20 @@
         <code value="Reference" />
         <profile value="https://fhir.nhs.uk/StructureDefinition/CareConnect-DCH-Location-1" />
       </type>
+      <type>
+        <code value="Reference" />
+        <profile value="https://fhir.nhs.uk/StructureDefinition/CareConnect-DCH-DischargeDestination-Location-1" />
+      </type>
+    </element>
+    <element>
+      <path value="Encounter.hospitalization.dischargeDisposition" />
+      <binding>
+        <strength value="required" />
+        <description value="The method of discharge from hospital" />
+        <valueSetReference>
+          <reference value="https://fhir.nhs.uk/ValueSet/DCH-DischargeMethod-1" />
+        </valueSetReference>
+      </binding>
     </element>
     <element>
       <path value="Encounter.hospitalization.dischargeDisposition.coding" />
@@ -14022,6 +14061,7 @@
     <element>
       <path value="Encounter.hospitalization.dischargeDisposition.coding.system" />
       <min value="1" />
+      <fixedUri value="https://fhir.nhs.uk/DCH-DischargeMethod-1" />
     </element>
     <element>
       <path value="Encounter.hospitalization.dischargeDisposition.coding.code" />

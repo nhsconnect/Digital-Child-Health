@@ -1,4 +1,4 @@
-This 'DCH-Bundle-1' Bundle resource profile is used as a container to collect a combination of the following resources, as ordered below, to capture legal information:
+This 'DCH-Bundle-1' Bundle resource profile is used as a container to collect a combination of the following resources to capture legal information:
 
 - [DCH-MessageHeader-1] - where the coding and display for the event element is fixed to 'Legal Information'
 - [CareConnect-DCH-Organization-1]
