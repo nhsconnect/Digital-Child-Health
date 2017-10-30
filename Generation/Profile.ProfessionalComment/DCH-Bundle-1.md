@@ -21,7 +21,7 @@ The Child Health Event data items are fulfilled by elements within the FHIR reso
 | SDS Job Role Name | CareConnect-DCH-Practitioner-1.practitionerRole (SDS Job Role Name) | Mandatory                   |
 | Professional Name | CareConnect-DCH-Practitioner.name                                   | Mandatory                   |
 | Comment Type      | DCH-ProfessionalComment-Communication-1.category                    | Mandatory                   |
-| Comment           | DCH-ProfessionalComment-Communication-1.payload.contentString       | Mandatory                   |
+| Comment           | DCH-ProfessionalComment-Communication-1.payload.contentString       | Required                    |
 | Recipient         | DCH-RelatedPerson-1.relationship                                    | Optional                    |
 | Encounter Type    | CareConnect-DCH-Encounter-1.type                                    | Mandatory                   |
 

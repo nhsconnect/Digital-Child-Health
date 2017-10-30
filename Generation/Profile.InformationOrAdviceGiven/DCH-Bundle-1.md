@@ -18,9 +18,9 @@ The Child Health Event data items are fulfilled by elements within the FHIR reso
 |-----------------------------|---------------------------------------------------------------------|-----------------------------|
 | Date                        | CareConnect-DCH-Encounter-1.period.start                            | Mandatory                   |
 | ODS Site Code               | CareConnect-DCH-Location-1.identifier (ODS Site Code)               | Mandatory                   |
-| Professional Name           | CareConnect-DCH-Practitioner-1.name                                   | Mandatory                   |
+| Professional Name           | CareConnect-DCH-Practitioner-1.name                                 | Mandatory                   |
 | SDS Job Role Name           | CareConnect-DCH-Practitioner-1.practitionerRole (SDS Job Role Name) | Mandatory                   |
-| Information Or Advice Given | DCH-InformationOrAdviceGiven-Communication-1.payload.contentString       | Mandatory                   |
+| Information Or Advice Given | DCH-InformationOrAdviceGiven-Communication-1.payload.contentString  | Required                    |
 | Recipient                   | DCH-RelatedPerson-1.relationship                                    | Optional                    |
 
 

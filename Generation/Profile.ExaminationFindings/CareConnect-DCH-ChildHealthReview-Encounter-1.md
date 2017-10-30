@@ -1,1 +1,0 @@
-The encounter resource represents an encounter between a care professional and the patient (or patient's record), with further constraints applied to represent a health and wellbeing assessment and review for a Child Health Event.

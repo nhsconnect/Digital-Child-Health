@@ -20,7 +20,6 @@ The Child Health Event data items are fulfilled by elements within the FHIR reso
 | ODS Site Code                                    | CareConnect-DCH-Organisation-1.identifier via CareConnect-DCH-Practitioner-1.managingOrganization | Mandatory                   |
 | Professional Name                                | CareConnect-DCH-Practitioner-1.name                                                               | Mandatory                   |
 | SDS Job Role Name                                | CareConnect-DCH-Practitioner-1.practitionerName (SDS Job Role Name)                               | Mandatory                   |
-| Health and Wellbeing Assessment and Review       | CareConnect-DCH-Encounter-1.type.childHealthReviewType                                            | Required                    |
 | General Appearance                               | CareConnect-DCH-ExaminationFinding-Observation-1.valueCodeableConcept.text                        | Required                    |
 | General Appearance - Colour                      | CareConnect-DCH-ExaminationFinding-Observation-1.valueCodeableConcept.coding                      | Required                    |
 | Vital signs                                      | CareConnect-DCH-ExaminationFinding-Observation-1.valueCodeableConcept.text                        | Required                    |
@@ -61,6 +60,7 @@ The Child Health Event data items are fulfilled by elements within the FHIR reso
 | Examination - Vision                             | CareConnect-DCH-ExaminationFinding-Observation-1.valueCodeableConcept.coding                      | Required                    |
 | Examination Bowels                               | CareConnect-DCH-BowelExaminationFinding-Observation-1.valueCoding                                 | Required                    |
 | Examination Urine                                | CareConnect-DCH-UrineExaminationFinding-Observation-1.valueCoding                                 | Required                    |
+| Encounter Type                                   | CareConnect-DCH-Encounter-1.type                                                                  | Required                    |
 
 [DCH-MessageHeader-1]:dch-messageheader-1.html
 [CareConnect-DCH-Organization-1]:careconnect-dch-organization-1.html

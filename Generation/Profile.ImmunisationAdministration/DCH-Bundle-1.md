@@ -20,14 +20,15 @@ The Child Health Event data items are fulfilled by elements within the FHIR reso
 | Professional Name           | CareConnect-DCH-Practitioner-1.name                                 | Mandatory                   |
 | SDS Job Role Name           | CareConnect-DCH-Practitioner-1.practitionerRole (SDS Job Role Name) | Mandatory                   |
 | Name of Immunisation        | CareConnect-DCH-Immunization-1.vaccineCode.coding.display           | Mandatory                   |
-| Dose sequence               | CareConnect-DCH-Immunization-1.vaccinationProtocol.doseSequence     | Mandatory                   |
+| Dose sequence               | CareConnect-DCH-Immunization-1.vaccinationProtocol.doseSequence     | Required                    |
 | Outcome Status              | CareConnect-DCH-Immunization-1.explanation                          | Mandatory                   |
 | Vaccine Product (DM+D code) | CareConnect-DCH-Immunization-1.vaccineCode                          | Required                    |
 | Vaccine Manufacturer        | CareConnect-DCH-Immunization-1.vaccineCode                          | Required                    |
 | Batch Number                | CareConnect-DCH-Immunization-1.lotNumber                            | Required                    |
 | Site                        | CareConnect-DCH-Immunization-1.site                                 | Required                    |
 | Route                       | CareConnect-DCH-Immunization-1.route                                | Required                    |
-| Dose Amount                 | CareConnect-DCH-Immunization-1.reported                             | Optional                    |
+| Dose Amount                 | CareConnect-DCH-Immunization-1.doseQuantity                         | Optional                    |
+| Reported                    | CareConnect-DCH-Immunization-1.reported                             | Required                    |
 
 [DCH-MessageHeader-1]:dch-messageheader-1.html
 [CareConnect-DCH-Organization-1]:careconnect-dch-organization-1.html

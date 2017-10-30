@@ -18,7 +18,7 @@ The Child Health Event data items are fulfilled by elements within the FHIR reso
 | Country of Birth         | CareConnect-DCH-Patient-1.birthPlace                  | Required                    |
 | Communication Preference | CareConnect-DCH-Patient-1.telecom.system              | Required                    |
 | Patient email address    | CareConnect-DCH-Patient-1.telecom.value               | Required                    |
-| Ethnicity                | CareConnect-DCH-Patient-1.ethnicCategory              | Mandatory                   |
+| Ethnicity                | CareConnect-DCH-Patient-1.ethnicCategory              | Required                    |
 | Religion                 | CareConnect-DCH-Patient-1.religiousAffiliation        | Required                    |
 
 [DCH-MessageHeader-1]:dch-messageheader-1.html

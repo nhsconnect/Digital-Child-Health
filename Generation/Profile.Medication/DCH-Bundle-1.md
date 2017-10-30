@@ -28,7 +28,7 @@ The Child Health Event data items are fulfilled by elements within the FHIR reso
 | Medication Name             | CareConnect-DCH-Medication-1.code.display                                 | Mandatory                   |
 | Form                        | CareConnect-DCH-Medication-1.product.form                                 | Required                    |
 | Route                       | DCH-MedicationAdministration-1.dosage.route                               | Required                    |
-| Course status               | CareConnect-DCH-MedicationOrder-1.status                                  | Mandatory                   |
+| Course status               | CareConnect-DCH-MedicationOrder-1.status                                  | Required                    |
 | Dose directions description | CareConnect-DCH-MedicationOrder-1.dosageInstruction.text or               | Required                    |
 |                             | DCH-MedicationAdministration-1.dosage.text                                | Required                    |
 | Dose Direction Duration     | CareConnect-DCH-Medication-Flag-1.code                                    | Required                    |

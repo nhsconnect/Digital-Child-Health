@@ -29,17 +29,19 @@ The Child Health Event data items are fulfilled by elements within the FHIR reso
 | Delivery Place Type Code            | CareConnect-DCH-Delivery-Location-1.physicalType                        | Mandatory                   |
 | Birth Order                         | CareConnect-DCH-Baby-Patient-1.multipleBirthInteger                     | Mandatory                   |
 | Length of Gestation at Birth        | CareConnect-DCH-LengthOfGestation-Observation-1.valueQuantity           | Mandatory                   |
-| Number of Births in confinement     | CareConnect-DCH-NumberOfBirths-Observation-1.valueQuantity                  | Required                    |
+| Number of Births in confinement     | CareConnect-DCH-NumberOfBirths-Observation-1.valueQuantity                  | Mandatory                    |
 | Problems during Delivery            | CareConnect-DCH-ProblemDuringDelivery-Condition-1.code                          | Required                    |
 | Physical Problems detected at Birth | CareConnect-DCH-ProblemAtBirth-Condition-1.code            | Required                    |
-| Neonatal Resuscitation Method       | CareConnect-DCH-NeonatalResuscitationMethod-Procedure-1.code                           | Mandatory                   |
+| Neonatal Resuscitation Method       | CareConnect-DCH-NeonatalResuscitationMethod-Procedure-1.code                           | Required                 |
+| Date and Time of Birth              | CareConnect-DCH-Baby-Patient-1.birthDate                           | Mandatory                 |
 | Type of Delivery                    | CareConnect-DCH-TypeOfDelivery-Procedure-1.code   | Mandatory                    |
 | Attempted Type of Delivery          | CareConnect-DCH-TypeOfDelivery-Procedure-1.code with status fixed to 'aborted'  | Required                    |
+| Onset of Spontaneous Respiration    | CareConnect-DCH-SpontaneousRespirationOnset-Observation-1.valueQuantity(Duration)  | Optional                    |
 | APGAR Score (1 Minute)              | CareConnect-DCH-APGARScore-Observation-1.valueQuantity                  | Mandatory                   |
 | APGAR Score (5 Minute)              | CareConnect-DCH-APGARScore-Observation-1.valueQuantity                  | Mandatory                   |
 | APGAR Score (10 Minute)             | CareConnect-DCH-APGARScore-Observation-1.valueQuantity                  | Optional                    |
 | Put To Breast                       | CareConnect-DCH-PutToBreastIndicator-Observation-1.valueCodeableConcept                  | Required                    |
-| Identical Twin		              | CareConnect-DCH-FraternalTwinIndicator-Observation-1.valueCodeableConcept               | Optional                    |
+| Identical Twin Indicator		      | CareConnect-DCH-FraternalTwinIndicator-Observation-1.valueCodeableConcept               | Optional                    |
 
 
 [DCH-MessageHeader-1]:dch-messageheader-1.html

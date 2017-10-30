@@ -18,11 +18,11 @@ The Child Health Event data items are fulfilled by elements within the FHIR reso
 |----------------------------|------------------------------------------------------------------|-----------------------------|
 | Date and Time of Discharge | CareConnect-DCH-Encounter-1.period.end                           | Mandatory                   |
 | ODS Site Code              | CareConnect-DCH-Location-1.identifier (ODS Site Code)            | Mandatory                   |
-| Discharging Consultant     | CareConnec-DCH-Practitioner-1                                    | Required                    |
-| Discharging Speciality     | DCH-HealthcareService-1.serviceType.specialty                    | Required                    |
+| Discharging Consultant     | CareConnect-DCH-Practitioner-1                                   | Required                    |
+| Discharging Speciality/Department     | DCH-HealthcareService-1.serviceType.specialty         | Required                    |
 | Discharge method           | CareConnect-DCH-Encounter-1.hospitalization.dischargeDisposition | Required                    |
-| Discharge destination      |CareConnect-DCH-DischargeDestination-Location-1.physicalType                           | Required                    |
-| Discharge address          | CareConnect-DCH-DischargeDestination-Location-1.address                               | Required                    |
+| Discharge destination      |CareConnect-DCH-DischargeDestination-Location-1.physicalType      | Required                    |
+| Discharge address          | CareConnect-DCH-DischargeDestination-Location-1.address          | Required                    |
 | Encounter Type             | CareConnect-DCH-Encounter-1.type                                 | Mandatory                   |
 
 

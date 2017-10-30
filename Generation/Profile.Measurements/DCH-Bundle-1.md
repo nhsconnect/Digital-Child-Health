@@ -23,11 +23,11 @@ The Child Health Event data items are fulfilled by elements within the FHIR reso
 | SDS Job Role Name      | CareConnect-DCH-Practitioner-1.practitionerRole (SDS Job Role Name) | Mandatory                   |
 | Birth Weight           | CareConnect-DCH-Measurement-Observation-1.valueQuantity             | Mandatory                   |
 | Head Circumference     | CareConnect-DCH-Measurement-Observation-1.valueQuantity             | Required                    |
-| Weight                 | CareConnect-DCH-Measurement-Observation-1.valueQuantity             | Mandatory                   |
+| Weight                 | CareConnect-DCH-Measurement-Observation-1.valueQuantity             | Required                    |
 | Height/Length          | CareConnect-DCH-Measurement-Observation-1.valueQuantity             | Required                    |
 | BMI centile            | CareConnect-DCH-Measurement-Observation-1.valueQuantity             | Required                    |
 | Encounter Type         | CareConnect-DCH-Encounter-1.type (childHealthEncounterType)         | Mandatory                   |
-| NCMP Withdrawal Reason | CareConnect-DCH-NCMP-Procedure-1.reasonNotPerformed                 | Mandatory                   |
+| NCMP Withdrawal Reason | CareConnect-DCH-NCMP-Procedure-1.reasonNotPerformed                 | Required                    |
 
 [DCH-MessageHeader-1]:dch-messageheader-1.html
 [CareConnect-DCH-Organization-1]:careconnect-dch-organization-1.html

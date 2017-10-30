@@ -19,9 +19,9 @@ The Child Health Event data items are fulfilled by elements within the FHIR reso
 | ODS Site Code              | CareConnect-DCH-Location-1.identifier (ODS Site Code)                | Mandatory                   |
 | SDS Job Role Name          | CareConnect-DCH-Practitioner-1.practitionerRole (SDS Job Role Name)  | Mandatory                   |
 | Professional Name          | CareConnect-DCH-Practitioner-1.name                                  | Mandatory                   |
-| Risk to self               | CareConnect-DCH-SafeguardingRisk-Observation-1.valueString                       | Required                    |
-| Risk to others             | CareConnect-DCH-SafeguardingRisk-Observation-1.valueString                       | Required                    |
-| Risk from others           | CareConnect-DCH-SafeguardingRisk-Observation-1.valueString                       | Required                    |
+| Risk to self               | CareConnect-DCH-SafeguardingRisk-Observation-1.valueString           | Required                    |
+| Risk to others             | CareConnect-DCH-SafeguardingRisk-Observation-1.valueString           | Required                    |
+| Risk from others           | CareConnect-DCH-SafeguardingRisk-Observation-1.valueString           | Required                    |
 
 [DCH-MessageHeader-1]:dch-messageheader-1.html
 [CareConnect-DCH-Organization-1]:careconnect-dch-organization-1.html

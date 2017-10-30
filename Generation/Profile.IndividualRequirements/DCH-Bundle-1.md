@@ -27,15 +27,13 @@ The Child Health Event data items are fulfilled by elements within the FHIR reso
 | DCH Data Item                                                 | FHIR Resource element                                                    | Mandatory/Required/Optional |
 |---------------------------------------------------------------|--------------------------------------------------------------------------|-----------------------------|
 | GP Opt Out Indicator                                          | CareConnect-DCH-GPOptOutIndicator-Observation-1.valueCodeableConcept     | Required                    |
-| Individual Needs Person Indicator                             | CareConnect-DCH-IndividualNeedsPerson-Observation-1.valueCodeableConcept | Mandatory                   |
+| Individual Needs Person Indicator                             | CareConnect-DCH-IndividualNeedsPerson-Observation-1.valueCodeableConcept | Required                   |
 | Accessible Information - Communication Support                | CareConnect-DCH-CommunicationSupport-Condition-1.code                    | Required                    |
 | Accessible Information - Requires Communication Professional  | CareConnect-DCH-CommunicationProfessional-Condition-1.code               | Required                    |
 | Accessible Information - Requires Specific Contact Method     | CareConnect-DCH-ContactMethod-Condition-1.code                           | Required                    |
 | Accessible Information - Requires specific information format | CareConnect-DCH-InformationFormat-Condition-1.code                       | Required                    |
 | Mobility Needs                                                | CareConnect-DCH-MobilityFinding-Condition-1.code                         | Required                    |
 | Cognition                                                     | CareConnect-DCH-CognitionFinding-Condition-1.code                        | Required                    |
-| Educational Assessment                                        | CareConnect-DCH-EducationalAssessment-Condition-1.code                   | Required                    |
-| Type of Special Educational Need                              | CareConnect-DCH-SpecialEducationalNeed-Condition-1.code                  | Required                    |
 
 
 [DCH-MessageHeader-1]:dch-messageheader-1.html

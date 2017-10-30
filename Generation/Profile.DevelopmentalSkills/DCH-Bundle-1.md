@@ -15,11 +15,11 @@ The Child Health Event data items are fulfilled by elements within the FHIR reso
 
 | DCH Data Item     | FHIR resource element                                       | Mandatory/Required/Optional |
 |-------------------|-------------------------------------------------------------|-----------------------------|
-| Date              | CareConnect-DCH-Encounter-1.period.start                    | Mandatory                   |
-| Milestone Name    | CareConnect-DCH-DevelopmentalSkill-Condition-1.code                  | Mandatory                   |
-| Milestone Outcome | CareConnect-DCH-DevelopmentalSkill-Condition-1.stage.summary         | Mandatory                   |
-| Date Achieved     | CareConnect-DCH-DevelopmentalSkill-Condition-1.onset                 | Required                    |
-| Date Recorded     | CareConnect-DCH-DevelopmentalSkill-Condition-1.dateRecorded          | Required                    |
+| Date first achieved     | CareConnect-DCH-DevelopmentalSkill-Condition-1.onset                 | Required                    |
+| Date of observation     | CareConnect-DCH-DevelopmentalSkill-Condition-1.dateRecorded          | Required                    |
+| Date of enquiry             | CareConnect-DCH-Encounter-1.period.start                    | Required                   |
+| Developmental Skill    | CareConnect-DCH-DevelopmentalSkill-Condition-1.code                  | Mandatory                   |
+| Result of observation/enquiry  | CareConnect-DCH-DevelopmentalSkill-Condition-1.stage.summary         | Mandatory                   |
 | Encounter Type    | CareConnect-DCH-Encounter-1.type (childHealthEncounterType) | Mandatory                   |
 
 [DCH-MessageHeader-1]:dch-messageheader-1.html

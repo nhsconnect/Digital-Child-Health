@@ -15,14 +15,14 @@ The Child Health Event data items are fulfilled by elements within the FHIR reso
                                                                                                    
 | DCH Data Item               | FHIR resource element                                                                                   | Mandatory/Required/Optional |
 |-----------------------------|---------------------------------------------------------------------------------------------------------|-----------------------------|
-| Date                        | CareConnect-DCH-AllergyIntolerance-1.onset or CareConnect-DCH-AllergyIntolerance-1.reaction.onset                                                      | Mandatory                   |
+| Date                        | CareConnect-DCH-AllergyIntolerance-1.onset or CareConnect-DCH-AllergyIntolerance-1.reaction.onset       | Mandatory                   |
 | Causative Agent             | CareConnect-DCH-AllergyIntolerance-1.reaction.substance                                                 | Mandatory                   |
 | Description of Reaction     | CareConnect-DCH-AllergyIntolerance-1.reaction.manifestation.description                                 | Optional                    |
-| Type Of Reaction            | DCH-AllergiesAndAdverseReactions-Flag-1.code                                                                 | Required                    |
-| Certainty                   | CareConnect-DCH-AllergyIntolerance-1.reaction.allergyCertainty                           | Optional                    |
-| Severity                    | CareConnect-DCH-AllergyIntolerance-1.reaction.allergySeverity                            | Required                    |
-| Evidence                    | CareConnect-DCH-AllergyIntolerance-1.evidence															 | Optional                    |
-| Probability   of Recurrence | CareConnect-DCH-AllergyIntolerance.probabilityOfRecurrence                              | Optional                    |
+| Type Of Reaction            | DCH-AllergiesAndAdverseReactions-Flag-1.code                                                            | Optional                    |
+| Certainty                   | CareConnect-DCH-AllergyIntolerance-1.reaction.allergyCertainty                                          | Optional                    |
+| Severity                    | CareConnect-DCH-AllergyIntolerance-1.reaction.allergySeverity                                           | Optional                    |
+| Evidence                    | CareConnect-DCH-AllergyIntolerance-1.evidence															| Optional                    |
+| Probability   of Recurrence | CareConnect-DCH-AllergyIntolerance.probabilityOfRecurrence                                              | Optional                    |
 | Date First   Experienced    | CareConnect-DCH-AllergyIntolerance.onset                                                                | Optional                    |
 
 [DCH-MessageHeader-1]:dch-messageheader-1.html

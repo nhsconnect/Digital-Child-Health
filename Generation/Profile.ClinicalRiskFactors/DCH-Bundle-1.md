@@ -19,9 +19,9 @@ The Child Health Event data items are fulfilled by elements within the FHIR reso
 | ODS Site   Code        | CareConnect-DCH-Location-1.identifier (ODS Site Code)                 | Mandatory                   |
 | SDS Job   Role Name    | CareConnect-DCH-Practitioner-1.practitionerRole (SDS Job Role   Name) | Mandatory                   |
 | Professional   Name    | CareConnect-DCH-Practitioner-1.name                                   | Mandatory                   |
-| Clinical   Risk Factor | DCH-RiskAssessment-1.prediction.rationale                             | Mandatory                   |
-| Risk   Assessment      | DCH-RiskAssessment-1.method                                           | Mandatory                   |
-| Risk   Mitigation      | DCH-RiskAssessment-1.mitigation                                       | Mandatory                   |
+| Relevant Clinical Risk Factor | DCH-RiskAssessment-1.prediction.rationale                             | Required                   |
+| Clinical Risk Assessment      | DCH-RiskAssessment-1.method                                           | Required                 |
+| Risk Mitigation      | DCH-RiskAssessment-1.mitigation                                       | Required                  |
 
 [DCH-MessageHeader-1]:dch-messageheader-1.html
 [CareConnect-DCH-Organization-1]:careconnect-dch-organization-1.html

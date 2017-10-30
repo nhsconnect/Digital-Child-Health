@@ -12,18 +12,18 @@ This 'DCH-Bundle-1' Bundle resource profile is used as a container to collect a 
 ----------
 The Child Health Event data items are fulfilled by elements within the FHIR resources listed below.
 
-| DCH Data Item Name                                   | FHIR Resource Element                                                                      |
-|------------------------------------------------------|--------------------------------------------------------------------------------------------|
-| Mothers Education Level                              | DCH-SocialContextHousehold-QuestionnaireResponse-1.question (mothersEducationLevel)          |
-| Household smoking status                             | DCH-SocialContextHousehold-QuestionnaireResponse-1.question (householdSmokingStatus)         |
-| Household substance status                           | DCH-SocialContextHousehold-QuestionnaireResponse-1.question (householdSubstanceStatus)       |
-| Household alcohol drinking status                    | DCH-SocialContextHousehold-QuestionnaireResponse-1.question (householdAlcoholDrinkingStatus) |
-| Employment status (Mother)                           | DCH-SocialContextHousehold-QuestionnaireResponse-1.question (employmentStatusMother)         |
-| Mother's Occupation                                  | DCH-SocialContextHousehold-QuestionnaireResponse-1.question (occupationMother)               |
-| Employment status (Father)                           | DCH-SocialContextHousehold-QuestionnaireResponse-1.question (employmentStatusFather)         |
-| Father's Occupation                                  | DCH-SocialContextHousehold-QuestionnaireResponse-1.question (occupationFather)               |
-| Any Household member has/had social services support | DCH-SocialContextHousehold-QuestionnaireResponse-1.question (socialServicesSupport)          |
-| Accommodation status                                 | DCH-SocialContextHousehold-QuestionnaireResponse-1.question (accommodationStatus)            |
+| DCH Data Item                                        | FHIR Resource element                                                                        | Mandatory/Required/Optional |
+|------------------------------------------------------|----------------------------------------------------------------------------------------------|-----------------------------|
+| Mothers Education Level                              | DCH-SocialContextHousehold-QuestionnaireResponse-1.question (mothersEducationLevel)          | Required                    |
+| Household smoking status                             | DCH-SocialContextHousehold-QuestionnaireResponse-1.question (householdSmokingStatus)         | Required                    |
+| Household substance status                           | DCH-SocialContextHousehold-QuestionnaireResponse-1.question (householdSubstanceStatus)       | Required                    |
+| Household alcohol drinking status                    | DCH-SocialContextHousehold-QuestionnaireResponse-1.question (householdAlcoholDrinkingStatus) | Required                    |
+| Employment status (Mother)                           | DCH-SocialContextHousehold-QuestionnaireResponse-1.question (employmentStatusMother)         | Required                    |
+| Mothers Occupation                                   | DCH-SocialContextHousehold-QuestionnaireResponse-1.question (occupationMother)               | Required                    |
+| Employment status (Father)                           | DCH-SocialContextHousehold-QuestionnaireResponse-1.question (employmentStatusFather)         | Required                    |
+| Fathers Occupation                                   | DCH-SocialContextHousehold-QuestionnaireResponse-1.question (occupationFather)               | Required                    |
+| Any Household member has/had social services support | DCH-SocialContextHousehold-QuestionnaireResponse-1.question (socialServicesSupport)          | Required                    |
+| Accommodation status                                 | DCH-SocialContextHousehold-QuestionnaireResponse-1.question (accommodationStatus)            | Mandatory                   |
 
 [DCH-MessageHeader-1]:dch-messageheader-1.html
 [CareConnect-DCH-Organization-1]:careconnect-dch-organization-1.html
