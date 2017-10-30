@@ -36,7 +36,7 @@ The Child Health Event data items are fulfilled by elements within the FHIR reso
 | Medical devices             | DCH-MedicationStatement-1                                                 | Optional                    |
 | Indication                  | CareConnect-DCH-MedicationOrder-1.reason                                  | Required                    |                                                                                             
 
-[DCH-MessageHeader-1]:dch-medications-messageheader-1.html
+[DCH-MessageHeader-1]:dch-messageheader-1.html
 [CareConnect-DCH-Organization-1]:careconnect-dch-organization-1.html
 [CareConnect-DCH-Patient-1]:careconnect-dch-patient-1.html
 [CareConnect-DCH-Encounter-1]:careconnect-dch-encounter-1.html

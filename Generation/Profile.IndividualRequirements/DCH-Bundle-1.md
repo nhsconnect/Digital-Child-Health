@@ -13,10 +13,6 @@ This 'DCH-Bundle-1' Bundle resource profile is used as a container to collect a 
 - [CareConnect-DCH-InformationFormat-Condition-1]
 - [CareConnect-DCH-MobilityFinding-Condition-1]
 - [CareConnect-DCH-CognitionFinding-Condition-1]
-- [CareConnect-DCH-DisabilityFinding-Condition-1]
-- [CareConnect-DCH-DisabilityLevel-Condition-1]
-- [CareConnect-DCH-EducationalAssessment-Condition-1]
-- [CareConnect-DCH-SpecialEducationalNeed-Condition-1]
 - [CareConnect-DCH-Location-1]
 
                                                                                                     
@@ -50,8 +46,4 @@ The Child Health Event data items are fulfilled by elements within the FHIR reso
 [CareConnect-DCH-InformationFormat-Condition-1]:careconnect-dch-informationformat-condition-1.html
 [CareConnect-DCH-MobilityFinding-Condition-1]:careconnect-dch-mobilityfinding-condition-1.html
 [CareConnect-DCH-CognitionFinding-Condition-1]:careconnect-dch-cognitionfinding-condition-1.html
-[CareConnect-DCH-DisabilityFinding-Condition-1]:careconnect-dch-disabilitydinding-condition-1.html
-[CareConnect-DCH-DisabilityLevel-Condition-1]:careconnect-dch-disabilitylevel-condition-1.html
-[CareConnect-DCH-EducationalAssessment-Condition-1]:careconnect-dch-educationalassessment-condition-1.html
-[CareConnect-DCH-SpecialEducationalNeed-Condition-1]:careconnect-dch-specialeducationalneed-condition-1.html
 [DCH-HealthcareService-1]:dch-healthcareservice-1.html

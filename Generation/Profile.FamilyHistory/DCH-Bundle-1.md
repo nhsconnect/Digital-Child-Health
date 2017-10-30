@@ -5,7 +5,7 @@ This 'DCH-Bundle-1' Bundle resource profile is used as a container to collect a 
 - [DCH-HealthcareService-1]
 - [CareConnect-DCH-Patient-1]
 - [CareConnect-DCH-Encounter-1]
-- [DCH-FamilyMemberHistory-1]
+- [CareConnect-DCH-FamilyMemberHistory-1]
 - [CareConnect-DCH-Location-1]
                                                                                                    
 ### Family History event data item mapping to FHIR profiles ###
@@ -26,5 +26,5 @@ The Child Health Event data items are fulfilled by elements within the FHIR reso
 [CareConnect-DCH-Encounter-1]:careconnect-dch-encounter-1.html
 [CareConnect-DCH-Organization-1]:careconnect-dch-organization-1.html
 [CareConnect-DCH-Location-1]:careconnect-dch-location-1.html
-[DCH-FamilyMemberHistory-1]:dch-familymemberhistory-1.html
+[CareConnect-DCH-FamilyMemberHistory-1]:careconnect-dch-familymemberhistory-1.html
 [DCH-HealthcareService-1]:dch-healthcareservice-1.html
