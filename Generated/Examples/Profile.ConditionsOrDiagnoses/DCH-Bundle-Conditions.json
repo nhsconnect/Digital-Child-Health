@@ -72,6 +72,45 @@
       }
     },
     {
+      "fullUrl": "urn:uuid:260b2c12-b3df-11e7-abc4-cec278b6b50a",
+      "resource": {
+        "resourceType": "HealthcareService",
+        "id": "260b2c12-b3df-11e7-abc4-cec278b6b50a",
+        "meta": {
+          "profile": [
+            "https://fhir.nhs.uk/StructureDefinition/DCH-HealthcareService-1"
+          ]
+        },
+        "identifier": [
+          {
+            "system": "https://tools.ietf.org/html/rfc4122",
+            "value": "260b2c12-b3df-11e7-abc4-cec278b6b50a"
+          }
+        ],
+        "providedBy": {
+          "reference": "urn:uuid:5ccb6bb7-a7f1-46cc-a5d3-135320765553",
+          "display": "Leeds Teaching Hospitals NHS Trust"
+        },
+        "serviceType": [
+          {
+            "type": {
+              "coding": [
+                {
+                  "system": "https://fhir.nhs.uk/DCH-ProfessionalType-1",
+                  "code": "C99",
+                  "display": "Other Care Professional"
+                }
+              ]
+            }
+          }
+        ],
+        "location": {
+          "reference": "urn:uuid:00e72e70-0e37-48b5-b950-ca5ce8c35de7",
+          "display": "Accident and Emergency Department, Leeds General Infirmary"
+        }
+      }
+    },
+    {
       "fullUrl": "urn:uuid:7368c5fe-bbb4-4e9c-a585-234e06b84e82",
       "resource": {
         "resourceType": "Patient",
