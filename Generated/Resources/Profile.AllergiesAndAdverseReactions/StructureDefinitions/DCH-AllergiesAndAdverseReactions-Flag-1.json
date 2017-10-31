@@ -1,7 +1,13 @@
 {
   "resourceType": "StructureDefinition",
   "meta": {
-    "lastUpdated": "2017-10-19T19:03:57.864+01:00"
+    "lastUpdated": "2017-10-30T09:23:17.262+00:00",
+    "tag": [
+      {
+        "system": "urn:hscic:publishOrder",
+        "code": "10"
+      }
+    ]
   },
   "url": "https://fhir.nhs.uk/StructureDefinition/DCH-AllergiesAndAdverseReactions-Flag-1",
   "version": "1.0.0",
@@ -2030,7 +2036,7 @@
         "short": "Clinical, administrative, etc.",
         "definition": "Allows an flag to be divided into different categories like clinical, administrative etc. Intended to be used as a means of filtering which flags are displayed to particular user or in a given context.",
         "comments": "Not all terminology uses fit this general pattern. In some cases, models should not use CodeableConcept and use Coding directly and provide their own structure for managing text, codings, translations and the relationship between elements and pre- and post-coordination.",
-        "min": 0,
+        "min": 1,
         "max": "1",
         "base": {
           "path": "Flag.category",
@@ -2061,10 +2067,10 @@
         ],
         "isSummary": true,
         "binding": {
-          "strength": "example",
-          "description": "A general category for flags for filtering/display purposes.",
+          "strength": "required",
+          "description": "The type of reaction experienced by the patient",
           "valueSetReference": {
-            "reference": "http://hl7.org/fhir/ValueSet/flag-category"
+            "reference": "https://fhir.nhs.uk/ValueSet/DCH-AllergyFlagCategory-1"
           }
         },
         "mapping": [
@@ -2190,8 +2196,8 @@
         "definition": "A reference to a code defined by a terminology system.",
         "comments": "Codes may be defined very casually in enumerations, or code lists, up to very formal definitions such as SNOMED CT - see the HL7 v3 Core Principles for more information.  Ordering of codings is undefined and SHALL NOT be used to infer meaning. Generally, at most only one of the coding values will be labelled as UserSelected = true.",
         "requirements": "Allows for translations and alternate encodings within a code system.  Also supports communication of the same instance to systems requiring different encodings.",
-        "min": 0,
-        "max": "*",
+        "min": 1,
+        "max": "1",
         "base": {
           "path": "CodeableConcept.coding",
           "min": 0,
@@ -2347,7 +2353,7 @@
         "definition": "The identification of the code system that defines the meaning of the symbol in the code.",
         "comments": "The URI may be an OID (urn:oid:...) or a UUID (urn:uuid:...).  OIDs and UUIDs SHALL be references to the HL7 OID registry. Otherwise, the URI should come from HL7's list of FHIR defined special URIs or it should de-reference to some definition that establish the system clearly and unambiguously.",
         "requirements": "Need to be unambiguous about the source of the definition of the symbol.",
-        "min": 0,
+        "min": 1,
         "max": "1",
         "base": {
           "path": "Coding.system",
@@ -2359,6 +2365,7 @@
             "code": "uri"
           }
         ],
+        "fixedUri": "https://fhir.nhs.uk/DCH-TypeOfReaction-1",
         "condition": [
           "ele-1"
         ],
@@ -2456,7 +2463,7 @@
         "definition": "A symbol in syntax defined by the system. The symbol may be a predefined code or an expression in a syntax defined by the coding system (e.g. post-coordination).",
         "comments": "Note that FHIR strings may not exceed 1MB in size",
         "requirements": "Need to refer to a particular code in the system.",
-        "min": 0,
+        "min": 1,
         "max": "1",
         "base": {
           "path": "Coding.code",
@@ -2511,7 +2518,7 @@
         "definition": "A representation of the meaning of the code in the system, following the rules of the system.",
         "comments": "Note that FHIR strings may not exceed 1MB in size",
         "requirements": "Need to be able to carry a human-readable meaning of the code for readers that do not know  the system.",
-        "min": 0,
+        "min": 1,
         "max": "1",
         "base": {
           "path": "Coding.display",
@@ -4427,6 +4434,35 @@
       },
       {
         "path": "Flag.identifier.value",
+        "min": 1
+      },
+      {
+        "path": "Flag.category",
+        "min": 1,
+        "binding": {
+          "strength": "required",
+          "description": "The type of reaction experienced by the patient",
+          "valueSetReference": {
+            "reference": "https://fhir.nhs.uk/ValueSet/DCH-AllergyFlagCategory-1"
+          }
+        }
+      },
+      {
+        "path": "Flag.category.coding",
+        "min": 1,
+        "max": "1"
+      },
+      {
+        "path": "Flag.category.coding.system",
+        "min": 1,
+        "fixedUri": "https://fhir.nhs.uk/DCH-TypeOfReaction-1"
+      },
+      {
+        "path": "Flag.category.coding.code",
+        "min": 1
+      },
+      {
+        "path": "Flag.category.coding.display",
         "min": 1
       },
       {

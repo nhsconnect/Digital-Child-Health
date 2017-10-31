@@ -1,7 +1,7 @@
 {
   "resourceType": "StructureDefinition",
   "meta": {
-    "lastUpdated": "2017-10-07T16:45:23.15+01:00",
+    "lastUpdated": "2017-10-30T11:59:39.398+00:00",
     "tag": [
       {
         "system": "urn:hscic:publishOrder",
@@ -3732,7 +3732,7 @@
       {
         "path": "Encounter.type.coding",
         "name": "childHealthEncounterType",
-        "short": "Code defined by a terminology system",
+        "short": "The type of Child Health encounter",
         "definition": "A reference to a code defined by a terminology system.",
         "comments": "Codes may be defined very casually in enumerations, or code lists, up to very formal definitions such as SNOMED CT - see the HL7 v3 Core Principles for more information.  Ordering of codings is undefined and SHALL NOT be used to infer meaning. Generally, at most only one of the coding values will be labelled as UserSelected = true.",
         "requirements": "Allows for translations and alternate encodings within a code system.  Also supports communication of the same instance to systems requiring different encodings.",
@@ -11051,6 +11051,12 @@
             "profile": [
               "https://fhir.nhs.uk/StructureDefinition/CareConnect-DCH-Location-1"
             ]
+          },
+          {
+            "code": "Reference",
+            "profile": [
+              "https://fhir.nhs.uk/StructureDefinition/CareConnect-DCH-SourceOfAdmission-Location-1"
+            ]
           }
         ],
         "condition": [
@@ -11317,10 +11323,10 @@
         ],
         "isSummary": true,
         "binding": {
-          "strength": "preferred",
-          "description": "From where the patient was admitted.",
+          "strength": "required",
+          "description": "The method of admission",
           "valueSetReference": {
-            "reference": "http://hl7.org/fhir/ValueSet/encounter-admit-source"
+            "reference": "https://fhir.nhs.uk/ValueSet/DCH-AdmissionMethod-1"
           }
         },
         "mapping": [
@@ -11615,6 +11621,7 @@
             "code": "uri"
           }
         ],
+        "fixedUri": "https://fhir.nhs.uk/DCH-AdmissionMethod-1",
         "condition": [
           "ele-1"
         ],
@@ -15263,6 +15270,12 @@
             "profile": [
               "https://fhir.nhs.uk/StructureDefinition/CareConnect-DCH-Location-1"
             ]
+          },
+          {
+            "code": "Reference",
+            "profile": [
+              "https://fhir.nhs.uk/StructureDefinition/CareConnect-DCH-DischargeDestination-Location-1"
+            ]
           }
         ],
         "condition": [
@@ -15533,10 +15546,10 @@
         ],
         "isSummary": true,
         "binding": {
-          "strength": "preferred",
-          "description": "Discharge Disposition",
+          "strength": "required",
+          "description": "The method of discharge from hospital",
           "valueSetReference": {
-            "reference": "http://hl7.org/fhir/ValueSet/encounter-discharge-disposition"
+            "reference": "https://fhir.nhs.uk/ValueSet/DCH-DischargeMethod-1"
           }
         },
         "mapping": [
@@ -15831,6 +15844,7 @@
             "code": "uri"
           }
         ],
+        "fixedUri": "https://fhir.nhs.uk/DCH-DischargeMethod-1",
         "condition": [
           "ele-1"
         ],
@@ -17750,6 +17764,7 @@
       {
         "path": "Encounter.type.coding",
         "name": "childHealthEncounterType",
+        "short": "The type of Child Health encounter",
         "max": "1",
         "binding": {
           "strength": "required",
@@ -17935,8 +17950,24 @@
             "profile": [
               "https://fhir.nhs.uk/StructureDefinition/CareConnect-DCH-Location-1"
             ]
+          },
+          {
+            "code": "Reference",
+            "profile": [
+              "https://fhir.nhs.uk/StructureDefinition/CareConnect-DCH-SourceOfAdmission-Location-1"
+            ]
           }
         ]
+      },
+      {
+        "path": "Encounter.hospitalization.admitSource",
+        "binding": {
+          "strength": "required",
+          "description": "The method of admission",
+          "valueSetReference": {
+            "reference": "https://fhir.nhs.uk/ValueSet/DCH-AdmissionMethod-1"
+          }
+        }
       },
       {
         "path": "Encounter.hospitalization.admitSource.coding",
@@ -17944,7 +17975,8 @@
       },
       {
         "path": "Encounter.hospitalization.admitSource.coding.system",
-        "min": 1
+        "min": 1,
+        "fixedUri": "https://fhir.nhs.uk/DCH-AdmissionMethod-1"
       },
       {
         "path": "Encounter.hospitalization.admitSource.coding.code",
@@ -18032,8 +18064,24 @@
             "profile": [
               "https://fhir.nhs.uk/StructureDefinition/CareConnect-DCH-Location-1"
             ]
+          },
+          {
+            "code": "Reference",
+            "profile": [
+              "https://fhir.nhs.uk/StructureDefinition/CareConnect-DCH-DischargeDestination-Location-1"
+            ]
           }
         ]
+      },
+      {
+        "path": "Encounter.hospitalization.dischargeDisposition",
+        "binding": {
+          "strength": "required",
+          "description": "The method of discharge from hospital",
+          "valueSetReference": {
+            "reference": "https://fhir.nhs.uk/ValueSet/DCH-DischargeMethod-1"
+          }
+        }
       },
       {
         "path": "Encounter.hospitalization.dischargeDisposition.coding",
@@ -18041,7 +18089,8 @@
       },
       {
         "path": "Encounter.hospitalization.dischargeDisposition.coding.system",
-        "min": 1
+        "min": 1,
+        "fixedUri": "https://fhir.nhs.uk/DCH-DischargeMethod-1"
       },
       {
         "path": "Encounter.hospitalization.dischargeDisposition.coding.code",

@@ -1,0 +1,78 @@
+{
+  "resourceType": "ValueSet",
+  "meta": {
+    "lastUpdated": "2016-08-03T00:00:00+01:00"
+  },
+  "url": "https://fhir.nhs.uk/ValueSet/DCH-SourceOfAdmission-1",
+  "version": "1.0.0",
+  "name": "Source Of Admission",
+  "status": "draft",
+  "publisher": "NHS Digital",
+  "description": "A code to identify the source of admission.",
+  "copyright": "Copyright © 2016 Health and Social Care Information Centre. NHS Digital is the trading name of the Health and Social Care Information Centre.",
+  "compose": {
+    "include": [
+      {
+        "system": "https://fhir.nhs.uk/DCH-SourceOfAdmission-1",
+        "concept": [
+          {
+            "code": "19",
+            "display": "Usual place of residence unless listed below, for example, a private dwelling whether owner occupied or owned by Local Authority, housing association or other landlord. This includes wardened accommodation but not residential accommodation where health care is provided. It also includes PATIENTS with no fixed abode."
+          },
+          {
+            "code": "29",
+            "display": "Temporary place of residence when usually resident elsewhere (e.g. hotels, residential Educational Establishments)"
+          },
+          {
+            "code": "39",
+            "display": "Penal establishment, Court, or Police Station / Police Custody Suite"
+          },
+          {
+            "code": "49",
+            "display": "NHS other Hospital Provider - high security psychiatric accommodation in an NHS Hospital Provider (NHS Trust or NHS Foundation Trust)"
+          },
+          {
+            "code": "51",
+            "display": "NHS other Hospital Provider - WARD for general PATIENTS or the younger physically disabled or A and E department"
+          },
+          {
+            "code": "52",
+            "display": "NHS other Hospital Provider - WARD for maternity PATIENTS or Neonates"
+          },
+          {
+            "code": "53",
+            "display": "NHS other Hospital Provider - WARD for PATIENTS who are mentally ill or have Learning Disabilities"
+          },
+          {
+            "code": "54",
+            "display": "NHS run Care Home"
+          },
+          {
+            "code": "65",
+            "display": "Local Authority residential accommodation i.e. where care is provided"
+          },
+          {
+            "code": "66",
+            "display": "Local Authority foster care"
+          },
+          {
+            "code": "79",
+            "display": "Babies born in or on the way to hospital"
+          },
+          {
+            "code": "85",
+            "display": "Non-NHS (other than Local Authority) run Care Home"
+          },
+          {
+            "code": "87",
+            "display": "Non NHS run hospital"
+          },
+          {
+            "code": "88",
+            "display": "Non-NHS (other than Local Authority) run Hospice"
+          }
+        ]
+      }
+    ]
+  }
+}

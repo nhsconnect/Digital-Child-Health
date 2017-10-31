@@ -1,7 +1,7 @@
 {
   "resourceType": "StructureDefinition",
   "meta": {
-    "lastUpdated": "2017-10-10T20:04:56.314+01:00",
+    "lastUpdated": "2017-10-30T11:59:39.398+00:00",
     "tag": [
       {
         "system": "urn:hscic:publishOrder",
@@ -11051,6 +11051,12 @@
             "profile": [
               "https://fhir.nhs.uk/StructureDefinition/CareConnect-DCH-Location-1"
             ]
+          },
+          {
+            "code": "Reference",
+            "profile": [
+              "https://fhir.nhs.uk/StructureDefinition/CareConnect-DCH-SourceOfAdmission-Location-1"
+            ]
           }
         ],
         "condition": [
@@ -11317,10 +11323,10 @@
         ],
         "isSummary": true,
         "binding": {
-          "strength": "preferred",
-          "description": "From where the patient was admitted.",
+          "strength": "required",
+          "description": "The method of admission",
           "valueSetReference": {
-            "reference": "http://hl7.org/fhir/ValueSet/encounter-admit-source"
+            "reference": "https://fhir.nhs.uk/ValueSet/DCH-AdmissionMethod-1"
           }
         },
         "mapping": [
@@ -11615,6 +11621,7 @@
             "code": "uri"
           }
         ],
+        "fixedUri": "https://fhir.nhs.uk/DCH-AdmissionMethod-1",
         "condition": [
           "ele-1"
         ],
@@ -15263,6 +15270,12 @@
             "profile": [
               "https://fhir.nhs.uk/StructureDefinition/CareConnect-DCH-Location-1"
             ]
+          },
+          {
+            "code": "Reference",
+            "profile": [
+              "https://fhir.nhs.uk/StructureDefinition/CareConnect-DCH-DischargeDestination-Location-1"
+            ]
           }
         ],
         "condition": [
@@ -15533,10 +15546,10 @@
         ],
         "isSummary": true,
         "binding": {
-          "strength": "preferred",
-          "description": "Discharge Disposition",
+          "strength": "required",
+          "description": "The method of discharge from hospital",
           "valueSetReference": {
-            "reference": "http://hl7.org/fhir/ValueSet/encounter-discharge-disposition"
+            "reference": "https://fhir.nhs.uk/ValueSet/DCH-DischargeMethod-1"
           }
         },
         "mapping": [
@@ -15831,6 +15844,7 @@
             "code": "uri"
           }
         ],
+        "fixedUri": "https://fhir.nhs.uk/DCH-DischargeMethod-1",
         "condition": [
           "ele-1"
         ],
@@ -17936,8 +17950,24 @@
             "profile": [
               "https://fhir.nhs.uk/StructureDefinition/CareConnect-DCH-Location-1"
             ]
+          },
+          {
+            "code": "Reference",
+            "profile": [
+              "https://fhir.nhs.uk/StructureDefinition/CareConnect-DCH-SourceOfAdmission-Location-1"
+            ]
           }
         ]
+      },
+      {
+        "path": "Encounter.hospitalization.admitSource",
+        "binding": {
+          "strength": "required",
+          "description": "The method of admission",
+          "valueSetReference": {
+            "reference": "https://fhir.nhs.uk/ValueSet/DCH-AdmissionMethod-1"
+          }
+        }
       },
       {
         "path": "Encounter.hospitalization.admitSource.coding",
@@ -17945,7 +17975,8 @@
       },
       {
         "path": "Encounter.hospitalization.admitSource.coding.system",
-        "min": 1
+        "min": 1,
+        "fixedUri": "https://fhir.nhs.uk/DCH-AdmissionMethod-1"
       },
       {
         "path": "Encounter.hospitalization.admitSource.coding.code",
@@ -18033,8 +18064,24 @@
             "profile": [
               "https://fhir.nhs.uk/StructureDefinition/CareConnect-DCH-Location-1"
             ]
+          },
+          {
+            "code": "Reference",
+            "profile": [
+              "https://fhir.nhs.uk/StructureDefinition/CareConnect-DCH-DischargeDestination-Location-1"
+            ]
           }
         ]
+      },
+      {
+        "path": "Encounter.hospitalization.dischargeDisposition",
+        "binding": {
+          "strength": "required",
+          "description": "The method of discharge from hospital",
+          "valueSetReference": {
+            "reference": "https://fhir.nhs.uk/ValueSet/DCH-DischargeMethod-1"
+          }
+        }
       },
       {
         "path": "Encounter.hospitalization.dischargeDisposition.coding",
@@ -18042,7 +18089,8 @@
       },
       {
         "path": "Encounter.hospitalization.dischargeDisposition.coding.system",
-        "min": 1
+        "min": 1,
+        "fixedUri": "https://fhir.nhs.uk/DCH-DischargeMethod-1"
       },
       {
         "path": "Encounter.hospitalization.dischargeDisposition.coding.code",
