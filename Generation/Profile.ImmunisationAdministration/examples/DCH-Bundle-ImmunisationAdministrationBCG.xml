@@ -59,6 +59,38 @@
 		</resource>
 	</entry>
 	<entry>
+		<fullUrl value="urn:uuid:260b2622-b3df-11e7-abc4-cec278b6b50a"/>
+		<resource>
+			<HealthcareService>
+				<id value="260b2622-b3df-11e7-abc4-cec278b6b50a"/>
+				<meta>
+					<profile value="https://fhir.nhs.uk/StructureDefinition/DCH-HealthcareService-1"/>
+				</meta>
+				<identifier>
+					<system value="https://tools.ietf.org/html/rfc4122"/>
+					<value value="260b2622-b3df-11e7-abc4-cec278b6b50a"/>
+				</identifier>
+				<providedBy>
+					<reference value="urn:uuid:5ccb6bb7-a7f1-46cc-a5d3-135320765553"/>
+					<display value="Leeds Teaching Hospitals NHS Trust"/>
+				</providedBy>
+				<serviceType>
+					<type>
+						<coding>
+							<system value="https://fhir.nhs.uk/DCH-ProfessionalType-1"/>
+							<code value="M03"/>
+							<display value="General Medical Practitioner"/>
+						</coding>
+					</type>
+				</serviceType>
+				<location>
+					<reference value="urn:uuid:e9dbf730-5bdc-11e7-907b-a6006ad3dba0"/>
+					<display value="Wood Town GP Practice"/>
+				</location>
+			</HealthcareService>
+		</resource>
+	</entry>
+	<entry>
 		<fullUrl value="urn:uuid:7368c5fe-bbb4-4e9c-a585-234e06b84e82"/>
 		<resource>
 			<Patient>

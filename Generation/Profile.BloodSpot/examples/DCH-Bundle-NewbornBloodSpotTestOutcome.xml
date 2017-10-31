@@ -32,8 +32,8 @@
 					<endpoint value="urn:nhs-uk:addressing:ods:695N0"/>
 				</source>
 				<responsible>
-						<reference value="urn:uuid:9a74549a-686f-11e7-907b-a6006ad3dba0"/>
-						<display value="Leeds General Infirmary Laboratory"/>
+					<reference value="urn:uuid:9a74549a-686f-11e7-907b-a6006ad3dba0"/>
+					<display value="Leeds General Infirmary Laboratory"/>
 				</responsible>
 				<data>
 					<reference value="urn:uuid:9a746f52-686f-11e7-907b-a6006ad3dba0"/>
@@ -55,6 +55,58 @@
 				</identifier>
 				<name value="Leeds General Infirmary Laboratory"/>
 			</Organization>
+		</resource>
+	</entry>
+	<entry>
+		<fullUrl value="urn:uuid:260b4fd0-b3df-11e7-abc4-cec278b6b50a"/>
+		<resource>
+			<Location>
+				<id value="260b4fd0-b3df-11e7-abc4-cec278b6b50a"/>
+				<meta>
+					<profile value="https://fhir.hl7.org.uk/StructureDefinition/CareConnect-DCH-Location-1"/>
+				</meta>
+				<identifier>
+					<system value="https://fhir.nhs.uk/Id/local-location-identifier"/>
+					<value value="695N0-BSS"/>
+				</identifier>
+				<name value="Blood Spot Screening Department"/>
+				<managingOrganization>
+					<reference value="urn:uuid:5ccb6bb7-a7f1-46cc-a5d3-135320765553"/>
+					<display value="Leeds Teaching Hospitals NHS Trust"/>
+				</managingOrganization>
+			</Location>
+		</resource>
+	</entry>
+	<entry>
+		<fullUrl value="urn:uuid:260b2f78-b3df-11e7-abc4-cec278b6b50a"/>
+		<resource>
+			<HealthcareService>
+				<id value="260b2f78-b3df-11e7-abc4-cec278b6b50a"/>
+				<meta>
+					<profile value="https://fhir.nhs.uk/StructureDefinition/DCH-HealthcareService-1"/>
+				</meta>
+				<identifier>
+					<system value="https://tools.ietf.org/html/rfc4122"/>
+					<value value="260b2f78-b3df-11e7-abc4-cec278b6b50a"/>
+				</identifier>
+				<providedBy>
+					<reference value="urn:uuid:9a74549a-686f-11e7-907b-a6006ad3dba0"/>
+					<display value="Leeds General Infirmary Laboratory"/>
+				</providedBy>
+				<serviceType>
+					<type>
+						<coding>
+							<system value="https://fhir.nhs.uk/DCH-ProfessionalType-1"/>
+							<code value="C99"/>
+							<display value="Other Care Professional"/>
+						</coding>
+					</type>
+				</serviceType>
+				<location>
+					<reference value="urn:uuid:260b4fd0-b3df-11e7-abc4-cec278b6b50a"/>
+					<display value="Blood Spot Screening Department"/>
+				</location>
+			</HealthcareService>
 		</resource>
 	</entry>
 	<entry>
@@ -113,6 +165,12 @@
 				<period>
 					<start value="2012-01-10T09:00:00+00:00"/>
 				</period>
+				<location>
+					<location>
+						<reference value="urn:uuid:260b4fd0-b3df-11e7-abc4-cec278b6b50a"/>
+						<display value="Blood Spot Screening Department"/>
+					</location>
+				</location>
 				<serviceProvider>
 					<reference value="urn:uuid:9a74549a-686f-11e7-907b-a6006ad3dba0"/>
 					<display value="Leeds General Infirmary Laboratory"/>
