@@ -37,7 +37,7 @@ In FHIR messaging, a "message" is sent from a source application to a destinatio
 
 The event message consists of a Bundle identified by the type "message", with the first resource in the bundle being a MessageHeader. The MessageHeader resource has an event code that identifies the type of event being published. It also carries additional metadata.
 
-Each event will carry a standard set of data to act as an event "header" (to help identify the patient, publisher, and actual event). This standard header consists of the following items and their corresponding FHIR resource element:
+Each event will carry a standard set of data to act as an event "header" (to help identify the patient, publisher, and actual event). This standard header consists of the following **mandatory** items and their corresponding FHIR resource element:
 
 
 | Event Metadata Item                    | FHIR element                 |
