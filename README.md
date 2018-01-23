@@ -12,8 +12,8 @@ To ensure the aims of this strategy are met and small manageable segments of dat
  
 ## References ##
 
-[Implementation Guide for Digital Child Health event messaging using the DSTU2 FHIR Specification](https://nhsconnect.github.io/Digital-Child-Health/Generated/Chapter.1.About/index.html)** - Alpha**
+[Implementation Guide for Digital Child Health event messaging using the DSTU2 FHIR Specification](https://nhsconnect.github.io/Digital-Child-Health/Generated/Chapter.1.About/index.html) **Alpha**
 
-[Implementation Guide for Digital Child Health event messaging using the STU3 FHIR Specification](https://nhsconnect.github.io/Digital-Child-Health-STU3/)**- Work in progress for Beta release **
+[Implementation Guide for Digital Child Health event messaging using the STU3 FHIR Specification](https://nhsconnect.github.io/Digital-Child-Health-STU3/) **Work in progress for Beta release**
 
-[Implementation Guide for Events Management System (EMS) Specification using the STU3 FHIR specification](https://nhsconnect.github.io/Events-Management/) **- Experimental**
+[Implementation Guide for Events Management System (EMS) Specification using the STU3 FHIR specification](https://nhsconnect.github.io/Events-Management/) **Experimental**
