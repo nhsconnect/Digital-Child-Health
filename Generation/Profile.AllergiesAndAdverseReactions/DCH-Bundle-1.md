@@ -9,7 +9,7 @@ This 'DCH-Bundle-1' Bundle resource profile is used as a container to collect a 
 - [DCH-AllergiesAndAdverseReactions-Flag-1]
 - [CareConnect-DCH-Location-1]
 
-### Allergies and Drug Reactions event data item mapping to FHIR profiles ###
+### Allergies and Adverse Reactions event data item mapping to FHIR profiles ###
 ----------
 The Child Health Event data items are fulfilled by elements within the FHIR resources listed below:
                                                                                                    

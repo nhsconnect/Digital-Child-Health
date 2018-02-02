@@ -26,7 +26,7 @@ The FHIR resource profiles within this DMS have been created to support the Chil
 - **[Profile.Measurements]** - FHIR resource profiles combined to support a Measurements event message.
 - **[Profile.Medication]** - FHIR resource profiles combined to support a Medication event message. 
 - **[Profile.NewbornHearing]** - FHIR resource profiles combined to support a Newborn Hearing event message.
-- **[Profile.ParentOrGuardianComment]** - FHIR resource profiles combined to support a Parent Or Guardian Comment event message.
+- **[Profile.ParentGuardianOrPersonalComment]** - FHIR resource profiles combined to support a Parent Or Guardian Comment event message.
 - **[Profile.PersonalContacts]** - FHIR resource profiles combined to support a Personal Contacts event message.
 - **[Profile.PhysicalExamination]** - FHIR resource profiles combined to support a Physical Examination event message. 
 - **[Profile.PlanAndRequestedActions]** - FHIR resource profiles combined to support a Plan and Required Actions event message.
@@ -69,7 +69,7 @@ The various downloads (including Schema files) and reference implementations are
 [Profile.Measurements]: ../Profile.Measurements/Profile.Measurements.html
 [Profile.Milestones]: ../Profile.Milestones/Profile.Milestones.html
 [Profile.NewbornHearing]: ../Profile.NewbornHearing/Profile.NewbornHearing.html
-[Profile.ParentOrGuardianComment]: ../Profile.ParentOrGuardianComment/Profile.ParentOrGuardianComment.html
+[Profile.ParentGuardianOrPersonalComment]: ../Profile.ParentGuardianOrPersonalComment/Profile.ParentGuardianOrPersonalComment.html
 [Profile.PersonalContacts]: ../Profile.PersonalContacts/Profile.PersonalContacts.html
 [Profile.PhysicalExamination]: ../Profile.PhysicalExamination/Profile.PhysicalExamination.html
 [Profile.PlanAndRequestedActions]: ../Profile.PlanAndRequestedActions/Profile.PlanAndRequestedActions.html

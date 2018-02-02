@@ -1,6 +1,6 @@
 This 'DCH-Bundle-1' Bundle resource profile is used as a container to collect a combination of the following resources to capture a referral request:
 
-- [DCH-MessageHeader-1]
+- [DCH-MessageHeader-1]- where the coding and display for the event element is fixed to 'Referral'
 - [CareConnect-DCH-Organization-1]
 - [DCH-HealthcareService-1]
 - [CareConnect-DCH-Patient-1]

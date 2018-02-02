@@ -1,14 +1,12 @@
 This 'DCH-Bundle-1' Bundle resource profile is used as a container to collect a combination of the following resources to fulfill the information requirements of a blood spot event:
 
-- [DCH-MessageHeader-1]- where the coding and display for the event element is fixed to either of the following:
-	- Blood Spot Sample Taken Event
-	- Blood Spot Administrative Status Event
-	- Blood Spot Test Outcome Event
+- [DCH-MessageHeader-1]- where the coding and display for the event element is fixed to 'Blood Spot'
 - [CareConnect-DCH-Organization-1]
 - [DCH-HealthcareService-1]
 - [CareConnect-DCH-Patient-1]
 - [CareConnect-DCH-Encounter-1]
 - [CareConnect-DCH-NewbornBloodSpotScreening-Procedure-1]
+- [DCH-NewbornBloodSpotScreening-DiagnosticReport-1]
 - [DCH-ProcedureRequest-1]
 - [DCH-Specimen-1]
 - [CareConnect-DCH-Practitioner-1]
@@ -39,7 +37,7 @@ The Child Health Event data items are fulfilled by elements within the FHIR reso
 
 | DCH Data Item                                            | FHIR resource element             | Mandatory/Required/Optional |
 |----------------------------------------------------------|-----------------------------------|-----------------------------|
-| Date                                                     | DCH-DiagnosticReport-1.issued     | Mandatory                   |
+| Date                                                     | DCH-NewbornBloodSpotScreening-DiagnosticReport-1.issued     | Mandatory                   |
 | Outcome - PHENYLKETONURIA                                | CareConnect-DCH-NewbornBloodSpotScreening-Procedure-1.outcome | Mandatory                   |
 | Outcome - SICKLE CELL DISEASE                            | CareConnect-DCH-NewbornBloodSpotScreening-Procedure-1.outcome | Mandatory                   |
 | Outcome - CYSTIC FIBROSIS                                | CareConnect-DCH-NewbornBloodSpotScreening-Procedure-1.outcome | Mandatory                   |
@@ -60,3 +58,4 @@ The Child Health Event data items are fulfilled by elements within the FHIR reso
 [DCH-Specimen-1]:dch-specimen-1.html
 [CareConnect-DCH-NewbornBloodSpotScreening-Procedure-1]:careconnect-dch-newbornbloodspotscreening-procedure-1.html
 [DCH-HealthcareService-1]:dch-healthcareservice-1.html
+[DCH-NewbornBloodSpotScreening-DiagnosticReport-1]:dch-newbornbloodspotscreening-diagnosticreport-1.html

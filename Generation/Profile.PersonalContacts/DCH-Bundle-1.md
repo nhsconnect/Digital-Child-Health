@@ -1,6 +1,6 @@
 This 'DCH-Bundle-1' Bundle resource profile is used as a container to collect a combination of the following resources to capture persons and their relationships to the Patient:
 
-- [DCH-MessageHeader-1] - - where the coding and display for the event element is fixed to 'Personal Contacts'
+- [DCH-MessageHeader-1] - where the coding and display for the event element is fixed to 'Personal Contacts'
 - [CareConnect-DCH-Organization-1]
 - [DCH-HealthcareService-1]
 - [CareConnect-DCH-Patient-1]
@@ -8,7 +8,7 @@ This 'DCH-Bundle-1' Bundle resource profile is used as a container to collect a 
 - [DCH-RelatedPerson-1]
 - [CareConnect-DCH-Location-1]
                                                                                                    
-### Related Or Significant Persons event data item mapping to FHIR profiles ###
+### Personal Contacts event data item mapping to FHIR profiles ###
 ----------
 The Child Health Event data items are fulfilled by elements within the FHIR resources listed below:
 

@@ -10,7 +10,7 @@ This 'DCH-Bundle-1' Bundle resource profile is used as a container to collect a 
 - [CareConnect-DCH-DischargeDestination-Location-1]
 
                                                                                                    
-### Admission Details event data item mapping to FHIR profiles ###
+### Discharge Details event data item mapping to FHIR profiles ###
 ----------
 The Child Health Event data items are fulfilled by elements within the FHIR resources listed below:
 
