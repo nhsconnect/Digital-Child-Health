@@ -21,9 +21,9 @@ The Child Health Event data items are fulfilled by elements within the FHIR reso
 | DCH Data Item     | FHIR resource element                           | Mandatory/Required/Optional |
 |-------------------|-------------------------------------------------|-----------------------------|
 | Date              | CareConnect-DCH-Encounter-1.period.start        | Mandatory                   |
-| ODS Site   Code   | CareConnect-DCH-Location-1.identifier           | Mandatory                   |
-| Professional Name | CareConnect-DCH-Practitioner-1.practitionerRole | Mandatory                   |
-| SDS Job Role Name | CareConnect-DCH-Practitioner-1.name             | Mandatory                   |
+| ODS Site   Code   | CareConnect-DCH-Location-1.identifier (ODS Site Code)          | Mandatory                   |
+| Professional Name | CareConnect-DCH-Practitioner-1.name | Mandatory                   |
+| SDS Job Role Name | CareConnect-DCH-Practitioner-1.practitionerRole (SDS Job Role Name)             | Mandatory                   |
 | Date              | DCH-ProcedureRequest-1.orderedOn                | Mandatory                   |
 
 **Blood Spot Administrative Status Event**

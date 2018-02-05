@@ -26,7 +26,7 @@ The FHIR resource profiles within this DMS have been created to support the Chil
 - **[Profile.Measurements]** - FHIR resource profiles combined to support a Measurements event message.
 - **[Profile.Medication]** - FHIR resource profiles combined to support a Medication event message. 
 - **[Profile.NewbornHearing]** - FHIR resource profiles combined to support a Newborn Hearing event message.
-- **[Profile.ParentGuardianOrPersonalComment]** - FHIR resource profiles combined to support a Parent Or Guardian Comment event message.
+- **[Profile.ParentGuardianOrPersonalComment]** - FHIR resource profiles combined to support a Parent, Guardian or Personal Comment event message.
 - **[Profile.PersonalContacts]** - FHIR resource profiles combined to support a Personal Contacts event message.
 - **[Profile.PhysicalExamination]** - FHIR resource profiles combined to support a Physical Examination event message. 
 - **[Profile.PlanAndRequestedActions]** - FHIR resource profiles combined to support a Plan and Required Actions event message.
