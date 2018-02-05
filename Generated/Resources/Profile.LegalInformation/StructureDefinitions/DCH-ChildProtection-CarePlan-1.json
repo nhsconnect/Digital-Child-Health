@@ -1,7 +1,13 @@
 {
   "resourceType": "StructureDefinition",
   "meta": {
-    "lastUpdated": "2017-10-18T16:50:09.485+01:00"
+    "lastUpdated": "2018-02-03T18:52:44.13+00:00",
+    "tag": [
+      {
+        "system": "urn:hscic:publishOrder",
+        "code": "20"
+      }
+    ]
   },
   "url": "https://fhir.nhs.uk/StructureDefinition/DCH-ChildProtection-CarePlan-1",
   "version": "1.0.0",
@@ -4469,6 +4475,7 @@
           }
         ],
         "isModifier": true,
+        "isSummary": true,
         "mapping": [
           {
             "identity": "rim",
@@ -4953,6 +4960,7 @@
           }
         ],
         "isModifier": true,
+        "isSummary": true,
         "mapping": [
           {
             "identity": "rim",
@@ -6319,6 +6327,7 @@
           }
         ],
         "isModifier": true,
+        "isSummary": true,
         "mapping": [
           {
             "identity": "rim",
@@ -7400,6 +7409,7 @@
           }
         ],
         "isModifier": true,
+        "isSummary": true,
         "mapping": [
           {
             "identity": "rim",

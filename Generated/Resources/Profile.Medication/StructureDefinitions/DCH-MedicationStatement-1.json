@@ -1,7 +1,13 @@
 {
   "resourceType": "StructureDefinition",
   "meta": {
-    "lastUpdated": "2017-10-20T11:05:21.882+01:00"
+    "lastUpdated": "2018-02-03T18:52:28.261+00:00",
+    "tag": [
+      {
+        "system": "urn:hscic:publishOrder",
+        "code": "21"
+      }
+    ]
   },
   "url": "https://fhir.nhs.uk/StructureDefinition/DCH-MedicationStatement-1",
   "version": "1.0.0",
@@ -3933,6 +3939,7 @@
           }
         ],
         "isModifier": true,
+        "isSummary": true,
         "mapping": [
           {
             "identity": "rim",

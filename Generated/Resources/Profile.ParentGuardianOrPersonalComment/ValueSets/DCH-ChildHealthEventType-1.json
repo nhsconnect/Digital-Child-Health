@@ -1,0 +1,153 @@
+{
+  "resourceType": "ValueSet",
+  "meta": {
+    "lastUpdated": "2016-08-03T00:00:00+01:00"
+  },
+  "url": "https://fhir.nhs.uk/ValueSet/DCH-ChildHealthEventType-1",
+  "version": "1.0.0",
+  "name": "Child Health Event Type",
+  "status": "draft",
+  "description": "The type of Child Health Event. Note the values below may change.",
+  "copyright": "Copyright © 2016 Health and Social Care Information Centre. NHS Digital is the trading name of the Health and Social Care Information Centre.",
+  "compose": {
+    "include": [
+      {
+        "system": "https://fhir.nhs.uk/DCH-ChildHealthEventType-1",
+        "concept": [
+          {
+            "code": "CH001",
+            "display": "Additional Demographics"
+          },
+          {
+            "code": "CH002",
+            "display": "Admission Details"
+          },
+          {
+            "code": "CH003",
+            "display": "Allergies and Adverse Reactions"
+          },
+          {
+            "code": "CH004",
+            "display": "Assessment Scales"
+          },
+          {
+            "code": "CH005",
+            "display": "Birth Details"
+          },
+          {
+            "code": "CH006",
+            "display": "Blood Spot"
+          },
+          {
+            "code": "CH007",
+            "display": "Clinical Risk Factors"
+          },
+          {
+            "code": "CH008",
+            "display": "Conditions / Diagnoses"
+          },
+          {
+            "code": "CH009",
+            "display": "Discharge Details"
+          },
+          {
+            "code": "CH010",
+            "display": "Early Years Progress"
+          },
+          {
+            "code": "CH011",
+            "display": "Emergency Care Attendance"
+          },
+          {
+            "code": "CH012",
+            "display": "Examination Findings"
+          },
+          {
+            "code": "CH013",
+            "display": "Family History"
+          },
+          {
+            "code": "CH014",
+            "display": "Feeding Status"
+          },
+          {
+            "code": "CH015",
+            "display": "Immunisation Administration"
+          },
+          {
+            "code": "CH016",
+            "display": "Individual Requirements"
+          },
+          {
+            "code": "CH017",
+            "display": "Information and Advice Given"
+          },
+          {
+            "code": "CH018",
+            "display": "Measurements"
+          },
+          {
+            "code": "CH019",
+            "display": "Medication"
+          },
+          {
+            "code": "CH020",
+            "display": "Developmental Skills"
+          },
+          {
+            "code": "CH021",
+            "display": "Newborn Hearing"
+          },
+          {
+            "code": "CH022",
+            "display": "Parent Guardian or Personal Comment"
+          },
+          {
+            "code": "CH023",
+            "display": "Personal Contacts"
+          },
+          {
+            "code": "CH024",
+            "display": "Physical Examination"
+          },
+          {
+            "code": "CH025",
+            "display": "Plan and Requested Actions"
+          },
+          {
+            "code": "CH026",
+            "display": "Professional Comment"
+          },
+          {
+            "code": "CH027",
+            "display": "Professional Contacts"
+          },
+          {
+            "code": "CH028",
+            "display": "Referral"
+          },
+          {
+            "code": "CH029",
+            "display": "Safety Alerts"
+          },
+          {
+            "code": "CH030",
+            "display": "Social Context Household"
+          },
+          {
+            "code": "CH031",
+            "display": "Social Context Person"
+          },
+          {
+            "code": "CH032",
+            "display": "Educational History"
+          },
+          {
+            "code": "CH033",
+            "display": "Legal Information"
+          }
+        ]
+      }
+    ]
+  }
+}

@@ -1,7 +1,13 @@
 {
   "resourceType": "StructureDefinition",
   "meta": {
-    "lastUpdated": "2017-10-20T11:23:11.109+01:00"
+    "lastUpdated": "2018-02-03T18:52:06.046+00:00",
+    "tag": [
+      {
+        "system": "urn:hscic:publishOrder",
+        "code": "21"
+      }
+    ]
   },
   "url": "https://fhir.nhs.uk/StructureDefinition/DCH-MedicationAdministration-1",
   "version": "1.0.0",
@@ -5020,6 +5026,7 @@
           }
         ],
         "isModifier": true,
+        "isSummary": true,
         "mapping": [
           {
             "identity": "rim",

@@ -1,0 +1,125 @@
+{
+  "resourceType": "ValueSet",
+  "meta": {
+    "lastUpdated": "2016-08-03T00:00:00+01:00"
+  },
+  "url": "https://fhir.nhs.uk/ValueSet/DCH-ChildHealthEncounterType-1",
+  "version": "1.0.0",
+  "name": "Child Health Encounter Type",
+  "status": "draft",
+  "description": "The type of Child Health encounter. Note the values below may change.",
+  "copyright": "Copyright © 2016 Health and Social Care Information Centre. NHS Digital is the trading name of the Health and Social Care Information Centre.",
+  "compose": {
+    "include": [
+      {
+        "system": "https://fhir.nhs.uk/DCH-ChildHealthEncounterType-1",
+        "concept": [
+          {
+            "code": "Birth",
+            "display": "Birth"
+          },
+          {
+            "code": "Post Birth Review",
+            "display": "Post Birth Review"
+          },
+          {
+            "code": "Community Midwife Discharge",
+            "display": "Community Midwife Discharge"
+          },
+          {
+            "code": "Newborn Physical Examination",
+            "display": "Newborn Physical Examination"
+          },
+          {
+            "code": "Newborn Hearing Screening",
+            "display": "Newborn Hearing Screening"
+          },
+          {
+            "code": "Newborn Blood Spot Screening",
+            "display": "Newborn Blood Spot Screening"
+          },
+          {
+            "code": "6-8 Week Review",
+            "display": "6-8 Week Review"
+          },
+          {
+            "code": "BCG immunisation",
+            "display": "BCG immunisation"
+          },
+          {
+            "code": "8 week immunisations",
+            "display": "8 week immunisations"
+          },
+          {
+            "code": "12 week immunisations ",
+            "display": "12 week immunisations "
+          },
+          {
+            "code": "16 week immunisations ",
+            "display": "16 week immunisations "
+          },
+          {
+            "code": "1 Year immunisations ",
+            "display": "1 Year immunisations "
+          },
+          {
+            "code": "Pre-school immunisations ",
+            "display": "Pre-school immunisations "
+          },
+          {
+            "code": "HPV immunisations ",
+            "display": "HPV immunisations "
+          },
+          {
+            "code": "Teenage booster immunisations ",
+            "display": "Teenage booster immunisations "
+          },
+          {
+            "code": "Influenza immunisations ",
+            "display": "Influenza immunisations "
+          },
+          {
+            "code": "2-2 ½ Year Early Years Progress",
+            "display": "2-2 ½ Year Early Years Progress"
+          },
+          {
+            "code": "2-2 ½ Year Heath Visitor Review",
+            "display": "2-2 ½ Year Heath Visitor Review"
+          },
+          {
+            "code": "1 Year Health Review",
+            "display": "1 Year Health Review"
+          },
+          {
+            "code": "6-8 Week Health Visitor review",
+            "display": "6-8 Week Health Visitor review"
+          },
+          {
+            "code": "New Baby Health Visitor Review",
+            "display": "New Baby Health Visitor Review"
+          },
+          {
+            "code": "School Entry Review",
+            "display": "School Entry Review"
+          },
+          {
+            "code": "National Child Measurement Programme",
+            "display": "National Child Measurement Programme"
+          },
+          {
+            "code": "Ad-hoc Health Review",
+            "display": "Ad-hoc Health Review"
+          },
+          {
+            "code": "Ad-hoc Immunisation",
+            "display": "Ad-hoc Immunisation"
+          },
+          {
+            "code": "GP Appointment",
+            "display": "GP Appointment"
+          }
+        ]
+      }
+    ]
+  }
+}
