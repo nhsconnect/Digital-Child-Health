@@ -2,6 +2,18 @@
 
 ### Alpha Phase #
 
+Following internal review the following changes have been applied:
+
+**Event Message Bundle definitions** - typos removed
+
+**ParentOrGuardianComment**
+- Event message renamed ParentGuardianOrPersonalComment
+- DCH-ParentOrGuardianComment-Communication-1 renamed DCH-ParentGuardianOrPersonalComment-Communication-1
+- DCH-ParentGuardianOrPersonalComment-Communication-1 updated to enable comments to be attributed to the Patient
+
+ 
+### Alpha Phase #
+
 This specification has been updated to Alpha status, which represents *'Initial test APIs, likely to change substantially, or be discontinued as the project develops'*.
 
 ### Experimental Phase #
