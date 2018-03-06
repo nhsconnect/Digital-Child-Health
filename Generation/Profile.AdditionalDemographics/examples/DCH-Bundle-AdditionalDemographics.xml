@@ -97,7 +97,7 @@
 			</HealthcareService>
 		</resource>
 	</entry>
-<!--Who the patient (child) is-->
+<!--Who the patient (child) is with additional demographics-->
 	<entry>
 		<fullUrl value="urn:uuid:7368c5fe-bbb4-4e9c-a585-234e06b84e82"/>
 		<resource>
@@ -106,6 +106,24 @@
 				<meta>
 					<profile value="https://fhir.nhs.uk/StructureDefinition/CareConnect-DCH-Patient-1"/>
 				</meta>
+				<extension url="https://fhir.hl7.org.uk/STU3/StructureDefinition/Extension-CareConnect-EthnicCategory-1">
+					<valueCodeableConcept>
+						<coding>
+							<system value="https://fhir.hl7.org.uk/STU3/CareConnect-EthnicCategory-1"/>
+							<code value="A"/>
+							<display value="British, Mixed British"/>
+						</coding>
+					</valueCodeableConcept>
+				</extension>
+					<extension url="https://fhir.hl7.org.uk/STU3/StructureDefinition/Extension-CareConnect-ReligiousAffiliation-1">
+					<valueCodeableConcept>
+						<coding>
+							<system value="http://snomed.info/sct"/>
+							<code value="344071000000106"/>
+							<display value="Scientologist"/>
+						</coding>
+					</valueCodeableConcept>
+				</extension>
 				<identifier>
 					<extension url="https://fhir.hl7.org.uk/StructureDefinition/Extension-CareConnect-NHSNumberVerificationStatus-1">
 						<valueCodeableConcept>
@@ -121,21 +139,20 @@
 				</identifier>
 				<name>
 					<use value="usual"/>
-					<family value="Saxton"/>
-					<given value="Sarah"/>
-					<given value="Marie"/>
+					<family value="DAWKINS"/>
+					<given value="Jack"/>
 				</name>
-				<gender value="female"/>
-				<birthDate value="2012-01-07">
-					<extension url="http://hl7.org/fhir/StructureDefinition/patient-birthTime">
-						<valueDateTime value="2012-01-07T20:12:00+00:00"/>
-					</extension>
-				</birthDate>
+				<telecom>
+					<system value="email"/>
+					<value value="jack.dawkins@dch.net"/>
+				</telecom>
+				<address>
+					<city value="LEEDS"/>
+					<country value="GBR"/>				
+				</address>
 			</Patient>
 		</resource>
 	</entry>
-<!--The event itself e.g referral, immunization, etc..-->
-<!--Insert Event here-->
 <!--Encounter details-->
 	<entry>
 		<fullUrl value="urn:uuid:a8ca9fe6-72aa-11e7-8cf7-a6006ad3dba0"/>

@@ -117,25 +117,33 @@
 						</valueCodeableConcept>
 					</extension>
 					<system value="https://fhir.nhs.uk/Id/nhs-number"/>
-					<value value="5629874536"/>
+					<value value="6101231234"/>
 				</identifier>
 				<name>
 					<use value="usual"/>
-					<family value="Saxton"/>
-					<given value="Sarah"/>
-					<given value="Marie"/>
+					<family value="Dawkins"/>
+					<given value="Sally"/>
 				</name>
 				<gender value="female"/>
-				<birthDate value="2012-01-07">
-					<extension url="http://hl7.org/fhir/StructureDefinition/patient-birthTime">
-						<valueDateTime value="2012-01-07T20:12:00+00:00"/>
-					</extension>
-				</birthDate>
+				<birthDate value="1980-01-07"/>
 			</Patient>
 		</resource>
 	</entry>
-<!--The event itself e.g referral, immunization, etc..-->
-<!--Insert Event here-->
+<!--Physical location of Admission-->
+<entry>
+	<fullUrl value="urn:uuid:be79ee7a-b93d-4cfc-ba88-dedf08813464"/>
+	<resource>
+		<Location>
+			<physicalType>
+				<coding>
+					<system value="http://hl7.org/fhir/location-physical-type"/>
+					<code value="Wi"/>
+					<display value="Wing"/>
+				</coding>
+			</physicalType>
+		</Location>
+	</resource>
+</entry>
 <!--Encounter details-->
 	<entry>
 		<fullUrl value="urn:uuid:a8ca9fe6-72aa-11e7-8cf7-a6006ad3dba0"/>
@@ -177,6 +185,13 @@
 				<period>
 					<start value="2012-01-29T09:00:00"/>
 				</period>
+				<reason>
+					<coding>
+						<system value="http://snomed.info/sct"/>
+						<code value="386216000"/>
+						<display value="Childbirth"/>
+					</coding>
+				</reason>
 				<location>
 					<location>
 						<reference value="e3177167-40fc-4f1a-80f2-a2f17f18fde7"/>
